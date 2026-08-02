@@ -43,7 +43,7 @@ sys.path.insert(0, BASE_DIR)
 
 from core import api
 
-VERSION = "3.0"
+VERSION = "1.0"
 HOST = os.environ.get("GITGRIND_HOST", "127.0.0.1")
 PORT = int(os.environ.get("GITGRIND_PORT", "8420"))
 

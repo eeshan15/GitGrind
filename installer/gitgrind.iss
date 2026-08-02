@@ -6,7 +6,7 @@
 ;     python tools\build_exe.py --clean --onedir
 ;     iscc installer\gitgrind.iss
 ;
-; Output: installer\Output\GitGrind-Setup-3.0.exe
+; Output: installer\Output\GitGrind-Setup-1.0.exe
 ;
 ; Design notes, because a few of these are deliberate:
 ;
@@ -29,7 +29,7 @@
 ; ===========================================================================
 
 #define MyAppName "GitGrind"
-#define MyAppVersion "3.0"
+#define MyAppVersion "1.0"
 #define MyAppPublisher "GitGrind"
 #define MyAppExeName "GitGrind.exe"
 #define MyAppDescription "A local operating system for a GATE CSE attempt"

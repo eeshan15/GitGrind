@@ -1,5 +1,5 @@
 # GitGrind
-
+[![Latest release](https://img.shields.io/github/v/release/eeshan15/GitGrind)](https://github.com/eeshan15/GitGrind/releases/latest)
 A local, offline operating system for a GATE CSE attempt.
 
 It is not a study-hours tracker with charts. Every screen exists to answer one

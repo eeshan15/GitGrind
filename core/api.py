@@ -28,7 +28,7 @@ from . import (
 
 # The UI is read-only, so it is served straight out of the bundle when frozen.
 STATIC_DIR = os.path.join(db.ASSET_DIR, "static")
-VERSION = "3.0"
+VERSION = "1.0"
 SHOW_WINDOW = None
 # Settings the user is allowed to change from the UI, with their coercion.
 TUNABLE = {
@@ -996,7 +996,7 @@ class Handler(BaseHTTPRequestHandler):
             if row.get("key") == "ai_key":
                 row["value"] = ""
         return dict(
-            version=3,
+            version=1,
             schema_version=db.current_version(conn),
             exported_at=datetime.now().isoformat(timespec="seconds"),
             tables=dump,
