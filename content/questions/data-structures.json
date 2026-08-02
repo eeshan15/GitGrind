@@ -1,0 +1,98 @@
+{
+  "subject": "data-structures",
+  "questions": [
+    {
+      "id": "ds-tree-01", "topic": "trees", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "How many distinct binary search trees can be built from the keys 1, 2, 3, 4, 5?",
+      "answer_value": 42, "tolerance": 0,
+      "explain": "The count is the nth Catalan number, C(2n, n)/(n+1). For n = 5 that is 252/6 = 42."
+    },
+    {
+      "id": "ds-tree-02", "topic": "trees", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "A binary tree has preorder A B D E C F and inorder D B E A C F. What is its postorder traversal?",
+      "options": ["D E B F C A", "D B E F C A", "D E B C F A", "B D E F C A"],
+      "answer": [0],
+      "explain": "A is the root; DBE is the left subtree and CF the right. Left subtree has root B with children D and E; right subtree has root C with right child F. Postorder is D E B, then F C, then A."
+    },
+    {
+      "id": "ds-heap-01", "topic": "heaps", "kind": "pyq", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "What is the time complexity of building a binary heap from an unsorted array of n elements using the bottom-up heapify method?",
+      "options": ["O(n log n)", "O(n)", "O(log n)", "O(n^2)"],
+      "answer": [1],
+      "explain": "Nodes at height h number at most n/2^(h+1) and cost O(h) each. Summing h x n/2^h over all heights converges to O(n). Inserting one at a time would cost O(n log n)."
+    },
+    {
+      "id": "ds-heap-02", "topic": "heaps", "kind": "dpp", "difficulty": "easy",
+      "type": "mcq", "marks": 1,
+      "text": "In a max-heap stored in a 1-indexed array of n elements, where can the smallest element be located?",
+      "options": [
+        "Only at index n",
+        "Only at index 1",
+        "At any leaf position",
+        "At any position"
+      ],
+      "answer": [2],
+      "explain": "The minimum must be a leaf, since any internal node is at least as large as its children. Leaves occupy indices floor(n/2)+1 through n, so it can be any of them, not necessarily the last."
+    },
+    {
+      "id": "ds-hash-01", "topic": "hashing", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Which problem is specific to linear probing and is addressed by double hashing?",
+      "options": [
+        "Secondary clustering",
+        "Primary clustering",
+        "Chain length growth",
+        "Hash collisions in general"
+      ],
+      "answer": [1],
+      "explain": "Linear probing creates primary clustering: contiguous runs of occupied slots that keep growing. Quadratic probing removes primary but leaves secondary clustering; double hashing removes both."
+    },
+    {
+      "id": "ds-ptr-01", "topic": "pointers", "kind": "pyq", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "In C, an int array a is declared as int a[10] and p is declared as int *p = a. On a machine where sizeof(int) is 4, what is the value of the expression (p + 3) - (p + 1)?",
+      "options": ["2", "8", "4", "12"],
+      "answer": [0],
+      "explain": "Subtracting two pointers of the same type yields the number of elements between them, not the byte difference. The result is 2."
+    },
+    {
+      "id": "ds-rec-01", "topic": "recursion", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A function is defined as f(n) = f(n-1) + f(n-2) for n > 1, with f(0) = 0 and f(1) = 1. If implemented as a naive recursion with no memoisation, how many calls to f are made in total when computing f(5), counting the initial call?",
+      "answer_value": 15, "tolerance": 0,
+      "explain": "Total calls T(n) satisfies T(n) = T(n-1) + T(n-2) + 1 with T(0) = T(1) = 1. This gives T(2) = 3, T(3) = 5, T(4) = 9, T(5) = 15."
+    },
+    {
+      "id": "ds-sq-01", "topic": "stacks-queues", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "A queue is implemented using two stacks, with enqueue pushing onto stack A and dequeue moving everything to stack B when B is empty. What is the amortised cost of a dequeue over a sequence of n operations?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n log n)"],
+      "answer": [2],
+      "explain": "Each element is pushed and popped at most twice across its lifetime, so the total work over n operations is O(n) and the amortised cost per dequeue is O(1), even though a single dequeue can cost O(n)."
+    },
+    {
+      "id": "ds-ll-01", "topic": "linked-lists", "kind": "dpp", "difficulty": "easy",
+      "type": "mcq", "marks": 2,
+      "text": "Which operation is asymptotically worse on a singly linked list than on a dynamic array, assuming a pointer to the relevant node or index is already held?",
+      "options": [
+        "Inserting after the held position",
+        "Deleting the held node",
+        "Accessing the element at position k from the head",
+        "Inserting at the head"
+      ],
+      "answer": [2],
+      "explain": "Random access is O(k) on a linked list against O(1) on an array. Insertion and deletion at a known position favour the list."
+    },
+    {
+      "id": "ds-bst-01", "topic": "bst", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Keys 10, 20, 30, 40, 50 are inserted in that order into an initially empty unbalanced binary search tree. What is the height of the resulting tree, counting edges on the longest root-to-leaf path?",
+      "options": ["2", "3", "4", "5"],
+      "answer": [2],
+      "explain": "Sorted insertion order degenerates the tree into a right-leaning chain of 5 nodes, so the longest path has 4 edges."
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "subject": "algorithms",
+  "questions": [
+    {
+      "id": "algo-asym-01", "topic": "asymptotics", "kind": "pyq", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "What is the asymptotic solution of T(n) = 2T(n/2) + n log n, with T(1) = 1?",
+      "options": ["Theta(n log n)", "Theta(n log^2 n)", "Theta(n^2)", "Theta(n)"],
+      "answer": [1],
+      "explain": "This is the Master Theorem borderline case extended: with a = 2, b = 2, n^(log_b a) = n, and the driving function is n log n = n log^1 n. The result is n log^(1+1) n = n log^2 n."
+    },
+    {
+      "id": "algo-asym-02", "topic": "asymptotics", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "What is the asymptotic solution of T(n) = 4T(n/2) + n^2?",
+      "options": ["Theta(n^2)", "Theta(n^2 log n)", "Theta(n^3)", "Theta(n log n)"],
+      "answer": [1],
+      "explain": "a = 4, b = 2, so n^(log_2 4) = n^2, which matches the driving function exactly. Case 2 of the Master Theorem gives Theta(n^2 log n)."
+    },
+    {
+      "id": "algo-sort-01", "topic": "searching-sorting", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "What is the minimum number of comparisons needed in the worst case to find both the minimum and the maximum of 100 distinct elements?",
+      "answer_value": 148, "tolerance": 0,
+      "explain": "Pair up the elements and compare within pairs (n/2 comparisons), then find the min among the smaller halves and the max among the larger halves (n/2 - 1 each). Total = 3n/2 - 2 = 150 - 2 = 148."
+    },
+    {
+      "id": "algo-sort-02", "topic": "searching-sorting", "kind": "dpp", "difficulty": "easy",
+      "type": "msq", "marks": 2,
+      "text": "Which sorting algorithms have worst-case time complexity O(n log n)? Select all that apply.",
+      "options": ["Merge sort", "Heap sort", "Quick sort with a fixed last-element pivot", "Insertion sort"],
+      "answer": [0, 1],
+      "explain": "Merge sort and heap sort are O(n log n) in the worst case. Quick sort with a fixed pivot degrades to O(n^2) on sorted input, and insertion sort is O(n^2)."
+    },
+    {
+      "id": "algo-graph-01", "topic": "shortest-paths", "kind": "pyq", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Why can Dijkstra's algorithm fail on a graph containing negative edge weights, even when there is no negative cycle?",
+      "options": [
+        "The priority queue cannot store negative keys",
+        "A vertex may be finalised before a cheaper path through a later-relaxed vertex is discovered",
+        "The algorithm does not terminate",
+        "It fails only when the graph is disconnected"
+      ],
+      "answer": [1],
+      "explain": "Dijkstra's correctness relies on the greedy invariant that the minimum tentative distance is final. A negative edge can reduce a path after its endpoint has been finalised, breaking that invariant. Bellman-Ford handles this case."
+    },
+    {
+      "id": "algo-mst-01", "topic": "mst", "kind": "dpp", "difficulty": "medium",
+      "type": "msq", "marks": 2,
+      "text": "Which statements about minimum spanning trees of a connected weighted graph are true? Select all that apply.",
+      "options": [
+        "If all edge weights are distinct, the MST is unique",
+        "The lightest edge of the graph belongs to some MST",
+        "The MST always contains the shortest path between every pair of vertices",
+        "Every MST has exactly V - 1 edges"
+      ],
+      "answer": [0, 1, 3],
+      "explain": "Distinct weights force a unique MST, the globally lightest edge is always safe by the cut property, and any spanning tree of V vertices has V - 1 edges. MSTs minimise total weight, not pairwise distances."
+    },
+    {
+      "id": "algo-dp-01", "topic": "dynamic-programming", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Two sequences have lengths m and n. What are the time and space complexities of the standard dynamic programming solution for the longest common subsequence, using full table construction?",
+      "options": [
+        "O(mn) time, O(mn) space",
+        "O(m + n) time, O(m + n) space",
+        "O(mn) time, O(1) space",
+        "O(m log n) time, O(n) space"
+      ],
+      "answer": [0],
+      "explain": "The table has (m+1)(n+1) cells, each filled in constant time, so O(mn) for both. Space drops to O(min(m, n)) if only the LCS length is needed, since each row depends on the previous row alone."
+    },
+    {
+      "id": "algo-greedy-01", "topic": "greedy", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "For which problem does a greedy strategy fail to give an optimal solution in general?",
+      "options": [
+        "Fractional knapsack, taking items by decreasing value per unit weight",
+        "0/1 knapsack, taking items by decreasing value per unit weight",
+        "Huffman coding, merging the two lowest-frequency nodes",
+        "Activity selection, choosing the earliest finishing activity"
+      ],
+      "answer": [1],
+      "explain": "The 0/1 knapsack has no greedy optimal solution because items cannot be split, so a high-density item may block a better combination. It needs dynamic programming. The other three are classic correct greedy algorithms."
+    },
+    {
+      "id": "algo-trav-01", "topic": "graph-traversal", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "In a depth-first search of a directed graph, the presence of which edge type proves the graph has a cycle?",
+      "options": ["Tree edge", "Back edge", "Forward edge", "Cross edge"],
+      "answer": [1],
+      "explain": "A back edge points to an ancestor still on the recursion stack, which closes a cycle. Forward and cross edges can appear in acyclic directed graphs."
+    },
+    {
+      "id": "algo-np-01", "topic": "complexity-classes", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Problem A is NP-complete and reduces in polynomial time to problem B. What can be concluded about B?",
+      "options": [
+        "B is NP-complete",
+        "B is NP-hard",
+        "B is in P",
+        "B is undecidable"
+      ],
+      "answer": [1],
+      "explain": "The reduction makes B at least as hard as A, so B is NP-hard. Calling B NP-complete additionally requires B to be in NP, which was not stated."
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "subject": "discrete-mathematics",
+  "questions": [
+    {
+      "id": "dm-rel-01", "topic": "sets-relations", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "How many relations on a set of 4 elements are both reflexive and symmetric?",
+      "answer_value": 64, "tolerance": 0,
+      "explain": "Reflexivity fixes all 4 diagonal pairs. Symmetry means the C(4,2) = 6 unordered off-diagonal pairs are chosen freely, giving 2^6 = 64."
+    },
+    {
+      "id": "dm-graph-01", "topic": "graph-theory", "kind": "pyq", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "A connected undirected graph has an Euler circuit if and only if:",
+      "options": [
+        "Every vertex has even degree",
+        "Exactly two vertices have odd degree",
+        "The graph is a tree",
+        "Every vertex has degree at least 2"
+      ],
+      "answer": [0],
+      "explain": "A closed walk using every edge exactly once requires every vertex to have even degree. Exactly two odd-degree vertices gives an Euler path but not a circuit."
+    },
+    {
+      "id": "dm-graph-02", "topic": "graph-theory", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "What is the chromatic number of the complete bipartite graph K(3,4)?",
+      "answer_value": 2, "tolerance": 0,
+      "explain": "Every bipartite graph with at least one edge is 2-colourable: one colour per part. Size of the parts is irrelevant."
+    },
+    {
+      "id": "dm-count-01", "topic": "counting", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "In how many ways can 10 identical balls be distributed into 4 distinct boxes, allowing empty boxes?",
+      "answer_value": 286, "tolerance": 0,
+      "explain": "Stars and bars: C(n + k - 1, k - 1) = C(13, 3) = 286."
+    },
+    {
+      "id": "dm-logic-01", "topic": "propositional-logic", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Which formula is logically equivalent to the implication p -> q?",
+      "options": ["p AND NOT q", "NOT p OR q", "q -> p", "NOT p AND q"],
+      "answer": [1],
+      "explain": "An implication is false only when p is true and q is false, which is exactly the truth table of NOT p OR q. Note q -> p is the converse, not the equivalent."
+    },
+    {
+      "id": "dm-group-01", "topic": "groups", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "By Lagrange's theorem, what are the possible orders of a subgroup of a group of order 12?",
+      "options": [
+        "Any integer from 1 to 12",
+        "Only 1 and 12",
+        "The divisors of 12: 1, 2, 3, 4, 6, 12",
+        "Only the prime divisors 2 and 3"
+      ],
+      "answer": [2],
+      "explain": "Lagrange's theorem forces the order of any subgroup to divide the order of the group. The converse does not hold in general - a divisor need not have a corresponding subgroup in every group."
+    },
+    {
+      "id": "dm-lat-01", "topic": "posets-lattices", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "The set of divisors of 30 ordered by divisibility forms which structure?",
+      "options": [
+        "A poset that is not a lattice",
+        "A lattice, with meet as gcd and join as lcm",
+        "A chain",
+        "A group under multiplication"
+      ],
+      "answer": [1],
+      "explain": "Any two divisors have a greatest common divisor and least common multiple that are also divisors of 30, so every pair has a meet and a join. It is not a chain since 2 and 3 are incomparable."
+    },
+    {
+      "id": "dm-rec-01", "topic": "recurrence", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "What is the closed form of a(n) = 5a(n-1) - 6a(n-2) with a(0) = 1 and a(1) = 0?",
+      "options": [
+        "3 x 2^n - 2 x 3^n",
+        "2^n - 3^n",
+        "3^n - 2^n",
+        "2 x 3^n - 3 x 2^n"
+      ],
+      "answer": [0],
+      "explain": "The characteristic equation x^2 - 5x + 6 = 0 gives roots 2 and 3, so a(n) = A x 2^n + B x 3^n. From A + B = 1 and 2A + 3B = 0 we get A = 3 and B = -2."
+    },
+    {
+      "id": "dm-pigeon-01", "topic": "counting", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "What is the minimum number of people needed in a room to guarantee that at least three of them share the same birth month?",
+      "answer_value": 25, "tolerance": 0,
+      "explain": "With 12 months, 24 people could give exactly two per month. The 25th person forces some month to hold three, by the generalised pigeonhole principle."
+    }
+  ]
+}

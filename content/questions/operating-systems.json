@@ -1,0 +1,169 @@
+{
+  "subject": "operating-systems",
+  "questions": [
+    {
+      "id": "os-sched-01",
+      "topic": "cpu-scheduling",
+      "kind": "pyq",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "Four processes arrive as follows. P1: arrival 0, burst 8. P2: arrival 1, burst 4. P3: arrival 2, burst 9. P4: arrival 3, burst 5. Under preemptive shortest-remaining-time-first scheduling, what is the average waiting time (in ms)?",
+      "answer_value": 6.5,
+      "tolerance": 0.01,
+      "explain": "Schedule: P1 runs 0-1, preempted by P2 (4 < 7). P2 runs 1-5. At t=5 remaining are P1=7, P3=9, P4=5, so P4 runs 5-10, then P1 10-17, then P3 17-26. Waiting = turnaround - burst: P1=9, P2=0, P3=15, P4=2. Average = 26/4 = 6.5."
+    },
+    {
+      "id": "os-sync-01",
+      "topic": "synchronization",
+      "kind": "dpp",
+      "difficulty": "easy",
+      "type": "nat",
+      "marks": 1,
+      "text": "A counting semaphore S is initialised to 10. Six P (wait) operations and four V (signal) operations are then executed on S, and none of the waiting processes is blocked indefinitely. What is the final value of S?",
+      "answer_value": 8,
+      "tolerance": 0,
+      "explain": "Each P decrements, each V increments: 10 - 6 + 4 = 8."
+    },
+    {
+      "id": "os-sync-02",
+      "topic": "synchronization",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "Which of the following is NOT guaranteed by a correct solution to the critical section problem?",
+      "options": [
+        "Mutual exclusion",
+        "Progress",
+        "Bounded waiting",
+        "Equal CPU time for every competing process"
+      ],
+      "answer": [3],
+      "explain": "The three requirements are mutual exclusion, progress and bounded waiting. Fair CPU distribution is a scheduling concern, not a critical-section requirement."
+    },
+    {
+      "id": "os-dead-01",
+      "topic": "deadlock",
+      "kind": "pyq",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "A system has 5 processes, each of which may need a maximum of 3 units of a single resource type R. What is the minimum number of units of R that guarantees the system can never deadlock?",
+      "answer_value": 11,
+      "tolerance": 0,
+      "explain": "Worst case: every process holds max-1 = 2 units and waits. That is 5 x 2 = 10 units allocated with everyone blocked. One extra unit lets some process finish, so 11 units suffice."
+    },
+    {
+      "id": "os-dead-02",
+      "topic": "deadlock",
+      "kind": "dpp",
+      "difficulty": "easy",
+      "type": "mcq",
+      "marks": 1,
+      "text": "A cycle in the resource allocation graph is a necessary and sufficient condition for deadlock when:",
+      "options": [
+        "Every resource type has exactly one instance",
+        "Every resource type has multiple instances",
+        "Processes request resources in increasing order of index",
+        "Preemption is allowed"
+      ],
+      "answer": [0],
+      "explain": "With single-instance resources a cycle means deadlock. With multiple instances a cycle is necessary but not sufficient - the claim edges may still resolve."
+    },
+    {
+      "id": "os-vm-01",
+      "topic": "virtual-memory",
+      "kind": "pyq",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "Consider the page reference string 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5 with three frames, all initially empty. How many page faults occur under FIFO replacement?",
+      "answer_value": 9,
+      "tolerance": 0,
+      "explain": "FIFO produces 9 faults. Note LRU on the same string gives 10 - this string is the standard demonstration that more frames or a 'smarter' policy does not always help."
+    },
+    {
+      "id": "os-vm-02",
+      "topic": "virtual-memory",
+      "kind": "dpp",
+      "difficulty": "easy",
+      "type": "nat",
+      "marks": 2,
+      "text": "A machine uses 32-bit virtual addresses with 4 KB pages and a single-level page table whose entries are 4 bytes each. What is the size of the page table in megabytes?",
+      "answer_value": 4,
+      "tolerance": 0,
+      "explain": "4 KB pages means a 12-bit offset, leaving 20 bits of page number, so 2^20 entries. 2^20 x 4 bytes = 4 MB."
+    },
+    {
+      "id": "os-mem-01",
+      "topic": "memory-management",
+      "kind": "pyq",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "TLB access takes 10 ns and main memory access takes 100 ns. The TLB hit ratio is 90 percent. On a TLB miss the page table is read from main memory before the data is fetched. What is the effective memory access time in nanoseconds?",
+      "answer_value": 120,
+      "tolerance": 0.5,
+      "explain": "Hit path: 10 + 100 = 110 ns. Miss path: 10 + 100 (page table) + 100 (data) = 210 ns. EMAT = 0.9 x 110 + 0.1 x 210 = 99 + 21 = 120 ns."
+    },
+    {
+      "id": "os-proc-01",
+      "topic": "processes-threads",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "A C program executes fork(); fork(); fork(); with no error checking and no exits. Counting the original process, how many processes exist in total after all three calls complete?",
+      "answer_value": 8,
+      "tolerance": 0,
+      "explain": "Each fork doubles the process count: 1 -> 2 -> 4 -> 8. Seven of the eight are children."
+    },
+    {
+      "id": "os-disk-01",
+      "topic": "disk-scheduling",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "The disk head is at cylinder 53. Pending requests are 98, 183, 37, 122, 14, 124, 65, 67. Under SSTF, what is the total head movement in cylinders?",
+      "answer_value": 236,
+      "tolerance": 0,
+      "explain": "Order: 53 -> 65 -> 67 -> 37 -> 14 -> 98 -> 122 -> 124 -> 183. Movements: 12+2+30+23+84+24+2+59 = 236."
+    },
+    {
+      "id": "os-fs-01",
+      "topic": "file-systems",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "An inode holds 10 direct block pointers, one single indirect, one double indirect and one triple indirect pointer. Block size is 1 KB and each pointer is 4 bytes. What is the largest file size representable, approximately?",
+      "options": [
+        "About 16 GB",
+        "About 16 MB",
+        "About 64 GB",
+        "About 1 TB"
+      ],
+      "answer": [0],
+      "explain": "A block holds 1024/4 = 256 pointers. Direct 10 blocks, single indirect 256, double 256^2 = 65536, triple 256^3 = 16777216 blocks. Triple indirect dominates: 16777216 KB is about 16 GB."
+    },
+    {
+      "id": "os-ipc-01",
+      "topic": "ipc",
+      "kind": "dpp",
+      "difficulty": "easy",
+      "type": "msq",
+      "marks": 2,
+      "text": "Which of the following are valid inter-process communication mechanisms in a Unix-like system? Select all that apply.",
+      "options": [
+        "Pipes",
+        "Shared memory segments",
+        "Message queues",
+        "The process control block of another process"
+      ],
+      "answer": [0, 1, 2],
+      "explain": "Pipes, shared memory and message queues are standard IPC. A PCB lives in kernel space and is not directly accessible to another process."
+    }
+  ]
+}

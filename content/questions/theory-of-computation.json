@@ -1,0 +1,105 @@
+{
+  "subject": "theory-of-computation",
+  "questions": [
+    {
+      "id": "toc-fa-01", "topic": "finite-automata", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "What is the number of states in the minimal DFA over {0, 1} accepting all strings in which the number of 0s is divisible by 2 and the number of 1s is divisible by 3?",
+      "answer_value": 6, "tolerance": 0,
+      "explain": "The product construction tracks (count of 0s mod 2, count of 1s mod 3), giving 2 x 3 = 6 states. All six are reachable and pairwise distinguishable, so the minimal DFA has 6 states."
+    },
+    {
+      "id": "toc-fa-02", "topic": "finite-automata", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "What is the number of states in the minimal DFA over {0, 1} that accepts binary strings, read most significant bit first, whose value is divisible by 5? The empty string is not accepted.",
+      "answer_value": 5, "tolerance": 0,
+      "explain": "Track the remainder modulo 5 as each bit is consumed: state r moves to (2r + b) mod 5. Five residue classes, all reachable and distinguishable, so 5 states."
+    },
+    {
+      "id": "toc-reg-01", "topic": "pumping-lemma", "kind": "dpp", "difficulty": "medium",
+      "type": "msq", "marks": 2,
+      "text": "Which of the following languages over {a, b} are regular? Select all that apply.",
+      "options": [
+        "Strings where the number of a's equals the number of b's",
+        "Strings of length divisible by 7",
+        "Strings where the number of a's minus the number of b's is at most 3 in absolute value",
+        "Strings containing aba as a substring"
+      ],
+      "answer": [1, 2, 3],
+      "explain": "Equal counts needs unbounded counting and fails the pumping lemma. Length mod 7 needs 7 states. A bounded difference needs only finitely many counter values, so it is regular. Substring search is regular."
+    },
+    {
+      "id": "toc-clo-01", "topic": "closure-properties", "kind": "pyq", "difficulty": "medium",
+      "type": "msq", "marks": 2,
+      "text": "Context-free languages are closed under which of the following operations? Select all that apply.",
+      "options": ["Union", "Intersection", "Concatenation", "Intersection with a regular language"],
+      "answer": [0, 2, 3],
+      "explain": "CFLs are closed under union, concatenation, Kleene star and intersection with a regular language. They are not closed under intersection with another CFL, nor under complement."
+    },
+    {
+      "id": "toc-cfg-01", "topic": "cfg", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Which language is context-free but not regular?",
+      "options": [
+        "Strings of a's and b's of even length",
+        "a^n b^n for n >= 0",
+        "a^n b^n c^n for n >= 0",
+        "Strings over {a, b} ending in ab"
+      ],
+      "answer": [1],
+      "explain": "a^n b^n needs a stack but no more, so it is context-free and not regular. a^n b^n c^n requires two independent counters and is not context-free. The other two are regular."
+    },
+    {
+      "id": "toc-pda-01", "topic": "pda", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Which statement about deterministic pushdown automata (DPDA) is true?",
+      "options": [
+        "Every CFL is accepted by some DPDA",
+        "DPDAs accept exactly the deterministic CFLs, a strict subset of the CFLs",
+        "DPDAs and NPDAs accept exactly the same class of languages",
+        "DPDAs accept exactly the regular languages"
+      ],
+      "answer": [1],
+      "explain": "Unlike finite automata, determinism restricts pushdown automata strictly. The language of even-length palindromes is context-free but not accepted by any DPDA."
+    },
+    {
+      "id": "toc-dec-01", "topic": "undecidability", "kind": "pyq", "difficulty": "hard",
+      "type": "msq", "marks": 2,
+      "text": "Which of the following problems are decidable? Select all that apply.",
+      "options": [
+        "Given a DFA, is the language it accepts empty?",
+        "Given two DFAs, do they accept the same language?",
+        "Given a CFG, is the language it generates empty?",
+        "Given two CFGs, do they generate the same language?"
+      ],
+      "answer": [0, 1, 2],
+      "explain": "DFA emptiness and equivalence are decidable, as is CFG emptiness (test whether the start symbol is generating). CFG equivalence is undecidable, as is CFL intersection emptiness."
+    },
+    {
+      "id": "toc-tm-01", "topic": "turing-machines", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "A language L and its complement are both Turing-recognisable (recursively enumerable). What follows?",
+      "options": [
+        "L is decidable",
+        "L is regular",
+        "L is context-free",
+        "Nothing further can be concluded"
+      ],
+      "answer": [0],
+      "explain": "Run both recognisers in parallel. One of them must halt and accept, so the answer is always reached in finite time. Hence L is recursive, i.e. decidable."
+    },
+    {
+      "id": "toc-min-01", "topic": "minimization", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "By the Myhill-Nerode theorem, a language L is regular if and only if:",
+      "options": [
+        "L is generated by some context-free grammar",
+        "The number of equivalence classes of the relation induced by L on strings is finite",
+        "L is accepted by some nondeterministic pushdown automaton",
+        "L is closed under concatenation"
+      ],
+      "answer": [1],
+      "explain": "Two strings are equivalent when no suffix distinguishes them. L is regular exactly when this relation has finitely many classes, and that count equals the number of states in the minimal DFA."
+    }
+  ]
+}

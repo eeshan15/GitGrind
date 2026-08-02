@@ -1,0 +1,74 @@
+{
+  "subject": "general-aptitude",
+  "questions": [
+    {
+      "id": "ga-quant-01", "topic": "quantitative", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A can finish a job in 12 days and B in 18 days. Working together, how many days do they take, rounded to two decimals?",
+      "answer_value": 7.2, "tolerance": 0.01,
+      "explain": "Combined rate = 1/12 + 1/18 = 5/36 per day, so the job takes 36/5 = 7.2 days."
+    },
+    {
+      "id": "ga-quant-02", "topic": "quantitative", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A price is increased by 20 percent and the result is then decreased by 20 percent. What is the net percentage change, as a signed number?",
+      "answer_value": -4, "tolerance": 0.01,
+      "explain": "The multiplier is 1.2 x 0.8 = 0.96, a 4 percent decrease. Successive percentage changes multiply rather than add."
+    },
+    {
+      "id": "ga-quant-03", "topic": "quantitative", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A train 200 m long travelling at 72 km/h crosses a platform 250 m long. How many seconds does it take?",
+      "answer_value": 22.5, "tolerance": 0.01,
+      "explain": "72 km/h = 20 m/s. Distance covered is train plus platform = 450 m, so time = 450 / 20 = 22.5 s."
+    },
+    {
+      "id": "ga-anal-01", "topic": "analytical", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "All engineers are problem solvers. Some problem solvers are artists. Which conclusion necessarily follows?",
+      "options": [
+        "Some engineers are artists",
+        "All artists are problem solvers",
+        "No valid conclusion links engineers and artists",
+        "No engineer is an artist"
+      ],
+      "answer": [2],
+      "explain": "The overlap between problem solvers and artists need not include any engineer. Neither an affirmative nor a negative link between engineers and artists is forced."
+    },
+    {
+      "id": "ga-anal-02", "topic": "analytical", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "In a group of 100 people, 60 read English newspapers, 45 read Hindi newspapers and 20 read both. How many read neither?",
+      "answer_value": 15, "tolerance": 0,
+      "explain": "Inclusion-exclusion: 60 + 45 - 20 = 85 read at least one, so 100 - 85 = 15 read neither."
+    },
+    {
+      "id": "ga-verb-01", "topic": "verbal", "kind": "dpp", "difficulty": "easy",
+      "type": "mcq", "marks": 1,
+      "text": "Choose the word most nearly opposite in meaning to 'ephemeral'.",
+      "options": ["Transient", "Enduring", "Fragile", "Sudden"],
+      "answer": [1],
+      "explain": "Ephemeral means short-lived, so its antonym is enduring. Transient is a synonym, not an antonym."
+    },
+    {
+      "id": "ga-verb-02", "topic": "verbal", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Select the grammatically correct sentence.",
+      "options": [
+        "Neither of the two answers are correct.",
+        "Neither of the two answers is correct.",
+        "Neither of the two answer are correct.",
+        "Neither of the two answers were correct."
+      ],
+      "answer": [1],
+      "explain": "'Neither' is singular, so it takes a singular verb: 'is'. The plural noun in the prepositional phrase does not govern the verb."
+    },
+    {
+      "id": "ga-spat-01", "topic": "spatial", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A solid cube of side 4 cm is painted on all faces and then cut into 1 cm cubes. How many of the small cubes have exactly two painted faces?",
+      "answer_value": 24, "tolerance": 0,
+      "explain": "Exactly two faces painted means the cube sits along an edge but not at a corner. Each of the 12 edges contributes n - 2 = 2 such cubes, giving 12 x 2 = 24."
+    }
+  ]
+}

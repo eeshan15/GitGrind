@@ -1,0 +1,123 @@
+{
+  "subject": "computer-networks",
+  "questions": [
+    {
+      "id": "cn-ip-01",
+      "topic": "ip-addressing",
+      "kind": "pyq",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "A 4000-byte IP datagram, including its 20-byte header, must traverse a link whose MTU is 1500 bytes. Assuming no options, how many fragments are produced?",
+      "answer_value": 3,
+      "tolerance": 0,
+      "explain": "Payload is 3980 bytes. Each fragment carries at most 1480 payload bytes, and every fragment except the last must be a multiple of 8. Split: 1480 + 1480 + 1020 = 3980, so 3 fragments."
+    },
+    {
+      "id": "cn-ip-02",
+      "topic": "ip-addressing",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "The block 200.10.20.0/24 is to be divided into equal-sized subnets, each supporting at least 30 usable host addresses. What is the maximum number of such subnets?",
+      "answer_value": 8,
+      "tolerance": 0,
+      "explain": "30 usable hosts needs 5 host bits (2^5 - 2 = 30), giving a /27 prefix. The /24 yields 2^(27-24) = 8 subnets."
+    },
+    {
+      "id": "cn-sw-01",
+      "topic": "sliding-window",
+      "kind": "pyq",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "A link has bandwidth 1 Mbps and one-way propagation delay 100 ms. Frames are 10000 bits long and acknowledgements are negligible in size. What is the minimum sender window size (in frames) needed for 100 percent link utilisation?",
+      "answer_value": 21,
+      "tolerance": 0,
+      "explain": "Transmission time = 10000 / 10^6 = 10 ms. a = propagation / transmission = 100 / 10 = 10. Full utilisation needs window >= 1 + 2a = 21."
+    },
+    {
+      "id": "cn-err-01",
+      "topic": "framing-errors",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "Data word 1101 is transmitted using CRC with generator polynomial x^3 + x + 1. What is the transmitted codeword?",
+      "options": ["1101001", "1101011", "1101100", "1101111"],
+      "answer": [0],
+      "explain": "Generator 1011. Append three zeros to get 1101000 and divide modulo 2: remainder is 001. Transmitted codeword = 1101 followed by 001."
+    },
+    {
+      "id": "cn-tcp-01",
+      "topic": "tcp",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "TCP Reno is in congestion avoidance with a congestion window of 32 KB when a timeout occurs. What are the new values of ssthresh and cwnd?",
+      "options": [
+        "ssthresh 16 KB, cwnd 1 MSS",
+        "ssthresh 32 KB, cwnd 16 KB",
+        "ssthresh 16 KB, cwnd 16 KB",
+        "ssthresh 1 MSS, cwnd 1 MSS"
+      ],
+      "answer": [0],
+      "explain": "On timeout ssthresh becomes half the current cwnd (16 KB) and cwnd collapses to 1 MSS, restarting slow start. Halving cwnd without collapsing it is the fast-recovery response to triple duplicate ACKs, not a timeout."
+    },
+    {
+      "id": "cn-route-01",
+      "topic": "routing",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "Which statement distinguishes link state routing from distance vector routing?",
+      "options": [
+        "Link state routers flood full topology information and each computes shortest paths locally",
+        "Link state routers exchange only their distance vectors with neighbours",
+        "Distance vector routing cannot suffer from routing loops",
+        "Link state routing requires no knowledge of link costs"
+      ],
+      "answer": [0],
+      "explain": "Link state protocols flood link state advertisements so every router builds the whole topology and runs Dijkstra locally. Distance vector routers share only computed distances with direct neighbours, which is what exposes them to count-to-infinity."
+    },
+    {
+      "id": "cn-mac-01",
+      "topic": "mac",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "An Ethernet segment runs at 10 Mbps with a maximum one-way propagation delay of 25.6 microseconds. What is the minimum frame size in bits required for collision detection to work?",
+      "answer_value": 512,
+      "tolerance": 0,
+      "explain": "Transmission time must be at least the round-trip time: 2 x 25.6 = 51.2 microseconds. At 10 Mbps that is 51.2e-6 x 10^7 = 512 bits, the familiar 64-byte minimum."
+    },
+    {
+      "id": "cn-app-01",
+      "topic": "app-protocols",
+      "kind": "dpp",
+      "difficulty": "easy",
+      "type": "msq",
+      "marks": 2,
+      "text": "Which of the following protocols run over UDP by default? Select all that apply.",
+      "options": ["DNS queries", "DHCP", "SMTP", "FTP control connection"],
+      "answer": [0, 1],
+      "explain": "DNS queries and DHCP use UDP. SMTP and FTP both require reliable ordered delivery and use TCP."
+    },
+    {
+      "id": "cn-layer-01",
+      "topic": "layering",
+      "kind": "dpp",
+      "difficulty": "easy",
+      "type": "mcq",
+      "marks": 1,
+      "text": "At which layer does a switch that forwards frames using MAC addresses operate?",
+      "options": ["Physical", "Data link", "Network", "Transport"],
+      "answer": [1],
+      "explain": "MAC addressing belongs to the data link layer. A device forwarding on IP addresses would be a network layer router."
+    }
+  ]
+}
