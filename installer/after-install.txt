@@ -1,0 +1,29 @@
+GitGrind is installed.
+
+WHAT HAPPENS ON FIRST RUN
+  A console window opens, prints a local address, and the app appears in its own
+  window. The console is intentional: it is where the app reports its database
+  location, question-bank health and any warnings. Closing it closes the app.
+
+WHERE YOUR DATA LIVES
+  Everything is in one file, next to the program:
+      data\gitgrind.db
+  Copy that file to back up your entire history. That is the whole backup
+  procedure. Uninstalling does not delete it.
+
+NOTHING ELSE IS REQUIRED
+  No Python, no libraries, no account, no internet connection. The app never
+  sends your data anywhere. The only network requests it can make are ones you
+  explicitly start yourself.
+
+THE QUESTION BANK
+  This build ships with a curated set of questions. To load thousands more from
+  your own GATE Overflow PDFs, see the "question bank" section of README.md.
+  Questions whose answer is not printed in the source are kept and listed in the
+  Bank tab, where one click searches for the answer and one keystroke saves it.
+
+IF SOMETHING LOOKS WRONG
+  Open a terminal in the install folder and run:
+      GitGrind.exe --check
+  That prints the schema version, database size, bank health and topic coverage,
+  which is enough to identify most problems.
