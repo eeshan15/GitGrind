@@ -1,0 +1,92 @@
+{
+  "_read_me": [
+    "These are the goalposts the Readiness tab measures you against.",
+    "Figures below were compiled from public aggregator reporting in July 2026 and",
+    "DO NOT come from an official source. BARC does not publish cutoffs at all - the",
+    "numbers floating around come from RTI replies. IIT Bombay figures vary by 100+",
+    "points between sites for the same year.",
+    "Treat every number here as a placeholder. Verify against barconlineexam.in and",
+    "the COAP portal, then edit this file. The app reloads it on restart."
+  ],
+  "gate_score_max": 1000,
+  "targets": [
+    {
+      "slug": "barc-gate",
+      "name": "BARC OCES/DGFS - GATE route",
+      "org": "BARC",
+      "metric": "gate_score",
+      "cutoff": 851,
+      "stretch": 880,
+      "history": [
+        {"year": 2024, "value": 812},
+        {"year": 2025, "value": 831},
+        {"year": 2026, "value": 851}
+      ],
+      "note": "Screening only. Once shortlisted, GATE score carries zero weight - the interview decides everything.",
+      "source": "Aggregator reporting of RTI replies, July 2026. Unofficial."
+    },
+    {
+      "slug": "barc-cbt",
+      "name": "BARC OCES/DGFS - CBT route",
+      "org": "BARC",
+      "metric": "cbt_marks",
+      "cutoff": 136,
+      "stretch": 155,
+      "out_of": 300,
+      "history": [
+        {"year": 2026, "value": 136}
+      ],
+      "note": "Second, independent path in. BARC advises applying through both routes. No aptitude or English section - pure CS.",
+      "source": "Aggregator reporting, July 2026. Unofficial."
+    },
+    {
+      "slug": "iitb-cse",
+      "name": "IIT Bombay M.Tech CSE",
+      "org": "IIT Bombay",
+      "metric": "gate_score",
+      "cutoff": 875,
+      "stretch": 900,
+      "history": [
+        {"year": 2024, "value": 750},
+        {"year": 2025, "value": 875}
+      ],
+      "note": "Reported 2025 closing score ranges from 860 to 892 depending on the source, and 2026 figures were not final at the time this file was written. 875 is a midpoint, not a fact.",
+      "source": "Conflicting aggregator reports, July 2026. Unofficial - verify on COAP."
+    },
+    {
+      "slug": "dgfs-iitb",
+      "name": "DGFS at IIT Bombay",
+      "org": "DAE + IIT Bombay",
+      "metric": "gate_score",
+      "cutoff": 851,
+      "stretch": 880,
+      "note": "The combined path: clear BARC screening, then DAE funds your M.Tech at a partner institute. Screening bar is BARC's, so this tracks the BARC GATE cutoff. Institute allotment depends on your position in the BARC merit list.",
+      "source": "Derived from the BARC GATE screening figure."
+    }
+  ],
+  "score_model": {
+    "_note": "Maps a 0-100 readiness index to an estimated GATE score. Piecewise linear through these anchors. Rough by nature - a real score depends on paper difficulty and normalisation.",
+    "anchors": [
+      [0, 0],
+      [20, 180],
+      [35, 330],
+      [50, 480],
+      [62, 600],
+      [72, 700],
+      [80, 780],
+      [86, 840],
+      [91, 890],
+      [95, 930],
+      [100, 1000]
+    ]
+  },
+  "cohort_model": {
+    "_note": "Parameters for the simulated benchmark cohort. This is a statistical model, NOT real students - there is no server and no other users. It exists so you have a stable yardstick to pace against.",
+    "size": 150000,
+    "seed": 20260728,
+    "shape_alpha": 2.1,
+    "shape_beta": 4.4,
+    "serious_fraction": 0.34,
+    "serious_shift": 14
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "exam": "GATE CSE",
+  "note": "Topic lists follow the official GATE CS/IT syllabus. Marks are approximate averages over recent papers - edit freely.",
+  "subjects": [
+    {
+      "slug": "data-structures",
+      "name": "Programming and Data Structures",
+      "group": "core",
+      "marks": 8,
+      "target_hours": 100,
+      "topics": [
+        {"slug": "c-basics", "name": "C basics, operators, control flow", "weight": 2},
+        {"slug": "pointers", "name": "Pointers and parameter passing", "weight": 3},
+        {"slug": "recursion", "name": "Recursion and activation records", "weight": 3},
+        {"slug": "arrays-strings", "name": "Arrays, strings, multidimensional layout", "weight": 2},
+        {"slug": "stacks-queues", "name": "Stacks, queues, deques", "weight": 2},
+        {"slug": "linked-lists", "name": "Linked lists", "weight": 2},
+        {"slug": "trees", "name": "Trees and traversals", "weight": 3},
+        {"slug": "bst", "name": "Binary search trees", "weight": 3},
+        {"slug": "heaps", "name": "Binary heaps and priority queues", "weight": 3},
+        {"slug": "hashing", "name": "Hashing and collision resolution", "weight": 2},
+        {"slug": "graph-repr", "name": "Graph representations", "weight": 1}
+      ]
+    },
+    {
+      "slug": "algorithms",
+      "name": "Algorithms",
+      "group": "core",
+      "marks": 8,
+      "target_hours": 100,
+      "topics": [
+        {"slug": "asymptotics", "name": "Asymptotic notation and recurrences", "weight": 3},
+        {"slug": "searching-sorting", "name": "Searching and sorting", "weight": 3},
+        {"slug": "divide-conquer", "name": "Divide and conquer", "weight": 2},
+        {"slug": "greedy", "name": "Greedy algorithms", "weight": 3},
+        {"slug": "dynamic-programming", "name": "Dynamic programming", "weight": 4},
+        {"slug": "graph-traversal", "name": "BFS, DFS and applications", "weight": 3},
+        {"slug": "mst", "name": "Minimum spanning trees", "weight": 2},
+        {"slug": "shortest-paths", "name": "Shortest paths", "weight": 3},
+        {"slug": "complexity-classes", "name": "P, NP and reductions", "weight": 1}
+      ]
+    },
+    {
+      "slug": "operating-systems",
+      "name": "Operating Systems",
+      "group": "core",
+      "marks": 9,
+      "target_hours": 80,
+      "topics": [
+        {"slug": "processes-threads", "name": "Processes, threads, system calls", "weight": 2},
+        {"slug": "cpu-scheduling", "name": "CPU scheduling", "weight": 3},
+        {"slug": "synchronization", "name": "Concurrency and synchronization", "weight": 4},
+        {"slug": "deadlock", "name": "Deadlock detection and avoidance", "weight": 3},
+        {"slug": "memory-management", "name": "Contiguous and paged memory", "weight": 3},
+        {"slug": "virtual-memory", "name": "Virtual memory and page replacement", "weight": 3},
+        {"slug": "disk-scheduling", "name": "Disk scheduling and I/O", "weight": 2},
+        {"slug": "file-systems", "name": "File systems and inodes", "weight": 2},
+        {"slug": "ipc", "name": "Inter-process communication", "weight": 1}
+      ]
+    },
+    {
+      "slug": "dbms",
+      "name": "Databases",
+      "group": "core",
+      "marks": 8,
+      "target_hours": 70,
+      "topics": [
+        {"slug": "er-model", "name": "ER model and reduction to tables", "weight": 2},
+        {"slug": "relational-algebra", "name": "Relational algebra and tuple calculus", "weight": 3},
+        {"slug": "sql", "name": "SQL queries and aggregation", "weight": 4},
+        {"slug": "functional-dependency", "name": "Functional dependencies and closures", "weight": 3},
+        {"slug": "normalization", "name": "Normal forms and decomposition", "weight": 3},
+        {"slug": "indexing", "name": "File organization, B and B+ trees", "weight": 3},
+        {"slug": "transactions", "name": "Transactions and serializability", "weight": 3},
+        {"slug": "concurrency-control", "name": "Locking and concurrency control", "weight": 2},
+        {"slug": "recovery", "name": "Recovery and logging", "weight": 1}
+      ]
+    },
+    {
+      "slug": "computer-networks",
+      "name": "Computer Networks",
+      "group": "core",
+      "marks": 8,
+      "target_hours": 70,
+      "topics": [
+        {"slug": "layering", "name": "Layering, OSI and TCP/IP stacks", "weight": 1},
+        {"slug": "switching", "name": "Packet, circuit and virtual circuit switching", "weight": 1},
+        {"slug": "framing-errors", "name": "Framing and error detection", "weight": 2},
+        {"slug": "mac", "name": "Medium access control and Ethernet", "weight": 2},
+        {"slug": "sliding-window", "name": "Sliding window protocols and efficiency", "weight": 3},
+        {"slug": "ip-addressing", "name": "IPv4, subnetting and CIDR", "weight": 4},
+        {"slug": "routing", "name": "Distance vector and link state routing", "weight": 3},
+        {"slug": "tcp", "name": "TCP flow and congestion control", "weight": 3},
+        {"slug": "udp-sockets", "name": "UDP and sockets", "weight": 1},
+        {"slug": "app-protocols", "name": "DNS, HTTP, SMTP, FTP, DHCP", "weight": 2}
+      ]
+    },
+    {
+      "slug": "theory-of-computation",
+      "name": "Theory of Computation",
+      "group": "core",
+      "marks": 7,
+      "target_hours": 70,
+      "topics": [
+        {"slug": "finite-automata", "name": "DFA, NFA and equivalence", "weight": 3},
+        {"slug": "regular-expressions", "name": "Regular expressions and languages", "weight": 3},
+        {"slug": "minimization", "name": "DFA minimization, Myhill-Nerode", "weight": 2},
+        {"slug": "pumping-lemma", "name": "Pumping lemma and non-regularity", "weight": 2},
+        {"slug": "cfg", "name": "Context-free grammars and ambiguity", "weight": 3},
+        {"slug": "pda", "name": "Pushdown automata", "weight": 2},
+        {"slug": "closure-properties", "name": "Closure and decision properties", "weight": 3},
+        {"slug": "turing-machines", "name": "Turing machines and variants", "weight": 2},
+        {"slug": "undecidability", "name": "Decidability, undecidability, reductions", "weight": 3}
+      ]
+    },
+    {
+      "slug": "compiler-design",
+      "name": "Compiler Design",
+      "group": "core",
+      "marks": 4,
+      "target_hours": 45,
+      "topics": [
+        {"slug": "lexical-analysis", "name": "Lexical analysis", "weight": 1},
+        {"slug": "parsing-ll", "name": "Top-down parsing, LL(1), FIRST and FOLLOW", "weight": 3},
+        {"slug": "parsing-lr", "name": "Bottom-up parsing, LR(0), SLR, LALR, CLR", "weight": 3},
+        {"slug": "sdt", "name": "Syntax-directed translation", "weight": 2},
+        {"slug": "intermediate-code", "name": "Intermediate code generation", "weight": 2},
+        {"slug": "runtime-env", "name": "Runtime environments and scoping", "weight": 2},
+        {"slug": "optimization", "name": "Local optimisation and basic blocks", "weight": 2},
+        {"slug": "dataflow", "name": "Data flow analysis, liveness, CSE", "weight": 2}
+      ]
+    },
+    {
+      "slug": "computer-organization",
+      "name": "Computer Organization and Architecture",
+      "group": "core",
+      "marks": 7,
+      "target_hours": 70,
+      "topics": [
+        {"slug": "instructions", "name": "Machine instructions and addressing modes", "weight": 2},
+        {"slug": "datapath-control", "name": "ALU, datapath and control unit", "weight": 2},
+        {"slug": "pipelining", "name": "Pipelining and hazards", "weight": 4},
+        {"slug": "cache", "name": "Cache organisation and performance", "weight": 4},
+        {"slug": "main-memory", "name": "Main memory and interleaving", "weight": 2},
+        {"slug": "secondary-storage", "name": "Secondary storage", "weight": 1},
+        {"slug": "io-interface", "name": "I/O, interrupts and DMA", "weight": 2}
+      ]
+    },
+    {
+      "slug": "digital-logic",
+      "name": "Digital Logic",
+      "group": "core",
+      "marks": 6,
+      "target_hours": 40,
+      "topics": [
+        {"slug": "number-systems", "name": "Number representations and conversion", "weight": 2},
+        {"slug": "computer-arithmetic", "name": "Fixed and floating point arithmetic", "weight": 3},
+        {"slug": "boolean-algebra", "name": "Boolean algebra and simplification", "weight": 3},
+        {"slug": "kmap", "name": "K-maps and minimisation", "weight": 2},
+        {"slug": "combinational", "name": "Combinational circuits, MUX, decoders", "weight": 3},
+        {"slug": "sequential", "name": "Flip-flops, counters, registers", "weight": 3},
+        {"slug": "state-machines", "name": "Synchronous sequential design", "weight": 2}
+      ]
+    },
+    {
+      "slug": "discrete-mathematics",
+      "name": "Discrete Mathematics",
+      "group": "maths",
+      "marks": 9,
+      "target_hours": 70,
+      "topics": [
+        {"slug": "propositional-logic", "name": "Propositional and first order logic", "weight": 3},
+        {"slug": "sets-relations", "name": "Sets, relations, functions", "weight": 3},
+        {"slug": "posets-lattices", "name": "Partial orders and lattices", "weight": 2},
+        {"slug": "groups", "name": "Monoids and groups", "weight": 2},
+        {"slug": "counting", "name": "Counting and pigeonhole", "weight": 3},
+        {"slug": "recurrence", "name": "Recurrence relations", "weight": 2},
+        {"slug": "generating-functions", "name": "Generating functions", "weight": 1},
+        {"slug": "graph-theory", "name": "Graph connectivity, matching, colouring", "weight": 4}
+      ]
+    },
+    {
+      "slug": "engineering-mathematics",
+      "name": "Engineering Mathematics",
+      "group": "maths",
+      "marks": 7,
+      "target_hours": 60,
+      "topics": [
+        {"slug": "matrices", "name": "Matrices and determinants", "weight": 2},
+        {"slug": "linear-systems", "name": "Systems of linear equations, rank", "weight": 3},
+        {"slug": "eigen", "name": "Eigenvalues and eigenvectors", "weight": 3},
+        {"slug": "lu-decomposition", "name": "LU decomposition", "weight": 1},
+        {"slug": "calculus-limits", "name": "Limits, continuity, differentiability", "weight": 2},
+        {"slug": "maxima-minima", "name": "Maxima, minima, mean value theorem", "weight": 2},
+        {"slug": "integration", "name": "Integration", "weight": 2},
+        {"slug": "probability", "name": "Probability and conditional probability", "weight": 4},
+        {"slug": "distributions", "name": "Standard distributions", "weight": 3},
+        {"slug": "statistics", "name": "Mean, median, mode, deviation", "weight": 2}
+      ]
+    },
+    {
+      "slug": "general-aptitude",
+      "name": "General Aptitude",
+      "group": "general",
+      "marks": 15,
+      "target_hours": 40,
+      "topics": [
+        {"slug": "verbal", "name": "Verbal aptitude and grammar", "weight": 4},
+        {"slug": "quantitative", "name": "Quantitative aptitude", "weight": 5},
+        {"slug": "analytical", "name": "Analytical and logical reasoning", "weight": 4},
+        {"slug": "spatial", "name": "Spatial aptitude", "weight": 2}
+      ]
+    }
+  ]
+}

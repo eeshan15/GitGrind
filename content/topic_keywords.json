@@ -1,0 +1,1962 @@
+{
+  "_read_me": [
+    "This file decides which topic an imported question gets tagged with, which in",
+    "turn decides which quiz it can show up in. tools/import_questions.py scores",
+    "each question's text against every entry here and picks the best match.",
+    "",
+    "Scoring: a 'strong' phrase is worth 3 points, a 'weak' phrase 1 point, and a",
+    "word from the topic's own name in syllabus.json 0.5 points. Highest total wins.",
+    "Below --min-score the question is left unclassified; if the top two topics are",
+    "within one point of each other it is flagged ambiguous. Both land in a review",
+    "queue rather than being guessed at.",
+    "",
+    "Keys must be 'subject-slug/topic-slug' and must match content/syllabus.json.",
+    "Matching is case-insensitive on word boundaries, so 'sjf' will not fire inside",
+    "'sjfoo'. Multi-word phrases match across whitespace.",
+    "",
+    "This is a keyword classifier, not a language model. Expect roughly three in",
+    "four to land correctly on clean text. When one is wrong, add the phrase that",
+    "should have caught it to the right topic's 'strong' list - the file is meant",
+    "to be edited as you import more papers."
+  ],
+  "data-structures/c-basics": {
+    "strong": [
+      "printf",
+      "scanf",
+      "int main",
+      "typedef",
+      "sizeof",
+      "static variable",
+      "operator precedence"
+    ],
+    "weak": [
+      "c program",
+      "output of the following",
+      "compile",
+      "declaration"
+    ]
+  },
+  "data-structures/pointers": {
+    "strong": [
+      "pointer",
+      "dereference",
+      "call by reference",
+      "double pointer",
+      "pointer arithmetic",
+      "malloc",
+      "free()"
+    ],
+    "weak": [
+      "address of",
+      "&a",
+      "*p"
+    ]
+  },
+  "data-structures/recursion": {
+    "strong": [
+      "recursive function",
+      "recursion",
+      "activation record",
+      "base case",
+      "tail recursion",
+      "stack frame"
+    ],
+    "weak": [
+      "calls itself",
+      "number of calls",
+      "f(n-1)"
+    ]
+  },
+  "data-structures/arrays-strings": {
+    "strong": [
+      "row major",
+      "column major",
+      "two dimensional array",
+      "string length",
+      "strcpy",
+      "strcmp",
+      "subarray"
+    ],
+    "weak": [
+      "array of size",
+      "index",
+      "element at position"
+    ]
+  },
+  "data-structures/stacks-queues": {
+    "strong": [
+      "stack",
+      "queue",
+      "push and pop",
+      "enqueue",
+      "dequeue",
+      "circular queue",
+      "postfix expression",
+      "infix to postfix",
+      "deque"
+    ],
+    "weak": [
+      "last in first out",
+      "lifo",
+      "fifo",
+      "front and rear"
+    ]
+  },
+  "data-structures/linked-lists": {
+    "strong": [
+      "linked list",
+      "singly linked",
+      "doubly linked",
+      "circular linked list",
+      "head pointer",
+      "next pointer"
+    ],
+    "weak": [
+      "node",
+      "traverse the list"
+    ]
+  },
+  "data-structures/trees": {
+    "strong": [
+      "binary tree",
+      "preorder",
+      "inorder",
+      "postorder",
+      "level order",
+      "complete binary tree",
+      "leaf nodes",
+      "height of the tree",
+      "catalan"
+    ],
+    "weak": [
+      "traversal",
+      "root",
+      "subtree",
+      "internal node"
+    ]
+  },
+  "data-structures/bst": {
+    "strong": [
+      "binary search tree",
+      "bst",
+      "avl tree",
+      "red black tree",
+      "rotation",
+      "successor in a bst"
+    ],
+    "weak": [
+      "search tree",
+      "insert the keys",
+      "balanced tree"
+    ]
+  },
+  "data-structures/heaps": {
+    "strong": [
+      "min heap",
+      "max heap",
+      "binary heap",
+      "heapify",
+      "priority queue",
+      "build heap",
+      "extract min"
+    ],
+    "weak": [
+      "heap",
+      "sift down",
+      "percolate"
+    ]
+  },
+  "data-structures/hashing": {
+    "strong": [
+      "hash table",
+      "hash function",
+      "linear probing",
+      "quadratic probing",
+      "double hashing",
+      "separate chaining",
+      "collision resolution",
+      "load factor"
+    ],
+    "weak": [
+      "hashing",
+      "bucket",
+      "slot"
+    ]
+  },
+  "data-structures/graph-repr": {
+    "strong": [
+      "adjacency matrix",
+      "adjacency list",
+      "incidence matrix",
+      "graph representation"
+    ],
+    "weak": [
+      "represent the graph",
+      "space to store"
+    ]
+  },
+  "algorithms/asymptotics": {
+    "strong": [
+      "asymptotic",
+      "big o",
+      "theta notation",
+      "omega notation",
+      "master theorem",
+      "recurrence relation for the running time",
+      "time complexity of the following"
+    ],
+    "weak": [
+      "complexity",
+      "growth rate",
+      "t(n)",
+      "worst case running time"
+    ]
+  },
+  "algorithms/searching-sorting": {
+    "strong": [
+      "merge sort",
+      "quick sort",
+      "heap sort",
+      "insertion sort",
+      "bubble sort",
+      "selection sort",
+      "counting sort",
+      "radix sort",
+      "binary search",
+      "number of comparisons"
+    ],
+    "weak": [
+      "sorting",
+      "sorted array",
+      "pivot",
+      "stable sort"
+    ]
+  },
+  "algorithms/divide-conquer": {
+    "strong": [
+      "divide and conquer",
+      "strassen",
+      "closest pair",
+      "karatsuba",
+      "master method"
+    ],
+    "weak": [
+      "divide the problem",
+      "combine the solutions"
+    ]
+  },
+  "algorithms/greedy": {
+    "strong": [
+      "greedy algorithm",
+      "huffman",
+      "fractional knapsack",
+      "activity selection",
+      "job sequencing",
+      "interval scheduling"
+    ],
+    "weak": [
+      "greedy",
+      "locally optimal",
+      "minimum number of coins"
+    ]
+  },
+  "algorithms/dynamic-programming": {
+    "strong": [
+      "dynamic programming",
+      "longest common subsequence",
+      "lcs",
+      "0/1 knapsack",
+      "matrix chain",
+      "edit distance",
+      "longest increasing subsequence",
+      "optimal substructure",
+      "memoisation",
+      "memoization"
+    ],
+    "weak": [
+      "subproblem",
+      "dp table",
+      "bottom up"
+    ]
+  },
+  "algorithms/graph-traversal": {
+    "strong": [
+      "depth first search",
+      "breadth first search",
+      "dfs",
+      "bfs",
+      "back edge",
+      "topological sort",
+      "strongly connected component",
+      "articulation point"
+    ],
+    "weak": [
+      "traversal of the graph",
+      "visited",
+      "cycle detection"
+    ]
+  },
+  "algorithms/mst": {
+    "strong": [
+      "minimum spanning tree",
+      "kruskal",
+      "prim",
+      "spanning tree",
+      "cut property",
+      "union find",
+      "disjoint set"
+    ],
+    "weak": [
+      "mst",
+      "edge weights distinct"
+    ]
+  },
+  "algorithms/shortest-paths": {
+    "strong": [
+      "dijkstra",
+      "bellman ford",
+      "floyd warshall",
+      "shortest path",
+      "negative edge weight",
+      "negative cycle",
+      "single source shortest"
+    ],
+    "weak": [
+      "path of minimum weight",
+      "relaxation"
+    ]
+  },
+  "algorithms/complexity-classes": {
+    "strong": [
+      "np complete",
+      "np hard",
+      "polynomial time reduction",
+      "satisfiability",
+      "3-sat",
+      "class np",
+      "np-completeness",
+      "decision problem"
+    ],
+    "weak": [
+      "intractable",
+      "reduces to",
+      "certificate"
+    ]
+  },
+  "operating-systems/processes-threads": {
+    "strong": [
+      "fork()",
+      "process control block",
+      "user level thread",
+      "kernel level thread",
+      "context switch",
+      "zombie process",
+      "orphan process",
+      "exec()",
+      "wait()"
+    ],
+    "weak": [
+      "process",
+      "thread",
+      "system call",
+      "child process"
+    ]
+  },
+  "operating-systems/cpu-scheduling": {
+    "strong": [
+      "shortest job first",
+      "sjf",
+      "srtf",
+      "shortest remaining time",
+      "round robin",
+      "turnaround time",
+      "average waiting time",
+      "burst time",
+      "gantt chart",
+      "multilevel feedback queue",
+      "convoy effect"
+    ],
+    "weak": [
+      "scheduling",
+      "preemptive",
+      "time quantum",
+      "arrival time",
+      "response time"
+    ]
+  },
+  "operating-systems/synchronization": {
+    "strong": [
+      "critical section",
+      "mutual exclusion",
+      "semaphore",
+      "binary semaphore",
+      "counting semaphore",
+      "peterson",
+      "busy waiting",
+      "producer consumer",
+      "readers writers",
+      "dining philosophers",
+      "monitor",
+      "bounded waiting",
+      "test and set"
+    ],
+    "weak": [
+      "mutex",
+      "wait and signal",
+      "race condition",
+      "atomic operation",
+      "lock"
+    ]
+  },
+  "operating-systems/deadlock": {
+    "strong": [
+      "deadlock",
+      "banker's algorithm",
+      "safe sequence",
+      "safe state",
+      "resource allocation graph",
+      "circular wait",
+      "hold and wait",
+      "no preemption",
+      "wait-for graph"
+    ],
+    "weak": [
+      "starvation",
+      "resource instance",
+      "avoidance",
+      "maximum need"
+    ]
+  },
+  "operating-systems/memory-management": {
+    "strong": [
+      "external fragmentation",
+      "internal fragmentation",
+      "first fit",
+      "best fit",
+      "worst fit",
+      "contiguous allocation",
+      "segmentation",
+      "base and limit register",
+      "compaction"
+    ],
+    "weak": [
+      "memory allocation",
+      "partition",
+      "logical address",
+      "physical address"
+    ]
+  },
+  "operating-systems/virtual-memory": {
+    "strong": [
+      "page fault",
+      "page replacement",
+      "lru",
+      "fifo page replacement",
+      "optimal page replacement",
+      "belady",
+      "thrashing",
+      "translation lookaside buffer",
+      "tlb",
+      "page table entry",
+      "multilevel page table",
+      "demand paging",
+      "working set"
+    ],
+    "weak": [
+      "paging",
+      "page size",
+      "frame",
+      "virtual address",
+      "effective access time"
+    ]
+  },
+  "operating-systems/disk-scheduling": {
+    "strong": [
+      "sstf",
+      "scan algorithm",
+      "c-scan",
+      "look algorithm",
+      "seek time",
+      "rotational latency",
+      "disk arm",
+      "cylinder",
+      "head movement"
+    ],
+    "weak": [
+      "disk scheduling",
+      "track",
+      "sector",
+      "requests are served"
+    ]
+  },
+  "operating-systems/file-systems": {
+    "strong": [
+      "inode",
+      "single indirect",
+      "double indirect",
+      "triple indirect",
+      "file allocation table",
+      "indexed allocation",
+      "directory structure",
+      "hard link",
+      "symbolic link"
+    ],
+    "weak": [
+      "file system",
+      "block pointer",
+      "maximum file size",
+      "disk block"
+    ]
+  },
+  "operating-systems/ipc": {
+    "strong": [
+      "inter process communication",
+      "message passing",
+      "shared memory segment",
+      "named pipe",
+      "unnamed pipe",
+      "socket pair",
+      "signal handler"
+    ],
+    "weak": [
+      "pipe",
+      "ipc",
+      "communicate between processes"
+    ]
+  },
+  "dbms/er-model": {
+    "strong": [
+      "entity relationship",
+      "er diagram",
+      "weak entity",
+      "identifying relationship",
+      "total participation",
+      "partial participation",
+      "generalisation",
+      "specialisation",
+      "aggregation in er"
+    ],
+    "weak": [
+      "cardinality",
+      "entity set",
+      "attribute",
+      "one to many",
+      "many to many"
+    ]
+  },
+  "dbms/relational-algebra": {
+    "strong": [
+      "relational algebra",
+      "tuple relational calculus",
+      "domain relational calculus",
+      "natural join",
+      "theta join",
+      "semi join",
+      "division operator",
+      "cartesian product",
+      "projection operator",
+      "selection operator"
+    ],
+    "weak": [
+      "relational operator",
+      "equivalent expression",
+      "sigma",
+      "pi"
+    ]
+  },
+  "dbms/sql": {
+    "strong": [
+      "select",
+      "group by",
+      "having clause",
+      "order by",
+      "count(*)",
+      "left outer join",
+      "right outer join",
+      "full outer join",
+      "subquery",
+      "exists",
+      "not in",
+      "distinct",
+      "aggregate function",
+      "null value"
+    ],
+    "weak": [
+      "sql query",
+      "returns",
+      "tuples in the result",
+      "table"
+    ]
+  },
+  "dbms/functional-dependency": {
+    "strong": [
+      "functional dependency",
+      "attribute closure",
+      "candidate key",
+      "superkey",
+      "prime attribute",
+      "canonical cover",
+      "minimal cover",
+      "armstrong",
+      "extraneous attribute"
+    ],
+    "weak": [
+      "closure",
+      "determines",
+      "key of the relation",
+      "fd set"
+    ]
+  },
+  "dbms/normalization": {
+    "strong": [
+      "normal form",
+      "bcnf",
+      "boyce codd",
+      "third normal form",
+      "second normal form",
+      "3nf",
+      "2nf",
+      "1nf",
+      "4nf",
+      "lossless join",
+      "dependency preserving",
+      "decomposition",
+      "partial dependency",
+      "transitive dependency",
+      "multivalued dependency"
+    ],
+    "weak": [
+      "normalisation",
+      "normalization",
+      "highest normal form",
+      "redundancy"
+    ]
+  },
+  "dbms/indexing": {
+    "strong": [
+      "b+ tree",
+      "b tree",
+      "dense index",
+      "sparse index",
+      "primary index",
+      "secondary index",
+      "clustered index",
+      "order of the internal node",
+      "block pointer",
+      "search key",
+      "multilevel index",
+      "heap file"
+    ],
+    "weak": [
+      "indexing",
+      "block accesses",
+      "fan out",
+      "leaf node"
+    ]
+  },
+  "dbms/transactions": {
+    "strong": [
+      "conflict serializable",
+      "view serializable",
+      "precedence graph",
+      "serialization graph",
+      "schedule s",
+      "acid",
+      "recoverable schedule",
+      "cascadeless",
+      "dirty read",
+      "atomicity"
+    ],
+    "weak": [
+      "transaction",
+      "serializable",
+      "commit",
+      "abort",
+      "concurrent execution"
+    ]
+  },
+  "dbms/concurrency-control": {
+    "strong": [
+      "two phase locking",
+      "2pl",
+      "strict 2pl",
+      "rigorous",
+      "shared lock",
+      "exclusive lock",
+      "timestamp ordering",
+      "thomas write rule",
+      "optimistic concurrency",
+      "lock point",
+      "deadlock in locking"
+    ],
+    "weak": [
+      "locking protocol",
+      "growing phase",
+      "shrinking phase",
+      "lock manager"
+    ]
+  },
+  "dbms/recovery": {
+    "strong": [
+      "write ahead logging",
+      "undo redo",
+      "checkpoint",
+      "shadow paging",
+      "deferred database modification",
+      "immediate database modification",
+      "log record",
+      "aries"
+    ],
+    "weak": [
+      "recovery",
+      "crash",
+      "stable storage",
+      "rollback"
+    ]
+  },
+  "computer-networks/layering": {
+    "strong": [
+      "osi model",
+      "osi layer",
+      "tcp/ip protocol stack",
+      "encapsulation",
+      "protocol data unit",
+      "session layer",
+      "presentation layer"
+    ],
+    "weak": [
+      "layering",
+      "layer of the osi",
+      "which layer"
+    ]
+  },
+  "computer-networks/switching": {
+    "strong": [
+      "circuit switching",
+      "packet switching",
+      "virtual circuit",
+      "datagram network",
+      "store and forward",
+      "cut through switching"
+    ],
+    "weak": [
+      "switching",
+      "end to end delay",
+      "hops"
+    ]
+  },
+  "computer-networks/framing-errors": {
+    "strong": [
+      "cyclic redundancy check",
+      "crc",
+      "generator polynomial",
+      "hamming distance",
+      "hamming code",
+      "checksum",
+      "parity bit",
+      "bit stuffing",
+      "byte stuffing",
+      "single bit error"
+    ],
+    "weak": [
+      "error detection",
+      "error correction",
+      "codeword",
+      "framing"
+    ]
+  },
+  "computer-networks/mac": {
+    "strong": [
+      "csma/cd",
+      "csma/ca",
+      "aloha",
+      "slotted aloha",
+      "collision detection",
+      "minimum frame size",
+      "ethernet",
+      "token ring",
+      "binary exponential backoff",
+      "bridge",
+      "collision domain"
+    ],
+    "weak": [
+      "medium access",
+      "mac address",
+      "channel utilisation",
+      "throughput of the channel"
+    ]
+  },
+  "computer-networks/sliding-window": {
+    "strong": [
+      "sliding window",
+      "go back n",
+      "selective repeat",
+      "stop and wait",
+      "window size",
+      "sequence number bits",
+      "utilisation of the link",
+      "bandwidth delay product"
+    ],
+    "weak": [
+      "acknowledgement",
+      "propagation delay",
+      "transmission time",
+      "efficiency"
+    ]
+  },
+  "computer-networks/ip-addressing": {
+    "strong": [
+      "subnet mask",
+      "cidr",
+      "subnetting",
+      "supernetting",
+      "ipv4 header",
+      "fragmentation offset",
+      "mtu",
+      "network address",
+      "broadcast address",
+      "usable host addresses",
+      "classless",
+      "nat",
+      "arp",
+      "dhcp",
+      "icmp"
+    ],
+    "weak": [
+      "ip address",
+      "prefix",
+      "/24",
+      "number of hosts",
+      "datagram"
+    ]
+  },
+  "computer-networks/routing": {
+    "strong": [
+      "distance vector",
+      "link state",
+      "count to infinity",
+      "split horizon",
+      "ospf",
+      "rip protocol",
+      "bgp",
+      "flooding",
+      "routing table",
+      "bellman ford routing",
+      "dijkstra routing"
+    ],
+    "weak": [
+      "routing protocol",
+      "router",
+      "next hop",
+      "shortest path first"
+    ]
+  },
+  "computer-networks/tcp": {
+    "strong": [
+      "congestion window",
+      "slow start",
+      "congestion avoidance",
+      "ssthresh",
+      "fast retransmit",
+      "fast recovery",
+      "three way handshake",
+      "tcp reno",
+      "tcp tahoe",
+      "duplicate ack",
+      "receiver window",
+      "nagle"
+    ],
+    "weak": [
+      "tcp",
+      "congestion control",
+      "flow control",
+      "timeout",
+      "rtt"
+    ]
+  },
+  "computer-networks/udp-sockets": {
+    "strong": [
+      "udp header",
+      "connectionless transport",
+      "socket api",
+      "bind()",
+      "listen()",
+      "accept()",
+      "port number",
+      "pseudo header"
+    ],
+    "weak": [
+      "udp",
+      "socket",
+      "datagram service"
+    ]
+  },
+  "computer-networks/app-protocols": {
+    "strong": [
+      "dns",
+      "http",
+      "https",
+      "smtp",
+      "pop3",
+      "imap",
+      "ftp",
+      "telnet",
+      "ssh",
+      "persistent connection",
+      "cookie",
+      "recursive dns query",
+      "iterative query",
+      "mime"
+    ],
+    "weak": [
+      "web server",
+      "email",
+      "application layer",
+      "url"
+    ]
+  },
+  "theory-of-computation/finite-automata": {
+    "strong": [
+      "deterministic finite automaton",
+      "nondeterministic finite automaton",
+      "dfa",
+      "nfa",
+      "epsilon nfa",
+      "subset construction",
+      "transition function",
+      "moore machine",
+      "mealy machine",
+      "number of states in the minimal"
+    ],
+    "weak": [
+      "finite automaton",
+      "accepts the string",
+      "start state",
+      "final state"
+    ]
+  },
+  "theory-of-computation/regular-expressions": {
+    "strong": [
+      "regular expression",
+      "kleene star",
+      "kleene closure",
+      "language denoted by",
+      "arden's theorem",
+      "regular language"
+    ],
+    "weak": [
+      "regex",
+      "concatenation",
+      "union of languages",
+      "strings over"
+    ]
+  },
+  "theory-of-computation/minimization": {
+    "strong": [
+      "dfa minimisation",
+      "dfa minimization",
+      "myhill nerode",
+      "distinguishable states",
+      "equivalence classes of strings",
+      "indistinguishable",
+      "state minimisation"
+    ],
+    "weak": [
+      "minimal dfa",
+      "merge states",
+      "partition refinement"
+    ]
+  },
+  "theory-of-computation/pumping-lemma": {
+    "strong": [
+      "pumping lemma",
+      "not regular",
+      "prove that the language is not",
+      "non regular"
+    ],
+    "weak": [
+      "pumping length",
+      "contradiction"
+    ]
+  },
+  "theory-of-computation/cfg": {
+    "strong": [
+      "context free grammar",
+      "cfg",
+      "ambiguous grammar",
+      "unambiguous",
+      "parse tree",
+      "derivation tree",
+      "chomsky normal form",
+      "greibach",
+      "leftmost derivation",
+      "useless symbol",
+      "left recursion in grammar"
+    ],
+    "weak": [
+      "grammar",
+      "production rule",
+      "generates the language",
+      "terminal",
+      "non terminal"
+    ]
+  },
+  "theory-of-computation/pda": {
+    "strong": [
+      "pushdown automaton",
+      "pda",
+      "dpda",
+      "npda",
+      "deterministic context free",
+      "stack symbol",
+      "accept by empty stack"
+    ],
+    "weak": [
+      "stack of the automaton",
+      "pop and push"
+    ]
+  },
+  "theory-of-computation/closure-properties": {
+    "strong": [
+      "closed under union",
+      "closed under intersection",
+      "closed under complement",
+      "closure property",
+      "closed under concatenation",
+      "closed under kleene",
+      "intersection with a regular language"
+    ],
+    "weak": [
+      "closure",
+      "complement of the language",
+      "union of two languages"
+    ]
+  },
+  "theory-of-computation/turing-machines": {
+    "strong": [
+      "turing machine",
+      "multitape",
+      "recursively enumerable",
+      "recursive language",
+      "linear bounded automaton",
+      "church turing",
+      "universal turing machine",
+      "halts on input"
+    ],
+    "weak": [
+      "tape head",
+      "configuration",
+      "computable"
+    ]
+  },
+  "theory-of-computation/undecidability": {
+    "strong": [
+      "undecidable",
+      "decidable",
+      "halting problem",
+      "rice's theorem",
+      "post correspondence",
+      "reduction to prove undecidability",
+      "semi decidable",
+      "emptiness problem",
+      "equivalence of two"
+    ],
+    "weak": [
+      "decision procedure",
+      "algorithm exists",
+      "reducible"
+    ]
+  },
+  "compiler-design/lexical-analysis": {
+    "strong": [
+      "lexical analyser",
+      "lexical analyzer",
+      "tokeniser",
+      "tokenizer",
+      "lexeme",
+      "number of tokens",
+      "lex tool",
+      "longest match rule"
+    ],
+    "weak": [
+      "token",
+      "scanner",
+      "input stream"
+    ]
+  },
+  "compiler-design/parsing-ll": {
+    "strong": [
+      "ll(1)",
+      "first and follow",
+      "first set",
+      "follow set",
+      "predictive parser",
+      "recursive descent",
+      "top down parsing",
+      "left factoring",
+      "left recursion elimination",
+      "parsing table for ll"
+    ],
+    "weak": [
+      "lookahead",
+      "top down",
+      "predict"
+    ]
+  },
+  "compiler-design/parsing-lr": {
+    "strong": [
+      "lr(0)",
+      "lr(1)",
+      "slr(1)",
+      "lalr(1)",
+      "clr(1)",
+      "canonical lr",
+      "shift reduce conflict",
+      "reduce reduce conflict",
+      "item set",
+      "closure of items",
+      "goto function",
+      "handle pruning",
+      "bottom up parsing",
+      "viable prefix"
+    ],
+    "weak": [
+      "bottom up",
+      "parsing table states",
+      "augmented grammar"
+    ]
+  },
+  "compiler-design/sdt": {
+    "strong": [
+      "syntax directed translation",
+      "synthesised attribute",
+      "synthesized attribute",
+      "inherited attribute",
+      "l-attributed",
+      "s-attributed",
+      "semantic action",
+      "attribute grammar",
+      "annotated parse tree"
+    ],
+    "weak": [
+      "semantic rule",
+      "translation scheme"
+    ]
+  },
+  "compiler-design/intermediate-code": {
+    "strong": [
+      "three address code",
+      "quadruple",
+      "triple",
+      "indirect triple",
+      "postfix notation for code",
+      "directed acyclic graph for expression",
+      "syntax tree for the expression",
+      "number of temporary variables"
+    ],
+    "weak": [
+      "intermediate code",
+      "temporary",
+      "instructions generated"
+    ]
+  },
+  "compiler-design/runtime-env": {
+    "strong": [
+      "activation record",
+      "static scoping",
+      "dynamic scoping",
+      "display mechanism",
+      "access link",
+      "control link",
+      "call by value",
+      "call by reference",
+      "call by name",
+      "call by copy restore",
+      "stack allocation of frames"
+    ],
+    "weak": [
+      "runtime environment",
+      "scope",
+      "parameter passing",
+      "storage allocation"
+    ]
+  },
+  "compiler-design/optimization": {
+    "strong": [
+      "basic block",
+      "local optimisation",
+      "local optimization",
+      "peephole",
+      "loop unrolling",
+      "strength reduction",
+      "code motion",
+      "dead code elimination",
+      "copy propagation",
+      "flow graph"
+    ],
+    "weak": [
+      "optimisation",
+      "optimization",
+      "leader statement"
+    ]
+  },
+  "compiler-design/dataflow": {
+    "strong": [
+      "live variable analysis",
+      "liveness",
+      "available expression",
+      "reaching definition",
+      "common subexpression elimination",
+      "constant propagation",
+      "data flow equation",
+      "gen and kill",
+      "backward flow",
+      "forward flow"
+    ],
+    "weak": [
+      "data flow analysis",
+      "in and out sets",
+      "fixed point"
+    ]
+  },
+  "computer-organization/instructions": {
+    "strong": [
+      "addressing mode",
+      "immediate addressing",
+      "register indirect",
+      "memory indirect",
+      "indexed addressing",
+      "relative addressing",
+      "instruction format",
+      "opcode field",
+      "zero address instruction",
+      "one address instruction",
+      "risc and cisc"
+    ],
+    "weak": [
+      "machine instruction",
+      "operand",
+      "instruction set"
+    ]
+  },
+  "computer-organization/datapath-control": {
+    "strong": [
+      "hardwired control",
+      "microprogrammed control",
+      "microinstruction",
+      "control memory",
+      "horizontal microprogramming",
+      "vertical microprogramming",
+      "micro operation",
+      "control signal",
+      "single bus datapath"
+    ],
+    "weak": [
+      "control unit",
+      "alu",
+      "datapath",
+      "clock cycles per instruction"
+    ]
+  },
+  "computer-organization/pipelining": {
+    "strong": [
+      "instruction pipeline",
+      "pipeline stage",
+      "pipeline hazard",
+      "data hazard",
+      "control hazard",
+      "structural hazard",
+      "operand forwarding",
+      "pipeline stall",
+      "branch prediction",
+      "speedup of the pipeline",
+      "read after write",
+      "write after write",
+      "bubble in the pipeline"
+    ],
+    "weak": [
+      "pipelining",
+      "stages",
+      "throughput",
+      "latch delay"
+    ]
+  },
+  "computer-organization/cache": {
+    "strong": [
+      "cache memory",
+      "direct mapped",
+      "set associative",
+      "fully associative",
+      "cache hit ratio",
+      "cache miss",
+      "tag bits",
+      "block offset",
+      "write back",
+      "write through",
+      "cache line",
+      "average memory access time",
+      "amat",
+      "lru replacement in cache"
+    ],
+    "weak": [
+      "cache",
+      "block size",
+      "hit rate",
+      "miss penalty"
+    ]
+  },
+  "computer-organization/main-memory": {
+    "strong": [
+      "memory interleaving",
+      "low order interleaving",
+      "high order interleaving",
+      "memory module",
+      "dram refresh",
+      "sram",
+      "memory chip",
+      "decoder for memory",
+      "memory bandwidth"
+    ],
+    "weak": [
+      "main memory",
+      "word size",
+      "address lines"
+    ]
+  },
+  "computer-organization/secondary-storage": {
+    "strong": [
+      "magnetic disk",
+      "raid",
+      "solid state drive",
+      "disk capacity",
+      "transfer rate of the disk",
+      "sectors per track"
+    ],
+    "weak": [
+      "secondary storage",
+      "platter",
+      "spindle"
+    ]
+  },
+  "computer-organization/io-interface": {
+    "strong": [
+      "direct memory access",
+      "dma",
+      "cycle stealing",
+      "interrupt driven io",
+      "programmed io",
+      "polling",
+      "vectored interrupt",
+      "daisy chain",
+      "interrupt service routine",
+      "memory mapped io",
+      "isolated io"
+    ],
+    "weak": [
+      "input output",
+      "interrupt",
+      "io device",
+      "bus cycle"
+    ]
+  },
+  "digital-logic/number-systems": {
+    "strong": [
+      "two's complement",
+      "one's complement",
+      "signed magnitude",
+      "excess-3",
+      "gray code",
+      "bcd",
+      "hexadecimal",
+      "octal",
+      "radix conversion",
+      "range of representable"
+    ],
+    "weak": [
+      "binary representation",
+      "number system",
+      "base conversion",
+      "bits"
+    ]
+  },
+  "digital-logic/computer-arithmetic": {
+    "strong": [
+      "ieee 754",
+      "floating point representation",
+      "mantissa",
+      "biased exponent",
+      "normalised form",
+      "booth's algorithm",
+      "restoring division",
+      "non restoring division",
+      "carry look ahead",
+      "ripple carry",
+      "overflow detection",
+      "half adder",
+      "full adder"
+    ],
+    "weak": [
+      "floating point",
+      "single precision",
+      "double precision",
+      "arithmetic overflow"
+    ]
+  },
+  "digital-logic/boolean-algebra": {
+    "strong": [
+      "boolean algebra",
+      "boolean function",
+      "sum of products",
+      "product of sums",
+      "canonical form",
+      "minterm",
+      "maxterm",
+      "de morgan",
+      "consensus theorem",
+      "absorption law",
+      "self dual",
+      "functionally complete"
+    ],
+    "weak": [
+      "boolean expression",
+      "simplify the expression",
+      "literal"
+    ]
+  },
+  "digital-logic/kmap": {
+    "strong": [
+      "karnaugh map",
+      "k-map",
+      "prime implicant",
+      "essential prime implicant",
+      "don't care",
+      "minimal sop",
+      "minimal pos",
+      "quine mccluskey",
+      "static hazard"
+    ],
+    "weak": [
+      "minimisation",
+      "minimization",
+      "grouping",
+      "cells"
+    ]
+  },
+  "digital-logic/combinational": {
+    "strong": [
+      "multiplexer",
+      "demultiplexer",
+      "decoder",
+      "encoder",
+      "priority encoder",
+      "magnitude comparator",
+      "implement using mux",
+      "8 to 1",
+      "4 to 1",
+      "seven segment",
+      "combinational circuit"
+    ],
+    "weak": [
+      "mux",
+      "select lines",
+      "gates required",
+      "output expression"
+    ]
+  },
+  "digital-logic/sequential": {
+    "strong": [
+      "flip flop",
+      "jk flip flop",
+      "sr latch",
+      "d flip flop",
+      "t flip flop",
+      "master slave",
+      "shift register",
+      "ripple counter",
+      "synchronous counter",
+      "asynchronous counter",
+      "modulo counter",
+      "ring counter",
+      "johnson counter",
+      "race around"
+    ],
+    "weak": [
+      "clock pulse",
+      "toggle",
+      "excitation table",
+      "counter"
+    ]
+  },
+  "digital-logic/state-machines": {
+    "strong": [
+      "state diagram",
+      "state table",
+      "state assignment",
+      "sequence detector",
+      "synchronous sequential circuit",
+      "next state equation",
+      "characteristic equation of the flip flop"
+    ],
+    "weak": [
+      "states of the machine",
+      "present state",
+      "next state"
+    ]
+  },
+  "discrete-mathematics/propositional-logic": {
+    "strong": [
+      "propositional logic",
+      "first order logic",
+      "predicate logic",
+      "tautology",
+      "contradiction",
+      "satisfiable formula",
+      "logical equivalence",
+      "well formed formula",
+      "quantifier",
+      "universal quantifier",
+      "existential quantifier",
+      "implication is",
+      "contrapositive",
+      "converse and inverse"
+    ],
+    "weak": [
+      "truth table",
+      "valid argument",
+      "premise",
+      "negation"
+    ]
+  },
+  "discrete-mathematics/sets-relations": {
+    "strong": [
+      "equivalence relation",
+      "reflexive",
+      "symmetric relation",
+      "antisymmetric",
+      "transitive closure",
+      "cardinality of the set",
+      "power set",
+      "bijection",
+      "injective",
+      "surjective",
+      "one to one and onto",
+      "composition of functions",
+      "countable set"
+    ],
+    "weak": [
+      "relation on a set",
+      "function from",
+      "subset",
+      "set of all"
+    ]
+  },
+  "discrete-mathematics/posets-lattices": {
+    "strong": [
+      "partial order",
+      "poset",
+      "hasse diagram",
+      "lattice",
+      "complete lattice",
+      "distributive lattice",
+      "complemented lattice",
+      "least upper bound",
+      "greatest lower bound",
+      "join and meet",
+      "maximal element",
+      "chain and antichain",
+      "totally ordered"
+    ],
+    "weak": [
+      "ordering",
+      "supremum",
+      "infimum",
+      "divisibility"
+    ]
+  },
+  "discrete-mathematics/groups": {
+    "strong": [
+      "abelian group",
+      "cyclic group",
+      "subgroup",
+      "lagrange's theorem",
+      "order of the group",
+      "order of an element",
+      "monoid",
+      "semigroup",
+      "identity element",
+      "inverse element",
+      "ring and field",
+      "isomorphic groups",
+      "generator of the group",
+      "permutation group"
+    ],
+    "weak": [
+      "group under",
+      "binary operation",
+      "closure and associativity",
+      "algebraic structure"
+    ]
+  },
+  "discrete-mathematics/counting": {
+    "strong": [
+      "pigeonhole principle",
+      "inclusion exclusion",
+      "stars and bars",
+      "permutations and combinations",
+      "binomial coefficient",
+      "derangement",
+      "number of ways",
+      "distinct arrangements",
+      "onto functions count",
+      "multinomial"
+    ],
+    "weak": [
+      "combinatorics",
+      "how many ways",
+      "choose",
+      "distribute"
+    ]
+  },
+  "discrete-mathematics/recurrence": {
+    "strong": [
+      "recurrence relation",
+      "characteristic equation",
+      "homogeneous recurrence",
+      "particular solution",
+      "closed form of the recurrence",
+      "linear recurrence",
+      "fibonacci recurrence"
+    ],
+    "weak": [
+      "a(n)",
+      "solve the recurrence",
+      "initial condition"
+    ]
+  },
+  "discrete-mathematics/generating-functions": {
+    "strong": [
+      "generating function",
+      "coefficient of x",
+      "formal power series",
+      "ordinary generating function",
+      "exponential generating function"
+    ],
+    "weak": [
+      "expansion of",
+      "series"
+    ]
+  },
+  "discrete-mathematics/graph-theory": {
+    "strong": [
+      "chromatic number",
+      "euler circuit",
+      "euler path",
+      "hamiltonian cycle",
+      "bipartite graph",
+      "complete graph",
+      "planar graph",
+      "vertex cover",
+      "independent set",
+      "perfect matching",
+      "maximum matching",
+      "degree sequence",
+      "isomorphic graphs",
+      "connected components",
+      "cut vertex",
+      "clique",
+      "girth",
+      "tree with n vertices",
+      "handshaking lemma"
+    ],
+    "weak": [
+      "graph g",
+      "vertices and edges",
+      "degree of each vertex",
+      "adjacent"
+    ]
+  },
+  "engineering-mathematics/matrices": {
+    "strong": [
+      "determinant of the matrix",
+      "adjoint",
+      "cofactor",
+      "inverse of the matrix",
+      "transpose",
+      "symmetric matrix",
+      "skew symmetric",
+      "orthogonal matrix",
+      "idempotent matrix",
+      "nilpotent",
+      "trace of the matrix",
+      "singular matrix"
+    ],
+    "weak": [
+      "matrix a",
+      "square matrix",
+      "identity matrix"
+    ]
+  },
+  "engineering-mathematics/linear-systems": {
+    "strong": [
+      "rank of the matrix",
+      "system of linear equations",
+      "augmented matrix",
+      "consistent system",
+      "inconsistent system",
+      "row echelon",
+      "gauss elimination",
+      "free variables",
+      "trivial solution",
+      "infinitely many solutions",
+      "homogeneous system",
+      "null space",
+      "linearly independent"
+    ],
+    "weak": [
+      "solution of the system",
+      "unknowns",
+      "equations in"
+    ]
+  },
+  "engineering-mathematics/eigen": {
+    "strong": [
+      "eigenvalue",
+      "eigenvector",
+      "characteristic polynomial",
+      "cayley hamilton",
+      "diagonalisable",
+      "diagonalizable",
+      "algebraic multiplicity",
+      "geometric multiplicity",
+      "spectral radius",
+      "sum of the eigenvalues",
+      "product of the eigenvalues"
+    ],
+    "weak": [
+      "lambda",
+      "trace and determinant"
+    ]
+  },
+  "engineering-mathematics/lu-decomposition": {
+    "strong": [
+      "lu decomposition",
+      "lu factorisation",
+      "lu factorization",
+      "crout",
+      "doolittle",
+      "lower triangular and upper triangular"
+    ],
+    "weak": [
+      "decomposition of the matrix"
+    ]
+  },
+  "engineering-mathematics/calculus-limits": {
+    "strong": [
+      "limit as x tends",
+      "continuity at",
+      "differentiable at",
+      "l'hospital",
+      "left hand limit",
+      "right hand limit",
+      "removable discontinuity",
+      "intermediate value theorem"
+    ],
+    "weak": [
+      "limit",
+      "continuous function",
+      "derivative exists"
+    ]
+  },
+  "engineering-mathematics/maxima-minima": {
+    "strong": [
+      "maxima and minima",
+      "local maximum",
+      "local minimum",
+      "global maximum",
+      "critical point",
+      "point of inflection",
+      "mean value theorem",
+      "rolle's theorem",
+      "second derivative test",
+      "maximum value of f"
+    ],
+    "weak": [
+      "stationary point",
+      "increasing and decreasing",
+      "f'(x)"
+    ]
+  },
+  "engineering-mathematics/integration": {
+    "strong": [
+      "definite integral",
+      "indefinite integral",
+      "double integral",
+      "area under the curve",
+      "integration by parts",
+      "integration by substitution",
+      "improper integral",
+      "fundamental theorem of calculus",
+      "evaluate the integral"
+    ],
+    "weak": [
+      "integral",
+      "antiderivative",
+      "dx"
+    ]
+  },
+  "engineering-mathematics/probability": {
+    "strong": [
+      "conditional probability",
+      "bayes' theorem",
+      "bayes theorem",
+      "independent events",
+      "mutually exclusive",
+      "total probability",
+      "sample space",
+      "at least one",
+      "without replacement",
+      "with replacement",
+      "probability that",
+      "false positive",
+      "given a positive",
+      "posterior probability",
+      "probability the person",
+      "drawn without replacement"
+    ],
+    "weak": [
+      "probability",
+      "die is rolled",
+      "coin is tossed",
+      "drawn at random",
+      "percent of the population",
+      "at random",
+      "given that"
+    ]
+  },
+  "engineering-mathematics/distributions": {
+    "strong": [
+      "binomial distribution",
+      "poisson distribution",
+      "normal distribution",
+      "exponential distribution",
+      "uniform distribution",
+      "geometric distribution",
+      "probability density function",
+      "cumulative distribution function",
+      "expected value of x",
+      "variance of the distribution",
+      "memoryless property"
+    ],
+    "weak": [
+      "random variable",
+      "pdf",
+      "cdf",
+      "expectation",
+      "variance"
+    ]
+  },
+  "engineering-mathematics/statistics": {
+    "strong": [
+      "standard deviation",
+      "mean median mode",
+      "arithmetic mean",
+      "median of the data",
+      "coefficient of variation",
+      "quartile",
+      "correlation coefficient",
+      "regression line"
+    ],
+    "weak": [
+      "mean of the",
+      "average of the numbers",
+      "data set"
+    ]
+  },
+  "general-aptitude/verbal": {
+    "strong": [
+      "synonym",
+      "antonym",
+      "most nearly opposite",
+      "grammatically correct",
+      "fill in the blank",
+      "idiom",
+      "one word substitution",
+      "correct usage of",
+      "reading comprehension",
+      "passage above"
+    ],
+    "weak": [
+      "sentence",
+      "word",
+      "meaning of"
+    ]
+  },
+  "general-aptitude/quantitative": {
+    "strong": [
+      "percentage increase",
+      "simple interest",
+      "compound interest",
+      "profit and loss",
+      "ratio and proportion",
+      "average speed",
+      "upstream and downstream",
+      "work done in days",
+      "pipes and cisterns",
+      "mixture and alligation",
+      "time and distance",
+      "discount on the marked price",
+      "crosses a platform",
+      "time taken in seconds",
+      "metres long",
+      "m long travelling"
+    ],
+    "weak": [
+      "how many days",
+      "per cent",
+      "cost price",
+      "selling price",
+      "km/h",
+      "train",
+      "platform",
+      "speed of"
+    ]
+  },
+  "general-aptitude/analytical": {
+    "strong": [
+      "seating arrangement",
+      "blood relation",
+      "which of the following conclusions",
+      "necessarily follows",
+      "syllogism",
+      "statement and assumption",
+      "venn diagram of the sets",
+      "read english newspapers",
+      "logical deduction",
+      "coding decoding"
+    ],
+    "weak": [
+      "all are",
+      "some are",
+      "none of them",
+      "if and only if the statement"
+    ]
+  },
+  "general-aptitude/spatial": {
+    "strong": [
+      "painted cube",
+      "cut into smaller cubes",
+      "unfolded net",
+      "mirror image",
+      "water image",
+      "paper folding",
+      "rotate the figure",
+      "dice arrangement",
+      "count the number of triangles"
+    ],
+    "weak": [
+      "figure below",
+      "shape",
+      "cube of side"
+    ]
+  }
+}
