@@ -1,0 +1,63 @@
+# Tooling configuration only. GitGrind is not packaged with pip - it is run from
+# source or as a built executable - so there is no [project] table here.
+
+[tool.black]
+line-length = 90
+target-version = ["py38"]
+extend-exclude = '''
+/(
+    build
+  | dist
+  | papers
+  | \.venv
+  | venv
+)/
+'''
+
+[tool.ruff]
+line-length = 90
+target-version = "py38"
+exclude = ["build", "dist", "papers", "venv", ".venv"]
+
+[tool.ruff.lint]
+# Real defects, not style opinions. UP031 in particular would rewrite every
+# percent-format string in the codebase for no behavioural gain, and the risk of
+# a silent typo in that many edits is worse than the inconsistency.
+select = [
+    "F",      # pyflakes: undefined names, unused imports, broken f-strings
+    "E9",     # syntax and IO errors
+    "B",      # bugbear: mutable defaults, shadowed loop vars, real traps
+    "A",      # builtins being shadowed
+    "RUF",    # ruff's own correctness checks
+]
+ignore = [
+    # dict(a=1) instead of {"a": 1} is used everywhere here on purpose: the
+    # keyword form reads better for the wide record-shaped returns this codebase
+    # is full of, and rewriting several hundred of them buys nothing.
+    "C408",
+    "B008",   # function call in a default argument - used deliberately for now()
+    "B905",   # zip(strict=) is 3.10+, and this runs on 3.8
+    "RUF001", # ambiguous unicode in prose strings; the copy is deliberate
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tools/selftest.py" = ["B011"]        # bare assert is the point of a test file
+"demo_data.py" = ["A002"]
+
+[tool.bandit]
+exclude_dirs = ["build", "dist", "papers", "venv", ".venv", "tools"]
+# B101 assert          - selftest.py is built on asserts
+# B310 urllib          - only ever called on 127.0.0.1 or an explicit user URL
+# B404/B603/B607 subprocess - launching the user's own browser, no shell, no
+#                      untrusted input in the argument list
+# B606 start_process   - os.startfile on the user's own data folder
+# B608 SQL string      - the only interpolation is a table name from a hard-coded
+#                      tuple in db.py, never user input
+# B311 random          - the cohort model and question-of-the-day are seeded on
+#                      purpose so they stay reproducible; nothing here is a secret
+# B110 try/except/pass - deliberate throughout: a failed toast, a failed rating or
+#                      a missing icon must never take down a study session. Every
+#                      instance carries a comment saying why.
+skips = ["B101", "B310", "B404", "B603", "B607", "B606", "B608", "B311", "B110"]

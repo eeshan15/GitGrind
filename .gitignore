@@ -1,0 +1,38 @@
+# Your data. Never commit this - it is your entire study history, and it also
+# contains your name, exam date and targets.
+data/
+gitgrind.log
+
+# Source material and anything derived from it. The code in this repository is
+# MIT licensed; the questions are not ours to redistribute. Ship the extraction
+# tools, not the extracted bank.
+papers/
+content/banks/go-extracted/
+content/review/go-unsorted.json
+content/imports/*.json
+content/backups/*.bak
+
+# Build output
+build/
+dist/
+installer/Output/
+*.spec.bak
+
+# Patch script backups
+*.bak
+*.presplash.bak
+*.prelion.bak
+*.prephase.bak
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ruff_cache/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
