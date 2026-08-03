@@ -1,0 +1,85 @@
+{
+  "subject": "digital-logic",
+  "questions": [
+    {
+      "id": "dl-num-01", "topic": "computer-arithmetic", "kind": "pyq", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "In IEEE 754 single precision, how many bits are allocated to the sign, exponent and mantissa respectively?",
+      "options": ["1, 8, 23", "1, 11, 52", "1, 7, 24", "1, 8, 24"],
+      "answer": [0],
+      "explain": "Single precision is 32 bits total: 1 sign, 8 biased exponent (bias 127), 23 stored mantissa bits with an implicit leading 1. Double precision is 1, 11, 52."
+    },
+    {
+      "id": "dl-num-02", "topic": "number-systems", "kind": "dpp", "difficulty": "easy",
+      "type": "mcq", "marks": 1,
+      "text": "What is the range of integers representable in 8-bit two's complement?",
+      "options": ["-127 to 127", "-128 to 127", "0 to 255", "-128 to 128"],
+      "answer": [1],
+      "explain": "Two's complement in n bits covers -2^(n-1) to 2^(n-1) - 1, so -128 to 127. The asymmetry exists because zero has a single representation."
+    },
+    {
+      "id": "dl-bool-01", "topic": "boolean-algebra", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Simplify the expression AB + A(B + C) + B(B + C).",
+      "options": ["AB + BC", "B + AC", "A + B", "AB + AC"],
+      "answer": [1],
+      "explain": "Expand: AB + AB + AC + BB + BC = AB + AC + B + BC. Since B absorbs AB and BC, the result is B + AC."
+    },
+    {
+      "id": "dl-comb-01", "topic": "combinational", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "What is the minimum number of 2-to-1 multiplexers required to implement an 8-to-1 multiplexer, using no other gates?",
+      "answer_value": 7, "tolerance": 0,
+      "explain": "A binary tree of 2-to-1 multiplexers: four in the first level, two in the second, one in the third. Total 4 + 2 + 1 = 7."
+    },
+    {
+      "id": "dl-comb-02", "topic": "combinational", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "How many select lines and how many outputs does a 1-to-16 demultiplexer have?",
+      "options": ["4 select, 16 outputs", "16 select, 4 outputs", "4 select, 4 outputs", "8 select, 16 outputs"],
+      "answer": [0],
+      "explain": "Routing one input to any of 16 outputs needs log2(16) = 4 select lines."
+    },
+    {
+      "id": "dl-seq-01", "topic": "sequential", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "What is the minimum number of flip-flops required to build a modulo-10 synchronous counter?",
+      "answer_value": 4, "tolerance": 0,
+      "explain": "n flip-flops give 2^n states. Ten states need 2^n >= 10, so n = 4, with six unused states."
+    },
+    {
+      "id": "dl-seq-02", "topic": "sequential", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Which flip-flop configuration eliminates the invalid state of an SR latch?",
+      "options": [
+        "Tying the two inputs together in a JK flip-flop to form a T flip-flop",
+        "A D flip-flop, which derives S and R from a single input",
+        "Adding a clock to the SR latch",
+        "Using NOR gates instead of NAND gates"
+      ],
+      "answer": [1],
+      "explain": "A D flip-flop drives S = D and R = NOT D, so S and R can never be asserted together. The JK flip-flop instead defines the former invalid combination as a toggle."
+    },
+    {
+      "id": "dl-kmap-01", "topic": "kmap", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "A four-variable function has minterms 0, 1, 2, 3, 8, 9, 10, 11. What is the minimal sum-of-products expression, with variables A B C D from most to least significant?",
+      "options": ["A'B'", "B'", "A'B", "B"],
+      "answer": [1],
+      "explain": "Those eight minterms are exactly the cells where B = 0, covering both A = 0 and A = 1 with all combinations of C and D. The function reduces to B'."
+    },
+    {
+      "id": "dl-arith-01", "topic": "computer-arithmetic", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Adding two 8-bit two's complement numbers 01111111 and 00000001 gives 10000000. What does this indicate?",
+      "options": [
+        "A correct result of 128",
+        "Signed overflow, because two positives produced a negative",
+        "A carry out of the most significant bit",
+        "An underflow condition"
+      ],
+      "answer": [1],
+      "explain": "Signed overflow is detected when the carry into the sign bit differs from the carry out of it, or equivalently when two positives yield a negative. 127 + 1 cannot be held in 8-bit signed form."
+    }
+  ]
+}

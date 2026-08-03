@@ -1,0 +1,75 @@
+{
+  "subject": "computer-organization",
+  "questions": [
+    {
+      "id": "coa-pipe-01", "topic": "pipelining", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A non-pipelined processor executes an instruction in 12 ns. The same design is split into a 4-stage pipeline with stage delays 3, 4, 2 and 3 ns, plus a 1 ns latch delay per stage. What is the speedup for a very large number of instructions, rounded to two decimals?",
+      "answer_value": 2.4, "tolerance": 0.01,
+      "explain": "Pipeline clock period is set by the slowest stage plus latch: 4 + 1 = 5 ns. Asymptotic speedup = 12 / 5 = 2.4."
+    },
+    {
+      "id": "coa-cache-01", "topic": "cache", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A byte-addressable machine has 32-bit addresses, a 16 KB 4-way set-associative cache and 32-byte blocks. How many bits are used for the tag?",
+      "answer_value": 20, "tolerance": 0,
+      "explain": "Blocks = 16384 / 32 = 512. Sets = 512 / 4 = 128, needing 7 index bits. Block offset needs 5 bits. Tag = 32 - 7 - 5 = 20 bits."
+    },
+    {
+      "id": "coa-cache-02", "topic": "cache", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "Cache access takes 2 ns, main memory access takes 100 ns, and the hit ratio is 0.95. On a miss the block is fetched from memory and then read from the cache. What is the average memory access time in nanoseconds?",
+      "answer_value": 7, "tolerance": 0.1,
+      "explain": "Hit: 2 ns. Miss: 2 + 100 = 102 ns. AMAT = 0.95 x 2 + 0.05 x 102 = 1.9 + 5.1 = 7 ns."
+    },
+    {
+      "id": "coa-pipe-02", "topic": "pipelining", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Which pipeline hazard is caused by an instruction needing a result that a still-executing earlier instruction has not yet produced?",
+      "options": ["Structural hazard", "Data hazard", "Control hazard", "Interrupt hazard"],
+      "answer": [1],
+      "explain": "That is a data hazard, specifically read-after-write. Structural hazards come from resource conflicts and control hazards from branches."
+    },
+    {
+      "id": "coa-addr-01", "topic": "instructions", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Which addressing mode is most suitable for implementing a pointer dereference where the address itself is held in memory?",
+      "options": ["Immediate", "Register direct", "Memory indirect", "Relative"],
+      "answer": [2],
+      "explain": "Memory indirect fetches an address from a memory location and then accesses that address, which is exactly a dereference of a stored pointer."
+    },
+    {
+      "id": "coa-mem-01", "topic": "main-memory", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A memory system uses 4-way low-order interleaving with a module access time of 40 ns and a bus transfer time of 10 ns per word. How long in nanoseconds does it take to read 4 consecutive words once the first access has been initiated?",
+      "answer_value": 70, "tolerance": 0,
+      "explain": "All four modules start in a staggered pipeline. First word is available after 40 ns, and the remaining three arrive one bus cycle apart: 40 + 3 x 10 = 70 ns."
+    },
+    {
+      "id": "coa-io-01", "topic": "io-interface", "kind": "dpp", "difficulty": "easy",
+      "type": "mcq", "marks": 2,
+      "text": "What is the main advantage of DMA over interrupt-driven I/O for a large block transfer?",
+      "options": [
+        "The device does not need a controller",
+        "The CPU is not involved per word transferred",
+        "It removes the need for buses",
+        "It eliminates all interrupts"
+      ],
+      "answer": [1],
+      "explain": "DMA moves the whole block without CPU involvement per word, raising a single interrupt at completion. Interrupt-driven I/O would interrupt for each word."
+    },
+    {
+      "id": "coa-dp-01", "topic": "datapath-control", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Compared with a hardwired control unit, a microprogrammed control unit is generally:",
+      "options": [
+        "Faster but harder to modify",
+        "Slower but easier to modify",
+        "Both faster and easier to modify",
+        "Identical in speed and flexibility"
+      ],
+      "answer": [1],
+      "explain": "Microprogramming stores control signals in a control memory, which costs a lookup per step but lets the instruction set be changed by rewriting microcode rather than redesigning logic."
+    }
+  ]
+}

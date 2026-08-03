@@ -1,0 +1,77 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background-autofill.js", "background-domains~0.js", "background-domains~1.js", "background-domains~2.js", "background-framework.js", "background-legacy.js", "background-libs.js", "background-page.js", "background-shared.js", "background-vendors~0.js", "background-vendors~1.js", "background-vendors~2.js", "background-vendors~3.js", "background-vendors~4.js", "background-vendors~5.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "16": "icons/action/icon_loading.png",
+         "32": "icons/action/icon_loading@2x.png"
+      },
+      "default_popup": "popup/index.html",
+      "default_title": "Dashlane"
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "suggested_key": {
+            "default": "Ctrl+Shift+L"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "exclude_globs": [ "*://www.google.*/*sourceid=chrome-instant*", "*://www.google.*/blank.html*" ],
+      "exclude_matches": [ "*://platform.twitter.com/widgets/*", "*://www.facebook.com/plugins/*", "*://plusone.google.com/_/+1/*", "*://challenges.cloudflare.com/*", "*://locations.texastechfcu.org/*" ],
+      "js": [ "content/contentScripts/kwift.CHROME.js", "content/injected/vendors.js" ],
+      "match_about_blank": false,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "content/contentScripts/dashlane-saml-intercept-script.js" ],
+      "match_about_blank": false,
+      "matches": [ "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "js": [ "content/contentScripts/dashlane-turnstile-bridge.js" ],
+      "matches": [ "https://accounts.dashlane.com/securitycheck", "https://accounts.dashlane.com/securitycheck?*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "exclude_globs": [ "*://www.google.*/*sourceid=chrome-instant*", "*://www.google.*/blank.html*" ],
+      "exclude_matches": [ "*://platform.twitter.com/widgets/*", "*://www.facebook.com/plugins/*", "*://plusone.google.com/_/+1/*", "*://challenges.cloudflare.com/*", "*://locations.texastechfcu.org/*" ],
+      "js": [ "content/contentScripts/dashlane-page-scripts-installer.js", "content/contentScripts/dashlane-shadow-dom-page-script-installer.js" ],
+      "matches": [ "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "exclude_globs": [ "*://www.google.*/*sourceid=chrome-instant*", "*://www.google.*/blank.html*" ],
+      "exclude_matches": [ "*://platform.twitter.com/widgets/*", "*://www.facebook.com/plugins/*", "*://plusone.google.com/_/+1/*", "*://challenges.cloudflare.com/*", "*://locations.texastechfcu.org/*" ],
+      "js": [ "content/contentScripts/dashlane-webkit-animation-page-script-installer.js" ],
+      "matches": [ "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'wasm-eval' 'wasm-unsafe-eval'; object-src 'self'",
+   "default_locale": "en",
+   "description": "__MSG_ExtensionShortDescription__",
+   "icons": {
+      "128": "icons/icon-dashlane-128px.png",
+      "16": "icons/icon-dashlane-16px.png",
+      "48": "icons/icon-dashlane-48px.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnqo6gq6JC3x39SObkUm8UNlB9TnSboXnC7xvcVgjJNnv3ApNdHbApPkHiC+JTyCvNXDM3qekh3gAVrV3uvqYQjC7i8B5GSNgM6DSlGhYijDiAYLBAIDPg/0ni3OlzDU8D3IcjjbJQBjOdCEP7UPhE7jl5JeKLsOTYh7ncKKSNSAUNsvNFvuvKve+kbsg+2s4yiZnhSPMwKDjueMFDmI6Fh8c0We4vf5o6qo5ZgPTXYddVgVxh5ikQAysEGnJ3eXhplYjt66vsPkA5/zzcpRG0H0sxqYPgFmhlicvFPeEtp6Gc6eCMsUZsi3vW7WiHrvKAHs5yo5Lfo4yG1/ZtSOq6wIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_ExtensionName__",
+   "optional_permissions": [ "downloads" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options/options.html"
+   },
+   "permissions": [ "http://*/*", "https://*/*", "contextMenus", "cookies", "idle", "privacy", "storage", "tabs", "unlimitedStorage", "scripting", "webRequest", "webRequestBlocking" ],
+   "storage": {
+      "managed_schema": "managed-storage-schema.json"
+   },
+   "update_url": "https://edge.microsoft.com/extensionwebstorebase/v1/crx",
+   "version": "6.2631.0",
+   "web_accessible_resources": [ "index.html", "loading.html", "content/injected/logo-autofill-known.svg", "content/injected/logo-autofill-unknown.svg", "content/injected/loader.png", "content/webui/index.html", "content/injected/vendors.js", "content/pageScripts/dashlane-webauthn-page-script.js", "content/pageScripts/dashlane-shadow-dom-page-script.js", "content/pageScripts/dashlane-top-layer-page-script.js", "content/pageScripts/dashlane-webkit-animation-page-script.js" ]
+}

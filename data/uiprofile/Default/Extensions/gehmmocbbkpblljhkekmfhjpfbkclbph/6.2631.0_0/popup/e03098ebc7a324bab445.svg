@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="64px" height="16px" viewBox="0 0 64 16" fill="#D6D6D6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <circle cx="8" cy="8" r="8">
+    <animate attributeName="fill-opacity" from="1" to="1"
+                 begin="0s" dur="1s"
+                 values=".5;.75;1;.5" calcMode="linear"
+                 repeatCount="indefinite" />
+  </circle>
+  <circle cx="32" cy="8" r="8">
+    <animate attributeName="fill-opacity" from="1" to="1"
+                 begin="0s" dur="1s"
+                 values="1;.5;.75;1" calcMode="linear"
+                 repeatCount="indefinite" />
+  </circle>
+  <circle cx="56" cy="8" r="8">
+    <animate attributeName="fill-opacity" from="1" to="1"
+                 begin="0s" dur="1s"
+                 values=".75;1;.5;.75" calcMode="linear"
+                 repeatCount="indefinite" />
+  </circle>
+</svg>

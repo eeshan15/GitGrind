@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>GitGrind &mdash; GATE CSE operating system</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="icon" href="/icon.png">
+</head>
+<body>
+
+<div class="splash" id="splash" data-phase="enter" role="status"
+     aria-label="GitGrind is starting">
+  <button class="splash-skip" id="splashSkip" type="button">Skip</button>
+
+  <div class="splash-stage">
+    <div class="crest-layer">
+      <img class="crest" src="/icon.png" alt="" draggable="false">
+      <i class="crest-sheen"></i>
+      <div class="dust" id="splashDust"></div>
+    </div>
+    <i class="shock s1"></i><i class="shock s2"></i>
+    <div class="motes" id="splashMotes"></div>
+    <i class="rim"></i>
+  </div>
+
+  <div class="splash-name">GitGrind</div>
+  <div class="splash-tag">One session a day. Everything else follows.</div>
+  <div class="splash-load">LOADING</div>
+</div>
+<a class="skip-link" href="#content">Skip to main content</a>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#/overview">
+      <img class="brand-mark" src="/icon.png" alt="" aria-hidden="true">
+      <span class="brand-name">GitGrind</span>
+    </a>
+
+    <nav class="topnav" id="topnav" aria-label="Main sections">
+      <a href="#/overview"     data-route="overview">Today</a>
+      <a href="#/subjects"     data-route="subjects">Subjects</a>
+      <a href="#/practice"     data-route="practice">Practice</a>
+      <a href="#/readiness"    data-route="readiness">Readiness</a>
+      <a href="#/bank"         data-route="bank">Bank</a>
+      <a href="#/achievements" data-route="achievements">Rewards</a>
+      <a href="#/doubts"       data-route="doubts">Doubts</a>
+      <a href="#/activity"     data-route="activity">Activity</a>
+      <span class="nav-marker" id="navMarker" aria-hidden="true"></span>
+    </nav>
+
+    <div class="topbar-right">
+      <div class="pill" id="streakPill" title="Current streak">
+        <span class="pill-key">STREAK</span><b id="streakNum">0</b>
+      </div>
+      <div class="pill pill-warn" id="duePill" hidden title="Revision items due today">
+        <span class="pill-key">DUE</span><b id="dueNum">0</b>
+      </div>
+      <button class="btn btn-ghost btn-icon" id="btnKeys" aria-label="Keyboard shortcuts"
+              title="Keyboard shortcuts (press ?)"><span class="sym">?</span></button>
+      <button class="pill pill-timer" id="timerPill" hidden type="button">
+        <span class="pill-key">TIMER</span><b id="timerPillTime">00:00:00</b>
+      </button>
+      <button class="btn" id="btnTimer"><span class="sym">&gt;</span> Timer</button>
+      <button class="btn btn-primary" id="btnLog"><span class="sym">+</span> Log session</button>
+    </div>
+  </div>
+</header>
+
+<main class="shell">
+  <!-- ============================= SIDEBAR ============================= -->
+  <aside class="sidebar" aria-label="Profile and status">
+    <div class="avatar-wrap">
+      <div class="avatar"><span class="avatar-glyph" id="avatarGlyph">GG</span></div>
+      <span class="avatar-badge" id="avatarBadge" title="Today">--</span>
+    </div>
+
+    <h1 class="identity-name" id="displayName">GATE Aspirant</h1>
+    <p class="identity-handle" id="handle"></p>
+    <p class="bio" id="bio"></p>
+    <button class="btn btn-block" id="btnProfile">Edit profile</button>
+
+    <div class="side-stats">
+      <span><b id="sSubjects">0</b> subjects</span>
+      <span class="sep">/</span>
+      <span><b id="sDays">0</b> active days</span>
+    </div>
+
+    <dl class="meta">
+      <div><dt>LOC</dt><dd id="mLocation">--</dd></div>
+      <div><dt>EXAM</dt><dd id="mExam">--</dd></div>
+      <div><dt>GOAL</dt><dd id="mTarget">--</dd></div>
+    </dl>
+
+    <section class="card countdown">
+      <div class="cd-num" id="cdNum">--</div>
+      <div class="cd-label" id="cdLabel">days to exam</div>
+      <div class="track"><i id="cdBar"></i></div>
+    </section>
+
+    <section class="card today-card">
+      <h2 class="card-title">Today</h2>
+      <div class="ring-wrap">
+        <svg class="ring" viewBox="0 0 84 84" aria-hidden="true">
+          <circle class="ring-bg" cx="42" cy="42" r="35"></circle>
+          <circle class="ring-fg" id="ringFg" cx="42" cy="42" r="35"></circle>
+        </svg>
+        <div class="ring-text"><b id="todayMins">0m</b><span id="todayOf">of 4h</span></div>
+      </div>
+      <div class="quality-line" id="qualityLine"></div>
+    </section>
+
+    <section class="side-block">
+      <h2 class="side-title">Readiness <a class="side-link" href="#/readiness">detail</a></h2>
+      <div class="mini-readiness" id="miniReadiness"></div>
+    </section>
+
+    <section class="side-block">
+      <h2 class="side-title">Retention <a class="side-link" href="#/overview">queue</a></h2>
+      <div class="mini-debt" id="miniDebt"></div>
+    </section>
+
+    <section class="side-block">
+      <h2 class="side-title">Stickers <a class="side-link" href="#/achievements">all</a></h2>
+      <div class="badge-strip" id="badgeStrip"></div>
+    </section>
+  </aside>
+
+  <!-- ============================== VIEWS ============================== -->
+  <div class="content" id="content" tabindex="-1">
+
+    <!-- ---------------- TODAY / COMMAND CENTER ---------------- -->
+    <section class="view" id="view-overview" aria-labelledby="todayHeading">
+      <h2 class="sr-only" id="todayHeading">Today</h2>
+
+      <div class="hero" id="hero">
+        <div class="hero-main" id="heroAction"></div>
+        <div class="hero-side" id="heroSide"></div>
+      </div>
+
+      <div class="head">
+        <h2>Missions</h2>
+        <span class="dim small" id="missionSummary"></span>
+      </div>
+      <div class="mission-strip stagger" id="missionStrip"></div>
+
+      <div class="head mt">
+        <h2>Today&rsquo;s plan</h2>
+        <div class="row-gap">
+          <span class="dim small mono" id="planMeta"></span>
+          <button class="btn btn-sm" id="planRegen">Rebuild</button>
+        </div>
+      </div>
+      <div id="planCard"></div>
+
+      <div class="two-col mt">
+        <div id="revisionPanel"></div>
+        <div id="riskPanel"></div>
+      </div>
+
+      <div class="head mt"><h2>Question of the day</h2><span class="dim small" id="qotdStreakTop"></span></div>
+      <div id="qotdInline"></div>
+
+      <div class="head mt">
+        <h2>Mastery map</h2>
+        <span class="dim small" id="heatLegendNote"></span>
+      </div>
+      <div class="card" id="heatmapHost"></div>
+
+      <div class="head mt">
+        <h2>What moves the needle</h2>
+        <span class="dim small">Rate these &mdash; the order adapts</span>
+      </div>
+      <div class="actions stagger" id="recList"></div>
+
+      <div class="head mt">
+        <h2><b id="calHours">0</b> hours logged in the last year</h2>
+        <span class="dim mono small" id="calRange"></span>
+      </div>
+      <div class="card graph-card">
+        <div class="graph-scroll">
+          <div class="graph">
+            <div class="graph-months" id="calMonths"></div>
+            <div class="graph-body">
+              <div class="graph-dows"><span></span><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span></div>
+              <div class="graph-weeks" id="calWeeks"></div>
+            </div>
+          </div>
+        </div>
+        <div class="graph-foot">
+          <span class="dim small">Click a square to log that day</span>
+          <div class="legend">
+            <span class="dim small">Less</span>
+            <i class="cell l0"></i><i class="cell l1"></i><i class="cell l2"></i><i class="cell l3"></i><i class="cell l4"></i>
+            <span class="dim small">More</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="head mt">
+        <h2>Focus subjects</h2>
+        <a class="link" href="#/subjects">All subjects</a>
+      </div>
+      <div class="pin-grid stagger" id="pinGrid"></div>
+
+      <div class="two-col mt stagger">
+        <div class="card">
+          <h3 class="card-title">Effort split</h3>
+          <div class="radar-host"><svg id="radar" viewBox="0 0 260 220" role="img"
+               aria-label="Radar chart of minutes by session type"></svg></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Numbers</h3>
+          <div class="kpi-grid" id="kpiGrid"></div>
+        </div>
+      </div>
+
+      <div class="head mt">
+        <h2>Recent sessions</h2>
+        <a class="link" href="#/activity">Full log</a>
+      </div>
+      <div class="feed" id="feedShort"></div>
+    </section>
+
+    <!-- ---------------- SUBJECTS ---------------- -->
+    <section class="view" id="view-subjects" hidden>
+      <div class="toolbar">
+        <input type="search" id="subjSearch" placeholder="Find a subject or topic..." autocomplete="off"
+               aria-label="Filter subjects and topics">
+        <select id="subjSort" aria-label="Sort subjects">
+          <option value="risk">Sort: highest risk</option>
+          <option value="coverage">Sort: least covered</option>
+          <option value="marks">Sort: exam weight</option>
+          <option value="recent">Sort: recently studied</option>
+          <option value="hours">Sort: hours logged</option>
+          <option value="accuracy">Sort: weakest accuracy</option>
+          <option value="name">Sort: name</option>
+        </select>
+      </div>
+      <p class="dim small note-line">Tick a topic to mark it done. Coverage feeds straight into your
+        readiness index, and marking a topic done also puts it into the revision schedule &mdash; so
+        this list is still the single most important thing on the page.</p>
+      <div class="subject-list stagger" id="subjectList"></div>
+    </section>
+
+    <!-- ---------------- PRACTICE ---------------- -->
+    <section class="view" id="view-practice" hidden>
+      <div class="head"><h2>Question of the day</h2><span class="dim small" id="qotdStreak"></span></div>
+      <div id="qotdPanel"></div>
+
+      <div class="head mt"><h2>Adaptive modes</h2></div>
+      <div class="mode-grid" id="modeGrid"></div>
+      <div class="head mt">
+        <h2>Concept visualisers</h2>
+        <span class="dim small">Type your own numbers in &mdash; they double as answer checkers</span>
+      </div>
+      <div class="mode-grid" id="vizGrid"></div>
+      <div class="head mt"><h2>Build your own set</h2></div>
+      <div class="card">
+        <div class="field-row">
+          <label class="field"><span>Subject</span><select id="pqSubject"></select></label>
+          <label class="field"><span>Questions</span>
+            <select id="pqCount"><option>3</option><option selected>5</option><option>8</option><option>10</option><option>15</option></select>
+          </label>
+          <label class="field"><span>Type</span>
+            <select id="pqKind">
+              <option value="">Mixed</option>
+              <option value="pyq">Previous year only</option>
+              <option value="dpp">Practice problems only</option>
+            </select>
+          </label>
+        </div>
+        <div class="topic-picker" id="pqTopics"></div>
+        <div class="row-end">
+          <span class="dim small" id="pqAvail"></span>
+          <button class="btn btn-primary" id="pqStart">Start set</button>
+        </div>
+      </div>
+
+      <div class="two-col mt">
+        <div class="card">
+          <h3 class="card-title">Mistake pattern</h3>
+          <div id="mistakePanel"></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Confidence vs accuracy</h3>
+          <div id="confidencePanel"></div>
+        </div>
+      </div>
+
+      <div class="head mt"><h2>Saved for later</h2></div>
+      <div class="feed" id="savedList"></div>
+
+      <div class="head mt"><h2>Past sets</h2></div>
+      <div class="feed" id="quizHistory"></div>
+    </section>
+
+    <!-- ---------------- READINESS ---------------- -->
+    <section class="view" id="view-readiness" hidden>
+      <div class="notice">
+        <span class="notice-key">MODEL</span>
+        <div>
+          <b>Everything below the index is a simulation.</b>
+          There is no server and there are no other users. Cohort positions come from a
+          statistical model generated on this machine from a fixed seed, so it stays
+          consistent and you can pace against it &mdash; but passing simulated people is
+          not the same as passing real ones. Cutoffs in <code>content/targets.json</code>
+          are unofficial figures; verify them and edit the file.
+        </div>
+      </div>
+
+      <div class="ready-hero card">
+        <div class="ready-index">
+          <div class="ready-num" id="rIndex">0</div>
+          <div class="ready-cap">readiness index</div>
+          <div class="ready-sub" id="rScore">est. GATE score --</div>
+          <div class="chip-row" id="rBand"></div>
+        </div>
+        <div class="ready-bars" id="rComponents"></div>
+      </div>
+
+      <div class="head mt"><h2>Where the score comes from</h2></div>
+      <div class="card" id="rContrib"></div>
+
+      <div class="head mt"><h2>Why it moved</h2></div>
+      <div class="card" id="rMoved"></div>
+
+      <div class="two-col mt">
+        <div id="rRisk"></div>
+        <div id="rRecovery"></div>
+      </div>
+
+      <div class="head mt"><h2>If you finish today&rsquo;s plan</h2></div>
+      <div class="card" id="rProjection"></div>
+
+      <div class="head mt"><h2>Movement</h2></div>
+      <div class="move-grid stagger" id="rMovement"></div>
+
+      <div class="head mt"><h2>Targets</h2></div>
+      <div class="target-grid stagger" id="rTargets"></div>
+
+      <div class="head mt"><h2>Index over time</h2></div>
+      <div class="card"><svg id="rTrend" viewBox="0 0 720 200" role="img"
+           aria-label="Readiness index over time"></svg></div>
+
+      <div class="head mt"><h2>What the app has learnt from you</h2></div>
+      <div class="card" id="rFeedback"></div>
+    </section>
+
+    <!-- ---------------- BANK ---------------- -->
+    <section class="view" id="view-bank" hidden>
+      <div class="head"><h2>Question bank</h2>
+        <div class="row-gap">
+          <button class="btn btn-sm" id="bankReload">Reload from disk</button>
+        </div>
+      </div>
+      <div class="stat-strip" id="bankStrip"></div>
+
+      <div class="two-col mt">
+        <div class="card">
+          <h3 class="card-title">Health</h3>
+          <div id="bankPanel"></div>
+        </div>
+        <div class="card">
+          <h3 class="card-title">Coverage gaps</h3>
+          <div id="bankGaps"></div>
+        </div>
+      </div>
+
+      <div class="head mt"><h2>Sources</h2></div>
+      <div class="card" id="bankSources"></div>
+
+      <div class="head mt"><h2>Import log</h2></div>
+      <div class="card" id="bankImports"></div>
+
+      <div class="head mt">
+        <h2>Answers to look up</h2>
+        <div class="row-gap">
+          <span class="dim small" id="pendingCount"></span>
+          <select id="pendingSubject" aria-label="Filter by subject"></select>
+          <button class="btn btn-sm" id="pendingMore">Load more</button>
+        </div>
+      </div>
+      <p class="dim small note-line">These came out of the GO volumes without an answer
+        printed next to them. Search the question, find the answer, type it in &mdash; it is
+        written straight into the bank file and the question becomes gradable for good.</p>
+      <div id="pendingList"></div>
+
+      <div class="head mt">
+        <h2>Review queue</h2>
+        <span class="dim small" id="reviewCount"></span>
+      </div>
+      <div id="reviewList"></div>
+
+      <div class="head mt"><h2>Search the bank</h2></div>
+      <div class="card">
+        <div class="field-row">
+          <label class="field"><span>Text</span><input type="search" id="qsQuery"
+                 placeholder="e.g. banker's algorithm" autocomplete="off"></label>
+          <label class="field"><span>Subject</span><select id="qsSubject"></select></label>
+          <label class="field"><span>Type</span>
+            <select id="qsType"><option value="">Any</option><option value="mcq">MCQ</option>
+              <option value="msq">MSQ</option><option value="nat">NAT</option></select>
+          </label>
+          <label class="field"><span>Difficulty</span>
+            <select id="qsDiff"><option value="">Any</option><option value="easy">Easy</option>
+              <option value="medium">Medium</option><option value="hard">Hard</option></select>
+          </label>
+        </div>
+        <div class="row-end"><button class="btn btn-primary" id="qsGo">Search</button></div>
+      </div>
+      <div class="feed" id="qsResults"></div>
+    </section>
+
+    <!-- ---------------- REWARDS ---------------- -->
+    <section class="view" id="view-achievements" hidden>
+      <div class="card ach-hero">
+        <div>
+          <h2>Rewards</h2>
+          <p class="dim">Five tracks, bronze through diamond. Nothing here is handed out &mdash;
+             each sticker is a rule over your own logs and unlocks the moment the rule is met.
+             The tracks reward the behaviour that actually raises the score: showing up, revising
+             on schedule, and finishing hard problems.</p>
+        </div>
+        <div class="ach-score"><b id="achCount">0/0</b><span class="dim small">unlocked</span></div>
+      </div>
+      <div class="head mt"><h2>Today&rsquo;s missions</h2></div>
+      <div class="mission-strip stagger" id="missionStripFull"></div>
+      <div class="head mt"><h2>Sticker tracks</h2></div>
+      <div id="trackWrap"></div>
+    </section>
+
+    <!-- ---------------- DOUBTS ---------------- -->
+    <section class="view" id="view-doubts" hidden>
+      <div class="head"><h2>Doubt desk</h2></div>
+      <div class="card">
+        <div class="field-row">
+          <label class="field"><span>Subject</span><select id="dSubject"></select></label>
+          <label class="field"><span>Topic</span><select id="dTopic"></select></label>
+        </div>
+        <label class="field">
+          <span>What is the doubt</span>
+          <textarea id="dBody" rows="4" placeholder="Write it the way you would ask a friend. One line is fine."></textarea>
+        </label>
+        <div class="row-end">
+          <span class="dim small" id="dStatusLine"></span>
+          <div class="row-gap">
+            <button class="btn" id="dBuild">Build prompt</button>
+            <button class="btn btn-primary" id="dAsk">Answer inline</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="dResult"></div>
+
+      <div class="head mt"><h2>Topics you keep asking about</h2></div>
+      <div class="card" id="dPressure"></div>
+
+      <div class="head mt"><h2>Answer sources</h2></div>
+      <div class="card" id="dProviders"></div>
+
+      <div class="head mt"><h2>Doubt log</h2></div>
+      <div class="feed" id="dHistory"></div>
+    </section>
+
+    <!-- ---------------- ACTIVITY ---------------- -->
+    <section class="view" id="view-activity" hidden>
+      <div class="head">
+        <h2>All sessions</h2>
+        <div class="row-gap">
+          <button class="btn btn-sm" id="btnSettings">Settings</button>
+          <button class="btn btn-sm" id="btnExport">Export backup</button>
+          <button class="btn btn-sm" id="btnImport">Import backup</button>
+          <input type="file" id="fileImport" accept="application/json" hidden>
+          <button class="btn btn-sm btn-danger" id="btnReset">Clear activity</button>
+        </div>
+      </div>
+      <div class="feed" id="feedFull"></div>
+
+      <div class="head mt"><h2>Plan history</h2></div>
+      <div class="card" id="planHistory"></div>
+
+      <div class="head mt"><h2>Daily question log</h2></div>
+      <div class="feed" id="qotdLog"></div>
+
+      <div class="head mt"><h2>Storage</h2></div>
+      <div class="card" id="dbPanel"></div>
+    </section>
+
+    <!-- ---------------- SUBJECT DETAIL ---------------- -->
+    <section class="view" id="view-detail" hidden>
+      <a class="back" href="#/subjects">&lt;&mdash; All subjects</a>
+      <div class="detail-head">
+        <span class="dot" id="dtDot"></span>
+        <h2 id="dtName">Subject</h2>
+        <span class="tag" id="dtGroup"></span>
+      </div>
+      <div class="detail-stats stagger" id="dtStats"></div>
+      <div class="card mt">
+        <div class="graph-scroll">
+          <div class="graph">
+            <div class="graph-months" id="dtMonths"></div>
+            <div class="graph-body">
+              <div class="graph-dows"><span></span><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span></div>
+              <div class="graph-weeks" id="dtWeeks"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="head mt">
+        <h2>Topics</h2>
+        <button class="btn btn-sm" id="dtQuiz">Practice this subject</button>
+      </div>
+      <div class="card" id="dtTopics"></div>
+      <div class="head mt"><h2>Sessions</h2></div>
+      <div class="feed" id="dtFeed"></div>
+    </section>
+  </div>
+</main>
+
+<!-- ============================== MODALS ============================== -->
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="modal" id="modalLog" hidden role="dialog" aria-modal="true" aria-labelledby="modalLogTitle">
+  <div class="modal-head"><h3 id="modalLogTitle">Log a session</h3><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div class="modal-body">
+    <div class="field-row">
+      <label class="field"><span>Subject</span><select id="fSubject"></select></label>
+      <label class="field"><span>Date</span><input type="date" id="fDay"></label>
+    </div>
+    <div class="field-row">
+      <label class="field"><span>Minutes</span><input type="number" id="fMinutes" min="5" max="1440" step="5" value="60"></label>
+      <label class="field"><span>Session type</span><select id="fKind"></select></label>
+      <label class="field"><span>Hour started</span><input type="number" id="fHour" min="0" max="23"></label>
+    </div>
+    <div class="chips" id="fQuick"></div>
+    <div class="field">
+      <span>Topics covered <em class="dim">tick what you actually got through</em></span>
+      <div class="topic-picker" id="fTopics"></div>
+    </div>
+    <label class="check">
+      <input type="checkbox" id="fMarkDone" checked>
+      <span>Mark ticked topics as <b>done</b>, not just started</span>
+    </label>
+    <label class="check">
+      <input type="checkbox" id="fWithQuiz" checked>
+      <span>Finish with a short quiz on those topics</span>
+    </label>
+    <label class="field"><span>Note</span><input type="text" id="fNote" maxlength="280" placeholder="e.g. Banker's algorithm, safe sequence practice"></label>
+    <p class="err" id="logErr" hidden role="alert"></p>
+  </div>
+  <div class="modal-foot">
+    <button class="btn" data-close>Cancel</button>
+    <button class="btn btn-primary" id="saveLog">Commit session</button>
+  </div>
+</div>
+<div class="modal" id="modalTimer" hidden role="dialog" aria-modal="true" aria-labelledby="modalTimerTitle">
+  <div class="modal-head"><h3 id="modalTimerTitle">Timed session</h3><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div class="modal-body">
+    <p class="dim small" style="margin:0 0 16px">Start the clock before you begin. Closing
+      this dialog does not stop it &mdash; the topbar keeps the running time, and the
+      session is written when you press Stop.</p>
+
+    <div class="timer-face" id="timerFace">00:00:00</div>
+    <div class="timer-sub dim small" id="timerMins">anything under a minute is not logged</div>
+
+    <div class="timer-controls">
+      <button class="btn btn-primary" id="timerStart">Start</button>
+      <button class="btn" id="timerPause" hidden>Pause</button>
+      <button class="btn btn-primary" id="timerStop" disabled>Stop &amp; log</button>
+      <button class="btn btn-danger" id="timerDiscard" hidden>Discard</button>
+    </div>
+
+    <div class="field-row">
+      <label class="field"><span>Subject</span><select id="tmSubject"></select></label>
+      <label class="field"><span>Session type</span><select id="tmKind"></select></label>
+    </div>
+    <div class="field">
+      <span>Topics covered <em class="dim">tick them as you get through them</em></span>
+      <div class="topic-picker" id="tmTopics"></div>
+    </div>
+    <label class="check"><input type="checkbox" id="tmMarkDone" checked>
+      <span>Mark ticked topics as <b>done</b>, not just started</span></label>
+    <label class="check"><input type="checkbox" id="tmWithQuiz" checked>
+      <span>Finish with a short quiz on those topics</span></label>
+    <label class="field"><span>Note</span><input type="text" id="tmNote" maxlength="280"
+      placeholder="e.g. Banker's algorithm, safe sequence practice"></label>
+    <p class="err" id="timerErr" hidden role="alert"></p>
+  </div>
+  <div class="modal-foot">
+    <button class="btn" data-close>Keep running, close this</button>
+  </div>
+</div>
+
+<div class="modal" id="modalProfile" hidden role="dialog" aria-modal="true" aria-labelledby="modalProfileTitle">
+  <div class="modal-head"><h3 id="modalProfileTitle">Edit profile</h3><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div class="modal-body">
+    <div class="field-row">
+      <label class="field"><span>Name</span><input type="text" id="pName" maxlength="40"></label>
+      <label class="field"><span>Handle</span><input type="text" id="pHandle" maxlength="30"></label>
+    </div>
+    <label class="field"><span>Bio</span><input type="text" id="pBio" maxlength="120"></label>
+    <div class="field-row">
+      <label class="field"><span>Location</span><input type="text" id="pLoc" maxlength="40"></label>
+      <label class="field"><span>Exam name</span><input type="text" id="pExam" maxlength="30"></label>
+    </div>
+    <div class="field-row">
+      <label class="field"><span>Exam date</span><input type="date" id="pExamDate"></label>
+      <label class="field"><span>Daily target (min)</span><input type="number" id="pTarget" min="30" max="960" step="15"></label>
+    </div>
+    <label class="field"><span>Primary target</span><select id="pPrimary"></select></label>
+  </div>
+  <div class="modal-foot">
+    <button class="btn" data-close>Cancel</button>
+    <button class="btn btn-primary" id="saveProfile">Save</button>
+  </div>
+</div>
+
+<div class="modal" id="modalSettings" hidden role="dialog" aria-modal="true" aria-labelledby="modalSettingsTitle">
+  <div class="modal-head"><h3 id="modalSettingsTitle">Engine settings</h3><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div class="modal-body" id="settingsBody"></div>
+  <div class="modal-foot">
+    <button class="btn" data-close>Cancel</button>
+    <button class="btn btn-primary" id="saveSettings">Save</button>
+  </div>
+</div>
+
+<div class="modal modal-wide" id="modalQuiz" hidden role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+  <div class="modal-head">
+    <h3 id="quizTitle">Quiz</h3>
+    <div class="quiz-meta">
+      <span id="quizProgress" class="mono dim small"></span>
+      <button class="x" id="quizClose" aria-label="Close quiz">&times;</button>
+    </div>
+  </div>
+  <div class="quiz-rail" id="quizRail" aria-hidden="true"></div>
+  <div class="modal-body" id="quizBody"></div>
+  <div class="modal-foot" id="quizFoot"></div>
+</div>
+<div class="modal modal-wide" id="modalViz" hidden role="dialog" aria-modal="true" aria-labelledby="vizTitle">
+  <div class="modal-head">
+    <div>
+      <h3 id="vizTitle">Visualiser</h3>
+      <p class="dim small" id="vizSubtitle" style="margin:4px 0 0"></p>
+    </div>
+    <button class="x" id="vizClose" aria-label="Close">&times;</button>
+  </div>
+  <div class="modal-body">
+    <div class="viz-inputs" id="vizInputs"></div>
+    <p class="err" id="vizErr" hidden role="alert"></p>
+    <div class="viz-stage" id="vizStage"></div>
+    <p class="viz-caption" id="vizCaption"></p>
+  </div>
+  <div class="modal-foot viz-foot">
+    <div class="viz-controls">
+      <button class="btn btn-sm" id="vizReset" title="Back to the start">|&lt;</button>
+      <button class="btn btn-sm" id="vizPrev" title="Previous step (left arrow)">&lt;</button>
+      <button class="btn btn-primary btn-sm" id="vizPlay" title="Play or pause (space)">Play</button>
+      <button class="btn btn-sm" id="vizNext" title="Next step (right arrow)">&gt;</button>
+      <button class="btn btn-sm" id="vizSpeedBtn" title="Playback speed"><span id="vizSpeed">1x</span></button>
+      <span class="mono dim small" id="vizStep"></span>
+    </div>
+    <input type="range" class="viz-scrub" id="vizScrub" min="0" max="0" value="0"
+           aria-label="Scrub through the steps">
+    <button class="btn btn-sm" id="vizDrill" hidden>Practise this topic</button>
+  </div>
+</div>
+<div class="modal modal-wide" id="modalAi" hidden role="dialog" aria-modal="true" aria-labelledby="aiTitle">
+  <div class="modal-head"><h3 id="aiTitle">Inline answer setup</h3><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div class="modal-body" id="aiBody"></div>
+  <div class="modal-foot">
+    <button class="btn" data-close>Close</button>
+    <button class="btn btn-primary" id="saveAi">Save</button>
+  </div>
+</div>
+
+<div class="modal" id="modalKeys" hidden role="dialog" aria-modal="true" aria-labelledby="keysTitle">
+  <div class="modal-head"><h3 id="keysTitle">Keyboard shortcuts</h3><button class="x" data-close aria-label="Close">&times;</button></div>
+  <div class="modal-body" id="keysBody"></div>
+  <div class="modal-foot"><button class="btn btn-primary" data-close>Got it</button></div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+<div class="sr-only" id="live" role="status" aria-live="polite" aria-atomic="true"></div>
+<div class="tip" id="tip" hidden role="tooltip"></div>
+
+<script src="/js/core.js"></script>
+<script src="/js/render.js"></script>
+<script src="/js/plan.js"></script>
+<script src="/js/viz/_player.js"></script>
+<script src="/js/viz/os-scheduling.js"></script>
+<script src="/js/viz/os-paging.js"></script>
+<script src="/js/viz/coa-cache.js"></script>
+<script src="/js/viz/coa-pipeline.js"></script>
+<script src="/js/viz/cn-window.js"></script>
+<script src="/js/viz/toc-dfa.js"></script>
+<script src="/js/viz/dbms-bplus.js"></script>
+<script src="/js/viz/dl-kmap.js"></script>
+<script src="/js/viz/os-disk.js"></script>
+<script src="/js/viz/os-banker.js"></script>
+<script src="/js/viz/cn-subnet.js"></script>
+<script src="/js/viz/dbms-serial.js"></script>
+<script src="/js/viz/algo-graph.js"></script>
+<script src="/js/viz/ds-avl.js"></script>
+<script src="/js/viz/ds-hashing.js"></script>
+<script src="/js/viz/algo-sort.js"></script>
+<script src="/js/viz/cn-tcp.js"></script>
+<script src="/js/viz/cd-firstfollow.js"></script>
+<script src="/js/viz/cd-ll1.js"></script>
+<script src="/js/viz/dbms-normal.js"></script>
+<script src="/js/viz/math-matrix.js"></script>
+<script src="/js/timer.js"></script>
+<script src="/js/practice.js"></script>
+<script src="/js/readiness.js"></script>
+<script src="/js/bank.js"></script>
+<script src="/js/doubts.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

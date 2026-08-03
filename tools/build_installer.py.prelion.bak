@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+"""Build the Windows installer end to end.
+
+One command that does the whole release: builds the app as a folder, then wraps
+it in an Inno Setup installer.
+
+    python tools/build_installer.py
+
+What it does not do is bundle a Python runtime installer or a dependency
+downloader, because there is nothing to download. The executable already
+contains the interpreter, the standard library, the UI and the content. The
+installer's job is only to put files in a sensible place, make shortcuts, and
+register an uninstaller.
+
+Requirements:
+    pip install pyinstaller pillow
+    Inno Setup 6            https://jrsoftware.org/isdl.php
+"""
+
+import argparse
+import os
+import subprocess
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ISS = os.path.join(ROOT, "installer", "gitgrind.iss")
+
+ISCC_CANDIDATES = (
+    r"C:\Program Files (x86)\Inno Setup 6\ISCC.exe",
+    r"C:\Program Files\Inno Setup 6\ISCC.exe",
+    r"C:\Program Files (x86)\Inno Setup 5\ISCC.exe",
+)
+
+
+def find_iscc():
+    """The Inno Setup command-line compiler, or None."""
+    import shutil
+    for path in ISCC_CANDIDATES:
+        if os.path.isfile(path):
+            return path
+    return shutil.which("iscc") or shutil.which("ISCC")
+
+
+def run(cmd, label):
+    print("\n== %s ==" % label)
+    print("   %s\n" % " ".join(cmd))
+    rc = subprocess.call(cmd, cwd=ROOT)
+    if rc:
+        print("\n%s failed with exit code %d." % (label, rc))
+    return rc
+
+
+def main():
+    ap = argparse.ArgumentParser(description="Build the GitGrind Windows installer.")
+    ap.add_argument("--skip-build", action="store_true",
+                    help="reuse the existing dist/GitGrind folder")
+    ap.add_argument("--skip-icon", action="store_true",
+                    help="do not regenerate the icon")
+    args = ap.parse_args()
+
+    if os.name != "nt":
+        print("Inno Setup only runs on Windows. On other platforms build the")
+        print("executable with tools/build_exe.py and ship a zip instead.")
+        return 1
+
+    # 1. icon, so the exe, the installer and the shortcuts all match
+    if not args.skip_icon:
+        icon = os.path.join(ROOT, "static", "icon.ico")
+        if not os.path.isfile(icon):
+            rc = run([sys.executable, os.path.join("tools", "make_icon.py")],
+                     "generate icon")
+            if rc:
+                print("Install Pillow first: pip install pillow")
+                return rc
+        else:
+            print("icon already present: static\\icon.ico")
+
+    # 2. the app itself, as a folder. --onedir starts far faster than --onefile
+    #    and avoids unpacking to %TEMP% on every launch, which some locked-down
+    #    machines block outright.
+    if not args.skip_build:
+        rc = run([sys.executable, os.path.join("tools", "build_exe.py"),
+                  "--clean", "--onedir"], "build application")
+        if rc:
+            return rc
+
+    built = os.path.join(ROOT, "dist", "GitGrind", "GitGrind.exe")
+    if not os.path.isfile(built):
+        print("\nExpected %s but it is not there." % os.path.relpath(built, ROOT))
+        print("Run: python tools\\build_exe.py --clean --onedir")
+        return 1
+
+    # 3. wrap it
+    iscc = find_iscc()
+    if not iscc:
+        print("\nInno Setup was not found. Install it from:")
+        print("    https://jrsoftware.org/isdl.php")
+        print("Then run this again, or compile by hand:")
+        print("    iscc installer\\gitgrind.iss")
+        return 1
+
+    rc = run([iscc, ISS], "compile installer")
+    if rc:
+        return rc
+
+    out = os.path.join(ROOT, "installer", "Output")
+    print("\nDone. Installer is in %s" % os.path.relpath(out, ROOT))
+    if os.path.isdir(out):
+        for name in sorted(os.listdir(out)):
+            full = os.path.join(out, name)
+            print("    %-40s %.1f MB" % (name, os.path.getsize(full) / 1048576.0))
+    print("\nBefore publishing it:")
+    print("  * install it on a machine that has never had GitGrind, and confirm")
+    print("    the app starts and a logged session survives a restart")
+    print("  * confirm data\\gitgrind.db is NOT bundled (check dist\\GitGrind\\data)")
+    print("  * expect a SmartScreen warning until the binary is code-signed")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

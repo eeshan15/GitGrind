@@ -1,0 +1,140 @@
+{
+  "subject": "dbms",
+  "questions": [
+    {
+      "id": "db-norm-01",
+      "topic": "normalization",
+      "kind": "pyq",
+      "difficulty": "hard",
+      "type": "mcq",
+      "marks": 2,
+      "text": "Relation R(A, B, C, D) has functional dependencies AB -> C, C -> D and D -> A. What is the highest normal form R satisfies?",
+      "options": ["2NF but not 3NF", "3NF but not BCNF", "BCNF", "1NF but not 2NF"],
+      "answer": [1],
+      "explain": "Candidate keys are AB, BC and BD, so every attribute is prime. C -> D and D -> A have non-superkey left sides, which rules out BCNF, but their right sides are prime attributes, which satisfies 3NF."
+    },
+    {
+      "id": "db-fd-01",
+      "topic": "functional-dependency",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "For R(A, B, C, D, E) with F = {A -> B, BC -> E, ED -> A}, which of the following is a candidate key?",
+      "options": ["ACD", "ABC", "CDE", "ADE"],
+      "answer": [0],
+      "explain": "ACD closure: start ACD, A -> B gives ABCD, BC -> E gives ABCDE. All attributes covered. Removing any of A, C or D breaks it, so ACD is minimal."
+    },
+    {
+      "id": "db-index-01",
+      "topic": "indexing",
+      "kind": "pyq",
+      "difficulty": "medium",
+      "type": "nat",
+      "marks": 2,
+      "text": "A B+ tree index uses 1024-byte blocks, 10-byte search keys and 6-byte block pointers. What is the maximum order (maximum number of block pointers) of an internal node?",
+      "answer_value": 64,
+      "tolerance": 0,
+      "explain": "An internal node with n pointers holds n-1 keys: 6n + 10(n-1) <= 1024, so 16n <= 1034 and n <= 64.6. The order is 64."
+    },
+    {
+      "id": "db-trans-01",
+      "topic": "transactions",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "A schedule is conflict serializable if and only if:",
+      "options": [
+        "It contains no blind writes",
+        "Its precedence graph is acyclic",
+        "It is produced by two-phase locking",
+        "Every transaction reads before it writes"
+      ],
+      "answer": [1],
+      "explain": "Conflict serializability is decided by testing the precedence (serialization) graph for cycles. 2PL guarantees conflict serializability but is not the definition, and many conflict serializable schedules are not producible by 2PL."
+    },
+    {
+      "id": "db-trans-02",
+      "topic": "concurrency-control",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "msq",
+      "marks": 2,
+      "text": "Which statements about strict two-phase locking are correct? Select all that apply.",
+      "options": [
+        "It guarantees conflict serializable schedules",
+        "It guarantees cascadeless (recoverable) schedules",
+        "It is free from deadlock",
+        "All exclusive locks are held until commit or abort"
+      ],
+      "answer": [0, 1, 3],
+      "explain": "Strict 2PL holds write locks to the end of the transaction, which gives serializability and cascadelessness. It does not prevent deadlock - two transactions can still wait on each other."
+    },
+    {
+      "id": "db-sql-01",
+      "topic": "sql",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "Table T has 8 rows, of which 3 have a NULL in column c. What does SELECT COUNT(*), COUNT(c) FROM T; return?",
+      "options": ["8, 8", "8, 5", "5, 5", "8, 3"],
+      "answer": [1],
+      "explain": "COUNT(*) counts rows, giving 8. COUNT(c) counts non-NULL values of c, giving 5. This asymmetry is a recurring GATE trap."
+    },
+    {
+      "id": "db-sql-02",
+      "topic": "sql",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "R has 5 rows and S has 4 rows, and they share no common attribute names. How many rows does the result of a natural join of R and S contain?",
+      "options": ["0", "9", "20", "1"],
+      "answer": [2],
+      "explain": "With no common attributes the join condition is vacuously true, so a natural join degenerates to a Cartesian product: 5 x 4 = 20 rows."
+    },
+    {
+      "id": "db-ra-01",
+      "topic": "relational-algebra",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "Which relational algebra operator is NOT part of the minimal complete set from which the others can be derived?",
+      "options": ["Selection", "Projection", "Natural join", "Set difference"],
+      "answer": [2],
+      "explain": "The primitive set is selection, projection, union, set difference, Cartesian product and rename. Natural join is derived: a Cartesian product followed by a selection on equal attributes and a projection."
+    },
+    {
+      "id": "db-er-01",
+      "topic": "er-model",
+      "kind": "dpp",
+      "difficulty": "easy",
+      "type": "mcq",
+      "marks": 1,
+      "text": "A binary relationship between entity sets E1 and E2 is many-to-one from E1 to E2, with total participation from E1. What is the minimum number of tables needed?",
+      "options": ["1", "2", "3", "4"],
+      "answer": [1],
+      "explain": "With many-to-one and total participation on the many side, the relationship folds into E1's table as a foreign key. Two tables suffice: one for E1 (carrying the key of E2) and one for E2."
+    },
+    {
+      "id": "db-rec-01",
+      "topic": "recovery",
+      "kind": "dpp",
+      "difficulty": "medium",
+      "type": "mcq",
+      "marks": 2,
+      "text": "Under write-ahead logging with deferred database modification, when may a data block be written to disk?",
+      "options": [
+        "Before the corresponding log record reaches stable storage",
+        "Only after the corresponding log record reaches stable storage",
+        "Only after the transaction aborts",
+        "At any time, since the log is rebuilt on recovery"
+      ],
+      "answer": [1],
+      "explain": "The write-ahead rule requires the log record to reach stable storage before the data page it describes, otherwise recovery cannot undo or redo the change."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "type": "object",
+    "properties": {
+        "is_extension_mass_deployed": {
+            "type": "boolean",
+            "title": "Dashlane installed through mass deployment",
+            "description": "Property indicating whether the device is part of a mass deployment in an enterprise environment."
+        },
+        "team_key": {
+            "type": "string",
+            "title": "Key associated to a team",
+            "description": "Property that indicates a key used to retrieve team info at creation account"
+        },
+        "silent_deploy": {
+            "type": "boolean",
+            "title": "Silent Deployement",
+            "description": "Determine if we should open a tab at first login"
+        },
+        "MassDeployedTeamKey": {
+            "type": "string",
+            "title": "Mass Deployed Team Key",
+            "description": "Property that indicates a key used to send activity logs while logged out"
+        },
+        "Username": {
+            "type": "string",
+            "title": "Username",
+            "description": "Property that indicates the username of the employee using the device"
+        }
+    }
+}

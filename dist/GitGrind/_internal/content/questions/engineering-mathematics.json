@@ -1,0 +1,68 @@
+{
+  "subject": "engineering-mathematics",
+  "questions": [
+    {
+      "id": "em-eig-01", "topic": "eigen", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A 3x3 matrix has trace 6 and determinant 6, and one of its eigenvalues is 1. What is the sum of the squares of the other two eigenvalues?",
+      "answer_value": 13, "tolerance": 0,
+      "explain": "The other two eigenvalues sum to 5 and multiply to 6, so they are 2 and 3. Sum of squares = 4 + 9 = 13."
+    },
+    {
+      "id": "em-rank-01", "topic": "linear-systems", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "A system of 4 linear equations in 5 unknowns has a coefficient matrix of rank 3 and an augmented matrix of rank 3. What can be said about the solution set?",
+      "options": [
+        "No solution",
+        "Exactly one solution",
+        "Infinitely many solutions with 2 free variables",
+        "Infinitely many solutions with 1 free variable"
+      ],
+      "answer": [2],
+      "explain": "Equal ranks mean the system is consistent. The number of free variables is unknowns minus rank = 5 - 3 = 2."
+    },
+    {
+      "id": "em-prob-01", "topic": "probability", "kind": "pyq", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "A test detects a disease with probability 0.99 when present and gives a false positive with probability 0.02. The disease affects 1 percent of the population. Given a positive test, what is the probability the person has the disease, rounded to three decimals?",
+      "answer_value": 0.333, "tolerance": 0.002,
+      "explain": "By Bayes: (0.99 x 0.01) / (0.99 x 0.01 + 0.02 x 0.99) = 0.0099 / 0.0297 = 0.3333. Low prevalence keeps the posterior low despite a sensitive test."
+    },
+    {
+      "id": "em-prob-02", "topic": "probability", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "Two fair six-sided dice are rolled. What is the probability that the sum is 8, expressed as a decimal rounded to four places?",
+      "answer_value": 0.1389, "tolerance": 0.0005,
+      "explain": "Favourable outcomes are (2,6), (3,5), (4,4), (5,3), (6,2), so 5 of 36. That is 0.13889."
+    },
+    {
+      "id": "em-dist-01", "topic": "distributions", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "A Poisson random variable has mean 4. What is its variance?",
+      "options": ["2", "4", "16", "Cannot be determined"],
+      "answer": [1],
+      "explain": "For a Poisson distribution the mean and variance are both equal to lambda, so the variance is 4."
+    },
+    {
+      "id": "em-calc-01", "topic": "maxima-minima", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "What is the maximum value of f(x) = x^3 - 3x on the closed interval [-2, 2]?",
+      "answer_value": 2, "tolerance": 0.001,
+      "explain": "f'(x) = 3x^2 - 3 vanishes at x = 1 and x = -1. Evaluate: f(-2) = -2, f(-1) = 2, f(1) = -2, f(2) = 2. Maximum is 2, attained at both x = -1 and x = 2."
+    },
+    {
+      "id": "em-int-01", "topic": "integration", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "Evaluate the definite integral of x from 0 to 3 of (2x + 1) dx.",
+      "answer_value": 12, "tolerance": 0.001,
+      "explain": "The antiderivative is x^2 + x. Evaluated from 0 to 3: (9 + 3) - 0 = 12."
+    },
+    {
+      "id": "em-stat-01", "topic": "statistics", "kind": "dpp", "difficulty": "easy",
+      "type": "nat", "marks": 1,
+      "text": "What is the median of the data set 4, 8, 15, 16, 23, 42?",
+      "answer_value": 15.5, "tolerance": 0.001,
+      "explain": "With an even count the median is the mean of the two middle values: (15 + 16) / 2 = 15.5."
+    }
+  ]
+}

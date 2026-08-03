@@ -1,0 +1,88 @@
+{
+  "subject": "compiler-design",
+  "questions": [
+    {
+      "id": "cd-ll-01", "topic": "parsing-ll", "kind": "pyq", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "A grammar is LL(1) only if, for every non-terminal with two productions A -> alpha and A -> beta, which condition holds?",
+      "options": [
+        "FIRST(alpha) and FIRST(beta) are disjoint, and if one derives epsilon its FIRST is disjoint from FOLLOW(A)",
+        "FIRST(alpha) equals FIRST(beta)",
+        "The grammar is left recursive",
+        "FOLLOW(A) is empty"
+      ],
+      "answer": [0],
+      "explain": "A single lookahead token must uniquely select a production, so the FIRST sets must not overlap, and an epsilon-deriving alternative must not conflict with FOLLOW(A). Left recursion always breaks LL(1)."
+    },
+    {
+      "id": "cd-lr-01", "topic": "parsing-lr", "kind": "pyq", "difficulty": "hard",
+      "type": "mcq", "marks": 2,
+      "text": "Which containment among parser classes is correct?",
+      "options": [
+        "LR(0) subset SLR(1) subset LALR(1) subset CLR(1)",
+        "CLR(1) subset LALR(1) subset SLR(1) subset LR(0)",
+        "SLR(1) subset LR(0) subset LALR(1) subset CLR(1)",
+        "LALR(1) subset SLR(1) subset CLR(1) subset LR(0)"
+      ],
+      "answer": [0],
+      "explain": "Each class strictly contains the previous one in parsing power. CLR(1) (canonical LR) is the most powerful, and LALR(1) merges CLR states with identical cores, which can introduce reduce-reduce conflicts CLR would not have."
+    },
+    {
+      "id": "cd-lr-02", "topic": "parsing-lr", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Merging LR(1) states with identical cores to build an LALR(1) table can introduce which kind of conflict?",
+      "options": ["Shift-shift", "Shift-reduce only", "Reduce-reduce only", "Both shift-reduce and reduce-reduce"],
+      "answer": [2],
+      "explain": "State merging can only widen lookahead sets, which can make two reductions valid on the same token. It can never create a new shift-reduce conflict."
+    },
+    {
+      "id": "cd-lex-01", "topic": "lexical-analysis", "kind": "dpp", "difficulty": "easy",
+      "type": "mcq", "marks": 1,
+      "text": "Which class of machine is sufficient to implement a lexical analyser?",
+      "options": ["Finite automaton", "Pushdown automaton", "Linear bounded automaton", "Turing machine"],
+      "answer": [0],
+      "explain": "Tokens are described by regular expressions, so a finite automaton suffices. Parsing needs a pushdown automaton because it must handle nesting."
+    },
+    {
+      "id": "cd-sdt-01", "topic": "sdt", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Which attribute kind can be evaluated in a single bottom-up pass during LR parsing without restructuring the grammar?",
+      "options": ["Inherited attributes", "Synthesised attributes", "Both equally", "Neither"],
+      "answer": [1],
+      "explain": "Synthesised attributes flow from children to parent, matching the order reductions occur in bottom-up parsing. Inherited attributes flow downwards and generally need an L-attributed definition with top-down evaluation."
+    },
+    {
+      "id": "cd-opt-01", "topic": "dataflow", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Live variable analysis is which kind of data flow problem?",
+      "options": [
+        "Forward flow, any-path (union)",
+        "Backward flow, any-path (union)",
+        "Forward flow, all-paths (intersection)",
+        "Backward flow, all-paths (intersection)"
+      ],
+      "answer": [1],
+      "explain": "Liveness asks whether a value may be used later, so information flows backwards from uses and merges with union. Available expressions is the forward, intersection counterpart."
+    },
+    {
+      "id": "cd-ir-01", "topic": "intermediate-code", "kind": "dpp", "difficulty": "medium",
+      "type": "nat", "marks": 2,
+      "text": "How many three-address instructions, each with at most one operator, are needed to evaluate a = b * c + b * c - d without any common subexpression elimination?",
+      "answer_value": 4, "tolerance": 0,
+      "explain": "t1 = b * c; t2 = b * c; t3 = t1 + t2; a = t3 - d. That is 4 instructions. With CSE the second multiplication disappears, leaving 3."
+    },
+    {
+      "id": "cd-run-01", "topic": "runtime-env", "kind": "dpp", "difficulty": "medium",
+      "type": "mcq", "marks": 2,
+      "text": "Under static (lexical) scoping, the binding of a free variable in a function is determined by:",
+      "options": [
+        "The call chain at run time",
+        "The textual nesting of the function in the source",
+        "The order in which functions are declared in the file",
+        "The size of the activation record"
+      ],
+      "answer": [1],
+      "explain": "Static scoping resolves names by enclosing source blocks, decidable at compile time. Resolving by the run-time call chain is dynamic scoping."
+    }
+  ]
+}
