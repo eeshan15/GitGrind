@@ -26,7 +26,7 @@
 
 ### [Download GitGrind for Windows](https://github.com/eeshan15/GitGrind/releases/latest)
 
-</div>
+</div> 
 
 Grab the installer from the
 **[latest release](https://github.com/eeshan15/GitGrind/releases/latest)**, run
