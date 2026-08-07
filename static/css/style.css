@@ -1558,3 +1558,98 @@ body.reduced-motion.booted .topbar,body.reduced-motion.booted .shell{transition:
 .viz-mcell.zero{color:var(--faint)}
 .viz-mcell.col{background:rgba(121,192,255,.12)}
 .viz-mcell.pivot{background:rgba(232,180,62,.22);color:var(--gold);font-weight:800}
+/* ------------------------------------------------------------------------- */
+/* Question figures                                                          */
+/* Images extracted from a source paper, shown under the question stem. Sized */
+/* down rather than cropped: a graph or a K-map is unreadable once clipped.   */
+/* ------------------------------------------------------------------------- */
+.q-figs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 14px 0 4px;
+}
+
+.q-fig {
+  margin: 0;
+  padding: 8px;
+  max-width: 100%;
+  background: var(--bg2, #fff);
+  border: 1px solid var(--line, #d8dee4);
+  border-radius: 6px;
+}
+
+.q-fig-img {
+  display: block;
+  max-width: 100%;
+  max-height: 380px;
+  width: auto;
+  height: auto;
+  /* Diagrams are scanned on white. On a dark theme an unpadded transparent PNG
+     would read as a black rectangle, so keep a light plate behind every one. */
+  background: #fff;
+  border-radius: 3px;
+}
+
+.q-fig figcaption,
+.q-fig .q-fig-missing {
+  margin: 6px 0 0;
+  max-width: 420px;
+}
+
+.q-fig .q-fig-missing { color: var(--bad, #b4232a); }
+
+@media (max-width: 640px) {
+  .q-figs { gap: 10px; }
+  .q-fig-img { max-height: 260px; }
+}
+
+/* ------------------------------------------------------------------------- */
+/* Math text (KaTeX)                                                         */
+/* Extracted questions carry $...$ LaTeX source; core.js renders it in place */
+/* through KaTeX rather than as raw text. Keep it inline with the paragraph.  */
+/* ------------------------------------------------------------------------- */
+.math-text { display: inline; }
+.math-text .katex { font-size: 1.05em; }
+.math-text .katex-error { color: var(--bad, #b4232a); }
+
+/* .review-opt is display:flex, so the math span becomes a flex item and would
+   otherwise shrink past its content and read as an empty option box. Give it
+   room, let it scroll instead of collapsing, and mark the two states where the
+   source did not survive extraction. */
+.review-opt .math-text { flex: 1 1 auto; min-width: 0; overflow-x: auto; }
+.q-text .math-text, .review-q .math-text { overflow-wrap: anywhere; }
+.math-raw { font-family: var(--mono); font-size: .92em; color: var(--weak, #d29922); }
+.opt-missing { color: var(--weak, #d29922); font-size: .92em; }
+
+/* ------------------------------------------------------------------------- */
+/* Code listings                                                             */
+/* A program must keep its line breaks and its column alignment, so this is   */
+/* the one place in a question where whitespace is significant.               */
+/* ------------------------------------------------------------------------- */
+.q-code { margin: 12px 0 4px; }
+
+.q-code-pre {
+  margin: 0 0 8px;
+  padding: 10px 12px;
+  overflow-x: auto;
+  white-space: pre;
+  tab-size: 4;
+  font-family: var(--mono);
+  font-size: .88rem;
+  line-height: 1.45;
+  background: var(--bg2, #0d1117);
+  border: 1px solid var(--line, #30363d);
+  border-left: 3px solid var(--accent, #2f81f7);
+  border-radius: 5px;
+}
+
+.q-code-pre[data-lang]::before {
+  content: attr(data-lang);
+  display: block;
+  margin-bottom: 6px;
+  font-size: .72rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--dim, #8b949e);
+}
