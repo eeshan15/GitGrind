@@ -177,11 +177,17 @@ GG.bank = (function () {
       if ((it.issues || []).length) {
         card.appendChild(el('p', { class: 'review-issues', text: it.issues.join(' | ') }));
       }
-      card.appendChild(el('div', { class: 'review-q', text: q.text || '(no text)' }));
+      card.appendChild(el('div', { class: 'review-q' }, [GG.mathText(q.text || '(no text)')]));
+      const rCode = GG.codeBlocks(q);
+      if (rCode) card.appendChild(rCode);
+      const rFigs = GG.figures(q);
+      if (rFigs) card.appendChild(rFigs);
       if ((q.options || []).length) {
         const opts = el('div', { class: 'review-opts' });
         q.options.forEach((o, i) => opts.appendChild(el('div', { class: 'review-opt' }, [
-          el('b', {}, ['ABCD'[i] || String(i + 1)]), String(o),
+          el('b', {}, ['ABCD'[i] || String(i + 1)]),
+          String(o).trim() ? GG.mathText(String(o))
+            : el('i', { class: 'opt-missing', text: 'not extracted' }),
         ])));
         card.appendChild(opts);
       }
@@ -357,12 +363,20 @@ GG.bank = (function () {
       q.exam ? el('span', { class: 'dim small mono', text: q.exam }) : '',
     ]));
 
-    wrap.appendChild(el('div', { class: 'review-q', text: q.text || '(no text extracted)' }));
+    wrap.appendChild(el('div', { class: 'review-q' }, [GG.mathText(q.text || '(no text extracted)')]));
+    /* The figure is often the whole reason this one is pending, so show it here
+       too - the answer cannot be looked up from the stem alone. */
+    const pCode = GG.codeBlocks(q);
+    if (pCode) wrap.appendChild(pCode);
+    const pFigs = GG.figures(q);
+    if (pFigs) wrap.appendChild(pFigs);
 
     if ((q.options || []).length) {
       const opts = el('div', { class: 'review-opts' });
       q.options.forEach((o, i) => opts.appendChild(el('div', { class: 'review-opt' }, [
-        el('b', {}, ['ABCD'[i] || String(i + 1)]), String(o),
+        el('b', {}, ['ABCD'[i] || String(i + 1)]),
+        String(o).trim() ? GG.mathText(String(o))
+          : el('i', { class: 'opt-missing', text: 'not extracted' }),
       ])));
       wrap.appendChild(opts);
     }

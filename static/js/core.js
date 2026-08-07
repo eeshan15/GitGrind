@@ -517,13 +517,117 @@ window.GG = (function () {
     return el('div', { class: 'empty' }, kids);
   }
 
+  /* --------------------------- question figures --------------------------- */
+  /* Questions extracted from a source PDF can carry figures - a graph, a
+     circuit, a Karnaugh map - without which the stem is unanswerable. They
+     arrive as q.figure_assets: [{src, alt, page_idx, kind}], already filtered
+     server-side to paths under /content/assets/.
+
+     This is deliberately kept apart from text rendering. Question text goes in
+     as a text node and never as HTML, so there is no markdown pass and no
+     innerHTML anywhere near a question: an <img> is built as an element with
+     its src set through the DOM. A bad or renamed file therefore degrades to a
+     visible "figure did not load" line rather than injecting anything. */
+  /* ----------------------------- math text ------------------------------- */
+  /* Extracted questions carry LaTeX inline as literal $...$ source (MinerU's
+     extraction format, not markdown). el()'s text: attribute sets textContent,
+     so that source used to show up as raw "$\Theta ( n )$" on screen instead of
+     a rendered symbol.
+
+     This renders each $...$ span through KaTeX, which builds its own DOM nodes
+     rather than being handed a string to parse as HTML - so a malformed or
+     hostile LaTeX source degrades to plain text (via throwOnError: false) and
+     never becomes a way to inject markup. trust: false (KaTeX's default) keeps
+     \href and similar commands from reaching out to arbitrary URLs. Everything
+     outside a $...$ pair is still added as a plain text node, exactly as
+     before - only the math spans get special handling. */
+  function mathText(text) {
+    const host = document.createElement('span');
+    host.className = 'math-text';
+    const str = text === null || text === undefined ? '' : String(text);
+    if (!str) return host;
+    if (!window.katex) {
+      host.appendChild(document.createTextNode(str));
+      return host;
+    }
+    str.split(/(\$[^$\n]+\$)/g).forEach(part => {
+      if (!part) return;
+      if (part.length > 1 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$') {
+        const expr = part.slice(1, -1).trim();
+        const span = document.createElement('span');
+        try {
+          /* throwOnError so a broken source raises here instead of rendering
+             itself back out in red. Extraction leaves plenty of malformed
+             LaTeX, and a wall of red error markup is harder to read than the
+             raw text it was trying to replace. The node stays detached until
+             the render succeeds, so a partial failure never reaches the page. */
+          window.katex.render(expr, span, { throwOnError: true, trust: false, strict: 'ignore' });
+          host.appendChild(span);
+        } catch (e) {
+          const raw = document.createElement('span');
+          raw.className = 'math-raw';
+          raw.title = 'This formula did not survive extraction from the PDF.';
+          raw.appendChild(document.createTextNode(part));
+          host.appendChild(raw);
+        }
+      } else {
+        host.appendChild(document.createTextNode(part));
+      }
+    });
+    return host;
+  }
+
+  /* --------------------------- code listings ----------------------------- */
+  /* Many GATE questions are built around a C or SQL listing. Those arrive as
+     q.code_blocks: [{code, lang}] and must keep their line breaks - a program
+     squashed onto one line is unreadable. The code goes in as a text node, so a
+     listing can never be interpreted as markup no matter what it contains. */
+  function codeBlocks(q) {
+    const list = Array.isArray(q && q.code_blocks) ? q.code_blocks : [];
+    if (!list.length) return null;
+    const box = el('div', { class: 'q-code' });
+    list.forEach(b => {
+      if (!b || !b.code) return;
+      const pre = el('pre', { class: 'q-code-pre' });
+      pre.appendChild(document.createTextNode(String(b.code)));
+      if (b.lang) pre.setAttribute('data-lang', String(b.lang));
+      box.appendChild(pre);
+    });
+    return box.children.length ? box : null;
+  }
+
+  function figures(q) {
+    const list = Array.isArray(q && q.figure_assets) ? q.figure_assets : [];
+    if (!list.length) return null;
+    const box = el('div', { class: 'q-figs' });
+    list.forEach((f, i) => {
+      if (!f || typeof f.src !== 'string' || f.src.indexOf('/content/assets/') !== 0) return;
+      const alt = f.alt || ('Figure ' + (i + 1) + ' for this question');
+      const fallback = el('p', { class: 'q-fig-missing dim small',
+        text: alt + ' - figure did not load (check content/assets/).' });
+      fallback.hidden = true;
+      const img = el('img', { class: 'q-fig-img', alt: alt, loading: 'lazy', decoding: 'async' });
+      img.addEventListener('error', () => { img.hidden = true; fallback.hidden = false; });
+      img.src = f.src;
+      const cap = [];
+      if (list.length > 1) cap.push('Figure ' + (i + 1));
+      if (f.kind) cap.push(f.kind);
+      if (f.page_idx !== undefined && f.page_idx !== null) cap.push('source page ' + f.page_idx);
+      box.appendChild(el('figure', { class: 'q-fig' }, [
+        img, fallback,
+        cap.length ? el('figcaption', { class: 'dim small', text: cap.join(' / ') }) : null,
+      ]));
+    });
+    return box.children.length ? box : null;
+  }
+
   return {
     S, $, $$, el, esc, hm, ago, nice, num, signed, colorOf, hueOf,
     api, toast, announce, showTip, hideTip, bindTip, countTo, growBars,
     modal, closeAll, show, parseHash, markNav, ROUTES,
     loadPrefs, savePrefs, setReducedMotion, adoptServerPrefs, motionOff,
     draft, clearDraft, snapshot, restore,
-    key, shortcutHelp, band, clamp, pct, empty,splashDone,
+    key, shortcutHelp, band, clamp, pct, empty, figures, mathText, codeBlocks, splashDone,
     get openModal() { return openModal; },
   };
 })();

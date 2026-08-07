@@ -1,7 +1,7 @@
 /* Question of the day, quiz runner and results. */
 GG.practice = (function () {
   'use strict';
-  const { $, $$, el, esc, ago, growBars } = GG;
+  const { $, $$, el, esc, ago, growBars, figures, mathText, codeBlocks } = GG;
 
   const LETTER = i => String.fromCharCode(65 + i);
   let quiz = null;      /* { id, questions, responses, idx, startedAt } */
@@ -18,7 +18,16 @@ GG.practice = (function () {
       el('span', { class: 'chip-kind', text: q.difficulty }),
       q.topic ? el('span', { class: 'chip-kind', text: q.topic }) : null,
     ]));
-    wrap.appendChild(el('div', { class: 'q-text', text: q.text }));
+    wrap.appendChild(el('div', { class: 'q-text' }, [mathText(q.text)]));
+    /* Figures go below the stem, above the options: that is the reading order
+       of the printed paper, and a diagram-dependent question is unanswerable
+       until it is on screen. */
+    /* Listing first, then figure: that is the printed order, and the code is
+       usually what the question is asking about. */
+    const code = codeBlocks(q);
+    if (code) wrap.appendChild(code);
+    const figs = figures(q);
+    if (figs) wrap.appendChild(figs);
 
     if (q.type === 'nat') {
       const input = el('input', {
@@ -44,7 +53,7 @@ GG.practice = (function () {
         }
         const row = el('div', { class: cls }, [
           el('span', { class: 'opt-key', text: LETTER(i) }),
-          el('span', { class: 'opt-txt', text: text }),
+          el('span', { class: 'opt-txt' }, [mathText(text)]),
         ]);
         if (!o.locked) {
           row.addEventListener('click', () => {
@@ -82,7 +91,7 @@ GG.practice = (function () {
       el('b', { text: (res.marks_got > 0 ? '+' : '') + res.marks_got + ' marks' }),
       el('span', { class: 'dim small', text: 'answer: ' + answerText }),
     ]));
-    if (q.explain) box.appendChild(el('div', { class: 'q-explain', text: q.explain }));
+    if (q.explain) box.appendChild(el('div', { class: 'q-explain' }, [mathText(q.explain)]));
     if (res.peer) box.appendChild(el('div', { class: 'solve-rate',
       text: 'Modelled solve rate for this difficulty: ' + res.peer.solve_rate + '% (simulated, not live data)' }));
     box.appendChild(el('button', {
