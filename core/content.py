@@ -79,6 +79,15 @@ DIFFICULTIES = ("easy", "medium", "hard")
 # A question needs these to be servable at all.
 REQUIRED_FIELDS = ("id", "text")
 
+# Figures extracted from a source PDF live on disk as sidecar files and are
+# referenced from a question's ``figure_assets``. Only paths under this prefix
+# are ever handed to the UI: a bank file is editable by hand and shipped in
+# releases, so an asset src is untrusted input, and letting an arbitrary URL or
+# a "javascript:" string reach an <img> would turn a content edit into a way to
+# execute code in the app. Anything else is dropped and reported as a defect.
+ASSET_URL_PREFIX = "/content/assets/"
+ASSETS_DIR = os.path.join(CONTENT_DIR, "assets")
+
 _cache = {}
 
 
@@ -236,6 +245,8 @@ def _hydrate(q, subject_slug, bank, rel, source_meta):
     item.setdefault("type", "mcq")
     item.setdefault("marks", 2)
     item.setdefault("options", [])
+    item.setdefault("figure_assets", [])
+    item.setdefault("code_blocks", [])
     item.setdefault("explain", "")
     item.setdefault("tags", [])
     item.setdefault("confidence", 1.0)
@@ -316,6 +327,89 @@ def by_topic(reload=False):
 # ---------------------------------------------------------------------------
 # bank health
 # ---------------------------------------------------------------------------
+def safe_asset_src(src):
+    """The src to hand the UI, or "" when it is not a local content asset.
+
+    Rejects anything that is not an app-owned relative path: absolute URLs,
+    scheme-like strings, backslashes and any traversal out of content/assets.
+    """
+    src = str(src or "").strip()
+    if not src or "\\" in src or "\n" in src or "\r" in src:
+        return ""
+    if not src.startswith(ASSET_URL_PREFIX):
+        return ""
+    rel = src[len(ASSET_URL_PREFIX):]
+    if not rel or rel.startswith("/"):
+        return ""
+    # Normalise first, then confirm the result is still inside the prefix.
+    if any(part in ("..", "") for part in rel.split("/")):
+        return ""
+    return ASSET_URL_PREFIX + rel
+
+
+def figure_asset_issues(q):
+    """Problems with a question's figure_assets. Empty list means it is fine."""
+    figs = q.get("figure_assets")
+    if figs in (None, "", []):
+        return []
+    if not isinstance(figs, list):
+        return ["figure_assets is not a list"]
+    issues = []
+    for i, asset in enumerate(figs):
+        if not isinstance(asset, dict):
+            issues.append("figure_assets[%d] is not an object" % i)
+            continue
+        if not asset.get("src"):
+            issues.append("figure_assets[%d] has no src" % i)
+        elif not safe_asset_src(asset["src"]):
+            issues.append("figure_assets[%d] src is not a content/assets path" % i)
+        bbox = asset.get("bbox")
+        if bbox is not None and (not isinstance(bbox, list) or len(bbox) != 4):
+            issues.append("figure_assets[%d] bbox is not four numbers" % i)
+    return issues
+
+
+def public_figures(q):
+    """figure_assets as the UI should see them: safe srcs, no private fields."""
+    out = []
+    figs = q.get("figure_assets")
+    if not isinstance(figs, list):
+        return out
+    for i, asset in enumerate(figs):
+        if not isinstance(asset, dict):
+            continue
+        src = safe_asset_src(asset.get("src"))
+        if not src:
+            continue
+        view = dict(src=src, alt=str(asset.get("alt") or "Figure %d" % (i + 1))[:300])
+        if asset.get("page_idx") is not None:
+            view["page_idx"] = asset["page_idx"]
+        if asset.get("kind"):
+            view["kind"] = str(asset["kind"])[:40]
+        out.append(view)
+    return out
+
+
+def public_code(q):
+    """Code listings as the UI should see them.
+
+    A listing is data, not markup: it is handed over as a plain string and the
+    UI puts it in a text node, so nothing inside a program can become markup.
+    """
+    out = []
+    blocks = q.get("code_blocks")
+    if not isinstance(blocks, list):
+        return out
+    for b in blocks:
+        if not isinstance(b, dict):
+            continue
+        code = str(b.get("code") or "")
+        if not code.strip():
+            continue
+        out.append(dict(code=code[:4000], lang=str(b.get("lang") or "")[:20]))
+    return out
+
+
 def validate_question(q):
     """Return a list of problems. Empty list means the question is servable.
 
@@ -333,6 +427,11 @@ def validate_question(q):
         issues.append("no topic tag")
     elif (q.get("subject"), q.get("topic")) not in topic_index():
         issues.append("topic not in syllabus")
+
+    # Figure problems are checked before the answer_pending shortcut below,
+    # because a malformed asset list is a defect in its own right and has
+    # nothing to do with whether an answer is known yet.
+    issues.extend(figure_asset_issues(q))
 
     if q.get("answer_pending"):
         # Skip every answer- and option-shaped check: by definition those are the
@@ -379,6 +478,7 @@ def bank_stats(reload=False):
         {},
     )
     broken, no_explain, untagged, pending = 0, 0, 0, 0
+    with_figures, figure_defects, figure_count = 0, 0, 0
     pending_by_subject = {}
     src = sources()
 
@@ -392,7 +492,13 @@ def bank_stats(reload=False):
         year = q.get("paper_year") or q.get("year")
         if year:
             by_year[str(year)] = by_year.get(str(year), 0) + 1
+        figs = q.get("figure_assets") or []
+        if isinstance(figs, list) and figs:
+            with_figures += 1
+            figure_count += len(figs)
         issues = validate_question(q)
+        if [i for i in issues if i.startswith("figure_assets")]:
+            figure_defects += 1
         if not q.get("topic") or (q["subject"], q.get("topic")) not in topic_index():
             untagged += 1
         if "no explanation" in issues:
@@ -440,6 +546,9 @@ def bank_stats(reload=False):
         pending_by_subject=pending_by_subject,
         untagged=untagged,
         missing_explanation=no_explain,
+        with_figures=with_figures,
+        figures_total=figure_count,
+        figure_defects=figure_defects,
         health_pct=round(usable / total * 100) if total else 0,
         pending_pct=round(pending / total * 100) if total else 0,
         coverage_pct=round((len(idx) - len(empty_topics)) / len(idx) * 100) if idx else 0,
@@ -555,6 +664,14 @@ def public_question(q, reveal=False):
         tags=q.get("tags", []),
         source=q.get("source", ""),
     )
+    # Image metadata, so a figure-dependent question is answerable in the UI.
+    # Only ever paths: image bytes are never carried in a question payload.
+    figures = public_figures(q)
+    if figures:
+        out["figure_assets"] = figures
+    code = public_code(q)
+    if code:
+        out["code_blocks"] = code
     year = q.get("paper_year") or q.get("year")
     if year:
         out["year"] = year
@@ -883,6 +1000,8 @@ def pending_answers(subject="", topic="", limit=50, offset=0):
                 marks=q.get("marks", 2),
                 text=q.get("text", ""),
                 options=q.get("options") or [],
+                figure_assets=public_figures(q),
+                code_blocks=public_code(q),
                 year=q.get("year") or q.get("paper_year"),
                 exam=(q.get("origin") or {}).get("exam", "") or q.get("exam", ""),
                 source_ref=(q.get("origin") or {}).get("ref", "")

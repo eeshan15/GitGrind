@@ -10,7 +10,7 @@ import mimetypes
 import os
 from datetime import date, datetime
 from http.server import BaseHTTPRequestHandler
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 from . import (
     achievements,
@@ -28,6 +28,19 @@ from . import (
 
 # The UI is read-only, so it is served straight out of the bundle when frozen.
 STATIC_DIR = os.path.join(db.ASSET_DIR, "static")
+
+# Question figures. These are content, not code, so they live under content/
+# rather than static/ and are served from the writable copy - a re-import drops
+# new files in and they are live without rebuilding anything.
+ASSETS_DIR = os.path.join(content.CONTENT_DIR, "assets")
+ASSET_TYPES = {
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".png": "image/png",
+    ".gif": "image/gif",
+    ".webp": "image/webp",
+    ".svg": "image/svg+xml",
+}
 VERSION = "1.0"
 SHOW_WINDOW = None
 # Settings the user is allowed to change from the UI, with their coercion.
@@ -198,6 +211,34 @@ class Handler(BaseHTTPRequestHandler):
         except (ValueError, UnicodeDecodeError):
             return {}
 
+    def _asset(self, path):
+        """Serve one file from content/assets/.
+
+        Deliberately narrow: only the extensions in ASSET_TYPES, only below
+        ASSETS_DIR, and a 404 rather than the app shell on a miss so a broken
+        figure shows as a broken image instead of silently rendering HTML.
+        """
+        rel = unquote(path[len("/content/assets/"):])
+        if not rel or ".." in rel.split("/") or rel.startswith("/") or "\\" in rel:
+            return self.send_error(404, "Not found")
+        root = os.path.realpath(ASSETS_DIR)
+        full = os.path.realpath(os.path.join(root, rel))
+        if not (full == root or full.startswith(root + os.sep)):
+            return self.send_error(404, "Not found")
+        ctype = ASSET_TYPES.get(os.path.splitext(full)[1].lower())
+        if not ctype or not os.path.isfile(full):
+            return self.send_error(404, "Not found")
+        with open(full, "rb") as fh:
+            data = fh.read()
+        self.send_response(200)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Length", str(len(data)))
+        # Figure files are content-addressed by the importer, so a long cache is
+        # safe and keeps a question with several diagrams from refetching them.
+        self.send_header("Cache-Control", "public, max-age=86400")
+        self.end_headers()
+        self.wfile.write(data)
+
     def _static(self, path):
         rel = "index.html" if path in ("", "/") else path.lstrip("/")
         full = os.path.normpath(os.path.join(STATIC_DIR, rel))
@@ -240,6 +281,8 @@ class Handler(BaseHTTPRequestHandler):
     # -- verbs -----------------------------------------------------------
     def do_GET(self):
         parsed = urlparse(self.path)
+        if parsed.path.startswith("/content/assets/"):
+            return self._asset(parsed.path)
         if not parsed.path.startswith("/api/"):
             return self._static(parsed.path)
         return self._run(
