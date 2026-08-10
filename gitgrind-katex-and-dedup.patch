@@ -1,0 +1,165 @@
+--- a/static/index.html
++++ b/static/index.html
+@@ -6,6 +6,7 @@
+ <meta name="color-scheme" content="dark">
+ <title>GitGrind &mdash; GATE CSE operating system</title>
+ <link rel="stylesheet" href="/css/style.css">
++<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+ <link rel="icon" href="/icon.png">
+ </head>
+ <body>
+@@ -685,6 +686,7 @@
+ <div class="sr-only" id="live" role="status" aria-live="polite" aria-atomic="true"></div>
+ <div class="tip" id="tip" hidden role="tooltip"></div>
+ 
++<script src="/vendor/katex/katex.min.js"></script>
+ <script src="/js/core.js"></script>
+ <script src="/js/render.js"></script>
+ <script src="/js/plan.js"></script>
+--- a/static/js/core.js
++++ b/static/js/core.js
+@@ -528,6 +528,46 @@
+      innerHTML anywhere near a question: an <img> is built as an element with
+      its src set through the DOM. A bad or renamed file therefore degrades to a
+      visible "figure did not load" line rather than injecting anything. */
++  /* ----------------------------- math text ------------------------------- */
++  /* Extracted questions carry LaTeX inline as literal $...$ source (MinerU's
++     extraction format, not markdown). el()'s text: attribute sets textContent,
++     so that source used to show up as raw "$\Theta ( n )$" on screen instead of
++     a rendered symbol.
++
++     This renders each $...$ span through KaTeX, which builds its own DOM nodes
++     rather than being handed a string to parse as HTML - so a malformed or
++     hostile LaTeX source degrades to plain text (via throwOnError: false) and
++     never becomes a way to inject markup. trust: false (KaTeX's default) keeps
++     \href and similar commands from reaching out to arbitrary URLs. Everything
++     outside a $...$ pair is still added as a plain text node, exactly as
++     before - only the math spans get special handling. */
++  function mathText(text) {
++    const host = document.createElement('span');
++    host.className = 'math-text';
++    const str = text === null || text === undefined ? '' : String(text);
++    if (!str) return host;
++    if (!window.katex) {
++      host.appendChild(document.createTextNode(str));
++      return host;
++    }
++    str.split(/(\$[^$\n]+\$)/g).forEach(part => {
++      if (!part) return;
++      if (part.length > 1 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$') {
++        const expr = part.slice(1, -1).trim();
++        const span = document.createElement('span');
++        try {
++          window.katex.render(expr, span, { throwOnError: false, trust: false, strict: 'ignore' });
++        } catch (e) {
++          span.appendChild(document.createTextNode(part));
++        }
++        host.appendChild(span);
++      } else {
++        host.appendChild(document.createTextNode(part));
++      }
++    });
++    return host;
++  }
++
+   function figures(q) {
+     const list = Array.isArray(q && q.figure_assets) ? q.figure_assets : [];
+     if (!list.length) return null;
+@@ -559,7 +599,7 @@
+     modal, closeAll, show, parseHash, markNav, ROUTES,
+     loadPrefs, savePrefs, setReducedMotion, adoptServerPrefs, motionOff,
+     draft, clearDraft, snapshot, restore,
+-    key, shortcutHelp, band, clamp, pct, empty, figures, splashDone,
++    key, shortcutHelp, band, clamp, pct, empty, figures, mathText, splashDone,
+     get openModal() { return openModal; },
+   };
+ })();
+--- a/static/js/practice.js
++++ b/static/js/practice.js
+@@ -1,7 +1,7 @@
+ /* Question of the day, quiz runner and results. */
+ GG.practice = (function () {
+   'use strict';
+-  const { $, $$, el, esc, ago, growBars, figures } = GG;
++  const { $, $$, el, esc, ago, growBars, figures, mathText } = GG;
+ 
+   const LETTER = i => String.fromCharCode(65 + i);
+   let quiz = null;      /* { id, questions, responses, idx, startedAt } */
+@@ -18,7 +18,7 @@
+       el('span', { class: 'chip-kind', text: q.difficulty }),
+       q.topic ? el('span', { class: 'chip-kind', text: q.topic }) : null,
+     ]));
+-    wrap.appendChild(el('div', { class: 'q-text', text: q.text }));
++    wrap.appendChild(el('div', { class: 'q-text' }, [mathText(q.text)]));
+     /* Figures go below the stem, above the options: that is the reading order
+        of the printed paper, and a diagram-dependent question is unanswerable
+        until it is on screen. */
+@@ -49,7 +49,7 @@
+         }
+         const row = el('div', { class: cls }, [
+           el('span', { class: 'opt-key', text: LETTER(i) }),
+-          el('span', { class: 'opt-txt', text: text }),
++          el('span', { class: 'opt-txt' }, [mathText(text)]),
+         ]);
+         if (!o.locked) {
+           row.addEventListener('click', () => {
+@@ -87,7 +87,7 @@
+       el('b', { text: (res.marks_got > 0 ? '+' : '') + res.marks_got + ' marks' }),
+       el('span', { class: 'dim small', text: 'answer: ' + answerText }),
+     ]));
+-    if (q.explain) box.appendChild(el('div', { class: 'q-explain', text: q.explain }));
++    if (q.explain) box.appendChild(el('div', { class: 'q-explain' }, [mathText(q.explain)]));
+     if (res.peer) box.appendChild(el('div', { class: 'solve-rate',
+       text: 'Modelled solve rate for this difficulty: ' + res.peer.solve_rate + '% (simulated, not live data)' }));
+     box.appendChild(el('button', {
+--- a/static/js/bank.js
++++ b/static/js/bank.js
+@@ -177,13 +177,13 @@
+       if ((it.issues || []).length) {
+         card.appendChild(el('p', { class: 'review-issues', text: it.issues.join(' | ') }));
+       }
+-      card.appendChild(el('div', { class: 'review-q', text: q.text || '(no text)' }));
++      card.appendChild(el('div', { class: 'review-q' }, [GG.mathText(q.text || '(no text)')]));
+       const rFigs = GG.figures(q);
+       if (rFigs) card.appendChild(rFigs);
+       if ((q.options || []).length) {
+         const opts = el('div', { class: 'review-opts' });
+         q.options.forEach((o, i) => opts.appendChild(el('div', { class: 'review-opt' }, [
+-          el('b', {}, ['ABCD'[i] || String(i + 1)]), String(o),
++          el('b', {}, ['ABCD'[i] || String(i + 1)]), GG.mathText(String(o)),
+         ])));
+         card.appendChild(opts);
+       }
+@@ -359,7 +359,7 @@
+       q.exam ? el('span', { class: 'dim small mono', text: q.exam }) : '',
+     ]));
+ 
+-    wrap.appendChild(el('div', { class: 'review-q', text: q.text || '(no text extracted)' }));
++    wrap.appendChild(el('div', { class: 'review-q' }, [GG.mathText(q.text || '(no text extracted)')]));
+     /* The figure is often the whole reason this one is pending, so show it here
+        too - the answer cannot be looked up from the stem alone. */
+     const pFigs = GG.figures(q);
+@@ -368,7 +368,7 @@
+     if ((q.options || []).length) {
+       const opts = el('div', { class: 'review-opts' });
+       q.options.forEach((o, i) => opts.appendChild(el('div', { class: 'review-opt' }, [
+-        el('b', {}, ['ABCD'[i] || String(i + 1)]), String(o),
++        el('b', {}, ['ABCD'[i] || String(i + 1)]), GG.mathText(String(o)),
+       ])));
+       wrap.appendChild(opts);
+     }
+--- a/static/css/style.css
++++ b/static/css/style.css
+@@ -1603,3 +1603,12 @@
+   .q-figs { gap: 10px; }
+   .q-fig-img { max-height: 260px; }
+ }
++
++/* ------------------------------------------------------------------------- */
++/* Math text (KaTeX)                                                         */
++/* Extracted questions carry $...$ LaTeX source; core.js renders it in place */
++/* through KaTeX rather than as raw text. Keep it inline with the paragraph.  */
++/* ------------------------------------------------------------------------- */
++.math-text { display: inline; }
++.math-text .katex { font-size: 1.05em; }
++.math-text .katex-error { color: var(--bad, #b4232a); }
