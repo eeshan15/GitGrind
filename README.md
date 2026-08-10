@@ -1,1273 +1,746 @@
 <div align="center">
 
-# GitGrind
+```
+   ██████╗ ██╗████████╗ ██████╗ ██████╗ ██╗███╗   ██╗██████╗
+  ██╔════╝ ██║╚══██╔══╝██╔════╝ ██╔══██╗██║████╗  ██║██╔══██╗
+  ██║  ███╗██║   ██║   ██║  ███╗██████╔╝██║██╔██╗ ██║██║  ██║
+  ██║   ██║██║   ██║   ██║   ██║██╔══██╗██║██║╚██╗██║██║  ██║
+  ╚██████╔╝██║   ██║   ╚██████╔╝██║  ██║██║██║ ╚████║██████╔╝
+   ╚═════╝ ╚═╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝
+```
 
-**A local, offline operating system for a GATE CSE attempt.**
+### `dev-v2.0` — the layout-aware extraction pipeline
 
-[![Latest release](https://img.shields.io/github/v/release/eeshan15/GitGrind?style=for-the-badge&color=e8b43e&labelColor=0d1117)](https://github.com/eeshan15/GitGrind/releases/latest)
-[![Download](https://img.shields.io/badge/download-Windows%20installer-2ea043?style=for-the-badge&labelColor=0d1117)](https://github.com/eeshan15/GitGrind/releases/latest)
-[![Licence](https://img.shields.io/github/license/eeshan15/GitGrind?style=for-the-badge&color=79c0ff&labelColor=0d1117)](LICENSE.txt)
+**A local, file-based GATE preparation tracker.**
+Quizzes, spaced revision, a readiness model, and a question bank you own as plain JSON on disk.
+No account. No server. No external API.
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-3776ab?style=flat-square&labelColor=0d1117)](https://www.python.org/)
-[![Runtime dependencies](https://img.shields.io/badge/runtime%20dependencies-none-2ea043?style=flat-square&labelColor=0d1117)](#design-constraints-chosen-deliberately)
-[![Network](https://img.shields.io/badge/network-never-2ea043?style=flat-square&labelColor=0d1117)](#7-your-data-and-backups)
-[![Selftest](https://img.shields.io/badge/selftest-46%2F46-2ea043?style=flat-square&labelColor=0d1117)](#9-diagnosing-problems)
-[![Bandit](https://img.shields.io/badge/bandit-0%20issues-2ea043?style=flat-square&labelColor=0d1117)](pyproject.toml)
-[![Code style](https://img.shields.io/badge/code%20style-black-000000?style=flat-square&labelColor=0d1117)](https://github.com/psf/black)
-[![Visualisers](https://img.shields.io/badge/concept%20visualisers-21-e8b43e?style=flat-square&labelColor=0d1117)](#2-the-21-concept-visualisers)
+<br>
+
+| bank health | questions | figures | listings | broken |
+|:---:|:---:|:---:|:---:|:---:|
+| **17% → 85%** | **3667** | **310** | **273** | **0** |
+
+<br>
+
+[Quick start](#quick-start) · [The pipeline](#the-pipeline) · [How we got here](#how-we-got-here) · [Build artifacts](#build-artifacts-how-each-one-was-made) · [What is still wrong](#what-is-still-wrong)
 
 </div>
 
 ---
 
-## Download
-
-<div align="center">
-
-### [Download GitGrind for Windows](https://github.com/eeshan15/GitGrind/releases/latest)
-
-</div>
-
-Grab the installer from the
-**[latest release](https://github.com/eeshan15/GitGrind/releases/latest)**, run
-it, and you are done.
-
-- No Python needed
-- No dependencies to install
-- No account, no sign-up, no subscription
-- Windows 8.1 or newer, 64-bit
-
-Windows will show *"Windows protected your PC"* because the installer is not
-code-signed. Click **More info**, then **Run anyway**. The entire source is in
-this repository if you would rather build it yourself; see
-[section 8](#8-packaging-into-an-executable).
-
-The installer puts GitGrind in your own user folder, so it never asks for
-administrator rights. It creates a Start Menu entry, an optional desktop
-shortcut, and an entry in Add/Remove Programs. Uninstalling deliberately leaves
-your study history behind.
-
-**Running from source instead:**
-
-```
-git clone https://github.com/eeshan15/GitGrind.git
-cd GitGrind
-python app.py
-```
-
-That is the whole setup. Python 3.8 or newer, standard library only, nothing to
-`pip install`.
+> [!IMPORTANT]
+> **This is a development branch.**
+> Clone it and check out your own branch from it. Please do not commit directly to `dev-v2.0`.
+>
+> ```bash
+> git clone -b dev-v2.0 https://github.com/eeshan15/GitGrind.git
+> cd GitGrind
+> git checkout -b your-name/whatever
+> ```
 
 ---
 
-## The pitch
+## Table of contents
 
-This is not a study-hours tracker with charts bolted on.
-
-Every screen exists to answer one question: **what should I do in the next hour,
-and why that one?** Logging is the cheap part. The value is in what the app does
-with the log once it has it.
-
-Open it and the first thing you see is a single card naming one action, the
-reason it was chosen, what it is expected to be worth, and which suggestion it
-beat. Not a dashboard. A decision.
-
-Everything runs on your machine. No account, no cloud, no telemetry. The entire
-state of your preparation is one SQLite file you can copy to a USB stick.
-
----
-
-## At a glance
-
-| | |
-|---|---|
-| **Lines of code** | ~27,000 (Python, vanilla JS, CSS) |
-| **Runtime dependencies** | Zero |
-| **Engines** | 12 modules in `core/` |
-| **HTTP routes** | 55 |
-| **Database tables** | 27, schema v8, migrated in place |
-| **Concept visualisers** | 21, interactive, driven by your own numbers |
-| **Question bank** | 3,597 across 24 files, 99% topic coverage |
-| **Achievement stickers** | 45 across 5 tracks |
-| **Selection purposes** | 6 |
-| **Self-test checks** | 46, all passing |
-| **Security issues (bandit)** | 0 |
+- [What changed and why](#what-changed-and-why)
+- [Quick start](#quick-start)
+- [The pipeline](#the-pipeline)
+  - [Stage 1 — MinerU](#stage-1--mineru)
+  - [Stage 2 — the converter](#stage-2--toolsimport_mineru_bankpy)
+  - [Stage 3 — option recovery](#stage-3--toolsrecover_optionspy)
+  - [Stage 4 — maths delimiting](#stage-4--toolstexwrappy)
+- [How we got here](#how-we-got-here)
+- [Rendering](#rendering)
+- [Build artifacts: how each one was made](#build-artifacts-how-each-one-was-made)
+- [Tool reference](#tool-reference)
+- [Verifying a change](#verifying-a-change)
+- [What is still wrong](#what-is-still-wrong)
+- [Note for v1.0 users](#note-for-v10-users)
 
 ---
 
-## Contents
+## What changed and why
 
-1. [What it does](#1-what-it-does)
-2. [The 21 concept visualisers](#2-the-21-concept-visualisers)
-3. [Logging: two ways](#3-logging-two-ways)
-4. [How it is built](#4-how-it-is-built)
-5. [What it contains](#5-what-it-contains)
-6. [Running it](#6-running-it)
-7. [Your data and backups](#7-your-data-and-backups)
-8. [Packaging into an executable](#8-packaging-into-an-executable)
-9. [Diagnosing problems](#9-diagnosing-problems)
-10. [The question bank](#10-the-question-bank)
-11. [Accessibility and motion](#11-accessibility-and-motion)
-12. [Where to change things](#12-where-to-change-things)
-13. [Roadmap](#13-roadmap)
-14. [Honest limitations](#14-honest-limitations)
-15. [Licence and credits](#15-licence-and-credits)
+v1.0 imported questions by running `pdftotext` over the
+[GATE Overflow](https://github.com/GATEOverflow/GO-PDFs) volumes and parsing the
+result. It produced a bank of 3597 questions at **17% usable**, and every
+formula, diagram and program was missing.
+
+That was not a parser bug. It is a property of the source.
+
+We opened the PDFs and looked at what is actually inside a page:
+
+```python
+>>> import fitz
+>>> page = fitz.open("filter1_volume2.pdf")[28]
+>>> [l for l in page.get_text().split("\n") if l.strip()][:8]
+['1.3.8', 'A.', 'B.', 'C.', 'D.', '1.3.9', '1.3.10', 'A.']
+```
+
+That is the **entire** text layer of the page: question reference numbers and
+option letters. Nothing else. The GO volumes are generated from HTML, and every
+formula, every diagram and every code listing is rendered as **graphics**. There
+is no text to extract, so no amount of `pdftotext` tuning would ever have
+worked.
+
+Rendering that same region at 400 DPI shows what is really there:
+
+```
+A.  T(n) = O(n²)          B.  T(n) = O(n log n)
+C.  T(n) = Ω(n²)          D.  T(n) = Θ(n log n)
+```
+
+Pristine. Two clean columns. Perfect input for a model — just not for a text
+extractor.
+
+**dev-v2.0 therefore treats the PDFs as images, not as text.** MinerU handles
+layout and formula recognition; everything MinerU misses is recovered from page
+geometry, because the option letters that *do* extract give exact coordinates
+for the graphics sitting beside them.
 
 ---
 
-## 1. What it does
+## Quick start
 
-### Prescriptive analytics, not descriptive
-
-The Today page opens with a single **next action** card: one thing to do, the
-reason it was chosen, what it is expected to be worth, and *why it beat the
-runner-up*. The ranking is auditable; you can always see what came second and
-why it lost.
-
-Behind that card sit the numbers that chose it:
-
-| Signal | What it measures |
-|---|---|
-| Coverage | Syllabus closed, weighted by marks in the paper |
-| Accuracy | Correct rate, with a confidence band by sample size |
-| Volume | Questions attempted, and the rate they are arriving |
-| Consistency | How evenly effort is spread, not just the total |
-| Focus | Whether sessions are concentrated or scattered |
-| Retention debt | How much of the revision schedule is overdue |
-| Velocity trend | 7-day against 28-day: rising, falling or flat |
-| Guess rate | Answers given with confidence 1 or 2 |
-| Correction rate | Wrong answers later got right |
-| Confidence drift | Whether your self-assessment tracks reality |
-| Per-topic risk | Accuracy against exam weight, topic by topic |
-
-The rule the whole UI follows: **if a number cannot be turned into an action, it
-does not get a card.**
-
-### Real spaced repetition
-
-`core/revision.py` runs an SM-2 variant over two kinds of card: topics you have
-marked done, and individual questions you got wrong.
-
-| Outcome | What happens |
-|---|---|
-| Answered well | Interval stretches: 1 day, 3 days, then multiplied by an ease factor that grows with success |
-| Answered badly | Resets to tomorrow, ease knocked down |
-| **Confidently wrong** | Treated as the worst possible outcome, quality 0 |
-
-That last row is the important one. Confidently wrong is the most expensive state
-in exam preparation, because it is the one thing you will never revise
-voluntarily. The engine punishes it hardest, on purpose.
-
-Constants: ease clamped `1.3 - 2.9`, starting ease `2.5`, first interval 1 day,
-second 3 days, maximum 180 days, failure below quality 2.
-
-The queue produces a **revision debt** and a **pressure score** from 0 to 100,
-and overdue items outrank almost everything else in the planner. An existing
-database gets a schedule backfilled from its own history, so this works from the
-first launch rather than needing months of data first.
-
-### A daily plan that explains itself
-
-`core/planner.py` builds today's plan from live signals: overdue revision, your
-weakest covered topic, the highest-mark pending topic, a mixed previous-year set,
-a speed drill when you are slow or the exam is close, and one boss question.
-
-Every block carries three fields:
-
-- `reason` -- why this block exists at all
-- `fixing` -- which specific weakness it targets
-- `aim` -- what counts as having succeeded
-
-Blocks are trimmed to the time you actually have, in priority order, and block
-size scales with what you have told the app about how much you can take.
-
-Pressing **Start** on a block materialises the questions lazily, records the
-purpose and the reason on the quiz itself, and files the attempts back against
-that plan day. Rating the finished plan as too long or too short tunes tomorrow.
-
-### An explainable readiness index
-
-The index is a weighted sum of four measured terms and two heuristic ones. Every
-term is labelled `measured` or `heuristic`, so you always know which numbers are
-your data and which are the app's guess.
-
-The Readiness page decomposes it four ways.
-
-**Where the score comes from.** Earned points and remaining headroom per term.
-The widest hatched bar is where the next hour buys the most.
-
-**Why it moved.** The change since the last reading, broken down term by term. A
-drop is never a mystery; you can see exactly which component fell and by how
-much.
-
-**Biggest risk and cheapest points.** One topic each way, with the reasoning
-spelled out. The risk topic is where you are most exposed; the recovery topic is
-where the least effort buys the most index.
-
-**If you finish today's plan.** What completing the plan is arithmetically worth,
-in index points and estimated score. Labelled arithmetic rather than forecast,
-because that is exactly what it is.
-
-There is also an **estimate confidence** band. With a dozen attempts logged the
-app says the sample is thin rather than pretending it knows your score.
-
-### Purpose-driven practice
-
-Six selection purposes, each with a different job:
-
-| Purpose | What it serves |
-|---|---|
-| `review` | Only what the spacing schedule says is due, the highest-value practice there is |
-| `weak` | Topics where accuracy is lowest relative to exam weight |
-| `mixed` | Previous-year questions across subjects, the way the real paper mixes them |
-| `speed` | One-mark questions on a tight clock, to fix time per question |
-| `boss` | One hard two-mark question on ground you have already covered |
-| `fresh` | Only questions never served before |
-
-Every question arrives with a `why` string saying why *that* question was picked.
-A repeat cooldown, nine days by default, stops the same question coming back too
-soon, unless it is genuinely due for revision, in which case the cooldown is
-bypassed deliberately.
-
-Per answer, the app records:
-
-- the response and whether it was correct
-- seconds taken
-- self-rated confidence, 1 to 5
-- on a wrong answer, a mistake category: concept, silly, misread, time, guess,
-  or formula
-
-"Silly" mistakes need a completely different fix from "concept" mistakes, and
-the app will not pretend otherwise. The Practice tab shows the split and names
-the pattern that dominates.
-
-### GATE-accurate marking
-
-One-mark and two-mark questions, negative marking at one third and two thirds,
-MSQ with no negative marking, NAT with a tolerance range. The rules live in one
-place in `core/quiz.py`, and the score breakdown is computed from the same pass
-that produced the total, so the two can never disagree.
-
-### A feedback loop, honestly described
-
-Under every suggestion there are rating buttons. Rating one nudges a weight;
-weights re-rank future advice, adjust question difficulty, and change how much
-the planner hands you tomorrow.
-
-This is **preference learning. It is not RLHF and it is not a language model.**
-Specifically:
-
-- Weights are clamped between `0.35` and `1.90`. Nothing can run away.
-- Learning rate `0.08`, and the step size shrinks as the sample count grows. One
-  bad afternoon cannot permanently break your recommendations.
-- With zero ratings every weight is exactly `1.0` and you get the plain rules
-  engine. **The app is fully useful before it has learnt anything.**
-
-The Readiness page shows every learned weight and how many ratings produced it,
-so the loop is inspectable rather than magic.
-
-### Gamification that rewards the right behaviour
-
-45 stickers across five tracks, bronze through diamond:
-
-| Track | Count | Rewards |
-|---|---|---|
-| Consistency | 8 | Showing up, streaks, active days |
-| Discipline | 8 | Hitting daily targets, weekly hours |
-| Strength | 11 | Accuracy, boss questions, hard topics |
-| Retention | 8 | Revising on schedule, clearing debt, comebacks |
-| Mastery | 10 | Topics closed, weak topics cleared, corrections |
-
-Nothing is handed out. Each sticker is a rule evaluated over your own logs and
-unlocks the moment the rule is met. The tracks deliberately reward the behaviour
-that actually moves a score: showing up, revising on schedule, and finishing hard
-problems.
-
-**Missions** are live daily and weekly goals computed on the fly and stored
-nowhere: hit the daily target, attempt ten questions, clear the revision queue,
-finish today's plan, practise five days this week.
-
-### The mastery map
-
-Every syllabus topic as one square, grouped by subject, coloured *and* glyphed by
-health. Click any square to drill straight into that topic. The map answers "what
-does my syllabus actually look like right now" in one glance, which no list of
-percentages does.
-
-### Cohort numbers are a simulation, and say so
-
-Percentiles and cohort positions are generated locally from a fixed seed. They
-are consistent, so you can pace against them, but there is no server and there
-are no other users. Passing simulated people is not the same as passing real
-ones. Cutoffs in `content/targets.json` are unofficial figures; verify them and
-edit the file.
-
-**The app states this on the page itself, not just in this README.**
-
-### Optional LLM, tightly fenced
-
-The Doubt desk can call a model to *explain* a concept or rephrase a question. It
-is never allowed to decide what you study, mark a topic done, or set a priority.
-Those decisions come from your logs.
-
-You can also press **Build prompt** and paste it into whatever chat window you
-already have open, with no key configured at all.
-
-Doubts get a two-stage resolution signal: an immediate helped / still-stuck
-button, and a delayed one the engine sets by itself when you later answer that
-topic correctly. Asking about the same topic twice is a stronger weak-topic
-signal than one wrong answer, and the planner treats it that way.
-
-### Lives in the system tray
-
-A packaged build runs like a desktop application, not a script:
-
-- Its own window, its own taskbar icon, no terminal
-- A tray icon that owns the process
-- Closing the window hides it; the server keeps running
-- Reopening from the tray is instant, and a running session timer is untouched
-- Launching a second time raises the existing window instead of starting a
-  second copy
-
-The tray menu offers Open GitGrind, Open in browser, Show my data folder, and
-Quit.
-
----
-
-## 2. The 21 concept visualisers
-
-Watching a canned animation is low-yield. Feeding your own numbers into a
-simulation is not: it teaches the concept *and* checks your answer to the paper
-question in front of you.
-
-Every visualiser takes editable input, steps one frame at a time, and prints a
-sentence explaining **why** each step happened. Play, pause, step, scrub, change
-the speed. When you are done, one button takes you straight into a drill on that
-topic.
-
-| Subject | Visualiser | What you change | What you see |
-|---|---|---|---|
-| OS | CPU scheduling | Processes, arrival, burst, priority, quantum | Gantt chart building tick by tick; turnaround and waiting read off the same simulation. FCFS, SJF, SRTF, Round Robin, Priority |
-| OS | Page replacement | Reference string, frame count | Which page is evicted and why. FIFO, LRU, Optimal, Clock. Change the frame count to find Belady's anomaly |
-| OS | Disk scheduling | Queue, head position, direction | Total head movement as the head walks. FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK |
-| OS | Banker's algorithm | Allocation, Maximum, Available | A safe sequence, or a proof that none exists with the stuck processes named |
-| COA | Cache mapping | Cache size, block size, associativity, addresses | The address split into tag, index and offset in binary, then the block landing in its set |
-| COA | Pipelining | Your own instruction sequence, forwarding on or off | Five stages, every stall with the register and producing instruction named |
-| CN | Sliding window | Window size, frame count, which frames are lost | Go-Back-N against Selective Repeat under identical losses |
-| CN | Subnetting and CIDR | Address, prefix, bits to borrow | The 32 bits cut at the prefix, then mask, network, broadcast, range and a subnet table |
-| CN | TCP congestion control | Initial ssthresh, round trips, loss events | The cwnd sawtooth. Timeout against three duplicate ACKs, Tahoe against Reno |
-| DBMS | B+ tree insertion | Keys, max keys per node | Leaf splits copy the separator up, internal splits push it up; each frame says which |
-| DBMS | Conflict serializability | The schedule | Precedence graph built edge by edge, then cycle detection |
-| DBMS | Normalisation | Relation and dependencies | Attribute closure step by step, candidate keys, then the highest normal form with the offending dependency named |
-| DS | AVL rotations | Keys to insert | Every rebalance names the case (LL, RR, LR, RL) with balance factors on each node |
-| DS | Hash tables | Table size, keys, method | Probe count and clustering. Chaining, linear, quadratic, double hashing |
-| Algorithms | Sorting | Your own array | Comparisons and moves counted live. Bubble, selection, insertion, merge, quick |
-| Algorithms | Dijkstra, Prim, Kruskal | The graph | Three greedy algorithms on the same graph, and why each choice is safe |
-| TOC | Automaton simulation | Transition table, input string | DFA and NFA with a live state set: subset construction happening in front of you |
-| CD | FIRST and FOLLOW | The grammar | Both sets as fixed points, one rule application per frame |
-| CD | LL(1) parsing | Grammar and input | Parse table from FIRST/FOLLOW, then a stack trace. Conflicting cells are named, not just flagged |
-| DL | Karnaugh map | Variables, minterms, don't-cares | Quine-McCluskey with an exhaustive minimal cover, essential prime implicants called out |
-| Maths | Gaussian elimination | The matrix | Row reduction one operation at a time, then rank, nullity and determinant |
-
-### Verified, not just written
-
-Every one of these was checked against a textbook example before it shipped:
-
-```
-scheduling   Galvin SRTF example               -> WT 9, 1, 0, 2
-paging       Galvin 20-reference string        -> FIFO 15, LRU 12, Optimal 9 faults
-             Belady on 1 2 3 4 1 2 5 1 2 3 4 5 -> 9 faults at 3 frames, 10 at 4
-disk         head 53, 200 cylinders, upward    -> FCFS 640, SSTF 236, SCAN 331,
-                                                  C-SCAN 382, LOOK 299, C-LOOK 322
-banker       Galvin 5-process example          -> safe, P1 P3 P0 P2 P4
-cache        128 B / 16 B blocks / 2-way       -> tag 10, index 2, offset 4, 4 sets
-pipeline     load-use with forwarding          -> exactly 1 stall; ALU-to-ALU 0;
-                                                  forwarding off 2
-window       one loss, window 4                -> GBN retransmits more than SR
-subnet       192.168.10.130/24                 -> .0 / .255 / 254 usable
-K-map        S(0,1,2,5,6,7,8,9,10,14)          -> A'BD + B'C' + CD'
-             S(1,3,7,11,15) + d(0,2,5)         -> A'B' + CD
-B+ tree      1..10 with max 3 keys             -> root [7], height 3, five leaves
-serializable R1(A) W2(A) R2(B) W1(B)           -> cycle T1 -> T2 -> T1
-AVL          all four insertion orders         -> root 20, height 2
-hashing      50 700 76 85 92 73 101, m=7       -> [700,50,85,92,73,101,76], 13 probes
-FIRST/FOLLOW expression grammar                -> FIRST(E)={( id}, FOLLOW(T)={+ ) $}
-LL(1)        "id + id * id" accepted           -> S -> a S | a reports 1 conflict
-normalise    R(ABCD), AB -> C, C -> D          -> key AB, highest form 2NF
-graph        the sample weighted graph         -> MST 13 by both Prim and Kruskal
-matrix       the 3x4 system                    -> rank 3, solution 2, 3, -1
-```
-
-### Adding your own
-
-One file, one `register()` call:
-
-```javascript
-GG.viz.register('my-topic', {
-  title: 'My topic',
-  subtitle: 'One sentence on what this shows.',
-  topic: 'syllabus-slug',              // wires up the "practise this" button
-  inputs: [ /* fields the user can change */ ],
-  build(values) { return frames; },    // each frame carries a caption
-  draw(host, frame, values, i) { },    // paint one frame
-});
-```
-
-The player shell handles the dialog, transport controls, the scrubber, keyboard
-shortcuts, reduced motion, and the hand-off into practice. You write the
-simulation and the drawing, nothing else.
-
----
-
-## 3. Logging: two ways
-
-Both exist because they solve different problems.
-
-### Manual entry
-
-The right tool for a session you have already finished. Subject, minutes, session
-type, hour started, topics covered, whether to mark them done, and a note.
-Optionally finishes with a short quiz on exactly the topics you ticked.
-
-### The stopwatch
-
-Press start before you begin. Pick a subject, tick topics off as you get through
-them, and press **Stop and log** when you are done.
-
-- The clock lives in memory, not in the dialog. Closing the dialog does not stop
-  it.
-- A pill in the topbar keeps the running time visible from anywhere in the app.
-- The subject locks once the clock is running, so half an hour of algebra cannot
-  be filed under operating systems by accident.
-- Pause and resume freely.
-- Under a minute is not logged.
-- Closing the tab with a timer running asks for confirmation.
-
----
-
-## 4. How it is built
-
-### Design constraints, chosen deliberately
-
-| Constraint | Why |
-|---|---|
-| Python standard library only | Runs on any machine with Python. No dependency rot in three years. |
-| Vanilla JavaScript, no framework | No build step, no `node_modules`, no bundler to break. View source and read it. |
-| SQLite, single file | Your whole history is one file you can copy, email, or back up. |
-| No cloud, no network at runtime | Nothing to go down, nothing to leak, nothing to pay for. |
-| Every number carries a reason | Prevents the app from becoming a dashboard you stop looking at. |
-| ASCII glyphs only | The UI renders identically in every terminal, browser and font. |
-
-Optional extras are needed only by specific tools, never by the app itself:
-
-| Package | Needed for |
-|---|---|
-| `pillow` | `tools/make_icon.py`, generating the app icon |
-| `pyinstaller` | `tools/build_exe.py`, building the executable |
-| `pywebview` | A native window rather than a browser tab |
-| `pystray` | The system tray icon |
-| `playwright` | `tools/browsercheck.py`, the real-browser test |
-
-### Architecture
-
-```
-                      +--------------------------+
-   browser  <-------->|  core/api.py             |  55 HTTP routes
-   (vanilla JS)       |  ThreadingHTTPServer     |  one /api/state payload
-                      +------------+-------------+
-                                   |
-              +--------------------+--------------------+
-              v                    v                    v
-      +---------------+   +----------------+   +----------------+
-      | core/stats.py |   | core/planner   |   | core/recommend |
-      | ONE analytics |-->| builds today's |-->| ranked, with   |
-      | pass          |   | plan           |   | reasons        |
-      +-------+-------+   +----------------+   +-------+--------+
-              |                                        |
-              v                                        v
-      +---------------+                       +----------------+
-      | core/revision |                       | core/feedback  |
-      | SM-2 schedule |                       | learned weights|
-      +-------+-------+                       +-------+--------+
-              |                                        |
-              v                                        v
-      +---------------+   +----------------+   +----------------+
-      | core/quiz.py  |   | core/readiness |   | core/achieve.  |
-      | selection +   |   | index + why it |   | badges +       |
-      | GATE marking  |   | moved          |   | missions       |
-      +-------+-------+   +----------------+   +----------------+
-              |
-              v
-      +----------------------------------------------------------+
-      | core/content.py   content registry: banks, topics,        |
-      |                   aliases, review promotion, answers      |
-      +----------------------------------------------------------+
-      | core/db.py        schema v8, versioned migrations, health |
-      +----------------------------------------------------------+
-                    |                            |
-              data/gitgrind.db            content/*.json
-```
-
-### Key design decisions
-
-**One analytics pass.** `stats.gather(conn)` walks the data once and returns a
-bundle every other engine reads. Nothing recomputes metrics independently, so two
-screens can never disagree about your accuracy.
-
-**Versioned migrations, never a rebuild.** `core/db.py` holds a base `SCHEMA` for
-fresh installs and an ordered `MIGRATIONS` list applied by version number, with
-column additions handled idempotently. Your database is upgraded in place; a
-logged minute is never lost to a schema change.
-
-**Slugs at the edges, ids inside.** The UI speaks in slugs like
-`operating-systems` and `deadlock`; the engines speak in integer ids.
-`core/api.py` translates at the boundary so neither side needs to know about the
-other.
-
-**Bank writes are always safe.** Every write to a question file is backed up to
-`content/backups/` first, then written to a temp file and renamed. A crash
-mid-write cannot truncate your bank; a bad import can be undone by restoring one
-file.
-
-**Read-only assets versus writable data.** `core/db.py` exposes `ASSET_DIR` (in
-the bundle when packaged: `static/` and the shipped `content/`) and `APP_DIR`
-(next to the executable: `data/` and your edited `content/`). Getting this wrong
-is fatal in a packaged build, because PyInstaller unpacks into a temporary
-directory that is deleted on exit, so the database would vanish every time you
-closed the app. If the executable's own folder is not writable, the app falls
-back to the per-user application data folder rather than failing silently.
-
-**Single instance by design.** `HTTPServer` sets `allow_reuse_address = 1`, and
-on Windows that flag means "let another process bind this port too" rather than
-the Unix meaning of reusing a socket in `TIME_WAIT`. Turning it off makes the
-bind itself the lock; a second launch detects the running copy over HTTP and asks
-it to raise its window instead of starting a second server and a second tray
-icon.
-
-**No console, but never silent.** A windowed build has no `stdout`, so an
-unguarded `print()` would raise on `None` before the app even started. Everything
-goes through a `log()` helper that tees to `gitgrind.log` next to the database.
-
-**The frontend is IIFE modules on a `GG` namespace.** Each file attaches one
-object (`GG.render`, `GG.plan`, `GG.practice`, `GG.readiness`, `GG.bank`,
-`GG.doubts`, `GG.timer`, `GG.viz`, `GG.app`) with shared helpers on `GG` itself.
-No imports, no build, load order set by the `<script>` tags in `index.html`.
-
-**Timing lives in exactly one place.** The intro animation is driven by a
-`PHASES` table in `static/js/core.js`; CSS only describes what each phase looks
-like, keyed off a `data-phase` attribute mirrored onto `<body>`. Changing the
-intro length is one number.
-
----
-
-## 5. What it contains
-
-### Layout
-
-```
-app.py                    bootstrap, CLI, window launching, single-instance guard
-demo_data.py              four synthetic profiles for demos and screenshots
-gitgrind.spec             PyInstaller spec for hand-tuned builds
-pyproject.toml            black, ruff and bandit configuration
-run.bat / run.sh          development launchers only
-README.md                 this file
-
-core/                     the engines
-  db.py                   schema, migrations, path resolution, health
-  content.py              content registry: banks, topics, aliases, review
-                          promotion, pending answers
-  stats.py                the single analytics pass
-  revision.py             spaced repetition, SM-2 variant
-  quiz.py                 purpose-driven selection, grading, GATE marking
-  planner.py              daily plan and practice-set builder
-  recommend.py            ranked, explained recommendations
-  readiness.py            index, decomposition, projections
-  feedback.py             preference logging and weight updates
-  achievements.py         45 badges across 5 tracks, live missions
-  doubts.py               doubt log, prompt building, fenced LLM call
-  api.py                  55 HTTP routes, the /api/state payload
-  tray.py                 system tray presence
-
-static/                   the UI
-  index.html              the shell and every dialog
-  css/style.css           design tokens, components, motion, accessibility
-  js/core.js              helpers, prefs, shortcuts, focus trap, intro
-  js/render.js            sidebar, subjects, calendar, feed, subject detail
-  js/plan.js              command centre: next action, missions, plan,
-                          revision queue, mastery map, recommendations
-  js/practice.js          quiz runner, adaptive modes, confidence, mistakes
-  js/readiness.js         index breakdown, movement, projection, weights
-  js/bank.js              bank health, sources, imports, review, pending answers
-  js/doubts.js            doubt desk
-  js/timer.js             stopwatch logging
-  js/app.js               boot, routing, session logging, settings
-  js/viz/_player.js       the visualiser shell
-  js/viz/*.js             21 topic simulators
-  icon.ico / icon.png     generated app icon, matches the favicon
-
-tools/                    the workshop
-  ingest.py               ingestion backbone: sources, dedupe, manifests,
-                          confidence scoring, review queue
-  import_questions.py     paper and book parser
-  extract_go_bank.py      bulk extraction, keeps unanswered questions
-  answer_fill.py          fill pending answers from the terminal
-  repair_bank.py          repair questions that bled into each other
-  fetch_go_pdfs.py        release-asset downloader, sha256 verified
-  selftest.py             46 end-to-end engine checks
-  browsercheck.py         drives a real browser over every page
-  build_exe.py            packaging
-  build_installer.py      one command from source to installer
-  make_icon.py            generate icon.ico from any square image
-
-installer/
-  gitgrind.iss            Inno Setup script
-  after-install.txt       what the user sees when setup finishes
-
-content/
-  syllabus.json           12 subjects, 101 topics, exam weights
-  targets.json            unofficial cutoffs; verify and edit
-  topic_keywords.json     lexicon used to tag imported questions
-  go_tag_map.json         source section names to syllabus slugs
-  questions/              curated bank files
-  banks/<name>/           imported banks, one folder per source
-  banks/reviewed/         approved review items land here
-  imports/                one manifest per import run
-  backups/                pre-write .bak copies, 20 most recent
-
-data/gitgrind.db          your entire history
-papers/                   source PDFs and extracted text
-```
-
-### The database
-
-27 tables. The ones you would actually look at:
-
-| Table | Holds |
-|---|---|
-| `sessions` | Every study session: subject, minutes, kind, day, note |
-| `attempts` | Every answer: correct, seconds, confidence, mistake kind, reattempt |
-| `quizzes`, `quiz_questions` | Built sets and their contents, with purpose and reason |
-| `topics` | Status, confidence, last revised: the coverage source of truth |
-| `revision_queue` | The spacing schedule: ease, interval, due date, reps, lapses |
-| `readiness_log` | A snapshot per reading, every component, for "why it moved" |
-| `feedback`, `learned_weights` | Your ratings and the weights they produced |
-| `daily_plans`, `dpp_sets` | Generated plans and the question sets behind blocks |
-| `recommendations` | What was suggested, and what came of it |
-| `question_sources`, `question_imports`, `question_review` | Bank provenance |
-| `question_stats` | Per-question rollups used by the selector |
-| `topic_alias`, `topic_prerequisites` | Topic normalisation and the topic graph |
-| `doubts` | The doubt log, including whether it actually helped |
-| `schema_meta`, `settings` | Schema version and your tunable preferences |
-
----
-
-## 6. Running it
-
-### Three stages
-
-| Stage | Command | Use it when |
-|---|---|---|
-| Development | `python app.py` | You are editing code. Opens a browser tab. |
-| Testing | `python app.py --window` | You want the real window without rebuilding |
-| Daily use | The installed app | Every day. Own window, tray icon, no terminal. |
-
-### Flags
-
-```
-python app.py --check              health report, then exit
-python app.py --window             open in a plain app window, not a browser tab
-python app.py --tray               keep running in the tray with no terminal
-python app.py --no-tray            do not use the tray even in a packaged build
-python app.py --no-browser         start the server, open nothing
-python app.py --port 9000          different port
-python app.py --host 0.0.0.0       bind wider (careful, there is no auth)
-python app.py --demo disciplined   load a demo profile to see a populated UI
-python app.py --demo patchy        gaps and inconsistency
-python app.py --demo comeback      a long break then a return
-python app.py --demo sprint        exam close, high intensity
-python app.py --reset activity     wipe sessions and attempts, keep the syllabus
-python app.py --reset all          wipe everything
-python app.py --version
-```
-
-### Keyboard
-
-Press `?` for the full list. It is generated from the registered shortcuts, so it
-cannot go stale.
-
-| Key | Action |
-|---|---|
-| `l` | Log a session |
-| `s` | Start or open the session timer |
-| `n` | Do the next action |
-| `v` | Start the revision set that is due |
-| `g` | Rebuild today's plan |
-| `t` `s` `p` `r` `b` `a` `d` | Jump to Today, Subjects, Practice, Readiness, Bank, Activity, Doubts |
-| `m` | Toggle reduced motion |
-| `?` | Show the shortcut list |
-
-Inside a visualiser: space plays and pauses, arrow keys step one frame.
-
-Shortcuts are inert while you are typing in a field.
-
----
-
-## 7. Your data and backups
-
-Everything is in **one file**: `data/gitgrind.db`.
-
-| What | Where |
-|---|---|
-| Sessions, attempts, quizzes, topics, revision schedule, feedback, plans | `data/gitgrind.db` |
-| Syllabus, targets, lexicons | `content/*.json` |
-| Question bank | `content/questions/`, `content/banks/` |
-| Import manifests, pre-write backups | `content/imports/`, `content/backups/` |
-| Source PDFs | `papers/` |
-| Startup log, when there is no console | `gitgrind.log` |
-
-### Backups, in order of how much to trust them
-
-1. **Copy the file.** Close the app, copy `data/gitgrind.db` elsewhere. Complete
-   and byte-for-byte exact. Do this weekly; it takes two seconds.
-2. **Export from the app.** Activity -> *Export backup* writes a JSON dump of 25
-   tables. Any API key is stripped on the way out.
-3. **Import.** Activity -> *Import backup* reads that JSON back.
-
-### What is stored about you
-
-Your name, handle, bio, location, exam date and daily target: whatever you typed
-into the profile dialog. Your sessions, answers, timings, self-rated confidence,
-mistake tags, doubts, and your ratings of the app's suggestions.
-
-None of it leaves the machine. The only outbound network calls the app can make
-are ones you explicitly trigger: `tools/fetch_go_pdfs.py`, and the Doubt desk if
-you configure a provider.
-
-There is no analytics, no crash reporting, no update check, and no phone-home of
-any kind.
-
----
-
-## 8. Packaging into an executable
-
-### One command
-
-```
-pip install pillow pyinstaller pywebview pystray
-python tools/build_installer.py
-```
-
-That generates the icon, builds the application as a folder, and wraps it in an
-Inno Setup installer. Output lands in `installer/Output/`.
-
-### Or step by step
-
-```
-python tools/make_icon.py --from-image app_icon.png    icon from any square image
-python tools/build_exe.py --clean --onedir             the application
-iscc installer/gitgrind.iss                            the installer
-```
-
-| Flag | Effect |
-|---|---|
-| `--clean` | Wipe `build/` and `dist/` first. Use it whenever you changed the UI. |
-| `--onedir` | A folder instead of one file; starts noticeably faster |
-| `--console` | Keep the terminal window, useful while debugging a build |
-| `--stage` | Copy your existing database next to the built executable |
-| `--nuitka` | Compile rather than bundle; needs a C compiler, fastest binary |
-
-### Result
-
-```
-dist/GitGrind/
-  GitGrind.exe          the app
-  _internal/            bundled runtime, static/ and content/
-  data/gitgrind.db      created on first run
-  content/              unpacked beside the executable on first run
-```
-
-`static/` and `content/` are bundled inside, so the packaged app needs no network
-and no CDN. `data/` is deliberately **not** bundled, and on first run the app
-copies `content/` out beside the executable so bank files stay writable.
-Otherwise logging an answer would vanish every time you closed the app.
-
-### Important
-
-**The UI and Python code are baked into the executable at build time.** Editing
-files on disk changes only the source tree. Any change to `static/` or `*.py`
-needs a rebuild with `--clean`. `content/` is the exception: it lives beside the
-executable and is editable.
-
-Develop with `python app.py --window`. Build only when the work is finished.
-
----
-
-## 9. Diagnosing problems
-
-### Start here, always
-
-```
+```bash
+# 1. sanity-check the bank as it ships
 python app.py --check
+
+# 2. run it
+python app.py            # or: run.bat on Windows
 ```
 
-Reports the schema version, whether migrations are pending, table count, database
-size, bank health, topic coverage, and how many questions are waiting for review.
-Nine out of ten problems are visible in this output.
+Rebuilding the bank from source PDFs is a four-command sequence. Stages 1 and 3
+want a GPU; stages 2 and 4 run anywhere.
 
-```
+```bash
+# stage 1 — MinerU (GPU, once per PDF)
+python mineru_run.py --input papers/ --output out/
+
+# stage 2 — convert to bank JSON
+python tools/import_mineru_bank.py out/ --dry-run
+python tools/import_mineru_bank.py out/
+
+# stage 3 — recover options that MinerU could not read
+python tools/recover_options.py --worklist worklist.json
+#   ...on the GPU box, then bring manifest.json back...
+python tools/recover_options.py --apply
+
+# verify
+python app.py --check
 python tools/selftest.py
 ```
 
-46 checks against a temporary database: schema, migrations, content registry,
-session logging, quiz building and grading, all six selection purposes, spaced
-repetition, analytics, planner, recommendations, readiness, feedback clamping,
-badges, doubts, and the full `/api/state` payload. Add `--verbose` for
-tracebacks, `--keep` to keep the temp database for poking at.
-
-```
-python tools/browsercheck.py
-```
-
-Drives a real browser over every page and reports JavaScript errors and console
-warnings. This is the only check that catches frontend bugs; the Python tests
-cannot see them. Needs `pip install playwright && playwright install chromium`.
-
-### Symptom table
-
-| Symptom | Cause | Fix |
-|---|---|---|
-| **Panels blank but no error** | A render function was never called, or threw before reaching them | Open the browser console and run `GG.plan.paint(GG.S.state)`. If that works, the router is not calling it: check the `paint()` dispatch in `static/js/app.js`. |
-| **A panel shows "--" where a number should be** | Field-name mismatch between engine and UI | In the console, inspect `GG.S.state.readiness` or the relevant key and compare with what the JS reads. The single most common frontend bug. |
-| **Everything blank, console shows `Cannot read properties of undefined`** | JS threw mid-render, so everything after it is skipped | The stack trace names the file and line. Guard with `Number(x \|\| 0)` or `(x \|\| {})`. |
-| **Changes to the UI have no effect** | Browser cache, or a stale executable | `Ctrl+Shift+R`. If it is the exe, rebuild with `--clean` and delete `dist/data/uiprofile`. |
-| **`Could not bind ...: address already in use`** | Another copy is running, or the port is taken | `python app.py --port 9000` |
-| **Two tray icons** | Two servers bound the same port | Fixed by disabling address reuse on Windows. If it returns, check `SingleInstanceServer` in `app.py`. |
-| **Bank health suddenly low** | An import added questions with no answer or no options | Bank tab, or `python tools/ingest.py --gaps`. `pending` is normal and expected; `broken` is the number that matters. |
-| **Quiz says "no questions available"** | The purpose filter found nothing, usually a topic with only pending questions | Check the mastery map for that topic's bank count. Fill in answers, or widen the selection. |
-| **Revision queue empty on an old database** | The schedule was never backfilled | It backfills on init. Force it: `python -c "from core import db,revision; c=db.init(); print(revision.sync_from_activity(c))"` |
-| **A migration failed** | Usually a hand-edited database | Restore your backup, then `python app.py --check` to see the version it stopped at. Migrations are ordered and idempotent; they can be re-run safely. |
-| **Import wrecked a bank file** | A bad parse got written | Copy the matching `.bak` from `content/backups/` over the original, then **Reload from disk**. |
-| **Executable loses its data every run** | `core/db.py` path resolution is wrong | It must define `ASSET_DIR` and `APP_DIR` separately. Verify with `python -c "from core import db; print(db.ASSET_DIR, db.APP_DIR)"` |
-| **Taskbar shows the browser icon** | The window is owned by the browser process | Install `pywebview` so the window belongs to GitGrind instead. |
-| **Exe icon did not change** | Windows icon cache | `ie4uinit.exe -show` |
-| **Intro never goes away** | JS threw before the first paint | It self-dismisses on a timer regardless. If the app is still hidden, `document.body.className` shows `booting` and the console has the real error. |
-| **Nothing on screen and no terminal** | A windowed build has no console | Read `gitgrind.log` next to the database. |
-| **Readiness index looks wrong** | Small sample | Check `estimate_confidence` on the Readiness page. With few attempts the index deliberately pulls toward neutral and says so. |
-
-### Useful console probes
-
-```javascript
-GG.S.state                      // the entire payload the server sent
-Object.keys(GG.S.state)         // every top-level key
-GG.S.state.plan.blocks          // today's plan blocks
-GG.S.state.debt                 // revision pressure
-GG.S.state.feedback.learned     // what the app has learnt from you
-GG.viz.list()                   // every registered visualiser
-GG.plan.paint(GG.S.state)       // re-render the command centre by hand
-GG.app.reload()                 // refetch state and repaint
-```
-
-### Useful Python probes
-
-```python
-from core import db, content, stats, planner, recommend, readiness
-conn = db.init(); content.seed(conn)
-
-db.health(conn)                       # schema version, tables, size
-content.bank_stats(reload=True)       # usable / broken / pending / coverage
-content.pending_counts()              # how many answers are waiting
-bundle = stats.gather(conn)           # the one analytics pass
-bundle["metrics"]                     # every metric the UI shows
-planner.plan_for(conn, bundle, regenerate=True)
-recommend.build(conn, bundle, None)   # ranked advice with reasons
-readiness.compute(conn, bundle["metrics"], bundle=bundle)
-```
-
-Point any tool at a throwaway database with the `GITGRIND_DB` environment
-variable, so experiments never touch your real history.
+> [!NOTE]
+> Stage 2 **overwrites** the bank. Always follow it with
+> `recover_options.py --apply`, or you will drop back from 85% to 58% and
+> wonder why.
 
 ---
 
-## 10. The question bank
-
-### Where questions come from
-
-Layered, in order of preference:
-
-1. **Official GATE papers** you supply as PDF or text.
-2. **Public question compilations** distributed as release assets.
-   `tools/fetch_go_pdfs.py` pulls them through the API. It does not scrape web
-   pages and it will not.
-3. **Your own curated questions** in the JSON schema below.
-4. **Generated practice sets** assembled from the above.
-
-### Three-stage ingestion
-
-Nothing enters practice without passing all three stages.
+## The pipeline
 
 ```
-    fetch                parse and normalise              review
-  ----------           ---------------------          --------------
-  release assets  ->   text extraction, topic    ->   a human approves
-  or your own PDF      tagging, answer-key             each low-confidence
-                       matching, confidence            item in the Bank tab
-                       scoring, dedupe
+                    GO volume PDFs  (papers/*.pdf)
+                            │
+                            │   ① mineru_run.py            GPU, one-off
+                            ▼
+        ┌───────────────────────────────────────────────────┐
+        │  MinerU output                                    │
+        │    merged/full.md          stitched markdown      │
+        │    merged/images/          extracted graphics     │
+        │    pNNNN_MMMM/.../*.json   bbox + page_idx        │
+        └───────────────────────────────────────────────────┘
+                            │
+                            │   ② tools/import_mineru_bank.py
+                            │        └── tools/texwrap.py   ④
+                            ▼
+        ┌───────────────────────────────────────────────────┐
+        │  content/banks/mineru/<subject>.json              │
+        │  content/assets/question-images/mineru/*.jpg      │
+        │  content/review/mineru-unsorted.json              │
+        └───────────────────────────────────────────────────┘
+                            │
+                            │   ③ tools/recover_options.py  GPU
+                            │        crops ──► pix2tex ──► manifest.json
+                            ▼
+                      servable bank
 ```
 
-**Stage 1: fetch**
+### Stage 1 — MinerU
 
-```
-python tools/fetch_go_pdfs.py --list
-python tools/fetch_go_pdfs.py --tag <tag> --only vol1 --extract
-python tools/fetch_go_pdfs.py --index-only --tag <tag>   # metadata, no download
-python tools/fetch_go_pdfs.py --verify                   # re-check every sha256
-python tools/fetch_go_pdfs.py --manifest                 # what is on disk
-```
+`mineru_run.py` chunks each PDF into page ranges, spreads them across the
+available GPUs, strips QR codes, and merges the chunk outputs back into one
+markdown file plus one image folder.
 
-Downloads resume, sizes are checked, and a sha256 lands in
-`papers/manifest.json`, verified against the published digest when there is one.
-`--verify` later tells you whether a file changed under you.
+It writes three things worth knowing about:
 
-**Stage 2: parse and normalise**
+| path | what it holds |
+|---|---|
+| `<vol>/merged/full.md` | every chunk stitched together, image refs intact |
+| `<vol>/merged/images/cNNN_<sha>.jpg` | every extracted graphic, chunk-prefixed |
+| `<vol>/pAAAA_BBBB/<stem>/hybrid_auto/*_content_list.json` | structured nodes with `bbox` and `page_idx` |
 
-```
-# always look first
-python tools/import_questions.py papers/gate2024-cs.pdf --year 2024 --dry-run
+This is the only stage that needs a GPU, and it only runs once per PDF.
 
-# see what the extracted text even looks like
-python tools/import_questions.py --probe papers/gate2024-cs.pdf
+### Stage 2 — `tools/import_mineru_bank.py`
 
-# the real thing
-python tools/import_questions.py papers/gate2024-cs.pdf \
-    --answers papers/gate2024-cs-key.pdf --year 2024 \
-    --source gate-official --source-kind official --to-db-review
-```
+Converts MinerU output into bank JSON.
 
-The `--dry-run` report gives you: how many were found, matched, held for review,
-rejected as duplicates, flagged as near-duplicates, the confidence spread, the
-lowest-confidence items *and why each scored low*, and which syllabus topics are
-still underrepresented afterwards.
+**`merged/full.md` is the structural spine.** It is the only place where three
+things coexist: the book's own `1.44.2` numbering, the per-chapter answer-key
+tables, and the image references. Using it means questions never have to be
+counted into position — a missing marker cannot desynchronise the answer refs.
 
-Every run writes a manifest to `content/imports/` and a row to the import log in
-the Bank tab, so months later you can still answer "what did that import do?"
+**`content_list.json` supplies provenance.** It is joined on image filename to
+recover `page_idx` and `bbox`, so a bad figure can be found again in the source
+PDF. The join needs one trick: merged images are prefixed `cNNN_`, where `NNN`
+is the chunk index, and each chunk restarts `page_idx` at 0. Chunk-local page +
+that chunk's first page = the absolute page. Verified: `c004_` ↔ `p0096_0119`,
+`page_idx 1` → page 97.
 
-Safety, because a bad import must never cost you a working bank:
+What the converter guarantees:
 
-- Target files are backed up to `content/backups/` before being touched
-- Writes go to a temp file and are then renamed, so a crash cannot truncate JSON
-- Exact duplicates are dropped; near-duplicates above 0.86 token-shingle
-  similarity are kept but flagged
-- Anything below the confidence floor goes to review even if it classified
+- **Figures are sidecars.** Copied to `content/assets/question-images/` and
+  referenced by path. **No image bytes ever enter a JSON file.**
+- **Code listings get their own field.** MinerU emits them as fenced blocks *or*
+  as `<div class="mineru-algorithm" style="white-space: pre-wrap">`. Both are
+  lifted into `code_blocks`. Flattened into the prose, a twenty-line program
+  became one unreadable sentence — that hit 275 questions.
+- **Tables are parked behind a placeholder during option parsing.** A
+  match-the-following table starts its rows with `(A)`, `(B)` — exactly what the
+  option parser looks for — so flattening it inline turned a four-option
+  question into an eight-option one.
+- **Answer keys are read, never guessed.** `N/A`, `TBA` and `X` mean "no
+  answer". Ranges (`10:10`, `147.1 : 148.1`) become a value plus a tolerance.
+  Multi-selects (`B;D`) become an MSQ.
+- **Topic resolution is delegated** to `import_questions.py`, so the two
+  importers cannot drift into disagreeing about what a topic slug means.
+- **Uncertainty is recorded, not resolved.** Anything doubtful is marked
+  `answer_pending` with a human-readable `needs_fix` reason and stays out of
+  quizzes.
 
-**Stage 3: review**
-
-Low-confidence questions land in the Bank tab's review queue. Approving copies
-the question into `content/banks/reviewed/<subject>.json` and it goes live.
-Rejecting leaves it out. Either way the raw imported file is never edited.
-
-From the terminal:
-
-```
-python tools/ingest.py --review
-python tools/ingest.py --approve 12
-python tools/ingest.py --reject 12 --note "bad OCR, figure missing"
-```
-
-### Bulk extraction
-
-`tools/extract_go_bank.py` takes the opposite position from the importer on
-purpose: **keep everything.** A question with no printed answer is still worth
-having, because you can look the answer up once and then it is yours forever.
-
-```
-python tools/extract_go_bank.py --dry-run     report only
-python tools/extract_go_bank.py               write the bank
+```bash
+python tools/import_mineru_bank.py out/ --dry-run     # report only
+python tools/import_mineru_bank.py out/ --limit 40    # sample
+python tools/import_mineru_bank.py out/               # the real thing
+python tools/import_mineru_bank.py out/ --retire go-extracted
 ```
 
-Questions with no answer are written with:
+`--retire` moves a superseded bank into `content/backups/retired-banks/`. It is
+reversible — move the folder back. Without it, the same questions load twice.
 
-```json
-"answer_pending": true,
-"answer": null,
-"answer_note": "Answer not printed in the source. Look it up online, then log it from the Bank tab."
-```
+### Stage 3 — `tools/recover_options.py`
 
-An `answer_pending` question is **present but not gradable**: it counts towards
-coverage, it is listed in the Bank tab so you can fill it in, and the quiz
-selector will never serve it. Verified: all six selection purposes leak zero
-pending questions.
+MinerU's formula model reads roughly two thirds of the option bodies. The rest
+arrive blank, and **re-running MinerU reproduces the same gaps** — it is
+deterministic.
 
-### Repairing a bad extraction
-
-`tools/repair_bank.py` fixes questions that bled into each other. The classic
-symptom is option D containing an entire second question.
+But the geometry is reliable. The option letters always extract, with exact
+coordinates, in a clean grid:
 
 ```
-python tools/repair_bank.py --dry-run
-python tools/repair_bank.py
+letter A  [55.9, 723.2, 66.9, 732.2]      letter B  [297.4, 723.2, 308.4, 732.2]
+letter C  [55.5, 734.8, 66.9, 743.8]      letter D  [297.0, 734.8, 308.4, 743.8]
 ```
 
-Section numbering is treated as a hard question boundary, merged option blocks
-are discarded, and anything left unservable is demoted to `answer_pending` rather
-than silently shipped as a broken question.
+So: locate each option from its letter, crop the strip beside it at 400 DPI, run
+a dedicated formula OCR over the crop. No layout model is involved and the
+input is pristine.
 
-### Filling in pending answers
+Details that mattered:
 
-Bank tab -> **Answers to look up**. Each row has a one-click search that opens the
-question text in a web search. Find the answer, type `B`, or `B,D`, or a numeric
-value for NAT, and press Save. It is written straight into the bank file, backed
-up first, and the question becomes gradable permanently. No re-import needed.
+- **Options printed overleaf are followed onto the next page.** A question whose
+  heading sits near the foot of a page has its options on the next one. Missing
+  this cost 96 questions and looked exactly like a source gap.
+- **Plain-text options are read from the text layer, not OCR'd.** "None of the
+  above" is prose. Sent through a formula model it came back as
+  `\mathrm{\boldmath{~\D.~Norle~of~t1pe~above}}`. 623 options are read exactly
+  instead of guessed.
+- **Crop bounds split the inter-row gap down the middle.** Rows can sit 2.6pt
+  apart; clamping to the neighbouring *letter* still let the row above bleed in,
+  because a formula is taller than the letter labelling it.
+- **Blank crops are detected and skipped.** pix2tex normalises by
+  `(max - min)`, so a uniform image divides by zero and returns noise.
+- **A question is only rewritten when every one of its options is recovered.**
+  A partial fill leaves positions that no longer line up with the printed answer
+  key — worse than the blank it replaced.
 
-Questions marked `needs_options` also lost their option list to text extraction;
-paste the options in as well, one per line.
+```bash
+# where the bank is
+python tools/recover_options.py --worklist worklist.json
 
-From the terminal instead:
+# on the GPU box — needs only the PDFs and that worklist, not the repo
+python recover_options.py --from-worklist worklist.json --pdf-dir . --work crops
+python recover_options.py --work crops --ocr --device cuda:0
+
+# back where the bank is
+python tools/recover_options.py --apply
+```
+
+> [!WARNING]
+> **`pix2tex` pins its own torch build. Install it in a separate venv.**
+> Putting it in the MinerU environment downgrades torch and transformers and
+> breaks MinerU.
+>
+> ```bash
+> python -m venv ~/ocrenv && source ~/ocrenv/bin/activate
+> pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+> pip install pix2tex pymupdf
+> ```
+>
+> Match the CUDA wheel to the **driver**, not the newest available. A driver at
+> 12.2 with a `cu128` torch silently falls back to CPU.
+
+> [!TIP]
+> `--device cuda:0` is correct even when you set `CUDA_VISIBLE_DEVICES=2`.
+> That variable *remaps* GPU 2 to index 0, so `cuda:2` does not exist.
+
+### Stage 4 — `tools/texwrap.py`
+
+MinerU does not always delimit its maths, so stems arrive with raw LaTeX sitting
+in the prose. This wraps it in `$...$` so KaTeX can render it.
+
+It is a **separate module** for a reason. Two earlier regex-only attempts
+shipped broken. Both opened a dollar *inside* an existing matched pair, after
+which every later dollar paired with the wrong partner and whole English
+sentences rendered as run-together italics:
 
 ```
-python tools/answer_fill.py
+before:  itisrequiredtopartitionthemintotwopartsandsuchthat, ∑ai − ∑ai...
 ```
 
-### Bank maintenance
+The fix is structural, not a better pattern: split the text into in-math and
+out-of-math segments **first**, then only ever touch the out-of-math ones.
+Reaching inside an existing formula becomes impossible rather than something a
+regex has to be careful about. A final balance check discards any result whose
+dollar count did not stay even.
 
-```
-python tools/ingest.py --sources     registered sources and question counts
-python tools/ingest.py --imports     the import log
-python tools/ingest.py --dedupe      duplicates already in the bank
-python tools/ingest.py --gaps        underrepresented topics, by exam weight
-python tools/ingest.py --register <slug> "<Name>" --kind official --url ...
-```
+Measured against fixtures drawn from the real bank:
 
-### Adding questions by hand
+| check | result |
+|---|---|
+| 200 no-LaTeX stems, must be byte-identical | **199 / 200** |
+| 60 target stems, should be wrapped | **56 / 60** |
+| unbalanced output | **0** |
+| bank-wide undelimited LaTeX | **304 → 6** |
 
-One file per subject under `content/questions/`, or a folder under
-`content/banks/<name>/`:
+---
+
+## How we got here
+
+The order things were discovered in, because the dead ends are worth as much as
+the fixes.
+
+<details>
+<summary><b>1. The bank was reporting 65% usable, and it was a lie</b></summary>
+
+<br>
+
+At one point `app.py --check` read 65%. Inspecting what was actually being
+served:
 
 ```json
 {
-  "subject": "operating-systems",
-  "source": { "slug": "my-notes", "name": "My own notes", "kind": "manual" },
-  "questions": [
-    {
-      "id": "os-deadlock-01",
-      "topic": "deadlock",
-      "kind": "dpp",
-      "type": "mcq",
-      "marks": 2,
-      "difficulty": "medium",
-      "year": 2023,
-      "text": "A system has 3 processes and 4 instances of a resource...",
-      "options": ["1", "2", "3", "4"],
-      "answer": "B",
-      "explain": "Apply the deadlock-free condition n*(k-1) < m ..."
-    }
-  ]
+  "id": "mineru-vol1-5-5-8",
+  "options": ["is", "is", "is", "does not exist ..."],
+  "answer_from_source": "C"
 }
 ```
 
-- `type` is `mcq`, `msq` or `nat`. For `nat`, drop `options` and `answer` and
-  give `answer_value`, plus optional `answer_low` and `answer_high` for a range.
-- `topic` must be a slug from `content/syllabus.json`. Unrecognised topics are
-  reported, never silently guessed.
-- Restart, or press **Reload from disk** in the Bank tab.
+A quiz would show four options — *is*, *is*, *is*, *does not exist* — and mark
+you correct only for the third "is". **237 questions were like this.**
 
-Validate before trusting it:
+Adding a distinctness check dropped health from 65% to 58%. That drop was the
+metric becoming honest, not a regression. The number to watch is not the
+percentage; it is whether what gets served is answerable.
+
+</details>
+
+<details>
+<summary><b>2. 1138 answers were being thrown away by our own code</b></summary>
+
+<br>
+
+The source answer key had a perfectly good `C` for 1138 pending questions. The
+converter was discarding it — when options failed a quality check, the question
+was marked pending and the parsed answer was dropped along with it.
+
+But it is usually the **options** that fail, not the answer. Preserving the key
+in `answer_from_source` changed the value of the whole option-recovery effort:
+
+| | before | after |
+|---|---|---|
+| recovery targets | 961 | 961 |
+| ...whose answer is already known | **76** | **877** |
+
+A three-hour OCR run that fixes 76 questions is not worth it. One that fixes 877
+is.
+
+</details>
+
+<details>
+<summary><b>3. pdftotext and pdfplumber were dead ends — and we proved it</b></summary>
+
+<br>
+
+Before committing to OCR we checked whether the text was recoverable more
+cheaply:
 
 ```
-python tools/import_questions.py --validate content/questions/my-file.json
+PAGE 28 option lines:
+    'A.'  'B.'  'C.'  'D.'  'A.'  'B.'  'C.'  'D.'  ...
 ```
+
+Letters only. No bodies. The path was closed, and knowing that made the crop
+pipeline the obvious answer rather than a guess.
+
+</details>
+
+<details>
+<summary><b>4. Silent success is worse than loud failure</b></summary>
+
+<br>
+
+One OCR run reported **"recovered 623 of 3993 (16%)"** and exited cleanly. That
+623 was exactly the count of text-layer reads — pix2tex had failed on every
+single crop:
+
+```
+Input type (torch.cuda.FloatTensor) and weight type (torch.FloatTensor)
+should be the same
+```
+
+`LatexOCR` is **two** networks. Only the decoder had been moved to the GPU; the
+`image_resizer` stayed on CPU, so every crop died on a device mismatch. The
+error was being swallowed into a per-row `error` field, and a partial number
+looked like partial success.
+
+Fixed both by moving both networks and by making a zero-success run exit
+non-zero with the first error printed. After that: **3340 of 3370 (99%)**.
+
+</details>
+
+<details>
+<summary><b>5. "Fix it all in one shot" failed three times</b></summary>
+
+<br>
+
+Three separate attempts to batch-fix rendering bugs shipped regressions that
+were only caught by screenshots from the browser. The LaTeX one broke the same
+way twice.
+
+That is why stage 4 lives in its own module with a fixture set, and why the
+workflow settled into: **one fix, then `--check`, then look at it.**
+
+</details>
 
 ---
 
-## 11. Accessibility and motion
+## Rendering
 
-- Every state indicator carries a glyph as well as a colour (`!` critical,
-  `~` weak, `+` ok, `#` strong) so nothing is communicated by hue alone. The
-  mastery map prints the glyph inside each cell.
-- Full keyboard operation. `?` lists every shortcut, generated from the registry,
-  so it cannot drift out of date.
-- Dialogs trap Tab and return focus where it came from on close.
-- Route changes move focus into the new view rather than leaving it on the nav.
-- Toasts are announced through an `aria-live` region.
-- `prefers-reduced-motion` is honoured, plus an in-app **Reduced motion** setting
-  for when the operating system setting is not what you want here. Either one
-  strips every transition, the staggered entrance, and the intro animation.
-- Visible focus rings everywhere, with a skip link to the main content.
-- The intro can always be skipped: a button, or Escape, Enter or Space.
+Figures, listings and maths all reach the UI under one rule:
+**data goes in as data, never as markup.**
 
----
-
-## 12. Where to change things
-
-The most common edits, and the one place to make each:
-
-| You want to | Edit |
+| feature | how it is kept safe |
 |---|---|
-| Change the syllabus, topics, or exam weights | `content/syllabus.json` |
-| Fix a cutoff or add a target | `content/targets.json` |
-| Improve automatic topic tagging on import | `content/topic_keywords.json` |
-| Change how the readiness index is weighted | the component weights in `core/readiness.py` |
-| Change spacing intervals or ease bounds | the constants at the top of `core/revision.py` |
-| Add a selection purpose | `PURPOSE_LABELS` and `select()` in `core/quiz.py` |
-| Add a plan block type | the generators and `PACE` in `core/planner.py` |
-| Add a recommendation | write a `_generator` in `core/recommend.py` and register it |
-| Add a badge or track | the track tables in `core/achievements.py` |
-| Add a mission | `missions()` in `core/achievements.py` |
-| Change mistake categories | `MISTAKE_KINDS` in `core/quiz.py` |
-| Tune how fast feedback learns | `LR` and the clamps in `core/feedback.py` |
-| Add an API route | `core/api.py`, and add the key to `build_state()` if the UI needs it |
-| Add a concept visualiser | one file in `static/js/viz/`, plus a `<script>` tag |
-| Change colours, spacing, or motion | the `:root` tokens at the top of `static/css/style.css` |
-| Change the intro timing | the `PHASES` table in `static/js/core.js` |
-| Change the app icon | `python tools/make_icon.py --from-image your.png` |
-| Add a keyboard shortcut | `registerShortcuts()` in `static/js/app.js`; the help dialog updates itself |
-| Add a user-tunable setting | `TUNABLE` in `core/api.py`, defaults in `core/content.py`, copy in `SETTING_COPY` in `static/js/app.js` |
-| Add a database table or column | append to `MIGRATIONS` in `core/db.py` and bump `SCHEMA_VERSION`; never edit the base `SCHEMA` alone, or existing databases will not get it |
+| `figure_assets` | `src` validated against `content/assets/` server-side, then set through the DOM. A bank file is hand-editable, so an asset path is untrusted input. |
+| `code_blocks` | inserted as a text node inside `<pre>`; nothing in a program can become markup. |
+| `$...$` | rendered with KaTeX. Malformed LaTeX falls back to readable source, not red error markup. |
 
-### House rules if you extend it
+The asset route is deliberately narrow — a fixed extension allow-list, a
+`realpath` containment check, and a 404 rather than the app shell on a miss, so
+a broken figure shows as a broken image instead of silently rendering HTML.
+Verified against `../..`, URL-encoded `%2e%2e%2f`, missing files and bare
+directories: all 404.
 
-1. **Every number needs a reason string.** If you cannot write the sentence
-   explaining what to do about a metric, do not put it on screen.
-2. **New engine data goes through `stats.gather()`**, not a second query pass.
-3. **Schema changes go in `MIGRATIONS`.** Editing `SCHEMA` alone breaks every
-   existing database.
-4. **Bank writes back up first, then write atomically.** Copy the pattern in
-   `content.set_answer()`.
-5. **Never let a rating failure block a study action.** Feedback calls are
-   wrapped in try/except for a reason, and each one carries a comment saying why.
-6. **ASCII glyphs only.** No emoji.
-7. **Run `selftest.py` and `browsercheck.py` before you trust a change.** The
-   Python tests cannot see frontend bugs, and the browser check cannot see engine
-   bugs. You need both.
+KaTeX is **vendored** under `static/vendor/katex/` rather than loaded from a
+CDN, so the app keeps working offline — which is the whole point of GitGrind.
 
-### Code quality
+---
 
-```
-ruff check .
-black .
-bandit -r . -c pyproject.toml
-python tools/selftest.py
+## Build artifacts: how each one was made
+
+Several files were shipped during this work that are not source code. Here is
+exactly how each was produced, so they can be regenerated.
+
+### Making a `.patch` file
+
+A patch is just a unified diff between two trees. The important part is diffing
+against a **known baseline**, not against a working copy that has drifted.
+
+```bash
+# 1. reconstruct the exact baseline the patch should apply to
+mkdir baseline && unzip -q GitGrind.zip -d baseline
+
+# 2. if the patch stacks on an earlier one, apply that first
+cd baseline/GitGrind && patch -p1 -s < ../../gitgrind-mineru-figures.patch && cd -
+
+# 3. diff only the files you touched, with a/ b/ labels so -p1 works
+: > my-change.patch
+for f in core/content.py static/js/core.js static/css/style.css; do
+  diff -u "baseline/GitGrind/$f" "working/GitGrind/$f" \
+       --label "a/$f" --label "b/$f" >> my-change.patch
+done
+
+# 4. ALWAYS verify it applies to a pristine copy before shipping
+rm -rf verify && mkdir verify && unzip -q GitGrind.zip -d verify
+cd verify/GitGrind && patch -p1 --dry-run < ../../my-change.patch
 ```
 
-Configuration lives in `pyproject.toml`, with a comment against every suppressed
-rule explaining why it is suppressed. Current state: bandit reports zero issues,
-selftest passes 46 of 46.
+`diff -u` exits 1 when files differ, which is normal — that is why the loop uses
+`>>` rather than relying on `set -e`.
+
+### Why patches were abandoned on Windows
+
+They did not work. Every attempt failed:
+
+```
+git apply  ..\gitgrind-katex-and-dedup.patch   → error: corrupt patch at line 165
+git apply --3way ...                           → error: corrupt patch at line 165
+patch -p1 < ...                                → PowerShell: '<' operator is reserved
+patch -p1 -i ...                               → 'patch' is not recognized
+```
+
+Two independent problems: `git apply` is strict about CRLF line endings and
+rejected diffs generated on Linux, and Windows has no `patch` binary at all.
+
+The replacement is a **Python applier script** — `apply_katex_patch.py`,
+`fix_math_render.py`, `apply_code_blocks.py`. Each holds explicit
+`(file, label, marker, old, new)` tuples and:
+
+- detects the file's own line ending and rewrites the edit to match, so CRLF
+  files stay CRLF
+- checks a `marker` first and skips edits already applied, so it is **idempotent**
+- requires each `old` string to match **exactly once**, and exits **before
+  writing anything** if not — never leaving a half-applied tree
+- appends CSS separately, guarded by its own marker
+
+```powershell
+.venv\Scripts\python.exe apply_katex_patch.py
+```
+```
+  + static/index.html      KaTeX stylesheet
+  + static/js/core.js      mathText() helper
+  ...
+  13 edit(s) applied, 0 already in place.
+```
+
+Run it twice and everything reports `= (already applied)`.
+
+### `katex-vendor.zip`
+
+KaTeX is bundled locally so the app works with no network. The npm registry is
+the source, and only the runtime files are kept — the tarball also carries
+sources, docs and contrib modules that are not needed.
+
+```bash
+npm pack katex@0.16.9
+tar xzf katex-0.16.9.tgz
+
+mkdir -p static/vendor/katex/fonts
+cp package/dist/katex.min.js   static/vendor/katex/
+cp package/dist/katex.min.css  static/vendor/katex/
+cp package/dist/fonts/*        static/vendor/katex/fonts/   # 60 font files
+
+cd static && zip -qr ../katex-vendor.zip vendor/katex
+```
+
+3.0 MB of `dist/` becomes 1.5 MB on disk, 941 KB zipped. Wired in with two lines
+in `static/index.html`:
+
+```html
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<script src="/vendor/katex/katex.min.js"></script>
+```
+
+The existing static handler serves the fonts without changes —
+`mimetypes.guess_type` already knows `.woff2`.
+
+```powershell
+Expand-Archive katex-vendor.zip -DestinationPath static -Force
+```
+
+### `mineru-bank-and-assets.zip`
+
+The generated bank plus its figures, so the pipeline output can be used without
+re-running MinerU (which needs a GPU and several hours).
+
+```bash
+cd GitGrind
+zip -qr mineru-bank-and-assets.zip \
+    content/banks/mineru \
+    content/assets/question-images/mineru \
+    content/review/mineru-unsorted.json
+```
+
+| contents | size |
+|---|---|
+| `content/banks/mineru/*.json` — 12 subject files | 4.7 MB |
+| `content/assets/question-images/mineru/*.jpg` — 478 figures | 5.5 MB |
+| `content/review/mineru-unsorted.json` — unresolved topics | small |
+| **total, zipped** | **4.5 MB** |
+
+Three deliberate choices:
+
+1. **Only referenced images are included.** `merged/images/` holds 621 files per
+   volume; only the ones actually cited by a question are copied.
+2. **Filenames are rebuilt as `<volume-slug>-<hash>.jpg`.** MinerU's `cNNN_`
+   prefix is a chunk index that shifts if the run is re-chunked; deriving the
+   name from the volume and content hash means a re-import overwrites the same
+   file instead of littering the folder with near-duplicates.
+3. **`_unsorted` is not in the bank directory.** `bank_files()` loads every
+   `*.json` under `content/banks/<bank>/`, so a topic-less file left there would
+   be served with no topic — it showed up as 108 broken and 192 untagged before
+   being moved to `content/review/`, which is outside the load path.
+
+```powershell
+Expand-Archive mineru-bank-and-assets.zip -DestinationPath . -Force
+Remove-Item content\banks\go-extracted -Recurse    # superseded, same source
+```
 
 ---
 
-## 13. Roadmap
+## Tool reference
 
-Ordered by value for effort, honestly assessed.
+| tool | purpose |
+|---|---|
+| [`tools/import_mineru_bank.py`](tools/import_mineru_bank.py) | MinerU output → bank JSON + figure assets |
+| [`tools/recover_options.py`](tools/recover_options.py) | crop options from the PDFs, OCR them, merge back |
+| [`tools/texwrap.py`](tools/texwrap.py) | delimit bare LaTeX, math-mode aware |
+| [`tools/import_questions.py`](tools/import_questions.py) | v1.0 text importer; still the source of topic resolution |
+| [`tools/answer_fill.py`](tools/answer_fill.py) | fill pending answers by hand, one at a time |
+| [`tools/selftest.py`](tools/selftest.py) | 46 end-to-end checks across every engine |
+| [`tools/repair_bank.py`](tools/repair_bank.py) | bulk fixes on bank JSON |
 
-### High value, low effort
+### Useful flags
 
-- **Finish the pending answers.** 2,991 questions are one lookup each from being
-  gradable. By far the highest-value thing left, and it needs no code at all.
-  Twenty a day makes the bank properly usable in five months.
-- **Match answer keys automatically.** Official keys exist for every GATE year.
-  A better key matcher could clear a large fraction without human lookup.
-- **Fill the last empty topic.** `computer-organization/secondary-storage` has no
-  questions. Five written by hand would close it.
-- **Per-topic time budgeting.** The planner already knows exam weights and your
-  accuracy. It could say how many hours a topic *deserves*, not only what to do
-  next.
+```bash
+# converter
+--dry-run              report only, write nothing
+--limit N              stop after N questions per volume
+--skip-existing        drop questions already in the loaded bank
+--retire BANK          park a superseded bank in content/backups/
 
-### Medium effort, real payoff
-
-- **Mock test mode.** A full 65-question, 180-minute paper with GATE marking,
-  section timing, and a post-mortem feeding the same analytics. The marking rules
-  already exist; what is missing is the timed shell and the report.
-- **Figure support.** Several hundred questions reference a diagram that text
-  extraction dropped. Cropping the page region and storing it as an image would
-  recover them properly. A caption is not a substitute for a circuit.
-- **Prerequisite-aware planning.** `topic_prerequisites` is populated but barely
-  used. The planner could refuse to schedule a topic whose prerequisites are
-  weak, which is how a human tutor sequences things.
-- **Formula and note cards.** A revision surface for definitions and formulas on
-  the same SM-2 engine. Cheap, because the engine is generic.
-- **Error-log review.** A dedicated screen for every question you ever got wrong,
-  grouped by mistake category, with the pattern spelled out.
-- **Mobile layout.** The CSS is responsive but designed for a desktop HUD. A
-  phone-first review mode, just the revision queue and today's plan, would make
-  dead time useful.
-- **Multi-exam support.** The schema is not GATE-specific. A second exam profile
-  mostly means another syllabus file and target file.
-
-### Larger projects
-
-- **Layout-aware extraction with a vision model.** Crop figures and tables as
-  images rather than mangling them into text, then have a model transcribe only
-  what it can read reliably, with a refusal option and a confidence tier written
-  into the schema.
-- **Spaced repetition for subjective material.** Long-answer and derivation
-  practice with self-grading rubrics, which a binary correct/wrong model cannot
-  represent.
-- **Adaptive difficulty from item response theory.** The current difficulty dial
-  is a heuristic. A two-parameter IRT model over your attempt history would
-  estimate question difficulty and your ability jointly.
-- **Handwriting capture.** Photograph your rough work and attach it to the
-  attempt, making the mistake taxonomy far more useful on review.
-
-### Deliberately not planned
-
-- **Cloud sync.** The one-file-on-your-disk property is the reason you can trust
-  this app. Sync means accounts, a server, and a privacy policy.
-- **A recommendation LLM.** The rules engine is inspectable and cannot
-  hallucinate a study plan. The LLM stays fenced to explaining concepts.
-- **Streak pressure and notifications.** Guilt mechanics are how study apps get
-  uninstalled in March.
+# option recovery
+--worklist FILE        emit the target list, then stop (run where the bank is)
+--from-worklist FILE   take targets from a worklist (run where the PDFs are)
+--pdf-dir DIR          where the source PDFs live
+--work DIR             where crops and manifest go
+--ocr                  run pix2tex over the crops
+--device cuda:0        put both networks on the GPU
+--apply                merge recovered options into the bank
+```
 
 ---
 
-## 14. Honest limitations
+## Verifying a change
 
-Read this before trusting any number.
+```bash
+python app.py --check        # schema, bank health, coverage, review queue
+python tools/selftest.py     # 46 checks, temp database, no side effects
+```
 
-- **Only 606 of 3,597 questions are gradable right now.** 2,991 are waiting on
-  answers you must look up, and 1,894 of those also lost their options to text
-  extraction. Topic coverage reads 99%, but *gradable* coverage is much lower.
-  Filling those in is the single biggest thing left to do.
-- **Cohort numbers are simulated.** Percentiles come from a fixed-seed local
-  model, not from real students.
-- **Cutoffs are unofficial.** `content/targets.json` needs verifying against the
-  actual notification for your year.
-- **The readiness index is a heuristic, not a predictor.** It has never been
-  validated against real GATE results, because it cannot be. Treat it as a
-  consistency measure, "is this going up?", not as a score forecast.
-- **The feedback loop is preference learning, not RLHF.** It re-ranks advice. It
-  does not learn what makes you learn.
-- **Several hundred questions reference figures** that are not in the extracted
-  text. They are flagged, not hidden.
-- **There is no authentication.** Do not run it on `--host 0.0.0.0` on a shared
-  network.
-- **The frontend has no automated unit tests.** `browsercheck.py` catches thrown
-  errors and blank pages; it does not verify that a number is correct.
-- **The installer is not code-signed.** SmartScreen will warn on first run.
+`--check` should always end with **0 broken, 0 untagged**. Health will move; the
+other two should not.
 
-This section exists because an app that reports a number it cannot justify is
-worse than one that reports nothing. If any of the above stops being true, the
-list gets shorter, not quieter.
+For UI work, check the payload directly — it is faster than clicking around:
+
+```bash
+python app.py --no-browser --port 8420 &
+curl -s "http://127.0.0.1:8420/api/questions?subject=digital-logic&limit=50" \
+  | python -m json.tool
+```
+
+Unrevealed question payloads must contain **no** `answer*` fields. That is
+covered in `selftest.py`, and it is worth re-checking by hand after touching
+`public_question()`.
 
 ---
 
-## 15. Licence and credits
+## What is still wrong
 
-The code in this repository is MIT licensed. See [LICENSE.txt](LICENSE.txt).
+Stated plainly, because the numbers at the top make it easy to assume the bank
+is clean.
 
-**The licence covers the source code only.** It does not cover exam questions,
-answer keys or explanations placed in `content/` by you or by anyone else.
-Previous-year GATE questions remain the property of their respective copyright
-holders, and material compiled by third parties remains subject to whatever terms
-those projects set. If you redistribute this software, ship it with your own
-content, or with content you have the right to share.
+- **~344 pending questions have no options in the source at all.** These are
+  genuine descriptive GATE questions — *"Match the pairs"*, *"Show that L is not
+  context free"*, *"State any undesirable characteristic"*. They can never
+  become MCQs, and they currently sit in the review queue where they do not
+  belong. The fix is to route them to `content/review/` like the unsorted ones;
+  roughly 15 lines, not yet written.
 
-Built with Python's standard library, SQLite, and no JavaScript framework at all.
+- **Roughly 1 stem in 200 has its maths fragmented** across several `$...$`
+  spans when a decimal point falls mid-expression:
+
+  ```
+  in :  (C 0 1 2. 2 5) _ {H} - (1 0 1 1 1 0 0 1 1 1 0. 1 0 1) _ {B} =
+  out:  (C 0 1 2. $2 5) _ {H} - (1 0 1 1 1 0 0 1 1 1 0$. $1 0 1) _ {B} =$
+  ```
+
+  Output stays balanced and the sentence stays intact — the formula just renders
+  in pieces.
+
+- **Around 385 questions have no printed answer.** The source itself says `N/A`
+  or `TBA`. Nothing to recover; they need a human with the paper.
+
+- **~30 crops came back blank** — that option was never printed. Correctly
+  skipped, correctly left pending.
+
+- **The accuracy gate in [issue #5](../../issues/5) was never run.** The target
+  was a 150-question hand-verified gold set at 95% field-level accuracy *before*
+  any bulk run. The bulk run happened first. What exists instead is spot-checking
+  on a few hundred stems and a fixture set for `texwrap.py`.
+  **The 85% figure is a health metric, not an accuracy audit.** Read it as "how
+  much is servable", not "how much is correct".
+
+---
+
+## Note for v1.0 users
+
+> **There is no pre-processing "filter" script.**
+
+The `filter1_volume*.txt` files under `papers/` are leftover `pdftotext` output
+from the v1.0 flow, and `filter1` is simply part of the filename GateOverflow
+ships. Nothing in this repo produced them from a "2-column fixer".
+
+`tools/import_questions.py` still exists and still works — but only on text that
+actually contains questions. Pointed at a raw GO volume it finds almost nothing,
+because there is almost nothing in the text layer to find. A run over a raw
+volume producing 75,000 lines and six garbage blocks with zero answer keys is
+the expected result, not a bug.
+
+`go_extract.py` is not coming back. `import_mineru_bank.py` is its replacement.
+
+**For any GO volume — including the GATE DA ones — run MinerU first, then the
+converter:**
+
+```bash
+python mineru_run.py --input papers/ --output out/
+python tools/import_mineru_bank.py out/ --dry-run
+python tools/import_mineru_bank.py out/
+python tools/recover_options.py --worklist worklist.json
+```
+
+The converter is not CSE-specific. It keys off the book's own section numbering
+and the GO tag vocabulary, both of which the DA volumes share. Topics that do
+not map to `content/syllabus.json` land in `content/review/mineru-unsorted.json`
+rather than being dropped — for a DA syllabus, expect that file to be large
+until `content/syllabus.json` and `content/go_tag_map.json` are extended with DA
+topics.
 
 ---
 
 <div align="center">
 
-**[Download the latest release](https://github.com/eeshan15/GitGrind/releases/latest)**
+**Sources** ·
+[GATE Overflow PDFs](https://github.com/GATEOverflow/GO-PDFs) ·
+[MinerU](https://github.com/opendatalab/MinerU) ·
+[pix2tex](https://github.com/lukas-blecher/LaTeX-OCR) ·
+[KaTeX](https://katex.org)
 
-`python app.py --check` -- if something looks wrong, that is the first thing to run.
+Question content belongs to GATE Overflow and is used from their public release
+assets. Extraction is local; nothing is scraped from any paid platform.
 
 </div>
