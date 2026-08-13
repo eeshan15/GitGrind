@@ -51,7 +51,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2015,
-   "text": "Consider the following two statements. \u2022 $S _ { 1 }$: If a candidate is known to be corrupt, then he will not be elected $S _ { 2 } \\colon$ If a candidate is kind, he will be elected Which one of the following statements follows from $S _ { 1 }$ and $S _ { 2 }$ as per sound inference rules of logic?",
+   "text": "Consider the following two statements. • $S _ { 1 }$: If a candidate is known to be corrupt, then he will not be elected $S _ { 2 } \\colon$ If a candidate is kind, he will be elected Which one of the following statements follows from $S _ { 1 }$ and $S _ { 2 }$ as per sound inference rules of logic?",
    "options": [
     "If a person is known to be corrupt, he is kind",
     "If a person is not known to be corrupt, he is not kind",
@@ -140,7 +140,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-11-2",
@@ -150,7 +152,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2000,
-   "text": "A polynomial satisfies the following: \u2022 p(1) = p(3) = p(5) = 1 \u2022 p(2) = p (4) = \u22121 The minimum degree of such a polynomial is",
+   "text": "A polynomial satisfies the following: • p(1) = p(3) = p(5) = 1 • p(2) = p (4) = −1 The minimum degree of such a polynomial is",
    "options": [
     "$\\overline{{\\bigcup_{i}}}$",
     "$\\stackrel{\\textstyle\\mathbb{S}}{\\textstyle\\bigcup{}}$",
@@ -176,7 +178,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-11-3",
@@ -280,9 +284,9 @@
    "text": "If the cube roots of unity are and $\\omega ^ { 2 }$, then the roots of the following equation are $(x - 1) ^ {3} + 8 = 0$",
    "options": [
     "$- 1 , 1 + 2 \\omega , 1 + 2 \\omega ^ { 2 }$",
-    "1,1 \u2212 2\u03c9,1 \u2212 2\u03c92",
+    "1,1 − 2ω,1 − 2ω2",
     "$- 1 , 1 - 2 \\omega , 1 - 2 \\omega ^ { 2 }$",
-    "\u22121,1 + 2\u03c9, \u22121 + 2\u03c9\u00b2"
+    "−1,1 + 2ω, −1 + 2ω²"
    ],
    "answer": [
     2
@@ -556,10 +560,7 @@
    "difficulty": "easy",
    "year": 2019,
    "text": "Three of the five students are allocated to a hostel put in special requests to the warden, Given the floor plan of the vacant rooms, select the allocation plan that will accommodate all their requests. Request by X: Due to pollen allergy, I want to avoid a wing next to the garden. Request by Y: I want to live as far from the washrooms as possible, since I am very much sensitive to smell. Request by Z: I believe in Vaastu and so I want to stay in South-West wing. The shaded rooms are already occupied. WR is washroom Refer to the figure below.",
-   "options": [
-    "$\\left|\\begin{array}{c}{{\\stackrel{\\leftarrow\\leftarrow\\leftarrow}{}}}\\\\ {{\\longrightarrow}}\\end{array}\\right|^{\\circ=\\L}~~~\\left|\\frac{}{}~~~\\left|\\frac{}{}~~~\\left|\\begin{array}{c}{{\\quad\\H~~~}}\\\\ {{\\longrightarrow}}\\\\ {{\\longrightarrow}}\\end{array}\\right|\\quad\\left|\\begin{array}{c}{{}}\\\\ {{}}\\\\ {{}}\\\\ {{}}\\\\ {{\\longrightarrow}}\\end{array}\\right|~~~~\\right|$",
-    "$\\left|\\begin{array}{c}{{\\left|\\begin{array}{c}{{}}\\\\ {{\\qquad\\qquad\\left|\\qquad\\left|\\begin{array}{{{}}}\\end{array}\\right|}{\\prod}\\qquad\\qquad\\left|\\begin{array}{{{}}}\\\\ {{\\qquad\\qquad\\qquad\\qquad\\left|\\begin{array}{{{}}}{{{}}\\end{array}\\right|}\\end{array}\\right|}\\end{array}\\right|}}\\\\ {{}}\\end{array}\\right|}\\end{array}\\right|$"
-   ],
+   "options": [],
    "figure_assets": [
     {
      "src": "/content/assets/question-images/mineru/vol1-6ff2cdcbe1197f83b6e7c746.jpg",
@@ -638,7 +639,10 @@
    "answer_pending": true,
    "answer_from_source": "D",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-vol1-8-5-4",
@@ -709,7 +713,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-8-6-1",
@@ -815,7 +821,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-8-8-3",
@@ -827,9 +835,9 @@
    "year": 2017,
    "text": "There are three boxes. One contains apples, another contains oranges and the last one contains both apples and oranges. All three are known to be incorrectly labeled. If you are permitted to open just one box and then pull out and inspect only one fruit, which box would you open to determine the contents of all three boxes?",
    "options": [
-    "The box labeled \u2018Apples\u2019",
-    "The box labeled \u2018Apples and Oranges\u2019",
-    "The box labeled \u2018Oranges",
+    "The box labeled ‘Apples’",
+    "The box labeled ‘Apples and Oranges’",
+    "The box labeled ‘Oranges",
     "Cannot be determined"
    ],
    "answer": [
@@ -1388,7 +1396,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-8-8-18",
@@ -1737,7 +1747,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-8-15-1",
@@ -2015,7 +2027,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-2-1",
@@ -2065,7 +2079,6 @@
    "options": [
     "The maximum of and",
     "The minimum of and",
-    "",
     "None of the above"
    ],
    "origin": {
@@ -2099,12 +2112,7 @@
    "difficulty": "medium",
    "year": 2011,
    "text": "Given that $\\begin{array} { r } { f ( y ) = \\frac { | y | } { y } } \\end{array}$ and is non-zero real number, the value of $| f ( q ) - f ( - q ) |$ is",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "origin": {
     "source_file": "filter1_volume1.pdf",
     "volume": "vol1",
@@ -2123,7 +2131,10 @@
    "answer_pending": true,
    "answer_from_source": "D",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-vol1-9-2-4",
@@ -2262,7 +2273,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-4-2",
@@ -2554,7 +2567,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Number of unitsNet Profit () The number of units of a product sold in three diferent years and the respective net profits are presented in the figure above. The cost/unit in Year was \u20b9, which was half the cost/unit in Year. The cost/unit in Year was one-third of the cost/unit in Year. Taxes were paid on the selling price at,, and respectively for the three years. Net profit is calculated as the diference between the selling price and the sum of cost and taxes paid in that year. The ratio of the selling price in Year to the selling price in Year is",
+   "text": "Number of unitsNet Profit () The number of units of a product sold in three diferent years and the respective net profits are presented in the figure above. The cost/unit in Year was ₹, which was half the cost/unit in Year. The cost/unit in Year was one-third of the cost/unit in Year. Taxes were paid on the selling price at,, and respectively for the three years. Net profit is calculated as the diference between the selling price and the sum of cost and taxes paid in that year. The ratio of the selling price in Year to the selling price in Year is",
    "options": [
     "${\\textrm{d}}\\cdot{\\overset{\\cdot}{\\sim}}$",
     "$1:1$",
@@ -2612,7 +2625,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2025,
-   "text": "The number of patients per shift consulting Dr. Gita in her past shifts is shown in the figure. If the amount she earns is \u20b9, what is the average amount (in \u20b9) she has earned per shift in the past shifts? Note: The figure shown is representative.",
+   "text": "The number of patients per shift consulting Dr. Gita in her past shifts is shown in the figure. If the amount she earns is ₹, what is the average amount (in ₹) she has earned per shift in the past shifts? Note: The figure shown is representative.",
    "options": [
     "$\\mathfrak{s u b}$",
     "$\\scriptstyle{6.300}$",
@@ -2768,7 +2781,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-10-4",
@@ -2957,7 +2972,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-16-1",
@@ -3110,7 +3127,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-17-2",
@@ -3120,7 +3139,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2012,
-   "text": "The cost function for a product in a firm is given by $5 q ^ { 2 }$, where is the amount of production. The firm can sell the product at a market price of per unit. The number of units to be produced by the firm such that\u20b9 the profit is maximized is",
+   "text": "The cost function for a product in a firm is given by $5 q ^ { 2 }$, where is the amount of production. The firm can sell the product at a market price of per unit. The number of units to be produced by the firm such that₹ the profit is maximized is",
    "options": [
     "$\\stackrel{\\prod}{\\langle\\cdot\\rangle}$",
     "${\\mathfrak{L}}{\\mathfrak{G}}$",
@@ -3520,7 +3539,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-22-1",
@@ -3783,7 +3804,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-25-4",
@@ -3952,7 +3975,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-27-1",
@@ -4073,10 +4098,10 @@
    "year": 2016,
    "text": "Refer to the figure below.",
    "options": [
-    "f(x) = 1 + |x \u2212 1|",
+    "f(x) = 1 + |x − 1|",
     "$f ( x ) = 1 - \\left| x - 1 \\right|$",
     "$f ( x ) = 2 - \\left| x - 1 \\right|$",
-    "f(x) = 2 + |x \u2212 1|"
+    "f(x) = 2 + |x − 1|"
    ],
    "figure_assets": [
     {
@@ -4374,7 +4399,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-28-5",
@@ -4676,7 +4703,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-34-5",
@@ -4781,7 +4810,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-35-3",
@@ -4817,7 +4848,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-35-4",
@@ -5155,7 +5188,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-37-9",
@@ -5264,7 +5299,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2024,
-   "text": "The number of coins of \u20b9, \u20b9, and \u20b9 denominations that a person has are in the ratio. Of the total amount, the percentage of money in \u20b9 coins is",
+   "text": "The number of coins of ₹, ₹, and ₹ denominations that a person has are in the ratio. Of the total amount, the percentage of money in ₹ coins is",
    "options": [
     "$21\\nabla_{0}$",
     "$14\\frac{2}{7}\\nabla_{0}$",
@@ -5570,7 +5605,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-39-4",
@@ -6011,7 +6048,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2021,
-   "text": "| Items | Cost(\u20b9) | Profit \\% | Marked Price(\u20b9)\n| P | 5,400 | --- | 5,860\n| Q | --- | 25 | 10,000 Details of prices of two items and are presented in the above table. The ratio of cost of item to cost of item is. Discount is calculated as the diference between the marked price and the selling price. The profit percentage is calculated as the ratio of the difference between selling price and cost, to the cost $(\\text{Profit}$\\% $= \\frac${$\\text{Selling price} - \\text{Cost}$}{$\\text{Cost}$}$\\times 100)$ The discount on item, as a percentage of its marked price, is",
+   "text": "| Items | Cost(₹) | Profit \\% | Marked Price(₹)\n| P | 5,400 | --- | 5,860\n| Q | --- | 25 | 10,000 Details of prices of two items and are presented in the above table. The ratio of cost of item to cost of item is. Discount is calculated as the diference between the marked price and the selling price. The profit percentage is calculated as the ratio of the difference between selling price and cost, to the cost $(\\text{Profit}$\\% $= \\frac${$\\text{Selling price} - \\text{Cost}$}{$\\text{Cost}$}$\\times 100)$ The discount on item, as a percentage of its marked price, is",
    "options": [
     "$25$",
     "$12.5$",
@@ -6073,7 +6110,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-45-3",
@@ -6108,7 +6147,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-46-1",
@@ -6213,7 +6254,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-46-4",
@@ -6413,7 +6456,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-48-2",
@@ -6627,7 +6672,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-48-8",
@@ -6799,7 +6846,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-49-4",
@@ -6907,7 +6956,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-51-3",
@@ -6989,10 +7040,10 @@
    "year": 2025,
    "text": "Which one of the following options is correct for the given data in the table? | Iteration (i) | 0 | 1 | 2 | 3\n| Input (I) | 20 | -4 | 10 | 15\n| Output (X) | 20 | 16 | 26 | 41\n| Output (Y) | 20 | -80 | -800 | -12000",
    "options": [
-    "X(i) = X(i \u2212 1) + I(i); Y (i) = Y (i \u2212 1)I(i); i > 0",
-    "X(i) = X(i \u2212 1)I(i); Y (i) = Y (i \u2212 1) + I(i); i > 0",
-    "X(i) = X(i \u2212 1)I(i); Y (i) = Y (i \u2212 1)I(i); i > 0",
-    "X(i) = X(i \u2212 1) + I(i); Y (i) = Y (i \u2212 1)I(i \u2212 1); i > 0"
+    "X(i) = X(i − 1) + I(i); Y (i) = Y (i − 1)I(i); i > 0",
+    "X(i) = X(i − 1)I(i); Y (i) = Y (i − 1) + I(i); i > 0",
+    "X(i) = X(i − 1)I(i); Y (i) = Y (i − 1)I(i); i > 0",
+    "X(i) = X(i − 1) + I(i); Y (i) = Y (i − 1)I(i − 1); i > 0"
    ],
    "answer": [
     0
@@ -7163,7 +7214,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2011,
-   "text": "Four archers P, Q, R, and S try to hit a bull\u2019s eye during a tournament consisting of seven rounds. As illustrated in the figure below, a player receives points for hitting the bull's eye, points for hitting within the inner circle and point for hitting within the outer circle. The final scores received by the players during the tournament are listed in the table below. | Round | P | Q | R | S\n| 1 | 1 | 5 | 1 | 10\n| 2 | 5 | 10 | 10 | 1\n| 3 | 1 | 1 | 1 | 5\n| 4 | 10 | 10 | 1 | 1\n| 5 | 1 | 5 | 5 | 10\n| 6 | 10 | 5 | 1 | 1\n| 7 | 5 | 10 | 1 | 1 The most accurate and the most consistent players during the tournament are respectively",
+   "text": "Four archers P, Q, R, and S try to hit a bull’s eye during a tournament consisting of seven rounds. As illustrated in the figure below, a player receives points for hitting the bull's eye, points for hitting within the inner circle and point for hitting within the outer circle. The final scores received by the players during the tournament are listed in the table below. | Round | P | Q | R | S\n| 1 | 1 | 5 | 1 | 10\n| 2 | 5 | 10 | 10 | 1\n| 3 | 1 | 1 | 1 | 5\n| 4 | 10 | 10 | 1 | 1\n| 5 | 1 | 5 | 5 | 10\n| 6 | 10 | 5 | 1 | 1\n| 7 | 5 | 10 | 1 | 1 The most accurate and the most consistent players during the tournament are respectively",
    "options": [
     "P and S",
     "Q and R",
@@ -7303,7 +7354,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-56-2",
@@ -7397,7 +7450,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-57-1",
@@ -7528,7 +7583,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-57-4",
@@ -7740,7 +7797,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-59-2",
@@ -7776,7 +7835,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-59-3",
@@ -8139,7 +8200,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-10-4-1",
@@ -8350,7 +8413,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-10-5-1",
@@ -8407,7 +8472,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-10-6-2",
@@ -8642,7 +8709,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-10-6-5",
@@ -8744,7 +8813,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-10-7-1",
@@ -8825,8 +8896,7 @@
    "options": [
     "$\\scriptstyle{\\frac{\\mu{\\bmod{\\log{\\sqrt{}}}}}{\\sin{\\sqrt{}}}}$",
     "$\\scriptstyle{\\theta=\\theta=\\sin\\theta=\\mathbf{a}}.$",
-    "$\\scriptstyle\\underbrace{\\Gamma}{\\scriptstyle\\mathrm{enen}}_{\\mathrm{enen}+\\mathrm{en}=\\mathrm{nen}=\\mathrm{nen}=\\mathrm{nen}=\\mathrm{nen}+\\mathrm{nen}=\\mathrm{nen}+\\mathrm{nen}}_{\\mathrm{en}}}$",
-    "$\\left\\{\\begin{array}{l l}{\\P}&{\\downarrow}\\\\ {\\downarrow}&{\\downarrow}\\\\ {\\z=-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi-\\pi+\\mp\\ln+\\mp\\ln+\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\ln\\ln\\mp\\ln\\mp\\ln\\mp\\ln\\ln\\ln\\ln\\ln\\ln\\ln\\mp\\ln\\ln\\ln\\ln\\ln\\ln\\ln\\ln\\ln\\ln\\ln\\times\\ln\\times\\ln\\times\\times\\ln\\times\\ln\\times0}&{\\leq\\quad0}&{\\leq Q}&{\\leq\\quad0}=\\leq*{\\pmod{H}}&{\\quad{\\leq\\quad{\\textrm{d}}}{\\leq}}=\\leq-{\\frac{-\\pi}-\\pi-\\pi-\\pi-\\pi-\\pi-\\infty}={\\frac{\\pi}-\\pi-\\pi-\\pi}=\\quad{\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\leq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\leq\\neq\\neq\\neq\\neq\\neq\\neq\\end{array}{\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\neq\\leq\\neq\\neq\\end{array}{\\neq\\right\\}=\\neq\\neq\\neq\\neq\\leq\\leq\\leq\\neq\\leq\\leq\\leq\\neq\\neq\\end{array}}$"
+    "$\\scriptstyle\\underbrace{\\Gamma}{\\scriptstyle\\mathrm{enen}}_{\\mathrm{enen}+\\mathrm{en}=\\mathrm{nen}=\\mathrm{nen}=\\mathrm{nen}=\\mathrm{nen}+\\mathrm{nen}=\\mathrm{nen}+\\mathrm{nen}}_{\\mathrm{en}}}$"
    ],
    "figure_assets": [
     {
@@ -8878,7 +8948,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-10-8-2",
@@ -8935,7 +9007,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-10-8-3",
@@ -9172,7 +9246,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2014,
-   "text": "Choose the word that is opposite in meaning to the word \u201ccoherent\u201d.",
+   "text": "Choose the word that is opposite in meaning to the word “coherent”.",
    "options": [
     "sticky",
     "well-connected",
@@ -9687,9 +9761,9 @@
    "text": "Choose the grammatically INCORRECT sentence:",
    "options": [
     "They gave us the money back less the service charges of Three Hundred rupees.",
-    "This country\u2019s expenditure is not less than that of Bangladesh.",
+    "This country’s expenditure is not less than that of Bangladesh.",
     "The committee initially asked for a funding of Fifty Lakh rupees, but later settled for a lesser sum.",
-    "This country\u2019s expenditure on educational reforms is very less."
+    "This country’s expenditure on educational reforms is very less."
    ],
    "answer": [
     3
@@ -9824,10 +9898,10 @@
    "year": 2012,
    "text": "Choose the grammatically CORRECT sentence:",
    "options": [
-    "He laid in bed till o\u2019clock in the morning.",
-    "He layed in bed till o\u2019clock in the morning.",
-    "He lain in bed till o\u2019clock in the morning.",
-    "He lay in bed till o\u2019clock in the morning."
+    "He laid in bed till o’clock in the morning.",
+    "He layed in bed till o’clock in the morning.",
+    "He lain in bed till o’clock in the morning.",
+    "He lay in bed till o’clock in the morning."
    ],
    "answer": [
     3
@@ -9891,7 +9965,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2014,
-   "text": "While trying to collect I was losing consciousness. IV an envelope \u2161 Mr. X fell down \u2162 and Which one of the above underlined parts of the sentence is NOT appropriate?",
+   "text": "While trying to collect I was losing consciousness. IV an envelope Ⅱ Mr. X fell down Ⅲ and Which one of the above underlined parts of the sentence is NOT appropriate?",
    "options": [
     "I",
     "II",
@@ -10021,7 +10095,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2013,
-   "text": "The professor ordered to the students to go out of the class. I \u2161 \u2162 IV Which of the above underlined parts of the sentence is grammatically incorrect?",
+   "text": "The professor ordered to the students to go out of the class. I Ⅱ Ⅲ IV Which of the above underlined parts of the sentence is grammatically incorrect?",
    "options": [
     "I",
     "II",
@@ -10224,7 +10298,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2012,
-   "text": "Choose the most appropriate alternative from the options given below to complete the following sentence: Suresh\u2019s dog is the one was hurt in the stampede.",
+   "text": "Choose the most appropriate alternative from the options given below to complete the following sentence: Suresh’s dog is the one was hurt in the stampede.",
    "options": [
     "that",
     "which",
@@ -10563,7 +10637,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2019,
-   "text": "The search engine\u2019s business model \\_\\_\\_\\_ around the fulcrum of trust.",
+   "text": "The search engine’s business model \\_\\_\\_\\_ around the fulcrum of trust.",
    "options": [
     "revolves",
     "plays",
@@ -11111,7 +11185,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2011,
-   "text": "Choose the most appropriate word from the options given below to complete the following sentence: It was her view that the country\u2019s problem had been by foreign technocrats, so that to invite them to come back would be counter-productive.",
+   "text": "Choose the most appropriate word from the options given below to complete the following sentence: It was her view that the country’s problem had been by foreign technocrats, so that to invite them to come back would be counter-productive.",
    "options": [
     "identified",
     "ascertained",
@@ -11178,7 +11252,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2011,
-   "text": "Choose the most appropriate word from the options given below to complete the following sentence. Despite the mixture\u2019s nature, we found that by lowering its temperature in the laboratory we could dramatically reduce its tendency to vaporize.",
+   "text": "Choose the most appropriate word from the options given below to complete the following sentence. Despite the mixture’s nature, we found that by lowering its temperature in the laboratory we could dramatically reduce its tendency to vaporize.",
    "options": [
     "acerbic",
     "resilient",
@@ -11214,10 +11288,10 @@
    "year": 2011,
    "text": "Choose the most appropriate words from the options given below to complete the following sentence. Because she had a reputation for we were surprised and pleased when she greeted us so",
    "options": [
-    "insolence \u2026\u2026 irately",
-    "insouciance \u2026\u2026 curtly",
-    "graciousness \u2026\u2026 amiably",
-    "querulousness \u2026\u2026 affably"
+    "insolence …… irately",
+    "insouciance …… curtly",
+    "graciousness …… amiably",
+    "querulousness …… affably"
    ],
    "answer": [
     3
@@ -11575,7 +11649,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2014,
-   "text": "Choose the most appropriate word from the options given below to complete the following sentence. A person suffering from Alzheimer\u2019s disease short-term memory loss.",
+   "text": "Choose the most appropriate word from the options given below to complete the following sentence. A person suffering from Alzheimer’s disease short-term memory loss.",
    "options": [
     "Experienced",
     "Has experienced",
@@ -11643,12 +11717,12 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2025,
-   "text": "Column-I has statements made by Shanthala; and, Column-II has responses given by Kanishk. | | Column-I | | Column-II\n| P. | This house is in a mess. | 1. | Alright, I won\u2019t bring it up during our conversations.\n| Q. | I am not happy with the marks given to me. | 2. | Well, you can easily look it up.\n| R. | Politics is a subject I avoid talking about. | 3. | No problem, let me clear it up for you.\n| S. | I don\u2019t know what this word means. | 4. | Don\u2019t worry, I will take it up with your teacher. Identify the option that has the correct match between Column-I and Column-II.",
+   "text": "Column-I has statements made by Shanthala; and, Column-II has responses given by Kanishk. | | Column-I | | Column-II\n| P. | This house is in a mess. | 1. | Alright, I won’t bring it up during our conversations.\n| Q. | I am not happy with the marks given to me. | 2. | Well, you can easily look it up.\n| R. | Politics is a subject I avoid talking about. | 3. | No problem, let me clear it up for you.\n| S. | I don’t know what this word means. | 4. | Don’t worry, I will take it up with your teacher. Identify the option that has the correct match between Column-I and Column-II.",
    "options": [
-    "P \u2212 2; Q \u2212 3; R \u2212 1; S \u2212 4",
-    "P\u22123; Q\u22124;R\u22121;S \u22122",
-    "P \u22124; Q \u22121; R \u22122;S - 3",
-    "P \u2212 1; Q \u2212 2; R \u2212 4; S \u2212 3"
+    "P − 2; Q − 3; R − 1; S − 4",
+    "P−3; Q−4;R−1;S −2",
+    "P −4; Q −1; R −2;S - 3",
+    "P − 1; Q − 2; R − 4; S − 3"
    ],
    "answer": [
     1
@@ -12052,7 +12126,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2022,
-   "text": "Some people believe that \u201cwhat gets measured, improves\u201d. Some others believe that \u201cwhat gets measured, gets gamed\u201d. One possible reason for the diference in the beliefs is the work culture in organizations. In organizations with good work culture, metrics help improve outcomes. However, the same metrics are counterproductive in organizations with poor work culture. Which one of the following is the logical inference based on the information in the above passage?",
+   "text": "Some people believe that “what gets measured, improves”. Some others believe that “what gets measured, gets gamed”. One possible reason for the diference in the beliefs is the work culture in organizations. In organizations with good work culture, metrics help improve outcomes. However, the same metrics are counterproductive in organizations with poor work culture. Which one of the following is the logical inference based on the information in the above passage?",
    "options": [
     "Metrics are useful in organizations with poor work culture",
     "Metrics are useful in organizations with good work culture",
@@ -12149,12 +12223,12 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2010,
-   "text": "It has taken fifty-six long and frustrating, years to turn bronze, into gold for India\u2019s Olympics aspirations Beijing marks a defining moment in India\u2019s Olympic history From Delhi to Beijing is a long journey but one that our Olympians have undertaken with courage Which of the following statement best sums up the meaning of the above passage",
+   "text": "It has taken fifty-six long and frustrating, years to turn bronze, into gold for India’s Olympics aspirations Beijing marks a defining moment in India’s Olympic history From Delhi to Beijing is a long journey but one that our Olympians have undertaken with courage Which of the following statement best sums up the meaning of the above passage",
    "options": [
-    "India\u2019s participation in Olympics has been frustrating.",
-    "Beijing Olympics was a landmark in India\u2019s Olympic history.",
+    "India’s participation in Olympics has been frustrating.",
+    "Beijing Olympics was a landmark in India’s Olympic history.",
     "Our Olympians have undertaken a long journey to Beijing.",
-    "India\u2019s bronze medal turned into gold at Beijing."
+    "India’s bronze medal turned into gold at Beijing."
    ],
    "answer": [
     1
@@ -12312,7 +12386,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2012,
-   "text": "The documents expose the cynicism of the government oficials \u2013 and yet as the media website reflects, not a single newspaper has reported on their existence. Which one of the following inferences may be drawn with the greatest accuracy from the above passage?",
+   "text": "The documents expose the cynicism of the government oficials – and yet as the media website reflects, not a single newspaper has reported on their existence. Which one of the following inferences may be drawn with the greatest accuracy from the above passage?",
    "options": [
     "Nobody other than the government officials knew about the existence of the documents.",
     "Newspapers did report about the documents but nobody cared.",
@@ -12349,7 +12423,7 @@
    "options": [
     "Thorough regimentation was the main reason for the eficiency of the Roman legions even in adverse circumstances.",
     "The legions were treated inhumanly as if the men were animals.",
-    "Discipline was the armies\u2019 inheritance from their seniors.",
+    "Discipline was the armies’ inheritance from their seniors.",
     "The harsh discipline to which the legions were subjected to led to the odds and conditions being against them."
    ],
    "answer": [
@@ -12407,7 +12481,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2014,
-   "text": "Moving into a world of big data will require us to change our thinking about the merits of exactitude. To apply the conventional mindset of measurement to the digital, connected world of the twenty-first century is to miss a crucial point. As mentioned earlier, the obsession with exactness is an artefact of the information-deprived analog era. When data was sparse, every data point was critical, and thus great care was taken to avoid letting any point bias the analysis. From \u201cBIG DATA\u201d Viktor Mayer-Schonberger and Kenneth Cukier. The main point of the paragraph is:",
+   "text": "Moving into a world of big data will require us to change our thinking about the merits of exactitude. To apply the conventional mindset of measurement to the digital, connected world of the twenty-first century is to miss a crucial point. As mentioned earlier, the obsession with exactness is an artefact of the information-deprived analog era. When data was sparse, every data point was critical, and thus great care was taken to avoid letting any point bias the analysis. From “BIG DATA” Viktor Mayer-Schonberger and Kenneth Cukier. The main point of the paragraph is:",
    "options": [
     "The twenty-first century is a digital world",
     "Big data is obsessed with exactness",
@@ -13697,10 +13771,10 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2017,
-   "text": "\u201cWe lived in a culture that denied any merit to literary works, considering them important only when they were handmaidens to something seemingly more urgent \u2013 namely ideology. This was a country where all gestures, even the most private, were interpreted in political terms.\u201d The author\u2019s belief that ideology is not as important as literature is revealed by the word:",
+   "text": "“We lived in a culture that denied any merit to literary works, considering them important only when they were handmaidens to something seemingly more urgent – namely ideology. This was a country where all gestures, even the most private, were interpreted in political terms.” The author’s belief that ideology is not as important as literature is revealed by the word:",
    "options": [
-    "\u2018culture\u2019",
-    "\u2018urgent\u2019"
+    "‘culture’",
+    "‘urgent’"
    ],
    "origin": {
     "source_file": "filter1_volume1.pdf",
@@ -13729,7 +13803,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2019,
-   "text": "The police arrested four criminals \u2013 and The criminals knew each other. They made the following statements: says \u201cQ committed the crime.\u201d says \u201cS committed the crime.\u201d says \u201c I did not do it.\u201d says \u201cWhat Q said about me is false\u201d. Assume only one of the arrested four committed the crime and only one of the statements made above is true. Who committed the crime?",
+   "text": "The police arrested four criminals – and The criminals knew each other. They made the following statements: says “Q committed the crime.” says “S committed the crime.” says “ I did not do it.” says “What Q said about me is false”. Assume only one of the arrested four committed the crime and only one of the statements made above is true. Who committed the crime?",
    "options": [
     "${\\boldsymbol{P}}$",
     "$\\mathbf{\\nabla}R$",
@@ -13765,7 +13839,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2019,
-   "text": "\u201cA recent High Court judgement has sought to dispel the idea of begging as a disease \u2013 which leads to its stigmatization and criminalization \u2013 and to regard it as a symptom. The underlying disease is the failure of the state to protect citizens who fall through the social security net.\u201d Which one of the following statements can be inferred from the given passage?",
+   "text": "“A recent High Court judgement has sought to dispel the idea of begging as a disease – which leads to its stigmatization and criminalization – and to regard it as a symptom. The underlying disease is the failure of the state to protect citizens who fall through the social security net.” Which one of the following statements can be inferred from the given passage?",
    "options": [
     "Beggars are lazy people who beg because they are unwilling to work",
     "Beggars are created because of the lack of social welfare schemes",
@@ -13800,7 +13874,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2020,
-   "text": "The dawn of the st century witnessed the melting glaciers oscillating between giving too much and too little to billions of people who depend on them for fresh water. The UN climate report estimates that without deep cuts to man-made emissions, at least of the northern hemisphere\u2019s surface permafrost could melt by the end of the century. Given this situation of imminent global exodus of billions of people displaced by rising seas, nation-states need to rethink their carbon footprint for political concerns, if not for environmental ones. Which one of the following statements can be inferred from the given passage?",
+   "text": "The dawn of the st century witnessed the melting glaciers oscillating between giving too much and too little to billions of people who depend on them for fresh water. The UN climate report estimates that without deep cuts to man-made emissions, at least of the northern hemisphere’s surface permafrost could melt by the end of the century. Given this situation of imminent global exodus of billions of people displaced by rising seas, nation-states need to rethink their carbon footprint for political concerns, if not for environmental ones. Which one of the following statements can be inferred from the given passage?",
    "options": [
     "Nation-states do not have environmental concerns.",
     "Nation-states are responsible for providing fresh water to billions of people.",
@@ -14040,11 +14114,11 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2014,
-   "text": "Which of the following options is the closest in meaning to the sentence below? \u201cAs a woman, I have no country.\"",
+   "text": "Which of the following options is the closest in meaning to the sentence below? “As a woman, I have no country.\"",
    "options": [
     "Women have no country.",
     "Women are not citizens of any country.",
-    "Women\u2019s solidarity knows no national boundaries.",
+    "Women’s solidarity knows no national boundaries.",
     "Women of all countries have equal legal rights."
    ],
    "answer": [
@@ -14529,9 +14603,7 @@
     "Hive",
     "Lair"
    ],
-   "answer": [
-    2
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume1.pdf",
     "volume": "vol1",
@@ -14547,7 +14619,10 @@
      "one-mark"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-vol1-11-19-10",
@@ -14716,6 +14791,183 @@
     ],
     "topic_source": "section"
    }
+  },
+  {
+   "id": "mineru-vol1-8-10-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2014,
+   "text": "Find the odd one in the following group:",
+   "options": [
+    "ALRVX",
+    "EPVZB",
+    "OYEIK"
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "8.10.2",
+    "exam": "GATE2014 AE: GA-6",
+    "section": "Odd One",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "analytical"
+  },
+  {
+   "id": "mineru-vol1-9-8-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The total revenue of a company during is shown in the bar graph. If the total expenditure of the company in each year is million rupees, then the aggregate profit or loss (in percentage) on the total expenditure of the company during is Refer to the figure below.",
+   "options": [
+    "profit",
+    "loss",
+    "profit",
+    "loss"
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/vol1-2ff01f2989481202a1b49c91.jpg",
+     "alt": "Figure 1 for this question (bar)",
+     "page_idx": 267,
+     "bbox": [
+      408,
+      757,
+      608,
+      872
+     ],
+     "kind": "bar"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "9.8.2",
+    "exam": "GATE CSE 2020 | GA | Question: 10",
+    "section": "Bar Graph",
+    "paper_question": "10",
+    "tags": [],
+    "page_idx": 267,
+    "bbox": [
+     408,
+     757,
+     608,
+     872
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none",
+    "options_recovered": "pix2tex"
+   },
+   "explain": "",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "analytical",
+   "answer": [
+    2
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
+  },
+  {
+   "id": "mineru-vol1-9-11-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The area of a square is. What is the area of the circle which has the diagonal of the square as its diameter?",
+   "options": [
+    "$\\pi d ^ { 2 }$",
+    "${ \\frac { 1 } { 4 } } \\pi d ^ { 2 }$",
+    "${ \\frac { 1 } { 2 } } \\pi d$"
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "9.11.1",
+    "exam": "GATE CSE 2018 | GA | Question: 3",
+    "section": "Circle",
+    "paper_question": "3",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "spatial"
+  },
+  {
+   "id": "mineru-vol1-9-55-7",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2013,
+   "text": "Following table provides figures(in rupees) on annual expenditure of a firm for two years - and. | Category | 2010 | 2011\n| Raw material | 5200 | 6240\n| Power &amp; fuel | 7000 | 9450\n| Salary &amp; wages | 9000 | 12600\n| Plant &amp; machinery | 20000 | 25000\n| Advertising | 15000 | 19500\n| Research &amp; Development | 22000 | 26400 In, which of the two categories have registered increase by same percentage?",
+   "options": [
+    "Raw material and Salary & wages.",
+    "Salary & wages and Advertising.",
+    "Power & fuel and Advertising.",
+    "Raw material and research & Development."
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "9.55.7",
+    "exam": "GATE2013 CE: GA-8",
+    "section": "Tables",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "analytical"
+  },
+  {
+   "id": "mineru-vol1-10-7-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "A cube is to be cut into pieces of equal size and shape. Here, each cut should be straight and it should not stop till it reaches the other end of the cube. The minimum number of such cuts required is",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "10.7.2",
+    "exam": "GATE CSE 2024 | Set 2 | GA | Question: 9",
+    "section": "Patterns In Three Dimensions",
+    "paper_question": "9",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "spatial",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   }
  ]
 }

@@ -16,7 +16,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Let be a Depth First Tree of a undirected graph. An array indexed by the vertices of is given. is the parent of vertex, in. Parent of the root is the root itself. Give a method for finding and printing the cycle formed if the edge of not in $T \\ ( { \\mathsf { i. e., } } e \\in G - T )$ is now added to. Time taken by your method must be proportional to the length of the cycle. Describe the algorithm in a PASCAL \u2013 like language. Assume that the variables have been suitably declared.",
+   "text": "Let be a Depth First Tree of a undirected graph. An array indexed by the vertices of is given. is the parent of vertex, in. Parent of the root is the root itself. Give a method for finding and printing the cycle formed if the edge of not in $T \\ ( { \\mathsf { i. e., } } e \\in G - T )$ is now added to. Time taken by your method must be proportional to the length of the cycle. Describe the algorithm in a PASCAL – like language. Assume that the variables have been suitably declared.",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -508,8 +508,7 @@
    "text": "Consider the following tree (i.e., B-tree with a minimum degree of two) in which each data item is a letter. The usual alphabetical ordering of letters is used in constructing the tree. What is the result of inserting in the above tree? Refer to the figure below.",
    "options": [
     "$\\mathrm{(B)}\\qquad\\mathrm{(NLL)}\\quad\\mathrm{(N)}\\quad\\mathrm{(N-T)}\\mathrm{~(NC~T)~}\\mathrm{(N~X~Z)}$",
-    "$\\mathrm{CB~G}$",
-    "$\\mathrm{~^{CBDGH}~}\\mathrm{~(NC~}\\quad\\bar{\\ C}\\subseteq\\bar{\\bf C}\\setminus\\bar{\\bf C}\\setminus\\bf{X}\\times\\bf{Z}\\mathcal{V}$"
+    "$\\mathrm{CB~G}$"
    ],
    "figure_assets": [
     {
@@ -726,7 +725,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-2-17",
@@ -762,7 +763,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-2-18",
@@ -798,7 +801,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-2-19",
@@ -1190,7 +1195,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-2-29",
@@ -1224,7 +1231,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-2-30",
@@ -1260,7 +1269,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-2-31",
@@ -1362,7 +1373,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-2-32",
@@ -1635,7 +1648,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-4-1",
@@ -1645,7 +1660,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2007,
-   "text": "Consider the following schedules involving two transactions. Which one of the following statements is TRUE? \u2022 S1: r1(X); r1(Y); r2(X); r2(Y); w2(Y); w1(X) \u2022 S2: r1(X); r2 (X); r2 (Y); w2(Y); r1(Y); w1(X)",
+   "text": "Consider the following schedules involving two transactions. Which one of the following statements is TRUE? • S1: r1(X); r1(Y); r2(X); r2(Y); w2(Y); w1(X) • S2: r1(X); r2 (X); r2 (Y); w2(Y); r1(Y); w1(X)",
    "options": [
     "Both $S _ { 1 }$ and $S _ { 2 }$ are conflict serializable.",
     "$S _ { 1 }$ is conflict serializable and $S _ { 2 }$ is not conflict serializable.",
@@ -1779,7 +1794,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2014,
-   "text": "Consider the transactions and the schedules given below. \u2022 T1: r1(X); r1(Z); w1(X); w1(Z) \u2022 T2: r2(Y); r2(Z); w2(Z) \u2022 T3: r3(Y); r3(X); w3(Y) \u2022 S1: r1(X); r3(Y); r3(X); r2(Y); r2(Z); w3(Y); w2(Z); r1(Z); w1(X); w1(Z) \u2022 S2: r1(X); r3(Y); r2(Y); r3(X); r1(Z); r2(Z); w3(Y); w1(X); w2(Z); w1(Z) Which one of the following statements about the schedules is TRUE?",
+   "text": "Consider the transactions and the schedules given below. • T1: r1(X); r1(Z); w1(X); w1(Z) • T2: r2(Y); r2(Z); w2(Z) • T3: r3(Y); r3(X); w3(Y) • S1: r1(X); r3(Y); r3(X); r2(Y); r2(Z); w3(Y); w2(Z); r1(Z); w1(X); w1(Z) • S2: r1(X); r3(Y); r2(Y); r3(X); r1(Z); r2(Z); w3(Y); w1(X); w2(Z); w1(Z) Which one of the following statements about the schedules is TRUE?",
    "options": [
     "Only is conflict-serializable.",
     "Only is conflict-serializable.",
@@ -1843,7 +1858,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider a schedule of transactions $T _ { 1 }$ and $T _ { 2 }$: | $T_1$ | $RA$ | | | $RC$ | | $WD$ | | $WB$ | Commit | \n| $T_2$ | | $RB$ | $WB$ | | $RD$ | | $WC$ | | | Commit Here, RX stands for \u201cRead(X)\u201d and WX stands for \u201cWrite(X)\u201d. Which one of the following schedules is conflict equivalent to the above schedule?",
+   "text": "Consider a schedule of transactions $T _ { 1 }$ and $T _ { 2 }$: | $T_1$ | $RA$ | | | $RC$ | | $WD$ | | $WB$ | Commit | \n| $T_2$ | | $RB$ | $WB$ | | $RD$ | | $WC$ | | | Commit Here, RX stands for “Read(X)” and WX stands for “Write(X)”. Which one of the following schedules is conflict equivalent to the above schedule?",
    "options": [
     "\u0000T1\u0000",
     "\u0000T2\u0000",
@@ -1873,7 +1888,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Let $r _ { i } ( z )$ and $w _ { i } ( z )$ denote read and write operations respectively on a data item by a transaction $T _ { i }$. Consider the following two schedules. \u2022 S1: r1(x)r1(y)r2(x)r2(y)w2(y)w1(x) \u2022 S2: r1(x)r2(x)r2(y)w2(y)r1(y)w1(x) Which one of the following options is correct?",
+   "text": "Let $r _ { i } ( z )$ and $w _ { i } ( z )$ denote read and write operations respectively on a data item by a transaction $T _ { i }$. Consider the following two schedules. • S1: r1(x)r1(y)r2(x)r2(y)w2(y)w1(x) • S2: r1(x)r2(x)r2(y)w2(y)r1(y)w1(x) Which one of the following options is correct?",
    "options": [
     "$S _ { 1 }$ is conflict serializable, and $S _ { 2 }$ is not conflict serializable",
     "$S _ { 1 }$ is not conflict serializable, and $S _ { 2 }$ is conflict serializable",
@@ -1946,9 +1961,9 @@
    "text": "L e t $R _ { i } ( z )$ and $W _ { i } ( z )$ denote read and write operations on a data element by a transaction $T _ { i }$ respectively. Consider the schedule with four transactions. S: $R _ {4} (x) R _ {2} (x) R _ {3} (x) R _ {1} (y) W _ {1} (y) W _ {2} (x) W _ {3} (y) R _ {4} (y)$ Which one of the following serial schedules is conflict equivalent to $S?$",
    "options": [
     "$T _ { 1 } T _ { 3 } T _ { 4 } T _ { 2 }$",
-    "T1 \u2192 T4 \u2192 T3 \u2192 T2",
+    "T1 → T4 → T3 → T2",
     "$T _ { 4 } T _ { 1 } T _ { 3 } T _ { 2 }$",
-    "T3 \u2192 T1 \u2192 T4 \u2192 T2"
+    "T3 → T1 → T4 → T2"
    ],
    "answer": [
     0
@@ -2096,7 +2111,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Using Armstrong\u2019s axioms of functional dependency derive the following rules: $\\{x \\rightarrow y, x \\rightarrow z \\} \\models x \\rightarrow y z ($Note: denotes is functionally dependent on $x, z \\subseteq y$ denotes is subset of, and means derives).",
+   "text": "Using Armstrong’s axioms of functional dependency derive the following rules: $\\{x \\rightarrow y, x \\rightarrow z \\} \\models x \\rightarrow y z ($Note: denotes is functionally dependent on $x, z \\subseteq y$ denotes is subset of, and means derives).",
    "options": [],
    "origin": {
     "source_file": "filter1_volume3.pdf",
@@ -2119,7 +2134,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Using Armstrong\u2019s axioms of functional dependency derive the following rules: $\\{x \\to y, w y \\to z \\} \\models x w \\to z ($Note: denotes is functionally dependent on $x, z \\subseteq y$ denotes is subset of, and means derives).",
+   "text": "Using Armstrong’s axioms of functional dependency derive the following rules: $\\{x \\to y, w y \\to z \\} \\models x w \\to z ($Note: denotes is functionally dependent on $x, z \\subseteq y$ denotes is subset of, and means derives).",
    "options": [],
    "origin": {
     "source_file": "filter1_volume3.pdf",
@@ -2142,7 +2157,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Using Armstrong\u2019s axioms of functional dependency derive the following rules: $\\{x \\to y, z \\subset y \\} \\models x \\to z ($Note: denotes is functionally dependent on $x, z \\subseteq y$ denotes is subset of, and means derives).",
+   "text": "Using Armstrong’s axioms of functional dependency derive the following rules: $\\{x \\to y, z \\subset y \\} \\models x \\to z ($Note: denotes is functionally dependent on $x, z \\subseteq y$ denotes is subset of, and means derives).",
    "options": [],
    "origin": {
     "source_file": "filter1_volume3.pdf",
@@ -2255,7 +2270,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the relation scheme $R ( A, B, C )$ with the following functional dependencies: \u2022 A, B \u2192 C, $C A$",
+   "text": "Consider the relation scheme $R ( A, B, C )$ with the following functional dependencies: • A, B → C, $C A$",
    "options": [
     "Show that the scheme is in but not in .",
     "Determine the minimal keys of relation ."
@@ -2458,7 +2473,7 @@
     "$A \\to B , B \\to C D$",
     "$A \\to B , B \\to C , C \\to D$",
     "$A B \\to C , C \\to A D$",
-    "A \u2192 BCD"
+    "A → BCD"
    ],
    "answer": [
     2
@@ -2624,7 +2639,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2003,
-   "text": "Consider the following functional dependencies in a database. | Date_of_Birth \u2192 Age | Age \u2192 Eligibility\n| Name \u2192 Roll_number | Roll_number \u2192 Name\n| Course_number \u2192 Course_name | Course_number \u2192 Instructor\n| (Roll_number, Course_number) \u2192 Grade | The relation (Roll\\_number, Name, Date\\_of\\_birth, Age) is",
+   "text": "Consider the following functional dependencies in a database. | Date_of_Birth → Age | Age → Eligibility\n| Name → Roll_number | Roll_number → Name\n| Course_number → Course_name | Course_number → Instructor\n| (Roll_number, Course_number) → Grade | The relation (Roll\\_number, Name, Date\\_of\\_birth, Age) is",
    "options": [
     "in second normal form but not in third normal form",
     "in third normal form but not in BCNF",
@@ -2803,7 +2818,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2008,
-   "text": "Consider the following relational schemes for a library database: Book (Title, Author, Catalog\\_no, Publisher, Year, Price) Collection(Title, Author, Catalog\\_no) with the following functional dependencies: I. Title Author \u2192 Catalog no II. Catalog no \u2192 Title Author Publisher Year III. Publisher Title Year \u2192 Price Assume is the key for both schemes. Which of the following statements is?",
+   "text": "Consider the following relational schemes for a library database: Book (Title, Author, Catalog\\_no, Publisher, Year, Price) Collection(Title, Author, Catalog\\_no) with the following functional dependencies: I. Title Author → Catalog no II. Catalog no → Title Author Publisher Year III. Publisher Title Year → Price Assume is the key for both schemes. Which of the following statements is?",
    "options": [
     "Both Book and Collection are in",
     "Both Book and Collection are in only",
@@ -2899,7 +2914,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-6-29",
@@ -3075,7 +3092,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "A database of research articles in a journal uses the following schema. (VOLUME, NUMBER, STARTPAGE, ENDPAGE, TITLE, YEAR, PRICE) The primary key is ' and the following functional dependencies exist in the schema. (VOLUME, NUMBER, STARTPAGE, ENDPAGE) \u2192 TITLE (VOLUME, NUMBER) \u2192 YEAR (VOLUME, NUMBER, STARTPAGE, ENDPAGE) \u2192 PRICE The database is redesigned to use the following schemas (VOLUME, NUMBER, STARTPAGE, ENDPAGE, TITLE, PRICE) (VOLUME, NUMBER, YEAR) Which is the weakest normal form that the new database satisfies, but the old one does not?",
+   "text": "A database of research articles in a journal uses the following schema. (VOLUME, NUMBER, STARTPAGE, ENDPAGE, TITLE, YEAR, PRICE) The primary key is ' and the following functional dependencies exist in the schema. (VOLUME, NUMBER, STARTPAGE, ENDPAGE) → TITLE (VOLUME, NUMBER) → YEAR (VOLUME, NUMBER, STARTPAGE, ENDPAGE) → PRICE The database is redesigned to use the following schemas (VOLUME, NUMBER, STARTPAGE, ENDPAGE, TITLE, PRICE) (VOLUME, NUMBER, YEAR) Which is the weakest normal form that the new database satisfies, but the old one does not?",
    "options": [
     "${\\mathrm{LNF}}$",
     "$2{\\mathrm{NF}}$",
@@ -3140,10 +3157,10 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2018,
-   "text": "Consider the following four relational schemas. For each schema, all non-trivial functional dependencies are listed, The bolded attributes are the respective primary keys. Registration(rollno, courses) Field \u2018courses\u2019 is a set-valued attribute containing the set of courses a student has registered for. Non-trivial functional dependency rollno courses Registration (rollno, coursid, email) Non-trivial functional dependencies: rollno, courseid email email rollno Registration (rollno, courseid, marks, grade) Non-trivial functional dependencies: rollno, courseid, marks, grade marks grade Registration (rollno, courseid, credit) Non-trivial functional dependencies: rollno, courseid credit courseid credit Which one of the relational schemas above is in but not in?",
+   "text": "Consider the following four relational schemas. For each schema, all non-trivial functional dependencies are listed, The bolded attributes are the respective primary keys. Registration(rollno, courses) Field ‘courses’ is a set-valued attribute containing the set of courses a student has registered for. Non-trivial functional dependency rollno courses Registration (rollno, coursid, email) Non-trivial functional dependencies: rollno, courseid email email rollno Registration (rollno, courseid, marks, grade) Non-trivial functional dependencies: rollno, courseid, marks, grade marks grade Registration (rollno, courseid, credit) Non-trivial functional dependencies: rollno, courseid credit courseid credit Which one of the relational schemas above is in but not in?",
    "options": [
     "Schema I",
-    "Schema \u2161I",
+    "Schema ⅡI",
     "Schema III",
     "Schema IV"
    ],
@@ -3243,7 +3260,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Consider the relation $R ( P, Q, S, T, X, Y, Z, W )$ with the following functional dependencies. $P Q \\rightarrow X; \\quad P \\rightarrow Y X; \\quad Q \\rightarrow Y; \\quad Y \\rightarrow Z W$ Consider the decomposition of the relation into the constituent relations according to the following two decomposition schemes. \u2022 D1: R = [(P, Q, S,T); (P,T, X); (Q, Y); (Y, Z,W)] \u2022 D2: R = (P, Q, S); (T, X); (Q, Y); (Y, Z, W) Which one of the following options is correct?",
+   "text": "Consider the relation $R ( P, Q, S, T, X, Y, Z, W )$ with the following functional dependencies. $P Q \\rightarrow X; \\quad P \\rightarrow Y X; \\quad Q \\rightarrow Y; \\quad Y \\rightarrow Z W$ Consider the decomposition of the relation into the constituent relations according to the following two decomposition schemes. • D1: R = [(P, Q, S,T); (P,T, X); (Q, Y); (Y, Z,W)] • D2: R = (P, Q, S); (T, X); (Q, Y); (Y, Z, W) Which one of the following options is correct?",
    "options": [
     "$D _ { 1 }$ is a lossless decomposition, but $D _ { 2 }$ is a lossy decomposition",
     "$D _ { 1 }$ is a lossy decomposition, but $D _ { 2 }$ is a lossless decomposition",
@@ -3277,7 +3294,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Suppose the following functional dependencies hold on a relation with attributes $P, Q, R, S, \\mathsf { a n d } T$ \u2022 P \u2192 QR $R S T$ Which of the following functional dependencies can be inferred from the above functional dependencies?",
+   "text": "Suppose the following functional dependencies hold on a relation with attributes $P, Q, R, S, \\mathsf { a n d } T$ • P → QR $R S T$ Which of the following functional dependencies can be inferred from the above functional dependencies?",
    "options": [
     "$P S T$",
     "$R \\to T$",
@@ -3450,7 +3467,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "A functional dependency $F: X Y$ is termed as a useful functional dependency if and only if it satisfies all the following three conditions: \u2022 $\\mathbf { X }$ is not the empty set. \u2022 $\\mathrm { Y }$ is not the empty set. Intersection of and is the empty set. For a relation with attributes, the total number of possible useful functional dependencies is",
+   "text": "A functional dependency $F: X Y$ is termed as a useful functional dependency if and only if it satisfies all the following three conditions: • $\\mathbf { X }$ is not the empty set. • $\\mathrm { Y }$ is not the empty set. Intersection of and is the empty set. For a relation with attributes, the total number of possible useful functional dependencies is",
    "options": [],
    "answer_value": 50.0,
    "tolerance": 0,
@@ -3501,7 +3518,9 @@
    "answer": [
     2,
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-6-47",
@@ -3549,9 +3568,9 @@
    "text": "Given the relational schema $R = ( U, V, W, X, Y, Z )$ and the set of functional dependencies: $\\{U \\to V, U \\to W, W X \\to Y, W X \\to Z, V \\to X \\}$ Which of the following functional dependencies can be derived from the above set?",
    "options": [
     "$V W \\to Y Z$",
-    "WX \u2192 YZ",
-    "VW \u2192 U",
-    "VW \u2192 Y"
+    "WX → YZ",
+    "VW → U",
+    "VW → Y"
    ],
    "answer": [
     0,
@@ -3948,7 +3967,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-9-2",
@@ -4004,7 +4025,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-9-3",
@@ -4362,7 +4385,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-9-12",
@@ -4424,7 +4449,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2025,
-   "text": "Consider a relational schema team, with functional dependencies {name \u2192 city, name \u2192 owner}. The relation team is decomposed into two relations, and. Which of the following statement(s) is/are TRUE?",
+   "text": "Consider a relational schema team, with functional dependencies {name → city, name → owner}. The relation team is decomposed into two relations, and. Which of the following statement(s) is/are TRUE?",
    "options": [
     "The relation team is NOT in BCNF",
     "The relations and are in BCNF.",
@@ -4677,7 +4702,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-11-7",
@@ -4981,7 +5008,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2004,
-   "text": "Consider the following relation schema pertaining to a students database: Students (rollno, name, address) Enroll (rollno, courseno, coursename) where the primary keys are shown underlined. The number of tuples in the student and Enroll tables are and respectively. What are the maximum and minimum number of tuples that can be present in (Student \\* Enroll), where \u2018\\*\u2019 denotes natural join?",
+   "text": "Consider the following relation schema pertaining to a students database: Students (rollno, name, address) Enroll (rollno, courseno, coursename) where the primary keys are shown underlined. The number of tuples in the student and Enroll tables are and respectively. What are the maximum and minimum number of tuples that can be present in (Student \\* Enroll), where ‘\\*’ denotes natural join?",
    "options": [
     "$\\mathbf{S},\\mathbf{S}$",
     "$120,8$",
@@ -5038,7 +5065,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-12-3",
@@ -5174,12 +5203,12 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2007,
-   "text": "Consider the following relation schemas: Let branch, account and depositor be respectively instances of the above schemas. Assume that account and depositor relations are much bigger than the branch relation. Consider the following query: \u041f<sub>c-name</sub> (\u03c3<sub>b-city = \"Agra\" \u22c0 bal < 0</sub> (branch \u22c8 (account \u22c8 depositor) Which one of the following queries is the most efficient version of the above query?",
+   "text": "Consider the following relation schemas: Let branch, account and depositor be respectively instances of the above schemas. Assume that account and depositor relations are much bigger than the branch relation. Consider the following query: П<sub>c-name</sub> (σ<sub>b-city = \"Agra\" ⋀ bal < 0</sub> (branch ⋈ (account ⋈ depositor) Which one of the following queries is the most efficient version of the above query?",
    "options": [
-    "$\\Pi _ { \\mathtt { C - n a m e } } ( \\sigma _ { \\mathsf { b a l } } < 0 \\left( \\sigma _ { \\mathsf { b - c i t y } } = \\ \" A \\rho \\right. a \"$ branch \u22c8 account) \u22c8 depositor)",
-    "\u041f<sub>c-name</sub> (\u03c3<sub>b-city = \"Agra\"</sub> branch \u22c8 $( { \\tt O b a l } < 0$ account \u22c8 depositor))",
-    "$\\Pi _ { \\mathsf { c - n a m e } } ( ( \\sigma _ { \\mathsf { b - c i t y } } = \" \\mathsf { A g r a \" }$ branch \u22c8 ${ \\sigma } _ { \\mathsf { b - c i t y } } = \" \\mathsf { A g r a \" } \\bigwedge$ <sub>bal < 0</sub> account) \u22c8 depositor)",
-    "$\\Pi _ { \\mathsf { c - n a m e } } ( \\sigma _ { \\mathsf { b - c i t y } } = \" \\mathsf { A g r a \" }$ branch \u22c8 $( 0 _ { \\mathsf { b - c i t y } } = \" \\mathsf { A g r a \" } \\bigwedge$ bal $< 0$ account \u22c8 depositor))"
+    "$\\Pi _ { \\mathtt { C - n a m e } } ( \\sigma _ { \\mathsf { b a l } } < 0 \\left( \\sigma _ { \\mathsf { b - c i t y } } = \\ \" A \\rho \\right. a \"$ branch ⋈ account) ⋈ depositor)",
+    "П<sub>c-name</sub> (σ<sub>b-city = \"Agra\"</sub> branch ⋈ $( { \\tt O b a l } < 0$ account ⋈ depositor))",
+    "$\\Pi _ { \\mathsf { c - n a m e } } ( ( \\sigma _ { \\mathsf { b - c i t y } } = \" \\mathsf { A g r a \" }$ branch ⋈ ${ \\sigma } _ { \\mathsf { b - c i t y } } = \" \\mathsf { A g r a \" } \\bigwedge$ <sub>bal < 0</sub> account) ⋈ depositor)",
+    "$\\Pi _ { \\mathsf { c - n a m e } } ( \\sigma _ { \\mathsf { b - c i t y } } = \" \\mathsf { A g r a \" }$ branch ⋈ $( 0 _ { \\mathsf { b - c i t y } } = \" \\mathsf { A g r a \" } \\bigwedge$ bal $< 0$ account ⋈ depositor))"
    ],
    "answer": [
     0
@@ -5239,7 +5268,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-14-1",
@@ -5509,7 +5540,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the following relational schema: COURSES (cno, cname) STUDENTS (rollno, sname, age, year) REGISTERED\\_FOR (cno, rollno) The underlined attributes indicate the primary keys for the relations. The \u2018year\u2019 attribute for the STUDENTS relation indicates the year in which the student is currently studying (First year, Second year etc.)",
+   "text": "Consider the following relational schema: COURSES (cno, cname) STUDENTS (rollno, sname, age, year) REGISTERED\\_FOR (cno, rollno) The underlined attributes indicate the primary keys for the relations. The ‘year’ attribute for the STUDENTS relation indicates the year in which the student is currently studying (First year, Second year etc.)",
    "options": [
     "Write a relational algebra query to print the roll number of students who have registered for cno",
     "Write a SQL query to print the age and year of the youngest student in each year."
@@ -5561,7 +5592,7 @@
    "text": "Consider the relation scheme. | AUTHOR | (ANAME, INSTITUTION, ACITY, AGE)\n| PUBLISHER | (PNAME, PCITY)\n| BOOK | (TITLE, ANAME, PNAME) Express the following queries using (one or more of) SELECT, PROJECT, JOIN and DIVIDE operations.",
    "options": [
     "Get the names of all publishers.",
-    "Get values of all attributes of all authors who have published a book for the publisher with PNAME=\u2019TECHNICAL PUBLISHERS\u2019.",
+    "Get values of all attributes of all authors who have published a book for the publisher with PNAME=’TECHNICAL PUBLISHERS’.",
     "Get the names of all authors who have published a book for any publisher located in Madras"
    ],
    "origin": {
@@ -5585,7 +5616,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "A library relational database system uses the following schema USERS (User#, User Name, Home Town) BOOKS (Book#, Book Title, Author Name) ISSUED (Book#, User#, Date) Explain in one English sentence, what each of the following relational algebra queries is designed to determine a. \u03c3User#=6 (\u03c0User#, Book Title ((USERS ISSUED) BOOKS)) b. \u03c0Author Name (BOOKS \u03c3Home Town Delhi (USERS ISSUED))",
+   "text": "A library relational database system uses the following schema USERS (User#, User Name, Home Town) BOOKS (Book#, Book Title, Author Name) ISSUED (Book#, User#, Date) Explain in one English sentence, what each of the following relational algebra queries is designed to determine a. σUser#=6 (πUser#, Book Title ((USERS ISSUED) BOOKS)) b. πAuthor Name (BOOKS σHome Town Delhi (USERS ISSUED))",
    "options": [],
    "origin": {
     "source_file": "filter1_volume3.pdf",
@@ -5838,7 +5869,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "A university placement center maintains a relational database of companies that interview students on campus and make job ofers to those successful in the interview. The schema of the database is given below: | COMPANY(cname, clocation) | STUDENT(srollno, sname, sdegree)\n| INTERVIEW(cname, srollno, idate) | OFFER(cname, srollno, osalary) The COMPANY relation gives the name and location of the company. The STUDENT relation gives the student\u2019s roll number, name and the degree program for which the student is registered in the university. The INTERVIEW relation gives the date on which a student is interviewed by a company. The OFFER relation gives the salary ofered to a student who is successful in a company\u2019s interview. The key for each relation is indicated by the underlined attributes a. Write a relational algebra expressions (using only the operators $\\sigma, \\pi, \\cup, - \\mathrm { ~ ) ~ }$ for the following queries. i. List the and of students who attended at least one interview but did not receive job offer. ii. List the and of students who went for interviews and received job ofers from company with which they interviewed. b. Write an SQL query to list, for each degree program in which more than $f i v e$ students were ofered jobs, the name of the degree and the average offered salary of students in this degree program.",
+   "text": "A university placement center maintains a relational database of companies that interview students on campus and make job ofers to those successful in the interview. The schema of the database is given below: | COMPANY(cname, clocation) | STUDENT(srollno, sname, sdegree)\n| INTERVIEW(cname, srollno, idate) | OFFER(cname, srollno, osalary) The COMPANY relation gives the name and location of the company. The STUDENT relation gives the student’s roll number, name and the degree program for which the student is registered in the university. The INTERVIEW relation gives the date on which a student is interviewed by a company. The OFFER relation gives the salary ofered to a student who is successful in a company’s interview. The key for each relation is indicated by the underlined attributes a. Write a relational algebra expressions (using only the operators $\\sigma, \\pi, \\cup, - \\mathrm { ~ ) ~ }$ for the following queries. i. List the and of students who attended at least one interview but did not receive job offer. ii. List the and of students who went for interviews and received job ofers from company with which they interviewed. b. Write an SQL query to list, for each degree program in which more than $f i v e$ students were ofered jobs, the name of the degree and the average offered salary of students in this degree program.",
    "options": [],
    "origin": {
     "source_file": "filter1_volume3.pdf",
@@ -5896,7 +5927,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2004,
-   "text": "Consider the relation Student (name, sex, marks), where the primary key is shown underlined, pertaining to students in a class that has at least one boy and one girl. What does the following relational algebra expression produce? (Note: $\\rho$ is the rename operator). $\\pi _ { n a m e } \\left\\{ \\sigma _ { s e x = f e m a l e } \\left( \\mathrm { S t u d e n t } \\right) \\right\\} - \\pi _ { n a m e }$ (Student (sex=female\u2227x=male\u2227marks\u2264m) $\\rho _ { n, x, m } ( \\mathrm { S t u d e n t } ) )$",
+   "text": "Consider the relation Student (name, sex, marks), where the primary key is shown underlined, pertaining to students in a class that has at least one boy and one girl. What does the following relational algebra expression produce? (Note: $\\rho$ is the rename operator). $\\pi _ { n a m e } \\left\\{ \\sigma _ { s e x = f e m a l e } \\left( \\mathrm { S t u d e n t } \\right) \\right\\} - \\pi _ { n a m e }$ (Student (sex=female∧x=male∧marks≤m) $\\rho _ { n, x, m } ( \\mathrm { S t u d e n t } ) )$",
    "options": [
     "names of girl students with the highest marks",
     "names of girl students with more marks than some boy student",
@@ -5930,7 +5961,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2007,
-   "text": "Information about a collection of students is given by the relation. The relation gives which student has enrolled for (or taken) what course(s). Assume that every course is taken by at least one male and at least one female student. What does the following relational algebra expression represent? \u03c0courceId ((\u03c0studId (\u03c3sex=\u2032 female' (studInfo)) \u00d7 \u03c0courseId (enroll)) \u2212 enroll)",
+   "text": "Information about a collection of students is given by the relation. The relation gives which student has enrolled for (or taken) what course(s). Assume that every course is taken by at least one male and at least one female student. What does the following relational algebra expression represent? πcourceId ((πstudId (σsex=′ female' (studInfo)) × πcourseId (enroll)) − enroll)",
    "options": [
     "Courses in which all the female students are enrolled.",
     "Courses in which a proper subset of female students are enrolled.",
@@ -6233,9 +6264,9 @@
    "text": "Consider the following three relations in a relational database. Employee(eId, Name), Brand(bId, bName), Own(eId, bId) Which of the following relational algebra expressions return the set of who own all the brands?",
    "options": [
     "IIeId (IIeId,bId(Own)/IIbId(Brand))",
-    "IIeId(Own)\u2212Ie1d (Ie1d(Own) \u00d7 Ib1d(Brand))\u2212\u2161e1d,b1d(Own)",
+    "IIeId(Own)−Ie1d (Ie1d(Own) × Ib1d(Brand))−Ⅱe1d,b1d(Own)",
     "Ie1d (Ie1d,bId (Own)/Ib1d(Own)",
-    "IIeId ((IIeId(Own) \u00d7 IIb1d(Own))/IIb1d(Brand))"
+    "IIeId ((IIeId(Own) × IIb1d(Own))/IIb1d(Brand))"
    ],
    "answer": [
     0,
@@ -6322,7 +6353,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-18-29",
@@ -6416,7 +6449,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-18-33",
@@ -6446,7 +6481,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-19-1",
@@ -6455,7 +6492,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "The following relations are used to store data about students, courses, enrollment of students in courses and teachers of courses. Attributes for primary key in each relation are marked by \u2018\\*\u2019. (cno is course number cname is course name, tno is teacher number, tname is teacher name, sname is student name, etc.) Write a SQL query for retrieving roll number and name of students who got A grade in at least one course taught by teacher names Ramesh for the above relational database.",
+   "text": "The following relations are used to store data about students, courses, enrollment of students in courses and teachers of courses. Attributes for primary key in each relation are marked by ‘\\*’. (cno is course number cname is course name, tno is teacher number, tname is teacher name, sname is student name, etc.) Write a SQL query for retrieving roll number and name of students who got A grade in at least one course taught by teacher names Ramesh for the above relational database.",
    "options": [],
    "code_blocks": [
     {
@@ -6486,14 +6523,11 @@
    "difficulty": "medium",
    "text": "Which of the following query transformations (i.e., replacing the l.h.s. expression by the r.h.s expression) is incorrect? R1 and R2 are relations, C1 and C2 are selection conditions and A1 and A2 are attributes of R1.",
    "options": [
-    "$\\sigma _ { C _ { 1 } } \\left( \\sigma _ { C _ { 2 } } \\left( R _ { 1 } \\right) \\right) \\to \\sigma _ { C _ { 2 } } \\left( \\sigma _ { C _ { 1 } } \\left( R _ { 1 } \\right) \\right)$",
-    "\u03c3C1 (\u03c0A1 (R1)) \u2192 \u03c0A1 (\u03c3C1 (R1))",
-    "\u03c3C1 (R1 U R2) \u2192 \u03c3C1 (R1) \u222a\u03c3C1 (R2)",
-    "\u03c0A1 (\u03c3C1 (R1)) \u2192 \u03c3C1 (\u03c0A1 (R1))"
+    "σC1 (πA1 (R1)) → πA1 (σC1 (R1))",
+    "σC1 (R1 U R2) → σC1 (R1) ∪σC1 (R2)",
+    "πA1 (σC1 (R1)) → σC1 (πA1 (R1))"
    ],
-   "answer": [
-    3
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -6503,7 +6537,9 @@
     "paper_question": "2.19",
     "tags": [],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-3-19-3",
@@ -6515,9 +6551,9 @@
    "text": "The relational algebra expression equivalent to the following tuple calculus expression: $\\{t \\mid t \\in r \\land (t [ A ] = 1 0 \\land t [ B ] = 2 0) \\} \\text {is}$",
    "options": [
     "$\\sigma _ { ( A = 1 0 \\lor B = 2 0 ) } ( r )$",
-    "\u03c3(A=10) (r) \u222a\u03c3(B=20) (r)",
+    "σ(A=10) (r) ∪σ(B=20) (r)",
     "$\\sigma _ { ( A = 1 0 ) } \\left( r \\right) \\cap \\sigma _ { ( B = 2 0 ) } \\left( r \\right)$",
-    "\u03c3(A=10) (r) \u2212 \u03c3(B=20) (r)"
+    "σ(A=10) (r) − σ(B=20) (r)"
    ],
    "answer": [
     2
@@ -6543,10 +6579,10 @@
    "year": 2001,
    "text": "Which of the following relational calculus expression is not safe?",
    "options": [
-    "{t | \u2203u \u2208 R1 (t[A] = u[A]) \u2227 \u00ac\u2203s \u2208 R2 (t[A] = s[A])}",
-    "{t | \u2200u \u2208 R1 (u[A] =\" x \"\u21d2 \u2203s \u2208 R2 (t[A] = s[A] \u2227 s[A] = u[A]))}",
+    "{t | ∃u ∈ R1 (t[A] = u[A]) ∧ ¬∃s ∈ R2 (t[A] = s[A])}",
+    "{t | ∀u ∈ R1 (u[A] =\" x \"⇒ ∃s ∈ R2 (t[A] = s[A] ∧ s[A] = u[A]))}",
     "$\\{ t \\mid \\neg ( t \\in R _ { 1 } ) \\}$",
-    "{t | \u2203u \u2208 R1 (t[A] = u[A]) \u2227 \u2203s \u2208 R2 (t[A] = s[A])}"
+    "{t | ∃u ∈ R1 (t[A] = u[A]) ∧ ∃s ∈ R2 (t[A] = s[A])}"
    ],
    "answer": [
     2
@@ -6643,7 +6679,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2007,
-   "text": "Consider the relation employee(name, sex, supervisorName) with name as the key, supervisorName gives the name of the supervisor of the employee under consideration. What does the following Tuple Relational Calculus query produce? {e. name | employee(e) \u2227 (\u2200x) [\u00acemployee (x) \u2228 x. supervisorName $\\neq e.$ name $\\vee x. s e x = \" { \\mathfrak { e } } m a l e \\ \" ] \\}$",
+   "text": "Consider the relation employee(name, sex, supervisorName) with name as the key, supervisorName gives the name of the supervisor of the employee under consideration. What does the following Tuple Relational Calculus query produce? {e. name | employee(e) ∧ (∀x) [¬employee (x) ∨ x. supervisorName $\\neq e.$ name $\\vee x. s e x = \" { \\mathfrak { e } } m a l e \\ \" ] \\}$",
    "options": [
     "Names of employees with a male supervisor.",
     "Names of employees with no immediate male subordinates.",
@@ -6711,7 +6747,7 @@
    "marks": 2,
    "difficulty": "hard",
    "year": 2009,
-   "text": "Let and be relational schemes such that $R = \\{ a, b, c \\}$ and $S = \\{ c \\}$ Now consider the following queries on the database: 1. $\\pi _ { R - S } ( r ) - \\pi _ { R - S } \\left( \\pi _ { R - S } ( r ) \\times s - \\pi _ { R - S, S } ( r ) \\right)$ 2. $\\{ t | t \\in \\pi _ { R - S } ( r ) \\land \\forall u \\in s ( \\exists v \\in r ( u = v [ S ] \\land t = v [ R - S ] ) ) \\}$ 3. {t | t \u2208 \u03c0R\u2212s (r) \u2227 \u2200v \u2208 r (\u2203u \u2208 s (u = v[S] \u2227 t = v [R \u2212 S]))} 4. Select R.a,R.b From R,S Where R.c = S.c Which of the above queries are equivalent?",
+   "text": "Let and be relational schemes such that $R = \\{ a, b, c \\}$ and $S = \\{ c \\}$ Now consider the following queries on the database: 1. $\\pi _ { R - S } ( r ) - \\pi _ { R - S } \\left( \\pi _ { R - S } ( r ) \\times s - \\pi _ { R - S, S } ( r ) \\right)$ 2. $\\{ t | t \\in \\pi _ { R - S } ( r ) \\land \\forall u \\in s ( \\exists v \\in r ( u = v [ S ] \\land t = v [ R - S ] ) ) \\}$ 3. {t | t ∈ πR−s (r) ∧ ∀v ∈ r (∃u ∈ s (u = v[S] ∧ t = v [R − S]))} 4. Select R.a,R.b From R,S Where R.c = S.c Which of the above queries are equivalent?",
    "options": [
     "and",
     "and",
@@ -6737,7 +6773,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-19-10",
@@ -6747,7 +6785,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2013,
-   "text": "Consider the following relational schema. Students(rollno: integer, sname: string) Courses(courseno: integer, cname: string) Registration(rollno: integer, courseno: integer, percent: real) Which of the following queries are equivalent to this query in English? \u201cFind the distinct names of all students who score more than in the course numbered 107\u201d I. SELECT DISTINCT S.sname FROM Students as S, Registration as R WHERE R.rollno=S.rollno AND R.courseno=107 AND R.percent >90 11. IIsname (\u03c3courseno=107\u2227percent>90 (Registration Students)) III. $\\{ \\widetilde { T } \\stackrel { } { | \\exists S } \\in S t u d e n t s, \\dot { \\exists } R \\in R e g i s t r a t i o n ( S. r o l l n o = R. r o l l n o \\lnot R. r o l l n o$ \u03bbR. courseno = 107 \u2227 R. percent > 90 \u03bb T. sname = S. sname)} IV. $\\{ \\langle S _ { N } \\rangle \\mid \\exists S _ { R } \\exists R _ { P } ( \\langle S _ { R }, S _ { N } \\rangle \\in S t u d e n t s \\land$ $\\langle S _ { R }, 1 0 7, R _ { P } \\rangle \\in R e g i s t r a t i o n \\land R _ { P } > 9 0 ) \\}$",
+   "text": "Consider the following relational schema. Students(rollno: integer, sname: string) Courses(courseno: integer, cname: string) Registration(rollno: integer, courseno: integer, percent: real) Which of the following queries are equivalent to this query in English? “Find the distinct names of all students who score more than in the course numbered 107” I. SELECT DISTINCT S.sname FROM Students as S, Registration as R WHERE R.rollno=S.rollno AND R.courseno=107 AND R.percent >90 11. IIsname (σcourseno=107∧percent>90 (Registration Students)) III. $\\{ \\widetilde { T } \\stackrel { } { | \\exists S } \\in S t u d e n t s, \\dot { \\exists } R \\in R e g i s t r a t i o n ( S. r o l l n o = R. r o l l n o \\lnot R. r o l l n o$ λR. courseno = 107 ∧ R. percent > 90 λ T. sname = S. sname)} IV. $\\{ \\langle S _ { N } \\rangle \\mid \\exists S _ { R } \\exists R _ { P } ( \\langle S _ { R }, S _ { N } \\rangle \\in S t u d e n t s \\land$ $\\langle S _ { R }, 1 0 7, R _ { P } \\rangle \\in R e g i s t r a t i o n \\land R _ { P } > 9 0 ) \\}$",
    "options": [
     "I, II, III and IV",
     "I, II and III only",
@@ -6854,7 +6892,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2008,
-   "text": "Consider the following relational schema: \u2022 Student(school-id, sch-roll-no, sname, saddress) \u2022 Enrolment(school-id, sch-roll-no, erollno, examname) \u2022 ExamResult(erollno, examname, marks) Consider the following tuple relational calculus query. {t | \u2203E \u2208 Enrolment t = E. school-id \u2227 |{x | x \u2208 Enrolment \u2227 x. school-id = t \u2227 (\u2203B \u2208 ExamResult B. erc If a student needs to score more than 35 marks to pass an exam, what does the query return?",
+   "text": "Consider the following relational schema: • Student(school-id, sch-roll-no, sname, saddress) • Enrolment(school-id, sch-roll-no, erollno, examname) • ExamResult(erollno, examname, marks) Consider the following tuple relational calculus query. {t | ∃E ∈ Enrolment t = E. school-id ∧ |{x | x ∈ Enrolment ∧ x. school-id = t ∧ (∃B ∈ ExamResult B. erc If a student needs to score more than 35 marks to pass an exam, what does the query return?",
    "options": [
     "The empty set",
     "schools with more than of its students enrolled in some exam or the other",
@@ -6963,7 +7001,9 @@
    "answer": [
     1,
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-21-1",
@@ -7137,7 +7177,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "The following relations are used to store data about students, courses, enrollment of students in courses and teachers of courses. Attributes for primary key in each relation are marked by \u2022 students(rollno\\*, sname, saddr) \u2022 courses(cno\\*, cname) \u2022 enroll(rollno\\*, cno\\*, grade) \u2022 teach(tno\\*, tname, cao\\*) is course number, is course name, is teacher number, is teacher name, is student name, etc.) For the relational database given above, the following functional dependencies hold: \u2022 rollno \u2192 sname, saddr \u2022 cno \u2192 cname \u2022 tno \u2192 tname \u2022 rollno, cno \u2192 grade a. Is the database in normal form? b. If yes, prove that it is in. If not, normalize the relations so that they are in (without proving).",
+   "text": "The following relations are used to store data about students, courses, enrollment of students in courses and teachers of courses. Attributes for primary key in each relation are marked by • students(rollno\\*, sname, saddr) • courses(cno\\*, cname) • enroll(rollno\\*, cno\\*, grade) • teach(tno\\*, tname, cao\\*) is course number, is course name, is teacher number, is teacher name, is student name, etc.) For the relational database given above, the following functional dependencies hold: • rollno → sname, saddr • cno → cname • tno → tname • rollno, cno → grade a. Is the database in normal form? b. If yes, prove that it is in. If not, normalize the relations so that they are in (without proving).",
    "options": [],
    "code_blocks": [
     {
@@ -7217,7 +7257,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the set of relations DEPT (Dept-no. Dept-name, Location) Write an SQL query to: a. Find all employees names who work in departments located at \u2018Calcutta\u2019 and whose salary is greater than Rs.50,000. b. Calculate, for each department number, the number of employees with a salary greater than Rs. 1,00,000.",
+   "text": "Consider the set of relations DEPT (Dept-no. Dept-name, Location) Write an SQL query to: a. Find all employees names who work in departments located at ‘Calcutta’ and whose salary is greater than Rs.50,000. b. Calculate, for each department number, the number of employees with a salary greater than Rs. 1,00,000.",
    "options": [],
    "origin": {
     "source_file": "filter1_volume3.pdf",
@@ -7303,7 +7343,7 @@
    "options": [
     "x = 5 not(not(x = 5))",
     "and where is an integer",
-    "x\u22605 not(x = 5)",
+    "x≠5 not(x = 5)",
     "none of the above"
    ],
    "answer": [
@@ -7558,7 +7598,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-21-21",
@@ -7595,7 +7637,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the relation enrolled (student, course) in which (student, course) is the primary key, and the relation paid (student, amount) where student is the primary key. Assume no null values and no foreign keys or integrity constraints. Assume that amounts and were each paid by of the students. Consider these query plans (Plan 1 on left, Plan 2 on right) to \u201clist all courses taken by students who have paid more than x\u201d A disk seek takes disk data transfer bandwidth is MB/s and checking a tuple to see if amount is greater than takes Which of the following statements is correct?\u00b5 Refer to the figure below.",
+   "text": "Consider the relation enrolled (student, course) in which (student, course) is the primary key, and the relation paid (student, amount) where student is the primary key. Assume no null values and no foreign keys or integrity constraints. Assume that amounts and were each paid by of the students. Consider these query plans (Plan 1 on left, Plan 2 on right) to “list all courses taken by students who have paid more than x” A disk seek takes disk data transfer bandwidth is MB/s and checking a tuple to see if amount is greater than takes Which of the following statements is correct?µ Refer to the figure below.",
    "options": [
     "Plan 1 and Plan 2 will not output identical row sets for all databases",
     "A course may be listed more than once in the output of Plan 1 for some databases",
@@ -7707,7 +7749,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2009,
-   "text": "Consider the following relational schema: \u2022 Suppliers(sid:integer, sname:string, city:string, street:string) \u2022 Parts(pid:integer, pname:string, color:string) \u2022 Catalog(sid:integer, pid:integer, cost:real) Assume that, in the suppliers relation above, each supplier and each street within a city has unique name, and (sname, city) forms a candidate key. No other functional dependencies are implied other than those implied by primary and candidate keys. Which one of the following is about the above schema?",
+   "text": "Consider the following relational schema: • Suppliers(sid:integer, sname:string, city:string, street:string) • Parts(pid:integer, pname:string, color:string) • Catalog(sid:integer, pid:integer, cost:real) Assume that, in the suppliers relation above, each supplier and each street within a city has unique name, and (sname, city) forms a candidate key. No other functional dependencies are implied other than those implied by primary and candidate keys. Which one of the following is about the above schema?",
    "options": [
     "The schema is in",
     "The schema is in but not in BCNF",
@@ -7822,7 +7864,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-21-29",
@@ -7859,7 +7903,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the following relations and A | Id | Name | Age\n| 12 | Arun | 60\n| 15 | Shreya | 24\n| 99 | Rohit | 11 B | Id | Name | Age\n| 15 | Shreya | 24\n| 25 | Hari | 40\n| 98 | Rohit | 20\n| 99 | Rohit | 11 C | Id | Phone | Area\n| 10 | 2200 | 02\n| 99 | 2100 | 01 How many tuples does the result of the following SQL query contain? SELECT A.Id FROM A WHERE A.Age > ALL (SELECT B.Age FROM B WHERE B.Name = \u2018Arun\u2019)",
+   "text": "Consider the following relations and A | Id | Name | Age\n| 12 | Arun | 60\n| 15 | Shreya | 24\n| 99 | Rohit | 11 B | Id | Name | Age\n| 15 | Shreya | 24\n| 25 | Hari | 40\n| 98 | Rohit | 20\n| 99 | Rohit | 11 C | Id | Phone | Area\n| 10 | 2200 | 02\n| 99 | 2100 | 01 How many tuples does the result of the following SQL query contain? SELECT A.Id FROM A WHERE A.Age > ALL (SELECT B.Age FROM B WHERE B.Name = ‘Arun’)",
    "options": [
     "$\\underline{{\\land}}$",
     "$\\begin{array}{l l}{\\mathbb{C}_{\\mathfrak{Y}}}&{}&{\\mathfrak{Z}}\\\\ {\\downarrow}\\end{array}$",
@@ -7880,7 +7924,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-21-31",
@@ -7990,7 +8036,7 @@
    "difficulty": "medium",
    "text": "Consider the following relational schema: employee (empId,empName,empDept) customer (custId,custName,salesRepId,rating) salesRepId is a foreign key referring to empId of the employee relation. Assume that each employee makes a sale to at least one customer. What does the following query return? SELECT empName FROM employee E WHERE NOT EXISTS (SELECT custId FROM customer C WHERE C.salesRepId = E.empId AND C.rating <> 'GOOD');",
    "options": [
-    "Names of all the employees with at least one of their customers having a \u2018GOOD\u2019 rating.",
+    "Names of all the employees with at least one of their customers having a ‘GOOD’ rating.",
     "Names of all the employees with at most one of their customers having a 'GOOD' rating.",
     "Names of all the employees with none of their customers having a 'GOOD' rating.",
     "Names of all the employees with all their customers having a 'GOOD' rating."
@@ -8192,7 +8238,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider a relational database containing the following schemas. Catalogue | sno | pno | cost\n| S1 | P1 | 150\n| S1 | P2 | 50\n| S1 | P3 | 100\n| S2 | P4 | 200\n| S2 | P5 | 250\n| S3 | P1 | 250\n| S3 | P2 | 150\n| S3 | P5 | 300\n| S3 | P4 | 250 Suppliers | sno | sname | location\n| S1 | M/s Royal furniture | Delhi\n| S2 | M/s Balaji furniture | Bangalore\n| S3 | M/s Premium furniture | Chennai Parts | pno | pname | part_spec\n| P1 | Table | Wood\n| P2 | Chair | Wood\n| P3 | Table | Steel\n| P4 | Almirah | Steel\n| P5 | Almirah | Wood The primary key of each table is indicated by underlining the constituent fields. SELECT s.sno, s.sname FROM Suppliers s, Catalogue c WHERE s.sno=c.sno AND cost > (SELECT AVG (cost) FROM Catalogue WHERE pno = \u2018P4\u2019 GROUP BY pno); The number of rows returned by the above SQL query is",
+   "text": "Consider a relational database containing the following schemas. Catalogue | sno | pno | cost\n| S1 | P1 | 150\n| S1 | P2 | 50\n| S1 | P3 | 100\n| S2 | P4 | 200\n| S2 | P5 | 250\n| S3 | P1 | 250\n| S3 | P2 | 150\n| S3 | P5 | 300\n| S3 | P4 | 250 Suppliers | sno | sname | location\n| S1 | M/s Royal furniture | Delhi\n| S2 | M/s Balaji furniture | Bangalore\n| S3 | M/s Premium furniture | Chennai Parts | pno | pname | part_spec\n| P1 | Table | Wood\n| P2 | Chair | Wood\n| P3 | Table | Steel\n| P4 | Almirah | Steel\n| P5 | Almirah | Wood The primary key of each table is indicated by underlining the constituent fields. SELECT s.sno, s.sname FROM Suppliers s, Catalogue c WHERE s.sno=c.sno AND cost > (SELECT AVG (cost) FROM Catalogue WHERE pno = ‘P4’ GROUP BY pno); The number of rows returned by the above SQL query is",
    "options": [
     "$\\underline{{\\land}}$",
     "$\\stackrel{\\iint}{\\nabla}$",
@@ -8213,7 +8259,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-3-21-43",
@@ -8293,7 +8341,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2022,
-   "text": "Consider the relational database with the following four schemas and their respective instances. Student(sNo, sName, dNo) Dept(dNo, dName) Course(cNo, cName, dNo) Register(sNo, cNo) | | Students | \n| sNo | sName | dNo\n| S01 | James | D01\n| S02 | Rocky | D01\n| S03 | Jackson | D02\n| S04 | Jane | D01\n| S05 | Milli | D02 | | Depth\n| dNo | dName\n| D01 | CSE\n| D02 | EEE | | Course | \n| cNo | cName | dNo\n| C11 | DS | D01\n| C12 | OS | D01\n| C21 | DE | D02\n| C22 | PT | D02\n| C23 | CV | D03 | | Register\n| sNo | cNo\n| S01 | C11\n| S01 | C12\n| S02 | C11\n| S03 | C21\n| S03 | C22\n| S03 | C23\n| S04 | C11\n| S04 | C12\n| S05 | C11\n| S05 | C21 SELECT \\* FROM Student AS S WHERE NOT EXIST (SELECT cNo FROM Course WHERE dNo = \u201cD01\u201d EXCEPT SELECT cNo FROM Register WHERE sNo = S.sNo) The number of rows returned by the above query is",
+   "text": "Consider the relational database with the following four schemas and their respective instances. Student(sNo, sName, dNo) Dept(dNo, dName) Course(cNo, cName, dNo) Register(sNo, cNo) | | Students | \n| sNo | sName | dNo\n| S01 | James | D01\n| S02 | Rocky | D01\n| S03 | Jackson | D02\n| S04 | Jane | D01\n| S05 | Milli | D02 | | Depth\n| dNo | dName\n| D01 | CSE\n| D02 | EEE | | Course | \n| cNo | cName | dNo\n| C11 | DS | D01\n| C12 | OS | D01\n| C21 | DE | D02\n| C22 | PT | D02\n| C23 | CV | D03 | | Register\n| sNo | cNo\n| S01 | C11\n| S01 | C12\n| S02 | C11\n| S03 | C21\n| S03 | C22\n| S03 | C23\n| S04 | C11\n| S04 | C12\n| S05 | C11\n| S05 | C21 SELECT \\* FROM Student AS S WHERE NOT EXIST (SELECT cNo FROM Course WHERE dNo = “D01” EXCEPT SELECT cNo FROM Register WHERE sNo = S.sNo) The number of rows returned by the above query is",
    "options": [],
    "answer_value": 2.0,
    "tolerance": 0,
@@ -8473,8 +8521,7 @@
     "Hash index on Genre.Name and $\\mathbf { B } ^ { + }$ tree on the remaining attributes.",
     "3 rows and 5 columns",
     "Hash index on Movie.CustomerRating and $\\mathbf { B } ^ { + }$ tree on the remaining attributes.",
-    "6 rows and 5 columns",
-    "Hash index on all the attributes. A relational database contains two tables student and department in which student table has columns roll\\_no, name and dept\\_id and department table has columns dept\\_id and dept\\_name. The following insert statements were executed successfully to populate the empty tables: How many rows and columns will be retrieved by the following SQL statement? Select * from student, department"
+    "6 rows and 5 columns"
    ],
    "code_blocks": [
     {
@@ -8666,7 +8713,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the following relational schema: \u2022 Student(school-id, sch-roll-no, sname, saddress) \u2022 Enrolment(school-id, sch-roll-no, erollno, examname) \u2022 ExamResult(erollno, examname, marks) What does the following SQL query output?",
+   "text": "Consider the following relational schema: • Student(school-id, sch-roll-no, sname, saddress) • Enrolment(school-id, sch-roll-no, erollno, examname) • ExamResult(erollno, examname, marks) What does the following SQL query output?",
    "options": [
     "for each school with more than students appearing in exams, the name of the school and the number of scored by its students",
     "for each school with more than students in it, the name of the school and the number of scored by its students",
@@ -8968,9 +9015,9 @@
    "text": "Consider the following schedule for transactions and | T1 | T2 | T3\n| Read(X) | | \n| | Read(Y) | \n| | | Read(Y)\n| | Write(Y) | \n| Write(X) | | \n| | | Write(X)\n| | Read(X) | \n| | Write(X) | Which one of the schedules below is the correct serialization of the above?",
    "options": [
     "$T 1 T 3 T 2$",
-    "T2 \u2192 T1 \u2192 T3",
-    "T2 \u2192 T3 \u2192 T1",
-    "T3 \u2192 T1 \u2192 T2"
+    "T2 → T1 → T3",
+    "T2 → T3 → T1",
+    "T3 → T1 → T2"
    ],
    "answer": [
     0
@@ -9273,7 +9320,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the following two statements about database transaction schedules: I. Strict two-phase locking protocol generates conflict serializable schedules that are also recoverable. II. Timestamp-ordering concurrency control protocol with Thomas\u2019 Write Rule can generate view serializable schedules that are not conflict serializable Which of the above statements is/are TRUE?",
+   "text": "Consider the following two statements about database transaction schedules: I. Strict two-phase locking protocol generates conflict serializable schedules that are also recoverable. II. Timestamp-ordering concurrency control protocol with Thomas’ Write Rule can generate view serializable schedules that are not conflict serializable Which of the above statements is/are TRUE?",
    "options": [
     "I only",
     "II only",
@@ -9577,7 +9624,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the following two transactions and T1: read (A); read (B); If A = 0 then B \u2190 B + 1; write (B); T2: read (B); read (A); If B\u22600 then A \u2190 A\u22121; write (A); Which of the following schemes, using shared and exclusive locks, satisfy the requirements for strict two phase locking for the above transactions? | A. | S1: | lock S(A); | S2: | lock S(B);\n| read (A); | read (B);\n| lock S(B); | lock S(A);\n| read (B); | read (A);\n| If A = 0 | If B \u2260 0\n| then B \u2190 B + 1; | then A \u2190 A - 1;\n| write (B); | write (A);\n| commit; | commit;\n| unlock (A); | unlock (B);\n| unlock (B); | unlock (A);\n| B. | S1: | lock X(A); | S2: | lock X(B);\n| read (A); | read (B);\n| lock X(B); | lock X(A);\n| read (B); | read (A);\n| If A = 0 | If B \u2260 0\n| then B \u2190 B + 1; | then A \u2190 A - 1;\n| write (B); | write (A);\n| unlock (A); | unlock (A);\n| commit; | commit;\n| unlock (B); | unlock (A);\n| C. | S1: | lock S(A); | S2: | lock S(B);\n| read (A); | read (B);\n| lock X(B); | lock X(A);\n| read (B); | read (A);\n| If A = 0 | If B \u2260 0\n| then B \u2190 B + 1; | then A \u2190 A - 1;\n| write (B); | write(A);\n| unlock (A); | unlock (B);\n| commit; | commit;\n| unlock (B); | unlock (A);\n| D. | S1: | lock S(A); | S2: | lock S(B);\n| read (A); | read (B);\n| lock X(B); | lock X(A);\n| read (B); | read (A);\n| If A = 0 | If B \u2260 0\n| then B \u2190 B + 1; | then A \u2190A - 1;\n| write (B); | write (A);\n| unlock (A); | unlock (A);\n| unlock (B); | unlock (A);\n| commit; | commit;",
+   "text": "Consider the following two transactions and T1: read (A); read (B); If A = 0 then B ← B + 1; write (B); T2: read (B); read (A); If B≠0 then A ← A−1; write (A); Which of the following schemes, using shared and exclusive locks, satisfy the requirements for strict two phase locking for the above transactions? | A. | S1: | lock S(A); | S2: | lock S(B);\n| read (A); | read (B);\n| lock S(B); | lock S(A);\n| read (B); | read (A);\n| If A = 0 | If B ≠ 0\n| then B ← B + 1; | then A ← A - 1;\n| write (B); | write (A);\n| commit; | commit;\n| unlock (A); | unlock (B);\n| unlock (B); | unlock (A);\n| B. | S1: | lock X(A); | S2: | lock X(B);\n| read (A); | read (B);\n| lock X(B); | lock X(A);\n| read (B); | read (A);\n| If A = 0 | If B ≠ 0\n| then B ← B + 1; | then A ← A - 1;\n| write (B); | write (A);\n| unlock (A); | unlock (A);\n| commit; | commit;\n| unlock (B); | unlock (A);\n| C. | S1: | lock S(A); | S2: | lock S(B);\n| read (A); | read (B);\n| lock X(B); | lock X(A);\n| read (B); | read (A);\n| If A = 0 | If B ≠ 0\n| then B ← B + 1; | then A ← A - 1;\n| write (B); | write(A);\n| unlock (A); | unlock (B);\n| commit; | commit;\n| unlock (B); | unlock (A);\n| D. | S1: | lock S(A); | S2: | lock S(B);\n| read (A); | read (B);\n| lock X(B); | lock X(A);\n| read (B); | read (A);\n| If A = 0 | If B ≠ 0\n| then B ← B + 1; | then A ←A - 1;\n| write (B); | write (A);\n| unlock (A); | unlock (A);\n| unlock (B); | unlock (A);\n| commit; | commit;",
    "options": [],
    "answer_from_source": "C",
    "origin": {
@@ -9675,9 +9722,9 @@
    "text": "Consider a relational database schema with two relations $R ( P, Q )$ and $S ( X, Y )$ Let $E = \\{ \\langle u \\rangle \\mid \\exists v \\exists w \\langle u, v \\rangle \\in R \\land \\langle v, w \\rangle \\in S \\}$ be a tuple relational calculus expression. Which one of the following relational algebraic expressions is equivalent to?",
    "options": [
     "$\\Pi _ { P } \\left( R \\Join _ { R . P = S . X } \\ S \\right)$",
-    "IIP (S \u25b3S.X=R.Q R)",
+    "IIP (S △S.X=R.Q R)",
     "$\\Pi _ { P } \\left( R \\Join _ { R . P = S . Y } \\ S \\right)$",
-    "IIP (S \u25b3S.Y=R.Q R)"
+    "IIP (S △S.Y=R.Q R)"
    ],
    "answer": [
     1
@@ -9824,7 +9871,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-21-1",
@@ -9947,6 +9996,193 @@
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
    "needs_fix": "no answer printed in the source answer key"
+  },
+  {
+   "id": "mineru-filter1-volume3-3-5-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "State True or False with reason Logical data independence is easier to achieve than physical data independence.",
+   "options": [],
+   "answer_from_source": "False",
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.5.1",
+    "exam": "GATE CSE 1994 | Question: 3.11",
+    "section": "Database Design",
+    "paper_question": "3.11",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer 'False' could not be read",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "er-model"
+  },
+  {
+   "id": "mineru-filter1-volume3-3-17-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2016,
+   "text": "Let $R ( a, b, c )$ and $S ( d, e, f )$ be two relations in which is the foreign key of that refers to the primary key of. Consider the following four operations and I. Insert into II. Insert into III. Delete from $R$ IV. Delete from $S$ Which of the following can cause violation of the referential integrity constraint above?",
+   "options": [
+    "Both I and IV",
+    "Both II and III",
+    "All of these",
+    "None of these"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.17.1",
+    "exam": "GATE CSE 1997 | Question: 6.10, ISRO2016-54",
+    "section": "Referential Integrity",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "er-model"
+  },
+  {
+   "id": "mineru-filter1-volume3-3-17-4",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following tables and | P | Q\n| 2 | 2\n| 3 | 8\n| 7 | 3\n| 5 | 8\n| 6 | 9\n| 8 | 5\n| 9 | 8 | R | S\n| 2 | 2\n| 8 | 3\n| 3 | 2\n| 9 | 7\n| 5 | 7\n| 7 | 2 In table P is the primary key and Q is the foreign key referencing R in table $\\mathbf { \\nabla } T 2$ with on-delete cascade and onupdate cascade. In table $T 2,$ R is the primary key and S is the foreign key referencing P in table with on-delete set NULL and on-update cascade. In order to delete record $\\langle 3, 8 \\rangle$ from the table the number of additional records that need to be deleted from table is",
+   "options": [],
+   "answer_value": 0.0,
+   "tolerance": 0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.17.4",
+    "exam": "GATE CSE 2017 | Set 2 | Question: 19",
+    "section": "Referential Integrity",
+    "paper_question": "19",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "er-model"
+  },
+  {
+   "id": "mineru-filter1-volume3-3-17-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 1,
+   "difficulty": "medium",
+   "year": 2021,
+   "text": "Consider the following statements and about the relational data model:: A relation scheme can have at most one foreign key.: A foreign key in a relation scheme cannot be used to refer to tuples of Which one of the following choices is correct?",
+   "options": [
+    "Both and are true",
+    "is true and is false",
+    "is false and is true",
+    "Both and are false"
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.17.5",
+    "exam": "GATE CSE 2021 | Set 2 | Question: 6",
+    "section": "Referential Integrity",
+    "paper_question": "6",
+    "tags": [
+     "gatecse-2021-set2",
+     "databases",
+     "referential-integrity",
+     "one-mark"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "er-model"
+  },
+  {
+   "id": "mineru-filter1-volume3-3-17-6",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 1,
+   "difficulty": "medium",
+   "year": 2026,
+   "text": "Consider two relations and defined on the relational schemas and, respectively. is the primary key of and is a foreign key of referencing in. Which of the following operations will violate the foreign key constraint?",
+   "options": [
+    "Inserting records into relation",
+    "Deleting records from relation",
+    "Deleting records from relation",
+    "Inserting records into relation"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.17.6",
+    "exam": "GATE DA 2026 | Question: 16",
+    "section": "Referential Integrity",
+    "paper_question": "16",
+    "tags": [
+     "gateda-2026",
+     "databases",
+     "referential-integrity",
+     "multiple-selects",
+     "one-mark"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A;B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: 'Deleting records from relation' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "er-model"
+  },
+  {
+   "id": "mineru-filter1-volume3-3-23-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2026,
+   "text": "Consider a relational database schema with a relation $R ( A, B, C, D ). \\ \\mathsf { I f } \\ \\{ A, B \\}$ and $\\{ A, C \\}$ are the only two candidate keys of the relation $R,$ then the number of superkeys of relation $R$ is. (answer in integer)",
+   "options": [],
+   "answer_value": 6.0,
+   "tolerance": 0.0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.23.1",
+    "exam": "GATE CSE 2026 | Set 1 | Question: 55",
+    "section": "Super Key",
+    "paper_question": "55",
+    "tags": [
+     "gatecse-2026-set1",
+     "numerical-answers",
+     "databases",
+     "super-key",
+     "two-marks"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "functional-dependency"
   }
  ]
 }

@@ -81,7 +81,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the following problem. Given positive integers $a _ { 1 }, a _ { 2 } \\ldots a _ { n },$ it is required to partition them in to two parts and such that, \u2211ai-\u2211 ai is minimised iEA i\u2208B Consider a greedy algorithm for solving this problem. The numbers are ordered so that $a _ { 1 } \\geq a _ { 2 } \\geq \\ldots a _ { n }$ and at $i ^ { t h }$ step, $a _ { i }$ is placed in that part whose sum in smaller at that step. Give an example with for which the solution produced by the greedy algorithm is not optimal.",
+   "text": "Consider the following problem. Given positive integers $a _ { 1 }, a _ { 2 } \\ldots a _ { n },$ it is required to partition them in to two parts and such that, ∑ai-∑ ai is minimised iEA i∈B Consider a greedy algorithm for solving this problem. The numbers are ordered so that $a _ { 1 } \\geq a _ { 2 } \\geq \\ldots a _ { n }$ and at $i ^ { t h }$ step, $a _ { i }$ is placed in that part whose sum in smaller at that step. Give an example with for which the solution produced by the greedy algorithm is not optimal.",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -106,7 +106,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 1990,
-   "text": "Match the pairs in the following questions: | (a) | Strassen\u2019s matrix multiplication algorithm | (p) | Greedy method\n| (b) | Kruskal\u2019s minimum spanning tree algorithm | (q) | Dynamic programming\n| (c) | Biconnected components algorithm | (r) | Divide and Conquer\n| (d) | Floyd\u2019s shortest path algorithm | (s) | Depth-first search",
+   "text": "Match the pairs in the following questions: | (a) | Strassen’s matrix multiplication algorithm | (p) | Greedy method\n| (b) | Kruskal’s minimum spanning tree algorithm | (q) | Dynamic programming\n| (c) | Biconnected components algorithm | (r) | Divide and Conquer\n| (d) | Floyd’s shortest path algorithm | (s) | Depth-first search",
    "options": [],
    "answer_from_source": "B",
    "origin": {
@@ -181,9 +181,7 @@
     "Heuristic search",
     "Greedy approach"
    ],
-   "answer": [
-    0
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume2.pdf",
     "volume": "filter1_volume2",
@@ -200,7 +198,10 @@
      "merge-sort"
     ],
     "topic_source": "tag"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-1-2-7",
@@ -210,7 +211,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2015,
-   "text": "Match the following: | P. | Prim\u2019s algorithm for minimum spanning tree | i. | Backtracking\n| Q. | Floyd-Warshall algorithm for all pairs shortest path | ii. | Greedy method\n| R. | Merge sort | iii. | Dynamic programming\n| S. | Hamiltonian circuit | iv. | Divide and conquer",
+   "text": "Match the following: | P. | Prim’s algorithm for minimum spanning tree | i. | Backtracking\n| Q. | Floyd-Warshall algorithm for all pairs shortest path | ii. | Greedy method\n| R. | Merge sort | iii. | Dynamic programming\n| S. | Hamiltonian circuit | iv. | Divide and conquer",
    "options": [
     "P-iii, Q-ii, R-iv, S-i",
     "P-i, Q-ii, R-iv, S-",
@@ -384,7 +385,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2000,
-   "text": "Consider the following functions $f ( n ) = 3 n ^ { \\sqrt { n } }$ $g ( n ) = 2 ^ { { \\sqrt { n } } \\log _ { 2 } n }$ \u2022 h(n) = n! Which of the following is true?",
+   "text": "Consider the following functions $f ( n ) = 3 n ^ { \\sqrt { n } }$ $g ( n ) = 2 ^ { { \\sqrt { n } } \\log _ { 2 } n }$ • h(n) = n! Which of the following is true?",
    "options": [
     "$h ( n ) \\mid \\mathsf { s } O ( f ( n ) )$",
     "$h ( n ) \\mathfrak { i s } O ( g ( n ) )$",
@@ -564,7 +565,7 @@
     "$f \\left( n \\right) = O \\left( g \\left( n \\right) \\right) ; g \\left( n \\right) = O \\left( h \\left( n \\right) \\right)$",
     "$f \\left( n \\right) = \\Omega \\left( g \\left( n \\right) \\right) ; g ( n ) = O \\left( h \\left( n \\right) \\right)$",
     "$g \\left( n \\right) = O \\left( f \\left( n \\right) \\right) ; h \\left( n \\right) = O \\left( f \\left( n \\right) \\right)$",
-    "h (n) = O (f (n)) ; g (n) = \u03a9 (f (n))"
+    "h (n) = O (f (n)) ; g (n) = Ω (f (n))"
    ],
    "answer": [
     3
@@ -593,7 +594,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2011,
-   "text": "Which of the given options provides the increasing order of asymptotic complexity of functions $f _ { 1 }, f _ { 2 }, f _ { 3 }$ and $f _ { 4 }?$ $f _ { 1 } ( n ) = 2 ^ { n }$ $f _ { 2 } ( n ) = n ^ { 3 / 2 }$ \u2022 f3(n) = n log2 n $f _ { 4 } ( n ) = n ^ { \\log _ { 2 } n }$",
+   "text": "Which of the given options provides the increasing order of asymptotic complexity of functions $f _ { 1 }, f _ { 2 }, f _ { 3 }$ and $f _ { 4 }?$ $f _ { 1 } ( n ) = 2 ^ { n }$ $f _ { 2 } ( n ) = n ^ { 3 / 2 }$ • f3(n) = n log2 n $f _ { 4 } ( n ) = n ^ { \\log _ { 2 } n }$",
    "options": [
     "$f_{3},\\ f_{2},\\ f_{4},\\ f_{1}$",
     "$f_{3},f_{2},f_{1},f_{4}$",
@@ -879,10 +880,10 @@
    "year": 2023,
    "text": "Consider functions and expressed in pseudocode as follows: Let $f _ { 1 } ( n )$ and $f _ { 2 } ( n )$ denote the number of times the statement $\\mathbf { \\mu } ^ { \\mathfrak { s } } \\mathbf { x } = \\mathbf { x } + \\mathbf { 1 } ^ { \\mathfrak { n } }$ is executed in and respectively. Which of the following statements is/are Refer to the figure below.",
    "options": [
-    "f1(n) \u2208 \u0398(f2(n))",
-    "f1(n) \u2208 o(f2(n))",
-    "f1(n) \u2208\u03c9(f2(n))",
-    "f1(n) \u2208 O(n)"
+    "f1(n) ∈ Θ(f2(n))",
+    "f1(n) ∈ o(f2(n))",
+    "f1(n) ∈ω(f2(n))",
+    "f1(n) ∈ O(n)"
    ],
    "answer": [
     0,
@@ -936,10 +937,10 @@
    "year": 2024,
    "text": "Let be the recurrence relation defined as follows: $\\begin{array}{l} T (0) = 1, \\\\ T (1) = 2, \\text {and} \\\\ T (n) = 5 T (n - 1) - 6 T (n - 2) \\text {for} n \\geq 2 \\\\ \\end{array}$ Which one of the following statements is TRUE?",
    "options": [
-    "T(n) = \u0398 (2n)",
-    "T(n) = \u0398 (n2n)",
-    "T(n) = \u0398 (3n)",
-    "T(n) = \u0398 (n3n)"
+    "T(n) = Θ (2n)",
+    "T(n) = Θ (n2n)",
+    "T(n) = Θ (3n)",
+    "T(n) = Θ (n3n)"
    ],
    "answer": [
     0
@@ -1096,7 +1097,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-4-2",
@@ -1246,7 +1249,7 @@
     "$F ( n ) = F ( \\lfloor n / 2 \\rfloor ) + 1$",
     "$F ( n ) = F ( \\lfloor n / 2 \\rfloor )$",
     "F(n) = F([n/2|) + F([n/2])",
-    "F(n) = F(n \u2212 1) + 1"
+    "F(n) = F(n − 1) + 1"
    ],
    "answer": [
     0
@@ -1369,7 +1372,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Let be the directed, weighted graph shown in below figure We are interested in the shortest paths from. a. Output the sequence of vertices identified by the Dijkstra\u2019s algorithm for single source shortest path when the algorithm is started at node b. Write down sequence of vertices in the shortest path from to c. What is the cost of the shortest path from to?",
+   "text": "Let be the directed, weighted graph shown in below figure We are interested in the shortest paths from. a. Output the sequence of vertices identified by the Dijkstra’s algorithm for single source shortest path when the algorithm is started at node b. Write down sequence of vertices in the shortest path from to c. What is the cost of the shortest path from to?",
    "options": [],
    "figure_assets": [
     {
@@ -1415,7 +1418,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2004,
-   "text": "Suppose we run Dijkstra\u2019s single source shortest path algorithm on the following edge-weighted directed graph with vertex as the source. In what order do the nodes get included into the set of vertices for which the shortest path distances are finalized? Refer to the figure below.",
+   "text": "Suppose we run Dijkstra’s single source shortest path algorithm on the following edge-weighted directed graph with vertex as the source. In what order do the nodes get included into the set of vertices for which the shortest path distances are finalized? Refer to the figure below.",
    "options": [
     "$P , Q , R , S , T , U$",
     "$P , Q , R , U , S , T$",
@@ -1472,7 +1475,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2005,
-   "text": "$\\mathsf { L e t } G ( V, E )$ be an undirected graph with positive edge weights. Dijkstra\u2019s single source shortest path algorithm can be implemented using the binary heap data structure with time complexity:",
+   "text": "$\\mathsf { L e t } G ( V, E )$ be an undirected graph with positive edge weights. Dijkstra’s single source shortest path algorithm can be implemented using the binary heap data structure with time complexity:",
    "options": [
     "$O \\left( | V | ^ { 2 } \\right)$",
     "$O ( | E | + | V | \\log | V | )$",
@@ -1507,7 +1510,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2006,
-   "text": "To implement Dijkstra\u2019s shortest path algorithm on unweighted graphs so that it runs in linear time, the data structure to be used is:",
+   "text": "To implement Dijkstra’s shortest path algorithm on unweighted graphs so that it runs in linear time, the data structure to be used is:",
    "options": [
     "Queue",
     "Stack",
@@ -1661,10 +1664,10 @@
    "year": 2009,
    "text": "A sub-sequence of a given sequence is just the given sequence with some elements (possibly none or all) left out. We are given two sequences $X [ m ]$ and ${ \\dot { Y } } [ n ]$ of lengths and $^ { n, }$ respectively with indexes of $X$ and starting from. We wish to find the length of the longest common sub-sequence (LCS) of $X [ m ]$ and $Y [ n ]$ as $l ( m, n )$, where an incomplete recursive definition for the function $I ( i, j )$ to compute the length of the LCS of ${ \\dot { X } } [ m ]$ and ${ \\dot { Y } } [ n ]$ is given below: $\\begin{array}{l} = \\text {expr1, if i,j > 0 and X[i - 1] = Y[j - 1]} \\\\ = \\operatorname{expr2}, \\text {if} i, j > 0 \\text {and} X [ i - 1 ] \\neq Y [ j - 1 ] \\\\ \\end{array} l(i,j) = 0$, if either i = 0 or j = 0 Which one of the following options is correct?",
    "options": [
-    "expr1 = l (i \u2212 1, j) + 1",
-    "expr1 = l (i, j \u2212 1)",
-    "expr2 = max (l (i \u2212 1, j) ,l (i, j \u2212 1))",
-    "expr2 = max (l (i \u2212 1, j \u2212 1) , l (i, j))"
+    "expr1 = l (i − 1, j) + 1",
+    "expr1 = l (i, j − 1)",
+    "expr2 = max (l (i − 1, j) ,l (i, j − 1))",
+    "expr2 = max (l (i − 1, j − 1) , l (i, j))"
    ],
    "answer": [
     2
@@ -1951,7 +1954,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-19-5",
@@ -2652,7 +2657,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1991,
-   "text": "Kruskal\u2019s algorithm for finding a minimum spanning tree of a weighted graph with vertices and edges has the time complexity of:",
+   "text": "Kruskal’s algorithm for finding a minimum spanning tree of a weighted graph with vertices and edges has the time complexity of:",
    "options": [
     "$O(n^{2})\\,$",
     "$O(m n)$",
@@ -2693,7 +2698,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 1992,
-   "text": "Complexity of Kruskal\u2019s algorithm for finding the minimum spanning tree of an undirected graph containing vertices and edges if the edges are sorted is",
+   "text": "Complexity of Kruskal’s algorithm for finding the minimum spanning tree of an undirected graph containing vertices and edges if the edges are sorted is",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -2775,7 +2780,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "A complete, undirected, weighted graph is given on the vertex $\\{ 0, 1,..., n - 1 \\}$ for any fixed \u2018n\u2019. Draw the minimum spanning tree of if",
+   "text": "A complete, undirected, weighted graph is given on the vertex $\\{ 0, 1,..., n - 1 \\}$ for any fixed ‘n’. Draw the minimum spanning tree of if",
    "options": [
     "the weight of the edge $( u , v )$ is",
     "the weight of the edge is"
@@ -2954,7 +2959,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "An undirected graph has nodes. its adjacency matrix is given by an $n \\times n$ square matrix whose (i) diagonal elements are 0\u2019s and (ii) non-diagonal elements are 1\u2019s. Which one of the following is TRUE?",
+   "text": "An undirected graph has nodes. its adjacency matrix is given by an $n \\times n$ square matrix whose (i) diagonal elements are 0’s and (ii) non-diagonal elements are 1’s. Which one of the following is TRUE?",
    "options": [
     "Graph has no minimum spanning tree (MST)",
     "Graph has unique MST of cost",
@@ -3017,7 +3022,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2006,
-   "text": "Consider the following graph: Which one of the following cannot be the sequence of edges added, in that order, to a minimum spanning tree using Kruskal\u2019s algorithm?",
+   "text": "Consider the following graph: Which one of the following cannot be the sequence of edges added, in that order, to a minimum spanning tree using Kruskal’s algorithm?",
    "options": [
     "$(a-b),(d-f),(b-f),(d-c),(d-e)$",
     "$(a-b),(d-f),(d-c),(b-f),(d-e)$",
@@ -3110,7 +3115,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2009,
-   "text": "Consider the following graph: Which one of the following is NOT the sequence of edges added to the minimum spanning tree using Kruskal\u2019s algorithm?",
+   "text": "Consider the following graph: Which one of the following is NOT the sequence of edges added to the minimum spanning tree using Kruskal’s algorithm?",
    "options": [
     "(b, e) (e, f) (a, c) (b, c) (f, g) (c, d)",
     "(b, e) (e, f) (a, c) (f, g) (b, c) (c, d)",
@@ -3242,7 +3247,7 @@
    "options": [
     "$\\scriptstyle { \\frac { 1 } { 1 2 } } \\left( 1 1 n ^ { 2 } - 5 n \\right)$",
     "$n ^ { 2 } - n + 1$",
-    "6n \u2212 11",
+    "6n − 11",
     "$2 n + 1$"
    ],
    "answer": [
@@ -3542,7 +3547,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-31-23",
@@ -3642,7 +3649,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-31-27",
@@ -3733,7 +3742,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Let $G$ be a connected undirected weighted graph. Consider the following two statements. \u2022 $S _ { 1 }$: There exists a minimum weight edge in $G$ which is present in every minimum spanning tree of $G.$ \u2022 $S _ { 2 } \\colon$ If every edge in $G$ has distinct weight, then has a unique minimum spanning tree. Which one of the following options is correct?",
+   "text": "Let $G$ be a connected undirected weighted graph. Consider the following two statements. • $S _ { 1 }$: There exists a minimum weight edge in $G$ which is present in every minimum spanning tree of $G.$ • $S _ { 2 } \\colon$ If every edge in $G$ has distinct weight, then has a unique minimum spanning tree. Which one of the following options is correct?",
    "options": [
     "Both $S _ { 1 }$ and $S _ { 2 }$ are true",
     "is true and $S _ { 2 }$ is false",
@@ -4010,8 +4019,6 @@
    "text": "Consider the undirected graph below: Using Prim's algorithm to construct a minimum spanning tree starting with node A, which one of the following sequences of edges represents a possible order in which the edges would be added to construct the minimum spanning tree? A $\\mathbf { \\Sigma } _ { \\cdot } \\ ( \\mathrm { E }, \\mathrm { G } ), ( \\mathrm { C }, \\mathrm { F } ), ( \\mathrm { F }, \\mathrm { G } ), ( \\mathrm { A }, \\mathrm { D } ), ( \\mathrm { A }, \\mathrm { B } ), ( \\mathrm { A }, \\mathrm { C } )$",
    "options": [
     "$(\\mathbf{E},\\mathbf{G}),\\;(\\mathbf{C},\\mathbf{F}),\\;(\\mathbf{F},\\mathbf{G}),\\;(\\mathbf{A},\\mathbf{D}),\\;(\\mathbf{A},\\mathbf{B}),\\;(\\mathbf{A},\\mathbf{C})$",
-    "$(\\operatorname{A}\\!\\cdot\\!\\supset\\operatorname{D}\\!\\operatorname{G}\\!\\operatorname{A}\\!\\cdot\\!\\supset\\!\\operatorname{G}\\!\\supset\\!\\operatorname{G}\\!\\operatorname{G}\\!\\operatorname{G}\\!\\operatorname{G}\\!\\operatorname{G}\\!\\operatorname{E}\\!\\operatorname{E}\\!\\operatorname{E}\\!\\operatorname{G}\\!\\supset\\!\\operatorname{G}\\!\\supset\\!\\operatorname{G}\\!\\operatorname{G}\\!\\supset\\!\\operatorname{G}\\!\\operatorname{G}\\!\\operatorname{G}\\!\\operatorname{G}\\!\\operatorname{G}\\!\\right)$",
-    "$(\\operatorname{A}\\!\\cdot\\!\\operatorname{B}),\\,(\\operatorname{A}\\!\\cdot\\!\\operatorname{D}),\\,(\\operatorname{D}\\!\\cdot\\!\\operatorname{E}),\\,(\\operatorname{E}\\!\\cdot\\!\\operatorname{G}\\!\\operatorname{S}\\!\\cdot\\!\\operatorname{E}\\!\\mathbf{p}),\\,(\\operatorname{E}\\!\\operatorname{M}\\!\\mathbf{G}\\!\\operatorname{C}\\!\\right)$",
     "$(\\mathrm{A},\\,\\mathrm{D}),\\,(\\mathrm{A},\\,\\mathrm{B}),\\,(\\mathrm{D},\\,\\mathrm{E}),\\,(\\mathrm{\\bf{F}},\\,\\mathrm{C}),\\,(\\mathrm{\\bf{F}},\\,\\mathrm{G}),\\,(\\mathrm{\\bf{G}},\\,\\mathrm{\\bf{G}})$"
    ],
    "figure_assets": [
@@ -4053,9 +4060,9 @@
     "options_recovered": "pix2tex"
    },
    "explain": "",
-   "answer": [
-    3
-   ]
+   "answer": null,
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-1-33-2",
@@ -4067,14 +4074,9 @@
    "year": 2008,
    "text": "For the undirected, weighted graph given below, which of the following sequences of edges represents a correct execution of Prim's algorithm to construct a Minimum Spanning Tree?",
    "options": [
-    "$( \\mathbf { a } , \\mathbf { b } ) , ( \\mathbf { d } , \\mathbf { f } ) , ( \\mathbf { f } , \\mathbf { c } ) , ( \\mathbf { g } , \\mathbf { i } ) , ( \\mathbf { d } , \\mathbf { a } ) , ( \\mathbf { g } , \\mathbf { h } ) , ( \\mathbf { c } , \\mathbf { e } ) , ( \\mathbf { f } , \\mathbf { h } )$",
-    "$( { \\bf c } , { \\bf e } ) , ( { \\bf c } , { \\bf f } ) , ( { \\bf f } , { \\bf d } ) , ( { \\bf d } , { \\bf a } ) , ( { \\bf a } , { \\bf b } ) , ( { \\bf g } , { \\bf h } ) , ( { \\bf h } , { \\bf f } ) , ( { \\bf g } , { \\bf i } )$",
-    "$( \\mathrm { d } , \\mathrm { f } ) , ( \\mathrm { f } , \\mathrm { c } ) , ( \\mathrm { d } , \\mathrm { a } ) , ( \\mathrm { a } , \\mathrm { b } ) , ( \\mathrm { c } , \\mathrm { e } ) , ( \\mathrm { f } , \\mathrm { h } ) , ( \\mathrm { g } , \\mathrm { h } ) , ( \\mathrm { g } , \\mathrm { i } )$",
-    "$( \\mathbf { h } , \\mathbf { g } ) , ( \\mathbf { g } , \\mathbf { i } ) , ( \\mathbf { h } , \\mathbf { f } ) , ( \\mathbf { f } , \\mathbf { c } ) , ( \\mathbf { f } , \\mathbf { d } ) , ( \\mathbf { d } , \\mathbf { a } ) , ( \\mathbf { a } , \\mathbf { b } ) , ( \\mathbf { c } , \\mathbf { e } )$"
+    "$( { \\bf c } , { \\bf e } ) , ( { \\bf c } , { \\bf f } ) , ( { \\bf f } , { \\bf d } ) , ( { \\bf d } , { \\bf a } ) , ( { \\bf a } , { \\bf b } ) , ( { \\bf g } , { \\bf h } ) , ( { \\bf h } , { \\bf f } ) , ( { \\bf g } , { \\bf i } )$"
    ],
-   "answer": [
-    2
-   ],
+   "answer": null,
    "figure_assets": [
     {
      "src": "/content/assets/question-images/mineru/filter1-volume2-b4577e0869d332f3933dbf31.jpg",
@@ -4113,7 +4115,10 @@
      596
     ],
     "topic_source": "title"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-1-34-1",
@@ -4296,7 +4301,7 @@
     "$T ( n ) \\leq 2 T ( n / 5 ) + n$",
     "$T ( n ) \\leq T ( n / 5 ) + T ( 4 n / 5 ) + n$",
     "$T ( n ) \\leq 2 T ( 4 n / 5 ) + n$",
-    "T(n) \u2264 2T(n/2) + n"
+    "T(n) ≤ 2T(n/2) + n"
    ],
    "answer": [
     1
@@ -4462,7 +4467,7 @@
    "year": 2015,
    "text": "Suppose you are provided with the following function declaration in the C programming language. int partition(int a[], int n); The function treats the first element of as a pivot and rearranges the array so that all elements less than or equal to the pivot is in the left part of the array, and all elements greater than the pivot is in the right part. In addition, it moves the pivot so that the pivot is the last element of the left part. The return value is the number of elements in the left part. The following partially given function in the C programming language is used to find the $k ^ { t h }$ smallest element in an array $a [ ]$ of size using the partition function. We assume $k \\leq n$ int kth\\_smallest (int a[], int n, int k) int left\\_end = partition (a, n); The missing arguments lists are respectively",
    "options": [
-    "left\\_end and left\\_end left\\_end left\\_end \u22121)",
+    "left\\_end and left\\_end left\\_end left\\_end −1)",
     "left\\_end and left\\_end left\\_end",
     "left\\_end left\\_end left\\_end and left\\_end",
     "left\\_end left\\_end and left\\_end"
@@ -4533,10 +4538,10 @@
    "year": 2026,
    "text": "Consider that the quick sort algorithm is used to sort an array of distinct randomly ordered elements. In every call, the pivot is chosen as the first element of the current subarray. Let denote the expected time to sort the array. Assume that the time to partition is linear in the size of the current subarray. Which of the following recurrence relations correctly represents in this scenario?",
    "options": [
-    "T(n) = T(1) + T(n \u2212 1) + O(n)",
+    "T(n) = T(1) + T(n − 1) + O(n)",
     "T(n) = T (x) + T (x) + O(n)",
     "T(n) = 2T (x) + O(n)",
-    "T(n) = 1 \u03a3n\u22121[T(k) + T(n \u2212 k \u2212 1)] + O(n)"
+    "T(n) = 1 Σn−1[T(k) + T(n − k − 1)] + O(n)"
    ],
    "answer": [
     3
@@ -5006,8 +5011,8 @@
    "year": 2007,
    "text": "In an unweighted, undirected connected graph, the shortest path from a node $S$ to every other node is computed most efficiently, in terms of time complexity, by",
    "options": [
-    "Dijkstra\u2019s algorithm starting from $S .$",
-    "Warshall\u2019s algorithm.",
+    "Dijkstra’s algorithm starting from $S .$",
+    "Warshall’s algorithm.",
     "Performing a DFS starting from .",
     "Performing a BFS starting from ."
    ],
@@ -5039,7 +5044,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2020,
-   "text": "$\\mathsf { L e t } G = ( V, E )$ be a directed, weighted graph with weight function $w: E \\to \\mathbb { R }$. For some function $f: V \\to { \\dot { \\mathbb { R } } }$, for each edge $( u, v ) \\in E$, define $w ^ { \\prime } ( u, v )$ as $w ( u, v ) + f ( u ) - f ( v )$ Which one of the options completes the following sentence so that it is TRUE? \u201cThe shortest paths in under are shortest paths under $w ^ { \\prime }$ too,,9",
+   "text": "$\\mathsf { L e t } G = ( V, E )$ be a directed, weighted graph with weight function $w: E \\to \\mathbb { R }$. For some function $f: V \\to { \\dot { \\mathbb { R } } }$, for each edge $( u, v ) \\in E$, define $w ^ { \\prime } ( u, v )$ as $w ( u, v ) + f ( u ) - f ( v )$ Which one of the options completes the following sentence so that it is TRUE? “The shortest paths in under are shortest paths under $w ^ { \\prime }$ too,,9",
    "options": [
     "for every $f : V \\to \\mathbb { R }$",
     "if and only ${ \\mathfrak { i } } \\forall u \\in V , f ( u )$ is positive",
@@ -5078,8 +5083,8 @@
    "options": [
     "$d _ { 1 } ( u , v ) = d _ { 2 } ( u , v )$",
     "$d _ { 1 } ( u , v ) \\geq d _ { 2 } ( u , v )$",
-    "d1(u,v) \u2264 d2(u,v)",
-    "d1(u,\u03bd) \u2260 d2(u,v)"
+    "d1(u,v) ≤ d2(u,v)",
+    "d1(u,ν) ≠ d2(u,v)"
    ],
    "answer": [
     1
@@ -5363,7 +5368,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "A two dimensional array of integers is partially sorted if \u2200i, j \u2208 [1..n \u2212 1], A[i][j] < A[i][j + 1] and A[i][j] < A[i + 1][j] a. The smallest item in the array is at where and. b. The smallest item is deleted. Complete the following procedure to insert item (which is guaranteed to be smaller than any item in the last row or column) still keeping partially sorted.",
+   "text": "A two dimensional array of integers is partially sorted if ∀i, j ∈ [1..n − 1], A[i][j] < A[i][j + 1] and A[i][j] < A[i + 1][j] a. The smallest item in the array is at where and. b. The smallest item is deleted. Complete the following procedure to insert item (which is guaranteed to be smaller than any item in the last row or column) still keeping partially sorted.",
    "options": [],
    "code_blocks": [
     {
@@ -5610,7 +5615,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-40-15",
@@ -5738,7 +5745,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-40-19",
@@ -5885,7 +5894,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Given below is the sketch of a program that represents the path in a two-person game tree by the sequence of active procedure calls at any time. The program assumes that the payofs are real number in a limited range; that the constant INF is larger than any positive payof and its negation is smaller than any negative payof and that there is a function \u201cpayof\u201d and that computes the payof for any board that is a leaf. The type \u201cboardtype\u201d has been suitably declared to represent board positions. It is player- \u2019s move if mode = MAX and player- \u2019s move if mode=MIN. The type modetype = (MAX, MIN). The functions \u201cmin\u201d and \u201cmax\u201d find the minimum and maximum of two real numbers. function search(B: boardtype; mode: modetype): real; Comment on the working principle of the above program. Suggest a possible mechanism for reducing the amount of search.",
+   "text": "Given below is the sketch of a program that represents the path in a two-person game tree by the sequence of active procedure calls at any time. The program assumes that the payofs are real number in a limited range; that the constant INF is larger than any positive payof and its negation is smaller than any negative payof and that there is a function “payof” and that computes the payof for any board that is a leaf. The type “boardtype” has been suitably declared to represent board positions. It is player- ’s move if mode = MAX and player- ’s move if mode=MIN. The type modetype = (MAX, MIN). The functions “min” and “max” find the minimum and maximum of two real numbers. function search(B: boardtype; mode: modetype): real; Comment on the working principle of the above program. Suggest a possible mechanism for reducing the amount of search.",
    "options": [],
    "code_blocks": [
     {
@@ -5943,7 +5952,7 @@
    "type": "msq",
    "marks": 2,
    "difficulty": "medium",
-   "text": ", where stands for order is: 1\u2264k\u2264n",
+   "text": ", where stands for order is: 1≤k≤n",
    "options": [
     "${\\mathcal{O}}(n)$",
     "$O(n^{2})\\,$",
@@ -6214,10 +6223,10 @@
    "year": 2006,
    "text": "Consider the following C-program fragment in which, and are integer variables. Let denote the value stored in the variable $j$ after termination of the for loop. Which one of the following is true?",
    "options": [
-    "val(j) = \u0398(log n)",
-    "val(j) = \u0398(\u221an)",
-    "val(j) = \u0398(n)",
-    "val(j) = \u0398(nlogn)"
+    "val(j) = Θ(log n)",
+    "val(j) = Θ(√n)",
+    "val(j) = Θ(n)",
+    "val(j) = Θ(nlogn)"
    ],
    "answer": [
     2
@@ -6373,8 +6382,8 @@
    "year": 2007,
    "text": "Consider the following C program segment: Let denote number of times the $f o r$ loop is executed by the program on input. Which of the following is TRUE?",
    "options": [
-    "T(n) = O(\u221an) and $T ( n ) = \\Omega ( { \\sqrt { n } } )$",
-    "T(n) = O(\u221an) and T(n) = \u03a9(1)",
+    "T(n) = O(√n) and $T ( n ) = \\Omega ( { \\sqrt { n } } )$",
+    "T(n) = O(√n) and T(n) = Ω(1)",
     "T(n) = O(n) and $T ( n ) = \\Omega ( { \\sqrt { n } } )$",
     "None of the above"
    ],
@@ -6519,7 +6528,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-43-19",
@@ -6561,7 +6572,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-43-20",
@@ -6597,7 +6610,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-43-21",
@@ -6716,7 +6731,6 @@
    "options": [
     "$P\\rightarrow(i\\dot{\\imath})~~~(Q\\rightarrow(\\dot{\\imath}v)~~~r\\rightarrow(\\dot{\\imath})~~~{\\cal S}\\rightarrow\\ (\\dot{\\imath}\\dot{\\imath})$",
     "$P\\rightarrow(i v)~~~~\\bar{Q}\\rightarrow\\left(i\\dot{x}\\dot{t}\\right)~~~r\\rightarrow\\left(\\dot{t}\\dot{x}\\dot{t}\\right)~~~S\\longrightarrow\\left(i\\dot{x}\\dot{x}\\right)$",
-    "${\\cal P}\\longrightarrow\\left(\\dot{x}\\dot{x}\\dot{}\\right)\\;\\;\\;\\mathrm{~}\\cal Q\\longrightarrow\\left(\\dot{x}{\\upsilon}\\right)\\;\\;\\;\\;\\eta\\longrightarrow\\left(\\dot{x}\\dot{}\\dot{}\\dot{}\\right)\\;\\;\\;\\mathrm{~}\\mathrm{~}\\mathrm{~}\\mathrm{~}\\mathrm{~}\\mathrm{~}\\mathrm{~}\\mathrm{~}\\mathrm{~}\\dot{}\\longrightarrow\\left(\\dot{\\imath}\\right)$",
     "$P\\rightarrow(i v)~~~~\\alpha>(i\\dot{x}i)~~~~r\\rightarrow\\left(\\dot{x}i\\right)~~~~S\\longrightarrow(i)$"
    ],
    "origin": {
@@ -6739,7 +6753,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-43-25",
@@ -6862,10 +6878,10 @@
    "year": 2026,
    "text": "Consider the following recurrence relations: For all $n > 1$ $\\begin{array}{l} T _ {1} (n) = 4 T _ {1} \\left(\\frac {n}{2}\\right) + T _ {2} (n) \\\\ T _ {2} (n) = 5 T _ {2} \\left(\\frac {n}{4}\\right) + \\Theta \\left(\\log_ {2} n\\right) \\\\ \\end{array}$ Assume that for all $n \\leq 1, T _ { 1 } ( n ) = 1 \\mathsf { a n d } T _ { 2 } ( n ) = 1$ Which one of the following options is correct?",
    "options": [
-    "T1 (n) = \u0398 (n2 log2 n)",
+    "T1 (n) = Θ (n2 log2 n)",
     "$T _ { 1 } ( n ) = \\Theta \\left( n ^ { 2 } \\right)$",
     "$T _ { 1 } ( n ) = \\Theta \\left( n ^ { \\log _ { 4 } 5 } \\right)$",
-    "T1 (n) = \u03b8 (nlog4 5 log2 n)"
+    "T1 (n) = θ (nlog4 5 log2 n)"
    ],
    "answer": [
     0
@@ -7281,10 +7297,10 @@
    "year": 2025,
    "text": "A meld operation on two instances of a data structure combines them into one single instance of the same data structure. Consider the following data structures: P. Unsorted doubly linked list with pointers to the head node and tail node of the list. Q. Min-heap implemented using an array. R. Binary Search Tree. Which ONE of the following options gives the worst-case time complexities for meld operation on instances of size of these data structures?",
    "options": [
-    "P : \u0398(1), Q : \u0398(n), R : \u0398(n",
-    "P: \u0398(1), Q : \u0398(n log n), R : \u0398(n)",
-    "P: \u0398(n), Q : \u0398(nlog n), R : \u0398 (n2)",
-    "P: \u0398(1), Q : \u0398(n), R : \u0398(n log n)"
+    "P : Θ(1), Q : Θ(n), R : Θ(n",
+    "P: Θ(1), Q : Θ(n log n), R : Θ(n)",
+    "P: Θ(n), Q : Θ(nlog n), R : Θ (n2)",
+    "P: Θ(1), Q : Θ(n), R : Θ(n log n)"
    ],
    "answer": [
     0
@@ -7427,7 +7443,7 @@
     "1-a-c-2",
     "1-f-b-2",
     "1-b-2",
-    "1- f-e \u22122"
+    "1- f-e −2"
    ],
    "answer": [
     1
@@ -7470,6 +7486,862 @@
     ],
     "topic_source": "section"
    }
+  },
+  {
+   "id": "mineru-filter1-volume2-1-1-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1994,
+   "text": "An array contains integers in locations $A [ 0 ], A [ 1 ], \\dotsc A [ n - 1 ]$. It is required to shift the elements of the array cyclically to the left by places, where $1 \\overset { \\cdot } { \\leq } K \\leq n \\overset { \\cdot } { - } 1$. An incomplete algorithm for doing this in linear time, without using another array is given below. Complete the algorithm by filling in the blanks. Assume all variables are suitably declared.",
+   "options": [],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "min:=n;\ni=0;\nwhile ______ do\nbegin\n    temp:=A[i];\n    j:=i;\n    while ______ do\n    begin\n        A[j]:=________;\n        j:=(j+K) mod n;\n        if j<min then\n            min:=j;\n        end;\n        A[(n+i-K) mod n]:=________;\n        i:=________;\n    end;"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.1.2",
+    "exam": "GATE CSE 1994 | Question: 7",
+    "section": "",
+    "paper_question": "7",
+    "tags": [
+     "gate1994",
+     "algorithms",
+     "normal",
+     "algorithm-design",
+     "fill-in-the-blanks"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-1-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2006,
+   "text": "Given two arrays of numbers $a _ { 1 }, \\ldots, a _ { n }$ and $b _ { 1 }, \\ldots, b _ { n }$ where each number is or, the fastest algorithm to find the largest span such that $a _ { i } + a _ { i + 1 } + \\cdots + a _ { j } = b _ { i } + b _ { i + 1 } + \\cdots + b _ { j }$ or report that there is not such span,",
+   "options": [
+    "Takes $O ( 3 ^ { n } )$ and $\\Omega ( 2 ^ { n } )$ time if hashing is permitted",
+    "Takes $O ( n ^ { 3 } )$ and $\\Omega ( n ^ { 2 . 5 } )$ time in the key comparison mode",
+    "Takes time and space",
+    "Takes $O ( { \\sqrt { n } } )$ time only if the sum of the elements is an even number"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.1.4",
+    "exam": "GATE CSE 2006 | Question: 54",
+    "section": "",
+    "paper_question": "54",
+    "tags": [
+     "gatecse-2006",
+     "algorithms",
+     "normal",
+     "algorithm-design",
+     "time-complexit"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-1-5",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2014,
+   "text": "There are bags labeled to. All the coins in a given bag have the same weight. Some bags have coins of weight gm, others have coins of weight gm. I pick coins respectively from bags to Their total weight comes out to gm. Then the product of the labels of the bags having gm coins is",
+   "options": [],
+   "answer_value": 12.0,
+   "tolerance": 0,
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.1.5",
+    "exam": "GATE CSE 2014 | Set 1 | Question: 37",
+    "section": "",
+    "paper_question": "37",
+    "tags": [
+     "gatecse-2014-set1",
+     "algorithms",
+     "numerical-answers",
+     "normal",
+     "algorithm-design"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-1-7",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2021,
+   "text": "Define $R _ { n }$ to be the maximum amount earned by cutting a rod of length meters into one or more pieces of integer length and selling them. For $i > 0$, let denote the selling price of a rod whose length is meters. Consider the array of prices: $\\mathrm{p} [ 1 ] = 1, \\mathrm{p} [ 2 ] = 5, \\mathrm{p} [ 3 ] = 8, \\mathrm{p} [ 4 ] = 9, \\mathrm{p} [ 5 ] = 1 0, \\mathrm{p} [ 6 ] = 1 7, \\mathrm{p} [ 7 ] = 1 8$ Which of the following statements is/are correct about $R _ { 7 }?$",
+   "options": [
+    "R7 = 18",
+    "$R _ { 7 } = 1 9$",
+    "$R _ { 7 }$ is achieved by three different solutions",
+    "$R _ { 7 }$ cannot be achieved by a solution consisting of three pieces"
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.1.7",
+    "exam": "GATE CSE 2021 | Set 1 | Question: 40",
+    "section": "",
+    "paper_question": "40",
+    "tags": [
+     "gatecse-2021-set1",
+     "multiple-selects",
+     "algorithms",
+     "algorithm-design",
+     "two-marks"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-1-8",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2024,
+   "text": "Consider an array that contains positive integers. A subarray of is defined to be a sequence of array locations with consecutive indices. The code snippet given below has been written to compute the length of the longest subarray of that contains at most two distinct integers. The code has two missing expressions labelled and. Which one of the following options gives the CORRECT missing expressions? (Hint: At the end of the -th iteration, the value of is the length of the longest subarray ending with that contains all equal values, and is the length of the longest subarray ending with that contains at most two distinct values.)",
+   "options": [
+    "(P) len1 + 1 (Q) len2 + 1",
+    "(Q) len1 + 1",
+    "(Q) len2 + 1",
+    "(P) len2 + 1 (Q) len1 + 1"
+   ],
+   "answer": [
+    1
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "int first=0, second=0, len1=0, len2=0, maxlen=0;\nfor (int i=0; i < n; i++) {\n    if (X[i] == first) {\n        len2++; len1++;\n    } else if (X[i] == second) {\n        len2++;\n        len1 = ______(P) ______;\n    second = first;"
+    },
+    {
+     "lang": "txt",
+     "code": "} else {\n    len2 = ____(Q)____;\n    len1 = 1; second = first;\n}\nif (len2 > maxlen) {\n    maxlen = len2;\n}\nfirst = X[i];\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.1.8",
+    "exam": "GATE CSE 2024 | Set 2 | Question: 32",
+    "section": "",
+    "paper_question": "32",
+    "tags": [
+     "gatecse-2024-set2",
+     "algorithms",
+     "algorithm-design",
+     "two-marks"
+    ],
+    "topic_score": 3.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-2-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1997,
+   "text": "The correct matching for the following pairs is | A. All pairs shortest path | 1. Greedy\n| B. Quick Sort | 2. Depth-First Search\n| C. Minimum weight spanning tree | 3. Dynamic Programming\n| D. Connected Components | 4. Divide and Conquer",
+   "options": [
+    "A-2 B-4 C-1 D-3",
+    "A-3 B-4 C-1 D-2",
+    "A-3 B-4 C-2 D-1",
+    "A-4 B-1 C-2 D-3"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.2.5",
+    "exam": "GATE CSE 1997 | Question: 1.5",
+    "section": "Algorithm Design Techniques",
+    "paper_question": "1.5",
+    "tags": [
+     "gate1997",
+     "algorithms",
+     "normal",
+     "algorithm-design-techniques",
+     "easy",
+     "match-the-following"
+    ],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-2-6",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2008,
+   "text": "Which one of the following algorithm design techniques is used in finding all pairs of shortest distances in a graph?",
+   "options": [
+    "Dynamic programming",
+    "Backtracking",
+    "Greedy",
+    "Divide and Conquer"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.2.6",
+    "exam": "GATE CSE 1998 | Question: 1.21, ISRO2008-16",
+    "section": "Algorithm Design Techniques",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-2-9",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2017,
+   "text": "Consider the following table: | Algorithms | Design Paradigms\n| (P) | Kruskal | (i) | Divide and Conquer\n| (Q) | Quicksort | (ii) | Greedy\n| (R) | Floyd-Warshall | (iii) | Dynamic Programming Match the algorithms to the design paradigms they are based on.",
+   "options": [
+    "$( P ) ( i i ) , ( Q ) ( i i i ) , ( R ) ( i )$",
+    "(P) ↔ (iii), (Q) ↔ (i), (R) ↔ (ii)",
+    "(P) ↔ (ii), (Q) ↔ (i), (R) ↔ (iii)",
+    "$( P ) ( i ) , ( Q ) ( i i ) , ( R ) ( i i i )$"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.2.9",
+    "exam": "GATE CSE 2017 | Set 1 | Question: 05",
+    "section": "Algorithm Design Techniques",
+    "paper_question": "05",
+    "tags": [
+     "gatecse-2017-set1",
+     "algorithms",
+     "algorithm-design-techniques",
+     "easy",
+     "match-the-following"
+    ],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-19-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The minimum number of record movements required to merge five files A (with records), B (with records), C (with records), D (with records) and E (with records) is:",
+   "options": [
+    "gate1999 algorithms normal greedy-algorithms"
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.19.1",
+    "exam": "GATE CSE 1999 | Question: 2.20",
+    "section": "Greedy Algorithms",
+    "paper_question": "2.20",
+    "tags": [],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "3 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "greedy",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume2-1-30-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "For merging two sorted lists of sizes and into a sorted list of size, we require comparisons of",
+   "options": [
+    "O(log m + log n)"
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.30.1",
+    "exam": "GATE CSE 1995 | Question: 1.16",
+    "section": "Merging",
+    "paper_question": "1.16",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "3 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "searching-sorting",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "List the invariant assertions at points and in program given below:",
+   "options": [],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "Program division (input, output)\nConst\n  dividend = 81;\n  divisor = 9;\nVar remainder, quotient:interger\nbegin\n  (*(dividend >= 0) AND (divisor > 0)*)\n  remainder := dividend;\n  quotient := 0;\n  (*A*)\nWhile (remainder >= 0) do\nbegin (*B*)\n  quotient := quotient + 1;\n  remainder := remainder - divisor;\n  (*C*)\nend;\n  (*D*)\n  quotient := quotient - 1;\n  remainder := remainder + divisor;\n  (*E*)\nend"
+    },
+    {
+     "lang": "txt",
+     "code": "gate1987 programming loop-invariants descriptive"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.1",
+    "exam": "GATE CSE 1987 | Question: 7a",
+    "section": "Loop Invariants",
+    "paper_question": "7a",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Below figure is the flow-chart corresponding to a program to calculate the of two integers, and respectively, $( M, N > 0 )$ Use assertions at the cut point $C _ { 1 }$ $C _ { 2 }$ and $C _ { 3 }$ to prove that the flow-chart is correct.",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume2-a9d8faf1baef544402be791a.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 283,
+     "bbox": [
+      94,
+      70,
+      416,
+      281
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph TD\n  START[\"START\"] --> M[\"M,N,K,L\\nInteger\\nL ← M, K ← N\"]\n  M --> C1[\"C1\"]\n  C1 --> K{\"K ≠ L\"}\n  K -->|F| C3[\"C3\"]\n  K -->|T| K\">L{\"K>L\"}\n  K -->|F| L[\"L ← L - K\"]\n  L --> C2[\"C2\"]\n  C2 --> C1\n  C3 --> RETURN[\"RETURN K\"]\n  K -->|T| K\">L\n  K -->|F| L\n  L --> C2\n  C2 --> C2"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.2",
+    "exam": "GATE CSE 1988 | Question: 6ii",
+    "section": "Loop Invariants",
+    "paper_question": "6ii",
+    "tags": [],
+    "page_idx": 283,
+    "bbox": [
+     94,
+     70,
+     416,
+     281
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-3",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the two program segments below: Under what conditions are these two programs equivalent? Treat as any sequence of statements and as a function.",
+   "options": [],
+   "code_blocks": [
+    {
+     "lang": "elixir",
+     "code": "a. for\n    i:=1 to f(x) by 1 do\n    S\nend"
+    },
+    {
+     "lang": "matlab",
+     "code": "b. i:=1;\nWhile i<=f(x) do\n    S\n    i:=i+1\nend"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.3",
+    "exam": "GATE CSE 1988 | Question: 8ii",
+    "section": "Loop Invariants",
+    "paper_question": "8ii",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-4",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1991,
+   "text": "Consider the following PASCAL program segment: An appropriate loop-invariant for the while-loop is",
+   "options": [],
+   "code_blocks": [
+    {
+     "lang": "vhdl",
+     "code": "if i mod 2 = 0 then\n    while i >= 0 do\n    begin\n        i := i div 2;\n        if i mod 2 <> 0 then i := i - 1;\n        else i := i - 2;\n    end;"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.4",
+    "exam": "GATE CSE 1991 | Question: 1,vi",
+    "section": "Loop Invariants",
+    "paper_question": "1,vi",
+    "tags": [
+     "gate1991",
+     "programming",
+     "loop-invariants",
+     "normal",
+     "fill-in-the-blanks"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2004,
+   "text": "Consider the following program fragment for reversing the digits in a given integer to obtain a new integer. Let. n = n / 1 0; The loop invariant condition at the end of the $i ^ { t h }$ iteration is:",
+   "options": [
+    "n = d1 d2 . . . dm−i and rev = dm dm−1 . . . dm−i+1",
+    "n = dm−i+1 . . . dm−1 dm or rev = dm−i . . . d2 d1",
+    "n = d1 d2 . . . dm or rev = dm . . . d2 d1"
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "int n, rev;\nrev = 0;\nwhile(n > 0) {\n    rev = rev * 10 + n%10;"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.5",
+    "exam": "GATE CSE 2004 | Question: 32",
+    "section": "Loop Invariants",
+    "paper_question": "32",
+    "tags": [
+     "gatecse-2004",
+     "programming",
+     "loop-invariants",
+     "normal"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-6",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2015,
+   "text": "Consider the following pseudo code, where and are positive integers. The post condition that needs to be satisfied after the program terminates is",
+   "options": [
+    "{r = qx + y∧r < y}",
+    "{x = qy + r ∧r < y} c. {y = qx + r ∧ 0 < r < y}",
+    "{q + 1 < r − y ∧y > 0}"
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "begin\n    q := 0\n    r := x\n    while r ≥ y do\n        begin\n        r := r - y\n        q := q + 1\n    end\nend"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.6",
+    "exam": "GATE CSE 2015 | Set 1 | Question: 33",
+    "section": "Loop Invariants",
+    "paper_question": "33",
+    "tags": [
+     "gatecse-2015-set1",
+     "programming",
+     "loop-invariants",
+     "normal"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "option letters A,B,D are not a run from A",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-7",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2016,
+   "text": "The following function computes $X ^ { Y }$ for positive integers and. Which one of the following conditions is TRUE before every iteration of the loop?",
+   "options": [
+    "XY = ab",
+    "(res \\* a)Y = (res \\* X)b",
+    "XY = res \\* ab",
+    "XY = (res \\* a)b"
+   ],
+   "answer": [
+    2
+   ],
+   "code_blocks": [
+    {
+     "lang": "lisp",
+     "code": "int exp (int X, int Y) {\n    int res =1, a = X, b = Y;\n\n    while (b != 0) {\n        if (b % 2 == 0) {a = a * a; b = b/2; }\n        else        {res = res * a; b = b - 1; }\n    }\n    return res;\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.7",
+    "exam": "GATE CSE 2016 | Set 2 | Question: 35",
+    "section": "Loop Invariants",
+    "paper_question": "35",
+    "tags": [
+     "gatecse-2016-set2",
+     "programming",
+     "loop-invariants",
+     "normal"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-8",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2017,
+   "text": "Consider the C program fragment below which is meant to divide by using repeated subtractions. The variables,, and are all unsigned int. Which of the following conditions on the variables and before the execution of the fragment will ensure that the loop terminated in a state satisfying the condition $\\begin{array} { r } { x = = ( y * q + r )? } \\end{array}$",
+   "options": [
+    "$\\left( q = = r \\right) \\& \\& \\left( r = = 0 \\right)$",
+    "$\\left( \\bar { x } > 0 \\right) \\bar { \\& } \\& \\left( r = - x \\right) \\bar { \\& } \\& \\left( y > 0 \\right)$ c. (q == 0) && (r == x) && (y > 0)",
+    "(q == 0) && (y > 0)"
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "while (r >= y) {\n    r=r-y;\n    q=q+1;\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.8",
+    "exam": "GATE CSE 2017 | Set 2 | Question: 37",
+    "section": "Loop Invariants",
+    "paper_question": "37",
+    "tags": [
+     "gatecse-2017-set2",
+     "programming",
+     "loop-invariants"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "option letters A,B,D are not a run from A",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The integer value printed by the program given below is",
+   "options": [],
+   "answer_value": 7.0,
+   "tolerance": 0,
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include<stdio.h>\n\nint funcp(){\n    static int x = 1;\n    x++;\n    return x;\n}\n\nint main(){\n    int x,y;\n    x = funcp();\n    y = funcp()+x;\n    printf(\"%d\\n\", (x+y));\n    return 0;\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.2",
+    "exam": "GATE CSE 2023 | Question: 25",
+    "section": "Loop Invariants",
+    "paper_question": "25",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-5",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following C program: The value printed by the given program is \\_. (Answer in integer)",
+   "options": [],
+   "answer_value": 46.0,
+   "tolerance": 0.0,
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include <stdio.h>\nint gate (int n) {\nint d, t, newnum, turn;"
+    },
+    {
+     "lang": "txt",
+     "code": "newnum = turn = 0; t=1;\nwhile (n>=t) t *= 10;\nt /=10;\nwhile (t>0) {\nd = n/t;\nn = n%t;\nt /= 10;\nif (turn) newnum = 10*newnum + d;\nturn = (turn + 1) % 2;\n}\nreturn newnum;\n}\nint main () {\nprintf (\"%d\", gate(14362));\nreturn 0;\n}"
+    },
+    {
+     "lang": "txt",
+     "code": "gatecse2025-set1 programming-in-c output numerical-answers two-marks"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.5",
+    "exam": "GATE CSE 2025 | Set 1 | Question: 53",
+    "section": "Loop Invariants",
+    "paper_question": "53",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-6",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The output of the given C code segment is. (Answer in integer)",
+   "options": [],
+   "answer_value": 21.0,
+   "tolerance": 0.0,
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "int x=126,y=105;\ndo {\n    if(x>y) x=x-y;\n    else y=y-x;\n} while(x!=y);\nprintf(\"%d\",x);"
+    },
+    {
+     "lang": "txt",
+     "code": "gatecse2025-set2 programming-in-c output numerical-answers one-mark"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.6",
+    "exam": "GATE CSE 2025 | Set 2 | Question: 23",
+    "section": "Loop Invariants",
+    "paper_question": "23",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-7",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following C program: The output of the given C program is \\_. (Answer in integer)",
+   "options": [],
+   "answer_value": 46.0,
+   "tolerance": 0.0,
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include <stdio.h>\n\nint g(int n) {\n    return (n+10);\n}\n\nint f(int n) {\n    return g(n*2);\n}\n\nint main() {\n    int sum, n;\n    sum=0;\n    for (n=1; n<3; n++)\n        sum += g(f(n));\n    printf (\"%d\", sum);\n    return 0;\n}"
+    },
+    {
+     "lang": "txt",
+     "code": "gatecse2025-set2 programming-in-c output numerical-answers two-marks"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.7",
+    "exam": "GATE CSE 2025 | Set 2 | Question: 53",
+    "section": "Loop Invariants",
+    "paper_question": "53",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-8",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following program in C: The output of the program is. (answer in integer) Note: Assume that the program compiles and runs successfully.",
+   "options": [],
+   "answer_value": 9.0,
+   "tolerance": 0.0,
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include <stdio.h>\nvoid func(int i, int j) {\n    if(i < j) {\n        int i = 0;"
+    },
+    {
+     "lang": "c",
+     "code": "while (i < 10) {\n    j += 2;\n    i++;\n}\n}\nprintf(\"%d\", i);\n}\nint main() {\n    int i = 9, j = 10;\n    func(i, j);\n    return 0;\n}"
+    },
+    {
+     "lang": "txt",
+     "code": "gatecse-2026-set1 programming-in-c output numerical-answers one-mark"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.8",
+    "exam": "GATE CSE 2026 | Set 1 | Question: 24",
+    "section": "Loop Invariants",
+    "paper_question": "24",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "asymptotics"
   }
  ]
 }

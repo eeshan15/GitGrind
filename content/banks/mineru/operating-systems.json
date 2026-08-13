@@ -251,7 +251,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-17-6",
@@ -288,7 +290,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-17-7",
@@ -1252,7 +1256,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-7-16",
@@ -1427,7 +1433,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-7-21",
@@ -1645,7 +1653,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-7-28",
@@ -1916,13 +1926,8 @@
    "difficulty": "medium",
    "year": 2001,
    "text": "Consider a disk with the tracks numbered from to rotating at rpm. The number of sectors per track is and the time to move the head between two successive tracks is millisecond.",
-   "options": [
-    "Consider a set of disk requests to read data from tracks and . Assuming that the elevator algorithm is used to schedule disk requests, and the head is initially at track moving up (towards larger track numbers), what is the total seek time for servicing the requests?",
-    "Consider an initial set of arbitrary disk requests and assume that no new disk requests arrive while servicing these requests. If the head is initially at track and the elevator algorithm is used to schedule disk requests, what is the worse case time to complete all the requests?"
-   ],
-   "answer": [
-    0
-   ],
+   "options": [],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -1939,7 +1944,10 @@
      "descriptive"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-5-8-7",
@@ -2191,7 +2199,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-8-15",
@@ -2379,7 +2389,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-9-4",
@@ -2509,7 +2521,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-10-1",
@@ -2827,9 +2841,7 @@
     "implies connecting programs through a pipe",
     "None of the above"
    ],
-   "answer": [
-    1
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -2844,7 +2856,10 @@
      "inter-process-communication"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-5-17-1",
@@ -3071,7 +3086,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-17-7",
@@ -3080,7 +3097,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider allocation of memory to a new process. Assume that none of the existing holes in the memory wil exactly fit the process\u2019s memory requirement. Hence, a new hole of smaller size will be created if allocation is made in any of the existing holes. Which one of the following statement is TRUE?",
+   "text": "Consider allocation of memory to a new process. Assume that none of the existing holes in the memory wil exactly fit the process’s memory requirement. Hence, a new hole of smaller size will be created if allocation is made in any of the existing holes. Which one of the following statement is TRUE?",
    "options": [
     "The hole created by first fit is always larger than the hole created by next fit.",
     "The hole created by worst fit is always larger than the hole created by first fit.",
@@ -3332,7 +3349,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1995,
-   "text": "Which of the following page replacement algorithms suffers from Belady\u2019s anamoly?",
+   "text": "Which of the following page replacement algorithms suffers from Belady’s anamoly?",
    "options": [
     "Optimal replacement",
     "LRU",
@@ -3478,9 +3495,7 @@
     "decreases the degree of",
     "implies excessive page I/O"
    ],
-   "answer": [
-    2
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -3495,7 +3510,10 @@
      "easy"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-5-20-9",
@@ -3704,7 +3722,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-20-15",
@@ -3740,7 +3760,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-20-16",
@@ -4079,7 +4101,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Consider a three-level page table to translate a bit virtual address to a physical address as shown below: \\- ------------\u00b7 39 \u2013 bit virtual address --------------> | Level 1offset | Level 2offset | Level 3offset | Pageoffset\n| 9 bits | 9 bits | 9 bits | 12 bits The page size is bytes and page table entry size at every level is bytes. A process is currently using bytes virtual memory which is mapped to of physical memory. The minimum amount of memory required for the page table of across all levels is.",
+   "text": "Consider a three-level page table to translate a bit virtual address to a physical address as shown below: \\- ------------· 39 – bit virtual address --------------> | Level 1offset | Level 2offset | Level 3offset | Pageoffset\n| 9 bits | 9 bits | 9 bits | 12 bits The page size is bytes and page table entry size at every level is bytes. A process is currently using bytes virtual memory which is mapped to of physical memory. The minimum amount of memory required for the page table of across all levels is.",
    "options": [],
    "answer_value": 4108.0,
    "tolerance": 0.0,
@@ -4159,7 +4181,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-20-30",
@@ -4232,7 +4256,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-22-1",
@@ -4675,7 +4701,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-23-8",
@@ -4771,7 +4799,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1998,
-   "text": "In a computer system where the \u2018best-fit\u2019 algorithm is used for allocating \u2018jobs\u2019 to \u2018memory partitions\u2019, the following situation was encountered: | Partitions size in KB | 4K 8K 20K 2K\n| Job sizes in KB | 2K 14K 3K 6K 6K 10K 20K 2K\n| Time for execution | 4 10 2 1 4 1 8 6 When will the job complete?",
+   "text": "In a computer system where the ‘best-fit’ algorithm is used for allocating ‘jobs’ to ‘memory partitions’, the following situation was encountered: | Partitions size in KB | 4K 8K 20K 2K\n| Job sizes in KB | 2K 14K 3K 6K 6K 10K 20K 2K\n| Time for execution | 4 10 2 1 4 1 8 6 When will the job complete?",
    "options": [],
    "answer_value": 19.0,
    "tolerance": 0,
@@ -4931,7 +4959,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-23-15",
@@ -4967,7 +4997,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-23-16",
@@ -5015,10 +5047,10 @@
    "year": 2007,
    "text": "Group 1 contains some CPU scheduling algorithms and Group 2 contains some applications. Match entries in Group 1 to entries in Group 2. | Group I | Group II\n| (P) | Gang Scheduling | (1) | Guaranteed Scheduling\n| (Q) | Rate Monotonic Scheduling | (2) | Real-time Scheduling\n| (R) | Fair Share Scheduling | (3) | Thread Scheduling",
    "options": [
-    "P\u22123;Q \u22122;R \u22121",
-    "P \u2212 1; Q \u2212 2; R \u2212 3",
-    "P\u22122;Q \u22123;R-1",
-    "P\u22121;Q \u22123;R\u22122"
+    "P−3;Q −2;R −1",
+    "P − 1; Q − 2; R − 3",
+    "P−2;Q −3;R-1",
+    "P−1;Q −3;R−2"
    ],
    "answer": [
     0
@@ -5200,7 +5232,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-23-22",
@@ -5812,10 +5846,10 @@
    "year": 2024,
    "text": "Consider a single processor system with four processes and, represented as given below, where for each process the first value is its arrival time, and the second value is its burst time. $\\mathrm{A} (0, 1 0), \\mathrm{B} (2, 6), \\mathrm{C} (4, 3), \\text {and} \\mathrm{D} (6, 7)$. Which one of the following options gives the average waiting times when preemptive Shortest Remaining Time First and Non-Preemptive Shortest Job First scheduling algorithms are applied to the processes?",
    "options": [
-    "SRTF = 6, NP \u2212 SJF = 7",
-    "SRTF = 6, NP \u2212 SJF = 7.5",
-    "SRTF = 7, NP \u2212 SJF = 7.5",
-    "SRTF = 7, NP \u2212 SJF = 8.5"
+    "SRTF = 6, NP − SJF = 7",
+    "SRTF = 6, NP − SJF = 7.5",
+    "SRTF = 7, NP − SJF = 7.5",
+    "SRTF = 7, NP − SJF = 8.5"
    ],
    "answer": [
     1
@@ -5969,7 +6003,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-23-46",
@@ -6122,9 +6158,7 @@
     "A program segment that often causes unexpected system crashes.",
     "A program segment where shared resources are accessed."
    ],
-   "answer": [
-    3
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -6138,7 +6172,10 @@
      "process-synchronization"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-5-24-2",
@@ -6372,7 +6409,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-5-24-9",
@@ -6687,11 +6727,11 @@
    "code_blocks": [
     {
      "lang": "c",
-     "code": "int R = 0, W = 0;\n\nReader () {\nL1: wait (mutex);\nif (W == 0) {\n    R = R + 1;\n    \u25a1 ________(1)\n}\nelse {\n    \u25a1 ________(2)\n    goto L1;\n}\n.../* do the read*/\nwait (mutex);\nR = R - 1;\nsignal (mutex);\n}"
+     "code": "int R = 0, W = 0;\n\nReader () {\nL1: wait (mutex);\nif (W == 0) {\n    R = R + 1;\n    □ ________(1)\n}\nelse {\n    □ ________(2)\n    goto L1;\n}\n.../* do the read*/\nwait (mutex);\nR = R - 1;\nsignal (mutex);\n}"
     },
     {
      "lang": "txt",
-     "code": "Writer () {\nL2: wait (mutex);\nif (\u2610) { ________(3)\n    signal (mutex);\n    goto L2;\n}\nW=1;\nsignal (mutex);\n...../*do the write*/\nwait( mutex);\nW=0;\nsignal (mutex);\n}"
+     "code": "Writer () {\nL2: wait (mutex);\nif (☐) { ________(3)\n    signal (mutex);\n    goto L2;\n}\nW=1;\nsignal (mutex);\n...../*do the write*/\nwait( mutex);\nW=0;\nsignal (mutex);\n}"
     }
    ],
    "origin": {
@@ -6860,7 +6900,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2003,
-   "text": "Suppose we want to synchronize two concurrent processes and using binary semaphores and. The code for the processes and is shown below. | Process P: | Process Q:\n| while(1) {W:print \u20180\u2019;print \u20180\u2019;X:} | while(1) {Y:print \u20181\u2019;print \u20181\u2019;Z:} Synchronization statements can be inserted only at points and Which of the following will ensure that the output string never contains a substring of the form $0 1 ^ { n } 0$ and $\\mathbf { 1 0 } ^ { n } \\mathbf { 1 }$ where is odd?",
+   "text": "Suppose we want to synchronize two concurrent processes and using binary semaphores and. The code for the processes and is shown below. | Process P: | Process Q:\n| while(1) {W:print ‘0’;print ‘0’;X:} | while(1) {Y:print ‘1’;print ‘1’;Z:} Synchronization statements can be inserted only at points and Which of the following will ensure that the output string never contains a substring of the form $0 1 ^ { n } 0$ and $\\mathbf { 1 0 } ^ { n } \\mathbf { 1 }$ where is odd?",
    "options": [
     "at at at at and initially",
     "at at at at and initially",
@@ -6886,7 +6926,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-24-26",
@@ -6934,7 +6976,7 @@
    "text": "The atomic fetch-and-set instruction unconditionally sets the memory location to and fetches the old value of in without allowing any intervening access to the memory location. Consider the following implementation of and functions on a binary semaphore. Which one of the following is true?",
    "options": [
     "The implementation may not work if context switching is disabled in",
-    "Instead of using fetch-and \u2013set, a pair of normal load/store can be used",
+    "Instead of using fetch-and –set, a pair of normal load/store can be used",
     "The implementation of is wrong",
     "The code does not implement a binary semaphore"
    ],
@@ -7161,7 +7203,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2010,
-   "text": "The following program consists of concurrent processes and binary semaphores. The semaphores are initialized as and | Process P0 | Process P1 | Process P2\n| while (true) { wait (S0); print \u20180\u2019; release (S1); release (S2); } | wait (S1); release (S0); | wait (S2); release (S0); How many times will process print ' '?",
+   "text": "The following program consists of concurrent processes and binary semaphores. The semaphores are initialized as and | Process P0 | Process P1 | Process P2\n| while (true) { wait (S0); print ‘0’; release (S1); release (S2); } | wait (S1); release (S0); | wait (S2); release (S0); How many times will process print ' '?",
    "options": [
     "At least twice",
     "Exactly twice",
@@ -7678,7 +7720,9 @@
    "answer": [
     1,
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-24-46",
@@ -7803,7 +7847,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-24-49",
@@ -8053,7 +8099,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-25-4",
@@ -8157,7 +8205,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "A computer system uses the Banker\u2019s Algorithm to deal with deadlocks. Its current state is shown in the table below, where,, are processes, and,, are resources types. Maximum Need | | R0 | R1 | R2\n| P0 | 4 | 1 | 2\n| P1 | 1 | 5 | 1\n| P2 | 1 | 2 | 3 Current Allocation | | R0 | R1 | R2\n| P0 | 1 | 0 | 2\n| P1 | 0 | 3 | 1\n| P2 | 1 | 0 | 2 Available | R0 | R1 | R2\n| 2 | 2 | 0",
+   "text": "A computer system uses the Banker’s Algorithm to deal with deadlocks. Its current state is shown in the table below, where,, are processes, and,, are resources types. Maximum Need | | R0 | R1 | R2\n| P0 | 4 | 1 | 2\n| P1 | 1 | 5 | 1\n| P2 | 1 | 2 | 3 Current Allocation | | R0 | R1 | R2\n| P0 | 1 | 0 | 2\n| P1 | 0 | 3 | 1\n| P2 | 1 | 0 | 2 Available | R0 | R1 | R2\n| 2 | 2 | 0",
    "options": [
     "Show that the system can be in this state",
     "What will the system do on a request by process for one unit of resource type ?"
@@ -8210,7 +8258,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-25-8",
@@ -8279,7 +8329,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-25-10",
@@ -8580,7 +8632,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-25-22",
@@ -8923,7 +8977,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-28-4",
@@ -8959,7 +9015,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-28-5",
@@ -9075,7 +9133,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2022,
-   "text": "Consider the following threads, $\\mathrm { T } _ { 1 }, \\mathrm { T } _ { 2 }$ and $\\mathrm { T _ { 3 } }$ executing on a single processor, synchronized using three binary semaphore variables, $\\mathrm { S _ { 1 }, S _ { 2 } }$ and $\\mathrm { S _ { 3 } }$ operated upon using standard and The threads can be context switched in any order and at any time. | $T_1$ | $T_2$ | $T_3$\n| while(true){wait( $S_3$ );print(\u201cC\u201d);signal( $S_2$ );} | while(true){wait( $S_1$ );print(\u201cB\u201d);signal( $S_3$ );} | while(true){wait( $S_2$ );print(\u201cA\u201d);signal( $S_1$ );} Which initialization of the semaphores would print the sequence",
+   "text": "Consider the following threads, $\\mathrm { T } _ { 1 }, \\mathrm { T } _ { 2 }$ and $\\mathrm { T _ { 3 } }$ executing on a single processor, synchronized using three binary semaphore variables, $\\mathrm { S _ { 1 }, S _ { 2 } }$ and $\\mathrm { S _ { 3 } }$ operated upon using standard and The threads can be context switched in any order and at any time. | $T_1$ | $T_2$ | $T_3$\n| while(true){wait( $S_3$ );print(“C”);signal( $S_2$ );} | while(true){wait( $S_1$ );print(“B”);signal( $S_3$ );} | while(true){wait( $S_2$ );print(“A”);signal( $S_1$ );} Which initialization of the semaphores would print the sequence",
    "options": [
     "$\\mathbf { S } _ { 1 } = \\mathbf { 1 } ; \\mathbf { S } _ { 2 } = \\mathbf { 1 } ; \\mathbf { S } _ { 3 } = \\mathbf { 1 }$",
     "S1 = 1; S2 = 1; S3 = 0",
@@ -9157,8 +9215,7 @@
    "options": [
     "$\\left\\lfloor\\left\\lfloor\\begin{array}{c}{{}}\\\\ {{}}\\\\ {{}}\\end{array}\\right\\lfloor\\begin{array}{c}{{}}\\\\ {{}}\\\\ {{}}\\end{array}\\right.$",
     "$\\left\\lceil\\begin{array}{c}{{}}\\\\ {{}}\\\\ {{}}\\end{array}\\right\\rceil$",
-    "$\\left\\lceil\\left.\\atop\\right|_{\\begin{array}{l}{}$",
-    "$\\left[\\begin{array}{l l l l l l l l l l l}{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}\\\\ {{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}\\\\ {{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}\\end{array}\\right]$"
+    "$\\left\\lceil\\left.\\atop\\right|_{\\begin{array}{l}{}$"
    ],
    "code_blocks": [
     {
@@ -9188,7 +9245,9 @@
     0,
     1,
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-28-11",
@@ -9900,7 +9959,7 @@
     "The segment table is often too large to fit in one page",
     "Each segment is spread over a number of pages",
     "Segment tables point to page tables and not to the physical locations of the segment",
-    "The processor\u2019s description base register points to a page table"
+    "The processor’s description base register points to a page table"
    ],
    "answer": [
     0
@@ -10620,7 +10679,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-33-27",
@@ -10630,7 +10691,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2013,
-   "text": "A computer uses virtual address, physical address, and a three\u2013level paged page table organization. The page table base register stores the base address of the first-level table, which occupies exactly one page. Each entry of stores the base address of a page of the second-level table. Each entry of stores the base address of a page of the third-level table Each entry of stores a page table entry The is bits in size. The processor used in the computer has a way set associative virtually indexed physically tagged cache. The cache block size is bytes. What is the size of a page in in this computer?",
+   "text": "A computer uses virtual address, physical address, and a three–level paged page table organization. The page table base register stores the base address of the first-level table, which occupies exactly one page. Each entry of stores the base address of a page of the second-level table. Each entry of stores the base address of a page of the third-level table Each entry of stores a page table entry The is bits in size. The processor used in the computer has a way set associative virtually indexed physically tagged cache. The cache block size is bytes. What is the size of a page in in this computer?",
    "options": [
     "$\\stackrel{\\textstyle\\mathbb{S}}{\\textstyle\\bigcup{}}$",
     "$\\underline{{\\land}}$",
@@ -10656,7 +10717,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-33-28",
@@ -10666,7 +10729,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2013,
-   "text": "A computer uses virtual address, physical address, and a three\u2013level paged page table organization. The page table base register stores the base address of the first-level table which occupies exactly one page. Each entry of stores the base address of a page of the second-level table Each entry of stores the base address of a page of the third-level table Each entry of stores a page table entry The is in size. The processor used in the computer has a way set associative virtually indexed physically tagged cache. The cache block size is bytes. What is the minimum number of page colours needed to guarantee that no two synonyms map to diferent sets in the processor cache of this computer?",
+   "text": "A computer uses virtual address, physical address, and a three–level paged page table organization. The page table base register stores the base address of the first-level table which occupies exactly one page. Each entry of stores the base address of a page of the second-level table Each entry of stores the base address of a page of the third-level table Each entry of stores a page table entry The is in size. The processor used in the computer has a way set associative virtually indexed physically tagged cache. The cache block size is bytes. What is the minimum number of page colours needed to guarantee that no two synonyms map to diferent sets in the processor cache of this computer?",
    "options": [
     "$\\stackrel{\\l}{\\longrightarrow}\\stackrel{\\l\\l}{\\ =}\\longrightarrow$",
     "$\\underline{{\\land}}$",
@@ -10692,7 +10755,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-5-33-29",
@@ -10849,7 +10914,6 @@
    "year": 2018,
    "text": "Consider a process executing on an operating system that uses demand paging. The average time for a memory access in the system is units if the corresponding memory page is available in memory, and units if the memory access causes a page fault. It has been experimentally measured that the average time taken for a memory access in the process is units. Which one of the following is the correct expression for the page fault rate experienced by the process.",
    "options": [
-    "$\\left(\\mathcal{D}\\right)\\subset\\left.\\mathcal{D}\\mathcal{V}\\right)\\right/\\left(\\frac{X}{2}\\,\\rlap{\\mathcal{D}}\\,\\mathcal{D}\\,\\mathcal{U}\\right)$",
     "$\\left(\\mathcal{X}\\;\\longrightarrow\\;\\bar{\\mathcal{M}}\\mathcal{Z}\\right)\\big/\\left(\\mathcal{D}\\mathcal{D}\\,\\supset\\,\\mathcal{D}\\mathcal{U}\\right)$",
     "$\\left(D-X\\right)/\\left(D-M\\right)$",
     "$\\left(X-M\\right)/\\left(D-X\\right)$"
@@ -10887,7 +10951,7 @@
    "text": "Assume that in a certain computer, the virtual addresses are bits long and the physical addresses are bits long. The memory is word addressible. The page size is kB and the word size is bytes. The Translation Look-aside Bufer (TLB) in the address translation path has valid entries. At most how many distinct virtual addresses can be translated without any TLB miss?",
    "options": [
     "$1 6 \\times 2 ^ { 1 0 }$",
-    "256 \u00d7 210",
+    "256 × 210",
     "$4 \\times 2 ^ { 2 0 }$",
     "$8 \\times 2 ^ { 2 0 }$"
    ],
@@ -11170,6 +11234,111 @@
     "topic_source": "section"
    },
    "needs_fix": "stem contains a table; check it flattened readably"
+  },
+  {
+   "id": "mineru-filter1-volume3-5-16-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2025,
+   "text": "A disk of size bytes is divided into blocks of bytes. A file is stored in the disk using linked allocation. In linked allocation, each data block reserves bytes to store the pointer to the next data block. The link part of the last data block contains a NULL pointer (also of bytes). Suppose a file of bytes needs to be stored in the disk. Assume, and. The amount of space in bytes that will be wasted due to internal fragmentation is \\_. (Answer in integer)",
+   "options": [],
+   "answer_value": 65468.0,
+   "tolerance": 0.0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "5.16.1",
+    "exam": "GATE CSE 2025 | Set 1 | Question: 41",
+    "section": "Linked Allocation",
+    "paper_question": "41",
+    "tags": [
+     "gatecse2025-set1",
+     "operating-system",
+     "linked-allocation",
+     "internal-fragmentation",
+     "numerical-answers",
+     "two-marks"
+    ],
+    "topic_score": 3.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "memory-management"
+  },
+  {
+   "id": "mineru-filter1-volume3-5-19-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2001,
+   "text": "A CPU has two modes -- privileged and non-privileged. In order to change the mode from privileged to nonprivileged",
+   "options": [
+    "a hardware interrupt is needed",
+    "a software interrupt is needed",
+    "a privileged instruction (which does not generate an interrupt) is needed",
+    "a non-privileged instruction (which does not generate an interrupt) is needed"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "5.19.2",
+    "exam": "GATE CSE 2001 | Question: 1.13",
+    "section": "OS Protection",
+    "paper_question": "1.13",
+    "tags": [
+     "gatecse-2001",
+     "operating-system",
+     "normal",
+     "os-protection"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "processes-threads"
+  },
+  {
+   "id": "mineru-filter1-volume3-5-19-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "A user level process in Unix traps the signal sent on a Ctrl-C input, and has a signal handling routine that saves appropriate files before terminating the process. When a Ctrl-C input is given to this process, what is the mode in which the signal handling routine executes?",
+   "options": [
+    "User mode",
+    "Kernel mode",
+    "Superuser mode",
+    "Privileged mode"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "5.19.3",
+    "exam": "GATE IT 2005 | Question: 19, UGCNET-June2012-III: 57",
+    "section": "OS Protection",
+    "paper_question": "",
+    "tags": [
+     "gateit-2005",
+     "operating-system",
+     "os-protection",
+     "normal",
+     "ugcnetcse-june2012-paper3"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "processes-threads"
   }
  ]
 }

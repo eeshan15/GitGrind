@@ -149,7 +149,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2003,
-   "text": "Consider the ALU shown below. If the operands are in $2 ^ { \\prime } s$ complement representation, which of the following operations can be performed by suitably setting the control lines and $C _ { 0 }$ only (+ and \u2013 denote addition and subtraction respectively)?",
+   "text": "Consider the ALU shown below. If the operands are in $2 ^ { \\prime } s$ complement representation, which of the following operations can be performed by suitably setting the control lines and $C _ { 0 }$ only (+ and – denote addition and subtraction respectively)?",
    "options": [
     "$A + B ,$ , and , but not $A + 1$",
     "$A + B ,$ and $A + 1$ , but not",
@@ -557,7 +557,6 @@
    "difficulty": "medium",
    "year": 1994,
    "options": [
-    "Let be a Boolean operation defined as $A * B = A B + \\overline { { A } } \\overline { { B } } .$ . If $C = A * B$ then evaluate and fill in the blanks: i. $A * A =$ ii.",
     "Solve the following boolean equations for the values of and \\begin{array}{l} A B + \\overline {{A}} C = 1 \\\\ A C + B = 0 \\\\ \\end{array}"
    ],
    "origin": {
@@ -578,7 +577,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-4-4-8",
@@ -648,7 +650,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-4-10",
@@ -1133,7 +1137,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2016,
-   "text": "Let, $x _ { 1 }$ \u2295 x2 \u2295 x3 \u2295 $x _ { 4 } = 0$ where $x _ { 1 }, x _ { 2 }, x _ { 3 }, x _ { 4 }$ are Boolean variables, and is the XOR operator. Which one of the following must always be TRUE?",
+   "text": "Let, $x _ { 1 }$ ⊕ x2 ⊕ x3 ⊕ $x _ { 4 } = 0$ where $x _ { 1 }, x _ { 2 }, x _ { 3 }, x _ { 4 }$ are Boolean variables, and is the XOR operator. Which one of the following must always be TRUE?",
    "options": [
     "$x _ { 1 } x _ { 2 } x _ { 3 } x _ { 4 } = 0$",
     "$x _ { 1 } x _ { 3 } + x _ { 2 } = 0$",
@@ -1171,7 +1175,7 @@
    "options": [
     "wx + w(x + y) + x(x + y) = x + wy",
     "$\\overline { { w \\bar { x } ( y + \\bar { z } ) } } + \\bar { w } x = \\bar { w } + x + \\bar { y } z$",
-    "(wx(y + xz) + wx)y = x\u00af",
+    "(wx(y + xz) + wx)y = x¯",
     "$( w + y ) ( w x y + w y z ) = w x y + w y z$"
    ],
    "answer": [
@@ -1232,8 +1236,8 @@
    "text": "Which one of the following is NOT a valid identity?",
    "options": [
     "$( x \\oplus y ) \\oplus z = x \\oplus ( y \\oplus z )$",
-    "(x + y) \u2295 z = x \u2295 (y + z)",
-    "x \u2295 y = x + y, if xy = 0",
+    "(x + y) ⊕ z = x ⊕ (y + z)",
+    "x ⊕ y = x + y, if xy = 0",
     "$\\pmb { x } \\oplus \\pmb { y } = ( \\pmb { x } \\pmb { y } + \\pmb { x } ^ { \\prime } \\pmb { y } ^ { \\prime } ) ^ { \\prime }$"
    ],
    "answer": [
@@ -1341,7 +1345,7 @@
    "options": [
     "X(a, b, X(c, d, e)) = X(X(a, b, c), d, e)",
     "X(a, b, X(a, b, c)) = X(a, b, c)",
-    "X(a, b, X (a, c, d)) = (X(a, b, \u03b1) AND X(c, d, c))",
+    "X(a, b, X (a, c, d)) = (X(a, b, α) AND X(c, d, c))",
     "X(a, b, c) = X(a, X (a, b, c), X(a, c, c))"
    ],
    "answer": [
@@ -1374,10 +1378,10 @@
    "difficulty": "medium",
    "text": "Which of the following Boolean algebraic equation(s) is/are CORRECT?",
    "options": [
-    "\u0100BC + AB + \u0100B + AB + ABC = BC + B + B",
+    "ĀBC + AB + ĀB + AB + ABC = BC + B + B",
     "$A B + \\bar { A } C + B C = A B + \\bar { A } C$",
     "$( A + C ) ( \\bar { A } + B ) = A B + \\bar { A } C$",
-    "(A + B + D)(C + D)(A + C + D)(A + B + D) = \u0100D + CD"
+    "(A + B + D)(C + D)(A + C + D)(A + B + D) = ĀD + CD"
    ],
    "answer": [
     1,
@@ -1475,7 +1479,7 @@
    "text": "Which of the following expressions is equivalent to",
    "options": [
     "$( A + B + C ) ( \\bar { A } + \\bar { B } + \\bar { C } )$",
-    "(A + B + C)(\u0100 + B+ C)",
+    "(A + B + C)(Ā + B+ C)",
     "$\\bar { A } B C + \\bar { A } ( \\bar { B } \\oplus C ) + \\bar { B } ( \\bar { A } \\oplus C )$",
     "None of these"
    ],
@@ -1535,7 +1539,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1996,
-   "text": "Booth\u2019s algorithm for integer multiplication gives worst performance when the multiplier pattern is",
+   "text": "Booth’s algorithm for integer multiplication gives worst performance when the multiplier pattern is",
    "options": [
     "101010...1010",
     "100000...0001",
@@ -1666,7 +1670,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-5-7",
@@ -1712,7 +1718,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2002,
-   "text": "Consider the following logic circuit whose inputs are functions $f _ { 1 }, f _ { 2 }, f _ { 3 }$ and output is $f$ Given that $f _ { 1 } ( x, y, z ) = \\Sigma ( 0, 1, 3, 5 )$ \u2022 f2(x, y, z) = \u03a3(6, 7), and $f ( \\bar { x }, y, z ) \\dot { = } \\Sigma ( 1, 4, 5 )$ is Refer to the figure below.",
+   "text": "Consider the following logic circuit whose inputs are functions $f _ { 1 }, f _ { 2 }, f _ { 3 }$ and output is $f$ Given that $f _ { 1 } ( x, y, z ) = \\Sigma ( 0, 1, 3, 5 )$ • f2(x, y, z) = Σ(6, 7), and $f ( \\bar { x }, y, z ) \\dot { = } \\Sigma ( 1, 4, 5 )$ is Refer to the figure below.",
    "options": [
     "$\\Sigma(1,4,5)~~.$",
     "$\\Sigma(6,7)$",
@@ -1926,8 +1932,7 @@
    "options": [
     "$\\textstyle\\sum(^{7}\\!\\cdot\\!8,\\underline{{{1}}}.$",
     "$\\Sigma(2,7,8,11,14)\\qquad\\qquad\\qquad.$",
-    "$\\sum_{{\\mathcal{L}}^{\\prime}}\\left(\\binom{\\sum_{\\gamma}}\\pm\\sum_{\\mathsf{Z}}\\right)$",
-    "${\\begin{array}{l}{{\\sum_{i}\\left(\\left(\\int_{\\cdot{\\sum_{j}}\\stackrel{\\left|\\!\\!\\!\\nabla}{\\partial\\right.}_{\\cdot}\\nabla_{\\cdot}\\left|\\!\\!\\oint_{\\cdot}\\oint\\!\\!\\!\\int\\!\\!\\oint_{\\cdot}\\ \\nabla}\\!\\!\\!\\!\\!\\!\\subset\\!\\langle\\!\\!\\begin{array}{c}{{\\nabla\\!\\!\\!\\Omega_{\\cdot}\\prod}}\\\\ {{\\sim\\!\\!\\nabla\\!\\!\\sigma_{\\cdot}\\otimes\\!\\!\\!\\nabla_{\\cdot}\\otimes\\!\\!\\!\\gamma}}\\end{array}\\!\\!\\!\\right)\\!\\!}}\\end{array}$"
+    "$\\sum_{{\\mathcal{L}}^{\\prime}}\\left(\\binom{\\sum_{\\gamma}}\\pm\\sum_{\\mathsf{Z}}\\right)$"
    ],
    "figure_assets": [
     {
@@ -2049,7 +2054,9 @@
     ],
     "topic_source": "section",
     "options_recovered": "pix2tex"
-   }
+   },
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-6-10",
@@ -2266,7 +2273,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1993,
-   "text": "A control algorithm is implemented by the NAND \u2013 gate circuitry given in figure below, where and are state variable implemented by flip-flops, and is control input. Develop the state transition table for this controller.",
+   "text": "A control algorithm is implemented by the NAND – gate circuitry given in figure below, where and are state variable implemented by flip-flops, and is control input. Develop the state transition table for this controller.",
    "options": [],
    "figure_assets": [
     {
@@ -2618,7 +2625,7 @@
       258
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  Input[\"Input\"] --> D1[\"D1\\nQ1\\nQ\u0305\"]\n  D1 --> D2[\"D2\\nQ2\\nQ\u0305\"]\n  D2 --> D3[\"D3\\nQ3\\nQ\u0305\"]\n  D3 --> Clock[\"Clock\"]"
+     "mermaid": "graph LR\n  Input[\"Input\"] --> D1[\"D1\\nQ1\\nQ̅\"]\n  D1 --> D2[\"D2\\nQ2\\nQ̅\"]\n  D2 --> D3[\"D3\\nQ3\\nQ̅\"]\n  D3 --> Clock[\"Clock\"]"
     }
    ],
    "origin": {
@@ -2664,7 +2671,7 @@
       666
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  Input[\"Clock\"] --> D1[\"D1 Q1\\n-Q\u0305\"]\n  D1 --> D2[\"D2 Q2\\n-Q\u0305\"]\n  D2 --> D3[\"D3 Q3\\n-Q\u0305\"]\n  D3 --> D1\n  D1 --> D3"
+     "mermaid": "graph LR\n  Input[\"Clock\"] --> D1[\"D1 Q1\\n-Q̅\"]\n  D1 --> D2[\"D2 Q2\\n-Q̅\"]\n  D2 --> D3[\"D3 Q3\\n-Q̅\"]\n  D3 --> D1\n  D1 --> D3"
     }
    ],
    "origin": {
@@ -2834,7 +2841,7 @@
       432
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  R[\"R\"] --> 0[\"0\"]\n  R\u0304[\"R\u0304\"] --> 1[\"1\"]\n  R\u0304\u0304[\"R\u0304\"] --> 2[\"2\"]\n  R[\"R\"] --> 3[\"3\"]\n  S1[\"S\u2081\"] --> S0[\"S\u2080\"]\n  S0 --> f[\"f\"]\n  P[\"P\"] --> S1\n  Q[\"Q\"] --> S0"
+     "mermaid": "graph LR\n  R[\"R\"] --> 0[\"0\"]\n  R̄[\"R̄\"] --> 1[\"1\"]\n  R̄̄[\"R̄\"] --> 2[\"2\"]\n  R[\"R\"] --> 3[\"3\"]\n  S1[\"S₁\"] --> S0[\"S₀\"]\n  S0 --> f[\"f\"]\n  P[\"P\"] --> S1\n  Q[\"Q\"] --> S0"
     }
    ],
    "origin": {
@@ -4084,7 +4091,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-13-18",
@@ -4225,7 +4234,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-15-4",
@@ -4262,7 +4273,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-16-1",
@@ -4490,7 +4503,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-17-5",
@@ -5318,7 +5333,7 @@
    "text": "Given the following binary number in -bit (single precision) format: 00111110011011010000000000000000 The decimal value closest to this floating-point number is:",
    "options": [
     "$1 . 4 5 * 1 0 ^ { 1 }$",
-    "1.45 \\* 10\u22121",
+    "1.45 \\* 10−1",
     "2.27 \\* 10-1",
     "2.27 \\*101"
    ],
@@ -5385,7 +5400,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Consider the following representation of a number in single-precision floating point format with a bias of. S:1E\uff1a10000001F\uff1a11110000000000000000000 Here and denote the sign, exponent, and fraction components of the floating point representation. The decimal value corresponding to the above representation (rounded to decimal places) is",
+   "text": "Consider the following representation of a number in single-precision floating point format with a bias of. S:1E：10000001F：11110000000000000000000 Here and denote the sign, exponent, and fraction components of the floating point representation. The decimal value corresponding to the above representation (rounded to decimal places) is",
    "options": [],
    "answer_value": -7.75,
    "tolerance": 0.0,
@@ -5696,11 +5711,7 @@
    "difficulty": "medium",
    "year": 1987,
    "text": "A Boolean function is to be realized only by gates. Its -map is given below: The realization is",
-   "options": [
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "answer_from_source": "D",
    "figure_assets": [
     {
@@ -5771,7 +5782,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "answer D but only 3 option(s) recovered; 3 of 3 options came through empty"
+   "needs_fix": "answer D but only 3 option(s) recovered; 3 of 3 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-4-21-2",
@@ -6093,7 +6107,7 @@
    "text": "Given the following karnaugh map, which one of the following represents the minimal Sum-Of-Products of the map? | yz\\wx | 00 | 01 | 11 | 10\n| 00 | 0 | X | 0 | X\n| 01 | X | 1 | X | 1\n| 11 | 0 | X | 1 | 0\n| 10 | 0 | 1 | X | 0",
    "options": [
     "$X Y + Y ^ { \\prime } Z$",
-    "WX'Y\u2032 + XY + XZ",
+    "WX'Y′ + XY + XZ",
     "$W ^ { \\prime } X + Y ^ { \\prime } Z + X Y$",
     "XZ +Y"
    ],
@@ -6196,7 +6210,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2012,
-   "text": "What is the minimal form of the Karnaugh map shown below? Assume that denotes a don\u2019t care term",
+   "text": "What is the minimal form of the Karnaugh map shown below? Assume that denotes a don’t care term",
    "options": [
     "${\\frac{5d}{-}},\\qquad-$",
     "$\\begin{array}{r l r}{{\\bar{b}}{\\bar{d}}+{\\bar{b}}{\\bar{c}}}&{{}}&{{}}&{{}}\\\\ {{\\bar{-}}-{\\bar{c}}{\\bar{c}}}&{}&{{}}&{{}}\\end{array}$",
@@ -6243,7 +6257,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-21-14",
@@ -6361,12 +6377,7 @@
    "difficulty": "medium",
    "year": 2007,
    "text": "Consider the following expression $a \\bar {d} + \\bar {a} \\bar {c} + b \\bar {c} d$ Which of the following Karnaugh Maps correctly represents the expression? Refer to the figure below.",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "figure_assets": [
     {
      "src": "/content/assets/question-images/mineru/filter1-volume3-360e340a756ffdaf0229fa8d.jpg",
@@ -6438,7 +6449,10 @@
    "answer_pending": true,
    "answer_from_source": "A",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-4-21-17",
@@ -6572,7 +6586,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-24-4",
@@ -6675,7 +6691,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-25-1",
@@ -7078,7 +7096,6 @@
    "options": [
     "$\\Omega^{\\prime}\\ +\\ D^{\\prime}\\ +\\bigoplus^{\\prime}\\Sigma\\ +\\ D^{\\prime}$",
     "${\\mathcal{B}}^{\\prime}$",
-    "${\\cal A}^{\\prime}\\cdot{\\cal B}^{\\prime}+{\\cal A}\\cdot{\\cal B}$",
     "${\\mathcal{A}}^{\\prime}$"
    ],
    "origin": {
@@ -7101,7 +7118,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-26-16",
@@ -7195,7 +7214,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-27-3",
@@ -7489,7 +7510,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-27-9",
@@ -7972,7 +7995,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "The following is an incomplete Pascal function to convert a given decimal integer (in the range to ) into a binary integer in \u2019s complement representation. Determine the expressions that complete program.",
+   "text": "The following is an incomplete Pascal function to convert a given decimal integer (in the range to ) into a binary integer in ’s complement representation. Determine the expressions that complete program.",
    "options": [],
    "code_blocks": [
     {
@@ -8065,7 +8088,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-28-10",
@@ -8101,7 +8126,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-28-11",
@@ -8348,7 +8375,10 @@
    "answer_pending": true,
    "answer_from_source": "B",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "options are not distinct: 'is equivalent to the binary value' repeated"
+   "needs_fix": "options are not distinct: 'is equivalent to the binary value' repeated",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-4-28-18",
@@ -8591,7 +8621,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-28-25",
@@ -8783,9 +8815,7 @@
     "$( 2 2 9 7 ) _ { 1 0 }$",
     "$( 0 B 1 7 ) _ { 1 6 }$"
    ],
-   "answer": [
-    1
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -8800,7 +8830,10 @@
      "isro2017"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-4-28-31",
@@ -9028,13 +9061,9 @@
    "text": "When two numbers $A _ { 7 } \\cdots A _ { 0 }$ and $B _ { 7 } \\cdots B _ { 0 }$ in 's complement representation (with $A _ { 0 }$ and $B _ { 0 }$ as the least significant bits) are added using a ripple-carry adder, the sum bits obtained are $S _ { 7 } \\cdots S _ { 0 }$ and the carry bits are $C _ { 7 } \\cdots C _ { 0 }$. An overflow is said to have occurred if",
    "options": [
     "the carry bit is",
-    "all the carry bits $( C _ { 7 } , \\cdots , C _ { 0 } )$ are",
-    "$\\left( A _ { 7 } \\cdot B _ { 7 } \\cdot { \\overline { { S _ { 7 } } } } + { \\overline { { A _ { 7 } } } } \\cdot { \\overline { { B _ { 7 } } } } \\cdot S _ { 7 } \\right)$ is",
-    "$\\left( A _ { 0 } \\cdot B _ { 0 } \\cdot { \\overline { { S _ { 0 } } } } + { \\overline { { A _ { 0 } } } } \\cdot { \\overline { { B _ { 0 } } } } \\cdot S _ { 0 } \\right)$ is"
+    "all the carry bits $( C _ { 7 } , \\cdots , C _ { 0 } )$ are"
    ],
-   "answer": [
-    2
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -9048,7 +9077,9 @@
      "number-representation"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-4-28-39",
@@ -9123,7 +9154,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2019,
-   "text": "In -bit \u2019s complement representation, the decimal number is:",
+   "text": "In -bit ’s complement representation, the decimal number is:",
    "options": [
     "1111 1111 0001 1100",
     "0000 0000 1110 0100",
@@ -9183,7 +9214,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-28-43",
@@ -9286,7 +9319,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-28-46",
@@ -9428,7 +9463,9 @@
    "answer": [
     1,
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-28-50",
@@ -9442,7 +9479,7 @@
    "options": [
     "Z = X + Y",
     "Z=X-Y",
-    "Z = \u2212X + Y",
+    "Z = −X + Y",
     "Z = -X -Y"
    ],
    "answer": [
@@ -9570,7 +9607,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-28-54",
@@ -9603,9 +9642,10 @@
     "options_recovered": "pix2tex"
    },
    "explain": "",
-   "answer": [
-    0
-   ]
+   "answer": null,
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-4-28-55",
@@ -9642,7 +9682,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-28-56",
@@ -9654,7 +9696,7 @@
    "year": 2007,
    "text": "(C 0 1 2. $2 5) _ {H} - (1 0 1 1 1 0 0 1 1 1 0$. $1 0 1) _ {B} =$",
    "options": [
-    "(135103.412)\u3002",
+    "(135103.412)。",
     "(564411.412).",
     "(564411.205)o",
     "(135103.205)0"
@@ -9767,12 +9809,13 @@
      "k-map",
      "prime-implicants"
     ],
-    "topic_source": "section"
+    "topic_source": "section",
+    "options_recovered": "pix2tex"
    },
-   "answer_pending": true,
-   "answer_from_source": "C",
-   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "options are not distinct: 'is a prime implicant of' repeated"
+   "explain": "",
+   "answer": [
+    2
+   ]
   },
   {
    "id": "mineru-filter1-volume3-4-30-2",
@@ -9807,7 +9850,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-4-33-1",
@@ -9938,7 +9983,7 @@
     "$\\overline { { w } } x z , w x \\overline { { y } } , x \\overline { { y } } z , x y z , w y z$",
     "wxy, wxz, wyz",
     "$w x \\overline { { y z } } , x z , w \\overline { { x } } y z$",
-    "wxy, wyz, wxz, wxz, x\u00afz, xyz difficult"
+    "wxy, wyz, wxz, wxz, x¯z, xyz difficult"
    ],
    "answer": [
     3
@@ -10060,7 +10105,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-33-1",
@@ -10091,6 +10138,1952 @@
    "answer": [
     1
    ]
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1989,
+   "text": "Explain the behaviour of the following logic circuit with level input and output. Refer to the figure below.",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-92599b3799c0e8ba310b15e0.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 300,
+     "bbox": [
+      95,
+      735,
+      408,
+      818
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  A[\"A\"] --> B[\"Logic Block\"]\n  B --> C[\"Logic Gate\"]\n  C --> D[\"Output Block\"]\n  D --> E[\"B\"]"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.2",
+    "exam": "GATE CSE 1989 | Question: 4-ix",
+    "section": "Circuit Output",
+    "paper_question": "4-ix",
+    "tags": [
+     "gate1989",
+     "descriptive",
+     "digital-logic",
+     "circuit-output"
+    ],
+    "page_idx": 300,
+    "bbox": [
+     95,
+     735,
+     408,
+     818
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1990,
+   "text": "Choose the correct alternatives (More than one may be correct). Two NAND gates having open collector outputs are tied together as shown in below figure. The logic function implemented by the circuit is,",
+   "options": [
+    "$Y = A B C + D E$",
+    "$Y = { \\overline { { A B C + D E } } }$",
+    "$Y = A B C , D E$",
+    "Y = ABC. DE"
+   ],
+   "answer": [
+    1
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-8723ff06cc84a968e0978e73.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 301,
+     "bbox": [
+      401,
+      87,
+      613,
+      180
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.3",
+    "exam": "GATE CSE 1990 | Question: 3-i",
+    "section": "Circuit Output",
+    "paper_question": "3-i",
+    "tags": [
+     "gate1990",
+     "normal",
+     "digital-logic",
+     "circuit-output"
+    ],
+    "page_idx": 301,
+    "bbox": [
+     401,
+     87,
+     613,
+     180
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-9",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1994,
+   "text": "The logic expression for the output of the circuit shown in figure below is:",
+   "options": [
+    "$\\overline { { A C } } + \\overline { { B C } } + C D$",
+    "$\\overline { { A } } C + \\overline { { B } } C + C D$"
+   ],
+   "answer": [
+    1
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-08d636e4f16208ac2364f684.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 302,
+     "bbox": [
+      329,
+      808,
+      642,
+      902
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.9",
+    "exam": "GATE CSE 1994 | Question: 1.8",
+    "section": "Circuit Output",
+    "paper_question": "1.8",
+    "tags": [
+     "gate1994",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 302,
+    "bbox": [
+     329,
+     808,
+     642,
+     902
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "options_quarantined": true,
+   "answer_pending": true
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-12",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the circuit in figure. implements",
+   "options": [
+    "$\\overline { { A } } \\overline { { B } } C + \\overline { { A } } B \\overline { { C } } + A B C$",
+    "$A + B + C$",
+    "$A \\oplus B \\oplus C$",
+    "$A B + B C + C A$"
+   ],
+   "answer": [
+    2
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-18bebea8cb142068fb4d9e5a.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 303,
+     "bbox": [
+      403,
+      767,
+      563,
+      869
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.12",
+    "exam": "GATE CSE 1996 | Question: 2.22",
+    "section": "Circuit Output",
+    "paper_question": "2.22",
+    "tags": [],
+    "page_idx": 303,
+    "bbox": [
+     403,
+     767,
+     563,
+     869
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-16",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1999,
+   "text": "Consider the circuit shown below. In a certain steady state, the line is at $' 1 ^ { \\prime }$. What are the possible values of and in this state?",
+   "options": [
+    "$A = 0 , B = 0 , C = 1$",
+    "$A = 0 , B = 1 , C = { \\bf 1 }$",
+    "$A = 1 , B = 0 , C = 1$",
+    "$A = 1 , B = 1 , C = 1$"
+   ],
+   "answer": [
+    1
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-cae03646da389e82ec694691.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 305,
+     "bbox": [
+      406,
+      306,
+      608,
+      372
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.16",
+    "exam": "GATE CSE 1999 | Question: 2.8",
+    "section": "Circuit Output",
+    "paper_question": "2.8",
+    "tags": [
+     "gate1999",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 305,
+    "bbox": [
+     406,
+     306,
+     608,
+     372
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-17",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2000,
+   "text": "The following arrangement of master-slave flip flops has the initial state of $P, Q$ as $0, 1$ (respectively). After three clock cycles the output state $P, Q$ is (respectively), Refer to the figure below.",
+   "options": [
+    "$^ { 1 , 0 }$"
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-bdc4203b30d15ad88014d2b0.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 305,
+     "bbox": [
+      363,
+      517,
+      610,
+      618
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.17",
+    "exam": "GATE CSE 2000 | Question: 2.12",
+    "section": "Circuit Output",
+    "paper_question": "2.12",
+    "tags": [
+     "gatecse-2000",
+     "digital-logic",
+     "circuit-output",
+     "normal",
+     "flip-flo"
+    ],
+    "page_idx": 305,
+    "bbox": [
+     363,
+     517,
+     610,
+     618
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "3 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-18",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2001,
+   "text": "Consider the following circuit with initial state $Q _ { 0 } = Q _ { 1 } = 0$. The D Flip-flops are positive edged triggered and have set up times 20 nanosecond and hold times Consider the following timing diagrams of X and C. The clock period of $C \\geq 4 0$ nanosecond. Which one is the correct plot of Y?",
+   "options": [],
+   "answer_from_source": "A",
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-2ccacaadbbdb705e97d6e69f.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 305,
+     "bbox": [
+      97,
+      783,
+      458,
+      866
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  X[\"X\"] --> D0[\"D0, Q0\"]\n  C[\"C\"] --> Clk[\"Clk, Q0\"]\n  D0 --> C\n  Clk --> D1[\"D1, Q1\"]\n  D1 --> Y[\"Y\"]\n  Clk --> Y"
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-3ca82d80b1e284f6806aca7d.jpg",
+     "alt": "Figure 2 for this question",
+     "page_idx": 306,
+     "bbox": [
+      89,
+      65,
+      492,
+      304
+     ]
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.18",
+    "exam": "GATE CSE 2001 | Question: 2.8",
+    "section": "Circuit Output",
+    "paper_question": "2.8",
+    "tags": [
+     "gatecse-2001",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 305,
+    "bbox": [
+     97,
+     783,
+     458,
+     866
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer A but only 0 option(s) recovered",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-20",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2004,
+   "text": "Consider the partial implementation of a counter using flip-flops following the sequence $0 - 2 - 3 - 1 \\dot { - } 0$ as shown below. To complete the circuit, the input should be",
+   "options": [
+    "$Q _ { 2 } + Q _ { 1 }$",
+    "$( Q _ { 1 } + Q _ { 2 } ) ^ { c }$",
+    "$Q _ { 1 } \\oplus Q _ { 2 }$"
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-0a5b8e26a842a9a3ee1ea557.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 306,
+     "bbox": [
+      94,
+      706,
+      354,
+      809
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  CLK[\"CLK\"] --> T2[\"T2\"]\n  CLK --> MSB[\"MSB\"]\n  T2 --> Q2[\"Q2\"]\n  MSB --> Q2\n  Q2 --> XOR[\"X\"]\n  XOR --> T1[\"T1\"]\n  T1 --> Q1[\"Q1\"]\n  Q1 --> LSB[\"LSB\"]\n  LSB --> Q1"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.20",
+    "exam": "GATE CSE 2004 | Question: 61",
+    "section": "Circuit Output",
+    "paper_question": "61",
+    "tags": [
+     "gatecse-2004",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 306,
+    "bbox": [
+     94,
+     706,
+     354,
+     809
+    ],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-22",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "Consider the following circuit involving a positive edge triggered D FF. Consider the following timing diagram. Let $A _ { i }$ represents the logic level on the line in the -th clock period. Let represent the complement of. The correct output sequence on over the clock periods through is:",
+   "options": [
+    "$A _ { 0 } A _ { 1 } A _ { 1 } ^ { \\prime } A _ { 3 } A _ { 4 }$",
+    "$A _ { 0 } A _ { 1 } A _ { 2 } ^ { \\prime } A _ { 3 } A _ { 4 }$",
+    "$A _ { 1 } A _ { 2 } A _ { 2 } ^ { \\bar { \\prime } } A _ { 3 } A _ { 4 }$"
+   ],
+   "answer": [
+    0
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-0b4d133e92505c9dd8d0299f.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 307,
+     "bbox": [
+      94,
+      353,
+      433,
+      445
+     ],
+     "kind": "text_image"
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-e997f62d02d5104baefead22.jpg",
+     "alt": "Figure 2 for this question (text_image)",
+     "page_idx": 307,
+     "bbox": [
+      95,
+      477,
+      442,
+      584
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.22",
+    "exam": "GATE CSE 2005 | Question: 62",
+    "section": "Circuit Output",
+    "paper_question": "62",
+    "tags": [
+     "gatecse-2005",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 307,
+    "bbox": [
+     94,
+     353,
+     433,
+     445
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-23",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following circuit: The flip-flops are positive edge triggered s. Each state is designated as a two-bit string $Q _ { 0 } Q _ { 1 }$. Let the initial state be The state transition sequence is",
+   "options": [],
+   "answer_from_source": "D",
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-74fd6dd2158835451a39d083.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 307,
+     "bbox": [
+      94,
+      741,
+      495,
+      834
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  D0[\"D0\"] --> Q0[\"Q0\"]\n  Q0 --> D1[\"D1\"]\n  D1 --> Q1[\"Q1\"]\n  Q1 --> Q1[\"Q1'\"]\n  Q0 --> Q0[\"Q0'\"]\n  Q0 --> D1\n  D1 --> Q1\n  Q1 --> clk[\"clk\"]"
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-2c010c336bff35c57d57b72c.jpg",
+     "alt": "Figure 2 for this question",
+     "page_idx": 307,
+     "bbox": [
+      90,
+      889,
+      208,
+      910
+     ]
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-96910bedb83f48c475af6acc.jpg",
+     "alt": "B.",
+     "page_idx": 307,
+     "bbox": [
+      285,
+      890,
+      376,
+      922
+     ]
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-b340e675e3ad392e5203adc7.jpg",
+     "alt": "C.",
+     "page_idx": 307,
+     "bbox": [
+      497,
+      888,
+      611,
+      914
+     ]
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-b4419072df37e5d75d28bc47.jpg",
+     "alt": "D.",
+     "page_idx": 307,
+     "bbox": [
+      697,
+      888,
+      806,
+      914
+     ]
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.23",
+    "exam": "GATE CSE 2005 | Question: 64",
+    "section": "Circuit Output",
+    "paper_question": "64",
+    "tags": [],
+    "page_idx": 307,
+    "bbox": [
+     94,
+     741,
+     495,
+     834
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer D but only 3 option(s) recovered; option letters B,C,D are not a run from A",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-24",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2006,
+   "text": "Consider the circuit above. Which one of the following options correctly represents $f \\left( x, y, z \\right)$ Refer to the figure below.",
+   "options": [
+    "$x \\bar { z } + x y + \\bar { y } z$",
+    "$x \\bar { z } + x y + \\overline { { { y z } } }$",
+    "$x z + x \\bar { y } + \\bar { y } z$",
+    "$x z + x y + { \\overline { { y z } } }$"
+   ],
+   "answer": [
+    0
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-840ad0321aa8ac485588a2c4.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 308,
+     "bbox": [
+      398,
+      138,
+      566,
+      261
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.24",
+    "exam": "GATE CSE 2006 | Question: 35",
+    "section": "Circuit Output",
+    "paper_question": "35",
+    "tags": [
+     "gatecse-2006",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 308,
+    "bbox": [
+     398,
+     138,
+     566,
+     261
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-25",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2006,
+   "text": "Consider the circuit in the diagram. The operator represents Ex-OR. The D flip-flops are initialized to zeroes (cleared). The following data: is supplied to the “data” terminal in nine clock cycles. After that the values of are:",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-350eca3dfc2434575755ab7b.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 308,
+     "bbox": [
+      90,
+      431,
+      438,
+      522
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  Q[\"Q\"] -->|clk| D[\"D\"]\n  D -->|clk| Q\n  Q -->|clk| D\n  D -->|clk| Q\n  Q -->|clk| D\n  D -->|clk| Q\n  Q -->|q0| Center((\"+\"))\n  D -->|q1| Center\n  Q -->|q2| Center\n  Center -->|data| D"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.25",
+    "exam": "GATE CSE 2006 | Question: 37",
+    "section": "Circuit Output",
+    "paper_question": "37",
+    "tags": [
+     "gatecse-2006",
+     "digital-logic",
+     "circuit-output",
+     "easy"
+    ],
+    "page_idx": 308,
+    "bbox": [
+     90,
+     431,
+     438,
+     522
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-26",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2006,
+   "text": "You are given a free running clock with a duty cycle of and a digital waveform which changes only at the negative edge of the clock. Which one of the following circuits (using clocked D flip-flops) will delay the phase of $f \\mathsf { b y } 1 \\bar { 8 } 0 ^ { \\circ }?$",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-11ab8114ae63015292429027.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 308,
+     "bbox": [
+      119,
+      718,
+      347,
+      768
+     ],
+     "kind": "text_image"
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-0886203cfe6bfe0914154771.jpg",
+     "alt": "Figure 2 for this question (flowchart)",
+     "page_idx": 308,
+     "bbox": [
+      119,
+      773,
+      354,
+      820
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  f[\"f\"] --> D[\"D\"]\n  CLK[\"CLK\"] --> D\n  D --> Q[\"Q\"]\n  Q --> D\n  D --> Q\n  Q --> D\n  CLK --> Q"
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-9219668ebba9b9d35c71d3d3.jpg",
+     "alt": "Figure 3 for this question (flowchart)",
+     "page_idx": 308,
+     "bbox": [
+      119,
+      825,
+      352,
+      872
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  f[\"f\"] --> D[\"D\"]\n  CLK[\"CLK\"] --> D\n  D --> Q[\"Q\"]\n  Q --> D\n  D --> Q\n  Q --> Q\n  CLK --> Q"
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-0edd0435d63dfcab0d3e6828.jpg",
+     "alt": "Figure 4 for this question (text_image)",
+     "page_idx": 309,
+     "bbox": [
+      119,
+      67,
+      352,
+      119
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.26",
+    "exam": "GATE CSE 2006 | Question: 8",
+    "section": "Circuit Output",
+    "paper_question": "8",
+    "tags": [
+     "gatecse-2006",
+     "digital-logic",
+     "normal",
+     "circuit-output"
+    ],
+    "page_idx": 308,
+    "bbox": [
+     119,
+     718,
+     347,
+     768
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-28",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2010,
+   "text": "What is the boolean expression for the output $f$ of the combinational logic circuit of NOR gates given below?",
+   "options": [
+    "$\\overline { { Q + R } }$",
+    "$\\overline { { P + Q } }$",
+    "$\\overline { { P + R } }$",
+    "$\\overline { { P + Q + R } }$"
+   ],
+   "answer": [
+    0
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-f6238ae2240ebe66d74cba55.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 309,
+     "bbox": [
+      379,
+      663,
+      584,
+      769
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  P[\"P\"] --> Q1[\"Q\"]\n  Q1 -->|Output| R1[\"R\"]\n  R1 -->|Output| Q2[\"Q\"]\n  Q2 -->|Output| R2[\"R\"]\n  R2 -->|Output| Q3[\"Q\"]\n  Q3 -->|Output| R3[\"R\"]\n  R3 -->|Output| Output[\"f\"]"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.28",
+    "exam": "GATE CSE 2010 | Question: 31",
+    "section": "Circuit Output",
+    "paper_question": "31",
+    "tags": [
+     "gatecse-2010",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 309,
+    "bbox": [
+     379,
+     663,
+     584,
+     769
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-29",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2010,
+   "text": "In the sequential circuit shown below, if the initial value of the output $Q _ { 1 } Q _ { 0 }$ is. What are the next four values of $\\dot { Q } _ { 1 } Q _ { 0 }?$",
+   "options": [
+    ", , ,",
+    ", , ,",
+    ", , ,",
+    ", , ,"
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-30dd87062b7f267d7ddbd0a4.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 310,
+     "bbox": [
+      398,
+      68,
+      618,
+      149
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  Clock[\"Clock\"] --> TQ[\"T Q\"]\n  TQ --> Q0[\"Q0\"]\n  TQ --> TQ[\"T Q\"]\n  TQ --> Q1[\"Q1\"]"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.29",
+    "exam": "GATE CSE 2010 | Question: 32",
+    "section": "Circuit Output",
+    "paper_question": "32",
+    "tags": [
+     "gatecse-2010",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 310,
+    "bbox": [
+     398,
+     68,
+     618,
+     149
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: ', , ,' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-34",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 1,
+   "difficulty": "easy",
+   "year": 2025,
+   "text": "Consider the following logic circuit diagram. Which is/are the CORRECT option(s) for the output function?",
+   "options": [
+    "$\\overline { { X Y } }$",
+    "${ \\overline { { X } } } + { \\overline { { Y } } } + X { \\overline { { Y } } }$",
+    "${ \\overline { { X Y } } } + { \\overline { { X } } } + X { \\overline { { Y } } }$",
+    "$X + { \\overline { { Y } } }$"
+   ],
+   "answer": [
+    0,
+    1,
+    2
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-046126ee430b7e6db9cf5d49.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 311,
+     "bbox": [
+      297,
+      699,
+      665,
+      826
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  X[\"X\"] --> Y[\"Y\"]\n  Y -->|Input| AND_Gate{\"AND Gate\"}\n  AND_Gate -->|Output| F[\"F\"]"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.34",
+    "exam": "GATE CSE 2025 | Set 2 | Question: 21",
+    "section": "Circuit Output",
+    "paper_question": "21",
+    "tags": [
+     "gatecse2025-set2",
+     "digital-logic",
+     "circuit-output",
+     "multiple-selects",
+     "easy",
+     "one-mark"
+    ],
+    "page_idx": 311,
+    "bbox": [
+     297,
+     699,
+     665,
+     826
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-35",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "A two-way switch has three terminals and In ON position (logic value ), is connected to and in OFF position, is connected to. Two of these two-way switches and are connected to a bulb as shown below. Which of the following expressions, if true, will always result in the lighting of the bulb?",
+   "options": [
+    "$S 1 + S 2$",
+    "$S 1 \\oplus S 2$"
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-15d877458a4a8b5e3a5529a9.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 312,
+     "bbox": [
+      378,
+      168,
+      638,
+      255
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.35",
+    "exam": "GATE IT 2005 | Question: 10",
+    "section": "Circuit Output",
+    "paper_question": "10",
+    "tags": [
+     "gateit-2005",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 312,
+    "bbox": [
+     378,
+     168,
+     638,
+     255
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "2 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-36",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "Which of the following input sequences will always generate a at the output at the end of the third cycle? Refer to the figure below.",
+   "options": [
+    "\u0000T0\u0000",
+    "\u0000T1\u0000",
+    "\u0000T2\u0000",
+    "\u0000T3\u0000"
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-d615c53f15ffee41769a9a36.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 312,
+     "bbox": [
+      107,
+      432,
+      401,
+      529
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.36",
+    "exam": "GATE IT 2005 | Question: 43",
+    "section": "Circuit Output",
+    "paper_question": "43",
+    "tags": [
+     "gateit-2005",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 312,
+    "bbox": [
+     107,
+     432,
+     401,
+     529
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key; stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-38",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2007,
+   "text": "The following expression was to be realized using -input AND and OR gates. However, during the fabrication all -input AND gates were mistakenly substituted by -input NAND gates. (a. b). $c + (a ^ {\\prime}$. c). d + (b. c). d + a. d What is the function finally realized?",
+   "options": [
+    "$a ^ { \\prime } + b ^ { \\prime } + c ^ { \\prime } + d ^ { \\prime }$",
+    "$a ^ { \\prime } + b + c ^ { \\prime } + d ^ { \\prime }$",
+    "α′ + b + c + d′"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.38",
+    "exam": "GATE IT 2007 | Question: 38",
+    "section": "Circuit Output",
+    "paper_question": "38",
+    "tags": [
+     "gateit-2007",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-8-40",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2007,
+   "text": "The line in the following figure is permanently connected to the ground. Which of the following inputs $\\left( X _ { 1 } X _ { 2 } X _ { 3 } X _ { 4 } \\right)$ will detect the fault?",
+   "options": [
+    "None of these"
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-d2ae32888834f82a08eb338e.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 313,
+     "bbox": [
+      304,
+      498,
+      660,
+      572
+     ],
+     "kind": "text_image"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.8.40",
+    "exam": "GATE IT 2007 | Question: 45",
+    "section": "Circuit Output",
+    "paper_question": "45",
+    "tags": [
+     "gateit-2007",
+     "digital-logic",
+     "circuit-output",
+     "normal"
+    ],
+    "page_idx": 313,
+    "bbox": [
+     304,
+     498,
+     660,
+     572
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "3 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-26-3",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2001,
+   "text": "a. Is the function $f = \\Sigma ( 0, 1, 2, 4 )$ its self-dual? Justify your answer. b. Give a minimal product-of-sum form of the output of the following to converter. Refer to the figure below.",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-0b524bc2e999e02a3cb92eaa.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 341,
+     "bbox": [
+      408,
+      68,
+      606,
+      124
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  A[\"Excess - 3\\nto\\nBCD\"] --> B[\"b8\"]\n  A --> C[\"b4\"]\n  A --> D[\"b2\"]\n  A --> E[\"b1\"]"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.26.3",
+    "exam": "GATE CSE 2001 | Question: 10",
+    "section": "Min Sum of Products Form",
+    "paper_question": "10",
+    "tags": [
+     "gatecse-2001",
+     "digital-logic",
+     "normal",
+     "descriptive",
+     "min-sum-of-products-form"
+    ],
+    "page_idx": 341,
+    "bbox": [
+     408,
+     68,
+     606,
+     124
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "kmap"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-26-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "The switching expression corresponding to $f ( A, B, C, D ) = \\Sigma ( 1, 4, 5, 9, 1 1, 1 2 )$ is:",
+   "options": [
+    "$B C ^ { \\prime } D ^ { \\prime } + A ^ { \\prime } C ^ { \\prime } D + A B ^ { \\prime } D$",
+    "$A B C ^ { \\prime } + A C D + B ^ { \\prime } C ^ { \\prime } D$",
+    "$A C D ^ { \\prime } + A ^ { \\prime } B C ^ { \\prime } + A C ^ { \\prime } D ^ { \\prime }$",
+    "$A ^ { \\prime } B D + A C D ^ { \\prime } + B C D ^ { \\prime }$"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.26.4",
+    "exam": "GATE CSE 2005 | Question: 18",
+    "section": "Min Sum of Products Form",
+    "paper_question": "18",
+    "tags": [
+     "gatecse-2005",
+     "digital-logic",
+     "normal",
+     "min-sum-of-products-form"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "kmap"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-26-6",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2011,
+   "text": "The simplified SOP (Sum of Product) from the Boolean expression $(P + \\bar {Q} + \\bar {R})$. $(P + \\bar {Q} + R)$. $(P + Q + \\bar {R})$ is",
+   "options": [
+    "$( { \\bar { P } } . Q + { \\bar { R } } )$",
+    "$( P + { \\bar { Q } } . { \\bar { R } } )$",
+    "$( { \\bar { P } } . Q + R )$"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.26.6",
+    "exam": "GATE CSE 2011 | Question: 14",
+    "section": "Min Sum of Products Form",
+    "paper_question": "14",
+    "tags": [
+     "gatecse-2011",
+     "digital-logic",
+     "normal",
+     "min-sum-of-products-form"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "kmap"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-26-12",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2024,
+   "text": "Consider a Boolean expression given by $\\begin{array} { r } { \\mathrm { F } ( \\mathrm { X }, \\mathrm { Y }, \\mathrm { Z } ) = \\sum ( 3, 5, 6, 7 ) } \\end{array}$ Which of the following statements is/are CORRECT?",
+   "options": [
+    "$\\operatorname { F } ( \\mathrm { X } , \\mathrm { Y } , \\mathrm { Z } ) = \\Pi ( 0 , 1 , 2 , 4 )$",
+    "$\\operatorname { F } ( \\mathbf { X } , \\mathbf { Y } , \\mathbf { Z } ) { = } \\mathbf { X } \\mathbf { Y } { + } \\mathbf { Y } \\mathbf { Z } { + } \\mathbf { X } \\mathbf { Z }$",
+    "$_ { \\mathrm { Y } } ^ { \\mathrm { F ( X , Y , Z ) } }$ is independent of input",
+    "$\\mathrm { F } ( \\mathrm { X } , \\mathrm { Y } , \\mathrm { Z } )$ is independent of input X"
+   ],
+   "answer": [
+    0,
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.26.12",
+    "exam": "GATE CSE 2024 | Set 1 | Question: 37",
+    "section": "Min Sum of Products Form",
+    "paper_question": "37",
+    "tags": [
+     "gatecse-2024-set1",
+     "multiple-selects",
+     "digital-logic",
+     "min-sum-of-products-form",
+     "two-marks"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "kmap"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-2-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1999,
+   "text": "The maximum gate delay for any output to appear in an array multiplier for multiplying two bit numbers is",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.2.1",
+    "exam": "GATE CSE 1999 | Question: 1.21",
+    "section": "Array Multiplier",
+    "paper_question": "1.21",
+    "tags": [
+     "gate1999",
+     "digital-logic",
+     "normal",
+     "array-multiplier"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "computer-arithmetic",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-2-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2003,
+   "text": "Consider an array multiplier for multiplying two bit numbers. If each gate in the circuit has a unit delay, the total delay of the multiplier is",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.2.2",
+    "exam": "GATE CSE 2003 | Question: 11",
+    "section": "Array Multiplier",
+    "paper_question": "11",
+    "tags": [
+     "gatecse-2003",
+     "digital-logic",
+     "normal",
+     "array-multiplier"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "computer-arithmetic",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-12-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2003,
+   "text": "Consider the following circuit composed of XOR gates and non-inverting buffers. The non-inverting bufers have delays $\\delta _ { 1 } = 2 n s$ and $\\delta _ { 2 } = 4 n s$ as shown in the figure. Both XOR gates and all wires have zero delays. Assume that all gate inputs, outputs, and wires are stable at logic level at time. If the following waveform is applied at input, how many transition(s) (change of logic levels) occur(s) at during the interval from to ns?",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-25257b8e5ef6b714258f577b.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 316,
+     "bbox": [
+      87,
+      378,
+      361,
+      423
+     ],
+     "kind": "text_image"
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-c2c1bbaadea1ffa27c2762f6.jpg",
+     "alt": "Figure 2 for this question",
+     "page_idx": 316,
+     "bbox": [
+      87,
+      491,
+      364,
+      524
+     ]
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.12.3",
+    "exam": "GATE CSE 2003 | Question: 47",
+    "section": "Digital Circuits",
+    "paper_question": "47",
+    "tags": [
+     "gatecse-2003",
+     "digital-logic",
+     "digital-circuits"
+    ],
+    "page_idx": 316,
+    "bbox": [
+     87,
+     378,
+     361,
+     423
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-12-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Which one of the following circuits is NOT equivalent to a -input (exclusive ) gate?",
+   "options": [],
+   "answer_from_source": "D",
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-38087c97c4bd7133323c3f0d.jpg",
+     "alt": "Figure 1 for this question",
+     "page_idx": 316,
+     "bbox": [
+      87,
+      655,
+      394,
+      902
+     ]
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.12.4",
+    "exam": "GATE CSE 2011 | Question: 13",
+    "section": "Digital Circuits",
+    "paper_question": "13",
+    "tags": [],
+    "page_idx": 316,
+    "bbox": [
+     87,
+     655,
+     394,
+     902
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer D but only 0 option(s) recovered",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-13-6",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2002,
+   "text": "Consider the following circuit. $A = a _ { 2 } a _ { 1 } a _ { 0 }$ and $B = b _ { 2 } b _ { 1 } b _ { 0 }$ are three bit binary numbers input to the circuit. The output is $Z = z _ { 3 } z _ { 2 } z _ { 1 } z _ { 0 }$. R0, R1 and R2 are registers with loading clock shown. The registers are loaded with their input data with the falling edge of a clock pulse (signal CLOCK shown) and appears as shown. The bits of input number A, B and the full adders are as shown in the circuit. Assume Clock period is greater than the settling time of all circuits. a. For 8 clock pulses on the CLOCK terminal and the inputs $A, B$ as shown, obtain the output (sequence of values of Assume initial contents of $R _ { 0 }, R _ { 1 }$ and $R _ { 2 }$ as all zeros. | A | 110 | 011 | 111 | 101 | 000 | 000 | 000 | 000\n| B | 101 | 101 | 011 | 110 | 000 | 000 | 000 | 000\n| Clock No | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 b. What does the circuit implement?",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-6ba326deb77d9c59df50e246.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 319,
+     "bbox": [
+      324,
+      262,
+      690,
+      489
+     ],
+     "kind": "flowchart"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.13.6",
+    "exam": "GATE CSE 2002 | Question: 8",
+    "section": "Digital Circuits",
+    "paper_question": "8",
+    "tags": [
+     "gatecse-2002",
+     "digital-logic",
+     "normal",
+     "descriptive",
+     "digital-counter"
+    ],
+    "page_idx": 319,
+    "bbox": [
+     324,
+     262,
+     690,
+     489
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key; stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-13-7",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2011,
+   "text": "The minimum number of flip-flops needed to design a mod-258 counter is",
+   "options": [
+    "9",
+    "8",
+    "512",
+    "258"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.13.7",
+    "exam": "GATE CSE 2011 | Question: 15",
+    "section": "Digital Circuits",
+    "paper_question": "15",
+    "tags": [
+     "gatecse-2011",
+     "digital-logic",
+     "easy",
+     "digital-counter"
+    ],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-13-16",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "How many pulses are needed to change the contents of a -bit up counter from to (rightmost bit is the LSB)?",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.13.16",
+    "exam": "GATE IT 2005 | Question: 11",
+    "section": "Digital Circuits",
+    "paper_question": "11",
+    "tags": [
+     "gateit-2005",
+     "digital-logic",
+     "digital-counter",
+     "normal"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-25-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2017,
+   "text": "Given $f ( w, x, y, z ) = \\Sigma _ { m } ( 0, 1, 2, 3, 7, 8, 1 0 ) + \\Sigma _ { d } ( 5, 6, 1 1, 1 5 )$; where represents the 'don't-care condition in Karnaugh maps. Which of the following is a minimum product-of-sums (POS) form of $f ( w, x, y, z )?$",
+   "options": [
+    "f = (w + z)(x + z)",
+    "f = (w + z)(x + z) c. f = (w + z)(x + z)",
+    "f = (w + z)(x + z)"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.25.2",
+    "exam": "GATE CSE 2017 | Set 2 | Question: 28",
+    "section": "Min Products of Sum Form",
+    "paper_question": "28",
+    "tags": [
+     "gatecse-2017-set2",
+     "digital-logic",
+     "min-products-of-sum-form"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "option letters A,B,D are not a run from A",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "kmap"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-31-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "A ROM is used to store the Truth table for binary multiple units that will multiply two -bit numbers. The size of the ROM (number of words number of bits) that is required to accommodate the Truth table is. Write the values of and.",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.31.1",
+    "exam": "GATE CSE 1993 | Question: 6.6",
+    "section": "ROM",
+    "paper_question": "6.6",
+    "tags": [
+     "digital-logic"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-31-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "A ROM is used to store the table for multiplication of two -bit unsigned integers. The size of ROM required is",
+   "options": [
+    "256 × 16",
+    "64K × 8",
+    "4K × 16",
+    "64K × 16"
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.31.2",
+    "exam": "GATE CSE 1996 | Question: 1.21",
+    "section": "ROM",
+    "paper_question": "1.21",
+    "tags": [
+     "digital-logic"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-31-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2012,
+   "text": "The amount of ROM needed to implement a multiplier is",
+   "options": [
+    "bits",
+    "bits",
+    "Kbits",
+    "Kbits"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.31.3",
+    "exam": "GATE CSE 2012 | Question: 19",
+    "section": "ROM",
+    "paper_question": "19",
+    "tags": [
+     "gatecse-2012",
+     "digital-logic",
+     "normal",
+     "rom"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none",
+    "options_recovered": "pix2tex"
+   },
+   "explain": "",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": [
+    3
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
+  },
+  {
+   "id": "mineru-filter1-volume3-4-31-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2004,
+   "text": "What is the minimum size of ROM required to store the complete truth table of an $8 - b i t \\times 8 - b i t$ multiplier?",
+   "options": [
+    "bits",
+    "bits",
+    "bits",
+    "bits"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.31.4",
+    "exam": "GATE IT 2004 | Question: 10",
+    "section": "ROM",
+    "paper_question": "10",
+    "tags": [
+     "gateit-2004",
+     "digital-logic",
+     "normal",
+     "rom"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none",
+    "options_recovered": "pix2tex"
+   },
+   "explain": "",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "combinational",
+   "answer": [
+    1
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
+  },
+  {
+   "id": "mineru-filter1-volume3-4-36-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2001,
+   "text": "Consider the circuit given below with initial state $Q _ { 0 } = 1, Q _ { 1 } = Q _ { 2 } = 0$. The state of the circuit is given by the value $4 Q _ { 2 } + 2 \\bar { Q _ { 1 } } + Q _ { 0 }$ Which one of the following is correct state sequence of the circuit?",
+   "options": [
+    "1,3,4,6,7,5,2",
+    "1,2,5,3,7,6,4",
+    "1,2,7,3,5,6,4",
+    "1,6,5,7,2,3,4"
+   ],
+   "answer": [
+    1
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-70587c523318d64d551751e7.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 360,
+     "bbox": [
+      326,
+      255,
+      694,
+      338
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  Clock[\"Clock\"] --> D0[\"D0 Q0\"]\n  D0 --> LSB[\"LSB\"]\n  LSB --> D1[\"D1 Q1\"]\n  D1 --> MSB[\"MSB\"]\n  MSB --> D2[\"D2 Q2\"]\n  D2 --> Output[\"Output\"]\n  Output --> LSB"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.36.3",
+    "exam": "GATE CSE 2001 | Question: 2.12",
+    "section": "Synchronous Asynchronous Circuits",
+    "paper_question": "2.12",
+    "tags": [
+     "gatecse-2001",
+     "digital-logic",
+     "normal",
+     "synchronous-asynchronous-circuits"
+    ],
+    "page_idx": 360,
+    "bbox": [
+     326,
+     255,
+     694,
+     338
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "sequential"
+  },
+  {
+   "id": "mineru-vol1-8-3-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "If 'relftaga' means carefree, 'otaga' means careful and 'fertaga' means careless, which of the following could mean 'aftercare'?",
+   "options": [
+    "zentaga",
+    "tagafer.",
+    "tagazen.",
+    "relffer."
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "8.3.2",
+    "exam": "GATE CSE 2016 | Set 1 | GA | Question: 04",
+    "section": "Code Words",
+    "paper_question": "04",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "number-systems"
   }
  ]
 }

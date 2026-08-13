@@ -399,7 +399,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-17-11",
@@ -910,7 +912,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-18-12",
@@ -1373,7 +1377,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-35-1",
@@ -1382,7 +1388,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Solve the recurrence equations: \u2022 T(n) = T(n \u2212 1) + n \u00b7 T(1) =1",
+   "text": "Solve the recurrence equations: • T(n) = T(n − 1) + n · T(1) =1",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -1405,7 +1411,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Solve the recurrence equations: \u2022 T(n) = T(x) + 1 \u00b7 T(1) = 1",
+   "text": "Solve the recurrence equations: • T(n) = T(x) + 1 · T(1) = 1",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -1428,7 +1434,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Find a solution to the following recurrence equation: \u2022 T(n) = \u221an + T (n) \u00b7 T(1) = 1",
+   "text": "Find a solution to the following recurrence equation: • T(n) = √n + T (n) · T(1) = 1",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -1494,7 +1500,7 @@
    "code_blocks": [
     {
      "lang": "txt",
-     "code": "Function F(n)\nbegin\nF1 \u2190 1\nif(n=1) then F \u2190 3\nelse\n    For i = 1 to n do\n        begin\n            C \u2190 0\n        For j = 1 to n - 1 do\n            begin C \u2190 C + 1 end\n            F1 = F1 * C\n        end\nF = F1\nend"
+     "code": "Function F(n)\nbegin\nF1 ← 1\nif(n=1) then F ← 3\nelse\n    For i = 1 to n do\n        begin\n            C ← 0\n        For j = 1 to n - 1 do\n            begin C ← C + 1 end\n            F1 = F1 * C\n        end\nF = F1\nend"
     }
    ],
    "origin": {
@@ -1516,7 +1522,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key"
+   "needs_fix": "no answer printed in the source answer key",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-1-35-6",
@@ -1532,7 +1541,7 @@
    "code_blocks": [
     {
      "lang": "txt",
-     "code": "Function F(n)\nbegin\nF1 \u2190 1\nif(n=1) then F \u2190 3\nelse\n    For i = 1 to n do\n        begin\n            C \u2190 0\n        For j = 1 to n - 1 do\n            begin C \u2190 C + 1 end\n            F1 = F1 * C\n        end\nF = F1\nend"
+     "code": "Function F(n)\nbegin\nF1 ← 1\nif(n=1) then F ← 3\nelse\n    For i = 1 to n do\n        begin\n            C ← 0\n        For j = 1 to n - 1 do\n            begin C ← C + 1 end\n            F1 = F1 * C\n        end\nF = F1\nend"
     }
    ],
    "origin": {
@@ -1547,7 +1556,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; option letters B are not a run from A"
+   "needs_fix": "no answer printed in the source answer key; option letters B are not a run from A",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-1-35-7",
@@ -1556,7 +1568,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider the recursive algorithm given below: Let $a _ { n }$ be the number of times the \u2018if\u2026then\u2026\u2019 statement gets executed when the algorithm is run with value. Set up the recurrence relation by defining $a _ { n }$ in terms of $a _ { n - 1 }$. Solve for $a _ { n }$",
+   "text": "Consider the recursive algorithm given below: Let $a _ { n }$ be the number of times the ‘if…then…’ statement gets executed when the algorithm is run with value. Set up the recurrence relation by defining $a _ { n }$ in terms of $a _ { n - 1 }$. Solve for $a _ { n }$",
    "options": [],
    "code_blocks": [
     {
@@ -1589,7 +1601,7 @@
    "text": "The recurrence relation that arises in relation with the complexity of binary search is:",
    "options": [
     "$\\begin{array} { r } { T ( n ) = 2 T \\left( \\frac { n } { 2 } \\right) + k , } \\end{array}$ k is a constant",
-    "T(n) = T (\u2212) + k, k is a constant",
+    "T(n) = T (−) + k, k is a constant",
     "T(n) = T (x) + log n",
     "T(n) = T (x) + n"
    ],
@@ -2046,8 +2058,8 @@
    "options": [
     "$T ( n ) = 2 T ( n - 2 ) + 2$",
     "$T ( n ) = 2 T ( n / 2 ) + 1$",
-    "T(n) = 2T(n \u2212 1) + n",
-    "T(n) = 2T(n \u2212 1) + 1"
+    "T(n) = 2T(n − 1) + n",
+    "T(n) = 2T(n − 1) + 1"
    ],
    "answer": [
     3
@@ -2113,7 +2125,7 @@
    "text": "Let a represent the number of bit strings of length n containing two consecutive s. What is the recurrence relation for $a _ { n }?$",
    "options": [
     "$a _ { n - 2 } + a _ { n - 1 } + 2 ^ { n - 2 }$",
-    "an\u22122 + 2an\u22121 + 2n\u22122",
+    "an−2 + 2an−1 + 2n−2",
     "$2 a _ { n - 2 } + a _ { n - 1 } + 2 ^ { n - 2 }$",
     "$2 a _ { n - 2 } + 2 a _ { n - 1 } + 2 ^ { n - 2 }$"
    ],
@@ -2309,8 +2321,8 @@
    "options": [
     "$T ( n ) = \\Theta ( n ^ { 5 / 2 } )$",
     "$T ( n ) = \\Theta ( n )$",
-    "T(n) = \u0398(nlogn)",
-    "T(n) = \u0398((log n)5/2)"
+    "T(n) = Θ(nlogn)",
+    "T(n) = Θ((log n)5/2)"
    ],
    "answer": [
     2
@@ -2447,12 +2459,12 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2026,
-   "text": "Which of the following can be recurrence relation(s) corresponding to an algorithm with time complexity \u0398(n)?",
+   "text": "Which of the following can be recurrence relation(s) corresponding to an algorithm with time complexity Θ(n)?",
    "options": [
-    "T(n) = T(n \u2212 1) + 1, T(1) = 1",
-    "T(n) = 2T (\u2212) + 1, T(1) = 1",
+    "T(n) = T(n − 1) + 1, T(1) = 1",
+    "T(n) = 2T (−) + 1, T(1) = 1",
     "T(n) = 2T (x) + n, T(1) = 1",
-    "T(n) = T(n \u2212 1) + n, T(1) = 1"
+    "T(n) = T(n − 1) + n, T(1) = 1"
    ],
    "answer": [
     0,
@@ -2581,7 +2593,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-42-1",
@@ -3090,7 +3104,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-1-2-2",
@@ -3232,7 +3248,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-1-2-7",
@@ -3290,7 +3308,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-1-2-9",
@@ -3454,7 +3474,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2020,
-   "text": "The number of permutations of the characters in LILAC so that no character appears in its original position, if the two L\u2019s are indistinguishable, is",
+   "text": "The number of permutations of the characters in LILAC so that no character appears in its original position, if the two L’s are indistinguishable, is",
    "options": [],
    "answer_value": 12.0,
    "tolerance": 0,
@@ -4046,7 +4066,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-1-6-2",
@@ -4082,7 +4104,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-1-7-1",
@@ -4117,10 +4141,10 @@
    "year": 2016,
    "text": "Let $a _ { n }$ be the number of -bit strings that do NOT contain two consecutive $1 ^ { \\prime } s.$. Which one of the following is the recurrence relation for $a _ { n }?$",
    "options": [
-    "an = an\u22121 + 2an\u22122",
-    "an = an\u22121 + an\u22122",
-    "an = 2an\u22121 + an\u22122",
-    "an = 2an\u22121 + 2an\u22122"
+    "an = an−1 + 2an−2",
+    "an = an−1 + an−2",
+    "an = 2an−1 + an−2",
+    "an = 2an−1 + 2an−2"
    ],
    "answer": [
     1
@@ -4638,7 +4662,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-2-5",
@@ -4674,7 +4700,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-2-6",
@@ -5065,7 +5093,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-4-3",
@@ -5218,7 +5248,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2023,
-   "text": "Let be a simple, finite, undirected graph with vertex set $\\{ v _ { 1 }, \\ldots, v _ { n } \\}$. Let $\\Delta ( G )$ denote the maximum degree of and let $\\mathbb { N } = \\{ 1, 2, \\ldots \\}$ denote the set of all possible colors. Color the vertices of using the following greedy strategy: for $i = 1, \\ldots, n$ color(vi) \u2190 min $\\{ j \\in \\mathbb { N }$: no neighbour of $v _ { i }$ is colored $j \\}$ Which of the following statements is/are",
+   "text": "Let be a simple, finite, undirected graph with vertex set $\\{ v _ { 1 }, \\ldots, v _ { n } \\}$. Let $\\Delta ( G )$ denote the maximum degree of and let $\\mathbb { N } = \\{ 1, 2, \\ldots \\}$ denote the set of all possible colors. Color the vertices of using the following greedy strategy: for $i = 1, \\ldots, n$ color(vi) ← min $\\{ j \\in \\mathbb { N }$: no neighbour of $v _ { i }$ is colored $j \\}$ Which of the following statements is/are",
    "options": [
     "This procedure results in a proper vertex coloring of .",
     "The number of colors used is at most $\\Delta ( G ) + 1$",
@@ -5423,7 +5453,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-5-1",
@@ -5727,7 +5759,7 @@
    "code_blocks": [
     {
      "lang": "txt",
-     "code": "V: Set of all vertices in the tree;\nI := \u03c6\nwhile V \u2260 \u03c6 do\nbegin\n  select a vertex u \u2208 V such that\n    ________;\n    V := V - {u};\n    if u is such that\n      ________then I := I \u222a {u}\nend;\nOutput(I);"
+     "code": "V: Set of all vertices in the tree;\nI := φ\nwhile V ≠ φ do\nbegin\n  select a vertex u ∈ V such that\n    ________;\n    V := V - {u};\n    if u is such that\n      ________then I := I ∪ {u}\nend;\nOutput(I);"
     }
    ],
    "origin": {
@@ -5832,7 +5864,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-5-12",
@@ -5951,7 +5985,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-5-15",
@@ -6152,7 +6188,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-5-21",
@@ -6456,7 +6494,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-5-30",
@@ -6697,7 +6737,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-5-37",
@@ -6767,7 +6809,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-5-39",
@@ -6836,7 +6880,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-6-1",
@@ -6847,12 +6893,7 @@
    "difficulty": "medium",
    "year": 2012,
    "text": "Which of the following graphs is isomorphic to",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "figure_assets": [
     {
      "src": "/content/assets/question-images/mineru/vol1-c981bbf4ac4626667e103cda.jpg",
@@ -6935,7 +6976,10 @@
    "answer_pending": true,
    "answer_from_source": "B",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-vol1-2-6-2",
@@ -7299,7 +7343,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-8-6",
@@ -7545,7 +7591,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-2-8-11",
@@ -7675,7 +7723,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-3-1-1",
@@ -7754,8 +7804,7 @@
    "options": [
     "$((\\forall\\alpha)[\\alpha]\\Rightarrow(\\forall\\alpha)[\\beta])\\Rightarrow(\\forall\\alpha)[\\alpha\\Rightarrow\\beta]$",
     "$\\left(\\forall x\\right)\\!\\left[0\\right]\\Rightarrow\\left(\\exists v\\right)\\!\\left[0\\left.\\right\\}\\!\\left(\\frac{}{}v\\right)\\!\\left(\\frac{}{}\\right)\\!\\left(\\frac{}{}-\\frac{}v\\right)\\!\\left(\\frac{}{}v\\right)\\!\\right]$",
-    "$\\left(\\left(\\forall\\alpha\\right)[Q\\vee\\beta]\\rightarrow\\left(\\exists\\alpha\\right)[Q]\\right)\\rightarrow\\left(\\Im\\alpha\\right)[Q]$",
-    "$\\left(\\forall\\mathcal{D}\\right)\\left[Q\\longmapsto\\ \\mathcal{D}\\right]\\longrightarrow\\left(\\left(\\left(\\backslash\\sqrt{\\ }\\mathcal{D}\\right)\\left[Q\\right]\\right)\\longrightarrow\\left(\\R\\mathcal{D}\\right)\\left[\\mathcal{D}\\right]\\right)$"
+    "$\\left(\\left(\\forall\\alpha\\right)[Q\\vee\\beta]\\rightarrow\\left(\\exists\\alpha\\right)[Q]\\right)\\rightarrow\\left(\\Im\\alpha\\right)[Q]$"
    ],
    "origin": {
     "source_file": "filter1_volume1.pdf",
@@ -7774,9 +7823,9 @@
     "options_recovered": "pix2tex"
    },
    "explain": "",
-   "answer": [
-    3
-   ]
+   "answer": null,
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-vol1-3-1-5",
@@ -7859,10 +7908,10 @@
    "year": 2005,
    "text": "What is the first order predicate calculus statement equivalent to the following? \"Every teacher is liked by some student\"",
    "options": [
-    "\u2200(x) [teacher (x) \u2192 \u2203(y) [student (y) \u2192 likes (y, x)]]",
-    "\u2200(x) [teacher (x) \u2192 \u2203(y) [student (y) \u2227 likes (y, x)]]",
-    "\u2203(y)\u2200(x) [teacher (x) \u2192 [student (y) \u2227 likes (y, x)]]",
-    "\u2200(x) [teacher (x) \u2227 \u2203(y) [student (y) \u2192 likes (y, x)]]"
+    "∀(x) [teacher (x) → ∃(y) [student (y) → likes (y, x)]]",
+    "∀(x) [teacher (x) → ∃(y) [student (y) ∧ likes (y, x)]]",
+    "∃(y)∀(x) [teacher (x) → [student (y) ∧ likes (y, x)]]",
+    "∀(x) [teacher (x) ∧ ∃(y) [student (y) → likes (y, x)]]"
    ],
    "answer": [
     1
@@ -7892,10 +7941,10 @@
    "difficulty": "medium",
    "text": "Which one of the first order predicate calculus statements given below correctly expresses the following English statement? Tigers and lions attack if they are hungry or threatened.",
    "options": [
-    "\u2200x[(tiger(x) \u2227 lion(x)) \u2192 (hungry(x) \u2228 threatened(x)) \u2192 attacks(x)]",
-    "\u2200x[(tiger(x) \u2228 lion(x)) \u2192 (hungry(x) \u2228 threatened(x)) \u2227 attacks(x)]",
-    "\u2200x[(tiger(x) \u2228 lion(x)) \u2192 attacks(x) \u2192 (hungry(x) \u2228 threatened(x))]",
-    "\u2200x[(tiger(x) \u2228 lion(x)) \u2192 (hungry(x) \u2228 threatened(x)) \u2192 attacks(x)]"
+    "∀x[(tiger(x) ∧ lion(x)) → (hungry(x) ∨ threatened(x)) → attacks(x)]",
+    "∀x[(tiger(x) ∨ lion(x)) → (hungry(x) ∨ threatened(x)) ∧ attacks(x)]",
+    "∀x[(tiger(x) ∨ lion(x)) → attacks(x) → (hungry(x) ∨ threatened(x))]",
+    "∀x[(tiger(x) ∨ lion(x)) → (hungry(x) ∨ threatened(x)) → attacks(x)]"
    ],
    "answer": [
     3
@@ -7919,12 +7968,12 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2007,
-   "text": "Let be a predicate which denotes that is a graph. Let be a predicate which denotes that is connected. Which of the following first order logic sentences DOES NOT represent the statement: \u201cNot every graph is connected\"",
+   "text": "Let be a predicate which denotes that is a graph. Let be a predicate which denotes that is connected. Which of the following first order logic sentences DOES NOT represent the statement: “Not every graph is connected\"",
    "options": [
-    "\u00ac\u2200x ( Graph(x) \u21d2 Connected(x))",
-    "\u2203x ( Graph(x) \u2227 \u00ac Connected(x))",
+    "¬∀x ( Graph(x) ⇒ Connected(x))",
+    "∃x ( Graph(x) ∧ ¬ Connected(x))",
     "$\\lnot \\forall x \\left( \\lnot \\operatorname { G r a p h } ( x ) \\lor \\operatorname { C o n n e c t e d } ( x ) \\right)$",
-    "\u2200x ( Graph(x) \u21d2 \u00ac Connected(x))"
+    "∀x ( Graph(x) ⇒ ¬ Connected(x))"
    ],
    "answer": [
     3
@@ -7955,10 +8004,10 @@
    "year": 2008,
    "text": "Let and be two predicates such that means is a finite state automaton and means that is a pushdown automaton. Let be another predicate such that $( a, b )$ means and are equivalent. Which of the following first order logic statements represent the following? Each finite state automaton has an equivalent pushdown automaton",
    "options": [
-    "(\u2200x fsa (x)) (\u2203y pda (y) \u2227 equivalent $( x , y ) )$",
-    "\u00ac\u2200y (\u2203x fsa (x) \u2192 pda (y) \u2227 equivalent $( x , y ) )$",
-    "\u2200x\u2203y (fsa (x) \u2227 pda (y) \u2227 equivalent $( x , y ) )$",
-    "\u2200x\u2203y (fsa (y) \u2227 pda (x) \u2227 equivalent (x, y))"
+    "(∀x fsa (x)) (∃y pda (y) ∧ equivalent $( x , y ) )$",
+    "¬∀y (∃x fsa (x) → pda (y) ∧ equivalent $( x , y ) )$",
+    "∀x∃y (fsa (x) ∧ pda (y) ∧ equivalent $( x , y ) )$",
+    "∀x∃y (fsa (y) ∧ pda (x) ∧ equivalent (x, y))"
    ],
    "origin": {
     "source_file": "filter1_volume1.pdf",
@@ -8120,10 +8169,9 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2012,
-   "text": "What is the correct translation of the following statement into mathematical logic? \u201cSome real numbers are rational\u201d",
+   "text": "What is the correct translation of the following statement into mathematical logic? “Some real numbers are rational”",
    "options": [
     "$\\exists x{\\mathrm{(real}(x)}\\;\\forall\\;\\mathrm{rational}(x))$",
-    "$\\sqrt{\\ }\\mathcal{U}_{\\mathbf{\\Lambda}}\\mathcal{U}_{G O_{1}}^{\\mathrm{\\Lambda}}\\Big\\vert\\biggl(\\mathcal{D}_{\\mathbf{\\Lambda}}\\biggl)\\mathrm{\\\\frac{~}{~}_{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$",
     "$\\exists x({\\mathrm{real}}(x)\\land{\\mathrm{rational}}(x))$",
     "$\\overline{{{\\ M}}}\\mathrm{e}\\mathrm{tanional}(\\underline{{{\\alpha}}})\\longrightarrow\\mathrm{real}(\\alpha)\\rangle$"
    ],
@@ -8228,11 +8276,11 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2014,
-   "text": "Consider the statement \"Not all that glitters is gold\u201d Predicate glitters is true if glitters and predicate gold is true if is gold. Which one of the following logical formulae represents the above statement?",
+   "text": "Consider the statement \"Not all that glitters is gold” Predicate glitters is true if glitters and predicate gold is true if is gold. Which one of the following logical formulae represents the above statement?",
    "options": [
-    "\u2200x : glitters(x) \u21d2 \u00acgold(x)",
+    "∀x : glitters(x) ⇒ ¬gold(x)",
     "$\\forall x : \\operatorname { g o l d } ( x ) \\Rightarrow \\operatorname { g l i t t e r s } ( x )$",
-    "\u2203x : gold(x) \u2227 \u00acglitters(x)",
+    "∃x : gold(x) ∧ ¬glitters(x)",
     "$\\exists x : \\operatorname { g l i t t e r s } ( x ) \\land \\neg \\operatorname { g o l d } ( x )$"
    ],
    "answer": [
@@ -8266,7 +8314,7 @@
     "$\\forall d ( \\mathrm { R a i n y } ( d ) \\land \\neg \\mathrm { C o l d } ( d ) )$",
     "$\\forall d ( \\neg \\mathrm { R a i n y } ( d ) \\to \\mathbf { C o l d } ( d ) )$",
     "$\\exists d ( \\neg \\mathrm { R a i n y } ( d ) \\to \\mathrm { C o l d } ( \\dot { d } ) )$",
-    "\u2203d(Rainy(d) \u2227 \\~Cold(d))"
+    "∃d(Rainy(d) ∧ \\~Cold(d))"
    ],
    "answer": [
     3
@@ -8297,8 +8345,6 @@
    "year": 2015,
    "text": "Which one of the following well-formed formulae is a tautology?",
    "options": [
-    "$\\left|\\begin{array}{l l}{{\\mid^{\\bullet}}}\\\\ {{\\mid^{\\bullet}\\Big\\Vert_{\\theta}\\Big\\Vert_{\\left\\Vert\\left\\Vert}\\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\left\\bigcup\\bigcup\\left\\Vert\\partial\\left\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\left\\Vert\\right\\Vert\\right\\Vert\\left\\bigcup\\left\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\left\\Vert\\right\\Vert\\right\\Vert\\left\\Vert\\right\\Vert\\left\\Vert\\right\\Vert\\right\\Vert\\left\\Vert\\left\\Vert\\right\\Vert\\right\\Vert\\left\\Vert\\left\\left\\Vert\\right\\Vert\\right\\Vert\\left\\left\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\left\\Vert\\left\\Vert\\right\\Vert\\left\\partial\\left\\Vert\\left\\left\\Vert\\right\\Vert\\left\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\right\\Vert\\left\\Vert\\left\\Vert\\left\\left\\left\\begin\\begin\\right\\Vert\\right\\Vert\\right\\Vert\\left\\ \\left\\ \\right\\Vert\\left\\Vert\\right\\ \\left\\ \\left\\ \\right\\Vert\\left\\Vert\\left\\ \\right\\Vert\\right\\Vert\\right\\Vert\\right\\ \\left\\ \\left\\ \\right\\Vert\\left\\Vert\\right\\Vert\\right\\ \\right\\Vert\\left\\Vert\\right\\ \\left\\Vert\\left\\ \\right\\ \\right\\Vert\\left\\ \\left\\left\\Vert\\right\\ \\right\\Vert\\left\\ \\left\\Vert\\left\\Vert\\right\\ \\left\\ \\left\\Vert\\left\\ \\left\\ \\left\\Vert\\left\\ \\left\\left\\Vert\\left\\ \\left\\Vert\\left\\Vert\\left\\Vert\\left\\Vert\\$",
-    "$\\left.\\left|\\begin{array}{l}{{\\left\\langle\\mid\\phantom{\\mid\\beta\\mid}\\bigcup_{\\Vert}^{\\prime}\\right|_{\\Vert\\beta\\Vert}^{j}\\left|\\right\\Vert_{\\Vert}^{\\left|\\beta\\mid}\\right\\Vert_{\\Vert}^{\\left|\\beta\\mid}\\right\\Vert_{\\Vert}^{\\left|}\\right|}\\end{array}\\right|_{\\begin{array}{l}{{}=\\left.\\left.\\left|\\left.\\left.\\left|\\beta\\right|^{\\mathbf\\Vert}\\right|_{\\Vert}^{\\mathbf{\\psi}\\right|}\\right|_{\\Vert\\beta\\mid}^{\\left|\\beta\\mid}\\right|_{\\Vert\\beta\\mid}^{\\left|}\\right|_{\\psi\\Vert}^{\\left|}\\right|_{\\Vert}^{\\left|\\beta\\mid}\\right|_{\\Vert}^{\\left|\\psi\\right|}\\right|_{\\Vert}^{\\left|}\\right|_{\\psi\\Vert}^{\\left|}\\right|_{\\Vert}^{\\right|}}$",
     "$[\\forall x\\,\\exists y\\,(P(x,y)\\,\\to\\,R(x,y))]\\,\\leftrightarrow\\,[\\forall x\\,\\exists y\\,(\\neg P(x,y)\\,\\lor R(x,y))]$",
     "$\\forall x\\,\\forall y\\,P(x,y)\\,\\rightarrow\\,\\forall x\\,\\forall y\\,P(y,x)$"
    ],
@@ -8319,9 +8365,9 @@
     "options_recovered": "pix2tex"
    },
    "explain": "",
-   "answer": [
-    2
-   ]
+   "answer": null,
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-vol1-3-1-21",
@@ -8435,7 +8481,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2019,
-   "text": "Consider the first order predicate formula $\\varphi \\mathrm {: }$ $\\forall x [ (\\forall z z | x \\Rightarrow ((z = x) \\lor (z = 1))) \\rightarrow \\exists w (w > x) \\land (\\forall z z | w \\Rightarrow ((w = z) \\lor (z = 1))) ]$ Here $a \\mid b$ denotes that $' a$ divides $b ^ { \\prime }$, where and are integers. Consider the following sets: \u2022 $S _ { 1 }$: {1, 2, 3,..., 100} \u2022 $S _ { 2 }$ Set of all positive integers \u2022 $S _ { 3 }$ Set of all integers Which of the above sets satisfy $\\varphi?$",
+   "text": "Consider the first order predicate formula $\\varphi \\mathrm {: }$ $\\forall x [ (\\forall z z | x \\Rightarrow ((z = x) \\lor (z = 1))) \\rightarrow \\exists w (w > x) \\land (\\forall z z | w \\Rightarrow ((w = z) \\lor (z = 1))) ]$ Here $a \\mid b$ denotes that $' a$ divides $b ^ { \\prime }$, where and are integers. Consider the following sets: • $S _ { 1 }$: {1, 2, 3,..., 100} • $S _ { 2 }$ Set of all positive integers • $S _ { 3 }$ Set of all integers Which of the above sets satisfy $\\varphi?$",
    "options": [
     "and",
     "and",
@@ -8463,7 +8509,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-3-1-25",
@@ -8477,8 +8525,8 @@
    "options": [
     "$\\forall x ( p ( x ) \\lor W ) \\equiv \\forall x p ( x ) \\lor W$",
     "$\\exists x ( p ( x ) \\land W ) \\equiv \\exists x p ( x ) \\land W$",
-    "\u2200x(p(x) \u2192 W) \u2261 \u2200x p(x) \u2192 W",
-    "\u2203x(p(x) \u2192 W) \u2261 \u2200x p(x) \u2192 W"
+    "∀x(p(x) → W) ≡ ∀x p(x) → W",
+    "∃x(p(x) → W) ≡ ∀x p(x) → W"
    ],
    "answer": [
     2
@@ -8509,9 +8557,9 @@
    "year": 2023,
    "text": "Geetha has a conjecture about integers, which is of the form $\\forall x (P (x) \\Longrightarrow \\exists y Q (x, y))$, where $P$ is a statement about integers, and $Q$ is a statement about pairs of integers. Which of the following (one or more) option(s) would imply Geetha's conjecture?",
    "options": [
-    "\u2203x(P(x) \u2227 \u2200yQ(x, y))",
+    "∃x(P(x) ∧ ∀yQ(x, y))",
     "$\\forall x \\forall y Q ( x , y )$",
-    "\u2203y\u2200x(P(x) = Q(x, y))",
+    "∃y∀x(P(x) = Q(x, y))",
     "$\\exists x ( P ( x ) \\land \\exists y Q ( x , y ) )$"
    ],
    "answer": [
@@ -8546,10 +8594,10 @@
    "year": 2025,
    "text": "Which of the following predicate logic formulae/formula is/are CORRECT representation(s) of the statement: \"Everyone has exactly one mother\"? The meanings of the predicates used are: mother $( y, x ): y$ is the mother of noteq and are not equal",
    "options": [
-    "\u2200x\u2203y\u2203z(mother(y, x) \u2227 \u00ac mother(z, x))",
-    "\u2200x\u2203y[mother(y, x) \u2227\u2200z(noteq(z, y) \u2192 \u00ac mother(z, x))]",
-    "\u2200x\u2200y[mother(y, x) \u2192 \u2203z(mother(z, x) \u2227 \u00ac note q(z, y))]",
-    "\u2200x\u2203y[mother(y, x) \u2227 \u00ac\u2203z(note q(z, y) \u2227 mother(z, x))]"
+    "∀x∃y∃z(mother(y, x) ∧ ¬ mother(z, x))",
+    "∀x∃y[mother(y, x) ∧∀z(noteq(z, y) → ¬ mother(z, x))]",
+    "∀x∀y[mother(y, x) → ∃z(mother(z, x) ∧ ¬ note q(z, y))]",
+    "∀x∃y[mother(y, x) ∧ ¬∃z(note q(z, y) ∧ mother(z, x))]"
    ],
    "answer": [
     1,
@@ -8642,7 +8690,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-3-1-30",
@@ -8654,10 +8704,10 @@
    "year": 2004,
    "text": "Let $a ( x, y ), b ( x, y, )$ and $c ( x, y )$ be three statements with variables and chosen from some universe. Consider the following statement: $(\\exists x) (\\forall y) [ (a (x, y) \\land b (x, y)) \\land \\neg c (x, y) ]$ Which one of the following is its equivalent?",
    "options": [
-    "(\u2200x)(\u2203y)[(a(x, y) \u2228 b(x, y)) \u2192 c(x, y)]",
+    "(∀x)(∃y)[(a(x, y) ∨ b(x, y)) → c(x, y)]",
     "$( \\exists x ) ( \\forall y ) [ ( a ( x , y ) \\lor b ( x , y ) ) \\land \\lnot c ( x , y ) ]$",
     "$\\neg ( \\forall x ) ( \\exists y ) [ ( a ( x , y ) \\land b ( x , y ) ) \\to c ( x , y ) ]$",
-    "\u2212(\u2200x)(=\u2203y)[(a(x, y) \u2228 b(x, y) \u2192 c(x, y)]"
+    "−(∀x)(=∃y)[(a(x, y) ∨ b(x, y) → c(x, y)]"
    ],
    "answer": [
     2
@@ -8689,7 +8739,6 @@
    "year": 2005,
    "text": "Let and $Q ( x )$ be arbitrary predicates. Which of the following statements is always TRUE?",
    "options": [
-    "$\\left(\\left\\langle\\psi_{w}\\left(P\\left(\\bar{q}\\right)\\backslash\\bar{Q}\\left(\\bar{q}\\right)\\right)\\right)\\Longrightarrow\\left.\\left(\\left\\langle\\bar{\\forall}v\\bar{P}\\left(\\bar{q}\\right)\\right)\\backslash\\left(\\bar{\\forall}v\\bar{Q}\\left(\\bar{q}\\right)\\right)\\right)$",
     "$(\\forall x\\,(P\\,(x)\\implies Q\\,(x)))\\implies((\\lor x P\\,(x))\\implies(\\lor x Q\\,(x)))$",
     "$(\\forall x\\,(P(x))\\implies\\forall x\\,(Q(x)))\\implies(\\forall x\\,(P(x)\\implies Q(x)))$",
     "$(\\forall x\\,(P\\,(x))\\Leftrightarrow(\\forall x\\,(Q\\,(x))))\\implies(\\forall x\\,(P\\,(x)\\Leftrightarrow Q\\,(x)))$"
@@ -8759,9 +8808,9 @@
    "year": 2007,
    "text": "Which one of these first-order logic formulae is valid?",
    "options": [
-    "\u2200x (P (x) \u21d2 Q (x)) \u2192 (\u2200xP (x) = \u2200xQ (x))",
-    "\u2203x (P (x) \u2228 Q (x)) \u2192 (\u2203xP (x) \u2192 \u2203xQ (x))",
-    "\u2203x (P (x) \u2227 Q (x)) \u2190 (\u2203xP (x) \u2227 \u2203xQ (x))",
+    "∀x (P (x) ⇒ Q (x)) → (∀xP (x) = ∀xQ (x))",
+    "∃x (P (x) ∨ Q (x)) → (∃xP (x) → ∃xQ (x))",
+    "∃x (P (x) ∧ Q (x)) ← (∃xP (x) ∧ ∃xQ (x))",
     "$\\forall x \\exists y P ( x , y ) \\implies \\exists y \\forall x P ( x , y )$"
    ],
    "answer": [
@@ -8794,9 +8843,9 @@
    "text": "Which of the following first order formulae is logically valid? Here $\\alpha ( x )$ is a first order formula with as a free variable, and $\\beta$ is a first order formula with no free variable.",
    "options": [
     "$[ \\beta \\to ( \\exists x , \\alpha ( x ) ) ] \\to [ \\forall x , \\beta \\to \\alpha ( x ) ]$",
-    "[\u2203x, \u03b2 \u2192 \u03b1(x)] \u2192 [\u03b2 \u2192 (\u2200x, \u03b1(x))]",
+    "[∃x, β → α(x)] → [β → (∀x, α(x))]",
     "$[ ( \\exists x , \\alpha ( x ) ) \\xrightarrow { } ^ { \\cdot } \\beta ] \\xrightarrow { \\cdot } [ \\forall x , \\alpha ( x ) \\xrightarrow { \\cdot } \\beta ]$",
-    "[(\u2200x, \u03b1(x)) \u2192 \u03b2] \u2192 [\u2200x, \u03b1(x) \u2192 \u03b2]"
+    "[(∀x, α(x)) → β] → [∀x, α(x) → β]"
    ],
    "answer": [
     2
@@ -8826,8 +8875,8 @@
    "year": 2008,
    "text": "Which of the following is the negation of $[ \\forall x, \\alpha ( \\exists y, \\beta ( \\forall u, \\exists v, y ) ) ]$",
    "options": [
-    "[\u2203x, \u03b1 \u2192 (\u2200y, \u03b2 \u2192 (\u2203u, \u2200v, y))]",
-    "[\u2203x, \u03b1 \u2192 (\u2200y, \u03b2 \u2192 (\u2203u, \u2200v, \u00acy))]",
+    "[∃x, α → (∀y, β → (∃u, ∀v, y))]",
+    "[∃x, α → (∀y, β → (∃u, ∀v, ¬y))]",
     "$[ \\forall x , \\neg \\alpha \\to ( \\exists y , \\neg \\beta \\to ( \\forall u , \\exists v , \\neg y ) ) ]$",
     "$[ \\exists x , \\alpha \\land ( \\forall y , \\beta \\land ( \\exists u , \\forall v , \\lnot y ) ) ]$"
    ],
@@ -9444,9 +9493,9 @@
    "text": "\"If then unless $Z \"$ is represented by which of the following formulas in propositional logic? $( \" \\neg\"$ is negation, \" \" is conjunction, and $\" \\to \"$ is implication)",
    "options": [
     "$( X \\land \\neg Z ) \\to Y$",
-    "(X\u2227Y) \u2192 \u00acZ",
+    "(X∧Y) → ¬Z",
     "$\\dot { X } ( Y \\wedge \\neg Z )$",
-    "(X \u2192Y)\u2227\u00acZ"
+    "(X →Y)∧¬Z"
    ],
    "answer": [
     0
@@ -9609,7 +9658,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2006,
-   "text": "Consider the following propositional statements: $P _ { 1 }: ( ( A \\land B ) \\to C ) ) \\equiv ( ( A \\to C ) \\land ( B \\to C ) )$ \u2022 P 2: ((A \u2228 B) \u2192 C)) \u2261 ((A \u2192 C) \u2228 (B \u2192 C)) Which one of the following is true?",
+   "text": "Consider the following propositional statements: $P _ { 1 }: ( ( A \\land B ) \\to C ) ) \\equiv ( ( A \\to C ) \\land ( B \\to C ) )$ • P 2: ((A ∨ B) → C)) ≡ ((A → C) ∨ (B → C)) Which one of the following is true?",
    "options": [
     "is a tautology, but not",
     "is a tautology, but not",
@@ -9676,7 +9725,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "The binary operation is defined as follows | P | Q | P\u25a1Q\n| T | T | T\n| T | F | T\n| F | T | F\n| F | F | T Which one of the following is equivalent to $P \\lor Q?$",
+   "text": "The binary operation is defined as follows | P | Q | P□Q\n| T | T | T\n| T | F | T\n| F | T | F\n| F | F | T Which one of the following is equivalent to $P \\lor Q?$",
    "options": [
     "$\\neg Q{\\mathfrak{D}}\\neg P$",
     "$P{\\overline{{-\\tau}}}Q$",
@@ -9743,8 +9792,8 @@
    "year": 2014,
    "text": "Which one of the following Boolean expressions is NOT a tautology?",
    "options": [
-    "((a \u2192 b) \u2227 (b \u2192 c)) \u2192 (a \u2192 c)",
-    "(a \u2192 c) \u2192 (\u223c b \u2192 (a \u2227 c))",
+    "((a → b) ∧ (b → c)) → (a → c)",
+    "(a → c) → (∼ b → (a ∧ c))",
     "$( a \\land b \\land c ) \\to ( c \\lor a )$",
     "$a ( b a )$"
    ],
@@ -9968,7 +10017,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2017,
-   "text": "Let $p, q, r$ denote the statements \u201dIt is raining\u201d, \u201cIt is cold\u201d, and \u201cIt is pleasant\u201d, respectively. Then the statement \u201cIt is not raining and it is pleasant, and it is not pleasant only if it is raining and it is cold\u201d is represented by",
+   "text": "Let $p, q, r$ denote the statements ”It is raining”, “It is cold”, and “It is pleasant”, respectively. Then the statement “It is not raining and it is pleasant, and it is not pleasant only if it is raining and it is cold” is represented by",
    "options": [
     "$( \\neg p \\land r ) \\land ( \\neg r \\to ( p \\land q ) )$",
     "$( \\neg p \\land r ) \\land ( ( p \\land q ) \\to \\neg r )$",
@@ -10001,7 +10050,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Let and be two propositions. Consider the following two formulae in propositional logic. \u2022 S1: (\u00acp \u2227 (p \u2228 q)) \u2192 q \u2022 S2: q \u2192 (\u2212p \u2227 (p \u2228 q)) Which one of the following choices is correct?",
+   "text": "Let and be two propositions. Consider the following two formulae in propositional logic. • S1: (¬p ∧ (p ∨ q)) → q • S2: q → (−p ∧ (p ∨ q)) Which one of the following choices is correct?",
    "options": [
     "Both $S _ { 1 }$ and $S _ { 2 }$ are tautologies.",
     "$S _ { 1 }$ is a tautology but $S _ { 2 }$ is not a tautology",
@@ -10203,7 +10252,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2003,
-   "text": "Consider the set $\\{ a, b, c \\}$ with binary operators and defined as follows: | + | a | b | c\n| a | b | a | c\n| b | a | b | c\n| c | a | c | b | * | a | b | c\n| a | a | b | c\n| b | b | c | a\n| c | c | c | b For example, $a + c = c, c + a = a, c * b = c { \\mathrm { a n d } } b * c = a.$ Given the following set of equations: \u2022 (a \\* x) + (a \\*y) = c \u2022 (b \\* x) + (c \\* y) = c The number of solution(s) (i.e., pair(s) that satisfy the equations) is",
+   "text": "Consider the set $\\{ a, b, c \\}$ with binary operators and defined as follows: | + | a | b | c\n| a | b | a | c\n| b | a | b | c\n| c | a | c | b | * | a | b | c\n| a | a | b | c\n| b | b | c | a\n| c | c | c | b For example, $a + c = c, c + a = a, c * b = c { \\mathrm { a n d } } b * c = a.$ Given the following set of equations: • (a \\* x) + (a \\*y) = c • (b \\* x) + (c \\* y) = c The number of solution(s) (i.e., pair(s) that satisfy the equations) is",
    "options": [
     "$\\bigcup$",
     "$\\overline{{\\bigcup_{i}}}$",
@@ -10229,7 +10278,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-1-4",
@@ -10239,7 +10290,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2006,
-   "text": "A logical binary relation, is defined as follows: | A | B | A \u2299 B\n| True | True | True\n| True | False | True\n| False | True | False\n| False | False | True Let be the unary negation (NOT) operator, with higher precedence then. Which one of the following is equivalent to?",
+   "text": "A logical binary relation, is defined as follows: | A | B | A ⊙ B\n| True | True | True\n| True | False | True\n| False | True | False\n| False | False | True Let be the unary negation (NOT) operator, with higher precedence then. Which one of the following is equivalent to?",
    "options": [
     "$\\left(\\sim{\\cal A}\\left(\\odot\\right)\\cal B\\right)\\frac{}{\\bf\\Psi}.$",
     "$\\sim\\left(A(\\diamond)\\sim B\\right)_{.}$",
@@ -10310,7 +10361,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2015,
-   "text": "The binary operator is defined by the following truth table. | p | q | p \u2260 q\n| 0 | 0 | 0\n| 0 | 1 | 1\n| 1 | 0 | 1\n| 1 | 1 | 0 Which one of the following is true about the binary operator?",
+   "text": "The binary operator is defined by the following truth table. | p | q | p ≠ q\n| 0 | 0 | 0\n| 0 | 1 | 1\n| 1 | 0 | 1\n| 1 | 1 | 0 Which one of the following is true about the binary operator?",
    "options": [
     "Both commutative and associative",
     "Commutative but not associative",
@@ -10346,7 +10397,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2015,
-   "text": "Let be the binary operator defined as $X \\# Y = X ^ { \\prime } + Y ^ { \\prime }$ where and are Boolean variables. Consider the following two statements. \u2022 (S1) (P#Q)#R = P#(Q#$R) \\cdot (S _ {2}) Q$ \\# R = (R \\# Q) Which are the following is/are true for the Boolean variables $P, Q$ and?",
+   "text": "Let be the binary operator defined as $X \\# Y = X ^ { \\prime } + Y ^ { \\prime }$ where and are Boolean variables. Consider the following two statements. • (S1) (P#Q)#R = P#(Q#$R) \\cdot (S _ {2}) Q$ \\# R = (R \\# Q) Which are the following is/are true for the Boolean variables $P, Q$ and?",
    "options": [
     "Only $S _ { 1 }$ is true",
     "Only $S _ { 2 }$ is true",
@@ -10473,7 +10524,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-3-1",
@@ -11014,13 +11067,10 @@
    "text": "Let and be finite sets and be a function. Which one of the following statements is TRUE?",
    "options": [
     "For any subsets and of $X , | f ( A \\cup B ) | = | f ( A ) | + | f ( B ) |$",
-    "For any subsets and of $X , f ( A \\cap B ) { \\overset { } { = } } f ( A ) { \\overset { } { \\cap } } f ( B )$",
     "For any subsets and of $X , | f ( A \\cap B ) | = \\operatorname* { m i n } \\{ | f ( A ) | , | f ( B ) | \\}$",
     "For any subsets and of $Y , \\dot { f } ^ { \\mathrm { - i } } ( S \\cap T ) = f ^ { \\mathrm { - 1 } } \\bar { ( S ) } \\cap f ^ { \\mathrm { - 1 } } ( T )$"
    ],
-   "answer": [
-    3
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume1.pdf",
     "volume": "vol1",
@@ -11035,7 +11085,9 @@
      "normal"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-vol1-4-3-20",
@@ -11200,7 +11252,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Consider the following sets, where $n \\geq 2 \\mathrm {: }$ \u2022 $S _ { 1 } \\colon$ Set of all $n \\times n$ matrices with entries from the set $\\{ a, b, c \\}$ \u2022 $S _ { 2 } \\mathrm { {: } }$ Set of all functions from the set $\\{ 0, 1, 2, \\ldots, n ^ { 2 } - 1 \\}$ to the set $\\{ 0, 1, 2 \\}$ Which of the following choice(s) is/are correct?",
+   "text": "Consider the following sets, where $n \\geq 2 \\mathrm {: }$ • $S _ { 1 } \\colon$ Set of all $n \\times n$ matrices with entries from the set $\\{ a, b, c \\}$ • $S _ { 2 } \\mathrm { {: } }$ Set of all functions from the set $\\{ 0, 1, 2, \\ldots, n ^ { 2 } - 1 \\}$ to the set $\\{ 0, 1, 2 \\}$ Which of the following choice(s) is/are correct?",
    "options": [
     "There does not exist a bijection from $S _ { 1 }$ to $S _ { 2 }$",
     "There exists a surjection from $S _ { 1 }$ to $S _ { 2 }$",
@@ -11357,7 +11409,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-3-30",
@@ -12010,7 +12064,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-4-21",
@@ -12577,7 +12633,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "In the lattice defined by the Hasse diagram given in following figure, how many complements does the element \u2018 \u2019 have?",
+   "text": "In the lattice defined by the Hasse diagram given in following figure, how many complements does the element ‘ ’ have?",
    "options": [
     "$\\stackrel{\\textstyle\\mathbb{S}}{\\textstyle\\bigcup{}}$",
     "$\\begin{array}{l}{{\\in_{\\mathcal{X}}}}\\\\ {{\\in{\\mathcal{Z}}}}\\end{array}$",
@@ -12620,7 +12676,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-6-6",
@@ -12771,7 +12829,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2017,
-   "text": "Consider the set X = {a, b, c, d, e} under partial ordering R = {(a, \u03b1), (a, b), (a, c), (a, d), (a, e), (b, b), (b, c), (b, e), (c, c), (c, e), (d, d), (d, e), (e, e)} The Hasse diagram of the partial order $( X, R )$ is shown below. The minimum number of ordered pairs that need to be added to to make $( X, R )$ a lattice is",
+   "text": "Consider the set X = {a, b, c, d, e} under partial ordering R = {(a, α), (a, b), (a, c), (a, d), (a, e), (b, b), (b, c), (b, e), (c, c), (c, e), (d, d), (d, e), (e, e)} The Hasse diagram of the partial order $( X, R )$ is shown below. The minimum number of ordered pairs that need to be added to to make $( X, R )$ a lattice is",
    "options": [],
    "answer_value": 0.0,
    "tolerance": 0,
@@ -13348,7 +13406,7 @@
    "type": "nat",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Suppose $A = \\{ a, b, c, d \\}$ and $\\Pi _ { 1 }$ is the following partition of $A \\Pi_ {1} = \\{\\{a, b, c \\} \\{d \\} \\} a$. List the ordered pairs of the equivalence relations induced by $\\Pi _ { 1 }$. b. Draw the graph of the above equivalence relation. c. Let $\\Pi _ { 2 } = \\left\\{ \\left\\{ a \\right\\}, \\left\\{ b \\right\\}, \\left\\{ c \\right\\}, \\left\\{ d \\right\\} \\right\\}$ Draw a Poset diagram of the poset, $\\langle \\{ \\Pi _ { 1 }, \\Pi _ { 2 }, \\Pi _ { 3 }, \\Pi _ { 4 } \\}$, refines \u3009. $\\Pi_ {3} = \\{\\{a, b, c, d \\} \\} \\text {and} \\Pi_ {4} = \\{\\{a, b \\}, \\{c, d \\} \\}$",
+   "text": "Suppose $A = \\{ a, b, c, d \\}$ and $\\Pi _ { 1 }$ is the following partition of $A \\Pi_ {1} = \\{\\{a, b, c \\} \\{d \\} \\} a$. List the ordered pairs of the equivalence relations induced by $\\Pi _ { 1 }$. b. Draw the graph of the above equivalence relation. c. Let $\\Pi _ { 2 } = \\left\\{ \\left\\{ a \\right\\}, \\left\\{ b \\right\\}, \\left\\{ c \\right\\}, \\left\\{ d \\right\\} \\right\\}$ Draw a Poset diagram of the poset, $\\langle \\{ \\Pi _ { 1 }, \\Pi _ { 2 }, \\Pi _ { 3 }, \\Pi _ { 4 } \\}$, refines 〉. $\\Pi_ {3} = \\{\\{a, b, c, d \\} \\} \\text {and} \\Pi_ {4} = \\{\\{a, b \\}, \\{c, d \\} \\}$",
    "options": [],
    "origin": {
     "source_file": "filter1_volume1.pdf",
@@ -13449,7 +13507,7 @@
       731
      ],
      "kind": "flowchart",
-     "mermaid": "graph TD\n  A[\"\u03c01\"] --> B[\"\u03c02\"]\n  B --> C[\"\u03c03\"]\n  C --> D[\"\u03c04\"]"
+     "mermaid": "graph TD\n  A[\"π1\"] --> B[\"π2\"]\n  B --> C[\"π3\"]\n  C --> D[\"π4\"]"
     },
     {
      "src": "/content/assets/question-images/mineru/vol1-6801937bbd8fd860132cc0c2.jpg",
@@ -13867,7 +13925,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-12-13",
@@ -14365,7 +14425,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-12-29",
@@ -14966,7 +15028,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-4-13-9",
@@ -15040,7 +15104,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2001,
-   "text": "Consider the following statements: \u2022 $S _ { 1 }$ There exists infinite sets,, such that $A \\cap ( B \\cup C )$ is finite. \u2022 $S _ { 2 }$ There exists two irrational numbers and y such that is rational. Which of the following is true about $S _ { 1 }$ and $S _ { 2 }?$",
+   "text": "Consider the following statements: • $S _ { 1 }$ There exists infinite sets,, such that $A \\cap ( B \\cup C )$ is finite. • $S _ { 2 }$ There exists two irrational numbers and y such that is rational. Which of the following is true about $S _ { 1 }$ and $S _ { 2 }?$",
    "options": [
     "Only $S _ { 1 }$ is correct",
     "Only $S _ { 2 }$ is correct",
@@ -15541,7 +15605,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2006,
-   "text": "L e t, and be sets let \u0394 denote the symmetric diference operator defined as $P \\Delta Q = ( P \\cup Q ) - ( P \\cap Q )$ Using Venn diagrams, determine which of the following is/are TRUE? I. $P \\Delta ( Q \\cap R ) = ( P \\Delta Q ) \\cap ( P \\Delta R )$ II. $P \\cap ( Q \\cap R ) = ( P \\cap { \\dot { Q } } ) \\Delta ( P \\Delta R )$",
+   "text": "L e t, and be sets let Δ denote the symmetric diference operator defined as $P \\Delta Q = ( P \\cup Q ) - ( P \\cap Q )$ Using Venn diagrams, determine which of the following is/are TRUE? I. $P \\Delta ( Q \\cap R ) = ( P \\Delta Q ) \\cap ( P \\Delta R )$ II. $P \\cap ( Q \\cap R ) = ( P \\cap { \\dot { Q } } ) \\Delta ( P \\Delta R )$",
    "options": [
     "I only",
     "II only",
@@ -15766,12 +15830,7 @@
    "difficulty": "medium",
    "year": 2011,
    "text": "In how many ways scholarships can be awarded to applicants, when each applicant can receive any number of scholarships?",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "origin": {
     "source_file": "filter1_volume1.pdf",
     "volume": "vol1",
@@ -15789,7 +15848,10 @@
    "answer_pending": true,
    "answer_from_source": "C",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-vol1-9-13-5",
@@ -15833,7 +15895,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Person and Person invest in three mutual funds, and. The amounts they invest in each of these mutual funds are given in the table. | | Mutual fund A | Mutual fund B | Mutual fund C\n| Person1 | 10,000 | 20,000 | 20,000\n| Person2 | 20,000 | 15,000 | 15,000 At the end of one year, the total amount that Person gets is \u20b9 more than Person. The annual rate of return for the mutual funds and is each. What is the annual rate of return for the mutual fund?",
+   "text": "Person and Person invest in three mutual funds, and. The amounts they invest in each of these mutual funds are given in the table. | | Mutual fund A | Mutual fund B | Mutual fund C\n| Person1 | 10,000 | 20,000 | 20,000\n| Person2 | 20,000 | 15,000 | 15,000 At the end of one year, the total amount that Person gets is ₹ more than Person. The annual rate of return for the mutual funds and is each. What is the annual rate of return for the mutual fund?",
    "options": [
     "$T_{*}{\\mathfrak{G}}{\\overline{{\\mathcal{V}}_{0}}}$",
     "$10^{2}$",
@@ -15931,7 +15993,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-vol1-9-24-1",
@@ -16010,7 +16074,7 @@
     "$x = y - | y |$",
     "$\\pmb { x } = - ( y - | y | )$",
     "$\\scriptstyle x = y + | y |$",
-    "x = \u2212(y + |y|)"
+    "x = −(y + |y|)"
    ],
    "answer": [
     1
@@ -16288,6 +16352,213 @@
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
    "needs_fix": "no answer printed in the source answer key"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-3-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2004,
+   "text": "In a data link protocol, the frame delimiter flag is given by. Assuming that bit stufing is employed, the transmitter sends the data sequence as:",
+   "options": [
+    "01101011",
+    "011010110",
+    "011101100",
+    "0110101100"
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.3.2",
+    "exam": "GATE IT 2004 | Question: 80",
+    "section": "Bit Stuffing",
+    "paper_question": "80",
+    "tags": [
+     "gateit-2004",
+     "computer-networks",
+     "network-flow",
+     "normal",
+     "bit-stuffing"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "graph-theory"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-21-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 1992,
+   "text": "A simple and reliable data transfer can be accomplished by using the 'handshake protocol'. It accomplishes reliable data transfer because for every data item sent by the transmitter",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.21.1",
+    "exam": "GATE CSE 1992 | Question: 01,v",
+    "section": "Network Flow",
+    "paper_question": "01,v",
+    "tags": [
+     "gate1992",
+     "computer-networks",
+     "network-flow",
+     "easy",
+     "fill-in-the-blanks"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "graph-theory"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-21-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2017,
+   "text": "Consider two hosts and, connected by a single direct link of rate $1 0 ^ { 6 } \\ \\mathrm { b i t s / s e c }$. The distance between the two hosts is and the propagation speed along the link is $2 \\times 1 0 ^ { 8 } \\mathrm { m / s e c }$. Host sends a file of as one large message to host continuously. Let the transmission and propagation delays be and respectively. Then the value of and are",
+   "options": [
+    "and",
+    "and",
+    "and",
+    "and"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.21.2",
+    "exam": "GATE CSE 2017 | Set 2 | Question: 35",
+    "section": "Network Flow",
+    "paper_question": "35",
+    "tags": [
+     "gatecse-2017-set2",
+     "computer-networks",
+     "network-flow"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none",
+    "options_recovered": "pix2tex"
+   },
+   "explain": "",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "graph-theory",
+   "answer": [
+    3
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
+  },
+  {
+   "id": "mineru-filter1-volume3-2-21-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2004,
+   "text": "network can carry a maximum payload of per frame and the second network can carry a maximum payload of per frame, excluding network overhead. Assume that IP overhead per packet is. What is the total IP overhead in the second network for this transmission?",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.21.3",
+    "exam": "GATE IT 2004 | Question: 87",
+    "section": "Network Flow",
+    "paper_question": "87",
+    "tags": [
+     "gateit-2004",
+     "computer-networks",
+     "network-flow",
+     "normal"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "graph-theory",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-2-21-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2006,
+   "text": "A link of capacity is carrying trafic from a number of sources. Each source generates an on-of trafic stream; when the source is on, the rate of trafic is, and when the source is of, the rate of trafic is zero. The duty cycle, which is the ratio of on-time to of-time, is. When there is no bufer at th the minimum number of sources that can be multiplexed on the link so that link capacity is not wasted and n loss occurs is. Assuming that all sources are synchronized and that the link is provided with a large buf maximum number of sources that can be multiplexed so that no data loss occurs is. The values of a are, respectively,",
+   "options": [
+    "10 and 30",
+    "12 and 25",
+    "5 and 33",
+    "15 and 22"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.21.4",
+    "exam": "GATE IT 2006 | Question: 67",
+    "section": "Network Flow",
+    "paper_question": "67",
+    "tags": [
+     "gateit-2006",
+     "computer-networks",
+     "network-flow",
+     "normal"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "graph-theory"
+  },
+  {
+   "id": "mineru-filter1-volume2-1-14-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Let $G$ be a weighted directed acyclic graph with edges and vertices. Given and a source vertex in $G,$ which one of the following options gives the worst case time complexity of the fastest algorithm to find the lengths of shortest paths from to all vertices that are reachable from in",
+   "options": [
+    "$\\Theta ( m + n )$",
+    "$\\Theta ( m + n \\log ( n ) )$"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.14.2",
+    "exam": "GATE CSE 2026 | Set 2 | Question: 27",
+    "section": "Directed Acyclic Graph",
+    "paper_question": "27",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "graph-theory"
   }
  ]
 }

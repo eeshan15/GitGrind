@@ -1,0 +1,2435 @@
+{
+ "subject": "",
+ "note": "Extracted cleanly but the topic could not be matched to content/syllabus.json. Give each one a 'topic' slug and a 'subject', then move it into content/banks/mineru/<subject>.json. Not loaded by the app until then.",
+ "questions": [
+  {
+   "id": "mineru-filter1-volume2-1-2-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1997,
+   "text": "The correct matching for the following pairs is | A. All pairs shortest path | 1. Greedy\n| B. Quick Sort | 2. Depth-First Search\n| C. Minimum weight spanning tree | 3. Dynamic Programming\n| D. Connected Components | 4. Divide and Conquer",
+   "options": [
+    "A-2 B-4 C-1 D-3",
+    "A-3 B-4 C-1 D-2",
+    "A-3 B-4 C-2 D-1",
+    "A-4 B-1 C-2 D-3"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.2.5",
+    "exam": "GATE CSE 1997 | Question: 1.5",
+    "section": "Algorithm Design Techniques",
+    "paper_question": "1.5",
+    "tags": [
+     "gate1997",
+     "algorithms",
+     "normal",
+     "algorithm-design-techniques",
+     "easy",
+     "match-the-following"
+    ],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-1-2-6",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2008,
+   "text": "Which one of the following algorithm design techniques is used in finding all pairs of shortest distances in a graph?",
+   "options": [
+    "Dynamic programming",
+    "Backtracking",
+    "Greedy",
+    "Divide and Conquer"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.2.6",
+    "exam": "GATE CSE 1998 | Question: 1.21, ISRO2008-16",
+    "section": "Algorithm Design Techniques",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-1-2-9",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2017,
+   "text": "Consider the following table: | Algorithms | Design Paradigms\n| (P) | Kruskal | (i) | Divide and Conquer\n| (Q) | Quicksort | (ii) | Greedy\n| (R) | Floyd-Warshall | (iii) | Dynamic Programming Match the algorithms to the design paradigms they are based on.",
+   "options": [
+    "$( P ) ( i i ) , ( Q ) ( i i i ) , ( R ) ( i )$",
+    "(P) ↔ (iii), (Q) ↔ (i), (R) ↔ (ii)",
+    "(P) ↔ (ii), (Q) ↔ (i), (R) ↔ (iii)",
+    "$( P ) ( i ) , ( Q ) ( i i ) , ( R ) ( i i i )$"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.2.9",
+    "exam": "GATE CSE 2017 | Set 1 | Question: 05",
+    "section": "Algorithm Design Techniques",
+    "paper_question": "05",
+    "tags": [
+     "gatecse-2017-set1",
+     "algorithms",
+     "algorithm-design-techniques",
+     "easy",
+     "match-the-following"
+    ],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-1-14-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Let $G$ be a weighted directed acyclic graph with edges and vertices. Given and a source vertex in $G,$ which one of the following options gives the worst case time complexity of the fastest algorithm to find the lengths of shortest paths from to all vertices that are reachable from in",
+   "options": [
+    "$\\Theta ( m + n )$",
+    "$\\Theta ( m + n \\log ( n ) )$"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.14.2",
+    "exam": "GATE CSE 2026 | Set 2 | Question: 27",
+    "section": "Directed Acyclic Graph",
+    "paper_question": "27",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-1-19-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The minimum number of record movements required to merge five files A (with records), B (with records), C (with records), D (with records) and E (with records) is:",
+   "options": [
+    "",
+    "",
+    "",
+    "gate1999 algorithms normal greedy-algorithms"
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.19.1",
+    "exam": "GATE CSE 1999 | Question: 2.20",
+    "section": "Greedy Algorithms",
+    "paper_question": "2.20",
+    "tags": [],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "3 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-1-30-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "For merging two sorted lists of sizes and into a sorted list of size, we require comparisons of",
+   "options": [
+    "",
+    "",
+    "",
+    "O(log m + log n)"
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "1.30.1",
+    "exam": "GATE CSE 1995 | Question: 1.16",
+    "section": "Merging",
+    "paper_question": "1.16",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "3 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-2-19-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 1992,
+   "text": "Macro expansion is done in pass one instead of pass two in a two pass macro assembler because",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "2.19.1",
+    "exam": "GATE CSE 1992 | Question: 01,vii",
+    "section": "Macros",
+    "paper_question": "01,vii",
+    "tags": [
+     "gate1992",
+     "compiler-design",
+     "macros",
+     "easy",
+     "fill-in-the-blanks"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-2-19-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "What are and in the following macro definition? macro Add x, y Load y Mul x Store y end macro",
+   "options": [
+    "Variables",
+    "Identifiers",
+    "Actual parameters",
+    "Formal parameters"
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "2.19.2",
+    "exam": "GATE CSE 1995 | Question: 1.11",
+    "section": "Macros",
+    "paper_question": "1.11",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-2-19-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Which of the following macros can put a macro assembler into an infinite loop? i..MACRO M1, X.IF EQ, X;if X=0 then M1 X + 1",
+   "options": [
+    "(ii) only",
+    "(i) only",
+    "both (i) and (ii)",
+    "None of the above"
+   ],
+   "answer": [
+    0
+   ],
+   "code_blocks": [
+    {
+     "lang": "asm",
+     "code": ".ENDC\n.IF NE, X ;if X ≠ O then\n.WORD X ;address (X) is stored here\n.ENDC\n.ENDM"
+    },
+    {
+     "lang": "asm",
+     "code": "ii.\n.MACRO M2, X\n.IF EQ, X\nM2 X\n.ENDC\n.IF NE, X\n.WORD X + 1\n.ENDC\n.ENDM"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "2.19.3",
+    "exam": "GATE CSE 1996 | Question: 2.16",
+    "section": "Macros",
+    "paper_question": "2.16",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-2-25-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2016,
+   "text": "Consider the following code segment. The minimum number of total variables required to convert the above code segment to static single assignment form is",
+   "options": [],
+   "answer_value": 10.0,
+   "tolerance": 0,
+   "code_blocks": [
+    {
+     "lang": "matlab",
+     "code": "x = u - t;\ny = x * v;\nx = y + w;\ny = t - z;\ny = x * y;"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "2.25.2",
+    "exam": "GATE CSE 2016 | Set 1 | Question: 19",
+    "section": "Static Single Assignment",
+    "paper_question": "19",
+    "tags": [
+     "gatecse-2016-set1",
+     "compiler-design",
+     "static-single-assignment",
+     "normal",
+     "numerical-answers"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-3-2-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "An Abstract Data Type (ADT) is:",
+   "options": [
+    "same as an abstract class",
+    "a data type that cannot be instantiated",
+    "a data type for which only the operations defined on it can be used, but none else",
+    "all of the above"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.2.1",
+    "exam": "GATE CSE 2005 | Question: 2",
+    "section": "Abstract Data Type",
+    "paper_question": "2",
+    "tags": [
+     "gatecse-2005",
+     "data-structures",
+     "normal",
+     "abstract-data-type"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-3-9-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Compute the post fix equivalent of the following expression $3 ^ { * } \\log ( x + 1 ) - { \\textstyle { \\frac { a } { 2 } } }$",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.9.2",
+    "exam": "GATE CSE 1998 | Question: 19b",
+    "section": "Infix Prefix",
+    "paper_question": "19b",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-1-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Aliasing in the context of programming languages refers to",
+   "options": [
+    "multiple variables having the same memory location",
+    "multiple variables having the same value",
+    "multiple variables having the same identifier",
+    "multiple uses of the same variable"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.1.1",
+    "exam": "GATE CSE 2000 | Question: 1.16",
+    "section": "Output",
+    "paper_question": "1.16",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-4-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "An unrestricted use of the \"go to\" statement is harmful because of which of the following reason (s):",
+   "options": [
+    "It makes it more difficult to verify programs.",
+    "It makes programs more inefficient.",
+    "It makes it more difficult to modify existing programs.",
+    "It results in the compiler generating longer machine code."
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.4.1",
+    "exam": "GATE CSE 1989 | Question: 3-i",
+    "section": "Goto",
+    "paper_question": "3-i",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-4-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "An unrestricted use of the \" \" statement is harmful because",
+   "options": [
+    "it makes it more difficult to verify programs",
+    "it increases the running time of the programs",
+    "it increases the memory required for the programs",
+    "it results in the compiler generating longer machine code"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.4.2",
+    "exam": "GATE CSE 1994 | Question: 1.5",
+    "section": "Goto",
+    "paper_question": "1.5",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "List the invariant assertions at points and in program given below:",
+   "options": [],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "Program division (input, output)\nConst\n  dividend = 81;\n  divisor = 9;\nVar remainder, quotient:interger\nbegin\n  (*(dividend >= 0) AND (divisor > 0)*)\n  remainder := dividend;\n  quotient := 0;\n  (*A*)\nWhile (remainder >= 0) do\nbegin (*B*)\n  quotient := quotient + 1;\n  remainder := remainder - divisor;\n  (*C*)\nend;\n  (*D*)\n  quotient := quotient - 1;\n  remainder := remainder + divisor;\n  (*E*)\nend"
+    },
+    {
+     "lang": "txt",
+     "code": "gate1987 programming loop-invariants descriptive"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.1",
+    "exam": "GATE CSE 1987 | Question: 7a",
+    "section": "Loop Invariants",
+    "paper_question": "7a",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Below figure is the flow-chart corresponding to a program to calculate the of two integers, and respectively, $( M, N > 0 )$ Use assertions at the cut point $C _ { 1 }$ $C _ { 2 }$ and $C _ { 3 }$ to prove that the flow-chart is correct.",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume2-a9d8faf1baef544402be791a.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 283,
+     "bbox": [
+      94,
+      70,
+      416,
+      281
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph TD\n  START[\"START\"] --> M[\"M,N,K,L\\nInteger\\nL ← M, K ← N\"]\n  M --> C1[\"C1\"]\n  C1 --> K{\"K ≠ L\"}\n  K -->|F| C3[\"C3\"]\n  K -->|T| K\">L{\"K>L\"}\n  K -->|F| L[\"L ← L - K\"]\n  L --> C2[\"C2\"]\n  C2 --> C1\n  C3 --> RETURN[\"RETURN K\"]\n  K -->|T| K\">L\n  K -->|F| L\n  L --> C2\n  C2 --> C2"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.2",
+    "exam": "GATE CSE 1988 | Question: 6ii",
+    "section": "Loop Invariants",
+    "paper_question": "6ii",
+    "tags": [],
+    "page_idx": 283,
+    "bbox": [
+     94,
+     70,
+     416,
+     281
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-3",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the two program segments below: Under what conditions are these two programs equivalent? Treat as any sequence of statements and as a function.",
+   "options": [],
+   "code_blocks": [
+    {
+     "lang": "elixir",
+     "code": "a. for\n    i:=1 to f(x) by 1 do\n    S\nend"
+    },
+    {
+     "lang": "matlab",
+     "code": "b. i:=1;\nWhile i<=f(x) do\n    S\n    i:=i+1\nend"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.3",
+    "exam": "GATE CSE 1988 | Question: 8ii",
+    "section": "Loop Invariants",
+    "paper_question": "8ii",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-4",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1991,
+   "text": "Consider the following PASCAL program segment: An appropriate loop-invariant for the while-loop is",
+   "options": [],
+   "code_blocks": [
+    {
+     "lang": "vhdl",
+     "code": "if i mod 2 = 0 then\n    while i >= 0 do\n    begin\n        i := i div 2;\n        if i mod 2 <> 0 then i := i - 1;\n        else i := i - 2;\n    end;"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.4",
+    "exam": "GATE CSE 1991 | Question: 1,vi",
+    "section": "Loop Invariants",
+    "paper_question": "1,vi",
+    "tags": [
+     "gate1991",
+     "programming",
+     "loop-invariants",
+     "normal",
+     "fill-in-the-blanks"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2004,
+   "text": "Consider the following program fragment for reversing the digits in a given integer to obtain a new integer. Let. n = n / 1 0; The loop invariant condition at the end of the $i ^ { t h }$ iteration is:",
+   "options": [
+    "n = d1 d2 . . . dm−i and rev = dm dm−1 . . . dm−i+1",
+    "n = dm−i+1 . . . dm−1 dm or rev = dm−i . . . d2 d1",
+    "",
+    "n = d1 d2 . . . dm or rev = dm . . . d2 d1"
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "int n, rev;\nrev = 0;\nwhile(n > 0) {\n    rev = rev * 10 + n%10;"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.5",
+    "exam": "GATE CSE 2004 | Question: 32",
+    "section": "Loop Invariants",
+    "paper_question": "32",
+    "tags": [
+     "gatecse-2004",
+     "programming",
+     "loop-invariants",
+     "normal"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-6",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2015,
+   "text": "Consider the following pseudo code, where and are positive integers. The post condition that needs to be satisfied after the program terminates is",
+   "options": [
+    "{r = qx + y∧r < y}",
+    "{x = qy + r ∧r < y} c. {y = qx + r ∧ 0 < r < y}",
+    "{q + 1 < r − y ∧y > 0}"
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "begin\n    q := 0\n    r := x\n    while r ≥ y do\n        begin\n        r := r - y\n        q := q + 1\n    end\nend"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.6",
+    "exam": "GATE CSE 2015 | Set 1 | Question: 33",
+    "section": "Loop Invariants",
+    "paper_question": "33",
+    "tags": [
+     "gatecse-2015-set1",
+     "programming",
+     "loop-invariants",
+     "normal"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "option letters A,B,D are not a run from A",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-7",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2016,
+   "text": "The following function computes $X ^ { Y }$ for positive integers and. Which one of the following conditions is TRUE before every iteration of the loop?",
+   "options": [
+    "XY = ab",
+    "(res \\* a)Y = (res \\* X)b",
+    "XY = res \\* ab",
+    "XY = (res \\* a)b"
+   ],
+   "answer": [
+    2
+   ],
+   "code_blocks": [
+    {
+     "lang": "lisp",
+     "code": "int exp (int X, int Y) {\n    int res =1, a = X, b = Y;\n\n    while (b != 0) {\n        if (b % 2 == 0) {a = a * a; b = b/2; }\n        else        {res = res * a; b = b - 1; }\n    }\n    return res;\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.7",
+    "exam": "GATE CSE 2016 | Set 2 | Question: 35",
+    "section": "Loop Invariants",
+    "paper_question": "35",
+    "tags": [
+     "gatecse-2016-set2",
+     "programming",
+     "loop-invariants",
+     "normal"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-6-8",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2017,
+   "text": "Consider the C program fragment below which is meant to divide by using repeated subtractions. The variables,, and are all unsigned int. Which of the following conditions on the variables and before the execution of the fragment will ensure that the loop terminated in a state satisfying the condition $\\begin{array} { r } { x = = ( y * q + r )? } \\end{array}$",
+   "options": [
+    "$\\left( q = = r \\right) \\& \\& \\left( r = = 0 \\right)$",
+    "$\\left( \\bar { x } > 0 \\right) \\bar { \\& } \\& \\left( r = - x \\right) \\bar { \\& } \\& \\left( y > 0 \\right)$ c. (q == 0) && (r == x) && (y > 0)",
+    "(q == 0) && (y > 0)"
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "while (r >= y) {\n    r=r-y;\n    q=q+1;\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.6.8",
+    "exam": "GATE CSE 2017 | Set 2 | Question: 37",
+    "section": "Loop Invariants",
+    "paper_question": "37",
+    "tags": [
+     "gatecse-2017-set2",
+     "programming",
+     "loop-invariants"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "option letters A,B,D are not a run from A",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The integer value printed by the program given below is",
+   "options": [],
+   "answer_value": 7.0,
+   "tolerance": 0,
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include<stdio.h>\n\nint funcp(){\n    static int x = 1;\n    x++;\n    return x;\n}\n\nint main(){\n    int x,y;\n    x = funcp();\n    y = funcp()+x;\n    printf(\"%d\\n\", (x+y));\n    return 0;\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.2",
+    "exam": "GATE CSE 2023 | Question: 25",
+    "section": "Loop Invariants",
+    "paper_question": "25",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-5",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following C program: The value printed by the given program is \\_. (Answer in integer)",
+   "options": [],
+   "answer_value": 46.0,
+   "tolerance": 0.0,
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include <stdio.h>\nint gate (int n) {\nint d, t, newnum, turn;"
+    },
+    {
+     "lang": "txt",
+     "code": "newnum = turn = 0; t=1;\nwhile (n>=t) t *= 10;\nt /=10;\nwhile (t>0) {\nd = n/t;\nn = n%t;\nt /= 10;\nif (turn) newnum = 10*newnum + d;\nturn = (turn + 1) % 2;\n}\nreturn newnum;\n}\nint main () {\nprintf (\"%d\", gate(14362));\nreturn 0;\n}"
+    },
+    {
+     "lang": "txt",
+     "code": "gatecse2025-set1 programming-in-c output numerical-answers two-marks"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.5",
+    "exam": "GATE CSE 2025 | Set 1 | Question: 53",
+    "section": "Loop Invariants",
+    "paper_question": "53",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-6",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The output of the given C code segment is. (Answer in integer)",
+   "options": [],
+   "answer_value": 21.0,
+   "tolerance": 0.0,
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "int x=126,y=105;\ndo {\n    if(x>y) x=x-y;\n    else y=y-x;\n} while(x!=y);\nprintf(\"%d\",x);"
+    },
+    {
+     "lang": "txt",
+     "code": "gatecse2025-set2 programming-in-c output numerical-answers one-mark"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.6",
+    "exam": "GATE CSE 2025 | Set 2 | Question: 23",
+    "section": "Loop Invariants",
+    "paper_question": "23",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-7",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following C program: The output of the given C program is \\_. (Answer in integer)",
+   "options": [],
+   "answer_value": 46.0,
+   "tolerance": 0.0,
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include <stdio.h>\n\nint g(int n) {\n    return (n+10);\n}\n\nint f(int n) {\n    return g(n*2);\n}\n\nint main() {\n    int sum, n;\n    sum=0;\n    for (n=1; n<3; n++)\n        sum += g(f(n));\n    printf (\"%d\", sum);\n    return 0;\n}"
+    },
+    {
+     "lang": "txt",
+     "code": "gatecse2025-set2 programming-in-c output numerical-answers two-marks"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.7",
+    "exam": "GATE CSE 2025 | Set 2 | Question: 53",
+    "section": "Loop Invariants",
+    "paper_question": "53",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-7-8",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following program in C: The output of the program is. (answer in integer) Note: Assume that the program compiles and runs successfully.",
+   "options": [],
+   "answer_value": 9.0,
+   "tolerance": 0.0,
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include <stdio.h>\nvoid func(int i, int j) {\n    if(i < j) {\n        int i = 0;"
+    },
+    {
+     "lang": "c",
+     "code": "while (i < 10) {\n    j += 2;\n    i++;\n}\n}\nprintf(\"%d\", i);\n}\nint main() {\n    int i = 9, j = 10;\n    func(i, j);\n    return 0;\n}"
+    },
+    {
+     "lang": "txt",
+     "code": "gatecse-2026-set1 programming-in-c output numerical-answers one-mark"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.7.8",
+    "exam": "GATE CSE 2026 | Set 1 | Question: 24",
+    "section": "Loop Invariants",
+    "paper_question": "24",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-10-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Given the programming constructs i. assignment ii. for loops where the loop parameter cannot be changed within the loop iii. if-then-else iv. forward go to v. arbitrary go to vi. non-recursive procedure call vii. recursive procedure/function cal viii. repeat loop, which constructs will you not include in a programming language such that it should be possible to program the terminates (i.e., halting) function in the same programming language",
+   "options": [
+    "(ii),(i), )(ivy)",
+    "(v), (vii),(vii))",
+    "(vi) (vi), vii)",
+    "(ii), (vi), vii)i)"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.10.1",
+    "exam": "GATE CSE 1999 | Question: 2.5",
+    "section": "Programming Constructs",
+    "paper_question": "2.5",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-16-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Which one of the choices given below would be printed when the following program is executed?",
+   "options": [
+    "jungle, n, 8, nclastor",
+    "etter, u, 6, ungle",
+    "cetter, k, 6, jungle",
+    "etter, u, 8, ncestor"
+   ],
+   "answer": [
+    1
+   ],
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include <stdio.h>\nstruct test {\n    int i;\n    char *c;\n}st[] = {5, \"become\", 4, \"better\", 6, \"jungle\", 8, \"ancestor\", 7, \"brother\"};\nmain ()\n{\n    struct test *p = st;\n    p += 1;\n    ++p -> c;\n    printf(\"%s,\", p++ -> c);\n    printf(\"%c,\", *++p -> c);\n    printf(\"%d,\", p[0].i);\n    printf(\"%s \\n\", p -> c);\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.16.5",
+    "exam": "GATE IT 2006 | Question: 49",
+    "section": "Structure",
+    "paper_question": "49",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-18-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2003,
+   "text": "Which of the following statements is FALSE?",
+   "options": [
+    "In statically typed languages, each variable in a program has a fixed type",
+    "In un-typed languages, values do not have any types",
+    "In dynamically typed languages, variables have no types",
+    "In all statically typed languages, each variable in a program is associated with values of only a single type during the execution of the program"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.18.1",
+    "exam": "GATE CSE 2003 | Question: 24",
+    "section": "Structure",
+    "paper_question": "24",
+    "tags": [
+     "gatecse-2003",
+     "programming",
+     "normal",
+     "type-checking"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-5-19-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2015,
+   "text": "Consider the following C declaration: Assume that the objects of the type short, float and long occupy bytes, bytes and bytes, respectively. The memory requirement for variable, ignoring alignment consideration, is:",
+   "options": [
+    "bytes",
+    "bytes",
+    "bytes",
+    "bytes"
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "struct {\n    short x[5];\n    union {\n        float y;\n        long z;\n    } u;\n}t;"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.19.1",
+    "exam": "GATE CSE 2000 | Question: 1.17, ISRO2015-79",
+    "section": "Structure",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: 'bytes' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume2-6-6-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Which ONE of the following languages is accepted by a deteministic pushdown automaton?",
+   "options": [
+    "Any regular language",
+    "Any context-free language",
+    "Any language accepted by a non-deterministic pushdown automaton"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "6.6.1",
+    "exam": "GATE CSE 2025 | Set 2 | Question: 14",
+    "section": "Dpda",
+    "paper_question": "14",
+    "tags": [],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-1-4-1",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1999,
+   "text": "The main difference(s) between a CISC and a RISC processor is/are that a RISC processor typically",
+   "options": [
+    "has fewer instructions",
+    "has fewer addressing modes",
+    "has more registers",
+    "is easier to implement using hardwired logic"
+   ],
+   "answer": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "1.4.1",
+    "exam": "GATE CSE 1999 | Question: 2.22",
+    "section": "CISC RISC Architecture",
+    "paper_question": "2.22",
+    "tags": [
+     "gate1999",
+     "co-and-architecture",
+     "normal",
+     "cisc-risc-architecture",
+     "multiple-selects"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-1-10-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2007,
+   "text": "Data forwarding techniques can be used to speed up the operation in presence of data dependencies. Consider the following replacements of LHS with RHS. i. R1 → Loc, Loc → R2 ≡ R1 → R2, R1 → Loc ii. R1 → Loc, Loc → R2 ≡ R1 → R2 ii. R1 → Loc, R2 → Loc ≡ R1 → Loc iv. $R 1 L o c, R 2 L o c \\quad \\equiv R 2 L o c$ In which of the following options, will the result of executing the RHS be the same as executing the LHS irrespective of the instructions that follow?",
+   "options": [
+    "i and iii",
+    "i and iv",
+    "ii and iii",
+    "ii and iv"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "1.10.4",
+    "exam": "GATE IT 2007 | Question: 39",
+    "section": "Data Dependency",
+    "paper_question": "39",
+    "tags": [
+     "gateit-2007",
+     "data-dependency",
+     "co-and-architecture"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-2-10-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2026,
+   "text": "It is necessary to design a link-layer protocol between two hosts that are directly connected over a lossless link of length kilometers. Assume that the link bandwidth is ${ 1 0 ^ { 8 } }$ bits per second and that the propagation delay in the link is nanoseconds per meter. Every transmitted data byte is assigned a sequence number. Let be the minimum number of bits needed for the sequence number field in the protocol header such that i. the sequence numbers do not wrap around before seconds, and ii. the maximum utilization of the link is achieved. The value of is. (answer in integer)",
+   "options": [],
+   "answer_value": 30.0,
+   "tolerance": 0.0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.10.1",
+    "exam": "GATE CSE 2026 | Set 2 | Question: 55",
+    "section": "Data Communication",
+    "paper_question": "55",
+    "tags": [
+     "gatecse-2026-set2",
+     "computer-networks",
+     "data-communication",
+     "numerical-answers",
+     "two-marks"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-2-20-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "Assume that the length of each time slot is the time to transmit plus the end-to-end propagation delay. Assume a propagation speed of $2 \\times 1 0 ^ { 8 } m / s e c$. The length of the LAN is with a bandwidth of. The maximum number of stations that can be allowed in the LAN so that the throughput of each station can be is",
+   "options": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.20.4",
+    "exam": "GATE IT 2005 | Question: 75",
+    "section": "MAC Protocol",
+    "paper_question": "75",
+    "tags": [
+     "gateit-2005",
+     "computer-networks",
+     "mac-protocol",
+     "normal"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-2-27-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2021,
+   "text": "Consider a network using the pure medium access control protocol, where each frame is of length bits. The channel transmission rate is Mbps ( bits per second). The aggregate number of transmissions across all the nodes (including new frame transmissions and retransmitted frames due to col is modelled as a Poisson process with a rate of frames per second. Throughput is defined as the a number of frames successfully transmitted per second. The throughput of the network (rounded to the n integer) is",
+   "options": [],
+   "answer_value": 135.0,
+   "tolerance": 5.0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.27.1",
+    "exam": "GATE CSE 2021 | Set 2 | Question: 54",
+    "section": "Pure Aloha",
+    "paper_question": "54",
+    "tags": [
+     "gatecse-2021-set2",
+     "computer-networks",
+     "mac-protocol",
+     "pure-aloha",
+     "numerical-answers",
+     "two-marks"
+    ],
+    "topic_score": 2.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-2-31-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2015,
+   "text": "Consider a LAN with four nodes $S _ { 1 }, S _ { 2 }, S _ { 3 }$ and $S _ { 4 }$. Time is divided into fixed-size slots, and a node can begin its transmission only at the beginning of a slot. A collision is said to have occurred if more than one node transmits in the same slot. The probabilities of generation of a frame in a time slot by $S _ { 1 }, S _ { 2 }, S _ { 3 }$ and $S _ { 4 }$ are and respectively. The probability of sending a frame in the first slot without any collision by any of these four stations is",
+   "options": [],
+   "answer_value": 0.4404,
+   "tolerance": 0.01,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.31.1",
+    "exam": "GATE CSE 2015 | Set 1 | Question: 29",
+    "section": "Slotted Aloha",
+    "paper_question": "29",
+    "tags": [
+     "gatecse-2015-set1",
+     "computer-networks",
+     "normal",
+     "numerical-answers",
+     "slotted-aloha"
+    ],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-2-36-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2008,
+   "text": "A computer on a network is regulated by a token bucket. The token bucket is filled at a rate of. It is initially filled to capacity with. What is the maximum duration for which the computer can transmit at the full?",
+   "options": [
+    "seconds",
+    "seconds",
+    "seconds",
+    "seconds"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.36.1",
+    "exam": "GATE CSE 2008 | Question: 58",
+    "section": "Token Bucket",
+    "paper_question": "58",
+    "tags": [
+     "gatecse-2008",
+     "computer-networks",
+     "token-bucket"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: 'seconds' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-2-36-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2016,
+   "text": "For a host machine that uses the token bucket algorithm for congestion control, the token bucket has a 注 口 capacity of and the maximum output rate is per. Tokens arrive at a rate to sustain output at a rate of per. The token bucket is currently full and the machine needs to send of data. The minimum time required to transmit the data is seconds.",
+   "options": [],
+   "answer_value": 1.145,
+   "tolerance": 0.045,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.36.2",
+    "exam": "GATE CSE 2016 | Set 1 | Question: 54",
+    "section": "Token Bucket",
+    "paper_question": "54",
+    "tags": [
+     "gatecse-2016-set1",
+     "computer-networks",
+     "token-bucket",
+     "normal",
+     "numerical-answers"
+    ],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-3-5-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "State True or False with reason Logical data independence is easier to achieve than physical data independence.",
+   "options": [],
+   "answer_from_source": "False",
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.5.1",
+    "exam": "GATE CSE 1994 | Question: 3.11",
+    "section": "Database Design",
+    "paper_question": "3.11",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer 'False' could not be read",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-3-17-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2016,
+   "text": "Let $R ( a, b, c )$ and $S ( d, e, f )$ be two relations in which is the foreign key of that refers to the primary key of. Consider the following four operations and I. Insert into II. Insert into III. Delete from $R$ IV. Delete from $S$ Which of the following can cause violation of the referential integrity constraint above?",
+   "options": [
+    "Both I and IV",
+    "Both II and III",
+    "All of these",
+    "None of these"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.17.1",
+    "exam": "GATE CSE 1997 | Question: 6.10, ISRO2016-54",
+    "section": "Referential Integrity",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-3-17-4",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Consider the following tables and | P | Q\n| 2 | 2\n| 3 | 8\n| 7 | 3\n| 5 | 8\n| 6 | 9\n| 8 | 5\n| 9 | 8 | R | S\n| 2 | 2\n| 8 | 3\n| 3 | 2\n| 9 | 7\n| 5 | 7\n| 7 | 2 In table P is the primary key and Q is the foreign key referencing R in table $\\mathbf { \\nabla } T 2$ with on-delete cascade and onupdate cascade. In table $T 2,$ R is the primary key and S is the foreign key referencing P in table with on-delete set NULL and on-update cascade. In order to delete record $\\langle 3, 8 \\rangle$ from the table the number of additional records that need to be deleted from table is",
+   "options": [],
+   "answer_value": 0.0,
+   "tolerance": 0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.17.4",
+    "exam": "GATE CSE 2017 | Set 2 | Question: 19",
+    "section": "Referential Integrity",
+    "paper_question": "19",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-3-17-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 1,
+   "difficulty": "medium",
+   "year": 2021,
+   "text": "Consider the following statements and about the relational data model:: A relation scheme can have at most one foreign key.: A foreign key in a relation scheme cannot be used to refer to tuples of Which one of the following choices is correct?",
+   "options": [
+    "Both and are true",
+    "is true and is false",
+    "is false and is true",
+    "Both and are false"
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.17.5",
+    "exam": "GATE CSE 2021 | Set 2 | Question: 6",
+    "section": "Referential Integrity",
+    "paper_question": "6",
+    "tags": [
+     "gatecse-2021-set2",
+     "databases",
+     "referential-integrity",
+     "one-mark"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-3-17-6",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 1,
+   "difficulty": "medium",
+   "year": 2026,
+   "text": "Consider two relations and defined on the relational schemas and, respectively. is the primary key of and is a foreign key of referencing in. Which of the following operations will violate the foreign key constraint?",
+   "options": [
+    "Inserting records into relation",
+    "Deleting records from relation",
+    "Deleting records from relation",
+    "Inserting records into relation"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.17.6",
+    "exam": "GATE DA 2026 | Question: 16",
+    "section": "Referential Integrity",
+    "paper_question": "16",
+    "tags": [
+     "gateda-2026",
+     "databases",
+     "referential-integrity",
+     "multiple-selects",
+     "one-mark"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A;B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: 'Deleting records from relation' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-3-23-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2026,
+   "text": "Consider a relational database schema with a relation $R ( A, B, C, D ). \\ \\mathsf { I f } \\ \\{ A, B \\}$ and $\\{ A, C \\}$ are the only two candidate keys of the relation $R,$ then the number of superkeys of relation $R$ is. (answer in integer)",
+   "options": [],
+   "answer_value": 6.0,
+   "tolerance": 0.0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "3.23.1",
+    "exam": "GATE CSE 2026 | Set 1 | Question: 55",
+    "section": "Super Key",
+    "paper_question": "55",
+    "tags": [
+     "gatecse-2026-set1",
+     "numerical-answers",
+     "databases",
+     "super-key",
+     "two-marks"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-2-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1999,
+   "text": "The maximum gate delay for any output to appear in an array multiplier for multiplying two bit numbers is",
+   "options": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.2.1",
+    "exam": "GATE CSE 1999 | Question: 1.21",
+    "section": "Array Multiplier",
+    "paper_question": "1.21",
+    "tags": [
+     "gate1999",
+     "digital-logic",
+     "normal",
+     "array-multiplier"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-2-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2003,
+   "text": "Consider an array multiplier for multiplying two bit numbers. If each gate in the circuit has a unit delay, the total delay of the multiplier is",
+   "options": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.2.2",
+    "exam": "GATE CSE 2003 | Question: 11",
+    "section": "Array Multiplier",
+    "paper_question": "11",
+    "tags": [
+     "gatecse-2003",
+     "digital-logic",
+     "normal",
+     "array-multiplier"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-12-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2003,
+   "text": "Consider the following circuit composed of XOR gates and non-inverting buffers. The non-inverting bufers have delays $\\delta _ { 1 } = 2 n s$ and $\\delta _ { 2 } = 4 n s$ as shown in the figure. Both XOR gates and all wires have zero delays. Assume that all gate inputs, outputs, and wires are stable at logic level at time. If the following waveform is applied at input, how many transition(s) (change of logic levels) occur(s) at during the interval from to ns?",
+   "options": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-25257b8e5ef6b714258f577b.jpg",
+     "alt": "Figure 1 for this question (text_image)",
+     "page_idx": 316,
+     "bbox": [
+      87,
+      378,
+      361,
+      423
+     ],
+     "kind": "text_image"
+    },
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-c2c1bbaadea1ffa27c2762f6.jpg",
+     "alt": "Figure 2 for this question",
+     "page_idx": 316,
+     "bbox": [
+      87,
+      491,
+      364,
+      524
+     ]
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.12.3",
+    "exam": "GATE CSE 2003 | Question: 47",
+    "section": "Digital Circuits",
+    "paper_question": "47",
+    "tags": [
+     "gatecse-2003",
+     "digital-logic",
+     "digital-circuits"
+    ],
+    "page_idx": 316,
+    "bbox": [
+     87,
+     378,
+     361,
+     423
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-12-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Which one of the following circuits is NOT equivalent to a -input (exclusive ) gate?",
+   "options": [],
+   "answer_from_source": "D",
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-38087c97c4bd7133323c3f0d.jpg",
+     "alt": "Figure 1 for this question",
+     "page_idx": 316,
+     "bbox": [
+      87,
+      655,
+      394,
+      902
+     ]
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.12.4",
+    "exam": "GATE CSE 2011 | Question: 13",
+    "section": "Digital Circuits",
+    "paper_question": "13",
+    "tags": [],
+    "page_idx": 316,
+    "bbox": [
+     87,
+     655,
+     394,
+     902
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer D but only 0 option(s) recovered",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-13-6",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2002,
+   "text": "Consider the following circuit. $A = a _ { 2 } a _ { 1 } a _ { 0 }$ and $B = b _ { 2 } b _ { 1 } b _ { 0 }$ are three bit binary numbers input to the circuit. The output is $Z = z _ { 3 } z _ { 2 } z _ { 1 } z _ { 0 }$. R0, R1 and R2 are registers with loading clock shown. The registers are loaded with their input data with the falling edge of a clock pulse (signal CLOCK shown) and appears as shown. The bits of input number A, B and the full adders are as shown in the circuit. Assume Clock period is greater than the settling time of all circuits. a. For 8 clock pulses on the CLOCK terminal and the inputs $A, B$ as shown, obtain the output (sequence of values of Assume initial contents of $R _ { 0 }, R _ { 1 }$ and $R _ { 2 }$ as all zeros. | A | 110 | 011 | 111 | 101 | 000 | 000 | 000 | 000\n| B | 101 | 101 | 011 | 110 | 000 | 000 | 000 | 000\n| Clock No | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 b. What does the circuit implement?",
+   "options": [],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-6ba326deb77d9c59df50e246.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 319,
+     "bbox": [
+      324,
+      262,
+      690,
+      489
+     ],
+     "kind": "flowchart"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.13.6",
+    "exam": "GATE CSE 2002 | Question: 8",
+    "section": "Digital Circuits",
+    "paper_question": "8",
+    "tags": [
+     "gatecse-2002",
+     "digital-logic",
+     "normal",
+     "descriptive",
+     "digital-counter"
+    ],
+    "page_idx": 319,
+    "bbox": [
+     324,
+     262,
+     690,
+     489
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key; stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-13-7",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2011,
+   "text": "The minimum number of flip-flops needed to design a mod-258 counter is",
+   "options": [
+    "9",
+    "8",
+    "512",
+    "258"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.13.7",
+    "exam": "GATE CSE 2011 | Question: 15",
+    "section": "Digital Circuits",
+    "paper_question": "15",
+    "tags": [
+     "gatecse-2011",
+     "digital-logic",
+     "easy",
+     "digital-counter"
+    ],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-13-16",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "How many pulses are needed to change the contents of a -bit up counter from to (rightmost bit is the LSB)?",
+   "options": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.13.16",
+    "exam": "GATE IT 2005 | Question: 11",
+    "section": "Digital Circuits",
+    "paper_question": "11",
+    "tags": [
+     "gateit-2005",
+     "digital-logic",
+     "digital-counter",
+     "normal"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-15-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1994,
+   "text": "State True or False with one line explanation A FSM (Finite State Machine) can be designed to add two integers of any arbitrary length (arbitrary number of digits).",
+   "options": [],
+   "answer_from_source": "True",
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.15.1",
+    "exam": "GATE CSE 1994 | Question: 3.3",
+    "section": "Finite State Machines",
+    "paper_question": "3.3",
+    "tags": [
+     "gate1994",
+     "digital-logic",
+     "normal",
+     "true-false",
+     "finite-state-machines"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer 'True' could not be read",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-22-1",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "If the numerical value of a -byte unsigned integer on a little endian computer is more than that on a big endian computer, which of the following choices represent(s) the unsigned integer on a little endian computer?",
+   "options": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.22.1",
+    "exam": "GATE CSE 2021 | Set 2 | Question: 44",
+    "section": "Little Endian Big Endian",
+    "paper_question": "44",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A;D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-25-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2017,
+   "text": "Given $f ( w, x, y, z ) = \\Sigma _ { m } ( 0, 1, 2, 3, 7, 8, 1 0 ) + \\Sigma _ { d } ( 5, 6, 1 1, 1 5 )$; where represents the 'don't-care condition in Karnaugh maps. Which of the following is a minimum product-of-sums (POS) form of $f ( w, x, y, z )?$",
+   "options": [
+    "f = (w + z)(x + z)",
+    "f = (w + z)(x + z) c. f = (w + z)(x + z)",
+    "f = (w + z)(x + z)"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.25.2",
+    "exam": "GATE CSE 2017 | Set 2 | Question: 28",
+    "section": "Min Products of Sum Form",
+    "paper_question": "28",
+    "tags": [
+     "gatecse-2017-set2",
+     "digital-logic",
+     "min-products-of-sum-form"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "option letters A,B,D are not a run from A",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-31-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "A ROM is used to store the Truth table for binary multiple units that will multiply two -bit numbers. The size of the ROM (number of words number of bits) that is required to accommodate the Truth table is. Write the values of and.",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.31.1",
+    "exam": "GATE CSE 1993 | Question: 6.6",
+    "section": "ROM",
+    "paper_question": "6.6",
+    "tags": [
+     "digital-logic"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-31-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "A ROM is used to store the table for multiplication of two -bit unsigned integers. The size of ROM required is",
+   "options": [
+    "256 × 16",
+    "64K × 8",
+    "4K × 16",
+    "64K × 16"
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.31.2",
+    "exam": "GATE CSE 1996 | Question: 1.21",
+    "section": "ROM",
+    "paper_question": "1.21",
+    "tags": [
+     "digital-logic"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-31-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2012,
+   "text": "The amount of ROM needed to implement a multiplier is",
+   "options": [
+    "bits",
+    "bits",
+    "Kbits",
+    "Kbits"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.31.3",
+    "exam": "GATE CSE 2012 | Question: 19",
+    "section": "ROM",
+    "paper_question": "19",
+    "tags": [
+     "gatecse-2012",
+     "digital-logic",
+     "normal",
+     "rom"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: 'Kbits' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-31-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2004,
+   "text": "What is the minimum size of ROM required to store the complete truth table of an $8 - b i t \\times 8 - b i t$ multiplier?",
+   "options": [
+    "bits",
+    "bits",
+    "bits",
+    "bits"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.31.4",
+    "exam": "GATE IT 2004 | Question: 10",
+    "section": "ROM",
+    "paper_question": "10",
+    "tags": [
+     "gateit-2004",
+     "digital-logic",
+     "normal",
+     "rom"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: 'bits' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-4-36-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2001,
+   "text": "Consider the circuit given below with initial state $Q _ { 0 } = 1, Q _ { 1 } = Q _ { 2 } = 0$. The state of the circuit is given by the value $4 Q _ { 2 } + 2 \\bar { Q _ { 1 } } + Q _ { 0 }$ Which one of the following is correct state sequence of the circuit?",
+   "options": [
+    "1,3,4,6,7,5,2",
+    "1,2,5,3,7,6,4",
+    "1,2,7,3,5,6,4",
+    "1,6,5,7,2,3,4"
+   ],
+   "answer": [
+    1
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-70587c523318d64d551751e7.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 360,
+     "bbox": [
+      326,
+      255,
+      694,
+      338
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph LR\n  Clock[\"Clock\"] --> D0[\"D0 Q0\"]\n  D0 --> LSB[\"LSB\"]\n  LSB --> D1[\"D1 Q1\"]\n  D1 --> MSB[\"MSB\"]\n  MSB --> D2[\"D2 Q2\"]\n  D2 --> Output[\"Output\"]\n  Output --> LSB"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.36.3",
+    "exam": "GATE CSE 2001 | Question: 2.12",
+    "section": "Synchronous Asynchronous Circuits",
+    "paper_question": "2.12",
+    "tags": [
+     "gatecse-2001",
+     "digital-logic",
+     "normal",
+     "synchronous-asynchronous-circuits"
+    ],
+    "page_idx": 360,
+    "bbox": [
+     326,
+     255,
+     694,
+     338
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-5-19-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2001,
+   "text": "A CPU has two modes -- privileged and non-privileged. In order to change the mode from privileged to nonprivileged",
+   "options": [
+    "a hardware interrupt is needed",
+    "a software interrupt is needed",
+    "a privileged instruction (which does not generate an interrupt) is needed",
+    "a non-privileged instruction (which does not generate an interrupt) is needed"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "5.19.2",
+    "exam": "GATE CSE 2001 | Question: 1.13",
+    "section": "OS Protection",
+    "paper_question": "1.13",
+    "tags": [
+     "gatecse-2001",
+     "operating-system",
+     "normal",
+     "os-protection"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-filter1-volume3-5-19-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "A user level process in Unix traps the signal sent on a Ctrl-C input, and has a signal handling routine that saves appropriate files before terminating the process. When a Ctrl-C input is given to this process, what is the mode in which the signal handling routine executes?",
+   "options": [
+    "User mode",
+    "Kernel mode",
+    "Superuser mode",
+    "Privileged mode"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "5.19.3",
+    "exam": "GATE IT 2005 | Question: 19, UGCNET-June2012-III: 57",
+    "section": "OS Protection",
+    "paper_question": "",
+    "tags": [
+     "gateit-2005",
+     "operating-system",
+     "os-protection",
+     "normal",
+     "ugcnetcse-june2012-paper3"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-vol1-8-3-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "If 'relftaga' means carefree, 'otaga' means careful and 'fertaga' means careless, which of the following could mean 'aftercare'?",
+   "options": [
+    "zentaga",
+    "tagafer.",
+    "tagazen.",
+    "relffer."
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "8.3.2",
+    "exam": "GATE CSE 2016 | Set 1 | GA | Question: 04",
+    "section": "Code Words",
+    "paper_question": "04",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-vol1-8-10-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2014,
+   "text": "Find the odd one in the following group:",
+   "options": [
+    "ALRVX",
+    "EPVZB",
+    "",
+    "OYEIK"
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "8.10.2",
+    "exam": "GATE2014 AE: GA-6",
+    "section": "Odd One",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-vol1-9-8-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The total revenue of a company during is shown in the bar graph. If the total expenditure of the company in each year is million rupees, then the aggregate profit or loss (in percentage) on the total expenditure of the company during is Refer to the figure below.",
+   "options": [
+    "profit",
+    "loss",
+    "profit",
+    "loss"
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/vol1-2ff01f2989481202a1b49c91.jpg",
+     "alt": "Figure 1 for this question (bar)",
+     "page_idx": 267,
+     "bbox": [
+      408,
+      757,
+      608,
+      872
+     ],
+     "kind": "bar"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "9.8.2",
+    "exam": "GATE CSE 2020 | GA | Question: 10",
+    "section": "Bar Graph",
+    "paper_question": "10",
+    "tags": [],
+    "page_idx": 267,
+    "bbox": [
+     408,
+     757,
+     608,
+     872
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: 'loss' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-vol1-9-11-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "The area of a square is. What is the area of the circle which has the diagonal of the square as its diameter?",
+   "options": [
+    "",
+    "$\\pi d ^ { 2 }$",
+    "${ \\frac { 1 } { 4 } } \\pi d ^ { 2 }$",
+    "${ \\frac { 1 } { 2 } } \\pi d$"
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "9.11.1",
+    "exam": "GATE CSE 2018 | GA | Question: 3",
+    "section": "Circle",
+    "paper_question": "3",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "1 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-vol1-9-55-7",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2013,
+   "text": "Following table provides figures(in rupees) on annual expenditure of a firm for two years - and. | Category | 2010 | 2011\n| Raw material | 5200 | 6240\n| Power &amp; fuel | 7000 | 9450\n| Salary &amp; wages | 9000 | 12600\n| Plant &amp; machinery | 20000 | 25000\n| Advertising | 15000 | 19500\n| Research &amp; Development | 22000 | 26400 In, which of the two categories have registered increase by same percentage?",
+   "options": [
+    "Raw material and Salary & wages.",
+    "Salary & wages and Advertising.",
+    "Power & fuel and Advertising.",
+    "Raw material and research & Development."
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "9.55.7",
+    "exam": "GATE2013 CE: GA-8",
+    "section": "Tables",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  },
+  {
+   "id": "mineru-vol1-10-7-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "A cube is to be cut into pieces of equal size and shape. Here, each cut should be straight and it should not stop till it reaches the other end of the cube. The minimum number of such cuts required is",
+   "options": [
+    "",
+    "",
+    "",
+    ""
+   ],
+   "origin": {
+    "source_file": "filter1_volume1.pdf",
+    "volume": "vol1",
+    "ref": "10.7.2",
+    "exam": "GATE CSE 2024 | Set 2 | GA | Question: 9",
+    "section": "Patterns In Three Dimensions",
+    "paper_question": "9",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then."
+  }
+ ]
+}

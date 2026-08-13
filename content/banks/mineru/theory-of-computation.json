@@ -56,7 +56,7 @@
     "$S \\to a S b | \\epsilon$",
     "$E E + E | E * E | i d$",
     "$S \\to a S | \\dot { S } a | \\epsilon$",
-    "S \u2192 aS | \u2208"
+    "S → aS | ∈"
    ],
    "answer": [
     1,
@@ -152,7 +152,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-1-1",
@@ -290,7 +292,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-1-5",
@@ -503,8 +507,8 @@
    "year": 2025,
    "text": "Consider the following context-free grammar, where, and are the variables (non-terminals), and are the terminal symbols, is the start variable, and the rules of are described as: $S \\rightarrow a a B \\mid A b b A \\rightarrow a \\mid a A B \\rightarrow b \\mid b B$ Which ONE of the languages is accepted by $G?$",
    "options": [
-    "L(G) = {a2bn | n \u2265 1} \u222a {anb2 |n \u2265 1}",
-    "L(G) = {anb2n | n \u2265 1} \u222a {a2nbn |n \u2265 1}",
+    "L(G) = {a2bn | n ≥ 1} ∪ {anb2 |n ≥ 1}",
+    "L(G) = {anb2n | n ≥ 1} ∪ {a2nbn |n ≥ 1}",
     "$L ( G ) = \\left\\{ a ^ { n } b ^ { n } \\mid n \\geq 1 \\right\\}$",
     "$L ( G ) = \\left\\{ a ^ { 2 n } b ^ { 2 n } \\mid n \\geq 1 \\right\\}$"
    ],
@@ -707,11 +711,11 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1996,
-   "text": "Define a context free languages $L \\in \\{ 0, 1 \\} ^ { * }$ $\\operatorname { i n i t } ( L ) = \\{ u \\mid u v \\in L$ for some in $\\{ 0, 1 \\} ^ { * } \\}$ ( in other words, is the set of prefixes of ) Let ${ \\cal L } = \\{ w \\vert w$ is nonempty and has an equal number of 0\u2019s and 1's} Then is:",
+   "text": "Define a context free languages $L \\in \\{ 0, 1 \\} ^ { * }$ $\\operatorname { i n i t } ( L ) = \\{ u \\mid u v \\in L$ for some in $\\{ 0, 1 \\} ^ { * } \\}$ ( in other words, is the set of prefixes of ) Let ${ \\cal L } = \\{ w \\vert w$ is nonempty and has an equal number of 0’s and 1's} Then is:",
    "options": [
-    "the set of all binary strings with unequal number of \u2019s and \u2019s",
+    "the set of all binary strings with unequal number of ’s and ’s",
     "the set of all binary strings including null string",
-    "the set of all binary strings with exactly one more than the number of \u2019s or one more than the number of \u2019s",
+    "the set of all binary strings with exactly one more than the number of ’s or one more than the number of ’s",
     "None of the above"
    ],
    "answer": [
@@ -800,8 +804,7 @@
    "difficulty": "medium",
    "year": 2000,
    "options": [
-    "Construct as minimal finite state machine that accepts the language, over $\\{ 0 , 1 \\}$ , of all strings that contain neither the substring nor the substring .",
-    "Consider the grammar O $S a S A b$ $S \\to \\epsilon$ $A \\to b A$ \u3002A\u2192\u20ac where , are non-terminal symbols with being the start symbol; $a , b$ are terminal symbols and is the empty string. This grammar generates strings of the form $a ^ { i } b ^ { j }$ for some $i , j \\geq 0$ , where and $j$ satisfy some condition. What is the condition on the values of and $j ?$"
+    "Construct as minimal finite state machine that accepts the language, over $\\{ 0 , 1 \\}$ , of all strings that contain neither the substring nor the substring ."
    ],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -821,7 +824,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-3-9",
@@ -1104,7 +1110,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2016,
-   "text": "Consider the following languages: \u2022 L1 = {anbmcn+m: m, n \u2265 1} \u2022 L2 = {anbn2n: n \u2265 1} Which one of the following is TRUE?",
+   "text": "Consider the following languages: • L1 = {anbmcn+m: m, n ≥ 1} • L2 = {anbn2n: n ≥ 1} Which one of the following is TRUE?",
    "options": [
     "Both $L _ { 1 }$ and $L _ { 2 }$ are context-free.",
     "$L _ { 1 }$ is context-free while $L _ { 2 }$ is not context-free.",
@@ -1141,7 +1147,7 @@
    "text": "Consider the following context-free grammar over the alphabet $\\Sigma = \\{ a, b, c \\}$ with $S$ as the start symbol: $S \\rightarrow a b S c T \\mid a b c T T \\rightarrow b T \\mid b$ Which one of the following represents the language generated by the above grammar?",
    "options": [
     "$\\{ ( a b ) ^ { n } ( c b ) ^ { n } \\mid n \\geq 1 \\}$",
-    "{(ab)ncbm1 cbm2. .cbmn | n, m1, m2, . .., mn \u2265 1}",
+    "{(ab)ncbm1 cbm2. .cbmn | n, m1, m2, . .., mn ≥ 1}",
     "$\\{ ( a b ) ^ { n } ( c b ^ { m } ) ^ { n } \\mid m , n \\geq 1 \\}$",
     "$\\{ ( a b ) ^ { n } ( c b ^ { n } ) ^ { m } \\mid m , n \\geq 1 \\}$"
    ],
@@ -1380,7 +1386,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2022,
-   "text": "Consider the following languages: \u2022 L1 = {ww|w \u2208 {a, b}\\*} \u2022 L2 = {anbncm|m, n \u2265 0} \u2022 L3 = {ambncn|m, n \u2265 0} Which of the following statements is/are",
+   "text": "Consider the following languages: • L1 = {ww|w ∈ {a, b}\\*} • L2 = {anbncm|m, n ≥ 0} • L3 = {ambncn|m, n ≥ 0} Which of the following statements is/are",
    "options": [
     "$L _ { 1 }$ is not context-free but $L _ { 2 }$ and $L _ { 3 }$ are deterministic context-free.",
     "Neither $L _ { 1 }$ nor $L _ { 2 }$ is context-free.",
@@ -1544,7 +1550,9 @@
     0,
     2,
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-3-30",
@@ -1554,7 +1562,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2006,
-   "text": "In the context-free grammar below, is the start symbol, and are terminals, and denotes the empty string. \u2022 S \u2192 aSAb | \u2208 $A \\to b A | \\epsilon$ The grammar generates the language",
+   "text": "In the context-free grammar below, is the start symbol, and are terminals, and denotes the empty string. • S → aSAb | ∈ $A \\to b A | \\epsilon$ The grammar generates the language",
    "options": [
     "$((a+b)^{*}b)$",
     "$\\left\\{Q^{m}\\mathcal{b}^{n}\\mid\\mathcal{H}\\subseteq\\mathcal{H}\\right\\}$",
@@ -1625,7 +1633,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2007,
-   "text": "The two grammars given below generate a language over the alphabet $\\{ x, y, z \\}$ \u2022 G1: S \u2192 x |z |x S | z S | y B \u2022 G2: S \u2192 $y | z | y S | z S | x B B \\rightarrow y \\mid z \\mid y B \\mid z B B \\rightarrow y \\mid y S$ Which one of the following choices describes the properties satisfied by the strings in these languages?",
+   "text": "The two grammars given below generate a language over the alphabet $\\{ x, y, z \\}$ • G1: S → x |z |x S | z S | y B • G2: S → $y | z | y S | z S | x B B \\rightarrow y \\mid z \\mid y B \\mid z B B \\rightarrow y \\mid y S$ Which one of the following choices describes the properties satisfied by the strings in these languages?",
    "options": [
     ": No appears before any E i f ll d b l",
     "y y : No appears before any N b f",
@@ -1732,7 +1740,7 @@
    "text": "Consider a CFG with the following productions. $\\begin{array}{l} S \\rightarrow A A \\mid B \\\\ A \\rightarrow 0 A \\mid A 0 \\mid 1 \\\\ B \\rightarrow 0 B 0 0 \\mid 1 \\\\ \\end{array}$ is the start symbol, and are non-terminals and 0 and 1 are the terminals. The language generated by this grammar is:",
    "options": [
     "$\\{ 0 ^ { n } 1 0 ^ { 2 n } \\mid n \\geq 1 \\}$",
-    "{0i10i10}k | i, j, k \u2265 0} \u222a {0n102n |n \u2265 0}",
+    "{0i10i10}k | i, j, k ≥ 0} ∪ {0n102n |n ≥ 0}",
     "$\\left\\{ 0 ^ { i } 1 0 ^ { j } \\mid i , j \\geq 0 \\right\\} \\cup \\left\\{ 0 ^ { n } 1 0 ^ { \\bar { 2 } n } \\mid n \\geq 0 \\right\\}$",
     "The set of all strings over $\\{ 0 , 1 \\}$ containing at least two 's"
    ],
@@ -1753,7 +1761,9 @@
      "normal"
     ],
     "topic_source": "section"
-   }
+   },
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-5-1",
@@ -2209,7 +2219,9 @@
     "topic_source": "section",
     "options_recovered": "pix2tex"
    },
-   "needs_fix": "stem contains a table; check it flattened readably"
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-5-16",
@@ -2335,7 +2347,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-5-20",
@@ -2585,7 +2599,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Consider the following two statements about regular languages: \u2022 $S _ { 1 }$ Every infinite regular language contains an undecidable language as a subset. \u2022 $S _ { 2 } \\mathrm {: }$ Every finite language is regular. Which one of the following choices is correct?",
+   "text": "Consider the following two statements about regular languages: • $S _ { 1 }$ Every infinite regular language contains an undecidable language as a subset. • $S _ { 2 } \\mathrm {: }$ Every finite language is regular. Which one of the following choices is correct?",
    "options": [
     "Only $S _ { 1 }$ is true",
     "Only is true",
@@ -2693,7 +2707,7 @@
    "marks": 2,
    "difficulty": "hard",
    "year": 1988,
-   "text": "Consider the DFA and NFA $M _ { 2 }$ as defined below. Let the language accepted by machine be. What language machine $M _ { 2 }$ accepts, if i. ii. $F 2 = B?$ iii. iv. $\\cdot M = ( Q, \\Sigma, \\delta, q _ { 0 }, F )$ \u2022 M2 = (Q2, \u03a3, \u03b42, q00, F2) Where, $Q 2 = (Q \\times Q \\times Q) \\cup \\{q _ {0 0} \\} \\delta_ {2} (q _ {0 0}, \\epsilon) = \\{\\langle q _ {0}, q, q \\rangle \\mid q \\in Q \\} \\delta_ {2} (\\langle p, q, r \\rangle, \\sigma) = \\langle \\delta (p, \\sigma), \\delta (q, \\sigma), r \\rangle$ for all and $A = \\{\\langle p, q, r \\rangle \\mid p \\in F; q, r \\in Q \\} B = \\{\\langle p, q, r \\rangle \\mid q \\in F; p, r \\in Q \\} C = \\{\\langle p, q, r \\rangle \\mid p, q, r \\in Q; \\exists s \\in \\Sigma^ {*}, \\delta (p, s) \\in F \\} D = \\{\\langle p, q, r \\rangle \\mid p, q \\in Q; r \\in F \\}$",
+   "text": "Consider the DFA and NFA $M _ { 2 }$ as defined below. Let the language accepted by machine be. What language machine $M _ { 2 }$ accepts, if i. ii. $F 2 = B?$ iii. iv. $\\cdot M = ( Q, \\Sigma, \\delta, q _ { 0 }, F )$ • M2 = (Q2, Σ, δ2, q00, F2) Where, $Q 2 = (Q \\times Q \\times Q) \\cup \\{q _ {0 0} \\} \\delta_ {2} (q _ {0 0}, \\epsilon) = \\{\\langle q _ {0}, q, q \\rangle \\mid q \\in Q \\} \\delta_ {2} (\\langle p, q, r \\rangle, \\sigma) = \\langle \\delta (p, \\sigma), \\delta (q, \\sigma), r \\rangle$ for all and $A = \\{\\langle p, q, r \\rangle \\mid p \\in F; q, r \\in Q \\} B = \\{\\langle p, q, r \\rangle \\mid q \\in F; p, r \\in Q \\} C = \\{\\langle p, q, r \\rangle \\mid p, q, r \\in Q; \\exists s \\in \\Sigma^ {*}, \\delta (p, s) \\in F \\} D = \\{\\langle p, q, r \\rangle \\mid p, q \\in Q; r \\in F \\}$",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -3072,7 +3086,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-7-11",
@@ -3138,7 +3154,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2004,
-   "text": "The following finite state machine accepts all those binary strings in which the number of \u2019s and \u2019s are respectively: Refer to the figure below.",
+   "text": "The following finite state machine accepts all those binary strings in which the number of ’s and ’s are respectively: Refer to the figure below.",
    "options": [
     "divisible by and",
     "odd and even",
@@ -3253,8 +3269,8 @@
    "year": 2005,
    "text": "The following diagram represents a finite state machine which takes as input a binary number from the least significant bit. Which of the following is TRUE?",
    "options": [
-    "It computes \u2019s complement of the input number",
-    "It computes \u2019s complement of the input number",
+    "It computes ’s complement of the input number",
+    "It computes ’s complement of the input number",
     "It increments the input number",
     "it decrements the input number"
    ],
@@ -3298,7 +3314,7 @@
    "answer_pending": true,
    "answer_from_source": "B",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "options are not distinct: 'It computes \u2019s complement of the input number' repeated"
+   "needs_fix": "options are not distinct: 'It computes ’s complement of the input number' repeated"
   },
   {
    "id": "mineru-filter1-volume2-6-7-15",
@@ -3403,9 +3419,9 @@
    "text": "Match the following NFAs with the regular expressions they correspond to: P R S 1. $\\epsilon + 0 ( 0 1 ^ { * } 1 + 0 0 ) ^ { * } 0 1 ^ { * }$ 2. $\\epsilon + 0 ( 1 0 ^ { * } 1 + 0 0 ) ^ { * } 0$ 3. $\\epsilon + 0 ( 1 0 ^ { * } 1 + 1 0 ) ^ { * } 1$ 4. $\\epsilon + 0 ( 1 0 ^ { * } 1 + 1 0 ) ^ { * } 1 0 ^ { * }$ Refer to the figure below.",
    "options": [
     "$P - 2 , Q - 1 , R - 3 , S - 4$",
-    "P \u2212 1,Q \u2212 3,R \u2212 2,S \u2212 4",
+    "P − 1,Q − 3,R − 2,S − 4",
     "$P - 1 , \\dot { Q } - 2 , R - 3 , S - 4$",
-    "P \u2212 3,Q \u2212 2,R \u2212 1,S \u2212 4"
+    "P − 3,Q − 2,R − 1,S − 4"
    ],
    "answer": [
     2
@@ -3555,7 +3571,7 @@
       722
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  A[\"Start\"] --> B[\"State A\"]\n  B -->|a| C[\"Feedback Loop (a)\"]\n  C -->|\u03b5| D[\"Final Output (\u03b5)\"]\n  D --> B"
+     "mermaid": "graph LR\n  A[\"Start\"] --> B[\"State A\"]\n  B -->|a| C[\"Feedback Loop (a)\"]\n  C -->|ε| D[\"Final Output (ε)\"]\n  D --> B"
     }
    ],
    "origin": {
@@ -3584,7 +3600,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-7-20",
@@ -3598,7 +3616,6 @@
    "options": [
     "${\\Bigg|}\\oint\\!\\!\\!\\!\\!\\L_{\\L}\\left|\\L_{+}\\right|_{+}\\left|\\L_{+}\\prod_{+}\\frac{}{\\L_{+}}\\prod_{+}\\L_{+}\\prod_{+}\\L_{+}\\L_{+}\\right|$",
     "$\\left\\lceil\\mathrm{OL}\\mp\\prod_{1}\\mp\\prod_{-}\\right\\rceil$",
-    "$\\left\\vert\\underbrace{\\mathsf{G}\\mathsf{P}\\mathsf{N}}_{\\pm\\mathsf{-}\\mathsf{-}}\\right\\vert\\underbrace{\\downarrow}{\\downarrow\\mathsf{2}}\\left\\vert\\underbrace{\\downarrow}{\\downarrow\\atop\\prod}\\downarrow\\mathsf{-}\\right\\vert\\mathsf{\\not{~}\\bigcup\\mathsf{G}\\atop\\bigcup\\mathsf{A}}\\left\\vert\\xrightarrow{\\downarrow}\\left\\vert\\frac{\\downarrow}{\\downarrow\\atop\\prod}\\right\\vert$",
     "$\\left\\lceil{\\frac{\\mathrm{G1}\\mid}{\\mathrm{G\\mid}}}{\\overline{{\\mid}}}\\quad\\overline{{\\mid}}_{1}\\quad\\right\\downarrow\\quad$"
    ],
    "figure_assets": [
@@ -3640,9 +3657,9 @@
     "options_recovered": "pix2tex"
    },
    "explain": "",
-   "answer": [
-    3
-   ]
+   "answer": null,
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-7-21",
@@ -3802,7 +3819,6 @@
    "year": 2017,
    "text": "Let denote the transition function and $\\hat { \\delta }$ denote the extended transition function of the -NFA whose transition table is given below: | $\\delta$ | $\\epsilon$ | $a$ | $b$\n| $\\rightarrow$ $q_0$ | $\\{q_2\\}$ | $\\{q_1\\}$ | $\\{q_0\\}$\n| $q_1$ | $\\{q_2\\}$ | $\\{q_2\\}$ | $\\{q_3\\}$\n| $q_2$ | $\\{q_0\\}$ | $\\emptyset$ | $\\emptyset$\n| $q_3$ | $\\emptyset$ | $\\emptyset$ | $\\{q_2\\}$ Then $\\hat { \\delta } ( q _ { 2 }, a b a )$ is",
    "options": [
-    "$\\begin{array}{c c c c c}{{\\displaystyle\\bigcup_{}}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}\\\\ {{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{}}&{{{}}&{{}}&{{}}&{{}}&{{X}}&{{{}}}&{{X}}&{{-X_{0}}&{{{-A}}}&{{{X_{0}&{X}&{X X X X_{0}}&{{X_{-X X X}&{X}&{X X X X X X X X X X_{X X X X}&{X$",
     "$\\left\\{q_{0},q_{1},q_{3}\\right\\}$",
     "$\\{q_{0},q_{1},q_{2}\\}$",
     "$\\left\\{q_{0},q_{2},q_{3}\\right\\}$"
@@ -3836,12 +3852,7 @@
    "difficulty": "medium",
    "year": 2021,
    "text": "Consider the following language: $L = \\{w \\in \\{0, 1 \\} ^ {*} \\mid w \\text {ends with the substring} 0 1 1 \\}$ Which one of the following deterministic finite automata accepts Refer to the figure below.",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "figure_assets": [
     {
      "src": "/content/assets/question-images/mineru/filter1-volume2-25a1f065556e928eebc13ef7.jpg",
@@ -3919,7 +3930,10 @@
    "answer_pending": true,
    "answer_from_source": "D",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-7-26",
@@ -3979,7 +3993,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Suppose we want to design a synchronous circuit that processes a string of \u2019s and \u2019s. Given a string, it produces another string by replacing the first in any subsequence of consecutive \u2019s by a. Consider the following example. Input sequence:00100011000011100 Output sequence: 00000001000001100 A Mealy Machine is a state machine where both the next state and the output are functions of the present state and the current input. The above mentioned circuit can be designed as a two-state Mealy machine. The states in the Mealy machine can be represented using Boolean values and. We denote the current state, the next state, the next incoming bit, and the output bit of the Mealy machine by the variables $s, t, b$ and respectively. Assume the initial state of the Mealy machine is. What are the Boolean expressions corresponding to and in terms of and $b?$ A t = s + b",
+   "text": "Suppose we want to design a synchronous circuit that processes a string of ’s and ’s. Given a string, it produces another string by replacing the first in any subsequence of consecutive ’s by a. Consider the following example. Input sequence:00100011000011100 Output sequence: 00000001000001100 A Mealy Machine is a state machine where both the next state and the output are functions of the present state and the current input. The above mentioned circuit can be designed as a two-state Mealy machine. The states in the Mealy machine can be represented using Boolean values and. We denote the current state, the next state, the next incoming bit, and the output bit of the Mealy machine by the variables $s, t, b$ and respectively. Assume the initial state of the Mealy machine is. What are the Boolean expressions corresponding to and in terms of and $b?$ A t = s + b",
    "options": [
     "y = sb t=b",
     "y = sb t = s + b",
@@ -4148,7 +4162,7 @@
       856
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  1[\"1\"] -->|\u03b5| 2[\"2\"]\n  n1[\"1\"] -->|\u03b5| 4[\"4\"]\n  n2[\"2\"] -->|0| 3[\"3\"]\n  n2 -->|0| n3[\"3\"]\n  n3 -->|\u03b5| 5[\"5\"]\n  n3 -->|\u03b5| n5[\"5\"]\n  n4[\"4\"] -->|1| n5\n  n4 -->|1| n5"
+     "mermaid": "graph LR\n  1[\"1\"] -->|ε| 2[\"2\"]\n  n1[\"1\"] -->|ε| 4[\"4\"]\n  n2[\"2\"] -->|0| 3[\"3\"]\n  n2 -->|0| n3[\"3\"]\n  n3 -->|ε| 5[\"5\"]\n  n3 -->|ε| n5[\"5\"]\n  n4[\"4\"] -->|1| n5\n  n4 -->|1| n5"
     }
    ],
    "origin": {
@@ -4307,7 +4321,7 @@
    "year": 2004,
    "text": "Let $M = ( K, \\Sigma, \\sigma, s, F )$ be a finite state automaton, where $K = \\{A, B \\}, \\Sigma = \\{a, b \\}, s = A, F = \\{B \\}, \\sigma (A, a) = A, \\sigma (A, b) = B, \\sigma (B, a) = B \\text {and} \\sigma (B, b) = A A$ grammar to generate the language accepted by can be specified as $G = ( V, \\Sigma, R, S )$ where $V = K \\cup \\Sigma$ and $S = A$ Which one of the following set of rules will make $L ( G ) = L ( M )?$",
    "options": [
-    "{A \u2192 aB, A \u2192 bA, B \u2192 bA, B \u2192 aA, B \u2192 \u20ac)",
+    "{A → aB, A → bA, B → bA, B → aA, B → €)",
     "$\\{ A \\to a A , A \\to b B , B \\to a B , B \\to b A , B \\to \\epsilon \\}$",
     "$\\{ A b B , A a B , B a A , B b A , B \\epsilon \\}$",
     "$\\{ A \\to a A , A \\to b A , B \\to a B , B \\to b A , A \\to \\epsilon \\}$"
@@ -4421,7 +4435,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-7-36",
@@ -4599,12 +4615,7 @@
    "marks": 2,
    "difficulty": "medium",
    "text": "Consider the regular expression $R = ( a + b ) ^ { * } ( a a + b b ) ( a + b ) ^ { * }$ Which of the following non-deterministic finite automata recognizes the language defined by the regular expression? Edges labeled denote transitions on the empty string. Refer to the figure below.",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "figure_assets": [
     {
      "src": "/content/assets/question-images/mineru/filter1-volume2-ec443de2815528e0ab0b627e.jpg",
@@ -4679,7 +4690,10 @@
    "answer_pending": true,
    "answer_from_source": "A",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-7-41",
@@ -4776,7 +4790,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-7-42",
@@ -4946,9 +4962,7 @@
     "Context-senstive language.",
     "None of the above."
    ],
-   "answer": [
-    2
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume2.pdf",
     "volume": "filter1_volume2",
@@ -4962,7 +4976,10 @@
      "identify-class-language"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-9-2",
@@ -5033,7 +5050,6 @@
    "difficulty": "medium",
    "year": 1994,
    "options": [
-    "Given a set: S = \\{x \\mid \\text {there is an x - block of 5's in the decimal expansion of} \\pi \\} (Note: - is a maximal block of successive 's) Which of the following statements is true with respect to ? No reason to be given for the answer. i. $S$ is regular ii. is recursively enumerable iii. is not recursively enumerable iv. $S$ is recursive",
     "Given that a language $L _ { 1 }$ is regular and that the language $L _ { 1 } \\cup L _ { 2 }$ is regular, is the language $L _ { 2 }$ always regular? Prove your answer."
    ],
    "origin": {
@@ -5054,7 +5070,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-9-5",
@@ -5585,7 +5604,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2018,
-   "text": "Consider the following languages: I. $\\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q }$ \u4e00 $m + p = n + q,$ where $m, n, p, q \\geq 0 \\}$ II. $\\bar { \\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q } } $ | m = n and $p = q.$, where $m, n, p, q \\geq 0 \\}$ III. $\\bar { \\{ } a ^ { m } b ^ { n } c ^ { p } d ^ { q } $ \u4e00 $m = n = p$ and $p \\neq q.$ where $m, n, p, q \\geq 0 \\}$ IV. $\\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q }$ \u4e00 $m n = p + q,$ where $m, n, p, q \\geq 0 \\}$ Which of the above languages are context-free?",
+   "text": "Consider the following languages: I. $\\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q }$ 一 $m + p = n + q,$ where $m, n, p, q \\geq 0 \\}$ II. $\\bar { \\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q } } $ | m = n and $p = q.$, where $m, n, p, q \\geq 0 \\}$ III. $\\bar { \\{ } a ^ { m } b ^ { n } c ^ { p } d ^ { q } $ 一 $m = n = p$ and $p \\neq q.$ where $m, n, p, q \\geq 0 \\}$ IV. $\\{ a ^ { m } b ^ { n } c ^ { p } d ^ { q }$ 一 $m n = p + q,$ where $m, n, p, q \\geq 0 \\}$ Which of the above languages are context-free?",
    "options": [
     "I and IV only",
     "I and II only",
@@ -5623,9 +5642,9 @@
    "year": 2020,
    "text": "Consider the language $L = \\{ a ^ { n } \\mid n \\geq 0 \\} \\cup \\{ a ^ { n } b ^ { n } \\mid n \\geq 0 \\}$ and the following statements. I. is deterministic context-free. II. is context-free but not deterministic context-free. III. is not $L L ( k )$ for any. Which of the above statements is/are TRUE?",
    "options": [
-    "\u2160 only",
-    "\u2161 only",
-    "\u2160 and \u2162 only"
+    "Ⅰ only",
+    "Ⅱ only",
+    "Ⅰ and Ⅲ only"
    ],
    "answer": [
     2
@@ -5906,7 +5925,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2008,
-   "text": "Consider the following languages. \u2022 L1 = {aibjck | i = j, k \u2265 1} \u2022 L2 = {aibj | j = 2i, i \u2265 0} Which of the following is true?",
+   "text": "Consider the following languages. • L1 = {aibjck | i = j, k ≥ 1} • L2 = {aibj | j = 2i, i ≥ 0} Which of the following is true?",
    "options": [
     "$L _ { 1 }$ is not a CFL but $L _ { 2 }$ is",
     "$L _ { 1 } \\cap L _ { 2 } = \\emptyset$ and $L _ { 1 }$ is non-regular",
@@ -5940,11 +5959,11 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2006,
-   "text": "If is a string over $( 0 + 1 ) ^ { * }$ then let $n _ { 0 } ( s )$ denote the number of \u2019s in and $n _ { 1 } ( s )$ the number of \u2019s in. Which one of the following languages is not regular?",
+   "text": "If is a string over $( 0 + 1 ) ^ { * }$ then let $n _ { 0 } ( s )$ denote the number of ’s in and $n _ { 1 } ( s )$ the number of ’s in. Which one of the following languages is not regular?",
    "options": [
-    "$L = \\{ s \\in ( 0 + 1 ) ^ { * }$ \u4e00 $n _ { 0 } ( s )$ is a 3-digit prime }",
+    "$L = \\{ s \\in ( 0 + 1 ) ^ { * }$ 一 $n _ { 0 } ( s )$ is a 3-digit prime }",
     "$L = \\bar { \\{ } s \\in ( 0 + 1 ) ^ { * }$ for every $\\mathrm { { ) r e f i x ~ s ^ { \\prime } \\ o f ~ s , ~ } } | \\ n _ { 0 } ( s ^ { \\prime } ) - n _ { 1 } ( s ^ { \\prime } ) \\ | \\le 2 \\}$",
-    "$L = \\bar { \\{ } s \\in ( 0 + 1 ) ^ { * }$ | n0(s) \u2212 n1(s) |\u2264 4}",
+    "$L = \\bar { \\{ } s \\in ( 0 + 1 ) ^ { * }$ | n0(s) − n1(s) |≤ 4}",
     "$L = \\tilde { \\{ s \\in ( 0 + 1 ) ^ { * } } $ | n0 (s) mod $7 = n _ { 1 } ( s )$ mod $5 = 0 \\}$"
    ],
    "answer": [
@@ -6338,7 +6357,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-11-12",
@@ -6390,7 +6411,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-11-13",
@@ -6472,12 +6495,7 @@
    "marks": 2,
    "difficulty": "medium",
    "text": "A deterministic finite automaton ( ) with alphabet $\\Sigma = \\{ a, b \\}$ is given below. Which of the following finite state machines is a valid minimal which accepts the same languages as?",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "figure_assets": [
     {
      "src": "/content/assets/question-images/mineru/filter1-volume2-b1cf30b849118360c08a3b75.jpg",
@@ -6565,7 +6583,10 @@
    "answer_pending": true,
    "answer_from_source": "A",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-11-16",
@@ -6575,7 +6596,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2015,
-   "text": "Consider the DFAs and given above. The number of states in a minimal DFA that accept the language L(M) \u2229L(N) is Refer to the figure below.",
+   "text": "Consider the DFAs and given above. The number of states in a minimal DFA that accept the language L(M) ∩L(N) is Refer to the figure below.",
    "options": [],
    "answer_value": 1.0,
    "tolerance": 0,
@@ -6684,7 +6705,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-11-19",
@@ -7326,7 +7349,7 @@
       887
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  q0[\"q0\"] -->|1, Z \u2192 1Z| q0\n  q0 -->|0, Z \u2192 0Z| q0\n  q0 -->|0/1/\u03b5, Z \u2192 Z| q1[\"q1\"]\n  q1 -->|0, 1Z \u2192 Z| q1\n  q1 -->|1, 0Z \u2192 Z| q1\n  q1 -->|\u03b5, \u22a5 \u2192 \u03b5| q2[\"q2\"]"
+     "mermaid": "graph LR\n  q0[\"q0\"] -->|1, Z → 1Z| q0\n  q0 -->|0, Z → 0Z| q0\n  q0 -->|0/1/ε, Z → Z| q1[\"q1\"]\n  q1 -->|0, 1Z → Z| q1\n  q1 -->|1, 0Z → Z| q1\n  q1 -->|ε, ⊥ → ε| q2[\"q2\"]"
     }
    ],
    "origin": {
@@ -7387,7 +7410,7 @@
       296
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  Start[\"\"] --> State((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"\"))\\n\"))\n  Start --> State\n  State -->|b, X/\u03b5| State\n  State -->|b, X/\u03b5| State\n  State -->|\u03b5, Z/Z| End((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"\"))\n  State --> State\n  State -->|b, X/\u03b5| State\n  State -->|b, X/\u03b5| State\n  State -->|\u03b5, Z/Z| End"
+     "mermaid": "graph LR\n  Start[\"\"] --> State((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"\"))\\n\"))\n  Start --> State\n  State -->|b, X/ε| State\n  State -->|b, X/ε| State\n  State -->|ε, Z/Z| End((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"((\"\"))\n  State --> State\n  State -->|b, X/ε| State\n  State -->|b, X/ε| State\n  State -->|ε, Z/Z| End"
     }
    ],
    "origin": {
@@ -7448,7 +7471,7 @@
       695
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  start[\"start\"] --> q0[\"q0\"]\n  q0 -->|\u03b5, \u03b5 \u2192 #| q1[\"q1\"]\n  q1 -->|a, \u03b5 \u2192 A| q2[\"q2\"]\n  q1 -->|b, A \u2192 \u03b5| q2\n  q2 -->|\u03b5, \u03b5 \u2192 \u03b5| q2\n  q2 -->|\u03b5, A \u2192 A| q3[\"q3\"]"
+     "mermaid": "graph LR\n  start[\"start\"] --> q0[\"q0\"]\n  q0 -->|ε, ε → #| q1[\"q1\"]\n  q1 -->|a, ε → A| q2[\"q2\"]\n  q1 -->|b, A → ε| q2\n  q2 -->|ε, ε → ε| q2\n  q2 -->|ε, A → A| q3[\"q3\"]"
     }
    ],
    "origin": {
@@ -7486,7 +7509,7 @@
    "text": "Consider the pushdown automaton below, which runs on the input alphabet $\\{ a, b \\}$, has stack alphabet $\\{ \\bot, A \\}$, and has three states $\\{ s, p, q \\}$, with being the start state. A transition from state to state $v,$ labelled $\\scriptstyle \\dot { c / X / \\gamma }.$, where $c$ is an input symbol or $\\epsilon, X$ is a stack symbol, and $\\gamma$ is a string of stack symbols, represents the fact that in state $u,$ the can read from the input, with $X$ on the top of its stack, pop from the stack, push in the string on the stack, and go to state. In the initial configuration, the stack has only the symbol in it. The accepts by empty stack. Which one of the following options correctly describes the language accepted by $P?$ Refer to the figure below.",
    "options": [
     "$\\{ a ^ { m } b ^ { n } \\mid 1 \\leq m { \\mathrm { a n d } } n < m \\}$",
-    "{ambn | 0 \u2264 n \u2264 m}",
+    "{ambn | 0 ≤ n ≤ m}",
     "$\\left\\{ a ^ { m } b ^ { n } \\mid 0 \\leq m { \\mathrm { a n d } } 0 \\leq n \\right\\}$",
     "$\\{ a ^ { m } | 0 \\leq m \\} \\cup \\{ b ^ { n } | 0 \\leq n \\}$"
    ],
@@ -7505,7 +7528,7 @@
       238
      ],
      "kind": "flowchart",
-     "mermaid": "graph LR\n  s[\"s\"] -->|a/\u22a5/A\u22a5| s\n  s -->|a/A/AA| s\n  s -->|b/A/\u03b5| p\n  s -->|b/A/\u03b5| p\n  s -->|\u03b5/A/\u03b5| q\n  p -->|b/A/\u03b5| p\n  p -->|\u03b5/A/\u03b5| q\n  p -->|b/A/\u03b5| B\n  q -->|\u03b5/A/\u03b5| q\n  q -->|a/\u22a5/\u03b5| q"
+     "mermaid": "graph LR\n  s[\"s\"] -->|a/⊥/A⊥| s\n  s -->|a/A/AA| s\n  s -->|b/A/ε| p\n  s -->|b/A/ε| p\n  s -->|ε/A/ε| q\n  p -->|b/A/ε| p\n  p -->|ε/A/ε| q\n  p -->|b/A/ε| B\n  q -->|ε/A/ε| q\n  q -->|a/⊥/ε| q"
     }
    ],
    "origin": {
@@ -7678,10 +7701,7 @@
     "Also called type languages.",
     "Recognizable by Turing machines."
    ],
-   "answer": [
-    0,
-    3
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume2.pdf",
     "volume": "filter1_volume2",
@@ -7698,7 +7718,10 @@
      "multiple-selects"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-16-2",
@@ -8106,7 +8129,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2016,
-   "text": "Consider the following languages. $L _ { 1 } = \\{ \\langle M \\rangle$ |M takes at least 2016 steps on some input}, $L _ { 2 } = \\{ \\langle M \\rangle$ M takes at least 2016 steps on all inputs} and ${ \\cal L } _ { 3 } = \\{ \\langle M \\rangle$ | M accepts \u00e9}, where for each Turing machine $M, \\langle M \\rangle$ denotes a specific encoding of. Which one of the following is TRUE?",
+   "text": "Consider the following languages. $L _ { 1 } = \\{ \\langle M \\rangle$ |M takes at least 2016 steps on some input}, $L _ { 2 } = \\{ \\langle M \\rangle$ M takes at least 2016 steps on all inputs} and ${ \\cal L } _ { 3 } = \\{ \\langle M \\rangle$ | M accepts é}, where for each Turing machine $M, \\langle M \\rangle$ denotes a specific encoding of. Which one of the following is TRUE?",
    "options": [
     "$L _ { 1 }$ is recursive and $\\boldsymbol { L } _ { 2 } , \\boldsymbol { L } _ { 3 }$ are not recursive",
     "$L _ { 2 }$ is recursive and $\\boldsymbol { L } _ { 1 } , \\boldsymbol { L } _ { 3 }$ are not recursive",
@@ -8523,7 +8546,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 1998,
-   "text": "Give a regular expression for the set of binary strings where every is immediately followed by exactly 's and preceded by at least \u2019s ( is a fixed integer)",
+   "text": "Give a regular expression for the set of binary strings where every is immediately followed by exactly 's and preceded by at least ’s ( is a fixed integer)",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -9344,7 +9367,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1990,
-   "text": "Is the language generated by the grammar regular? If so, give a regular expression for it, else prove otherwise G: \u3002S\u2192 aB o $B \\to b C$ $C x B$ $C c$",
+   "text": "Is the language generated by the grammar regular? If so, give a regular expression for it, else prove otherwise G: 。S→ aB o $B \\to b C$ $C x B$ $C c$",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -9374,7 +9397,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2015,
-   "text": "Consider the alphabet $\\Sigma = \\{ 0, 1 \\}$, the null/empty string and the set of strings $X _ { 0 }, X _ { 1 }$, and $X _ { 2 }$ generated by the corresponding non-terminals of a regular grammar. $X _ { 0 }, X _ { 1 }$, and $X _ { 2 }$ are related as follows. $X _ { 0 } = 1 X _ { 1 }$ \u2022 X1 = 0X1 + 1X2 \u2022 X2 = 0X1 + {\u03bb} Which one of the following choices precisely represents the strings in $X _ { 0 }?$",
+   "text": "Consider the alphabet $\\Sigma = \\{ 0, 1 \\}$, the null/empty string and the set of strings $X _ { 0 }, X _ { 1 }$, and $X _ { 2 }$ generated by the corresponding non-terminals of a regular grammar. $X _ { 0 }, X _ { 1 }$, and $X _ { 2 }$ are related as follows. $X _ { 0 } = 1 X _ { 1 }$ • X1 = 0X1 + 1X2 • X2 = 0X1 + {λ} Which one of the following choices precisely represents the strings in $X _ { 0 }?$",
    "options": [
     "$1 0 ( 0 ^ { * } + ( 1 0 ) ^ { * } ) 1$",
     "10(0\\* + (10)\\*)\\*1",
@@ -9413,7 +9436,7 @@
     "$\\{ w \\in ( a + b ) ^ { * } \\mid \\# a ( w )$ is even) and $[ w \\in ( a + b ) ^ { * } \\mid \\# a ( w )$ is odd}",
     "$\\{ w \\in ( a + b ) ^ { * } \\mid \\# a ( w ) { \\mathrm { i s e v e n } } )$ and $\\bar { \\boldsymbol { w } } \\in ( a + b ) ^ { * } \\mid \\# b ( \\boldsymbol { w } )$ is odd}",
     "$\\{ w \\in ( a + b ) ^ { * } \\mid \\# a ( w ) = \\# b ( w ) { \\mathrm { a n d } } \\{ w \\in ( a + b ) ^ { * } \\mid \\# a ( w ) \\neq \\# b ( w ) \\}$",
-    "{\u20ac}, {wa | w \u2208 (a + b)\\*and{wb | w \u2208 (a + b)\\*}"
+    "{€}, {wa | w ∈ (a + b)\\*and{wb | w ∈ (a + b)\\*}"
    ],
    "answer": [
     0
@@ -9432,7 +9455,9 @@
      "regular-grammar"
     ],
     "topic_source": "section"
-   }
+   },
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-20-1",
@@ -9537,7 +9562,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Which of the following is the strongest correct statement about a finite language over some finite alphabet \u2211?",
+   "text": "Which of the following is the strongest correct statement about a finite language over some finite alphabet ∑?",
    "options": [
     "It could be undecidable",
     "It is Turing-machine recognizable",
@@ -9683,7 +9708,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-6-20-9",
@@ -9761,7 +9789,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2001,
-   "text": "Consider the following languages: \u2022 L1 = {ww | w \u2208 {a, b}\\*} $L 2 = \\{ w w ^ { R } \\mid w \\in \\{ a, b \\} ^ { * }, w ^ { R }$ is the reverse of $\\pi \\}$ $L 3 = \\tilde { \\{ 0 ^ { 2 i } \\mid } $ i is an integer} $L 4 = \\left\\{ 0 ^ { i ^ { 2 } } \\mid \\right.$ i is an integer } Which of the languages are regular?",
+   "text": "Consider the following languages: • L1 = {ww | w ∈ {a, b}\\*} $L 2 = \\{ w w ^ { R } \\mid w \\in \\{ a, b \\} ^ { * }, w ^ { R }$ is the reverse of $\\pi \\}$ $L 3 = \\tilde { \\{ 0 ^ { 2 i } \\mid } $ i is an integer} $L 4 = \\left\\{ 0 ^ { i ^ { 2 } } \\mid \\right.$ i is an integer } Which of the languages are regular?",
    "options": [
     "Only and",
     "Only and",
@@ -9994,7 +10022,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-20-18",
@@ -10028,7 +10058,9 @@
      "normal"
     ],
     "topic_source": "section"
-   }
+   },
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-20-19",
@@ -10244,7 +10276,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2020,
-   "text": "Consider the following language. $L = \\{ x \\in \\{ a, b \\} ^ { * }$ number of \u2019s in divisible by but not divisible by The minimum number of states in DFA that accepts is",
+   "text": "Consider the following language. $L = \\{ x \\in \\{ a, b \\} ^ { * }$ number of ’s in divisible by but not divisible by The minimum number of states in DFA that accepts is",
    "options": [],
    "answer_value": 6.0,
    "tolerance": 0,
@@ -10275,10 +10307,10 @@
    "year": 2020,
    "text": "Consider the following statements. I. If $L _ { 1 } \\cup L _ { 2 }$ is regular, then both $L _ { 1 }$ and $L _ { 2 }$ must be regular. II. The class of regular languages is closed under infinite union. Which of the above statements is/are TRUE?",
    "options": [
-    "\u2160 only",
-    "\u2161 only",
-    "Both \u2160 and \u2161",
-    "Neither \u2160 nor \u2161"
+    "Ⅰ only",
+    "Ⅱ only",
+    "Both Ⅰ and Ⅱ",
+    "Neither Ⅰ nor Ⅱ"
    ],
    "answer": [
     3
@@ -10415,7 +10447,7 @@
    "text": "Let $\\Sigma = \\{ a, b, c \\}$. For $x \\in \\Sigma ^ { * }$, and $\\alpha \\in \\Sigma$, let $\\# _ { \\alpha } ( x )$ denote the number of occurrences of in. Which one or more of the following option(s) define(s) regular language(s)?",
    "options": [
     "$\\{ a ^ { m } b ^ { n } \\mid m , n \\geq 0 \\}$",
-    "{a,b}\\* \u2229 {ambncm\u2212n |m \u2265 n \u2265 0}",
+    "{a,b}\\* ∩ {ambncm−n |m ≥ n ≥ 0}",
     "$\\{ w \\mid w \\in \\{ a , b \\} ^ { * } , \\# _ { a } ( \\dot { w } ) \\equiv 2 ( \\bmod 7 ) , \\mathsf { a n d } \\# _ { b } ( w ) \\equiv 3 ( \\bmod 9 ) \\}$",
     "$\\{ w \\mid w \\in \\{ a , b \\} ^ { * } , \\# a ( w ) \\equiv 2 ($ , and $\\# _ { a } ( w ) = \\# _ { b } ( w ) \\}$"
    ],
@@ -10552,7 +10584,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2008,
-   "text": "Which of the following languages is (are) non-regular? \u2022 L1 = {0m1n | 0 \u2264 m \u2264 n \u2264 10000} $L _ { 2 } = \\{ w \\vert$ reads the same forward and backward ${ \\cal L } _ { 3 } = \\bar { \\{ w \\in \\{ 0, 1 \\} ^ { * } \\ | } $ contains an even number of 0's and an even number of $1 ^ { \\prime } { \\mathsf { s } } \\}$",
+   "text": "Which of the following languages is (are) non-regular? • L1 = {0m1n | 0 ≤ m ≤ n ≤ 10000} $L _ { 2 } = \\{ w \\vert$ reads the same forward and backward ${ \\cal L } _ { 3 } = \\bar { \\{ w \\in \\{ 0, 1 \\} ^ { * } \\ | } $ contains an even number of 0's and an even number of $1 ^ { \\prime } { \\mathsf { s } } \\}$",
    "options": [
     "and only",
     "and only",
@@ -10578,7 +10610,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-6-21-1",
@@ -10637,6 +10671,214 @@
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
    "needs_fix": "no answer printed in the source answer key"
+  },
+  {
+   "id": "mineru-filter1-volume2-6-12-1",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 1992,
+   "text": "In which of the cases stated below is the following statement true? \"For every non-deterministic machine $M _ { 1 }$ there exists an equivalent deterministic machine $M _ { 2 }$ recognizing the same language\".",
+   "options": [
+    "$M _ { 1 }$ is non-deterministic finite automaton.",
+    "$M _ { 1 }$ is non-deterministic PDA.",
+    "$M _ { 1 }$ is a non-deterministic Turing machine.",
+    "For no machines $M _ { 1 }$ and $M _ { 2 }$ , the above statement true."
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "6.12.1",
+    "exam": "GATE CSE 1992 | Question: 02,xx",
+    "section": "Non Determinism",
+    "paper_question": "02,xx",
+    "tags": [
+     "gate1992",
+     "theory-of-computation",
+     "easy",
+     "non-determinism",
+     "multiple-selects"
+    ],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "finite-automata"
+  },
+  {
+   "id": "mineru-filter1-volume2-6-12-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 1998,
+   "text": "Regarding the power of recognition of languages, which of the following statements is false?",
+   "options": [
+    "The non-deterministic finite-state automata are equivalent to deterministic finite-state automata.",
+    "Non-deterministic Push-down automata are equivalent to deterministic Push-down automata.",
+    "Non-deterministic Turing machines are equivalent to deterministic Turing machines.",
+    "Multi-tape Turing machines are available are equivalent to Single-tape Turing machines."
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "6.12.3",
+    "exam": "GATE CSE 1998 | Question: 1.11",
+    "section": "Non Determinism",
+    "paper_question": "1.11",
+    "tags": [
+     "gate1998",
+     "theory-of-computation",
+     "easy",
+     "non-determinism"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "finite-automata"
+  },
+  {
+   "id": "mineru-filter1-volume2-6-12-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2005,
+   "text": "Let $N _ { f }$ and $N _ { p }$ 8 deterministic push-down automata, respectively. Let $D _ { f }$ and $D _ { p }$ denote the classes of languages accepted by deterministic finite automata and deterministic push-down automata respectively. Which one of the following is TRUE?",
+   "options": [
+    "$D _ { f } \\subset N _ { f }$ and $D _ { p } \\subset N _ { p }$",
+    "Df ⊂ Nf and Dp = Np",
+    "$D _ { f } = N _ { f }$ and $D _ { p } = N _ { p }$",
+    "$D _ { f } = N _ { f }$ and $D _ { p } \\subset N _ { p }$"
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "6.12.4",
+    "exam": "GATE CSE 2005 | Question: 54",
+    "section": "Non Determinism",
+    "paper_question": "54",
+    "tags": [
+     "gatecse-2005",
+     "theory-of-computation",
+     "easy",
+     "non-determinism"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "finite-automata"
+  },
+  {
+   "id": "mineru-filter1-volume2-6-12-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2011,
+   "text": "Which of the following pairs have DIFFERENT expressive power?",
+   "options": [
+    "Deterministic finite automata (DFA) and Non-deterministic finite automata (NFA)",
+    "Deterministic push down automata (DPDA) and Non-deterministic push down automata (NPDA)",
+    "Deterministic single tape Turing machine and Non-deterministic single tape Turing machine",
+    "Single tape Turing machine and multi-tape Turing machine"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "6.12.5",
+    "exam": "GATE CSE 2011 | Question: 8",
+    "section": "Non Determinism",
+    "paper_question": "8",
+    "tags": [
+     "gatecse-2011",
+     "theory-of-computation",
+     "easy",
+     "non-determinism"
+    ],
+    "topic_score": 6.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "finite-automata"
+  },
+  {
+   "id": "mineru-filter1-volume2-6-6-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Which ONE of the following languages is accepted by a deteministic pushdown automaton?",
+   "options": [
+    "Any regular language",
+    "Any context-free language",
+    "Any language accepted by a non-deterministic pushdown automaton"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "6.6.1",
+    "exam": "GATE CSE 2025 | Set 2 | Question: 14",
+    "section": "Dpda",
+    "paper_question": "14",
+    "tags": [],
+    "topic_score": 4.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "pda"
+  },
+  {
+   "id": "mineru-filter1-volume3-4-15-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1994,
+   "text": "State True or False with one line explanation A FSM (Finite State Machine) can be designed to add two integers of any arbitrary length (arbitrary number of digits).",
+   "options": [],
+   "answer_from_source": "True",
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "4.15.1",
+    "exam": "GATE CSE 1994 | Question: 3.3",
+    "section": "Finite State Machines",
+    "paper_question": "3.3",
+    "tags": [
+     "gate1994",
+     "digital-logic",
+     "normal",
+     "true-false",
+     "finite-state-machines"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer 'True' could not be read",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "finite-automata"
   }
  ]
 }

@@ -81,7 +81,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-7-2",
@@ -401,7 +403,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-20-2",
@@ -573,7 +577,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-23-1",
@@ -856,7 +862,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-1-23-9",
@@ -936,7 +945,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2000,
-   "text": "Suppose you are given an array and a procedure reverse which reverses the order of elements in between positions and (both inclusive). What does the following sequence do, where 1 \u2264 k \u2264 n:",
+   "text": "Suppose you are given an array and a procedure reverse which reverses the order of elements in between positions and (both inclusive). What does the following sequence do, where 1 ≤ k ≤ n:",
    "options": [
     "Rotates left by positions",
     "Leaves unchanged",
@@ -1024,9 +1033,7 @@
     "$\\{m\\mid m\\leq n,(\\exists i)\\left[m=\\imath^{2}\\right]\\}$",
     "$\\{m\\mid m\\leq n,\\mathrm{mis~prime}\\}$"
    ],
-   "answer": [
-    3
-   ],
+   "answer": null,
    "code_blocks": [
     {
      "lang": "c",
@@ -1048,7 +1055,9 @@
     ],
     "topic_source": "section",
     "options_recovered": "pix2tex"
-   }
+   },
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-1-23-14",
@@ -1108,7 +1117,7 @@
    "code_blocks": [
     {
      "lang": "txt",
-     "code": "x = m;\ny = 1;\nWhile (x-y > \u03b5)\n{\n    x = (x+y)/2;\n    y = m/x;\n}\nprint(x);"
+     "code": "x = m;\ny = 1;\nWhile (x-y > ε)\n{\n    x = (x+y)/2;\n    y = m/x;\n}\nprint(x);"
     }
    ],
    "origin": {
@@ -1193,7 +1202,7 @@
    "code_blocks": [
     {
      "lang": "txt",
-     "code": "algorithm zzz(x[], y[], z[]) {\nint i;\n\nfor(i=0; i<n; ++i)\nz[i] = (x[i] \u2227 ~y[i]) \u2228 (~x[i] \u2227 y[i]);\n}"
+     "code": "algorithm zzz(x[], y[], z[]) {\nint i;\n\nfor(i=0; i<n; ++i)\nz[i] = (x[i] ∧ ~y[i]) ∨ (~x[i] ∧ y[i]);\n}"
     }
    ],
    "origin": {
@@ -1225,7 +1234,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2006,
-   "text": "Consider the following C-function in which and are two sorted integer arrays and be another integer array, Which of the following condition(s) hold(s) after the termination of the while loop? i. j < m, k = n + j \u2212 1 and a[n \u2212 1] < b[j| if i = n ii. and if",
+   "text": "Consider the following C-function in which and are two sorted integer arrays and be another integer array, Which of the following condition(s) hold(s) after the termination of the while loop? i. j < m, k = n + j − 1 and a[n − 1] < b[j| if i = n ii. and if",
    "options": [
     "only (i)",
     "only (ii)",
@@ -1375,7 +1384,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-23-23",
@@ -1616,7 +1627,7 @@
    "code_blocks": [
     {
      "lang": "asm",
-     "code": "DOSOMETHING (c, a, n)\n\nz \u2190 1\nfor i \u2190 0 to k-1\n    do z \u2190 z\u00b2 mod n\n    if c[i]=1\n        then z \u2190 (z \u00d7 a) mod n\nreturn z"
+     "code": "DOSOMETHING (c, a, n)\n\nz ← 1\nfor i ← 0 to k-1\n    do z ← z² mod n\n    if c[i]=1\n        then z ← (z × a) mod n\nreturn z"
     }
    ],
    "origin": {
@@ -1855,7 +1866,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-23-36",
@@ -1897,7 +1910,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-23-37",
@@ -2019,7 +2034,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-1-26-2",
@@ -2337,12 +2354,12 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2020,
-   "text": "Consider the following statements. I. Symbol table is accessed only during lexical analysis and syntax analysis. II. Compilers for programming languages that support recursion necessarily need heap storage for memory allocation in the run-time environment. III. Errors violating the condition \u2018any variable must be declared before its use\u2019 are detected during syntax analysis. Which of the above statements is/are TRUE?",
+   "text": "Consider the following statements. I. Symbol table is accessed only during lexical analysis and syntax analysis. II. Compilers for programming languages that support recursion necessarily need heap storage for memory allocation in the run-time environment. III. Errors violating the condition ‘any variable must be declared before its use’ are detected during syntax analysis. Which of the above statements is/are TRUE?",
    "options": [
     "I only",
     "I and III only",
-    "\u2161 only",
-    "None of \u2160, \u2161 and \u2162"
+    "Ⅱ only",
+    "None of Ⅰ, Ⅱ and Ⅲ"
    ],
    "answer": [
     3
@@ -2591,7 +2608,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-2-24-21",
@@ -2601,7 +2620,7 @@
    "marks": 1,
    "difficulty": "medium",
    "year": 2021,
-   "text": "Consider the following statements. \u2022 $S _ { 1 }$ The sequence of procedure calls corresponds to a preorder traversal of the activation tree. \u2022 $S _ { 2 }$ The sequence of procedure returns corresponds to a postorder traversal of the activation tree. Which one of the following options is correct?",
+   "text": "Consider the following statements. • $S _ { 1 }$ The sequence of procedure calls corresponds to a preorder traversal of the activation tree. • $S _ { 2 }$ The sequence of procedure returns corresponds to a postorder traversal of the activation tree. Which one of the following options is correct?",
    "options": [
     "$S _ { 1 }$ is true and $S _ { 2 }$ is false",
     "is false and is true",
@@ -2717,7 +2736,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1996,
-   "text": "In the balanced binary tree in the below figure, how many nodes will become unbalanced when a node is inserted as a child of the node \u201cg\u201d?",
+   "text": "In the balanced binary tree in the below figure, how many nodes will become unbalanced when a node is inserted as a child of the node “g”?",
    "options": [
     "$\\overline{{\\bigcup_{i}}}$",
     "$\\begin{array}{l}{\\in_{\\mathcal{D}}}\\\\ {\\in{\\mathcal{D}}}\\end{array}$",
@@ -2766,7 +2785,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-1-3",
@@ -2798,7 +2819,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-3-1-4",
@@ -2836,7 +2860,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-1-5",
@@ -3003,7 +3029,7 @@
    "code_blocks": [
     {
      "lang": "pascal",
-     "code": "begin\ni:=1:j:=1;\nsum := \u25a1\nmin:=n; finish:=false;\nwhile not finish do\n    if \u25a1 then\n        if j=n then finish:=true\n        else\n        begin\n            j:=j+1;\n            sum:= \u25a1\n        end\n    else\n    begin\n        if(j-i) < min then min:=j-i;\n        sum:=sum -A[i];\n        i:=i+1;\n    end\n    writeln (min +1);\nend."
+     "code": "begin\ni:=1:j:=1;\nsum := □\nmin:=n; finish:=false;\nwhile not finish do\n    if □ then\n        if j=n then finish:=true\n        else\n        begin\n            j:=j+1;\n            sum:= □\n        end\n    else\n    begin\n        if(j-i) < min then min:=j-i;\n        sum:=sum -A[i];\n        i:=i+1;\n    end\n    writeln (min +1);\nend."
     }
    ],
    "origin": {
@@ -3027,7 +3053,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Let be a two dimensional array declared as follows: A: array [1 \u2026. 10] [1 \u2026.. 15] of integer; Assuming that each integer takes one memory location, the array is stored in row-major order and the first elemen of the array is stored at location, what is the address of the element $A [ i ] [ j ]?$",
+   "text": "Let be a two dimensional array declared as follows: A: array [1 …. 10] [1 ….. 15] of integer; Assuming that each integer takes one memory location, the array is stored in row-major order and the first elemen of the array is stored at location, what is the address of the element $A [ i ] [ j ]?$",
    "options": [
     "15i + j + 84",
     "15j+i+ 84",
@@ -3101,7 +3127,7 @@
    "code_blocks": [
     {
      "lang": "c",
-     "code": "set(i) {\n    count = count + 1;\n    q[count] = i;\n    p[i] = count;\n}\nis_set(i) {\n    if (p[i] \u2264 0 or p[i] > count)\n        return false;\n    if (q[p[i]] \u2260 1)\n        return false;\n    return true;\n}"
+     "code": "set(i) {\n    count = count + 1;\n    q[count] = i;\n    p[i] = count;\n}\nis_set(i) {\n    if (p[i] ≤ 0 or p[i] > count)\n        return false;\n    if (q[p[i]] ≠ 1)\n        return false;\n    return true;\n}"
     }
    ],
    "origin": {
@@ -3167,7 +3193,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2013,
-   "text": "The procedure given below is required to find and replace certain characters inside an input character string supplied in array. The characters to be replaced are supplied in array, while their respective replacement characters are supplied in array. Array has a fixed length of five characters, while arrays and contain three characters each. However, the procedure is flawed. The procedure is tested with the following four test cases. 1. oldc = \u201cabc\", newc = \u201cdab\" 2. oldc = \"cde\", newc = \"bcd\" 3. oldc = \u201cbca\", newc = \u201ccda\" 4. oldc = \"abc\", newc = \"bac\" The tester now tests the program on all input strings of length five consisting of characters \u2018 \u2019, \u2018 \u2019, \u2018 \u2019, \u2018 \u2019 and \u2018 \u2019 with duplicates allowed. If the tester carries out this testing with the four test cases given above, how many test cases will be able to capture the flaw?",
+   "text": "The procedure given below is required to find and replace certain characters inside an input character string supplied in array. The characters to be replaced are supplied in array, while their respective replacement characters are supplied in array. Array has a fixed length of five characters, while arrays and contain three characters each. However, the procedure is flawed. The procedure is tested with the following four test cases. 1. oldc = “abc\", newc = “dab\" 2. oldc = \"cde\", newc = \"bcd\" 3. oldc = “bca\", newc = “cda\" 4. oldc = \"abc\", newc = \"bac\" The tester now tests the program on all input strings of length five consisting of characters ‘ ’, ‘ ’, ‘ ’, ‘ ’ and ‘ ’ with duplicates allowed. If the tester carries out this testing with the four test cases given above, how many test cases will be able to capture the flaw?",
    "options": [
     "Only one",
     "Only two",
@@ -3207,7 +3233,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2013,
-   "text": "The procedure given below is required to find and replace certain characters inside an input character string supplied in array. The characters to be replaced are supplied in array, while their respective replacement characters are supplied in array. Array has a fixed length of five characters, while arrays and contain three characters each. However, the procedure is flawed. The procedure is tested with the following four test cases. 1. oldc = \u201cabc\", newc = \u201cdab\" 2. oldc = \"cde\", newc = \"bcd\" 3. oldc = \"bca\u201d\", newc = \u201ccda\u201d 4. oldc = \u201cabc\", newc = \"bac\" If array is made to hold the string \u201c \u201d, which of the above four test cases will be successful in exposing the flaw in this procedure?",
+   "text": "The procedure given below is required to find and replace certain characters inside an input character string supplied in array. The characters to be replaced are supplied in array, while their respective replacement characters are supplied in array. Array has a fixed length of five characters, while arrays and contain three characters each. However, the procedure is flawed. The procedure is tested with the following four test cases. 1. oldc = “abc\", newc = “dab\" 2. oldc = \"cde\", newc = \"bcd\" 3. oldc = \"bca”\", newc = “cda” 4. oldc = “abc\", newc = \"bac\" If array is made to hold the string “ ”, which of the above four test cases will be successful in exposing the flaw in this procedure?",
    "options": [
     "None",
     "only",
@@ -3253,7 +3279,7 @@
     "It will run into an infinite loop when is not in .",
     "It is an implementation of binary search.",
     "It will always find the maximum element in .",
-    "It will return \u2212 even when is present in ."
+    "It will return − even when is present in ."
    ],
    "answer": [
     1
@@ -3288,7 +3314,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2015,
-   "text": "A Young tableau is a array of integers increasing from left to right and from top to bottom. Any unfilled entries are marked with, and hence there cannot be any entry to the right of, or below a. The following Young tableau consists of unique entries. | 1 | 2 | 5 | 14\n| 3 | 4 | 6 | 23\n| 10 | 12 | 18 | 25\n| 31 | \u221e | \u221e | \u221e When an element is removed from a Young tableau, other elements should be moved into its place so that the resulting table is still a Young tableau (unfilled entries may be filled with a ). The minimum number of entries (other than ) to be shifted, to remove from the given Young tableau is",
+   "text": "A Young tableau is a array of integers increasing from left to right and from top to bottom. Any unfilled entries are marked with, and hence there cannot be any entry to the right of, or below a. The following Young tableau consists of unique entries. | 1 | 2 | 5 | 14\n| 3 | 4 | 6 | 23\n| 10 | 12 | 18 | 25\n| 31 | ∞ | ∞ | ∞ When an element is removed from a Young tableau, other elements should be moved into its place so that the resulting table is still a Young tableau (unfilled entries may be filled with a ). The minimum number of entries (other than ) to be shifted, to remove from the given Young tableau is",
    "options": [],
    "answer_value": 5.0,
    "tolerance": 0,
@@ -3409,7 +3435,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-4-3",
@@ -3434,7 +3462,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-3-4-4",
@@ -3599,7 +3630,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-4-7",
@@ -3894,7 +3927,7 @@
       739
      ],
      "kind": "flowchart",
-     "mermaid": "graph TD\n  10[\"10\"] --> 5[\"5\"]\n  n5[\"5\"] --> 4[\"\u2463\"]\n  n5 --> 8[\"\u2467\"]\n  n5 --> 6[\"6\"]\n  n6[\"6\"] --> 2[\"\u2461\"]\n  n6 --> 1[\"\u2460\"]"
+     "mermaid": "graph TD\n  10[\"10\"] --> 5[\"5\"]\n  n5[\"5\"] --> 4[\"④\"]\n  n5 --> 8[\"⑧\"]\n  n5 --> 6[\"6\"]\n  n6[\"6\"] --> 2[\"②\"]\n  n6 --> 1[\"①\"]"
     },
     {
      "src": "/content/assets/question-images/mineru/filter1-volume2-e8784d5d88b7208777cf7168.jpg",
@@ -4090,7 +4123,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-4-19",
@@ -4126,7 +4161,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-4-20",
@@ -4627,7 +4664,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key; no question text recovered"
+   "needs_fix": "no answer printed in the source answer key; no question text recovered",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-3-5-5",
@@ -4768,7 +4808,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-5-9",
@@ -5115,7 +5157,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-5-19",
@@ -5730,7 +5774,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-6-1",
@@ -5795,7 +5841,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 1987,
-   "text": "Construct a binary tree whose preorder traversal is \u2022 KLNMPRQST and inorder traversal is \u2022 NLKPRMSQT",
+   "text": "Construct a binary tree whose preorder traversal is • KLNMPRQST and inorder traversal is • NLKPRMSQT",
    "options": [],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -6724,7 +6770,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-6-29",
@@ -6835,7 +6883,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-6-32",
@@ -6870,7 +6920,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-6-33",
@@ -6969,7 +7021,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-6-36",
@@ -7039,10 +7093,10 @@
    "year": 2016,
    "text": "Consider the following New-order strategy for traversing a binary tree: Visit the root; Visit the right subtree using New-order; Visit the left subtree using New-order; The New-order traversal of the expression tree corresponding to the reverse polish expression 3 4 \\* 5 - 2 ^ 6 7 \\* 1 + - is given by:",
    "options": [
-    "+-167\\*2\u22275 -34\\*",
-    "-+1\\*67\u22272-5\\*34",
-    "-+1\\*76\u22272 \u2212 5 \\* 43",
-    "176\\*+2543 \\* \u2212\u2227\u2014"
+    "+-167\\*2∧5 -34\\*",
+    "-+1\\*67∧2-5\\*34",
+    "-+1\\*76∧2 − 5 \\* 43",
+    "176\\*+2543 \\* −∧—"
    ],
    "answer": [
     2
@@ -7235,7 +7289,7 @@
    "year": 2025,
    "text": "Consider a binary tree in which every node has either zero or two children. Let be the number of nodes in. Which ONE of the following is the number of nodes in that have exactly two children?",
    "options": [
-    "n\u22122 2",
+    "n−2 2",
     "$\\textstyle { \\frac { n - 1 } { 2 } }$",
     "$\\textstyle { \\frac { n } { 2 } }$",
     "n+1 2"
@@ -7344,12 +7398,7 @@
    "difficulty": "easy",
    "year": 2004,
    "text": "Which one of the following binary trees has its inorder and preorder traversals as and, respectively? Refer to the figure below.",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "figure_assets": [
     {
      "src": "/content/assets/question-images/mineru/filter1-volume2-e46c110a747a2860cabdd770.jpg",
@@ -7421,7 +7470,10 @@
    "answer_pending": true,
    "answer_from_source": "D",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-3-6-47",
@@ -7573,7 +7625,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2008,
-   "text": "The following three are known to be the preorder, inorder and postorder sequences of a binary tree. But it is not known which is which. 1. MBCAFHPYK \u2161. KAMCBYPFH \u2162I. MABCKYFPH Pick the true statement from the following.",
+   "text": "The following three are known to be the preorder, inorder and postorder sequences of a binary tree. But it is not known which is which. 1. MBCAFHPYK Ⅱ. KAMCBYPFH ⅢI. MABCKYFPH Pick the true statement from the following.",
    "options": [
     "I and II are preorder and inorder sequences, respectively",
     "I and III are preorder and postorder sequences, respectively",
@@ -7715,7 +7767,7 @@
    "year": 2014,
    "text": "Let $G = ( V, E )$ be a directed graph where is the set of vertices and the set of edges. Then which one of the following graphs has the same strongly connected components as $G?$",
    "options": [
-    "$G _ { 1 } = \\left( V , E _ { 1 } \\right)$ where E1 = {(u, v) | (u, v) \u2209 E}",
+    "$G _ { 1 } = \\left( V , E _ { 1 } \\right)$ where E1 = {(u, v) | (u, v) ∉ E}",
     "$G _ { 2 } = \\left( V , E _ { 2 } \\right)$ where",
     "$G _ { 3 } = \\left( V , E _ { 3 } \\right)$ where there is a path of length $\\leq 2$ from to in $E \\}$",
     "$G _ { 4 } = \\left( V _ { 4 } , E \\right)$ where $V _ { 4 }$ is the set of vertices in which are not isolated"
@@ -7921,7 +7973,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2007,
-   "text": "Consider a hash table of size seven, with starting index zero, and a hash function. Assuming the hash table is initially empty, which of the following is the contents of the table when the sequence is inserted into the table using closed hashing? Note that \u2212 denotes an empty location in the table.",
+   "text": "Consider a hash table of size seven, with starting index zero, and a hash function. Assuming the hash table is initially empty, which of the following is the contents of the table when the sequence is inserted into the table using closed hashing? Note that − denotes an empty location in the table.",
    "options": [
     "${\\bf Q}_{,\\mathbf-,\\mathbf-,\\mathbf-,\\mathbf-,\\mathbf-,\\Omega,\\ \\Omega(\\Omega,}$",
     "${{\\bf i}\\atop{\\otimes}}_{j}{\\bf\\vartheta}_{j}{\\bf l}(0,-,-,\\vec{\\mathrm{\\bf~}})$",
@@ -8075,7 +8127,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-8-10",
@@ -8089,8 +8143,8 @@
    "options": [
     "$( 9 7 \\times 9 7 \\times 9 7 ) / 1 0 0 ^ { 3 }$",
     "$( 9 7 \\times 9 6 \\times 9 5 ) / 1 0 0 ^ { 3 }$",
-    "(99 \u00d7 98 \u00d7 97)/1003",
-    "(97 \u00d7 96 \u00d7 95/(3! \u00d7 1003)"
+    "(99 × 98 × 97)/1003",
+    "(97 × 96 × 95/(3! × 1003)"
    ],
    "answer": [
     0
@@ -8230,7 +8284,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-8-15",
@@ -8266,7 +8322,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-9-1",
@@ -8314,7 +8372,7 @@
    "text": "Assume that the operators are left associative and is right associative. The order of precedence (from highest to lowest) is $, \\times, +, -$. The postfix expression corresponding to the infix expression $a + b \\times \\bar { c } - d \\ \\hat { \\ } e \\ \\hat { \\ } f$ is",
    "options": [
     "$a b c \\times + d e f \\sim$",
-    "abc \u00d7 +de ^ f ^ \u2014",
+    "abc × +de ^ f ^ —",
     "$a b + c \\times d - e \\ { \\hat { ~ } } f \\ { \\hat { ~ } }$",
     "$- + a \\times b c \\ \\hat { \\ } \\stackrel { } { \\sim } \\ d e f$"
    ],
@@ -9415,7 +9473,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-12-4",
@@ -9505,7 +9565,7 @@
    "options": [
     "full : (REAR + 1)mod n == FRONT empty : REAR == FRONT",
     "fuli : (REAR + 1) mod n == FRONT empty : (FRONT + 1) mod n == REAR",
-    "fulI : RE\u00c0R == FRONT empty : (REAR + 1) mod n == FRONT",
+    "fulI : REÀR == FRONT empty : (REAR + 1) mod n == FRONT",
     "fuli : (FRONT + 1) mod n == REAR empty : REAR == FRONT"
    ],
    "answer": [
@@ -9619,7 +9679,7 @@
    "code_blocks": [
     {
      "lang": "matlab",
-     "code": "while Q is not Empty do\n  if S is Empty OR Top(S) \u2264 Head (Q) then\n    x:= Dequeue (Q);\n    Push (S, x);\n  else\n    x:= Pop(S);\n    Enqueue (Q, x);\n  end\nend"
+     "code": "while Q is not Empty do\n  if S is Empty OR Top(S) ≤ Head (Q) then\n    x:= Dequeue (Q);\n    Push (S, x);\n  else\n    x:= Pop(S);\n    Enqueue (Q, x);\n  end\nend"
     }
    ],
    "origin": {
@@ -9647,7 +9707,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2017,
-   "text": "A circular queue has been implemented using a singly linked list where each node consists of a value and a \u90e8 single pointer pointing to the next node. We maintain exactly two external pointers FRONT and REAR pointing to the front node and the rear node of the queue, respectively. Which of the following statements is/are CORRECT for such a circular queue, so that insertion and deletion operations can be performed in time? I. Next pointer of front node points to the rear node. II. Next pointer of rear node points to the front node.",
+   "text": "A circular queue has been implemented using a singly linked list where each node consists of a value and a 部 single pointer pointing to the next node. We maintain exactly two external pointers FRONT and REAR pointing to the front node and the rear node of the queue, respectively. Which of the following statements is/are CORRECT for such a circular queue, so that insertion and deletion operations can be performed in time? I. Next pointer of front node points to the rear node. II. Next pointer of rear node points to the front node.",
    "options": [
     "(I) only.",
     "Both (I) and (II)."
@@ -9848,7 +9908,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2007,
-   "text": "Suppose you are given an implementation of a queue of integers. The operations that can be performed on the queue are: i. \u2014 returns true if the queue is empty, false otherwise. ii. \u2014 deletes the element at the front of the queue and returns its value. iii. \u2014 inserts the integer i at the rear of the queue. Consider the following function: What operation is performed by the above function?",
+   "text": "Suppose you are given an implementation of a queue of integers. The operations that can be performed on the queue are: i. — returns true if the queue is empty, false otherwise. ii. — deletes the element at the front of the queue and returns its value. iii. — inserts the integer i at the rear of the queue. Consider the following function: What operation is performed by the above function?",
    "options": [
     "Leaves the queue unchanged",
     "Reverses the order of the elements in the queue",
@@ -9997,8 +10057,7 @@
    "year": 2000,
    "text": "Suppose a stack implementation supports, in addition to PUSH and POP, an operation REVERSE, which reverses the order of the elements on the stack.",
    "options": [
-    "To implement a queue using the above stack implementation, show how to implement ENQUEUE using a single operation and DEQUEUE using a sequence of operations.",
-    "The following post fix expression, containing single digit operands and arithmetic operators and , is evaluated using a stack. 5 2 * 3 4 + 5 2 * * + Show the contents of the stack i. After evaluating $5 2 * 3 4 +$ ii. After evaluating $5 2 * 3 4 + 5 2$ iii. At the end of evaluation"
+    "To implement a queue using the above stack implementation, show how to implement ENQUEUE using a single operation and DEQUEUE using a sequence of operations."
    ],
    "origin": {
     "source_file": "filter1_volume2.pdf",
@@ -10018,7 +10077,10 @@
    },
    "answer_pending": true,
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "no answer printed in the source answer key"
+   "needs_fix": "no answer printed in the source answer key",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-3-13-6",
@@ -10032,7 +10094,7 @@
    "options": [
     "$n ( X + Y )$",
     "$3 Y + 2 X$",
-    "n(X + Y) \u2212 X",
+    "n(X + Y) − X",
     "$Y + 2 X$"
    ],
    "answer": [
@@ -10482,7 +10544,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-3-13-19",
@@ -10554,7 +10618,7 @@
       305
      ],
      "kind": "flowchart",
-     "mermaid": "graph TD\n  F[\"F\"] --> E[\"E\"]\n  E --> 6[\"\u2465\"]\n  E --> 7[\"\u2466\"]\n  E --> 8[\"\u2467\"]"
+     "mermaid": "graph TD\n  F[\"F\"] --> E[\"E\"]\n  E --> 6[\"⑥\"]\n  E --> 7[\"⑦\"]\n  E --> 8[\"⑧\"]"
     }
    ],
    "origin": {
@@ -11181,12 +11245,7 @@
    "difficulty": "easy",
    "year": 2004,
    "text": "Consider the following C program which is supposed to compute the transpose of a given matrix. Note that, there is an in the program which indicates some missing statements. Choose the correct option to replace in the program.",
-   "options": [
-    "",
-    "",
-    "",
-    ""
-   ],
+   "options": [],
    "code_blocks": [
     {
      "lang": "c",
@@ -11232,7 +11291,10 @@
    "answer_pending": true,
    "answer_from_source": "C",
    "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
-   "needs_fix": "4 of 4 options came through empty"
+   "needs_fix": "4 of 4 options came through empty",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-5-2-11",
@@ -11546,8 +11608,8 @@
    "text": "Let be an integer which can take a value of or. The statement if (x == 0) x = 1; else x = 0; is equivalent to which one of the following?",
    "options": [
     "x = 1 + x;",
-    "x = 1 \u2212 x;",
-    "x = x \u2212 1;",
+    "x = 1 − x;",
+    "x = x − 1;",
     "$x = 1 \\% x ;$"
    ],
    "answer": [
@@ -11709,7 +11771,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2000,
-   "text": "The most appropriate matching for the following pairs | X: m = malloc(5); m = NULL; | 1: using dangling pointers\n| Y: free(n); n -&gt; value = 5; | 2: using uninitialized pointers\n| Z: char *p, *p = \u2018a\u2019; | 3: lost memory is:",
+   "text": "The most appropriate matching for the following pairs | X: m = malloc(5); m = NULL; | 1: using dangling pointers\n| Y: free(n); n -&gt; value = 5; | 2: using uninitialized pointers\n| Z: char *p, *p = ‘a’; | 3: lost memory is:",
    "options": [
     "X-1 Y-3 Z-2",
     "X-2 Y-1 Z-3",
@@ -12249,7 +12311,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-5-11-2",
@@ -12265,9 +12329,7 @@
     "The visibility of global variables depends on the actual function calling sequence",
     "Recursion requires the activation record for the recursive function to be saved in a diferent stack before the recursive function can be called."
    ],
-   "answer": [
-    1
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume2.pdf",
     "volume": "filter1_volume2",
@@ -12277,7 +12339,10 @@
     "paper_question": "1.17",
     "tags": [],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-5-11-3",
@@ -12294,9 +12359,7 @@
     "A regular language",
     "Parsable fully only by a Turing machine"
    ],
-   "answer": [
-    1
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume2.pdf",
     "volume": "filter1_volume2",
@@ -12311,7 +12374,10 @@
      "normal"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume2-5-11-4",
@@ -12428,7 +12494,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-5-11-7",
@@ -12482,10 +12550,10 @@
    "year": 2014,
    "text": "Suppose and are unsigned int variables in a C program. We wish to set to ${ } ^ { n } C _ { 3 }$. If is large, which one of the following statements is most likely to set correctly?",
    "options": [
-    "p = n \\* (n \u2212 1) \\* (n \u2212 2)/6;",
-    "p = n \\* (n \u2212 1)/2 \\* (n \u2212 2)/3;",
-    "p = n \\* (n \u2212 1)/3 \\* (n \u2212 2)/2;",
-    "p = n \\* (n \u2212 1) \\* (n \u2212 2)/6.0;"
+    "p = n \\* (n − 1) \\* (n − 2)/6;",
+    "p = n \\* (n − 1)/2 \\* (n − 2)/3;",
+    "p = n \\* (n − 1)/3 \\* (n − 2)/2;",
+    "p = n \\* (n − 1) \\* (n − 2)/6.0;"
    ],
    "answer": [
     1
@@ -12794,7 +12862,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-5-11-19",
@@ -13017,7 +13087,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-5-11-27",
@@ -13029,10 +13101,10 @@
    "year": 2005,
    "text": "Let be an array containing integers in increasing order. The following algorithm determines whether there are two distinct numbers in the array whose difference is a specified number. Choose the correct expression for E.",
    "options": [
-    "a[j] \u2212 a[i] > S",
-    "a[j] \u2212 a[i] < S",
-    "a|i] \u2212 a[j] < S",
-    "a[i] \u2212 a[j] > S"
+    "a[j] − a[i] > S",
+    "a[j] − a[i] < S",
+    "a|i] − a[j] < S",
+    "a[i] − a[j] > S"
    ],
    "answer": [
     1
@@ -13069,10 +13141,10 @@
    "year": 2006,
    "text": "Which one of the choices given below would be printed when the following program is executed?",
    "options": [
-    "8,\u221212,7,23,8",
+    "8,−12,7,23,8",
     "8,8,7,23,7",
     "-12,-12,27,-31,23",
-    "-12, \u221212,27,\u201331,56"
+    "-12, −12,27,–31,56"
    ],
    "answer": [
     0
@@ -13139,7 +13211,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-5-12-1",
@@ -13277,7 +13351,7 @@
    "code_blocks": [
     {
      "lang": "c",
-     "code": "fib(n) {\n    if (n > M) error ();\n    if (n == 0) return 1;\n    if (n == 1) return 1;\n    if (\u2610)________________________(1)\n        return \u2610________________________(2)\n    t = fib(n - 1) + fib(n - 2);\n    \u2610________________________(3)\n    return t;\n}"
+     "code": "fib(n) {\n    if (n > M) error ();\n    if (n == 0) return 1;\n    if (n == 1) return 1;\n    if (☐)________________________(1)\n        return ☐________________________(2)\n    t = fib(n - 1) + fib(n - 2);\n    ☐________________________(3)\n    return t;\n}"
     }
    ],
    "origin": {
@@ -13390,7 +13464,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-5-13-7",
@@ -13466,7 +13542,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume2-5-13-9",
@@ -14096,7 +14174,7 @@
    "code_blocks": [
     {
      "lang": "c",
-     "code": "#include <stdio.h>\n#include <stdlib.h>\nstruct Node{\n    int value;\n    struct Node *next;};\nint main( ) {\n    struct Node *boxE, *head, *boxN; int index=0;\n    boxE=head= (struct Node *) malloc(sizeof(struct Node));\n    head \u2192 value = index;\n    for (index =1; index<=3; index++){\n        boxN = (struct Node *) malloc (sizeof(struct Node));\n        boxE \u2192 next = boxN;\n        boxN \u2192 value = index;\n        boxE = boxN; }\nfor (index=0; index<=3; index++) {\n    printf(\"\\Value at index %d is %d\\n\", index, head \u2192 value);\n    head = head \u2192 next;\n    printf(\"\\Value at index %d is %d\\n\", index+1, head \u2192 value); } }"
+     "code": "#include <stdio.h>\n#include <stdlib.h>\nstruct Node{\n    int value;\n    struct Node *next;};\nint main( ) {\n    struct Node *boxE, *head, *boxN; int index=0;\n    boxE=head= (struct Node *) malloc(sizeof(struct Node));\n    head → value = index;\n    for (index =1; index<=3; index++){\n        boxN = (struct Node *) malloc (sizeof(struct Node));\n        boxE → next = boxN;\n        boxN → value = index;\n        boxE = boxN; }\nfor (index=0; index<=3; index++) {\n    printf(\"\\Value at index %d is %d\\n\", index, head → value);\n    head = head → next;\n    printf(\"\\Value at index %d is %d\\n\", index+1, head → value); } }"
     }
    ],
    "origin": {
@@ -14367,6 +14445,675 @@
     ],
     "topic_source": "section"
    }
+  },
+  {
+   "id": "mineru-filter1-volume2-2-10-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2002,
+   "text": "To evaluate an expression without any embedded function calls",
+   "options": [
+    "One stack is enough",
+    "Two stacks are needed",
+    "As many stacks as the height of the expression tree are needed",
+    "A Turing machine is needed in the general case"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "2.10.1",
+    "exam": "GATE CSE 2002 | Question: 2.19",
+    "section": "Expression Evaluation",
+    "paper_question": "2.19",
+    "tags": [
+     "gatecse-2002",
+     "compiler-design",
+     "expression-evaluation",
+     "easy"
+    ],
+    "topic_score": 3.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "stacks-queues"
+  },
+  {
+   "id": "mineru-filter1-volume2-2-10-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2014,
+   "text": "Consider the expression tree shown. Each leaf represents a numerical value, which can either be or. Over all possible choices of the values at the leaves, the maximum possible value of the expression represented by the tree is Refer to the figure below.",
+   "options": [],
+   "answer_value": 6.0,
+   "tolerance": 0,
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume2-10dd5c9bd017df10f1cffd03.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 130,
+     "bbox": [
+      319,
+      467,
+      697,
+      609
+     ],
+     "kind": "flowchart"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "2.10.2",
+    "exam": "GATE CSE 2014 | Set 2 | Question: 39",
+    "section": "Expression Evaluation",
+    "paper_question": "39",
+    "tags": [
+     "gatecse-2014-set2",
+     "compiler-design",
+     "normal",
+     "expression-evaluation",
+     "numerical-answers"
+    ],
+    "page_idx": 130,
+    "bbox": [
+     319,
+     467,
+     697,
+     609
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "stacks-queues"
+  },
+  {
+   "id": "mineru-filter1-volume2-3-15-2",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 1992,
+   "text": "A tree is such that a. All internal nodes have either or children b. All paths from root to the leaves have the same length The number of internal nodes of a tree having leaves could be",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.15.2",
+    "exam": "GATE CSE 1992 | Question: 02,vii",
+    "section": "Tree",
+    "paper_question": "02,vii",
+    "tags": [
+     "gate1992",
+     "tree",
+     "data-structures",
+     "normal",
+     "multiple-selects"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "A;D",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "trees",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume2-3-15-3",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "A tree is a tree in which every internal node has exactly three children. Use induction to prove that the number of leaves in a tree with internal nodes is $2 ( n + 1 )$.",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.15.3",
+    "exam": "GATE CSE 1994 | Question: 5",
+    "section": "Tree",
+    "paper_question": "5",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "trees"
+  },
+  {
+   "id": "mineru-filter1-volume2-3-15-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "A complete -ary tree is one in which every node has or sons. If is the number of internal nodes of a complete -ary tree, the number of leaves in it is given by",
+   "options": [
+    "$x ( n - 1 ) + 1$",
+    "xn − 1",
+    "xn + 1",
+    "$x ( n + 1 )$"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.15.5",
+    "exam": "GATE CSE 1998 | Question: 2.11",
+    "section": "Tree",
+    "paper_question": "2.11",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "trees"
+  },
+  {
+   "id": "mineru-filter1-volume2-3-15-8",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "In a complete -ary tree, every internal node has exactly children. The number of leaves in such a tree with internal node is:",
+   "options": [
+    "$( n - 1 ) k + 1$",
+    "$n ( k - 1 ) + 1$"
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.15.8",
+    "exam": "GATE CSE 2005 | Question: 36",
+    "section": "Tree",
+    "paper_question": "36",
+    "tags": [
+     "gatecse-2005",
+     "data-structures",
+     "tree",
+     "normal"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "2 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "trees"
+  },
+  {
+   "id": "mineru-filter1-volume2-3-15-9",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2007,
+   "text": "A complete tree is a tree in which each node has children or no children. Let be the number of internal nodes and be the number of leaves in a complete tree. If and, what is the value of?",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.15.9",
+    "exam": "GATE CSE 2007 | Question: 43",
+    "section": "Tree",
+    "paper_question": "43",
+    "tags": [
+     "gatecse-2007",
+     "data-structures",
+     "tree",
+     "normal"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "trees",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume2-3-15-10",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2014,
+   "text": "Consider the following rooted tree with the vertex labeled as the root: The order in which the nodes are visited during an in-order traversal of the tree is Refer to the figure below.",
+   "options": [
+    "SQPTRWUV",
+    "SQPTUWRV",
+    "SQPTWUVR",
+    "SQPTRUWV"
+   ],
+   "answer": [
+    0
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume2-02fc0793bf324e73c24c8a23.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 250,
+     "bbox": [
+      100,
+      793,
+      272,
+      906
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph TD\n  P[\"P\"] --> R[\"R\"]\n  Q[\"Q\"] --> R\n  R --> U[\"U\"]\n  R --> V[\"V\"]\n  R --> T[\"T\"]\n  R --> W[\"W\"]"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.15.10",
+    "exam": "GATE CSE 2014 | Set 3 | Question: 12",
+    "section": "Tree",
+    "paper_question": "12",
+    "tags": [
+     "gatecse-2014-set3",
+     "data-structures",
+     "tree",
+     "easy"
+    ],
+    "page_idx": 250,
+    "bbox": [
+     100,
+     793,
+     272,
+     906
+    ],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "trees"
+  },
+  {
+   "id": "mineru-filter1-volume2-3-15-12",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2017,
+   "text": "Let be a tree with vertices. The sum of the degrees of all the vertices in is",
+   "options": [],
+   "answer_value": 18.0,
+   "tolerance": 0,
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.15.12",
+    "exam": "GATE CSE 2017 | Set 1 | Question: 20",
+    "section": "Tree",
+    "paper_question": "20",
+    "tags": [
+     "gatecse-2017-set1",
+     "data-structures",
+     "tree",
+     "easy",
+     "numerical-answers"
+    ],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "trees"
+  },
+  {
+   "id": "mineru-filter1-volume2-3-15-13",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2021,
+   "text": "A n in a connected graph is a vertex such that removing the vertex and its incident edges disconnects the graph into two or more connected components. Let be a tree obtained by doing in a connected undirected graph. Which of the following options is/are correct?",
+   "options": [
+    "Root of can never be an articulation point in .",
+    "Root of is an articulation point in if and only if it has or more children.",
+    "A leaf of can be an articulation point in .",
+    "If is an articulation point in such that is an ancestor of in and is a descendent of in , then all paths from to in must pass through ."
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.15.13",
+    "exam": "GATE CSE 2021 | Set 1 | Question: 41",
+    "section": "Tree",
+    "paper_question": "41",
+    "tags": [
+     "gatecse-2021-set1",
+     "multiple-selects",
+     "data-structures",
+     "tree",
+     "two-mark"
+    ],
+    "topic_score": 3.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "trees"
+  },
+  {
+   "id": "mineru-filter1-volume2-3-2-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "An Abstract Data Type (ADT) is:",
+   "options": [
+    "same as an abstract class",
+    "a data type that cannot be instantiated",
+    "a data type for which only the operations defined on it can be used, but none else",
+    "all of the above"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.2.1",
+    "exam": "GATE CSE 2005 | Question: 2",
+    "section": "Abstract Data Type",
+    "paper_question": "2",
+    "tags": [
+     "gatecse-2005",
+     "data-structures",
+     "normal",
+     "abstract-data-type"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "stacks-queues"
+  },
+  {
+   "id": "mineru-filter1-volume2-3-9-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Compute the post fix equivalent of the following expression $3 ^ { * } \\log ( x + 1 ) - { \\textstyle { \\frac { a } { 2 } } }$",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "3.9.2",
+    "exam": "GATE CSE 1998 | Question: 19b",
+    "section": "Infix Prefix",
+    "paper_question": "19b",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "no answer printed in the source answer key",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "stacks-queues"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-1-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Aliasing in the context of programming languages refers to",
+   "options": [
+    "multiple variables having the same memory location",
+    "multiple variables having the same value",
+    "multiple variables having the same identifier",
+    "multiple uses of the same variable"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.1.1",
+    "exam": "GATE CSE 2000 | Question: 1.16",
+    "section": "Output",
+    "paper_question": "1.16",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "c-basics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-4-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "An unrestricted use of the \"go to\" statement is harmful because of which of the following reason (s):",
+   "options": [
+    "It makes it more difficult to verify programs.",
+    "It makes programs more inefficient.",
+    "It makes it more difficult to modify existing programs.",
+    "It results in the compiler generating longer machine code."
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.4.1",
+    "exam": "GATE CSE 1989 | Question: 3-i",
+    "section": "Goto",
+    "paper_question": "3-i",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "c-basics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-4-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "An unrestricted use of the \" \" statement is harmful because",
+   "options": [
+    "it makes it more difficult to verify programs",
+    "it increases the running time of the programs",
+    "it increases the memory required for the programs",
+    "it results in the compiler generating longer machine code"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.4.2",
+    "exam": "GATE CSE 1994 | Question: 1.5",
+    "section": "Goto",
+    "paper_question": "1.5",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "c-basics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-10-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Given the programming constructs i. assignment ii. for loops where the loop parameter cannot be changed within the loop iii. if-then-else iv. forward go to v. arbitrary go to vi. non-recursive procedure call vii. recursive procedure/function cal viii. repeat loop, which constructs will you not include in a programming language such that it should be possible to program the terminates (i.e., halting) function in the same programming language",
+   "options": [
+    "(ii),(i), )(ivy)",
+    "(v), (vii),(vii))",
+    "(vi) (vi), vii)",
+    "(ii), (vi), vii)i)"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.10.1",
+    "exam": "GATE CSE 1999 | Question: 2.5",
+    "section": "Programming Constructs",
+    "paper_question": "2.5",
+    "tags": [],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "c-basics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-16-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "text": "Which one of the choices given below would be printed when the following program is executed?",
+   "options": [
+    "jungle, n, 8, nclastor",
+    "etter, u, 6, ungle",
+    "cetter, k, 6, jungle",
+    "etter, u, 8, ncestor"
+   ],
+   "answer": [
+    1
+   ],
+   "code_blocks": [
+    {
+     "lang": "c",
+     "code": "#include <stdio.h>\nstruct test {\n    int i;\n    char *c;\n}st[] = {5, \"become\", 4, \"better\", 6, \"jungle\", 8, \"ancestor\", 7, \"brother\"};\nmain ()\n{\n    struct test *p = st;\n    p += 1;\n    ++p -> c;\n    printf(\"%s,\", p++ -> c);\n    printf(\"%c,\", *++p -> c);\n    printf(\"%d,\", p[0].i);\n    printf(\"%s \\n\", p -> c);\n}"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.16.5",
+    "exam": "GATE IT 2006 | Question: 49",
+    "section": "Structure",
+    "paper_question": "49",
+    "tags": [],
+    "topic_score": 0.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "c-basics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-18-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2003,
+   "text": "Which of the following statements is FALSE?",
+   "options": [
+    "In statically typed languages, each variable in a program has a fixed type",
+    "In un-typed languages, values do not have any types",
+    "In dynamically typed languages, variables have no types",
+    "In all statically typed languages, each variable in a program is associated with values of only a single type during the execution of the program"
+   ],
+   "answer": [
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.18.1",
+    "exam": "GATE CSE 2003 | Question: 24",
+    "section": "Structure",
+    "paper_question": "24",
+    "tags": [
+     "gatecse-2003",
+     "programming",
+     "normal",
+     "type-checking"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "c-basics"
+  },
+  {
+   "id": "mineru-filter1-volume2-5-19-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2015,
+   "text": "Consider the following C declaration: Assume that the objects of the type short, float and long occupy bytes, bytes and bytes, respectively. The memory requirement for variable, ignoring alignment consideration, is:",
+   "options": [
+    "bytes",
+    "bytes",
+    "bytes",
+    "bytes"
+   ],
+   "code_blocks": [
+    {
+     "lang": "txt",
+     "code": "struct {\n    short x[5];\n    union {\n        float y;\n        long z;\n    } u;\n}t;"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume2.pdf",
+    "volume": "filter1_volume2",
+    "ref": "5.19.1",
+    "exam": "GATE CSE 2000 | Question: 1.17, ISRO2015-79",
+    "section": "Structure",
+    "paper_question": "",
+    "tags": [],
+    "topic_score": 1.0,
+    "topic_source": "none",
+    "options_recovered": "pix2tex"
+   },
+   "explain": "",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "c-basics",
+   "answer": [
+    2
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   }
  ]
 }

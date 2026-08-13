@@ -147,7 +147,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-1-5",
@@ -416,7 +418,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-1-13",
@@ -812,7 +816,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2018,
-   "text": "Consider a simple communication system where multiple nodes are connected by a shared broadcast medium (like Ethernet or wireless). The nodes in the system use the following carrier-sense based medium access protocol. A node that receives a packet to transmit will carrier-sense the medium for units of time. If the node does not detect any other transmission, it starts transmitting its packet in the next time unit. If the node detects another transmission, it waits until this other transmission finishes, and then begins to carrier-sense for time units again. Once they start to transmit, nodes do not perform any collision detection and continue transmission even if a collision occurs. All transmissions last for units of time. Assume that the transmission signal travels at the speed of meters per unit time in the medium. Assume that the system has two nodes and, located at a distance meters from each other. $P$ start transmitting a packet at time after successfully completing its carrier-sense phase. Node has a packet to transmit at time and begins to carrier-sense the medium. The maximum distance (in meters, rounded to the closest integer) that allows to successfully avoid a collision between its proposed transmission and \u2019s ongoing transmission is",
+   "text": "Consider a simple communication system where multiple nodes are connected by a shared broadcast medium (like Ethernet or wireless). The nodes in the system use the following carrier-sense based medium access protocol. A node that receives a packet to transmit will carrier-sense the medium for units of time. If the node does not detect any other transmission, it starts transmitting its packet in the next time unit. If the node detects another transmission, it waits until this other transmission finishes, and then begins to carrier-sense for time units again. Once they start to transmit, nodes do not perform any collision detection and continue transmission even if a collision occurs. All transmissions last for units of time. Assume that the transmission signal travels at the speed of meters per unit time in the medium. Assume that the system has two nodes and, located at a distance meters from each other. $P$ start transmitting a packet at time after successfully completing its carrier-sense phase. Node has a packet to transmit at time and begins to carrier-sense the medium. The maximum distance (in meters, rounded to the closest integer) that allows to successfully avoid a collision between its proposed transmission and ’s ongoing transmission is",
    "options": [],
    "answer_value": 50.0,
    "tolerance": 0,
@@ -1072,7 +1076,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-8-4",
@@ -1082,7 +1088,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2007,
-   "text": "node finishes transmission, there is a polling delay of \u03bcs to poll the next node. Whenever a node is polled, it is allowed to transmit a maximum of bytes. The maximum throughput of the broadcast channel is:",
+   "text": "node finishes transmission, there is a polling delay of μs to poll the next node. Whenever a node is polled, it is allowed to transmit a maximum of bytes. The maximum throughput of the broadcast channel is:",
    "options": [
     "Mbps",
     "Mbps",
@@ -1108,7 +1114,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-9-1",
@@ -1151,7 +1159,7 @@
    "type": "mcq",
    "marks": 2,
    "difficulty": "medium",
-   "text": "Consider an instance of TCP\u2019s Additive Increase Multiplicative Decrease (AIMD) algorithm where the window size at the start of the slow start phase is MSS and the threshold at the start of the first transmission is MSS. Assume that a timeout occurs during the fifth transmission. Find the congestion window size at the end of the tenth transmission.",
+   "text": "Consider an instance of TCP’s Additive Increase Multiplicative Decrease (AIMD) algorithm where the window size at the start of the slow start phase is MSS and the threshold at the start of the first transmission is MSS. Assume that a timeout occurs during the fifth transmission. Find the congestion window size at the end of the tenth transmission.",
    "options": [
     "MSS",
     "MSS",
@@ -1172,7 +1180,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-9-3",
@@ -1311,10 +1321,10 @@
    "year": 2026,
    "text": "A TCP sender successfully establishes a connection with a TCP receiver and starts the transmission of segments. The TCP congestion control mechanism's slow-start threshold is set to segments. Assume that the round-trip time is fixed at millisecond. Assume that the sender always has data to send, the segments are numbered from, and no segment is lost. Let denote the time (in milliseconds) at which the transmission of segment number starts. Which one of the following options is correct?",
    "options": [
-    "9 \u2264 t < 10",
-    "10 \u2264 t < 11",
-    "11 \u2264 t < 12",
-    "12 \u2264 t < 13"
+    "9 ≤ t < 10",
+    "10 ≤ t < 11",
+    "11 ≤ t < 12",
+    "12 ≤ t < 13"
    ],
    "answer": [
     1
@@ -1400,7 +1410,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-11-1",
@@ -1459,7 +1471,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-11-2",
@@ -1518,7 +1532,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-11-3",
@@ -1899,7 +1915,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-12-3",
@@ -1962,7 +1980,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-12-5",
@@ -1974,10 +1994,10 @@
    "year": 2005,
    "text": "In a communication network, a packet of length bits takes link $L _ { 1 }$ with a probability of $p _ { 1 }$ or link $L _ { 2 }$ with a probability of $p _ { 2 }$. Link $L _ { 1 }$ and $L _ { 2 }$ have bit error probability of $b _ { 1 }$ and $b _ { 2 }$ respectively. The probability that the packet will be received without error via either $L _ { 1 }$ or $L _ { 2 }$ is",
    "options": [
-    "(1 \u2212 b1)Lp1 + (1 \u2212 b2)Lp2",
-    "[1 \u2212 (b1 + b2)]p1p2",
-    "(1 \u2212 b1)L(1 \u2212 b2)Lp1P2",
-    "1 \u2212 (bp1 + b2p2)"
+    "(1 − b1)Lp1 + (1 − b2)Lp2",
+    "[1 − (b1 + b2)]p1p2",
+    "(1 − b1)L(1 − b2)Lp1P2",
+    "1 − (bp1 + b2p2)"
    ],
    "answer": [
     0
@@ -2033,7 +2053,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-12-7",
@@ -2069,7 +2091,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-12-8",
@@ -2171,7 +2195,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-13-3",
@@ -2262,7 +2288,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-13-5",
@@ -2371,7 +2399,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2004,
-   "text": "Consider three IP networks and. Host $H _ { A }$ in network sends messages each containing bytes of application data to a host in network. The layer prefixes byte header to the message. This passes through an intermediate network.The maximum packet size, including byte IP header, in each network is: \u2022 A: 1000 bytes \u2022 B: 100 bytes \u2022 c: 1000 bytes The network and are connected through a Mbps link, while and are connected by a Kbps link (bps = bits per second). Assuming that the packets are correctly delivered, how many bytes, including headers, are delivered to the layer at the destination for one application message, in the best case? Consider only data packets. Refer to the figure below.",
+   "text": "Consider three IP networks and. Host $H _ { A }$ in network sends messages each containing bytes of application data to a host in network. The layer prefixes byte header to the message. This passes through an intermediate network.The maximum packet size, including byte IP header, in each network is: • A: 1000 bytes • B: 100 bytes • c: 1000 bytes The network and are connected through a Mbps link, while and are connected by a Kbps link (bps = bits per second). Assuming that the packets are correctly delivered, how many bytes, including headers, are delivered to the layer at the destination for one application message, in the best case? Consider only data packets. Refer to the figure below.",
    "options": [
     "$200$",
     "$220$",
@@ -2429,7 +2457,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2004,
-   "text": "Consider three IP networks and. Host in network sends messages each containing of application data to a host in network. The TCP layer prefixes byte header to the message. This passes through an intermediate network. The maximum packet size, including byte IP header, in each network, is: \u2022 A: 1000 bytes \u00b7 B:100 bytes. C: 1000 bytes The network and are connected through a link, while and are connected by a link (bps = bits per second). What is the rate at which application data is transferred to host? Ignore errors, acknowledgments, and other overheads. Refer to the figure below.",
+   "text": "Consider three IP networks and. Host in network sends messages each containing of application data to a host in network. The TCP layer prefixes byte header to the message. This passes through an intermediate network. The maximum packet size, including byte IP header, in each network, is: • A: 1000 bytes · B:100 bytes. C: 1000 bytes The network and are connected through a link, while and are connected by a link (bps = bits per second). What is the rate at which application data is transferred to host? Ignore errors, acknowledgments, and other overheads. Refer to the figure below.",
    "options": [
     "325.5 Kbps",
     "354.5 Kbps",
@@ -2593,7 +2621,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-15-1",
@@ -2661,7 +2691,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-16-1",
@@ -2826,7 +2858,9 @@
    "answer": [
     2,
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-16-6",
@@ -2836,16 +2870,9 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2024,
-   "text": "Which one of the following prefixes exactly represents the range of addresses to 10.12.3.255?",
-   "options": [
-    "10.12.2.0/23",
-    "10.12.2.0/24",
-    "10.12.0.0/22",
-    "10.12.2.0/22"
-   ],
-   "answer": [
-    0
-   ],
+   "text": "Which one of the following prefixes exactly represents the range of addresses to",
+   "options": [],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -2860,7 +2887,10 @@
      "two-marks"
     ],
     "topic_source": "section"
-   }
+   },
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-2-16-7",
@@ -3149,7 +3179,7 @@
    "year": 2007,
    "text": "There are stations in slotted LAN. Each station attempts to transmit with a probability in each time slot. What is the probability that ONLY one station transmits in a given time slot?",
    "options": [
-    "np(1 \u2212 p)n\u22121",
+    "np(1 − p)n−1",
     "$( 1 - p ) ^ { n - 1 }$",
     "$p ( { \\bf 1 } - p ) ^ { n - 1 }$",
     "$1 - ( 1 - p ) ^ { n - 1 }$"
@@ -3462,7 +3492,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-22-5",
@@ -3472,7 +3504,7 @@
    "marks": 1,
    "difficulty": "easy",
    "year": 2018,
-   "text": "Match the following: | Field | Length in bits\n| P. UDP Header\u2019s Port Number | I. 48\n| Q. Ethernet MAC Address | II. 8\n| R. IPv6 Next Header | III. 32\n| S. TCP Header\u2019s Sequence Number | IV. 16",
+   "text": "Match the following: | Field | Length in bits\n| P. UDP Header’s Port Number | I. 48\n| Q. Ethernet MAC Address | II. 8\n| R. IPv6 Next Header | III. 32\n| S. TCP Header’s Sequence Number | IV. 16",
    "options": [
     "$\\mathbf{P}_{-}\\mathbf{\\widehat{I}}_{-}\\left(\\mathbf{\\widehat{D}}_{-}\\mathbf{\\widehat{U}}_{,}\\mathbf{\\Sigma}\\mathbf{\\widehat{S}}_{-}\\right)$",
     "$\\mathbf{P}_{-}\\mathbf{\\bfI}_{\\cdot}\\left(\\mathbf{\\bfx}\\right)_{\\cdot}\\mathbf{\\bfC}\\cdot\\mathbf{\\tilde{I}}\\cdot\\mathbf{\\tilde{I}}\\mathbf{\\tilde{I}}$",
@@ -3513,10 +3545,10 @@
    "year": 2026,
    "text": "An ISP having an address block assigns a block of IP addresses to a client, using the classless internet domain routing (CIDR) super-netting approach. Which of the following address blocks can be assigned by the ISP?",
    "options": [
-    "202.16.0.0/19",
-    "202.17.64.0/19",
-    "202.16.32.0/19",
-    "202.17.24.0/19"
+    "202.",
+    "202.",
+    "202.",
+    "202."
    ],
    "answer": [
     0,
@@ -3539,7 +3571,9 @@
     ],
     "topic_score": 6.5,
     "topic_source": "keyword"
-   }
+   },
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-23-1",
@@ -3690,8 +3724,8 @@
    "year": 2019,
    "text": "Suppose that in an IP-over-Ethernet network, a machine X wishes to find the MAC address of another machine Y in its subnet. Which one of the following techniques can be used for this?",
    "options": [
-    "X sends an ARP request packet to the local gateway\u2019s IP address which then finds the MAC address of Y and sends to X",
-    "X sends an ARP request packet to the local gateway\u2019s MAC address which then finds the MAC address of Y and sends to X",
+    "X sends an ARP request packet to the local gateway’s IP address which then finds the MAC address of Y and sends to X",
+    "X sends an ARP request packet to the local gateway’s MAC address which then finds the MAC address of Y and sends to X",
     "X sends an ARP request packet with broadcast MAC address in its local subnet",
     "X sends an ARP request packet with broadcast IP address in its local subnet"
    ],
@@ -3882,7 +3916,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-24-1",
@@ -3918,7 +3954,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-24-2",
@@ -4178,7 +4216,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2014,
-   "text": "An IP router implementing Classless Inter-domain Routing (CIDR) receives a packet with address. The router's routing table has the following entries: | Prefix | Outer Interface Identifier\n| 131.16.0.0/12 | 3\n| 131.28.0.0/14 | 5\n| 131.19.0.0/16 | 2\n| 131.22.0.0/15 | 1 The identifier of the output interface on which this packet will be forwarded is",
+   "text": "An IP router implementing Classless Inter-domain Routing (CIDR) receives a packet with address. The router's routing table has the following entries: | Prefix | Outer Interface Identifier\n| 131.",
    "options": [],
    "answer_value": 1.0,
    "tolerance": 0,
@@ -4347,7 +4385,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2024,
-   "text": "Consider the entries shown below in the forwarding table of an router. Each entry consists of an prefix and the corresponding next hop router for packets whose destination address matches the prefix. The notation \" / \" in a prefix indicates a subnet mask with the most significant bits set to. | Prefix | Next hop router\n| 10.1.1.0 / 24 | R1\n| 10.1.1.128 / 25 | R2\n| 10.1.1.64 / 26 | R3\n| 10.1.1.192 / 26 | R4 This router forwards packets each to hosts. The addresses of the hosts are and. The number of packets forwarded via the next hop router is",
+   "text": "Consider the entries shown below in the forwarding table of an router. Each entry consists of an prefix and the corresponding next hop router for packets whose destination address matches the prefix. The notation \" / \" in a prefix indicates a subnet mask with the most significant bits set to. | Prefix | Next hop router\n|",
    "options": [],
    "answer_value": 40.0,
    "tolerance": 0,
@@ -4663,7 +4701,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-30-2",
@@ -5525,14 +5565,12 @@
    "year": 2003,
    "text": "The subnet mask for a particular network is Which of the following pairs of addresses could belong to this network?",
    "options": [
-    "172.57.88.62 and 172.56.87.23",
-    "10.35.28.2 and 10.35.29.4",
-    "191.203.31.87and 191.234.31.88",
-    "128.8.129.43 and 128.8.161.55"
+    "and",
+    "and",
+    "and",
+    "and"
    ],
-   "answer": [
-    3
-   ],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -5547,8 +5585,11 @@
      "normal",
      "isro2009"
     ],
-    "topic_source": "section"
-   }
+    "topic_source": "section",
+    "options_recovered": "pix2tex"
+   },
+   "answer_pending": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-2-34-3",
@@ -5655,7 +5696,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-34-6",
@@ -5759,7 +5802,7 @@
    "marks": 2,
    "difficulty": "easy",
    "year": 2015,
-   "text": "Consider the following routing table at an IP router: | Network No | Net Mask | Next Hop\n| 128.96.170.0 | 255.255.254.0 | Interface 0\n| 128.96.168.0 | 255.255.254.0 | Interface 1\n| 128.96.166.0 | 255.255.254.0 | R2\n| 128.96.164.0 | 255.255.252.0 | R3\n| 0.0.0.0 | Default | R4 For each IP address in Group I Identify the correct choice of the next hop from Group II using the entries from the routing table above. | Group I | Group II\n| i) 128.96.171.92 | a) Interface 0\n| ii) 128.96.167.151 | b) Interface 1\n| iii) 128.96.163.151 | c) R2\n| iv) 128.96.164.121 | d) R3\n| | e) R4",
+   "text": "Consider the following routing table at an IP router: | Network No | Net Mask | Next Hop\n| 128.96.170.0 | 255.255.254.0 | Interface 0\n| 128.96.168.0 | 255.255.254.0 | Interface 1\n| 128.96.166.0 | 255.255.254.0 | R2\n| 128.96.164.0 | 255.255.252.0 | R3\n|",
    "options": [
     "i-a, ii-c, iii-e, iv-d",
     "i-a, ii-d, iii-b, iv-e",
@@ -5857,7 +5900,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2020,
-   "text": "An organization requires a range of IP address to assign one to each of its computers. The organization has approached an Internet Service Provider (ISP) for this task. The ISP uses CIDR and serves the requests from the available IP address space. The ISP wants to assign an address space to the organization which will minimize the number of routing entries in the ISP\u2019s router using route aggregation. Which of the following address spaces are potential candidates from which the ISP can allot any one of the organization? 1. 202.61.84.0/21 II. 202.61.104.0/21 III. IV. 202.61.144.0/21",
+   "text": "An organization requires a range of IP address to assign one to each of its computers. The organization has approached an Internet Service Provider (ISP) for this task. The ISP uses CIDR and serves the requests from the available IP address space. The ISP wants to assign an address space to the organization which will minimize the number of routing entries in the ISP’s router using route aggregation. Which of the following address spaces are potential candidates from which the ISP can allot any one of the organization? 1. 202.",
    "options": [
     "and only",
     "and only",
@@ -5892,17 +5935,9 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2022,
-   "text": "Consider routing table of an organization\u2019s router shown below: | Subnet Number | Subnet Mask | Next Hop\n| 12.20.164.0 | 255.255.252.0 | R1\n| 12.20.170.0 | 255.255.254.0 | R2\n| 12.20.168.0 | 255.255.254.0 | Interface 0\n| 12.20.166.0 | 255.255.254.0 | Interface 1\n| default | | R3 Which of the following prefixes in notation can be collectively used to correctly aggregate all of the subnets in the routing table?",
-   "options": [
-    "12.20.164.0/20",
-    "12.20.164.0/22",
-    "12.20.164.0/21",
-    "12.20.168.0/22"
-   ],
-   "answer": [
-    1,
-    3
-   ],
+   "text": "Consider routing table of an organization’s router shown below: | Subnet Number | Subnet Mask | Next Hop\n|",
+   "options": [],
+   "answer": null,
    "origin": {
     "source_file": "filter1_volume3.pdf",
     "volume": "filter1_volume3",
@@ -5919,7 +5954,10 @@
     ],
     "topic_source": "section"
    },
-   "needs_fix": "stem contains a table; check it flattened readably"
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "answer_pending": true,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
   },
   {
    "id": "mineru-filter1-volume3-2-34-15",
@@ -5929,7 +5967,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2025,
-   "text": "A packet with the destination address arrives at a router whose routing table is shown. Which interface will the packet be forwarded to? | Subnet Address | Subnet Mask ( in CIDR notation) | Interface\n| 145.36.0.0 | /16 | E1\n| 145.36.128.0 | /17 | E2\n| 145.36.64.0 | /18 | E3\n| 145.36.255.0 | /24 | E4\n| Default | - | E5",
+   "text": "A packet with the destination address arrives at a router whose routing table is shown. Which interface will the packet be forwarded to? | Subnet Address | Subnet Mask ( in CIDR notation) | Interface\n| 145.",
    "options": [
     "$\\mathrm{E}{\\dot{3}}$",
     "$\\mathrm{El}$",
@@ -6035,7 +6073,7 @@
    "marks": 2,
    "difficulty": "medium",
    "year": 2006,
-   "text": "A router uses the following routing table: | Destination | Mask | Interface\n| 144.16.0.0 | 255.255.0.0 | eth0\n| 144.16.64.0 | 255.255.224.0 | eth1\n| 144.16.68.0 | 255.255.255.0 | eth2\n| 144.16.68.64 | 255.255.255.224 | eth3 Packet bearing a destination address arrives at the router. On which interface will it be forwarded?",
+   "text": "A router uses the following routing table: | Destination | Mask | Interface\n| 144.",
    "options": [
     "eth",
     "eth",
@@ -6132,7 +6170,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-34-21",
@@ -6196,7 +6236,9 @@
    "explain": "",
    "answer": [
     0
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-35-2",
@@ -6302,7 +6344,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-35-5",
@@ -6505,7 +6549,9 @@
    "explain": "",
    "answer": [
     2
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-35-11",
@@ -6573,7 +6619,9 @@
     1,
     2,
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-35-13",
@@ -6819,7 +6867,9 @@
    "explain": "",
    "answer": [
     3
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-35-20",
@@ -6877,7 +6927,9 @@
    "explain": "",
    "answer": [
     1
-   ]
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
   },
   {
    "id": "mineru-filter1-volume3-2-37-1",
@@ -7078,6 +7130,610 @@
     ],
     "topic_source": "tag"
    }
+  },
+  {
+   "id": "mineru-filter1-volume3-2-4-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2006,
+   "text": "Consider the diagram shown below where a number of LANs are connected by (transparent) bridges. In order to avoid packets looping through circuits in the graph, the bridges organize themselves in a spanning tree. First, the root bridge is identified as the bridge with the least serial number. Next, the root sends out ( more) data units to enable the setting up of the spanning tree of shortest paths from the root bridge to each b Each bridge identifies a port (the root port) through which it will forward frames to the root bridge. Port conflicts are always resolved in favour of the port with the lower index value. When there is a possibility of multiple bridges forwarding to the same LAN (but not through the root port), ties are broken as follows: bridges closest to the root get preference and between such bridges, the one with the lowest serial number is preferred. For the given connection of LANs by bridges, which one of the following choices represents the depth first traversal of the spanning tree of bridges?",
+   "options": [
+    "B1, B5, B3, B4, B2",
+    "B1, B3, B5, B2, B4",
+    "B1, B5, B2, B3, B4",
+    "B1, B3, B4, B5, B2"
+   ],
+   "answer": [
+    0
+   ],
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-5e89c16b91d236049a484072.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 114,
+     "bbox": [
+      336,
+      67,
+      680,
+      289
+     ],
+     "kind": "flowchart",
+     "mermaid": "graph TD\n  B1[\"B1\"] -->|1| H1[\"H1\"]\n  B1 -->|2| H2[\"H2\"]\n  B1 -->|3| B5[\"B5\"]\n  B1 -->|4| B3[\"B3\"]\n  B5 -->|1| H5[\"H5\"]\n  B5 -->|2| H6[\"H6\"]\n  B5 -->|3| B4[\"B4\"]\n  B3 -->|1| H7[\"H7\"]\n  B3 -->|2| B2[\"B2\"]\n  B3 -->|3| B3\n  B4 -->|1| H9[\"H9\"]\n  B4 -->|2| H10[\"H10\"]\n  B4 -->|3| H11[\"H11\"]\n  B2 -->|1| H12[\"H12\"]\n  B2 -->|2| H11\n  B2 -->|3| H12"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.4.2",
+    "exam": "GATE CSE 2006 | Question: 82",
+    "section": "Bridges",
+    "paper_question": "82",
+    "tags": [
+     "gatecse-2006",
+     "computer-networks",
+     "bridges",
+     "norma"
+    ],
+    "page_idx": 114,
+    "bbox": [
+     336,
+     67,
+     680,
+     289
+    ],
+    "topic_score": 3.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "mac"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-4-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2006,
+   "text": "Consider the diagram shown below where a number of LANs are connected by (transparent) bridges. In order to avoid packets looping through circuits in the graph, the bridges organize themselves in a spanning tree. First, the root bridge is identified as the bridge with the least serial number. Next, the root sends out ( more) data units to enable the setting up of the spanning tree of shortest paths from the root bridge to each bridge. Each bridge identifies a port (the root port) through which it will forward frames to the root bridge. Port conflicts are always resolved in favour of the port with the lower index value. When there is a possibility of multiple bridges forwarding to the same LAN (but not through the root port), ties are broken as follows: bridges closest to the root get preference and between such bridges, the one with the lowest serial number is preferred. Consider the spanning tree for the given connection of LANs by bridges, that represents the depth first traversal of the spanning tree of bridges. Let host send out a broadcast ping packet. Which of the following options represents the correct forwarding table on? a. | Hosts | Port\n| H1, H2, H3, H4 | 3\n| H5, H6, H9, H10 | 1\n| H7, H8, H11, H12 | 2 b. | Hosts | Port\n| H1, H2 | 4\n| H3, H4 | 3\n| H5, H6 | 1\n| H7, H8, H9, H10, H11, H12 | 2 c. | Hosts | Port\n| H3, H4 | 3\n| H5, H6, H9, H10 | 1\n| H1, H2 | 4\n| H7, H8, H11, H12 | 2 d. | Hosts | Port\n| H1, H2, H3, H4 | 3\n| H5, H7, H9, H10 | 1\n| H7, H8, H11, H12 | 4",
+   "options": [],
+   "answer_from_source": "A",
+   "figure_assets": [
+    {
+     "src": "/content/assets/question-images/mineru/filter1-volume3-75b1549af6cf61c321176f33.jpg",
+     "alt": "Figure 1 for this question (flowchart)",
+     "page_idx": 114,
+     "bbox": [
+      324,
+      567,
+      694,
+      802
+     ],
+     "kind": "flowchart"
+    }
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.4.3",
+    "exam": "GATE CSE 2006 | Question: 83",
+    "section": "Bridges",
+    "paper_question": "83",
+    "tags": [
+     "gatecse-2006",
+     "computer-networks",
+     "bridges",
+     "norma"
+    ],
+    "page_idx": 114,
+    "bbox": [
+     324,
+     567,
+     694,
+     802
+    ],
+    "topic_score": 3.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "answer A but only 0 option(s) recovered; stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "mac"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-17-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2010,
+   "text": "One of the header fields in an IP datagram is the Time-to-Live (TTL) field. Which of the following statements best explains the need for this field?",
+   "options": [
+    "It can be used to prioritize packets.",
+    "It can be used to reduce delays.",
+    "It can be used to optimize throughput.",
+    "It can be used to prevent packet looping."
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.17.2",
+    "exam": "GATE CSE 2010 | Question: 15. PGEE 2018",
+    "section": "IP Packet",
+    "paper_question": "",
+    "tags": [
+     "gatecse-2010",
+     "computer-networks",
+     "ip-packet",
+     "easy"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "ip-addressing"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-17-5",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2015,
+   "text": "Which of the following fields of an IP header is NOT modified by a typical IP router?",
+   "options": [
+    "Check sum",
+    "Source address",
+    "Time to Live (TTL)",
+    "Length"
+   ],
+   "answer": [
+    1
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.17.5",
+    "exam": "GATE CSE 2015 | Set 1 | Question: 22",
+    "section": "IP Packet",
+    "paper_question": "22",
+    "tags": [
+     "gatecse-2015-set1",
+     "computer-networks",
+     "ip-packet",
+     "easy"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "ip-addressing"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-17-8",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 1,
+   "difficulty": "medium",
+   "year": 2024,
+   "text": "Which of the following fields is/are modified in the header of a packet going out of a network address translation device from an internal network to an external network?",
+   "options": [
+    "Source",
+    "Destination",
+    "Header Checksum",
+    "Total Length"
+   ],
+   "answer": [
+    0,
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.17.8",
+    "exam": "GATE CSE 2024 | Set 1 | Question: 21",
+    "section": "IP Packet",
+    "paper_question": "21",
+    "tags": [
+     "gatecse-2024-set1",
+     "multiple-selects",
+     "computer-networks",
+     "ip-packet",
+     "one-mark"
+    ],
+    "topic_score": 3.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "ip-addressing"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-17-10",
+   "kind": "pyq",
+   "type": "msq",
+   "marks": 1,
+   "difficulty": "medium",
+   "year": 2024,
+   "text": "Which of the following statements about fragmentation is/are TRUE?",
+   "options": [
+    "The fragmentation of an datagram is performed only at the source of the datagram",
+    "The fragmentation of an datagram is performed at any router which finds that the size of the datagram to be transmitted exceeds the",
+    "The reassembly of fragments is performed only at the destination of the datagram",
+    "The reassembly of fragments is performed at all intermediate routers along the path from the source to the destination"
+   ],
+   "answer": [
+    1,
+    2
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.17.10",
+    "exam": "GATE CSE 2024 | Set 2 | Question: 18",
+    "section": "IP Packet",
+    "paper_question": "18",
+    "tags": [
+     "gatecse-2024-set2",
+     "computer-networks",
+     "multiple-selects",
+     "ip-packet",
+     "one-mark"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "ip-addressing"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-22-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2003,
+   "text": "Which of the following functionality must be implemented by a transport protocol over and above the network protocol?",
+   "options": [
+    "Recovery from packet losses",
+    "Detection of duplicate packets",
+    "Packet delivery in the correct order",
+    "End to end connectivity"
+   ],
+   "answer": [
+    3
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.22.1",
+    "exam": "GATE CSE 2003 | Question: 28",
+    "section": "Network Layer",
+    "paper_question": "28",
+    "tags": [
+     "gatecse-2003",
+     "computer-networks",
+     "network-layer",
+     "easy"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "layering"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-22-2",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2004,
+   "text": "Choose the best matching between and | Group-1 | Group-2\n| P. Data link layer | 1. Ensures reliable transport of data over a physical point-to-point link\n| Q. Network layer | 2. Encodes/decodes data for physical transmission\n| R. Transport layer | 3. Allows end-to-end communication between two processes\n| | 4. Routes data from one network node to the next",
+   "options": [
+    "P-1, Q-4, R-3",
+    "P-2, Q-4, R-1",
+    "P-2, Q-3, R-1",
+    "P-1, Q-3, R-2"
+   ],
+   "answer": [
+    0
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.22.2",
+    "exam": "GATE CSE 2004 | Question: 15",
+    "section": "Network Layer",
+    "paper_question": "15",
+    "tags": [
+     "gatecse-2004",
+     "computer-networks",
+     "network-layer",
+     "normal"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "needs_fix": "stem contains a table; check it flattened readably",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "layering"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-22-3",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2013,
+   "text": "Assume that source S and destination D are connected through two intermediate routers labeled R. Determine how many times each packet has to visit the network layer and the data link layer during a transmission from S to D.",
+   "options": [
+    "Network layer – times and Data link layer – times",
+    "Network layer – times and Data link layer – times",
+    "Network layer – times and Data link layer – times",
+    "Network layer – times and Data link layer – times"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.22.3",
+    "exam": "GATE CSE 2013 | Question: 14",
+    "section": "Network Layer",
+    "paper_question": "14",
+    "tags": [
+     "gatecse-2013",
+     "computer-networks",
+     "network-layer",
+     "normal"
+    ],
+    "topic_score": 0.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "options are not distinct: 'Network layer – times and Data link layer – times' repeated",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "layering"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-22-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "easy",
+   "year": 2014,
+   "text": "In the following pairs of OSI protocol layer/sub-layer and its functionality, the INCORRECT pair is",
+   "options": [
+    "Network layer and Routing",
+    "Data Link Layer and Bit synchronization",
+    "Medium Access Control sub-layer and Channel sharing"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.22.4",
+    "exam": "GATE CSE 2014 | Set 3 | Question: 23",
+    "section": "Network Layer",
+    "paper_question": "23",
+    "tags": [
+     "gatecse-2014-set3",
+     "computer-networks",
+     "network-layer",
+     "easy"
+    ],
+    "topic_score": 2.5,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "B",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "option letters A,B,D are not a run from A",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "layering"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-10-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2026,
+   "text": "It is necessary to design a link-layer protocol between two hosts that are directly connected over a lossless link of length kilometers. Assume that the link bandwidth is ${ 1 0 ^ { 8 } }$ bits per second and that the propagation delay in the link is nanoseconds per meter. Every transmitted data byte is assigned a sequence number. Let be the minimum number of bits needed for the sequence number field in the protocol header such that i. the sequence numbers do not wrap around before seconds, and ii. the maximum utilization of the link is achieved. The value of is. (answer in integer)",
+   "options": [],
+   "answer_value": 30.0,
+   "tolerance": 0.0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.10.1",
+    "exam": "GATE CSE 2026 | Set 2 | Question: 55",
+    "section": "Data Communication",
+    "paper_question": "55",
+    "tags": [
+     "gatecse-2026-set2",
+     "computer-networks",
+     "data-communication",
+     "numerical-answers",
+     "two-marks"
+    ],
+    "topic_score": 1.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "layering"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-20-4",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2005,
+   "text": "Assume that the length of each time slot is the time to transmit plus the end-to-end propagation delay. Assume a propagation speed of $2 \\times 1 0 ^ { 8 } m / s e c$. The length of the LAN is with a bandwidth of. The maximum number of stations that can be allowed in the LAN so that the throughput of each station can be is",
+   "options": [],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.20.4",
+    "exam": "GATE IT 2005 | Question: 75",
+    "section": "MAC Protocol",
+    "paper_question": "75",
+    "tags": [
+     "gateit-2005",
+     "computer-networks",
+     "mac-protocol",
+     "normal"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none"
+   },
+   "answer_pending": true,
+   "answer_from_source": "C",
+   "explain": "Answer not printed in the source, or not recoverable from the extraction. Look it up, then run 'python tools/answer_fill.py --next' to record it. Until then this question stays out of quizzes so it cannot be graded against a missing answer.",
+   "needs_fix": "4 of 4 options came through empty",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "mac",
+   "answer": null,
+   "needs_options": true,
+   "answer_note": "The source's option list did not survive text extraction. Open the original PDF at the reference below, paste the options in and log the answer from the Bank tab."
+  },
+  {
+   "id": "mineru-filter1-volume3-2-27-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2021,
+   "text": "Consider a network using the pure medium access control protocol, where each frame is of length bits. The channel transmission rate is Mbps ( bits per second). The aggregate number of transmissions across all the nodes (including new frame transmissions and retransmitted frames due to col is modelled as a Poisson process with a rate of frames per second. Throughput is defined as the a number of frames successfully transmitted per second. The throughput of the network (rounded to the n integer) is",
+   "options": [],
+   "answer_value": 135.0,
+   "tolerance": 5.0,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.27.1",
+    "exam": "GATE CSE 2021 | Set 2 | Question: 54",
+    "section": "Pure Aloha",
+    "paper_question": "54",
+    "tags": [
+     "gatecse-2021-set2",
+     "computer-networks",
+     "mac-protocol",
+     "pure-aloha",
+     "numerical-answers",
+     "two-marks"
+    ],
+    "topic_score": 2.5,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "mac"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-31-1",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2015,
+   "text": "Consider a LAN with four nodes $S _ { 1 }, S _ { 2 }, S _ { 3 }$ and $S _ { 4 }$. Time is divided into fixed-size slots, and a node can begin its transmission only at the beginning of a slot. A collision is said to have occurred if more than one node transmits in the same slot. The probabilities of generation of a frame in a time slot by $S _ { 1 }, S _ { 2 }, S _ { 3 }$ and $S _ { 4 }$ are and respectively. The probability of sending a frame in the first slot without any collision by any of these four stations is",
+   "options": [],
+   "answer_value": 0.4404,
+   "tolerance": 0.01,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.31.1",
+    "exam": "GATE CSE 2015 | Set 1 | Question: 29",
+    "section": "Slotted Aloha",
+    "paper_question": "29",
+    "tags": [
+     "gatecse-2015-set1",
+     "computer-networks",
+     "normal",
+     "numerical-answers",
+     "slotted-aloha"
+    ],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "mac"
+  },
+  {
+   "id": "mineru-filter1-volume3-2-36-1",
+   "kind": "pyq",
+   "type": "mcq",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2008,
+   "text": "A computer on a network is regulated by a token bucket. The token bucket is filled at a rate of. It is initially filled to capacity with. What is the maximum duration for which the computer can transmit at the full?",
+   "options": [
+    "seconds",
+    "seconds",
+    "seconds",
+    "seconds"
+   ],
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.36.1",
+    "exam": "GATE CSE 2008 | Question: 58",
+    "section": "Token Bucket",
+    "paper_question": "58",
+    "tags": [
+     "gatecse-2008",
+     "computer-networks",
+     "token-bucket"
+    ],
+    "topic_score": 1.0,
+    "topic_source": "none",
+    "options_recovered": "pix2tex"
+   },
+   "explain": "",
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "tcp",
+   "answer": [
+    1
+   ],
+   "options_quarantined": true,
+   "answer_pending": true
+  },
+  {
+   "id": "mineru-filter1-volume3-2-36-2",
+   "kind": "pyq",
+   "type": "nat",
+   "marks": 2,
+   "difficulty": "medium",
+   "year": 2016,
+   "text": "For a host machine that uses the token bucket algorithm for congestion control, the token bucket has a 注 口 capacity of and the maximum output rate is per. Tokens arrive at a rate to sustain output at a rate of per. The token bucket is currently full and the machine needs to send of data. The minimum time required to transmit the data is seconds.",
+   "options": [],
+   "answer_value": 1.145,
+   "tolerance": 0.045,
+   "origin": {
+    "source_file": "filter1_volume3.pdf",
+    "volume": "filter1_volume3",
+    "ref": "2.36.2",
+    "exam": "GATE CSE 2016 | Set 1 | Question: 54",
+    "section": "Token Bucket",
+    "paper_question": "54",
+    "tags": [
+     "gatecse-2016-set1",
+     "computer-networks",
+     "token-bucket",
+     "normal",
+     "numerical-answers"
+    ],
+    "topic_score": 2.0,
+    "topic_source": "none"
+   },
+   "_note": "Topic could not be resolved automatically. Set 'topic' to a slug from content/syllabus.json and move this entry into that subject's file. Ignored by the app until then.",
+   "topic": "tcp"
   }
  ]
 }
