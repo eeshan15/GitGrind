@@ -1,0 +1,16 @@
+--- a/core/content.py
++++ b/core/content.py
+@@ -741,7 +741,12 @@
+         entry["questions"].append(
+             dict(
+                 id=q["id"],
+-                section=ref["section"],
++                # The "| GA" marker only appears from about 2014 onward. Before
++                # that the subject slug is the only signal, and a GA question
++                # filed under core inflates the core mark total.
++                section=(
++                    "ga" if q["subject"] == "general-aptitude" else ref["section"]
++                ),
+                 paper_qno=str(qno),
+                 marks=float(q.get("marks") or 0),
+            )
