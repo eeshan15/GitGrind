@@ -84,12 +84,32 @@ def main():
     def _health():
         h = db.health(conn)
         assert h["schema_version"] == db.SCHEMA_VERSION, "schema version mismatch"
-        assert h["table_count"] >= 25, (
-            "expected at least 25 tables, got %d" % h["table_count"]
+        assert h["table_count"] >= 29, (
+            "expected at least 29 tables, got %d" % h["table_count"]
         )
         return "v%d, %d tables" % (h["schema_version"], h["table_count"])
 
     check("health report and table count", _health, args.verbose)
+
+    def _migrate_twice():
+        """A migration must be safe to run again. Prove it rather than assume it."""
+        before = {
+            t: conn.execute('SELECT COUNT(*) FROM "%s"' % t).fetchone()[0]
+            for t in db.health(conn)["tables"]
+        }
+        again = db.migrate(conn)
+        after = {
+            t: conn.execute('SELECT COUNT(*) FROM "%s"' % t).fetchone()[0]
+            for t in db.health(conn)["tables"]
+        }
+        assert not again, "a second migrate() re-ran steps: %s" % again
+        assert before == after, "row counts moved on a no-op migrate"
+        assert (
+            conn.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
+        ), "integrity_check failed after migrate"
+        return "no-op, %d tables unchanged" % len(after)
+
+    check("migrate is idempotent", _migrate_twice, args.verbose)
 
     # ---- content --------------------------------------------------------
     print("\ncontent registry")
@@ -128,6 +148,46 @@ def main():
         return "%d source(s)" % len(content.source_summary(conn))
 
     check("source registry syncs", _sources, args.verbose)
+
+    def _papers():
+        content.sync_papers(conn)
+        rows = content.paper_summary(conn)
+        assert rows, "no papers were reconstructed from the banks"
+        # Every paper must be gapless and ordered, or "question 12 of 65" is a lie.
+        for p in rows:
+            positions = [
+                r["position"]
+                for r in conn.execute(
+                    "SELECT position FROM paper_questions WHERE paper_id = ?"
+                    " ORDER BY position",
+                    (p["id"],),
+                )
+            ]
+            assert positions == list(range(1, len(positions) + 1)), (
+                "%s has non-contiguous positions" % p["slug"]
+            )
+            assert p["question_count"] == len(positions), (
+                "%s question_count disagrees with paper_questions" % p["slug"]
+            )
+        # GA must never be folded into the core mark total.
+        ga = conn.execute(
+            "SELECT COUNT(*) FROM paper_sections WHERE section = 'ga'"
+        ).fetchone()[0]
+        assert ga, "no paper has a General Aptitude section"
+        return "%d paper(s), %d with a GA section" % (len(rows), ga)
+
+    check("papers reconstruct, order and section cleanly", _papers, args.verbose)
+
+    def _paper_reject():
+        # Other branches' papers are quoted inside CSE banks. They must not be
+        # mapped onto a GATE CSE paper.
+        for bad in ("GATE2012 AR: GA-5", "GATE2010 MN: GA-5", "GATE2014 AG: GA-10"):
+            assert content.parse_exam_ref(bad) is None, "%s was accepted" % bad
+        good = content.parse_exam_ref("GATE CSE 2020 | GA | Question: 5")
+        assert good and good["section"] == "ga", "GA marker not detected"
+        return "other-branch refs rejected, GA marker detected"
+
+    check("exam-reference parser rejects foreign papers", _paper_reject, args.verbose)
 
     # ---- a session ------------------------------------------------------
     print("\nsessions and grading")
@@ -453,6 +513,7 @@ def main():
             "bank",
             "review",
             "sources",
+            "papers",
             "prefs",
             "db",
             "metrics",
