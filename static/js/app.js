@@ -246,8 +246,24 @@ GG.app = (function () {
       try {
         const payload = JSON.parse(fr.result);
         if (!confirm('This replaces everything currently in the tracker. Continue?')) return;
-        apply(await GG.api('/import', { body: payload }));
-        GG.toast('Backup restored');
+        const state = await GG.api('/import', { body: payload });
+        apply(state);
+        /* A backup from an older bank carries question ids that have since been
+           replaced. Say what was reconnected and what was not, because silence
+           here reads as data loss. */
+        const r = state.import_repair || {};
+        const stuck = (r.unresolved || []).length;
+        if (r.rows) {
+          GG.toast('Backup restored',
+            r.rows + ' history row(s) reconnected to the current question bank' +
+            (stuck ? ', ' + stuck + ' question(s) no longer in the bank' : ''));
+        } else if (stuck) {
+          GG.toast('Backup restored',
+            stuck + ' question(s) in your history are no longer in the bank. ' +
+            'Those attempts are kept but will not show under a topic.');
+        } else {
+          GG.toast('Backup restored');
+        }
       } catch (e) { GG.toast('Import failed', e.message, 'bad'); }
     };
     fr.readAsText(file);

@@ -214,14 +214,65 @@ GG.bank = (function () {
     } catch (e) { toast('Could not save', e.message, 'bad'); }
   }
 
+  /* ------------------------------------------------------------ papers ---- */
+  function papers(st) {
+    const host = $('#bankPapers');
+    if (!host) return;
+    host.innerHTML = '';
+    const rows = st.papers || [];
+    if (!rows.length) {
+      host.appendChild(empty('--', 'No papers reconstructed',
+        'A paper groups questions into one examination unit. They are derived ' +
+        'from each question\'s origin block, so importing a GO volume creates them.'));
+      return;
+    }
+    host.appendChild(el('div', { class: 'src-row head-row' }, [
+      el('span', {}, ['paper']), el('span', {}, ['sections']),
+      el('span', {}, ['questions']), el('span', {}, ['']),
+    ]));
+    rows.forEach(p => {
+      const secs = (p.sections || [])
+        .map(x => x.section.toUpperCase() + ' ' + x.question_count + '/' + x.total_marks + 'm')
+        .join('  ');
+      host.appendChild(el('div', { class: 'src-row' }, [
+        el('div', { class: 'src-name' }, [
+          el('b', { text: p.name }),
+          el('span', { text: p.slug + (p.code ? ' - ' + p.code : '') }),
+        ]),
+        el('span', { class: 'dim small mono', text: secs }),
+        // An incomplete paper must say so: the bank is subject-sliced, so most
+        // papers arrive short of what they printed. Showing "62" next to a
+        // 100-mark total without a caveat would misrepresent a mock score.
+        el('span', { class: 'mono small', text: num(p.question_count) +
+          (p.printed_questions ? ' / ' + p.printed_questions : '') +
+          (p.complete ? '' : ' (partial)') }),
+        el('button', {
+          class: 'btn btn-sm',
+          onclick: () => GG.practice.startSet({ paper: p.slug, purpose: 'mock' }),
+        }, ['Sit it']),
+      ]));
+    });
+    host.appendChild(el('p', { class: 'dim small', style: 'margin:14px 0 0' },
+      ['Marked (partial) when the bank holds fewer questions than the paper ' +
+       'printed. A partial paper still practises fine; its total is not a real score.']));
+  }
+
   /* ------------------------------------------------------------ search ---- */
   function fillSelects(st) {
     const sel = $('#qsSubject');
-    if (!sel || sel.dataset.filled) return;
-    sel.appendChild(el('option', { value: '' }, ['Any subject']));
-    (st.subjects || []).forEach(s =>
-      sel.appendChild(el('option', { value: s.slug }, [s.name])));
-    sel.dataset.filled = '1';
+    if (sel && !sel.dataset.filled) {
+      sel.appendChild(el('option', { value: '' }, ['Any subject']));
+      (st.subjects || []).forEach(s =>
+        sel.appendChild(el('option', { value: s.slug }, [s.name])));
+      sel.dataset.filled = '1';
+    }
+    const psel = $('#qsPaper');
+    if (psel && !psel.dataset.filled) {
+      psel.appendChild(el('option', { value: '' }, ['Any paper']));
+      (st.papers || []).forEach(p =>
+        psel.appendChild(el('option', { value: p.slug }, [p.name])));
+      psel.dataset.filled = '1';
+    }
   }
 
   async function search() {
@@ -230,6 +281,7 @@ GG.bank = (function () {
     const params = new URLSearchParams({
       q: $('#qsQuery').value.trim(),
       subject: $('#qsSubject').value,
+      paper: $('#qsPaper') ? $('#qsPaper').value : '',
       type: $('#qsType').value,
       difficulty: $('#qsDiff').value,
       limit: '40',
@@ -251,7 +303,9 @@ GG.bank = (function () {
             el('div', { class: 'row-title', text: (q.text || '').slice(0, 130) }),
             el('div', { class: 'row-sub mono small' }, [
               [q.subject, q.topic, q.type, q.difficulty, q.marks + 'm',
-               q.year || ''].filter(Boolean).join(' - '),
+               q.paper || q.year || '',
+               q.position_in_paper ? 'Q' + q.position_in_paper : ''
+              ].filter(Boolean).join(' - '),
             ]),
           ]),
           el('button', {
@@ -279,13 +333,14 @@ GG.bank = (function () {
     strip(st);
     gaps(st);
     sources(st);
+    papers(st);
     imports(st);
     fillSelects(st);
     review();
     growBars();
   }
 
-  return { tab, review, search, reload };
+  return { tab, review, search, reload, papers };
 })();
 
 /* ==========================================================================

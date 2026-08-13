@@ -195,6 +195,13 @@ GG.practice = (function () {
       id: built.id,
       questions: built.questions,
       responses: built.questions.map(() => null),
+      // Per-question timing and confidence. The backend has always read these
+      // off each response (quiz._record_attempt), but the UI never sent them, so
+      // attempts.seconds was the set duration divided evenly - a column that
+      // looked complete and carried no information.
+      times: built.questions.map(() => 0),
+      conf: built.questions.map(() => null),
+      shownAt: Date.now(),
       idx: 0,
       total: built.total_marks,
       startedAt: Date.now(),
@@ -204,8 +211,24 @@ GG.practice = (function () {
     draw();
   }
 
+  /* Bank the time spent on the question now on screen. Called before every
+     move, so revisiting a question accumulates rather than overwrites. */
+  function stamp() {
+    if (!quiz) return;
+    const now = Date.now();
+    quiz.times[quiz.idx] += Math.max(0, Math.round((now - quiz.shownAt) / 1000));
+    quiz.shownAt = now;
+  }
+
+  function go(i) {
+    stamp();
+    quiz.idx = i;
+    draw();
+  }
+
   function draw() {
     const q = quiz.questions[quiz.idx];
+    quiz.shownAt = Date.now();
     $('#quizTitle').textContent = quiz.title;
     $('#quizProgress').textContent = (quiz.idx + 1) + ' / ' + quiz.questions.length +
       '  |  ' + quiz.total + ' marks';
@@ -223,7 +246,7 @@ GG.practice = (function () {
       nav.appendChild(el('button', {
         class: 'qn' + (done ? ' done' : '') + (i === quiz.idx ? ' now' : ''),
         text: String(i + 1),
-        onclick: () => { quiz.idx = i; draw(); },
+        onclick: () => go(i),
       }));
     });
     body.appendChild(nav);
@@ -231,8 +254,32 @@ GG.practice = (function () {
     const holder = el('div', { class: 'quiz-q' });
     holder.appendChild(questionBlock(q, {
       selected: quiz.responses[quiz.idx],
-      onPick: v => { quiz.responses[quiz.idx] = v; draw(); },
+      onPick: v => { stamp(); quiz.responses[quiz.idx] = v; draw(); },
     }));
+
+    /* Confidence is asked for, not inferred. A wrong answer given confidently is
+       a different problem from a wrong guess, and only the person answering
+       knows which it was. Optional: skipping it logs null, not a fake value. */
+    const conf = el('div', { class: 'row-end', style: 'gap:6px;margin-top:10px' }, [
+      el('span', { class: 'dim small', style: 'margin-right:auto',
+        text: 'How sure are you?' }),
+    ]);
+    /* 1-5, matching the clamp in quiz._record_attempt. A 0-1 float would be
+       squashed to 1 by int() and every rating would read as "no idea". */
+    [['No idea', 1], ['Guess', 2], ['Unsure', 3], ['Fairly sure', 4], ['Certain', 5]]
+      .forEach(([label, v]) => {
+        const on = quiz.conf[quiz.idx] === v;
+        conf.appendChild(el('button', {
+          class: 'btn btn-sm' + (on ? ' btn-primary' : ''),
+          text: label,
+          onclick: () => {
+            stamp();
+            quiz.conf[quiz.idx] = on ? null : v;
+            draw();
+          },
+        }));
+      });
+    holder.appendChild(conf);
     body.appendChild(holder);
 
     const foot = $('#quizFoot');
@@ -244,18 +291,22 @@ GG.practice = (function () {
       text: answered + ' of ' + quiz.questions.length + ' answered',
     }));
     if (quiz.idx > 0) foot.appendChild(el('button', {
-      class: 'btn', text: '< Back', onclick: () => { quiz.idx--; draw(); } }));
+      class: 'btn', text: '< Back', onclick: () => go(quiz.idx - 1) }));
     if (quiz.idx < quiz.questions.length - 1) {
       foot.appendChild(el('button', {
-        class: 'btn', text: 'Next >', onclick: () => { quiz.idx++; draw(); } }));
+        class: 'btn', text: 'Next >', onclick: () => go(quiz.idx + 1) }));
     }
     foot.appendChild(el('button', {
       class: 'btn btn-primary', text: 'Submit set', onclick: submit }));
   }
 
   async function submit() {
+    stamp();
     const payload = quiz.questions.map((q, i) => ({
-      question_id: q.id, response: quiz.responses[i],
+      question_id: q.id,
+      response: quiz.responses[i],
+      seconds: quiz.times[i],
+      confidence: quiz.conf[i],
     }));
     const btns = $$('#quizFoot .btn');
     btns.forEach(b => (b.disabled = true));
@@ -482,6 +533,7 @@ GG.practice = (function () {
           count: o.count || 0,
           kind: o.kind || '',
           question_ids: o.questionIds || [],
+          paper: o.paper || '',
           mode: o.mode || o.purpose || 'mixed',
           reason: o.reason || '',
         },
