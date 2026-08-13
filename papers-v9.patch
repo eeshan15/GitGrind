@@ -1,0 +1,2151 @@
+--- a/core/db.py
++++ b/core/db.py
+@@ -1,640 +1,689 @@
+-"""SQLite connection handling, schema and versioned migrations.
+-
+-This module owns every table in GitGrind. Two things live here:
+-
+-* ``SCHEMA``  - the base tables that existed in v2. Still created with
+-  ``IF NOT EXISTS`` so a fresh install works in one shot.
+-* ``MIGRATIONS`` - an ordered list of upgrade steps. Each step has a version
+-  number and a list of statements. The applied version is recorded in the
+-  ``schema_meta`` table, so an old ``data/gitgrind.db`` upgrades in place
+-  without losing a single logged minute.
+-
+-Adding a table or a column means appending a new migration. Never edit an old
+-one: someone's database has already run it.
+-"""
+-
+-import os
+-import sqlite3
+-import sys
+-import threading
+-
+-# --------------------------------------------------------------------------
+-# Where things live.
+-#
+-# Running from source these are all the same folder. Inside a PyInstaller or
+-# Nuitka build they are not, and getting this wrong is fatal: the bundle is
+-# unpacked into a temporary directory that is deleted on exit, so anything
+-# written there (your database, any answer you looked up) would vanish every
+-# time you closed the app.
+-#
+-#   ASSET_DIR  read-only, inside the bundle: static/ and the shipped content/
+-#   APP_DIR    writable, next to the executable: data/ and your edited content/
+-# --------------------------------------------------------------------------
+-FROZEN = bool(getattr(sys, "frozen", False))
+-ASSET_DIR = getattr(sys, "_MEIPASS", None) or os.path.dirname(
+-    os.path.dirname(os.path.abspath(__file__))
+-)
+-
+-
+-def _writable(path):
+-    """Can we actually create files here? Program Files says no."""
+-    try:
+-        os.makedirs(path, exist_ok=True)
+-        probe = os.path.join(path, ".gitgrind-write-test")
+-        with open(probe, "w") as fh:
+-            fh.write("ok")
+-        os.remove(probe)
+-        return True
+-    except OSError:
+-        return False
+-
+-
+-def _pick_app_dir():
+-    """Where the database and the editable content/ should live.
+-
+-    Normally this is the folder holding the executable, which keeps the app and
+-    its data together and makes backing up a matter of copying one folder. But a
+-    packaged app is often dropped somewhere unwritable - Program Files, a
+-    read-only share, a locked-down work machine - and silently failing to save a
+-    session is the worst possible outcome. So probe first, and fall back to the
+-    per-user application data folder when the exe's own folder is not writable.
+-    """
+-    if not FROZEN:
+-        return ASSET_DIR
+-
+-    beside_exe = os.path.dirname(os.path.abspath(sys.executable))
+-    if _writable(beside_exe):
+-        return beside_exe
+-
+-    if os.name == "nt":
+-        root = os.environ.get("LOCALAPPDATA") or os.path.expanduser("~")
+-    elif sys.platform == "darwin":
+-        root = os.path.join(os.path.expanduser("~"), "Library", "Application Support")
+-    else:
+-        root = os.environ.get("XDG_DATA_HOME") or os.path.join(
+-            os.path.expanduser("~"), ".local", "share"
+-        )
+-
+-    fallback = os.path.join(root, "GitGrind")
+-    if _writable(fallback):
+-        return fallback
+-
+-    # Last resort: the home directory. If even this fails the app will report the
+-    # error on startup rather than pretending to work.
+-    return os.path.join(os.path.expanduser("~"), "GitGrind")
+-
+-
+-APP_DIR = _pick_app_dir()
+-
+-# BASE_DIR stays the name every other module already uses, and always points at
+-# the writable root.
+-BASE_DIR = APP_DIR
+-DATA_DIR = os.path.join(BASE_DIR, "data")
+-# GITGRIND_DB lets tools and tests point at a different file without touching
+-# the real one. Unset, it is the normal location next to the app.
+-DB_PATH = os.environ.get("GITGRIND_DB") or os.path.join(DATA_DIR, "gitgrind.db")
+-
+-# One writer at a time. SQLite handles the rest.
+-LOCK = threading.RLock()
+-
+-SCHEMA_VERSION = 8
+-
+-SCHEMA = """
+-CREATE TABLE IF NOT EXISTS schema_meta (
+-    key   TEXT PRIMARY KEY,
+-    value TEXT NOT NULL
+-);
+-
+-CREATE TABLE IF NOT EXISTS subjects (
+-    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+-    slug        TEXT NOT NULL UNIQUE,
+-    name        TEXT NOT NULL,
+-    grp         TEXT NOT NULL DEFAULT 'core',
+-    marks       INTEGER NOT NULL DEFAULT 5,
+-    target_mins INTEGER NOT NULL DEFAULT 3000,
+-    sort_order  INTEGER NOT NULL DEFAULT 0,
+-    archived    INTEGER NOT NULL DEFAULT 0,
+-    created_at  TEXT NOT NULL
+-);
+-
+-CREATE TABLE IF NOT EXISTS topics (
+-    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+-    subject_id INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
+-    slug       TEXT NOT NULL,
+-    name       TEXT NOT NULL,
+-    weight     INTEGER NOT NULL DEFAULT 1,
+-    status     TEXT NOT NULL DEFAULT 'pending',
+-    sort_order INTEGER NOT NULL DEFAULT 0,
+-    updated_at TEXT,
+-    UNIQUE (subject_id, slug)
+-);
+-CREATE INDEX IF NOT EXISTS idx_topics_subject ON topics(subject_id);
+-
+-CREATE TABLE IF NOT EXISTS sessions (
+-    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+-    subject_id INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
+-    day        TEXT NOT NULL,
+-    minutes    INTEGER NOT NULL DEFAULT 0,
+-    kind       TEXT NOT NULL DEFAULT 'concept',
+-    note       TEXT NOT NULL DEFAULT '',
+-    hour       INTEGER NOT NULL DEFAULT 12,
+-    created_at TEXT NOT NULL
+-);
+-CREATE INDEX IF NOT EXISTS idx_sessions_day ON sessions(day);
+-CREATE INDEX IF NOT EXISTS idx_sessions_subject ON sessions(subject_id);
+-
+-CREATE TABLE IF NOT EXISTS session_topics (
+-    session_id INTEGER NOT NULL REFERENCES sessions(id) ON DELETE CASCADE,
+-    topic_id   INTEGER NOT NULL REFERENCES topics(id) ON DELETE CASCADE,
+-    PRIMARY KEY (session_id, topic_id)
+-);
+-
+-CREATE TABLE IF NOT EXISTS quizzes (
+-    id            INTEGER PRIMARY KEY AUTOINCREMENT,
+-    source        TEXT NOT NULL DEFAULT 'session',
+-    subject_id    INTEGER REFERENCES subjects(id) ON DELETE SET NULL,
+-    session_id    INTEGER REFERENCES sessions(id) ON DELETE SET NULL,
+-    day           TEXT NOT NULL,
+-    topic_slugs   TEXT NOT NULL DEFAULT '',
+-    total_marks   INTEGER NOT NULL DEFAULT 0,
+-    scored_marks  REAL NOT NULL DEFAULT 0,
+-    question_count INTEGER NOT NULL DEFAULT 0,
+-    correct_count INTEGER NOT NULL DEFAULT 0,
+-    duration_s    INTEGER NOT NULL DEFAULT 0,
+-    finished_at   TEXT,
+-    created_at    TEXT NOT NULL
+-);
+-CREATE INDEX IF NOT EXISTS idx_quizzes_day ON quizzes(day);
+-
+-CREATE TABLE IF NOT EXISTS attempts (
+-    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+-    quiz_id     INTEGER REFERENCES quizzes(id) ON DELETE CASCADE,
+-    question_id TEXT NOT NULL,
+-    subject_slug TEXT NOT NULL DEFAULT '',
+-    topic_slug  TEXT NOT NULL DEFAULT '',
+-    source      TEXT NOT NULL DEFAULT 'quiz',
+-    response    TEXT NOT NULL DEFAULT '',
+-    correct     INTEGER NOT NULL DEFAULT 0,
+-    marks_total REAL NOT NULL DEFAULT 0,
+-    marks_got   REAL NOT NULL DEFAULT 0,
+-    day         TEXT NOT NULL,
+-    created_at  TEXT NOT NULL
+-);
+-CREATE INDEX IF NOT EXISTS idx_attempts_day ON attempts(day);
+-CREATE INDEX IF NOT EXISTS idx_attempts_topic ON attempts(topic_slug);
+-
+-CREATE TABLE IF NOT EXISTS daily_question (
+-    day         TEXT PRIMARY KEY,
+-    question_id TEXT NOT NULL,
+-    reason      TEXT NOT NULL DEFAULT '',
+-    served_at   TEXT NOT NULL,
+-    answered_at TEXT,
+-    response    TEXT,
+-    correct     INTEGER
+-);
+-
+-CREATE TABLE IF NOT EXISTS readiness_log (
+-    day         TEXT PRIMARY KEY,
+-    index_value REAL NOT NULL,
+-    est_score   REAL NOT NULL,
+-    percentile  REAL NOT NULL,
+-    behind_you  INTEGER NOT NULL DEFAULT 0,
+-    ahead_of_you INTEGER NOT NULL DEFAULT 0,
+-    created_at  TEXT NOT NULL,
+-    updated_at  TEXT NOT NULL
+-);
+-
+-CREATE TABLE IF NOT EXISTS unlocked (
+-    code        TEXT PRIMARY KEY,
+-    unlocked_at TEXT NOT NULL
+-);
+-
+-CREATE TABLE IF NOT EXISTS doubts (
+-    id          INTEGER PRIMARY KEY AUTOINCREMENT,
+-    subject_slug TEXT NOT NULL DEFAULT '',
+-    topic_slug  TEXT NOT NULL DEFAULT '',
+-    question_id TEXT NOT NULL DEFAULT '',
+-    body        TEXT NOT NULL,
+-    prompt      TEXT NOT NULL DEFAULT '',
+-    provider    TEXT NOT NULL DEFAULT '',
+-    answer      TEXT NOT NULL DEFAULT '',
+-    resolved    INTEGER NOT NULL DEFAULT 0,
+-    created_at  TEXT NOT NULL
+-);
+-
+-CREATE TABLE IF NOT EXISTS settings (
+-    key   TEXT PRIMARY KEY,
+-    value TEXT NOT NULL
+-);
+-"""
+-
+-
+-# ---------------------------------------------------------------------------
+-# migrations
+-# ---------------------------------------------------------------------------
+-# Version 3 - the question bank becomes a first-class citizen.
+-M3 = [
+-    """CREATE TABLE IF NOT EXISTS question_sources (
+-        slug         TEXT PRIMARY KEY,
+-        name         TEXT NOT NULL,
+-        kind         TEXT NOT NULL DEFAULT 'manual',
+-        url          TEXT NOT NULL DEFAULT '',
+-        licence_note TEXT NOT NULL DEFAULT '',
+-        trust        REAL NOT NULL DEFAULT 0.7,
+-        questions    INTEGER NOT NULL DEFAULT 0,
+-        last_fetch_at TEXT,
+-        last_import_at TEXT,
+-        created_at   TEXT NOT NULL
+-    )""",
+-    """CREATE TABLE IF NOT EXISTS question_tags (
+-        question_id TEXT NOT NULL,
+-        tag         TEXT NOT NULL,
+-        origin      TEXT NOT NULL DEFAULT 'import',
+-        PRIMARY KEY (question_id, tag)
+-    )""",
+-    "CREATE INDEX IF NOT EXISTS idx_qtags_tag ON question_tags(tag)",
+-    """CREATE TABLE IF NOT EXISTS question_imports (
+-        id           INTEGER PRIMARY KEY AUTOINCREMENT,
+-        source_slug  TEXT NOT NULL DEFAULT '',
+-        input_path   TEXT NOT NULL DEFAULT '',
+-        manifest     TEXT NOT NULL DEFAULT '',
+-        dry_run      INTEGER NOT NULL DEFAULT 1,
+-        found        INTEGER NOT NULL DEFAULT 0,
+-        matched      INTEGER NOT NULL DEFAULT 0,
+-        needs_review INTEGER NOT NULL DEFAULT 0,
+-        rejected     INTEGER NOT NULL DEFAULT 0,
+-        duplicates   INTEGER NOT NULL DEFAULT 0,
+-        promoted     INTEGER NOT NULL DEFAULT 0,
+-        status       TEXT NOT NULL DEFAULT 'done',
+-        log          TEXT NOT NULL DEFAULT '',
+-        started_at   TEXT NOT NULL,
+-        finished_at  TEXT
+-    )""",
+-    """CREATE TABLE IF NOT EXISTS question_review (
+-        id          INTEGER PRIMARY KEY AUTOINCREMENT,
+-        import_id   INTEGER,
+-        source_slug TEXT NOT NULL DEFAULT '',
+-        question_id TEXT NOT NULL DEFAULT '',
+-        payload     TEXT NOT NULL,
+-        confidence  REAL NOT NULL DEFAULT 0,
+-        issues      TEXT NOT NULL DEFAULT '',
+-        status      TEXT NOT NULL DEFAULT 'pending',
+-        notes       TEXT NOT NULL DEFAULT '',
+-        created_at  TEXT NOT NULL,
+-        decided_at  TEXT
+-    )""",
+-    "CREATE INDEX IF NOT EXISTS idx_qreview_status ON question_review(status)",
+-    """CREATE TABLE IF NOT EXISTS topic_alias (
+-        alias        TEXT NOT NULL,
+-        subject_slug TEXT NOT NULL DEFAULT '',
+-        topic_slug   TEXT NOT NULL DEFAULT '',
+-        source_slug  TEXT NOT NULL DEFAULT '',
+-        PRIMARY KEY (alias, subject_slug)
+-    )""",
+-    """CREATE TABLE IF NOT EXISTS question_stats (
+-        question_id     TEXT PRIMARY KEY,
+-        subject_slug    TEXT NOT NULL DEFAULT '',
+-        topic_slug      TEXT NOT NULL DEFAULT '',
+-        usage_count     INTEGER NOT NULL DEFAULT 0,
+-        correct_count   INTEGER NOT NULL DEFAULT 0,
+-        reattempts      INTEGER NOT NULL DEFAULT 0,
+-        last_attempt_day TEXT,
+-        last_correct_day TEXT,
+-        last_wrong_day  TEXT,
+-        avg_seconds     REAL NOT NULL DEFAULT 0,
+-        avg_confidence  REAL NOT NULL DEFAULT 0,
+-        mistake_kind    TEXT NOT NULL DEFAULT '',
+-        saved           INTEGER NOT NULL DEFAULT 0,
+-        updated_at      TEXT
+-    )""",
+-    "CREATE INDEX IF NOT EXISTS idx_qstats_topic ON question_stats(topic_slug)",
+-    "CREATE INDEX IF NOT EXISTS idx_qstats_last ON question_stats(last_attempt_day)",
+-]
+-
+-# Version 4 - retention: spaced repetition queue and topic prerequisites.
+-M4 = [
+-    """CREATE TABLE IF NOT EXISTS revision_queue (
+-        id            INTEGER PRIMARY KEY AUTOINCREMENT,
+-        item_type     TEXT NOT NULL DEFAULT 'topic',
+-        item_key      TEXT NOT NULL,
+-        subject_slug  TEXT NOT NULL DEFAULT '',
+-        topic_slug    TEXT NOT NULL DEFAULT '',
+-        label         TEXT NOT NULL DEFAULT '',
+-        due_day       TEXT NOT NULL,
+-        interval_days REAL NOT NULL DEFAULT 1,
+-        ease          REAL NOT NULL DEFAULT 2.5,
+-        reps          INTEGER NOT NULL DEFAULT 0,
+-        lapses        INTEGER NOT NULL DEFAULT 0,
+-        last_review_day TEXT,
+-        last_result   TEXT NOT NULL DEFAULT '',
+-        strength      REAL NOT NULL DEFAULT 0.5,
+-        active        INTEGER NOT NULL DEFAULT 1,
+-        created_at    TEXT NOT NULL,
+-        updated_at    TEXT NOT NULL,
+-        UNIQUE (item_type, item_key)
+-    )""",
+-    "CREATE INDEX IF NOT EXISTS idx_revq_due ON revision_queue(due_day, active)",
+-    """CREATE TABLE IF NOT EXISTS topic_prerequisites (
+-        topic_slug   TEXT NOT NULL,
+-        prereq_slug  TEXT NOT NULL,
+-        strength     REAL NOT NULL DEFAULT 1.0,
+-        PRIMARY KEY (topic_slug, prereq_slug)
+-    )""",
+-]
+-
+-# Version 5 - planning: goals, daily plans, DPP sets.
+-M5 = [
+-    """CREATE TABLE IF NOT EXISTS user_goals (
+-        id          INTEGER PRIMARY KEY AUTOINCREMENT,
+-        slug        TEXT NOT NULL,
+-        kind        TEXT NOT NULL DEFAULT 'metric',
+-        label       TEXT NOT NULL DEFAULT '',
+-        target_value REAL NOT NULL DEFAULT 0,
+-        horizon_day TEXT,
+-        note        TEXT NOT NULL DEFAULT '',
+-        active      INTEGER NOT NULL DEFAULT 1,
+-        achieved_at TEXT,
+-        created_at  TEXT NOT NULL
+-    )""",
+-    """CREATE TABLE IF NOT EXISTS daily_plans (
+-        day            TEXT PRIMARY KEY,
+-        generated_at   TEXT NOT NULL,
+-        target_mins    INTEGER NOT NULL DEFAULT 240,
+-        horizon_days   INTEGER,
+-        blocks         TEXT NOT NULL DEFAULT '[]',
+-        reason         TEXT NOT NULL DEFAULT '',
+-        status         TEXT NOT NULL DEFAULT 'open',
+-        done_blocks    TEXT NOT NULL DEFAULT '[]',
+-        rating         INTEGER,
+-        notes          TEXT NOT NULL DEFAULT '',
+-        updated_at     TEXT
+-    )""",
+-    """CREATE TABLE IF NOT EXISTS dpp_sets (
+-        id           INTEGER PRIMARY KEY AUTOINCREMENT,
+-        plan_day     TEXT NOT NULL DEFAULT '',
+-        block_key    TEXT NOT NULL DEFAULT '',
+-        mode         TEXT NOT NULL DEFAULT 'dpp',
+-        label        TEXT NOT NULL DEFAULT '',
+-        reason       TEXT NOT NULL DEFAULT '',
+-        fixing       TEXT NOT NULL DEFAULT '',
+-        aim          TEXT NOT NULL DEFAULT '',
+-        target_topic TEXT NOT NULL DEFAULT '',
+-        question_ids TEXT NOT NULL DEFAULT '[]',
+-        quiz_id      INTEGER,
+-        total        INTEGER NOT NULL DEFAULT 0,
+-        correct      INTEGER NOT NULL DEFAULT 0,
+-        generated_at TEXT NOT NULL,
+-        started_at   TEXT,
+-        finished_at  TEXT
+-    )""",
+-    "CREATE INDEX IF NOT EXISTS idx_dpp_day ON dpp_sets(plan_day)",
+-]
+-
+-# Version 6 - the feedback loop and recommendation ledger.
+-M6 = [
+-    """CREATE TABLE IF NOT EXISTS recommendations (
+-        id          INTEGER PRIMARY KEY AUTOINCREMENT,
+-        day         TEXT NOT NULL,
+-        slug        TEXT NOT NULL,
+-        kind        TEXT NOT NULL DEFAULT 'study',
+-        title       TEXT NOT NULL DEFAULT '',
+-        detail      TEXT NOT NULL DEFAULT '',
+-        reason      TEXT NOT NULL DEFAULT '',
+-        expected    TEXT NOT NULL DEFAULT '',
+-        subject_slug TEXT NOT NULL DEFAULT '',
+-        topic_slug  TEXT NOT NULL DEFAULT '',
+-        urgency     REAL NOT NULL DEFAULT 0,
+-        score       REAL NOT NULL DEFAULT 0,
+-        payload     TEXT NOT NULL DEFAULT '{}',
+-        shown_at    TEXT NOT NULL,
+-        acted_at    TEXT,
+-        dismissed_at TEXT,
+-        outcome     TEXT NOT NULL DEFAULT ''
+-    )""",
+-    "CREATE INDEX IF NOT EXISTS idx_recs_day ON recommendations(day)",
+-    "CREATE INDEX IF NOT EXISTS idx_recs_slug ON recommendations(slug)",
+-    """CREATE TABLE IF NOT EXISTS feedback (
+-        id            INTEGER PRIMARY KEY AUTOINCREMENT,
+-        target_type   TEXT NOT NULL DEFAULT 'recommendation',
+-        target_id     TEXT NOT NULL DEFAULT '',
+-        target_slug   TEXT NOT NULL DEFAULT '',
+-        subject_slug  TEXT NOT NULL DEFAULT '',
+-        topic_slug    TEXT NOT NULL DEFAULT '',
+-        rating        INTEGER,
+-        answer        TEXT NOT NULL DEFAULT '',
+-        reason        TEXT NOT NULL DEFAULT '',
+-        difficulty    TEXT NOT NULL DEFAULT '',
+-        length        TEXT NOT NULL DEFAULT '',
+-        followed      INTEGER,
+-        completed     INTEGER,
+-        time_spent_s  INTEGER NOT NULL DEFAULT 0,
+-        correction    TEXT NOT NULL DEFAULT '',
+-        day           TEXT NOT NULL,
+-        payload       TEXT NOT NULL DEFAULT '{}',
+-        created_at    TEXT NOT NULL
+-    )""",
+-    "CREATE INDEX IF NOT EXISTS idx_feedback_target ON feedback(target_type, target_slug)",
+-    "CREATE INDEX IF NOT EXISTS idx_feedback_day ON feedback(day)",
+-    """CREATE TABLE IF NOT EXISTS learned_weights (
+-        scope      TEXT NOT NULL,
+-        key        TEXT NOT NULL,
+-        weight     REAL NOT NULL DEFAULT 1.0,
+-        samples    INTEGER NOT NULL DEFAULT 0,
+-        updated_at TEXT,
+-        PRIMARY KEY (scope, key)
+-    )""",
+-]
+-
+-# Version 7 - richer attempt telemetry, quiz modes, mission log.
+-M7 = [
+-    ("column", "attempts", "seconds", "INTEGER NOT NULL DEFAULT 0"),
+-    ("column", "attempts", "confidence", "INTEGER"),
+-    ("column", "attempts", "mistake_kind", "TEXT NOT NULL DEFAULT ''"),
+-    ("column", "attempts", "reattempt", "INTEGER NOT NULL DEFAULT 0"),
+-    ("column", "attempts", "dpp_set_id", "INTEGER"),
+-    ("column", "attempts", "plan_day", "TEXT NOT NULL DEFAULT ''"),
+-    ("column", "quizzes", "mode", "TEXT NOT NULL DEFAULT 'practice'"),
+-    ("column", "quizzes", "plan_day", "TEXT NOT NULL DEFAULT ''"),
+-    ("column", "quizzes", "dpp_set_id", "INTEGER"),
+-    ("column", "quizzes", "reason", "TEXT NOT NULL DEFAULT ''"),
+-    ("column", "doubts", "helped", "INTEGER"),
+-    ("column", "doubts", "retried_at", "TEXT"),
+-    ("column", "doubts", "resolved_at", "TEXT"),
+-    ("column", "topics", "confidence", "INTEGER"),
+-    ("column", "topics", "last_revised", "TEXT"),
+-    "CREATE INDEX IF NOT EXISTS idx_attempts_question ON attempts(question_id)",
+-    "CREATE INDEX IF NOT EXISTS idx_attempts_subject ON attempts(subject_slug)",
+-    "CREATE INDEX IF NOT EXISTS idx_sessions_kind ON sessions(kind)",
+-]
+-
+-# Version 8 - readiness snapshots keep their component breakdown, so
+-# "why did the score move" can be answered from history instead of guessed.
+-M8 = [
+-    ("column", "readiness_log", "coverage", "REAL"),
+-    ("column", "readiness_log", "accuracy", "REAL"),
+-    ("column", "readiness_log", "volume", "REAL"),
+-    ("column", "readiness_log", "consistency", "REAL"),
+-    ("column", "readiness_log", "confidence", "REAL"),
+-    ("column", "readiness_log", "mastery", "REAL"),
+-]
+-
+-MIGRATIONS = [
+-    (3, M3),
+-    (4, M4),
+-    (5, M5),
+-    (6, M6),
+-    (7, M7),
+-    (8, M8),
+-]
+-
+-
+-# ---------------------------------------------------------------------------
+-# connection
+-# ---------------------------------------------------------------------------
+-def connect():
+-    os.makedirs(DATA_DIR, exist_ok=True)
+-    conn = sqlite3.connect(DB_PATH, timeout=20)
+-    conn.row_factory = sqlite3.Row
+-    conn.execute("PRAGMA foreign_keys = ON")
+-    conn.execute("PRAGMA journal_mode = WAL")
+-    return conn
+-
+-
+-def _table_exists(conn, table):
+-    return (
+-        conn.execute(
+-            "SELECT 1 FROM sqlite_master WHERE type='table' AND name = ?", (table,)
+-        ).fetchone()
+-        is not None
+-    )
+-
+-
+-def _columns(conn, table):
+-    if not _table_exists(conn, table):
+-        return set()
+-    return {r["name"] for r in conn.execute("PRAGMA table_info(%s)" % table)}
+-
+-
+-def _ensure_column(conn, table, column, decl):
+-    """ALTER TABLE ADD COLUMN, but only when the column is genuinely missing."""
+-    if not _table_exists(conn, table):
+-        return False
+-    if column in _columns(conn, table):
+-        return False
+-    conn.execute("ALTER TABLE %s ADD COLUMN %s %s" % (table, column, decl))
+-    return True
+-
+-
+-def current_version(conn):
+-    if not _table_exists(conn, "schema_meta"):
+-        return 0
+-    row = conn.execute(
+-        "SELECT value FROM schema_meta WHERE key = 'schema_version'"
+-    ).fetchone()
+-    if row is None:
+-        return 2 if _table_exists(conn, "sessions") else 0
+-    try:
+-        return int(row["value"])
+-    except (TypeError, ValueError):
+-        return 0
+-
+-
+-def _set_version(conn, version):
+-    conn.execute(
+-        "INSERT INTO schema_meta (key, value) VALUES ('schema_version', ?)"
+-        " ON CONFLICT(key) DO UPDATE SET value = excluded.value",
+-        (str(version),),
+-    )
+-
+-
+-def migrate(conn, verbose=False):
+-    """Bring the database up to SCHEMA_VERSION. Returns the list of steps run."""
+-    from datetime import datetime
+-
+-    applied = []
+-    version = current_version(conn)
+-    with conn:
+-        for target, steps in MIGRATIONS:
+-            if version >= target:
+-                continue
+-            for step in steps:
+-                if isinstance(step, tuple) and step and step[0] == "column":
+-                    _, table, column, decl = step
+-                    _ensure_column(conn, table, column, decl)
+-                else:
+-                    conn.execute(step)
+-            version = target
+-            applied.append(target)
+-            if verbose:
+-                print("  migrated schema to v%d" % target)
+-        _set_version(conn, max(version, SCHEMA_VERSION))
+-        conn.execute(
+-            "INSERT INTO schema_meta (key, value) VALUES ('migrated_at', ?)"
+-            " ON CONFLICT(key) DO UPDATE SET value = excluded.value",
+-            (datetime.now().isoformat(timespec="seconds"),),
+-        )
+-    return applied
+-
+-
+-def init(verbose=False):
+-    """Open the database, create the base schema, then run migrations."""
+-    conn = connect()
+-    with conn:
+-        conn.executescript(SCHEMA)
+-    migrate(conn, verbose=verbose)
+-    return conn
+-
+-
+-def health(conn):
+-    """A small report used by the startup banner and /api/health."""
+-    tables = {
+-        r["name"]
+-        for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
+-    }
+-    size = os.path.getsize(DB_PATH) if os.path.isfile(DB_PATH) else 0
+-    return dict(
+-        path=DB_PATH,
+-        size_bytes=size,
+-        size_h=(
+-            "%.1f MB" % (size / 1048576.0) if size > 1048576 else "%d KB" % (size // 1024)
+-        ),
+-        schema_version=current_version(conn),
+-        expected_version=SCHEMA_VERSION,
+-        up_to_date=current_version(conn) >= SCHEMA_VERSION,
+-        tables=sorted(tables),
+-        table_count=len(tables),
+-    )
+-
+-
+-# ---------------------------------------------------------------------------
+-# settings helpers
+-# ---------------------------------------------------------------------------
+-def get_settings(conn):
+-    return {r["key"]: r["value"] for r in conn.execute("SELECT key, value FROM settings")}
+-
+-
+-def put_setting(conn, key, value):
+-    conn.execute(
+-        "INSERT INTO settings (key, value) VALUES (?, ?) "
+-        "ON CONFLICT(key) DO UPDATE SET value = excluded.value",
+-        (key, str(value)),
+-    )
+-
+-
+-def setting_int(settings, key, default):
+-    try:
+-        return int(float(settings.get(key, default)))
+-    except (TypeError, ValueError):
+-        return default
+-
+-
+-def setting_float(settings, key, default):
+-    try:
+-        return float(settings.get(key, default))
+-    except (TypeError, ValueError):
+-        return default
+-
+-
+-def setting_bool(settings, key, default=False):
+-    raw = str(settings.get(key, default)).strip().lower()
+-    return raw in ("1", "true", "yes", "on")
++"""SQLite connection handling, schema and versioned migrations.
++
++This module owns every table in GitGrind. Two things live here:
++
++* ``SCHEMA``  - the base tables that existed in v2. Still created with
++  ``IF NOT EXISTS`` so a fresh install works in one shot.
++* ``MIGRATIONS`` - an ordered list of upgrade steps. Each step has a version
++  number and a list of statements. The applied version is recorded in the
++  ``schema_meta`` table, so an old ``data/gitgrind.db`` upgrades in place
++  without losing a single logged minute.
++
++Adding a table or a column means appending a new migration. Never edit an old
++one: someone's database has already run it.
++"""
++
++import os
++import sqlite3
++import sys
++import threading
++
++# --------------------------------------------------------------------------
++# Where things live.
++#
++# Running from source these are all the same folder. Inside a PyInstaller or
++# Nuitka build they are not, and getting this wrong is fatal: the bundle is
++# unpacked into a temporary directory that is deleted on exit, so anything
++# written there (your database, any answer you looked up) would vanish every
++# time you closed the app.
++#
++#   ASSET_DIR  read-only, inside the bundle: static/ and the shipped content/
++#   APP_DIR    writable, next to the executable: data/ and your edited content/
++# --------------------------------------------------------------------------
++FROZEN = bool(getattr(sys, "frozen", False))
++ASSET_DIR = getattr(sys, "_MEIPASS", None) or os.path.dirname(
++    os.path.dirname(os.path.abspath(__file__))
++)
++
++
++def _writable(path):
++    """Can we actually create files here? Program Files says no."""
++    try:
++        os.makedirs(path, exist_ok=True)
++        probe = os.path.join(path, ".gitgrind-write-test")
++        with open(probe, "w") as fh:
++            fh.write("ok")
++        os.remove(probe)
++        return True
++    except OSError:
++        return False
++
++
++def _pick_app_dir():
++    """Where the database and the editable content/ should live.
++
++    Normally this is the folder holding the executable, which keeps the app and
++    its data together and makes backing up a matter of copying one folder. But a
++    packaged app is often dropped somewhere unwritable - Program Files, a
++    read-only share, a locked-down work machine - and silently failing to save a
++    session is the worst possible outcome. So probe first, and fall back to the
++    per-user application data folder when the exe's own folder is not writable.
++    """
++    if not FROZEN:
++        return ASSET_DIR
++
++    beside_exe = os.path.dirname(os.path.abspath(sys.executable))
++    if _writable(beside_exe):
++        return beside_exe
++
++    if os.name == "nt":
++        root = os.environ.get("LOCALAPPDATA") or os.path.expanduser("~")
++    elif sys.platform == "darwin":
++        root = os.path.join(os.path.expanduser("~"), "Library", "Application Support")
++    else:
++        root = os.environ.get("XDG_DATA_HOME") or os.path.join(
++            os.path.expanduser("~"), ".local", "share"
++        )
++
++    fallback = os.path.join(root, "GitGrind")
++    if _writable(fallback):
++        return fallback
++
++    # Last resort: the home directory. If even this fails the app will report the
++    # error on startup rather than pretending to work.
++    return os.path.join(os.path.expanduser("~"), "GitGrind")
++
++
++APP_DIR = _pick_app_dir()
++
++# BASE_DIR stays the name every other module already uses, and always points at
++# the writable root.
++BASE_DIR = APP_DIR
++DATA_DIR = os.path.join(BASE_DIR, "data")
++# GITGRIND_DB lets tools and tests point at a different file without touching
++# the real one. Unset, it is the normal location next to the app.
++DB_PATH = os.environ.get("GITGRIND_DB") or os.path.join(DATA_DIR, "gitgrind.db")
++
++# One writer at a time. SQLite handles the rest.
++LOCK = threading.RLock()
++
++SCHEMA_VERSION = 9
++
++SCHEMA = """
++CREATE TABLE IF NOT EXISTS schema_meta (
++    key   TEXT PRIMARY KEY,
++    value TEXT NOT NULL
++);
++
++CREATE TABLE IF NOT EXISTS subjects (
++    id          INTEGER PRIMARY KEY AUTOINCREMENT,
++    slug        TEXT NOT NULL UNIQUE,
++    name        TEXT NOT NULL,
++    grp         TEXT NOT NULL DEFAULT 'core',
++    marks       INTEGER NOT NULL DEFAULT 5,
++    target_mins INTEGER NOT NULL DEFAULT 3000,
++    sort_order  INTEGER NOT NULL DEFAULT 0,
++    archived    INTEGER NOT NULL DEFAULT 0,
++    created_at  TEXT NOT NULL
++);
++
++CREATE TABLE IF NOT EXISTS topics (
++    id         INTEGER PRIMARY KEY AUTOINCREMENT,
++    subject_id INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
++    slug       TEXT NOT NULL,
++    name       TEXT NOT NULL,
++    weight     INTEGER NOT NULL DEFAULT 1,
++    status     TEXT NOT NULL DEFAULT 'pending',
++    sort_order INTEGER NOT NULL DEFAULT 0,
++    updated_at TEXT,
++    UNIQUE (subject_id, slug)
++);
++CREATE INDEX IF NOT EXISTS idx_topics_subject ON topics(subject_id);
++
++CREATE TABLE IF NOT EXISTS sessions (
++    id         INTEGER PRIMARY KEY AUTOINCREMENT,
++    subject_id INTEGER NOT NULL REFERENCES subjects(id) ON DELETE CASCADE,
++    day        TEXT NOT NULL,
++    minutes    INTEGER NOT NULL DEFAULT 0,
++    kind       TEXT NOT NULL DEFAULT 'concept',
++    note       TEXT NOT NULL DEFAULT '',
++    hour       INTEGER NOT NULL DEFAULT 12,
++    created_at TEXT NOT NULL
++);
++CREATE INDEX IF NOT EXISTS idx_sessions_day ON sessions(day);
++CREATE INDEX IF NOT EXISTS idx_sessions_subject ON sessions(subject_id);
++
++CREATE TABLE IF NOT EXISTS session_topics (
++    session_id INTEGER NOT NULL REFERENCES sessions(id) ON DELETE CASCADE,
++    topic_id   INTEGER NOT NULL REFERENCES topics(id) ON DELETE CASCADE,
++    PRIMARY KEY (session_id, topic_id)
++);
++
++CREATE TABLE IF NOT EXISTS quizzes (
++    id            INTEGER PRIMARY KEY AUTOINCREMENT,
++    source        TEXT NOT NULL DEFAULT 'session',
++    subject_id    INTEGER REFERENCES subjects(id) ON DELETE SET NULL,
++    session_id    INTEGER REFERENCES sessions(id) ON DELETE SET NULL,
++    day           TEXT NOT NULL,
++    topic_slugs   TEXT NOT NULL DEFAULT '',
++    total_marks   INTEGER NOT NULL DEFAULT 0,
++    scored_marks  REAL NOT NULL DEFAULT 0,
++    question_count INTEGER NOT NULL DEFAULT 0,
++    correct_count INTEGER NOT NULL DEFAULT 0,
++    duration_s    INTEGER NOT NULL DEFAULT 0,
++    finished_at   TEXT,
++    created_at    TEXT NOT NULL
++);
++CREATE INDEX IF NOT EXISTS idx_quizzes_day ON quizzes(day);
++
++CREATE TABLE IF NOT EXISTS attempts (
++    id          INTEGER PRIMARY KEY AUTOINCREMENT,
++    quiz_id     INTEGER REFERENCES quizzes(id) ON DELETE CASCADE,
++    question_id TEXT NOT NULL,
++    subject_slug TEXT NOT NULL DEFAULT '',
++    topic_slug  TEXT NOT NULL DEFAULT '',
++    source      TEXT NOT NULL DEFAULT 'quiz',
++    response    TEXT NOT NULL DEFAULT '',
++    correct     INTEGER NOT NULL DEFAULT 0,
++    marks_total REAL NOT NULL DEFAULT 0,
++    marks_got   REAL NOT NULL DEFAULT 0,
++    day         TEXT NOT NULL,
++    created_at  TEXT NOT NULL
++);
++CREATE INDEX IF NOT EXISTS idx_attempts_day ON attempts(day);
++CREATE INDEX IF NOT EXISTS idx_attempts_topic ON attempts(topic_slug);
++
++CREATE TABLE IF NOT EXISTS daily_question (
++    day         TEXT PRIMARY KEY,
++    question_id TEXT NOT NULL,
++    reason      TEXT NOT NULL DEFAULT '',
++    served_at   TEXT NOT NULL,
++    answered_at TEXT,
++    response    TEXT,
++    correct     INTEGER
++);
++
++CREATE TABLE IF NOT EXISTS readiness_log (
++    day         TEXT PRIMARY KEY,
++    index_value REAL NOT NULL,
++    est_score   REAL NOT NULL,
++    percentile  REAL NOT NULL,
++    behind_you  INTEGER NOT NULL DEFAULT 0,
++    ahead_of_you INTEGER NOT NULL DEFAULT 0,
++    created_at  TEXT NOT NULL,
++    updated_at  TEXT NOT NULL
++);
++
++CREATE TABLE IF NOT EXISTS unlocked (
++    code        TEXT PRIMARY KEY,
++    unlocked_at TEXT NOT NULL
++);
++
++CREATE TABLE IF NOT EXISTS doubts (
++    id          INTEGER PRIMARY KEY AUTOINCREMENT,
++    subject_slug TEXT NOT NULL DEFAULT '',
++    topic_slug  TEXT NOT NULL DEFAULT '',
++    question_id TEXT NOT NULL DEFAULT '',
++    body        TEXT NOT NULL,
++    prompt      TEXT NOT NULL DEFAULT '',
++    provider    TEXT NOT NULL DEFAULT '',
++    answer      TEXT NOT NULL DEFAULT '',
++    resolved    INTEGER NOT NULL DEFAULT 0,
++    created_at  TEXT NOT NULL
++);
++
++CREATE TABLE IF NOT EXISTS settings (
++    key   TEXT PRIMARY KEY,
++    value TEXT NOT NULL
++);
++"""
++
++
++# ---------------------------------------------------------------------------
++# migrations
++# ---------------------------------------------------------------------------
++# Version 3 - the question bank becomes a first-class citizen.
++M3 = [
++    """CREATE TABLE IF NOT EXISTS question_sources (
++        slug         TEXT PRIMARY KEY,
++        name         TEXT NOT NULL,
++        kind         TEXT NOT NULL DEFAULT 'manual',
++        url          TEXT NOT NULL DEFAULT '',
++        licence_note TEXT NOT NULL DEFAULT '',
++        trust        REAL NOT NULL DEFAULT 0.7,
++        questions    INTEGER NOT NULL DEFAULT 0,
++        last_fetch_at TEXT,
++        last_import_at TEXT,
++        created_at   TEXT NOT NULL
++    )""",
++    """CREATE TABLE IF NOT EXISTS question_tags (
++        question_id TEXT NOT NULL,
++        tag         TEXT NOT NULL,
++        origin      TEXT NOT NULL DEFAULT 'import',
++        PRIMARY KEY (question_id, tag)
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_qtags_tag ON question_tags(tag)",
++    """CREATE TABLE IF NOT EXISTS question_imports (
++        id           INTEGER PRIMARY KEY AUTOINCREMENT,
++        source_slug  TEXT NOT NULL DEFAULT '',
++        input_path   TEXT NOT NULL DEFAULT '',
++        manifest     TEXT NOT NULL DEFAULT '',
++        dry_run      INTEGER NOT NULL DEFAULT 1,
++        found        INTEGER NOT NULL DEFAULT 0,
++        matched      INTEGER NOT NULL DEFAULT 0,
++        needs_review INTEGER NOT NULL DEFAULT 0,
++        rejected     INTEGER NOT NULL DEFAULT 0,
++        duplicates   INTEGER NOT NULL DEFAULT 0,
++        promoted     INTEGER NOT NULL DEFAULT 0,
++        status       TEXT NOT NULL DEFAULT 'done',
++        log          TEXT NOT NULL DEFAULT '',
++        started_at   TEXT NOT NULL,
++        finished_at  TEXT
++    )""",
++    """CREATE TABLE IF NOT EXISTS question_review (
++        id          INTEGER PRIMARY KEY AUTOINCREMENT,
++        import_id   INTEGER,
++        source_slug TEXT NOT NULL DEFAULT '',
++        question_id TEXT NOT NULL DEFAULT '',
++        payload     TEXT NOT NULL,
++        confidence  REAL NOT NULL DEFAULT 0,
++        issues      TEXT NOT NULL DEFAULT '',
++        status      TEXT NOT NULL DEFAULT 'pending',
++        notes       TEXT NOT NULL DEFAULT '',
++        created_at  TEXT NOT NULL,
++        decided_at  TEXT
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_qreview_status ON question_review(status)",
++    """CREATE TABLE IF NOT EXISTS topic_alias (
++        alias        TEXT NOT NULL,
++        subject_slug TEXT NOT NULL DEFAULT '',
++        topic_slug   TEXT NOT NULL DEFAULT '',
++        source_slug  TEXT NOT NULL DEFAULT '',
++        PRIMARY KEY (alias, subject_slug)
++    )""",
++    """CREATE TABLE IF NOT EXISTS question_stats (
++        question_id     TEXT PRIMARY KEY,
++        subject_slug    TEXT NOT NULL DEFAULT '',
++        topic_slug      TEXT NOT NULL DEFAULT '',
++        usage_count     INTEGER NOT NULL DEFAULT 0,
++        correct_count   INTEGER NOT NULL DEFAULT 0,
++        reattempts      INTEGER NOT NULL DEFAULT 0,
++        last_attempt_day TEXT,
++        last_correct_day TEXT,
++        last_wrong_day  TEXT,
++        avg_seconds     REAL NOT NULL DEFAULT 0,
++        avg_confidence  REAL NOT NULL DEFAULT 0,
++        mistake_kind    TEXT NOT NULL DEFAULT '',
++        saved           INTEGER NOT NULL DEFAULT 0,
++        updated_at      TEXT
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_qstats_topic ON question_stats(topic_slug)",
++    "CREATE INDEX IF NOT EXISTS idx_qstats_last ON question_stats(last_attempt_day)",
++]
++
++# Version 4 - retention: spaced repetition queue and topic prerequisites.
++M4 = [
++    """CREATE TABLE IF NOT EXISTS revision_queue (
++        id            INTEGER PRIMARY KEY AUTOINCREMENT,
++        item_type     TEXT NOT NULL DEFAULT 'topic',
++        item_key      TEXT NOT NULL,
++        subject_slug  TEXT NOT NULL DEFAULT '',
++        topic_slug    TEXT NOT NULL DEFAULT '',
++        label         TEXT NOT NULL DEFAULT '',
++        due_day       TEXT NOT NULL,
++        interval_days REAL NOT NULL DEFAULT 1,
++        ease          REAL NOT NULL DEFAULT 2.5,
++        reps          INTEGER NOT NULL DEFAULT 0,
++        lapses        INTEGER NOT NULL DEFAULT 0,
++        last_review_day TEXT,
++        last_result   TEXT NOT NULL DEFAULT '',
++        strength      REAL NOT NULL DEFAULT 0.5,
++        active        INTEGER NOT NULL DEFAULT 1,
++        created_at    TEXT NOT NULL,
++        updated_at    TEXT NOT NULL,
++        UNIQUE (item_type, item_key)
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_revq_due ON revision_queue(due_day, active)",
++    """CREATE TABLE IF NOT EXISTS topic_prerequisites (
++        topic_slug   TEXT NOT NULL,
++        prereq_slug  TEXT NOT NULL,
++        strength     REAL NOT NULL DEFAULT 1.0,
++        PRIMARY KEY (topic_slug, prereq_slug)
++    )""",
++]
++
++# Version 5 - planning: goals, daily plans, DPP sets.
++M5 = [
++    """CREATE TABLE IF NOT EXISTS user_goals (
++        id          INTEGER PRIMARY KEY AUTOINCREMENT,
++        slug        TEXT NOT NULL,
++        kind        TEXT NOT NULL DEFAULT 'metric',
++        label       TEXT NOT NULL DEFAULT '',
++        target_value REAL NOT NULL DEFAULT 0,
++        horizon_day TEXT,
++        note        TEXT NOT NULL DEFAULT '',
++        active      INTEGER NOT NULL DEFAULT 1,
++        achieved_at TEXT,
++        created_at  TEXT NOT NULL
++    )""",
++    """CREATE TABLE IF NOT EXISTS daily_plans (
++        day            TEXT PRIMARY KEY,
++        generated_at   TEXT NOT NULL,
++        target_mins    INTEGER NOT NULL DEFAULT 240,
++        horizon_days   INTEGER,
++        blocks         TEXT NOT NULL DEFAULT '[]',
++        reason         TEXT NOT NULL DEFAULT '',
++        status         TEXT NOT NULL DEFAULT 'open',
++        done_blocks    TEXT NOT NULL DEFAULT '[]',
++        rating         INTEGER,
++        notes          TEXT NOT NULL DEFAULT '',
++        updated_at     TEXT
++    )""",
++    """CREATE TABLE IF NOT EXISTS dpp_sets (
++        id           INTEGER PRIMARY KEY AUTOINCREMENT,
++        plan_day     TEXT NOT NULL DEFAULT '',
++        block_key    TEXT NOT NULL DEFAULT '',
++        mode         TEXT NOT NULL DEFAULT 'dpp',
++        label        TEXT NOT NULL DEFAULT '',
++        reason       TEXT NOT NULL DEFAULT '',
++        fixing       TEXT NOT NULL DEFAULT '',
++        aim          TEXT NOT NULL DEFAULT '',
++        target_topic TEXT NOT NULL DEFAULT '',
++        question_ids TEXT NOT NULL DEFAULT '[]',
++        quiz_id      INTEGER,
++        total        INTEGER NOT NULL DEFAULT 0,
++        correct      INTEGER NOT NULL DEFAULT 0,
++        generated_at TEXT NOT NULL,
++        started_at   TEXT,
++        finished_at  TEXT
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_dpp_day ON dpp_sets(plan_day)",
++]
++
++# Version 6 - the feedback loop and recommendation ledger.
++M6 = [
++    """CREATE TABLE IF NOT EXISTS recommendations (
++        id          INTEGER PRIMARY KEY AUTOINCREMENT,
++        day         TEXT NOT NULL,
++        slug        TEXT NOT NULL,
++        kind        TEXT NOT NULL DEFAULT 'study',
++        title       TEXT NOT NULL DEFAULT '',
++        detail      TEXT NOT NULL DEFAULT '',
++        reason      TEXT NOT NULL DEFAULT '',
++        expected    TEXT NOT NULL DEFAULT '',
++        subject_slug TEXT NOT NULL DEFAULT '',
++        topic_slug  TEXT NOT NULL DEFAULT '',
++        urgency     REAL NOT NULL DEFAULT 0,
++        score       REAL NOT NULL DEFAULT 0,
++        payload     TEXT NOT NULL DEFAULT '{}',
++        shown_at    TEXT NOT NULL,
++        acted_at    TEXT,
++        dismissed_at TEXT,
++        outcome     TEXT NOT NULL DEFAULT ''
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_recs_day ON recommendations(day)",
++    "CREATE INDEX IF NOT EXISTS idx_recs_slug ON recommendations(slug)",
++    """CREATE TABLE IF NOT EXISTS feedback (
++        id            INTEGER PRIMARY KEY AUTOINCREMENT,
++        target_type   TEXT NOT NULL DEFAULT 'recommendation',
++        target_id     TEXT NOT NULL DEFAULT '',
++        target_slug   TEXT NOT NULL DEFAULT '',
++        subject_slug  TEXT NOT NULL DEFAULT '',
++        topic_slug    TEXT NOT NULL DEFAULT '',
++        rating        INTEGER,
++        answer        TEXT NOT NULL DEFAULT '',
++        reason        TEXT NOT NULL DEFAULT '',
++        difficulty    TEXT NOT NULL DEFAULT '',
++        length        TEXT NOT NULL DEFAULT '',
++        followed      INTEGER,
++        completed     INTEGER,
++        time_spent_s  INTEGER NOT NULL DEFAULT 0,
++        correction    TEXT NOT NULL DEFAULT '',
++        day           TEXT NOT NULL,
++        payload       TEXT NOT NULL DEFAULT '{}',
++        created_at    TEXT NOT NULL
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_feedback_target ON feedback(target_type, target_slug)",
++    "CREATE INDEX IF NOT EXISTS idx_feedback_day ON feedback(day)",
++    """CREATE TABLE IF NOT EXISTS learned_weights (
++        scope      TEXT NOT NULL,
++        key        TEXT NOT NULL,
++        weight     REAL NOT NULL DEFAULT 1.0,
++        samples    INTEGER NOT NULL DEFAULT 0,
++        updated_at TEXT,
++        PRIMARY KEY (scope, key)
++    )""",
++]
++
++# Version 7 - richer attempt telemetry, quiz modes, mission log.
++M7 = [
++    ("column", "attempts", "seconds", "INTEGER NOT NULL DEFAULT 0"),
++    ("column", "attempts", "confidence", "INTEGER"),
++    ("column", "attempts", "mistake_kind", "TEXT NOT NULL DEFAULT ''"),
++    ("column", "attempts", "reattempt", "INTEGER NOT NULL DEFAULT 0"),
++    ("column", "attempts", "dpp_set_id", "INTEGER"),
++    ("column", "attempts", "plan_day", "TEXT NOT NULL DEFAULT ''"),
++    ("column", "quizzes", "mode", "TEXT NOT NULL DEFAULT 'practice'"),
++    ("column", "quizzes", "plan_day", "TEXT NOT NULL DEFAULT ''"),
++    ("column", "quizzes", "dpp_set_id", "INTEGER"),
++    ("column", "quizzes", "reason", "TEXT NOT NULL DEFAULT ''"),
++    ("column", "doubts", "helped", "INTEGER"),
++    ("column", "doubts", "retried_at", "TEXT"),
++    ("column", "doubts", "resolved_at", "TEXT"),
++    ("column", "topics", "confidence", "INTEGER"),
++    ("column", "topics", "last_revised", "TEXT"),
++    "CREATE INDEX IF NOT EXISTS idx_attempts_question ON attempts(question_id)",
++    "CREATE INDEX IF NOT EXISTS idx_attempts_subject ON attempts(subject_slug)",
++    "CREATE INDEX IF NOT EXISTS idx_sessions_kind ON sessions(kind)",
++]
++
++# Version 8 - readiness snapshots keep their component breakdown, so
++# "why did the score move" can be answered from history instead of guessed.
++M8 = [
++    ("column", "readiness_log", "coverage", "REAL"),
++    ("column", "readiness_log", "accuracy", "REAL"),
++    ("column", "readiness_log", "volume", "REAL"),
++    ("column", "readiness_log", "consistency", "REAL"),
++    ("column", "readiness_log", "confidence", "REAL"),
++    ("column", "readiness_log", "mastery", "REAL"),
++]
++
++# Version 9 - questions become grouped examination units. Papers are content, so
++# these tables are a mirror of content/papers.json plus what the banks already
++# record in each question's origin block; content.sync_papers() fills them.
++M9 = [
++    """CREATE TABLE IF NOT EXISTS papers (
++        id             INTEGER PRIMARY KEY AUTOINCREMENT,
++        slug           TEXT NOT NULL UNIQUE,
++        exam           TEXT NOT NULL DEFAULT 'GATE CSE',
++        year           INTEGER NOT NULL,
++        session        TEXT NOT NULL DEFAULT '',
++        code           TEXT NOT NULL DEFAULT '',
++        name           TEXT NOT NULL DEFAULT '',
++        total_marks    INTEGER NOT NULL DEFAULT 100,
++        duration_mins  INTEGER NOT NULL DEFAULT 180,
++        question_count INTEGER NOT NULL DEFAULT 0,
++        key_url        TEXT NOT NULL DEFAULT '',
++        key_note       TEXT NOT NULL DEFAULT '',
++        source_slug    TEXT NOT NULL DEFAULT '',
++        complete       INTEGER NOT NULL DEFAULT 0,
++        created_at     TEXT NOT NULL,
++        updated_at     TEXT
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_papers_year ON papers(year)",
++    """CREATE TABLE IF NOT EXISTS paper_sections (
++        paper_id       INTEGER NOT NULL REFERENCES papers(id) ON DELETE CASCADE,
++        section        TEXT NOT NULL,
++        label          TEXT NOT NULL DEFAULT '',
++        total_marks    INTEGER NOT NULL DEFAULT 0,
++        question_count INTEGER NOT NULL DEFAULT 0,
++        sort_order     INTEGER NOT NULL DEFAULT 0,
++        PRIMARY KEY (paper_id, section)
++    )""",
++    """CREATE TABLE IF NOT EXISTS paper_questions (
++        paper_id    INTEGER NOT NULL REFERENCES papers(id) ON DELETE CASCADE,
++        question_id TEXT NOT NULL,
++        position    INTEGER NOT NULL DEFAULT 0,
++        section     TEXT NOT NULL DEFAULT 'core',
++        paper_qno   TEXT NOT NULL DEFAULT '',
++        marks       REAL NOT NULL DEFAULT 0,
++        PRIMARY KEY (paper_id, question_id)
++    )""",
++    "CREATE INDEX IF NOT EXISTS idx_pq_question ON paper_questions(question_id)",
++    "CREATE INDEX IF NOT EXISTS idx_pq_order ON paper_questions(paper_id, position)",
++    ("column", "quizzes", "paper_id", "INTEGER"),
++    ("column", "attempts", "paper_id", "INTEGER"),
++    ("column", "attempts", "position_in_paper", "INTEGER"),
++]
++
++MIGRATIONS = [
++    (3, M3),
++    (4, M4),
++    (5, M5),
++    (6, M6),
++    (7, M7),
++    (8, M8),
++    (9, M9),
++]
++
++
++# ---------------------------------------------------------------------------
++# connection
++# ---------------------------------------------------------------------------
++def connect():
++    os.makedirs(DATA_DIR, exist_ok=True)
++    conn = sqlite3.connect(DB_PATH, timeout=20)
++    conn.row_factory = sqlite3.Row
++    conn.execute("PRAGMA foreign_keys = ON")
++    conn.execute("PRAGMA journal_mode = WAL")
++    return conn
++
++
++def _table_exists(conn, table):
++    return (
++        conn.execute(
++            "SELECT 1 FROM sqlite_master WHERE type='table' AND name = ?", (table,)
++        ).fetchone()
++        is not None
++    )
++
++
++def _columns(conn, table):
++    if not _table_exists(conn, table):
++        return set()
++    return {r["name"] for r in conn.execute("PRAGMA table_info(%s)" % table)}
++
++
++def _ensure_column(conn, table, column, decl):
++    """ALTER TABLE ADD COLUMN, but only when the column is genuinely missing."""
++    if not _table_exists(conn, table):
++        return False
++    if column in _columns(conn, table):
++        return False
++    conn.execute("ALTER TABLE %s ADD COLUMN %s %s" % (table, column, decl))
++    return True
++
++
++def current_version(conn):
++    if not _table_exists(conn, "schema_meta"):
++        return 0
++    row = conn.execute(
++        "SELECT value FROM schema_meta WHERE key = 'schema_version'"
++    ).fetchone()
++    if row is None:
++        return 2 if _table_exists(conn, "sessions") else 0
++    try:
++        return int(row["value"])
++    except (TypeError, ValueError):
++        return 0
++
++
++def _set_version(conn, version):
++    conn.execute(
++        "INSERT INTO schema_meta (key, value) VALUES ('schema_version', ?)"
++        " ON CONFLICT(key) DO UPDATE SET value = excluded.value",
++        (str(version),),
++    )
++
++
++def migrate(conn, verbose=False):
++    """Bring the database up to SCHEMA_VERSION. Returns the list of steps run."""
++    from datetime import datetime
++
++    applied = []
++    version = current_version(conn)
++    with conn:
++        for target, steps in MIGRATIONS:
++            if version >= target:
++                continue
++            for step in steps:
++                if isinstance(step, tuple) and step and step[0] == "column":
++                    _, table, column, decl = step
++                    _ensure_column(conn, table, column, decl)
++                else:
++                    conn.execute(step)
++            version = target
++            applied.append(target)
++            if verbose:
++                print("  migrated schema to v%d" % target)
++        _set_version(conn, max(version, SCHEMA_VERSION))
++        conn.execute(
++            "INSERT INTO schema_meta (key, value) VALUES ('migrated_at', ?)"
++            " ON CONFLICT(key) DO UPDATE SET value = excluded.value",
++            (datetime.now().isoformat(timespec="seconds"),),
++        )
++    return applied
++
++
++def init(verbose=False):
++    """Open the database, create the base schema, then run migrations."""
++    conn = connect()
++    with conn:
++        conn.executescript(SCHEMA)
++    migrate(conn, verbose=verbose)
++    return conn
++
++
++def health(conn):
++    """A small report used by the startup banner and /api/health."""
++    tables = {
++        r["name"]
++        for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
++    }
++    size = os.path.getsize(DB_PATH) if os.path.isfile(DB_PATH) else 0
++    return dict(
++        path=DB_PATH,
++        size_bytes=size,
++        size_h=(
++            "%.1f MB" % (size / 1048576.0) if size > 1048576 else "%d KB" % (size // 1024)
++        ),
++        schema_version=current_version(conn),
++        expected_version=SCHEMA_VERSION,
++        up_to_date=current_version(conn) >= SCHEMA_VERSION,
++        tables=sorted(tables),
++        table_count=len(tables),
++    )
++
++
++# ---------------------------------------------------------------------------
++# settings helpers
++# ---------------------------------------------------------------------------
++def get_settings(conn):
++    return {r["key"]: r["value"] for r in conn.execute("SELECT key, value FROM settings")}
++
++
++def put_setting(conn, key, value):
++    conn.execute(
++        "INSERT INTO settings (key, value) VALUES (?, ?) "
++        "ON CONFLICT(key) DO UPDATE SET value = excluded.value",
++        (key, str(value)),
++    )
++
++
++def setting_int(settings, key, default):
++    try:
++        return int(float(settings.get(key, default)))
++    except (TypeError, ValueError):
++        return default
++
++
++def setting_float(settings, key, default):
++    try:
++        return float(settings.get(key, default))
++    except (TypeError, ValueError):
++        return default
++
++
++def setting_bool(settings, key, default=False):
++    raw = str(settings.get(key, default)).strip().lower()
++    return raw in ("1", "true", "yes", "on")
+--- a/core/content.py
++++ b/core/content.py
+@@ -305,6 +305,18 @@
+ 
+     _cache["bank"] = bank
+     _cache["sources"] = sources
++    # Paper membership is a property of the whole bank, not of one file: a
++    # question's position depends on every other question in the same paper. So
++    # it is stamped here, after every bank file has been read, rather than in
++    # _hydrate() which only ever sees one question at a time.
++    _cache.pop("papers", None)
++    _cache.pop("question_paper_index", None)
++    for qid, (slug, pos, section) in question_paper_index().items():
++        q = bank.get(qid)
++        if q is not None:
++            q["paper"] = slug
++            q["position_in_paper"] = pos
++            q["paper_section"] = section
+     return bank
+ 
+ 
+@@ -478,6 +490,7 @@
+         {},
+     )
+     broken, no_explain, untagged, pending = 0, 0, 0, 0
++    by_paper, no_paper = {}, 0
+     with_figures, figure_defects, figure_count = 0, 0, 0
+     pending_by_subject = {}
+     src = sources()
+@@ -492,6 +505,10 @@
+         year = q.get("paper_year") or q.get("year")
+         if year:
+             by_year[str(year)] = by_year.get(str(year), 0) + 1
++        if q.get("paper"):
++            by_paper[q["paper"]] = by_paper.get(q["paper"], 0) + 1
++        else:
++            no_paper += 1
+         figs = q.get("figure_assets") or []
+         if isinstance(figs, list) and figs:
+             with_figures += 1
+@@ -558,6 +575,9 @@
+         difficulties=by_diff,
+         kinds=by_kind,
+         years=dict(sorted(by_year.items())),
++        papers_total=len(by_paper),
++        papers=dict(sorted(by_paper.items())),
++        unmapped_to_paper=no_paper,
+         files=sorted({q["file"] for q in bank.values()}),
+         banks=sorted({q["bank"] for q in bank.values()}),
+         sources=[dict(s, files=len(s["files"])) for s in src.values()],
+@@ -568,6 +588,350 @@
+     )
+ 
+ 
++# ---------------------------------------------------------------------------
++# papers
++#
++# A paper is an examination unit: one sitting of one exam, with its own mark
++# total, duration and official answer key. Papers are content, not activity, so
++# content/papers.json is the source of truth for the things that cannot be
++# derived - paper code, printed mark total, duration, key URL - and everything
++# else is read back out of the banks, where each question's ``origin`` block
++# already records which exam and question number it came from.
++#
++# The DB tables (papers, paper_sections, paper_questions) are a mirror, filled by
++# sync_papers(). That keeps paper metadata diffable and shippable, and means a
++# user's database never holds paper facts that would be lost if it were rebuilt.
++# ---------------------------------------------------------------------------
++PAPERS_FILE = os.path.join(CONTENT_DIR, "papers.json")
++
++# The two sections every GATE paper has. GA is 15 marks of the 100; the rest is
++# the subject core. Stored per paper rather than derived from subjects.marks,
++# because the syllabus weights in subjects are an estimate that does not add to
++# 100 and must never be mistaken for what a paper actually printed.
++SECTION_LABELS = {"ga": "General Aptitude", "core": "Core"}
++SECTION_ORDER = {"ga": 0, "core": 1}
++DEFAULT_SECTION_MARKS = {"ga": 15, "core": 85}
++
++# Exam prefixes we accept. Anything else is a different branch's paper that
++# happens to be quoted in a CSE-facing bank, and folding it into a GATE CSE
++# paper would silently corrupt the reconstruction. Reject rather than guess.
++KNOWN_EXAMS = {
++    "gate cse": "GATE CSE",
++    "gate it": "GATE IT",
++    "gate da": "GATE DA",
++    "gate ds&ai": "GATE DS&AI",
++    "gate data science and artificial intelligence": "GATE DS&AI",
++}
++
++_EXAM_PIPE = re.compile(
++    r"^(?P<exam>[A-Za-z&.\s]+?)\s+(?P<year>(?:19|20)\d\d)"
++    r"(?P<mids>(?:\s*\|[^|]+)*?)\s*\|\s*Question:\s*(?P<qno>.+)$"
++)
++_SET = re.compile(r"Set[-\s]*(\d+)", re.I)
++_GA_MARK = re.compile(r"\|\s*GA\b", re.I)
++_LEADING_NUM = re.compile(r"(\d+(?:\.\d+)?)")
++
++
++def parse_exam_ref(raw):
++    """Turn an ``origin.exam`` string into paper coordinates, or None.
++
++    Handles the shapes the GO volumes actually use::
++
++        GATE CSE 2006 | Question: 17
++        GATE CSE 2015 | Set 2 | Question: 36
++        GATE CSE 2020 | GA | Question: 5
++        GATE Data Science and Artificial Intelligence 2024 | Sample Paper | ...
++
++    Returns None for anything else, and that is deliberate. Strings like
++    ``GATE2012 AR: GA-5`` are Architecture papers, ``GATE2010 MN`` is Mining;
++    a looser regex maps those onto GATE CSE and quietly invents questions that
++    were never in the CSE paper. An unmapped question keeps its bank entry and
++    simply belongs to no paper.
++    """
++    raw = (raw or "").strip()
++    if not raw or "Practice" in raw:
++        return None
++    m = _EXAM_PIPE.match(raw)
++    if not m:
++        return None
++    exam = KNOWN_EXAMS.get(" ".join(m.group("exam").split()).lower())
++    if not exam:
++        return None
++
++    mids = m.group("mids") or ""
++    session = ""
++    hit = _SET.search(mids)
++    if hit:
++        session = "set-%s" % hit.group(1)
++    if "Sample" in mids:
++        session = "sample"
++
++    return dict(
++        exam=exam,
++        year=int(m.group("year")),
++        session=session,
++        section="ga" if _GA_MARK.search(mids) else "core",
++        qno=m.group("qno").strip(),
++    )
++
++
++def paper_slug(exam, year, session=""):
++    bits = [exam.lower().replace("&", "and").replace(" ", "-"), str(year)]
++    if session:
++        bits.append(session)
++    return "-".join(bits)
++
++
++def paper_overrides(reload=False):
++    """{slug: {...}} from content/papers.json - the hand-maintained facts."""
++    if reload or "paper_overrides" not in _cache:
++        data = _read_json(PAPERS_FILE, {}) or {}
++        rows = data.get("papers", data if isinstance(data, list) else [])
++        out = {}
++        for row in rows:
++            slug = row.get("slug") or paper_slug(
++                row.get("exam", "GATE CSE"), row.get("year", 0), row.get("session", "")
++            )
++            out[slug] = dict(row, slug=slug)
++        _cache["paper_overrides"] = out
++    return _cache["paper_overrides"]
++
++
++def _qno_sort_key(qno):
++    """Order questions the way the paper printed them.
++
++    Question numbers are messy: 17, 1.19, 2-vii, 12b, "1.19, ISRO2016-31". The
++    leading number is the only part that orders reliably, so sort on that and
++    fall back to the id for a stable, reproducible order.
++    """
++    hit = _LEADING_NUM.search(qno or "")
++    return float(hit.group(1)) if hit else 9999.0
++
++
++def papers(reload=False):
++    """{slug: paper} reconstructed from the banks, enriched by papers.json.
++
++    Each paper carries ``questions``: the ordered list of
++    (question_id, section, paper_qno, marks) that make it up.
++    """
++    if not reload and "papers" in _cache:
++        return _cache["papers"]
++
++    bank = question_bank(reload)
++    over = paper_overrides(reload)
++    built = {}
++    for q in bank.values():
++        ref = parse_exam_ref((q.get("origin") or {}).get("exam"))
++        if not ref:
++            continue
++        slug = paper_slug(ref["exam"], ref["year"], ref["session"])
++        entry = built.setdefault(
++            slug,
++            dict(
++                slug=slug,
++                exam=ref["exam"],
++                year=ref["year"],
++                session=ref["session"],
++                source_slug=q.get("source", ""),
++                questions=[],
++                sections={},
++            ),
++        )
++        qno = (q.get("origin") or {}).get("paper_question") or ref["qno"]
++        entry["questions"].append(
++            dict(
++                id=q["id"],
++                section=ref["section"],
++                paper_qno=str(qno),
++                marks=float(q.get("marks") or 0),
++            )
++        )
++
++    for slug, p in built.items():
++        p["questions"].sort(
++            key=lambda r: (
++                SECTION_ORDER.get(r["section"], 9),
++                _qno_sort_key(r["paper_qno"]),
++                r["id"],
++            )
++        )
++        for pos, row in enumerate(p["questions"], 1):
++            row["position"] = pos
++            p["sections"].setdefault(row["section"], 0)
++            p["sections"][row["section"]] += 1
++
++        o = over.get(slug, {})
++        p["name"] = o.get("name") or (
++            "%s %d%s"
++            % (
++                p["exam"],
++                p["year"],
++                " " + p["session"].replace("-", " ").title() if p["session"] else "",
++            )
++        )
++        p["code"] = o.get("code", "")
++        p["total_marks"] = int(o.get("total_marks", 100))
++        p["duration_mins"] = int(o.get("duration_mins", 180))
++        p["key_url"] = o.get("key_url", "")
++        p["key_note"] = o.get("key_note", "")
++        p["question_count"] = len(p["questions"])
++        p["section_marks"] = dict(DEFAULT_SECTION_MARKS, **(o.get("section_marks") or {}))
++        # A paper is complete when the bank holds as many questions as the paper
++        # printed. Most do not: the GO volumes are subject-sliced, so a 65-mark
++        # paper often arrives with 50 questions. Serving an incomplete paper as a
++        # mock and calling it "out of 100" would be a lie, so flag it here and
++        # let the caller decide.
++        printed = o.get("printed_questions")
++        p["complete"] = 1 if printed and p["question_count"] >= int(printed) else 0
++        p["printed_questions"] = int(printed) if printed else 0
++
++    _cache["papers"] = built
++    return built
++
++
++def question_paper_index(reload=False):
++    """{question_id: (paper_slug, position, section)} for cheap lookups."""
++    if reload or "question_paper_index" not in _cache:
++        idx = {}
++        for slug, p in papers(reload).items():
++            for row in p["questions"]:
++                idx[row["id"]] = (slug, row["position"], row["section"])
++        _cache["question_paper_index"] = idx
++    return _cache["question_paper_index"]
++
++
++def sync_papers(conn):
++    """Mirror the file-derived paper list into papers/paper_sections/paper_questions.
++
++    Runs the same way sync_sources() does: upsert everything, never delete a row
++    a user's database already has. Safe to call repeatedly.
++    """
++    now = datetime.now().isoformat(timespec="seconds")
++    live = papers()
++    with conn:
++        for slug, p in live.items():
++            conn.execute(
++                "INSERT INTO papers (slug, exam, year, session, code, name,"
++                " total_marks, duration_mins, question_count, key_url, key_note,"
++                " source_slug, complete, created_at, updated_at)"
++                " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
++                " ON CONFLICT(slug) DO UPDATE SET exam = excluded.exam,"
++                " year = excluded.year, session = excluded.session,"
++                " code = excluded.code, name = excluded.name,"
++                " total_marks = excluded.total_marks,"
++                " duration_mins = excluded.duration_mins,"
++                " question_count = excluded.question_count,"
++                " key_url = excluded.key_url, key_note = excluded.key_note,"
++                " source_slug = excluded.source_slug, complete = excluded.complete,"
++                " updated_at = excluded.updated_at",
++                (
++                    slug,
++                    p["exam"],
++                    p["year"],
++                    p["session"],
++                    p["code"],
++                    p["name"],
++                    p["total_marks"],
++                    p["duration_mins"],
++                    p["question_count"],
++                    p["key_url"],
++                    p["key_note"],
++                    p["source_slug"],
++                    p["complete"],
++                    now,
++                    now,
++                ),
++            )
++        ids = {r["slug"]: r["id"] for r in conn.execute("SELECT slug, id FROM papers")}
++
++        for slug, p in live.items():
++            pid = ids[slug]
++            for section, count in p["sections"].items():
++                conn.execute(
++                    "INSERT INTO paper_sections (paper_id, section, label,"
++                    " total_marks, question_count, sort_order) VALUES (?,?,?,?,?,?)"
++                    " ON CONFLICT(paper_id, section) DO UPDATE SET"
++                    " label = excluded.label, total_marks = excluded.total_marks,"
++                    " question_count = excluded.question_count,"
++                    " sort_order = excluded.sort_order",
++                    (
++                        pid,
++                        section,
++                        SECTION_LABELS.get(section, section.title()),
++                        int(p["section_marks"].get(section, 0)),
++                        count,
++                        SECTION_ORDER.get(section, 9),
++                    ),
++                )
++            for row in p["questions"]:
++                conn.execute(
++                    "INSERT INTO paper_questions (paper_id, question_id, position,"
++                    " section, paper_qno, marks) VALUES (?,?,?,?,?,?)"
++                    " ON CONFLICT(paper_id, question_id) DO UPDATE SET"
++                    " position = excluded.position, section = excluded.section,"
++                    " paper_qno = excluded.paper_qno, marks = excluded.marks",
++                    (
++                        pid,
++                        row["id"],
++                        row["position"],
++                        row["section"],
++                        row["paper_qno"],
++                        row["marks"],
++                    ),
++                )
++
++
++def paper_summary(conn):
++    """Every paper with its sections, newest first. Mirrors source_summary()."""
++    rows = [
++        dict(r)
++        for r in conn.execute(
++            "SELECT * FROM papers ORDER BY year DESC, session, exam"
++        )
++    ]
++    secs = {}
++    for r in conn.execute(
++        "SELECT * FROM paper_sections ORDER BY paper_id, sort_order"
++    ):
++        secs.setdefault(r["paper_id"], []).append(dict(r))
++    live = papers()
++    for r in rows:
++        r["sections"] = secs.get(r["id"], [])
++        r["on_disk"] = r["slug"] in live
++    return rows
++
++
++def paper_questions(conn, slug, reveal=False):
++    """The ordered questions of one paper, ready to serve as a mock."""
++    row = conn.execute("SELECT * FROM papers WHERE slug = ?", (slug,)).fetchone()
++    if not row:
++        return None
++    bank = question_bank()
++    items = []
++    for r in conn.execute(
++        "SELECT * FROM paper_questions WHERE paper_id = ? ORDER BY position",
++        (row["id"],),
++    ):
++        q = bank.get(r["question_id"])
++        if not q:
++            continue
++        view = public_question(q, reveal=reveal)
++        view["position_in_paper"] = r["position"]
++        view["section"] = r["section"]
++        view["paper_qno"] = r["paper_qno"]
++        items.append(view)
++    out = dict(row)
++    out["questions"] = items
++    out["sections"] = [
++        dict(s)
++        for s in conn.execute(
++            "SELECT * FROM paper_sections WHERE paper_id = ? ORDER BY sort_order",
++            (row["id"],),
++        )
++    ]
++    return out
++
++
+ def sync_sources(conn):
+     """Mirror the file-derived source list into question_sources."""
+     now = datetime.now().isoformat(timespec="seconds")
+@@ -675,6 +1039,10 @@
+     year = q.get("paper_year") or q.get("year")
+     if year:
+         out["year"] = year
++    if q.get("paper"):
++        out["paper"] = q["paper"]
++        out["position_in_paper"] = q.get("position_in_paper")
++        out["paper_section"] = q.get("paper_section", "core")
+     if reveal:
+         out["explain"] = q.get("explain", "")
+         if q.get("type") == "nat":
+@@ -799,6 +1167,7 @@
+             )
+ 
+     sync_sources(conn)
++    sync_papers(conn)
+ 
+ 
+ # ---------------------------------------------------------------------------
+@@ -898,7 +1267,8 @@
+ 
+ 
+ def search(
+-    query="", subject="", topic="", qtype="", difficulty="", kind="", source="", limit=40
++    query="", subject="", topic="", qtype="", difficulty="", kind="", source="",
++    paper="", limit=40
+ ):
+     """Bank search for the practice tab. Case-insensitive substring match."""
+     q = (query or "").strip().lower()
+@@ -916,6 +1286,8 @@
+             continue
+         if source and item.get("source") != source:
+             continue
++        if paper and item.get("paper") != paper:
++            continue
+         if q:
+             haystack = " ".join(
+                 [
+@@ -933,7 +1305,11 @@
+         out.append(view)
+         if len(out) >= limit:
+             break
+-    out.sort(key=lambda x: (x["subject"], x["topic"], x["id"]))
++    if paper:
++        # Inside one paper the printed order is the only order that makes sense.
++        out.sort(key=lambda x: (x.get("position_in_paper") or 9999, x["id"]))
++    else:
++        out.sort(key=lambda x: (x["subject"], x["topic"], x["id"]))
+     return out
+ 
+ 
+--- a/core/api.py
++++ b/core/api.py
+@@ -169,6 +169,7 @@
+         bank=bank,
+         bank_health=bank,
+         sources=content.source_summary(conn),
++        papers=content.paper_summary(conn),
+         imports=content.import_history(conn, 10),
+         review=content.review_counts(conn),
+         pending_answers=content.pending_counts(),
+@@ -372,6 +373,14 @@
+                 dict(items=content.source_summary(conn), bank=content.bank_stats()),
+                 200,
+             )
++        if path == "/api/papers":
++            slug = one("slug")
++            if slug:
++                paper = content.paper_questions(conn, slug, reveal=one("reveal") == "1")
++                if not paper:
++                    raise ValueError("No paper with slug %s." % slug)
++                return paper, 200
++            return dict(items=content.paper_summary(conn)), 200
+         if path == "/api/imports":
+             return (
+                 dict(
+@@ -412,6 +421,7 @@
+                         difficulty=one("difficulty"),
+                         kind=one("kind"),
+                         source=one("source"),
++                        paper=one("paper"),
+                         limit=int(one("limit", "40")),
+                     )
+                 ),
+@@ -485,6 +495,17 @@
+                 if row and row["id"] not in topic_ids:
+                     topic_ids.append(row["id"])
+ 
++            # "Sit this paper" is just a quiz whose question_ids are the paper's,
++            # in printed order. The selector needs no new mode for it.
++            paper_id = None
++            question_ids = list(body.get("question_ids") or [])
++            if body.get("paper"):
++                paper = content.paper_questions(conn, body["paper"])
++                if not paper:
++                    raise ValueError("No paper with slug %s." % body["paper"])
++                paper_id = paper["id"]
++                question_ids = [q["id"] for q in paper["questions"]]
++
+             purpose = body.get("purpose") or ""
+             kinds = body.get("kinds")
+             if not kinds and body.get("kind"):
+@@ -500,7 +521,8 @@
+                 mode=body.get("mode") or purpose or "practice",
+                 purpose=purpose or None,
+                 reason=body.get("reason") or "",
+-                question_ids=body.get("question_ids") or [],
++                question_ids=question_ids,
++                paper_id=paper_id,
+                 metrics=bundle["metrics"],
+                 topic_health=bundle["topic_health"],
+             )
+@@ -678,11 +700,14 @@
+             return dict(shown=False, reason="no window in this instance"), 200
+         if path == "/api/bank/reload":
+             content.invalidate()
++            content.bank_stats(reload=True)
+             content.sync_sources(conn)
++            content.sync_papers(conn)
+             return (
+                 dict(
+-                    bank=content.bank_stats(reload=True),
++                    bank=content.bank_stats(),
+                     sources=content.source_summary(conn),
++                    papers=content.paper_summary(conn),
+                 ),
+                 200,
+             )
+--- a/core/quiz.py
++++ b/core/quiz.py
+@@ -444,6 +444,7 @@
+     metrics=None,
+     topic_health=None,
+     question_ids=None,
++    paper_id=None,
+ ):
+     """Assemble a quiz. ``mode`` drives how the questions are chosen.
+ 
+@@ -555,8 +556,9 @@
+     with conn:
+         cur = conn.execute(
+             "INSERT INTO quizzes (source, subject_id, session_id, day, topic_slugs,"
+-            " total_marks, question_count, mode, plan_day, dpp_set_id, reason, created_at)"
+-            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
++            " total_marks, question_count, mode, plan_day, dpp_set_id, reason,"
++            " paper_id, created_at)"
++            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
+             (
+                 "session" if session_id else "practice",
+                 subject_id,
+@@ -569,6 +571,7 @@
+                 plan_day or "",
+                 dpp_set_id,
+                 reason,
++                paper_id,
+                 now,
+             ),
+         )
+@@ -596,6 +599,7 @@
+             topic_slugs=topic_slugs,
+             total_marks=total_marks,
+             dpp_set_id=dpp_set_id,
++            paper_id=paper_id,
+             plan_day=plan_day,
+             questions=out_questions,
+             mistake_kinds=MISTAKE_KINDS,
+@@ -672,8 +676,9 @@
+     conn.execute(
+         "INSERT INTO attempts (quiz_id, question_id, subject_slug, topic_slug, source,"
+         " response, correct, marks_total, marks_got, day, created_at, seconds,"
+-        " confidence, mistake_kind, reattempt, dpp_set_id, plan_day)"
+-        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
++        " confidence, mistake_kind, reattempt, dpp_set_id, plan_day,"
++        " paper_id, position_in_paper)"
++        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+         (
+             quiz["id"] if quiz else None,
+             q["id"],
+@@ -692,6 +697,8 @@
+             reattempt,
+             quiz["dpp_set_id"] if quiz and "dpp_set_id" in quiz.keys() else None,
+             (quiz["plan_day"] if quiz and "plan_day" in quiz.keys() else "") or "",
++            quiz["paper_id"] if quiz and "paper_id" in quiz.keys() else None,
++            q.get("position_in_paper"),
+         ),
+     )
+ 
+--- a/tools/selftest.py
++++ b/tools/selftest.py
+@@ -84,13 +84,33 @@
+     def _health():
+         h = db.health(conn)
+         assert h["schema_version"] == db.SCHEMA_VERSION, "schema version mismatch"
+-        assert h["table_count"] >= 25, (
+-            "expected at least 25 tables, got %d" % h["table_count"]
++        assert h["table_count"] >= 29, (
++            "expected at least 29 tables, got %d" % h["table_count"]
+         )
+         return "v%d, %d tables" % (h["schema_version"], h["table_count"])
+ 
+     check("health report and table count", _health, args.verbose)
+ 
++    def _migrate_twice():
++        """A migration must be safe to run again. Prove it rather than assume it."""
++        before = {
++            t: conn.execute('SELECT COUNT(*) FROM "%s"' % t).fetchone()[0]
++            for t in db.health(conn)["tables"]
++        }
++        again = db.migrate(conn)
++        after = {
++            t: conn.execute('SELECT COUNT(*) FROM "%s"' % t).fetchone()[0]
++            for t in db.health(conn)["tables"]
++        }
++        assert not again, "a second migrate() re-ran steps: %s" % again
++        assert before == after, "row counts moved on a no-op migrate"
++        assert (
++            conn.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
++        ), "integrity_check failed after migrate"
++        return "no-op, %d tables unchanged" % len(after)
++
++    check("migrate is idempotent", _migrate_twice, args.verbose)
++
+     # ---- content --------------------------------------------------------
+     print("\ncontent registry")
+     check(
+@@ -129,6 +149,46 @@
+ 
+     check("source registry syncs", _sources, args.verbose)
+ 
++    def _papers():
++        content.sync_papers(conn)
++        rows = content.paper_summary(conn)
++        assert rows, "no papers were reconstructed from the banks"
++        # Every paper must be gapless and ordered, or "question 12 of 65" is a lie.
++        for p in rows:
++            positions = [
++                r["position"]
++                for r in conn.execute(
++                    "SELECT position FROM paper_questions WHERE paper_id = ?"
++                    " ORDER BY position",
++                    (p["id"],),
++                )
++            ]
++            assert positions == list(range(1, len(positions) + 1)), (
++                "%s has non-contiguous positions" % p["slug"]
++            )
++            assert p["question_count"] == len(positions), (
++                "%s question_count disagrees with paper_questions" % p["slug"]
++            )
++        # GA must never be folded into the core mark total.
++        ga = conn.execute(
++            "SELECT COUNT(*) FROM paper_sections WHERE section = 'ga'"
++        ).fetchone()[0]
++        assert ga, "no paper has a General Aptitude section"
++        return "%d paper(s), %d with a GA section" % (len(rows), ga)
++
++    check("papers reconstruct, order and section cleanly", _papers, args.verbose)
++
++    def _paper_reject():
++        # Other branches' papers are quoted inside CSE banks. They must not be
++        # mapped onto a GATE CSE paper.
++        for bad in ("GATE2012 AR: GA-5", "GATE2010 MN: GA-5", "GATE2014 AG: GA-10"):
++            assert content.parse_exam_ref(bad) is None, "%s was accepted" % bad
++        good = content.parse_exam_ref("GATE CSE 2020 | GA | Question: 5")
++        assert good and good["section"] == "ga", "GA marker not detected"
++        return "other-branch refs rejected, GA marker detected"
++
++    check("exam-reference parser rejects foreign papers", _paper_reject, args.verbose)
++
+     # ---- a session ------------------------------------------------------
+     print("\nsessions and grading")
+     today = date.today().isoformat()
+@@ -453,6 +513,7 @@
+             "bank",
+             "review",
+             "sources",
++            "papers",
+             "prefs",
+             "db",
+             "metrics",
+--- a/static/js/bank.js
++++ b/static/js/bank.js
+@@ -214,14 +214,65 @@
+     } catch (e) { toast('Could not save', e.message, 'bad'); }
+   }
+ 
++  /* ------------------------------------------------------------ papers ---- */
++  function papers(st) {
++    const host = $('#bankPapers');
++    if (!host) return;
++    host.innerHTML = '';
++    const rows = st.papers || [];
++    if (!rows.length) {
++      host.appendChild(empty('--', 'No papers reconstructed',
++        'A paper groups questions into one examination unit. They are derived ' +
++        'from each question\'s origin block, so importing a GO volume creates them.'));
++      return;
++    }
++    host.appendChild(el('div', { class: 'src-row head-row' }, [
++      el('span', {}, ['paper']), el('span', {}, ['sections']),
++      el('span', {}, ['questions']), el('span', {}, ['']),
++    ]));
++    rows.forEach(p => {
++      const secs = (p.sections || [])
++        .map(x => x.section.toUpperCase() + ' ' + x.question_count + '/' + x.total_marks + 'm')
++        .join('  ');
++      host.appendChild(el('div', { class: 'src-row' }, [
++        el('div', { class: 'src-name' }, [
++          el('b', { text: p.name }),
++          el('span', { text: p.slug + (p.code ? ' - ' + p.code : '') }),
++        ]),
++        el('span', { class: 'dim small mono', text: secs }),
++        // An incomplete paper must say so: the bank is subject-sliced, so most
++        // papers arrive short of what they printed. Showing "62" next to a
++        // 100-mark total without a caveat would misrepresent a mock score.
++        el('span', { class: 'mono small', text: num(p.question_count) +
++          (p.printed_questions ? ' / ' + p.printed_questions : '') +
++          (p.complete ? '' : ' (partial)') }),
++        el('button', {
++          class: 'btn btn-sm',
++          onclick: () => GG.practice.startSet({ paper: p.slug, purpose: 'mock' }),
++        }, ['Sit it']),
++      ]));
++    });
++    host.appendChild(el('p', { class: 'dim small', style: 'margin:14px 0 0' },
++      ['Marked (partial) when the bank holds fewer questions than the paper ' +
++       'printed. A partial paper still practises fine; its total is not a real score.']));
++  }
++
+   /* ------------------------------------------------------------ search ---- */
+   function fillSelects(st) {
+     const sel = $('#qsSubject');
+-    if (!sel || sel.dataset.filled) return;
+-    sel.appendChild(el('option', { value: '' }, ['Any subject']));
+-    (st.subjects || []).forEach(s =>
+-      sel.appendChild(el('option', { value: s.slug }, [s.name])));
+-    sel.dataset.filled = '1';
++    if (sel && !sel.dataset.filled) {
++      sel.appendChild(el('option', { value: '' }, ['Any subject']));
++      (st.subjects || []).forEach(s =>
++        sel.appendChild(el('option', { value: s.slug }, [s.name])));
++      sel.dataset.filled = '1';
++    }
++    const psel = $('#qsPaper');
++    if (psel && !psel.dataset.filled) {
++      psel.appendChild(el('option', { value: '' }, ['Any paper']));
++      (st.papers || []).forEach(p =>
++        psel.appendChild(el('option', { value: p.slug }, [p.name])));
++      psel.dataset.filled = '1';
++    }
+   }
+ 
+   async function search() {
+@@ -230,6 +281,7 @@
+     const params = new URLSearchParams({
+       q: $('#qsQuery').value.trim(),
+       subject: $('#qsSubject').value,
++      paper: $('#qsPaper') ? $('#qsPaper').value : '',
+       type: $('#qsType').value,
+       difficulty: $('#qsDiff').value,
+       limit: '40',
+@@ -251,7 +303,9 @@
+             el('div', { class: 'row-title', text: (q.text || '').slice(0, 130) }),
+             el('div', { class: 'row-sub mono small' }, [
+               [q.subject, q.topic, q.type, q.difficulty, q.marks + 'm',
+-               q.year || ''].filter(Boolean).join(' - '),
++               q.paper || q.year || '',
++               q.position_in_paper ? 'Q' + q.position_in_paper : ''
++              ].filter(Boolean).join(' - '),
+             ]),
+           ]),
+           el('button', {
+@@ -279,13 +333,14 @@
+     strip(st);
+     gaps(st);
+     sources(st);
++    papers(st);
+     imports(st);
+     fillSelects(st);
+     review();
+     growBars();
+   }
+ 
+-  return { tab, review, search, reload };
++  return { tab, review, search, reload, papers };
+ })();
+ 
+ /* ==========================================================================
+--- a/static/js/practice.js
++++ b/static/js/practice.js
+@@ -482,6 +482,7 @@
+           count: o.count || 0,
+           kind: o.kind || '',
+           question_ids: o.questionIds || [],
++          paper: o.paper || '',
+           mode: o.mode || o.purpose || 'mixed',
+           reason: o.reason || '',
+         },
+--- a/static/index.html
++++ b/static/index.html
+@@ -372,6 +372,9 @@
+       <div class="head mt"><h2>Sources</h2></div>
+       <div class="card" id="bankSources"></div>
+ 
++      <div class="head mt"><h2>Papers</h2></div>
++      <div class="card" id="bankPapers"></div>
++
+       <div class="head mt"><h2>Import log</h2></div>
+       <div class="card" id="bankImports"></div>
+ 
+@@ -400,6 +403,7 @@
+           <label class="field"><span>Text</span><input type="search" id="qsQuery"
+                  placeholder="e.g. banker's algorithm" autocomplete="off"></label>
+           <label class="field"><span>Subject</span><select id="qsSubject"></select></label>
++          <label class="field"><span>Paper</span><select id="qsPaper"></select></label>
+           <label class="field"><span>Type</span>
+             <select id="qsType"><option value="">Any</option><option value="mcq">MCQ</option>
+               <option value="msq">MSQ</option><option value="nat">NAT</option></select>
