@@ -97,7 +97,7 @@ DB_PATH = os.environ.get("GITGRIND_DB") or os.path.join(DATA_DIR, "gitgrind.db")
 # One writer at a time. SQLite handles the rest.
 LOCK = threading.RLock()
 
-SCHEMA_VERSION = 8
+SCHEMA_VERSION = 9
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS schema_meta (
@@ -478,6 +478,54 @@ M8 = [
     ("column", "readiness_log", "mastery", "REAL"),
 ]
 
+# Version 9 - questions become grouped examination units. Papers are content, so
+# these tables are a mirror of content/papers.json plus what the banks already
+# record in each question's origin block; content.sync_papers() fills them.
+M9 = [
+    """CREATE TABLE IF NOT EXISTS papers (
+        id             INTEGER PRIMARY KEY AUTOINCREMENT,
+        slug           TEXT NOT NULL UNIQUE,
+        exam           TEXT NOT NULL DEFAULT 'GATE CSE',
+        year           INTEGER NOT NULL,
+        session        TEXT NOT NULL DEFAULT '',
+        code           TEXT NOT NULL DEFAULT '',
+        name           TEXT NOT NULL DEFAULT '',
+        total_marks    INTEGER NOT NULL DEFAULT 100,
+        duration_mins  INTEGER NOT NULL DEFAULT 180,
+        question_count INTEGER NOT NULL DEFAULT 0,
+        key_url        TEXT NOT NULL DEFAULT '',
+        key_note       TEXT NOT NULL DEFAULT '',
+        source_slug    TEXT NOT NULL DEFAULT '',
+        complete       INTEGER NOT NULL DEFAULT 0,
+        created_at     TEXT NOT NULL,
+        updated_at     TEXT
+    )""",
+    "CREATE INDEX IF NOT EXISTS idx_papers_year ON papers(year)",
+    """CREATE TABLE IF NOT EXISTS paper_sections (
+        paper_id       INTEGER NOT NULL REFERENCES papers(id) ON DELETE CASCADE,
+        section        TEXT NOT NULL,
+        label          TEXT NOT NULL DEFAULT '',
+        total_marks    INTEGER NOT NULL DEFAULT 0,
+        question_count INTEGER NOT NULL DEFAULT 0,
+        sort_order     INTEGER NOT NULL DEFAULT 0,
+        PRIMARY KEY (paper_id, section)
+    )""",
+    """CREATE TABLE IF NOT EXISTS paper_questions (
+        paper_id    INTEGER NOT NULL REFERENCES papers(id) ON DELETE CASCADE,
+        question_id TEXT NOT NULL,
+        position    INTEGER NOT NULL DEFAULT 0,
+        section     TEXT NOT NULL DEFAULT 'core',
+        paper_qno   TEXT NOT NULL DEFAULT '',
+        marks       REAL NOT NULL DEFAULT 0,
+        PRIMARY KEY (paper_id, question_id)
+    )""",
+    "CREATE INDEX IF NOT EXISTS idx_pq_question ON paper_questions(question_id)",
+    "CREATE INDEX IF NOT EXISTS idx_pq_order ON paper_questions(paper_id, position)",
+    ("column", "quizzes", "paper_id", "INTEGER"),
+    ("column", "attempts", "paper_id", "INTEGER"),
+    ("column", "attempts", "position_in_paper", "INTEGER"),
+]
+
 MIGRATIONS = [
     (3, M3),
     (4, M4),
@@ -485,6 +533,7 @@ MIGRATIONS = [
     (6, M6),
     (7, M7),
     (8, M8),
+    (9, M9),
 ]
 
 

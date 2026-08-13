@@ -25,6 +25,7 @@ placed against that. It is a yardstick, not a leaderboard.
 
 import json
 import random
+import sqlite3
 from datetime import date, datetime, timedelta
 
 from . import content, db, feedback, revision
@@ -199,6 +200,22 @@ def target_difficulty(conn, metrics=None, purpose="weak"):
 # ---------------------------------------------------------------------------
 # the selector
 # ---------------------------------------------------------------------------
+def reserved_for_mocks(conn):
+    """Question ids belonging to a generated mock paper."""
+    try:
+        return {
+            r["question_id"]
+            for r in conn.execute(
+                "SELECT pq.question_id FROM paper_questions pq"
+                " JOIN papers p ON p.id = pq.paper_id"
+                " WHERE p.exam = 'GitGrind Mock'"
+            )
+        }
+    except sqlite3.Error:
+        # A database that predates the papers tables must still serve practice.
+        return set()
+
+
 def select(
     conn,
     purpose="weak",
@@ -213,6 +230,10 @@ def select(
     seed=None,
 ):
     """Return [(question, reason)] chosen for one purpose. Never raises on empty."""
+    # Questions held by a mock paper stay out of practice, so sitting a mock is
+    # not a re-run of what you already saw. This is a query, not a partition:
+    # delete a mock and its questions come straight back into the pool.
+    exclude = set(exclude or []) | reserved_for_mocks(conn)
     bank = content.question_bank()
     if not bank:
         return []
@@ -444,6 +465,7 @@ def build_quiz(
     metrics=None,
     topic_health=None,
     question_ids=None,
+    paper_id=None,
 ):
     """Assemble a quiz. ``mode`` drives how the questions are chosen.
 
@@ -551,12 +573,28 @@ def build_quiz(
         return None, "Nothing to serve. The bank may be too small for this mode."
 
     now = datetime.now().isoformat(timespec="seconds")
+    if paper_id:
+        # A paper carries its own mark per question. For a mock those values were
+        # assigned to make the paper total 100, which the bank's own marks field
+        # cannot do - most of it is an importer default. Sitting the paper must
+        # score against the paper, not against the bank.
+        paper_marks = {
+            r["question_id"]: r["marks"]
+            for r in conn.execute(
+                "SELECT question_id, marks FROM paper_questions WHERE paper_id = ?",
+                (paper_id,),
+            )
+        }
+        for q in chosen:
+            if q["id"] in paper_marks:
+                q["marks"] = paper_marks[q["id"]]
     total_marks = sum(q.get("marks", 2) for q in chosen)
     with conn:
         cur = conn.execute(
             "INSERT INTO quizzes (source, subject_id, session_id, day, topic_slugs,"
-            " total_marks, question_count, mode, plan_day, dpp_set_id, reason, created_at)"
-            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?)",
+            " total_marks, question_count, mode, plan_day, dpp_set_id, reason,"
+            " paper_id, created_at)"
+            " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (
                 "session" if session_id else "practice",
                 subject_id,
@@ -569,6 +607,7 @@ def build_quiz(
                 plan_day or "",
                 dpp_set_id,
                 reason,
+                paper_id,
                 now,
             ),
         )
@@ -596,6 +635,7 @@ def build_quiz(
             topic_slugs=topic_slugs,
             total_marks=total_marks,
             dpp_set_id=dpp_set_id,
+            paper_id=paper_id,
             plan_day=plan_day,
             questions=out_questions,
             mistake_kinds=MISTAKE_KINDS,
@@ -672,8 +712,9 @@ def _record_attempt(conn, q, item, ok, awarded, quiz, day, now, prior_attempts):
     conn.execute(
         "INSERT INTO attempts (quiz_id, question_id, subject_slug, topic_slug, source,"
         " response, correct, marks_total, marks_got, day, created_at, seconds,"
-        " confidence, mistake_kind, reattempt, dpp_set_id, plan_day)"
-        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        " confidence, mistake_kind, reattempt, dpp_set_id, plan_day,"
+        " paper_id, position_in_paper)"
+        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
         (
             quiz["id"] if quiz else None,
             q["id"],
@@ -692,6 +733,8 @@ def _record_attempt(conn, q, item, ok, awarded, quiz, day, now, prior_attempts):
             reattempt,
             quiz["dpp_set_id"] if quiz and "dpp_set_id" in quiz.keys() else None,
             (quiz["plan_day"] if quiz and "plan_day" in quiz.keys() else "") or "",
+            quiz["paper_id"] if quiz and "paper_id" in quiz.keys() else None,
+            q.get("position_in_paper"),
         ),
     )
 

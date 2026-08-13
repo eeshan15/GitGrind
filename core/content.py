@@ -18,6 +18,7 @@ bad import can be reverted with git or a file copy.
 import json
 import os
 import re
+import sqlite3
 from datetime import date, datetime, timedelta
 
 from . import db
@@ -305,6 +306,18 @@ def question_bank(reload=False):
 
     _cache["bank"] = bank
     _cache["sources"] = sources
+    # Paper membership is a property of the whole bank, not of one file: a
+    # question's position depends on every other question in the same paper. So
+    # it is stamped here, after every bank file has been read, rather than in
+    # _hydrate() which only ever sees one question at a time.
+    _cache.pop("papers", None)
+    _cache.pop("question_paper_index", None)
+    for qid, (slug, pos, section) in question_paper_index().items():
+        q = bank.get(qid)
+        if q is not None:
+            q["paper"] = slug
+            q["position_in_paper"] = pos
+            q["paper_section"] = section
     return bank
 
 
@@ -478,6 +491,7 @@ def bank_stats(reload=False):
         {},
     )
     broken, no_explain, untagged, pending = 0, 0, 0, 0
+    by_paper, no_paper = {}, 0
     with_figures, figure_defects, figure_count = 0, 0, 0
     pending_by_subject = {}
     src = sources()
@@ -492,6 +506,10 @@ def bank_stats(reload=False):
         year = q.get("paper_year") or q.get("year")
         if year:
             by_year[str(year)] = by_year.get(str(year), 0) + 1
+        if q.get("paper"):
+            by_paper[q["paper"]] = by_paper.get(q["paper"], 0) + 1
+        else:
+            no_paper += 1
         figs = q.get("figure_assets") or []
         if isinstance(figs, list) and figs:
             with_figures += 1
@@ -558,6 +576,9 @@ def bank_stats(reload=False):
         difficulties=by_diff,
         kinds=by_kind,
         years=dict(sorted(by_year.items())),
+        papers_total=len(by_paper),
+        papers=dict(sorted(by_paper.items())),
+        unmapped_to_paper=no_paper,
         files=sorted({q["file"] for q in bank.values()}),
         banks=sorted({q["bank"] for q in bank.values()}),
         sources=[dict(s, files=len(s["files"])) for s in src.values()],
@@ -566,6 +587,468 @@ def bank_stats(reload=False):
         empty_topics=empty_topics[:24],
         thin_topics=thin_topics[:24],
     )
+
+
+# ---------------------------------------------------------------------------
+# papers
+#
+# A paper is an examination unit: one sitting of one exam, with its own mark
+# total, duration and official answer key. Papers are content, not activity, so
+# content/papers.json is the source of truth for the things that cannot be
+# derived - paper code, printed mark total, duration, key URL - and everything
+# else is read back out of the banks, where each question's ``origin`` block
+# already records which exam and question number it came from.
+#
+# The DB tables (papers, paper_sections, paper_questions) are a mirror, filled by
+# sync_papers(). That keeps paper metadata diffable and shippable, and means a
+# user's database never holds paper facts that would be lost if it were rebuilt.
+# ---------------------------------------------------------------------------
+PAPERS_FILE = os.path.join(CONTENT_DIR, "papers.json")
+# Generated mock papers. They are papers in every sense the app cares about, so
+# they are merged into papers() rather than bolted on as a parallel concept.
+MOCKS_FILE = os.path.join(CONTENT_DIR, "mocks.json")
+
+# The two sections every GATE paper has. GA is 15 marks of the 100; the rest is
+# the subject core. Stored per paper rather than derived from subjects.marks,
+# because the syllabus weights in subjects are an estimate that does not add to
+# 100 and must never be mistaken for what a paper actually printed.
+SECTION_LABELS = {"ga": "General Aptitude", "core": "Core"}
+SECTION_ORDER = {"ga": 0, "core": 1}
+DEFAULT_SECTION_MARKS = {"ga": 15, "core": 85}
+
+# Exam prefixes we accept. Anything else is a different branch's paper that
+# happens to be quoted in a CSE-facing bank, and folding it into a GATE CSE
+# paper would silently corrupt the reconstruction. Reject rather than guess.
+KNOWN_EXAMS = {
+    "gate cse": "GATE CSE",
+    "gate it": "GATE IT",
+    "gate da": "GATE DA",
+    "gate ds&ai": "GATE DS&AI",
+    "gate data science and artificial intelligence": "GATE DS&AI",
+}
+
+_EXAM_PIPE = re.compile(
+    r"^(?P<exam>[A-Za-z&.\s]+?)\s+(?P<year>(?:19|20)\d\d)"
+    r"(?P<mids>(?:\s*\|[^|]+)*?)\s*\|\s*Question:\s*(?P<qno>.+)$"
+)
+_SET = re.compile(r"Set[-\s]*(\d+)", re.I)
+_GA_MARK = re.compile(r"\|\s*GA\b", re.I)
+_LEADING_NUM = re.compile(r"(\d+(?:\.\d+)?)")
+
+
+def parse_exam_ref(raw):
+    """Turn an ``origin.exam`` string into paper coordinates, or None.
+
+    Handles the shapes the GO volumes actually use::
+
+        GATE CSE 2006 | Question: 17
+        GATE CSE 2015 | Set 2 | Question: 36
+        GATE CSE 2020 | GA | Question: 5
+        GATE Data Science and Artificial Intelligence 2024 | Sample Paper | ...
+
+    Returns None for anything else, and that is deliberate. Strings like
+    ``GATE2012 AR: GA-5`` are Architecture papers, ``GATE2010 MN`` is Mining;
+    a looser regex maps those onto GATE CSE and quietly invents questions that
+    were never in the CSE paper. An unmapped question keeps its bank entry and
+    simply belongs to no paper.
+    """
+    raw = (raw or "").strip()
+    if not raw or "Practice" in raw:
+        return None
+    m = _EXAM_PIPE.match(raw)
+    if not m:
+        return None
+    exam = KNOWN_EXAMS.get(" ".join(m.group("exam").split()).lower())
+    if not exam:
+        return None
+
+    mids = m.group("mids") or ""
+    session = ""
+    hit = _SET.search(mids)
+    if hit:
+        session = "set-%s" % hit.group(1)
+    if "Sample" in mids:
+        session = "sample"
+
+    return dict(
+        exam=exam,
+        year=int(m.group("year")),
+        session=session,
+        section="ga" if _GA_MARK.search(mids) else "core",
+        qno=m.group("qno").strip(),
+    )
+
+
+def paper_slug(exam, year, session=""):
+    bits = [exam.lower().replace("&", "and").replace(" ", "-"), str(year)]
+    if session:
+        bits.append(session)
+    return "-".join(bits)
+
+
+def paper_overrides(reload=False):
+    """{slug: {...}} from content/papers.json - the hand-maintained facts."""
+    if reload or "paper_overrides" not in _cache:
+        data = _read_json(PAPERS_FILE, {}) or {}
+        rows = data.get("papers", data if isinstance(data, list) else [])
+        out = {}
+        for row in rows:
+            slug = row.get("slug") or paper_slug(
+                row.get("exam", "GATE CSE"), row.get("year", 0), row.get("session", "")
+            )
+            out[slug] = dict(row, slug=slug)
+        _cache["paper_overrides"] = out
+    return _cache["paper_overrides"]
+
+
+def _qno_sort_key(qno):
+    """Order questions the way the paper printed them.
+
+    Question numbers are messy: 17, 1.19, 2-vii, 12b, "1.19, ISRO2016-31". The
+    leading number is the only part that orders reliably, so sort on that and
+    fall back to the id for a stable, reproducible order.
+    """
+    hit = _LEADING_NUM.search(qno or "")
+    return float(hit.group(1)) if hit else 9999.0
+
+
+def papers(reload=False):
+    """{slug: paper} reconstructed from the banks, enriched by papers.json.
+
+    Each paper carries ``questions``: the ordered list of
+    (question_id, section, paper_qno, marks) that make it up.
+    """
+    if not reload and "papers" in _cache:
+        return _cache["papers"]
+
+    bank = question_bank(reload)
+    over = paper_overrides(reload)
+    built = {}
+    for q in bank.values():
+        ref = parse_exam_ref((q.get("origin") or {}).get("exam"))
+        if not ref:
+            continue
+        slug = paper_slug(ref["exam"], ref["year"], ref["session"])
+        entry = built.setdefault(
+            slug,
+            dict(
+                slug=slug,
+                exam=ref["exam"],
+                year=ref["year"],
+                session=ref["session"],
+                source_slug=q.get("source", ""),
+                questions=[],
+                sections={},
+            ),
+        )
+        qno = (q.get("origin") or {}).get("paper_question") or ref["qno"]
+        entry["questions"].append(
+            dict(
+                id=q["id"],
+                # The "| GA" marker only appears from about 2014 onward. Before
+                # that the subject slug is the only signal, and a GA question
+                # filed under core inflates the core mark total.
+                section=(
+                    "ga" if q["subject"] == "general-aptitude" else ref["section"]
+                ),
+                paper_qno=str(qno),
+                marks=float(q.get("marks") or 0),
+            )
+        )
+
+    for slug, p in built.items():
+        p["questions"].sort(
+            key=lambda r: (
+                SECTION_ORDER.get(r["section"], 9),
+                _qno_sort_key(r["paper_qno"]),
+                r["id"],
+            )
+        )
+        for pos, row in enumerate(p["questions"], 1):
+            row["position"] = pos
+            p["sections"].setdefault(row["section"], 0)
+            p["sections"][row["section"]] += 1
+
+        o = over.get(slug, {})
+        p["name"] = o.get("name") or (
+            "%s %d%s"
+            % (
+                p["exam"],
+                p["year"],
+                " " + p["session"].replace("-", " ").title() if p["session"] else "",
+            )
+        )
+        p["code"] = o.get("code", "")
+        p["total_marks"] = int(o.get("total_marks", 100))
+        p["duration_mins"] = int(o.get("duration_mins", 180))
+        p["key_url"] = o.get("key_url", "")
+        p["key_note"] = o.get("key_note", "")
+        p["question_count"] = len(p["questions"])
+        p["section_marks"] = dict(DEFAULT_SECTION_MARKS, **(o.get("section_marks") or {}))
+        # A paper is complete when the bank holds as many questions as the paper
+        # printed. Most do not: the GO volumes are subject-sliced, so a 65-mark
+        # paper often arrives with 50 questions. Serving an incomplete paper as a
+        # mock and calling it "out of 100" would be a lie, so flag it here and
+        # let the caller decide.
+        printed = o.get("printed_questions")
+        p["complete"] = 1 if printed and p["question_count"] >= int(printed) else 0
+        p["printed_questions"] = int(printed) if printed else 0
+
+    # Mocks are assembled from bank questions rather than parsed out of an exam
+    # reference, so they are read from their own file and appended here. Anything
+    # whose questions have gone missing from the bank is skipped instead of being
+    # served short.
+    mock_data = _read_json(MOCKS_FILE, {}) or {}
+    for row in mock_data.get("mocks", []):
+        items = [r for r in row.get("questions", []) if r.get("id") in bank]
+        if not items:
+            continue
+        p = dict(row)
+        p["questions"] = []
+        p["sections"] = {}
+        items.sort(key=lambda r: (SECTION_ORDER.get(r.get("section"), 9), r["id"]))
+        for pos, r in enumerate(items, 1):
+            p["questions"].append(
+                dict(
+                    id=r["id"],
+                    section=r.get("section", "core"),
+                    paper_qno=str(pos),
+                    marks=float(r.get("marks") or 0),
+                    position=pos,
+                )
+            )
+            p["sections"][r.get("section", "core")] = (
+                p["sections"].get(r.get("section", "core"), 0) + 1
+            )
+        p["question_count"] = len(p["questions"])
+        p["source_slug"] = ""
+        p["key_url"] = row.get("key_url", "")
+        p["section_marks"] = dict(
+            DEFAULT_SECTION_MARKS, **(row.get("section_marks") or {})
+        )
+        printed = row.get("printed_questions") or 0
+        p["printed_questions"] = int(printed)
+        p["complete"] = 1 if printed and p["question_count"] >= int(printed) else 0
+        built[p["slug"]] = p
+
+    _cache["papers"] = built
+    return built
+
+
+def question_paper_index(reload=False):
+    """{question_id: (paper_slug, position, section)} for cheap lookups."""
+    if reload or "question_paper_index" not in _cache:
+        idx = {}
+        for slug, p in papers(reload).items():
+            for row in p["questions"]:
+                idx[row["id"]] = (slug, row["position"], row["section"])
+        _cache["question_paper_index"] = idx
+    return _cache["question_paper_index"]
+
+
+def sync_papers(conn):
+    """Mirror the file-derived paper list into papers/paper_sections/paper_questions.
+
+    Runs the same way sync_sources() does: upsert everything, never delete a row
+    a user's database already has. Safe to call repeatedly.
+    """
+    now = datetime.now().isoformat(timespec="seconds")
+    live = papers()
+    with conn:
+        for slug, p in live.items():
+            conn.execute(
+                "INSERT INTO papers (slug, exam, year, session, code, name,"
+                " total_marks, duration_mins, question_count, key_url, key_note,"
+                " source_slug, complete, created_at, updated_at)"
+                " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+                " ON CONFLICT(slug) DO UPDATE SET exam = excluded.exam,"
+                " year = excluded.year, session = excluded.session,"
+                " code = excluded.code, name = excluded.name,"
+                " total_marks = excluded.total_marks,"
+                " duration_mins = excluded.duration_mins,"
+                " question_count = excluded.question_count,"
+                " key_url = excluded.key_url, key_note = excluded.key_note,"
+                " source_slug = excluded.source_slug, complete = excluded.complete,"
+                " updated_at = excluded.updated_at",
+                (
+                    slug,
+                    p["exam"],
+                    p["year"],
+                    p["session"],
+                    p["code"],
+                    p["name"],
+                    p["total_marks"],
+                    p["duration_mins"],
+                    p["question_count"],
+                    p["key_url"],
+                    p["key_note"],
+                    p["source_slug"],
+                    p["complete"],
+                    now,
+                    now,
+                ),
+            )
+        ids = {r["slug"]: r["id"] for r in conn.execute("SELECT slug, id FROM papers")}
+
+        for slug, p in live.items():
+            pid = ids[slug]
+            for section, count in p["sections"].items():
+                conn.execute(
+                    "INSERT INTO paper_sections (paper_id, section, label,"
+                    " total_marks, question_count, sort_order) VALUES (?,?,?,?,?,?)"
+                    " ON CONFLICT(paper_id, section) DO UPDATE SET"
+                    " label = excluded.label, total_marks = excluded.total_marks,"
+                    " question_count = excluded.question_count,"
+                    " sort_order = excluded.sort_order",
+                    (
+                        pid,
+                        section,
+                        SECTION_LABELS.get(section, section.title()),
+                        int(p["section_marks"].get(section, 0)),
+                        count,
+                        SECTION_ORDER.get(section, 9),
+                    ),
+                )
+            # Drop rows this paper no longer holds. Upserting alone would leave
+            # stale membership behind - regenerating a mock would accumulate both
+            # the old and the new picks, so a 65-question paper would serve 129.
+            keep = [r["id"] for r in p["questions"]]
+            if keep:
+                conn.execute(
+                    "DELETE FROM paper_questions WHERE paper_id = ?"
+                    " AND question_id NOT IN (%s)" % ",".join("?" * len(keep)),
+                    [pid] + keep,
+                )
+            for row in p["questions"]:
+                conn.execute(
+                    "INSERT INTO paper_questions (paper_id, question_id, position,"
+                    " section, paper_qno, marks) VALUES (?,?,?,?,?,?)"
+                    " ON CONFLICT(paper_id, question_id) DO UPDATE SET"
+                    " position = excluded.position, section = excluded.section,"
+                    " paper_qno = excluded.paper_qno, marks = excluded.marks",
+                    (
+                        pid,
+                        row["id"],
+                        row["position"],
+                        row["section"],
+                        row["paper_qno"],
+                        row["marks"],
+                    ),
+                )
+
+
+# Bank prefixes an id may have gained. The mineru extraction replaced an earlier
+# one that used bare filter1-* ids, keeping the same suffix, so history recorded
+# under the old scheme is recoverable by prefixing.
+ID_PREFIXES = ("mineru-",)
+
+
+def remap_orphaned_question_ids(conn, prefixes=ID_PREFIXES):
+    """Re-point activity rows at ids that still exist in the bank.
+
+    A question_id is a content value, not a database key. Replacing a bank
+    changes the ids, and every attempt referencing the old scheme becomes an
+    orphan: the row survives, but nothing resolves it, so it stops counting
+    towards a topic and disappears from the heatmap. The data is not lost, it is
+    disconnected - and the person cannot tell the difference from the outside.
+
+    A row is only rewritten when the candidate id actually exists in the bank. An
+    orphan with no candidate is left alone and counted, because a wrong remap
+    would credit a result to a question that was never answered.
+    """
+    bank = question_bank()
+    tables = []
+    for row in conn.execute(
+        "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'"
+    ):
+        cols = {r[1] for r in conn.execute('PRAGMA table_info("%s")' % row[0])}
+        if "question_id" in cols:
+            tables.append(row[0])
+
+    remapped, rows_touched = 0, 0
+    stuck = set()
+    with conn:
+        for table in sorted(tables):
+            ids = [
+                r[0]
+                for r in conn.execute(
+                    'SELECT DISTINCT question_id FROM "%s"'
+                    " WHERE question_id IS NOT NULL" % table
+                )
+            ]
+            for old in ids:
+                if not old or old in bank:
+                    continue
+                new = next((p + old for p in prefixes if p + old in bank), None)
+                if not new:
+                    stuck.add(old)
+                    continue
+                try:
+                    cur = conn.execute(
+                        'UPDATE "%s" SET question_id = ? WHERE question_id = ?' % table,
+                        (new, old),
+                    )
+                    rows_touched += cur.rowcount
+                    remapped += 1
+                except sqlite3.IntegrityError:
+                    # A row already exists under the new id: keep it, drop the stale one.
+                    conn.execute(
+                        'DELETE FROM "%s" WHERE question_id = ?' % table, (old,)
+                    )
+    return dict(
+        remapped=remapped, rows=rows_touched, unresolved=sorted(stuck)
+    )
+
+
+def paper_summary(conn):
+    """Every paper with its sections, newest first. Mirrors source_summary()."""
+    rows = [
+        dict(r)
+        for r in conn.execute(
+            "SELECT * FROM papers ORDER BY year DESC, session, exam"
+        )
+    ]
+    secs = {}
+    for r in conn.execute(
+        "SELECT * FROM paper_sections ORDER BY paper_id, sort_order"
+    ):
+        secs.setdefault(r["paper_id"], []).append(dict(r))
+    live = papers()
+    for r in rows:
+        r["sections"] = secs.get(r["id"], [])
+        r["on_disk"] = r["slug"] in live
+    return rows
+
+
+def paper_questions(conn, slug, reveal=False):
+    """The ordered questions of one paper, ready to serve as a mock."""
+    row = conn.execute("SELECT * FROM papers WHERE slug = ?", (slug,)).fetchone()
+    if not row:
+        return None
+    bank = question_bank()
+    items = []
+    for r in conn.execute(
+        "SELECT * FROM paper_questions WHERE paper_id = ? ORDER BY position",
+        (row["id"],),
+    ):
+        q = bank.get(r["question_id"])
+        if not q:
+            continue
+        view = public_question(q, reveal=reveal)
+        view["position_in_paper"] = r["position"]
+        view["section"] = r["section"]
+        view["paper_qno"] = r["paper_qno"]
+        items.append(view)
+    out = dict(row)
+    out["questions"] = items
+    out["sections"] = [
+        dict(s)
+        for s in conn.execute(
+            "SELECT * FROM paper_sections WHERE paper_id = ? ORDER BY sort_order",
+            (row["id"],),
+        )
+    ]
+    return out
 
 
 def sync_sources(conn):
@@ -675,6 +1158,10 @@ def public_question(q, reveal=False):
     year = q.get("paper_year") or q.get("year")
     if year:
         out["year"] = year
+    if q.get("paper"):
+        out["paper"] = q["paper"]
+        out["position_in_paper"] = q.get("position_in_paper")
+        out["paper_section"] = q.get("paper_section", "core")
     if reveal:
         out["explain"] = q.get("explain", "")
         if q.get("type") == "nat":
@@ -799,6 +1286,7 @@ def seed(conn):
             )
 
     sync_sources(conn)
+    sync_papers(conn)
 
 
 # ---------------------------------------------------------------------------
@@ -898,7 +1386,8 @@ def reject_review(conn, review_id, notes=""):
 
 
 def search(
-    query="", subject="", topic="", qtype="", difficulty="", kind="", source="", limit=40
+    query="", subject="", topic="", qtype="", difficulty="", kind="", source="",
+    paper="", limit=40
 ):
     """Bank search for the practice tab. Case-insensitive substring match."""
     q = (query or "").strip().lower()
@@ -915,6 +1404,8 @@ def search(
         if kind and item["kind"] != kind:
             continue
         if source and item.get("source") != source:
+            continue
+        if paper and item.get("paper") != paper:
             continue
         if q:
             haystack = " ".join(
@@ -933,7 +1424,11 @@ def search(
         out.append(view)
         if len(out) >= limit:
             break
-    out.sort(key=lambda x: (x["subject"], x["topic"], x["id"]))
+    if paper:
+        # Inside one paper the printed order is the only order that makes sense.
+        out.sort(key=lambda x: (x.get("position_in_paper") or 9999, x["id"]))
+    else:
+        out.sort(key=lambda x: (x["subject"], x["topic"], x["id"]))
     return out
 
 

@@ -169,6 +169,7 @@ def build_state(conn, celebrate=True):
         bank=bank,
         bank_health=bank,
         sources=content.source_summary(conn),
+        papers=content.paper_summary(conn),
         imports=content.import_history(conn, 10),
         review=content.review_counts(conn),
         pending_answers=content.pending_counts(),
@@ -372,6 +373,14 @@ class Handler(BaseHTTPRequestHandler):
                 dict(items=content.source_summary(conn), bank=content.bank_stats()),
                 200,
             )
+        if path == "/api/papers":
+            slug = one("slug")
+            if slug:
+                paper = content.paper_questions(conn, slug, reveal=one("reveal") == "1")
+                if not paper:
+                    raise ValueError("No paper with slug %s." % slug)
+                return paper, 200
+            return dict(items=content.paper_summary(conn)), 200
         if path == "/api/imports":
             return (
                 dict(
@@ -412,6 +421,7 @@ class Handler(BaseHTTPRequestHandler):
                         difficulty=one("difficulty"),
                         kind=one("kind"),
                         source=one("source"),
+                        paper=one("paper"),
                         limit=int(one("limit", "40")),
                     )
                 ),
@@ -485,6 +495,17 @@ class Handler(BaseHTTPRequestHandler):
                 if row and row["id"] not in topic_ids:
                     topic_ids.append(row["id"])
 
+            # "Sit this paper" is just a quiz whose question_ids are the paper's,
+            # in printed order. The selector needs no new mode for it.
+            paper_id = None
+            question_ids = list(body.get("question_ids") or [])
+            if body.get("paper"):
+                paper = content.paper_questions(conn, body["paper"])
+                if not paper:
+                    raise ValueError("No paper with slug %s." % body["paper"])
+                paper_id = paper["id"]
+                question_ids = [q["id"] for q in paper["questions"]]
+
             purpose = body.get("purpose") or ""
             kinds = body.get("kinds")
             if not kinds and body.get("kind"):
@@ -500,7 +521,8 @@ class Handler(BaseHTTPRequestHandler):
                 mode=body.get("mode") or purpose or "practice",
                 purpose=purpose or None,
                 reason=body.get("reason") or "",
-                question_ids=body.get("question_ids") or [],
+                question_ids=question_ids,
+                paper_id=paper_id,
                 metrics=bundle["metrics"],
                 topic_health=bundle["topic_health"],
             )
@@ -678,11 +700,14 @@ class Handler(BaseHTTPRequestHandler):
             return dict(shown=False, reason="no window in this instance"), 200
         if path == "/api/bank/reload":
             content.invalidate()
+            content.bank_stats(reload=True)
             content.sync_sources(conn)
+            content.sync_papers(conn)
             return (
                 dict(
-                    bank=content.bank_stats(reload=True),
+                    bank=content.bank_stats(),
                     sources=content.source_summary(conn),
+                    papers=content.paper_summary(conn),
                 ),
                 200,
             )
@@ -1068,7 +1093,14 @@ class Handler(BaseHTTPRequestHandler):
                 )
                 conn.executemany(sql, [tuple(r.get(c) for c in use) for r in rows])
         content.seed(conn)
-        return build_state(conn)
+        # A backup taken on an older bank references ids that no longer exist, so
+        # the history would import intact and then read as empty on every
+        # per-topic view. Reconnect it here rather than leaving the person to
+        # conclude the import lost their data.
+        repair = content.remap_orphaned_question_ids(conn)
+        state = build_state(conn)
+        state["import_repair"] = repair
+        return state
 
     def _reset(self, conn, body):
         scope = body.get("scope", "activity")
