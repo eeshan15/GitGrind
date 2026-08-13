@@ -70,6 +70,10 @@ def pending_items(subject_filter=None, include_skipped=False):
         if subject_filter and subject != subject_filter:
             continue
         for q in payload.get("questions", []):
+            # Quarantined questions already have their answer; it is the option
+            # list that was destroyed. Asking for an answer cannot help them.
+            if q.get("options_quarantined"):
+                continue
             if not q.get("answer_pending"):
                 continue
             if q.get("answer_skipped") and not include_skipped:
