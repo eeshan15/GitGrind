@@ -400,7 +400,7 @@
   "runtime-environment": "compiler-design/runtime-env",
   "machine-instruction": "computer-organization/instructions",
   "memory-interfacing": "computer-organization/main-memory",
-  "circuit-output": "digital-logic/combinational",
+  "circuit-output": "digital-logic/state-machines",
   "algorithm-design": "algorithms/asymptotics",
   "compilation-phases": "compiler-design/lexical-analysis",
   "register-allocation": "compiler-design/optimization",
@@ -433,7 +433,7 @@
   "database-design": "dbms/er-model",
   "database-schema": "dbms/er-model",
   "super-key": "dbms/functional-dependency",
-  "digital-circuits": "digital-logic/combinational",
+  "digital-circuits": "digital-logic/sequential",
   "rom": "digital-logic/combinational",
   "digital-counter": "digital-logic/sequential",
   "synchronous-asynchronous-circuits": "digital-logic/sequential",
@@ -460,9 +460,9 @@
   "os-protection": "operating-systems/processes-threads",
   "dpda": "theory-of-computation/pda",
   "finite-state-machines": {
-   "theory-of-computation": "theory-of-computation/finite-automata",
    "digital-logic": "digital-logic/state-machines",
-   "_default": "theory-of-computation/finite-automata"
+   "theory-of-computation": "theory-of-computation/finite-automata",
+   "_default": "digital-logic/state-machines"
   },
   "directed-acyclic-graph": "discrete-mathematics/graph-theory",
   "odd-one": "general-aptitude/analytical",

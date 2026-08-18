@@ -550,10 +550,16 @@ window.GG = (function () {
       host.appendChild(document.createTextNode(str));
       return host;
     }
-    str.split(/(\$[^$\n]+\$)/g).forEach(part => {
+    /* Display maths arrives as $$...$$ on its own lines, which the importer
+       joins into the stem with spaces. Splitting on single $ first made the
+       two dollars of an opening $$ pair with each other, shifting every
+       delimiter along and leaving \frac stranded outside its own span - the
+       raw source that showed on screen. Match the double form first. */
+    str.split(/(\$\$[\s\S]+?\$\$|\$[^$\n]+\$)/g).forEach(part => {
       if (!part) return;
-      if (part.length > 1 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$') {
-        const expr = part.slice(1, -1).trim();
+      const display = part.length > 3 && part.slice(0, 2) === '$$' && part.slice(-2) === '$$';
+      if (display || (part.length > 1 && part.charAt(0) === '$' && part.charAt(part.length - 1) === '$')) {
+        const expr = part.slice(display ? 2 : 1, display ? -2 : -1).trim();
         const span = document.createElement('span');
         try {
           /* throwOnError so a broken source raises here instead of rendering
@@ -561,7 +567,7 @@ window.GG = (function () {
              LaTeX, and a wall of red error markup is harder to read than the
              raw text it was trying to replace. The node stays detached until
              the render succeeds, so a partial failure never reaches the page. */
-          window.katex.render(expr, span, { throwOnError: true, trust: false, strict: 'ignore' });
+          window.katex.render(expr, span, { throwOnError: true, trust: false, strict: 'ignore', displayMode: display });
           host.appendChild(span);
         } catch (e) {
           const raw = document.createElement('span');
