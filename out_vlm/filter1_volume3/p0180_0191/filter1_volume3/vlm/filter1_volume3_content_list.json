@@ -1,0 +1,4772 @@
+[
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Min keys (non-root): $\\lceil m / 2 \\rceil - 1$",
+            "- Max keys: $m - 1$",
+            "- Min children (non-root): $\\lceil m / 2 \\rceil$",
+            "- Max children: $m$"
+        ],
+        "bbox": [
+            97,
+            65,
+            351,
+            122
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Candidate Key: $K \\to R$ and $K$ is minimal.",
+        "bbox": [
+            73,
+            123,
+            411,
+            138
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Conflict Serializable: Precedence graph has no cycles.",
+        "bbox": [
+            73,
+            138,
+            497,
+            152
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Functional Dependency Closure: $X^{+}$ (algorithm based on Armstrong's axioms).",
+        "bbox": [
+            73,
+            153,
+            687,
+            168
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Decomposition Lossless Join: For $R_{1}, R_{2}, (R_{1} \\cap R_{2}) \\to R_{1}$ or $(R_{1} \\cap R_{2}) \\to R_{2}$ .",
+        "bbox": [
+            73,
+            168,
+            714,
+            184
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Relational Algebra Operators:",
+        "bbox": [
+            73,
+            184,
+            322,
+            197
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Select: $\\sigma_P(R)$",
+            "- Project: $\\pi_A(R)$",
+            "- Union: $R \\cup S$",
+            "- Set Difference: $R \\setminus S$",
+            "。Cartesian Product: $R \\times S$",
+            "- Natural Join: $R \\bowtie S$"
+        ],
+        "bbox": [
+            97,
+            198,
+            307,
+            285
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Tuple Relational Calculus: $\\{t \\mid P(t)\\}$",
+        "bbox": [
+            73,
+            287,
+            374,
+            302
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Timestamp Ordering Rules (for transaction $T_{i}$ on data item $X$ ):",
+        "bbox": [
+            73,
+            302,
+            576,
+            315
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Read: If $TS(T_i) < W\\_TS(X)$ , abort $T_i$ . Else, $R\\_TS(X) = \\max(R\\_TS(X), TS(T_i))$ .",
+        "bbox": [
+            97,
+            315,
+            768,
+            332
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Write: If $TS(T_i) < R\\_TS(X)$ or $TS(T_i) < W\\_TS(X)$ , abort $T_i$ . Else, $W\\_TS(X) = TS(T_i)$ .",
+        "bbox": [
+            97,
+            332,
+            821,
+            347
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            359,
+            285,
+            376
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Master Functional Dependencies and Normal Forms: These are high-yield topics. Practice finding candidate keys, attribute closures, and checking normal forms (especially 3NF and BCNF). Understand the implications of lossless join and dependency preservation.",
+            "- Hands-on with Relational Algebra/Calculus and SQL: Be proficient in writing queries in all three languages. Practice converting queries between them. Pay attention to operator precedence in RA and quantifier usage in RC.",
+            "- B-Tree Operations and I/O Calculation: Understand the structure, insertion, deletion, and search operations. Crucially, be able to calculate the number of disk I/Os for various scenarios, as this is a common numerical question.",
+            "- Concurrency Control Protocols: Understand the ACID properties, common anomalies (dirty read, lost update, etc.), and how 2PL and Timestamp Ordering prevent them. Practice drawing precedence graphs for conflict serializability and wait-for graphs for deadlock detection.",
+            "- ER Diagram to Relational Schema Mapping: Know the standard rules for mapping entities, attributes (simple, composite, multi-valued), and relationships (1:1, 1:N, M:N, weak entities) to relational tables.",
+            "- Read Questions Carefully: Database questions often have subtle details. For example, in normalization, the given FDs are critical. In concurrency, the exact sequence of operations matters.",
+            "- Time Management: Some problems, like tracing B-tree operations or complex concurrency schedules, can be time-consuming. Practice efficiently solving these to save time during the exam.",
+            "- Conceptual Clarity: While formulas are important, a deep conceptual understanding of why certain rules exist (e.g., why BCNF is stricter than 3NF, why 2PL guarantees serializability) will help you tackle tricky theoretical questions."
+        ],
+        "bbox": [
+            72,
+            389,
+            921,
+            652
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.1",
+        "text_level": 1,
+        "bbox": [
+            67,
+            665,
+            94,
+            678
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Armstrong Axioms (1)",
+        "text_level": 1,
+        "bbox": [
+            423,
+            665,
+            603,
+            680
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.1.1 Armstrong Axioms: GATE CSE 2026 | Set 2 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            77,
+            691,
+            574,
+            706
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the context of schema normalization in relational DBMS, consider a set $\\mathbf{F}$ of functional dependencies. The set of all functional dependencies implied by $\\mathbf{F}$ is called the closure of $\\mathbf{F}$ . To compute the closure of $\\mathbf{F}$ , Armstrong's Axioms can be applied. Consider $X, Y$ , and $Z$ as sets of attributes over a relational schema. The three rules of Armstrong's Axioms are described as follows.",
+        "bbox": [
+            82,
+            714,
+            929,
+            774
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Reflexivity: If $Y \\subseteq X$ , then $X \\to Y$",
+        "bbox": [
+            85,
+            777,
+            351,
+            792
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Augmentation: If $X \\to Y$ , then $XZ \\to YZ$ for any $Z$",
+        "bbox": [
+            84,
+            795,
+            480,
+            811
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Transitivity: If $X \\to Y$ and $Y \\to Z$ , then $X \\to Z$",
+        "bbox": [
+            85,
+            814,
+            455,
+            830
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The additional rule of Union is defined as follows.",
+        "bbox": [
+            85,
+            843,
+            445,
+            857
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Union: If $X \\to Y$ and $X \\to Z$ , then $X \\to YZ$",
+        "bbox": [
+            85,
+            859,
+            435,
+            875
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "It can be proved that the additional rule of Union is also implied by the three rules of Armstrong's Axioms. Listed below are four combinations of these three rules. Which one of these combinations is both necessary and sufficient for the proof?",
+        "bbox": [
+            82,
+            880,
+            929,
+            923
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9e4ba438ebbb82d3cd1058b2ab05ad9e7d4ce9bcde92bd4f3371d4faeca4c042.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            694,
+            932,
+            731
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Reflexivity, Augmentation, and",
+            "Transitivity",
+            "C. Transitivity"
+        ],
+        "bbox": [
+            89,
+            65,
+            351,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 databases database-normalization armstrong-axioms two-marks",
+        "bbox": [
+            89,
+            110,
+            477,
+            119
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Reflexivity and Augmentation",
+            "D. Augmentation and Transitivity"
+        ],
+        "bbox": [
+            495,
+            65,
+            721,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            125,
+            188,
+            140
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.2",
+        "text_level": 1,
+        "bbox": [
+            68,
+            150,
+            95,
+            163
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B Tree (32)",
+        "text_level": 1,
+        "bbox": [
+            468,
+            150,
+            559,
+            163
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (9Q)",
+        "bbox": [
+            70,
+            174,
+            453,
+            190
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.2.1 B Tree: GATE CSE 1989 | Question: 12a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            203,
+            433,
+            217
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The below figure shows a $B^{+}$ tree where only key values are indicated in the records. Each block can hold up to three records. A record with a key value 34 is inserted into the $B^{+}$ tree. Obtain the modified $B^{+}$ tree after insertion.",
+        "bbox": [
+            82,
+            229,
+            875,
+            273
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/5b37e019782b5657a180242b36ff1f2445cd17b71ac012a11909bde262deda63.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            206,
+            932,
+            244
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/a5802d99601566a1de38159add7879d473191633f1b38c129a5a750fbb3eeffe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"120\"] --> B[\"32\"]\n  A --> C[\"81\"]\n  A --> D[\"150\"]\n  A --> E[\"520\"]\n  B --> F[\"2 8 18\"]\n  B --> G[\"32 50 72\"]\n  B --> H[\"81 106 -\"]\n  C --> I[\"120 140 -\"]\n  C --> J[\"150 160 200\"]\n  C --> K[\"205 235 240\"]\n  D --> L[\"520\"]\n  E --> M[\"250 340 420\"]\n  E --> N[\"520 601 -\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            90,
+            280,
+            924,
+            382
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "descriptive gate1989 databases b-tree",
+        "bbox": [
+            87,
+            403,
+            285,
+            413
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            419,
+            188,
+            434
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.2.2 B Tree: GATE CSE 1994 | Question: 14a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            442,
+            433,
+            457
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider $B^{+}$ - tree of order $d$ shown in figure. (A $B^{+}$ - tree of order $d$ contains between $d$ and $2d$ keys in each node)",
+        "bbox": [
+            82,
+            467,
+            875,
+            498
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Draw the resulting $B^{+}$ - tree after 100 is inserted in the figure below.",
+        "bbox": [
+            85,
+            503,
+            588,
+            517
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/fe38172d461a3acea5e3480666f4bd03569d1eebfe52f4412b702d55856afb6a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            446,
+            932,
+            483
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1c838ffb63f93f284e892a2ef8bb6f656c54a06221e537b9d18bf656afade2a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"Input 1\"] --> B[\"Input 2\"]\n  C[\"Input 3\"] --> D[\"Input 4\"]\n  E[\"Input 5\"] --> F[\"Input 6\"]\n  B --> G[\"Output 1\"]\n  D --> H[\"Output 2\"]\n  F --> I[\"Output 3\"]\n  G --> J[\"Output 4\"]\n  H --> K[\"Output 5\"]\n  I --> L[\"Output 6\"]\n  J --> M[\"Output 7\"]\n  K --> N[\"Output 8\"]\n  L --> O[\"Output 9\"]\n  M --> P[\"Output 10\"]\n  N --> Q[\"Output 11\"]\n  O --> R[\"Output 12\"]\n  P --> S[\"Output 13\"]\n  Q --> T[\"Output 14\"]\n  R --> U[\"Output 15\"]\n  S --> V[\"Output 16\"]\n  T --> W[\"Output 17\"]\n  U --> X[\"Output 18\"]\n  V --> Y[\"Output 19\"]\n  W --> Z[\"Output 20\"]\n  X --> AA[\"Output 21\"]\n  Y --> AB[\"Output 22\"]\n  Z --> AC[\"Output 23\"]\n  AA --> AD[\"Output 24\"]\n  AB --> AE[\"Output 25\"]\n  AD --> AF[\"Output 26\"]\n  AE --> AG[\"Output 27\"]\n  AF --> AH[\"Output 28\"]\n  AG --> AI[\"Output 29\"]\n  AH --> AJ[\"Output 30\"]\n  AI --> AK[\"Output 31\"]\n  AJ --> AL[\"Output 32\"]\n  AK --> AM[\"Output 33\"]\n  AL --> AN[\"Output 34\"]\n  AM --> AO[\"Output 35\"]\n  AN --> AP[\"Output 36\"]\n  AO --> AQ[\"Output 37\"]\n  AP --> AR[\"Output 38\"]\n  AQ --> AS[\"Output 39\"]\n  AR --> AT[\"Output 40\"]\n  AS --> AU[\"Output 41\"]\n  AT --> AV[\"Output 42\"]\n  AU --> AW[\"Output 43\"]\n  AV --> AX[\"Output 44\"]\n  AW --> AY[\"Output 45\"]\n  AX --> AZ[\"Output 46\"]\n  AW --> AY --> ABY[\"Output 47\"]\n  AX --> AZ --> ABY --> ACY[\"Output 48\"]\n  AZ --> ADY[\"Output 49\"]\n  ACY --> AEY[\"Output 50\"]\n  ADY --> AFY[\"Output 51\"]\n  AEY --> AGY[\"Output 52\"]\n  AFY --> AGY --> AHY[\"Output 53\"]\n  AGY --> AHY --> AIY[\"Output 54\"]\n  AHY --> AIY --> AJY[\"Output 55\"]\n  AIY --> AKY[\"Output 56\"]\n  AJY --> AKY --> ALY[\"Output 57\"]\n  AKY --> ALY --> AMY[\"Output 58\"]\n  ALY --> AMY --> ANY[\"Output 59\"]\n  AMY --> ANY --> AOY[\"Output 60\"]\n  ANY --> AOY --> AOY --> ANY --> AOY\n  AOY --> ANY --> AOY --> AOY\n  ANY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> OY[\"Output 10\"]\n  AOY --> AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY --> AOY\n  AOY --> AOY --> AOY --> AOY --> AOY\n  AOY -- \"Output 10\" --> A1[\"Output 10\"]\n  AOY -- \"Output 15\" --> A2[\"Output 15\"]\n  AOY -- \"Output 25\" --> A3[\"Output 25\"]\n  AOY -- \"Output 36\" --> A4[\"Output 36\"]\n  AOY -- \"Output 38\" --> A5[\"Output 38\"]\n  AOY -- \"Output 41\" --> A6[\"Output 41\"]\n  AOY -- \"Output 47\" --> A7[\"Output 47\"]\n  AOY -- \"Output 69\" --> A8[\"Output 69\"]\n  AOY -- \"Output 71\" --> A9[\"Output 71\"]\n  AOY -- \"Output 75\" --> A10[\"Output 75\"]\n  AOY -- \"Output 83\" --> A11[\"Output 83\"]\n  AOY -- \"Output 93\" --> A12[\"Output 93\"]\n  AOY -- \"Output 99\" --> A13[\"Output 99\"]\n  AOY -- \"Output 101\" --> A14[\"Output 101\"]\n  AOY -- \"Output 105\" --> A15[\"Output 105\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            90,
+            526,
+            924,
+            665
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1994 databases b-tree normal descriptive",
+        "bbox": [
+            87,
+            687,
+            329,
+            697
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            703,
+            188,
+            718
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.2.3 B Tree: GATE CSE 1994 | Question: 14b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            726,
+            433,
+            739
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "For a $B^{+}$ - tree of order $d$ with $n$ leaf nodes, the number of nodes accessed during a search is $O(\\_)$ .",
+        "bbox": [
+            84,
+            751,
+            818,
+            769
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/875ec9984631212079f43dad597faaf159752dd5cefce265943839598ec551de.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            730,
+            932,
+            767
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1994 databases b-tree normal descriptive",
+        "bbox": [
+            87,
+            781,
+            327,
+            790
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            798,
+            188,
+            812
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.2.4 B Tree: GATE CSE 1997 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            821,
+            425,
+            834
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A $B^{+}$ - tree of order $d$ is a tree in which each internal node has between $d$ and $2d$ key values. An internal node with $M$ key values has $M + 1$ children. The root (if it is an internal node) has between 1 and $2d$ key values. The distance of a node from the root is the length of the path from the root to the node. All leaves are at the same distance from the root. The height of the tree is the distance of a leaf from the root.",
+        "bbox": [
+            82,
+            846,
+            927,
+            904
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2d461d8dc482107e0b30dcee5c856be0211cdbceb7189ff2780e11ad26c07631.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            824,
+            932,
+            861
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. What is the total number of key values in the internal nodes of a $B^{+}$ -tree with $l$ leaves $(l \\geq 2)$ ?",
+            "B. What is the maximum number of internal nodes in a $B^{+}$ - tree of order 4 with 52 leaves?",
+            "C. What is the minimum number of leaves in a $B^{+}$ -tree of order $d$ and height $h(h \\geq 1)$ ?"
+        ],
+        "bbox": [
+            85,
+            66,
+            800,
+            124
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1997 databases b-tree normal descriptive",
+        "bbox": [
+            87,
+            148,
+            329,
+            157
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            163,
+            181,
+            178
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.2.5 B Tree: GATE CSE 1999 | Question: 1.25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            187,
+            438,
+            201
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is correct?",
+        "bbox": [
+            85,
+            211,
+            329,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. B-trees are for storing data on disk and $B^{+}$ trees are for main memory.",
+            "B. Range queries are faster on $B^{+}$ trees.",
+            "C. B-trees are for primary indexes and $B^{+}$ trees are for secondary indexes.",
+            "D. The height of a $B^{+}$ tree is independent of the number of records."
+        ],
+        "bbox": [
+            85,
+            239,
+            636,
+            315
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1999 databases b-tree normal",
+        "bbox": [
+            87,
+            340,
+            268,
+            351
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            357,
+            181,
+            371
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.2.6 B Tree: GATE CSE 1999 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            381,
+            423,
+            395
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a B-tree with degree m, that is, the number of children, c, of any internal node (except the root) is such that $m \\leq c \\leq 2m - 1$ . Derive the maximum and minimum number of records in the leaf nodes for such a B-tree with height h, $h \\geq 1$ . (Assume that the root of a tree is at height 0).",
+        "bbox": [
+            84,
+            404,
+            878,
+            448
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1999 databases b-tree normal descriptive",
+        "bbox": [
+            87,
+            461,
+            329,
+            472
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            478,
+            181,
+            492
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.2.7 B Tree: GATE CSE 2000 | Question: 1.22, UGCNET-June2012-II: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            502,
+            638,
+            516
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B $^{+}$ -trees are preferred to binary trees in databases because",
+        "bbox": [
+            85,
+            528,
+            527,
+            543
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Disk capacities are greater than memory capacities",
+            "B. Disk access is much slower than memory access",
+            "C. Disk data transfer rates are much less than memory data transfer rates",
+            "D. Disks are more reliable than memory"
+        ],
+        "bbox": [
+            85,
+            553,
+            630,
+            609
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 databases b-tree normal ugcnetcse-june2012-paper2",
+        "bbox": [
+            87,
+            635,
+            411,
+            644
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            650,
+            181,
+            665
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.2.8 B Tree: GATE CSE 2000 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            674,
+            423,
+            688
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "(a) Suppose you are given an empty $B^{+}$ tree where each node (leaf and internal) can store up to 5 key values. Suppose values 1, 2, $\\ldots$ 10 are inserted, in order, into the tree. Show the tree pictorially",
+        "bbox": [
+            84,
+            700,
+            875,
+            730
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. after 6 insertions, and",
+            "ii. after all 10 insertions"
+        ],
+        "bbox": [
+            90,
+            739,
+            278,
+            768
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Do NOT show intermediate stages.",
+        "bbox": [
+            85,
+            780,
+            344,
+            795
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "(b) Suppose instead of splitting a node when it is full, we try to move a value to the left sibling. If there is no left sibling, or the left sibling is full, we split the node. Show the tree after values $1, 2, \\ldots, 9$ have been inserted. Assume, as in (a) that each node can hold up to 5 keys.",
+        "bbox": [
+            84,
+            798,
+            929,
+            842
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "(c) In general, suppose a $B^{+}$ tree node can hold a maximum of m keys, and you insert a long sequence of keys in increasing order. Then what approximately is the average number of keys in each leaf level node.",
+        "bbox": [
+            84,
+            846,
+            924,
+            876
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. in the normal case, and",
+            "ii. with the insertion as in (b)."
+        ],
+        "bbox": [
+            90,
+            885,
+            305,
+            914
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/2e311a70078e3eba2f038f5841a902df7a8e8db7bad1742f6918dffe93ba7cf3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            190,
+            932,
+            229
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/12e81c3d477dd237efcfa23577b327701df9c97b37fefaa04c50849dc5d6c19f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            383,
+            932,
+            421
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/67f81d8903546653bcadd0ee6f940b7864c9ae54ce3073cc3a30aa5f36ceffbc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            504,
+            932,
+            542
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/d16304d55db6bd28c77d1f337c62e73e1bbd8c8fa8d23ce11224b1f6d582037c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            676,
+            932,
+            714
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.2.9 B Tree: GATE CSE 2001 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            426,
+            124
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/6abbd7dd90ae450d1a65410a870430df3abfc9b2ff725a8bd437042cabdb8e03.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            931,
+            150
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We wish to construct a $B^{+}$ tree with fan-out (the number of pointers per node) equal to 3 for the following set of key values:",
+        "bbox": [
+            84,
+            136,
+            878,
+            165
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "80,50,10,70,30,100,90",
+        "bbox": [
+            85,
+            167,
+            294,
+            182
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Assume that the tree is initially empty and the values are added in the order given.",
+        "bbox": [
+            85,
+            187,
+            685,
+            201
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. Show the tree after insertion of 10, after insertion of 30, and after insertion of 90. Intermediate trees need not be shown.",
+            "b. The key values 30 and 10 are now deleted from the tree in that order show the tree after each deletion."
+        ],
+        "bbox": [
+            87,
+            212,
+            927,
+            256
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 databases b-tree normal descriptive",
+        "bbox": [
+            87,
+            281,
+            344,
+            290
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            296,
+            186,
+            311
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.2.10 B Tree: GATE CSE 2002 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            321,
+            435,
+            334
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/8db88ef7eb6ae4ca57fdfe2340f00d64b326b2e2ab9f75502bb3107b8ec9f3ed.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            323,
+            931,
+            359
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "a. The following table refers to search items for a key in B-trees and $B^{+}$ trees.",
+        "bbox": [
+            87,
+            368,
+            665,
+            384
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/ffb6ae1ad51c28a0c91a06e5210dfa1627e22808f0775a36f1ad886e83d705ce.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">B-tree</td><td colspan=\"2\"> $\\mathbf{B^{+}}$ -tree</td></tr><tr><td>Successful search</td><td>Unsuccessful search</td><td>Successful search</td><td>Unsuccessful search</td></tr><tr><td> $X_1$ </td><td> $X_2$ </td><td> $X_3$ </td><td> $X_4$ </td></tr></table>",
+        "bbox": [
+            163,
+            394,
+            878,
+            456
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A successful search means that the key exists in the database and unsuccessful means that it is not present in the database. Each of the entries $X_{1}, X_{2}, X_{3}$ and $X_{4}$ can have a value of either Constant or Variable. Constant means that the search time is the same, independent of the specific key value, where variable means that it is dependent on the specific key value chosen for the search.",
+        "bbox": [
+            109,
+            478,
+            927,
+            534
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Give the correct values for the entries $X_{1}, X_{2}, X_{3}$ and $X_{4}$ (for example $X_{1} = \\text{Constant}$ , $X_{2} = \\text{Constant}$ , $X_{3} = \\text{Constant}$ , $X_{4} = \\text{Constant}$ )",
+        "bbox": [
+            109,
+            534,
+            910,
+            565
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "b. Relation $R(A, B)$ has the following view defined on it:",
+        "bbox": [
+            89,
+            565,
+            509,
+            579
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/a0b5e84eb9e9a80bd4f936967aeb27863e759d6259c29f02eaaf47f0026acc0d.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>CREATE VIEW V AS(SELECT R1.A,R2.BFROM R AS R1, R as R2WHERE R1.B=R2.A)</td></tr></table>",
+        "bbox": [
+            112,
+            587,
+            263,
+            633
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "i. The current contents of relation R are shown below. What are the contents of the view V?",
+        "bbox": [
+            117,
+            642,
+            794,
+            656
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/8bb350b2029d3d9e050007be6bec1e8ce275e3d39eec22a44b0aace616630bba.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>A</td><td>B</td></tr><tr><td>1</td><td>2</td></tr><tr><td>2</td><td>3</td></tr><tr><td>2</td><td>4</td></tr><tr><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td></tr><tr><td>6</td><td>8</td></tr><tr><td>9</td><td>10</td></tr></table>",
+        "bbox": [
+            497,
+            668,
+            569,
+            825
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "ii. The tuples (2, 11) and (11, 6) are now inserted into $R$ . What are the additional tuples that are inserted in $V$ ?",
+        "bbox": [
+            115,
+            836,
+            924,
+            864
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2000 databases b-tree normal descriptive",
+        "bbox": [
+            87,
+            71,
+            344,
+            80
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2002 databases b-tree normal descriptive",
+        "bbox": [
+            87,
+            891,
+            344,
+            901
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            908,
+            186,
+            922
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.2.11 B Tree: GATE CSE 2002 | Question: 2.23, UGCNET-June2012-II: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            648,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3de4eac2cd9a140ddbb34e59c3b641ed45d6d296ad137632604dac23e63a5e90.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A $B^{+}$ - tree index is to be built on the Name attribute of the relation STUDENT. Assume that all the student names are of length 8 bytes, disk blocks are of size 512 bytes, and index pointers are of size 4 bytes. Given the scenario, what would be the best choice of the degree (i.e. number of pointers per node) of the $B^{+}$ - tree?",
+        "bbox": [
+            84,
+            92,
+            885,
+            138
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 16",
+        "bbox": [
+            89,
+            150,
+            134,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 42",
+        "bbox": [
+            285,
+            150,
+            329,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 43",
+        "bbox": [
+            480,
+            150,
+            522,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 44",
+        "bbox": [
+            673,
+            150,
+            717,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 databases b-tree normal ugcnetcse-june2012-paper2",
+        "bbox": [
+            87,
+            175,
+            411,
+            185
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            191,
+            186,
+            205
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.2.12 B Tree: GATE CSE 2003 | Question: 65",
+        "text_level": 1,
+        "bbox": [
+            78,
+            214,
+            433,
+            228
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following 2 - 3 - 4 tree (i.e., B-tree with a minimum degree of two) in which each data item is a letter. The usual alphabetical ordering of letters is used in constructing the tree.",
+        "bbox": [
+            84,
+            239,
+            878,
+            268
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/5bb55a8a34c44f2eb87fe7bb705f33d9c4ebf195f8c0c0dc71adff830859d031.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            218,
+            931,
+            255
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/ef28afba23a27565f3d6daf6e9cab8651f35ce993306006021176dfa5b14ce0b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"BHI\"] --> B[\"N\"]\n  B --> C[\"QT\"]\n  C --> D[\"VXZ\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            94,
+            277,
+            366,
+            321
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is the result of inserting G in the above tree?",
+        "bbox": [
+            85,
+            331,
+            457,
+            347
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A.",
+        "bbox": [
+            89,
+            403,
+            107,
+            415
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/bc30fbfdcc8cb2f8c1789547e56c143471236f81dcd527d153ff24839e8c1e33.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  P[\"P\"] --> U[\"U\"]\n  U --> V[\"V X Z\"]\n  V --> Q[\"Q T\"]\n  Q --> N[\"N\"]\n  N --> H[\"H I\"]\n  H --> G[\"G L\"]\n  G --> B[\"B\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            115,
+            359,
+            347,
+            412
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C.",
+        "bbox": [
+            90,
+            448,
+            107,
+            460
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/887dc5bb9be84a9b04fe30146fad2a8ab8197fb1d7566535406b739300e8f99b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            117,
+            420,
+            347,
+            456
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 databases b-tree normal",
+        "bbox": [
+            89,
+            467,
+            285,
+            476
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B.",
+        "bbox": [
+            495,
+            401,
+            512,
+            413
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/b6bf1548aefda2b64e06b2b0c55e80924ca6241439eaa3fb288f51d9d4a8dfc9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  P[\"P\"] --> H[\"H L\"]\n  H --> I[\"I\"]\n  H --> N[\"N\"]\n  H --> U[\"U\"]\n  U --> Q[\"Q T\"]\n  U --> V[\"V X Z\"]\n  I --> H\n  N --> U\n  Q --> V\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            522,
+            359,
+            754,
+            410
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            495,
+            415,
+            645,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            483,
+            186,
+            497
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.2.13 B Tree: GATE CSE 2004 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            507,
+            433,
+            520
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/6cd1584dc32f5d5db4381f1864748f6084c6d64f7c29562f667934a98650be48.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            510,
+            931,
+            547
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The order of an internal node in a $B+$ tree index is the maximum number of children it can have. Suppose that a child pointer takes 6 bytes, the search field value takes 14 bytes, and the block size is 512 bytes. What is the order of the internal node?",
+        "bbox": [
+            84,
+            530,
+            875,
+            573
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 24",
+        "bbox": [
+            89,
+            587,
+            134,
+            600
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 25",
+        "bbox": [
+            285,
+            587,
+            327,
+            600
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 26",
+        "bbox": [
+            480,
+            587,
+            522,
+            600
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 27",
+        "bbox": [
+            673,
+            587,
+            719,
+            600
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 databases b-tree normal",
+        "bbox": [
+            87,
+            612,
+            285,
+            621
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            628,
+            186,
+            642
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.2.14 B Tree: GATE CSE 2005 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            652,
+            433,
+            665
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/f21507be7e5a6c6005257f69aee662b7dd0c71021486a05d87ac0a56622ffdb4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            654,
+            931,
+            692
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is a key factor for preferring $B^{+}$ -trees to binary search trees for indexing database relations?",
+        "bbox": [
+            84,
+            676,
+            878,
+            705
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Database relations have a large number of records",
+            "B. Database relations are sorted on the primary key",
+            "C. $B^{+}$ -trees require less memory than binary search trees",
+            "D. Data transfer from disks is in blocks"
+        ],
+        "bbox": [
+            85,
+            716,
+            517,
+            788
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 databases b-tree normal",
+        "bbox": [
+            87,
+            814,
+            285,
+            823
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            830,
+            186,
+            844
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.2.15 B Tree: GATE CSE 2007 | Question: 63, ISRO2016-59",
+        "text_level": 1,
+        "bbox": [
+            78,
+            853,
+            542,
+            866
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/8ac9a7b5b474f6a4417481075164b3a3c5562251b3c014d24934f36a8a487a73.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            857,
+            931,
+            894
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The order of a leaf node in a $B^{+}$ - tree is the maximum number of (value, data record pointer) pairs it can hold. Given that the block size is 1K bytes, data record pointer is 7 bytes long, the value field is 9 bytes long and a block pointer is 6 bytes long, what is the order of the leaf node?",
+        "bbox": [
+            84,
+            878,
+            878,
+            923
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 63",
+        "bbox": [
+            89,
+            68,
+            134,
+            81
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 64",
+        "bbox": [
+            285,
+            68,
+            329,
+            81
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 67",
+        "bbox": [
+            480,
+            68,
+            524,
+            81
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 68",
+        "bbox": [
+            673,
+            68,
+            719,
+            81
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 databases b-tree normal isro2016",
+        "bbox": [
+            87,
+            93,
+            334,
+            103
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            123
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.2.16 B Tree: GATE CSE 2008 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            133,
+            431,
+            147
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A B-tree of order 4 is built from scratch by 10 successive insertions. What is the maximum number of node splitting operations that may take place?",
+        "bbox": [
+            84,
+            156,
+            878,
+            186
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/36c15448c1724ba21192a498204782db60e9e273a565b7c67e8539f3741a983f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            931,
+            172
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            199,
+            126,
+            212
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            199,
+            321,
+            213
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 5",
+        "bbox": [
+            480,
+            199,
+            515,
+            213
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            199,
+            710,
+            213
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 databases b-tree normal",
+        "bbox": [
+            87,
+            223,
+            287,
+            233
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            239,
+            186,
+            254
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.2.17 B Tree: GATE CSE 2009 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            263,
+            433,
+            277
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/ff71f1c44046ffc918159876820008ad38a8451ebf00bf878b03445f2c1c0fd9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            264,
+            931,
+            302
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The following key values are inserted into a $B^{+}$ - tree in which order of the internal nodes is 3, and that of the leaf nodes is 2, in the sequence given below. The order of internal nodes is the maximum number of tree pointers in each node, and the order of leaf nodes is the maximum number of data items that can be stored in it. The $B^{+}$ - tree is initially empty",
+        "bbox": [
+            84,
+            288,
+            929,
+            347
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "10, 3, 6, 8, 4, 2, 1",
+        "bbox": [
+            87,
+            351,
+            221,
+            366
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The maximum number of times leaf nodes would get split up as a result of these insertions is",
+        "bbox": [
+            85,
+            370,
+            763,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            87,
+            397,
+            127,
+            412
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 3",
+        "bbox": [
+            285,
+            397,
+            321,
+            412
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 4",
+        "bbox": [
+            480,
+            397,
+            515,
+            412
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 5",
+        "bbox": [
+            673,
+            399,
+            710,
+            412
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 databases b-tree normal",
+        "bbox": [
+            87,
+            423,
+            285,
+            432
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            439,
+            186,
+            453
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.2.18 B Tree: GATE CSE 2010 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            461,
+            433,
+            477
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/cbbaf47d653a511c6d2fb187ec57c7c36beac7e2c42b71718c0e165997c9025f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            465,
+            931,
+            503
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider a $B^{+}$ -tree in which the maximum number of keys in a node is 5. What is the minimum number of keys in any non-root node?",
+        "bbox": [
+            84,
+            488,
+            878,
+            517
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            87,
+            530,
+            126,
+            543
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            530,
+            321,
+            543
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            530,
+            515,
+            543
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 4",
+        "bbox": [
+            673,
+            530,
+            710,
+            543
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 databases b-tree easy",
+        "bbox": [
+            87,
+            555,
+            275,
+            565
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            571,
+            186,
+            586
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.2.19 B Tree: GATE CSE 2015 | Set 2 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            595,
+            478,
+            609
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "With reference to the $B^{+}$ tree index of order 1 shown below, the minimum number of nodes (including the Root node) that must be fetched in order to satisfy the following query. \"Get all records with a search key greater than or equal to 7 and less than 15\" is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            619,
+            878,
+            663
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/7dbfa18f89db6d9dab5885d1c36daa4c445d37694599d9905d0e23ea052fc21c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            597,
+            931,
+            635
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/386891142c34c1547fe38f0baeadcd804267f35ec747e59d13c0bde85edad628.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"9\"] --> B[\"5\"]\n  A --> C[\"13\"]\n  B --> D[\"1\"]\n  B --> E[\"5\"]\n  C --> F[\"11\"]\n  C --> G[\"13\"]\n  C --> H[\"15\"]\n  D --> I[\"7\"]\n  E --> I\n  F --> I\n  G --> I\n  H --> I\n  I --> J[\"17\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            95,
+            674,
+            556,
+            799
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 databases b-tree normal numerical-answers",
+        "bbox": [
+            87,
+            824,
+            394,
+            834
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            840,
+            186,
+            855
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.2.20 B Tree: GATE CSE 2015 | Set 3 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            864,
+            487,
+            878
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider a $B^{+}$ tree in which the search key is 12 bytes long, block size is 1024 bytes, record pointer is 10 bytes long and the block pointer is 8 bytes long. The maximum number of keys that can be accommodated",
+        "bbox": [
+            84,
+            889,
+            878,
+            920
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/45303271a4189e2014090e7165518f12340c19d2e1ddd93fccd271340fbbf02a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            866,
+            931,
+            904
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "in each non-leaf node of the tree is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            64,
+            406,
+            78
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 databases b-tree normal numerical-answers",
+        "bbox": [
+            87,
+            92,
+            394,
+            102
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            108,
+            186,
+            123
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.2.21 B Tree: GATE CSE 2016 | Set 2 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            485,
+            146
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B+ Trees are considered BALANCED because.",
+        "bbox": [
+            85,
+            156,
+            433,
+            169
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The lengths of the paths from the root to all leaf nodes are all equal.",
+            "B. The lengths of the paths from the root to all leaf nodes differ from each other by at most 1.",
+            "C. The number of children of any two non-leaf sibling nodes differ by at most 1.",
+            "D. The number of records in any two leaf nodes differ by at most 1."
+        ],
+        "bbox": [
+            87,
+            181,
+            764,
+            239
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 databases b-tree normal",
+        "bbox": [
+            87,
+            264,
+            305,
+            274
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            280,
+            189,
+            295
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.2.22 B Tree: GATE CSE 2017 | Set 2 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            304,
+            487,
+            318
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In a $B^{+}$ Tree, if the search-key value is 8 bytes long, the block size is 512 bytes and the pointer size is 2 B, then the maximum order of the $B^{+}$ Tree is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            328,
+            878,
+            362
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 databases b-tree numerical-answers normal",
+        "bbox": [
+            87,
+            375,
+            394,
+            384
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            391,
+            189,
+            406
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.2.23 B Tree: GATE CSE 2019 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            415,
+            433,
+            429
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is NOT correct about the $B^{+}$ tree data structure used for creating an index of a relational database table?",
+        "bbox": [
+            84,
+            440,
+            878,
+            469
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $B^{+}$ Tree is a height-balanced tree",
+            "B. Non-leaf nodes have pointers to data records",
+            "C. Key values in each node are kept in sorted order",
+            "D. Each leaf node has a pointer to the next leaf node"
+        ],
+        "bbox": [
+            87,
+            480,
+            478,
+            538
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 databases b-tree one-mark",
+        "bbox": [
+            87,
+            564,
+            295,
+            573
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            580,
+            189,
+            593
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.2.24 B Tree: GATE CSE 2024 | Set 1 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            604,
+            485,
+            618
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In a $\\mathbf{B}^{+}$ tree, the requirement of at least half-full (50%) node occupancy is relaxed for which one of the following cases?",
+        "bbox": [
+            84,
+            629,
+            878,
+            657
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Only the root node",
+            "C. All internal nodes",
+            "gatecse-2024-set1 databases b-tree one-mark"
+        ],
+        "bbox": [
+            87,
+            668,
+            315,
+            709
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. All leaf nodes",
+            "D. Only the leftmost leaf node"
+        ],
+        "bbox": [
+            495,
+            668,
+            702,
+            695
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            716,
+            189,
+            730
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.2.25 B Tree: GATE CSE 2025 | Set 1 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            739,
+            485,
+            754
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following $B^{+}$ tree with 5 nodes, in which a node can store at most 3 key values The value 23 is now inserted in the $B^{+}$ tree. Which of the following options(s) is/are CORRECT?",
+        "bbox": [
+            84,
+            764,
+            878,
+            796
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/9842084b982925044e61e19f7785609f140add86a25a6e8b76563f6ec03a8018.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"6\"] --> B[\"1\"]\n  A --> C[\"7\"]\n  A --> D[\"13\"]\n  A --> E[\"20\"]\n  B --> F[\"4\"]\n  C --> G[\"9\"]\n  D --> H[\"15\"]\n  E --> I[\"21\"]\n  F --> J[\"3\"]\n  G --> K[\"10\"]\n  H --> L[\"17\"]\n  I --> M[\"22\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            270,
+            802,
+            744,
+            881
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/2acbf3596d3d8c299785afd2bc3bcd9ed4d9d817ab75201efb147cc4879f08f2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            931,
+            172
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. None of the nodes will split.",
+            "B. At least one node will split and redistribute."
+        ],
+        "bbox": [
+            87,
+            895,
+            426,
+            923
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/34314b62ceef85ca88302d2a307255e178682d31d2d01bd8ffed9feff4808bbb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            307,
+            931,
+            344
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/b9b87ec2efb328b591287955ce94aae2132afa9ef29654930d2e8a125ff9ab8a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            418,
+            931,
+            454
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/3544a24b337abe38b17bed7d2f2f7689d9e42892f2fbe8904fad87ca8485ca63.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            606,
+            931,
+            643
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/b643c8ef87958b8b4117bb61b6f8cc05ca2b9ec50bfa0809c57cc2d37a273eb4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            742,
+            931,
+            780
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "C. The total number of nodes will remain same.",
+            "D. The height of the tree will increase."
+        ],
+        "bbox": [
+            85,
+            64,
+            436,
+            93
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 databases b-tree multiple-selects one-mark",
+        "bbox": [
+            87,
+            118,
+            391,
+            128
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            135,
+            186,
+            149
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.2.26 B Tree: GATE CSE 2025 | Set 2 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            77,
+            157,
+            487,
+            172
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In a $B^{+}$ -tree where each node can hold at most four key values, a root to leaf path consists of the following nodes:",
+        "bbox": [
+            84,
+            184,
+            875,
+            213
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{A} = (4 9, 7 7, 8 3, -), \\mathrm{B} = (7, 1 9, 3 3, 4 4), \\mathrm{C} = (2 0 ^ {*}, 2 2 ^ {*}, 2 5 ^ {*}, 2 6 ^ {*})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            248,
+            223,
+            764,
+            242
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/ac98c2e27219dbed9504acbb09ece250ebe043b12015a086dfa4786cb1e4e031.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            161,
+            931,
+            198
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The \\*-marked keys signify that these are data entries in a leaf.",
+        "bbox": [
+            85,
+            277,
+            544,
+            293
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Assume that a pointer between keys $k_{1}$ and $k_{2}$ points to a subtree containing keys in $[k_{1}, k_{2})$ , and that when a leaf is created, the smallest key in it is copied up into its parent.",
+        "bbox": [
+            84,
+            306,
+            929,
+            336
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A record with key value 23 is inserted into the $B^{+}$ -tree.",
+        "bbox": [
+            85,
+            350,
+            494,
+            366
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The smallest key value in the parent of the leaf that contains $25^{*}$ is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            378,
+            818,
+            396
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 databases b-tree numerical-answers two-marks",
+        "bbox": [
+            87,
+            408,
+            406,
+            418
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            425,
+            186,
+            439
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.2.27 B Tree: GATE DA 2026 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            77,
+            448,
+            421,
+            461
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a B+ Tree where the maximum number of key values in each leaf node is 2 and the maximum number of pointers in each non-leaf node is 3. Let the content of the B+ Tree be as shown in the figure.",
+        "bbox": [
+            84,
+            472,
+            878,
+            502
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/25ac84a8be46639abc14e2189d6a52a4c262dfa1816110df15dc5c1a3bc9c9cb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            452,
+            931,
+            489
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the following options denotes the key value(s) stored in the root node after inserting a key value3 in the given B+ Tree?",
+        "bbox": [
+            84,
+            505,
+            927,
+            535
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/436435b432f41008b9910db0f643f7f576ea84bd8566de6921116b49cb2b4d77.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"Input Block 5\"] --> B[\"Parallel Block 1\"]\n  A --> C[\"Parallel Block 5\"]\n  A --> D[\"Parallel Block 7\"]\n  A --> E[\"Parallel Block 8\"]\n  A --> F[\"Parallel Block 9\"]\n  A --> G[\"Parallel Block 12\"]\n  B --> C\n  C --> D\n  D --> E\n  E --> F\n  F --> G\n  G --> H[\"NULL\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            258,
+            542,
+            751,
+            671
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 5",
+        "bbox": [
+            89,
+            690,
+            126,
+            703
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 8",
+        "bbox": [
+            285,
+            690,
+            319,
+            703
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 3 and 5",
+        "bbox": [
+            478,
+            690,
+            557,
+            704
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 3,5 and 8",
+        "bbox": [
+            673,
+            690,
+            768,
+            705
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 databases b-tree two-marks",
+        "bbox": [
+            87,
+            714,
+            297,
+            723
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            730,
+            186,
+            744
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.2.28 B Tree: GATE IT 2004 | Question: 79",
+        "text_level": 1,
+        "bbox": [
+            77,
+            754,
+            415,
+            768
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a table $T$ in a relational database with a key field $K$ . A $B$ -tree of order $p$ is used as an access structure on $K$ , where $p$ denotes the maximum number of tree pointers in a B-tree index node. Assume that $K$ is 10 bytes long; disk block size is 512 bytes; each data pointer $P_D$ is 8 bytes long and each block pointer $P_B$ is 5 bytes long. In order for each $B$ -tree node to fit in a single disk block, the maximum value of $p$ is",
+        "bbox": [
+            84,
+            777,
+            929,
+            840
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 20",
+        "bbox": [
+            87,
+            853,
+            134,
+            866
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 22",
+        "bbox": [
+            285,
+            853,
+            329,
+            866
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 23",
+        "bbox": [
+            480,
+            853,
+            524,
+            866
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 32",
+        "bbox": [
+            673,
+            853,
+            719,
+            866
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 databases b-tree normal",
+        "bbox": [
+            87,
+            877,
+            278,
+            887
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            893,
+            186,
+            908
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/731653806d4eb81926f87b40a93a77e67306bc0c0d04477fd21be0cde1a668ee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            756,
+            931,
+            793
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.2.29 B Tree: GATE IT 2005 | Question: 23, ISRO2017-67",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            524,
+            79
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/2f5748ab324b52ba5a3f9ac47f4aa4cd42c3b0b4ef67c72c5f26fe26f2f96e6d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A B-Tree used as an index for a large database table has four levels including the root node. If a new key is inserted in this index, then the maximum number of nodes that could be newly created in the process are",
+        "bbox": [
+            84,
+            87,
+            872,
+            118
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 5",
+        "bbox": [
+            89,
+            131,
+            126,
+            144
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            131,
+            321,
+            144
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            478,
+            131,
+            515,
+            144
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 2",
+        "bbox": [
+            673,
+            131,
+            710,
+            144
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005",
+        "bbox": [
+            89,
+            155,
+            139,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "databases",
+        "bbox": [
+            151,
+            156,
+            194,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "b-tree",
+        "bbox": [
+            206,
+            156,
+            235,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "normal",
+        "bbox": [
+            247,
+            156,
+            278,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "isro2017",
+        "bbox": [
+            290,
+            156,
+            327,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            171,
+            188,
+            186
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2.30 B Tree: GATE IT 2006 | Question: 61",
+        "text_level": 1,
+        "bbox": [
+            78,
+            195,
+            413,
+            209
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/21da08c2c927688d65b76db18fc426bcf8863848619c4cf5ab2166d9e1920ec8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            197,
+            931,
+            235
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In a database file structure, the search key field is 9 bytes long, the block size is 512 bytes, a record pointer is 7 bytes and a block pointer is 6 bytes. The largest possible order of a non-leaf node in a $B^{+}$ tree implementing this file structure is",
+        "bbox": [
+            84,
+            218,
+            878,
+            264
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 23",
+        "bbox": [
+            89,
+            277,
+            134,
+            290
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 24",
+        "bbox": [
+            285,
+            277,
+            329,
+            290
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 34",
+        "bbox": [
+            478,
+            277,
+            524,
+            290
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 44",
+        "bbox": [
+            673,
+            277,
+            717,
+            290
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 databases b-tree normal",
+        "bbox": [
+            87,
+            302,
+            278,
+            311
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            318,
+            188,
+            332
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2.31 B Tree: GATE IT 2007 | Question: 84",
+        "text_level": 1,
+        "bbox": [
+            78,
+            340,
+            415,
+            355
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/307029a9d34a96886e730c4f4a52bd126e97221629ae0d96746c5cd7d3905c59.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            344,
+            931,
+            382
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the $B^{+}$ tree in the adjoining figure, where each node has at most two keys and three links.",
+        "bbox": [
+            84,
+            366,
+            815,
+            383
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/0bda5343629cd753148d419bd184a90642caa40a5c54a4e3d31f76efef7fb0e6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"K40\"] --> B[\"K30\"]\n  A --> C[\"K50\"]\n  B --> D[\"K10 K20\"]\n  B --> E[\"K30\"]\n  C --> F[\"K40\"]\n  C --> G[\"K50\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            295,
+            387,
+            670,
+            458
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Keys K15 and then K25 are inserted into this tree in that order. Exactly how many of the following nodes (disregarding the links) will be present in the tree after the two insertions?",
+        "bbox": [
+            84,
+            463,
+            927,
+            492
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/f69e87386c7993f7b75324e0c78c49481827d9e50cf0c747ef2c8d98bfcc2969.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            319,
+            497,
+            389,
+            516
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/a8717c43be1c3ddf5a0c92a10d3abe83140f7c25f3f1f86f8ae8049e6c5b22e8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            423,
+            498,
+            490,
+            516
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/a9aa96939a1fc1479e43db509ab91394e670c3573271d3bff5da56542f30ddcb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            524,
+            498,
+            593,
+            516
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d12a1c8b58db1dd541e438957b454c0f819ba898efcf6219ce2d1be69b5601d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            628,
+            498,
+            695,
+            516
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            89,
+            534,
+            126,
+            547
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            534,
+            321,
+            547
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            478,
+            534,
+            515,
+            547
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 4",
+        "bbox": [
+            673,
+            534,
+            710,
+            547
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 databases b-tree normal",
+        "bbox": [
+            87,
+            558,
+            278,
+            568
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            574,
+            188,
+            589
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.2.32 B Tree: GATE IT 2007 | Question: 85",
+        "text_level": 1,
+        "bbox": [
+            78,
+            598,
+            415,
+            612
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/dc19a7d6744545a2b96f5f713a6600808cd085c3e5c2c9486c70ccd7158f568c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            600,
+            931,
+            638
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the $B^{+}$ tree in the adjoining figure, where each node has at most two keys and three links.",
+        "bbox": [
+            84,
+            623,
+            815,
+            640
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/a3bea2546e4adb4e2e1a38bbcc4cc94cfc27966bda296d916e50b9a9c17a0d25.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"K40\"] --> B[\"K30\"]\n  A --> C[\"K50\"]\n  B --> D[\"K10 K20\"]\n  B --> E[\"K30\"]\n  C --> F[\"K40\"]\n  C --> G[\"K50\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            289,
+            644,
+            677,
+            717
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Keys K15 and then K25 are inserted into this tree in that order. Now the key K50 is deleted from the $B^{+}$ tree resulting after the two insertions made earlier. Consider the following statements about the $B^{+}$ tree resulting after this deletion.",
+        "bbox": [
+            84,
+            723,
+            929,
+            769
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "i. The height of the tree remains the same.",
+        "bbox": [
+            92,
+            779,
+            410,
+            794
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "ii. The node K20",
+        "bbox": [
+            90,
+            796,
+            268,
+            815
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "(disregarding the links) is present in the tree.",
+        "bbox": [
+            110,
+            819,
+            438,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "iii. The root node remains unchanged (disregarding the links).",
+        "bbox": [
+            87,
+            837,
+            539,
+            853
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is true?",
+        "bbox": [
+            85,
+            863,
+            398,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Statements (i) and (ii) are true",
+            "C. Statements (iii) and (i) are true"
+        ],
+        "bbox": [
+            89,
+            887,
+            319,
+            914
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Statements (ii) and (iii) are true",
+            "D. All the statements are false"
+        ],
+        "bbox": [
+            495,
+            887,
+            729,
+            913
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "gateit-2007 databases b-tree normal",
+        "bbox": [
+            87,
+            919,
+            278,
+            929
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.3",
+        "text_level": 1,
+        "bbox": [
+            67,
+            95,
+            95,
+            108
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Candidate Key (7)",
+        "text_level": 1,
+        "bbox": [
+            442,
+            95,
+            586,
+            110
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (6Q)",
+        "bbox": [
+            70,
+            119,
+            267,
+            133
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.3.1 Candidate Key: GATE CSE 1994 | Question: 3.7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            148,
+            492,
+            163
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "An instance of a relational scheme $R(A, B, C)$ has distinct values for attribute $A$ . Can you conclude that $A$ is a candidate key for $R$ ?",
+        "bbox": [
+            84,
+            172,
+            878,
+            203
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/ef86b0ce882b0584adc02ab1ccbb6e2a259a6107098b680e30f1edc79daa4909.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            150,
+            931,
+            188
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1994 databases easy database-normalization candidate-key descriptive",
+        "bbox": [
+            87,
+            217,
+            460,
+            226
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            233,
+            186,
+            247
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.3.2 Candidate Key: GATE CSE 2005 | Question: 78",
+        "text_level": 1,
+        "bbox": [
+            78,
+            256,
+            487,
+            271
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider a relation scheme $R = (A, B, C, D, E, H)$ on which the following functional dependencies hold: $\\{A \\to B, BC \\to D, E \\to C, D \\to A\\}$ . What are the candidate keys $R$ ?",
+        "bbox": [
+            84,
+            280,
+            878,
+            312
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/eb62f6739a0bb113ed859d039cefefccf2d4b13a169be428177b7eb2f8260612.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            258,
+            931,
+            296
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. AE, BE",
+        "bbox": [
+            89,
+            324,
+            176,
+            339
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. AE, BE, DE",
+        "bbox": [
+            285,
+            324,
+            403,
+            339
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. AEH, BEH, BCH",
+        "bbox": [
+            478,
+            324,
+            638,
+            339
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. AEH, BEH, DEH",
+        "bbox": [
+            673,
+            324,
+            833,
+            339
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 databases candidate-key easy",
+        "bbox": [
+            87,
+            349,
+            307,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            365,
+            186,
+            378
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.3.3 Candidate Key: GATE CSE 2011 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            389,
+            487,
+            403
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider a relational table with a single record for each registered student with the following attributes:",
+        "bbox": [
+            85,
+            412,
+            833,
+            428
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/e3a5868e94dc04ec21f8771f160338ca23b61592176f2538c4516133e3cc99d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            391,
+            931,
+            429
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Registration\\_Num: Unique registration number for each registered student",
+            "2. UID: Unique identity number, unique at the national level for each citizen",
+            "3. BankAccount\\_Num: Unique account number at the bank. A student can have multiple accounts or joint accounts. This attribute stores the primary account number.",
+            "4. Name: Name of the student",
+            "5. Hostel\\_Room: Room number of the hostel"
+        ],
+        "bbox": [
+            89,
+            438,
+            927,
+            524
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following options is INCORRECT?",
+        "bbox": [
+            85,
+            535,
+            433,
+            549
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. BankAccount\\_Num is a candidate key",
+            "B. Registration\\_Num can be a primary key",
+            "C. UID is a candidate key if all students are from the same country",
+            "D. If $S$ is a super key such that $S \\cap \\mathrm{UID}$ is NULL then $S \\cup \\mathrm{UID}$ is also a superkey"
+        ],
+        "bbox": [
+            87,
+            562,
+            710,
+            621
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 databases normal candidate-key",
+        "bbox": [
+            87,
+            646,
+            317,
+            656
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            662,
+            186,
+            676
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.3.4 Candidate Key: GATE CSE 2014 | Set 2 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            686,
+            539,
+            700
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The maximum number of superkeys for the relation schema $R(E, F, G, H)$ with $E$ as the key is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            709,
+            847,
+            726
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/e3711bab15f90e5ae72a99614ff311a7ca241f412d426fb62b106c675427acd1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            688,
+            931,
+            726
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 databases numerical-answers easy candidate-key",
+        "bbox": [
+            87,
+            739,
+            416,
+            750
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            756,
+            186,
+            770
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.3.5 Candidate Key: GATE CSE 2014 | Set 2 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            779,
+            542,
+            794
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Given an instance of the STUDENTS relation as shown as below",
+        "bbox": [
+            85,
+            802,
+            561,
+            817
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/d89a504d59cf56a8202bfaea403a01bb9318c465e613031a1b6bf936046fdc6d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            782,
+            931,
+            820
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            71,
+            186,
+            85
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/34401c1e8e4d4741eb950ec19e25453b74747fff3089081a6daa2d2ef879fda3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>StudentID</td><td>StudentName</td><td>StudentEmail</td><td>StudentAge</td><td>CPI</td></tr><tr><td>2345</td><td>Shankar</td><td>shankar@math</td><td>X</td><td>9.4</td></tr><tr><td>1287</td><td>Swati</td><td>swati@ee</td><td>19</td><td>9.5</td></tr><tr><td>7853</td><td>Shankar</td><td>shankar@cse</td><td>19</td><td>9.4</td></tr><tr><td>9876</td><td>Swati</td><td>swati@mech</td><td>18</td><td>9.3</td></tr><tr><td>8765</td><td>Ganesh</td><td>ganesh@civil</td><td>19</td><td>8.7</td></tr></table>",
+        "bbox": [
+            196,
+            66,
+            821,
+            186
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For (StudentName, StudentAge) to be a key for this instance, the value X should NOT be equal to \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            207,
+            887,
+            225
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 databases numerical-answers easy candidate-key",
+        "bbox": [
+            87,
+            237,
+            416,
+            247
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            252,
+            189,
+            268
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.3.6 Candidate Key: GATE CSE 2014 | Set 3 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            277,
+            542,
+            292
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A prime attribute of a relation scheme R is an attribute that appears",
+        "bbox": [
+            85,
+            302,
+            579,
+            319
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. in all candidate keys of R",
+            "C. in a foreign key of $R$"
+        ],
+        "bbox": [
+            87,
+            327,
+            290,
+            355
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. in some candidate key of $R$",
+            "D. only in the primary key of $R$"
+        ],
+        "bbox": [
+            495,
+            327,
+            710,
+            356
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 databases easy candidate-key",
+        "bbox": [
+            87,
+            359,
+            327,
+            371
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            376,
+            189,
+            390
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.3.7 Candidate Key: GATE DA 2026 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            400,
+            470,
+            415
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $\\mathrm{R}(\\mathrm{A},\\mathrm{B},\\mathrm{C},\\mathrm{D},\\mathrm{E})$ be a relational schema with functional dependency set $\\mathrm{F} = \\{\\mathrm{A}\\to \\mathrm{BC},\\mathrm{CD}\\to \\mathrm{E},\\mathrm{E}\\to \\mathrm{A}\\}$ .",
+        "bbox": [
+            84,
+            423,
+            875,
+            456
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is correct?",
+        "bbox": [
+            85,
+            467,
+            415,
+            483
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. AD, ED and CD are the only candidate keys of R.",
+            "B. AD and ED are the only candidate keys of R.",
+            "C. A, E and CD are the only candidate keys of R.",
+            "D. A and CD are the only candidate keys of R."
+        ],
+        "bbox": [
+            87,
+            492,
+            490,
+            554
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 databases functional-dependency candidate-key one-mark",
+        "bbox": [
+            87,
+            579,
+            431,
+            589
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            596,
+            189,
+            610
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.4",
+        "text_level": 1,
+        "bbox": [
+            68,
+            619,
+            95,
+            634
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Conflict Serializable (12)",
+        "text_level": 1,
+        "bbox": [
+            416,
+            619,
+            613,
+            635
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (4Q)",
+        "bbox": [
+            70,
+            644,
+            363,
+            659
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.4.1 Conflict Serializable: GATE CSE 2007 | Question: 64",
+        "text_level": 1,
+        "bbox": [
+            77,
+            673,
+            529,
+            688
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following schedules involving two transactions. Which one of the following statements is TRUE?",
+        "bbox": [
+            84,
+            697,
+            878,
+            725
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S_{1}: r_{1}(X); r_{1}(Y); r_{2}(X); r_{2}(Y); w_{2}(Y); w_{1}(X)$",
+            "- $S_{2}:r_{1}(X);r_{2}(X);r_{2}(Y);w_{2}(Y);r_{1}(Y);w_{1}(X)$"
+        ],
+        "bbox": [
+            97,
+            735,
+            485,
+            770
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both $S_{1}$ and $S_{2}$ are conflict serializable.",
+            "B. $S_{1}$ is conflict serializable and $S_{2}$ is not conflict serializable.",
+            "C. $S_{1}$ is not conflict serializable and $S_{2}$ is conflict serializable.",
+            "D. Both $S_{1}$ and $S_{2}$ are not conflict serializable."
+        ],
+        "bbox": [
+            87,
+            777,
+            539,
+            852
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 databases transaction-and-concurrency normal conflict-serializable",
+        "bbox": [
+            87,
+            877,
+            468,
+            887
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            893,
+            189,
+            908
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/afa87151ded223725d5f8997e9c09e0495cf900b37a6db57ca038d3ad73382c7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            280,
+            932,
+            318
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/7096210ff92bb797513cec68e7bc2dd73952f0798728bbf0438dbfb1db6ae462.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            403,
+            932,
+            440
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/29b2d5ede6440508dc2ca424256619b04fc5cc90661aa911b69fe4edaf196c92.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            676,
+            932,
+            714
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/29b2d5ede6440508dc2ca424256619b04fc5cc90661aa911b69fe4edaf196c92.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            676,
+            932,
+            714
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.4.2 Conflict Serializable: GATE CSE 2009 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            529,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/001e5d54828e70b811af8851a4ff5f996d74872d2a9cf899bc7642500cd5e585.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider two transactions $T_{1}$ and $T_{2}$ , and four schedules $S_{1}, S_{2}, S_{3}, S_{4}$ , of $T_{1}$ and $T_{2}$ as given below:",
+        "bbox": [
+            84,
+            87,
+            855,
+            104
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT _ {1}: R _ {1} [ x ] W _ {1} [ x ] W _ {1} [ y ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            106,
+            263,
+            125
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT _ {2}: R _ {2} [ x ] R _ {2} [ y ] W _ {2} [ y ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            127,
+            257,
+            144
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {1}: R _ {1} [ x ] R _ {2} [ x ] R _ {2} [ y ] W _ {1} [ x ] W _ {1} [ y ] W _ {2} [ y ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            147,
+            394,
+            163
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {2}: R _ {1} [ x ] R _ {2} [ x ] R _ {2} [ y ] W _ {1} [ x ] W _ {2} [ y ] W _ {1} [ y ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            166,
+            394,
+            184
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {3}: R _ {1} [ x ] W _ {1} [ x ] R _ {2} [ x ] W _ {1} [ y ] R _ {2} [ y ] W _ {2} [ y ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            186,
+            394,
+            204
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {4}: R _ {2} [ x ] R _ {2} [ y ] R _ {1} [ x ] W _ {1} [ x ] W _ {1} [ y ] W _ {2} [ y ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            206,
+            394,
+            223
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the above schedules are conflict-serializable?",
+        "bbox": [
+            85,
+            225,
+            489,
+            238
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $S_{1}$ and $S_{2}$",
+        "bbox": [
+            87,
+            252,
+            189,
+            269
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $S_{2}$ and $S_{3}$",
+        "bbox": [
+            285,
+            252,
+            384,
+            269
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $S_{3}$ only",
+        "bbox": [
+            480,
+            252,
+            554,
+            269
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $S_{4}$ only",
+        "bbox": [
+            673,
+            252,
+            749,
+            269
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 databases transaction-and-concurrency normal conflict-serializable",
+        "bbox": [
+            87,
+            277,
+            468,
+            287
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            294,
+            188,
+            308
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.4.3 Conflict Serializable: GATE CSE 2014 | Set 1 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            317,
+            583,
+            331
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/d6fa26e03347259a554c82f69fe96d91519db68b74acbf3e92423090cf671d9f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            320,
+            931,
+            357
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following four schedules due to three transactions (indicated by the subscript) using read and write on a data item x, denoted by $r(x)$ and $w(x)$ respectively. Which one of them is conflict serializable?",
+        "bbox": [
+            84,
+            340,
+            875,
+            385
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $r_1(x); r_2(x); w_1(x); r_3(x); w_2(x)$ ;",
+            "B. $r_2(x); r_1(x); w_2(x); r_3(x); w_1(x)$ ;",
+            "C. $r_3(x); r_2(x); r_1(x); w_2(x); w_1(x)$ ;",
+            "D. $r_2(x); w_2(x); r_3(x); r_1(x); w_1(x);$"
+        ],
+        "bbox": [
+            87,
+            397,
+            374,
+            459
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 databases transaction-and-concurrency conflict-serializable normal",
+        "bbox": [
+            87,
+            483,
+            489,
+            492
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            500,
+            188,
+            514
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.4.4 Conflict Serializable: GATE CSE 2014 | Set 2 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            523,
+            583,
+            536
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following schedule S of transactions T1, T2, T3, T4 :",
+        "bbox": [
+            85,
+            546,
+            584,
+            562
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/374732a183a6a6f197dbad8f29f7389ea1e306f978c79c2cfd616f495ebff5cb.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>T1</td><td>T2</td><td>T3</td><td>T4</td></tr><tr><td rowspan=\"3\">Writes(X) Commit</td><td>Reads(X)</td><td rowspan=\"3\">Writes(X) Commit</td><td rowspan=\"2\"></td></tr><tr><td rowspan=\"2\">Writes(Y) Reads(Z) Commit</td></tr><tr><td>Reads(X) Reads(Y) Commit</td></tr></table>",
+        "bbox": [
+            295,
+            573,
+            721,
+            813
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/10f4b6ccb192cb633666cee3b7ad24bf8716c20fbf1339f9fd72cbae5577ae97.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            526,
+            931,
+            562
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is CORRECT?",
+        "bbox": [
+            84,
+            834,
+            478,
+            850
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. S is conflict-serializable but not recoverable",
+            "B. S is not conflict-serializable but is recoverable",
+            "C. S is both conflict-serializable and recoverable",
+            "D. $\\mathbf{S}$ is neither conflict-serializable not is it recoverable"
+        ],
+        "bbox": [
+            87,
+            861,
+            487,
+            916
+        ],
+        "page_idx": 11
+    }
+]

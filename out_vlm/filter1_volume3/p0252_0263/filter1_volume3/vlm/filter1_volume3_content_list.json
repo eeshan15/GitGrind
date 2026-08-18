@@ -1,0 +1,4222 @@
+[
+    {
+        "type": "text",
+        "text": "3.21.43 SQL: GATE CSE 2021 | Set 1 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            111,
+            478,
+            125
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A relation $r(A, B)$ in a relational database has 1200 tuples. The attribute A has integer values ranging from 6 to 20, and the attribute B has integer values ranging from 1 to 20. Assume that the attributes A and B are independently distributed.",
+        "bbox": [
+            84,
+            135,
+            878,
+            180
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/2cead81cf48aee36de641e1d1d8ecd94241b8436b1c17e34577cee0046dde15a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            114,
+            932,
+            150
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The estimated number of tuples in the output of $\\sigma_{(A>10)\\vee(B=18)}(r)$ is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            193,
+            710,
+            211
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 databases sql numerical-answers one-mark",
+        "bbox": [
+            87,
+            223,
+            391,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            239,
+            186,
+            254
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.21.44 SQL: GATE CSE 2021 | Set 2 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            263,
+            478,
+            277
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The relation scheme given below is used to store information about the employees of a company, where empld is the key and deptId indicates the department to which the employee is assigned. Each employee is assigned to exactly one department.",
+        "bbox": [
+            84,
+            287,
+            878,
+            330
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/1e781156a445f9f2ec82070eaa9ef414d629e7080a47b0136ecbbb3505c7c466.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            266,
+            932,
+            302
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "emp(empId, name, gender, salary, deptId)",
+        "bbox": [
+            341,
+            340,
+            672,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following SQL query:",
+        "bbox": [
+            85,
+            368,
+            344,
+            385
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```sql\nselect deptId, count(*)\nfrom emp\nwhere gender = \"female\" and salary > (select avg(salary)from emp)\ngroup by deptId;\n```",
+        "bbox": [
+            112,
+            394,
+            492,
+            438
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The above query gives, for each department in the company, the number of female employees whose salary is greater than the average salary of",
+        "bbox": [
+            84,
+            446,
+            927,
+            475
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. employees in the department",
+            "C. female employees in the department"
+        ],
+        "bbox": [
+            89,
+            485,
+            352,
+            524
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. employees in the company",
+        "bbox": [
+            495,
+            485,
+            702,
+            500
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. female employees in the company",
+        "bbox": [
+            495,
+            500,
+            752,
+            511
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 databases sql easy two-marks",
+        "bbox": [
+            87,
+            529,
+            339,
+            539
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            545,
+            186,
+            560
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.21.45 SQL: GATE CSE 2022 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            568,
+            426,
+            583
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the relational database with the following four schemas and their respective instances.",
+        "bbox": [
+            85,
+            593,
+            784,
+            608
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Student(sNo, sName, dNo) Dept(dNo, dName)",
+            "- Course(cNo, cName, dNo) Register(sNo, cNo)"
+        ],
+        "bbox": [
+            97,
+            618,
+            453,
+            647
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/16a91c62e43e1f2b94825628066fdb20079c3690dcc186610a0f77e300726216.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>Students</td><td></td></tr><tr><td>sNo</td><td>sName</td><td>dNo</td></tr><tr><td>S01</td><td>James</td><td>D01</td></tr><tr><td>S02</td><td>Rocky</td><td>D01</td></tr><tr><td>S03</td><td>Jackson</td><td>D02</td></tr><tr><td>S04</td><td>Jane</td><td>D01</td></tr><tr><td>S05</td><td>Milli</td><td>D02</td></tr></table>",
+        "bbox": [
+            146,
+            706,
+            347,
+            845
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/bd93a6eca31614836f4e3ce05a4b10cecdd7bcc4c762efbc5ec01864ed88d408.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>Depth</td></tr><tr><td>dNo</td><td>dName</td></tr><tr><td>D01</td><td>CSE</td></tr><tr><td>D02</td><td>EEE</td></tr></table>",
+        "bbox": [
+            368,
+            736,
+            502,
+            815
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/8ea6cfe5e900971cb32e4ae2568acb36eb1be67a0f5176d22cfb39542a1ebf51.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>Course</td><td></td></tr><tr><td>cNo</td><td>cName</td><td>dNo</td></tr><tr><td>C11</td><td>DS</td><td>D01</td></tr><tr><td>C12</td><td>OS</td><td>D01</td></tr><tr><td>C21</td><td>DE</td><td>D02</td></tr><tr><td>C22</td><td>PT</td><td>D02</td></tr><tr><td>C23</td><td>CV</td><td>D03</td></tr></table>",
+        "bbox": [
+            522,
+            706,
+            709,
+            845
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/a598d84545fb46f613fb2a26e435d3b276b2e187287928d4d34b93a23b0b9a06.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>Register</td></tr><tr><td>sNo</td><td>cNo</td></tr><tr><td>S01</td><td>C11</td></tr><tr><td>S01</td><td>C12</td></tr><tr><td>S02</td><td>C11</td></tr><tr><td>S03</td><td>C21</td></tr><tr><td>S03</td><td>C22</td></tr><tr><td>S03</td><td>C23</td></tr><tr><td>S04</td><td>C11</td></tr><tr><td>S04</td><td>C12</td></tr><tr><td>S05</td><td>C11</td></tr><tr><td>S05</td><td>C21</td></tr></table>",
+        "bbox": [
+            729,
+            657,
+            870,
+            893
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/3b395a7436e7cb3c2879f2ffb4741fd22a96072fe9c4d523c5cffb329472cecc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            572,
+            932,
+            610
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2020 databases sql one-mark",
+        "bbox": [
+            89,
+            71,
+            280,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "SQL query",
+        "bbox": [
+            85,
+            900,
+            193,
+            918
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "SELECT \\* FROM Student AS S WHERE NOT EXIST",
+        "bbox": [
+            114,
+            65,
+            416,
+            77
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(SELECT cNo FROM Course WHERE dNo = \"D01\"",
+        "bbox": [
+            122,
+            86,
+            413,
+            99
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "EXCEPT",
+        "bbox": [
+            146,
+            108,
+            200,
+            119
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "SELECT cNo FROM Register WHERE sNo = S.sNo)",
+        "bbox": [
+            127,
+            129,
+            426,
+            142
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The number of rows returned by the above SQL query is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            150,
+            621,
+            167
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers databases sql two-marks",
+        "bbox": [
+            87,
+            185,
+            374,
+            195
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            201,
+            188,
+            214
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.21.46 SQL: GATE CSE 2023 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            225,
+            425,
+            239
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following table named Student in a relational database. The primary key of this table is rollNum.",
+        "bbox": [
+            84,
+            249,
+            875,
+            277
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2c9899eb3e0083b3990f74ba106663f01c62db710f71ed1de6368ee5a05cfcd9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            228,
+            932,
+            264
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/0e8673ef53f7b39225236a61e2d448313a041ca7ed030c01f770092b8cddf15c.jpg",
+        "table_caption": [
+            "Student"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>rollNum</td><td>name</td><td>gender</td><td>marks</td></tr><tr><td>1</td><td>Naman</td><td>M</td><td>62</td></tr><tr><td>2</td><td>Aliya</td><td>F</td><td>70</td></tr><tr><td>3</td><td>Aliya</td><td>F</td><td>80</td></tr><tr><td>4</td><td>James</td><td>M</td><td>82</td></tr><tr><td>5</td><td>Swati</td><td>F</td><td>65</td></tr></table>",
+        "bbox": [
+            90,
+            298,
+            406,
+            416
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The SQL query below is executed on this database.",
+        "bbox": [
+            85,
+            418,
+            470,
+            434
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "SELECT \\*",
+        "bbox": [
+            114,
+            442,
+            174,
+            454
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "FROM Student",
+        "bbox": [
+            115,
+            454,
+            201,
+            464
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "WHERE gender = 'F' AND",
+        "bbox": [
+            115,
+            465,
+            265,
+            475
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "marks > 65;",
+        "bbox": [
+            127,
+            476,
+            201,
+            486
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The number of rows returned by the query is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            496,
+            522,
+            511
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 databases sql numerical-answers two-marks easy",
+        "bbox": [
+            87,
+            529,
+            410,
+            539
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            546,
+            181,
+            560
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.21.47 SQL: GATE CSE 2025 | Set 1 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            568,
+            478,
+            583
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following database tables of a sports league.",
+        "bbox": [
+            85,
+            593,
+            510,
+            608
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/b49fa9c70f7d49d2a3ccd0dcd57a5fc55c5685a6f4f17b3881dc82fe862f3bad.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            572,
+            932,
+            610
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "player (pid, pname, age) team(tid, lname, city, cid)",
+        "bbox": [
+            112,
+            617,
+            438,
+            628
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "coach (cid, cname) members (pid,tid)",
+        "bbox": [
+            114,
+            629,
+            386,
+            638
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "An instance of the table and an SQL query are given.",
+        "bbox": [
+            85,
+            649,
+            475,
+            663
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/c59870b36b6853859a42f3d41e06652d3f8e91013180f953af7b0784c0793b36.jpg",
+        "table_caption": [
+            "player"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>pid</td><td>pname</td><td>age</td></tr><tr><td>1</td><td>Jasprit</td><td>31</td></tr><tr><td>2</td><td>Atharva</td><td>24</td></tr><tr><td>3</td><td>Ishan</td><td>26</td></tr><tr><td>4</td><td>Axar</td><td>30</td></tr></table>",
+        "bbox": [
+            122,
+            694,
+            315,
+            794
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/cc70d18edbadf5718e1547eac2d8d980698dda79d909445cdf45a721149b1353.jpg",
+        "table_caption": [
+            "coach"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>cid</td><td>cname</td></tr><tr><td>101</td><td>Ricky</td></tr><tr><td>102</td><td>Mark</td></tr><tr><td>103</td><td>Trevor</td></tr></table>",
+        "bbox": [
+            344,
+            704,
+            473,
+            783
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/583211dee3f40c052c9d76b4e241b002fbf4cddd7803d2bcb3e83e3f834a092a.jpg",
+        "table_caption": [
+            "team"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>tid</td><td>tname</td><td>city</td><td>cid</td></tr><tr><td>10</td><td>MI</td><td>Mumbai</td><td>102</td></tr><tr><td>20</td><td>DC</td><td>Delhi</td><td>101</td></tr><tr><td>30</td><td>PK</td><td>Mohali</td><td>103</td></tr></table>",
+        "bbox": [
+            500,
+            704,
+            768,
+            783
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/de24f1b70192421f26655f79952610be3dcd2b62bf97d7c404c9b499756e1b97.jpg",
+        "table_caption": [
+            "members"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>pid</td><td>tid</td></tr><tr><td>1</td><td>10</td></tr><tr><td>2</td><td>30</td></tr><tr><td>3</td><td>10</td></tr><tr><td>4</td><td>20</td></tr></table>",
+        "bbox": [
+            796,
+            694,
+            894,
+            794
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "SELECT MIN (P.age)",
+        "bbox": [
+            112,
+            802,
+            238,
+            815
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "FROM player P",
+        "bbox": [
+            114,
+            815,
+            203,
+            825
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "WHERE P.pid IN (",
+        "bbox": [
+            114,
+            826,
+            221,
+            836
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "SELECT M.pid",
+        "bbox": [
+            129,
+            837,
+            215,
+            847
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "FROM team T, coach C, members M",
+        "bbox": [
+            129,
+            847,
+            339,
+            857
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "WHERE C.cname = 'Mark'",
+        "bbox": [
+            129,
+            858,
+            278,
+            868
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "AND T.cid = C.cid",
+        "bbox": [
+            149,
+            869,
+            253,
+            878
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "AND M.tid = T.tid",
+        "bbox": [
+            149,
+            878,
+            250,
+            889
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": ")",
+        "bbox": [
+            129,
+            889,
+            136,
+            900
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The value returned by the given SQL query is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            910,
+            653,
+            926
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.21.48 SQL: GATE CSE 2025 | Set 2 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            118,
+            478,
+            131
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relational schema:",
+        "bbox": [
+            85,
+            142,
+            389,
+            156
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Students (rollno: integer, name: string, age: integer, cgpa: real)",
+        "bbox": [
+            85,
+            160,
+            564,
+            176
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Courses (courseno: integer, cname: string, credits: integer)",
+        "bbox": [
+            85,
+            180,
+            534,
+            197
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Enrolled (rollno: integer, courseno: integer, grade: string)",
+        "bbox": [
+            85,
+            200,
+            537,
+            218
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following options is/are correct SQL query/queries to retrieve the names of the students enrolled in course number (i.e., courseno) 1470?",
+        "bbox": [
+            84,
+            220,
+            927,
+            250
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. SELECT S.name",
+        "bbox": [
+            115,
+            260,
+            230,
+            269
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "FROM Students S",
+        "bbox": [
+            126,
+            271,
+            230,
+            280
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE EXISTS (SELECT \\* FROM Enrolled E",
+        "bbox": [
+            124,
+            281,
+            389,
+            290
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE E.courseno = 1470",
+        "bbox": [
+            174,
+            292,
+            334,
+            302
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "AND E.rollno = S.rollno);",
+        "bbox": [
+            206,
+            302,
+            346,
+            314
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. SELECT S.name",
+        "bbox": [
+            115,
+            325,
+            228,
+            334
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "FROM Students S",
+        "bbox": [
+            126,
+            336,
+            228,
+            345
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE SIZEOF (SELECT \\* FROM Enrolled E",
+        "bbox": [
+            126,
+            346,
+            391,
+            356
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE E.courseno = 1470",
+        "bbox": [
+            174,
+            357,
+            334,
+            366
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "AND E.rollno = S.rollno) > 0;",
+        "bbox": [
+            201,
+            368,
+            364,
+            378
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. SELECT S.name",
+        "bbox": [
+            115,
+            389,
+            230,
+            399
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "FROM Students S",
+        "bbox": [
+            126,
+            400,
+            228,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE 0 < (SELECT COUNT(\\*)",
+        "bbox": [
+            126,
+            410,
+            314,
+            422
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "FROM Enrolled E",
+        "bbox": [
+            164,
+            423,
+            265,
+            432
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE E.courseno = 1470",
+        "bbox": [
+            164,
+            433,
+            324,
+            442
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "AND E.rollno = S.rollno);",
+        "bbox": [
+            198,
+            442,
+            339,
+            454
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. SELECT S.name",
+        "bbox": [
+            115,
+            466,
+            230,
+            476
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "FROM Students S NATURAL JOIN Enrolled E",
+        "bbox": [
+            126,
+            477,
+            386,
+            486
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE E.courseno = 1470;",
+        "bbox": [
+            126,
+            488,
+            289,
+            498
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 databases sql multiple-selects two-marks",
+        "bbox": [
+            87,
+            523,
+            381,
+            532
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            539,
+            188,
+            553
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.21.49 SQL: GATE DA 2025 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            562,
+            416,
+            576
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "On a relation named Loan of a bank:",
+        "bbox": [
+            85,
+            586,
+            359,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/f00b6d192070360b26af451fd87c99b6fd7079825101ec6695e03c803b11ce49.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"3\">Loan</td></tr><tr><td>loan_number</td><td>branch_name</td><td>amount</td></tr><tr><td>L11</td><td>Banjara Hills</td><td>90000</td></tr><tr><td>L14</td><td>Kondapur</td><td>50000</td></tr><tr><td>L15</td><td>SR Nagar</td><td>40000</td></tr><tr><td>L22</td><td>SR Nagar</td><td>25000</td></tr><tr><td>L23</td><td>Balanagar</td><td>80000</td></tr><tr><td>L25</td><td>Kondapur</td><td>70000</td></tr><tr><td>L19</td><td>SR Nagar</td><td>65000</td></tr></table>",
+        "bbox": [
+            302,
+            612,
+            715,
+            795
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/eca57d88e90389a3cd1dd76fcb86d39b553e0735252244bd794c1fde4bebb74f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            121,
+            931,
+            159
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/2c6663977b6b55069e58db05c1cc99bfd2be235a55ab1cdef78e068b0c8344a9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            565,
+            931,
+            603
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "the following SQL query is executed.",
+        "bbox": [
+            85,
+            818,
+            354,
+            833
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "SELECT L1.loan\\_number",
+        "bbox": [
+            114,
+            843,
+            262,
+            853
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "FROM Loan L1",
+        "bbox": [
+            115,
+            853,
+            201,
+            863
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE L1.amount > (SELECT MAX (L2.amount)",
+        "bbox": [
+            115,
+            864,
+            396,
+            875
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "FROM Loan L2",
+        "bbox": [
+            181,
+            875,
+            270,
+            884
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "WHERE L2.branch\\_name = 'SR Nagar');",
+        "bbox": [
+            181,
+            885,
+            411,
+            897
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The number of rows returned by the query is \\_\\_\\_\\_ (Answer in integer).",
+        "bbox": [
+            85,
+            906,
+            653,
+            922
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "gatecse2025-set1 databases sql numerical-answers easy two-marks",
+        "bbox": [
+            87,
+            78,
+            426,
+            87
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            93,
+            188,
+            109
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.21.50 SQL: GATE DS&AI 2024 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            442,
+            124
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two tables named Raider and Team in a relational database maintained by a Kabaddi league. The attribute ID in table Team references the primary key of the Raider table, ID.",
+        "bbox": [
+            84,
+            134,
+            875,
+            163
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/efb8cf7eaab3a39a0c4a1e2e11781e5fd38d8065743178580b040198ec2181a6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            931,
+            150
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/bb8485990c8c6f3f0915a9e2c60815dd0ece1bf2421d8abba32dc32d917b4be0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"4\">Raider</td></tr><tr><td>ID</td><td>Name</td><td>Raids</td><td>Raidpoints</td></tr><tr><td>1</td><td>Arjun</td><td>200</td><td>250</td></tr><tr><td>2</td><td>Ankush</td><td>190</td><td>219</td></tr><tr><td>3</td><td>Sunil</td><td>150</td><td>200</td></tr><tr><td>4</td><td>Reza</td><td>150</td><td>190</td></tr><tr><td>5</td><td>Pratham</td><td>175</td><td>220</td></tr><tr><td>6</td><td>Gopal</td><td>193</td><td>215</td></tr></table>",
+        "bbox": [
+            168,
+            174,
+            529,
+            336
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/73140ac8108ec7018fcb39cac1d4a0a89860c9bc7a011e2b146430f49c12ec04.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"3\">Team</td></tr><tr><td>City</td><td>ID</td><td>BidPoints</td></tr><tr><td>Jaipur</td><td>2</td><td>200</td></tr><tr><td>Patna</td><td>3</td><td>195</td></tr><tr><td>Hyderabad</td><td>5</td><td>175</td></tr><tr><td>Jaipur</td><td>1</td><td>250</td></tr><tr><td>Patna</td><td>4</td><td>200</td></tr><tr><td>Jaipur</td><td>6</td><td>200</td></tr></table>",
+        "bbox": [
+            551,
+            174,
+            847,
+            336
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The SQL query described below is executed on this database:",
+        "bbox": [
+            85,
+            346,
+            542,
+            361
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "SELECT \\*",
+        "bbox": [
+            112,
+            370,
+            173,
+            381
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "FROM Raider, Team",
+        "bbox": [
+            115,
+            382,
+            235,
+            391
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "WHERE Raider.ID=Team.ID AND City=\"Jaipur\" AND",
+        "bbox": [
+            115,
+            391,
+            413,
+            403
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "RaidPoints > 200;",
+        "bbox": [
+            115,
+            403,
+            218,
+            413
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The number of rows returned by this query is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            423,
+            499,
+            438
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 numerical-answers databases sql one-mark",
+        "bbox": [
+            87,
+            457,
+            379,
+            466
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            472,
+            188,
+            486
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.21.51 SQL: GATE DS&AI 2024 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            496,
+            443,
+            510
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "An OTT company is maintaining a large disk-based relational database of different movies with the following schema:",
+        "bbox": [
+            84,
+            520,
+            875,
+            547
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Movie (ID, CustomerRating)",
+        "bbox": [
+            359,
+            559,
+            600,
+            578
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Genre (ID, Name)",
+        "bbox": [
+            359,
+            579,
+            510,
+            597
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Movie\\_Genre (MovieID, GenreID)",
+        "bbox": [
+            361,
+            599,
+            643,
+            618
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following SQL query on the relation database above:",
+        "bbox": [
+            85,
+            653,
+            569,
+            668
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "SELECT \\*",
+        "bbox": [
+            112,
+            676,
+            174,
+            688
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "FROM Movie, Genre, Movie\\_Genre",
+        "bbox": [
+            115,
+            688,
+            317,
+            699
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "WHERE",
+        "bbox": [
+            114,
+            699,
+            164,
+            709
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Movie.CustomerRating > 3.4 AND",
+        "bbox": [
+            132,
+            710,
+            326,
+            720
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Genre.Name = \"Comedy\" AND",
+        "bbox": [
+            132,
+            720,
+            309,
+            730
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Movie\\_Genre.MovieID = Movie.ID AND",
+        "bbox": [
+            132,
+            731,
+            354,
+            741
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Movie\\_Genre.GenreID = Genre.ID;",
+        "bbox": [
+            132,
+            742,
+            332,
+            752
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "This SQL query can be sped up using which of the following indexing options?",
+        "bbox": [
+            85,
+            776,
+            657,
+            792
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $B^{+}$ tree on all the attributes.",
+            "B. Hash index on Genre.Name and $B^{+}$ tree on the remaining attributes.",
+            "C. Hash index on Movie.CustomerRating and $B^{+}$ tree on the remaining attributes.",
+            "D. Hash index on all the attributes."
+        ],
+        "bbox": [
+            87,
+            804,
+            684,
+            865
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/2834748afd995d2a5700b12d9d2ba2eb8147ab472c4c47106307f5017f129438.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            498,
+            931,
+            536
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "gateda-2025 databases sql numerical-answers one-mark",
+        "bbox": [
+            89,
+            71,
+            366,
+            80
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            87,
+            181,
+            100
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "gate-ds-ai-2024 sql databases multiple-selects two-marks",
+        "bbox": [
+            87,
+            891,
+            374,
+            901
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            908,
+            181,
+            921
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A relational database contains two tables student and department in which student table has columns roll\\_no, name and dept\\_id and department table has columns dept\\_id and dept\\_name. The following insert statements were executed successfully to populate the empty tables:",
+        "bbox": [
+            84,
+            90,
+            878,
+            133
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```sql\nInsert into department values (1, 'Mathematics')\nInsert into department values (2, 'Physics')\nInsert into student values (I, 'Navin', 1)\nInsert into student values (2, 'Mukesh', 2)\nInsert into student values (3, 'Gita', 1)\n```",
+        "bbox": [
+            87,
+            141,
+            357,
+            195
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "How many rows and columns will be retrieved by the following SQL statement?",
+        "bbox": [
+            85,
+            205,
+            665,
+            220
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```sql\nSelect * from student, department\n```",
+        "bbox": [
+            87,
+            229,
+            282,
+            241
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 0 row and 4 columns",
+            "C. 3 rows and 5 columns"
+        ],
+        "bbox": [
+            89,
+            252,
+            263,
+            277
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 databases sql normal",
+        "bbox": [
+            89,
+            283,
+            265,
+            293
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. 3 rows and 4 columns",
+            "D. 6 rows and 5 columns"
+        ],
+        "bbox": [
+            495,
+            252,
+            670,
+            277
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            300,
+            181,
+            314
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.21.53 SQL: GATE IT 2004 | Question: 76",
+        "text_level": 1,
+        "bbox": [
+            78,
+            323,
+            406,
+            337
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A table T1 in a relational database has the following rows and columns:",
+        "bbox": [
+            85,
+            347,
+            608,
+            362
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/e17cc6a77e4de3feba563c4d18c37e35a4d22b900c1d91fda01f0e92413ea1d0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            326,
+            931,
+            364
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/598634bb30ea8f9330a1e9f6a2082e6649d9d20ddc76fbaa3cbb28ba6d40372b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Roll no.</td><td>Marks</td></tr><tr><td>1</td><td>10</td></tr><tr><td>2</td><td>20</td></tr><tr><td>3</td><td>30</td></tr><tr><td>4</td><td>NULL</td></tr></table>",
+        "bbox": [
+            426,
+            374,
+            589,
+            473
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The following sequence of SQL statements was successfully executed on table T1.",
+        "bbox": [
+            85,
+            496,
+            690,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nUpdate T1 set marks = marks + 5\nSelect avg(marks) from T1\n```",
+        "bbox": [
+            87,
+            519,
+            278,
+            543
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is the output of the select statement?",
+        "bbox": [
+            85,
+            551,
+            401,
+            566
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 18.75",
+        "bbox": [
+            89,
+            579,
+            159,
+            593
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 20",
+        "bbox": [
+            285,
+            580,
+            329,
+            593
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 25",
+        "bbox": [
+            480,
+            580,
+            522,
+            593
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. Null",
+        "bbox": [
+            673,
+            579,
+            734,
+            593
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 databases sql normal",
+        "bbox": [
+            89,
+            604,
+            265,
+            612
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            619,
+            188,
+            634
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.21.54 SQL: GATE IT 2004 | Question: 78",
+        "text_level": 1,
+        "bbox": [
+            78,
+            644,
+            406,
+            657
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider two tables in a relational database with columns and rows as follows:",
+        "bbox": [
+            85,
+            668,
+            660,
+            682
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/2ec61ba9a99f894899a8a535d98a759c827b304510ca42bfc9f4ae4f369902d8.jpg",
+        "table_caption": [
+            "Table: Student"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Roll_no</td><td>Name</td><td>Dept_id</td></tr><tr><td>1</td><td>ABC</td><td>1</td></tr><tr><td>2</td><td>DEF</td><td>1</td></tr><tr><td>3</td><td>GHI</td><td>2</td></tr><tr><td>4</td><td>JKL</td><td>3</td></tr></table>",
+        "bbox": [
+            238,
+            706,
+            507,
+            804
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/4518c5de79ba495def46ddb359e46ebc81112fffcafe85b8c7c9e8996a1dfea3.jpg",
+        "table_caption": [
+            "Table: Department"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Dept_id</td><td>Dept_name</td></tr><tr><td>1</td><td>A</td></tr><tr><td>2</td><td>B</td></tr><tr><td>3</td><td>C</td></tr></table>",
+        "bbox": [
+            549,
+            716,
+            776,
+            794
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Roll\\_no is the primary key of the Student table, Dept\\_id is the primary key of the Department table and Student.Dept\\_id is a foreign key from Department.Dept\\_id\nWhat will happen if we try to execute the following two SQL statements?",
+        "bbox": [
+            84,
+            813,
+            927,
+            856
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. update Student set Dept id = Null where Roll on = 1",
+            "ii. update Department set Dept\\_id = Null where Dept\\_id = 1"
+        ],
+        "bbox": [
+            92,
+            866,
+            527,
+            895
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Both i and ii will fail",
+        "bbox": [
+            89,
+            906,
+            243,
+            918
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. i will fail but ii will succeed",
+        "bbox": [
+            495,
+            906,
+            695,
+            918
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1402ad1109ef1da7235e5eaae4db02cdc7d9b1b1bdc63cd3cee4ea4d41d1bc2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            647,
+            931,
+            684
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "3.21.52 SQL: GATE IT 2004 | Question: 74",
+        "bbox": [
+            78,
+            66,
+            406,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no textual content can be extracted or converted.",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.21.55 SQL: GATE IT 2005 | Question: 69",
+        "text_level": 1,
+        "bbox": [
+            78,
+            123,
+            406,
+            137
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/2ae17b50bccd2ed466a09afee944b332b8a07ebd26930c89e066058b76bf09b3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            931,
+            163
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In an inventory management system implemented at a trading corporation, there are several tables designed to hold all the information. Amongst these, the following two tables hold information on which items are supplied by which suppliers, and which warehouse keeps which items along with the stock-level of these",
+        "bbox": [
+            84,
+            147,
+            878,
+            190
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Supply = (supplierid, itemcode)",
+        "bbox": [
+            85,
+            193,
+            315,
+            207
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Inventory = (itemcode, warehouse, stocklevel)",
+        "bbox": [
+            85,
+            207,
+            423,
+            222
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "For a specific information required by the management, following SQL query has been written",
+        "bbox": [
+            85,
+            225,
+            768,
+            239
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Select distinct STMP.supplierid",
+        "bbox": [
+            87,
+            248,
+            268,
+            260
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "From Supply as STMP",
+        "bbox": [
+            90,
+            261,
+            220,
+            271
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Where not unique (Select ITMP.supplierid",
+        "bbox": [
+            90,
+            271,
+            327,
+            282
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "From Inventory, Supply as ITMP",
+        "bbox": [
+            188,
+            282,
+            371,
+            293
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Where STMP.supplierid = ITMP.supplierid",
+        "bbox": [
+            188,
+            293,
+            425,
+            304
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "And ITMP.itemcode = Inventory.itemcode",
+        "bbox": [
+            188,
+            304,
+            421,
+            314
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "And Inventory.warehouse = 'Nagpur');",
+        "bbox": [
+            188,
+            314,
+            403,
+            325
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "For the warehouse at Nagpur, this query will find all suppliers who",
+        "bbox": [
+            85,
+            347,
+            568,
+            363
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. do not supply any item",
+        "bbox": [
+            89,
+            372,
+            268,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. supply one or more items",
+        "bbox": [
+            90,
+            387,
+            285,
+            399
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 databases sql normal",
+        "bbox": [
+            89,
+            404,
+            265,
+            414
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. supply exactly one item",
+        "bbox": [
+            495,
+            372,
+            678,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. supply two or more items",
+        "bbox": [
+            497,
+            387,
+            690,
+            399
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            420,
+            181,
+            434
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.21.56 SQL: GATE IT 2006 | Question: 84",
+        "text_level": 1,
+        "bbox": [
+            78,
+            444,
+            406,
+            458
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider a database with three relation instances shown below. The primary keys for the Drivers and Cars relation are did and cid respectively and the records are stored in ascending order of these primary keys as given in the tables. No indexing is available in the database.",
+        "bbox": [
+            84,
+            467,
+            878,
+            513
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/dd911c3848d14f447ba69b6a330f6afa549286ecbc680b78f3e736491f873a65.jpg",
+        "table_caption": [
+            "D: Drivers relation"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>did</td><td>dname</td><td>rating</td><td>age</td></tr><tr><td>22</td><td>Karthikeyan</td><td>7</td><td>25</td></tr><tr><td>29</td><td>Salman</td><td>1</td><td>33</td></tr><tr><td>31</td><td>Boris</td><td>8</td><td>55</td></tr><tr><td>32</td><td>Amoldt</td><td>8</td><td>25</td></tr><tr><td>58</td><td>Schumacher</td><td>10</td><td>35</td></tr><tr><td>64</td><td>Sachin</td><td>7</td><td>35</td></tr><tr><td>71</td><td>Senna</td><td>10</td><td>16</td></tr><tr><td>74</td><td>Sachin</td><td>9</td><td>35</td></tr><tr><td>85</td><td>Rahul</td><td>3</td><td>25</td></tr><tr><td>95</td><td>Ralph</td><td>3</td><td>53</td></tr></table>",
+        "bbox": [
+            225,
+            539,
+            531,
+            771
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/df14228f9ccbf5e038ff07507cc0428bc1aae8946c251ad26545952858135a49.jpg",
+        "table_caption": [
+            "R: Reserves relation"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>did</td><td>Cid</td><td>day</td></tr><tr><td>22</td><td>101</td><td>10 / 10 / 06</td></tr><tr><td>22</td><td>102</td><td>10 / 10 / 06</td></tr><tr><td>22</td><td>103</td><td>08 / 10 / 06</td></tr><tr><td>22</td><td>104</td><td>07 / 10 / 06</td></tr><tr><td>31</td><td>102</td><td>10 / 11 / 16</td></tr><tr><td>31</td><td>103</td><td>06 / 11 / 16</td></tr><tr><td>31</td><td>104</td><td>12 / 11 / 16</td></tr><tr><td>64</td><td>101</td><td>05 / 09 / 06</td></tr><tr><td>64</td><td>102</td><td>08 / 09 / 06</td></tr><tr><td>74</td><td>103</td><td>08 / 09 / 06</td></tr></table>",
+        "bbox": [
+            571,
+            536,
+            791,
+            775
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/c34196cc10dedb07fe668a72b262c10f39be76449507f3765e2e0ab10a7e5e95.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            447,
+            931,
+            484
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "C. i will succeed but ii will fail",
+        "bbox": [
+            89,
+            65,
+            290,
+            78
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "D. Both i and ii will succeed",
+        "bbox": [
+            495,
+            65,
+            687,
+            77
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "gateit-2004 databases sql normal",
+        "bbox": [
+            89,
+            84,
+            265,
+            93
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            99,
+            181,
+            114
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/1c0c45bb150deb03a9144961a1e765ff377b9149fdcc8605642d5d1ddf14bedd.jpg",
+        "table_caption": [
+            "C: Cars relation"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Cid</td><td>Cname</td><td>colour</td></tr><tr><td>101</td><td>Renault</td><td>blue</td></tr><tr><td>102</td><td>Renault</td><td>red</td></tr><tr><td>103</td><td>Ferrari</td><td>green</td></tr><tr><td>104</td><td>Jaguar</td><td>red</td></tr></table>",
+        "bbox": [
+            396,
+            77,
+            618,
+            195
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "What is the output of the following SQL query?",
+        "bbox": [
+            85,
+            218,
+            428,
+            233
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```sql\nselect D.dname\nfrom Drivers D\nwhere D.did in (\n    select R.did\n    from Cars C, Reserves R\n    where R.cid = C.cid and C.colour = 'red'\n    intersect\n    select R.did\n    from Cars C, Reserves R\n    where R.cid = C.cid and C.colour = 'green'\n)\n```",
+        "bbox": [
+            87,
+            241,
+            418,
+            362
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. Karthikeyan, Boris",
+        "bbox": [
+            89,
+            372,
+            240,
+            385
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. Sachin, Salman",
+        "bbox": [
+            495,
+            372,
+            628,
+            385
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. Karthikeyan, Boris, Sachin",
+        "bbox": [
+            90,
+            385,
+            292,
+            399
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. Schumacher, Senna",
+        "bbox": [
+            497,
+            385,
+            658,
+            397
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 databases sql normal",
+        "bbox": [
+            89,
+            404,
+            265,
+            414
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            420,
+            181,
+            434
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.21.57 SQL: GATE IT 2006 | Question: 85",
+        "text_level": 1,
+        "bbox": [
+            78,
+            444,
+            406,
+            457
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a database with three relation instances shown below. The primary keys for the Drivers and Cars relation are did and cid respectively and the records are stored in ascending order of these primary keys as given in the tables. No indexing is available in the database.",
+        "bbox": [
+            84,
+            467,
+            878,
+            513
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/d30316dff8b823e46f5e4b17178e9441fb15fe03c596f80f42de4c0ec8df581c.jpg",
+        "table_caption": [
+            "D: Drivers relation"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>did</td><td>dname</td><td>rating</td><td>age</td></tr><tr><td>22</td><td>Karthikeyan</td><td>7</td><td>25</td></tr><tr><td>29</td><td>Salman</td><td>1</td><td>33</td></tr><tr><td>31</td><td>Boris</td><td>8</td><td>55</td></tr><tr><td>32</td><td>Amoldt</td><td>8</td><td>25</td></tr><tr><td>58</td><td>Schumacher</td><td>10</td><td>35</td></tr><tr><td>64</td><td>Sachin</td><td>7</td><td>35</td></tr><tr><td>71</td><td>Senna</td><td>10</td><td>16</td></tr><tr><td>74</td><td>Sachin</td><td>9</td><td>35</td></tr><tr><td>85</td><td>Rahul</td><td>3</td><td>25</td></tr><tr><td>95</td><td>Ralph</td><td>3</td><td>53</td></tr></table>",
+        "bbox": [
+            218,
+            534,
+            526,
+            750
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/ecd470eb1b39011ed0b8903723c64132bdcbb247882b939854c59cd364c22aae.jpg",
+        "table_caption": [
+            "R: Reserves relation"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>did</td><td>Cid</td><td>day</td></tr><tr><td>22</td><td>101</td><td>10 - 10 - 06</td></tr><tr><td>22</td><td>102</td><td>10 - 10 - 06</td></tr><tr><td>22</td><td>103</td><td>08 - 10 - 06</td></tr><tr><td>22</td><td>104</td><td>07 - 10 - 06</td></tr><tr><td>31</td><td>102</td><td>10 - 11 - 16</td></tr><tr><td>31</td><td>103</td><td>06 - 11 - 16</td></tr><tr><td>31</td><td>104</td><td>12 - 11 - 16</td></tr><tr><td>64</td><td>101</td><td>05 - 09 - 06</td></tr><tr><td>64</td><td>102</td><td>08 - 09 - 06</td></tr><tr><td>74</td><td>103</td><td>08 - 09 - 06</td></tr></table>",
+        "bbox": [
+            566,
+            534,
+            796,
+            750
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/8696b03a43769258d5ebe29d78ae343e8a7e2090b83748f68dc3a92b33e5ce63.jpg",
+        "table_caption": [
+            "C: Cars relation"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Cid</td><td>Cname</td><td>colour</td></tr><tr><td>101</td><td>Renault</td><td>blue</td></tr><tr><td>102</td><td>Renault</td><td>red</td></tr><tr><td>103</td><td>Ferrari</td><td>green</td></tr><tr><td>104</td><td>Jaguar</td><td>red</td></tr></table>",
+        "bbox": [
+            396,
+            771,
+            618,
+            870
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "select D.dname",
+        "bbox": [
+            89,
+            880,
+            181,
+            891
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "from Drivers D",
+        "bbox": [
+            90,
+            891,
+            174,
+            901
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "where D.did in (",
+        "bbox": [
+            90,
+            902,
+            184,
+            912
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "select R.did",
+        "bbox": [
+            174,
+            913,
+            243,
+            923
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/573219b9f5bb92e9cb67c12e4155d682d96f7a4e7067b1e0e695b13798dffdee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            446,
+            932,
+            484
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfrom Cars C, Reserves R\nwhere R.cid = C.cid and C.colour = 'red'\nintersect\nselect R.did\nfrom Cars C, Reserves R\nwhere R.cid = C.cid and C.colour = 'green'\n)\n```",
+        "bbox": [
+            169,
+            64,
+            416,
+            140
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $n$ be the number of comparisons performed when the above SQL query is optimally executed. If linear search is used to locate a tuple in a relation using primary key, then $n$ lies in the range:",
+        "bbox": [
+            84,
+            149,
+            927,
+            178
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 36 - 40",
+        "bbox": [
+            87,
+            191,
+            171,
+            205
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 44 - 48",
+        "bbox": [
+            285,
+            191,
+            366,
+            205
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 60 - 64",
+        "bbox": [
+            478,
+            191,
+            563,
+            205
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 100 - 104",
+        "bbox": [
+            673,
+            191,
+            776,
+            205
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 databases sql normal",
+        "bbox": [
+            87,
+            216,
+            265,
+            225
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            232,
+            181,
+            245
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.21.58 SQL: GATE IT 2008 | Question: 74",
+        "text_level": 1,
+        "bbox": [
+            78,
+            255,
+            406,
+            269
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relational schema:",
+        "bbox": [
+            85,
+            279,
+            389,
+            293
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Student(school-id, sch-roll-no, sname, saddress)",
+            "- School(school-id, sch-name, sch-address, sch-phone)",
+            "- Enrolment(school-id, sch-roll-no, erollno, examname)",
+            "- ExamResult(erollno, examname, marks)"
+        ],
+        "bbox": [
+            97,
+            304,
+            549,
+            370
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "What does the following SQL query output?",
+        "bbox": [
+            85,
+            381,
+            406,
+            396
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```sql\nSELECT sch-name, COUNT (*)\nFROM School C, Enrolment E, ExamResult R\nWHERE E.school-id = C.school-id\nAND\nE.examname = R.examname AND E.erollno = R.erollno\nAND\nR.marks = 100 AND E.school-id IN (SELECT school-id\n                      FROM student\n                      GROUP BY school-id\n                      HAVING COUNT (*) > 200)\nGROUP By school-id\n```",
+        "bbox": [
+            87,
+            404,
+            405,
+            523
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. for each school with more than 200 students appearing in exams, the name of the school and the number of 100s scored by its students",
+            "B. for each school with more than 200 students in it, the name of the school and the number of 100s scored by its students",
+            "C. for each school with more than 200 students in it, the name of the school and the number of its students scoring 100 in at least one exam",
+            "D. nothing; the query has a syntax error"
+        ],
+        "bbox": [
+            85,
+            535,
+            927,
+            648
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 databases sql normal",
+        "bbox": [
+            87,
+            674,
+            265,
+            682
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            690,
+            181,
+            704
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.22",
+        "text_level": 1,
+        "bbox": [
+            68,
+            714,
+            104,
+            728
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Safe Query (1)",
+        "text_level": 1,
+        "bbox": [
+            458,
+            714,
+            576,
+            729
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.22.1 Safe Query: GATE CSE 2017 | Set 1 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            77,
+            741,
+            519,
+            755
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a database that has the relation schemas EMP(EmpId, EmpName, DeptId), and DEPT(DeptName, DeptId). Note that the DeptId can be permitted to be NULL in the relation EMP. Consider the following queries on the database expressed in tuple relational calculus.",
+        "bbox": [
+            84,
+            764,
+            875,
+            808
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. $\\{t \\mid \\exists u \\in \\text{EMP}(t[\\text{EmpName}] = u[\\text{EmpName}] \\land \\forall v \\in \\text{DEPT}(t[\\text{DeptId}] \\neq v[\\text{DeptId}]))\\}$",
+            "II. $\\{t \\mid \\exists u \\in \\text{EMP}(t[\\text{EmpName}] = u[\\text{EmpName}] \\land \\exists v \\in \\text{DEPT}(t[\\text{DeptId}] \\neq v[\\text{DeptId}]))\\}$",
+            "III. {t | ∃u ∈ EMP(t[EmpName] = u[EmpName] ∧ ∃v ∈ DEPT(t[DeptId] = v[DeptId]))}"
+        ],
+        "bbox": [
+            85,
+            818,
+            705,
+            863
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the above queries are safe?",
+        "bbox": [
+            85,
+            872,
+            361,
+            887
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. I and II only",
+        "bbox": [
+            87,
+            902,
+            194,
+            916
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. I and III only",
+        "bbox": [
+            285,
+            902,
+            393,
+            916
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. II and III only",
+        "bbox": [
+            480,
+            902,
+            591,
+            916
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. I, II and III",
+        "bbox": [
+            673,
+            902,
+            766,
+            916
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/d412fa868f43b9651bffdf665976906bc769be16bd3c27c8087334435e52a84e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            258,
+            931,
+            296
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/1fc2c65afc5513ba4f4d849fcbdd9e37dc46755eb5d66ae43bdc1dc0c49b46ba.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            744,
+            931,
+            781
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.23",
+        "text_level": 1,
+        "bbox": [
+            68,
+            112,
+            104,
+            124
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Super Key (1)",
+        "text_level": 1,
+        "bbox": [
+            462,
+            111,
+            574,
+            125
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.23.1 Super Key: GATE CSE 2026 | Set 1 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            137,
+            517,
+            152
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/7652a3ccf2acaa8ba032495d1e56de659330da65bd6204c1d7d8df84bbfde618.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            140,
+            931,
+            178
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider a relational database schema with a relation $R(A, B, C, D)$ . If $\\{A, B\\}$ and $\\{A, C\\}$ are the only two candidate keys of the relation $R$ , then the number of superkeys of relation $R$ is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            84,
+            161,
+            878,
+            206
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 numerical-answers databases super-key two-marks",
+        "bbox": [
+            87,
+            219,
+            423,
+            229
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            235,
+            186,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.24",
+        "text_level": 1,
+        "bbox": [
+            68,
+            260,
+            104,
+            273
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Timestamp Ordering (1)",
+        "text_level": 1,
+        "bbox": [
+            423,
+            258,
+            615,
+            275
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.24.1 Timestamp Ordering: GATE CSE 2017 | Set 1 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            286,
+            596,
+            301
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/cacee88e25d0e3f6980ec54ba8a936a59d36bb03ae65efdf1239cca58072d900.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            289,
+            931,
+            326
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In a database system, unique timestamps are assigned to each transaction using Lamport's logical clock. Let $TS(T_{1})$ and $TS(T_{2})$ be the timestamps of transactions $T_{1}$ and $T_{2}$ respectively. Besides, $T_{1}$ holds a lock on the resource R, and $T_{2}$ has requested a conflicting lock on the same resource R. The following algorithm is used to prevent deadlocks in the database system assuming that a killed transaction is restarted with the same timestamp.",
+        "bbox": [
+            84,
+            309,
+            929,
+            382
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {if} T S (T _ {2}) <   T S (T _ {1}) \\text {then}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            257,
+            394,
+            458,
+            412
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT _ {1} \\text {is killed}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            295,
+            423,
+            379,
+            439
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text { else } T _ {2} \\text { waits. }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            258,
+            452,
+            363,
+            467
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Assume any transaction that is not killed terminates eventually. Which of the following is TRUE about the database system that uses the above algorithm to prevent deadlocks?",
+        "bbox": [
+            84,
+            480,
+            927,
+            509
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The database system is both deadlock-free and starvation-free.",
+            "B. The database system is deadlock-free, but not starvation-free.",
+            "C. The database system is starvation-free, but not deadlock-free.",
+            "D. The database system is neither deadlock-free nor starvation-free."
+        ],
+        "bbox": [
+            87,
+            519,
+            589,
+            574
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 databases timestamp-ordering normal transaction-and-concurrency",
+        "bbox": [
+            87,
+            600,
+            490,
+            611
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            617,
+            186,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.25",
+        "text_level": 1,
+        "bbox": [
+            68,
+            642,
+            104,
+            654
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Transaction and Concurrency (27)",
+        "text_level": 1,
+        "bbox": [
+            381,
+            641,
+            655,
+            656
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests:",
+        "bbox": [
+            70,
+            666,
+            194,
+            679
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Test 1 (15Q)",
+        "bbox": [
+            205,
+            667,
+            277,
+            679
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Test 2 (15Q)",
+        "bbox": [
+            292,
+            667,
+            366,
+            679
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Test 3 (11Q)",
+        "bbox": [
+            384,
+            667,
+            455,
+            679
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.25.1 Transaction and Concurrency: GATE CS Practice : Transaction Concurrency Control (DBMS)",
+        "text_level": 1,
+        "bbox": [
+            78,
+            695,
+            858,
+            709
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/2696156a92e292ce96805525b6763197fc367ff6d419b3865bdde8bce26a2384.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            697,
+            931,
+            735
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "We have a table Orders with a specific predicate range query",
+        "bbox": [
+            85,
+            718,
+            534,
+            733
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Q: SELECT \\* FROM Orders WHERE Value > 1000",
+        "bbox": [
+            112,
+            742,
+            405,
+            754
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Transaction $T_{1}$ executes Q and gets 5 rows.",
+        "bbox": [
+            85,
+            763,
+            415,
+            779
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Transaction $T_{2}$ inserts a new row with Value = 1500 and Commits.",
+        "bbox": [
+            85,
+            782,
+            571,
+            796
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Transaction $T_{1}$ executes Q again.",
+        "bbox": [
+            85,
+            801,
+            339,
+            815
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Under which Isolation Level is it guaranteed that $T_{1}$ will still see exactly 5 rows (i.e., prevent the Phantom Read)?",
+        "bbox": [
+            84,
+            820,
+            915,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Read Committed",
+        "bbox": [
+            87,
+            845,
+            230,
+            858
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. Repeatable Read",
+        "bbox": [
+            497,
+            845,
+            640,
+            858
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. Serializable",
+        "bbox": [
+            89,
+            871,
+            194,
+            883
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Both B and C",
+        "bbox": [
+            497,
+            871,
+            611,
+            883
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2017-set1 databases relational-calculus safe-query normal",
+        "bbox": [
+            87,
+            71,
+            411,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "transaction-and-concurrency databases gate-preparation",
+        "bbox": [
+            87,
+            902,
+            347,
+            912
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.25.2 Transaction and Concurrency: GATE CSE 1999 | Question: 2.6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            621,
+            104
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "For the schedule given below, which of the following is correct:",
+        "bbox": [
+            85,
+            112,
+            546,
+            128
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1 Read A",
+            "2 Read B",
+            "3 Write A",
+            "4 Read A",
+            "5 Write A",
+            "6 Write B",
+            "7 Read B",
+            "8 Write B"
+        ],
+        "bbox": [
+            411,
+            138,
+            600,
+            289
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. This schedule is serializable and can occur in a scheme using 2PL protocol",
+            "B. This schedule is serializable but cannot occur in a scheme using 2PL protocol",
+            "C. This schedule is not serializable but can occur in a scheme using 2PL protocol",
+            "D. This schedule is not serializable and cannot occur in a scheme using 2PL protocol"
+        ],
+        "bbox": [
+            87,
+            299,
+            710,
+            369
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1999 databases transaction-and-concurrency normal",
+        "bbox": [
+            87,
+            395,
+            359,
+            404
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            410,
+            186,
+            426
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.25.3 Transaction and Concurrency: GATE CSE 2003 | Question: 29, ISRO2009-73",
+        "text_level": 1,
+        "bbox": [
+            78,
+            434,
+            724,
+            448
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following scenarios may lead to an irrecoverable error in a database system?",
+        "bbox": [
+            84,
+            458,
+            744,
+            473
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A transaction writes a data item after it is read by an uncommitted transaction",
+            "B. A transaction reads a data item after it is read by an uncommitted transaction",
+            "C. A transaction reads a data item after it is written by a committed transaction",
+            "D. A transaction reads a data item after it is written by an uncommitted transaction"
+        ],
+        "bbox": [
+            87,
+            483,
+            690,
+            540
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 databases transaction-and-concurrency easy isro2009",
+        "bbox": [
+            87,
+            565,
+            415,
+            574
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            581,
+            186,
+            596
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.25.4 Transaction and Concurrency: GATE CSE 2003 | Question: 87",
+        "text_level": 1,
+        "bbox": [
+            78,
+            605,
+            616,
+            619
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider three data items D1, D2, and D3, and the following execution schedule of transactions T1, T2, and T3. In the diagram, $R(D)$ and $W(D)$ denote the actions reading and writing the data item D respectively.",
+        "bbox": [
+            82,
+            628,
+            878,
+            674
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/169e210f70905d8964a5e8b598e53819516bacc293a43bb5cf4cff9c9ec9c454.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/db16f2497c4eed2ee7079759c32c6e6fab4c5af87cdeee87586c12012b91bedc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            437,
+            932,
+            475
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/88251d66cd95a478424941f7d34d2ff42e653311581025f4b2e79854fea7a8b2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            608,
+            932,
+            644
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/d99bbfda296adc1ee962ff28e1c22886634ea24f2a318b4d1681d052779640e1.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>T1</td><td>T2</td><td>T3</td></tr><tr><td>R(D1);W(D1);R(D2);W(D2);</td><td>R(D3);R(D2);W(D2);R(D1);W(D1);</td><td>R(D2);R(D3);W(D2);W(D3);</td></tr></table>",
+        "bbox": [
+            381,
+            65,
+            636,
+            347
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is correct?",
+        "bbox": [
+            85,
+            356,
+            415,
+            371
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The schedule is serializable as $T2; T3; T1$",
+            "B. The schedule is serializable as $T2; T1; T3$",
+            "C. The schedule is serializable as $T3; T2; T1$",
+            "D. The schedule is not serializable"
+        ],
+        "bbox": [
+            87,
+            381,
+            431,
+            450
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 databases transaction-and-concurrency normal",
+        "bbox": [
+            87,
+            476,
+            374,
+            486
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            492,
+            186,
+            507
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.25.5 Transaction and Concurrency: GATE CSE 2006 | Question: 20, ISRO2015-17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            517,
+            724,
+            530
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following log sequence of two transactions on a bank account, with initial balance 12000, that transfer 2000 to a mortgage payment and then apply a 5% interest.",
+        "bbox": [
+            84,
+            539,
+            878,
+            571
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/7741260fe971ad6d5c9fbc54e6830f233cee6360e800d7e85fd0a98f35285e56.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            519,
+            931,
+            557
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. T1 start",
+            "2. T1 B old = 12000 new = 10000",
+            "3. T1 M old = 0 new = 2000",
+            "4. T1 commit",
+            "5. T2 start",
+            "6. T2 B old = 10000 new = 10500",
+            "7. T2 commit"
+        ],
+        "bbox": [
+            90,
+            581,
+            359,
+            678
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose the database system crashes just before log record 7 is written. When the system is restarted, which one statement is true of the recovery procedure?",
+        "bbox": [
+            84,
+            690,
+            929,
+            720
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. We must redo log record 6 to set B to 10500",
+            "B. We must undo log record 6 to set B to 10000 and then redo log records 2 and 3",
+            "C. We need not redo log records 2 and 3 because transaction T1 has committed",
+            "D. We can apply redo and undo operations in arbitrary order because they are idempotent"
+        ],
+        "bbox": [
+            85,
+            729,
+            747,
+            788
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 databases transaction-and-concurrency normal isro2015",
+        "bbox": [
+            87,
+            813,
+            423,
+            823
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            828,
+            186,
+            843
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.25.6 Transaction and Concurrency: GATE CSE 2010 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            853,
+            615,
+            866
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following concurrency control protocols ensure both conflict serializability and freedom from deadlock?",
+        "bbox": [
+            84,
+            876,
+            878,
+            904
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/fbfbc2d68b93f1ab846d3c843a347dd129ace96ee423cdeecd93e7891cb05f91.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            855,
+            931,
+            893
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. 2-phase locking",
+            "II. Time-stamp ordering"
+        ],
+        "bbox": [
+            90,
+            65,
+            265,
+            93
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            115,
+            97,
+            178,
+            111
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. II only",
+        "bbox": [
+            304,
+            97,
+            369,
+            112
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. Both I and II",
+        "bbox": [
+            492,
+            97,
+            600,
+            110
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. Neither I nor II",
+        "bbox": [
+            680,
+            97,
+            803,
+            110
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 databases transaction-and-concurrency normal",
+        "bbox": [
+            87,
+            121,
+            376,
+            131
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            137,
+            186,
+            152
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.25.7 Transaction and Concurrency: GATE CSE 2010 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            160,
+            616,
+            175
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following schedule for transactions T1, T2 and T3 :",
+        "bbox": [
+            85,
+            184,
+            569,
+            199
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/da194f7bccba1c59e9a9dae34bd8790c8d7f83cb2d2d99e9a99e52c6ad38f07b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>T1</td><td>T2</td><td>T3</td></tr><tr><td>Read(X)</td><td></td><td></td></tr><tr><td></td><td>Read(Y)</td><td></td></tr><tr><td></td><td></td><td>Read(Y)</td></tr><tr><td></td><td>Write(Y)</td><td></td></tr><tr><td>Write(X)</td><td></td><td></td></tr><tr><td></td><td></td><td>Write(X)</td></tr><tr><td></td><td>Read(X)</td><td></td></tr><tr><td></td><td>Write(X)</td><td></td></tr></table>",
+        "bbox": [
+            361,
+            212,
+            655,
+            393
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the schedules below is the correct serialization of the above?",
+        "bbox": [
+            85,
+            416,
+            633,
+            429
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $T1 \\rightarrow T3 \\rightarrow T2$",
+        "bbox": [
+            89,
+            440,
+            235,
+            453
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $T2 \\rightarrow T1 \\rightarrow T3$",
+        "bbox": [
+            497,
+            440,
+            640,
+            453
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $T2 \\rightarrow T3 \\rightarrow T1$",
+        "bbox": [
+            90,
+            454,
+            233,
+            466
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $T3 \\rightarrow T1 \\rightarrow T2$",
+        "bbox": [
+            497,
+            454,
+            640,
+            466
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 databases transaction-and-concurrency normal",
+        "bbox": [
+            89,
+            473,
+            376,
+            482
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            488,
+            186,
+            503
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.25.8 Transaction and Concurrency: GATE CSE 2012 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            511,
+            616,
+            526
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following transactions with data items P and Q initialized to zero:",
+        "bbox": [
+            85,
+            536,
+            658,
+            552
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/7dc3f36bb040ab1759d5c9004e39d7d458989a9048a95a6f2347daac3ca733f0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td> $T_1$ </td><td>read (P);read (Q);if P = 0 then Q := Q + 1;write (Q)</td></tr><tr><td> $T_2$ </td><td>read (Q);read (P);if Q = 0 then P := P + 1;write (P)</td></tr></table>",
+        "bbox": [
+            369,
+            562,
+            645,
+            724
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Any non-serial interleaving of T1 and T2 for concurrent execution leads to",
+        "bbox": [
+            85,
+            733,
+            623,
+            748
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. a serializable schedule",
+            "B. a schedule that is not conflict serializable",
+            "C. a conflict serializable schedule",
+            "D. a schedule for which a precedence graph cannot be drawn"
+        ],
+        "bbox": [
+            87,
+            758,
+            541,
+            815
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 databases transaction-and-concurrency normal",
+        "bbox": [
+            87,
+            840,
+            376,
+            851
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            856,
+            186,
+            871
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.25.9 Transaction and Concurrency: GATE CSE 2015 | Set 2 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            880,
+            657,
+            895
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following transaction involving two bank accounts x and y.",
+        "bbox": [
+            85,
+            904,
+            608,
+            919
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/5ea468a59ff2f3ef2958121e0de8ccf8c31e55d273aa6cb0213ebc6d6760f689.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            163,
+            931,
+            201
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/89b176d3f36401304f1187089e98790a6cf3b570c4d0e2bcd8f7b50224df6395.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            515,
+            931,
+            553
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/d6aa21bba7985136d313fbdf99e0ad00f8b42976e4075dc6d186d1497686c3c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            883,
+            931,
+            920
+        ],
+        "page_idx": 11
+    }
+]

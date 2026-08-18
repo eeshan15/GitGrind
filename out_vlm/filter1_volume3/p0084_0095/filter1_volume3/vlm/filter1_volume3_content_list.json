@@ -1,0 +1,3831 @@
+[
+    {
+        "type": "text",
+        "text": "1.24.17 Pipelining: GATE CSE 2014 | Set 3 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            524,
+            124
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/049c64768fb67dd9171fd1d4fdc6feab7b16e6379f06ca830132fd537755f803.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            932,
+            150
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An instruction pipeline has five stages, namely, instruction fetch (IF), instruction decode and register fetch (ID/RF), instruction execution (EX), memory access (MEM), and register writeback (WB) with stage latencies 1 ns, 2.2 ns, 2 ns, 1 ns, and 0.75 ns, respectively (ns stands for nanoseconds). To gain in terms of frequency designers have decided to split the ID/RF stage into three stages (ID, RF1, RF2) each of latency 2.2/3 ns, the EX stage is split into two stages (EX1, EX2) each of latency 1 ns. The new design has a total of eight stages. A program has 20% branch instructions which execute in the EX stage and produce the next instruction pointer at the end of the EX stage in the old design and at the end of the EX2 stage in the new design. The IF stalls after fetching a branch instruction until the next instruction pointer is computed. All instructions other than branch instruction have an average CPI of one in both the designs. The execution times of this program on the and the new design are P and Q nanoseconds, respectively. The value of P/Q is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            134,
+            878,
+            279
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 co-and-architecture pipelining numerical-answers normal",
+        "bbox": [
+            87,
+            292,
+            450,
+            302
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            308,
+            186,
+            321
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.24.18 Pipelining: GATE CSE 2014 | Set 3 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            332,
+            515,
+            346
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following processors (ns stands for nanoseconds). Assume that the pipeline registers have zero latency.",
+        "bbox": [
+            84,
+            355,
+            875,
+            384
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• P1: Four-stage pipeline with stage latencies 1 ns, 2 ns, 2 ns, 1 ns.",
+            "• P2: Four-stage pipeline with stage latencies 1 ns, 1.5 ns, 1.5 ns, 1.5 ns.",
+            "• P3: Five-stage pipeline with stage latencies 0.5 ns, 1 ns, 1 ns, 0.6 ns, 1 ns.",
+            "- P4: Five-stage pipeline with stage latencies 0.5 ns, 0.5 ns, 1 ns, 1 ns, 1.1 ns."
+        ],
+        "bbox": [
+            97,
+            395,
+            692,
+            454
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which processor has the highest peak clock frequency?",
+        "bbox": [
+            85,
+            465,
+            495,
+            479
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. P1",
+        "bbox": [
+            89,
+            492,
+            137,
+            505
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. P2",
+        "bbox": [
+            285,
+            492,
+            332,
+            505
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. P3",
+        "bbox": [
+            478,
+            492,
+            527,
+            505
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. P4",
+        "bbox": [
+            673,
+            492,
+            721,
+            505
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            517,
+            359,
+            527
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            534,
+            186,
+            547
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.24.19 Pipelining: GATE CSE 2015 | Set 1 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            557,
+            524,
+            571
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/bed32256f93557006183e15912a0c5a719f19cee11fb8a9ca7d51e5c462c8d46.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            334,
+            932,
+            372
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a non-pipelined processor with a clock rate of 2.5 gigahertz and average cycles per instruction of four. The same processor is upgraded to a pipelined processor with five stages; but due to the internal pipeline delay, the clock speed is reduced to 2 gigahertz. Assume that there are no stalls in the pipelin speedup achieved in this pipelined processor is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            581,
+            878,
+            638
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 co-and-architecture pipelining normal numerical-answers",
+        "bbox": [
+            87,
+            652,
+            450,
+            662
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            668,
+            186,
+            682
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.24.20 Pipelining: GATE CSE 2015 | Set 2 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            692,
+            524,
+            706
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/93b55bf8a6e20e4efee781e70e06b8874f113ad04d2c17e430e855f55432ffb9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            560,
+            932,
+            597
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the sequence of machine instruction given below:",
+        "bbox": [
+            85,
+            714,
+            519,
+            730
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/acab237e72e1f39eceead7882d77ec9c1f7d8c18f969b07a8f974c6490ec2a9b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>MUL</td><td>R5, R0, R1</td></tr><tr><td>DIV</td><td>R6, R2, R3</td></tr><tr><td>ADD</td><td>R7, R5, R6</td></tr><tr><td>SUB</td><td>R8, R7, R4</td></tr></table>",
+        "bbox": [
+            425,
+            741,
+            589,
+            815
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/0e7dd2d219a4bde8cf0582945fd22f9171b3b9a17e35c0abced20285bd4df515.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            695,
+            932,
+            732
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the above sequence, R0 to R8 are general purpose registers. In the instructions shown, the first register shows the result of the operation performed on the second and the third registers. This sequence of instructions is to be executed in a pipelined instruction processor with the following 4 stages: (1) Instruction Fetch and Decode (IF), (2) Operand Fetch (OF), (3) Perform Operation (PO) and (4) Write back the result (WB). The IF, OF and WB stages take 1 clock cycle each for any instruction. The PO stage takes 1 clock cycle for ADD and SUB instruction, 3 clock cycles for MUL instruction and 5 clock cycles for DIV instruction. The pipelined processor uses",
+        "bbox": [
+            84,
+            838,
+            929,
+            928
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2013 normal co-and-architecture pipelining",
+        "bbox": [
+            87,
+            71,
+            339,
+            81
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "operand forwarding from the PO stage to the OF stage. The number of clock cycles taken for the execution of the above sequence of instruction is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            64,
+            927,
+            92
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 co-and-architecture pipelining normal numerical-answers",
+        "bbox": [
+            87,
+            106,
+            450,
+            116
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            123,
+            188,
+            137
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.24.21 Pipelining: GATE CSE 2015 | Set 3 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            146,
+            522,
+            161
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following reservation table for a pipeline having three stages $S_{1}$ , $S_{2}$ and $S_{3}$ .",
+        "bbox": [
+            85,
+            169,
+            742,
+            186
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/b20b546ec08d5bf904026a78019d81af0a35a18e547f14d09c0271a004b04a26.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Time →</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td> $S_1$ </td><td>X</td><td></td><td></td><td></td><td>X</td></tr><tr><td> $S_2$ </td><td></td><td>X</td><td></td><td>X</td><td></td></tr><tr><td> $S_3$ </td><td></td><td></td><td>X</td><td></td><td></td></tr></table>",
+        "bbox": [
+            371,
+            195,
+            645,
+            296
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/afb193334996d1c64ce62e2cfa3f924ceeda209a077cac9af079e3c0fcfd41bf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            149,
+            931,
+            186
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The minimum average latency (MAL) is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            318,
+            436,
+            334
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 co-and-architecture pipelining difficult numerical-answers",
+        "bbox": [
+            87,
+            347,
+            453,
+            357
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            363,
+            188,
+            378
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.24.22 Pipelining: GATE CSE 2016 | Set 1 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            387,
+            524,
+            401
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The stage delays in a 4-stage pipeline are 800, 500, 400 and 300 picoseconds. The first stage (with delay 800 picoseconds) is replaced with a functionality equivalent design involving two stages with respective delays 600 and 350 picoseconds. The throughput increase of the pipeline is \\_\\_\\_\\_ percent.",
+        "bbox": [
+            84,
+            410,
+            878,
+            454
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/79346d270fd74c5b0cbaa6753da013af9ca277318f77040f3c71e9e34e7afb48.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            390,
+            931,
+            427
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 co-and-architecture pipelining normal numerical-answers",
+        "bbox": [
+            87,
+            467,
+            450,
+            478
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            484,
+            188,
+            498
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.24.23 Pipelining: GATE CSE 2016 | Set 2 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            78,
+            508,
+            524,
+            523
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider a 3 GHz (gigahertz) processor with a three stage pipeline and stage latencies $\\tau_{1}$ , $\\tau_{2}$ and $\\tau_{3}$ such that $\\tau_{1} = \\frac{3\\tau_{2}}{4} = 2\\tau_{3}$ . If the longest pipeline stage is split into two pipeline stages of equal latency, the new frequency is \\_\\_\\_\\_ GHz, ignoring delays in the pipeline registers.",
+        "bbox": [
+            84,
+            532,
+            878,
+            598
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/04f05ee42e5d178eaf67d8498a02bdad901ab5661599f4c6896e2f0eca6ce0db.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            511,
+            931,
+            548
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 co-and-architecture pipelining normal numerical-answers",
+        "bbox": [
+            87,
+            610,
+            450,
+            621
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            627,
+            188,
+            641
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.24.24 Pipelining: GATE CSE 2017 | Set 1 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            650,
+            524,
+            665
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Instruction execution in a processor is divided into 5 stages, Instruction Fetch (IF), Instruction",
+        "bbox": [
+            84,
+            676,
+            878,
+            691
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Decode (ID), Operand fetch (OF), Execute (EX), and Write Back (WB). These stages take 5, 4, 20, 10 and 3 nanoseconds (ns) respectively. A pipelined implementation of the processor requires buffering between each pair of consecutive stages with a delay of 2 ns. Two pipelined implementation of the processor are contemplated:",
+        "bbox": [
+            84,
+            692,
+            927,
+            736
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. a naive pipeline implementation (NP) with 5 stages and",
+            "ii. an efficient pipeline (EP) where the OF stage is divided into stages OF1 and OF2 with execution times of 12 ns and 8 ns respectively."
+        ],
+        "bbox": [
+            92,
+            745,
+            927,
+            789
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The speedup (correct to two decimal places) achieved by EP over NP in executing 20 independent instructions with no hazards is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            800,
+            929,
+            828
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 co-and-architecture pipelining normal numerical-answers",
+        "bbox": [
+            87,
+            847,
+            450,
+            857
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            863,
+            188,
+            878
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/55ea142aa4ba46a678bc77774699e44f5c05c3774b6fe5232c284a80ebbdffbb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            653,
+            931,
+            690
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The instruction pipeline of a RISC processor has the following stages: Instruction Fetch (IF), Instruction Decode (ID), Operand Fetch (OF), Perform Operation (PO) and Writeback (WB), The IF, ID, OF and WB stages take 1 clock cycle each for every instruction. Consider a sequence of 100 instructions. In the stage, 40 instructions take 3 clock cycles each, 35 instructions take 2 clock cycles each, and the remain instructions take 1 clock cycle each. Assume that there are no data hazards and no control hazards.",
+        "bbox": [
+            84,
+            89,
+            878,
+            162
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The number of clock cycles required for completion of execution of the sequence of instruction is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            176,
+            843,
+            191
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 co-and-architecture pipelining numerical-answers two-marks",
+        "bbox": [
+            87,
+            205,
+            443,
+            214
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            220,
+            181,
+            235
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.24.26 Pipelining: GATE CSE 2020 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            244,
+            470,
+            258
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/eede747a5d00e02fe561d09cd292660030b724cac4f7854bfa1ae136a4d9df3f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            247,
+            931,
+            283
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a non-pipelined processor operating at 2.5 GHz. It takes 5 clock cycles to complete an instruction. You are going to make a 5- stage pipeline out of this processor. Overheads associated with pipelining force you to operate the pipelined processor at 2 GHz. In a given program, assume that 30% are memory instructions, 60% are ALU instructions and the rest are branch instructions. 5% of the memory instructions cause stalls of 50 clock cycles each due to cache misses and 50% of the branch instructions cause stalls of 2 cycles each. Assume that there are no stalls associated with the execution of ALU instructions. For this program, the speedup achieved by the pipelined processor over the non-pipelined processor (round off to 2 decimal places) is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            268,
+            929,
+            372
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers co-and-architecture pipelining two-marks",
+        "bbox": [
+            87,
+            385,
+            443,
+            395
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            401,
+            181,
+            415
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.24.27 Pipelining: GATE CSE 2021 | Set 1 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            78,
+            425,
+            524,
+            439
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/76e1f5e79f2e81f50a9e40340089d20cc25fe90383061d625b4c407c2e331540.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            428,
+            931,
+            464
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A five-stage pipeline has stage delays of 150, 120, 150, 160 and 140 nanoseconds. The registers that are used between the pipeline stages have a delay of 5 nanoseconds each.",
+        "bbox": [
+            84,
+            448,
+            878,
+            477
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The total time to execute 100 independent instructions on this pipeline, assuming there are no pipeline stalls, is \\_\\_\\_\\_ nanoseconds.",
+        "bbox": [
+            84,
+            478,
+            927,
+            505
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 co-and-architecture pipelining numerical-answers two-marks",
+        "bbox": [
+            87,
+            520,
+            462,
+            530
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            536,
+            181,
+            549
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.24.28 Pipelining: GATE CSE 2021 | Set 2 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            78,
+            560,
+            524,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/094fa3a89026e5d080e227ead1f63d38997b1624c83c9fd715c51ac34457b75a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            562,
+            931,
+            599
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a pipelined processor with 5 stages, Instruction Fetch(IF), Instruction Decode(ID), Execute (EX), Memory Access (MEM), and Write Back (WB). Each stage of the pipeline, except the",
+        "bbox": [
+            84,
+            584,
+            872,
+            615
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "EX stage, takes one cycle. Assume that the ID stage merely decodes the instruction and the register read is performed in the EX stage. The EX stage takes one cycle for ADD instruction and two cycles for MUL instruction. Ignore pipeline register latencies.",
+        "bbox": [
+            84,
+            615,
+            927,
+            657
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sequence of 8 instructions:",
+        "bbox": [
+            85,
+            671,
+            453,
+            686
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {ADD, MUL, ADD, MUL, ADD, MUL, ADD, MUL}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            310,
+            695,
+            704,
+            712
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Assume that every MUL instruction is data-dependent on the ADD instruction just before it and every ADD instruction (except the first ADD) is data-dependent on the MUL instruction just before it. The speedup defined as follows.",
+        "bbox": [
+            84,
+            723,
+            929,
+            767
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS p e e d u p = \\frac {\\text {Execution time without operand forwarding}}{\\text {Execution time with operand forwarding}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            268,
+            777,
+            746,
+            814
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The Speedup achieved in executing the given instruction sequence on the pipelined processor (rounded to 2 decimal places) is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            821,
+            929,
+            851
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 co-and-architecture pipelining numerical-answers two-marks",
+        "bbox": [
+            87,
+            864,
+            462,
+            874
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            880,
+            181,
+            894
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "1.24.25 Pipelining: GATE CSE 2018 | Question: 50",
+        "bbox": [
+            78,
+            65,
+            470,
+            79
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.24.29 Pipelining: GATE CSE 2023 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            470,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/632e4ea216845f89bc411cad95226cb06b18035bb46a285e319daa36eec0185f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider a 3-stage pipelined processor having a delay of 10 ns (nanoseconds), 20 ns, and 14 ns, for the first, second, and the third stages, respectively. Assume that there is no other delay and the processor does not suffer from any pipeline hazards. Also assume that one instruction is fetched every cycle.",
+        "bbox": [
+            84,
+            87,
+            878,
+            131
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The total execution time for executing 100 instructions on this processor is \\_\\_\\_\\_ ns.",
+        "bbox": [
+            85,
+            144,
+            781,
+            160
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 co-and-architecture pipelining numerical-answers one-mark",
+        "bbox": [
+            87,
+            173,
+            438,
+            182
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            190,
+            188,
+            204
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.24.30 Pipelining: GATE CSE 2024 | Set 1 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            213,
+            524,
+            228
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/09ed28d7172ed274047d981e83e78a5dd44a4e5c267fb2b9c39ffc658b354268.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            216,
+            931,
+            252
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider a 5-stage pipelined processor with Instruction Fetch (IF), Instruction Decode (ID), Execute (EX), Memory Access (MEM), and Register Writeback (WB) stages. Which of the following statements about forwarding is/are CORRECT?",
+        "bbox": [
+            84,
+            237,
+            878,
+            282
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. In a pipelined execution, forwarding means the result from a source stage of an earlier instruction is passed on to the destination stage of a later instruction",
+            "B. In forwarding, data from the output of the MEM stage can be passed on to the input of the EX stage of the next instruction",
+            "C. Forwarding cannot prevent all pipeline stalls",
+            "D. Forwarding does not require any extra hardware to retrieve the data from the pipeline stages"
+        ],
+        "bbox": [
+            85,
+            292,
+            929,
+            377
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 multiple-selects co-and-architecture pipelining one-mark",
+        "bbox": [
+            87,
+            402,
+            448,
+            410
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            418,
+            188,
+            432
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.24.31 Pipelining: GATE CSE 2024 | Set 2 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            442,
+            522,
+            456
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/ebae28cc2f9d80651db1893a451078f69fb6fb983683deda388fe96717b84596.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            444,
+            931,
+            482
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "An instruction format has the following structure:",
+        "bbox": [
+            85,
+            465,
+            440,
+            480
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Instruction Number: Opcode destination reg, source reg-1, source reg-2",
+        "bbox": [
+            218,
+            486,
+            746,
+            501
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sequence of instructions to be executed in a pipelined processor:",
+        "bbox": [
+            186,
+            517,
+            830,
+            533
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I 1: DIV R3, R1, R2",
+            "I 2: SUB R5, R3, R4",
+            "I 3: ADD R3, R5, R6",
+            "I 4: MUL R7, R3, R8"
+        ],
+        "bbox": [
+            85,
+            535,
+            263,
+            608
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE?",
+        "bbox": [
+            85,
+            619,
+            438,
+            635
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There is a RAW dependency on R 3 between I 1 and I 2",
+            "B. There is a WAR dependency on R 3 between I 1 and I 3",
+            "C. There is a RAW dependency on R 3 between I 2 and I 3",
+            "D. There is a WAW dependency on R 3 between I 3 and I 4"
+        ],
+        "bbox": [
+            85,
+            646,
+            532,
+            706
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 co-and-architecture multiple-selects pipelining one-mark",
+        "bbox": [
+            87,
+            731,
+            448,
+            741
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            748,
+            188,
+            762
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.24.32 Pipelining: GATE CSE 2024 | Set 2 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            771,
+            524,
+            786
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/f3d3fe62befb7ce72c67daa61a870b0d67be509521400533dcca3fe6ddea3793.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            774,
+            931,
+            812
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A non-pipelined instruction execution unit operating at 2GHz takes an average of 6 cycles to execute an instruction of a program P. The unit is then redesigned to operate on a 5 -stage pipeline at 2GHz. Assume",
+        "bbox": [
+            84,
+            795,
+            878,
+            825
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "that the ideal throughput of the pipelined unit is 1 instruction per cycle. In the execution of program P, 20% instructions incur an average of 2 cycles stall due to data hazards and 20% instructions incur an average of 3 cycles stall due to control hazards. The speedup (rounded off to one decimal place) obtained by the pipelined design over the non-pipelined design is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            825,
+            927,
+            884
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 numerical-answers co-and-architecture pipelining two-marks",
+        "bbox": [
+            87,
+            897,
+            463,
+            907
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            914,
+            188,
+            928
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.24.33 Pipelining: GATE CSE 2025 | Set 2 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            524,
+            81
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/62c0bfced7ec708bfc2b1e31456f8c5e1e99818e144f84e69b6834a7bfade5a9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A 5-stage instruction pipeline has stage delays of 180, 250, 150, 170, and 250, respectively, in nanoseconds. The delay of an inter-stage latch is 10 nanoseconds. Assume that there are no pipeline stalls due to branches and other hazards. The time taken to process 1000 instructions in microseconds is \\_\\_\\_\\_ (rounded off to two decimal places)",
+        "bbox": [
+            84,
+            89,
+            878,
+            148
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 co-and-architecture pipelining numerical-answers easy two-marks",
+        "bbox": [
+            87,
+            161,
+            492,
+            172
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            178,
+            181,
+            192
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.24.34 Pipelining: GATE IT 2004 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            201,
+            452,
+            214
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider a pipeline processor with 4 stages S1 to S4. We want to execute the following loop:",
+        "bbox": [
+            85,
+            225,
+            768,
+            241
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/6c74ab51f26e8bc655d53364d2f918873df901cd15b4c13c9234d2a0afccadc5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            204,
+            931,
+            241
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} \\hline \\text {for (i = 1; i <   = 1000; i++)} \\\\ \\{\\mathrm{I1}, \\mathrm{I2}, \\mathrm{I3}, \\mathrm{I4} \\} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            249,
+            233,
+            273
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where the time taken (in ns) by instructions I1 to I4 for stages S1 to S4 are given below:",
+        "bbox": [
+            84,
+            281,
+            739,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/4e27aa497f9ec34f1d14c97af29a23a36bd5911342a3286c968caf4e7e9751f3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td> $S_{1}$ </td><td> $S_{2}$ </td><td> $S_{3}$ </td><td> $S_{4}$ </td></tr><tr><td>I1</td><td>1</td><td>2</td><td>1</td><td>2</td></tr><tr><td>I2</td><td>2</td><td>1</td><td>2</td><td>1</td></tr><tr><td>I3</td><td>1</td><td>1</td><td>2</td><td>1</td></tr><tr><td>I4</td><td>2</td><td>1</td><td>2</td><td>1</td></tr></table>",
+        "bbox": [
+            406,
+            309,
+            610,
+            408
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The output of I1 for i = 2 will be available after",
+        "bbox": [
+            85,
+            416,
+            442,
+            432
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 11 ns",
+        "bbox": [
+            87,
+            446,
+            157,
+            459
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 12 ns",
+        "bbox": [
+            285,
+            446,
+            351,
+            459
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 13 ns",
+        "bbox": [
+            478,
+            446,
+            544,
+            459
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 28 ns",
+        "bbox": [
+            673,
+            446,
+            739,
+            459
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            471,
+            332,
+            480
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            486,
+            181,
+            501
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.24.35 Pipelining: GATE IT 2005 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            510,
+            452,
+            524
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/9c228ad22b540cd6caa90310b2a482af5ad435fc7baf920dd02a7c456789c023.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            513,
+            931,
+            549
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "We have two designs D1 and D2 for a synchronous pipeline processor. D1 has 5 pipeline stages with execution times of 3 nsec, 2 nsec, 4 nsec, 2 nsec and 3 nsec while the design D2 has 8 pipeline stages each with 2 nsec execution time. How much time can be saved using design D2 over design D1 for executing 100 instructions?",
+        "bbox": [
+            84,
+            534,
+            929,
+            592
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 214 nsec",
+        "bbox": [
+            89,
+            603,
+            179,
+            615
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 202 nsec",
+        "bbox": [
+            495,
+            603,
+            584,
+            615
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 86 nsec",
+        "bbox": [
+            90,
+            616,
+            169,
+            628
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. -200 nsec",
+        "bbox": [
+            497,
+            616,
+            598,
+            628
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            635,
+            332,
+            644
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            650,
+            181,
+            665
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.24.36 Pipelining: GATE IT 2006 | Question: 78",
+        "text_level": 1,
+        "bbox": [
+            78,
+            674,
+            452,
+            688
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/7f1f7c2730dfda4e43d20f6a3a12ca86aadcef39d8ef5115fdf52e64945adefc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            676,
+            931,
+            714
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A pipelined processor uses a 4-stage instruction pipeline with the following stages: Instruction fetch (IF), Instruction decode (ID), Execute (EX) and Writeback (WB). The arithmetic operations as well as the load and store operations are carried out in the EX stage. The sequence of instructions corresponding to the statement $X = (S - R * (P + Q)) / T$ is given below. The values of variables $P, Q, R, S$ and $T$ are available in the registers $R0, R1, R2, R3$ and $R4$ respectively, before the execution of the instruction sequence.",
+        "bbox": [
+            84,
+            698,
+            929,
+            771
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathrm{ADD} \\quad \\mathrm{R5}, \\mathrm{R0}, \\mathrm{R1} \\quad ; \\mathrm{R5} \\leftarrow \\mathrm{R0} + \\mathrm{R1} \\\\ \\mathrm{MUL} \\quad \\mathrm{R6}, \\mathrm{R2}, \\mathrm{R5} \\quad ; \\mathrm{R6} \\leftarrow \\mathrm{R2} ^ {*} \\mathrm{R5} \\\\ \\mathrm{SUB} \\quad \\mathrm{R5}, \\mathrm{R3}, \\mathrm{R6}; \\mathrm{R5} \\leftarrow \\mathrm{R3} - \\mathrm{R6} \\\\ \\mathrm{DIV} \\quad \\mathrm{R6}, \\mathrm{R5}, \\mathrm{R4} \\quad ; \\mathrm{R6} \\leftarrow \\mathrm{R5} / \\mathrm{R4} \\\\ \\text {STORE} \\quad \\mathrm{R6}, \\mathrm{X} \\quad ; \\mathrm{X} \\leftarrow \\mathrm{R6} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            324,
+            781,
+            685,
+            876
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The number of Read-After-Write (RAW) dependencies, Write-After-Read(WAR) dependencies, and Write-After-Write (WAW) dependencies in the sequence of instructions are, respectively,",
+        "bbox": [
+            84,
+            897,
+            924,
+            928
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 2,2,4",
+        "bbox": [
+            89,
+            68,
+            157,
+            84
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 3,2,3",
+        "bbox": [
+            285,
+            68,
+            352,
+            84
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 4,2,2",
+        "bbox": [
+            478,
+            68,
+            547,
+            84
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 3,3,2",
+        "bbox": [
+            673,
+            68,
+            742,
+            84
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            93,
+            332,
+            103
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            123
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.24.37 Pipelining: GATE IT 2006 | Question: 79",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            452,
+            147
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A pipelined processor uses a 4-stage instruction pipeline with the following stages: Instruction fetch (IF), Instruction decode (ID), Execute (EX) and Writeback (WB). The arithmetic operations as well as the load and store operations are carried out in the EX stage. The sequence of instructions corresponding to the statement $X = (S - R * (P + Q)) / T$ is given below. The values of variables $P, Q, R, S$ and $T$ are available in the registers $R0, R1, R2, R3$ and $R4$ respectively, before the execution of the instruction sequence.",
+        "bbox": [
+            84,
+            156,
+            929,
+            229
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/10ee6d19e57fb350c8554a15fc48f3c8c31b1c61da900c286150775fca1d7ef3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>ADD</td><td>R5,R0,R1</td><td>;R5←R0+R1</td></tr><tr><td>MUL</td><td>R6,R2,R5</td><td>;R6←R2*R5</td></tr><tr><td>SUB</td><td>R5,R3,R6</td><td>;R5←R3-R6</td></tr><tr><td>DIV</td><td>R6,R5,R4</td><td>;R6←R5/R4</td></tr><tr><td>STORE</td><td>R6,X</td><td>;X←R6</td></tr></table>",
+        "bbox": [
+            336,
+            238,
+            675,
+            334
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The IF, ID and WB stages take 1 clock cycle each. The EX stage takes 1 clock cycle each for the ADD, SUB and STORE operations, and 3 clock cycles each for MUL and DIV operations. Operand forwarding from the EX stage to the ID stage is used. The number of clock cycles required to complete the sequence of instructions is",
+        "bbox": [
+            84,
+            342,
+            929,
+            387
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 10",
+        "bbox": [
+            89,
+            399,
+            136,
+            413
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 12",
+        "bbox": [
+            285,
+            399,
+            329,
+            413
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 14",
+        "bbox": [
+            478,
+            399,
+            524,
+            413
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 16",
+        "bbox": [
+            673,
+            399,
+            719,
+            413
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            423,
+            332,
+            434
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            440,
+            186,
+            454
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.24.38 Pipelining: GATE IT 2007 | Question: 6, ISRO2011-25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            463,
+            552,
+            478
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A processor takes 12 cycles to complete an instruction I. The corresponding pipelined processor uses 6 stages with the execution times of 3, 2, 5, 4, 6 and 2 cycles respectively. What is the asymptotic speedup assuming that a very large number of instructions are to be executed?",
+        "bbox": [
+            84,
+            486,
+            878,
+            530
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 1.83",
+        "bbox": [
+            89,
+            543,
+            149,
+            558
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            543,
+            321,
+            558
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            478,
+            543,
+            515,
+            558
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            543,
+            710,
+            558
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 co-and-architecture pipelining normal isro2011",
+        "bbox": [
+            87,
+            568,
+            379,
+            579
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            585,
+            186,
+            599
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.24.39 Pipelining: GATE IT 2008 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            78,
+            608,
+            452,
+            623
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A non pipelined single cycle processor operating at 100 MHz is converted into a synchronous pipelined processor with five stages requiring 2.5 nsec, 1.5 nsec, 2 nsec, 1.5 nsec and 2.5 nsec, respectively. The delay of the latches is 0.5 nsec. The speedup of the pipeline processor for a large number of instructions is:",
+        "bbox": [
+            84,
+            631,
+            878,
+            676
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 4.5",
+        "bbox": [
+            89,
+            688,
+            139,
+            703
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 4.0",
+        "bbox": [
+            285,
+            688,
+            332,
+            703
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 3.33",
+        "bbox": [
+            478,
+            688,
+            537,
+            703
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 3.0",
+        "bbox": [
+            673,
+            688,
+            722,
+            703
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            714,
+            332,
+            723
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            730,
+            186,
+            744
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.25",
+        "text_level": 1,
+        "bbox": [
+            68,
+            755,
+            104,
+            768
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Runtime Environment (2)",
+        "text_level": 1,
+        "bbox": [
+            418,
+            754,
+            618,
+            769
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.25.1 Runtime Environment: GATE CSE 2001 | Question: 1.10, UGCNET-Dec2012-III: 36",
+        "text_level": 1,
+        "bbox": [
+            78,
+            780,
+            766,
+            795
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Suppose a processor does not have any stack pointer registers, which of the following statements is true?",
+        "bbox": [
+            85,
+            804,
+            857,
+            820
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It cannot have subroutine call instruction",
+            "B. It cannot have nested subroutines call",
+            "C. Interrupts are not possible",
+            "D. All subroutine calls and interrupts are possible"
+        ],
+        "bbox": [
+            87,
+            830,
+            450,
+            885
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/486543d506465cb2c72752e2c55a3f968a8eb8eb6f57b11202773704549f8138.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            932,
+            172
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/fb5ae71876b0717aa677f6c626d725d75fa09cb7d71fac97a4670cb780440546.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            466,
+            932,
+            504
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/5528e19ca58f5a0dd9eefb26ab1536fd7cdecce84c7728af8143aee0e586076f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            611,
+            932,
+            649
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/dbf9d39c7e98211ce0626482b905cde1c535cceada3ed7f425133309f3c43ffe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            783,
+            932,
+            821
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2001",
+        "bbox": [
+            87,
+            910,
+            146,
+            921
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "co-and-architecture",
+        "bbox": [
+            157,
+            910,
+            240,
+            921
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "normal",
+        "bbox": [
+            250,
+            912,
+            284,
+            921
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "ugcnetcse-dec2012-paper3",
+        "bbox": [
+            295,
+            912,
+            406,
+            921
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "runtime-environment",
+        "bbox": [
+            418,
+            912,
+            509,
+            921
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.25.2 Runtime Environment: GATE CSE 2008 | Question: 37, ISRO2009-38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            665,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/f93ab0e6e4b6688971d6c955877baa431ff2a7365d691869263ab305425dcb0c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The use of multiple register windows with overlap causes a reduction in the number of memory accesses for:",
+        "bbox": [
+            85,
+            112,
+            878,
+            128
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Function locals and parameters",
+            "II. Register saves and restores",
+            "III. Instruction fetches"
+        ],
+        "bbox": [
+            85,
+            138,
+            344,
+            188
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            87,
+            204,
+            154,
+            219
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. II only",
+        "bbox": [
+            285,
+            204,
+            356,
+            219
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. III only",
+        "bbox": [
+            480,
+            204,
+            557,
+            219
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. I, II and III",
+        "bbox": [
+            673,
+            204,
+            779,
+            219
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 co-and-architecture normal isro2009 runtime-environment",
+        "bbox": [
+            87,
+            229,
+            435,
+            238
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            245,
+            188,
+            258
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.26",
+        "text_level": 1,
+        "bbox": [
+            68,
+            269,
+            105,
+            283
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Speedup (6)",
+        "text_level": 1,
+        "bbox": [
+            468,
+            269,
+            569,
+            283
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (11Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            294,
+            270,
+            308
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.26.1 Speedup: GATE CSE 2014 | Set 1 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            321,
+            505,
+            337
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/376295a0f3a3a3eebb9515f4f166aa103ed47eb87a7ee26ebd091b3fd50c7688.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            325,
+            932,
+            363
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a 6-stage instruction pipeline, where all stages are perfectly balanced. Assume that there is no cycle-time overhead of pipelining. When an application is executing on this 6-stage pipeline, the speedup achieved with respect to non-pipelined execution if 25% of the instructions incur 2 pipeline stall cycles is",
+        "bbox": [
+            84,
+            347,
+            927,
+            391
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 co-and-architecture pipelining numerical-answers normal speedup",
+        "bbox": [
+            87,
+            418,
+            497,
+            428
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            434,
+            188,
+            448
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.26.2 Speedup: GATE CSE 2014 | Set 1 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            458,
+            505,
+            472
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/ee14d41648efd0a7d73f8145f4ba7868972fb3470843fd46d567d1cf048e36b4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            460,
+            932,
+            498
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider two processors $P_1$ and $P_2$ executing the same instruction set. Assume that under identical conditions, for the same input, a program running on $P_2$ takes 25% less time but incurs 20% more CPI (clock cycles per instruction) as compared to the program running on $P_1$ . If the clock frequency of $P_1$ is 1GHz, then the clock frequency of $P_2$ (in GHz) is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            480,
+            927,
+            542
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 co-and-architecture numerical-answers normal speedup",
+        "bbox": [
+            87,
+            555,
+            442,
+            564
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            571,
+            188,
+            586
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.26.3 Speedup: GATE CSE 2024 | Set 1 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            593,
+            505,
+            609
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/da099541753e8157fc3c5e114b464f65fcfc7aff23898816e26375b5a6d30589.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            597,
+            932,
+            635
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The baseline execution time of a program on a 2GHz single core machine is 100 nanoseconds (ns). The code corresponding to 90% of the execution time can be fully parallelized. The overhead for using an additional core is 10 ns when running on a multicore system. Assume that all cores in the multicore system run their share of the parallelized code for an equal amount of time.",
+        "bbox": [
+            84,
+            619,
+            929,
+            678
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The number of cores that minimize the execution time of the program is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            690,
+            707,
+            706
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 numerical-answers co-and-architecture speedup two-marks",
+        "bbox": [
+            87,
+            719,
+            457,
+            729
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            735,
+            188,
+            750
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.26.4 Speedup: GATE CSE 2026 | Set 2 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            758,
+            505,
+            773
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/f811cb0c7f533577592c717d4769205b6dc93f3804990213dbb3aa70d66c2ba1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            761,
+            932,
+            799
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A non-pipelined instruction execution unit that operates at 1.6 GHz clock takes an average of 5 clock cycles to complete the execution of an instruction. To improve the performance, the system was pipelined with a goal of achieving an average throughput of one instruction per clock cycle. However, it could operate only at 1.2 GHz due to pipeline overheads. While executing a program in the pipelined design, 30% of instructions encountered a stall of 2 cycles due to pipeline hazards. The speed-up obtained by the pipelined design over the non-pipelined one for this program is \\_\\_\\_\\_ (rounded off to two decimal places)",
+        "bbox": [
+            84,
+            782,
+            929,
+            870
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Note: $1G = 10^{9}$",
+        "bbox": [
+            85,
+            882,
+            211,
+            899
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            188,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2026-set2 co-and-architecture pipelining speedup numerical-answers two-marks",
+        "bbox": [
+            87,
+            914,
+            512,
+            923
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.26.5 Speedup: GATE IT 2004 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            433,
+            104
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/ba0ee04dc5ae87af3b4db0f8b6b24153151ee6a4258124232166cfb79c2a452c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In an enhancement of a design of a CPU, the speed of a floating point unit has been increased by 20% and the speed of a fixed point unit has been increased by 10%. What is the overall speedup achieved if the ratio of the number of floating point operations to the number of fixed point operations is 2:3 and the floating point operation used to take twice the time taken by the fixed point operation in the original design?",
+        "bbox": [
+            84,
+            114,
+            929,
+            174
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 1.155",
+        "bbox": [
+            89,
+            186,
+            159,
+            200
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 1.185",
+        "bbox": [
+            285,
+            186,
+            352,
+            200
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 1.255",
+        "bbox": [
+            478,
+            186,
+            547,
+            200
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 1.285",
+        "bbox": [
+            673,
+            186,
+            742,
+            200
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 normal co-and-architecture speedup",
+        "bbox": [
+            87,
+            211,
+            326,
+            220
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            226,
+            188,
+            241
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.26.6 Speedup: GATE IT 2007 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            78,
+            250,
+            433,
+            264
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/6f2d9f763df5e979d3daaa69c4b9ad907067a9ec38408c812981c793eca7d5dd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            252,
+            932,
+            290
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The floating point unit of a processor using a design $D$ takes $2t$ cycles compared to $t$ cycles taken by the fixed point unit. There are two more design suggestions $D_1$ and $D_2$ . $D_1$ uses $30\\%$ more cycles for fixed point unit but $30\\%$ less cycles for floating point unit as compared to design $D$ . $D_2$ uses $40\\%$ less cycles for fixed point unit but $10\\%$ more cycles for floating point unit as compared to design $D$ . For a given program which has $80\\%$ fixed point operations and $20\\%$ floating point operations, which of the following ordering reflects the relative performances of three designs?",
+        "bbox": [
+            84,
+            274,
+            929,
+            363
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "$(D_{i} > D_{j}$ denotes that $D_{i}$ is faster than $D_{j}$ )",
+        "bbox": [
+            85,
+            364,
+            418,
+            380
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $D_{1} > D > D_{2}$",
+        "bbox": [
+            87,
+            387,
+            218,
+            402
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $D_{2} > D > D_{1}$",
+        "bbox": [
+            495,
+            388,
+            623,
+            402
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $D > D_{2} > D_{1}$",
+        "bbox": [
+            90,
+            402,
+            218,
+            416
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $D > D_{1} > D_{2}$",
+        "bbox": [
+            497,
+            402,
+            625,
+            416
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 co-and-architecture normal speedup",
+        "bbox": [
+            87,
+            420,
+            326,
+            429
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            435,
+            188,
+            451
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.27",
+        "text_level": 1,
+        "bbox": [
+            68,
+            461,
+            104,
+            473
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Stall (1)",
+        "text_level": 1,
+        "bbox": [
+            485,
+            461,
+            552,
+            475
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.27.1 Stall: GATE CSE 2022 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            486,
+            416,
+            501
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/c97808a5aca644ed477383acb91b3adb41dd99578a229e35824183f9a80bcd10.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            489,
+            932,
+            527
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A processor $X_{1}$ operating at 2 GHz has a standard 5-stage RISC instruction pipeline having a base CPI (cycles per instruction) of one without any pipeline hazards. For a given program P that has 30% branch instructions, control hazards incur 2 cycles stall for every branch. A new version of the processor $X_{2}$ operating at same clock frequency has an additional branch predictor unit (BPU) that completely eliminates stalls for correctly predicted branches. There is neither any savings nor any additional stalls for wrong predictions. There are no structural hazards and data hazards for $X_{1}$ and $X_{2}$ . If the BPU has a prediction accuracy of 80%, the speed up (rounded off to two decimal places) obtained by $X_{2}$ over $X_{1}$ in executing P is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            511,
+            929,
+            616
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers co-and-architecture pipelining stall two-marks",
+        "bbox": [
+            87,
+            629,
+            473,
+            638
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            644,
+            188,
+            660
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.28",
+        "text_level": 1,
+        "bbox": [
+            68,
+            669,
+            104,
+            682
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Virtual Memory (3)",
+        "text_level": 1,
+        "bbox": [
+            443,
+            669,
+            593,
+            685
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.28.1 Virtual Memory: GATE CSE 1991 | Question: 03,iii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            695,
+            519,
+            710
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/de0eb60965c488e65a9a1db77843a093cac536dfca7634325c623ff0c30c4af4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            699,
+            932,
+            736
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The total size of address space in a virtual memory system is limited by:",
+        "bbox": [
+            85,
+            720,
+            611,
+            735
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. the length of MAR",
+        "bbox": [
+            89,
+            745,
+            238,
+            758
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. the available secondary storage",
+        "bbox": [
+            497,
+            745,
+            734,
+            758
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. the available main memory",
+        "bbox": [
+            90,
+            758,
+            297,
+            771
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. all of the above",
+        "bbox": [
+            497,
+            758,
+            623,
+            770
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "E. none of the above",
+        "bbox": [
+            90,
+            771,
+            236,
+            783
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1991 co-and-architecture virtual-memory normal multiple-selects",
+        "bbox": [
+            87,
+            789,
+            423,
+            799
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            805,
+            188,
+            820
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.28.2 Virtual Memory: GATE CSE 2004 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            828,
+            500,
+            843
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/178bcc0cd07a1acaba0f7268c0ceee589efe3a7155ff053f0e31231f1637f3f2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            832,
+            932,
+            869
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a system with a two-level paging scheme in which a regular memory access takes 150 nanoseconds, and servicing a page fault takes 8 milliseconds. An average instruction takes 100 nanoseconds of CPU time, and two memory accesses. The TLB hit ratio is 90%, and the page fault rate is one in every 10,000 instructions. What is the effective average instruction execution time?",
+        "bbox": [
+            84,
+            853,
+            929,
+            910
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 645 nanoseconds",
+            "C. 1215 nanoseconds"
+        ],
+        "bbox": [
+            89,
+            65,
+            250,
+            91
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. 1050 nanoseconds",
+            "D. 1230 nanoseconds"
+        ],
+        "bbox": [
+            495,
+            65,
+            657,
+            91
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 co-and-architecture virtual-memory normal",
+        "bbox": [
+            89,
+            98,
+            361,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            114,
+            181,
+            128
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.28.3 Virtual Memory: GATE CSE 2008 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            80,
+            137,
+            500,
+            150
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In an instruction execution pipeline, the earliest that the data TLB (Translation Lookaside Buffer) can be accessed is:",
+        "bbox": [
+            84,
+            160,
+            875,
+            188
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/64405d7a5fd943b9696b05684de07ff257900354f65cdc30887248299f637cd7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            140,
+            931,
+            178
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. before effective address calculation has started",
+            "B. during effective address calculation",
+            "C. after effective address calculation has completed",
+            "D. after data cache lookup has completed"
+        ],
+        "bbox": [
+            87,
+            200,
+            470,
+            270
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 co-and-architecture virtual-memory normal",
+        "bbox": [
+            87,
+            295,
+            361,
+            305
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            311,
+            181,
+            325
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/aa10af12c3da9fef325cf10b670fc2a3c9372749943b2a0f96a870d37ba2de7d.jpg",
+        "table_caption": [
+            "Answer Keys"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.1.1</td><td>C</td><td>1.1.2</td><td>N/A</td><td>1.1.3</td><td>N/A</td><td>1.1.4</td><td>N/A</td><td>1.1.5</td><td>B</td></tr><tr><td>1.1.6</td><td>D</td><td>1.1.7</td><td>A;B;C;D</td><td>1.1.8</td><td>C</td><td>1.1.9</td><td>A</td><td>1.1.10</td><td>B</td></tr><tr><td>1.1.11</td><td>C</td><td>1.1.12</td><td>B</td><td>1.1.13</td><td>C</td><td>1.1.14</td><td>C</td><td>1.1.15</td><td>D</td></tr><tr><td>1.1.16</td><td>D</td><td>1.1.17</td><td>B</td><td>1.1.18</td><td>D</td><td>1.1.19</td><td>D</td><td>1.2.1</td><td>180</td></tr><tr><td>1.2.2</td><td>11.83:11.87</td><td>1.2.3</td><td>4:4</td><td>1.3.1</td><td>16417</td><td>1.4.1</td><td>A;B;C;D</td><td>1.4.2</td><td>D</td></tr><tr><td>1.5.1</td><td>N/A</td><td>1.5.2</td><td>N/A</td><td>1.5.3</td><td>22</td><td>1.5.4</td><td>N/A</td><td>1.5.5</td><td>D</td></tr><tr><td>1.5.6</td><td>D</td><td>1.5.7</td><td>61.25</td><td>1.5.8</td><td>N/A</td><td>1.5.9</td><td>B</td><td>1.5.10</td><td>B</td></tr><tr><td>1.5.11</td><td>N/A</td><td>1.5.12</td><td>N/A</td><td>1.5.13</td><td>C</td><td>1.5.14</td><td>A</td><td>1.5.15</td><td>A</td></tr><tr><td>1.5.16</td><td>D</td><td>1.5.17</td><td>C</td><td>1.5.18</td><td>B</td><td>1.5.19</td><td>D</td><td>1.5.20</td><td>C</td></tr><tr><td>1.5.21</td><td>A</td><td>1.5.22</td><td>A</td><td>1.5.23</td><td>D</td><td>1.5.24</td><td>B</td><td>1.5.25</td><td>C</td></tr><tr><td>1.5.26</td><td>D</td><td>1.5.27</td><td>C</td><td>1.5.28</td><td>C</td><td>1.5.29</td><td>D</td><td>1.5.30</td><td>C</td></tr><tr><td>1.5.31</td><td>A</td><td>1.5.32</td><td>A</td><td>1.5.33</td><td>A</td><td>1.5.34</td><td>D</td><td>1.5.35</td><td>D</td></tr><tr><td>1.5.36</td><td>20</td><td>1.5.37</td><td>1.68</td><td>1.5.38</td><td>14</td><td>1.5.39</td><td>A</td><td>1.5.40</td><td>24</td></tr><tr><td>1.5.41</td><td>30</td><td>1.5.42</td><td>0.05</td><td>1.5.43</td><td>14</td><td>1.5.44</td><td>A</td><td>1.5.45</td><td>4.7:4.8</td></tr><tr><td>1.5.46</td><td>18</td><td>1.5.47</td><td>B</td><td>1.5.48</td><td>D</td><td>1.5.49</td><td>160</td><td>1.5.50</td><td>13.3:13.3;13.5:13.5</td></tr><tr><td>1.5.51</td><td>B</td><td>1.5.52</td><td>17:17</td><td>1.5.53</td><td>2:2</td><td>1.5.54</td><td>A</td><td>1.5.55</td><td>A;B;D</td></tr><tr><td>1.5.56</td><td>0.85</td><td>1.5.57</td><td>19</td><td>1.5.58</td><td>B;C</td><td>1.5.59</td><td>3</td><td>1.5.60</td><td>A</td></tr><tr><td>1.5.61</td><td>B;C</td><td>1.5.62</td><td>C</td><td>1.5.63</td><td>B</td><td>1.5.64</td><td>C</td><td>1.5.65</td><td>C</td></tr><tr><td>1.5.66</td><td>A</td><td>1.5.67</td><td>B</td><td>1.5.68</td><td>D</td><td>1.5.69</td><td>A</td><td>1.6.1</td><td>76</td></tr><tr><td>1.7.1</td><td>B</td><td>1.8.1</td><td>D</td><td>1.8.2</td><td>B</td><td>1.8.3</td><td>456</td><td>1.8.4</td><td>80000:80000</td></tr><tr><td>1.8.5</td><td>A</td><td>1.8.6</td><td>C</td><td>1.8.7</td><td>C</td><td>1.8.8</td><td>C</td><td>1.9.1</td><td>A</td></tr><tr><td>1.10.1</td><td>A</td><td>1.10.2</td><td>B</td><td>1.10.3</td><td>B</td><td>1.10.4</td><td>B</td><td>1.11.1</td><td>B</td></tr><tr><td>1.12.1</td><td>N/A</td><td>1.12.2</td><td>D</td><td>1.12.3</td><td>B</td><td>1.12.4</td><td>B</td><td>1.12.5</td><td>28</td></tr><tr><td>1.12.6</td><td>C</td><td>1.12.7</td><td>A;B;C</td><td>1.13.1</td><td>A;B;D</td><td>1.13.2</td><td>A</td><td>1.13.3</td><td>A</td></tr><tr><td>1.13.4</td><td>A;B</td><td>1.13.5</td><td>128</td><td>1.14.1</td><td>77.3:77.3</td><td>1.15.1</td><td>95:95</td><td>1.16.1</td><td>True</td></tr><tr><td>1.16.2</td><td>True</td><td>1.16.3</td><td>False</td><td>1.16.4</td><td>A</td><td>1.16.5</td><td>1.4:1.5</td><td>1.16.6</td><td>B</td></tr><tr><td>1.16.7</td><td>B</td><td>1.16.8</td><td>A</td><td>1.17.1</td><td>False</td><td>1.17.2</td><td>N/A</td><td>1.17.3</td><td>C</td></tr><tr><td>1.17.4</td><td>C</td><td>1.17.5</td><td>A</td><td>1.17.6</td><td>-16.0</td><td>1.17.7</td><td>3.0:3.0</td><td>1.18.1</td><td>N/A</td></tr><tr><td>1.18.2</td><td>256</td><td>1.18.3</td><td>True</td><td>1.18.4</td><td>16383</td><td>1.18.5</td><td>500</td><td>1.18.6</td><td>32</td></tr><tr><td>1.18.7</td><td>14</td><td>1.18.8</td><td>32</td><td>1.18.9</td><td>34</td><td>1.18.10</td><td>D</td><td>1.18.11</td><td>B</td></tr><tr><td>1.19.1</td><td>D</td><td>1.20.1</td><td>D</td><td>1.20.2</td><td>B</td><td>1.20.3</td><td>A</td><td>1.20.4</td><td>A</td></tr><tr><td>1.20.5</td><td>B</td><td>1.20.6</td><td>C</td><td>1.20.7</td><td>C</td><td>1.20.8</td><td>10.2</td><td>1.20.9</td><td>A</td></tr><tr><td>1.20.10</td><td>C</td><td>1.21.1</td><td>N/A</td><td>1.21.2</td><td>N/A</td><td>1.21.3</td><td>N/A</td><td>1.21.4</td><td>B</td></tr><tr><td>1.21.5</td><td>A</td><td>1.21.6</td><td>D</td><td>1.21.7</td><td>B</td><td>1.21.8</td><td>C</td><td>1.21.9</td><td>B</td></tr><tr><td>1.21.10</td><td>D</td><td>1.21.11</td><td>A</td><td>1.21.12</td><td>C</td><td>1.21.13</td><td>D</td><td>1.21.14</td><td>D</td></tr><tr><td>1.21.15</td><td>16</td><td>1.21.16</td><td>50:50</td><td>1.21.17</td><td>B</td><td>1.21.18</td><td>B</td><td>1.21.19</td><td>D</td></tr><tr><td>1.21.20</td><td>C</td><td>1.21.21</td><td>A</td><td>1.22.1</td><td>TBA</td><td>1.22.2</td><td>N/A</td><td>1.22.3</td><td>D</td></tr><tr><td>1.22.4</td><td>31</td><td>1.22.5</td><td>59:60</td><td>1.22.6</td><td>C</td><td>1.23.1</td><td>N/A</td><td>1.23.2</td><td>C</td></tr><tr><td>1.23.3</td><td>C</td><td>1.23.4</td><td>B</td><td>1.23.5</td><td>D</td><td>1.23.6</td><td>A</td><td>1.23.7</td><td>D</td></tr><tr><td>1.23.8</td><td>A</td><td>1.23.9</td><td>D</td><td>1.23.10</td><td>B</td><td>1.23.11</td><td>D</td><td>1.23.12</td><td>D</td></tr><tr><td>1.24.1</td><td>15</td><td>1.24.2</td><td>B</td><td>1.24.3</td><td>N/A</td><td>1.24.4</td><td>N/A</td><td>1.24.5</td><td>D</td></tr><tr><td>1.24.6</td><td>D</td><td>1.24.7</td><td>C</td><td>1.24.8</td><td>C</td><td>1.24.9</td><td>B</td><td>1.24.10</td><td>A</td></tr><tr><td>1.24.11</td><td>D</td><td>1.24.12</td><td>B</td><td>1.24.13</td><td>B</td><td>1.24.14</td><td>B</td><td>1.24.15</td><td>C</td></tr><tr><td>1.24.16</td><td>B</td><td>1.24.17</td><td>1.50:1.60</td><td>1.24.18</td><td>C</td><td>1.24.19</td><td>3.2</td><td>1.24.20</td><td>13</td></tr><tr><td>1.24.21</td><td>3</td><td>1.24.22</td><td>33.0:34.0</td><td>1.24.23</td><td>4</td><td>1.24.24</td><td>1.50:1.51</td><td>1.24.25</td><td>219</td></tr><tr><td>1.24.26</td><td>2.15:2.18</td><td>1.24.27</td><td>17160:17160</td><td>1.24.28</td><td>1.87:1.88</td><td>1.24.29</td><td>2040</td><td>1.24.30</td><td>A;B;C</td></tr><tr><td>1.24.31</td><td>A</td><td>1.24.32</td><td>3</td><td>1.24.33</td><td>260.20:261.20</td><td>1.24.34</td><td>C</td><td>1.24.35</td><td>B</td></tr><tr><td>1.24.36</td><td>C</td><td>1.24.37</td><td>B</td><td>1.24.38</td><td>B</td><td>1.24.39</td><td>C</td><td>1.25.1</td><td>X</td></tr><tr><td>1.25.2</td><td>A</td><td>1.26.1</td><td>4</td><td>1.26.2</td><td>1.6</td><td>1.26.3</td><td>3</td><td>1.26.4</td><td>2.30:2.40</td></tr><tr><td>1.26.5</td><td>A</td><td>1.26.6</td><td>B</td><td>1.27.1</td><td>1.42:1.45</td><td>1.28.1</td><td>A;B</td><td>1.28.2</td><td>D</td></tr><tr><td>1.28.3</td><td>C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>",
+        "bbox": [
+            63,
+            372,
+            942,
+            914
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "bbox": [
+            60,
+            62,
+            944,
+            667
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Concept of layering.OSI and TCP/IP Protocol Stacks; Basics of packet, circuit and virtual circuit-switching; Data link layer: framing, error detection, Medium Access Control, Ethernet bridging; Routing protocols: shortest path, flooding, distance vector and link state routing; Fragmentation and IP addressing, IPv4, CIDR notation, Basics of IP support protocols (ARP, DHCP, ICMP), Network Address Translation (NAT); Transport layer: flow control and congestion control, UDP, TCP, sockets; Application layer protocols: DNS, SMTP, HTTP, FTP, Email.",
+        "bbox": [
+            65,
+            98,
+            926,
+            182
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/ab478abfd8d53073e94cb9ad4dd616c0798833ed5076525707c46469db8fc6dd.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>2</td><td>3</td><td>2</td><td>4</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td><td>1</td></tr><tr><td>2 Marks Count</td><td>3</td><td>3</td><td>3</td><td>1</td><td>3</td><td>3</td><td>3</td><td>4</td><td>4</td><td>3</td><td>1</td></tr><tr><td>Total Marks</td><td>8</td><td>9</td><td>8</td><td>6</td><td>9</td><td>9</td><td>8</td><td>10</td><td>9</td><td>7</td><td>6</td></tr></table>",
+        "bbox": [
+            70,
+            223,
+            952,
+            286
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The Computer Networks chapter in GATE Computer Science is a fundamental and high-scoring area, essential for understanding how modern computing systems communicate and interact. It covers everything from the physical transmission of data to high-level application protocols, network architecture, and security principles. Mastery of this subject is crucial not only for the GATE exam but also for a career in software development, system administration, and network engineering. Typically, Computer Networks carries a weightage of 8-12 marks in the GATE CS exam, with questions ranging from conceptual understanding of protocols and layers to numerical problems involving network performance, addressing, and error control. Question patterns often include multiple-choice questions (MCQs), multiple-select questions (MSQs), and numerical answer type (NAT) questions, testing both theoretical knowledge and problem-solving skills.",
+        "bbox": [
+            58,
+            295,
+            934,
+            421
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            433,
+            295,
+            450
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Application Layer Protocols",
+        "text_level": 1,
+        "bbox": [
+            60,
+            461,
+            317,
+            479
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "These protocols are at the highest layer of the TCP/IP model, providing services directly to user applications. They define how applications on different hosts communicate and exchange data.",
+        "bbox": [
+            58,
+            491,
+            894,
+            521
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            534,
+            181,
+            549
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- HTTP (Hypertext Transfer Protocol): Used for web browsing, client-server model, stateless. Default port 80.",
+            "- FTP (File Transfer Protocol): Used for file transfer, uses two connections (control and data). Default ports 20 (data) and 21 (control).",
+            "- DNS (Domain Name System): Translates domain names to IP addresses. UDP port 53 for queries, TCP port 53 for zone transfers.",
+            "- SMTP (Simple Mail Transfer Protocol): Used for sending emails. Default port 25.",
+            "- POP3 (Post Office Protocol v3): Used for retrieving emails. Default port 110.",
+            "- IMAP (Internet Message Access Protocol): More advanced email retrieval, allows managing mail on server. Default port 143."
+        ],
+        "bbox": [
+            72,
+            562,
+            932,
+            688
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            703,
+            465,
+            718
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing the functions and default port numbers of different protocols.",
+            "- Technique: Create a table mapping protocol to function and port number for quick recall."
+        ],
+        "bbox": [
+            72,
+            732,
+            734,
+            760
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "ARP (Address Resolution Protocol)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            773,
+            384,
+            789
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "ARP is a protocol used to map an IP address (Network Layer) to a physical MAC address (Data Link Layer) on a local network. It is essential for IP packets to be encapsulated into Ethernet frames for local delivery.",
+        "bbox": [
+            58,
+            802,
+            919,
+            831
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            845,
+            181,
+            859
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- ARP Request: Broadcasts a query to all hosts on the local network asking for the MAC address corresponding to a specific IP.",
+            "- ARP Reply: The host with the matching IP address sends a unicast reply containing its MAC address.",
+            "- ARP Cache: Hosts maintain a cache of IP-to-MAC mappings to reduce ARP traffic."
+        ],
+        "bbox": [
+            72,
+            874,
+            926,
+            929
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "2",
+        "bbox": [
+            70,
+            70,
+            85,
+            83
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "Computer Networks (226)",
+        "bbox": [
+            366,
+            70,
+            584,
+            86
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-text content in the image. However, there is no textual content to extract or convert according to the given instructions.",
+        "bbox": [
+            862,
+            70,
+            926,
+            115
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            465,
+            80
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Assuming ARP works across routers; it's a local network protocol.",
+            "- Technique: Understand the ARP process step-by-step for tracing packet flows."
+        ],
+        "bbox": [
+            72,
+            93,
+            665,
+            122
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Bit Stuffing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            134,
+            169,
+            150
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Bit stuffing is a technique used in the Data Link Layer to prevent the flag sequence from appearing in the data portion of a frame. It ensures that the receiver correctly identifies the start and end of a frame.",
+        "bbox": [
+            58,
+            163,
+            932,
+            193
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            207,
+            181,
+            222
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Flag Sequence: A unique bit pattern (e.g., 01111110) used to mark frame boundaries.",
+            "- Stuffing Rule: Whenever five consecutive 1s appear in the data, an extra 0 bit is inserted (stuffed) by the sender.",
+            "- Destuffing Rule: The receiver removes a 0 bit after five consecutive 1s."
+        ],
+        "bbox": [
+            72,
+            235,
+            910,
+            277
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            292,
+            465,
+            308
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly stuffing/destuffing bits, especially at the end of the data or near the flag sequence.",
+            "- Technique: Practice with examples, carefully counting consecutive 1s."
+        ],
+        "bbox": [
+            72,
+            321,
+            816,
+            350
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Bridges",
+        "text_level": 1,
+        "bbox": [
+            60,
+            362,
+            137,
+            378
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Bridges are Data Link Layer devices that connect two or more LAN segments. They filter frames based on MAC addresses, forwarding only those frames destined for another segment, thus reducing collision domains and improving network performance.",
+        "bbox": [
+            58,
+            391,
+            922,
+            434
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            448,
+            181,
+            463
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- MAC Address Filtering: Bridges maintain a forwarding table (MAC address table) to decide whether to forward or filter frames.",
+            "- Learning: Bridges learn MAC addresses by inspecting the source MAC address of incoming frames.",
+            "- Spanning Tree Protocol (STP): Used to prevent loops in bridged networks by disabling redundant paths."
+        ],
+        "bbox": [
+            72,
+            477,
+            919,
+            534
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            547,
+            465,
+            562
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing bridges with routers (Layer 3) or hubs (Layer 1). Bridges operate at Layer 2.",
+            "- Technique: Trace frame paths in a bridged network, applying learning and forwarding rules."
+        ],
+        "bbox": [
+            72,
+            576,
+            771,
+            605
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "CRC Polynomial (Cyclic Redundancy Check)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            617,
+            468,
+            634
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "CRC is a powerful error detection technique used in the Data Link Layer. It appends a checksum (FCS - Frame Check Sequence) to the data, calculated using polynomial division.",
+        "bbox": [
+            58,
+            647,
+            922,
+            676
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            688,
+            322,
+            704
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Let $M(x)$ be the data polynomial and $G(x)$ be the generator polynomial of degree $r$ . To find the CRC remainder $R(x)$ :",
+        "bbox": [
+            72,
+            719,
+            905,
+            751
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {x ^ {r} \\cdot M (x)}{G (x)} = Q (x) + \\frac {R (x)}{G (x)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            396,
+            760,
+            623,
+            799
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "where $R(x)$ is the remainder polynomial of degree less than $r$ .",
+        "bbox": [
+            82,
+            806,
+            544,
+            821
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- The transmitted codeword $T(x)$ is:",
+        "bbox": [
+            72,
+            821,
+            344,
+            837
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT (x) = x ^ {r} \\cdot M (x) + R (x)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            405,
+            846,
+            615,
+            865
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "This means the codeword is exactly divisible by $G(x)$ .",
+        "bbox": [
+            84,
+            874,
+            482,
+            891
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            904,
+            297,
+            919
+        ],
+        "page_idx": 11
+    }
+]

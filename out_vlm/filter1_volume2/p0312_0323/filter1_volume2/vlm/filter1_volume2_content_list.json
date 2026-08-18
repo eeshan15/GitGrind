@@ -1,0 +1,3808 @@
+[
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```scss\n}\n    return val;\n}\n```",
+        "bbox": [
+            89,
+            64,
+            161,
+            98
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint bar(int val) {\n    int x = 0;\n    while(val > 0) {\n        x = x + bar(val - 1);\n    }\n    return val;\n}\n```",
+        "bbox": [
+            89,
+            106,
+            216,
+            184
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Invocations of foo(3) and bar(3) will result in:",
+        "bbox": [
+            85,
+            193,
+            428,
+            210
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. Return of 6 and 6 respectively.",
+        "bbox": [
+            87,
+            218,
+            322,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. Infinite loop and abnormal termination respectively.",
+        "bbox": [
+            495,
+            219,
+            759,
+            245
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Abnormal termination and infinite loop respectively.",
+        "bbox": [
+            89,
+            245,
+            352,
+            271
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. Both terminating abnormally.",
+        "bbox": [
+            495,
+            245,
+            712,
+            258
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngatecse-2017-set1 programming-in-c programming normal recursion\n```",
+        "bbox": [
+            87,
+            276,
+            418,
+            286
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            292,
+            188,
+            306
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.13.15 Recursion: GATE CSE 2018 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            315,
+            470,
+            330
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program:",
+        "bbox": [
+            85,
+            340,
+            339,
+            356
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/7a61ed319bcacf90db0d934b18732db192f0953a18e78445c40dca349facf82e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            318,
+            931,
+            357
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include<stdio.h>\n\nint counter=0;\n\nint calc (int a, int b) {\n    int c;\n    counter++;\n    if(b==3) return (a*a*a);\n    else {\n        c = calc(a, b/3);\n        return (c*c*c);\n    }\n}\n\nint main() {\n    calc(4, 81);\n    printf(\"%d\", counter);\n}\n```",
+        "bbox": [
+            87,
+            364,
+            248,
+            559
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The output of this program is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            568,
+            363,
+            583
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngatecse-2018 programming-in-c numerical-answers recursion programming one-mark\n```",
+        "bbox": [
+            87,
+            600,
+            499,
+            611
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            617,
+            188,
+            631
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.13.16 Recursion: GATE CSE 2020 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            640,
+            472,
+            654
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C functions.",
+        "bbox": [
+            85,
+            663,
+            342,
+            679
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9172bd50587910822d40135f437af62be21abc65d9e882ccef63afbd0aaa498b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            643,
+            931,
+            681
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint fun1(int n) {\n    static int i= 0;\n    if (n > 0) {\n        ++i;\n        fun1(n-1);\n    }\n    return (i);\n}\n```",
+        "bbox": [
+            89,
+            688,
+            489,
+            795
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint fun2(int n) {\n    static int i= 0;\n    if (n>0) {\n        i = i+ fun1 (n) ;\n        fun2(n-1) ;\n    }\nreturn (i);\n}\n```",
+        "bbox": [
+            515,
+            697,
+            623,
+            785
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The return value of fun2(5) is \\_\\_\\_\\_",
+        "bbox": [
+            87,
+            796,
+            396,
+            814
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngatecse-2020 numerical-answers programming-in-c recursion two-marks\n```",
+        "bbox": [
+            87,
+            831,
+            433,
+            840
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            847,
+            188,
+            861
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.13.17 Recursion: GATE CSE 2025 | Set 1 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            871,
+            524,
+            885
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b70df6fc565b74fd67a7d47e12393a4b2e6718d8b85bd07149a5539a9d994d8d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            872,
+            931,
+            910
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "#include <stdio.h>",
+        "bbox": [
+            114,
+            919,
+            218,
+            929
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint foo(int S[],int size) {\n    if(size == 0) return 0;\n    if(size == 1) return 1;\n    if(S[0] != S[1]) return 1+foo(S+1,size-1);\n    return foo(S+1,size-1);\n}\nint main() {\n    int A[]={0,1,2,2,2,0,0,1,1};\n    printf(\"%d\",foo(A,9));\n    return 0;\n}\n```",
+        "bbox": [
+            112,
+            64,
+            356,
+            182
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The value printed by the given C program is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            192,
+            662,
+            209
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngatecse2025-set1 programming-in-c recursion output numerical-answers two-marks\n```",
+        "bbox": [
+            87,
+            226,
+            494,
+            236
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            242,
+            188,
+            257
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.13.18 Recursion: GATE CSE 2026 | Set 2 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            266,
+            524,
+            279
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following ANSI-C function.",
+        "bbox": [
+            85,
+            289,
+            378,
+            304
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/b94e4e80b4cd34d3f04063ed0cd617c1c0c71f9e25ea41d57c15a7a47c93782f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            268,
+            931,
+            306
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint func(int start, int end){\n    int length=end+1-start;\n    if((length<1)||(start<0)||(end<0)){ return(0); }\n    if(length%3==0){\n        return(func(start+1, end));\n    }else if(length%3==1){\n        return(1+func(start, end-1));\n    }else {\n        return(func(start+2, end));\n    }\n}\n```",
+        "bbox": [
+            112,
+            313,
+            389,
+            433
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The maximum possible value that can be returned from this function is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            85,
+            442,
+            803,
+            458
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Note: Ignore syntax errors (if any) in the function.",
+        "bbox": [
+            85,
+            469,
+            445,
+            484
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngatecse-2026-set2 programming-in-c recursion output numerical-answers two-marks\n```",
+        "bbox": [
+            87,
+            502,
+            495,
+            513
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            519,
+            188,
+            533
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.13.19 Recursion: GATE IT 2007 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            542,
+            453,
+            555
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The function f is defined as follows:",
+        "bbox": [
+            85,
+            566,
+            346,
+            579
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/5c041fcf61c1410074d81a76bf19337ed50e1b766331b195288fed15adc95fdd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            545,
+            931,
+            581
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint f (int n) {\n    if (n <= 1) return 1;\n    else if (n % 2 == 0) return f(n/2);\n    else return f(3n - 1);\n}\n```",
+        "bbox": [
+            89,
+            589,
+            295,
+            644
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Assuming that arbitrarily large integers can be passed as a parameter to the function, consider the following statements.",
+        "bbox": [
+            84,
+            654,
+            927,
+            681
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. The function $f$ terminates for finitely many different values of $n \\geq 1$ .",
+            "ii. The function $f$ terminates for infinitely many different values of $n \\geq 1$ .",
+            "iii. The function $f$ does not terminate for finitely many different values of $n \\geq 1$ .",
+            "iv. The function $f$ does not terminate for infinitely many different values of $n \\geq 1$ ."
+        ],
+        "bbox": [
+            90,
+            693,
+            680,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is true of the above?",
+        "bbox": [
+            85,
+            763,
+            492,
+            777
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. i and iii",
+        "bbox": [
+            89,
+            792,
+            164,
+            805
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. i and iv",
+        "bbox": [
+            285,
+            792,
+            359,
+            805
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. ii and iii",
+        "bbox": [
+            478,
+            792,
+            556,
+            805
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. ii and iv",
+        "bbox": [
+            673,
+            792,
+            752,
+            805
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngateit-2007 programming recursion normal\n```",
+        "bbox": [
+            87,
+            815,
+            305,
+            825
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            832,
+            188,
+            846
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.14",
+        "text_level": 1,
+        "bbox": [
+            68,
+            856,
+            104,
+            869
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Runtime Environment (1)",
+        "text_level": 1,
+        "bbox": [
+            418,
+            856,
+            618,
+            871
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.14.1 Runtime Environment: GATE CSE 2026 | Set 2 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            882,
+            598,
+            897
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In C runtime environment, which one of the following is stored in heap?",
+        "bbox": [
+            85,
+            906,
+            606,
+            921
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/bfd99eb17c160ab380d877870f6e486bd6b68c647a84e8ea42c4bd3f1c268968.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            885,
+            931,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A static variable declared inside a function",
+            "B. An array of integers declared inside a function",
+            "C. A dynamically allocated array of integers created using malloc() function call",
+            "D. Return address of a function"
+        ],
+        "bbox": [
+            87,
+            65,
+            667,
+            119
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 programming-in-c runtime-environment one-mark",
+        "bbox": [
+            87,
+            146,
+            406,
+            156
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            162,
+            186,
+            176
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.15",
+        "text_level": 1,
+        "bbox": [
+            68,
+            187,
+            105,
+            200
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Strings (2)",
+        "text_level": 1,
+        "bbox": [
+            473,
+            187,
+            563,
+            201
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.15.1 Strings: GATE CSE 2004 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            78,
+            213,
+            440,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program segment:",
+        "bbox": [
+            85,
+            237,
+            406,
+            252
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ba36fbf387db44c51fb18a3f7a1db47ee5647381affa89b4b5ab8c33873f491d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            216,
+            931,
+            254
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```javascript\nchar p[20]; int i;\nchar* s = \"string\";\nint length = strlen(s);\nfor(i = 0; i < length; i++)\n    p[i] = s[length-i];\nprintf(\"%s\", p);\n```",
+        "bbox": [
+            87,
+            261,
+            225,
+            327
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is:",
+        "bbox": [
+            87,
+            336,
+            300,
+            351
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. gnirts",
+        "bbox": [
+            89,
+            359,
+            152,
+            374
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. gnirt",
+        "bbox": [
+            90,
+            374,
+            146,
+            387
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 programming programming-in-c strings easy",
+        "bbox": [
+            89,
+            393,
+            376,
+            402
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. string",
+        "bbox": [
+            495,
+            359,
+            559,
+            374
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. no output is printed",
+        "bbox": [
+            497,
+            374,
+            650,
+            387
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            408,
+            186,
+            422
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.15.2 Strings: GATE CSE 2025 | Set 2 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            431,
+            482,
+            446
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program:",
+        "bbox": [
+            85,
+            454,
+            339,
+            470
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/1f3889b237cfa2ff22bdfcdbfecca626017752a0408628f3d1be6395b3926f2b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            434,
+            931,
+            472
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\nvoid stringcopy (char *, char *);\nint main() {\n    char a[30] = \"@@#Hello World!\";\n    stringcopy(a, a+2);\n    printf(\"%s\\n\",a);\n    return 0;\n}\nvoid stringcopy(char *s, char *t) {\nwhile (*t)\n    *s++=*t++;\n}\n```",
+        "bbox": [
+            112,
+            479,
+            305,
+            609
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following will be the output of the program?",
+        "bbox": [
+            85,
+            618,
+            529,
+            633
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. @#Hello World!",
+        "bbox": [
+            89,
+            647,
+            221,
+            660
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. Hello World!",
+        "bbox": [
+            285,
+            647,
+            393,
+            660
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. ello World!",
+        "bbox": [
+            480,
+            647,
+            576,
+            660
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. Hello World!d!",
+        "bbox": [
+            673,
+            647,
+            794,
+            660
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 programming-in-c strings output one-mark",
+        "bbox": [
+            89,
+            671,
+            389,
+            681
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            686,
+            186,
+            701
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.16",
+        "text_level": 1,
+        "bbox": [
+            68,
+            712,
+            105,
+            725
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Structure (5)",
+        "text_level": 1,
+        "bbox": [
+            467,
+            711,
+            569,
+            726
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.16.1 Structure: GATE CSE 2000 | Question: 1.11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            737,
+            468,
+            751
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The following C declarations:",
+        "bbox": [
+            85,
+            761,
+            300,
+            775
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/82d52322c9943a164ec10d70af5c78e94d5c3bbfa51a0c0040e903677fd4c386.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            739,
+            931,
+            777
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nstruct node {\n    int i:\n    float j;\n};\nstruct node *s[10];\n```",
+        "bbox": [
+            89,
+            785,
+            200,
+            840
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "define s to be:",
+        "bbox": [
+            85,
+            850,
+            193,
+            862
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. An array, each element of which is a pointer to a structure of type node",
+            "B. A structure of 2 fields, each field being a pointer to an array of 10 elements",
+            "C. A structure of 3 fields: an integer, a float, and an array of 10 elements",
+            "D. An array, each element of which is a structure of type node"
+        ],
+        "bbox": [
+            87,
+            874,
+            657,
+            932
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ed4a316bb636e51a4b5434c23151c9342d62538a390f72926e0ffe8685ffee0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            779,
+            931,
+            793
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            108,
+            186,
+            122
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.16.2 Structure: GATE CSE 2018 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            448,
+            146
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/4128d34320a8eb081bbd2be95b47688f86ecd821faacebf8deb4541c93a10b4a.jpg",
+        "image_caption": [
+            "Consider the following C program:"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            134,
+            931,
+            172
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [
+            "The output of this program is:"
+        ],
+        "code_body": "```c\n#include<stdio.h>\nstruct Ournode{\n    char x, y, z;\n};\nint main() {\n    struct Ournode p={'1', '0', 'a'+2};\n    struct Ournode *q=&p;\n    printf(\"%c, %c\", *((char*)q+1), *((char*)q+2));\n    return 0;\n}\n```",
+        "bbox": [
+            87,
+            179,
+            357,
+            290
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 0, c",
+        "bbox": [
+            87,
+            325,
+            142,
+            339
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 0, a+2",
+        "bbox": [
+            285,
+            326,
+            354,
+            339
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. '0', 'a+2'",
+        "bbox": [
+            480,
+            326,
+            559,
+            339
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. '0', 'c'",
+        "bbox": [
+            673,
+            326,
+            737,
+            339
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 programming-in-c programming structure normal one-mark",
+        "bbox": [
+            87,
+            350,
+            450,
+            359
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            366,
+            186,
+            380
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.16.3 Structure: GATE CSE 2021 | Set 2 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            389,
+            509,
+            403
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/aa4b75c336d10088f037eb713631c32f225b8b081e69ec23f3fcf34def9405b0.jpg",
+        "image_caption": [
+            "Consider the following ANSI C program:"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            391,
+            931,
+            429
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\n#include <stdlib.h>\nstruct Node{\n    int value;\n    struct Node *next;};\nint main( ) {\n    struct Node *boxE, *head, *boxN; int index=0;\n    boxE=head= (struct Node *) malloc(sizeof(struct Node));\n    head → value = index;\n    for (index =1; index<=3; index++){\n        boxN = (struct Node *) malloc (sizeof(struct Node));\n        boxE → next = boxN;\n        boxN → value = index;\n        boxE = boxN; }\nfor (index=0; index<=3; index++) {\n    printf(\"\\Value at index %d is %d\\n\", index, head → value);\n    head = head → next;\n    printf(\"\\Value at index %d is %d\\n\", index+1, head → value); } }\n```",
+        "bbox": [
+            87,
+            437,
+            927,
+            634
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements below is correct about the program?",
+        "bbox": [
+            85,
+            641,
+            631,
+            655
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Upon execution, the program creates a linked-list of five nodes",
+            "B. Upon execution, the program goes into an infinite loop",
+            "C. It has a missing return which will be reported as an error by the compiler",
+            "D. It dereferences an uninitialized pointer that may result in a run-time error"
+        ],
+        "bbox": [
+            87,
+            666,
+            642,
+            722
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 programming-in-c normal pointers structure two-marks",
+        "bbox": [
+            87,
+            748,
+            453,
+            758
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            764,
+            186,
+            777
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.16.4 Structure: GATE IT 2004 | Question: 61",
+        "text_level": 1,
+        "bbox": [
+            78,
+            787,
+            435,
+            801
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/4fef0ad75f58e5b3f9e70ad7b603fa2fce2d6ce9cc8193a5d9939f1681f78efa.jpg",
+        "image_caption": [
+            "Consider the following C program:"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            790,
+            931,
+            827
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\ntypedef struct {\n    char *a;\n    char *b;\n} t;\nvoid f1 (t s);\nvoid f2 (t *p);\nmain()\n```",
+        "bbox": [
+            87,
+            834,
+            196,
+            922
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2000 programming programming-in-c easy structure",
+        "bbox": [
+            87,
+            92,
+            386,
+            102
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n{\n    static t s = {\"A\", \"B\"};\n    printf (\"%s %s\\n\", s.a, s.b);\n    f1(s);\n    printf (\"%s %s\\n\", s.a, s.b);\n    f2(&s);\n}\nvoid f1 (t s)\n{\n    s.a = \"U\";\n    s.b = \"V\";\n    printf (\"%s %s\\n\", s.a, s.b);\n    return;\n}\nvoid f2(t *p)\n{\n    p -> a = \"V\";\n    p -> b = \"W\";\n    printf(\"%s %s\\n\", p -> a, p -> b);\n    return;\n}\n```",
+        "bbox": [
+            87,
+            64,
+            287,
+            292
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is the output generated by the program ?",
+        "bbox": [
+            85,
+            298,
+            430,
+            314
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $A B$",
+        "bbox": [
+            89,
+            323,
+            151,
+            336
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "UV",
+        "bbox": [
+            112,
+            337,
+            147,
+            349
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "V W",
+        "bbox": [
+            114,
+            351,
+            152,
+            363
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "V W",
+        "bbox": [
+            114,
+            364,
+            152,
+            376
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $AB$",
+        "bbox": [
+            90,
+            378,
+            147,
+            390
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "UV",
+        "bbox": [
+            112,
+            391,
+            147,
+            402
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "UV",
+        "bbox": [
+            114,
+            404,
+            147,
+            416
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "V W",
+        "bbox": [
+            114,
+            416,
+            152,
+            429
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "normal",
+        "bbox": [
+            305,
+            437,
+            337,
+            446
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "structure",
+        "bbox": [
+            349,
+            437,
+            389,
+            446
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $A B$",
+        "bbox": [
+            497,
+            323,
+            554,
+            336
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "UV",
+        "bbox": [
+            519,
+            337,
+            552,
+            349
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$A B$",
+        "bbox": [
+            519,
+            351,
+            554,
+            362
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "V W",
+        "bbox": [
+            519,
+            364,
+            559,
+            376
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $AB$",
+        "bbox": [
+            497,
+            378,
+            554,
+            390
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "UV",
+        "bbox": [
+            519,
+            391,
+            552,
+            402
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "V W",
+        "bbox": [
+            519,
+            404,
+            559,
+            416
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "UV",
+        "bbox": [
+            519,
+            416,
+            554,
+            429
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 programming programming-in-c normal structure",
+        "bbox": [
+            89,
+            437,
+            391,
+            446
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            453,
+            181,
+            466
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.16.5 Structure: GATE IT 2006 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            476,
+            436,
+            490
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which one of the choices given below would be printed when the following program is executed?",
+        "bbox": [
+            85,
+            500,
+            796,
+            515
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/72f81aed4f2d708494d42a4adca2671c24254b57f2d5e020f94af51c346c96dd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            478,
+            931,
+            516
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\nstruct test {\n    int i;\n    char *c;\n}st[] = {5, \"become\", 4, \"better\", 6, \"jungle\", 8, \"ancestor\", 7, \"brother\"};\nmain ()\n{\n    struct test *p = st;\n    p += 1;\n    ++p -> c;\n    printf(\"%s,\", p++ -> c);\n    printf(\"%c,\", *++p -> c);\n    printf(\"%d,\", p[0].i);\n    printf(\"%s \\n\", p -> c);\n}\n```",
+        "bbox": [
+            87,
+            524,
+            487,
+            686
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. jungle, n, 8, nclastor",
+            "C. cetter, k, 6, jungle"
+        ],
+        "bbox": [
+            89,
+            695,
+            268,
+            725
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 programming programming-in-c normal structure",
+        "bbox": [
+            89,
+            729,
+            391,
+            739
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. etter, u, 6, ungle",
+            "D. etter, u, 8, ancestor"
+        ],
+        "bbox": [
+            497,
+            695,
+            655,
+            724
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            745,
+            181,
+            758
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.17",
+        "bbox": [
+            68,
+            769,
+            104,
+            783
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Switch Case (2)",
+        "bbox": [
+            455,
+            769,
+            581,
+            783
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.17.1 Switch Case: GATE CSE 2012 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            795,
+            470,
+            809
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What will be the output of the following C program segment?",
+        "bbox": [
+            85,
+            819,
+            529,
+            834
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/96a3303443236c4c0744548c5585222790fd7eec14d1de86c159d3742c3abbab.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            798,
+            931,
+            836
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nchar inChar = 'A';\n  switch ( inChar ) {\n    case 'A' : printf (\"Choice A \\ n\");\n    case 'B' :\n    case 'C' : printf (\"Choice B\");\n    case 'D' :\n    case 'E' :\n    default : printf (\"No Choice\");\n```",
+        "bbox": [
+            92,
+            844,
+            292,
+            931
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "}",
+        "bbox": [
+            90,
+            64,
+            110,
+            76
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. No Choice",
+        "bbox": [
+            89,
+            87,
+            188,
+            99
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. Choice A",
+        "bbox": [
+            90,
+            100,
+            179,
+            112
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Choice B No Choice",
+        "bbox": [
+            112,
+            114,
+            252,
+            125
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 programming easy programming-in-c switch-case marks-to-all",
+        "bbox": [
+            89,
+            131,
+            460,
+            141
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. Choice A",
+        "bbox": [
+            495,
+            87,
+            584,
+            99
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. Program gives no output as it is erroneous",
+        "bbox": [
+            495,
+            100,
+            759,
+            125
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            148,
+            188,
+            162
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.17.2 Switch Case: GATE CSE 2015 | Set 3 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            171,
+            532,
+            185
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program:",
+        "bbox": [
+            85,
+            195,
+            339,
+            210
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/161ddf6c4b071fb9a53c5aea71a9c5b037e01f3f0d100668899c9cec972f17a4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            174,
+            931,
+            212
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```cpp\n#include<stdio.h>\nint main()\n{\n    int i, j, k = 0;\n    j=2 * 3 / 4 + 2.0 / 5 + 8 / 5;\n    k=-j;\n    for (i=0; i<5; i++)\n    {\n        switch(i+k)\n        {\n            case 1:\n            case 2: printf(\"\\n%d\", i+k);\n            case 3: printf(\"\\n%d\", i+k);\n            default: printf(\"\\n%d\", i+k);\n        }\n    }\n    return 0;\n}\n```",
+        "bbox": [
+            87,
+            218,
+            284,
+            414
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The number of times printf statement is executed is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            422,
+            534,
+            437
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3",
+        "bbox": [
+            87,
+            454,
+            166,
+            464
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "programming",
+        "bbox": [
+            181,
+            454,
+            236,
+            464
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "programming-in-c",
+        "bbox": [
+            247,
+            454,
+            322,
+            464
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "switch-case",
+        "bbox": [
+            334,
+            454,
+            383,
+            464
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "normal",
+        "bbox": [
+            394,
+            454,
+            426,
+            464
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "numerical-answers",
+        "bbox": [
+            438,
+            454,
+            517,
+            464
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            471,
+            188,
+            485
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.18",
+        "bbox": [
+            68,
+            496,
+            105,
+            509
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Type Checking (1)",
+        "text_level": 1,
+        "bbox": [
+            445,
+            496,
+            593,
+            511
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.18.1 Type Checking: GATE CSE 2003 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            522,
+            500,
+            536
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is FALSE?",
+        "bbox": [
+            85,
+            545,
+            416,
+            560
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e4a25a40751eff20e6bad5e0541de5078c110c0f1d485dcb2a83e6b11a46bf91.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            524,
+            931,
+            562
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. In statically typed languages, each variable in a program has a fixed type",
+            "B. In un-typed languages, values do not have any types",
+            "C. In dynamically typed languages, variables have no types",
+            "D. In all statically typed languages, each variable in a program is associated with values of only a single type during the execution of the program"
+        ],
+        "bbox": [
+            87,
+            571,
+            927,
+            641
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 programming normal type-checking",
+        "bbox": [
+            87,
+            666,
+            329,
+            676
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            682,
+            188,
+            697
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.19",
+        "bbox": [
+            68,
+            707,
+            105,
+            720
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Union (1)",
+        "text_level": 1,
+        "bbox": [
+            480,
+            707,
+            557,
+            722
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.19.1 Union: GATE CSE 2000 | Question: 1.17, ISRO2015-79",
+        "text_level": 1,
+        "bbox": [
+            78,
+            733,
+            552,
+            747
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C declaration:",
+        "bbox": [
+            85,
+            757,
+            357,
+            771
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/5cf77463d813280f2f3f07423b43c16aa9aa25a62179d280c870ca3867bef843.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            736,
+            931,
+            773
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nstruct {\n    short x[5];\n    union {\n        float y;\n        long z;\n    } u;\n}t;\n```",
+        "bbox": [
+            112,
+            781,
+            189,
+            857
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Assume that the objects of the type short, float and long occupy 2 bytes, 4 bytes and 8 bytes, respectively. The memory requirement for variable t, ignoring alignment consideration, is:",
+        "bbox": [
+            84,
+            866,
+            927,
+            896
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 22 bytes",
+        "bbox": [
+            87,
+            909,
+            174,
+            923
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 14 bytes",
+        "bbox": [
+            285,
+            909,
+            369,
+            923
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 18 bytes",
+        "bbox": [
+            480,
+            909,
+            564,
+            923
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 10 bytes",
+        "bbox": [
+            673,
+            909,
+            759,
+            923
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.20",
+        "text_level": 1,
+        "bbox": [
+            68,
+            109,
+            105,
+            122
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Variable Binding (1)",
+        "text_level": 1,
+        "bbox": [
+            438,
+            108,
+            600,
+            124
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.20.1 Variable Binding: GATE IT 2007 | Question: 34, UGCNET-Dec2012-III: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            135,
+            692,
+            150
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the program below in a hypothetical programming language which allows global variables and a choice of static or dynamic scoping.",
+        "bbox": [
+            84,
+            159,
+            878,
+            188
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/b1e6df1d19b3a2139c718b43ad2eaca35f857cc87830d1250fb09eaa74f11df8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            138,
+            931,
+            175
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint i;\nprogram main()\n{\n    i = 10;\n    call f();\n}\n\nprocedure f()\n{\n    int i = 20;\n    call g();\n}\nprocedure g()\n{\n    print i;\n}\n```",
+        "bbox": [
+            87,
+            195,
+            179,
+            370
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let $x$ be the value printed under static scoping and $y$ be the value printed under dynamic scoping. Then, $x$ and $y$ are:",
+        "bbox": [
+            84,
+            378,
+            929,
+            406
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $x = 10, y = 20$",
+        "bbox": [
+            87,
+            419,
+            223,
+            435
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $x = 20, y = 10$",
+        "bbox": [
+            284,
+            419,
+            418,
+            435
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $x = 10, y = 10$",
+        "bbox": [
+            478,
+            419,
+            613,
+            435
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $x = 20, y = 20$",
+        "bbox": [
+            673,
+            419,
+            808,
+            435
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 programming variable-binding easy ugcnetcse-dec2012-paper3",
+        "bbox": [
+            87,
+            444,
+            445,
+            454
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            461,
+            186,
+            475
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/e50ba1e654cbfffcad3b2dc4cf64e77a3d3caddd809779a842e5bf406f8638de.jpg",
+        "table_caption": [
+            "Answer Keys"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.1.1</td><td>A</td></tr><tr><td>5.2.5</td><td>C</td></tr><tr><td>5.2.10</td><td>C</td></tr><tr><td>5.3.2</td><td>A</td></tr><tr><td>5.5.3</td><td>C</td></tr><tr><td>5.6.2</td><td>N/A</td></tr><tr><td>5.6.7</td><td>C</td></tr><tr><td>5.7.4</td><td>C</td></tr><tr><td>5.8.1</td><td>N/A</td></tr><tr><td>5.8.6</td><td>D</td></tr><tr><td>5.8.11</td><td>D</td></tr><tr><td>5.9.4</td><td>A</td></tr><tr><td>5.9.9</td><td>D</td></tr><tr><td>5.9.14</td><td>111:111</td></tr><tr><td>5.11.3</td><td>B</td></tr><tr><td>5.11.8</td><td>D</td></tr><tr><td>5.11.13</td><td>D</td></tr><tr><td>5.11.18</td><td>B</td></tr></table>",
+        "bbox": [
+            63,
+            523,
+            226,
+            920
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/a69affe3ab2c87dffa8cc894774df2fe57a9958e8e5c24c67e8ce6935f504fca.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.2.1</td><td>B</td></tr><tr><td>5.2.6</td><td>6</td></tr><tr><td>5.2.11</td><td>B</td></tr><tr><td>5.4.1</td><td>A</td></tr><tr><td>5.5.4</td><td>3</td></tr><tr><td>5.6.3</td><td>N/A</td></tr><tr><td>5.6.8</td><td>C</td></tr><tr><td>5.7.5</td><td>46:46</td></tr><tr><td>5.8.2</td><td>C</td></tr><tr><td>5.8.7</td><td>6561</td></tr><tr><td>5.8.12</td><td>C</td></tr><tr><td>5.9.5</td><td>C</td></tr><tr><td>5.9.10</td><td>2</td></tr><tr><td>5.9.15</td><td>9:9</td></tr><tr><td>5.11.4</td><td>D</td></tr><tr><td>5.11.9</td><td>B</td></tr><tr><td>5.11.14</td><td>3</td></tr><tr><td>5.11.19</td><td>B</td></tr></table>",
+        "bbox": [
+            248,
+            524,
+            391,
+            920
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/ca4e72999edc2823b408baa30bac8d62b3abdd95dd7024b17ffb69bf8445462f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.2.2</td><td>C</td></tr><tr><td>5.2.7</td><td>19</td></tr><tr><td>5.2.12</td><td>C</td></tr><tr><td>5.4.2</td><td>A</td></tr><tr><td>5.5.5</td><td>26</td></tr><tr><td>5.6.4</td><td>N/A</td></tr><tr><td>5.7.1</td><td>A</td></tr><tr><td>5.7.6</td><td>21:21</td></tr><tr><td>5.8.3</td><td>B</td></tr><tr><td>5.8.8</td><td>2016</td></tr><tr><td>5.9.1</td><td>D</td></tr><tr><td>5.9.6</td><td>C</td></tr><tr><td>5.9.11</td><td>D</td></tr><tr><td>5.10.1</td><td>B</td></tr><tr><td>5.11.5</td><td>A</td></tr><tr><td>5.11.10</td><td>D</td></tr><tr><td>5.11.15</td><td>23</td></tr><tr><td>5.11.20</td><td>5</td></tr></table>",
+        "bbox": [
+            413,
+            524,
+            600,
+            920
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/ce1d6e589805ba08cdf4b20d24bb402ce5460ce437de23c0ee444f4a73046372.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.2.3</td><td>A</td></tr><tr><td>5.2.8</td><td>C</td></tr><tr><td>5.2.13</td><td>B</td></tr><tr><td>5.5.1</td><td>N/A</td></tr><tr><td>5.5.6</td><td>B</td></tr><tr><td>5.6.5</td><td>A</td></tr><tr><td>5.7.2</td><td>7</td></tr><tr><td>5.7.7</td><td>46:46</td></tr><tr><td>5.8.4</td><td>D</td></tr><tr><td>5.8.9</td><td>30</td></tr><tr><td>5.9.2</td><td>C</td></tr><tr><td>5.9.7</td><td>D</td></tr><tr><td>5.9.12</td><td>B</td></tr><tr><td>5.11.1</td><td>A</td></tr><tr><td>5.11.6</td><td>D</td></tr><tr><td>5.11.11</td><td>-5</td></tr><tr><td>5.11.16</td><td>A</td></tr><tr><td>5.11.21</td><td>10</td></tr></table>",
+        "bbox": [
+            621,
+            524,
+            764,
+            920
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/5f185dd380432e9be4becbc79cec93e248e16cbaa8f6884473fad6c38c11fe39.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.2.4</td><td>C</td></tr><tr><td>5.2.9</td><td>A</td></tr><tr><td>5.3.1</td><td>230</td></tr><tr><td>5.5.2</td><td>C</td></tr><tr><td>5.6.1</td><td>N/A</td></tr><tr><td>5.6.6</td><td>B</td></tr><tr><td>5.7.3</td><td>C</td></tr><tr><td>5.7.8</td><td>09 :09</td></tr><tr><td>5.8.5</td><td>B</td></tr><tr><td>5.8.10</td><td>A</td></tr><tr><td>5.9.3</td><td>A</td></tr><tr><td>5.9.8</td><td>140</td></tr><tr><td>5.9.13</td><td>25:25</td></tr><tr><td>5.11.2</td><td>B</td></tr><tr><td>5.11.7</td><td>C</td></tr><tr><td>5.11.12</td><td>D</td></tr><tr><td>5.11.17</td><td>0</td></tr><tr><td>5.11.22</td><td>B</td></tr></table>",
+        "bbox": [
+            786,
+            524,
+            934,
+            920
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2000 programming programming-in-c easy isro2015 union",
+        "bbox": [
+            87,
+            68,
+            423,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            85,
+            186,
+            99
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/8d4798569c119384239a9b66510f19114877bebf99e13cb8d21ab89bf8bd5608.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.11.23</td><td>B;D</td></tr><tr><td>5.11.28</td><td>A</td></tr><tr><td>5.13.2</td><td>16</td></tr><tr><td>5.13.7</td><td>B</td></tr><tr><td>5.13.12</td><td>3</td></tr><tr><td>5.13.17</td><td>5:5</td></tr><tr><td>5.15.2</td><td>D</td></tr><tr><td>5.16.5</td><td>B</td></tr><tr><td>5.20.1</td><td>A</td></tr></table>",
+        "bbox": [
+            60,
+            62,
+            228,
+            260
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/1c6b1db2bf049fe503cb0b3d396334af04e94665efe0256708e63af478316b8c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.11.24</td><td>A</td></tr><tr><td>5.11.29</td><td>C</td></tr><tr><td>5.13.3</td><td>N/A</td></tr><tr><td>5.13.8</td><td>D</td></tr><tr><td>5.13.13</td><td>A</td></tr><tr><td>5.13.18</td><td>1:1</td></tr><tr><td>5.16.1</td><td>A</td></tr><tr><td>5.17.1</td><td>X</td></tr></table>",
+        "bbox": [
+            245,
+            62,
+            394,
+            239
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/3a03da953d1686b85b4c333ba789da3df43829c67cd0d9405e14c2428ad48871.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.11.25</td><td>A</td></tr><tr><td>5.12.1</td><td>C</td></tr><tr><td>5.13.4</td><td>N/A</td></tr><tr><td>5.13.9</td><td>1.72 : 1.74</td></tr><tr><td>5.13.14</td><td>C</td></tr><tr><td>5.13.19</td><td>D</td></tr><tr><td>5.16.2</td><td>A</td></tr><tr><td>5.17.2</td><td>10</td></tr></table>",
+        "bbox": [
+            413,
+            62,
+            600,
+            239
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/8ada353fe39ba4f34115726a29c37001beb7725e0f57559fd8f57cedcdf6582b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.11.26</td><td>D</td></tr><tr><td>5.12.2</td><td>D</td></tr><tr><td>5.13.5</td><td>N/A</td></tr><tr><td>5.13.10</td><td>D</td></tr><tr><td>5.13.15</td><td>4</td></tr><tr><td>5.14.1</td><td>C</td></tr><tr><td>5.16.3</td><td>D</td></tr><tr><td>5.18.1</td><td>C</td></tr></table>",
+        "bbox": [
+            621,
+            62,
+            764,
+            239
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/aa22e084b5cd42129546e91ad7d62423afc5cf8bc6a4936599a859da0efa75df.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>5.11.27</td><td>B</td></tr><tr><td>5.13.1</td><td>41</td></tr><tr><td>5.13.6</td><td>C</td></tr><tr><td>5.13.11</td><td>A</td></tr><tr><td>5.13.16</td><td>55</td></tr><tr><td>5.15.1</td><td>D</td></tr><tr><td>5.16.4</td><td>B</td></tr><tr><td>5.19.1</td><td>C</td></tr></table>",
+        "bbox": [
+            786,
+            62,
+            934,
+            239
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Regular expressions and finite automata, Context-free grammars and push-down automata, Regular and context-free languages, Pumping lemma, Turing machines and undecidability.",
+        "bbox": [
+            65,
+            98,
+            830,
+            127
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/0dac57954131b273c48d7e2ca8c703361cdf7111fb6ae03699dc4c73b1ce518a.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>2</td><td>1</td><td>2</td><td>3</td><td>1</td><td>1</td><td>3</td><td>2</td><td>2</td><td>3</td><td>1</td></tr><tr><td>2 Marks Count</td><td>2</td><td>2</td><td>4</td><td>2</td><td>2</td><td>3</td><td>3</td><td>3</td><td>3</td><td>4</td><td>2</td></tr><tr><td>Total Marks</td><td>6</td><td>5</td><td>10</td><td>7</td><td>5</td><td>7</td><td>9</td><td>8</td><td>8</td><td>11</td><td>5</td></tr></table>",
+        "bbox": [
+            70,
+            150,
+            952,
+            212
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"Theory of Computation\" chapter, a cornerstone of Computer Science that delves into the fundamental capabilities and limitations of computational models. This subject is crucial for the GATE CS exam as it builds a strong theoretical foundation for understanding algorithms, programming languages, and system design. It typically carries a weightage of 8-12 marks, with questions ranging from conceptual understanding of language classes and machine models to problem-solving involving the design of automata, grammar conversions, and decidability proofs. Expect a mix of Multiple Choice Questions (MCQs), Multiple Select Questions (MSQs), and Numerical Answer Type (NAT) questions, often requiring a deep grasp of definitions, properties, and theorems.",
+        "bbox": [
+            58,
+            222,
+            926,
+            320
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            332,
+            295,
+            349
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Finite Automata (FA)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            361,
+            253,
+            378
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Finite Automata are the simplest computational models, used to recognize regular languages. They have a finite number of states and transitions based on input symbols, without any auxiliary memory. They are fundamental for lexical analysis in compilers and designing simple control systems.",
+        "bbox": [
+            58,
+            391,
+            889,
+            433
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Definition: A Deterministic Finite Automaton (DFA) is formally defined as a 5-tuple $M = (Q, \\Sigma, \\delta, q_0, F)$ , where:",
+        "bbox": [
+            72,
+            444,
+            915,
+            460
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $Q$ is a finite set of states.",
+            "2. $\\Sigma$ is a finite set of input symbols (alphabet).",
+            "3. $\\delta : Q \\times \\Sigma \\to Q$ is the transition function.",
+            "4. $q_{0} \\in Q$ is the initial state.",
+            "5. $F \\subseteq Q$ is the set of final (accepting) states."
+        ],
+        "bbox": [
+            90,
+            460,
+            431,
+            532
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            73,
+            532,
+            211,
+            545
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Every NFA has an equivalent DFA.",
+            "- DFA and NFA recognize the same class of languages (Regular Languages).",
+            "DFA can be minimized to a unique (up to isomorphism) minimal state DFA."
+        ],
+        "bbox": [
+            97,
+            546,
+            668,
+            586
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly handling epsilon transitions in NFA to DFA conversion; confusing acceptance criteria for NFA/DFA.",
+        "bbox": [
+            72,
+            587,
+            922,
+            612
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-Solving Techniques:",
+        "bbox": [
+            73,
+            614,
+            322,
+            628
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Subset Construction: For converting NFA to DFA.",
+            "- Table Filling Algorithm / Myhill-Nerode Theorem: For DFA minimization.",
+            "- State Elimination Method / Arden's Theorem: For converting FA to Regular Expression."
+        ],
+        "bbox": [
+            97,
+            628,
+            768,
+            669
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Finite State Machines (FSM)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            682,
+            317,
+            699
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Finite State Machines are mathematical models of computation used to design systems that can be in one of a finite number of states. While often used interchangeably with FA, FSMs typically include an output function, making them suitable for modeling sequential circuits and control logic.",
+        "bbox": [
+            58,
+            712,
+            909,
+            755
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Definition:",
+        "bbox": [
+            73,
+            764,
+            171,
+            777
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mealy Machine: $M = (Q, \\Sigma, \\Delta, \\delta, \\lambda, q_0)$ , where $\\Delta$ is the output alphabet, and $\\lambda : Q \\times \\Sigma \\to \\Delta$ is the output function. Output depends on current state and input.",
+            "- Moore Machine: $M = (Q, \\Sigma, \\Delta, \\delta, \\lambda, q_0)$ , where $\\lambda : Q \\to \\Delta$ is the output function. Output depends only on the current state."
+        ],
+        "bbox": [
+            95,
+            779,
+            919,
+            836
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            73,
+            838,
+            211,
+            851
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Any Mealy machine can be converted to an equivalent Moore machine, and vice-versa.",
+        "bbox": [
+            97,
+            851,
+            746,
+            864
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Moore machine output is delayed by one clock cycle compared to Mealy.",
+        "bbox": [
+            97,
+            865,
+            642,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly converting between Mealy and Moore machines, especially handling initial state outputs.",
+        "bbox": [
+            72,
+            878,
+            887,
+            904
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-Solving Techniques: State diagram construction, state table analysis, conversion algorithms between",
+        "bbox": [
+            72,
+            906,
+            904,
+            921
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "6",
+        "bbox": [
+            72,
+            71,
+            84,
+            83
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Theory of Computation (293)",
+        "bbox": [
+            352,
+            70,
+            598,
+            86
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            862,
+            70,
+            924,
+            115
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Mealy and Moore.",
+        "bbox": [
+            85,
+            64,
+            221,
+            78
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Regular Expression (RE)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            91,
+            287,
+            108
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Regular Expressions are a powerful notation for describing regular languages. They provide a concise way to specify patterns of strings, widely used in text processing, search engines, and lexical analysis.",
+        "bbox": [
+            58,
+            119,
+            914,
+            150
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Definition: A Regular Expression is built using basic symbols and three operations:",
+        "bbox": [
+            72,
+            159,
+            697,
+            173
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Union: $R_{1} + R_{2}$ (or $R_{1}|R_{2}$ ) represents strings in $L(R_{1})$ or $L(R_{2})$ .",
+            "- Concatenation: $R_{1}R_{2}$ represents strings formed by concatenating a string from $L(R_{1})$ with one from $L(R_{2})$ .",
+            "- Kleene Star: $R^{*}$ represents zero or more concatenations of strings from $L(R)$ , including the empty string $\\epsilon$ ."
+        ],
+        "bbox": [
+            97,
+            174,
+            912,
+            220
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Identities:",
+        "bbox": [
+            73,
+            220,
+            203,
+            233
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ R + \\emptyset = R$",
+            "$\\circ R \\epsilon = \\epsilon R = R$",
+            "$\\circ (R^{*})^{*} = R^{*}$",
+            "$\\circ\\emptyset^{*}=\\epsilon$",
+            "$\\circ R(S + T) = RS + RT$",
+            "$\\circ (RS)^{*}R = R(SR)^{*}$",
+            "$\\circ (R + S)^{*} = (R^{*}S^{*})^{*} = (R^{*} + S^{*})^{*}$"
+        ],
+        "bbox": [
+            97,
+            233,
+            396,
+            339
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Operator precedence (Kleene star > concatenation > union); incorrect application of identities.",
+        "bbox": [
+            72,
+            339,
+            907,
+            353
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-Solving Techniques:",
+        "bbox": [
+            73,
+            353,
+            322,
+            366
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Arden's Theorem: For solving equations of the form $R = Q + RP$ to get $R = QP^*$ .",
+        "bbox": [
+            97,
+            366,
+            741,
+            381
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- State Elimination Method: For converting FA to RE.",
+        "bbox": [
+            97,
+            381,
+            500,
+            395
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Regular Grammar (RG)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            407,
+            272,
+            423
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Regular Grammars are a type of formal grammar that generates exactly the class of regular languages. They are restricted in their production rules, making them less powerful than Context-Free Grammars but simpler to parse.",
+        "bbox": [
+            58,
+            437,
+            884,
+            466
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Definition: A grammar $G = (V, \\Sigma, P, S)$ is regular if all its production rules are of one of the following forms:",
+            "- Right-linear: $A \\to aB$ or $A \\to a$ or $A \\to \\epsilon$ , where $A, B \\in V$ (non-terminals), $a \\in \\Sigma$ (terminal).",
+            "○ Left-linear: $A \\to Ba$ or $A \\to a$ or $A \\to \\epsilon$ , where $A, B \\in V, a \\in \\Sigma$ ."
+        ],
+        "bbox": [
+            72,
+            476,
+            887,
+            521
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            73,
+            521,
+            211,
+            535
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- A grammar cannot be both right-linear and left-linear simultaneously (unless it generates a finite language).",
+            "- Regular Grammars, Regular Expressions, and Finite Automata are all equivalent in terms of language recognition power."
+        ],
+        "bbox": [
+            97,
+            535,
+            889,
+            576
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Mixing right-linear and left-linear rules in the same grammar; incorrectly converting between FA and RG.",
+        "bbox": [
+            72,
+            576,
+            919,
+            603
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-Solving Techniques: Constructing an FA from a RG, and vice-versa, by mapping non-terminals to states and productions to transitions.",
+        "bbox": [
+            72,
+            604,
+            926,
+            631
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Regular Language (RL)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            644,
+            273,
+            662
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Regular Languages are the simplest class of languages in the Chomsky Hierarchy, recognized by Finite Automata, described by Regular Expressions, or generated by Regular Grammars. They represent patterns that can be matched without requiring memory beyond the current state.",
+        "bbox": [
+            58,
+            674,
+            919,
+            717
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Definition: A language is regular if and only if it can be recognized by a Finite Automaton.",
+        "bbox": [
+            72,
+            726,
+            741,
+            741
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties (Closure Properties): Regular languages are closed under:",
+        "bbox": [
+            72,
+            741,
+            647,
+            755
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Union ( $L_1 \\cup L_2$ )",
+            "- Intersection ( $L_1 \\cap L_2$ )",
+            "- Complement ( $\\Sigma^{*} \\setminus L$ )",
+            "- Concatenation ( $L_1L_2$ )",
+            "- Kleene Star ( $L^{*}$ )",
+            "- Reversal ( $L^{R}$ )",
+            "- Homomorphism, Inverse Homomorphism"
+        ],
+        "bbox": [
+            97,
+            755,
+            415,
+            858
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Misidentifying non-regular languages as regular; incorrectly applying closure properties.",
+        "bbox": [
+            72,
+            859,
+            862,
+            872
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-Solving Techniques:",
+        "bbox": [
+            73,
+            872,
+            322,
+            885
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pumping Lemma for Regular Languages: The primary tool to prove a language is NOT regular.",
+            "- Myhill-Nerode Theorem: Can be used to prove regularity or non-regularity, and for DFA minimization."
+        ],
+        "bbox": [
+            97,
+            885,
+            857,
+            914
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Non Determinism",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            223,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Non-determinism in automata allows for multiple possible transitions from a given state on a given input symbol, or transitions on an empty string (epsilon transitions). It often simplifies the design of automata, though it doesn't increase their computational power for regular languages.",
+        "bbox": [
+            58,
+            93,
+            924,
+            137
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Definition: A Non-deterministic Finite Automaton (NFA) is a 5-tuple $M = (Q, \\Sigma, \\delta, q_0, F)$ , where $\\delta : Q \\times (\\Sigma \\cup \\{\\epsilon\\}) \\to \\mathcal{P}(Q)$ is the transition function, mapping to a set of states.",
+        "bbox": [
+            72,
+            147,
+            803,
+            179
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            73,
+            179,
+            211,
+            191
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Every NFA has an equivalent DFA (recognizes the same language).",
+            "An NFA can be exponentially more concise than its equivalent DFA (e.g., an NFA with $n$ states might require up to $2^n$ states in the equivalent DFA).",
+            "- Non-determinism is crucial for Pushdown Automata (NPDA is more powerful than DPDA)."
+        ],
+        "bbox": [
+            97,
+            191,
+            924,
+            247
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly handling epsilon closures; missing possible paths in non-deterministic transitions.",
+        "bbox": [
+            72,
+            247,
+            897,
+            261
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-Solving Techniques:",
+        "bbox": [
+            73,
+            262,
+            322,
+            275
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Subset Construction Algorithm: The standard method to convert an NFA (with or without epsilon transitions) to an equivalent DFA.",
+            "- Understanding how to trace paths in an NFA to determine language acceptance."
+        ],
+        "bbox": [
+            97,
+            275,
+            917,
+            317
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Number of States",
+        "text_level": 1,
+        "bbox": [
+            60,
+            328,
+            223,
+            345
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The \"number of states\" refers to the cardinality of the set of states $Q$ in an automaton. This concept is critical for understanding the complexity and minimality of machine models, particularly for finite automata.",
+        "bbox": [
+            58,
+            359,
+            875,
+            388
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            73,
+            399,
+            211,
+            413
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For an NFA with $n$ states, the equivalent DFA can have up to $2^n$ states.",
+            "- A minimal DFA for a given regular language is unique (up to isomorphism) and has the fewest possible states.",
+            "- The number of states in a minimal DFA is equal to the number of equivalence classes of the Myhill-Nerode relation."
+        ],
+        "bbox": [
+            97,
+            413,
+            910,
+            467
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Failing to identify redundant or unreachable states, which leads to non-minimal DFAs.",
+        "bbox": [
+            72,
+            469,
+            850,
+            483
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-Solving Techniques:",
+        "bbox": [
+            73,
+            483,
+            322,
+            497
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- DFA Minimization Algorithms: Partitioning states into distinguishable/indistinguishable sets.",
+            "Myhill-Nerode Theorem: Using equivalence classes of strings to determine the minimum number of states."
+        ],
+        "bbox": [
+            97,
+            497,
+            895,
+            524
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Minimal State Automata",
+        "text_level": 1,
+        "bbox": [
+            60,
+            536,
+            280,
+            553
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A Minimal State Automaton (specifically, a Minimal DFA) is a Deterministic Finite Automaton that recognizes a given regular language using the smallest possible number of states. It is unique for any given regular language and is crucial for efficient implementation.",
+        "bbox": [
+            58,
+            566,
+            931,
+            609
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Definition: A DFA $M'$ is minimal if there is no other DFA $M''$ such that $L(M'') = L(M')$ and $|Q''| < |Q'|$ .",
+        "bbox": [
+            72,
+            619,
+            880,
+            637
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            73,
+            637,
+            211,
+            649
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Every regular language has a unique minimal DFA (up to isomorphism).",
+            "- All states in a minimal DFA must be reachable from the start state and must be distinguishable from each other."
+        ],
+        "bbox": [
+            97,
+            650,
+            924,
+            676
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly merging distinguishable states; not removing unreachable states before minimization.",
+        "bbox": [
+            72,
+            676,
+            927,
+            691
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-Solving Techniques:",
+        "bbox": [
+            73,
+            691,
+            322,
+            705
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Table Filling Algorithm (or Partitioning Algorithm):",
+        "bbox": [
+            97,
+            705,
+            509,
+            719
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Initialize a table of all pairs of states $(p, q)$ . Mark all pairs $(p, q)$ where $p \\in F$ and $q \\notin F$ (or vice versa) as distinguishable.",
+            "2. Iteratively mark $(p,q)$ as distinguishable if for some input symbol $a$ , $(\\delta(p,a),\\delta(q,a))$ is already marked distinguishable.",
+            "3. Repeat until no new pairs can be marked. All unmarked pairs are indistinguishable and can be merged."
+        ],
+        "bbox": [
+            112,
+            719,
+            910,
+            790
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Myhill-Nerode Theorem: States that a language $L$ is regular if and only if the number of equivalence classes of the Myhill-Nerode relation $\\equiv_L$ is finite. The number of states in the minimal DFA is equal to the number of these equivalence classes.",
+        "bbox": [
+            97,
+            790,
+            927,
+            833
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Pumping Lemma (for Regular Languages)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            845,
+            443,
+            863
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The Pumping Lemma for Regular Languages is a fundamental theorem used to prove that a language is NOT regular. It states that all sufficiently long strings in a regular language can be \"pumped\" (i.e., a middle section of the string can be repeated any number of times) and the resulting string will still be in the language.",
+        "bbox": [
+            58,
+            874,
+            919,
+            918
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Theorem: If $L$ is a regular language, then there exists some integer $p \\geq 1$ (the pumping length) such that for any string $s \\in L$ with $|s| \\geq p$ , $s$ can be divided into three parts $s = xyz$ satisfying the conditions:",
+        "bbox": [
+            72,
+            65,
+            910,
+            95
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $|y| > 0$ (the middle part cannot be empty).",
+            "2. $|xy| \\leq p$ (the pumpable part must occur within the first p symbols).",
+            "3. For all $i \\geq 0$ , the string $xy^i z \\in L$ ."
+        ],
+        "bbox": [
+            89,
+            96,
+            600,
+            141
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            142,
+            211,
+            155
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- It is a necessary condition for regularity, not a sufficient one. It can only be used to prove non-regularity.",
+            "- The proof strategy is usually by contradiction (an \"adversary game\")."
+        ],
+        "bbox": [
+            95,
+            155,
+            863,
+            182
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            184,
+            225,
+            195
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trying to prove regularity using the Pumping Lemma (it's impossible).",
+            "- Incorrectly choosing the string $s$ or the partition $xyz$ to break the lemma.",
+            "- Forgetting the condition $|y| > 0$ or $|xy| \\leq p$ ."
+        ],
+        "bbox": [
+            95,
+            195,
+            636,
+            239
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            241,
+            322,
+            254
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Assume L is regular and let p be the pumping length.",
+            "2. Choose a \"hard\" string $s \\in \\bar{L}$ such that $|s| \\geq p$ , typically one that grows with $p$ (e.g., $a^p b^p$ ).",
+            "3. Consider all possible ways to divide s into xyz satisfying $|y| > 0$ and $|xy| \\leq p$ .",
+            "4. For each division, find an $i \\geq 0$ such that $xy^i z \\notin L$ . This contradicts the lemma, proving $L$ is not regular."
+        ],
+        "bbox": [
+            87,
+            254,
+            877,
+            315
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Closure Property",
+        "text_level": 1,
+        "bbox": [
+            60,
+            328,
+            218,
+            344
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Closure properties describe whether a class of languages remains within that class after applying certain operations. Understanding these properties is vital for classifying languages and proving relationships between language classes.",
+        "bbox": [
+            58,
+            357,
+            915,
+            385
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Definition: A class of languages $\\mathcal{C}$ is closed under an operation $\\mathcal{O}$ if, for any language $L_{1}, L_{2} \\in \\mathcal{C}$ , the result of $\\mathcal{O}(L_{1}, L_{2})$ (or $\\mathcal{O}(L_{1})$ ) is also in $\\mathcal{C}$ .",
+            "• Key Properties (to memorize):"
+        ],
+        "bbox": [
+            72,
+            396,
+            899,
+            441
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/eebb1e307659ae19e74342172fa8b4ae30d7468822978aa58f56d6cab9ce9411.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Operation</td><td>Regular Languages</td><td>Context-Free Languages</td><td>Recursive Languages</td><td>Recursively Enumerable Languages</td></tr><tr><td>Union</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Intersection</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td>Complement</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td>Concatenation</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Kleene Star</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Reversal</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Homomorphism</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>Inverse Homomorphism</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr></table>",
+        "bbox": [
+            87,
+            441,
+            934,
+            619
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Common Pitfalls: Confusing closure properties between different language classes, especially for intersection and complement.",
+            "- Problem-Solving Techniques: Use closure properties to deduce the class of a new language based on known languages and operations. For non-closure, use counterexamples."
+        ],
+        "bbox": [
+            72,
+            619,
+            924,
+            674
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Context Free Grammar (CFG)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            687,
+            327,
+            703
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Context-Free Grammars are more powerful than regular grammars and are used to describe Context-Free Languages. They are fundamental to defining the syntax of programming languages and parsing. Productions allow a non-terminal to be replaced by a string of terminals and non-terminals, regardless of its context.",
+        "bbox": [
+            58,
+            716,
+            924,
+            758
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• Definition: A CFG is a 4-tuple $G = (V, \\Sigma, P, S)$ , where:",
+        "bbox": [
+            72,
+            769,
+            509,
+            783
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. V is a finite set of non-terminal symbols.",
+            "2. $\\Sigma$ is a finite set of terminal symbols.",
+            "3. $P$ is a finite set of production rules of the form $A \\to \\alpha$ , where $A \\in V$ and $\\alpha \\in (V \\cup \\Sigma)^*$ .",
+            "4. $S \\in V$ is the start symbol."
+        ],
+        "bbox": [
+            87,
+            783,
+            764,
+            843
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Key Forms:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            844,
+            179,
+            857
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Chomsky Normal Form (CNF): All productions are of the form $A \\to BC$ or $A \\to a$ , where $A, B, C \\in V$ and $a \\in \\Sigma$ . $\\epsilon$ -productions are allowed only for the start symbol if it doesn't appear on the RHS.",
+            "- Greibach Normal Form (GNF): All productions are of the form $A \\to a\\alpha$ , where $A \\in V$ , $a \\in \\Sigma$ , and $\\alpha \\in V^{*}$ ."
+        ],
+        "bbox": [
+            95,
+            856,
+            915,
+            900
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Detecting ambiguity (a string having more than one leftmost/rightmost derivation or parse tree); incorrect conversion to CNF/GNF.",
+        "bbox": [
+            72,
+            901,
+            917,
+            928
+        ],
+        "page_idx": 11
+    }
+]

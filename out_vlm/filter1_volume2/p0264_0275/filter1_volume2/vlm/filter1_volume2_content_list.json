@@ -1,0 +1,3822 @@
+[
+    {
+        "type": "text",
+        "text": "exact number of iterations. For if-else and switch-case, carefully evaluate conditions and watch for break statements (or their absence, leading to fall-through).",
+        "bbox": [
+            84,
+            64,
+            931,
+            92
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "6. Demystify Pointers and Arrays: Draw memory diagrams to visualize array elements and what pointers are pointing to. Remember array-pointer duality, pointer arithmetic (sizeof the pointed-to type is crucial), and the difference between arr and &arr[0]. Be wary of out-of-bounds access.",
+            "7. Grasp Function Call Mechanisms: Clearly distinguish between call-by-value (copies are passed, originals unaffected) and call-by-reference (pointers/references, originals can be modified). For recursion, identify the base case and the recursive step, and trace a few calls to understand the pattern.",
+            "8. Preprocessor Directives and Macros: Mentally expand macros before evaluating the code. Be aware of common macro pitfalls like missing parentheses around arguments or the macro body, which can lead to unexpected operator precedence issues."
+        ],
+        "bbox": [
+            63,
+            92,
+            924,
+            216
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1",
+        "text_level": 1,
+        "bbox": [
+            67,
+            229,
+            95,
+            244
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Output (1)",
+        "text_level": 1,
+        "bbox": [
+            470,
+            229,
+            557,
+            245
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1.1 Output: GATE CSE 2024 | Set 2 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            256,
+            480,
+            270
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C function definition.",
+        "bbox": [
+            85,
+            280,
+            406,
+            295
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e9753995900168cba9809afc242a1ec647e5d6cb9aed134567d7da3bb4d32c7c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            258,
+            932,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint fX(char *a) {\n    char *b = a;\n    while (*b)\n        b++;\n    return b - a; }\n```",
+        "bbox": [
+            112,
+            304,
+            203,
+            403
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE?",
+        "bbox": [
+            85,
+            422,
+            438,
+            435
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The function call fX(\"abcd\") will always return a value",
+            "B. Assuming a character array c is declared as char c[] = \"abcd\" in main (), the function call fX(c) will always return a value",
+            "C. The code of the function will not compile",
+            "D. Assuming a character pointer c is declared as char \\*c=\"abcd\" in main (), the function call fX(c) will always return a value"
+        ],
+        "bbox": [
+            87,
+            447,
+            927,
+            530
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 programming programming-in-c multiple-selects output one-mark",
+        "bbox": [
+            87,
+            557,
+            499,
+            567
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            573,
+            181,
+            587
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys",
+        "text_level": 1,
+        "bbox": [
+            60,
+            600,
+            221,
+            622
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1.1",
+        "bbox": [
+            65,
+            638,
+            107,
+            653
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A;B;D",
+        "bbox": [
+            658,
+            638,
+            707,
+            653
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"Programming: Programming in C\" chapter of your GATE Computer Science exam preparation. This section is designed to be a comprehensive, exam-focused reference, providing a quick yet thorough review of all essential concepts, formulas, and problem-solving techniques relevant to C programming for the GATE exam. Mastering C is fundamental not just for direct programming questions but also for understanding underlying principles of Data Structures, Algorithms, Operating Systems, and Computer Architecture. It forms the bedrock of many advanced computer science concepts.",
+        "bbox": [
+            58,
+            98,
+            934,
+            182
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Subject Overview",
+        "text_level": 1,
+        "bbox": [
+            60,
+            195,
+            225,
+            212
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The \"Programming in C\" subject is a cornerstone of the GATE Computer Science syllabus, focusing on the syntax, semantics, and practical application of the C programming language. It is crucial for building a strong foundation in computer science, as C's low-level memory management capabilities and efficiency make it indispensable for system programming, embedded systems, and high-performance computing. For GATE CS, this subject typically carries a weightage of 5-10 marks, often integrated with questions from Data Structures and Algorithms. Questions usually involve code snippets for output prediction, error identification, understanding memory allocation, pointer arithmetic, function calls, recursion, and conceptual questions on data types, control flow, and storage classes. A deep understanding of C helps in visualizing program execution and memory layout, which is vital for solving complex problems.",
+        "bbox": [
+            58,
+            223,
+            914,
+            349
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            362,
+            295,
+            378
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Programming In C",
+        "text_level": 1,
+        "bbox": [
+            60,
+            391,
+            231,
+            408
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: C is a general-purpose, procedural, imperative computer programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It is known for its efficiency, low-level memory access, and portability, making it a popular choice for system programming and embedded systems.",
+        "bbox": [
+            58,
+            420,
+            929,
+            463
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            473,
+            322,
+            486
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mid-level language: Combines features of high-level languages with the ability to manipulate memory directly.",
+            "- Procedural: Programs are structured as a sequence of function calls.",
+            "- Compiled: Source code is translated into machine code by a compiler.",
+            "- Strongly typed (but with implicit conversions): Variables have specific types, but C allows flexible type casting.",
+            "- Memory management: Manual memory allocation and deallocation using functions like malloc() and free()."
+        ],
+        "bbox": [
+            95,
+            488,
+            907,
+            557
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            557,
+            354,
+            570
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Undefined behavior: Operations like accessing out-of-bounds array elements or dereferencing a dangling pointer can lead to unpredictable results.",
+            "- Memory leaks: Forgetting to free() dynamically allocated memory.",
+            "- Buffer overflows: Writing past the end of an allocated buffer."
+        ],
+        "bbox": [
+            97,
+            571,
+            929,
+            625
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            625,
+            499,
+            638
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Understand the compilation process (preprocessor, compiler, assembler, linker).",
+            "- Always initialize variables to avoid garbage values.",
+            "- Pay attention to operator precedence and associativity."
+        ],
+        "bbox": [
+            97,
+            640,
+            695,
+            681
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Programming Constructs",
+        "text_level": 1,
+        "bbox": [
+            60,
+            694,
+            294,
+            710
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Programming constructs are the fundamental building blocks that control the flow of execution in a program. They include sequential execution, selection (conditional statements), and iteration (loops).",
+        "bbox": [
+            58,
+            723,
+            899,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            763,
+            322,
+            776
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Sequential: Statements execute one after another.",
+        "bbox": [
+            97,
+            777,
+            487,
+            790
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Selection:",
+        "text_level": 1,
+        "bbox": [
+            97,
+            790,
+            194,
+            802
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- if-else: Executes a block of code based on a condition.",
+        "bbox": [
+            122,
+            804,
+            534,
+            818
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "if (condition) { // code } else { // code }",
+        "bbox": [
+            134,
+            828,
+            413,
+            844
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- switch-case: Multi-way branching based on the value of an integer expression.",
+        "bbox": [
+            121,
+            855,
+            707,
+            869
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Iteration (Loops):",
+        "text_level": 1,
+        "bbox": [
+            97,
+            869,
+            250,
+            883
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- for loop: Used when the number of iterations is known.",
+        "bbox": [
+            122,
+            883,
+            534,
+            897
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "for (initialization; condition; increment/decrement) { // code }",
+        "bbox": [
+            134,
+            907,
+            571,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            72,
+            70,
+            84,
+            83
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Programming: Programming in C (131)",
+        "bbox": [
+            342,
+            68,
+            673,
+            86
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- while loop: Executes as long as a condition is true (entry-controlled). while (condition) { // code }",
+            "- do-while loop: Executes at least once, then continues as long as a condition is true (exit-controlled).\ndo { // code } while (condition);"
+        ],
+        "bbox": [
+            122,
+            64,
+            860,
+            155
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Jump Statements: break, continue, goto, return.",
+        "bbox": [
+            97,
+            167,
+            468,
+            180
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            181,
+            352,
+            194
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Off-by-one errors in loops.",
+            "- Infinite loops due to incorrect loop conditions or missing increment/decrement.",
+            "- Forgetting break in switch-case, leading to fall-through.",
+            "- Using = (assignment) instead of == (comparison) in conditions."
+        ],
+        "bbox": [
+            95,
+            195,
+            678,
+            249
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            250,
+            499,
+            263
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace the execution path of the program step-by-step for conditional and loop statements.",
+            "- For loops, identify the initial state, the termination condition, and how variables change in each iteration."
+        ],
+        "bbox": [
+            95,
+            264,
+            863,
+            290
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Programming Paradigms",
+        "text_level": 1,
+        "bbox": [
+            60,
+            304,
+            290,
+            320
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A programming paradigm is a fundamental style of computer programming, providing a way to classify programming languages based on their features. C primarily adheres to the procedural paradigm.",
+        "bbox": [
+            58,
+            333,
+            927,
+            362
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            372,
+            322,
+            385
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Procedural Programming: Focuses on a sequence of instructions (procedures or functions) to perform computations. Data and functions are separate. C, Fortran, Pascal are examples.",
+            "- Imperative Programming: Programs explicitly state how the computation should be performed, detailing changes to the program state. C is an imperative language.",
+            "- Contrast with Object-Oriented (data and methods encapsulated) and Functional (computation as evaluation of mathematical functions, avoiding state changes) paradigms."
+        ],
+        "bbox": [
+            95,
+            387,
+            910,
+            469
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            470,
+            352,
+            483
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing C's procedural nature with object-oriented concepts like classes and objects, which are not directly supported.",
+            "- Trying to apply functional programming principles (like immutability) where C's mutable state is fundamental."
+        ],
+        "bbox": [
+            95,
+            483,
+            905,
+            524
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            524,
+            499,
+            538
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Understand that C programs are executed as a series of instructions that modify program state.",
+            "- Focus on function calls, parameter passing, and global/local variable interactions."
+        ],
+        "bbox": [
+            95,
+            539,
+            803,
+            566
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Variable Binding",
+        "text_level": 1,
+        "bbox": [
+            60,
+            579,
+            213,
+            595
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Variable binding refers to the process of associating attributes (like type, value, and storage location) with a variable name. This binding can occur at different stages of a program's lifecycle.",
+        "bbox": [
+            58,
+            608,
+            924,
+            637
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            648,
+            322,
+            661
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Static Binding (Compile-time): Attributes are determined before runtime and remain fixed. E.g., type binding for most variables in C.",
+            "• Dynamic Binding (Run-time): Attributes are determined during program execution. E.g., value binding, or in some languages, type binding (polymorphism).",
+            "- Storage Class Binding: Determines the scope and lifetime of a variable."
+        ],
+        "bbox": [
+            95,
+            662,
+            910,
+            730
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- auto: Local to a block, created on entry, destroyed on exit (default for local variables).",
+            "■ static: Local to a block/file, created once, persists throughout program execution.",
+            "- extern: Global variable, declared in one file, defined in another.",
+            "- register: Suggests storing variable in CPU register for faster access (compiler may ignore)."
+        ],
+        "bbox": [
+            122,
+            731,
+            796,
+            786
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Scope: Region of code where a variable is accessible (block scope, function scope, file scope, program scope).",
+            "- Lifetime: Period during which a variable exists in memory."
+        ],
+        "bbox": [
+            95,
+            786,
+            924,
+            814
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            814,
+            352,
+            827
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing scope and lifetime: A variable might be alive but out of scope.",
+            "- Modifying static local variables across multiple function calls.",
+            "- Shadowing: A local variable having the same name as a global variable."
+        ],
+        "bbox": [
+            95,
+            828,
+            638,
+            868
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            869,
+            499,
+            883
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Draw scope boxes for functions and blocks to visualize variable accessibility.",
+            "- Track variable values across function calls, especially for static variables."
+        ],
+        "bbox": [
+            95,
+            883,
+            670,
+            910
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Type Checking",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            201,
+            81
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Type checking is the process of verifying and enforcing the type constraints of a programming language. It ensures that operations are applied to compatible data types, preventing common programming errors.",
+        "bbox": [
+            58,
+            93,
+            848,
+            137
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            147,
+            322,
+            161
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Static Type Checking (Compile-time): Types are checked before program execution. C is primarily statically typed.",
+            "• Dynamic Type Checking (Run-time): Types are checked during program execution.",
+            "- Type Compatibility: Rules for when types can be used together (e.g., implicit conversions).",
+            "- Type Casting: Explicit conversion of one data type to another using (type)expression.",
+            "- Implicit Type Promotion (Integral Promotion): Smaller integer types (char, short) are promoted to int in expressions.",
+            "- Arithmetic Conversion: In binary operations, operands are converted to a common type (usually the \"larger\" or \"wider\" type)."
+        ],
+        "bbox": [
+            97,
+            161,
+            910,
+            285
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            286,
+            352,
+            299
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Unexpected implicit type conversions, especially between signed and unsigned integers, or between integers and floating-point types, leading to loss of precision or incorrect results.",
+            "- Incorrect type casting, e.g., casting a pointer to an incompatible type and then dereferencing it.",
+            "- Integer division truncates the fractional part (e.g., $5 / 2 = 2$ )."
+        ],
+        "bbox": [
+            97,
+            300,
+            904,
+            356
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            356,
+            499,
+            369
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Always be aware of the data types involved in an expression.",
+            "- Use explicit type casting when precision or specific type behavior is required.",
+            "- Remember that sizeof operator returns an unsigned integer type (size\\_t)."
+        ],
+        "bbox": [
+            97,
+            370,
+            670,
+            412
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Output",
+        "text_level": 1,
+        "bbox": [
+            60,
+            423,
+            129,
+            441
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Output refers to the process of displaying information from a program to the user or writing it to a file. In C, standard output functions like printf(), puts(), and putchar() are commonly used.",
+        "bbox": [
+            58,
+            454,
+            932,
+            483
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            492,
+            322,
+            505
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- printf(const char \\*format, ...): Formatted output to standard output.",
+        "bbox": [
+            97,
+            507,
+            591,
+            521
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Format specifiers:",
+        "bbox": [
+            122,
+            522,
+            270,
+            534
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- %d or %i: signed decimal integer",
+            "- %u: unsigned decimal integer",
+            "- %f: decimal floating point (double by default)",
+            "- %c: character",
+            "- %s: string",
+            "- %p: pointer address (hexadecimal)",
+            "- %x or %X: hexadecimal integer",
+            "- %o: octal integer",
+            "- %%: print a literal % character"
+        ],
+        "bbox": [
+            147,
+            535,
+            487,
+            657
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Modifiers: .precision, width, - (left-align), + (sign), 0 (zero-pad), I (long), II (long long), h (short).",
+        "bbox": [
+            122,
+            659,
+            816,
+            673
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- puts(const char \\*str): Writes a string to standard output, followed by a newline.",
+        "bbox": [
+            97,
+            673,
+            680,
+            686
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- putchar(int char\\_val): Writes a single character to standard output.",
+        "bbox": [
+            97,
+            687,
+            594,
+            700
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            701,
+            352,
+            714
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mismatched format specifiers and argument types can lead to undefined behavior or incorrect output.",
+            "- Forgetting newline characters \\n in printf() (puts() adds it automatically).",
+            "- Buffer flushing issues, especially when mixing buffered and unbuffered I/O."
+        ],
+        "bbox": [
+            97,
+            714,
+            845,
+            755
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            756,
+            499,
+            769
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Carefully match each format specifier in printf() with its corresponding argument.",
+            "- Trace the exact values and types of variables being printed.",
+            "- Understand the effect of width and precision specifiers on output formatting."
+        ],
+        "bbox": [
+            97,
+            770,
+            694,
+            811
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Array",
+        "text_level": 1,
+        "bbox": [
+            60,
+            824,
+            115,
+            840
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: An array is a collection of elements of the same data type, stored in contiguous memory locations. Elements are accessed using an index, typically starting from zero.",
+        "bbox": [
+            58,
+            853,
+            899,
+            882
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            893,
+            322,
+            906
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Contiguous memory allocation.",
+        "bbox": [
+            97,
+            907,
+            339,
+            921
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Fixed size at compile time (for static arrays).",
+            "- Zero-indexed: The first element is at index 0.",
+            "- Array name decays to a pointer to its first element in most contexts.",
+            "- Address Calculation (1D Array):"
+        ],
+        "bbox": [
+            97,
+            65,
+            603,
+            119
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (A [ i ]) = \\text {BaseAddress} + i \\times \\text {sizeof} (\\text {ElementType})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            287,
+            130,
+            757,
+            149
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Address Calculation (2D Array, Row-Major):",
+        "bbox": [
+            97,
+            157,
+            455,
+            173
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (A [ i ] [ j ]) = \\text {BaseAddress} + (i \\times \\text {cols} + j) \\times \\text {sizeof} (\\text {ElementType})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            228,
+            182,
+            815,
+            201
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where cols is the number of columns in the array.",
+        "bbox": [
+            109,
+            210,
+            472,
+            224
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            225,
+            354,
+            238
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Array out-of-bounds access: Accessing elements beyond the declared size leads to undefined behavior.",
+            "- When an array is passed to a function, it decays into a pointer, losing its size information.",
+            "sizeof(array\\_in\\_function) will return the size of a pointer, not the array.",
+            "- Multidimensional arrays are stored in row-major order in C."
+        ],
+        "bbox": [
+            97,
+            238,
+            867,
+            293
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            294,
+            499,
+            307
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Draw memory diagrams to visualize array elements and their addresses.",
+            "- Always check loop bounds to prevent out-of-bounds access.",
+            "- Remember that array indexing A[i] is equivalent to pointer arithmetic $^{*}$ (A + i)."
+        ],
+        "bbox": [
+            97,
+            308,
+            665,
+            349
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Strings",
+        "text_level": 1,
+        "bbox": [
+            60,
+            361,
+            131,
+            378
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: In C, a string is a sequence of characters stored in a character array, terminated by a null character (\\0). This null terminator marks the end of the string.",
+        "bbox": [
+            58,
+            391,
+            910,
+            420
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            429,
+            322,
+            444
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Declared as char array\\_name[] or char \\*pointer\\_name.",
+            "- Always null-terminated. The size of the array must be at least one greater than the number of characters in the string to accommodate \\0.",
+            "- Standard library functions (from <string.h>):",
+            "- strlen(const char \\*s): Returns the length of the string (excluding \\0).",
+            "- strcpy(char \\*dest, const char \\*src): Copies src to dest.",
+            "- strncpy(char \\*dest, const char \\*src, size\\_t n): Copies at most n characters. Does not guarantee null termination if src is longer than n.",
+            "- strcat(char \\*dest, const char \\*src): Appends src to dest.",
+            "- strncat(char \\*dest, const char \\*src, size\\_t n): Appends at most n characters.",
+            "- strcmp(const char \\*s1, const char \\*s2): Compares s1 and s2 lexicographically. Returns 0 if equal, <0 if s1 < s2, >0 if s1 > s2.",
+            "- strncmp(const char \\*s1, const char \\*s2, size\\_t n): Compares at most n characters."
+        ],
+        "bbox": [
+            97,
+            445,
+            915,
+            623
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            625,
+            352,
+            638
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Buffer overflow: Using strcpy() or strcat() without ensuring the destination buffer is large enough. Always prefer strcpy() and strcat() with careful handling of null termination.",
+            "- Forgetting the null terminator \\0, leading to functions like strlen() reading past the allocated memory.",
+            "Modifying string literals (e.g., char \\*s = \"hello\"; s[0] = 'H';) leads to undefined behavior, as string literals are often stored in read-only memory."
+        ],
+        "bbox": [
+            97,
+            638,
+            922,
+            706
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            707,
+            499,
+            720
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Always allocate sufficient memory for strings, considering the null terminator.",
+            "- When dealing with string manipulation, mentally trace the contents of the character arrays, including the \\0.",
+            "- Be careful with pointer arithmetic on string pointers."
+        ],
+        "bbox": [
+            97,
+            720,
+            885,
+            762
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Pointers",
+        "text_level": 1,
+        "bbox": [
+            60,
+            775,
+            141,
+            789
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A pointer is a variable that stores the memory address of another variable. It allows for indirect access to data and is fundamental for dynamic memory management, arrays, and complex data structures in C.",
+        "bbox": [
+            58,
+            804,
+            931,
+            833
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            844,
+            322,
+            857
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Declaration: type \\*pointer\\_name;",
+            "- Address-of operator: & (returns the memory address of a variable).",
+            "- Dereference operator: \\* (accesses the value at the address stored in a pointer).",
+            "- Pointer Arithmetic:"
+        ],
+        "bbox": [
+            97,
+            858,
+            700,
+            910
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Adding an integer to a pointer: $p + n$ points to the memory location $n \\times \\text{sizeof}(*p)$ bytes away from $p$ .",
+        "bbox": [
+            121,
+            913,
+            875,
+            929
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (p + n) = \\text {Address} (p) + n \\times \\text {sizeof} (^ {*} \\mathrm{p})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            344,
+            64,
+            727,
+            83
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Subtracting an integer from a pointer: p - n.",
+            "- Subtracting two pointers (of the same type): p - q gives the number of elements between them."
+        ],
+        "bbox": [
+            122,
+            92,
+            823,
+            119
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\np - q = \\frac {\\text {Address} (p) - \\text {Address} (q)}{\\text {sizeof} (^ {*} \\mathrm{p})}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            389,
+            130,
+            678,
+            168
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Pointers can be compared for equality or order.",
+        "bbox": [
+            122,
+            176,
+            482,
+            188
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- void\\* (Generic Pointer): Can point to any data type but cannot be dereferenced directly or used in arithmetic without casting.",
+            "- NULL Pointer: A pointer that points to no valid memory location."
+        ],
+        "bbox": [
+            97,
+            188,
+            907,
+            231
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            232,
+            352,
+            245
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Dangling Pointers: Pointers that point to memory that has been deallocated or is no longer valid.",
+            "- Wild Pointers: Uninitialized pointers that point to arbitrary memory locations.",
+            "- Dereferencing a NULL pointer or a wild pointer leads to segmentation faults or undefined behavior.",
+            "- Incorrect pointer arithmetic (e.g., adding incompatible types, or arithmetic on void\\* without casting).",
+            "- Confusing \\*p (value at address p) with p (the address itself)."
+        ],
+        "bbox": [
+            97,
+            245,
+            828,
+            314
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            315,
+            499,
+            328
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Draw memory diagrams showing variable names, their addresses, and their values.",
+            "- Mentally trace pointer assignments and dereferencing operations.",
+            "- Always initialize pointers to NULL if they don't point to valid memory immediately.",
+            "- Check for NULL before dereferencing pointers."
+        ],
+        "bbox": [
+            97,
+            328,
+            719,
+            384
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Aliasing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            396,
+            139,
+            413
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Aliasing occurs when multiple distinct names or pointers refer to the same memory location. In C, this often happens with pointers, array names, or when passing arguments by reference (using pointers).",
+        "bbox": [
+            58,
+            425,
+            927,
+            454
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            465,
+            322,
+            478
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If p1 and p2 are pointers and p1 = p2;, then both p1 and p2 alias the same memory location.",
+            "- Modifying data through one alias will affect the data accessed through other aliases.",
+            "- Can occur with function parameters if pointers are passed."
+        ],
+        "bbox": [
+            97,
+            479,
+            779,
+            520
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            521,
+            352,
+            534
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Unexpected side effects: Changes made through one alias might inadvertently affect other parts of the program that use a different alias to the same data.",
+            "- Difficult to optimize for compilers due to potential data dependencies.",
+            "- Can lead to subtle bugs that are hard to trace."
+        ],
+        "bbox": [
+            97,
+            534,
+            921,
+            589
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            590,
+            499,
+            603
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Draw memory diagrams to explicitly show when multiple pointers point to the same location.",
+            "- Be extra cautious when modifying data through pointers, especially when those pointers might be aliases.",
+            "In GATE questions, always consider if multiple variables/pointers might be referring to the same underlying memory."
+        ],
+        "bbox": [
+            97,
+            604,
+            889,
+            659
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Functions",
+        "text_level": 1,
+        "bbox": [
+            60,
+            671,
+            156,
+            686
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A function is a self-contained block of code that performs a specific task. Functions promote modularity, reusability, and readability in C programs.",
+        "bbox": [
+            58,
+            701,
+            929,
+            730
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            739,
+            322,
+            754
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Declaration (Prototype): Specifies the function's return type, name, and parameter types (e.g., int add(int a, int b);).",
+            "- Definition: Contains the actual code of the function.",
+            "- Call: Invokes the function's execution.",
+            "- Return Type: The data type of the value the function sends back to the caller. void if no value is returned.",
+            "- Parameters (Arguments): Values passed to the function.",
+            "- Local Variables: Declared inside a function, have function scope and automatic lifetime.",
+            "- Global Variables: Declared outside any function, have file scope and static lifetime."
+        ],
+        "bbox": [
+            97,
+            754,
+            921,
+            864
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            865,
+            352,
+            878
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Scope of local variables: Local variables cease to exist once the function returns. Returning a pointer to a local variable leads to a dangling pointer.",
+            "- Side effects: Functions modifying global variables or parameters passed by reference (pointers) can lead to"
+        ],
+        "bbox": [
+            97,
+            878,
+            915,
+            920
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "hard-to-track bugs.",
+        "bbox": [
+            110,
+            64,
+            253,
+            78
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Function prototypes are crucial for correct compilation, especially when functions are defined after their calls.",
+        "bbox": [
+            97,
+            78,
+            902,
+            92
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            92,
+            499,
+            106
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace function calls using a call stack model, keeping track of local variables and parameters for each active function.",
+            "- Clearly distinguish between parameters (formal arguments) and arguments (actual arguments).",
+            "- Understand how return values are passed back to the caller."
+        ],
+        "bbox": [
+            97,
+            106,
+            899,
+            161
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Parameter Passing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            174,
+            236,
+            191
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Parameter passing refers to the mechanism by which arguments (actual parameters) are passed from the calling function to the called function (formal parameters).",
+        "bbox": [
+            58,
+            203,
+            907,
+            232
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            243,
+            322,
+            256
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Call by Value (C's default): A copy of the actual argument's value is passed to the formal parameter. Changes to the formal parameter inside the function do not affect the original actual argument in the caller.",
+        "bbox": [
+            95,
+            256,
+            922,
+            285
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "void func(int x) { x = x + 1; } // x is a copy",
+        "bbox": [
+            109,
+            295,
+            411,
+            311
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Call by Reference (Simulated in C using Pointers): The address of the actual argument is passed. The formal parameter is a pointer. Changes made through the pointer inside the function directly modify the original actual argument in the caller.",
+        "bbox": [
+            95,
+            320,
+            929,
+            363
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "void func(int \\*ptr) { \\*ptr = \\*ptr + 1; } // \\*ptr modifies original variable",
+        "bbox": [
+            109,
+            372,
+            596,
+            389
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Arrays are always passed by reference (decay to a pointer to their first element).",
+        "bbox": [
+            95,
+            399,
+            697,
+            414
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            414,
+            354,
+            427
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Misunderstanding when a function can modify the caller's variables. Only possible with call by reference (pointers).",
+            "- Forgetting to dereference a pointer when intending to modify the original value in call by reference.",
+            "- Passing large structures by value can be inefficient due to copying."
+        ],
+        "bbox": [
+            95,
+            427,
+            865,
+            483
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            483,
+            499,
+            496
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- When tracing code, explicitly note whether a variable is being passed by value (copy) or by reference (address).",
+            "- For call by reference, always draw an arrow from the pointer parameter to the actual variable it points to in the caller's memory."
+        ],
+        "bbox": [
+            95,
+            496,
+            924,
+            538
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Recursion",
+        "text_level": 1,
+        "bbox": [
+            60,
+            551,
+            159,
+            566
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Recursion is a programming technique where a function calls itself, either directly or indirectly, to solve a problem. It's often used for problems that can be broken down into smaller, similar subproblems.",
+        "bbox": [
+            58,
+            580,
+            910,
+            609
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            619,
+            322,
+            633
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Base Case: A condition that stops the recursion, preventing an infinite loop. Without a base case, recursion leads to stack overflow.",
+            "- Recursive Step: The part of the function that calls itself with a modified input, moving closer to the base case.",
+            "- Every recursive function can be rewritten iteratively, and vice-versa.",
+            "- Often involves a call stack: Each recursive call adds a new frame to the stack.",
+            "- Tail Recursion: A special form where the recursive call is the last operation in the function. Some compilers can optimize this to iterative code."
+        ],
+        "bbox": [
+            95,
+            633,
+            910,
+            729
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Formulas and Results (for complexity analysis):",
+        "text_level": 1,
+        "bbox": [
+            73,
+            730,
+            463,
+            744
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Recurrence relations are used to analyze the time and space complexity of recursive algorithms. E.g., for factorial: $T(n) = T(n - 1) + O(1)$ .",
+            "- Space complexity often depends on the maximum depth of the recursion stack."
+        ],
+        "bbox": [
+            95,
+            744,
+            875,
+            787
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            787,
+            354,
+            800
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Missing or incorrect base case, leading to infinite recursion and stack overflow.",
+            "- Excessive recursion depth can lead to stack overflow even with a correct base case.",
+            "- Difficulty in tracing complex recursive calls.",
+            "- Redundant computations in non-optimized recursive solutions (e.g., naive Fibonacci)."
+        ],
+        "bbox": [
+            95,
+            800,
+            731,
+            856
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            856,
+            499,
+            869
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify the base case first.",
+            "- Assume the recursive call works correctly for smaller inputs.",
+            "- Trace the execution for small inputs, drawing the call stack to visualize the flow and variable states.",
+            "- For GATE, often involves predicting output or determining the number of function calls."
+        ],
+        "bbox": [
+            95,
+            870,
+            831,
+            925
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Structure",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            151,
+            80
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A structure (struct) in C is a user-defined data type that groups together variables of different data types under a single name. It allows for creating complex data types that represent real-world entities.",
+        "bbox": [
+            58,
+            93,
+            937,
+            124
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            134,
+            322,
+            147
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Declared using the struct keyword.",
+            "- Members are stored in contiguous memory, but padding may be inserted by the compiler for alignment."
+        ],
+        "bbox": [
+            97,
+            148,
+            860,
+            174
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Member Access:",
+        "bbox": [
+            97,
+            176,
+            245,
+            188
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Dot operator (.) for structure variables: struct\\_var.member",
+            "- Arrow operator (->) for pointers to structures: struct\\_ptr->member (equivalent to (\\*struct\\_ptr).member)"
+        ],
+        "bbox": [
+            122,
+            188,
+            875,
+            217
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- sizeof(struct): The size of a structure is at least the sum of the sizes of its members, but due to padding, it can be larger. The compiler aligns members to optimize memory access.",
+        "bbox": [
+            97,
+            217,
+            919,
+            245
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {sizeof(struct)} \\geq \\sum \\text {sizeof(member)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            374,
+            255,
+            670,
+            280
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Structures can contain members of other structure types or pointers to themselves (for linked lists, trees).",
+        "bbox": [
+            95,
+            287,
+            875,
+            301
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            301,
+            354,
+            314
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Understanding memory alignment and padding, which affects sizeof() and memory efficiency.",
+            "- Confusing . and -> operators.",
+            "- Passing structures by value can be inefficient for large structures; passing by pointer is often preferred.",
+            "- Self-referential structures (e.g., for linked lists) require careful handling of pointers."
+        ],
+        "bbox": [
+            97,
+            315,
+            858,
+            369
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            371,
+            499,
+            384
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- When calculating sizeof(struct), consider the alignment requirements of each member (usually to its own size or the largest member's size).",
+            "Draw diagrams for structures, especially those with pointers or nested structures, to visualize memory layout."
+        ],
+        "bbox": [
+            95,
+            384,
+            924,
+            426
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Union",
+        "text_level": 1,
+        "bbox": [
+            60,
+            438,
+            119,
+            453
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A union is a special user-defined data type in C that allows different data types to be stored in the same memory location. Only one member of the union can hold a value at any given time.",
+        "bbox": [
+            58,
+            467,
+            924,
+            497
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            507,
+            322,
+            521
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Declared using the union keyword.",
+            "- All members share the same memory space.",
+            "- sizeof(union): The size of a union is equal to the size of its largest member, ensuring enough space for any member."
+        ],
+        "bbox": [
+            97,
+            521,
+            899,
+            576
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{sizeof} (\\text {union}) = \\max (\\operatorname{sizeof} (\\text {member} _ {1}), \\operatorname{sizeof} (\\text {member} _ {2}), \\dots)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            270,
+            587,
+            774,
+            606
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Accessing a member that was not the last one written to results in undefined behavior (unless it's a \"type-punning\" scenario which is implementation-defined).",
+        "bbox": [
+            95,
+            615,
+            878,
+            643
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            643,
+            354,
+            657
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Accessing an inactive member (a member that was not the last one assigned a value) leads to undefined behavior.",
+            "- Unions are primarily used for memory optimization or type punning (interpreting the same memory in different ways).",
+            "- Understanding that changing one member's value overwrites the previous member's value."
+        ],
+        "bbox": [
+            97,
+            657,
+            907,
+            725
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            726,
+            499,
+            739
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- When calculating sizeof(union), simply find the largest member's size.",
+            "- Mentally track which member of the union is currently \"active\" (last written to) to predict output."
+        ],
+        "bbox": [
+            97,
+            739,
+            800,
+            768
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Switch Case",
+        "text_level": 1,
+        "bbox": [
+            60,
+            780,
+            178,
+            795
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The switch-case statement is a multi-way branch control statement that allows a program to execute different blocks of code based on the value of a single expression.",
+        "bbox": [
+            58,
+            809,
+            927,
+            838
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            849,
+            322,
+            863
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The switch expression must evaluate to an integer type (char, short, int, long, long long, or an enumeration type).",
+            "- case labels must be constant integer expressions.",
+            "- break statement: Exits the switch block.",
+            "- default label: Optional, executed if no case matches."
+        ],
+        "bbox": [
+            95,
+            863,
+            929,
+            918
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Fall-through: If a break statement is omitted, execution \"falls through\" to the next case label.",
+        "bbox": [
+            97,
+            64,
+            784,
+            79
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            79,
+            354,
+            93
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Forgetting break statements, leading to unintended fall-through and incorrect logic. This is a very common GATE question trap.",
+            "- Using non-integer expressions or non-constant values for case labels.",
+            "- Placing statements before the first case label (these will always execute)."
+        ],
+        "bbox": [
+            97,
+            93,
+            931,
+            148
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            148,
+            499,
+            162
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Carefully trace the execution path, paying close attention to the presence or absence of break statements.",
+        "bbox": [
+            97,
+            162,
+            880,
+            175
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Identify the value of the switch expression and which case (or default) it matches.",
+        "bbox": [
+            97,
+            176,
+            700,
+            188
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Goto",
+        "text_level": 1,
+        "bbox": [
+            60,
+            201,
+            110,
+            217
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The goto statement provides an unconditional jump from one point in a function to another labeled point within the same function. It alters the normal sequential flow of control.",
+        "bbox": [
+            58,
+            231,
+            917,
+            260
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            271,
+            322,
+            285
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Syntax: goto label; and label: statement;",
+            "- The label must be within the same function.",
+            "- Can be used to break out of nested loops or handle error conditions."
+        ],
+        "bbox": [
+            97,
+            286,
+            610,
+            326
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            327,
+            352,
+            340
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Generally discouraged in modern programming practice as it can lead to \"spaghetti code\" that is difficult to read, debug, and maintain.",
+            "- Jumping into a block can bypass variable initialization, leading to undefined behavior.",
+            "- Jumping out of a block can skip destructors (though C doesn't have explicit destructors like C++)."
+        ],
+        "bbox": [
+            97,
+            340,
+            924,
+            395
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            396,
+            499,
+            409
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- When encountering goto, simply follow the jump to the specified label to trace the control flow.",
+            "- Understand its direct impact on program execution flow."
+        ],
+        "bbox": [
+            97,
+            409,
+            794,
+            437
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Identify Function",
+        "text_level": 1,
+        "bbox": [
+            60,
+            450,
+            218,
+            466
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: This topic refers to the ability to analyze a given C function's code, its signature (return type, name, parameters), and its interactions with other parts of the program to determine its precise purpose, behavior, and potential side effects.",
+        "bbox": [
+            58,
+            479,
+            929,
+            522
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            532,
+            322,
+            546
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Function Signature: return\\_type function\\_name(parameter\\_list); provides initial clues about what the function takes and what it returns.",
+            "- Function Body: The statements within the function define its logic.",
+            "- Side Effects: Changes a function makes to the program state outside its local scope (e.g., modifying global variables, parameters passed by reference, performing I/O).",
+            "- Pure Functions: Functions that, given the same input, always return the same output and have no side effects. (Rare in C, but a useful concept)."
+        ],
+        "bbox": [
+            97,
+            546,
+            921,
+            643
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            644,
+            354,
+            657
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Misinterpreting the purpose due to complex logic or subtle side effects.",
+            "- Not recognizing the impact of parameter passing mechanisms (call by value vs. call by reference).",
+            "- Overlooking hidden dependencies on global variables or external resources."
+        ],
+        "bbox": [
+            97,
+            657,
+            823,
+            698
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            699,
+            499,
+            713
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace the function with a few sample inputs, noting the return value and any changes to external variables.",
+            "- Break down complex functions into smaller, understandable parts.",
+            "Look for common patterns: mathematical operations, array/string manipulations, recursive calls, pointer operations."
+        ],
+        "bbox": [
+            97,
+            712,
+            885,
+            768
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Loop Invariants",
+        "text_level": 1,
+        "bbox": [
+            60,
+            780,
+            206,
+            796
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A loop invariant is a condition or property that holds true before the first iteration of a loop, remains true before each subsequent iteration, and is true after the loop terminates. It is a powerful tool for proving the correctness of loops and algorithms.",
+        "bbox": [
+            58,
+            809,
+            921,
+            853
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            863,
+            322,
+            877
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Initialization: The invariant must be true before the first iteration of the loop.",
+            "- Maintenance: If the invariant is true before an iteration, it must remain true after that iteration (before the next).",
+            "- Termination: When the loop terminates, the invariant, combined with the loop termination condition, should"
+        ],
+        "bbox": [
+            97,
+            877,
+            919,
+            919
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "imply the desired property of the algorithm.",
+        "bbox": [
+            110,
+            64,
+            426,
+            78
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            78,
+            354,
+            91
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identifying the correct loop invariant for a given problem.",
+            "- Rigorously proving all three properties (initialization, maintenance, termination).",
+            "- Confusing the loop invariant with the loop condition or the desired post-condition."
+        ],
+        "bbox": [
+            97,
+            92,
+            700,
+            133
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            134,
+            500,
+            147
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For common algorithms (e.g., sorting, searching), try to recall standard loop invariants.",
+            "To find an invariant, consider what property is preserved or incrementally built up by each iteration towards the final solution.",
+            "- Useful for understanding why an algorithm works, not just how."
+        ],
+        "bbox": [
+            95,
+            147,
+            915,
+            203
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Runtime Environment",
+        "text_level": 1,
+        "bbox": [
+            60,
+            214,
+            263,
+            230
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The runtime environment refers to the state of a program during its execution, including its memory layout, the call stack, heap, and interaction with the operating system. Understanding this is crucial for debugging and optimizing C programs.",
+        "bbox": [
+            58,
+            244,
+            917,
+            288
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            296,
+            322,
+            311
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Memory Layout:",
+        "bbox": [
+            97,
+            312,
+            243,
+            325
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Text Segment: Stores compiled code (read-only).",
+            "- Data Segment: Stores global and static variables (initialized data).",
+            "- BSS Segment: Stores uninitialized global and static variables (zero-initialized by OS).",
+            "- Heap: Dynamically allocated memory (malloc(), calloc(), realloc(), free()). Grows upwards.",
+            "- Stack: Stores local variables, function parameters, and return addresses for function calls. Grows downwards."
+        ],
+        "bbox": [
+            97,
+            326,
+            924,
+            407
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Call Stack: A stack data structure that stores information about the active subroutines (functions) of a computer program. Each function call creates a \"stack frame.\"",
+        "bbox": [
+            97,
+            408,
+            924,
+            435
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            435,
+            352,
+            448
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Stack Overflow: Occurs when the call stack runs out of memory, often due to infinite recursion or very deep recursion.",
+            "- Memory Leaks: Dynamically allocated memory that is no longer referenced by the program but has not been deallocated using free().",
+            "Segmentation Faults: Occur when a program tries to access a memory location that it is not allowed to access (e.g., dereferencing a NULL pointer, accessing out-of-bounds array memory).",
+            "- Returning pointers to local stack variables (dangling pointers)."
+        ],
+        "bbox": [
+            97,
+            450,
+            924,
+            546
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            547,
+            499,
+            560
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Draw the stack and heap to visualize memory allocation and deallocation.",
+            "- For recursive functions, trace the stack frames to understand memory usage.",
+            "- Always match every malloc() with a free() to prevent memory leaks."
+        ],
+        "bbox": [
+            97,
+            561,
+            673,
+            602
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference",
+        "text_level": 1,
+        "bbox": [
+            60,
+            615,
+            295,
+            630
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "This section consolidates key formulas and results for quick revision.",
+        "bbox": [
+            60,
+            644,
+            561,
+            657
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Array Address Calculation (1D):",
+        "bbox": [
+            73,
+            669,
+            337,
+            684
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (A [ i ]) = \\text {BaseAddress} + i \\times \\text {sizeof(ElementType)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            275,
+            694,
+            746,
+            713
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Array Address Calculation (2D, Row-Major):",
+        "bbox": [
+            73,
+            722,
+            431,
+            736
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (A [ i ] [ j ]) = \\text {BaseAddress} + (i \\times \\text {cols} + j) \\times \\text {sizeof} (\\text {ElementType})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            216,
+            745,
+            803,
+            764
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Pointer Arithmetic (Addition):",
+        "bbox": [
+            73,
+            774,
+            319,
+            788
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (p + n) = \\text {Address} (p) + n \\times \\text {sizeof} (^ {*} \\mathrm{p})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            317,
+            798,
+            702,
+            817
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Pointer Arithmetic (Subtraction):",
+        "bbox": [
+            73,
+            826,
+            344,
+            840
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\np - q = \\frac {\\operatorname{Address} (p) - \\operatorname{Address} (q)}{\\operatorname{sizeof} (* \\mathrm{p})} \\quad (\\text {for same type pointers})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            258,
+            851,
+            759,
+            889
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- sizeof(struct):",
+        "bbox": [
+            73,
+            896,
+            200,
+            910
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {sizeof(struct)} \\geq \\sum \\text {sizeof(member)} \\quad (\\text {due to padding})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            285,
+            65,
+            734,
+            89
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- sizeof(union):",
+        "bbox": [
+            73,
+            96,
+            200,
+            111
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {sizeof(union)} = \\max (\\text {sizeof(member} _ {1}), \\text {sizeof(member} _ {2}), \\dots)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            258,
+            121,
+            759,
+            141
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- String Length: strlen(s) returns number of characters before \\0.",
+            "- Integer Division: $a/b$ truncates towards zero for positive integers. E.g., $5/2 = 2$ .",
+            "- Modulo Operator: $a\\% b$ result sign is implementation-defined for negative operands, but typically matches the sign of $a$ ."
+        ],
+        "bbox": [
+            72,
+            149,
+            922,
+            206
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            220,
+            285,
+            237
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Master Pointers and Arrays: A significant portion of C questions revolves around pointers, array indexing, and their interaction. Practice drawing memory diagrams for complex pointer expressions and array manipulations. Understand array decay to pointers.",
+            "2. Trace Code Meticulously: For output prediction questions, mentally (or on scratch paper) trace the execution flow, variable values, and memory changes step-by-step. Pay close attention to loop conditions, conditional statements, and function calls.",
+            "3. Understand Scope and Lifetime: Differentiate between local, global, and static variables. Be aware of when variables are created and destroyed, especially for recursive functions and functions returning pointers to local variables.",
+            "4. Beware of Type Conversions and Operator Precedence: C's implicit type conversions can lead to unexpected results. Always be mindful of data types in expressions. Memorize common operator precedence rules (e.g., \\* and / before + and -; unary operators have high precedence).",
+            "5. Practice Recursion Tracing: Recursion questions are common. Practice tracing recursive calls, identifying the base case, and understanding how values are returned up the call stack. Watch out for stack overflow scenarios.",
+            "6. Look for Edge Cases and Undefined Behavior: GATE questions often test understanding of edge cases (e.g., empty strings, NULL pointers, array bounds) and undefined behavior (e.g., dereferencing NULL, modifying string literals, out-of-bounds access).",
+            "7. Memory Management: Understand the difference between stack and heap memory. Know how malloc(), calloc(), realloc(), and free() work, and the consequences of memory leaks or double-freeing.",
+            "8. Time Management: C programming questions can be time-consuming due to detailed tracing. If a question seems too complex, try to quickly identify the core concept being tested or make an educated guess based on common pitfalls. Don't get stuck on one question."
+        ],
+        "bbox": [
+            63,
+            249,
+            926,
+            554
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.1",
+        "bbox": [
+            67,
+            567,
+            94,
+            581
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Aliasing (1)",
+        "bbox": [
+            467,
+            567,
+            561,
+            583
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.1.1 Aliasing: GATE CSE 2000 | Question: 1.16",
+        "text_level": 1,
+        "bbox": [
+            77,
+            593,
+            452,
+            608
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Aliasing in the context of programming languages refers to",
+        "bbox": [
+            85,
+            617,
+            514,
+            633
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. multiple variables having the same memory location",
+            "B. multiple variables having the same value",
+            "C. multiple variables having the same identifier",
+            "D. multiple uses of the same variable"
+        ],
+        "bbox": [
+            87,
+            642,
+            492,
+            698
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 programming easy aliasing",
+        "bbox": [
+            87,
+            725,
+            294,
+            733
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            739,
+            189,
+            755
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/e33e52e2bde5e86e402259498b56a0b3fac3002e6cdf87c0e2a40318f660ce29.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            596,
+            932,
+            634
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.2",
+        "bbox": [
+            67,
+            764,
+            95,
+            779
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Array (13)",
+        "bbox": [
+            473,
+            764,
+            556,
+            780
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.2.1 Array: GATE CSE 2002 | Question: 2.8",
+        "text_level": 1,
+        "bbox": [
+            77,
+            790,
+            421,
+            805
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following declaration of a two-dimensional array in C:",
+        "bbox": [
+            84,
+            815,
+            571,
+            830
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "char a[100][100];",
+        "bbox": [
+            85,
+            833,
+            223,
+            850
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Assuming that the main memory is byte-addressable and that the array is stored starting from memory address0, the address of a[40][50] is:",
+        "bbox": [
+            84,
+            853,
+            927,
+            884
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 4040",
+        "bbox": [
+            87,
+            896,
+            151,
+            910
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 4050",
+        "bbox": [
+            285,
+            897,
+            346,
+            910
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 5040",
+        "bbox": [
+            478,
+            896,
+            541,
+            910
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 5050",
+        "bbox": [
+            673,
+            896,
+            736,
+            910
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/5c411c4ca1dae4f049e6e2499e5f3696823302cdf968e19d97ea8f5b6a172497.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            794,
+            932,
+            832
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.2.2 Array: GATE CSE 2011 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            416,
+            124
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What does the following fragment of C program print?",
+        "bbox": [
+            85,
+            134,
+            480,
+            149
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/3aef90d4ae42b41d8f5281120f83d9a93b9229797441cdecdda9d8785b49b318.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            931,
+            150
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nchar c[] = \"GATE2011\";\nchar *p = c;\nprintf(\"%s\", p + p[3] - p[1]);\n```",
+        "bbox": [
+            102,
+            157,
+            258,
+            192
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. GATE2011",
+        "bbox": [
+            89,
+            205,
+            203,
+            220
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. E2011",
+        "bbox": [
+            285,
+            206,
+            357,
+            220
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 2011",
+        "bbox": [
+            480,
+            206,
+            541,
+            220
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 011",
+        "bbox": [
+            673,
+            206,
+            727,
+            220
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 programming programming-in-c normal array",
+        "bbox": [
+            87,
+            231,
+            381,
+            241
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            247,
+            186,
+            261
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.2.3 Array: GATE CSE 2015 | Set 1 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            270,
+            470,
+            283
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What is the output of the following C code? Assume that the address of $x$ is 2000 (in decimal) and an integer requires four bytes of memory.",
+        "bbox": [
+            84,
+            294,
+            878,
+            324
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/72a4c582581208c876dd8a0fa8a8689834326762f2992a678a0dce6836ab8536.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            273,
+            931,
+            311
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```awk\nint main () {\n    unsigned int x [4] [3] =\n    {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};\n    printf (\"%u, %u, %u\", x + 3, *(x + 3), *(x + 2) + 3);\n}\n```",
+        "bbox": [
+            89,
+            332,
+            401,
+            388
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 2036,2036,2036",
+        "bbox": [
+            89,
+            397,
+            236,
+            410
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 2012,4,2204",
+        "bbox": [
+            497,
+            397,
+            615,
+            410
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "c. 2036,10,10",
+        "bbox": [
+            90,
+            410,
+            201,
+            425
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 2012,4,6",
+        "bbox": [
+            497,
+            410,
+            589,
+            425
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 programming programming-in-c array normal",
+        "bbox": [
+            89,
+            429,
+            401,
+            439
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            446,
+            186,
+            460
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.2.4 Array: GATE CSE 2015 | Set 3 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            469,
+            470,
+            483
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two C code segments. $Y$ and $X$ are one and two dimensional arrays of size $n$ and $n \\times n$ respectively, where $2 \\leq n \\leq 10$ . Assume that in both code segments, elements of $Y$ are initialized to 0 and each element $X[i][j]$ of array $X$ is initialized to $i + j$ . Further assume that when stored in main memory all elements of $X$ are in same main memory page frame.",
+        "bbox": [
+            84,
+            492,
+            929,
+            554
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Code segment 1 :",
+        "bbox": [
+            85,
+            557,
+            221,
+            571
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n// initialize elements of Y to 0\n// initialize elements of X[i][j] of X to i+j\nfor (i=0; i<n; i++)\n    Y[i] += X[0][i];\n```",
+        "bbox": [
+            87,
+            581,
+            304,
+            625
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Code segment 2 :",
+        "bbox": [
+            85,
+            635,
+            221,
+            649
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n// initialize elements of Y to 0\n// initialize elements of X[i][j] of X to i+j\nfor (i=0; i<n; i++)\n    Y[i] += X[i][0];\n```",
+        "bbox": [
+            87,
+            659,
+            304,
+            703
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are correct?",
+        "bbox": [
+            85,
+            712,
+            443,
+            726
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "S1: Final contents of array Y will be same in both code segments",
+            "S2: Elements of array X accessed inside the for loop shown in code segment 1 are contiguous in main memory",
+            "S3: Elements of array X accessed inside the for loop shown in code segment 2 are contiguous in main memory"
+        ],
+        "bbox": [
+            85,
+            731,
+            899,
+            783
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Only S2 is correct",
+            "C. Only S1 and S2 are correct",
+            "gatecse-2015-set3 programming-in-c normal array"
+        ],
+        "bbox": [
+            89,
+            794,
+            332,
+            834
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            842,
+            186,
+            856
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.2.5 Array: GATE CSE 2015 | Set 3 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            865,
+            460,
+            878
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program segment.",
+        "bbox": [
+            85,
+            889,
+            405,
+            904
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a79353041a5caa484f0c6fd05f5343f5606a09ef6d4f1d6b3cd6179cd52f8dfe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            868,
+            931,
+            904
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\# include <stdio.h>",
+        "bbox": [
+            89,
+            913,
+            198,
+            923
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2002 programming-in-c programming array easy",
+        "bbox": [
+            87,
+            71,
+            371,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 11
+    }
+]

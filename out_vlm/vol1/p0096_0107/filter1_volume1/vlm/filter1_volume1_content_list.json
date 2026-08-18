@@ -1,0 +1,5423 @@
+[
+    {
+        "type": "text",
+        "text": "4.3.13 Functions: GATE CSE 2005 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            462,
+            103
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/82e6ac9012b9d1d96646639989722b1b69eabcaae464ec93caacd19089e941c9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            931,
+            129
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $f: B \\to C$ and $g: A \\to B$ be two functions and let $h = fog$ . Given that $h$ is an onto function which one of the following is TRUE?",
+        "bbox": [
+            84,
+            112,
+            878,
+            143
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $f$ and $g$ should both be onto functions",
+        "bbox": [
+            87,
+            152,
+            354,
+            179
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $f$ should be onto but $g$ need not to be onto",
+        "bbox": [
+            495,
+            152,
+            759,
+            179
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $g$ should be onto but $f$ need not be onto",
+        "bbox": [
+            89,
+            179,
+            354,
+            205
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. both $f$ and $g$ need not be onto",
+        "bbox": [
+            495,
+            179,
+            727,
+            194
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            211,
+            336,
+            220
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            226,
+            189,
+            241
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3.14 Functions: GATE CSE 2006 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            251,
+            453,
+            264
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/243ace62fbaafbfc703f6843135e524acbd288b14dc0f5c26e58029ad38c2964.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            252,
+            931,
+            290
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $X, Y, Z$ be sets of sizes $x, y$ and $z$ respectively. Let $W = X \\times Y$ and $E$ be the set of all subsets of $W$ . The number of functions from $Z$ to $E$ is",
+        "bbox": [
+            84,
+            274,
+            875,
+            304
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $z^{2^{xy}}$",
+        "bbox": [
+            89,
+            317,
+            142,
+            332
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $z \\times 2^{xy}$",
+        "bbox": [
+            285,
+            318,
+            363,
+            332
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $z^{2^{x+y}}$",
+        "bbox": [
+            480,
+            317,
+            536,
+            332
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $2^{xyz}$",
+        "bbox": [
+            673,
+            318,
+            727,
+            332
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 set-theory&algebra normal functions",
+        "bbox": [
+            87,
+            342,
+            334,
+            353
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            359,
+            189,
+            372
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3.15 Functions: GATE CSE 2006 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            382,
+            462,
+            396
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8329df3a46182433722f9565ceecc57be850854c9ed59207db17145e6315fb89.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            385,
+            931,
+            422
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $S = \\{1, 2, 3, \\ldots, m\\}, m > 3$ . Let $X_1, \\ldots, X_n$ be subsets of $S$ each of size 3. Define a function $f$ from $S$ to the set of natural numbers as, $f(i)$ is the number of sets $X_j$ that contain the element $i$ . That is $f(i) = |\\{j \\mid i \\in X_j\\}|$ then $\\sum_{i=1}^{m} f(i)$ is:",
+        "bbox": [
+            84,
+            406,
+            878,
+            458
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 3m",
+        "bbox": [
+            89,
+            470,
+            142,
+            484
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $3n$",
+        "bbox": [
+            285,
+            470,
+            329,
+            484
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $2m + 1$",
+        "bbox": [
+            480,
+            470,
+            559,
+            484
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $2n + 1$",
+        "bbox": [
+            673,
+            470,
+            749,
+            484
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 set-theory&algebra normal functions",
+        "bbox": [
+            87,
+            494,
+            334,
+            504
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            511,
+            189,
+            524
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3.16 Functions: GATE CSE 2007 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            534,
+            453,
+            548
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/ffdc55cc87261a3d296f961f97344fe986e24b0d9906bc22a9a63e17a7c16fa5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            536,
+            931,
+            574
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "What is the maximum number of different Boolean functions involving n Boolean variables?",
+        "bbox": [
+            84,
+            558,
+            752,
+            573
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $n^2$",
+        "bbox": [
+            89,
+            586,
+            134,
+            600
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $2^{n}$",
+        "bbox": [
+            285,
+            586,
+            327,
+            600
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{2^n}$",
+        "bbox": [
+            480,
+            585,
+            526,
+            600
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $2^{n^2}$",
+        "bbox": [
+            673,
+            584,
+            721,
+            600
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 combinatory functions normal",
+        "bbox": [
+            87,
+            611,
+            309,
+            621
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            627,
+            189,
+            641
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3.17 Functions: GATE CSE 2012 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            650,
+            462,
+            665
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/cad3dd2f43ac014e88d9b99cebf4d4872cbb2fa95c9ffb78b34eafe71878d4e4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            653,
+            931,
+            691
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "How many onto (or surjective) functions are there from an $n$ -element $(n \\geq 2)$ set to a 2-element set?",
+        "bbox": [
+            84,
+            675,
+            823,
+            691
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $2^{n}$",
+        "bbox": [
+            89,
+            717,
+            132,
+            731
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $2^{n} - 1$",
+        "bbox": [
+            285,
+            718,
+            349,
+            732
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{n} - 2$",
+        "bbox": [
+            480,
+            718,
+            544,
+            732
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $2(2^{n} - 2)$",
+        "bbox": [
+            673,
+            717,
+            759,
+            733
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            742,
+            334,
+            752
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            758,
+            189,
+            771
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3.18 Functions: GATE CSE 2014 | Set 1 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            782,
+            515,
+            796
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/011c63b9a00f4b2857baf2087386c7ef4a9ee76bbe80dafbc6faa97baedeed22.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            783,
+            931,
+            821
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $S$ denote the set of all functions $f: \\{0,1\\}^4 \\to \\{0,1\\}$ . Denote by $N$ the number of functions from $S$ to the set $\\{0,1\\}$ . The value of $\\log_2 \\log_2 N$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            806,
+            878,
+            840
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 set-theory&algebra functions combinatory numerical-answers",
+        "bbox": [
+            87,
+            856,
+            468,
+            866
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            872,
+            189,
+            887
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3.19 Functions: GATE CSE 2014 | Set 3 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            505,
+            79
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/9c5aa22b336e6878b6f8c3314c8ec3af6f7e3231ce46753f45fa94e9f8bddb87.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ and $Y$ be finite sets and $f: X \\to Y$ be a function. Which one of the following statements is TRUE?",
+        "bbox": [
+            84,
+            87,
+            865,
+            104
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. For any subsets $A$ and $B$ of $X$ , $|f(A \\cup B)| = |f(A)| + |f(B)|$",
+            "B. For any subsets $A$ and $B$ of $X$ , $f(A \\cap B) = f(A) \\cap f(B)$",
+            "C. For any subsets $A$ and $B$ of $X$ , $|f(A \\cap B)| = \\min\\{|f(A)|, |f(B)|\\}$",
+            "D. For any subsets $S$ and $T$ of $Y$ , $f^{-1}(S \\cap T) = f^{-1}(S) \\cap f^{-1}(T)$"
+        ],
+        "bbox": [
+            87,
+            115,
+            618,
+            179
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            203,
+            357,
+            213
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            219,
+            186,
+            233
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.3.20 Functions: GATE CSE 2014 | Set 3 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            243,
+            514,
+            258
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/fb73c817a772d8762d6beb44b3fcba2fbd6a7892cd7ad73b7dc06a8a07e5574d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            245,
+            931,
+            283
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the set of all functions $f: \\{0, 1, \\ldots, 2014\\} \\to \\{0, 1, \\ldots, 2014\\}$ such that $f(f(i)) = i$ , for all $0 \\leq i \\leq 2014$ . Consider the following statements:",
+        "bbox": [
+            84,
+            266,
+            870,
+            298
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "P. For each such function it must be the case that for every i, $f(i) = i$ .",
+        "bbox": [
+            85,
+            301,
+            606,
+            318
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "$Q$ . For each such function it must be the case that for some $i, f(i) = i$ .",
+        "bbox": [
+            85,
+            320,
+            606,
+            338
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "R. Each function must be onto.",
+        "bbox": [
+            87,
+            340,
+            317,
+            353
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is CORRECT?",
+        "bbox": [
+            85,
+            358,
+            394,
+            372
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $P, Q$ and $R$ are true",
+        "bbox": [
+            87,
+            383,
+            253,
+            397
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. Only $P$ and $Q$ are true",
+        "bbox": [
+            89,
+            397,
+            268,
+            410
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            416,
+            356,
+            425
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. Only $Q$ and $R$ are true",
+        "bbox": [
+            495,
+            383,
+            673,
+            397
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. Only $R$ is true",
+        "bbox": [
+            497,
+            397,
+            616,
+            410
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            432,
+            186,
+            446
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.3.21 Functions: GATE CSE 2015 | Set 1 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            456,
+            505,
+            469
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/dd72e7ce8a79f1603ef9560d36b2685acc821e07c145d6277aa860aca32345dd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            458,
+            931,
+            495
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "If $g(x) = 1 - x$ and $h(x) = \\frac{x}{x - 1}$ , then $\\frac{g(h(x))}{h(g(x))}$ is:",
+        "bbox": [
+            85,
+            480,
+            450,
+            505
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{h(x)}{g(x)}$",
+        "bbox": [
+            89,
+            514,
+            142,
+            538
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{-1}{x}$",
+        "bbox": [
+            285,
+            516,
+            329,
+            535
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{g(x)}{h(x)}$",
+        "bbox": [
+            480,
+            515,
+            532,
+            536
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{x}{(1-x)^{2}}$",
+        "bbox": [
+            675,
+            517,
+            739,
+            538
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            542,
+            356,
+            552
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            558,
+            186,
+            572
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.3.22 Functions: GATE CSE 2015 | Set 2 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            78,
+            581,
+            514,
+            596
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/57a198e759f9a91091055813c287093d67ae8380d05b79d415e56287cf78b1b4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            584,
+            931,
+            621
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The number of onto functions (surjective functions) from set $X = \\{1, 2, 3, 4\\}$ to set $Y = \\{a, b, c\\}$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            605,
+            878,
+            635
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 set-theory&algebra functions normal numerical-answers",
+        "bbox": [
+            87,
+            649,
+            445,
+            659
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            665,
+            186,
+            679
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.3.23 Functions: GATE CSE 2015 | Set 2 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            688,
+            514,
+            703
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/1b980ba1d38bd4d15ff1020c4e793442718dd1b0c3eca76acabe192fafda0276.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            691,
+            931,
+            729
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ and $Y$ denote the sets containing 2 and 20 distinct objects respectively and $F$ denote the set of all possible functions defined from $X$ to $Y$ . Let $f$ be randomly chosen from $F$ . The probability of $f$ being one-to-one is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            712,
+            878,
+            757
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 set-theory&algebra functions normal numerical-answers",
+        "bbox": [
+            87,
+            771,
+            445,
+            781
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            787,
+            186,
+            801
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.3.24 Functions: GATE CSE 2016 | Set 1 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            809,
+            514,
+            825
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/7c7db183c59c9b19315a2fae7d23dae20b76726b1ef66940f5964f95af833c4e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            813,
+            931,
+            851
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A function $f : N^{+} \\to N^{+}$ , defined on the set of positive integers $N^{+}$ , satisfies the following properties:",
+        "bbox": [
+            84,
+            834,
+            836,
+            851
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf (n) = f (n / 2) \\text {if} n \\text {is even}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            174,
+            864,
+            391,
+            881
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf (n) = f (n + 5) \\text {   if   } n \\text {   is   odd }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            176,
+            891,
+            391,
+            910
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let $R = \\{i \\mid \\exists j : f(j) = i\\}$ be the set of distinct values that $f$ takes. The maximum possible size of $R$ is",
+        "bbox": [
+            84,
+            64,
+            929,
+            81
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 set-theory&algebra functions normal numerical-answers",
+        "bbox": [
+            87,
+            108,
+            445,
+            118
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            125,
+            186,
+            138
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.3.25 Functions: GATE CSE 2021 | Set 2 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            77,
+            148,
+            514,
+            162
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sets, where $n \\geq 2$ :",
+        "bbox": [
+            85,
+            171,
+            396,
+            187
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S_{1}$ : Set of all $n \\times n$ matrices with entries from the set $\\{a, b, c\\}$",
+            "- $S_{2}$ : Set of all functions from the set $\\{0,1,2,\\dots,n^{2}-1\\}$ to the set $\\{0,1,2\\}$"
+        ],
+        "bbox": [
+            97,
+            197,
+            680,
+            232
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following choice(s) is/are correct?",
+        "bbox": [
+            85,
+            239,
+            430,
+            255
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There does not exist a bijection from $S_{1}$ to $S_{2}$",
+            "B. There exists a surjection from $S_{1}$ to $S_{2}$",
+            "C. There exists a bijection from $S_{1}$ to $S_{2}$",
+            "D. There does not exist an injection from $S_{1}$ to $S_{2}$"
+        ],
+        "bbox": [
+            87,
+            266,
+            453,
+            326
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 multiple-selects set-theory&algebra functions one-mark",
+        "bbox": [
+            87,
+            351,
+            445,
+            361
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            368,
+            186,
+            382
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.3.26 Functions: GATE CSE 2023 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            77,
+            391,
+            460,
+            404
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Let $f: A \\to B$ be an onto (or surjective) function, where $A$ and $B$ are nonempty sets. Define an equivalence relation $\\sim$ on the set $A$ as",
+        "bbox": [
+            84,
+            415,
+            878,
+            446
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/0adfef3cc7c4e991a8eb943e4b5a1df8b82361eb6ea0fdfcc48173c324bd5be8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            150,
+            932,
+            188
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\na _ {1} \\sim a _ {2} \\text {   if   } f (a _ {1}) = f (a _ {2}),\n$$",
+        "text_format": "latex",
+        "bbox": [
+            400,
+            456,
+            613,
+            475
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $a_1, a_2 \\in A$ . Let $\\mathcal{E} = \\{[x] : x \\in A\\}$ be the set of all the equivalence classes under $\\sim$ . Define a new mapping $F : \\mathcal{E} \\to B$ as",
+        "bbox": [
+            82,
+            497,
+            927,
+            528
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF ([ x ]) = f (x), \\quad \\text { for   all   the   equivalence   classes   } [ x ] \\text {   in   } \\mathcal {E}.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            280,
+            538,
+            729,
+            557
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE?",
+        "bbox": [
+            84,
+            579,
+            448,
+            595
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $F$ is NOT well-defined.",
+        "bbox": [
+            87,
+            604,
+            268,
+            618
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $F$ is an onto (or surjective) function.",
+        "bbox": [
+            495,
+            604,
+            757,
+            630
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $F$ is a one-to-one (or injective) function.",
+        "bbox": [
+            87,
+            630,
+            352,
+            655
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $F$ is a bijective function.",
+        "bbox": [
+            495,
+            630,
+            680,
+            644
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 set-theory&algebra functions multiple-selects two-marks",
+        "bbox": [
+            87,
+            662,
+            428,
+            672
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            678,
+            186,
+            693
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.3.27 Functions: GATE CSE 2024 | Set 1 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            77,
+            701,
+            514,
+            716
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ and $B$ be non-empty finite sets such that there exist one-to-one and onto functions (i) from $A$ to $B$ and (ii) from $A \\times A$ to $A \\cup B$ . The number of possible values of $|A|$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            726,
+            878,
+            758
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/e2c8af83734791a6c9fdad880bf714788cc00e9e2d5618060c1b0df36104cce3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            705,
+            932,
+            742
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 numerical-answers set-theory&algebra functions one-mark",
+        "bbox": [
+            87,
+            771,
+            455,
+            781
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            787,
+            186,
+            801
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.3.28 Functions: GATE DA 2026 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            77,
+            809,
+            450,
+            825
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The number of bijections $f(\\cdot)$ from the set $S = \\{1, 2, 3, 4\\}$ to itself such that $f(f(n)) = n$ , for all $n \\in S$ , is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            84,
+            834,
+            873,
+            865
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/1dc3a6174058e6eb86a1b97712a650f74b5c881768af7acb3879897985be927c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            813,
+            932,
+            851
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 set-theory&algebra functions numerical-answers one-mark",
+        "bbox": [
+            87,
+            878,
+            431,
+            888
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            894,
+            186,
+            909
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.3.29 Functions: GATE IT 2005 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            440,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/321a11aabb3968ccead5aeb6627066aac9280e290f3b250e62410cbff90ce591.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $f$ be a function from a set $A$ to a set $B$ , $g$ a function from $B$ to $C$ , and $h$ a function from $A$ to $C$ , such that $h(a) = g(f(a))$ for all $a \\in A$ . Which of the following statements is always true for all such functions $f$ and $g$ ?",
+        "bbox": [
+            84,
+            89,
+            878,
+            134
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $g$ is onto $\\Longrightarrow h$ is onto",
+            "C. h is onto $\\Longrightarrow$ g is onto",
+            "gateit-2005 set-theory&algebra functions normal"
+        ],
+        "bbox": [
+            87,
+            143,
+            329,
+            186
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $h$ is onto $\\Longrightarrow f$ is onto",
+        "bbox": [
+            495,
+            143,
+            687,
+            157
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $h$ is onto $\\Longrightarrow f$ and $g$ are onto",
+        "bbox": [
+            497,
+            157,
+            739,
+            172
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            192,
+            181,
+            206
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.3.30 Functions: GATE IT 2006 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            216,
+            433,
+            230
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Given a boolean function $f(x_{1}, x_{2}, \\ldots, x_{n})$ , which of the following equations is NOT true?",
+        "bbox": [
+            85,
+            239,
+            752,
+            257
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $f(x_{1},x_{2},\\dots ,x_{n}) = x_{1}^{\\prime}f(x_{1},x_{2},\\dots ,x_{n}) + x_{1}f(x_{1},x_{2},\\dots ,x_{n})$",
+            "B. $f(x_{1},x_{2},\\dots ,x_{n}) = x_{2}f(x_{1},x_{2},\\dots ,x_{n}) + x_{2}^{\\prime}f(x_{1},x_{2},\\dots ,x_{n})$",
+            "C. $f(x_{1},x_{2},\\dots ,x_{n}) = x_{n}^{\\prime}f(x_{1},x_{2},\\dots ,0) + x_{n}\\bar{f}(x_{1},x_{2},\\dots ,1)$",
+            "D. $f(x_{1},x_{2},\\ldots ,x_{n}) = f(0,x_{2},\\ldots ,x_{n}) + f(1,x_{2},\\ldots ,x_{n})$"
+        ],
+        "bbox": [
+            87,
+            266,
+            613,
+            330
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            353,
+            329,
+            363
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            370,
+            181,
+            384
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/0a33d954ab2336a7e5b63b41dd32195015be5c3732cb927ef6e13db9814a6318.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            218,
+            932,
+            257
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4",
+        "text_level": 1,
+        "bbox": [
+            68,
+            394,
+            95,
+            407
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Group Theory (33)",
+        "text_level": 1,
+        "bbox": [
+            440,
+            394,
+            589,
+            409
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.1 Group Theory: GATE CSE 1988 | Question: 2xviii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            420,
+            505,
+            435
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Show that if $G$ is a group such that $(a * b)^2 = a^2 * b^2$ for all $a, b$ belonging to $G$ , then $G$ is an abelian.",
+        "bbox": [
+            85,
+            444,
+            830,
+            463
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1988 descriptive group-theory",
+        "bbox": [
+            87,
+            475,
+            258,
+            486
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            491,
+            181,
+            505
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/33a70b2a4a80a63a40c75b6e23dd69442eb5bd7f71487448424f826381a8d54a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            423,
+            932,
+            461
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.2 Group Theory: GATE CSE 1990 | Question: 2-x",
+        "text_level": 1,
+        "bbox": [
+            78,
+            515,
+            487,
+            530
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Match the pairs in the following questions:",
+        "bbox": [
+            85,
+            539,
+            396,
+            554
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/10ed387bef29d1d4240ccca1343bf06f35bb893f7b8c2d1a86d0ac557d675549.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(a)</td><td>Groups</td><td>(p)</td><td>Associativity</td></tr><tr><td>(b)</td><td>Semigroups</td><td>(q)</td><td>Identity</td></tr><tr><td>(c)</td><td>Monoids</td><td>(r)</td><td>Commutativity</td></tr><tr><td>(d)</td><td>Abelian groups</td><td>(s)</td><td>Left inverse</td></tr></table>",
+        "bbox": [
+            315,
+            565,
+            702,
+            648
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/92773e1eb701a673b2891f4f2329ebdc418e6b5ed3fdb8920ccc561b3a78d1dd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            517,
+            932,
+            555
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1990 match-the-following set-theory&algebra group-theory easy",
+        "bbox": [
+            87,
+            672,
+            423,
+            682
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            688,
+            181,
+            701
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.3 Group Theory: GATE CSE 1992 | Question: 14a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            712,
+            490,
+            726
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "If $G$ is a group of even order, then show that there exists an element $a \\neq e$ , the identity in $G$ , such that $a^2 = e$ .",
+        "bbox": [
+            84,
+            735,
+            873,
+            767
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1992 set-theory&algebra group-theory normal descriptive proof",
+        "bbox": [
+            87,
+            781,
+            431,
+            792
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            798,
+            181,
+            812
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/1de2ce10be534339fdd00290f9416c10616e2f64f7c110e2a291c78afccc471c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            714,
+            932,
+            752
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.4 Group Theory: GATE CSE 1993 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            821,
+            482,
+            836
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $(\\{p,q\\},*)$ be a semigroup where $p*p=q$ . Show that:",
+        "bbox": [
+            85,
+            845,
+            529,
+            863
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. $p * q = q * p$ and",
+            "b. $q * q = q$"
+        ],
+        "bbox": [
+            89,
+            872,
+            248,
+            902
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/022e9968a1f1ea8aca6c4d2a384a8114371ef7758a9a87a90421988720c79e88.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            824,
+            932,
+            862
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.5 Group Theory: GATE CSE 1994 | Question: 1.10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            495,
+            124
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Some group $(G, o)$ is known to be abelian. Then, which one of the following is true for $G$ ?",
+        "bbox": [
+            85,
+            134,
+            739,
+            150
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $g = g^{-1}$ for every $g\\in G$",
+        "bbox": [
+            87,
+            160,
+            295,
+            176
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $g = g^{2}$ for every $g\\in G$",
+        "bbox": [
+            495,
+            160,
+            690,
+            176
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $(goh)^2 = g^2oh^2$ for every $g, h \\in G$",
+        "bbox": [
+            89,
+            179,
+            366,
+            195
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $G$ is of finite order",
+        "bbox": [
+            495,
+            179,
+            643,
+            193
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1994 set-theory&algebra group-theory normal",
+        "bbox": [
+            87,
+            204,
+            334,
+            214
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            220,
+            186,
+            233
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.6 Group Theory: GATE CSE 1995 | Question: 2.17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            243,
+            495,
+            258
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ be the set of all non-singular matrices over real number and let $*$ be the matrix multiplication operation. Then",
+        "bbox": [
+            84,
+            268,
+            878,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/d528ffdf336d3a30468cfd16ffe2757dd8dd04decb177cc15a0a8b1ebb7360c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            932,
+            150
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A is closed under \\* but $\\langle A, *\\rangle$ is not a semigroup.",
+            "B. $\\langle A, * \\rangle$ is a semigroup but not a monoid.",
+            "C. $\\langle A, * \\rangle$ is a monoid but not a group.",
+            "D. $\\langle A, *\\rangle$ is a group but not an abelian group."
+        ],
+        "bbox": [
+            87,
+            308,
+            480,
+            370
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1995 set-theory&algebra group-theory",
+        "bbox": [
+            87,
+            395,
+            292,
+            404
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            410,
+            186,
+            425
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.7 Group Theory: GATE CSE 1995 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            435,
+            480,
+            448
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $G_{1}$ and $G_{2}$ be subgroups of a group G.",
+        "bbox": [
+            85,
+            458,
+            403,
+            473
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Show that $G_{1} \\cap G_{2}$ is also a subgroup of $G$ .",
+            "B. Is $G_{1} \\cup G_{2}$ always a subgroup of $G$ ?"
+        ],
+        "bbox": [
+            87,
+            484,
+            436,
+            515
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1995 set-theory&algebra group-theory normal descriptive proof",
+        "bbox": [
+            87,
+            540,
+            431,
+            549
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            557,
+            186,
+            571
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.8 Group Theory: GATE CSE 1996 | Question: 1.4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            580,
+            487,
+            593
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is FALSE?",
+        "bbox": [
+            85,
+            604,
+            416,
+            619
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/f6c47cafda960d5823c33be8d39662dc11b9677d88a9f9f1998cde10f634a4ce.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            247,
+            932,
+            283
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The set of rational numbers is an abelian group under addition",
+            "B. The set of integers in an abelian group under addition",
+            "C. The set of rational numbers form an abelian group under multiplication",
+            "D. The set of real numbers excluding zero is an abelian group under multiplication"
+        ],
+        "bbox": [
+            87,
+            629,
+            687,
+            686
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1996 set-theory&algebra group-theory normal",
+        "bbox": [
+            87,
+            711,
+            334,
+            720
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            726,
+            186,
+            741
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.9 Group Theory: GATE CSE 1996 | Question: 2.4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            751,
+            487,
+            764
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is false?",
+        "bbox": [
+            85,
+            774,
+            347,
+            789
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/475f92d08e1e52f4cbeed885dfc71c2fca679c446a3df22bb0f8fba1ae237434.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            583,
+            932,
+            621
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The set of all bijective functions on a finite set forms a group under function composition",
+            "B. The set $\\{1,2,\\dots p - 1\\}$ forms a group under multiplication mod $p$ , where $p$ is a prime number",
+            "C. The set of all strings over a finite alphabet forms a group under concatenation",
+            "D. A subset $S \\neq \\emptyset$ of $G$ is a subgroup of the group $\\langle G, * \\rangle$ if and only if for any pair of elements $a, b \\in S, a * b^{-1} \\in S$"
+        ],
+        "bbox": [
+            87,
+            800,
+            924,
+            876
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "gate1993 set-theory&algebra group-theory normal descriptive",
+        "bbox": [
+            87,
+            71,
+            394,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "gate1996 set-theory&algebra normal set-theory group-theory",
+        "bbox": [
+            87,
+            901,
+            391,
+            910
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.10 Group Theory: GATE CSE 1997 | Question: 3.1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            495,
+            104
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $(Z,*)$ be an algebraic structure where Z is the set of integers and the operation \\* is defined by $n * m = \\max(n, m)$ . Which of the following statements is true for $(Z,*)$ ?",
+        "bbox": [
+            84,
+            112,
+            875,
+            146
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/cf4c127fcc7a5da29518ab9b6284de18b0058babefcb58ada2c43c695805677a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $(Z,*)$ is a monoid",
+        "bbox": [
+            87,
+            154,
+            242,
+            169
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $(Z,*)$ is an Abelian group",
+        "bbox": [
+            495,
+            154,
+            699,
+            169
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $(Z,*)$ is a group",
+        "bbox": [
+            90,
+            169,
+            230,
+            184
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            497,
+            169,
+            645,
+            181
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1997 set-theory&algebra group-theory normal",
+        "bbox": [
+            87,
+            188,
+            334,
+            198
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            204,
+            188,
+            218
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.11 Group Theory: GATE CSE 1998 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            226,
+            492,
+            242
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $(A, *)$ be a semigroup, Furthermore, for every a and b in A, if $a \\neq b$ , then $a * b \\neq b * a$ .",
+        "bbox": [
+            85,
+            251,
+            759,
+            269
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/5f648e03544be4879bd9068fd5b0cc3515477d3e8d055768ce6b4bb44bfc5234.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            230,
+            932,
+            268
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. Show that for every $a$ in $A$ , $a * a = a$",
+            "b. Show that for every $a, b$ in $A$ , $a * b * a = a$",
+            "c. Show that for every $a, b, c$ in $A$ , $a * b * c = a * c$"
+        ],
+        "bbox": [
+            89,
+            279,
+            477,
+            325
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1998 set-theory&algebra group-theory descriptive",
+        "bbox": [
+            87,
+            350,
+            351,
+            359
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            366,
+            188,
+            380
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.12 Group Theory: GATE CSE 1999 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            390,
+            484,
+            404
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a finite group and $H$ be a subgroup of $G$ . For $a \\in G$ , define $aH = \\{ah \\mid h \\in H\\}$ .",
+        "bbox": [
+            85,
+            413,
+            759,
+            431
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e80f6b8b66ba30ee1f11cff564560d4aadafcdde65c3cf92f150b95071d7ee0f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            391,
+            932,
+            429
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. Show that $|aH| = |bH|$ .",
+            "b. Show that for every pair of elements $a, b \\in G$ , either $aH = bH$ or $aH$ and $bH$ are disjoint.",
+            "c. Use the above to argue that the order of H must divide the order of G."
+        ],
+        "bbox": [
+            89,
+            440,
+            779,
+            494
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1999 set-theory&algebra group-theory descriptive proof",
+        "bbox": [
+            87,
+            519,
+            389,
+            529
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            536,
+            188,
+            549
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.13 Group Theory: GATE CSE 2000 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            559,
+            482,
+            574
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $S = \\{0, 1, 2, 3, 4, 5, 6, 7\\}$ and $\\otimes$ denote multiplication modulo 8, that is, $x \\otimes y = (xy) \\mod 8$",
+        "bbox": [
+            85,
+            583,
+            828,
+            600
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/a8a16245517c0dbb53eeabeba454b6ec73990cb31b3e13d09494d29d24a63dea.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            562,
+            932,
+            600
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. Prove that $(\\{0,1\\},\\otimes)$ is not a group.",
+            "b. Write three distinct groups $(G, \\otimes)$ where $G \\subset S$ and $G$ has 2 elements."
+        ],
+        "bbox": [
+            89,
+            610,
+            640,
+            642
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 set-theory&algebra descriptive group-theory",
+        "bbox": [
+            87,
+            666,
+            368,
+            676
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            682,
+            188,
+            697
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.14 Group Theory: GATE CSE 2002 | Question: 1.6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            706,
+            497,
+            720
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is true?",
+        "bbox": [
+            85,
+            730,
+            309,
+            745
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/91bb1d4dacda497ba090ce6ef0dabaf2ac9426ad1339d62ea6745bced76c6b8b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            709,
+            932,
+            747
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The set of all rational negative numbers forms a group under multiplication.",
+            "B. The set of all non-singular matrices forms a group under multiplication.",
+            "C. The set of all matrices forms a group under multiplication.",
+            "D. Both B and C are true."
+        ],
+        "bbox": [
+            87,
+            755,
+            658,
+            809
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 set-theory&algebra group-theory normal",
+        "bbox": [
+            87,
+            837,
+            351,
+            847
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            853,
+            188,
+            868
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.15 Group Theory: GATE CSE 2003 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            877,
+            482,
+            891
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the set $\\Sigma^{*}$ of all strings over the alphabet $\\Sigma = \\{0,1\\}$ . $\\Sigma^{*}$ with the concatenation operator for strings",
+        "bbox": [
+            84,
+            901,
+            878,
+            931
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/3ec3a6f8625f3e99a9fe0ac42049a69c12eec33eff2490cfdddfdfec4a33a98e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            878,
+            932,
+            916
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. does not form a group",
+            "B. forms a non-commutative group",
+            "C. does not have a right identity element",
+            "D. forms a group if the empty string is removed from $\\Sigma^{*}$"
+        ],
+        "bbox": [
+            87,
+            65,
+            495,
+            121
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 set-theory&algebra group-theory normal",
+        "bbox": [
+            87,
+            147,
+            351,
+            157
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            163,
+            186,
+            178
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.16 Group Theory: GATE CSE 2004 | Question: 72",
+        "text_level": 1,
+        "bbox": [
+            78,
+            187,
+            492,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The following is the incomplete operation table of a 4-element group.",
+        "bbox": [
+            85,
+            211,
+            596,
+            226
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/650bf1e3e5bb59f142f25f01424ae2cf74e08541285b3bc1c5ab3825aef71ece.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>*</td><td>e</td><td>a</td><td>b</td><td>c</td></tr><tr><td>e</td><td>e</td><td>a</td><td>b</td><td>c</td></tr><tr><td>a</td><td>a</td><td>b</td><td>c</td><td>e</td></tr><tr><td>b</td><td></td><td></td><td></td><td></td></tr><tr><td>c</td><td></td><td></td><td></td><td></td></tr></table>",
+        "bbox": [
+            431,
+            237,
+            584,
+            337
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/75e4427503216ee25e8d09638880a5c79166beda20c60e1d45fb7626c8242453.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            190,
+            931,
+            226
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The last row of the table is",
+        "bbox": [
+            85,
+            346,
+            282,
+            359
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. caeb",
+            "C. c b e a"
+        ],
+        "bbox": [
+            89,
+            370,
+            164,
+            396
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 set-theory&algebra group-theory normal",
+        "bbox": [
+            87,
+            403,
+            351,
+            413
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. c b a e",
+            "D. c e a b"
+        ],
+        "bbox": [
+            495,
+            370,
+            569,
+            396
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            419,
+            186,
+            433
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.17 Group Theory: GATE CSE 2005 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            442,
+            490,
+            457
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The set $\\{1,2,4,7,8,11,13,14\\}$ is a group under multiplication modulo 15. The inverses of 4 and 7 are respectively:",
+        "bbox": [
+            84,
+            466,
+            878,
+            497
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/f525351caff99f8433deb82eee2658a6e96ad754421a94e7e566a23a285a010f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            445,
+            931,
+            483
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 3 and 13",
+        "bbox": [
+            89,
+            510,
+            178,
+            523
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 2 and 11",
+        "bbox": [
+            285,
+            510,
+            371,
+            523
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 4 and 13",
+        "bbox": [
+            480,
+            510,
+            566,
+            523
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 8 and 14",
+        "bbox": [
+            673,
+            510,
+            761,
+            523
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 set-theory&algebra normal group-theory",
+        "bbox": [
+            87,
+            534,
+            351,
+            543
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            549,
+            186,
+            565
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.18 Group Theory: GATE CSE 2005 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            574,
+            490,
+            587
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the set $H$ of all $3 * 3$ matrices of the type",
+        "bbox": [
+            85,
+            598,
+            460,
+            614
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/8916eb9196aa20a77e3ade09e33e500efc3c48a949a1cc8a0bac427a4a6b216f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            577,
+            931,
+            614
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left( \\begin{array}{c c c} a & f & e \\\\ 0 & b & d \\\\ 0 & 0 & c \\end{array} \\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            453,
+            624,
+            559,
+            681
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "where $a, b, c, d, e$ and $f$ are real numbers and $abc \\neq 0$ . Under the matrix multiplication operation, the set $H$ is:",
+        "bbox": [
+            84,
+            688,
+            899,
+            706
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. a group",
+            "C. a semi group but not a monoid"
+        ],
+        "bbox": [
+            89,
+            714,
+            319,
+            741
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 set-theory&algebra group-theory normal",
+        "bbox": [
+            87,
+            745,
+            351,
+            756
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. a monoid but not a group",
+            "D. neither a group nor a semi group"
+        ],
+        "bbox": [
+            495,
+            714,
+            741,
+            741
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            762,
+            186,
+            776
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.19 Group Theory: GATE CSE 2006 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            786,
+            482,
+            800
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The set $\\{1,2,3,5,7,8,9\\}$ under multiplication modulo 10 is not a group. Given below are four possible reasons. Which one of them is false?",
+        "bbox": [
+            84,
+            809,
+            878,
+            838
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/c013ef22d2f7cfe57be77ba51e35500e63d0774049ee114b0939551d0e1e4ffb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            788,
+            931,
+            826
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It is not closed",
+            "C. 3 does not have an inverse"
+        ],
+        "bbox": [
+            89,
+            850,
+            297,
+            875
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 set-theory&algebra group-theory normal",
+        "bbox": [
+            87,
+            881,
+            351,
+            891
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. 2 does not have an inverse",
+            "D. 8 does not have an inverse"
+        ],
+        "bbox": [
+            495,
+            850,
+            704,
+            875
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            897,
+            186,
+            910
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/80f2c307962787e499cc86dd101eb12896d6154c2bd2d379b1315825e3f016a9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            897,
+            931,
+            910
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.20 Group Theory: GATE CSE 2007 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            490,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "How many different non-isomorphic Abelian groups of order 4 are there?",
+        "bbox": [
+            85,
+            89,
+            618,
+            104
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            118,
+            127,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 3",
+        "bbox": [
+            285,
+            117,
+            321,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 4",
+        "bbox": [
+            480,
+            117,
+            515,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 5",
+        "bbox": [
+            673,
+            118,
+            710,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 group-theory normal",
+        "bbox": [
+            89,
+            142,
+            258,
+            150
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            157,
+            188,
+            172
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.4.21 Group Theory: GATE CSE 2009 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            182,
+            480,
+            195
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is NOT necessarily a property of a Group?",
+        "bbox": [
+            85,
+            205,
+            593,
+            220
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. Commutativity",
+        "bbox": [
+            89,
+            231,
+            211,
+            243
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. Associativity",
+        "bbox": [
+            497,
+            231,
+            605,
+            243
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. Existence of inverse for every element",
+        "bbox": [
+            90,
+            244,
+            352,
+            268
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. Existence of identity",
+        "bbox": [
+            497,
+            244,
+            655,
+            257
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 set-theory&algebra easy group-theory",
+        "bbox": [
+            87,
+            275,
+            341,
+            285
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            290,
+            188,
+            305
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.4.22 Group Theory: GATE CSE 2009 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            315,
+            492,
+            328
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For the composition table of a cyclic group shown below:",
+        "bbox": [
+            85,
+            338,
+            502,
+            353
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/fb58ee74d61ece3ffdd5142bb742548b8da60d418232db6b9ed83bf06eefdb41.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>*</td><td>a</td><td>b</td><td>c</td><td>d</td></tr><tr><td>a</td><td>a</td><td>b</td><td>c</td><td>d</td></tr><tr><td>b</td><td>b</td><td>a</td><td>d</td><td>c</td></tr><tr><td>c</td><td>c</td><td>d</td><td>b</td><td>a</td></tr><tr><td>d</td><td>d</td><td>c</td><td>a</td><td>b</td></tr></table>",
+        "bbox": [
+            430,
+            364,
+            584,
+            463
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/57b08009dc0c625bdcdba6e94a03cdf3bbbb0d9887fd217eb6e3a6ddde9235a8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/c5faf7d325eb35e3934d4db5f4da807e7930b40fc17bf8cefb2dde1e14e724b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            184,
+            931,
+            222
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/84fcc668c8ccf1299ad55daf2431ce34ce35901ffe8f3d297a1ee3f4a7ce5f5a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            317,
+            931,
+            355
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following choices is correct?",
+        "bbox": [
+            85,
+            486,
+            423,
+            501
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $a, b$ are generators",
+        "bbox": [
+            89,
+            511,
+            242,
+            524
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $b, c$ are generators",
+        "bbox": [
+            497,
+            511,
+            647,
+            524
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $c, d$ are generators",
+        "bbox": [
+            90,
+            524,
+            243,
+            539
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $d, a$ are generators",
+        "bbox": [
+            497,
+            524,
+            650,
+            539
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 set-theory&algebra normal group-theory",
+        "bbox": [
+            87,
+            543,
+            351,
+            554
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            560,
+            188,
+            574
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.4.23 Group Theory: GATE CSE 2010 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            584,
+            482,
+            598
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the set $S = \\{1, \\omega, \\omega^2\\}$ , where $\\omega$ and $\\omega^2$ are cube roots of unity. If $*$ denotes the multiplication operation, the structure $(S, *)$ forms",
+        "bbox": [
+            84,
+            608,
+            878,
+            642
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. A Group",
+        "bbox": [
+            89,
+            654,
+            173,
+            668
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. A Ring",
+        "bbox": [
+            285,
+            654,
+            356,
+            668
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. An integral domain",
+        "bbox": [
+            480,
+            654,
+            631,
+            668
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. A field",
+        "bbox": [
+            675,
+            654,
+            742,
+            667
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 set-theory&algebra normal group-theory",
+        "bbox": [
+            87,
+            678,
+            351,
+            688
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            694,
+            188,
+            707
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.4.24 Group Theory: GATE CSE 2014 | Set 3 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            718,
+            534,
+            732
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a group with 15 elements. Let $L$ be a subgroup of $G$ . It is known that $L \\neq G$ and that the size of $L$ is at least 4. The size of $L$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            741,
+            875,
+            771
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 set-theory&algebra group-theory numerical-answers normal",
+        "bbox": [
+            87,
+            785,
+            460,
+            795
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            802,
+            188,
+            815
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.4.25 Group Theory: GATE CSE 2014 | Set 3 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            825,
+            544,
+            839
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "There are two elements $x, y$ in a group $(G, *)$ such that every element in the group can be written as a product of some number of $x$ 's and $y$ 's in some order. It is known that",
+        "bbox": [
+            84,
+            850,
+            878,
+            878
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/bc37976b2be19835354ccd5aeb06fb9fbc49233175b5e7bf2bef36f29e3c37fc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            586,
+            931,
+            623
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/3a08a2d8d01c5036417faed18828129296e7d8e3cfc23eeb9075ac4e0825b188.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            720,
+            931,
+            758
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/ce2efc4a86783024881df8fe562c4cda93d21d42a51760c2f0ed1ab1f119f362.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            828,
+            931,
+            865
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nx * x = y * y = x * y * x * y = y * x * y * x = e\n$$",
+        "text_format": "latex",
+        "bbox": [
+            317,
+            891,
+            697,
+            904
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "where $e$ is the identity element. The maximum number of elements in such a group is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            65,
+            752,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 set-theory&algebra group-theory numerical-answers normal",
+        "bbox": [
+            87,
+            93,
+            460,
+            103
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            124
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.4.26 Group Theory: GATE CSE 2018 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            133,
+            492,
+            148
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a finite group on 84 elements. The size of a largest possible proper subgroup of $G$ is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            156,
+            820,
+            173
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 group-theory numerical-answers set-theory&algebra one-mark",
+        "bbox": [
+            87,
+            186,
+            450,
+            195
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            201,
+            186,
+            217
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.4.27 Group Theory: GATE CSE 2019 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            226,
+            492,
+            241
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let G be an arbitrary group. Consider the following relations on G:",
+        "bbox": [
+            85,
+            249,
+            571,
+            266
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $R_{1} : \\forall a, b \\in G$ , $aR_{1}b$ if and only if $\\exists g \\in G$ such that $a = g^{-1}bg$",
+            "- $R_{2}:\\forall a,b\\in G$ , $aR_{2}b$ if and only if $a = b^{-1}$"
+        ],
+        "bbox": [
+            97,
+            276,
+            616,
+            311
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the above is/are equivalence relation/relations?",
+        "bbox": [
+            85,
+            320,
+            502,
+            334
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $R_{1}$ and $R_{2}$",
+        "bbox": [
+            87,
+            349,
+            191,
+            365
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $R_{1}$ only",
+        "bbox": [
+            285,
+            349,
+            364,
+            364
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $R_{2}$ only",
+        "bbox": [
+            480,
+            349,
+            559,
+            365
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Neither $R_{1}$ nor $R_{2}$",
+        "bbox": [
+            673,
+            349,
+            825,
+            365
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 engineering-mathematics discrete-mathematics set-theory&algebra group-theory one-mark",
+        "bbox": [
+            87,
+            374,
+            581,
+            383
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            389,
+            186,
+            404
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.4.28 Group Theory: GATE CSE 2020 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            413,
+            492,
+            428
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a group of 35 elements. Then the largest possible size of a subgroup of $G$ other than $G$ itself is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            437,
+            878,
+            465
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers group-theory easy one-mark",
+        "bbox": [
+            87,
+            480,
+            389,
+            490
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            496,
+            186,
+            511
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.4.29 Group Theory: GATE CSE 2021 | Set 1 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            78,
+            520,
+            544,
+            534
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a group of order 6, and $H$ be a subgroup of $G$ such that $1 < |H| < 6$ . Which one of the following options is correct?",
+        "bbox": [
+            84,
+            543,
+            875,
+            574
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Both G and H are always cyclic",
+        "bbox": [
+            87,
+            583,
+            334,
+            599
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $G$ may not be cyclic, but $H$ is always cyclic",
+        "bbox": [
+            495,
+            583,
+            759,
+            611
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $G$ is always cyclic, but $H$ may not be cyclic",
+        "bbox": [
+            89,
+            609,
+            352,
+            637
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Both $G$ and $H$ may not be cyclic",
+        "bbox": [
+            495,
+            611,
+            741,
+            625
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 set-theory&algebra group-theory two-marks",
+        "bbox": [
+            87,
+            642,
+            386,
+            652
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            657,
+            186,
+            673
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.4.30 Group Theory: GATE CSE 2022 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            682,
+            492,
+            695
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE for a group G?",
+        "bbox": [
+            85,
+            705,
+            549,
+            720
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. If for all $x, y \\in G$ , $(xy)^2 = x^2y^2$ , then $G$ is commutative.",
+            "B. If for all $x \\in G$ , $x^2 = 1$ , then $G$ is commutative. Here, 1 is the identity element of $G$ .",
+            "C. If the order of $G$ is 2, then $G$ is commutative.",
+            "D. If $G$ is commutative, then a subgroup of $G$ need not be commutative."
+        ],
+        "bbox": [
+            87,
+            732,
+            734,
+            795
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 set-theory&algebra group-theory multiple-selects one-mark",
+        "bbox": [
+            87,
+            820,
+            440,
+            830
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            836,
+            186,
+            850
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.4.31 Group Theory: GATE CSE 2023 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            859,
+            489,
+            874
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let $X$ be a set and $2^{X}$ denote the powerset of $X$ .",
+        "bbox": [
+            85,
+            885,
+            450,
+            902
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Define a binary operation $\\Delta$ on $2^{X}$ as follows:",
+        "bbox": [
+            85,
+            907,
+            423,
+            923
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/72c8bd3ef29ac313a9d7e8a3d0398a602284d014ed7b88871f0eedad7f9d523c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            136,
+            931,
+            173
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d7824a09fc474e5402fb3e2f1bd05664b863397427896adbf7b8d2908036840.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            229,
+            931,
+            267
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/858f81fa93269170e1fcce3d829991c12d3fa1b939ed42212c692a05a59158c4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            416,
+            931,
+            453
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/b4c919c6798e943f871ac9ff44f00e70ac4a4f14b97d6f25513c79cf20fd3a3a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            522,
+            931,
+            560
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/93279b598e521c7189d51c215a2fed409b3a64b8b78ff8d926f7db0ad0c61f83.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            684,
+            931,
+            722
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/e554cf8ee51bcba2a7697b7cf0f03570a91ed9c7adb4e3905fe9f3dcb8967ac3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            862,
+            931,
+            900
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\Delta B = (A - B) \\cup (B - A).\n$$",
+        "text_format": "latex",
+        "bbox": [
+            389,
+            64,
+            623,
+            83
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let $H = (2^{X}, \\Delta)$ . Which of the following statements about $H$ is/are correct?",
+        "bbox": [
+            84,
+            106,
+            655,
+            125
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $H$ is a group.",
+            "B. Every element in $H$ has an inverse, but $H$ is NOT a group.",
+            "C. For every $A \\in 2^{X}$ , the inverse of $A$ is the complement of $A$ .",
+            "D. For every $A \\in 2^{X}$ , the inverse of $A$ is $A$ ."
+        ],
+        "bbox": [
+            87,
+            134,
+            557,
+            199
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 set-theory&algebra group-theory multiple-selects two-marks",
+        "bbox": [
+            87,
+            224,
+            445,
+            233
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            239,
+            188,
+            254
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.4.32 Group Theory: GATE CSE 2024 | Set 1 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            264,
+            544,
+            277
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the operators $\\diamond$ and $\\square$ defined by $a \\diamond b = a + 2b$ , $a \\square b = ab$ , for positive integers. Which of the following statements is/are TRUE?",
+        "bbox": [
+            84,
+            287,
+            878,
+            317
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/40210c9ec4400c8a8ddb46573b7684bf54e052244b4e311ced1f18abec9e30c6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            266,
+            932,
+            304
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Operator ◇ obeys the associative law",
+            "B. Operator □ obeys the associative law",
+            "C. Operator ◇ over the operator □ obeys the distributive law",
+            "D. Operator □ over the operator ◇ obeys the distributive law"
+        ],
+        "bbox": [
+            87,
+            328,
+            532,
+            385
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 multiple-selects set-theory&algebra group-theory two-marks",
+        "bbox": [
+            87,
+            410,
+            465,
+            422
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            428,
+            188,
+            442
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.4.33 Group Theory: GATE CSE 2024 | Set 2 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            78,
+            451,
+            544,
+            466
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let $Z_{n}$ be the group of integers $\\{0,1,2,\\ldots,n-1\\}$ with addition modulo n as the group operation. The number of elements in the group $Z_{2} \\times Z_{3} \\times Z_{4}$ that are their own inverses is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            475,
+            878,
+            505
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/ea660fc964bc3fdf1d4db541ffa59c5ccad8273115522a820356c38e68db219e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            454,
+            932,
+            492
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 numerical-answers set-theory&algebra group-theory two-marks",
+        "bbox": [
+            87,
+            519,
+            475,
+            529
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            536,
+            188,
+            549
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.5",
+        "text_level": 1,
+        "bbox": [
+            68,
+            561,
+            95,
+            574
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Identify Function (1)",
+        "text_level": 1,
+        "bbox": [
+            431,
+            560,
+            596,
+            574
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.5.1 Identify Function: GATE CSE 2025 | Set 1 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            586,
+            559,
+            600
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$A = \\{0, 1, 2, 3, \\ldots\\}$ is the set of non-negative integers. Let $F$ be the set of functions from $A$ to itself. For any two functions, $f_1, f_2 \\in \\mathbf{F}$ , we define",
+        "bbox": [
+            84,
+            610,
+            878,
+            642
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/dec6c6caa18b9972ab429873459382e1d4d3bd270095562a760158f6e75c4e92.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            589,
+            932,
+            627
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(f _ {1} \\odot f _ {2}) (n) = f _ {1} (n) + f _ {2} (n)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            386,
+            650,
+            628,
+            669
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "for every number $n$ in $A$ . Which of the following is/are CORRECT about the mathematical structure $(\\mathbf{F}, \\odot)$ ?",
+        "bbox": [
+            84,
+            678,
+            875,
+            695
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(\\mathbf{F},\\odot)$ is an Abelian group.",
+            "B. $(\\mathrm{F}, \\odot)$ is an Abelian monoid.",
+            "C. $(F, \\odot)$ is a non-Abelian group.",
+            "D. $(\\mathbf{F}, \\odot)$ is a non-Abelian monoid."
+        ],
+        "bbox": [
+            87,
+            705,
+            351,
+            768
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 set-theory&algebra identify-function group-theory multiple-selects easy two-marks",
+        "bbox": [
+            87,
+            792,
+            579,
+            802
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            808,
+            188,
+            823
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.6",
+        "text_level": 1,
+        "bbox": [
+            68,
+            834,
+            95,
+            846
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Lattice (10)",
+        "text_level": 1,
+        "bbox": [
+            468,
+            833,
+            561,
+            847
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.6.1 Lattice: GATE CSE 1988 | Question: 1vii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            859,
+            436,
+            872
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The complement(s) of the element 'a' in the lattice shown in below figure is (are) \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            883,
+            715,
+            900
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/c60dd7abac67259180b0ae4ba3e6854f1d9c9f21b8d60e5d06c8ec6b13a59d96.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            862,
+            932,
+            899
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ebf0b00d3c5801d9820c8a5e992031cf6fb0940b4de265aedf1267ef4d07f63.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "I\na\nb\nd\nc\nO\ne",
+        "sub_type": "text_image",
+        "bbox": [
+            411,
+            74,
+            608,
+            173
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1988 descriptive lattice set-theory&algebra",
+        "bbox": [
+            87,
+            203,
+            324,
+            213
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            219,
+            186,
+            233
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.2 Lattice: GATE CSE 1990 | Question: 17c",
+        "text_level": 1,
+        "bbox": [
+            78,
+            243,
+            436,
+            257
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Show that the elements of the lattice $(N, \\leq)$ , where $N$ is the set of positive intergers and $a \\leq b$ if and only if $a$ divides $b$ , satisfy the distributive property.",
+        "bbox": [
+            84,
+            267,
+            875,
+            298
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a99ac5de8e5812c427f583d480dba2986a39fc7184ba58882cd948f4f296c94.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            245,
+            931,
+            283
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1990 descriptive set-theory&algebra lattice",
+        "bbox": [
+            87,
+            311,
+            324,
+            321
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            327,
+            186,
+            340
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.3 Lattice: GATE CSE 1992 | Question: 14b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            350,
+            436,
+            364
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the set of integers $\\{1, 2, 3, 4, 6, 8, 12, 24\\}$ together with the two binary operations LCM (lowest common multiple) and GCD (greatest common divisor). Which of the following algebraic structures does this represent?",
+        "bbox": [
+            84,
+            374,
+            878,
+            418
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/4d463803a3e03be5fb68bfae2b50df0c2f0f21a7f37e308b6c6e812fadbb24b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            353,
+            931,
+            391
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. group",
+        "bbox": [
+            89,
+            433,
+            154,
+            447
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. ring",
+        "bbox": [
+            285,
+            433,
+            336,
+            447
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. field",
+        "bbox": [
+            480,
+            433,
+            532,
+            445
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. lattice",
+        "bbox": [
+            675,
+            433,
+            739,
+            445
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1992 set-theory&algebra partial-order lattice normal",
+        "bbox": [
+            87,
+            456,
+            373,
+            466
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            472,
+            186,
+            486
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.4 Lattice: GATE CSE 1994 | Question: 2.9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            496,
+            431,
+            510
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The Hasse diagrams of all the lattices with up to four elements are \\_\\_\\_\\_ (write all the relevant Hasse diagrams)",
+        "bbox": [
+            84,
+            520,
+            878,
+            548
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/1ca4563c889ed127d9e83033080a9c9c221724c6208b938733313f57839aa5ba.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            498,
+            931,
+            536
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1994 set-theory&algebra lattice normal fill-in-the-blanks",
+        "bbox": [
+            87,
+            562,
+            386,
+            572
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            578,
+            186,
+            592
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.5 Lattice: GATE CSE 1997 | Question: 3.3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            602,
+            431,
+            615
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In the lattice defined by the Hasse diagram given in following figure, how many complements does the element ‘e’ have?",
+        "bbox": [
+            84,
+            625,
+            875,
+            653
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/e777aa26b341cfd733bf103cde9d5ec9914e64ad2a72735887a6563179bb9f6f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            604,
+            931,
+            642
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/0615b6fcec5691359f08c29462b2fc98e87b4bbc414b5d854dfb8a2641ccce0f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  a[\"a\"] --> b[\"b\"]\n  b --> e[\"e\"]\n  e --> f[\"f\"]\n  f --> d[\"d\"]\n  d --> c[\"c\"]\n  c --> g[\"g\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            443,
+            660,
+            571,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            821,
+            126,
+            834
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 3",
+        "bbox": [
+            285,
+            821,
+            319,
+            834
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 0",
+        "bbox": [
+            480,
+            821,
+            515,
+            834
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 1",
+        "bbox": [
+            675,
+            821,
+            709,
+            834
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1997 set-theory&algebra lattice normal",
+        "bbox": [
+            87,
+            846,
+            307,
+            856
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            862,
+            186,
+            877
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.6 Lattice: GATE CSE 2002 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            418,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/4bb3a92832b4a8389281b34da2389ca1b92dc8211c459fd4e731317b354b7107.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$S = \\{(1,2),(2,1)\\}$ is binary relation on set $A = \\{1,2,3\\}$ . Is it irreflexive? Add the minimum number of ordered pairs to S to make it an equivalence relation. Give the modified S.",
+        "bbox": [
+            84,
+            87,
+            875,
+            119
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $S = \\{a, b\\}$ and let $\\square(S)$ be the powerset of $S$ . Consider the binary relation $\\subseteq$ (set inclusion)' on $\\square(S)$ . Draw the Hasse diagram corresponding to the lattice $(\\square(S), \\subseteq)$",
+        "bbox": [
+            84,
+            131,
+            927,
+            165
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 set-theory&algebra normal lattice descriptive",
+        "bbox": [
+            87,
+            176,
+            381,
+            188
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            193,
+            186,
+            207
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.6.7 Lattice: GATE CSE 2005 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            217,
+            418,
+            231
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The following is the Hasse diagram of the poset $[\\{a,b,c,d,e\\},\\prec]$",
+        "bbox": [
+            85,
+            241,
+            576,
+            258
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/ee304afe031632ebd8a9a1dafb0e92e495b2f55cbc8f6cd4ea81363018f7f5e4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            220,
+            931,
+            258
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/0601c229bcbce342c81c7182eed610d8393db5bace69931a417215aebd993d03.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "a\nb\nc\nd\ne",
+        "sub_type": "text_image",
+        "bbox": [
+            415,
+            270,
+            552,
+            363
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The poset is :",
+        "bbox": [
+            85,
+            378,
+            189,
+            393
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. not a lattice",
+            "C. a distributive lattice but not a Boolean algebra"
+        ],
+        "bbox": [
+            89,
+            403,
+            352,
+            442
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 set-theory&algebra lattice normal",
+        "bbox": [
+            87,
+            448,
+            322,
+            457
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. a lattice but not a distributive lattice",
+            "D. a Boolean algebra"
+        ],
+        "bbox": [
+            495,
+            403,
+            757,
+            429
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            464,
+            186,
+            478
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.6.8 Lattice: GATE CSE 2015 | Set 1 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            77,
+            486,
+            480,
+            502
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Suppose $L = \\{p, q, r, s, t\\}$ is a lattice represented by the following Hasse diagram:",
+        "bbox": [
+            85,
+            511,
+            705,
+            529
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/696f40105297151deb4895b955cc36db3372627099e84856fe9df965bc9a8dc8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            490,
+            931,
+            527
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/5bdf8f3d64f8d57b5e8d6d7e87326f1a9cc8dc0448b7a493a1ff83d172df0d5b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  t[\"t\"] --> q[\"q\"]\n  q --> r[\"r\"]\n  r --> p[\"p\"]\n  p --> s[\"s\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            416,
+            540,
+            549,
+            625
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "For any $x, y \\in L$ , not necessarily distinct, $x \\vee y$ and $x \\wedge y$ are join and meet of $x, y$ , respectively. Let $L^3 = \\{(x, y, z) : x, y, z \\in L\\}$ be the set of all ordered triplets of the elements of $L$ . Let $p_r$ be the probability that an element $(x, y, z) \\in L^3$ chosen equiprobably satisfies $x \\vee (y \\wedge z) = (x \\vee y) \\wedge (x \\vee z)$ . Then",
+        "bbox": [
+            84,
+            641,
+            929,
+            691
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $p_{r}=0$",
+            "C. $0 < p_{r} \\leq \\frac{1}{5}$"
+        ],
+        "bbox": [
+            89,
+            698,
+            198,
+            730
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 set-theory&algebra normal lattice",
+        "bbox": [
+            87,
+            733,
+            344,
+            743
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $p_r = 1$",
+            "D. $\\frac{1}{5} < p_r < 1$"
+        ],
+        "bbox": [
+            495,
+            698,
+            601,
+            730
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            749,
+            186,
+            763
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.6.9 Lattice: GATE CSE 2017 | Set 2 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            77,
+            773,
+            478,
+            787
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the set $X = \\{a,b,c,d,e\\}$ under partial ordering $R = \\{(a,a),(a,b),(a,c),(a,d),(a,e),(b,b),(b,c),(b,e),(c,c),(c,e),(d,d),(d,e),(e,e)\\}$",
+        "bbox": [
+            84,
+            796,
+            870,
+            830
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The Hasse diagram of the partial order $(X,R)$ is shown below.",
+        "bbox": [
+            85,
+            832,
+            549,
+            847
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/43b5f147871f8d1484cce0c112daff6928d56d9a3b64cf8ea369a6c8c94b0f39.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            775,
+            931,
+            813
+        ],
+        "page_idx": 11
+    }
+]

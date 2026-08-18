@@ -1,0 +1,4190 @@
+[
+    {
+        "type": "text",
+        "text": "2. For Continuous Random Variable X:",
+        "bbox": [
+            89,
+            65,
+            403,
+            79
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE [ X ] = \\int_ {- \\infty} ^ {\\infty} x f (x) d x\n$$",
+        "text_format": "latex",
+        "bbox": [
+            433,
+            90,
+            613,
+            127
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3. Expectation of a Function of a Random Variable $g(X)$ :",
+        "bbox": [
+            89,
+            136,
+            537,
+            152
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Discrete: $E[g(X)] = \\sum_{x} g(x)P(X = x)$",
+        "bbox": [
+            122,
+            150,
+            450,
+            168
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Continuous: $E[g(X)] = \\int_{-\\infty}^{\\infty} g(x)f(x)dx$",
+        "bbox": [
+            122,
+            167,
+            452,
+            185
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4. Linearity of Expectation: For any random variables X, Y and constants a, b:",
+        "bbox": [
+            87,
+            184,
+            682,
+            199
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE [ a X + b Y ] = a E [ X ] + b E [ Y ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            396,
+            207,
+            650,
+            228
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5. Expectation of Product (for Independent Variables): If $X$ and $Y$ are independent, then",
+        "bbox": [
+            87,
+            236,
+            766,
+            251
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE [ X Y ] = E [ X ] E [ Y ].\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            251,
+            284,
+            267
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            267,
+            322,
+            280
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ E[c] = c$ for a constant $c$ .",
+            "$\\circ E[\\bar{X} - E[X]] = 0.$",
+            "- Expectation is a linear operator."
+        ],
+        "bbox": [
+            97,
+            281,
+            344,
+            324
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            325,
+            354,
+            338
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing $E[X^2]$ with $(E[X])^2$ . They are generally not equal.",
+            "- Applying $E[XY] = E[X]E[Y]$ when $X$ and $Y$ are not independent.",
+            "- Incorrectly summing or integrating over the wrong range."
+        ],
+        "bbox": [
+            97,
+            339,
+            616,
+            384
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            384,
+            500,
+            397
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify whether the variable is discrete or continuous.",
+            "- Use linearity of expectation extensively, as it holds even for dependent variables.",
+            "- For complex functions, break them down using linearity."
+        ],
+        "bbox": [
+            97,
+            397,
+            700,
+            439
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Exponential Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            452,
+            284,
+            467
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Exponential distribution is a continuous probability distribution that describes the time between events in a Poisson process, i.e., a process in which events occur continuously and independently at a constant average rate. It is memoryless, meaning the past duration does not affect future duration.",
+        "bbox": [
+            58,
+            480,
+            914,
+            524
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            534,
+            440,
+            547
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Probability Density Function (PDF): For $X \\sim \\text{Exp}(\\lambda)$ ,",
+        "bbox": [
+            89,
+            548,
+            529,
+            565
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf (x; \\lambda) = \\lambda e ^ {- \\lambda x} \\quad \\text { for } x \\geq 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            408,
+            574,
+            636,
+            593
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $\\lambda > 0$ is the rate parameter.",
+        "bbox": [
+            109,
+            603,
+            371,
+            618
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. Cumulative Distribution Function (CDF):",
+        "bbox": [
+            89,
+            619,
+            430,
+            631
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF (x; \\lambda) = P (X \\leq x) = 1 - e ^ {- \\lambda x} \\quad \\text { for } x \\geq 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            342,
+            644,
+            702,
+            663
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "3. Mean (Expectation): $E[X] = \\frac{1}{\\lambda}$",
+            "4. Variance: $\\operatorname{Var}(X) = \\frac{1}{\\lambda^2}$",
+            "5. Memoryless Property: $P(X > s + t | X > s) = P(X > t)$ for any $s, t \\geq 0$ ."
+        ],
+        "bbox": [
+            87,
+            673,
+            678,
+            726
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            726,
+            322,
+            738
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Models waiting times, lifetimes of components, etc.",
+            "- Its rate parameter $\\lambda$ is the inverse of the mean.",
+            "- The only continuous distribution with the memoryless property."
+        ],
+        "bbox": [
+            97,
+            739,
+            568,
+            781
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            781,
+            354,
+            795
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing the rate parameter $\\lambda$ with the mean $1 / \\lambda$ .",
+            "- Incorrectly applying the memoryless property or forgetting its implications.",
+            "- Errors in integration for probabilities or moments if not using CDF."
+        ],
+        "bbox": [
+            97,
+            796,
+            648,
+            837
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            838,
+            500,
+            851
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify problems involving \"time until\" an event or \"lifetime\" with a constant rate.",
+            "- Directly use CDF for $P(X \\leq x)$ or $P(X > x)$ .",
+            "- Apply the memoryless property to simplify conditional probability questions."
+        ],
+        "bbox": [
+            97,
+            851,
+            695,
+            895
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Independent Events",
+        "text_level": 1,
+        "bbox": [
+            60,
+            907,
+            245,
+            923
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Two events are independent if the occurrence of one does not affect the probability of the other occurring. Their probabilities multiply to give the probability of both occurring.",
+        "bbox": [
+            58,
+            64,
+            910,
+            95
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            104,
+            440,
+            118
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1. Definition: Events A and B are independent if and only if:",
+        "bbox": [
+            90,
+            119,
+            541,
+            134
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (A \\cap B) = P (A) P (B)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            425,
+            143,
+            621,
+            162
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2. Equivalent Conditions: If $P(B) > 0$ , then $A$ and $B$ are independent if and only if $P(A|B) = P(A)$ . Similarly, if $P(A) > 0$ , then $P(B|A) = P(B)$ .",
+        "bbox": [
+            87,
+            171,
+            924,
+            201
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3. Independence of Complements: If $A$ and $B$ are independent, then $A$ and $B^c$ , $A^c$ and $B$ , and $A^c$ and $B^c$ are also independent.",
+        "bbox": [
+            87,
+            201,
+            919,
+            230
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            72,
+            231,
+            322,
+            244
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Simplifies calculations involving joint probabilities.",
+            "- Crucial assumption for many statistical models and distributions (e.g., Binomial, Poisson)."
+        ],
+        "bbox": [
+            95,
+            245,
+            761,
+            271
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            72,
+            273,
+            352,
+            286
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Confusing independent events with mutually exclusive events (disjoint events). Mutually exclusive events cannot be independent unless one has zero probability.",
+            "- Assuming independence when it's not explicitly stated or logically implied.",
+            "- Incorrectly applying the product rule for dependent events."
+        ],
+        "bbox": [
+            97,
+            286,
+            929,
+            340
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            72,
+            342,
+            499,
+            355
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Always check the definition $P(A \\cap B) = P(A)P(B)$ to verify independence.",
+            "- If events are independent, use the simplified conditional probability $P(A|B) = P(A)$ ."
+        ],
+        "bbox": [
+            97,
+            355,
+            734,
+            387
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Normal Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            397,
+            243,
+            414
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Normal (or Gaussian) distribution is a symmetric, bell-shaped continuous probability distribution that is ubiquitous in natural and social sciences. It is characterized by its mean ( $\\mu$ ) and standard deviation ( $\\sigma$ ), and is central to the Central Limit Theorem.",
+        "bbox": [
+            58,
+            427,
+            926,
+            471
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            480,
+            440,
+            494
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1. Probability Density Function (PDF): For $X \\sim N(\\mu, \\sigma^{2})$ ,",
+        "bbox": [
+            89,
+            495,
+            542,
+            514
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf (x; \\mu , \\sigma) = \\frac {1}{\\sigma \\sqrt {2 \\pi}} e ^ {- \\frac {1}{2} \\left(\\frac {x - \\mu}{\\sigma}\\right) ^ {2}} \\quad \\text {for} - \\infty <   x <   \\infty\n$$",
+        "text_format": "latex",
+        "bbox": [
+            315,
+            523,
+            729,
+            562
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "2. Mean (Expectation): $E[X] = \\mu$",
+            "3. Variance: $\\operatorname{Var}(X) = \\sigma^2$",
+            "4. Standard Deviation: $\\mathrm{SD}(X) = \\sigma$",
+            "5. Standard Normal Distribution: A normal distribution with $\\mu = 0$ and $\\sigma = 1$ , denoted $Z \\sim N(0,1)$ .",
+            "6. Standardization: If $X \\sim N(\\mu, \\sigma^2)$ , then $Z = \\frac{X - \\mu}{\\sigma} \\sim N(0, 1)$ .",
+            "7. Empirical Rule (68-95-99.7 Rule): Approximately 68% of data falls within $1\\sigma$ of the mean, 95% within $2\\sigma$ , and 99.7% within $3\\sigma$ ."
+        ],
+        "bbox": [
+            87,
+            568,
+            915,
+            678
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            72,
+            679,
+            322,
+            692
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Symmetric about its mean.",
+            "- The mean, median, and mode are all equal to $\\mu$ .",
+            "- Sum of independent normal random variables is also normal.",
+            "- Central Limit Theorem: The sum/average of a large number of independent and identically distributed random variables, regardless of their original distribution, tends towards a normal distribution."
+        ],
+        "bbox": [
+            95,
+            693,
+            909,
+            761
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            72,
+            762,
+            354,
+            775
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Not standardizing correctly before using Z-tables (if tables were provided, though GATE usually tests concepts).",
+            "- Confusing variance $\\sigma^2$ with standard deviation $\\sigma$ .",
+            "- Assuming normality when not justified, especially for small sample sizes."
+        ],
+        "bbox": [
+            95,
+            775,
+            924,
+            820
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            72,
+            820,
+            500,
+            833
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Convert any normal variable to a standard normal variable using $Z = (X - \\mu) / \\sigma$ .",
+            "- Use the symmetry of the normal distribution: $P(Z < -z) = P(Z > z)$ .",
+            "- Apply the empirical rule for quick estimations."
+        ],
+        "bbox": [
+            97,
+            834,
+            710,
+            878
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Poisson Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            891,
+            250,
+            906
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Poisson distribution is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space if these events occur with a known constant mean rate and independently of the time since the last event.",
+        "bbox": [
+            58,
+            64,
+            931,
+            108
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            117,
+            440,
+            131
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1. Probability Mass Function (PMF): For $X \\sim \\text{Pois}(\\lambda)$ ,",
+        "bbox": [
+            89,
+            131,
+            514,
+            148
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (X = k) = \\frac {e ^ {- \\lambda} \\lambda^ {k}}{k !} \\quad \\text {for} k \\in \\{0, 1, 2, \\dots \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            349,
+            157,
+            695,
+            193
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $\\lambda > 0$ is the average rate of events in the interval.",
+        "bbox": [
+            109,
+            201,
+            529,
+            214
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "2. Mean (Expectation): $E[X] = \\lambda$",
+            "3. Variance: $\\operatorname{Var}(X) = \\lambda$"
+        ],
+        "bbox": [
+            89,
+            216,
+            354,
+            245
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            245,
+            322,
+            258
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Models rare events.",
+            "- The mean and variance are equal ( $\\lambda$ ).",
+            "- Can approximate the Binomial distribution when $n$ is large and $p$ is small, with $\\lambda = np$ .",
+            "- The sum of independent Poisson random variables is also a Poisson random variable (with rate parameter equal to the sum of individual rates)."
+        ],
+        "bbox": [
+            95,
+            260,
+            931,
+            328
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            330,
+            354,
+            343
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying $\\lambda$ (the average rate for the specified interval). Ensure $\\lambda$ is consistent with the time/space unit of the problem.",
+            "- Miscalculating factorials or powers of $\\lambda$ .",
+            "- Confusing \"at least,\" \"at most,\" \"exactly\" in problem statements."
+        ],
+        "bbox": [
+            97,
+            343,
+            910,
+            399
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            400,
+            500,
+            413
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify problems involving counts of events over a fixed interval.",
+            "- Use the complement rule for \"at least\" probabilities.",
+            "- Remember that mean and variance are both $\\lambda$ ."
+        ],
+        "bbox": [
+            97,
+            414,
+            583,
+            454
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Probability",
+        "text_level": 1,
+        "bbox": [
+            60,
+            467,
+            164,
+            484
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Probability is a numerical measure of the likelihood of an event occurring. It is a value between 0 and 1, where 0 indicates impossibility and 1 indicates certainty. It forms the foundation for understanding randomness and uncertainty.",
+        "bbox": [
+            58,
+            497,
+            904,
+            540
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            549,
+            440,
+            564
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1. Axioms of Probability:",
+        "bbox": [
+            90,
+            565,
+            290,
+            578
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For any event $A, 0 \\leq P(A) \\leq 1$ .",
+            "- $P(S) = 1$ where $S$ is the sample space.",
+            "- For a sequence of mutually exclusive events $A_1, A_2, \\ldots, P(\\bigcup_{i=1}^{\\infty} A_i) = \\sum_{i=1}^{\\infty} P(A_i)$ ."
+        ],
+        "bbox": [
+            121,
+            579,
+            779,
+            625
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "2. Complement Rule: $P(A^c) = 1 - P(A)$ .",
+            "3. Addition Rule: $P(A \\cup B) = P(A) + \\dot{P}(B) - P(A \\cap B)$ .",
+            "4. For Mutually Exclusive Events: If $A \\cap B = \\emptyset$ , then $P(A \\cup B) = P(A) + P(B)$ ."
+        ],
+        "bbox": [
+            87,
+            625,
+            719,
+            671
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            671,
+            322,
+            684
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Probabilities are non-negative.",
+            "- The sum of probabilities of all possible outcomes is 1.",
+            "- The probability of the impossible event is 0."
+        ],
+        "bbox": [
+            97,
+            685,
+            502,
+            725
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            726,
+            354,
+            739
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying the sample space or events.",
+            "- Misapplying the addition rule without accounting for overlaps.",
+            "- Confusing \"and\" (∩) with \"or\" (∪)."
+        ],
+        "bbox": [
+            97,
+            739,
+            557,
+            781
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            781,
+            500,
+            794
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Clearly define the sample space and events.",
+            "- Use Venn diagrams for visualizing events and their intersections/unions.",
+            "- For equally likely outcomes, $P(A) = \\frac{\\text{Number of outcomes in A}}{\\text{Total number of outcomes}}$ ."
+        ],
+        "bbox": [
+            97,
+            795,
+            636,
+            844
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Probability Density Function (PDF)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            853,
+            379,
+            870
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Probability Density Function (PDF), denoted $f(x)$ , is a function associated with continuous random variables. It describes the relative likelihood for the random variable to take on a given value. The area under the PDF curve over an interval gives the probability that the variable falls within that interval.",
+        "bbox": [
+            58,
+            884,
+            915,
+            927
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            65,
+            438,
+            78
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1. Properties of a PDF:",
+        "bbox": [
+            90,
+            79,
+            273,
+            92
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $f(x) \\geq 0$ for all $x$ .",
+            "$\\int_{-\\infty}^{\\infty}f(x)dx = 1.$"
+        ],
+        "bbox": [
+            124,
+            93,
+            273,
+            127
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2. Probability Calculation: $P(a \\leq X \\leq b) = \\int_{a}^{b} f(x) dx$ .",
+        "bbox": [
+            89,
+            128,
+            527,
+            147
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3. Relationship with CDF: $f(x) = \\frac{d}{dx} F(x)$ , where $F(x)$ is the Cumulative Distribution Function.",
+        "bbox": [
+            87,
+            147,
+            803,
+            165
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            163,
+            321,
+            176
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The PDF itself does not give a probability; rather, its integral over an interval does.",
+            "- For continuous variables, $P(X = x) = 0$ ."
+        ],
+        "bbox": [
+            97,
+            176,
+            710,
+            207
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            206,
+            352,
+            219
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Interpreting $f(x)$ as $P(X = x)$ . This is incorrect for continuous variables.",
+            "- Forgetting to check if the PDF integrates to 1 over its entire domain.",
+            "- Errors in integration limits or the function itself."
+        ],
+        "bbox": [
+            97,
+            220,
+            648,
+            261
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            263,
+            499,
+            276
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Always verify the two properties of a PDF.",
+            "- Use integration to find probabilities over intervals.",
+            "- If given a CDF, differentiate to find the PDF."
+        ],
+        "bbox": [
+            97,
+            277,
+            472,
+            317
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Probability Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            330,
+            273,
+            346
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A probability distribution is a mathematical function that describes all possible values and likelihoods that a random variable can take within a given range. It can be discrete (Probability Mass Function, PMF) or continuous (Probability Density Function, PDF).",
+        "bbox": [
+            58,
+            359,
+            927,
+            402
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            413,
+            438,
+            427
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1. For Discrete Distributions (PMF $P(X = x)$ ):",
+        "bbox": [
+            90,
+            428,
+            457,
+            442
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $0 \\leq P(X = x) \\leq 1$ for all $x$ .",
+            "- $\\sum_{x} P(X = x) = 1$ ."
+        ],
+        "bbox": [
+            124,
+            442,
+            357,
+            473
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2. For Continuous Distributions (PDF $f(x)$ ):",
+        "bbox": [
+            89,
+            473,
+            436,
+            488
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $f(x) \\geq 0$ for all $x$ .",
+            "$\\int_{-\\infty}^{\\infty}f(x)dx = 1.$"
+        ],
+        "bbox": [
+            124,
+            488,
+            273,
+            521
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3. Cumulative Distribution Function (CDF): $F(x) = P(X \\leq x)$ .",
+        "bbox": [
+            89,
+            521,
+            581,
+            536
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For discrete: $F(x) = \\sum_{t \\leq x} P(X = t)$ .",
+            "- For continuous: $F(x) = \\int_{-\\infty}^{x} f(t) dt$ ."
+        ],
+        "bbox": [
+            124,
+            536,
+            428,
+            571
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            571,
+            322,
+            584
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Completely characterizes a random variable's behavior.",
+            "。CDF is non-decreasing, $F(-\\infty) = 0$ , $F(\\infty) = 1$ .",
+            "- Allows calculation of probabilities, expected values, and variances."
+        ],
+        "bbox": [
+            97,
+            585,
+            596,
+            625
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            627,
+            352,
+            640
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing PMF and PDF.",
+            "- Incorrectly applying summation for continuous or integration for discrete.",
+            "• Not understanding the difference between $P(X = x)$ and $P(X \\leq x)$ ."
+        ],
+        "bbox": [
+            97,
+            641,
+            638,
+            684
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            684,
+            499,
+            697
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify whether the random variable is discrete or continuous.",
+            "- Use the appropriate function (PMF/PDF) and its properties to solve problems.",
+            "- Understand the relationship between PMF/PDF and CDF."
+        ],
+        "bbox": [
+            97,
+            698,
+            675,
+            738
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Random Variable",
+        "text_level": 1,
+        "bbox": [
+            60,
+            752,
+            220,
+            766
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A random variable is a variable whose value is a numerical outcome of a random phenomenon. It is a function that maps outcomes from a sample space to real numbers. Random variables can be discrete (taking countable values) or continuous (taking values in an interval).",
+        "bbox": [
+            58,
+            781,
+            892,
+            824
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            834,
+            438,
+            847
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Discrete Random Variable: Takes on a finite or countably infinite number of values (e.g., number of heads in coin flips).",
+            "2. Continuous Random Variable: Takes on any value within a given interval (e.g., height, temperature).",
+            "3. Probability Distribution: Each random variable has an associated probability distribution (PMF or PDF) that describes the probabilities of its possible values."
+        ],
+        "bbox": [
+            87,
+            847,
+            910,
+            916
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            918,
+            321,
+            931
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Transforms qualitative outcomes into quantitative values.",
+            "- Allows for mathematical analysis of random phenomena.",
+            "- The sum, difference, product, or quotient of random variables is also a random variable."
+        ],
+        "bbox": [
+            97,
+            65,
+            749,
+            106
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            108,
+            352,
+            121
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing the random variable itself with the values it can take.",
+            "- Not correctly defining the sample space before defining the random variable.",
+            "- Misidentifying whether a variable is discrete or continuous."
+        ],
+        "bbox": [
+            97,
+            121,
+            668,
+            162
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            163,
+            499,
+            176
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Clearly define the random variable and its possible values.",
+            "- Determine if it's discrete or continuous to choose the correct probability distribution type.",
+            "- Map real-world scenarios to appropriate random variable definitions."
+        ],
+        "bbox": [
+            97,
+            176,
+            752,
+            218
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Square Invariant",
+        "text_level": 1,
+        "bbox": [
+            60,
+            231,
+            215,
+            247
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: While \"Square Invariant\" is not a standard term for a probability distribution or theorem, in the context of probability and statistics, it most likely refers to properties or transformations related to the square of a random variable, particularly in the calculation of moments or variance, or in the context of distributions like the Chi-Square distribution which involves sums of squared normal variables. It implies that certain properties hold true even after squaring the variable or that a transformation involving squaring preserves some characteristic.",
+        "bbox": [
+            58,
+            260,
+            910,
+            331
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            340,
+            440,
+            355
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Second Moment: $E[X^2] = \\sum x^2 P(X = x)$ (discrete) or $\\int x^2 f(x) dx$ (continuous). This is a key \"square\" quantity.",
+            "2. Variance Definition: $\\operatorname{Var}(X) = E[(X - E[X])^2] = E[X^2] - (E[X])^2$ . This formula shows how $E[X^2]$ is used to calculate variance.",
+            "3. Chi-Square Distribution: Defined as the sum of squares of independent standard normal random variables, $X = \\sum_{i=1}^{k} Z_i^2 \\sim \\chi^2(k)$ . This is a direct application of squaring random variables.",
+            "4. Properties of Variance: $\\operatorname{Var}(aX) = a^2\\operatorname{Var}(X)$ . This shows how scaling affects the variance (a square property)."
+        ],
+        "bbox": [
+            87,
+            355,
+            907,
+            478
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            478,
+            322,
+            491
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $E[X^2]$ is always non-negative.",
+            "- Variance measures the spread of a distribution in squared units.",
+            "- The Chi-Square distribution is fundamental for statistical inference involving variances."
+        ],
+        "bbox": [
+            97,
+            492,
+            741,
+            536
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            536,
+            354,
+            549
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing $E[X^2]$ with $(E[X])^2$ . They are distinct and generally not equal.",
+            "- Incorrectly calculating $E[X^2]$ by not squaring the values before applying expectation.",
+            "- Misinterpreting the degrees of freedom in Chi-Square related problems."
+        ],
+        "bbox": [
+            97,
+            551,
+            732,
+            596
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            597,
+            500,
+            610
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- When calculating variance, always compute $E[X]$ and $E[X^2]$ separately.",
+            "- Recognize that problems involving sums of squared normal variables point towards the Chi-Square distribution.",
+            "- Remember that variance is always non-negative."
+        ],
+        "bbox": [
+            97,
+            611,
+            921,
+            655
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Statistics",
+        "text_level": 1,
+        "bbox": [
+            60,
+            667,
+            149,
+            682
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Statistics is the science of collecting, analyzing, interpreting, presenting, and organizing data. In the context of probability, statistics involves using data from a sample to make inferences about a larger population, often relying on probability distributions to quantify uncertainty.",
+        "bbox": [
+            58,
+            695,
+            897,
+            739
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            750,
+            440,
+            764
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1. Measures of Central Tendency:",
+        "text_level": 1,
+        "bbox": [
+            90,
+            764,
+            359,
+            777
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mean ( $\\mu$ or $\\bar{x}$ ): Average value.",
+            "■ Median: Middle value when data is ordered.",
+            "■ Mode: Most frequent value."
+        ],
+        "bbox": [
+            122,
+            777,
+            460,
+            819
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2. Measures of Dispersion:",
+        "text_level": 1,
+        "bbox": [
+            89,
+            819,
+            307,
+            833
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Variance ( $\\sigma^2$ or $s^2$ ): Average of the squared differences from the mean.",
+            "- Standard Deviation ( $\\sigma$ or $s$ ): Square root of variance, in original units.",
+            "- Range: Max value - Min value."
+        ],
+        "bbox": [
+            122,
+            834,
+            665,
+            876
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3. Sample vs. Population:",
+        "text_level": 1,
+        "bbox": [
+            89,
+            877,
+            295,
+            890
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Population Mean: $\\mu = E[X]$",
+            "- Sample Mean: $\\bar{X} = \\frac{1}{n} \\sum_{i=1}^{n} X_i$"
+        ],
+        "bbox": [
+            122,
+            891,
+            379,
+            926
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Population Variance: $\\sigma^2 = E[(X - \\mu)^2]$",
+            "- Sample Variance: $s^2 = \\frac{1}{n-1} \\sum_{i=1}^{n} (X_i - \\bar{X})^2$ (unbiased estimator)"
+        ],
+        "bbox": [
+            122,
+            65,
+            633,
+            100
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            100,
+            322,
+            112
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Statistics provides tools to summarize and interpret data.",
+            "- Probability distributions are models for the underlying data generation process.",
+            "- Central Limit Theorem is a bridge between probability and statistics."
+        ],
+        "bbox": [
+            97,
+            114,
+            685,
+            155
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            156,
+            354,
+            169
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing population parameters $(\\mu, \\sigma^2)$ with sample statistics $(\\bar{x}, s^2)$ .",
+            "- Using $n$ instead of $n - 1$ in the denominator for sample variance (for unbiased estimation).",
+            "- Misinterpreting the meaning of different measures (e.g., mean vs. median for skewed data)."
+        ],
+        "bbox": [
+            97,
+            169,
+            776,
+            213
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            214,
+            500,
+            226
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify whether the problem refers to a population or a sample.",
+            "- Know the definitions and formulas for common descriptive statistics.",
+            "- Understand how probability distributions are used to model observed data."
+        ],
+        "bbox": [
+            97,
+            228,
+            653,
+            268
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Uniform Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            281,
+            250,
+            296
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Uniform distribution is a continuous probability distribution where all values within a given interval $[a, b]$ are equally likely. It has a constant probability density over its support and zero elsewhere.",
+        "bbox": [
+            58,
+            309,
+            899,
+            342
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            351,
+            440,
+            365
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1. Probability Density Function (PDF): For $X \\sim U(a, b)$ ,",
+        "bbox": [
+            89,
+            365,
+            527,
+            382
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf (x) = \\left\\{ \\begin{array}{l l} \\frac {1}{b - a} & \\text {for} a \\leq x \\leq b \\\\ 0 & \\text {otherwise} \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            398,
+            391,
+            643,
+            429
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2. Cumulative Distribution Function (CDF):",
+        "bbox": [
+            87,
+            438,
+            430,
+            454
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF (x) = \\left\\{ \\begin{array}{l l} 0 & \\text {for} x <   a \\\\ \\frac {x - a}{b - a} & \\text {for} a \\leq x \\leq b \\\\ 1 & \\text {for} x > b \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            394,
+            464,
+            647,
+            519
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3. Mean (Expectation): $E[X] = \\frac{a + b}{2}$",
+        "bbox": [
+            87,
+            527,
+            371,
+            548
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4. Variance: $\\operatorname{Var}(X) = \\frac{(b - a)^2}{12}$",
+        "bbox": [
+            87,
+            548,
+            326,
+            570
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            568,
+            322,
+            581
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- All outcomes within the interval $[a, b]$ are equally probable.",
+            "- Often used as a null hypothesis or a simple model when no other information is available."
+        ],
+        "bbox": [
+            97,
+            581,
+            761,
+            610
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            611,
+            354,
+            624
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying the interval $[a, b]$ .",
+            "- Errors in calculating probabilities for sub-intervals (e.g., $P(c \\leq X \\leq d) = \\frac{d - c}{b - a}$ ).",
+            "- Forgetting the constant $1/12$ in the variance formula."
+        ],
+        "bbox": [
+            97,
+            625,
+            697,
+            674
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            674,
+            500,
+            687
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Draw the PDF as a rectangle for visualization.",
+            "- Probabilities are simply the ratio of the length of the sub-interval to the length of the total interval.",
+            "- Memorize mean and variance formulas."
+        ],
+        "bbox": [
+            97,
+            688,
+            813,
+            728
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Variance",
+        "text_level": 1,
+        "bbox": [
+            60,
+            742,
+            144,
+            757
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Variance is a measure of the spread or dispersion of a set of data points around their mean. It quantifies how much the values of a random variable deviate from its expected value, on average. A higher variance indicates greater variability.",
+        "bbox": [
+            58,
+            771,
+            927,
+            814
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            73,
+            824,
+            440,
+            838
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Definition: $\\operatorname{Var}(X) = E[(X - E[X])^2]$",
+            "2. Computational Formula: $\\operatorname{Var}(X) = E[X^2] - (E[X])^2$",
+            "3. For Discrete Random Variable X:"
+        ],
+        "bbox": [
+            87,
+            839,
+            532,
+            885
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{Var} (X) = \\sum_ {x} (x - E [ X ]) ^ {2} P (X = x) = \\sum_ {x} x ^ {2} P (X = x) - (E [ X ]) ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            250,
+            897,
+            794,
+            929
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4. For Continuous Random Variable X:",
+        "text_level": 1,
+        "bbox": [
+            89,
+            65,
+            403,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{Var} (X) = \\int_ {- \\infty} ^ {\\infty} (x - E [ X ]) ^ {2} f (x) d x = \\int_ {- \\infty} ^ {\\infty} x ^ {2} f (x) d x - (E [ X ]) ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            267,
+            90,
+            779,
+            127
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5. Properties of Variance:",
+        "text_level": 1,
+        "bbox": [
+            89,
+            135,
+            295,
+            149
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\operatorname{Var}(c) = 0$ for a constant $c$ .",
+            "- $\\operatorname{Var}(aX) = a^2\\operatorname{Var}(X)$ for a constant $a$ .",
+            "- $\\operatorname{Var}(X + c) = \\operatorname{Var}(X)$ for a constant $c$ .",
+            "- $\\operatorname{Var}(aX + b) = a^2\\operatorname{Var}(X)$ .",
+            "- For independent random variables $X, Y: \\operatorname{Var}(X + Y) = \\operatorname{Var}(X) + \\operatorname{Var}(Y)$ .",
+            "- For independent random variables $X, Y$ : $\\operatorname{Var}(X - Y) = \\operatorname{Var}(X) + \\operatorname{Var}(Y)$ ."
+        ],
+        "bbox": [
+            122,
+            150,
+            715,
+            244
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "6. Standard Deviation: $\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}$ .",
+        "text_level": 1,
+        "bbox": [
+            89,
+            244,
+            442,
+            262
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            261,
+            322,
+            274
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Variance is always non-negative.",
+            "- It is expressed in squared units of the random variable.",
+            "- It measures the average squared deviation from the mean."
+        ],
+        "bbox": [
+            97,
+            275,
+            539,
+            315
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            315,
+            354,
+            330
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Forgetting to square the deviations or the constant $a$ when applying properties.",
+            "Assuming $\\operatorname{Var}(X + Y) = \\operatorname{Var}(X) + \\operatorname{Var}(Y)$ when $X$ and $Y$ are not independent (this requires covariance terms).",
+            "- Confusing variance with standard deviation."
+        ],
+        "bbox": [
+            97,
+            330,
+            907,
+            385
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            385,
+            500,
+            400
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Always use the computational formula $\\operatorname{Var}(X) = E[X^2] - (E[X])^2$ as it's often easier.",
+            "- Leverage the properties of variance to simplify calculations for linear transformations or sums of independent variables.",
+            "- Calculate $E[X]$ first, then $E[X^2]$ ."
+        ],
+        "bbox": [
+            97,
+            400,
+            902,
+            461
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference",
+        "text_level": 1,
+        "bbox": [
+            60,
+            473,
+            295,
+            489
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Basic Probability",
+        "text_level": 1,
+        "bbox": [
+            73,
+            503,
+            223,
+            517
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Addition Rule: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$",
+            "- Complement Rule: $P(A^c) = 1 - P(A)$"
+        ],
+        "bbox": [
+            97,
+            517,
+            532,
+            548
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Conditional Probability",
+        "text_level": 1,
+        "bbox": [
+            73,
+            548,
+            270,
+            562
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "○ Definition: $P(A|B)=\\frac{P(A\\cap B)}{P(B)}$",
+            "○ Multiplication Rule: $P(A \\cap \\dot{B}) = P(A|B)P(B)$",
+            "- Law of Total Probability: $P(B) = \\sum_{i=1}^{n} P(B|A_i)P(A_i)$"
+        ],
+        "bbox": [
+            97,
+            562,
+            527,
+            617
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Independent Events",
+        "text_level": 1,
+        "bbox": [
+            73,
+            617,
+            245,
+            629
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Condition: $P(A \\cap B) = P(A)P(B)$ or $P(A|B) = P(A)$",
+        "bbox": [
+            97,
+            629,
+            534,
+            646
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Bayes Theorem",
+        "text_level": 1,
+        "bbox": [
+            73,
+            644,
+            213,
+            657
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Formula: $P(A|B) = \\frac{P(B|A)P(A)}{P(B)}$",
+        "bbox": [
+            97,
+            657,
+            354,
+            684
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Expectation (Mean)",
+        "text_level": 1,
+        "bbox": [
+            73,
+            682,
+            240,
+            695
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Discrete: $E[X] = \\sum_{x} xP(X = x)$",
+            "- Continuous: $E[X] = \\int_{-\\infty}^{\\infty} x f(x) dx$",
+            "○ Linearity: $E[aX + bY] = aE[X] + bE[Y]$"
+        ],
+        "bbox": [
+            97,
+            695,
+            554,
+            745
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Variance",
+        "text_level": 1,
+        "bbox": [
+            73,
+            745,
+            159,
+            756
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Definition: $\\operatorname{Var}(X) = E[(X - E[X])^2]$",
+            "- Computational: $\\operatorname{Var}(X) = E[X^2] - (E[X])^2$",
+            "- Properties: $\\operatorname{Var}(aX + b) = a^2\\operatorname{Var}(X)$",
+            "- For independent $X, Y: \\operatorname{Var}(X \\pm Y) = \\operatorname{Var}(X) + \\operatorname{Var}(Y)$",
+            "- Standard Deviation: $\\mathrm{SD}(X) = \\sqrt{\\mathrm{Var}(X)}$"
+        ],
+        "bbox": [
+            97,
+            758,
+            554,
+            840
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Bernoulli Distribution ( $X \\in \\{0,1\\}$ , $P(X = 1) = p$ )",
+        "text_level": 1,
+        "bbox": [
+            73,
+            840,
+            485,
+            856
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ$ PMF: $P(X = x) = p^{x}(1 - p)^{1 - x}$",
+            "- Mean: $E[X] = p$",
+            "- Variance: $\\operatorname{Var}(X) = p(1 - p)$"
+        ],
+        "bbox": [
+            97,
+            856,
+            366,
+            903
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Binomial Distribution ( $X \\sim B(n, p)$ )",
+        "text_level": 1,
+        "bbox": [
+            73,
+            903,
+            371,
+            918
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ$ PMF: $P(X = k) = \\binom{n}{k} p^k (1 - p)^{n - k}$",
+            "- Mean: $E[X] = np$",
+            "- Variance: $\\operatorname{Var}(X) = np(1 - p)$"
+        ],
+        "bbox": [
+            100,
+            65,
+            391,
+            112
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Poisson Distribution ( $X \\sim \\text{Pois}(\\lambda)$ )",
+        "bbox": [
+            75,
+            114,
+            366,
+            130
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ$ PMF: $P(X = k) = \\frac{e^{-\\lambda}\\lambda^k}{k!}$",
+            "○ Mean: $E[X] = \\lambda$",
+            "- Variance: $\\operatorname{Var}(X) = \\lambda$"
+        ],
+        "bbox": [
+            100,
+            130,
+            304,
+            179
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Uniform Distribution $(X \\sim U(a, b))$",
+        "bbox": [
+            75,
+            179,
+            363,
+            195
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ$ PDF: $f(x) = \\frac{1}{b - a}$ for $a \\leq x \\leq b$ , else 0",
+            "$\\circ$ Mean: $E[X] = \\frac{a + b}{2}$",
+            "- Variance: $\\operatorname{Var}(X) = \\frac{(b - a)^2}{12}$"
+        ],
+        "bbox": [
+            100,
+            195,
+            408,
+            255
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Exponential Distribution ( $\\bar{X} \\sim \\text{Exp}(\\lambda)$ )",
+        "bbox": [
+            75,
+            254,
+            394,
+            269
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ$ PDF: $f(x) = \\lambda e^{-\\lambda x}$ for $x \\geq 0$ , else 0",
+            "$\\circ$ CDF: $F(x) = 1 - e^{-\\lambda x}$ for $x\\geq 0$",
+            "$\\circ$ Mean: $E[X] = \\frac{1}{\\lambda}$",
+            "- Variance: $\\operatorname{Var}(\\hat{X}) = \\frac{1}{\\lambda^2}$",
+            "○ Memoryless: $P(X > s + t | X > s) = P(X > t)$"
+        ],
+        "bbox": [
+            100,
+            269,
+            477,
+            355
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Normal Distribution ( $X \\sim N(\\mu, \\sigma^2)$ )",
+        "bbox": [
+            75,
+            356,
+            371,
+            372
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ$ PDF: $f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{1}{2}\\left(\\frac{x - \\mu}{\\sigma}\\right)^2}$",
+            "- Mean: $E[X] = \\mu$",
+            "- Variance: $\\operatorname{Var}(X) = \\sigma^2$",
+            "- Standardization: $Z = \\frac{X - \\mu}{\\sigma} \\sim N(0,1)$"
+        ],
+        "bbox": [
+            100,
+            372,
+            400,
+            454
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Chi-Square Distribution ( $X \\sim \\chi^2(k)$ )",
+        "bbox": [
+            75,
+            454,
+            374,
+            469
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Definition: Sum of $k$ squared independent standard normal variables.",
+            "- Mean: $E[X] = k$",
+            "- Variance: $\\operatorname{Var}(X) = 2k$"
+        ],
+        "bbox": [
+            100,
+            469,
+            613,
+            514
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            526,
+            285,
+            542
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Master the Fundamentals: Ensure a strong grasp of basic probability axioms, conditional probability, and independence. Many complex problems are built upon these foundational concepts. Don't rush through them.",
+            "2. Understand Discrete vs. Continuous: Clearly distinguish between discrete and continuous random variables.",
+            "Know when to use summation (PMF) versus integration (PDF), and remember that $P(X = x) = 0$ for continuous variables.",
+            "3. Memorize Key Distribution Properties: For each distribution (Bernoulli, Binomial, Poisson, Uniform, Exponential, Normal, Chi-Square), memorize their PMF/PDF, mean, and variance. This saves crucial time in the exam.",
+            "4. Practice Conditional Probability and Bayes' Theorem: These are frequently tested. Practice problems that require careful identification of events and application of the formulas, especially those involving multiple stages or diagnostic scenarios.",
+            "5. Pay Attention to Keywords: Words like \"at least,\" \"at most,\" \"exactly,\" \"given that,\" \"independent,\" and \"without replacement\" significantly alter problem interpretation and solution approach. Read questions carefully.",
+            "6. Leverage Linearity of Expectation and Variance Properties: $E[aX + bY] = aE[X] + bE[Y]$ is powerful as it holds even for dependent variables. For variance, remember $\\operatorname{Var}(aX + b) = a^2\\operatorname{Var}(X)$ and $\\operatorname{Var}(X \\pm Y) = \\operatorname{Var}(X) + \\operatorname{Var}(Y)$ only for independent variables.",
+            "7. Don't Confuse Mean and Variance Parameters: For Exponential distribution, $\\lambda$ is the rate, mean is $1/\\lambda$ . For Normal, $\\mu$ is mean, $\\sigma^{2}$ is variance (not $\\sigma$ ). Small errors here are common pitfalls.",
+            "8. Practice Problem Solving: The best way to prepare is to solve a wide variety of problems from previous GATE papers and standard textbooks. Focus on understanding the logic behind each step, not just getting the answer."
+        ],
+        "bbox": [
+            65,
+            555,
+            917,
+            828
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "7.1",
+        "bbox": [
+            67,
+            843,
+            92,
+            855
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Bayes Theorem (3)",
+        "text_level": 1,
+        "bbox": [
+            436,
+            842,
+            591,
+            857
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "7.1.1 Bayes Theorem: GATE CSE 2018 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            77,
+            868,
+            495,
+            882
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider Guwahati, $(G)$ and Delhi $(D)$ whose temperatures can be classified as high $(H)$ , medium $(M)$ and low $(L)$ . Let $P(H_G)$ denote the probability that Guwahati has high temperature. Similarly, $P(M_G)$ and",
+        "bbox": [
+            82,
+            891,
+            875,
+            925
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/930f34b2cd874924c9eaf54561cf3662d3765b07e0ad05883e0343baa86322b2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            870,
+            932,
+            908
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "$P(L_{G})$ denotes the probability of Guwahati having medium and low temperatures respectively. Similarly, we use $P(H_{D})$ , $P(M_{D})$ and $P(L_{D})$ for Delhi. The following table gives the conditional probabilities for Delhi's temperature given Guwahati's temperature.",
+        "bbox": [
+            84,
+            65,
+            931,
+            111
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/fdafcf2c9cbbecd8474dbf982072d524dec9f1f511791195c5358c45bedb2901.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td> $H_D$ </td><td> $M_D$ </td><td> $L_D$ </td></tr><tr><td> $H_G$ </td><td>0.40</td><td>0.48</td><td>0.12</td></tr><tr><td> $M_G$ </td><td>0.10</td><td>0.65</td><td>0.25</td></tr><tr><td> $L_G$ </td><td>0.01</td><td>0.50</td><td>0.49</td></tr></table>",
+        "bbox": [
+            401,
+            135,
+            613,
+            214
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the first row in the table above. The first entry denotes that if Guwahati has high temperature $(H_{G})$ then the probability of Delhi also having a high temperature $(H_{D})$ is 0.40; i.e., $P(H_{D} \\mid H_{G}) = 0.40$ . Similarly, the next two entries are $P(M_{D} \\mid H_{G}) = 0.48$ and $P(L_{D} \\mid H_{G}) = 0.12$ . Similarly for the other rows.",
+        "bbox": [
+            84,
+            252,
+            929,
+            300
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If it is known that $P(H_{G}) = 0.2$ , $P(M_{G}) = 0.5$ , and $P(L_{G}) = 0.3$ , then the probability (correct to two decimal places) that Guwahati has high temperature given that Delhi has high temperature is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            311,
+            929,
+            342
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 probability bayes-theorem conditional-probability numerical-answers two-marks",
+        "bbox": [
+            87,
+            353,
+            534,
+            365
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            371,
+            186,
+            385
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "7.1.2 Bayes Theorem: GATE CSE 2021 | Set 1 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            77,
+            394,
+            549,
+            409
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/32a9bdc3d73b2337cf2705a2472e100e08b94b12f6ea8029a75cb4311327ed8c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            397,
+            932,
+            435
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A sender (S) transmits a signal, which can be one of the two kinds: H and L with probabilities 0.1 and 0.9 respectively, to a receiver (R).",
+        "bbox": [
+            84,
+            418,
+            878,
+            450
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In the graph below, the weight of edge $(u,v)$ is the probability of receiving v when u is transmitted, where $u,v \\in \\{H,L\\}$ . For example, the probability that the received signal is L given the transmitted signal was H, is 0.7.",
+        "bbox": [
+            84,
+            454,
+            924,
+            498
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/abff20af2aea952cb9d7d105b69a1bd6f820d5d12120ac33af26c9f5ac4aadc4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  S[\"S\"] -->|0.3| H[\"H\"]\n  S -->|0.8| H\n  S -->|0.2| L[\"L\"]\n  R[\"R\"] -->|0.7| L\n  L -->|0.2| H\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            426,
+            507,
+            591,
+            578
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If the received signal is H, the probability that the transmitted signal was H (rounded to 2 decimal places) is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            587,
+            929,
+            618
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 probability bayes-theorem conditional-probability numerical-answers two-marks",
+        "bbox": [
+            87,
+            635,
+            556,
+            644
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            650,
+            186,
+            666
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "7.1.3 Bayes Theorem: GATE DA 2025 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            77,
+            675,
+            485,
+            688
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "There are three boxes containing white balls and black balls.",
+        "bbox": [
+            85,
+            699,
+            529,
+            714
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/600f282595c2ceeb44e9b9b25b64cf24987c86120f503dffe243f870f3e831f4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            676,
+            932,
+            716
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Box -1 contains 2 black and 1 white balls.",
+        "bbox": [
+            85,
+            726,
+            393,
+            739
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Box- 2 contains 1 black and 2 white balls.",
+        "bbox": [
+            85,
+            741,
+            391,
+            755
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Box -3 contains 3 black and 3 white balls.",
+        "bbox": [
+            85,
+            756,
+            391,
+            769
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In a random experiment, one of these boxes is selected, where the probability of choosing Box-1 is $\\frac{1}{2}$ , Box-2 is $\\frac{1}{6}$ , and Box-3 is $\\frac{1}{3}$ . A ball is drawn at random from the selected box. Given that the ball drawn is white, the probability that it is drawn from Box-2 is \\_\\_\\_\\_ (Round off to two decimal places)",
+        "bbox": [
+            84,
+            783,
+            927,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability bayes-theorem numerical-answers one-mark",
+        "bbox": [
+            87,
+            847,
+            420,
+            858
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            863,
+            189,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "7.2",
+        "bbox": [
+            68,
+            889,
+            95,
+            901
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "Bayesian Network (2)",
+        "bbox": [
+            428,
+            888,
+            601,
+            903
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "7.2.1 Bayesian Network: GATE DS&AI 2024 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            532,
+            79
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider five random variables $U, V, W, X$ , and $Y$ whose joint distribution satisfies:",
+        "bbox": [
+            85,
+            87,
+            707,
+            104
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (U, V, W, X, Y) = P (U) P (V) P (W \\mid U, V) P (X \\mid W) P (Y \\mid W)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            243,
+            114,
+            771,
+            133
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which ONE of the following statements is FALSE?",
+        "bbox": [
+            85,
+            169,
+            458,
+            184
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $Y$ is conditionally independent of $V$ given $W$",
+            "B. $X$ is conditionally independent of $U$ given $W$",
+            "C. $U$ and $V$ are conditionally independent given $W$",
+            "D. $Y$ and $X$ are conditionally independent given $W$"
+        ],
+        "bbox": [
+            87,
+            194,
+            468,
+            254
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 probability random-variable bayesian-network one-mark",
+        "bbox": [
+            87,
+            298,
+            433,
+            308
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            314,
+            181,
+            328
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "7.2.2 Bayesian Network: GATE DS&AI 2024 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            338,
+            532,
+            352
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Given the following Bayesian Network consisting of four Bernoulli random variables and the associated conditional probability tables:",
+        "bbox": [
+            84,
+            361,
+            875,
+            390
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/6b3df3ea0ca7fae9a834ccf84dd100c52ccd762424313bfc255edb1fd4cfb1f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            340,
+            931,
+            377
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/369bbb7aa12899c90dab1b18a5dc5517a3d4c3c5843fcc66a638f920d6e72b57.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  U[\"U\"] --> V[\"V\"]\n  V --> Z[\"Z\"]\n  W[\"W\"] --> Z\n  Z --> U\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            421,
+            400,
+            594,
+            520
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/9c6f148e719faf8873aac10532a804ff6a5b07828fe2c0022b6f369e822e2782.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td> $P(\\cdot)$ </td></tr><tr><td> $U = 0$ </td><td>0.5</td></tr><tr><td> $U = 1$ </td><td>0.5</td></tr></table>",
+        "bbox": [
+            445,
+            560,
+            569,
+            621
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/3f3d5f9b12ae56b34a2a2e3424e9b33edbf597df057b4f615a5d3208608f65bf.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td> $P(V=0 \\mid \\cdot)$ </td><td> $P(V=1 \\mid \\cdot)$ </td></tr><tr><td> $U=0$ </td><td>0.5</td><td>0.5</td></tr><tr><td> $U=1$ </td><td>0.5</td><td>0.5</td></tr></table>",
+        "bbox": [
+            352,
+            657,
+            663,
+            718
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/89472127cad8daad8df80861a9d7f2803fa0776ca9bfa04947243d2a2cf4e8de.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td> $P(W=0 \\mid \\cdot)$ </td><td> $P(W=1 \\mid \\cdot)$ </td></tr><tr><td> $U=0$ </td><td>1</td><td>0</td></tr><tr><td> $U=1$ </td><td>0</td><td>1</td></tr></table>",
+        "bbox": [
+            346,
+            752,
+            670,
+            814
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/0c33d81088e547566d9f029874af62ce5da4cc6ba20f4be7e493fc76a07c16c0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td></td><td> $P(Z=0 \\mid \\cdot)$ </td><td> $P(Z=1 \\mid \\cdot)$ </td></tr><tr><td> $V=0$ </td><td> $W=0$ </td><td>0.5</td><td>0.5</td></tr><tr><td> $V=0$ </td><td> $W=1$ </td><td>1</td><td>0</td></tr><tr><td> $V=1$ </td><td> $W=0$ </td><td>1</td><td>0</td></tr><tr><td> $V=1$ </td><td> $W=1$ </td><td>0.5</td><td>0.5</td></tr></table>",
+        "bbox": [
+            314,
+            66,
+            702,
+            166
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The value of $P(U=1,V=1,W=1,Z=1)=$ \\_\\_\\_\\_ (rounded off to three decimal places).",
+        "bbox": [
+            142,
+            201,
+            870,
+            219
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 probability bayesian-network numerical-answers two-marks",
+        "bbox": [
+            87,
+            255,
+            447,
+            264
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            271,
+            188,
+            285
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "7.3",
+        "text_level": 1,
+        "bbox": [
+            68,
+            296,
+            95,
+            309
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Bernoulli Distribution (2)",
+        "text_level": 1,
+        "bbox": [
+            415,
+            295,
+            613,
+            311
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "7.3.1 Bernoulli Distribution: GATE DA 2025 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            321,
+            532,
+            336
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A random variable $X$ is said to be distributed as Bernoulli(θ), denoted by $X \\sim \\text{Bernoulli}(\\theta)$ , if",
+        "bbox": [
+            84,
+            345,
+            786,
+            363
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (X = 1) = \\theta , \\quad P (X = 0) = 1 - \\theta\n$$",
+        "text_format": "latex",
+        "bbox": [
+            359,
+            372,
+            657,
+            390
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/14db3f0a243eaf903783b617b665018c1333f41a5759572a173a7060c3bd0d49.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            325,
+            931,
+            362
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "for $0 < \\theta < 1$ . Let $Y = \\sum_{i=1}^{300} X_i$ , where $X_i \\sim \\text{Bernoulli}(\\theta)$ , $i = 1, 2, \\ldots, 300$ be independent and identically distributed random variables with $\\theta = 0.25$ . The value of $P(60 \\leq Y \\leq 90)$ , after approximation through Central Limit Theorem, is given by (Recall that $\\phi(x) = \\frac{1}{\\sqrt{2\\pi}} \\int_{-\\infty}^{x} e^{-\\frac{t^2}{2}} dt$ )",
+        "bbox": [
+            84,
+            415,
+            929,
+            502
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $\\phi(2) - \\phi(-2)$",
+        "bbox": [
+            89,
+            507,
+            218,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $\\phi(1) - \\phi(-1)$",
+        "bbox": [
+            497,
+            508,
+            625,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\phi(3)-\\phi(-3)$",
+        "bbox": [
+            90,
+            523,
+            218,
+            538
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $\\phi(90) - \\phi(60)$",
+        "bbox": [
+            497,
+            523,
+            626,
+            538
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 probability random-variable bernoulli-distribution two-marks",
+        "bbox": [
+            87,
+            542,
+            442,
+            552
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            558,
+            188,
+            572
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "7.3.2 Bernoulli Distribution: GATE DA 2026 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            581,
+            532,
+            596
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $A_{5 \\times 5}$ be a matrix such that each of its elements follows Bernoulli(p = 0.50) distribution independently.",
+        "bbox": [
+            84,
+            605,
+            878,
+            635
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/3eb1d49fbe1d9a17e96519b1b2c4f5431914ec982b3ee6c76c44916e0395cb8a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            584,
+            931,
+            622
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The probability that the row-sum of the second row and the column-sum of the third column are both equal to 3 is \\_\\_\\_\\_ (Rounded off to two decimal places)",
+        "bbox": [
+            84,
+            648,
+            924,
+            678
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 probability bernoulli-distribution numerical-answers two-marks",
+        "bbox": [
+            87,
+            691,
+            450,
+            701
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            707,
+            188,
+            720
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "7.4",
+        "text_level": 1,
+        "bbox": [
+            68,
+            732,
+            95,
+            745
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Binomial Distribution (6)",
+        "text_level": 1,
+        "bbox": [
+            415,
+            732,
+            613,
+            747
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (10Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            756,
+            272,
+            770
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "7.4.1 Binomial Distribution: GATE CSE 2002 | Question: 2.16",
+        "text_level": 1,
+        "bbox": [
+            78,
+            785,
+            554,
+            799
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Four fair coins are tossed simultaneously. The probability that at least one head and one tail turn up is",
+        "bbox": [
+            85,
+            809,
+            828,
+            824
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/df4cd5dd5e895749f9d6ccad70e3b719959a4ec6e700a618fd3f4ef30527fecc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            787,
+            931,
+            825
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{1}{16}$",
+        "bbox": [
+            89,
+            836,
+            134,
+            855
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{1}{8}$",
+        "bbox": [
+            285,
+            837,
+            322,
+            855
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{7}{8}$",
+        "bbox": [
+            480,
+            836,
+            517,
+            855
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{15}{16}$",
+        "bbox": [
+            675,
+            836,
+            717,
+            855
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 probability easy binomial-distribution",
+        "bbox": [
+            87,
+            862,
+            337,
+            872
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            877,
+            188,
+            891
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "7.4.2 Binomial Distribution: GATE CSE 2005 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            542,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/8dc2b142d0f1539f7f9df9a858e7c501a59c484e6a8743b0d5aca4c08c5210ff.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A random bit string of length n is constructed by tossing a fair coin n times and setting a bit to 0 or 1 depending on outcomes head and tail, respectively. The probability that two such randomly generated strings are not identical is:",
+        "bbox": [
+            84,
+            87,
+            878,
+            131
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{1}{2^{n}}$",
+        "bbox": [
+            89,
+            143,
+            134,
+            162
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $1 - \\frac{1}{n}$",
+        "bbox": [
+            285,
+            143,
+            354,
+            162
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{1}{n!}$",
+        "bbox": [
+            480,
+            143,
+            521,
+            162
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $1 - \\frac{1}{2^n}$",
+        "bbox": [
+            673,
+            143,
+            749,
+            162
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 probability binomial-distribution easy",
+        "bbox": [
+            87,
+            169,
+            337,
+            179
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            184,
+            188,
+            199
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "7.4.3 Binomial Distribution: GATE CSE 2006 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            77,
+            207,
+            539,
+            223
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/f7dfe4865b6460aeae3020151dc6c24523c6bf2c723eab53f14d987f23edcbd9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            211,
+            932,
+            249
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "For each element in a set of size 2n, an unbiased coin is tossed. The 2n coin tosses are independent. An element is chosen if the corresponding coin toss was a head. The probability that exactly n elements are chosen is",
+        "bbox": [
+            84,
+            232,
+            878,
+            274
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{2^{n}C_{n}}{4^{n}}$",
+        "bbox": [
+            89,
+            285,
+            146,
+            307
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{2^{n}C_{n}}{2^{n}}$",
+        "bbox": [
+            285,
+            285,
+            342,
+            308
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{1}{2nC_{n}}$",
+        "bbox": [
+            480,
+            287,
+            536,
+            309
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{1}{2}$",
+        "bbox": [
+            673,
+            287,
+            712,
+            307
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 probability binomial-distribution normal",
+        "bbox": [
+            87,
+            313,
+            349,
+            323
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            328,
+            188,
+            344
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "7.4.4 Binomial Distribution: GATE IT 2005 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            77,
+            353,
+            522,
+            366
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/da58e93b4d9ba98d2a1b7d03ea16f5f202fa93fff1a0139e1a94cbc655368271.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            355,
+            932,
+            394
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "An unbiased coin is tossed repeatedly until the outcome of two successive tosses is the same. Assuming that the trials are independent, the expected number of tosses is",
+        "bbox": [
+            84,
+            376,
+            875,
+            404
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            419,
+            126,
+            432
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            419,
+            321,
+            432
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 5",
+        "bbox": [
+            480,
+            419,
+            515,
+            432
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            419,
+            710,
+            432
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 probability binomial-distribution expectation normal",
+        "bbox": [
+            87,
+            442,
+            403,
+            453
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            459,
+            188,
+            473
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "7.4.5 Binomial Distribution: GATE IT 2006 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            77,
+            483,
+            522,
+            497
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/f7fe6911687021d2ccbb646b357cc65c69095e3aff8a4faae04be97635ebff99.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            486,
+            932,
+            524
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "When a coin is tossed, the probability of getting a Head is p, 0 < p < 1. Let N be the random variable denoting the number of tosses till the first Head appears, including the toss where the Head appears. Assuming that successive tosses are independent, the expected value of N is",
+        "bbox": [
+            84,
+            507,
+            878,
+            551
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{1}{p}$",
+        "bbox": [
+            89,
+            560,
+            132,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{1}{(1-p)}$",
+        "bbox": [
+            285,
+            561,
+            369,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{1}{p^{2}}$",
+        "bbox": [
+            480,
+            560,
+            527,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{1}{(1-p^{2})}$",
+        "bbox": [
+            673,
+            561,
+            766,
+            595
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 probability binomial-distribution expectation normal",
+        "bbox": [
+            87,
+            597,
+            403,
+            606
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            612,
+            188,
+            627
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "7.4.6 Binomial Distribution: GATE IT 2007 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            77,
+            636,
+            510,
+            650
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/e7e3845b7f008788614c1230b1b085dc2e528dce9a56e3a3d70d51e027a15805.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            638,
+            932,
+            676
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Suppose there are two coins. The first coin gives heads with probability $\\frac{5}{8}$ when tossed, while the second coin gives heads with probability $\\frac{1}{4}$ . One of the two coins is picked up at random with equal probability and that what is the probability of obtaining heads?",
+        "bbox": [
+            84,
+            660,
+            878,
+            733
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\left(\\frac{7}{8}\\right)$",
+        "bbox": [
+            89,
+            742,
+            154,
+            776
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $\\left(\\frac{1}{2}\\right)$",
+        "bbox": [
+            285,
+            742,
+            349,
+            776
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\left(\\frac{7}{16}\\right)$",
+        "bbox": [
+            480,
+            742,
+            552,
+            776
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $\\left(\\frac{5}{32}\\right)$",
+        "bbox": [
+            673,
+            742,
+            749,
+            776
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 probability normal binomial-distribution",
+        "bbox": [
+            87,
+            779,
+            342,
+            789
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            795,
+            188,
+            809
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "7.5",
+        "text_level": 1,
+        "bbox": [
+            68,
+            820,
+            95,
+            833
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Chi Square Distribution (1)",
+        "text_level": 1,
+        "bbox": [
+            406,
+            820,
+            621,
+            834
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "7.5.1 Chi Square Distribution: GATE DA 2026 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            77,
+            846,
+            547,
+            859
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $X_{1}, X_{2}, \\ldots, X_{n}$ be n independent random variables. Each of the random variables follows Normal $(\\mu = 0, \\sigma^{2} = 1)$ distribution. Define $X = \\frac{1}{n} \\sum_{i=1}^{n} X_{i}$ .",
+        "bbox": [
+            84,
+            869,
+            875,
+            904
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are correct?",
+        "bbox": [
+            85,
+            906,
+            443,
+            921
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/3998e0e99cb7f40aaf6bda1e6b884f63a2ebf6264c38df7451309637c189ef12.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            849,
+            932,
+            887
+        ],
+        "page_idx": 11
+    }
+]

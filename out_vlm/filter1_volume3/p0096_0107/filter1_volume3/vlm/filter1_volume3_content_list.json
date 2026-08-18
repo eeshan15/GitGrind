@@ -1,0 +1,3224 @@
+[
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- CRC can detect all single-bit errors, all double-bit errors, any odd number of errors, and all burst errors of length less than or equal to $r$ .",
+            "- It can detect a high percentage of burst errors longer than $r$ ."
+        ],
+        "bbox": [
+            72,
+            64,
+            934,
+            108
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            121,
+            465,
+            137
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Performing binary division incorrectly (modulo-2 arithmetic, no borrows).",
+            "- Technique: Practice modulo-2 polynomial division. Remember to pad the data with $r$ zeros before division."
+        ],
+        "bbox": [
+            72,
+            150,
+            865,
+            179
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "CSMA/CD (Carrier Sense Multiple Access with Collision Detection)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            191,
+            663,
+            207
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "CSMA/CD is a MAC protocol used in shared-medium networks like Ethernet. Stations listen before transmitting (carrier sense) and stop transmitting if a collision is detected (collision detection).",
+        "bbox": [
+            58,
+            220,
+            924,
+            250
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            263,
+            322,
+            277
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Slot Time: The maximum time it takes for a collision to be detected by all stations.",
+        "bbox": [
+            72,
+            292,
+            685,
+            307
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text { Slot   Time } = 2 \\times \\text { Propagation   Delay }\n$$",
+        "text_format": "latex",
+        "bbox": [
+            361,
+            317,
+            658,
+            334
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Minimum Frame Size: To ensure a collision is detected before the sender finishes transmitting the frame.",
+        "bbox": [
+            72,
+            343,
+            858,
+            358
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Minimum Frame Size} = \\text {Bandwidth} \\times \\text {Slot Time} = \\text {Bandwidth} \\times 2 \\times \\text {Propagation Delay}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            147,
+            368,
+            870,
+            385
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            399,
+            297,
+            414
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Uses binary exponential backoff algorithm to resolve collisions.",
+            "- Collision domain is the segment where collisions can occur."
+        ],
+        "bbox": [
+            72,
+            428,
+            544,
+            456
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            471,
+            465,
+            486
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing propagation delay with transmission delay. Propagation delay is time for a bit to travel, transmission delay is time to put all bits on wire.",
+            "- Technique: Ensure units are consistent (e.g., convert Mbps to bits/second, km to meters, ms to seconds)."
+        ],
+        "bbox": [
+            72,
+            500,
+            858,
+            542
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Channel Utilization",
+        "text_level": 1,
+        "bbox": [
+            60,
+            555,
+            236,
+            568
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Channel utilization (or efficiency) measures the fraction of time the channel is actively transmitting data, rather than being idle or transmitting overhead. It's a key performance metric for network protocols.",
+        "bbox": [
+            58,
+            584,
+            899,
+            612
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            627,
+            322,
+            642
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- General formula:",
+        "bbox": [
+            72,
+            656,
+            213,
+            669
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Utilization} = \\frac {\\text {Time spent transmitting useful data}}{\\text {Total time}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            295,
+            681,
+            722,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- For Stop-and-Wait ARQ:",
+        "bbox": [
+            72,
+            722,
+            268,
+            736
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nU = \\frac {1}{1 + 2 a}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            455,
+            748,
+            563,
+            781
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where $a = \\frac{\\text{Propagation Delay}}{\\text{Transmission Time}} = \\frac{T_p}{T_t}$ . This assumes no errors and negligible ACK transmission time.",
+        "bbox": [
+            84,
+            789,
+            801,
+            812
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- For Sliding Window (Go-Back-N or Selective Repeat) with window size $W$ :",
+        "bbox": [
+            72,
+            811,
+            631,
+            826
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nU = \\min \\left(1, \\frac {W}{1 + 2 a}\\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            416,
+            837,
+            601,
+            872
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This assumes no errors. If $W \\geq 1 + 2a$ , utilization can be 100%.",
+        "bbox": [
+            84,
+            881,
+            564,
+            897
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- For Pure Aloha:",
+        "bbox": [
+            72,
+            897,
+            205,
+            910
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS = G \\cdot e ^ {- 2 G}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            455,
+            65,
+            564,
+            81
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $S$ is throughput, $G$ is offered load. Max $S \\approx 0.184$ at $G = 0.5$ .",
+        "bbox": [
+            82,
+            93,
+            600,
+            108
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- For Slotted Aloha:",
+        "bbox": [
+            72,
+            109,
+            221,
+            121
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS = G \\cdot e ^ {- G}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            458,
+            134,
+            561,
+            150
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Max $S \\approx 0.368$ at $G = 1$ .",
+        "bbox": [
+            84,
+            162,
+            285,
+            176
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            192,
+            465,
+            207
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly calculating $a$ or not considering the full round-trip time.",
+            "- Technique: Clearly identify $T_{t}$ and $T_{p}$ from the problem statement. Remember $T_{p}$ is one-way."
+        ],
+        "bbox": [
+            70,
+            220,
+            773,
+            252
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Communication",
+        "text_level": 1,
+        "bbox": [
+            60,
+            263,
+            208,
+            277
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Communication in networks refers to the process of exchanging information between two or more entities. It involves various modes and fundamental concepts that define how data travels.",
+        "bbox": [
+            58,
+            292,
+            910,
+            321
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            334,
+            181,
+            350
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Simplex: Data flows in one direction only (e.g., radio broadcast).",
+            "- Half-Duplex: Data flows in both directions, but not simultaneously (e.g., walkie-talkie).",
+            "- Full-Duplex: Data flows in both directions simultaneously (e.g., telephone call).",
+            "- Bandwidth: The maximum data transfer rate of a network path, typically measured in bits per second (bps).",
+            "- Latency (Delay): The time it takes for a data packet to travel from one point to another. Comprises transmission, propagation, processing, and queuing delays."
+        ],
+        "bbox": [
+            70,
+            364,
+            907,
+            448
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            461,
+            465,
+            477
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing bandwidth with throughput. Bandwidth is capacity, throughput is actual rate.",
+            "- Technique: Understand the implications of each communication mode on protocol design (e.g., collision detection in half-duplex)."
+        ],
+        "bbox": [
+            70,
+            491,
+            917,
+            533
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Congestion Control",
+        "text_level": 1,
+        "bbox": [
+            60,
+            546,
+            243,
+            562
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Congestion control mechanisms aim to prevent network collapse by regulating the rate at which senders transmit data when the network is overloaded. TCP implements several strategies for this.",
+        "bbox": [
+            58,
+            574,
+            919,
+            604
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts (TCP):",
+        "text_level": 1,
+        "bbox": [
+            60,
+            618,
+            228,
+            633
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Slow Start: Exponentially increases congestion window (cwnd) at the beginning of a connection or after a timeout. cwnd starts at 1 MSS (Maximum Segment Size) and doubles every RTT.",
+            "- Congestion Avoidance: After cwnd reaches ssthresh (slow start threshold), cwnd increases linearly (by 1 MSS per RTT).",
+            "- Fast Retransmit: If the sender receives three duplicate ACKs, it retransmits the lost segment without waiting for a timeout.",
+            "- Fast Recovery: After Fast Retransmit, ssthresh is set to half of the current cwnd, and cwnd is set to ssthresh + 3 MSS. It then enters congestion avoidance."
+        ],
+        "bbox": [
+            70,
+            647,
+            929,
+            758
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            771,
+            465,
+            788
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly applying the rules for cwnd and ssthresh changes during slow start, congestion avoidance, and recovery phases.",
+            "- Technique: Draw a graph of cwnd vs. RTT to visualize the changes. Remember the ssthresh value is halved upon a loss."
+        ],
+        "bbox": [
+            70,
+            801,
+            919,
+            856
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Data Communication",
+        "text_level": 1,
+        "bbox": [
+            60,
+            870,
+            255,
+            885
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Data communication encompasses the processes, technologies, and methods involved in the electronic transmission of information. It covers the physical and logical aspects of moving data between devices.",
+        "bbox": [
+            58,
+            899,
+            932,
+            929
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            181,
+            79
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Signals: Electrical or electromagnetic waves used to transmit data. Can be analog or digital.",
+            "- Modulation: Converting digital data into analog signals for transmission over analog media.",
+            "- Demodulation: Converting analog signals back into digital data.",
+            "- Multiplexing: Combining multiple data streams into a single stream for transmission (e.g., TDM, FDM, WDM).",
+            "- Switching: Techniques for connecting communication paths (e.g., circuit, packet, message switching)."
+        ],
+        "bbox": [
+            72,
+            93,
+            887,
+            163
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            178,
+            463,
+            193
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing modulation with encoding, or different multiplexing techniques.",
+            "- Technique: Understand the purpose and basic mechanism of each concept."
+        ],
+        "bbox": [
+            72,
+            207,
+            673,
+            235
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Distance Vector Routing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            247,
+            285,
+            264
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Distance Vector Routing is a dynamic routing algorithm where each router maintains a routing table (distance vector) containing the best known distance to each destination and the next hop. Routers exchange their entire routing tables with directly connected neighbors.",
+        "bbox": [
+            58,
+            277,
+            917,
+            320
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            333,
+            181,
+            347
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Bellman-Ford Algorithm: The underlying algorithm for distance vector routing.",
+        "bbox": [
+            72,
+            362,
+            665,
+            378
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD _ {x} (y) = \\min _ {v} \\{c (x, v) + D _ {v} (y) \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            383,
+            387,
+            636,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "where $D_x(y)$ is the cost from $x$ to $y$ , $c(x, v)$ is cost from $x$ to neighbor $v$ , and $D_v(y)$ is $v$ 's reported cost to $y$ .",
+        "bbox": [
+            72,
+            421,
+            880,
+            435
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Count-to-Infinity Problem: A major drawback where routing loops can cause costs to increase indefinitely.",
+            "- Poisoned Reverse: A mechanism to mitigate count-to-infinity by advertising infinite cost for routes learned from a neighbor back to that neighbor."
+        ],
+        "bbox": [
+            72,
+            435,
+            912,
+            478
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            492,
+            463,
+            507
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly updating routing tables or failing to identify routing loops.",
+            "- Technique: Simulate the routing table updates step-by-step for a given network topology and link cost changes."
+        ],
+        "bbox": [
+            72,
+            521,
+            900,
+            549
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Error Detection",
+        "text_level": 1,
+        "bbox": [
+            60,
+            562,
+            203,
+            577
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Error detection techniques are used to determine if errors have occurred during data transmission. They add redundant bits to the data, allowing the receiver to check for integrity.",
+        "bbox": [
+            58,
+            592,
+            929,
+            621
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            634,
+            181,
+            649
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Parity Check: Adds a single parity bit to make the total number of 1s even (even parity) or odd (odd parity). Detects single-bit errors.",
+            "- Checksum: Divides data into segments, sums them (using one's complement arithmetic), and takes the one's complement of the sum as the checksum. Detects most errors, but not as robust as CRC.",
+            "- CRC (Cyclic Redundancy Check): Most powerful error detection technique, uses polynomial division. (See CRC Polynomial topic)."
+        ],
+        "bbox": [
+            72,
+            663,
+            929,
+            747
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            761,
+            322,
+            775
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Internet Checksum: Sum all 16-bit words (or specified size) of the data. If sum exceeds 16 bits, wrap around the carry. Take one's complement of the final sum.",
+        "bbox": [
+            72,
+            790,
+            910,
+            818
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            833,
+            463,
+            847
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Forgetting one's complement arithmetic for checksum calculations.",
+            "- Technique: Practice checksum calculations, especially with carry bits."
+        ],
+        "bbox": [
+            72,
+            862,
+            626,
+            890
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Ethernet",
+        "text_level": 1,
+        "bbox": [
+            60,
+            903,
+            144,
+            916
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Ethernet is the most widely used LAN technology, standardized by IEEE 802.3. It defines the physical and Data Link Layer specifications for wired networks, primarily using CSMA/CD.",
+        "bbox": [
+            58,
+            64,
+            907,
+            95
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            106,
+            181,
+            122
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- MAC Address: A 48-bit (6-byte) unique hardware identifier assigned to each network interface card (NIC).",
+            "- Ethernet Frame Format: Includes Preamble, SFD (Start Frame Delimiter), Destination MAC, Source MAC, Type/Length, Data, and FCS (Frame Check Sequence/CRC).",
+            "- Minimum/Maximum Frame Size: Standard Ethernet has a minimum frame size of 64 bytes (including header and FCS) and a maximum of 1518 bytes.",
+            "- CSMA/CD: The access method used for shared Ethernet segments."
+        ],
+        "bbox": [
+            72,
+            136,
+            919,
+            220
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            233,
+            322,
+            249
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Minimum Data Size: 46 bytes (to ensure minimum frame size of 64 bytes, considering 18 bytes of header/trailer).",
+        "bbox": [
+            72,
+            263,
+            912,
+            279
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            292,
+            465,
+            308
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing the total frame size with the data payload size.",
+            "- Technique: Memorize the Ethernet frame structure and minimum/maximum sizes."
+        ],
+        "bbox": [
+            72,
+            321,
+            687,
+            350
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Fragmentation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            362,
+            198,
+            378
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Fragmentation is the process at the Network Layer (IP) where a large IP packet is divided into smaller fragments to traverse a network link with a smaller Maximum Transmission Unit (MTU).",
+        "bbox": [
+            58,
+            391,
+            899,
+            421
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            434,
+            322,
+            448
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Offset Field: In the IP header, indicates the position of the fragment's data relative to the original datagram's data, in units of 8 bytes.",
+        "bbox": [
+            72,
+            463,
+            917,
+            492
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {New Offset} = \\frac {\\text {Original Offset} \\times 8 + \\text {Data Length of Fragment}}{8}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            243,
+            502,
+            771,
+            536
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Total Length Field: In the IP header, indicates the total length of the current fragment (header + data).",
+            "- More Fragments (MF) Flag: Set to 1 for all fragments except the last one."
+        ],
+        "bbox": [
+            72,
+            543,
+            835,
+            572
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            586,
+            297,
+            600
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Fragmentation can occur at any router along the path.",
+            "- Reassembly typically occurs only at the destination host.",
+            "- The data payload of each fragment (except possibly the last) must be a multiple of 8 bytes."
+        ],
+        "bbox": [
+            72,
+            615,
+            746,
+            657
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            671,
+            465,
+            686
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly calculating the offset field or the data length of fragments, especially when the original packet's data length is not a multiple of 8.",
+            "- Technique: Work through fragmentation problems step-by-step, ensuring each fragment's data length is a multiple of 8 (except the last) and updating the offset correctly."
+        ],
+        "bbox": [
+            72,
+            701,
+            921,
+            757
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Hamming Code",
+        "text_level": 1,
+        "bbox": [
+            60,
+            769,
+            205,
+            786
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Hamming code is an error-correcting code capable of detecting and correcting single-bit errors. It adds redundant parity bits at specific positions within the data.",
+        "bbox": [
+            58,
+            799,
+            929,
+            827
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            840,
+            322,
+            856
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Number of Parity Bits $(p)$ : To correct single-bit errors in a message of $m$ data bits, the number of parity bits $p$ must satisfy:",
+        "bbox": [
+            72,
+            870,
+            929,
+            899
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n2 ^ {p} \\geq m + p + 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            443,
+            909,
+            576,
+            926
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Parity Bit Positions: Parity bits are placed at positions that are powers of 2 (1, 2, 4, 8, ...).",
+            "- Parity Check: Each parity bit checks specific data bit positions. For example, parity bit at position $2^{k}$ checks all positions whose binary representation has the $k$ -th bit set."
+        ],
+        "bbox": [
+            72,
+            64,
+            892,
+            111
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            125,
+            463,
+            140
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly assigning parity bit positions or calculating parity values.",
+            "- Technique: Systematically determine parity bit positions, then calculate parity values based on the data bits they cover. For error detection/correction, calculate syndrome bits."
+        ],
+        "bbox": [
+            72,
+            154,
+            907,
+            195
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "IP Addressing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            209,
+            193,
+            225
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "IP addressing (IPv4 and IPv6) is a fundamental concept in the Network Layer, providing unique logical addresses for devices on a network. IPv4 uses 32-bit addresses, while IPv6 uses 128-bit addresses.",
+        "bbox": [
+            58,
+            238,
+            909,
+            267
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results (IPv4):",
+        "text_level": 1,
+        "bbox": [
+            60,
+            281,
+            371,
+            296
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Number of Hosts: For a given subnet mask, if $h$ bits are available for host IDs, then the number of usable hosts is $2^h - 2$ (subtracting network and broadcast addresses).",
+            "- Number of Subnets: If $s$ bits are borrowed from the host portion for subnetting, the number of subnets created is $2^s$ .",
+            "- CIDR (Classless Inter-Domain Routing): Uses a prefix length (e.g., /24) to specify the network portion of an IP address, replacing class-based addressing."
+        ],
+        "bbox": [
+            72,
+            309,
+            917,
+            397
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            412,
+            295,
+            427
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Network ID: All host bits are 0.",
+            "- Broadcast ID: All host bits are 1.",
+            "- Private IP Ranges: Reserved for private networks (e.g., 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16)."
+        ],
+        "bbox": [
+            72,
+            441,
+            810,
+            484
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            498,
+            463,
+            513
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly calculating subnet masks, network IDs, or broadcast IDs, especially with CIDR notation.",
+            "- Technique: Convert IP addresses and subnet masks to binary for clear visualization. Practice subnetting problems extensively."
+        ],
+        "bbox": [
+            72,
+            527,
+            922,
+            568
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "IP Packet",
+        "text_level": 1,
+        "bbox": [
+            60,
+            581,
+            149,
+            597
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "An IP packet (or datagram) is the fundamental unit of data transfer in the Internet Protocol. It consists of an IP header and a data payload.",
+        "bbox": [
+            58,
+            611,
+            914,
+            640
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts (IPv4 Header Fields):",
+        "text_level": 1,
+        "bbox": [
+            60,
+            654,
+            341,
+            669
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Version (4 bits): Indicates IPv4 or IPv6.",
+            "- Header Length (IHL, 4 bits): Length of the IP header in 32-bit words. Minimum 5 (20 bytes), maximum 15 (60 bytes).",
+            "- Total Length (16 bits): Total length of the IP datagram (header + data) in bytes. Max 65535 bytes.",
+            "- Identification (16 bits): Used for reassembling fragmented datagrams.",
+            "- Flags (3 bits): Includes DF (Don't Fragment) and MF (More Fragments).",
+            "- Fragment Offset (13 bits): Position of the fragment in the original datagram (in 8-byte units).",
+            "- Time To Live (TTL, 8 bits): Decremented by each router; packet is discarded if TTL reaches 0. Prevents infinite loops.",
+            "- Protocol (8 bits): Indicates the next-level protocol (e.g., 6 for TCP, 17 for UDP, 1 for ICMP).",
+            "- Header Checksum (16 bits): Used for error detection only on the header. Recalculated at each hop.",
+            "- Source IP Address (32 bits): Sender's IP address.",
+            "- Destination IP Address (32 bits): Receiver's IP address."
+        ],
+        "bbox": [
+            72,
+            682,
+            902,
+            862
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            877,
+            463,
+            891
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Pitfall: Confusing header length (in 32-bit words) with total length (in bytes).",
+        "bbox": [
+            72,
+            906,
+            638,
+            922
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Technique: Memorize the key fields and their sizes. Practice calculating header checksums.",
+        "bbox": [
+            72,
+            64,
+            759,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "ICMP (Internet Control Message Protocol)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            92,
+            440,
+            109
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "ICMP is a Network Layer protocol used by network devices, like routers, to send error messages and operational information indicating, for example, that a requested service is not available or that a host or router could not be reached.",
+        "bbox": [
+            58,
+            121,
+            882,
+            162
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            178,
+            181,
+            193
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Error Reporting: Reports errors such as \"Destination Unreachable,\" \"Time Exceeded,\" \"Parameter Problem.\"",
+            "- Query Messages: Used for diagnostic purposes (e.g., Echo Request/Reply for ping, Timestamp Request/Reply).",
+            "- Traceroute: Uses ICMP Time Exceeded messages to map the path to a destination."
+        ],
+        "bbox": [
+            72,
+            206,
+            907,
+            249
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            263,
+            465,
+            277
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing ICMP's role with routing protocols or transport layer protocols. ICMP is for network diagnostics and error reporting.",
+            "- Technique: Understand the common ICMP message types and their uses (e.g., ping uses type 8/0, traceroute uses type 11)."
+        ],
+        "bbox": [
+            72,
+            292,
+            931,
+            347
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "LAN Technologies",
+        "text_level": 1,
+        "bbox": [
+            60,
+            359,
+            233,
+            378
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "LAN (Local Area Network) technologies define the standards and methods for connecting devices within a limited geographical area. Ethernet is the dominant LAN technology.",
+        "bbox": [
+            58,
+            390,
+            885,
+            420
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            433,
+            181,
+            448
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Ethernet (IEEE 802.3): Dominant wired LAN technology, uses CSMA/CD (for shared media) or full-duplex switching. Various speeds (10 Mbps, 100 Mbps, 1 Gbps, 10 Gbps, etc.).",
+            "- Token Ring (IEEE 802.5): Older LAN technology, uses a token-passing mechanism for media access. Devices form a logical ring.",
+            "- FDDI (Fiber Distributed Data Interface): High-speed token-passing LAN over fiber optics, uses dual rings for redundancy.",
+            "- Wi-Fi (IEEE 802.11): Wireless LAN technology, uses CSMA/CA (Collision Avoidance)."
+        ],
+        "bbox": [
+            72,
+            461,
+            895,
+            559
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            573,
+            465,
+            589
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing the MAC access methods (CSMA/CD vs. Token Passing vs. CSMA/CA).",
+            "- Technique: Compare and contrast the characteristics, advantages, and disadvantages of different LAN technologies."
+        ],
+        "bbox": [
+            72,
+            603,
+            840,
+            644
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "MAC Protocol (Medium Access Control)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            657,
+            423,
+            674
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "MAC protocols define how multiple stations share a common transmission medium to avoid collisions and ensure fair access. They are part of the Data Link Layer.",
+        "bbox": [
+            58,
+            686,
+            912,
+            716
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            729,
+            181,
+            744
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Channel Partitioning Protocols: Divide the channel into smaller, independent channels (e.g., TDMA, FDMA, CDMA).",
+            "- Random Access Protocols: Allow stations to transmit whenever they have data, resolving collisions if they occur (e.g., Aloha, CSMA, CSMA/CD, CSMA/CA).",
+            "- Taking-Turns Protocols: Stations take turns accessing the channel (e.g., Token Ring, Polling)."
+        ],
+        "bbox": [
+            72,
+            758,
+            915,
+            828
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            843,
+            322,
+            857
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- (See Pure Aloha, Slotted Aloha, CSMA/CD for specific formulas).",
+        "bbox": [
+            72,
+            871,
+            561,
+            885
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            901,
+            465,
+            916
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Misidentifying the type of MAC protocol or its collision resolution mechanism.",
+            "- Technique: Understand the trade-offs between different MAC protocols (efficiency, fairness, complexity)."
+        ],
+        "bbox": [
+            72,
+            64,
+            850,
+            93
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Network Flow",
+        "text_level": 1,
+        "bbox": [
+            60,
+            105,
+            189,
+            119
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Network flow is a concept in graph theory used to model the movement of resources through a network. In computer networks, it can represent data traffic.",
+        "bbox": [
+            60,
+            135,
+            907,
+            163
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            178,
+            179,
+            193
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Flow Network: A directed graph where each edge has a capacity and a flow.",
+            "- Source and Sink: Special nodes representing the origin and destination of the flow.",
+            "- Max-Flow Min-Cut Theorem: States that the maximum amount of flow passing from a source to a sink in a flow network is equal to the total capacity of the minimum cut."
+        ],
+        "bbox": [
+            72,
+            207,
+            900,
+            262
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            277,
+            463,
+            292
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: While Max-Flow Min-Cut is a core concept, GATE CS typically tests its conceptual understanding rather than complex numerical algorithms like Edmonds-Karp or Dinic.",
+            "- Technique: Focus on understanding the theorem and identifying cuts in simple networks."
+        ],
+        "bbox": [
+            72,
+            306,
+            929,
+            347
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Network Layer",
+        "text_level": 1,
+        "bbox": [
+            60,
+            361,
+            196,
+            377
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The Network Layer (Layer 3 of the OSI model) is responsible for logical addressing, routing, and forwarding packets across different networks. IP is the primary protocol at this layer.",
+        "bbox": [
+            60,
+            390,
+            904,
+            419
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            433,
+            179,
+            448
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Logical Addressing: IP addresses provide unique identification for devices across the internet.",
+            "- Routing: Determining the best path for packets to travel from source to destination.",
+            "- Forwarding: Moving a packet from an incoming interface to an outgoing interface on a router.",
+            "- Protocols: IP, ICMP, IGMP, Routing Protocols (RIP, OSPF, BGP)."
+        ],
+        "bbox": [
+            72,
+            461,
+            781,
+            517
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            532,
+            463,
+            547
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing Network Layer functions with Data Link Layer (MAC addressing, framing) or Transport Layer (port numbers, reliability).",
+            "- Technique: Clearly distinguish the responsibilities of each layer in the OSI/TCP-IP model."
+        ],
+        "bbox": [
+            72,
+            561,
+            929,
+            603
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Network Protocols",
+        "text_level": 1,
+        "bbox": [
+            60,
+            616,
+            233,
+            631
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Network protocols are formal rules and standards that govern how devices communicate and exchange data over a network. They define the format, timing, sequencing, and error control of data transmission.",
+        "bbox": [
+            60,
+            646,
+            900,
+            674
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            688,
+            179,
+            703
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- TCP/IP Suite: The most widely used set of protocols, forming the basis of the internet. Includes TCP, UDP, IP, HTTP, FTP, etc.",
+            "- Layered Architecture: Protocols are organized into layers (e.g., OSI model, TCP/IP model), with each layer providing services to the layer above it."
+        ],
+        "bbox": [
+            72,
+            716,
+            889,
+            773
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            787,
+            463,
+            802
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Not knowing which protocols operate at which layer or their specific functions.",
+            "- Technique: Create a mental map or table of protocols and their corresponding layers/functions."
+        ],
+        "bbox": [
+            72,
+            815,
+            781,
+            845
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Network Switching",
+        "text_level": 1,
+        "bbox": [
+            60,
+            858,
+            233,
+            874
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Network switching refers to the mechanisms used to establish connections between communicating devices in a network. Different switching techniques have varying characteristics regarding resource allocation and delay.",
+        "bbox": [
+            60,
+            887,
+            878,
+            916
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            181,
+            80
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Circuit Switching: A dedicated end-to-end communication path (circuit) is established before data transfer and maintained for the duration of the communication (e.g., traditional telephone networks). Guarantees bandwidth.",
+            "- Packet Switching: Data is broken into small, independent packets, each routed individually through the network. No dedicated path. More efficient use of bandwidth, but variable delay (e.g., Internet).",
+            "- Message Switching: Entire messages are stored and forwarded at each intermediate node. No dedicated path. High delay."
+        ],
+        "bbox": [
+            72,
+            93,
+            934,
+            176
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            191,
+            465,
+            207
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing the characteristics of circuit vs. packet switching, especially regarding setup time, resource reservation, and delay.",
+            "- Technique: Understand the trade-offs: Circuit switching for guaranteed QoS, Packet switching for efficiency and flexibility."
+        ],
+        "bbox": [
+            72,
+            220,
+            904,
+            276
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "OSI Model",
+        "text_level": 1,
+        "bbox": [
+            60,
+            289,
+            159,
+            304
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven distinct layers. It helps in understanding network architecture and troubleshooting.",
+        "bbox": [
+            58,
+            318,
+            914,
+            361
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            375,
+            181,
+            390
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Physical Layer (Layer 1): Deals with the physical transmission of raw bits over a medium (cables, connectors, voltage levels). PDU: Bit.",
+            "2. Data Link Layer (Layer 2): Provides reliable data transfer between adjacent nodes, framing, MAC addressing, error detection/correction. PDU: Frame.",
+            "3. Network Layer (Layer 3): Handles logical addressing (IP), routing, and forwarding packets across networks. PDU: Packet/Datagram.",
+            "4. Transport Layer (Layer 4): Provides end-to-end communication, reliability (TCP), flow control, congestion control, port addressing. PDU: Segment (TCP), Datagram (UDP).",
+            "5. Session Layer (Layer 5): Manages communication sessions, synchronization, dialog control.",
+            "6. Presentation Layer (Layer 6): Handles data representation, encryption, decryption, compression.",
+            "7. Application Layer (Layer 7): Provides network services directly to user applications (HTTP, FTP, DNS). PDU: Data/Message."
+        ],
+        "bbox": [
+            63,
+            403,
+            932,
+            570
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            585,
+            465,
+            600
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Forgetting the order of layers or the primary function/PDU of each layer.",
+            "- Technique: Use mnemonics (e.g., \"Please Do Not Throw Sausage Pizza Away\") to remember the order. Focus on the first four layers, as they are most frequently tested."
+        ],
+        "bbox": [
+            72,
+            614,
+            921,
+            656
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Probability",
+        "text_level": 1,
+        "bbox": [
+            60,
+            669,
+            164,
+            686
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Probability theory is used in computer networks to model and analyze the performance of random access protocols (like Aloha) and to evaluate network reliability and queueing behavior.",
+        "bbox": [
+            58,
+            698,
+            932,
+            726
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            741,
+            181,
+            756
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Poisson Distribution: Often used to model arrival rates of packets or frames in random access protocols.",
+            "- Throughput: The rate at which successful transmissions occur.",
+            "- Offered Load (G): The total number of frames generated per unit of time, including retransmissions."
+        ],
+        "bbox": [
+            72,
+            769,
+            857,
+            812
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            827,
+            322,
+            840
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- (See Pure Aloha, Slotted Aloha for specific probability-based throughput formulas).",
+        "bbox": [
+            72,
+            855,
+            689,
+            870
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            884,
+            465,
+            899
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Pitfall: Misinterpreting the meaning of offered load (G) vs. throughput (S).",
+        "bbox": [
+            72,
+            913,
+            623,
+            928
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Technique: Understand the assumptions behind probabilistic models (e.g., Poisson arrivals, infinite number of users).",
+        "bbox": [
+            72,
+            64,
+            890,
+            93
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Pure Aloha",
+        "text_level": 1,
+        "bbox": [
+            60,
+            105,
+            166,
+            119
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Pure Aloha is a simple random access MAC protocol where stations transmit frames whenever they have data. If a collision occurs, the stations wait a random amount of time and retransmit.",
+        "bbox": [
+            58,
+            135,
+            895,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            178,
+            322,
+            192
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Throughput (S): The rate of successful transmissions.",
+        "bbox": [
+            72,
+            207,
+            487,
+            220
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS = G \\cdot e ^ {- 2 G}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            453,
+            232,
+            564,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where G is the offered load (total number of frames generated per frame transmission time, including retransmissions).",
+        "bbox": [
+            82,
+            261,
+            821,
+            289
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Maximum Throughput ( $S_{max}$ ): Occurs when G = 0.5.",
+        "bbox": [
+            72,
+            289,
+            495,
+            305
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {m a x} = 0. 5 \\cdot e ^ {- 2 \\cdot 0. 5} = 0. 5 \\cdot e ^ {- 1} = \\frac {1}{2 e} \\approx 0. 1 8 4\n$$",
+        "text_format": "latex",
+        "bbox": [
+            324,
+            315,
+            699,
+            347
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            359,
+            297,
+            374
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Collision window is $2 \\times T_{\\text{frame}}$ .",
+            "- Highly inefficient due to frequent collisions."
+        ],
+        "bbox": [
+            72,
+            388,
+            400,
+            416
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            432,
+            465,
+            447
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Forgetting the factor of 2G in the exponent for pure Aloha.",
+            "- Technique: Understand the concept of the vulnerability period for collisions."
+        ],
+        "bbox": [
+            72,
+            461,
+            640,
+            489
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Routing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            502,
+            137,
+            517
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Routing is the process of selecting paths in a network along which to send network traffic. It involves determining the best route for packets from a source to a destination.",
+        "bbox": [
+            58,
+            530,
+            907,
+            559
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            574,
+            179,
+            589
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Static Routing: Routes are manually configured by an administrator. Simple for small networks.",
+            "- Dynamic Routing: Routers exchange routing information and update their tables automatically using routing protocols. Adaptable to network changes.",
+            "- Routing Table: A table stored in a router that maps destination network addresses to the next hop router and outgoing interface."
+        ],
+        "bbox": [
+            72,
+            603,
+            882,
+            673
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            687,
+            465,
+            701
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing routing (path selection) with forwarding (packet movement).",
+            "- Technique: Understand how a router uses its routing table to make forwarding decisions."
+        ],
+        "bbox": [
+            72,
+            716,
+            737,
+            744
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Routing Protocols",
+        "text_level": 1,
+        "bbox": [
+            60,
+            757,
+            230,
+            773
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Routing protocols are the algorithms and rules that routers use to exchange routing information and build their routing tables. They are classified by their operating scope and algorithm type.",
+        "bbox": [
+            58,
+            786,
+            915,
+            815
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            828,
+            179,
+            844
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Interior Gateway Protocols (IGPs): Used within an Autonomous System (AS).",
+            "- RIP (Routing Information Protocol): Distance Vector, uses hop count as metric, max 15 hops.",
+            "- OSPF (Open Shortest Path First): Link State, uses Dijkstra's algorithm, builds a complete topology map.",
+            "- Exterior Gateway Protocols (EGPs): Used between Autonomous Systems.",
+            "- BGP (Border Gateway Protocol): Path Vector, used for inter-domain routing on the Internet."
+        ],
+        "bbox": [
+            72,
+            858,
+            880,
+            928
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Link State vs. Distance Vector:",
+        "bbox": [
+            73,
+            65,
+            329,
+            78
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Distance Vector: Routers share their entire routing tables with neighbors. (e.g., RIP)",
+            "- Link State: Routers share information about their directly connected links with all other routers in the AS. (e.g., OSPF)"
+        ],
+        "bbox": [
+            97,
+            79,
+            915,
+            119
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            135,
+            463,
+            150
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing RIP with OSPF, or IGPs with EGPs.",
+            "- Technique: Know the key characteristics of each protocol (metric, algorithm type, scope). Practice Dijkstra's algorithm for OSPF-like problems."
+        ],
+        "bbox": [
+            72,
+            163,
+            875,
+            206
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Sliding Window",
+        "text_level": 1,
+        "bbox": [
+            60,
+            219,
+            206,
+            235
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Sliding Window protocols are flow control mechanisms that allow a sender to transmit multiple frames before receiving an acknowledgment, improving channel utilization. They use a window of sequence numbers.",
+        "bbox": [
+            58,
+            248,
+            919,
+            277
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            290,
+            322,
+            305
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Window Size (W): The maximum number of unacknowledged frames a sender can transmit.",
+            "- Sequence Number Bits (n): For a window size $W$ , the minimum number of bits required for sequence numbers depends on the protocol.",
+            "- Go-Back-N: Sender window $W_S$ , Receiver window $W_R = 1$ . Sequence numbers range from 0 to $2^n - 1$ . $W_S + W_R \\leq 2^n \\implies W_S \\leq 2^n - 1$ .",
+            "- Selective Repeat: Sender window $W_{S}$ , Receiver window $W_{R}$ . $W_{S} = W_{R} = 2^{n - 1}$ .",
+            "- Channel Utilization (U) for Sliding Window:"
+        ],
+        "bbox": [
+            72,
+            320,
+            902,
+            422
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nU = \\min \\left(1, \\frac {W _ {S}}{1 + 2 a}\\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            416,
+            433,
+            601,
+            470
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "where $a = T_{p} / T_{t}$ .",
+        "bbox": [
+            84,
+            479,
+            226,
+            497
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            510,
+            295,
+            524
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Go-Back-N (GBN): If a frame is lost, the sender retransmits that frame and all subsequent frames already sent. Receiver discards out-of-order frames.",
+            "- Selective Repeat (SR): If a frame is lost, only that specific frame is retransmitted. Receiver buffers out-of-order frames. More efficient but complex."
+        ],
+        "bbox": [
+            72,
+            539,
+            895,
+            593
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            609,
+            463,
+            624
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly determining the maximum window size for Go-Back-N vs. Selective Repeat for a given number of sequence bits.",
+            "- Technique: Memorize the window size rules for GBN and SR. Practice calculating utilization with different window sizes and $a$ values."
+        ],
+        "bbox": [
+            72,
+            638,
+            929,
+            693
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Slotted Aloha",
+        "text_level": 1,
+        "bbox": [
+            60,
+            706,
+            186,
+            720
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Slotted Aloha is an improvement over Pure Aloha where time is divided into discrete slots. Stations are only allowed to transmit at the beginning of a slot, reducing the collision window.",
+        "bbox": [
+            58,
+            736,
+            919,
+            764
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            779,
+            322,
+            793
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Throughput (S):",
+        "bbox": [
+            72,
+            808,
+            213,
+            823
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS = G \\cdot e ^ {- G}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            458,
+            833,
+            559,
+            850
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "where G is the offered load.",
+        "bbox": [
+            84,
+            862,
+            292,
+            876
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Maximum Throughput ( $S_{max}$ ): Occurs when G = 1.",
+        "bbox": [
+            72,
+            877,
+            480,
+            893
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {m a x} = 1 \\cdot e ^ {- 1} = \\frac {1}{e} \\approx 0. 3 6 8\n$$",
+        "text_format": "latex",
+        "bbox": [
+            394,
+            65,
+            628,
+            98
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            108,
+            297,
+            124
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Collision window is $1 \\times T_{frame}$ .",
+            "- Requires global time synchronization."
+        ],
+        "bbox": [
+            72,
+            138,
+            363,
+            166
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            181,
+            465,
+            197
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Pitfall: Confusing the throughput formula with Pure Aloha (exponent is -G, not -2G).",
+        "bbox": [
+            72,
+            210,
+            695,
+            224
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Technique: Understand how slotting reduces the vulnerability period for collisions.",
+        "bbox": [
+            72,
+            224,
+            689,
+            238
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Sockets",
+        "text_level": 1,
+        "bbox": [
+            60,
+            251,
+            139,
+            266
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Sockets provide an Application Programming Interface (API) for network communication, allowing applications to send and receive data over a network. They are the endpoints of communication.",
+        "bbox": [
+            58,
+            280,
+            922,
+            309
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            323,
+            181,
+            338
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Socket Types:",
+            "- Stream Sockets (TCP): Connection-oriented, reliable, ordered data delivery.",
+            "- Datagram Sockets (UDP): Connectionless, unreliable, unordered data delivery.",
+            "- Common Socket Functions (for TCP server): socket(), bind(), listen(), accept(), send(), recv(), close().",
+            "- Common Socket Functions (for TCP client): socket(), connect(), send(), recv(), close()."
+        ],
+        "bbox": [
+            72,
+            352,
+            843,
+            423
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            435,
+            465,
+            451
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing the sequence of system calls for client vs. server, or for TCP vs. UDP.",
+            "- Technique: Memorize the typical sequence of socket calls for both client and server applications."
+        ],
+        "bbox": [
+            72,
+            465,
+            794,
+            494
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Stop and Wait",
+        "text_level": 1,
+        "bbox": [
+            60,
+            505,
+            193,
+            522
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Stop and Wait is the simplest ARQ (Automatic Repeat Request) protocol for reliable data transfer. The sender transmits one frame and waits for an acknowledgment (ACK) before sending the next.",
+        "bbox": [
+            58,
+            535,
+            932,
+            565
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            578,
+            322,
+            593
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Transmission Time ( $T_t$ ): Time to put the entire frame on the link.",
+        "bbox": [
+            72,
+            606,
+            568,
+            622
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT _ {t} = \\frac {\\text {Frame Size}}{\\text {Bandwidth}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            435,
+            633,
+            584,
+            667
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Propagation Delay ( $T_p$ ): Time for the first bit to travel from sender to receiver.",
+        "bbox": [
+            72,
+            674,
+            660,
+            690
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT _ {p} = \\frac {\\text {Distance}}{\\text {Propagation Speed}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            401,
+            699,
+            618,
+            735
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Dimensionless Parameter (a): Ratio of propagation delay to transmission time.",
+        "bbox": [
+            72,
+            743,
+            670,
+            758
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\na = \\frac{T_p}{T_t}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            475,
+            768,
+            544,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Channel Utilization (Efficiency) ( $U$ ):",
+        "bbox": [
+            72,
+            811,
+            366,
+            827
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nU = \\frac {1}{1 + 2 a}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            455,
+            837,
+            563,
+            870
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "This assumes no errors and negligible ACK transmission time.",
+        "bbox": [
+            85,
+            878,
+            542,
+            893
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            907,
+            297,
+            922
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Sender window size = 1, Receiver window size = 1.",
+            "- Uses 1-bit sequence numbers (0 and 1).",
+            "- Low utilization for high bandwidth-delay product links."
+        ],
+        "bbox": [
+            72,
+            65,
+            475,
+            106
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            121,
+            465,
+            136
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Forgetting to multiply $T_{p}$ by 2 for the round-trip propagation delay in the denominator of the utilization formula.",
+            "- Technique: Always calculate $T_{t}$ and $T_{p}$ first, then $a$ , then $U$ . Pay attention to units."
+        ],
+        "bbox": [
+            72,
+            150,
+            875,
+            195
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Subnetting",
+        "text_level": 1,
+        "bbox": [
+            60,
+            206,
+            164,
+            223
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Subnetting is the process of dividing a larger IP network into smaller, more manageable subnetworks (subnets). It improves network efficiency, security, and reduces broadcast traffic.",
+        "bbox": [
+            58,
+            235,
+            889,
+            264
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            277,
+            322,
+            293
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Number of Subnets: If $s$ bits are borrowed from the host portion of the IP address to create subnets, the number of subnets created is $2^s$ .",
+            "- Number of Usable Hosts per Subnet: If $h$ bits remain for host IDs in a subnet, the number of usable hosts is $2^h - 2$ (excluding the network and broadcast addresses for that subnet).",
+            "- Subnet Mask: A 32-bit number that distinguishes the network portion from the host portion of an IP address. All network/subnet bits are 1, all host bits are 0."
+        ],
+        "bbox": [
+            72,
+            307,
+            929,
+            394
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            409,
+            465,
+            425
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Incorrectly identifying the network ID, broadcast ID, or valid host range for a given IP address and subnet mask.",
+            "- Technique: Convert IP addresses and subnet masks to binary. Draw out the network, subnet, and host portions. Practice finding the first/last usable IP."
+        ],
+        "bbox": [
+            72,
+            438,
+            905,
+            494
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "TCP (Transmission Control Protocol)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            507,
+            400,
+            524
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "TCP is a reliable, connection-oriented, byte-stream Transport Layer protocol. It provides error control, flow control, and congestion control, making it suitable for applications requiring high data integrity.",
+        "bbox": [
+            58,
+            536,
+            924,
+            566
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Concepts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            579,
+            181,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Connection-Oriented: Establishes a connection using a 3-way handshake before data transfer.",
+            "- Reliable: Uses sequence numbers, acknowledgments (ACKs), and retransmissions to ensure all data arrives correctly.",
+            "- Flow Control: Prevents a fast sender from overwhelming a slow receiver using a receive window (rwnd).",
+            "- Congestion Control: Prevents network congestion (see Congestion Control topic).",
+            "- Full-Duplex: Data can flow in both directions simultaneously.",
+            "- Header Fields: Source/Destination Port, Sequence Number, Acknowledgment Number, Window Size, Checksum, Flags (SYN, ACK, FIN, RST, PSH, URG)."
+        ],
+        "bbox": [
+            72,
+            608,
+            917,
+            719
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            733,
+            322,
+            749
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• 3-Way Handshake: SYN -> SYN+ACK -> ACK.",
+            "- 4-Way Handshake (Connection Termination): FIN -> ACK -> FIN -> ACK."
+        ],
+        "bbox": [
+            72,
+            762,
+            640,
+            790
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls and Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            805,
+            465,
+            821
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Pitfall: Confusing sequence numbers with acknowledgment numbers, or the purpose of different TCP flags.",
+            "- Technique: Trace the sequence and acknowledgment numbers during a TCP connection setup, data transfer, and termination. Understand the role of the advertised window."
+        ],
+        "bbox": [
+            72,
+            834,
+            922,
+            876
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Token Bucket",
+        "text_level": 1,
+        "bbox": [
+            60,
+            889,
+            191,
+            904
+        ],
+        "page_idx": 11
+    }
+]

@@ -1,0 +1,3499 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/d33c7f713a7817ffeae009d08d12251fe9581c21b679ef23d9d42ced757d4ff4.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>/* P1 */while (true) {wants1 = true;while (wants2 == true);/* Critical Section */wants1 = false;}/* Remainder section */</td><td>/* P2 */while (true) {wants2 = true;while (wants1 == true);/* Critical Section */wants2=false;}/* Remainder section */</td></tr></table>",
+        "bbox": [
+            87,
+            65,
+            463,
+            203
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here, wants1 and wants2 are shared variables, which are initialized to false.",
+        "bbox": [
+            85,
+            219,
+            642,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is TRUE about the construct?",
+        "bbox": [
+            85,
+            238,
+            586,
+            252
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It does not ensure mutual exclusion.",
+            "B. It does not ensure bounded waiting.",
+            "C. It requires that processes enter the critical section in strict alteration.",
+            "D. It does not prevent deadlocks, but ensures mutual exclusion."
+        ],
+        "bbox": [
+            87,
+            263,
+            608,
+            333
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            358,
+            386,
+            368
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            374,
+            188,
+            389
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.24.31 Process Synchronization: GATE CSE 2009 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            78,
+            397,
+            589,
+            413
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The enter\\_CS() and leave\\_CS() functions to implement critical section of a process are realized using test-and-set instruction as follows:",
+        "bbox": [
+            84,
+            422,
+            875,
+            450
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nvoid enter_CS(X)\n{\n    while(test-and-set(X));\n}\n\nvoid leave_CS(X)\n{\n    X = 0;\n}\n```",
+        "bbox": [
+            84,
+            461,
+            272,
+            587
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In the above solution, $X$ is a memory location associated with the $CS$ and is initialized to 0. Now consider the following statements:",
+        "bbox": [
+            84,
+            597,
+            929,
+            625
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. The above solution to CS problem is deadlock-free",
+            "II. The solution is starvation free",
+            "III. The processes enter CS in FIFO order",
+            "IV. More than one process can enter CS at the same time"
+        ],
+        "bbox": [
+            84,
+            637,
+            512,
+            709
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements are TRUE?",
+        "bbox": [
+            85,
+            720,
+            403,
+            733
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. (I) only",
+        "bbox": [
+            87,
+            748,
+            163,
+            763
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. (I) and (II)",
+        "bbox": [
+            285,
+            748,
+            376,
+            763
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. (II) and (III)",
+        "bbox": [
+            480,
+            748,
+            581,
+            763
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. (IV) only",
+        "bbox": [
+            673,
+            748,
+            757,
+            763
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            773,
+            386,
+            783
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            789,
+            188,
+            804
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.24.32 Process Synchronization: GATE CSE 2010 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            812,
+            589,
+            827
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the methods used by processes P1 and P2 for accessing their critical sections whenever needed, as given below. The initial values of shared boolean variables S1 and S2 are randomly assigned.",
+        "bbox": [
+            84,
+            836,
+            875,
+            866
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/0d0d9da760218502c02dd5274042b244496329f29cf22cb1b0bae8e9e7130a41.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            400,
+            932,
+            439
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/915b2b401ea617557c0fc1ea08d1c25c607760da255424d2e76dc1b1b7e78799.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            815,
+            932,
+            853
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/178edc2c59174a40ad81b7b7b035ea0882176442e7bcfe6d145ad43c36982729.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Method used by P1</td><td>Method used by P2</td></tr><tr><td>while (S1 == S2);Critical SectionS1 = S2;</td><td>while (S1 != S2);Critical SectionS2 = not(S1);</td></tr></table>",
+        "bbox": [
+            302,
+            66,
+            715,
+            149
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements describes the properties achieved?",
+        "bbox": [
+            85,
+            169,
+            626,
+            185
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Mutual exclusion but not progress",
+            "C. Neither mutual exclusion nor progress"
+        ],
+        "bbox": [
+            87,
+            194,
+            352,
+            235
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            239,
+            386,
+            249
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Progress but not mutual exclusion",
+            "D. Both mutual exclusion and progress"
+        ],
+        "bbox": [
+            495,
+            194,
+            757,
+            235
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            254,
+            189,
+            270
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.24.33 Process Synchronization: GATE CSE 2010 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            277,
+            591,
+            294
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The following program consists of 3 concurrent processes and 3 binary semaphores. The semaphores are initialized as $S0 = 1$ , $S1 = 0$ and $S2 = 0$ .",
+        "bbox": [
+            84,
+            302,
+            878,
+            333
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/6b0c862403bfd3f8a09e142779e1c13d658e7602603c0114d8fc626116c63097.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            282,
+            932,
+            320
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/6735123e42e6a66063d862d87487617ca1feac2c5c0aa4ee257dd6237ccedb4e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process P0</td><td>Process P1</td><td>Process P2</td></tr><tr><td>while (true) { wait (S0); print ‘0’; release (S1); release (S2); }</td><td>wait (S1); release (S0);</td><td>wait (S2); release (S0);</td></tr></table>",
+        "bbox": [
+            319,
+            344,
+            697,
+            486
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "How many times will process P0 print '0'?",
+        "bbox": [
+            85,
+            508,
+            398,
+            524
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. At least twice",
+            "C. Exactly thrice"
+        ],
+        "bbox": [
+            89,
+            533,
+            206,
+            559
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            565,
+            386,
+            574
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Exactly twice",
+            "D. Exactly once"
+        ],
+        "bbox": [
+            495,
+            533,
+            608,
+            560
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            580,
+            189,
+            595
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.24.34 Process Synchronization: GATE CSE 2012 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            604,
+            589,
+            619
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Fetch\\_And\\_Add(X,i) is an atomic Read-Modify-Write instruction that reads the value of memory location X, increments it by the value i, and returns the old value of X. It is used in the pseudocode shown below to implement a busy-wait lock. L is an unsigned integer shared variable initialized to 0. The value of 0 corresponds to lock being available, while any non-zero value corresponds to the lock being not available.",
+        "bbox": [
+            84,
+            630,
+            929,
+            688
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nAcquireLock(L){\n    while (Fetch_And_Add(L,1))\n        L = 1;\n}\n\nReleaseLock(L){\n    L = 0;\n}\n```",
+        "bbox": [
+            87,
+            697,
+            263,
+            786
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "This implementation",
+        "bbox": [
+            87,
+            793,
+            238,
+            808
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. fails as L can overflow",
+            "B. fails as $L$ can take on a non-zero value when the lock is actually available",
+            "C. works correctly but may starve some processes",
+            "D. works correctly without starvation"
+        ],
+        "bbox": [
+            87,
+            819,
+            650,
+            876
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/0b2a4f9b4e7874b0dfb7703cbb363e4e3ffc114ef5393e083e4ea4cc0d731f8e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            606,
+            932,
+            644
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2012 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            902,
+            386,
+            912
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.24.35 Process Synchronization: GATE CSE 2013 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            591,
+            104
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/29c0f07bf5d2c1436d5ea42280f572be7d35a127262095d6c40e4ede85daf5ce.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            93,
+            931,
+            129
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A shared variable x, initialized to zero, is operated on by four concurrent processes W, X, Y, Z as follows. Each of the processes W and X reads x from memory, increments by one, stores it to memory, and then",
+        "bbox": [
+            84,
+            112,
+            875,
+            143
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "terminates. Each of the processes Y and Z reads x from memory, decrements by two, stores it to memory, and then terminates. Each process before reading x invokes the P operation (i.e., wait) on a counting semaphore S and invokes the V operation (i.e., signal) on the semaphore S after storing x to memory. Semaphore S is initialized to two. What is the maximum possible value of x after all processes complete execution?",
+        "bbox": [
+            84,
+            143,
+            929,
+            201
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. -2",
+        "bbox": [
+            89,
+            214,
+            137,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. -1",
+        "bbox": [
+            285,
+            214,
+            331,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 1",
+        "bbox": [
+            480,
+            214,
+            515,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 2",
+        "bbox": [
+            673,
+            214,
+            710,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            239,
+            386,
+            249
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            255,
+            188,
+            269
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.24.36 Process Synchronization: GATE CSE 2013 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            279,
+            589,
+            293
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/9f2723d6fd674b800f0254d977a11c120a4ebb34b20fd3193838e0f1f5b1e31a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            282,
+            931,
+            319
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A certain computation generates two arrays $a$ and $b$ such that $a[i] = f(i)$ for $0 \\leq i < n$ and $b[i] = g(a[i])$ for $0 \\leq i < n$ . Suppose this computation is decomposed into two concurrent processes $X$ and $Y$ such that",
+        "bbox": [
+            84,
+            302,
+            875,
+            333
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "X computes the array a and Y computes the array b. The processes employ two binary semaphores R and S, both initialized to zero. The array a is shared by the two processes. The structures of the processes are shown below.",
+        "bbox": [
+            84,
+            333,
+            927,
+            375
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Process X:",
+        "bbox": [
+            85,
+            378,
+            171,
+            391
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nprivate i;\nfor (i=0; i< n; i++) {\n  a[i] = f(i);\n  ExitX(R, S);\n}\n```",
+        "bbox": [
+            112,
+            404,
+            223,
+            458
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Process Y:",
+        "bbox": [
+            87,
+            467,
+            171,
+            480
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nprivate i;\nfor (i=0; i<n; i++) {\n    EntryY(R, S);\n    b[i] = g(a[i]);\n}\n```",
+        "bbox": [
+            112,
+            492,
+            223,
+            545
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following represents the CORRECT implementations of ExitX and EntryY?",
+        "bbox": [
+            85,
+            554,
+            756,
+            570
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/a7f112fa0ef618189add5cc19bbd6b8b99e489fb665784c611b0d179dbe0f671.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            90,
+            589,
+            198,
+            679
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/46e136c2d673600e1f907f31b72d26ddb4b1a311fdc07a1c84e2f01fbbfec6f7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            497,
+            590,
+            603,
+            676
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/81b93193ec6f7d9dfe38c60a11455858ffe63ebe6b66f06e2e95056c58bdedc6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            90,
+            698,
+            198,
+            787
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/d1255b3dcafd6ef32d96ca2a15f079700a167bdc23a9f6a3bb5e006c18f34a54.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            497,
+            698,
+            603,
+            787
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            802,
+            386,
+            812
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            818,
+            188,
+            832
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.24.37 Process Synchronization: GATE CSE 2014 | Set 2 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            840,
+            640,
+            856
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/7170593d4199f5288a26cedef066aad76919e8c59dee266e444e0f175e2a0d3b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            844,
+            931,
+            881
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the procedure below for the Producer-Consumer problem which uses semaphores:",
+        "bbox": [
+            85,
+            866,
+            759,
+            882
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```javascript\nsemaphore n = 0;\nsemaphore s = 1;\n```",
+        "bbox": [
+            87,
+            891,
+            191,
+            914
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```javascript\nvoid producer()\n{\n    while(true)\n    {\n        produce();\n        semWait(s);\n        addToBuffer();\n        semSignal(s);\n        semSignal(n);\n    }\n}\n```",
+        "bbox": [
+            87,
+            65,
+            206,
+            186
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nvoid consumer()\n{\n    while(true)\n    {\n        semWait(s);\n        semWait(n);\n        removeFromBuffer();\n        semSignal(s);\n        consume();\n    }\n}\n```",
+        "bbox": [
+            87,
+            194,
+            240,
+            315
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE?",
+        "bbox": [
+            85,
+            321,
+            354,
+            337
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The producer will be able to add an item to the buffer, but the consumer can never consume it.",
+            "B. The consumer will remove no more than one item from the buffer.",
+            "C. Deadlock occurs if the consumer succeeds in acquiring semaphore s when the buffer is empty.",
+            "D. The starting value for the semaphore n must be 1 and not 0 for deadlock-free operation."
+        ],
+        "bbox": [
+            85,
+            347,
+            801,
+            406
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            429,
+            406,
+            440
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            447,
+            188,
+            461
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.24.38 Process Synchronization: GATE CSE 2015 | Set 1 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            470,
+            631,
+            484
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The following two functions P1 and P2 that share a variable B with an initial value of 2 execute concurrently.",
+        "bbox": [
+            84,
+            494,
+            875,
+            524
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/979020dc737aedc7865eac67c373c38f420dd0216b10e710fb80b5e5774837de.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>P1() {C = B - 1;B = 2 * C;}</td><td>P2(){D = 2 * B;B = D - 1;}</td></tr></table>",
+        "bbox": [
+            394,
+            535,
+            621,
+            616
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The number of distinct values that B can possibly take after the execution is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            640,
+            845,
+            655
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1",
+        "bbox": [
+            87,
+            669,
+            166,
+            678
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "operating-system",
+        "bbox": [
+            178,
+            669,
+            252,
+            678
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "process-synchronization",
+        "bbox": [
+            263,
+            669,
+            364,
+            678
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "normal",
+        "bbox": [
+            374,
+            669,
+            406,
+            678
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "numerical-answers",
+        "bbox": [
+            418,
+            669,
+            497,
+            678
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            685,
+            188,
+            699
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.24.39 Process Synchronization: GATE CSE 2015 | Set 3 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            707,
+            642,
+            723
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Two processes X and Y need to access a critical section. Consider the following synchronization construct used by both the processes",
+        "bbox": [
+            84,
+            732,
+            878,
+            762
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/44c2d082e91fc8bb251bd1746b971852158fc1623d5bb7977246201195ea794f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            473,
+            931,
+            510
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/50bae7e2c21d7d508db3c974cd6735ad7c745bdb06c253d4ea70bcae882bb6c2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            711,
+            931,
+            749
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/22ab864f98e4b610ceed1c31e9df112308f330883d171c8457e04da0254364e2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process X</td><td>Process Y</td></tr><tr><td>/* other code for process X*/while (true){varP = true;while (varQ == true){/* Critical Section */varP = false;}}/* other code for process X */</td><td>/* other code for process Y */while (true){varQ = true;while (varP == true){/* Critical Section */varQ = false;}}/* other code for process Y */</td></tr></table>",
+        "bbox": [
+            238,
+            65,
+            776,
+            325
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Here varP and varQ are shared variables and both are initialized to false. Which one of the following statements is true?",
+        "bbox": [
+            84,
+            336,
+            927,
+            364
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The proposed solution prevents deadlock but fails to guarantee mutual exclusion",
+            "B. The proposed solution guarantees mutual exclusion but fails to prevent deadlock",
+            "C. The proposed solution guarantees mutual exclusion and prevents deadlock",
+            "D. The proposed solution fails to prevent deadlock and fails to guarantee mutual exclusion"
+        ],
+        "bbox": [
+            87,
+            375,
+            747,
+            432
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            457,
+            406,
+            467
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            473,
+            188,
+            488
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.24.40 Process Synchronization: GATE CSE 2016 | Set 1 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            497,
+            642,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following proposed solution for the critical section problem. There are n processes : $P_{0}\\ldots P_{n-1}$ . In the code, function pmax returns an integer not smaller than any of its arguments. For all i, $t[i]$ is initialized to zero.",
+        "bbox": [
+            84,
+            521,
+            875,
+            565
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Code for $P_{i}$ ;",
+        "bbox": [
+            85,
+            568,
+            181,
+            584
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```javascript\ndo {\n    c[i]=1; t[i]= pmax (t[0],...,t[n-1])+1; c[i]=0;\n    for every j != i in {0,...,n-1} {\n        while (c[j]);\n        while (t[j] != 0 && t[j] <=t[i]);\n    }\n    Critical Section;\n    t[i]=0;\n\n    Remainder Section;\n\n} while (true);\n```",
+        "bbox": [
+            87,
+            593,
+            336,
+            724
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is TRUE about the above solution?",
+        "bbox": [
+            85,
+            731,
+            509,
+            747
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. At most one process can be in the critical section at any time",
+            "B. The bounded wait condition is satisfied",
+            "C. The progress condition is satisfied",
+            "D. It cannot cause a deadlock"
+        ],
+        "bbox": [
+            87,
+            757,
+            556,
+            812
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 operating-system process-synchronization difficult ambiguous",
+        "bbox": [
+            87,
+            839,
+            470,
+            849
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            855,
+            188,
+            870
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.24.41 Process Synchronization: GATE CSE 2016 | Set 2 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            77,
+            878,
+            642,
+            893
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two-process synchronization solution.",
+        "bbox": [
+            85,
+            903,
+            527,
+            916
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/5bddde5372e2c2c04e057a653c919ca110606fad1ccbc0822e112cc00d905735.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            500,
+            931,
+            536
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d22a0d22d4ad8e7a5b821d7de9c64c7f13161668e973c93a5b579f3ead66987.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            881,
+            931,
+            919
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/3e2098c76dc24accd4d7878769866057136a0649abe8a9c2f718287602944ce2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>PROCESS 0</td><td>Process 1</td></tr><tr><td>Entry: loop while (turn == 1); (critical section)</td><td>Entry: loop while (turn == 0); (critical section)</td></tr><tr><td>Exit: turn = 1;</td><td>Exit turn = 0;</td></tr></table>",
+        "bbox": [
+            230,
+            65,
+            786,
+            185
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The shared variable turn is initialized to zero. Which one of the following is TRUE?",
+        "bbox": [
+            85,
+            194,
+            685,
+            209
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. This is a correct two- process synchronization solution.",
+            "B. This solution violates mutual exclusion requirement.",
+            "C. This solution violates progress requirement.",
+            "D. This solution violates bounded wait requirement."
+        ],
+        "bbox": [
+            87,
+            220,
+            512,
+            275
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            301,
+            406,
+            311
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            317,
+            186,
+            332
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.24.42 Process Synchronization: GATE CSE 2017 | Set 1 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            340,
+            642,
+            355
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6f39f07b449099626fd2c3a52f1f286063d78e31a95d1d0754efd9ab731b1e8d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            344,
+            931,
+            381
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A multithreaded program $P$ executes with $x$ number of threads and uses $y$ number of locks for ensuring mutual exclusion while operating on shared memory locations. All locks in the program are non-reentrant, i.e., if a thread holds a lock $l$ , then it cannot re-acquire lock $l$ without releasing it. If a thread is unable to access lock, it blocks until the lock becomes available. The minimum value of $x$ and the minimum value of $y$ toget which execution of $P$ can result in a deadlock are:",
+        "bbox": [
+            82,
+            365,
+            878,
+            441
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. x = 1, y = 2",
+        "bbox": [
+            87,
+            451,
+            206,
+            465
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $x = 2, y = 2$",
+        "bbox": [
+            90,
+            465,
+            205,
+            478
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $x = 2, y = 1$",
+        "bbox": [
+            495,
+            451,
+            610,
+            465
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $x = 1, y = 1$",
+        "bbox": [
+            497,
+            465,
+            611,
+            478
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            483,
+            406,
+            492
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            500,
+            186,
+            513
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.24.43 Process Synchronization: GATE CSE 2018 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            77,
+            523,
+            588,
+            536
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/0cef6b19c8f16f0808e719363eecc7848d1126bb614e8c7b748c42698d71762f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            526,
+            931,
+            562
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following solution to the producer-consumer synchronization problem. The shared buffer size is N. Three semaphores empty, full and mutex are defined with respective initial values of 0, N and 1.",
+        "bbox": [
+            84,
+            546,
+            878,
+            576
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Semaphore empty denotes the number of available slots in the buffer, for the consumer to read from. Semaphore full denotes the number of available slots in the buffer, for the producer to write to. The placeholder variables, denoted by P, Q, R and S, in the code below can be assigned either empty or full. The valid semaphore operations are: wait() and signal().",
+        "bbox": [
+            84,
+            576,
+            927,
+            635
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/122be14b993320acc86603e4b6517ca4cb523317595ba23b36ede0e77d00d65c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Producer:</td><td>Consumer:</td></tr><tr><td>do {wait (P);wait (mutex);//Add item to buffersignal (mutex);signal (Q);}while (1);</td><td>do {wait (R);wait (mutex);//consume item from buffersignal (mutex);signal (S);}while (1);</td></tr></table>",
+        "bbox": [
+            260,
+            646,
+            757,
+            808
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following assignments to P, Q, R and S will yield the correct solution?",
+        "bbox": [
+            84,
+            831,
+            727,
+            847
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $P:full$ , $Q:full$ , $R:empty$ , $S:empty$",
+            "B. $P: empty$ , $Q: empty$ , $R: full$ , $S: full$",
+            "C. $P:full$ , $Q:empty$ , $R:empty$ , $S:full$",
+            "D. $P: empty$ , $Q: full$ , $R: full$ , $S: empty$"
+        ],
+        "bbox": [
+            85,
+            856,
+            473,
+            918
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            93,
+            188,
+            108
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.24.44 Process Synchronization: GATE CSE 2019 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            117,
+            589,
+            131
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider three concurrent processes $P_{1}, P_{2}$ and $P_{3}$ as shown below, which access a shared variable D that has been initialized to 100.",
+        "bbox": [
+            84,
+            141,
+            878,
+            169
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f1e83afc32640455aa0ac56faa63c5d9da55ae3977149ad371499cbafb66e36.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            119,
+            931,
+            157
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/e66c6b93eb7d58b9f034cddb41d381f87cdba87dc27366b1c8a8275abd5f38c7.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td> $P_{1}$ </td><td> $P_{2}$ </td><td> $P_{3}$ </td></tr><tr><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td></tr><tr><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td></tr><tr><td> $D = D + 20$ </td><td> $D = D - 50$ </td><td> $D = D + 10$ </td></tr><tr><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td></tr><tr><td> $\\vdots$ </td><td> $\\vdots$ </td><td> $\\vdots$ </td></tr></table>",
+        "bbox": [
+            327,
+            182,
+            690,
+            300
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The processes are executed on a uniprocessor system running a time-shared operating system. If the minimum and maximum possible values of $D$ after the three processes have completed execution are $X$ and $Y$ respectively, then the value of $Y - X$ is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            309,
+            927,
+            355
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers operating-system process-synchronization one-mark",
+        "bbox": [
+            87,
+            366,
+            487,
+            377
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            383,
+            188,
+            397
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.24.45 Process Synchronization: GATE CSE 2024 | Set 2 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            78,
+            407,
+            642,
+            422
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a multi-threaded program with two threads T1 and T2. The threads share two semaphores: s1 (initialized to 1) and s2 (initialized to 0). The threads also share a global variable x (initialized to 0). The threads execute the code shown below.",
+        "bbox": [
+            84,
+            429,
+            878,
+            473
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/70c8c646e549450f491c9b387b1e0647826ab7536bba182bee7c0aebb3fd9693.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            410,
+            931,
+            448
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n//code of T 1\nwait (s1);\nx = x+1;\nprint (x);\nwait (s2);\nsignal(s1);\n```",
+        "bbox": [
+            87,
+            482,
+            927,
+            551
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n// code of T2\nwait (s1);\nx= x+1;\nprint (x) ;\nsignal (s2);\nsignal (s1);\n```",
+        "bbox": [
+            87,
+            558,
+            927,
+            627
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following outcomes is/are possible when threads T1 and T2 execute concurrently?",
+        "bbox": [
+            84,
+            647,
+            789,
+            663
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. T1 runs first and prints 1, T2 runs next and prints 2",
+            "B. T2 runs first and prints 1, T1 runs next and prints 2",
+            "C. T1 runs first and prints 1, T2 does not print anything (deadlock)",
+            "D. T2 runs first and prints 1, T1 does not print anything (deadlock)"
+        ],
+        "bbox": [
+            87,
+            672,
+            586,
+            732
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 operating-system multiple-selects process-synchronization two-marks",
+        "bbox": [
+            87,
+            757,
+            500,
+            767
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            771,
+            188,
+            787
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.24.46 Process Synchronization: GATE IT 2004 | Question: 65",
+        "text_level": 1,
+        "bbox": [
+            78,
+            796,
+            569,
+            811
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The semaphore variables full, empty and mutex are initialized to 0, n and 1, respectively. Process $P_{1}$ repeatedly adds one item at a time to a buffer of size n, and process $P_{2}$ repeatedly removes one item at a time from the same buffer using the programs given below. In the programs, K, L, M and N are unspecified statements.",
+        "bbox": [
+            84,
+            820,
+            929,
+            881
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/5546e8b629ad710091054d91b99e4bb154a2ad2f67260f887bda4dc4f2fe0457.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            799,
+            931,
+            836
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2018 operating-system process-synchronization normal two-marks",
+        "bbox": [
+            87,
+            78,
+            445,
+            87
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/26f86ab21ba38dc96ddbe743bac7986f77b9ba224efd9c2077ec0a824fc07ac8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            89,
+            74,
+            315,
+            251
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The statements $K, L, M$ and $N$ are respectively",
+        "bbox": [
+            85,
+            258,
+            450,
+            274
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. P(full), V(empty), P(full), V(empty)",
+            "C. P(empty), V(full), P(empty), V(full)"
+        ],
+        "bbox": [
+            87,
+            283,
+            344,
+            311
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            315,
+            379,
+            325
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. P(full), V(empty), P(empty), V(full)",
+            "D. P(empty), V(full), P(full), V(empty)"
+        ],
+        "bbox": [
+            495,
+            283,
+            749,
+            312
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            332,
+            188,
+            346
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.24.47 Process Synchronization: GATE IT 2005 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            355,
+            568,
+            370
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Given below is a program which when executed spawns two concurrent processes : semaphore X := 0;",
+        "bbox": [
+            84,
+            378,
+            700,
+            407
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "/\\* Process now forks into concurrent processes P1 & P2 \\*/",
+        "bbox": [
+            85,
+            408,
+            522,
+            422
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/54f44c9b0c5a1cd7597537a9eb38052547ce327e14fff2ff3e01ae06b2c680a2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>P1</td><td>P2</td></tr><tr><td>repeat forever</td><td>repeat forever</td></tr><tr><td>V(X);</td><td>P(X);</td></tr><tr><td>Compute;</td><td>Compute;</td></tr><tr><td>P(X);</td><td>V(X);</td></tr></table>",
+        "bbox": [
+            90,
+            427,
+            368,
+            527
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements about processes P1 and P2 :",
+        "bbox": [
+            85,
+            530,
+            561,
+            546
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. It is possible for process $P1$ to starve.",
+            "II. It is possible for process P2 to starve."
+        ],
+        "bbox": [
+            90,
+            555,
+            389,
+            586
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the following holds?",
+        "bbox": [
+            85,
+            596,
+            304,
+            612
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both (I) and (II) are true.",
+            "C. (II) is true but (I) is false"
+        ],
+        "bbox": [
+            89,
+            621,
+            278,
+            649
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 operating-system process-synchronization normal",
+        "bbox": [
+            89,
+            653,
+            379,
+            663
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. (I) is true but (II) is false.",
+            "D. Both (I) and (II) are false"
+        ],
+        "bbox": [
+            495,
+            621,
+            685,
+            649
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            669,
+            188,
+            684
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.24.48 Process Synchronization: GATE IT 2005 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            693,
+            569,
+            707
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Two concurrent processes $P1$ and $P2$ use four shared resources $R1, R2, R3$ and $R4$ , as shown below.",
+        "bbox": [
+            85,
+            716,
+            850,
+            733
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/82258006faebb5da61d1601ddccf1cfcd8b597d633d39a9e6ec795a7d9a1549d.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>P1</td><td>P2</td></tr><tr><td>Compute:</td><td>Compute;</td></tr><tr><td>Use R1;</td><td>Use R1;</td></tr><tr><td>Use R2;</td><td>Use R2;</td></tr><tr><td>Use R3;</td><td>Use R3;</td></tr><tr><td>Use R4;</td><td>Use R4;</td></tr></table>",
+        "bbox": [
+            403,
+            744,
+            611,
+            862
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Both processes are started at the same time, and each resource can be accessed by only one process at a time. The following scheduling constraints exist between the access of resources by the processes:",
+        "bbox": [
+            84,
+            885,
+            929,
+            914
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/a09c816279ddb4a11a02ac08c74771174b2ff3312fc212c27a0527b34a7d8904.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            358,
+            932,
+            396
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d37a24782d3a269207021f4295860eb79d55f37852385e635aa81e6e5a3f699.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            695,
+            932,
+            733
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $P2$ must complete use of $R1$ before $P1$ gets access to $R1$ .",
+            "- $P1$ must complete use of $R2$ before $P2$ gets access to $R2$ .",
+            "- $P2$ must complete use of $R3$ before $P1$ gets access to $R3$ .",
+            "- $P1$ must complete use of $R4$ before $P2$ gets access to $R4$ ."
+        ],
+        "bbox": [
+            97,
+            64,
+            549,
+            124
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "There are no other scheduling constraints between the processes. If only binary semaphores are used to enforce the above scheduling constraints, what is the minimum number of binary semaphores needed?",
+        "bbox": [
+            84,
+            135,
+            929,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            87,
+            176,
+            126,
+            191
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            176,
+            321,
+            191
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            176,
+            515,
+            191
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 4",
+        "bbox": [
+            673,
+            176,
+            710,
+            191
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            201,
+            379,
+            212
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            217,
+            186,
+            233
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.24.49 Process Synchronization: GATE IT 2006 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            241,
+            569,
+            256
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the solution to the bounded buffer producer/consumer problem by using general semaphores $S, F$ , and $E$ . The semaphore $S$ is the mutual exclusion semaphore initialized to 1. The semaphore $F$",
+        "bbox": [
+            84,
+            264,
+            875,
+            294
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "corresponds to the number of free slots in the buffer and is initialized to $N$ . The semaphore $E$ corresponds to the number of elements in the buffer and is initialized to 0.",
+        "bbox": [
+            84,
+            294,
+            927,
+            323
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/11e1e289ba2dd10c3b6f98de6777323316839c7f303faed92d85beb9646c51b4.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Producer Process</td><td>Consumer Process</td></tr><tr><td>Produce an item;</td><td>Wait(E);</td></tr><tr><td>Wait(F);</td><td>Wait(S);</td></tr><tr><td>Wait(S);</td><td>Remove an item from the buffer;</td></tr><tr><td>Append the item to the buffer;</td><td>Signal(S);</td></tr><tr><td>Signal(S);</td><td>Signal(F);</td></tr><tr><td>Signal(E);</td><td>Consume the item;</td></tr></table>",
+        "bbox": [
+            265,
+            334,
+            752,
+            463
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/621e43832ea390de6e2f1eccc20b43f2e873a854824ae11ea636b022522ce61f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            244,
+            932,
+            281
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the following interchange operations may result in a deadlock?",
+        "bbox": [
+            84,
+            484,
+            613,
+            500
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Interchanging Wait (F) and Wait (S) in the Producer process",
+            "II. Interchanging Signal (S) and Signal (F) in the Consumer process"
+        ],
+        "bbox": [
+            90,
+            510,
+            596,
+            542
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. (I) only",
+        "bbox": [
+            89,
+            552,
+            161,
+            566
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. (II) only",
+        "bbox": [
+            495,
+            552,
+            571,
+            566
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. Neither (I) nor (II)",
+        "bbox": [
+            89,
+            566,
+            231,
+            579
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Both (I) and (II)",
+        "bbox": [
+            495,
+            566,
+            623,
+            579
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            584,
+            379,
+            593
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            600,
+            186,
+            615
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.24.50 Process Synchronization: GATE IT 2007 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            623,
+            569,
+            638
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Processes P1 and P2 use critical\\_flag in the following routine to achieve mutual exclusion. Assume that critical\\_flag is initialized to FALSE in the main program.",
+        "bbox": [
+            84,
+            647,
+            875,
+            676
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/42dadeec19b7247c2ae841139cf0aa30fa31ebe2003e3d7d86268447ec5e94b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            625,
+            932,
+            663
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nget_exclusive_access ()\n{\n    if (critical _flag == FALSE) {\n        critical_flag = TRUE ;\n        critical_region () ;\n        critical_flag = FALSE;\n    }\n}\n```",
+        "bbox": [
+            87,
+            686,
+            263,
+            773
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements.",
+        "bbox": [
+            85,
+            796,
+            339,
+            809
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. It is possible for both P1 and P2 to access critical\\_region concurrently.",
+            "ii. This may lead to a deadlock."
+        ],
+        "bbox": [
+            90,
+            821,
+            631,
+            850
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the following holds?",
+        "bbox": [
+            85,
+            861,
+            302,
+            876
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (i) is false (ii) is true",
+            "C. (i) is true (ii) is false"
+        ],
+        "bbox": [
+            87,
+            885,
+            247,
+            912
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Both (i) and (ii) are false",
+            "D. Both (i) and (ii) are true"
+        ],
+        "bbox": [
+            495,
+            885,
+            682,
+            912
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            918,
+            379,
+            928
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.24.51 Process Synchronization: GATE IT 2007 | Question: 56",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            569,
+            104
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/a803dd0c93321f85cfec38b1f8552f6c8eeb328c9672c10dc8b853b70188f864.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            931,
+            129
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Synchronization in the classical readers and writers problem can be achieved through use of semaphores. In the following incomplete code for readers-writers problem, two binary semaphores mutex and wrt are used to obtain synchronization",
+        "bbox": [
+            84,
+            112,
+            878,
+            156
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nwait (wrt)\nwriting is performed\nsignal (wrt)\nwait (mutex)\nreadcount = readcount + 1\nif readcount = 1 then S1\nS2\nreading is performed\nS3\nreadcount = readcount - 1\nif readcount = 0 then S4\nsignal (mutex)\n```",
+        "bbox": [
+            87,
+            163,
+            240,
+            294
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The values of $S1, S2, S3, S4$ , (in that order) are",
+        "bbox": [
+            85,
+            302,
+            445,
+            319
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. signal (mutex), wait (wrt), signal (wrt), wait (mutex)",
+            "B. signal (wrt), signal (mutex), wait (mutex), wait (wrt)",
+            "C. wait (wrt), signal (mutex), wait (mutex), signal (wrt)",
+            "D. signal (mutex), wait (mutex), signal (mutex), wait (mutex)"
+        ],
+        "bbox": [
+            87,
+            328,
+            527,
+            385
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            410,
+            379,
+            421
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            427,
+            188,
+            441
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.24.52 Process Synchronization: GATE IT 2008 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            78,
+            450,
+            569,
+            465
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/d1230827d2809a1592d59edaea475efb5b9231d1f96eb77060514cc6d3ba5099.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            453,
+            931,
+            491
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The following is a code with two threads, producer and consumer, that can run in parallel. Further, $S$ and $Q$ are binary semaphores quipped with the standard $P$ and $V$ operations.",
+        "bbox": [
+            84,
+            475,
+            878,
+            505
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nsemaphore S = 1, Q = 0;\ninteger x;\n\nproducer: consumer:\nwhile (true) do while (true) do\nP(S); P(Q);\nx = produce (); consume (x);\nV(Q); V(S);\ndone done\n```",
+        "bbox": [
+            87,
+            514,
+            309,
+            612
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is TRUE about the program above?",
+        "bbox": [
+            85,
+            619,
+            512,
+            636
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The process can deadlock",
+            "B. One of the threads can starve",
+            "C. Some of the items produced by the producer may be lost",
+            "D. Values generated and stored in 'x' by the producer will always be consumed before the producer can generate a new value"
+        ],
+        "bbox": [
+            87,
+            646,
+            927,
+            714
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 operating-system process-synchronization normal",
+        "bbox": [
+            87,
+            741,
+            379,
+            751
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            757,
+            188,
+            771
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.25",
+        "text_level": 1,
+        "bbox": [
+            68,
+            782,
+            105,
+            795
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Resource Allocation (27)",
+        "text_level": 1,
+        "bbox": [
+            420,
+            782,
+            618,
+            796
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (10Q)",
+        "bbox": [
+            70,
+            806,
+            369,
+            821
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.25.1 Resource Allocation: GATE CSE 1988 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            834,
+            539,
+            850
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/87174cbc2b11ffe6314d9446099af6c9020d6f010de3e8f64b0a0ae5e37053f2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            838,
+            931,
+            875
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A number of processes could be in a deadlock state if none of them can execute due to non-availability of sufficient resources. Let $P_{i}, 0 \\leq i \\leq 4$ represent five processes and let there be four resources types $r_{j}, 0 \\leq j \\leq 3$ . Suppose the following data structures have been used.",
+        "bbox": [
+            84,
+            859,
+            875,
+            903
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Available: A vector of length 4 such that if Available $[i]=k$ , there are k instances of resource type $r_{j}$ available in",
+        "bbox": [
+            84,
+            906,
+            927,
+            923
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "the system.",
+        "bbox": [
+            85,
+            64,
+            174,
+            78
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Allocation. A $5 \\times 4$ matrix defining the number of each type currently allocated to each process. If Allocation $[i, j] = k$ then process $p_i$ is currently allocated $k$ instances of resource type $r_j$ .",
+        "bbox": [
+            84,
+            81,
+            926,
+            112
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Max. A $5 \\times 4$ matrix indicating the maximum resource need of each process. If $Max[i, j] = k$ then process $p_i$ , may need a maximum of $k$ instances of resource type $r_j$ in order to complete the task.",
+        "bbox": [
+            84,
+            116,
+            926,
+            146
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Assume that system allocated resources only when it does not lead into an unsafe state such that resource requirements in future never cause a deadlock state. Now consider the following snapshot of the system.",
+        "bbox": [
+            84,
+            150,
+            927,
+            178
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/ef9415b5e1d88e722813ef421bce63651762f484aa72664db88147541dd71174.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"5\">Allocation</td></tr><tr><td></td><td> $r_0$ </td><td> $r_1$ </td><td> $r_2$ </td><td> $r_3$ </td></tr><tr><td> $p_0$ </td><td>0</td><td>0</td><td>1</td><td>2</td></tr><tr><td> $p_1$ </td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td> $p_2$ </td><td>1</td><td>3</td><td>5</td><td>4</td></tr><tr><td> $p_3$ </td><td>0</td><td>6</td><td>3</td><td>2</td></tr><tr><td> $p_4$ </td><td>0</td><td>0</td><td>1</td><td>4</td></tr></table>",
+        "bbox": [
+            208,
+            190,
+            394,
+            323
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/53b8f7c8c8d787d262ff5a7e583b157d1a8ff78112f1bf2eeeee5a7ce4a58407.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"4\">Max</td></tr><tr><td> $r_0$ </td><td> $r_1$ </td><td> $r_2$ </td><td> $r_3$ </td></tr><tr><td>0</td><td>0</td><td>1</td><td>2</td></tr><tr><td>1</td><td>7</td><td>5</td><td>0</td></tr><tr><td>2</td><td>3</td><td>5</td><td>6</td></tr><tr><td>0</td><td>6</td><td>5</td><td>2</td></tr><tr><td>0</td><td>6</td><td>5</td><td>6</td></tr></table>",
+        "bbox": [
+            453,
+            190,
+            600,
+            323
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/bc6c699d1e5118ea11a004c7839919a13aa7dfef84a0102b3cd601bc6420018b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"4\">Available</td></tr><tr><td> $r_0$ </td><td> $r_1$ </td><td> $r_2$ </td><td> $r_3$ </td></tr><tr><td>1</td><td>5</td><td>2</td><td>0</td></tr></table>",
+        "bbox": [
+            658,
+            229,
+            806,
+            283
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Is the system currently in a safe state? If yes, explain why.",
+        "bbox": [
+            85,
+            331,
+            512,
+            346
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1988 normal descriptive operating-system resource-allocation",
+        "bbox": [
+            87,
+            364,
+            410,
+            374
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            381,
+            186,
+            395
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.25.2 Resource Allocation: GATE CSE 1989 | Question: 11a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            404,
+            549,
+            418
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/09650baa48cea27fd7c85d287bba5188f29f03be43f6cb4451f338c81f6acac7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            407,
+            932,
+            444
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "i. A system of four concurrent processes, $P, Q, R$ and $S$ , use shared resources $A, B$ and $C$ . The sequences in which processes, $P, Q, R$ and $S$ request and release resources are as follows:",
+        "bbox": [
+            92,
+            448,
+            927,
+            480
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/53e49b141133539de1bb8de93ab5dc4fefc2b2841b7ba03429026798af0ee268.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"4\">Process P:</td><td>1.</td><td>P requests A</td></tr><tr><td>2.</td><td>P requests B</td></tr><tr><td>3.</td><td>P releases A</td></tr><tr><td>4.</td><td>P releases B</td></tr><tr><td rowspan=\"4\">Process Q:</td><td>1.</td><td>Q requests C</td></tr><tr><td>2.</td><td>Q requests A</td></tr><tr><td>3.</td><td>Q releases C</td></tr><tr><td>4.</td><td>P releases A</td></tr><tr><td rowspan=\"4\">Process R:</td><td>1.</td><td>R requests B</td></tr><tr><td>2.</td><td>R requests C</td></tr><tr><td>3.</td><td>R releases B</td></tr><tr><td>4.</td><td>R releases C</td></tr><tr><td rowspan=\"4\">Process S:</td><td>1.</td><td>S requests A</td></tr><tr><td>2.</td><td>S requests C</td></tr><tr><td>3.</td><td>S releases A</td></tr><tr><td>4.</td><td>S releases C</td></tr></table>",
+        "bbox": [
+            351,
+            491,
+            620,
+            796
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "If a resource is free, it is granted to a requesting process immediately. There is no preemption of granted resources. A resource is taken back from a process only when the process explicitly releases it.",
+        "bbox": [
+            84,
+            806,
+            927,
+            834
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Can the system of four processes get into a deadlock? If yes, give a sequence (ordering) of operations (for requesting and releasing resources) of these processes which leads to a deadlock.",
+        "bbox": [
+            84,
+            838,
+            927,
+            866
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "ii. Will the processes always get into a deadlock? If your answer is no, give a sequence of these operations which leads to completion of all processes.",
+            "iii. What strategies can be used to prevent deadlocks in a system of concurrent processes using shared resources"
+        ],
+        "bbox": [
+            87,
+            877,
+            926,
+            920
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "if preemption of granted resources is not allowed?",
+        "bbox": [
+            110,
+            64,
+            478,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "descriptive gate1989 operating-system resource-allocation",
+        "bbox": [
+            87,
+            104,
+            369,
+            115
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            119,
+            189,
+            135
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.25.3 Resource Allocation: GATE CSE 1992 | Question: 02-xi",
+        "text_level": 1,
+        "bbox": [
+            78,
+            144,
+            563,
+            157
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/1f340af9e2578856a9d1dbb504f4e6cde96c3e359cf0fe9d5b6b3e56b284a44e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            146,
+            932,
+            184
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A computer system has 6 tape devices, with n processes competing for them. Each process may need 3 tape drives. The maximum value of n for which the system is guaranteed to be deadlock-free is:",
+        "bbox": [
+            84,
+            167,
+            878,
+            197
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            210,
+            127,
+            224
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 3",
+        "bbox": [
+            285,
+            210,
+            321,
+            223
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 4",
+        "bbox": [
+            480,
+            210,
+            515,
+            223
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 1",
+        "bbox": [
+            673,
+            211,
+            710,
+            223
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1992 operating-system resource-allocation normal multiple-selects",
+        "bbox": [
+            87,
+            233,
+            431,
+            245
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            251,
+            189,
+            264
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.25.4 Resource Allocation: GATE CSE 1993 | Question: 7.9, UGCNET-Dec2012-III: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            274,
+            742,
+            289
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider a system having m resources of the same type. These resources are shared by 3 processes A, B, and C which have peak demands of 3, 4, and 6 respectively. For what value of m deadlock will not occur?",
+        "bbox": [
+            84,
+            298,
+            878,
+            342
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/0a15ff0f3629cc37e19255682560514d19ec801481e1d6cdc5922ffe41905bc7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            277,
+            932,
+            315
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 7",
+        "bbox": [
+            89,
+            355,
+            127,
+            369
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 9",
+        "bbox": [
+            285,
+            355,
+            321,
+            369
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 10",
+        "bbox": [
+            480,
+            355,
+            524,
+            369
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 13",
+        "bbox": [
+            673,
+            355,
+            719,
+            369
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "E. 15",
+        "bbox": [
+            90,
+            378,
+            134,
+            391
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1993 operating-system resource-allocation normal ugcnetcse-dec2012-paper3 multiple-selects",
+        "bbox": [
+            87,
+            402,
+            554,
+            412
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            418,
+            189,
+            433
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.25.5 Resource Allocation: GATE CSE 1994 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            442,
+            542,
+            456
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the resource allocation graph in the figure.",
+        "bbox": [
+            85,
+            466,
+            468,
+            480
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/085fffc48b49bfd48265387237a1e5c81db0aa6900ae31a16ad0ee82279210c9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            444,
+            932,
+            482
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/34eddd04c1eb193d3dd320cf918fd71012f8dfd2a31435850e8ccefe77f3bcdd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  P0[\"P0\"] --> r1[\"r1\"]\n  P1[\"P1\"] --> r1\n  P0 --> r2[\"r2\"]\n  P2[\"P2\"] --> r2\n  P3[\"P3\"] --> r2\n  P0 --> r3[\"r3\"]\n  P1 --> r3\n  P2 --> r3\n  P3 --> r3\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            295,
+            490,
+            668,
+            614
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Find if the system is in a deadlock state",
+            "B. Otherwise, find a safe sequence"
+        ],
+        "bbox": [
+            87,
+            630,
+            403,
+            663
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1994 operating-system resource-allocation normal descriptive",
+        "bbox": [
+            87,
+            688,
+            411,
+            699
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            705,
+            189,
+            719
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.25.6 Resource Allocation: GATE CSE 1996 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            728,
+            542,
+            742
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/44c67690b6f27f8464935ce7c0497e6aa42354556cf163ba647adf97855c3393.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            730,
+            932,
+            769
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A computer system uses the Banker's Algorithm to deal with deadlocks. Its current state is shown in the table below, where P0, P1, P2 are processes, and R0, R1, R2 are resources types.",
+        "bbox": [
+            84,
+            752,
+            878,
+            782
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/64bb3d084dc8d36bc9bf75fea775a2f0313626d313839e86a03b602ebfea8917.jpg",
+        "table_caption": [
+            "Maximum Need"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>R0</td><td>R1</td><td>R2</td></tr><tr><td>P0</td><td>4</td><td>1</td><td>2</td></tr><tr><td>P1</td><td>1</td><td>5</td><td>1</td></tr><tr><td>P2</td><td>1</td><td>2</td><td>3</td></tr></table>",
+        "bbox": [
+            206,
+            807,
+            381,
+            887
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/d02440f5cef652099fa0eb57f18f4a6e86fb8c1cf5c3193bfe53836c6f8c4a12.jpg",
+        "table_caption": [
+            "Current Allocation"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>R0</td><td>R1</td><td>R2</td></tr><tr><td>P0</td><td>1</td><td>0</td><td>2</td></tr><tr><td>P1</td><td>0</td><td>3</td><td>1</td></tr><tr><td>P2</td><td>1</td><td>0</td><td>2</td></tr></table>",
+        "bbox": [
+            442,
+            807,
+            616,
+            887
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/0e7e861dc515447bf545d64e5d871d786b31440bfebabe4278af1743d1fdc16f.jpg",
+        "table_caption": [
+            "Available"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>R0</td><td>R1</td><td>R2</td></tr><tr><td>2</td><td>2</td><td>0</td></tr></table>",
+        "bbox": [
+            678,
+            827,
+            808,
+            868
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Show that the system can be in this state",
+            "B. What will the system do on a request by process P0 for one unit of resource type R1?"
+        ],
+        "bbox": [
+            87,
+            896,
+            741,
+            931
+        ],
+        "page_idx": 11
+    }
+]

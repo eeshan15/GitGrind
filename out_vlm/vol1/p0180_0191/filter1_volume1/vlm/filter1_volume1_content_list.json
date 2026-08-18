@@ -1,0 +1,4184 @@
+[
+    {
+        "type": "text",
+        "text": "(II) Let $A$ be an $n \\times n$ real matrix. If $A^2\\mathbf{x} = \\mathbf{b}$ has a solution for every $\\mathbf{b} \\in \\mathbb{R}^n$ , then $A\\mathbf{x} = \\mathbf{b}$ also has a solution for every $\\mathbf{b} \\in \\mathbb{R}^n$ .",
+        "bbox": [
+            84,
+            79,
+            929,
+            110
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements is/are true?",
+        "bbox": [
+            85,
+            122,
+            403,
+            137
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. & Only (I)",
+        "bbox": [
+            87,
+            147,
+            181,
+            160
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. & Only (II)",
+        "bbox": [
+            495,
+            147,
+            589,
+            161
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. & Both (I) and (II)",
+        "bbox": [
+            90,
+            161,
+            231,
+            174
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. & Neither (I) nor (II)",
+        "bbox": [
+            497,
+            161,
+            650,
+            174
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate-preparation linear-algebra statistics",
+        "bbox": [
+            87,
+            179,
+            282,
+            188
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            195,
+            188,
+            209
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "6.11.2 Statistics: GATE STATISTICS 2021 Q.13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            218,
+            445,
+            232
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/84025f31fda2144424b74e0f8ebda569918abffdce7545d8670bc0ac4290fb79.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            220,
+            931,
+            258
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ be the $2 \\times 2$ real matrix having eigenvalues 1 and -1, with corresponding eigenvectors $\\begin{bmatrix} \\frac{\\sqrt{3}}{2} \\\\ \\frac{1}{2} \\end{bmatrix}$ and $\\begin{bmatrix} \\frac{-1}{2} \\\\ \\frac{\\sqrt{3}}{2} \\end{bmatrix}$ , respectively. If $A^{2021} = \\begin{bmatrix} a & b \\\\ c & d \\end{bmatrix}$ , then $a + b + c + d$ equals \\_\\_\\_\\_ (round off to 2 decimal places).",
+        "bbox": [
+            90,
+            270,
+            924,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "statistics linear-algebra gate-preparation",
+        "bbox": [
+            87,
+            397,
+            282,
+            408
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            414,
+            189,
+            429
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "6.12",
+        "text_level": 1,
+        "bbox": [
+            68,
+            439,
+            105,
+            452
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Subspace (1)",
+        "text_level": 1,
+        "bbox": [
+            463,
+            439,
+            573,
+            454
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "6.12.1 Subspace: GATE DS&AI 2024 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            465,
+            478,
+            480
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Select all choices that are subspaces of $R^{3}$ .",
+        "bbox": [
+            85,
+            490,
+            410,
+            507
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note: $\\mathbb{R}$ denotes the set of real numbers.",
+        "bbox": [
+            85,
+            520,
+            386,
+            534
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\left\\{\\mathbf{x} = \\begin{bmatrix} x_1 \\\\ x_2 \\\\ x_3 \\end{bmatrix} \\in \\mathbb{R}^3 : \\mathbf{x} = \\alpha \\begin{bmatrix} 1 \\\\ 1 \\\\ 0 \\end{bmatrix} + \\beta \\begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\end{bmatrix}, \\alpha, \\beta \\in \\mathbb{R} \\right\\}$",
+            "B. $\\left\\{\\mathbf{x} = \\begin{bmatrix} x_1 \\\\ x_2 \\\\ x_3 \\end{bmatrix} \\in \\mathbb{R}^3 : \\mathbf{x} = \\alpha^2 \\begin{bmatrix} 1 \\\\ 2 \\\\ 0 \\end{bmatrix} + \\beta^2 \\begin{bmatrix} 1 \\\\ 0 \\\\ 1 \\end{bmatrix}, \\alpha, \\beta \\in \\mathbb{R} \\right\\}$",
+            "C. $\\left\\{\\mathbf{x} = \\begin{bmatrix} x_1 \\\\ x_2 \\\\ x_3 \\end{bmatrix} \\in \\mathbb{R}^3 : 5x_1 + 2x_3 = 0, 4x_1 - 2x_2 + 3x_3 = 0 \\right\\}$",
+            "D. $\\left\\{\\mathbf{x}=\\begin{bmatrix}x_{1}\\\\x_{2}\\\\x_{3}\\end{bmatrix}\\in\\mathbb{R}^{3}:5x_{1}+2x_{3}+4=0\\right\\}$"
+        ],
+        "bbox": [
+            87,
+            543,
+            589,
+            802
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 linear-algebra vector-space subspace multiple-selects two-marks",
+        "bbox": [
+            87,
+            844,
+            480,
+            853
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            859,
+            188,
+            874
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "6.13",
+        "text_level": 1,
+        "bbox": [
+            68,
+            885,
+            104,
+            897
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "System of Equations (17)",
+        "text_level": 1,
+        "bbox": [
+            416,
+            884,
+            620,
+            899
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests:",
+        "bbox": [
+            70,
+            909,
+            196,
+            922
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Test 1 (15Q)",
+        "bbox": [
+            205,
+            909,
+            277,
+            922
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Test 2 (15Q)",
+        "bbox": [
+            292,
+            909,
+            368,
+            922
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Test 3 (7Q)",
+        "bbox": [
+            381,
+            909,
+            450,
+            922
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b08f15ba2e203ce33d3a182b8dfc7b2bf9b0ca9256c68961b4f290bea453be49.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            467,
+            931,
+            505
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "6.13.1 System of Equations: GATE CSE 1996 | Question: 1.7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            549,
+            81
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/19fc7f5148f24771a3f713224294ec943f91701be9bb0d796794713ee247399d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let Ax = b be a system of linear equations where A is an $m \\times n$ matrix and b is a $m \\times 1$ column vector and X is an $n \\times 1$ column vector of unknowns. Which of the following is false?",
+        "bbox": [
+            84,
+            90,
+            878,
+            121
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The system has a solution if and only if, both $A$ and the augmented matrix $[Ab]$ have the same rank.",
+            "B. If m < n and b is the zero vector, then the system has infinitely many solutions.",
+            "C. If m = n and b is a non-zero vector, then the system has a unique solution.",
+            "D. The system will have only a trivial solution when $m = n$ , $b$ is the zero vector and $\\operatorname{rank}(A) = n$ ."
+        ],
+        "bbox": [
+            85,
+            131,
+            811,
+            205
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1996 linear-algebra system-of-equations normal",
+        "bbox": [
+            87,
+            230,
+            344,
+            239
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            245,
+            186,
+            260
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "6.13.2 System of Equations: GATE CSE 1998 | Question: 1.2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            269,
+            549,
+            283
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following set of equations",
+        "bbox": [
+            85,
+            294,
+            371,
+            308
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $x + 2y = 5$",
+            "- $4x + 8y = 12$",
+            "- $3x + 6y + 3z = 15$"
+        ],
+        "bbox": [
+            97,
+            318,
+            265,
+            362
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "This set",
+        "bbox": [
+            87,
+            372,
+            149,
+            385
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. has unique solution",
+            "C. has finite number of solutions",
+            "gate1998 linear-algebra system-of-equations easy"
+        ],
+        "bbox": [
+            87,
+            397,
+            332,
+            439
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. has no solution",
+            "D. has infinite number of solutions"
+        ],
+        "bbox": [
+            495,
+            397,
+            729,
+            423
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            445,
+            186,
+            459
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "6.13.3 System of Equations: GATE CSE 1998 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            77,
+            467,
+            536,
+            483
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/f2236d42557a4e3362deddb7ba88fd3e5e3a4f34a311f6df2e02b82843017d73.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            271,
+            931,
+            309
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Derive the expressions for the number of operations required to solve a system of linear equations in n unknowns using the Gaussian Elimination Method. Assume that one operation refers to a multiplication followed by an addition.",
+        "bbox": [
+            84,
+            492,
+            878,
+            534
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1998 linear-algebra system-of-equations descriptive",
+        "bbox": [
+            87,
+            548,
+            359,
+            558
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            564,
+            186,
+            579
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "6.13.4 System of Equations: GATE CSE 2003 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            77,
+            587,
+            542,
+            603
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/4439a9ff4040be23cfd41ce27fe39db06ddb0b89de6ed5e2df45d09678d9b6a6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            471,
+            931,
+            509
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following system of linear equations",
+        "bbox": [
+            85,
+            612,
+            447,
+            625
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/5088e3d3431ea6af9809094da6592a2f9b72769fea15fb6b1a9086bf5f502a93.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            591,
+            931,
+            629
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left( \\begin{array}{c c c} 2 & 1 & - 4 \\\\ 4 & 3 & - 1 2 \\\\ 1 & 2 & - 8 \\end{array} \\right) \\left( \\begin{array}{c} x \\\\ y \\\\ z \\end{array} \\right) = \\left( \\begin{array}{c} \\alpha \\\\ 5 \\\\ 7 \\end{array} \\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            376,
+            637,
+            638,
+            694
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Notice that the second and the third columns of the coefficient matrix are linearly dependent. For how many values of $\\alpha$ , does this system of equations have infinitely many solutions?",
+        "bbox": [
+            84,
+            701,
+            927,
+            731
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            87,
+            744,
+            126,
+            757
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 1",
+        "bbox": [
+            285,
+            745,
+            319,
+            757
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 2",
+        "bbox": [
+            480,
+            745,
+            515,
+            757
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 3",
+        "bbox": [
+            673,
+            745,
+            709,
+            757
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 linear-algebra system-of-equations normal",
+        "bbox": [
+            87,
+            769,
+            357,
+            777
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            785,
+            186,
+            799
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "6.13.5 System of Equations: GATE CSE 2004 | Question: 71",
+        "text_level": 1,
+        "bbox": [
+            77,
+            808,
+            542,
+            823
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "How many solutions does the following system of linear equations have?",
+        "bbox": [
+            85,
+            832,
+            616,
+            847
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $-x + 5y = -1$",
+            "- $x - y = 2$",
+            "- $x + 3y = 3$"
+        ],
+        "bbox": [
+            97,
+            857,
+            233,
+            900
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. infinitely many",
+        "bbox": [
+            89,
+            910,
+            211,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. two distinct solutions",
+        "bbox": [
+            495,
+            910,
+            660,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/8da03614fb291eb149ef6cac81508cbc3734afa381e9995d85e706dab9bedf46.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            811,
+            931,
+            847
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. unique",
+        "bbox": [
+            89,
+            65,
+            161,
+            78
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. none",
+        "bbox": [
+            495,
+            65,
+            556,
+            77
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 linear-algebra system-of-equations normal",
+        "bbox": [
+            87,
+            84,
+            359,
+            93
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            99,
+            181,
+            114
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "6.13.6 System of Equations: GATE CSE 2005 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            123,
+            544,
+            138
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following system of linear equations :",
+        "bbox": [
+            85,
+            147,
+            457,
+            162
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n2 x _ {1} - x _ {2} + 3 x _ {3} = 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            425,
+            171,
+            589,
+            188
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n3 x _ {1} + 2 x _ {2} + 5 x _ {3} = 2\n$$",
+        "text_format": "latex",
+        "bbox": [
+            421,
+            195,
+            594,
+            213
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n- x _ {1} + 4 x _ {2} + x _ {3} = 3\n$$",
+        "text_format": "latex",
+        "bbox": [
+            425,
+            222,
+            593,
+            239
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The system of equations has",
+        "bbox": [
+            85,
+            249,
+            300,
+            263
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. no solution",
+        "bbox": [
+            87,
+            274,
+            189,
+            286
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. more than one but a finite number of solutions",
+        "bbox": [
+            89,
+            287,
+            352,
+            312
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 linear-algebra system-of-equations normal",
+        "bbox": [
+            87,
+            318,
+            359,
+            328
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. a unique solution",
+        "bbox": [
+            495,
+            274,
+            636,
+            286
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. an infinite number of solutions",
+        "bbox": [
+            495,
+            287,
+            722,
+            299
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            334,
+            188,
+            347
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "6.13.7 System of Equations: GATE CSE 2008 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            358,
+            537,
+            372
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The following system of equations",
+        "bbox": [
+            85,
+            382,
+            337,
+            396
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $x_{1} + x_{2} + 2x_{3} = 1$",
+            "- $x_{1} + 2x_{2} + 3x_{3} = 2$",
+            "- $x_{1} + 4x_{2} + \\alpha x_{3} = 4$"
+        ],
+        "bbox": [
+            97,
+            407,
+            278,
+            450
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "has a unique solution. The only possible value(s) for $\\alpha$ is/are",
+        "bbox": [
+            85,
+            460,
+            529,
+            475
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            89,
+            489,
+            126,
+            502
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. either 0 or 1",
+        "bbox": [
+            285,
+            489,
+            394,
+            503
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. one of 0, 1, or -1",
+        "bbox": [
+            478,
+            489,
+            626,
+            504
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. any real number",
+        "bbox": [
+            673,
+            489,
+            810,
+            504
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 easy linear-algebra system-of-equations",
+        "bbox": [
+            87,
+            514,
+            349,
+            523
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            530,
+            188,
+            543
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "6.13.8 System of Equations: GATE CSE 2014 | Set 1 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            77,
+            553,
+            589,
+            567
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following system of equations:",
+        "bbox": [
+            85,
+            577,
+            406,
+            591
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $3x + 2y = 1$",
+            "- $4x + 7z = 1$",
+            "- $x + y + z = 3$",
+            "- $x - 2y + 7z = 0$"
+        ],
+        "bbox": [
+            97,
+            600,
+            245,
+            659
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The number of solutions for this system is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            669,
+            526,
+            685
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 linear-algebra system-of-equations numerical-answers normal",
+        "bbox": [
+            87,
+            703,
+            468,
+            713
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            719,
+            188,
+            733
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "6.13.9 System of Equations: GATE CSE 2015 | Set 3 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            77,
+            743,
+            600,
+            757
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "If the following system has non-trivial solution,",
+        "bbox": [
+            85,
+            767,
+            423,
+            781
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $px + qy + rz = 0$",
+            "- $qx + ry + pz = 0$",
+            "- $rx + py + qz = 0,$"
+        ],
+        "bbox": [
+            97,
+            790,
+            258,
+            834
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "then which one of the following options is TRUE?",
+        "bbox": [
+            85,
+            845,
+            447,
+            859
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $p - q + r = 0$ or $p = q = -r$",
+            "C. $p + q + r = 0$ or p = q = r"
+        ],
+        "bbox": [
+            87,
+            869,
+            326,
+            897
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 linear-algebra system-of-equations normal",
+        "bbox": [
+            87,
+            901,
+            379,
+            910
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $p + q - r = 0$ or $p = -q = r$",
+            "D. $p - q + r = 0$ or $p = -q = -r$"
+        ],
+        "bbox": [
+            495,
+            869,
+            744,
+            897
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/30ac4fdf838e0590dd0862128b9e7584f9f8d367066ca0facf5fe2615ace3bfc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            932,
+            163
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/4ed593d9ab50b89c6b5d6e2278b5094016c8acf799aaadf39035ea19c03f84e2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            359,
+            932,
+            399
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/947abf2addb9a1477487264ed153fa86f9e4093c94b9ec786ad986cd26aa7a2c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            555,
+            932,
+            593
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/40a621e45380ac97e5e5adfa333308693927889ac140d4e904181c5e73b3b7b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            745,
+            932,
+            783
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/40a621e45380ac97e5e5adfa333308693927889ac140d4e904181c5e73b3b7b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            745,
+            932,
+            783
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "6.13.10 System of Equations: GATE CSE 2016 | Set 2 | Question: 04",
+        "text_level": 1,
+        "bbox": [
+            77,
+            89,
+            608,
+            104
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the systems, each consisting of m linear equations in n variables.",
+        "bbox": [
+            85,
+            112,
+            636,
+            128
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/c5177f336e3900958bf0264a8644428875aa25ec7ca4309a8cff4a0ca05f41b8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. If $m < n$ , then all such systems have a solution.",
+            "II. If $m > n$ , then none of these systems has a solution.",
+            "III. If $m = n$ , then there exists a system which has a solution."
+        ],
+        "bbox": [
+            92,
+            138,
+            537,
+            181
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is CORRECT?",
+        "bbox": [
+            85,
+            191,
+            391,
+            205
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. I, II and III are true.",
+        "bbox": [
+            87,
+            214,
+            257,
+            229
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. Only III is true.",
+        "bbox": [
+            89,
+            229,
+            218,
+            243
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 linear-algebra system-of-equations normal",
+        "bbox": [
+            87,
+            248,
+            379,
+            258
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            264,
+            188,
+            277
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6.13.11 System of Equations: GATE CSE 2017 | Set 1 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            77,
+            288,
+            600,
+            302
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $c_{1}\\ldots c_{n}$ be scalars, not all zero, such that $\\sum_{i=1}^{n}c_{i}a_{i}=0$ where $a_{i}$ are column vectors in $R^{n}$ .",
+        "bbox": [
+            84,
+            312,
+            811,
+            330
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/15616952e04ada2a91b916339802bbff8f0745c99172dc9a537b612da21752f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            290,
+            932,
+            328
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the set of linear equations",
+        "bbox": [
+            85,
+            340,
+            349,
+            355
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA x = b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            359,
+            151,
+            372
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $A = [a_{1},\\dots ,a_{n}]$ and $b = \\sum_{i = 1}^{n}a_{i}$ . The set of equations has",
+        "bbox": [
+            84,
+            378,
+            594,
+            397
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. a unique solution at $x = J_{n}$ where $J_{n}$ denotes a $n$ -dimensional vector of all 1.",
+            "B. no solution",
+            "C. infinitely many solutions",
+            "D. finitely many solutions"
+        ],
+        "bbox": [
+            87,
+            406,
+            680,
+            463
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 linear-algebra system-of-equations normal",
+        "bbox": [
+            87,
+            488,
+            379,
+            498
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            504,
+            188,
+            519
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6.13.12 System of Equations: GATE CSE 2024 | Set 1 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            77,
+            528,
+            608,
+            543
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/310718cd1061744933d73f01440e79b026d167d905a07ec3d522227e74efd2d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            530,
+            932,
+            568
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ be any $n \\times m$ matrix, where $m > n$ . Which of the following statements is/are TRUE about the system of linear equations $Ax = 0$ ?",
+        "bbox": [
+            84,
+            553,
+            878,
+            581
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There exist at least m - n linearly independent solutions to this system",
+            "B. There exist $m - n$ linearly independent vectors such that every solution is a linear combination of these vectors",
+            "C. There exists a non-zero solution in which at least $m - n$ variables are 0",
+            "D. There exists a solution in which at least n variables are non-zero"
+        ],
+        "bbox": [
+            87,
+            593,
+            924,
+            649
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 multiple-selects linear-algebra system-of-equations two-marks",
+        "bbox": [
+            87,
+            675,
+            472,
+            685
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            691,
+            188,
+            706
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6.13.13 System of Equations: GATE CSE 2025 | Set 1 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            77,
+            714,
+            608,
+            730
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d4ee3e05cc551a3867a4eac5cda71ebb5f897fb088c6240a19bdc4f69efd44a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            718,
+            932,
+            755
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the given system of linear equations for variables x and y, where k is a real-valued constant. Which of the following option(s) is/are CORRECT?",
+        "bbox": [
+            84,
+            739,
+            878,
+            768
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} x + k y = 1 \\\\ k x + y = - 1 \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            450,
+            780,
+            559,
+            815
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There is exactly one value of $k$ for which the above system of equations has no solution.",
+            "B. There exist an infinite number of values of k for which the system of equations has no solution.",
+            "C. There exists exactly one value of $k$ for which the system of equations has exactly one solution.",
+            "D. There exists exactly one value of $k$ for which the system of equations has an infinite number of solutions."
+        ],
+        "bbox": [
+            85,
+            824,
+            873,
+            882
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "gatecse2025-set1 linear-algebra system-of-equations multiple-selects one-mark",
+        "bbox": [
+            87,
+            907,
+            467,
+            918
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "6.13.14 System of Equations: GATE CSE 2026 | Set 2 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            77,
+            89,
+            606,
+            104
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the system of linear equations given below.",
+        "bbox": [
+            85,
+            112,
+            473,
+            128
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\na x + y = b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            460,
+            140,
+            552,
+            156
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n1 6 x + a y = 2 4\n$$",
+        "text_format": "latex",
+        "bbox": [
+            447,
+            159,
+            568,
+            176
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/284c188f72cf65259ae78cdea7e2ea58f75fc3d349eb02854b75d3020aa3be0e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Suppose the values of $a$ and $b$ are chosen such that the system of linear equations produce multiple solutions. Then the product of $a$ and $b$ is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            84,
+            198,
+            927,
+            226
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 linear-algebra system-of-equations numerical-answers one-mark",
+        "bbox": [
+            87,
+            241,
+            478,
+            251
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            257,
+            188,
+            271
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "6.13.15 System of Equations: GATE DA 2025 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            77,
+            281,
+            534,
+            295
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The sum of the elements in each row of $A \\in \\mathbb{R}^{n \\times n}$ is 1. If $B = A^3 - 2A^2 + A$ , which one of the following statements is correct (for $x \\in \\mathbb{R}^n$ )?",
+        "bbox": [
+            84,
+            306,
+            875,
+            337
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/f82150022da4be2e0af784e76b1eaf54b9052765dbe3f4bb49ef0146fa762340.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            283,
+            932,
+            321
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The equation Bx = 0 has no solution",
+            "B. The equation Bx = 0 has exactly two solutions",
+            "C. The equation $Bx = 0$ has infinitely many solutions",
+            "D. The equation Bx = 0 has a unique solution"
+        ],
+        "bbox": [
+            87,
+            347,
+            485,
+            406
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 linear-algebra system-of-equations one-mark",
+        "bbox": [
+            87,
+            431,
+            364,
+            441
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            447,
+            188,
+            461
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "6.13.16 System of Equations: GATE DS&AI 2024 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            77,
+            471,
+            571,
+            485
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE?",
+        "bbox": [
+            85,
+            494,
+            438,
+            509
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Note: R denotes the set of real numbers.",
+        "bbox": [
+            85,
+            513,
+            386,
+            527
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/42b6625038ecf9463c474de321488d28f0c2fce715b87c41010f08e8113c7f22.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            473,
+            932,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There exist $\\mathbf{M} \\in \\mathbb{R}^{3 \\times 3}$ , $\\mathbf{p} \\in \\mathbb{R}^3$ , and $\\mathbf{q} \\in \\mathbb{R}^3$ such that $\\mathbf{M} \\mathbf{x} = \\mathbf{p}$ has a unique solution and $\\mathbf{M} \\mathbf{x} = \\mathbf{q}$ has infinite solutions.",
+            "B. There exist $\\mathbf{M} \\in \\mathbb{R}^{3 \\times 3}$ , $\\mathbf{p} \\in \\mathbb{R}^3$ , and $\\mathbf{q} \\in \\mathbb{R}^3$ such that $\\mathbf{M} \\mathbf{x} = \\mathbf{p}$ has no solutions and $\\mathbf{M} \\mathbf{x} = \\mathbf{q}$ has infinite solutions.",
+            "C. There exist $\\mathbf{M} \\in \\mathbb{R}^{2 \\times 3}$ , $\\mathbf{p} \\in \\mathbb{R}^2$ , and $\\mathbf{q} \\in \\mathbb{R}^2$ such that $\\mathbf{M} \\mathbf{x} = \\mathbf{p}$ has a unique solution and $\\mathbf{M} \\mathbf{x} = \\mathbf{q}$ has infinite solutions.",
+            "D. There exist $\\mathbf{M} \\in \\mathbb{R}^{3 \\times 2}$ , $\\mathbf{p} \\in \\mathbb{R}^3$ , and $\\mathbf{q} \\in \\mathbb{R}^3$ such that $\\mathbf{M}\\mathbf{x} = \\mathbf{p}$ has a unique solution and $\\mathbf{M}\\mathbf{x} = \\mathbf{q}$ has no solutions."
+        ],
+        "bbox": [
+            85,
+            539,
+            929,
+            662
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "linear-algebra system-of-equations gate-ds-ai-2024 multiple-selects two-marks",
+        "bbox": [
+            87,
+            706,
+            460,
+            716
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            722,
+            188,
+            737
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "6.13.17 System of Equations: GATE IT 2004 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            77,
+            745,
+            526,
+            760
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What values of x, y and z satisfy the following system of linear equations?",
+        "bbox": [
+            84,
+            769,
+            623,
+            785
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/6f13b6aed2ae45926c79699ddef99945f0dc0bd13962f669b9f6eddd795c9f06.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            749,
+            932,
+            787
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left[ \\begin{array}{c c c} 1 & 2 & 3 \\\\ 1 & 3 & 4 \\\\ 2 & 2 & 3 \\end{array} \\right] \\left[ \\begin{array}{c} x \\\\ y \\\\ z \\end{array} \\right] = \\left[ \\begin{array}{c} 6 \\\\ 8 \\\\ 1 2 \\end{array} \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            400,
+            794,
+            616,
+            852
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $x = 6, y = 3, z = 2$",
+        "bbox": [
+            87,
+            859,
+            255,
+            872
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $x = 12, y = 3, z = -4$",
+        "bbox": [
+            495,
+            859,
+            685,
+            872
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $x = 6, y = 6, z = -4$",
+        "bbox": [
+            90,
+            872,
+            268,
+            887
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $x = 12, y = -3, z = 0$",
+        "bbox": [
+            497,
+            872,
+            685,
+            887
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 linear-algebra system-of-equations easy",
+        "bbox": [
+            87,
+            891,
+            341,
+            902
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            908,
+            188,
+            922
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            188,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "6.14.1 Vector Space: GATE CSE 1995 | Question: 2.13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            119,
+            500,
+            135
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A unit vector perpendicular to both the vectors $a = 2i - 3j + k$ and $b = i + j - 2k$ is:",
+        "bbox": [
+            84,
+            143,
+            722,
+            160
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{1}{\\sqrt{3}} (i + j + k)$",
+        "bbox": [
+            87,
+            171,
+            216,
+            193
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{1}{3} (i + j - k)$",
+        "bbox": [
+            285,
+            172,
+            401,
+            190
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{1}{3} (i - j - k)$",
+        "bbox": [
+            480,
+            172,
+            596,
+            190
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{1}{\\sqrt{3}}(i+j-k)$",
+        "bbox": [
+            673,
+            172,
+            801,
+            194
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1995 linear-algebra normal vector-space",
+        "bbox": [
+            87,
+            197,
+            310,
+            207
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            213,
+            188,
+            226
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "6.14.2 Vector Space: GATE CSE 2007 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            237,
+            487,
+            251
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the set of (column) vectors defined by",
+        "bbox": [
+            85,
+            261,
+            435,
+            276
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/fb75c9871854c16a63adcf95ad05eb44d70f605ebc1f884b89d10ae5a01e28d1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            123,
+            932,
+            161
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX = \\left\\{x \\in R ^ {3} \\mid x _ {1} + x _ {2} + x _ {3} = 0, \\text {where} x ^ {T} = [ x _ {1}, x _ {2}, x _ {3} ] ^ {T} \\right\\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            258,
+            286,
+            752,
+            315
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": ".Which of the following is TRUE?",
+        "bbox": [
+            85,
+            323,
+            329,
+            338
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\left\\{[1, -1, 0]^T, [1, 0, -1]^T\\right\\}$ is a basis for the subspace $X$ .",
+            "B. $\\left\\{[1, -1, 0]^T, [1, 0, -1]^T\\right\\}$ is a linearly independent set, but it does not span $X$ and therefore is not a basis of $X$ .",
+            "C. $X$ is not a subspace of $R^3$ .",
+            "D. None of the above"
+        ],
+        "bbox": [
+            85,
+            347,
+            927,
+            445
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 linear-algebra normal vector-space",
+        "bbox": [
+            87,
+            471,
+            327,
+            480
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            486,
+            188,
+            502
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "6.14.3 Vector Space: GATE CSE 2014 | Set 3 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            511,
+            529,
+            524
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "If $V_{1}$ and $V_{2}$ are 4-dimensional subspaces of a 6-dimensional vector space $V$ , then the smallest possible dimension of $V_{1} \\cap V_{2}$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            534,
+            878,
+            565
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 linear-algebra vector-space normal numerical-answers",
+        "bbox": [
+            87,
+            578,
+            436,
+            587
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            593,
+            188,
+            608
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "6.14.4 Vector Space: GATE CSE 2017 | Set 1 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            618,
+            539,
+            631
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $u$ and $v$ be two vectors in $\\mathbf{R}^2$ whose Euclidean norms satisfy $\\| u \\| = 2 \\| v \\|$ . What is the value of $\\alpha$ such that $w = u + \\alpha v$ bisects the angle between $u$ and $v$ ?",
+        "bbox": [
+            84,
+            643,
+            878,
+            673
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            686,
+            126,
+            700
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{1}{2}$",
+        "bbox": [
+            285,
+            686,
+            322,
+            704
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 1",
+        "bbox": [
+            480,
+            686,
+            515,
+            700
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{-1}{2}$",
+        "bbox": [
+            673,
+            685,
+            719,
+            704
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 linear-algebra normal vector-space",
+        "bbox": [
+            87,
+            711,
+            347,
+            720
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            726,
+            188,
+            741
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "6.14.5 Vector Space: GATE DA 2025 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            751,
+            477,
+            764
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $\\{x_1, x_2, \\ldots, x_n\\}$ be a set of linearly independent vectors in $\\mathbb{R}^n$ . Let the $(i, j)$ -th element of matrix $A \\in \\mathbb{R}^{n \\times n}$ be given by $A_{ij} = x_i^\\top x_j, 1 \\leq i, j \\leq n$ . Which one of the following statements is correct?",
+        "bbox": [
+            84,
+            774,
+            873,
+            809
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $A$ is invertible",
+        "bbox": [
+            87,
+            817,
+            208,
+            830
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 0 is a singular value of $A$",
+        "bbox": [
+            495,
+            817,
+            692,
+            831
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. Determinant of $A$ is 0",
+        "bbox": [
+            89,
+            831,
+            262,
+            844
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $z^{\\top}Az = 0$ for some non-zero $z\\in \\mathbb{R}^n$",
+        "bbox": [
+            495,
+            832,
+            751,
+            859
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 linear-algebra vector-space matrix two-marks",
+        "bbox": [
+            87,
+            865,
+            379,
+            874
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            881,
+            188,
+            895
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/9bb4ef6ae26bd55e31fdb6bd72cbaaa786d90806f7711691c21597b7472050df.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            752,
+            932,
+            790
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/9f6694744578279ace15718fcec89da126544b442c6868b7a1bf59cfcff7785f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            514,
+            932,
+            551
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "6.14",
+        "bbox": [
+            68,
+            67,
+            105,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Vector Space (7)",
+        "bbox": [
+            450,
+            67,
+            586,
+            81
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (5Q)",
+        "bbox": [
+            70,
+            92,
+            453,
+            106
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider a set $S_{1} = \\left\\{x = (x_{1}, x_{2}, x_{3})^{T} \\in \\mathbb{R}^{3} \\mid x^{T} x \\leq 16 \\right\\}$ . Let $S_{2}$ be another set which is a subspace of $\\mathbb{R}^{3}$ with dimension two.",
+        "bbox": [
+            84,
+            89,
+            878,
+            131
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following gives the area of $S_{1} \\cap S_{2}$ ?",
+        "bbox": [
+            85,
+            135,
+            455,
+            152
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $16\\pi$",
+        "bbox": [
+            89,
+            163,
+            144,
+            178
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $4\\pi$",
+        "bbox": [
+            285,
+            165,
+            329,
+            178
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $4\\pi^{2}$",
+        "bbox": [
+            480,
+            163,
+            531,
+            178
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $16\\pi^{2}$",
+        "bbox": [
+            673,
+            163,
+            736,
+            178
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 linear-algebra vector-space one-mark",
+        "bbox": [
+            87,
+            188,
+            332,
+            199
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            205,
+            181,
+            219
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "6.14.7 Vector Space: GATE DS&AI 2024 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            229,
+            502,
+            243
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/f7edfa9c67ff019af058e52f583eae55fe27fd8ce34db87b5e085c3d55fe98fb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            232,
+            932,
+            269
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let $\\mathbb{R}$ be the set of real numbers, $U$ be a subspace of $\\mathbb{R}^3$ and $\\mathbf{M} \\in \\mathbb{R}^{3 \\times 3}$ be the matrix corresponding to the projection on to the subspace $U$ .",
+        "bbox": [
+            84,
+            252,
+            878,
+            285
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE?",
+        "bbox": [
+            85,
+            288,
+            438,
+            302
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. If $U$ is a 1-dimensional subspace of $\\mathbb{R}^3$ , then the null space of $\\mathbf{M}$ is a 1-dimensional subspace.",
+            "B. If $U$ is a 2-dimensional subspace of $\\mathbb{R}^3$ , then the null space of $M$ is a 1-dimensional subspace.",
+            "C. $M^{2}=M$",
+            "D. $M^{3}=M$"
+        ],
+        "bbox": [
+            87,
+            315,
+            803,
+            380
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 linear-algebra vector-space multiple-selects two-marks",
+        "bbox": [
+            87,
+            425,
+            428,
+            435
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            441,
+            181,
+            454
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/c7a8a04122f3ec471bfc6ca619394b96f04f9a7b939ec1cdd3d9e70ad30d1e70.jpg",
+        "table_caption": [
+            "Answer Keys"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.1.1</td><td>A</td></tr><tr><td>6.2.5</td><td>D</td></tr><tr><td>6.2.10</td><td>0</td></tr><tr><td>6.3.3</td><td>B</td></tr><tr><td>6.3.8</td><td>D</td></tr><tr><td>6.3.13</td><td>6</td></tr><tr><td>6.3.18</td><td>5</td></tr><tr><td>6.3.23</td><td>A;C;D</td></tr><tr><td>6.3.28</td><td>C</td></tr><tr><td>6.3.33</td><td>B</td></tr><tr><td>6.6.1</td><td>C</td></tr><tr><td>6.6.6</td><td>N/A</td></tr><tr><td>6.6.11</td><td>C</td></tr><tr><td>6.6.16</td><td>C</td></tr><tr><td>6.6.21</td><td>B</td></tr><tr><td>6.8.1</td><td>B;D</td></tr><tr><td>6.9.4</td><td>C</td></tr><tr><td>6.11.1</td><td>TBA</td></tr><tr><td>6.13.3</td><td>N/A</td></tr></table>",
+        "bbox": [
+            63,
+            503,
+            225,
+            912
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/cdee2248b0407ad2151c4f1c2fd7ea69a4bbe155adf3fa2e976af1c2bd42b5cd.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.2.1</td><td>B</td></tr><tr><td>6.2.6</td><td>B</td></tr><tr><td>6.2.11</td><td>D</td></tr><tr><td>6.3.4</td><td>C</td></tr><tr><td>6.3.9</td><td>0</td></tr><tr><td>6.3.14</td><td>B</td></tr><tr><td>6.3.19</td><td>3</td></tr><tr><td>6.3.24</td><td>2</td></tr><tr><td>6.3.29</td><td>1:1</td></tr><tr><td>6.4.1</td><td>B</td></tr><tr><td>6.6.2</td><td>N/A</td></tr><tr><td>6.6.7</td><td>A</td></tr><tr><td>6.6.12</td><td>B</td></tr><tr><td>6.6.17</td><td>C</td></tr><tr><td>6.6.22</td><td>A;D</td></tr><tr><td>6.8.2</td><td>A;B</td></tr><tr><td>6.9.5</td><td>2</td></tr><tr><td>6.11.2</td><td>TBA</td></tr><tr><td>6.13.4</td><td>B</td></tr></table>",
+        "bbox": [
+            245,
+            504,
+            406,
+            912
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/b2bc1a05eff46a35a364b39419cc5229ee5a64cb8fb9284d88c9e6920b7d341b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.2.2</td><td>A</td></tr><tr><td>6.2.7</td><td>A;B</td></tr><tr><td>6.2.12</td><td>A</td></tr><tr><td>6.3.5</td><td>A</td></tr><tr><td>6.3.10</td><td>6</td></tr><tr><td>6.3.15</td><td>15</td></tr><tr><td>6.3.20</td><td>D</td></tr><tr><td>6.3.25</td><td>B</td></tr><tr><td>6.3.30</td><td>B</td></tr><tr><td>6.5.1</td><td>5</td></tr><tr><td>6.6.3</td><td>N/A</td></tr><tr><td>6.6.8</td><td>C</td></tr><tr><td>6.6.13</td><td>D</td></tr><tr><td>6.6.18</td><td>B;D</td></tr><tr><td>6.6.23</td><td>B</td></tr><tr><td>6.9.1</td><td>C</td></tr><tr><td>6.9.6</td><td>C</td></tr><tr><td>6.12.1</td><td>A;C</td></tr><tr><td>6.13.5</td><td>C</td></tr></table>",
+        "bbox": [
+            430,
+            504,
+            569,
+            912
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/4fd052a7ea41d9365c9d12c808f76d41c8004277d874672857b9de4bdd217a8f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.2.3</td><td>A</td></tr><tr><td>6.2.8</td><td>A</td></tr><tr><td>6.3.1</td><td>B;D</td></tr><tr><td>6.3.6</td><td>D</td></tr><tr><td>6.3.11</td><td>A</td></tr><tr><td>6.3.16</td><td>0.125</td></tr><tr><td>6.3.21</td><td>12</td></tr><tr><td>6.3.26</td><td>D</td></tr><tr><td>6.3.31</td><td>B</td></tr><tr><td>6.5.2</td><td>D</td></tr><tr><td>6.6.4</td><td>D</td></tr><tr><td>6.6.9</td><td>B</td></tr><tr><td>6.6.14</td><td>D</td></tr><tr><td>6.6.19</td><td>D</td></tr><tr><td>6.6.24</td><td>D</td></tr><tr><td>6.9.2</td><td>A</td></tr><tr><td>6.9.7</td><td>4:4</td></tr><tr><td>6.13.1</td><td>C</td></tr><tr><td>6.13.6</td><td>B</td></tr></table>",
+        "bbox": [
+            591,
+            504,
+            749,
+            912
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/a915b91959fc4fcb9904a78d3b719a043811749924c3d03aaac4119ef885f3fb.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.2.4</td><td>0</td></tr><tr><td>6.2.9</td><td>48:48</td></tr><tr><td>6.3.2</td><td>N/A</td></tr><tr><td>6.3.7</td><td>A</td></tr><tr><td>6.3.12</td><td>D</td></tr><tr><td>6.3.17</td><td>B</td></tr><tr><td>6.3.22</td><td>3 : 3</td></tr><tr><td>6.3.27</td><td>A;B</td></tr><tr><td>6.3.32</td><td>A</td></tr><tr><td>6.5.3</td><td>A;B;C</td></tr><tr><td>6.6.5</td><td>N/A</td></tr><tr><td>6.6.10</td><td>A</td></tr><tr><td>6.6.15</td><td>0</td></tr><tr><td>6.6.20</td><td>A;D</td></tr><tr><td>6.7.1</td><td>A</td></tr><tr><td>6.9.3</td><td>A</td></tr><tr><td>6.10.1</td><td>55</td></tr><tr><td>6.13.2</td><td>B</td></tr><tr><td>6.13.7</td><td>X</td></tr><tr><td>6.13.8</td><td>1</td></tr><tr><td>6.13.13</td><td>A;D</td></tr><tr><td>6.14.1</td><td>A</td></tr><tr><td>6.14.6</td><td>A</td></tr></table>",
+        "bbox": [
+            771,
+            504,
+            934,
+            912
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "6.14.6 Vector Space: GATE DA 2026 | Question: 12",
+        "bbox": [
+            78,
+            65,
+            477,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed using OCR. Therefore, no textual content can be extracted or converted.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "bbox": [
+            60,
+            62,
+            225,
+            154
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/d052322af0fcb62b398f8bf82d911989e5d7b341c2e6a50b049d4bd0f43eb7a9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.13.9</td><td>C</td></tr><tr><td>6.13.14</td><td>24:24</td></tr><tr><td>6.14.2</td><td>A</td></tr><tr><td>6.14.7</td><td>B;C;D</td></tr></table>",
+        "bbox": [
+            243,
+            62,
+            408,
+            154
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/559e4a80831ff921c68314aa6a8b42bfd9490306c95b8f9bc9b042ca3604b6b9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.13.10</td><td>C</td></tr><tr><td>6.13.15</td><td>C</td></tr><tr><td>6.14.3</td><td>2</td></tr></table>",
+        "bbox": [
+            428,
+            62,
+            571,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/6a7860eb7eeb50d07d084d77d989b12963d571b87e5267f4bd6b07c77551838d.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.13.11</td><td>C</td></tr><tr><td>6.13.16</td><td>B;D</td></tr><tr><td>6.14.4</td><td>A</td></tr></table>",
+        "bbox": [
+            591,
+            62,
+            751,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/7755503e18d3e3681fba5aa8058309b478d3a10c4828fd2b5fc2488370927c14.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>6.13.12</td><td>A</td></tr><tr><td>6.13.17</td><td>C</td></tr><tr><td>6.14.5</td><td>A</td></tr></table>",
+        "bbox": [
+            771,
+            62,
+            936,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Syllabus: Random variables, Uniform, Normal, Exponential, Poisson and Binomial distributions. Mean, median, mode and standard deviation. Conditional probability and Bayes theorem",
+        "bbox": [
+            65,
+            98,
+            815,
+            127
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/03d91100d5975f0cff41d184bfa68e93c2c2a64c28bcb46ce5ac40aded9ddd2b.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>2 Marks Count</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>2</td><td>2</td><td>0</td></tr><tr><td>Total Marks</td><td>3</td><td>3</td><td>3</td><td>4</td><td>4</td><td>3</td><td>2</td><td>0</td><td>5</td><td>5</td><td>0</td></tr></table>",
+        "bbox": [
+            70,
+            150,
+            952,
+            212
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"Engineering Mathematics: Probability\" chapter, a cornerstone for any aspiring GATE Computer Science candidate. This subject delves into the mathematical framework for quantifying uncertainty, analyzing random phenomena, and making informed decisions in the face of incomplete information. For GATE CS, a solid understanding of probability is indispensable, as it forms the theoretical bedrock for crucial areas like algorithms (randomized algorithms, average-case analysis), data structures (hash tables, skip lists), machine learning (classification, regression, neural networks, Bayesian inference), artificial intelligence, networking (queueing theory, packet loss), and even operating systems (scheduling, resource allocation). Typically, probability questions constitute a significant portion of the Engineering Mathematics section, often contributing 3-5 marks directly, with concepts frequently integrated into 1-mark or 2-mark questions across other CS topics. Questions can range from direct formula application and conceptual understanding to problem-solving involving combinations of distributions and theorems, often requiring careful interpretation of scenarios.",
+        "bbox": [
+            58,
+            220,
+            934,
+            375
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            387,
+            295,
+            404
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Bayes Theorem",
+        "text_level": 1,
+        "bbox": [
+            60,
+            416,
+            206,
+            432
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Bayes' Theorem describes the probability of an event, based on prior knowledge of conditions that might be related to the event. It's a fundamental concept for updating beliefs or probabilities as new evidence becomes available, forming the basis of Bayesian inference.",
+        "bbox": [
+            58,
+            446,
+            894,
+            488
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            500,
+            440,
+            511
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1. Bayes' Theorem: For two events A and B, where $P(B) > 0$ ,",
+        "bbox": [
+            89,
+            513,
+            568,
+            529
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (A | B) = \\frac {P (B | A) P (A)}{P (B)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            418,
+            539,
+            628,
+            576
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where $P(B)$ can be expanded using the law of total probability:",
+        "bbox": [
+            109,
+            585,
+            576,
+            600
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (B) = P (B | A) P (A) + P (B | A ^ {c}) P (A ^ {c})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            361,
+            610,
+            684,
+            629
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "More generally, for a partition $A_{1}, A_{2}, \\ldots, A_{n}$ of the sample space,",
+        "bbox": [
+            109,
+            638,
+            611,
+            654
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (A _ {i} | B) = \\frac {P (B | A _ {i}) P (A _ {i})}{\\sum_ {j = 1} ^ {n} P (B | A _ {j}) P (A _ {j})}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            383,
+            663,
+            660,
+            703
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            712,
+            322,
+            726
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Allows for the calculation of posterior probability $P(A|B)$ from prior probability $P(A)$ and likelihood $P(B|A)$ .",
+            "- Crucial for diagnostic testing, spam filtering, and machine learning algorithms (e.g., Naive Bayes)."
+        ],
+        "bbox": [
+            95,
+            726,
+            902,
+            755
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            755,
+            354,
+            768
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing $P(A|B)$ with $P(B|A)$ .",
+            "- Incorrectly calculating the denominator $P(B)$ by not considering all mutually exclusive and exhaustive cases.",
+            "• Not identifying the correct prior probabilities $P(A_{i})$ and conditional probabilities $P(B|A_{i})$ ."
+        ],
+        "bbox": [
+            95,
+            769,
+            904,
+            815
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            815,
+            500,
+            828
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Clearly define events $A$ and $B$ .",
+            "- Break down the problem into identifying $P(A), P(B|A)$ , and $P(B|A^c)$ (or $P(B|A_i)$ ).",
+            "- Use tree diagrams to visualize conditional probabilities and total probability."
+        ],
+        "bbox": [
+            95,
+            828,
+            737,
+            872
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Bayesian Network",
+        "text_level": 1,
+        "bbox": [
+            60,
+            885,
+            228,
+            901
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A Bayesian Network (BN) is a probabilistic graphical model that represents a set of random",
+        "bbox": [
+            58,
+            914,
+            922,
+            929
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "7",
+        "bbox": [
+            72,
+            71,
+            84,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Engineering Mathematics: Probability (125)",
+        "bbox": [
+            292,
+            70,
+            658,
+            86
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed using OCR. Therefore, no textual content can be extracted or converted.",
+        "bbox": [
+            862,
+            70,
+            924,
+            115
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "variables and their conditional dependencies via a directed acyclic graph (DAG). Nodes represent random variables, and directed edges represent conditional dependencies, allowing for efficient representation and inference of joint probability distributions.",
+        "bbox": [
+            58,
+            64,
+            907,
+            106
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            117,
+            440,
+            130
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1. Joint Probability Distribution: For a Bayesian Network with nodes $X_{1},\\ldots ,X_{n}$ , the joint probability distribution is given by the product of the conditional probability distributions of each node given its parents:",
+        "bbox": [
+            89,
+            130,
+            890,
+            160
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (X _ {1}, \\dots , X _ {n}) = \\prod_ {i = 1} ^ {n} P (X _ {i} | \\text {Parents} (X _ {i}))\n$$",
+        "text_format": "latex",
+        "bbox": [
+            354,
+            171,
+            690,
+            211
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2. Conditional Independence: A node is conditionally independent of its non-descendants given its parents.",
+        "bbox": [
+            87,
+            220,
+            885,
+            235
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            235,
+            322,
+            247
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Provides a compact representation of joint probability distributions, especially for many variables.",
+            "• Facilitates inference (e.g., calculating $P(X|E)$ where E is evidence).",
+            "- The graph structure explicitly shows the assumed conditional independencies."
+        ],
+        "bbox": [
+            95,
+            248,
+            815,
+            290
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            292,
+            352,
+            305
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Misinterpreting the direction of edges or the meaning of conditional independence.",
+            "- Incorrectly applying the chain rule for joint probability without respecting the network's structure.",
+            "- Confusing marginal independence with conditional independence."
+        ],
+        "bbox": [
+            95,
+            305,
+            806,
+            346
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            347,
+            499,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify parents for each node to write down the joint probability.",
+            "- Use d-separation rules to determine conditional independencies graphically.",
+            "- For inference, apply variable elimination or message passing algorithms (though GATE questions are usually simpler, focusing on structure and basic inference)."
+        ],
+        "bbox": [
+            95,
+            359,
+            904,
+            416
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Bernoulli Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            428,
+            258,
+            442
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Bernoulli distribution is a discrete probability distribution for a random variable that takes value 1 with probability p (success) and value 0 with probability 1 - p (failure). It models a single trial of an experiment with only two possible outcomes.",
+        "bbox": [
+            58,
+            458,
+            934,
+            500
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            511,
+            438,
+            524
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1. Probability Mass Function (PMF): For a Bernoulli random variable X,",
+        "bbox": [
+            89,
+            524,
+            631,
+            540
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (X = x) = p ^ {x} (1 - p) ^ {1 - x} \\quad \\text { for } x \\in \\{0, 1 \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            349,
+            552,
+            694,
+            571
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2. Mean (Expectation): $E[X] = p$",
+        "bbox": [
+            87,
+            580,
+            352,
+            596
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3. Variance: $\\operatorname{Var}(X) = p(1 - p)$",
+        "bbox": [
+            89,
+            596,
+            347,
+            612
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            611,
+            322,
+            624
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- It's the simplest discrete distribution.",
+            "- The sum of $n$ independent Bernoulli trials follows a Binomial distribution."
+        ],
+        "bbox": [
+            97,
+            625,
+            638,
+            650
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            652,
+            352,
+            665
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing Bernoulli with Binomial (Bernoulli is a single trial, Binomial is multiple trials).",
+            "- Incorrectly identifying $p$ (probability of success)."
+        ],
+        "bbox": [
+            97,
+            665,
+            737,
+            693
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            694,
+            499,
+            707
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify the \"success\" event and its probability $p$ .",
+            "- Directly apply formulas for mean and variance."
+        ],
+        "bbox": [
+            97,
+            707,
+            465,
+            735
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Binomial Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            748,
+            257,
+            762
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Binomial distribution models the number of successes in a fixed number of independent Bernoulli trials, each with the same probability of success p. It is a discrete probability distribution.",
+        "bbox": [
+            58,
+            777,
+            929,
+            806
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            817,
+            438,
+            830
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1. Probability Mass Function (PMF): For $X \\sim B(n, p)$ ,",
+        "bbox": [
+            89,
+            831,
+            512,
+            847
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (X = k) = \\binom {n} {k} p ^ {k} (1 - p) ^ {n - k} \\quad \\text {for} k \\in \\{0, 1, \\dots , n \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            302,
+            857,
+            739,
+            894
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "where $\\binom{n}{k} = \\frac{n!}{k!(n - k)!}$ is the binomial coefficient.",
+        "bbox": [
+            109,
+            902,
+            465,
+            926
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "2. Mean (Expectation): $E[X] = np$",
+            "3. Variance: $\\operatorname{Var}(X) = np(1 - p)$",
+            "4. Standard Deviation: $\\sigma = \\sqrt{np(1 - p)}$"
+        ],
+        "bbox": [
+            89,
+            65,
+            408,
+            115
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            114,
+            322,
+            125
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Sum of $n$ independent Bernoulli random variables.",
+            "- Symmetric if $p = 0.5$ , skewed otherwise.",
+            "- Approximated by Poisson distribution when $n$ is large and $p$ is small (and $np$ is moderate).",
+            "- Approximated by Normal distribution when $n$ is large (and $np > 5$ , $n(1 - p) > 5$ )."
+        ],
+        "bbox": [
+            95,
+            127,
+            768,
+            184
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            184,
+            352,
+            197
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying $n$ (number of trials) or $p$ (probability of success).",
+            "- Miscalculating binomial coefficients.",
+            "- Confusing \"at least,\" \"at most,\" \"exactly\" in problem statements (e.g., $P(X \\geq k)$ vs. $P(X = k)$ )."
+        ],
+        "bbox": [
+            95,
+            197,
+            811,
+            239
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            241,
+            499,
+            254
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify if the problem involves a fixed number of independent trials with two outcomes.",
+            "- Use the complement rule for \"at least\" or \"at most\" probabilities (e.g., $P(X \\geq k) = 1 - P(X < k)$ ).",
+            "- Memorize mean and variance formulas."
+        ],
+        "bbox": [
+            95,
+            254,
+            840,
+            296
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Chi Square Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            309,
+            277,
+            325
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Chi-Square $(\\chi^{2})$ distribution is a continuous probability distribution that arises in statistics, particularly in hypothesis testing and confidence interval estimation. It is the distribution of a sum of the squares of independent standard normal random variables.",
+        "bbox": [
+            58,
+            340,
+            880,
+            384
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            73,
+            394,
+            438,
+            408
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Definition: If $Z_{1}, Z_{2}, \\ldots, Z_{k}$ are independent standard normal random variables (i.e., $Z_{i} \\sim N(0,1)$ ), then the random variable $X = \\sum_{i=1}^{k} Z_{i}^{2}$ follows a Chi-Square distribution with $k$ degrees of freedom, denoted $X \\sim \\chi^{2}(k)$ .",
+            "2. Probability Density Function (PDF):"
+        ],
+        "bbox": [
+            89,
+            408,
+            924,
+            472
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf (x; k) = \\frac {1}{2 ^ {k / 2} \\Gamma (k / 2)} x ^ {(k / 2) - 1} e ^ {- x / 2} \\quad \\text { for } x > 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            332,
+            484,
+            710,
+            522
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "where $\\Gamma$ is the Gamma function.",
+        "bbox": [
+            109,
+            529,
+            349,
+            543
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "3. Mean (Expectation): $E[X] = k$",
+            "4. Variance: $\\operatorname{Var}(X) = 2\\bar{k}$"
+        ],
+        "bbox": [
+            89,
+            543,
+            352,
+            574
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            576,
+            322,
+            587
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Skewed to the right, but becomes more symmetric as $k$ increases.",
+            "- Used in goodness-of-fit tests, tests of independence, and for variance estimation.",
+            "- The sum of independent chi-square random variables is also a chi-square random variable with degrees of freedom equal to the sum of their individual degrees of freedom."
+        ],
+        "bbox": [
+            95,
+            587,
+            887,
+            644
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            644,
+            352,
+            657
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying the degrees of freedom $k$ .",
+            "- Confusing the $Z_{i}^{2}$ definition with other squared terms.",
+            "- GATE questions usually focus on its properties or its role in statistical tests rather than direct PDF calculations."
+        ],
+        "bbox": [
+            95,
+            657,
+            914,
+            701
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            703,
+            499,
+            716
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Understand that it's a sum of squared standard normal variables.",
+            "- Memorize mean and variance in terms of degrees of freedom.",
+            "- Recognize its application in hypothesis testing contexts (e.g., for categorical data)."
+        ],
+        "bbox": [
+            95,
+            716,
+            710,
+            758
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Conditional Probability",
+        "text_level": 1,
+        "bbox": [
+            60,
+            771,
+            273,
+            787
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Conditional probability is the probability of an event occurring given that another event has already occurred. It quantifies how the probability of an event changes when new information is available.",
+        "bbox": [
+            58,
+            800,
+            917,
+            828
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            73,
+            839,
+            438,
+            853
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1. Definition: For two events $A$ and $B$ , with $P(B) > 0$ , the conditional probability of $A$ given $B$ is:",
+        "bbox": [
+            89,
+            853,
+            811,
+            870
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (A | B) = \\frac {P (A \\cap B)}{P (B)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            431,
+            880,
+            613,
+            916
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2. Multiplication Rule of Probability:",
+        "bbox": [
+            89,
+            64,
+            376,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (A \\cap B) = P (A | B) P (B) = P (B | A) P (A)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            349,
+            89,
+            695,
+            108
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3. Law of Total Probability: If $A_{1}, A_{2}, \\ldots, A_{n}$ form a partition of the sample space, then for any event B:",
+        "bbox": [
+            87,
+            117,
+            873,
+            133
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (B) = \\sum_ {i = 1} ^ {n} P (B | A _ {i}) P (A _ {i})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            410,
+            144,
+            636,
+            184
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            193,
+            322,
+            207
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If $A$ and $B$ are independent, $P(A|B) = P(A)$ .",
+            "$\\circ P(A|A) = 1.$",
+            "$\\circ P(A^{\\dot{c}}|B) = 1 - P(A|B).$"
+        ],
+        "bbox": [
+            97,
+            207,
+            460,
+            254
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            254,
+            354,
+            267
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying $P(A \\cap B)$ or $P(B)$ .",
+            "- Confusing $P(A|B)$ with $P(B|A)$ or $P(A \\cap B)$ .",
+            "- Not recognizing when events are independent, which simplifies calculations."
+        ],
+        "bbox": [
+            97,
+            267,
+            665,
+            311
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            311,
+            500,
+            325
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Clearly define the events $A$ and $B$ .",
+            "- Use Venn diagrams or tree diagrams to visualize the sample space and events.",
+            "- Break down complex problems into simpler conditional probabilities."
+        ],
+        "bbox": [
+            97,
+            326,
+            690,
+            368
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Continuous Distribution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            380,
+            282,
+            396
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A continuous probability distribution describes the probabilities of a random variable taking on values in a continuous range (e.g., real numbers). Unlike discrete distributions, the probability of a continuous random variable taking on any single exact value is zero.",
+        "bbox": [
+            58,
+            409,
+            919,
+            453
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            73,
+            463,
+            440,
+            477
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Probability Density Function (PDF): $f(x)$ such that $f(x) \\geq 0$ for all $x$ , and $\\int_{-\\infty}^{\\infty} f(x) dx = 1$ .",
+            "2. Probability of an Interval: $P(a \\leq X \\leq b) = \\int_{a}^{b} f(x) dx$ .",
+            "3. Cumulative Distribution Function (CDF): $F(x) = P(X \\leq x) = \\int_{-\\infty}^{x} f(t) dt$ .",
+            "4. Relationship between PDF and CDF: $f(x) = \\frac{d}{dx} F(x)$ (where $F(x)$ is differentiable).",
+            "5. Mean (Expectation): $E[X] = \\int_{-\\infty}^{\\infty} x f(x) dx$ .",
+            "6. Variance: $\\operatorname{Var}(X) = E[X^2] - (E[X])^2 = \\int_{-\\infty}^{\\infty}(x - E[X])^2 f(x)dx$ ."
+        ],
+        "bbox": [
+            87,
+            477,
+            810,
+            587
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties and Identities:",
+        "bbox": [
+            73,
+            586,
+            322,
+            599
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ P(X=x)=0$ for any specific value x.",
+            "- The area under the PDF curve over its entire range is 1.",
+            "- The CDF is non-decreasing and ranges from 0 to 1."
+        ],
+        "bbox": [
+            97,
+            600,
+            519,
+            642
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            643,
+            354,
+            656
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing PDF with PMF (for discrete distributions).",
+            "- Incorrectly calculating integrals for probabilities, mean, or variance.",
+            "- Forgetting that $P(a \\leq X \\leq b) = P(a < X < b)$ for continuous distributions."
+        ],
+        "bbox": [
+            97,
+            657,
+            682,
+            699
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            699,
+            500,
+            713
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Always check if the given function is a valid PDF (non-negative and integrates to 1).",
+            "- Use integration for calculating probabilities and moments.",
+            "- Understand the relationship between PDF and CDF."
+        ],
+        "bbox": [
+            97,
+            713,
+            719,
+            754
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Expectation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            767,
+            174,
+            783
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The expectation (or expected value, mean) of a random variable is the weighted average of all possible values that the random variable can take, with the weights being their respective probabilities. It represents the \"long-run average\" or central tendency of the random variable.",
+        "bbox": [
+            58,
+            796,
+            926,
+            839
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            73,
+            850,
+            440,
+            863
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1. For Discrete Random Variable X:",
+        "bbox": [
+            90,
+            864,
+            376,
+            878
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE [ X ] = \\sum_ {x} x P (X = x)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            423,
+            888,
+            621,
+            921
+        ],
+        "page_idx": 11
+    }
+]

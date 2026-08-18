@@ -1,0 +1,4910 @@
+[
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. In both AST and CFG, let node $N_{2}$ be the successor of node $N_{1}$ . In the input program, the code corresponding to $N_{2}$ is present after the code corresponding to $N_{1}$",
+            "B. For any input program, neither AST nor CFG will contain a cycle",
+            "C. The maximum number of successors of a node in an AST and a CFG depends on the input program",
+            "D. Each node in AST and CFG corresponds to at most one statement in the input program"
+        ],
+        "bbox": [
+            85,
+            64,
+            929,
+            136
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 compiler-design easy abstract-syntax-tree code-optimization",
+        "bbox": [
+            87,
+            161,
+            463,
+            171
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            176,
+            188,
+            192
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2",
+        "text_level": 1,
+        "bbox": [
+            68,
+            201,
+            95,
+            214
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Ambiguous Grammar (2)",
+        "text_level": 1,
+        "bbox": [
+            415,
+            201,
+            613,
+            217
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2.1 Ambiguous Grammar: GATE CSE 1987 | Question: 1-xii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            226,
+            556,
+            242
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A context-free grammar is ambiguous if:",
+        "bbox": [
+            85,
+            252,
+            381,
+            267
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The grammar contains useless non-terminals.",
+            "B. It produces more than one parse tree for some sentence.",
+            "C. Some production has two non terminals side by side on the right-hand side.",
+            "D. None of the above."
+        ],
+        "bbox": [
+            87,
+            277,
+            662,
+            332
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1987 compiler-design parsing ambiguous-grammar",
+        "bbox": [
+            87,
+            359,
+            352,
+            368
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            375,
+            189,
+            389
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/fd69001fd8722984715609f21a1cdb0cfe32419f243c398a7d9aa1a6a9e9e20c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            231,
+            932,
+            268
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.2.2 Ambiguous Grammar: GATE CSE 2026 | Set 2 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            397,
+            594,
+            413
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the following grammars is/are ambiguous?",
+        "bbox": [
+            85,
+            422,
+            467,
+            437
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $S \\rightarrow aSb \\mid \\epsilon$",
+            "C. $S \\rightarrow aS|Sa|\\epsilon$"
+        ],
+        "bbox": [
+            87,
+            446,
+            216,
+            476
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $E \\rightarrow E + E |E * E |id$",
+            "D. $S \\rightarrow aS \\mid \\epsilon$"
+        ],
+        "bbox": [
+            495,
+            446,
+            682,
+            476
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 compiler-design ambiguous-grammar multiple-selects one-mark",
+        "bbox": [
+            87,
+            480,
+            475,
+            490
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            497,
+            189,
+            511
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/6ec88296db8974c613beec4bfa0e1882b2433ea23c0730889b60c309fed71a35.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            401,
+            932,
+            439
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3",
+        "text_level": 1,
+        "bbox": [
+            68,
+            521,
+            95,
+            534
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assembler (9)",
+        "text_level": 1,
+        "bbox": [
+            457,
+            521,
+            571,
+            536
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3.1 Assembler: GATE CSE 1992 | Question: 01,viii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            547,
+            485,
+            561
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The purpose of instruction location counter in an assembler is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            571,
+            606,
+            586
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1992 compiler-design assembler normal fill-in-the-blanks",
+        "bbox": [
+            87,
+            600,
+            389,
+            609
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            616,
+            188,
+            630
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/951cb6ac8f6a11701734fa9b9fe0a9056a8eb54d8ffc8b65c29237b7ace37968.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            549,
+            932,
+            587
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3.2 Assembler: GATE CSE 1992 | Question: 03,ii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            638,
+            472,
+            653
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Mention the pass number for each of the following activities that occur in a two pass assembler:",
+        "bbox": [
+            85,
+            663,
+            781,
+            678
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. object code generation",
+            "C. listing printed"
+        ],
+        "bbox": [
+            87,
+            688,
+            297,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. literals added to literal table",
+            "D. address resolution of local symbols"
+        ],
+        "bbox": [
+            495,
+            688,
+            757,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1992 compiler-design assembler easy",
+        "bbox": [
+            87,
+            719,
+            299,
+            729
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            735,
+            188,
+            750
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/606aefa1035d7dc34e95b45fa09440d59621542e9fc94e65e89dad7a442e9ae7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            642,
+            932,
+            680
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.3.3 Assembler: GATE CSE 1992 | Question: 3,i",
+        "text_level": 1,
+        "bbox": [
+            78,
+            758,
+            457,
+            773
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Write short answers to the following:",
+        "bbox": [
+            85,
+            783,
+            354,
+            798
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "i. Which of the following macros can put a macro assembler into an infinite loop?",
+        "bbox": [
+            92,
+            808,
+            685,
+            824
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/bda09ce33a79e4975f703e68cd404699ebff13a3cd990992ff65d425746cd9ba.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            762,
+            932,
+            800
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/17b0526576306b29f6ae964d3a47cfdcd8204a6e3af93ed1aa7c82e625f8a185.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>.MACRO M1,X</td><td>.MACRO M2,X</td></tr><tr><td>.IF EQ,X</td><td>.IF EQ,X</td></tr><tr><td>M1 X+1</td><td>M2 X</td></tr><tr><td>.ENDC</td><td>.ENDC</td></tr><tr><td>.IF NE,X</td><td>.IF NE,X</td></tr><tr><td>.WORD X</td><td>.WORD X+1</td></tr><tr><td>.ENDC</td><td>.ENDC</td></tr><tr><td>.ENDM</td><td>.ENDM</td></tr></table>",
+        "bbox": [
+            90,
+            74,
+            405,
+            165
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Give an example call that does so.",
+        "bbox": [
+            85,
+            173,
+            339,
+            186
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1992 compiler-design assembler normal descriptive",
+        "bbox": [
+            87,
+            206,
+            366,
+            214
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            222,
+            188,
+            236
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.3.4 Assembler: GATE CSE 1993 | Question: 7.6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            245,
+            462,
+            258
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A simple two-pass assembler does the following in the first pass:",
+        "bbox": [
+            85,
+            269,
+            559,
+            283
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It allocates space for the literals.",
+            "B. It computes the total length of the program.",
+            "C. It builds the symbol table for the symbols and their values.",
+            "D. It generates code for all the load and store register instructions.",
+            "E. None of the above."
+        ],
+        "bbox": [
+            87,
+            295,
+            574,
+            381
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1993 compiler-design assembler easy multiple-selects",
+        "bbox": [
+            87,
+            408,
+            376,
+            418
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            423,
+            188,
+            438
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.3.5 Assembler: GATE CSE 1994 | Question: 17a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            448,
+            467,
+            461
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are True or False with reasons for your answer:",
+        "bbox": [
+            85,
+            471,
+            719,
+            486
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Coroutine is just another name for a subroutine.",
+        "bbox": [
+            85,
+            500,
+            436,
+            514
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1994 compiler-design normal assembler true-false descriptive",
+        "bbox": [
+            87,
+            528,
+            421,
+            538
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            543,
+            188,
+            558
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.3.6 Assembler: GATE CSE 1994 | Question: 17b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            567,
+            468,
+            581
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are True or False with reasons for your answer:",
+        "bbox": [
+            85,
+            591,
+            719,
+            606
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A two pass assembler uses its machine opcode table in the first pass of assembly.",
+        "bbox": [
+            85,
+            619,
+            685,
+            633
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1994 compiler-design normal assembler true-false descriptive",
+        "bbox": [
+            87,
+            647,
+            421,
+            657
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            663,
+            188,
+            678
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.3.7 Assembler: GATE CSE 1994 | Question: 18a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            687,
+            467,
+            701
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are True or False with reasons for your answer",
+        "bbox": [
+            85,
+            711,
+            715,
+            726
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A subroutine cannot always be used to replace a macro in an assembly language program.",
+        "bbox": [
+            85,
+            739,
+            749,
+            754
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1994 compiler-design normal assembler true-false descriptive",
+        "bbox": [
+            87,
+            768,
+            421,
+            777
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            783,
+            188,
+            796
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.3.8 Assembler: GATE CSE 1994 | Question: 18b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            807,
+            468,
+            821
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are True or False with reasons for your answer",
+        "bbox": [
+            85,
+            831,
+            715,
+            845
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A symbol declared as ‘external’ in an assembly language program is assigned an address outside the program by the assembler itself.",
+        "bbox": [
+            84,
+            859,
+            927,
+            885
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1994 compiler-design normal assembler true-false descriptive",
+        "bbox": [
+            87,
+            901,
+            421,
+            910
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2327b322990897a2e66e7d276c8174291643df14b06cf56ca4e8f5a6ac175e6c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            248,
+            932,
+            286
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/02bb6b60cc917910b92f644d63d8a7c42cb80500187ef6a12d3eb4087a66b856.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            450,
+            932,
+            488
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/e268752d421aca3b8a60990a5eb8387a0e262b59d94435a35ada7fb344c59339.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            570,
+            932,
+            608
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/e41fcec243c37a2e0087acf4c41a8a942163cc38a8e0d15e07f61a27508b9f42.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            690,
+            932,
+            726
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/b4078a57334b7fa5f1b80be33f0d259f097f5c89186e37e786458bcd9e7c5a7e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            809,
+            932,
+            847
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.3.9 Assembler: GATE CSE 1996 | Question: 1.17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            472,
+            103
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The pass numbers for each of the following activities",
+        "bbox": [
+            85,
+            112,
+            472,
+            128
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. object code generation",
+            "ii. literals added to literal table",
+            "iii. listing printed",
+            "iv. address resolution of local symbols that occur in a two pass assembler"
+        ],
+        "bbox": [
+            92,
+            138,
+            630,
+            207
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "respectively are",
+        "bbox": [
+            85,
+            219,
+            205,
+            233
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 1,2,1,2",
+        "bbox": [
+            87,
+            247,
+            174,
+            262
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 2,1,2,1",
+        "bbox": [
+            285,
+            247,
+            368,
+            262
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 2,1,1,2",
+        "bbox": [
+            478,
+            247,
+            564,
+            262
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 1,2,2,2",
+        "bbox": [
+            673,
+            247,
+            757,
+            262
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1996 compiler-design normal assembler",
+        "bbox": [
+            87,
+            276,
+            309,
+            285
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            292,
+            188,
+            306
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.4",
+        "text_level": 1,
+        "bbox": [
+            68,
+            317,
+            95,
+            330
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Backpatching (1)",
+        "text_level": 1,
+        "bbox": [
+            445,
+            317,
+            584,
+            332
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.4.1 Backpatching: GATE CSE 2025 | Set 2 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            343,
+            534,
+            357
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements about the use of backpatching in a compiler for intermediate code generation:",
+        "bbox": [
+            84,
+            366,
+            878,
+            395
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/07d190c4998374350f2010b22598d811ed149be6f6e94864c618a36aae1f01b7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            346,
+            932,
+            383
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Backpatching can be used to generate code for Boolean expression in one pass.",
+            "II. Backpatching can be used to generate code for flow-of-control statements in one pass."
+        ],
+        "bbox": [
+            90,
+            406,
+            742,
+            434
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which ONE of the following options is CORRECT?",
+        "bbox": [
+            85,
+            445,
+            455,
+            460
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. Only I is correct",
+        "bbox": [
+            89,
+            470,
+            221,
+            483
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. Only II is correct",
+        "bbox": [
+            495,
+            469,
+            631,
+            483
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. Both I and II are correct",
+        "bbox": [
+            89,
+            483,
+            273,
+            495
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. Neither I nor II is correct",
+        "bbox": [
+            495,
+            483,
+            682,
+            495
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 compiler-design backpatching intermediate-code one-mark",
+        "bbox": [
+            89,
+            502,
+            455,
+            511
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            517,
+            188,
+            532
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.5",
+        "text_level": 1,
+        "bbox": [
+            68,
+            542,
+            95,
+            555
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Basic Blocks (2)",
+        "text_level": 1,
+        "bbox": [
+            448,
+            542,
+            579,
+            557
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.5.1 Basic Blocks: GATE CSE 2025 | Set 1 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            568,
+            529,
+            581
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Refer to the given 3-address code sequence. This code sequence is split into basic blocks. The number of basic blocks is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            84,
+            592,
+            878,
+            622
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/24eb6f20b24e08d3811d38588b969887598646347784b09850e71ec2c50c7220.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            571,
+            932,
+            609
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ni = 1\nj = 1\nt1 = 10*i\nt2 = t1+j\nt3 = 8*t2\nt4 = t3-88\na[t4] = 0.0\nj = j+1\nif j <= 10 goto 1003\ni = i+1\nif i <= 10 goto 1002\ni = 1\nt5 = i-1\nt6 = 88*t5\na[t6] = 1.0\ni = i+1\nif i <= 10 goto 1013\n```",
+        "bbox": [
+            89,
+            630,
+            263,
+            814
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 compiler-design three-address-code basic-blocks numerical-answers easy two-marks",
+        "bbox": [
+            87,
+            855,
+            579,
+            866
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            872,
+            188,
+            885
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the control flow graph given below.",
+        "bbox": [
+            85,
+            89,
+            413,
+            103
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/bdeb1fcdf0d29d9dff2db06b910562fe19fb1ea3bd31b48fbc5e424d20389350.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"ENTRY\"] --> B[\"a = b + c\"]\n  B --> C[\"d = a + e\"]\n  C --> D[\"g = d + e\"]\n  D --> E[\"EXIT\"]\n  B --> F[\"B3\"]\n  F --> B\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            332,
+            112,
+            623,
+            328
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is the set of live variables at the exit point of each basic block?",
+        "bbox": [
+            84,
+            340,
+            796,
+            356
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. B1 : {a, b, c, e, f}, B2 : {d, e}, B3 : {b, c, e, f}, B4 : ∅",
+            "B. B1: $\\varnothing$ , B2: $\\{d, e\\}$ , B3: $\\{a, c, f\\}$ , B4: $\\varnothing$",
+            "C. B1 : {a, b, c, e, f}, B2 : {d, e}, B3 : {c, e, f}, B4 : ∅",
+            "D. B1 : ∅, B2 : {d, e, f}, B3 : {a, b, c, e, f}, B4 : ∅"
+        ],
+        "bbox": [
+            85,
+            366,
+            542,
+            429
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 compiler-design basic-blocks two-marks",
+        "bbox": [
+            87,
+            454,
+            366,
+            463
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            470,
+            189,
+            484
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.6",
+        "text_level": 1,
+        "bbox": [
+            68,
+            494,
+            95,
+            507
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Code Optimization (8)",
+        "text_level": 1,
+        "bbox": [
+            426,
+            494,
+            601,
+            509
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (13Q)",
+        "bbox": [
+            70,
+            519,
+            275,
+            534
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.6.1 Code Optimization: GATE CSE 2006 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            77,
+            547,
+            519,
+            562
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider these two functions and two statements S1 and S2 about them.",
+        "bbox": [
+            85,
+            572,
+            618,
+            586
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/cb21714108e65b74671983c46a1618629b8e590125eb7cbbb6e0e7d5b29f47a5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "int work1(int *a, int i, int j)\n{\n    int x = a[i+2];\n    a[j] = x+1;\n    return a[i+2] - 3;\n}",
+        "sub_type": "text_image",
+        "bbox": [
+            89,
+            591,
+            405,
+            698
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/41502f22ea729b9049cc298bf3e18fecdebbdfc9c012ed875471469a6f19c2e3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            549,
+            932,
+            587
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "S1: The transformation form work1 to work2 is valid, i.e., for any program state and input arguments, work2 will compute the same output and have the same effect on program state as work1",
+            "S2: All the transformations applied to work1 to get work2 will always improve the performance (i.e reduce CPU time) of work2 compared to work1"
+        ],
+        "bbox": [
+            84,
+            698,
+            929,
+            764
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. S1 is false and S2 is false",
+        "bbox": [
+            87,
+            775,
+            289,
+            788
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. S1 is false and S2 is true",
+        "bbox": [
+            495,
+            775,
+            690,
+            788
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. S1 is true and S2 is false",
+        "bbox": [
+            89,
+            789,
+            284,
+            801
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. S1 is true and S2 is true",
+        "bbox": [
+            495,
+            789,
+            682,
+            801
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 compiler-design normal code-optimization",
+        "bbox": [
+            87,
+            807,
+            357,
+            815
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            823,
+            189,
+            837
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.6.2 Code Optimization: GATE CSE 2006 | Question: 60",
+        "text_level": 1,
+        "bbox": [
+            77,
+            847,
+            519,
+            861
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C code segment.",
+        "bbox": [
+            85,
+            871,
+            379,
+            885
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/4af0ae259859979bc77e69b1c36c9b83338ac727907ebb65f54367c47bacf3db.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            849,
+            932,
+            887
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nfor (i = 0, i < n; i++)\n{\n    for (j = 0; j < n; j++)\n```",
+        "bbox": [
+            87,
+            895,
+            215,
+            929
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "2.5.2 Basic Blocks: GATE CSE 2026 | Set 2 | Question: 35",
+        "bbox": [
+            77,
+            65,
+            529,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n{\n    if (i%2)\n    {\n        x += (4*j + 5*i);\n        y += (7 + 4*j);\n    }\n}\n}\n```",
+        "bbox": [
+            87,
+            64,
+            218,
+            152
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is false?",
+        "bbox": [
+            85,
+            160,
+            346,
+            174
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The code contains loop invariant computation",
+            "B. There is scope of common sub-expression elimination in this code",
+            "C. There is scope of strength reduction in this code",
+            "D. There is scope of dead code elimination in this code"
+        ],
+        "bbox": [
+            87,
+            186,
+            594,
+            241
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 compiler-design code-optimization",
+        "bbox": [
+            87,
+            267,
+            312,
+            277
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            283,
+            188,
+            296
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.6.3 Code Optimization: GATE CSE 2008 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            77,
+            307,
+            519,
+            321
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Some code optimizations are carried out on the intermediate code because",
+        "bbox": [
+            85,
+            331,
+            635,
+            345
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. They enhance the portability of the compiler to the target processor",
+            "B. Program analysis is more accurate on intermediate code than on machine code",
+            "C. The information from dataflow analysis cannot otherwise be used for optimization",
+            "D. The information from the front end cannot otherwise be used for optimization"
+        ],
+        "bbox": [
+            87,
+            356,
+            702,
+            425
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 normal code-optimization compiler-design",
+        "bbox": [
+            87,
+            451,
+            356,
+            461
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            467,
+            188,
+            480
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.6.4 Code Optimization: GATE CSE 2014 | Set 1 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            77,
+            491,
+            571,
+            505
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is FALSE?",
+        "bbox": [
+            85,
+            514,
+            364,
+            529
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/8821e23919d2d0b5aacc8955a4cce94b5a8dc55fdf3ad2f6fde5d9d0fbd4f0ed.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            309,
+            931,
+            347
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A basic block is a sequence of instructions where control enters the sequence at the beginning and exits at the end.",
+            "B. Available expression analysis can be used for common subexpression elimination.",
+            "C. Live variable analysis can be used for dead code elimination.",
+            "D. $x = 4 * 5 \\Rightarrow x = 20$ is an example of common subexpression elimination."
+        ],
+        "bbox": [
+            87,
+            540,
+            927,
+            610
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 compiler-design code-optimization normal",
+        "bbox": [
+            87,
+            636,
+            376,
+            646
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            652,
+            188,
+            666
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.6.5 Code Optimization: GATE CSE 2014 | Set 3 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            77,
+            676,
+            569,
+            690
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of arithmetic operations required to evaluate the polynomial $P(X) = X^{5} + 4X^{3} + 6X + 5$ for a given value of $X$ , using only one temporary variable is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            699,
+            873,
+            732
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/22c79ec52e2e956b9f4cd388b0fbd80e63d2e1fd3886b0bf732660334d81f8cb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            494,
+            931,
+            530
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 compiler-design numerical-answers normal code-optimization",
+        "bbox": [
+            87,
+            745,
+            465,
+            755
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            761,
+            188,
+            775
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.6.6 Code Optimization: GATE CSE 2021 | Set 2 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            77,
+            783,
+            571,
+            799
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following ANSI C code segment:",
+        "bbox": [
+            85,
+            807,
+            433,
+            824
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/dc86d37dcb0107e7f24832553e69eb739570f533fb65a7094d984f452d5a0f7f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            678,
+            931,
+            716
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nz=x + 3 + y->f1 + y->f2;\nfor (i = 0; i < 200; i = i + 2)\n{\n    if (z > i)\n    {\n        p = p + x + 3;\n        q = q + y->f1;\n    } else\n    {\n```",
+        "bbox": [
+            112,
+            833,
+            265,
+            931
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3202b7c2f5e7389c69a13ccc39e92c01b6b8a954baf09ba599fe659082402fcb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            787,
+            931,
+            825
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\np = p + y->f2;\n        q = q + x + 3;\n    }\n}\n```",
+        "bbox": [
+            112,
+            64,
+            221,
+            109
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Assume that the variable y points to a struct (allocated on the heap) containing two fields f1 and f2, and the local variables x, y, z, p, q, and i are allotted registers. Common sub-expression elimination (CSE) optimization is applied on the code. The number of addition and the dereference operations (of the form y -> f1 or y -> f2) in the optimized code, respectively, are:",
+        "bbox": [
+            84,
+            118,
+            929,
+            176
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 403 and 102",
+        "bbox": [
+            87,
+            190,
+            205,
+            204
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 203 and 2",
+        "bbox": [
+            285,
+            190,
+            381,
+            204
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 303 and 102",
+        "bbox": [
+            478,
+            190,
+            594,
+            204
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 303 and 2",
+        "bbox": [
+            673,
+            190,
+            771,
+            204
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 code-optimization compiler-design two-marks",
+        "bbox": [
+            87,
+            214,
+            391,
+            225
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            231,
+            188,
+            245
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.6.7 Code Optimization: GATE CSE 2025 | Set 1 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            254,
+            563,
+            269
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which ONE of the following techniques used in compiler code optimization uses live variable analysis?",
+        "bbox": [
+            85,
+            277,
+            833,
+            293
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. Run-time",
+        "bbox": [
+            87,
+            302,
+            178,
+            315
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "function",
+        "bbox": [
+            223,
+            302,
+            278,
+            315
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "call",
+        "bbox": [
+            326,
+            302,
+            352,
+            315
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. Register assignment to variables",
+        "bbox": [
+            495,
+            302,
+            741,
+            317
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "management",
+        "bbox": [
+            112,
+            317,
+            205,
+            328
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. Strength reduction",
+        "bbox": [
+            90,
+            330,
+            238,
+            342
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. Constant folding",
+        "bbox": [
+            495,
+            328,
+            631,
+            343
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 compiler-design code-optimization easy one-mark",
+        "bbox": [
+            87,
+            347,
+            416,
+            357
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            363,
+            188,
+            377
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.6.8 Code Optimization: GATE CSE 2026 | Set 1 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            77,
+            387,
+            571,
+            401
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the control flow graph shown in the figure.",
+        "bbox": [
+            85,
+            410,
+            463,
+            426
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/9909b45343c79c488bf8cc784135549e0277a54ca7147328389757e79270b941.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            257,
+            932,
+            294
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/9809bf702f0c6ade95e5cdfb3c2be3b3defd9fc4fe7ba1b984e61c00b8589d2c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            390,
+            932,
+            427
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/efd3683993c292c1dfaaac448dd0ea0846f837358aa21f5c48d95cd15da6d653.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"ENTRY\"] --> B[\"a = b + i\"]\n  B --> C[\"a = g * k\\nf = d - f\\na = c * 4\"]\n  B --> D[\"t = g * k\\nb = c + m\"]\n  C --> E[\"x = g * k\\ny = b + i\"]\n  D --> E\n  E --> F[\"z = c + m\"]\n  F -->|EXIT| G[\"B5\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            352,
+            448,
+            658,
+            676
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options correctly lists the set of redundant expressions (common subexpressions) in the basic blocks B4 and B5?",
+        "bbox": [
+            84,
+            688,
+            927,
+            716
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Note: All the variables are integers.",
+        "bbox": [
+            85,
+            730,
+            346,
+            744
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. B4: $\\{b + i\\}$",
+        "bbox": [
+            87,
+            755,
+            201,
+            771
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B5: $\\{c + m\\}$",
+        "bbox": [
+            268,
+            755,
+            364,
+            771
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. B4: $\\{g*k\\}$",
+        "bbox": [
+            89,
+            771,
+            200,
+            787
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B5: $\\{c + m\\}$",
+        "bbox": [
+            258,
+            771,
+            352,
+            787
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. B4: $\\{g*k, b+i\\}$",
+        "bbox": [
+            89,
+            786,
+            245,
+            802
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B5: { }",
+        "bbox": [
+            272,
+            786,
+            322,
+            802
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. B4: $\\{g*k\\}$",
+        "bbox": [
+            89,
+            802,
+            200,
+            818
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B5:{}",
+        "bbox": [
+            258,
+            802,
+            305,
+            818
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 compiler-design two-marks code-optimization",
+        "bbox": [
+            87,
+            843,
+            391,
+            852
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            858,
+            188,
+            872
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.7",
+        "text_level": 1,
+        "bbox": [
+            68,
+            883,
+            94,
+            895
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Compilation Phases (13)",
+        "text_level": 1,
+        "bbox": [
+            416,
+            883,
+            613,
+            897
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (6Q)",
+        "bbox": [
+            70,
+            907,
+            267,
+            921
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.7.1 Compilation Phases: GATE CSE 1987 | Question: 1-xi",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            542,
+            81
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/1685784334df9608134eeeb903f7ac2e37c26e6aff755df69171382cf82fb7c7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In a compiler the module that checks every character of the source text is called:",
+        "bbox": [
+            85,
+            90,
+            673,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. The code generator.",
+        "bbox": [
+            89,
+            115,
+            252,
+            128
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. The code optimiser.",
+        "bbox": [
+            497,
+            115,
+            653,
+            128
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. The lexical analyser.",
+        "bbox": [
+            90,
+            129,
+            253,
+            141
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. The syntax analyser.",
+        "bbox": [
+            497,
+            129,
+            660,
+            142
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1987 compiler-design compilation-phases lexical-analysis",
+        "bbox": [
+            89,
+            147,
+            376,
+            157
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            162,
+            181,
+            176
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.7.2 Compilation Phases: GATE CSE 1990 | Question: 2-ix",
+        "text_level": 1,
+        "bbox": [
+            78,
+            186,
+            542,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Match the pairs in the following questions:",
+        "bbox": [
+            85,
+            210,
+            396,
+            225
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/f2512ab11a66eff9d7deb7d845281fc75b8312188246dd9b6711c83eda5ae776.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(a)</td><td>Lexical analysis</td><td>(p)</td><td>DAG&#x27;s</td></tr><tr><td>(b)</td><td>Code optimization</td><td>(q)</td><td>Syntax trees</td></tr><tr><td>(c)</td><td>Code generation</td><td>(r)</td><td>Push down automaton</td></tr><tr><td>(d)</td><td>Abelian groups</td><td>(s)</td><td>Finite automaton</td></tr></table>",
+        "bbox": [
+            270,
+            236,
+            746,
+            320
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/ef5040bf7be11d13bf214c52526b34b7f3d3e93fba661a384b54404b0a11c375.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            188,
+            931,
+            226
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1990 match-the-following compiler-design compilation-phases",
+        "bbox": [
+            87,
+            343,
+            401,
+            353
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            359,
+            188,
+            372
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.7.3 Compilation Phases: GATE CSE 2005 | Question: 61",
+        "text_level": 1,
+        "bbox": [
+            78,
+            382,
+            529,
+            397
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider line number 3 of the following C-program.",
+        "bbox": [
+            85,
+            406,
+            460,
+            422
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/5f6379fbf9451d1e5f19c533889878c4d6e3beea32c1dffdec13b364bdfbb851.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            385,
+            931,
+            423
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint main() {            /*Line 1 */\n    int I, N;            /*Line 2 */\n    fro (I=0, I<N, I++); /*Line 3 */\n}\n```",
+        "bbox": [
+            87,
+            431,
+            292,
+            475
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Identify the compiler's response about this line while creating the object-module:",
+        "bbox": [
+            85,
+            483,
+            672,
+            500
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. No compilation error",
+        "bbox": [
+            89,
+            509,
+            253,
+            522
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. Only a lexical error",
+        "bbox": [
+            497,
+            509,
+            648,
+            522
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. Only syntactic errors",
+        "bbox": [
+            90,
+            522,
+            253,
+            535
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. Both lexical and syntactic errors",
+        "bbox": [
+            497,
+            522,
+            734,
+            536
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 compiler-design compilation-phases normal",
+        "bbox": [
+            89,
+            541,
+            361,
+            549
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            555,
+            188,
+            571
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.7.4 Compilation Phases: GATE CSE 2009 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            579,
+            532,
+            593
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Match all items in Group 1 with the correct options from those given in Group 2.",
+        "bbox": [
+            85,
+            603,
+            665,
+            619
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/45b85d39c61050e6abd7752c2b16a44f218e1acb493a030cd15c3d77abf7068e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Group 1</td><td>Group 2</td></tr><tr><td>P. Regular Expression</td><td>1. Syntax analysis</td></tr><tr><td>Q. Pushdown automata</td><td>2. Code generation</td></tr><tr><td>R. Dataflow analysis</td><td>3. Lexical analysis</td></tr><tr><td>S. Register allocation</td><td>4. Code optimization</td></tr></table>",
+        "bbox": [
+            287,
+            630,
+            729,
+            730
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. P-4, Q-1, R-2, S-3",
+        "bbox": [
+            89,
+            738,
+            250,
+            752
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. P-3, Q-1, R-4, S-2",
+        "bbox": [
+            497,
+            738,
+            655,
+            752
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. P-3, Q-4, R-1, S-2",
+        "bbox": [
+            90,
+            752,
+            250,
+            766
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. P-2, Q-1, R-4, S-3",
+        "bbox": [
+            497,
+            752,
+            655,
+            767
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 compiler-design easy compilation-phases match-the-following",
+        "bbox": [
+            89,
+            771,
+            448,
+            781
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            787,
+            188,
+            802
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.7.5 Compilation Phases: GATE CSE 2015 | Set 2 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            811,
+            584,
+            826
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Match the following:",
+        "bbox": [
+            85,
+            834,
+            236,
+            850
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/2ba1cd95ba557e154606261f3f98075251e948c90bc13d2a8397c8b1c91a3887.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            581,
+            931,
+            619
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/a54c1e8eb523aa3ccca0e167d485cd2c95189db741e3ee4482fc803b87b3ae54.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            814,
+            931,
+            852
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/edf43cac92272ffe8a028af6728c3d59b6c5c87f769a6de13834845767098358.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>P. Lexical analysis</td><td>1. Graph coloring</td></tr><tr><td>Q. Parsing</td><td>2. DFA minimization</td></tr><tr><td>R. Register allocation</td><td>3. Post-order traversal</td></tr><tr><td>S. Expression evaluation</td><td>4. Production tree</td></tr></table>",
+        "bbox": [
+            275,
+            65,
+            742,
+            146
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. P-2, Q-3, R-1, S-4",
+        "bbox": [
+            89,
+            154,
+            250,
+            168
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. P-2, Q-1, R-4, S-3",
+        "bbox": [
+            495,
+            154,
+            655,
+            168
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. P-2, Q-4, R-1, S-3",
+        "bbox": [
+            90,
+            169,
+            250,
+            182
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. P-2, Q-3, R-4, S-1",
+        "bbox": [
+            497,
+            169,
+            653,
+            182
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 compiler-design normal compilation-phases match-the-following",
+        "bbox": [
+            89,
+            187,
+            478,
+            197
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            203,
+            188,
+            218
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.7.6 Compilation Phases: GATE CSE 2016 | Set 2 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            226,
+            584,
+            242
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Match the following:",
+        "bbox": [
+            85,
+            251,
+            236,
+            266
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/559068c910f561988db0c9c3e4e717f12170d1bd41ce420519f1cdedd896f20f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(P)</td><td>Lexical analysis</td><td>(i)</td><td>Leftmost derivation</td></tr><tr><td>(Q)</td><td>Top down parsing</td><td>(ii)</td><td>Type checking</td></tr><tr><td>(R)</td><td>Semantic analysis</td><td>(iii)</td><td>Regular expressions</td></tr><tr><td>(S)</td><td>Runtime environment</td><td>(iv)</td><td>Activation records</td></tr></table>",
+        "bbox": [
+            263,
+            277,
+            754,
+            359
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $\\mathrm{P} \\leftrightarrow \\mathrm{i}, \\mathrm{Q} \\leftrightarrow \\mathrm{ii}, \\mathrm{R} \\leftrightarrow \\mathrm{iv}, \\mathrm{S} \\leftrightarrow \\mathrm{iii}$",
+        "bbox": [
+            89,
+            368,
+            339,
+            383
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $\\mathrm{P} \\leftrightarrow \\mathrm{iii}, \\mathrm{Q} \\leftrightarrow \\mathrm{i}, \\mathrm{R} \\leftrightarrow \\mathrm{ii}, \\mathrm{S} \\leftrightarrow \\mathrm{iv}$",
+        "bbox": [
+            497,
+            368,
+            744,
+            383
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $P \\leftrightarrow ii, Q \\leftrightarrow iii, R \\leftrightarrow i, S \\leftrightarrow iv$",
+        "bbox": [
+            90,
+            383,
+            339,
+            397
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $\\mathrm{P}\\leftrightarrow \\mathrm{iv},\\mathrm{Q}\\leftrightarrow \\mathrm{i},\\mathrm{R}\\leftrightarrow \\mathrm{ii},\\mathrm{S}\\leftrightarrow \\mathrm{iii}$",
+        "bbox": [
+            497,
+            383,
+            744,
+            397
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 compiler-design easy match-the-following compilation-phases",
+        "bbox": [
+            89,
+            402,
+            470,
+            410
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            418,
+            188,
+            432
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.7.7 Compilation Phases: GATE CSE 2017 | Set 2 | Question: 05",
+        "text_level": 1,
+        "bbox": [
+            77,
+            441,
+            584,
+            456
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Match the following according to input (from the left column) to the compiler phase (in the right column) that processes it:",
+        "bbox": [
+            84,
+            465,
+            878,
+            494
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/a52dbb6d04cb932a017aba9485dd14ae0cdd8ec5c2b56dc3a01b665f7a9ec47a.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>P. Syntax tree</td><td>i. Code generator</td></tr><tr><td>Q. Character stream</td><td>ii. Syntax analyser</td></tr><tr><td>R. Intermediate representation</td><td>iii. Semantic analyser</td></tr><tr><td>S. Token stream</td><td>iv. Lexical analyser</td></tr></table>",
+        "bbox": [
+            268,
+            505,
+            746,
+            585
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. P-ii; Q-iii; R-iv; S-i",
+        "bbox": [
+            89,
+            593,
+            257,
+            608
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. P-ii; Q-i; R-iii; S-iv",
+        "bbox": [
+            497,
+            593,
+            662,
+            608
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. P-iii; Q-iv; R-i; S-ii",
+        "bbox": [
+            90,
+            609,
+            257,
+            623
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. P-i; Q-iv; R-ii; S-iii",
+        "bbox": [
+            497,
+            609,
+            662,
+            623
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 compiler-design match-the-following compilation-phases easy",
+        "bbox": [
+            89,
+            627,
+            470,
+            637
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            643,
+            188,
+            657
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.7.8 Compilation Phases: GATE CSE 2018 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            77,
+            667,
+            522,
+            682
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is FALSE?",
+        "bbox": [
+            85,
+            690,
+            450,
+            706
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Context-free grammar can be used to specify both lexical and syntax rules",
+            "B. Type checking is done before parsing",
+            "C. High-level language programs can be translated to different Intermediate Representations",
+            "D. Arguments to a function can be passed using the program stack"
+        ],
+        "bbox": [
+            87,
+            716,
+            766,
+            771
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 compiler-design easy compilation-phases one-mark",
+        "bbox": [
+            87,
+            798,
+            403,
+            808
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            814,
+            188,
+            828
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.7.9 Compilation Phases: GATE CSE 2020 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            837,
+            522,
+            852
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements.",
+        "bbox": [
+            85,
+            861,
+            339,
+            876
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Symbol table is accessed only during lexical analysis and syntax analysis.",
+            "II. Compilers for programming languages that support recursion necessarily need heap storage for memory allocation in the run-time environment."
+        ],
+        "bbox": [
+            90,
+            885,
+            929,
+            928
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/c78d09dd123b26af584bc56113ef570a56af528acbef5471d37af60513beb146.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            230,
+            932,
+            267
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/b8b9970bbe462aca531e70c15cb9537c6a2e854dbc8a055b101fd6833698bdf6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            444,
+            932,
+            482
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/458b23ccdfb39e27f0b55d920029c5e8fe734dc5f353bddefee0a07b5af5ae93.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            669,
+            932,
+            707
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/e51b8988c43f826f894b12dc1f027e419ae564c7459bc81421b4f5a96892914e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            840,
+            932,
+            878
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "III. Errors violating the condition ‘any variable must be declared before its use’ are detected during syntax analysis.",
+        "bbox": [
+            84,
+            67,
+            919,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements is/are TRUE?",
+        "bbox": [
+            94,
+            92,
+            428,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            89,
+            117,
+            152,
+            130
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. I and III only",
+        "bbox": [
+            495,
+            117,
+            603,
+            130
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. II only",
+        "bbox": [
+            90,
+            131,
+            154,
+            144
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. None of I, II and III",
+        "bbox": [
+            497,
+            131,
+            650,
+            143
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 compiler-design compilation-phases runtime-environment one-mark",
+        "bbox": [
+            89,
+            149,
+            472,
+            157
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            163,
+            186,
+            179
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.7.10 Compilation Phases: GATE CSE 2021 | Set 2 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            188,
+            583,
+            203
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following ANSI C program:",
+        "bbox": [
+            85,
+            212,
+            391,
+            228
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/2e927c486620b97c3e262487bc577d1814d4506f9e253437649a2bb02906eb10.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            191,
+            931,
+            229
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint main () {\n    Integer x;\n    return 0;\n}\n```",
+        "bbox": [
+            112,
+            237,
+            183,
+            280
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following phases in a seven-phase C compiler will throw an error?",
+        "bbox": [
+            85,
+            290,
+            695,
+            306
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Lexical analyzer",
+        "bbox": [
+            89,
+            315,
+            225,
+            328
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. Syntax analyzer",
+        "bbox": [
+            497,
+            315,
+            630,
+            328
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. Semantic analyzer",
+        "bbox": [
+            90,
+            330,
+            240,
+            342
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Machine dependent optimizer",
+        "bbox": [
+            497,
+            330,
+            719,
+            343
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 compilation-phases compiler-design one-mark",
+        "bbox": [
+            89,
+            347,
+            391,
+            357
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            363,
+            186,
+            378
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.7.11 Compilation Phases: GATE CSE 2023 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            77,
+            387,
+            529,
+            401
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements regarding the front-end and back-end of a compiler.",
+        "bbox": [
+            85,
+            410,
+            714,
+            426
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "S1: The front-end includes phases that are independent of the target hardware.",
+            "S2: The back-end includes phases that are specific to the target hardware.",
+            "S3: The back-end includes phases that are specific to the programming language used in the source code."
+        ],
+        "bbox": [
+            85,
+            429,
+            862,
+            471
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Identify the CORRECT option.",
+        "bbox": [
+            85,
+            475,
+            310,
+            490
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Only S1 is TRUE.",
+        "bbox": [
+            89,
+            500,
+            236,
+            513
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. Only S1 and S2 are TRUE.",
+        "bbox": [
+            497,
+            500,
+            707,
+            513
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. S1, S2, and S3 are all TRUE.",
+        "bbox": [
+            90,
+            513,
+            317,
+            527
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Only S1 and S3 are TRUE.",
+        "bbox": [
+            497,
+            513,
+            707,
+            527
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 compiler-design compilation-phases one-mark",
+        "bbox": [
+            89,
+            532,
+            371,
+            542
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            548,
+            186,
+            562
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.7.12 Compilation Phases: GATE CSE 2024 | Set 2 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            77,
+            572,
+            591,
+            586
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two sets:",
+        "bbox": [
+            85,
+            596,
+            321,
+            610
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/27a68e151b903db902be0356fc44cae1ca034a3467da98ddd6b5bbc14ca12fe2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Set X</td><td>Set Y</td></tr><tr><td>P. Lexical Analyzer</td><td>1. Abstract Syntax Tree</td></tr><tr><td>Q. Syntax Analyzer</td><td>2. Token</td></tr><tr><td>R. Intermediate Code Generator</td><td>3. Parse Tree</td></tr><tr><td>S. Code Optimizer</td><td>4. Constant Folding</td></tr></table>",
+        "bbox": [
+            233,
+            622,
+            783,
+            720
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/fa8bf18f7d39e63036bf3c13bf0b4a666cb67ef1f0681e1b15ac6c94d97b8bd5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            390,
+            931,
+            427
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/2bc78878a2aac3be14fb67b693d71694c71ffd244da786dc4e275f91fbcb5a81.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            574,
+            931,
+            612
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is the CORRECT match from Set X to Set Y?",
+        "bbox": [
+            84,
+            745,
+            687,
+            761
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. P - 4; Q - 1; R - 3; S - 2",
+            "B. P - 2; Q - 3; R - 1; S - 4",
+            "C. P - 2; Q - 1; R - 3; S - 4",
+            "D. P - 4; Q - 3; R - 2; S - 1"
+        ],
+        "bbox": [
+            87,
+            770,
+            326,
+            830
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 compiler-design compilation-phases match-the-following easy one-mark",
+        "bbox": [
+            87,
+            855,
+            522,
+            865
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            871,
+            186,
+            885
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.7.13 Compilation Phases: GATE CSE 2026 | Set 1 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            594,
+            79
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/706a549cd1646dc01a93d88318dea39976eb3b6f1d43088b60b05b51dee97ea3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C statements:",
+        "bbox": [
+            85,
+            89,
+            359,
+            103
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nchar *str1 = \"Hello;  /* Statement S1 */\nchar *str2 = \"Hello;\"; /* Statement S2 */\nint *str3 = \"Hello\";  /* Statement S3 */\n```",
+        "bbox": [
+            112,
+            112,
+            339,
+            146
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following options is/are correct?",
+        "bbox": [
+            85,
+            155,
+            416,
+            169
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. S1 and S2 have syntactic errors",
+            "B. S2 has a lexical error and S3 has a syntactic error",
+            "C. S1 has a lexical error and S3 has a semantic error",
+            "D. S1 has a syntactic error and S3 has a semantic error"
+        ],
+        "bbox": [
+            87,
+            181,
+            497,
+            239
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 compiler-design multiple-selects one-mark compilation-phases",
+        "bbox": [
+            87,
+            266,
+            470,
+            276
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            281,
+            189,
+            296
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.8",
+        "text_level": 1,
+        "bbox": [
+            68,
+            307,
+            95,
+            320
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Compiler tokenization (1)",
+        "text_level": 1,
+        "bbox": [
+            411,
+            306,
+            616,
+            321
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.8.1 Compiler tokenization: GATE CSE 2026 | Set 2 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            77,
+            332,
+            600,
+            347
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A lexical analyzer uses the following token definitions",
+        "bbox": [
+            85,
+            356,
+            477,
+            371
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- letter $\\rightarrow$ $[A - Za - z]$",
+            "- digit $\\rightarrow$ [0 - 9]",
+            "- $id \\rightarrow letter(letter|digit)^*$",
+            "- number $\\rightarrow$ digit $^+$",
+            "- $ws \\to (blank|tab|newline)^+$"
+        ],
+        "bbox": [
+            97,
+            382,
+            344,
+            461
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "For the string given below,",
+        "bbox": [
+            85,
+            471,
+            282,
+            485
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nx 1 \\quad 2 3 \\mathrm{mm} \\quad 7 8 \\quad \\mathrm{y} \\quad 7 z \\quad \\mathrm{zz} 5 \\quad 1 4 A \\quad 8 H \\quad \\mathrm{AaYcD}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            277,
+            495,
+            734,
+            511
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/d3e7c95afe27d07eb2d4ee11767dec5510884dd88fdb468632df5bcc16f5834c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            336,
+            932,
+            372
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "the number of tokens (excluding ws) that will be produced by the lexical analyzer is \\_. (answer in integer)",
+        "bbox": [
+            84,
+            536,
+            873,
+            552
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 compiler-design compiler-tokenization numerical-answers one-mark",
+        "bbox": [
+            87,
+            568,
+            494,
+            579
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            586,
+            188,
+            600
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.9",
+        "text_level": 1,
+        "bbox": [
+            68,
+            610,
+            95,
+            623
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Directed Acyclic Graph (2)",
+        "text_level": 1,
+        "bbox": [
+            408,
+            610,
+            620,
+            625
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.9.1 Directed Acyclic Graph: GATE CSE 2014 | Set 3 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            77,
+            636,
+            608,
+            650
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the basic block given below.",
+        "bbox": [
+            85,
+            660,
+            366,
+            675
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/e488503488d9e1538975f33f12a325f3534664d70690ada1fdc6ef94dfe63dc4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            638,
+            932,
+            676
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\n$\\boxed{a = b + c\\quad c = a + d\\quad d = b + c\\quad e = d - b\\quad a = e + b}$\n</div>",
+        "bbox": [
+            87,
+            685,
+            144,
+            738
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of nodes and edges present in the DAG representation of the above basic block respectively are",
+        "bbox": [
+            84,
+            748,
+            927,
+            776
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 6 and 6",
+        "bbox": [
+            89,
+            790,
+            169,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 8 and 10",
+        "bbox": [
+            285,
+            790,
+            373,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 9 and 12",
+        "bbox": [
+            480,
+            790,
+            568,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 4 and 4",
+        "bbox": [
+            673,
+            790,
+            752,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 compiler-design code-optimization directed-acyclic-graph normal",
+        "bbox": [
+            87,
+            814,
+            480,
+            825
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            831,
+            188,
+            845
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.9.2 Directed Acyclic Graph: GATE CSE 2021 | Set 1 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            77,
+            853,
+            608,
+            869
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C code segment:",
+        "bbox": [
+            85,
+            878,
+            383,
+            894
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/2ecccbb31c65bf75b4f868829e0f35bcbc1db5187b96c4599e3e9bc9c4211302.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            857,
+            932,
+            895
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```javascript\na = b + c;\ne = a + 1;\n```",
+        "bbox": [
+            112,
+            904,
+            171,
+            925
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{d} = \\mathrm{b} + \\mathrm{c};\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            65,
+            171,
+            74
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{f} = \\mathrm{d} + 1;\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            77,
+            168,
+            86
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{g} = \\mathrm{e} + \\mathrm{f};\n$$",
+        "text_format": "latex",
+        "bbox": [
+            115,
+            87,
+            168,
+            97
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In a compiler, this code segment is represented internally as a directed acyclic graph (DAG). The number of nodes in the DAG is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            108,
+            929,
+            138
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 compiler-design code-optimization directed-acyclic-graph numerical-answers two-marks",
+        "bbox": [
+            87,
+            156,
+            584,
+            166
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            172,
+            189,
+            187
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.10",
+        "text_level": 1,
+        "bbox": [
+            67,
+            197,
+            105,
+            210
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Expression Evaluation (2)",
+        "text_level": 1,
+        "bbox": [
+            415,
+            195,
+            621,
+            212
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.10.1 Expression Evaluation: GATE CSE 2002 | Question: 2.19",
+        "text_level": 1,
+        "bbox": [
+            77,
+            223,
+            571,
+            237
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "To evaluate an expression without any embedded function calls",
+        "bbox": [
+            85,
+            247,
+            552,
+            261
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/f36982fa9e93aa2e99abf9cf9e000327a496b2ad8c5a1dca2feaad76d25d9a7d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            226,
+            932,
+            264
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. One stack is enough",
+            "B. Two stacks are needed",
+            "C. As many stacks as the height of the expression tree are needed",
+            "D. A Turing machine is needed in the general case"
+        ],
+        "bbox": [
+            87,
+            273,
+            579,
+            328
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 compiler-design expression-evaluation easy",
+        "bbox": [
+            87,
+            353,
+            361,
+            364
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            370,
+            186,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.10.2 Expression Evaluation: GATE CSE 2014 | Set 2 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            77,
+            394,
+            611,
+            408
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the expression tree shown. Each leaf represents a numerical value, which can either be 0 or 1. Over all possible choices of the values at the leaves, the maximum possible value of the expression represented by the tree is \\_.",
+        "bbox": [
+            82,
+            416,
+            875,
+            460
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/9bacbee8691f32318e02a2c1289af02074398faf00403494fa479a61ee4a3524.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            396,
+            932,
+            434
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/10dd5c9bd017df10f1cffd03f879b96a84833b1ef64f0dbb9087d42dc693c91f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "This image displays a hierarchical tree structure with nodes labeled by positive (+) or negative (-) signs, and associated binary values (0/1) at each node.",
+        "sub_type": "flowchart",
+        "bbox": [
+            319,
+            467,
+            697,
+            609
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 compiler-design normal expression-evaluation numerical-answers",
+        "bbox": [
+            87,
+            629,
+            482,
+            638
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            644,
+            189,
+            660
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.11",
+        "text_level": 1,
+        "bbox": [
+            67,
+            669,
+            102,
+            682
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "First and Follow (6)",
+        "text_level": 1,
+        "bbox": [
+            440,
+            669,
+            596,
+            685
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (12Q)",
+        "bbox": [
+            70,
+            694,
+            272,
+            709
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.11.1 First and Follow: GATE CSE 1992 | Question: 02,xiii",
+        "text_level": 1,
+        "bbox": [
+            77,
+            723,
+            537,
+            737
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For a context free grammar, FOLLOW(A) is the set of terminals that can appear immediately to the right of non-terminal A in some \"sentential\" form. We define two sets LFOLLOW(A) and RFOLLOW(A) by replacing the word \"sentential\" by \"left sentential\" and \"right most sentential\" respectively in the definition of FOLLOW (A).",
+        "bbox": [
+            82,
+            747,
+            897,
+            790
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/d9493cf3507b4f2f799b7457fd610a5871858c0759b6501c7e104448de866972.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            726,
+            932,
+            763
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. FOLLOW(A) and LFOLLOW(A) may be different.",
+            "C. All the three sets are identical.",
+            "gate1992 parsing compiler-design normal multiple-selects first-and-follow"
+        ],
+        "bbox": [
+            87,
+            800,
+            455,
+            855
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. FOLLOW(A) and RFOLLOW(A) are always the same.",
+        "bbox": [
+            495,
+            800,
+            754,
+            826
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. All the three sets are different.",
+        "bbox": [
+            495,
+            827,
+            722,
+            839
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            861,
+            189,
+            876
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.11.2 First and Follow: GATE CSE 2012 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            77,
+            885,
+            509,
+            897
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For the grammar below, a partial $LL(1)$ parsing table is also presented along with the grammar. Entries that",
+        "bbox": [
+            84,
+            910,
+            875,
+            925
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/9b41eec8f2308425389ba0cb1d02428d47f7755c901e37537a6c2e59dbe6bf61.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            888,
+            932,
+            925
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "need to be filled are indicated as $E1, E2$ , and $E3$ . $\\varepsilon$ is the empty string, \\$ indicates end of input, and, | separates alternate right hand sides of productions.",
+        "bbox": [
+            84,
+            65,
+            878,
+            95
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\to aAbB \\mid bAaB \\mid \\varepsilon$",
+            "- $A \\rightarrow S$",
+            "- $B \\to S$"
+        ],
+        "bbox": [
+            97,
+            105,
+            292,
+            149
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/1a5a7c922b9e69d4c87a554438d44f15b57340377675bce201a2fe29c5248e89.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>a</td><td>b</td><td>$</td></tr><tr><td>S</td><td>E1</td><td>E2</td><td>S → ε</td></tr><tr><td>A</td><td>A → S</td><td>A → S</td><td>error</td></tr><tr><td>B</td><td>B → S</td><td>B → S</td><td>E3</td></tr></table>",
+        "bbox": [
+            378,
+            162,
+            638,
+            242
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The FIRST and FOLLOW sets for the non-terminals A and B are",
+        "bbox": [
+            85,
+            252,
+            564,
+            267
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\mathrm{FIRST}(A) = \\{a, b, \\varepsilon\\} = \\mathrm{FIRST}(B)$",
+            "B. FIRST(A) = {a, b, \\$}",
+            "C. $\\operatorname{FIRST}(A) = \\{a, b, \\varepsilon\\} = \\operatorname{FIRST}(B)$"
+        ],
+        "bbox": [
+            87,
+            277,
+            406,
+            459
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{FOLLOW} (A) = \\{a, b \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            294,
+            302,
+            309
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{FOLLOW} (B) = \\{a, b, \\$ \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            309,
+            319,
+            326
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{FIRST} (B) = \\{a, b, \\varepsilon \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            353,
+            292,
+            369
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{FOLLOW} (A) = \\{a, b \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            369,
+            300,
+            384
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{FOLLOW} (B) = \\{\\$ \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            384,
+            284,
+            400
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{FOLLOW} (A) = \\{a, b \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            428,
+            302,
+            442
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {FOLLOW} (B) = \\varnothing\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            442,
+            270,
+            459
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "D. $\\operatorname{FIRST}(A) = \\{a, b\\} = \\operatorname{FIRST}(B)$"
+        ],
+        "bbox": [
+            87,
+            470,
+            386,
+            519
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {FOLLOW} (A) = \\{a, b \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            486,
+            302,
+            502
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{FOLLOW} (B) = \\{a, b \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            502,
+            300,
+            519
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 compiler-design parsing normal first-and-follow",
+        "bbox": [
+            87,
+            543,
+            391,
+            553
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            559,
+            181,
+            573
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.11.3 First and Follow: GATE CSE 2017 | Set 1 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            77,
+            581,
+            563,
+            597
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar:",
+        "bbox": [
+            85,
+            606,
+            327,
+            621
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $P \\rightarrow xQRS$",
+            "- $Q \\to yz \\mid z$",
+            "- $R \\to w \\mid \\varepsilon$",
+            "- $S \\to y$"
+        ],
+        "bbox": [
+            97,
+            631,
+            213,
+            692
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What is FOLLOW(Q)?",
+        "bbox": [
+            85,
+            701,
+            253,
+            718
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{R\\}$",
+        "bbox": [
+            89,
+            730,
+            147,
+            747
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $\\{w\\}$",
+        "bbox": [
+            285,
+            730,
+            339,
+            747
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\{w,y\\}$",
+        "bbox": [
+            480,
+            730,
+            551,
+            747
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. {w,\\$}",
+        "bbox": [
+            673,
+            730,
+            746,
+            747
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 compiler-design parsing easy first-and-follow",
+        "bbox": [
+            87,
+            756,
+            401,
+            766
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            771,
+            181,
+            786
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.11.4 First and Follow: GATE CSE 2019 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            77,
+            795,
+            509,
+            809
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the grammar given below:",
+        "bbox": [
+            85,
+            819,
+            349,
+            834
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\rightarrow Aa$",
+            "- $A \\rightarrow BD$",
+            "- $B \\rightarrow b \\mid \\epsilon$",
+            "- $D \\to d \\mid \\epsilon$"
+        ],
+        "bbox": [
+            97,
+            845,
+            194,
+            906
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/7e971a7485edb55359956281c29f0804afdf5fee0479bfdd2acbe0a9706ff567.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            585,
+            931,
+            623
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/93fcae8fd12051ff6960b26135d5f605ef319613868da7f28f9826f7b552092a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            798,
+            931,
+            834
+        ],
+        "page_idx": 11
+    }
+]

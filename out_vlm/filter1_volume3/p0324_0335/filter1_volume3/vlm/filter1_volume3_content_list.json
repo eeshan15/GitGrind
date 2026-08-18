@@ -1,0 +1,5284 @@
+[
+    {
+        "type": "text",
+        "text": "4.16.2 Fixed Point Representation: GATE CSE 2018 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            77,
+            89,
+            596,
+            104
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the unsigned 8-bit fixed point binary number representation, below,",
+        "bbox": [
+            85,
+            112,
+            645,
+            128
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nb _ {7} b _ {6} b _ {5} b _ {4} b _ {3} \\cdot b _ {2} b _ {1} b _ {0}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            405,
+            137,
+            608,
+            155
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/fa1e3575eab196e7a9c59a18579eed2c0afcbd26dbf522ee23539f9c1c6a05d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where the position of the primary point is between $b_{3}$ and $b_{2}$ . Assume $b_{7}$ is the most significant bit. Some of the decimal numbers listed below cannot be represented exactly in the above representation:",
+        "bbox": [
+            84,
+            165,
+            927,
+            194
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. 31.500",
+            "ii. 0.875",
+            "iii. 12.100",
+            "iv. 3.001"
+        ],
+        "bbox": [
+            92,
+            203,
+            171,
+            261
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is true?",
+        "bbox": [
+            85,
+            273,
+            426,
+            288
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. None of i, ii, iii, iv can be exactly represented",
+            "B. Only ii cannot be exactly represented",
+            "C. Only iii and iv cannot be exactly represented",
+            "D. Only i and ii cannot be exactly represented"
+        ],
+        "bbox": [
+            87,
+            298,
+            458,
+            355
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 digital-logic number-representation fixed-point-representation normal two-marks",
+        "bbox": [
+            87,
+            380,
+            542,
+            390
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            396,
+            181,
+            410
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.17",
+        "text_level": 1,
+        "bbox": [
+            68,
+            421,
+            105,
+            434
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Flip Flop (7)",
+        "text_level": 1,
+        "bbox": [
+            468,
+            421,
+            568,
+            435
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (6Q)",
+        "bbox": [
+            70,
+            445,
+            363,
+            460
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.17.1 Flip Flop: GATE CSE 2001 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            77,
+            473,
+            448,
+            488
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A sequential circuit takes an input stream of $0's$ and $1's$ and produces an output stream of $0's$ and $1's$ . Initially it replicates the input on its output until two consecutive $0's$ are encountered on the input. From then onward, it produces an output stream, which is the bit-wise complement of input stream until it encountered consecutive 1's, whereupon the process repeats. An example input and output stream is shown below.",
+        "bbox": [
+            84,
+            498,
+            878,
+            559
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/dec951eff3ddd11d7991339927d3ac9e7bcf46543ab71aa3613672b61789f5f8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            477,
+            932,
+            515
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The input stream: 101100|01001011|011",
+        "bbox": [
+            87,
+            573,
+            460,
+            589
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The desired output: 101100|10110100|011",
+        "bbox": [
+            87,
+            592,
+            460,
+            610
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "J-K master-slave flip-flops are to be used to design the circuit.",
+        "bbox": [
+            85,
+            619,
+            544,
+            636
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. Give the state transition diagram",
+            "b. Give the minimized sum-of-product expression for J and K inputs of one of its state flip-flops"
+        ],
+        "bbox": [
+            89,
+            647,
+            784,
+            676
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 digital-logic normal descriptive flip-flop",
+        "bbox": [
+            87,
+            701,
+            359,
+            711
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            717,
+            181,
+            731
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.17.2 Flip Flop: GATE CSE 2004 | Question: 18, ISRO2007-31",
+        "text_level": 1,
+        "bbox": [
+            77,
+            741,
+            559,
+            756
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In an $SR$ latch made by cross-coupling two NAND gates, if both $S$ and $R$ inputs are set to 0, then it will result in",
+        "bbox": [
+            84,
+            764,
+            878,
+            793
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $Q = 0, Q' = 1$",
+            "c. $Q = 1, Q' = 1$",
+            "gatecse-2004 digital-logic easy isro2007 flip-flop"
+        ],
+        "bbox": [
+            87,
+            804,
+            339,
+            847
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $Q = 1, Q' = 0$"
+        ],
+        "bbox": [
+            495,
+            804,
+            658,
+            831
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            853,
+            181,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.17.3 Flip Flop: GATE CSE 2015 | Set 1 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            77,
+            877,
+            504,
+            891
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A positive edge-triggered D flip-flop is connected to a positive edge-triggered JK flip-flop as follows. The Q",
+        "bbox": [
+            84,
+            901,
+            878,
+            916
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8fb3a8dca92c7fe105e28d33c94da479981ac2f35f94e463d819028c0f933873.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            744,
+            932,
+            781
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a0223825d753ed945a79fb04a50a635b79cd339767fad0bc7bb5164c27613ab.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            880,
+            932,
+            916
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            188,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "output of the D flip-flop is connected to both the J and K inputs of the JK flip-flop, while the Q output of the JK flip-flop is connected to the input of the D flip-flop. Initially, the output of the D flip-flop is set to logic one and the output of the JK flip-flop is cleared. Which one of the following is the bit sequence (including the initial state) generated at the Q output of the JK flip-flop when the flip-flops are connected to a free-running common clock? Assume that J = K = 1 is the toggle mode and J = K = 0 is the state holding mode of the JK flip-flops. Both the flip-flops have non-zero propagation delays.",
+        "bbox": [
+            84,
+            64,
+            931,
+            153
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 0110110...",
+        "bbox": [
+            87,
+            160,
+            203,
+            174
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 0100100...",
+        "bbox": [
+            495,
+            160,
+            608,
+            174
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 011101110...",
+        "bbox": [
+            89,
+            174,
+            221,
+            187
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 011001100...",
+        "bbox": [
+            495,
+            174,
+            626,
+            187
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 digital-logic flip-flop normal",
+        "bbox": [
+            87,
+            193,
+            319,
+            203
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            209,
+            186,
+            223
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.17.4 Flip Flop: GATE CSE 2017 | Set 1 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            78,
+            233,
+            505,
+            247
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/643f51450f0023f022760973a4b13c3d6b87814b9ea96b1faac2bd7d4011d047.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            236,
+            932,
+            273
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider a combination of T and D flip-flops connected as shown below. The output of the D flip-flop is connected to the input of the T flip-flop and the output of the T flip-flop is connected to the input of the D flip-flop.",
+        "bbox": [
+            84,
+            256,
+            878,
+            301
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/21dc5af861f5205977813bc3cfe079470e84468042f4c9e60715582ee0e69078.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  T[\"T\\nFlip-Flop\"] -->|Q1| D[\"D\\nFlip-Flop\"]\n  D -->|Q0| T\n  T --> Clock\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            99,
+            309,
+            394,
+            391
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Initially, both $Q_{0}$ and $Q_{1}$ are set to 1 (before the $1^{st}$ clock cycle). The outputs",
+        "bbox": [
+            85,
+            406,
+            653,
+            422
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $Q_{1}Q_{0}$ after the $3^{\\mathrm{rd}}$ cycle are 11 and after the $4^{\\mathrm{th}}$ cycle are 00 respectively.",
+            "B. $Q_{1}Q_{0}$ after the $3^{\\mathrm{rd}}$ cycle are 11 and after the $4^{\\mathrm{th}}$ cycle are 01 respectively.",
+            "C. $Q_{1}Q_{0}$ after the $3^{\\mathrm{rd}}$ cycle are 00 and after the $4^{\\mathrm{th}}$ cycle are 11 respectively.",
+            "D. $Q_{1}Q_{0}$ after the $3^{\\mathrm{rd}}$ cycle are 01 and after the $4^{\\mathrm{th}}$ cycle are 01 respectively."
+        ],
+        "bbox": [
+            85,
+            434,
+            663,
+            504
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 digital-logic flip-flop normal",
+        "bbox": [
+            87,
+            528,
+            319,
+            538
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            545,
+            186,
+            559
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.17.5 Flip Flop: GATE CSE 2018 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            568,
+            452,
+            583
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a56bb057e07ae41d8a470e48b004f5d28bade0d2a0058144f3f23b7dbbd2582.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            571,
+            932,
+            609
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the sequential circuit shown in the figure, where both flip-flops used are positive edge-triggered D flip-flops.",
+        "bbox": [
+            84,
+            592,
+            878,
+            622
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/cc3146e05fa969a07ca13aa2b5f0aa17780f57237c5f106552cab52e5efa069b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"in\"] --> B[\"D Q\"]\n  B --> C[\"D Q\"]\n  C --> D[\"out\"]\n  D --> E[\"clock\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            94,
+            627,
+            329,
+            706
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The number of states in the state transition diagram of this circuit that have a transition back to the same state on some value of \"in\" is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            714,
+            927,
+            743
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 digital-logic flip-flop numerical-answers normal one-mark",
+        "bbox": [
+            87,
+            761,
+            442,
+            771
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            777,
+            186,
+            792
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.17.6 Flip Flop: GATE CSE 2025 | Set 1 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            801,
+            505,
+            815
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/4abbd2f9263bcd4a35047d743eacb39c54850ed0d7a92db294ed31ddd2d60b20.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            804,
+            932,
+            842
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the given sequential circuit designed using D-Flip-flops. The circuit is initialized with some value (initial state). The number of distinct states the circuit will go through before returning back to the initial state is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            84,
+            824,
+            878,
+            868
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/f1954fbfb8f0be6f782a25c98ac4e3ee25f67016d854bea4f480a40b274feb3b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Q0\nD0\nQ0\nCLK\nQ1\nD1\nQ1\nQ1\nQ2\nD2\nQ2\nQ2\nQ3\nD3\nQ3\nQ3",
+        "sub_type": "text_image",
+        "bbox": [
+            260,
+            70,
+            754,
+            256
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 digital-logic flip-flop sequential-circuit numerical-answers two-marks",
+        "bbox": [
+            87,
+            279,
+            507,
+            289
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            295,
+            188,
+            309
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.17.7 Flip Flop: GATE IT 2007 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            318,
+            423,
+            333
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following input sequences for a cross-coupled R - S flip-flop realized with two NAND gates may lead to an oscillation?",
+        "bbox": [
+            84,
+            342,
+            878,
+            372
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/1eefdfd6982dd6e5085399b20e27de4cdc6217b1ce83eeafe72dadbd60f25b13.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            321,
+            931,
+            359
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 11,00",
+        "bbox": [
+            89,
+            385,
+            161,
+            401
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 01,10",
+        "bbox": [
+            285,
+            385,
+            354,
+            401
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 10,01",
+        "bbox": [
+            478,
+            385,
+            549,
+            401
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 00,11",
+        "bbox": [
+            673,
+            385,
+            744,
+            401
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 digital-logic normal flip-flop",
+        "bbox": [
+            87,
+            410,
+            292,
+            420
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            427,
+            188,
+            441
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.18",
+        "text_level": 1,
+        "bbox": [
+            68,
+            451,
+            105,
+            464
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Floating Point Representation (8)",
+        "text_level": 1,
+        "bbox": [
+            386,
+            451,
+            650,
+            466
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (11Q)",
+        "bbox": [
+            70,
+            475,
+            272,
+            490
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.18.1 Floating Point Representation: GATE CSE 1987 | Question: 1-vii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            504,
+            631,
+            519
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The exponent of a floating-point number is represented in excess-N code so that:",
+        "bbox": [
+            85,
+            529,
+            680,
+            545
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d0f9902c8deb59b5f710880d52f9a298b26fd448aff83422020a76c9808db40.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            507,
+            931,
+            545
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The dynamic range is large.",
+            "C. The smallest number is represented by all zeros."
+        ],
+        "bbox": [
+            89,
+            554,
+            352,
+            593
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. The precision is high.",
+        "bbox": [
+            495,
+            554,
+            663,
+            567
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. Overflow is avoided.",
+        "bbox": [
+            495,
+            568,
+            657,
+            579
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1987 digital-logic number-representation floating-point-representation",
+        "bbox": [
+            87,
+            599,
+            436,
+            609
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            615,
+            188,
+            629
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.18.2 Floating Point Representation: GATE CSE 1989 | Question: 1-vi",
+        "text_level": 1,
+        "bbox": [
+            78,
+            638,
+            626,
+            653
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider an excess -50 representation for floating point numbers with 4 BCD digit mantissa and 2 BCD digit exponent in normalised form. The minimum and maximum positive numbers that can be represented are \\_\\_\\_\\_ and \\_\\_\\_\\_ respectively.",
+        "bbox": [
+            84,
+            662,
+            878,
+            706
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/2c48cd04e53ec95cf380f0f705cd5b21a4e6dbb661ba181be535eea18d8c4eae.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            641,
+            931,
+            678
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "descriptive gate1989 digital-logic number-representation floating-point-representation",
+        "bbox": [
+            87,
+            719,
+            495,
+            729
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            735,
+            188,
+            749
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.18.3 Floating Point Representation: GATE CSE 1990 | Question: 1-iv-a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            758,
+            640,
+            773
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A 32-bit floating-point number is represented by a 7-bit signed exponent, and a 24-bit fractional mantissa. The base of the scale factor is 16, The range of the exponent is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            782,
+            875,
+            826
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/25756d7cf43128288943c3a78d8c431e5f8f2fc7ccd0e89305b89fb3e6a86172.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            761,
+            931,
+            799
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1990 digital-logic number-representation floating-point-representation fill-in-the-blanks",
+        "bbox": [
+            87,
+            839,
+            517,
+            849
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            855,
+            188,
+            869
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.18.4 Floating Point Representation: GATE CSE 1990 | Question: 1-iv-b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            878,
+            642,
+            893
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A 32-bit floating-point number is represented by a 7-bit signed exponent, and a 24-bit fractional mantissa.",
+        "bbox": [
+            84,
+            902,
+            875,
+            918
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/2e1cbf3870c6cb1b9bd239a165eca485eea7fac28d7ebf9cd8a41dc4f40d655e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            881,
+            931,
+            919
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The base of the scale factor is 16,",
+        "bbox": [
+            85,
+            64,
+            339,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The range of the exponent is \\_\\_\\_\\_, if the scale factor is represented in excess-64 format.",
+        "bbox": [
+            85,
+            79,
+            796,
+            93
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1990",
+        "bbox": [
+            87,
+            108,
+            131,
+            117
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "digital-logic",
+        "bbox": [
+            142,
+            108,
+            191,
+            117
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "number-representation",
+        "bbox": [
+            205,
+            108,
+            302,
+            117
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "floating-point-representation",
+        "bbox": [
+            314,
+            108,
+            435,
+            117
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "fill-in-the-blanks",
+        "bbox": [
+            447,
+            108,
+            517,
+            117
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            124,
+            181,
+            138
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.18.5 Floating Point Representation: GATE CSE 1997 | Question: 72",
+        "text_level": 1,
+        "bbox": [
+            77,
+            147,
+            618,
+            162
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Following floating point number format is given",
+        "bbox": [
+            85,
+            171,
+            430,
+            186
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9b90d7a500093da4e4264cb5ea251bef548ff8d079011c97d8b5215e3c921f9b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            150,
+            932,
+            187
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$f$ is a fraction represented by a $6 - bit$ mantissa (includes sign bit) in sign magnitude form, $e$ is a $4 - bit$ exponent (includes sign hit) in sign magnitude form and $n = (f, e) = f \\cdot 2^e$ is a floating point number. Let $A = 54.75$ in decimal and $B = 9.75$ in decimal",
+        "bbox": [
+            84,
+            188,
+            924,
+            233
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. Represent A and B as floating point numbers in the above format.",
+            "b. Show the steps involved in floating point addition of A and B.",
+            "c. What is the percentage error (up to one position beyond decimal point) in the addition operation in (b)?"
+        ],
+        "bbox": [
+            87,
+            245,
+            858,
+            301
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1997 digital-logic floating-point-representation normal descriptive",
+        "bbox": [
+            87,
+            325,
+            428,
+            334
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            340,
+            181,
+            355
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.18.6 Floating Point Representation: GATE CSE 2003 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            77,
+            365,
+            616,
+            378
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The following is a scheme for floating point number representation using 16 bits.",
+        "bbox": [
+            85,
+            388,
+            668,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/72a3b6c1eec4b36c6528c2c82c22df154debc7f9c854f0c636b935c5430c1c6f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            366,
+            932,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Bit Position",
+        "bbox": [
+            99,
+            414,
+            174,
+            423
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9fd9a3bf86d0bfdaadf8f3c6f3c2a93d58cd63f18bb360dd442ce68502c15a62.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            179,
+            415,
+            366,
+            450
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $s, e$ , and $m$ be the numbers represented in binary in the sign, exponent, and mantissa fields respectively. Then the floating point number represented is:",
+        "bbox": [
+            84,
+            464,
+            926,
+            492
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left\\{ \\begin{array}{l l} (- 1) ^ {s} \\left(1 + m \\times 2 ^ {- 9}\\right) 2 ^ {e - 3 1}, & \\text {if the exponent} \\neq 1 1 1 1 1 1 \\\\ 0, & \\text {otherwise} \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            496,
+            566,
+            532
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "What is the maximum difference between two successive real numbers representable in this system?",
+        "bbox": [
+            85,
+            534,
+            823,
+            549
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $2^{-40}$",
+        "bbox": [
+            89,
+            561,
+            147,
+            576
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $2^{-9}$",
+        "bbox": [
+            285,
+            561,
+            336,
+            576
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{22}$",
+        "bbox": [
+            480,
+            561,
+            526,
+            576
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $2^{31}$",
+        "bbox": [
+            673,
+            561,
+            719,
+            576
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003",
+        "bbox": [
+            89,
+            587,
+            147,
+            597
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "digital-logic",
+        "bbox": [
+            157,
+            587,
+            208,
+            597
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "number-representation",
+        "bbox": [
+            220,
+            587,
+            317,
+            597
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "floating-point-representation",
+        "bbox": [
+            329,
+            587,
+            452,
+            597
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "normal",
+        "bbox": [
+            463,
+            587,
+            495,
+            597
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            603,
+            181,
+            618
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.18.7 Floating Point Representation: GATE CSE 2005 | Question: 85-a",
+        "text_level": 1,
+        "bbox": [
+            77,
+            627,
+            630,
+            642
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following floating-point format.",
+        "bbox": [
+            85,
+            650,
+            405,
+            666
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9d17e1bdb09d76696c07faae98e1ad77e9b4c7bd05f5f2e0adca4b82fc4d4228.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            630,
+            932,
+            667
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/e752e05c9f37b451ebd83fd197d8cb79314f15c2e04a738f5d7a16fbea679726.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "15 14 8 7 0\nsign bit\nExcess-64\nExponent\nMantissa",
+        "sub_type": "text_image",
+        "bbox": [
+            95,
+            673,
+            297,
+            736
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Mantissa is a pure fraction in sign-magnitude form.",
+        "bbox": [
+            85,
+            747,
+            457,
+            762
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The decimal number $0.239 \\times 2^{13}$ has the following hexadecimal representation (without normalization and rounding off):",
+        "bbox": [
+            84,
+            767,
+            926,
+            798
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 0D 24",
+        "bbox": [
+            89,
+            809,
+            159,
+            824
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 0D 4D",
+        "bbox": [
+            285,
+            809,
+            357,
+            824
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 4D 0D",
+        "bbox": [
+            480,
+            809,
+            552,
+            824
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 4D 3D",
+        "bbox": [
+            673,
+            809,
+            749,
+            824
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005",
+        "bbox": [
+            89,
+            834,
+            147,
+            844
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "digital-logic",
+        "bbox": [
+            157,
+            834,
+            208,
+            844
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "number-representation",
+        "bbox": [
+            220,
+            834,
+            317,
+            844
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "floating-point-representation",
+        "bbox": [
+            329,
+            834,
+            452,
+            844
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "normal",
+        "bbox": [
+            463,
+            834,
+            495,
+            844
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            851,
+            181,
+            865
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.18.8 Floating Point Representation: GATE CSE 2005 | Question: 85-b",
+        "text_level": 1,
+        "bbox": [
+            77,
+            874,
+            631,
+            889
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following floating-point format.",
+        "bbox": [
+            85,
+            897,
+            405,
+            913
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/69cdaf781dd90cb20390230a001ad2aaee37f75808a89e5eb91748366ce0770f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            877,
+            932,
+            915
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/de68d7253edf3948d0379c2fe1c4d7db1a2301ce62adc1367c564b104af49e42.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "15 14 8 7 0\nSign bit Excess-64 Exponent Mantissa",
+        "sub_type": "text_image",
+        "bbox": [
+            398,
+            68,
+            621,
+            123
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Mantissa is a pure fraction in sign-magnitude form.",
+        "bbox": [
+            85,
+            152,
+            458,
+            167
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The normalized representation for the above format is specified as follows. The mantissa has an implicit 1 preceding the binary (radix) point. Assume that only $0^{\\prime}s$ are padded in while shifting a field.",
+        "bbox": [
+            84,
+            178,
+            927,
+            209
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The normalized representation of the above number $(0.239 \\times 2^{13})$ is:",
+        "bbox": [
+            85,
+            214,
+            600,
+            231
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 0A 20",
+        "bbox": [
+            87,
+            243,
+            161,
+            257
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 11 34",
+        "bbox": [
+            285,
+            243,
+            352,
+            257
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 49 D0",
+        "bbox": [
+            478,
+            243,
+            551,
+            257
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 4A E8",
+        "bbox": [
+            673,
+            243,
+            749,
+            257
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 digital-logic number-representation floating-point-representation normal",
+        "bbox": [
+            87,
+            268,
+            495,
+            277
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            283,
+            188,
+            299
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.19",
+        "text_level": 1,
+        "bbox": [
+            68,
+            309,
+            105,
+            321
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Functional Completeness (7)",
+        "text_level": 1,
+        "bbox": [
+            403,
+            309,
+            633,
+            324
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (5Q)",
+        "bbox": [
+            70,
+            333,
+            265,
+            347
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.19.1 Functional Completeness: GATE CSE 1989 | Question: 4-iii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            362,
+            593,
+            377
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Show that $\\{NOR\\}$ is a functionally complete set of Boolean operations.",
+        "bbox": [
+            85,
+            385,
+            596,
+            401
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive digital-logic functional-completeness",
+        "bbox": [
+            87,
+            415,
+            368,
+            425
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            429,
+            189,
+            445
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/5c6fde69b243aa259452ec5a13f516cd4375daad203d8c6d8b3a588db5b16082.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            365,
+            932,
+            403
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.19.2 Functional Completeness: GATE CSE 1992 | Question: 02-ii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            454,
+            596,
+            469
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "All digital circuits can be realized using only",
+        "bbox": [
+            85,
+            478,
+            406,
+            492
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Ex-OR gates",
+        "bbox": [
+            89,
+            507,
+            203,
+            521
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. Multiplexers",
+        "bbox": [
+            285,
+            507,
+            391,
+            521
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. Half adders",
+        "bbox": [
+            480,
+            507,
+            583,
+            520
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. OR gates",
+        "bbox": [
+            673,
+            507,
+            764,
+            521
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1992 normal digital-logic digital-circuits multiple-selects functional-completeness combinational-circuit",
+        "bbox": [
+            87,
+            530,
+            601,
+            541
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            547,
+            189,
+            561
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.19.3 Functional Completeness: GATE CSE 1993 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            571,
+            573,
+            586
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Assume that only half adders are available in your laboratory. Show that any binary function can be implemented using half adders only.",
+        "bbox": [
+            84,
+            593,
+            875,
+            623
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1993 digital-logic combinational-circuit adder descriptive functional-completeness",
+        "bbox": [
+            87,
+            637,
+            505,
+            647
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            653,
+            189,
+            667
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.19.4 Functional Completeness: GATE CSE 1998 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            676,
+            573,
+            691
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The implication gate, shown below has two inputs (x and y); the output is 1 except when x = 1 and y = 0, realize $f = \\bar{x}y + x\\bar{y}$ using only four implication gates.",
+        "bbox": [
+            84,
+            701,
+            873,
+            732
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/f4758f58635b172f959eba1d93f698e58a2da4787832c3eead7786caf6db26c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            105,
+            745,
+            302,
+            783
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Show that the implication gate is functionally complete.",
+        "bbox": [
+            85,
+            802,
+            487,
+            817
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1998 digital-logic functional-completeness descriptive",
+        "bbox": [
+            87,
+            834,
+            366,
+            845
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            851,
+            189,
+            865
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.19.5 Functional Completeness: GATE CSE 1999 | Question: 2.9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            875,
+            586,
+            889
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following sets of component(s) is/are sufficient to implement any arbitrary Boolean function?",
+        "bbox": [
+            85,
+            897,
+            850,
+            914
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3d6e79ffee1f73761ec0145c8b34f3d93ebe81e10a4dfeecd8848c1789c14728.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            457,
+            932,
+            495
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/8f4a52fbcd330266bd3420c75192ec7b18828ea925d31e00fee75757c9236883.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            573,
+            932,
+            611
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/407797a63fa9afc82d2b4350656cab6a9772001ea91a171ae31d4a10a5651c7f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            679,
+            932,
+            717
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/5703480f19f2517da794144c2e23296355d232eeb264af68d9d873f2e72aec38.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            877,
+            932,
+            915
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. XOR gates, NOT gates",
+            "B. 2 to 1 multiplexers",
+            "C. AND gates, XOR gates",
+            "D. Three-input gates that output $(A, B) + C$ for the inputs $A, B$ and $C$ ."
+        ],
+        "bbox": [
+            87,
+            64,
+            615,
+            137
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1999 digital-logic normal functional-completeness multiple-selects",
+        "bbox": [
+            87,
+            161,
+            430,
+            171
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            178,
+            181,
+            192
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.19.6 Functional Completeness: GATE CSE 2015 | Set 1 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            201,
+            635,
+            214
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the operations",
+        "bbox": [
+            85,
+            225,
+            265,
+            239
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf (X, Y, Z) = X ^ {\\prime} Y Z + X Y ^ {\\prime} + Y ^ {\\prime} Z ^ {\\prime} \\text {and} g (X, Y, Z) = X ^ {\\prime} Y Z + X ^ {\\prime} Y Z ^ {\\prime} + X Y\n$$",
+        "text_format": "latex",
+        "bbox": [
+            84,
+            243,
+            710,
+            260
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is correct?",
+        "bbox": [
+            85,
+            263,
+            361,
+            277
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both $\\{f\\}$ and $\\{g\\}$ are functionally complete",
+            "B. Only $\\{f\\}$ is functionally complete",
+            "C. Only $\\{g\\}$ is functionally complete",
+            "D. Neither $\\{f\\}$ nor $\\{g\\}$ is functionally complete"
+        ],
+        "bbox": [
+            87,
+            288,
+            443,
+            351
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 boolean-algebra difficult functional-completeness",
+        "bbox": [
+            87,
+            375,
+            408,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            391,
+            188,
+            404
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/5eb68caa0f73c42a26b2d79a37aa9f23ffaf10ffeb32d1b34819d10fc7901fbe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            204,
+            931,
+            241
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.19.7 Functional Completeness: GATE IT 2008 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            415,
+            552,
+            429
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A set of Boolean connectives is functionally complete if all Boolean functions can be synthesized using those. Which of the following sets of connectives is NOT functionally complete?",
+        "bbox": [
+            84,
+            438,
+            875,
+            467
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. EX-NOR",
+            "C. OR, negation"
+        ],
+        "bbox": [
+            87,
+            477,
+            349,
+            504
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. implication, negation",
+            "D. NAND"
+        ],
+        "bbox": [
+            495,
+            477,
+            660,
+            503
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 digital-logic easy functional-completeness",
+        "bbox": [
+            87,
+            509,
+            349,
+            519
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            524,
+            188,
+            539
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/0526463db05229cab7a245eb89170e2dc330b7ed34fcbd770a694d129ffb832a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            418,
+            931,
+            454
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.20",
+        "text_level": 1,
+        "bbox": [
+            68,
+            549,
+            104,
+            562
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "IEEE Representation (14)",
+        "text_level": 1,
+        "bbox": [
+            418,
+            549,
+            620,
+            564
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (6Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            574,
+            363,
+            589
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.20.1 IEEE Representation: GATE CSE 2008 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            603,
+            534,
+            617
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In the IEEE floating point representation the hexadecimal value 0x00000000 corresponds to",
+        "bbox": [
+            85,
+            625,
+            764,
+            642
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. The normalized value $2^{-127}$",
+        "bbox": [
+            87,
+            650,
+            300,
+            666
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. The normalized value +0",
+        "bbox": [
+            89,
+            667,
+            289,
+            680
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. The normalized value $2^{-126}$",
+        "bbox": [
+            495,
+            650,
+            705,
+            666
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. The special value +0",
+        "bbox": [
+            495,
+            667,
+            667,
+            680
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 digital-logic floating-point-representation ieee-representation easy",
+        "bbox": [
+            87,
+            686,
+            470,
+            695
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            701,
+            188,
+            714
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/151ab06536edca1e0dabdf052576d0f346d86461677f7279d1c023a2d18ffd29.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            606,
+            931,
+            643
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.20.2 IEEE Representation: GATE CSE 2012 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            725,
+            534,
+            739
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The decimal value 0.5 in IEEE single precision floating point representation has",
+        "bbox": [
+            85,
+            749,
+            667,
+            764
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. fraction bits of 000...000 and exponent value of 0",
+            "B. fraction bits of 000...000 and exponent value of -1",
+            "C. fraction bits of 100...000 and exponent value of 0",
+            "D. no exact representation"
+        ],
+        "bbox": [
+            87,
+            774,
+            505,
+            832
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 digital-logic normal number-representation ieee-representation",
+        "bbox": [
+            87,
+            858,
+            455,
+            866
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            874,
+            188,
+            888
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/7e5565201d87f3b718d761be42d002bb15230c5169b80d09098c3180a32323ea.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            728,
+            931,
+            764
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.20.3 IEEE Representation: GATE CSE 2014 | Set 2 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            596,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/2aa85192e64c5f74f561d8cece56231c84d09b12e2b18229a8720a7e947068f3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The value of a float type variable is represented using the single-precision 32-bit floating point format of IEEE-754 standard that uses 1 bit for sign, 8 bits for biased exponent and 23 bits for the mantissa. A",
+        "bbox": [
+            84,
+            89,
+            875,
+            118
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "float type variable X is assigned the decimal value of -14.25. The representation of X in hexadecimal notation is",
+        "bbox": [
+            84,
+            119,
+            924,
+            134
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. C1640000H",
+        "bbox": [
+            87,
+            146,
+            206,
+            161
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 416C0000H",
+        "bbox": [
+            285,
+            147,
+            401,
+            161
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 41640000H",
+        "bbox": [
+            480,
+            147,
+            591,
+            161
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. C16C0000H",
+        "bbox": [
+            673,
+            147,
+            794,
+            161
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 digital-logic number-representation normal ieee-representation",
+        "bbox": [
+            87,
+            172,
+            477,
+            182
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            188,
+            188,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.20.4 IEEE Representation: GATE CSE 2017 | Set 2 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            211,
+            600,
+            226
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Given the following binary number in 32-bit (single precision) IEEE-754 format :",
+        "bbox": [
+            85,
+            235,
+            673,
+            251
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/082441c9e22b4b26a16eaec714942ca23a99f17c7e7256656614cf53edf1d12f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            214,
+            931,
+            252
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "00111110011011010000000000000000",
+        "text_level": 1,
+        "bbox": [
+            248,
+            262,
+            618,
+            280
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The decimal value closest to this floating-point number is :",
+        "bbox": [
+            85,
+            293,
+            512,
+            308
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $1.45 \\times 10^{1}$",
+        "bbox": [
+            87,
+            320,
+            189,
+            336
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $1.45 * 10^{-1}$",
+        "bbox": [
+            285,
+            321,
+            391,
+            334
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $2.27 \\times 10^{-1}$",
+        "bbox": [
+            480,
+            321,
+            586,
+            334
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $2.27 \\times 10^{1}$",
+        "bbox": [
+            673,
+            321,
+            771,
+            334
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 digital-logic ieee-representation number-representation floating-point-representation",
+        "bbox": [
+            87,
+            346,
+            568,
+            356
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            362,
+            188,
+            376
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.20.5 IEEE Representation: GATE CSE 2020 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            385,
+            544,
+            400
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider three registers R1, R2, and R3 that store numbers in IEEE-754 single precision floating point format. Assume that R1 and R2 contain the values (in hexadecimal notation) 0x42200000 and 0xC1200000, respectively.",
+        "bbox": [
+            84,
+            409,
+            878,
+            454
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/1cd08297eab264129f3c408711f17b0da9595a4098e15a5dde1b468baaee37bc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            388,
+            931,
+            426
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "If $R3 = \\frac{R1}{R2}$ , what is the value stored in R3?",
+        "bbox": [
+            85,
+            458,
+            413,
+            478
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 0x40800000",
+        "bbox": [
+            87,
+            489,
+            203,
+            503
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 0xC0800000",
+        "bbox": [
+            285,
+            490,
+            401,
+            503
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 0x83400000",
+        "bbox": [
+            480,
+            489,
+            593,
+            503
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 0xC8500000",
+        "bbox": [
+            673,
+            489,
+            791,
+            503
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 digital-logic ieee-representation floating-point-representation two-marks",
+        "bbox": [
+            87,
+            514,
+            495,
+            524
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            530,
+            188,
+            543
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.20.6 IEEE Representation: GATE CSE 2021 | Set 1 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            554,
+            596,
+            568
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following representation of a number in IEEE 754 single-precision floating point format with a bias of 127.",
+        "bbox": [
+            84,
+            577,
+            878,
+            606
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/d241971abe460e5906e721e528dd338fd133c42ae72842196c40424741cd0f7b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            555,
+            931,
+            593
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "S:1 E:10000001 F:11110000000000000000000",
+        "bbox": [
+            255,
+            617,
+            759,
+            631
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Here S, E and F denote the sign, exponent, and fraction components of the floating point representation.",
+        "bbox": [
+            84,
+            644,
+            860,
+            660
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The decimal value corresponding to the above representation (rounded to 2 decimal places) is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            672,
+            890,
+            688
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 digital-logic number-representation ieee-representation numerical-answers one-mark floating-point-representation",
+        "bbox": [
+            87,
+            701,
+            710,
+            711
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            718,
+            188,
+            732
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.20.7 IEEE Representation: GATE CSE 2021 | Set 2 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            741,
+            589,
+            756
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The format of the single-precision floating point representation of a real number as per the IEEE 754 standard is as follows:",
+        "bbox": [
+            84,
+            764,
+            878,
+            793
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/2496d2f7073657da0714d17cbff9fcf95795475889487a3c934f9ceae2ba9c79.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            744,
+            931,
+            781
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/a6121df4fe78a2ac3bf01c386d952bd349efd38492aa97709655d4cbe517ec70.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>sign</td><td>exponent</td><td>mantissa</td></tr></table>",
+        "bbox": [
+            384,
+            805,
+            631,
+            828
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following choices is correct with respect to the smallest normalized positive number represented using the standard?",
+        "bbox": [
+            84,
+            839,
+            927,
+            868
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. exponent = 00000000 and mantissa = 000000000000000000000000",
+            "B. exponent = 00000000 and mantissa = 000000000000000000000001",
+            "C. exponent = 00000001 and mantissa = 000000000000000000000000"
+        ],
+        "bbox": [
+            85,
+            877,
+            668,
+            922
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 digital-logic number-representation ieee-representation one-mark floating-point-representation",
+        "bbox": [
+            87,
+            105,
+            620,
+            116
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            121,
+            189,
+            136
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.20.8 IEEE Representation: GATE CSE 2022 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            144,
+            542,
+            160
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider three floating point numbers A, B and C stored in registers $R_{A}$ , $R_{B}$ and $R_{C}$ , respectively as per IEEE-754 single precision floating point format. The 32-bit content stored in these registers (in hexadecimal form) are as follows.",
+        "bbox": [
+            84,
+            169,
+            875,
+            214
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\boxed {\\mathrm{R} _ {\\mathrm{A}} = 0 \\mathrm{xC} 1 4 0 0 0 0 0 \\quad \\mathrm{R} _ {\\mathrm{B}} = 0 \\mathrm{x} 4 2 1 0 0 0 0 0 \\quad \\mathrm{R} _ {\\mathrm{C}} = 0 \\mathrm{x} 4 1 4 0 0 0 0 0}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            90,
+            219,
+            603,
+            239
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is FALSE?",
+        "bbox": [
+            85,
+            243,
+            374,
+            258
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $A + C = 0$",
+        "bbox": [
+            87,
+            271,
+            200,
+            287
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $C = A + B$",
+        "bbox": [
+            285,
+            271,
+            400,
+            286
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $B = 3C$",
+        "bbox": [
+            480,
+            271,
+            563,
+            286
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $(B - C) > 0$",
+        "bbox": [
+            673,
+            271,
+            791,
+            288
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 digital-logic ieee-representation number-representation two-marks floating-point-representation",
+        "bbox": [
+            87,
+            296,
+            605,
+            307
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            312,
+            189,
+            327
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.20.9 IEEE Representation: GATE CSE 2023 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            336,
+            544,
+            351
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the IEEE-754 single precision floating point numbers P = 0xC1800000 and Q = 0x3F5C2EF4.",
+        "bbox": [
+            84,
+            359,
+            873,
+            376
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following corresponds to the product of these numbers (i.e., $P \\times Q$ ), represented in the IEEE-754 single precision format?",
+        "bbox": [
+            84,
+            380,
+            873,
+            410
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 0x404C2EF4",
+        "bbox": [
+            87,
+            423,
+            208,
+            437
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 0x405C2EF4",
+        "bbox": [
+            285,
+            423,
+            403,
+            437
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 0xC15C2EF4",
+        "bbox": [
+            480,
+            423,
+            601,
+            437
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 0xC14C2EF4",
+        "bbox": [
+            673,
+            423,
+            796,
+            437
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 digital-logic number-representation ieee-representation two-marks floating-point-representation",
+        "bbox": [
+            87,
+            448,
+            605,
+            458
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            464,
+            189,
+            479
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.20.10 IEEE Representation: GATE CSE 2024 | Set 2 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            77,
+            488,
+            600,
+            503
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The format of a single-precision floating-point number as per the IEEE 754 standard is:",
+        "bbox": [
+            85,
+            511,
+            727,
+            527
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/9bde4b8f301c3461bfd19d9b30b4b9bd7b09dc72af0f38f5b37bdfd746410597.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Sign</td><td>Exponent</td><td>Mantissa</td></tr><tr><td>(1 bit)</td><td>(8 bits)</td><td>(23 bits)</td></tr></table>",
+        "bbox": [
+            361,
+            538,
+            655,
+            581
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Choose the largest floating-point number among the following options.",
+        "bbox": [
+            85,
+            589,
+            600,
+            605
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/f0c10496f49339970a07d4d768ad6d8c377157b40c311cf90bc4f82c599d8b0b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td rowspan=\"2\">A.</td><td>Sign</td><td>Exponent</td><td>Mantissa</td></tr><tr><td>0</td><td>01111111</td><td>11111111111111111111111</td></tr><tr><td rowspan=\"2\">B.</td><td>Sign</td><td>Exponent</td><td>Mantissa</td></tr><tr><td>0</td><td>11111110</td><td>11111111111111111111111</td></tr><tr><td rowspan=\"2\">C.</td><td>Sign</td><td>Exponent</td><td>Mantissa</td></tr><tr><td>0</td><td>11111111</td><td>1111111111111111111111</td></tr><tr><td rowspan=\"2\">D.</td><td>Sign</td><td>Exponent</td><td>Mantissa</td></tr><tr><td>0</td><td>01111111</td><td>000000000000000000000000</td></tr></table>",
+        "bbox": [
+            87,
+            609,
+            529,
+            782
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 digital-logic number-representation ieee-representation floating-point-representation one-mark",
+        "bbox": [
+            87,
+            806,
+            620,
+            815
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            821,
+            189,
+            837
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.20.11 IEEE Representation: GATE CSE 2025 | Set 2 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            77,
+            845,
+            608,
+            859
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Three floating point numbers X, Y, and Z are stored in three registers $R_{X}$ , $R_{Y}$ , and $R_{Z}$ , respectively in IEEE 754 single precision format as given below in hexadecimal:",
+        "bbox": [
+            84,
+            869,
+            873,
+            900
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{R} _ {\\mathrm{X}} = 0 \\mathrm{xC} 1 1 0 0 0 0 0, \\mathrm{R} _ {\\mathrm{Y}} = 0 \\mathrm{x} 4 0 \\mathrm{C} 0 0 0 0 0, \\text {and} \\mathrm{R} _ {\\mathrm{Z}} = 0 \\mathrm{x} 4 1 4 0 0 0 0 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            243,
+            909,
+            769,
+            927
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/e7ffd3a4cf33ec69e99cc4141e17aca50b65adc6d93d5d4638d8c183d1bfceaa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            148,
+            932,
+            186
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/2d0d2b061ade9a061d7a62ebece5ac150e77661411c5d50ff864157c58db0632.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            339,
+            932,
+            377
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/aa68cbc96cee3eb42a12b0ea3e0b8735d22b15f66af24500d35c9055d41257f1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            490,
+            932,
+            528
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/733acc2b11532852a8f39f1b8dbb9dcf9eba84fe7d6876168f0efbf19d0f23dd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            847,
+            932,
+            885
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "D. exponent = 00000001 and mantissa = 0000000000000000000000001",
+        "bbox": [
+            87,
+            64,
+            665,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the following option(s) is/are CORRECT?",
+        "bbox": [
+            85,
+            64,
+            458,
+            79
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $4(X + Y) + Z = 0$",
+        "bbox": [
+            87,
+            92,
+            257,
+            109
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $2Y - Z = 0$",
+        "bbox": [
+            285,
+            93,
+            401,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $4X + 3Z = 0$",
+        "bbox": [
+            478,
+            93,
+            603,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. $X + Y + Z = 0$",
+        "bbox": [
+            673,
+            93,
+            818,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 digital-logic number-representation ieee-representation multiple-selects two-marks",
+        "bbox": [
+            87,
+            117,
+            569,
+            128
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            133,
+            188,
+            148
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.20.12 IEEE Representation: GATE CSE 2026 | Set 1 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            157,
+            608,
+            172
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the real valued variables X, Y and Z represented using the IEEE 754 singleprecision floating-point format. The binary representations of X and Y in hexadecimal notation are as follows:",
+        "bbox": [
+            84,
+            181,
+            875,
+            212
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/99439ee8f20d00e7fbecde9cd883518a63c0382d915f7299a58da9695dc9ad2d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            159,
+            932,
+            197
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX: 3 5 \\mathrm{C} 0 0 0 0 0 \\quad Y: 3 4 \\mathrm{A} 0 0 0 0 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            379,
+            220,
+            636,
+            237
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let $Z = X + Y$ .",
+        "bbox": [
+            85,
+            261,
+            216,
+            276
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the binary representation of Z, in hexadecimal notation?",
+        "bbox": [
+            84,
+            281,
+            712,
+            296
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 35C80000",
+        "bbox": [
+            87,
+            309,
+            191,
+            324
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 35CC0000",
+        "bbox": [
+            285,
+            309,
+            389,
+            324
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 35E80000",
+        "bbox": [
+            480,
+            309,
+            579,
+            324
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 35EC0000",
+        "bbox": [
+            673,
+            309,
+            779,
+            324
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 digital-logic ieee-representation floating-point-representation two-marks",
+        "bbox": [
+            87,
+            334,
+            517,
+            344
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            350,
+            188,
+            365
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.20.13 IEEE Representation: GATE CSE 2026 | Set 2 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            77,
+            374,
+            608,
+            389
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The 32-bit IEEE 754 single precision representation of a number is 0xC2710000. The number in decimal representation is \\_\\_\\_\\_. (rounded off to two decimal places)",
+        "bbox": [
+            84,
+            397,
+            878,
+            428
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4eebf0149240b4c9dcb2f540e3670ec647c6762527144c339fc5d776512e700b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            377,
+            932,
+            415
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 digital-logic ieee-representation numerical-answers one-mark",
+        "bbox": [
+            87,
+            441,
+            468,
+            451
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            457,
+            188,
+            472
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.20.14 IEEE Representation: GATE IT 2008 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            77,
+            480,
+            526,
+            495
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The following bit pattern represents a floating point number in IEEE 754 single precision format 1 10000011 10100000000000000000000",
+        "bbox": [
+            85,
+            505,
+            778,
+            538
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The value of the number in decimal form is",
+        "bbox": [
+            85,
+            542,
+            403,
+            555
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. -10",
+        "bbox": [
+            87,
+            570,
+            149,
+            584
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. -13",
+        "bbox": [
+            285,
+            571,
+            344,
+            584
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. -26",
+        "bbox": [
+            480,
+            571,
+            537,
+            584
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            571,
+            825,
+            585
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 digital-logic ieee-representation number-representation floating-point-representation normal",
+        "bbox": [
+            87,
+            595,
+            584,
+            605
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            611,
+            188,
+            625
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.21",
+        "bbox": [
+            68,
+            636,
+            102,
+            649
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "K Map (17)",
+        "bbox": [
+            473,
+            636,
+            564,
+            650
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (5Q) Weekly Quiz 1 (15Q) Weekly Quiz 2 (15Q)",
+        "bbox": [
+            70,
+            660,
+            640,
+            675
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.21.1 K Map: GATE CSE 1987 | Question: 16-a",
+        "text_level": 1,
+        "bbox": [
+            77,
+            688,
+            448,
+            704
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A Boolean function f is to be realized only by NOR gates. Its K-map is given below:",
+        "bbox": [
+            84,
+            713,
+            710,
+            729
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/ee6f0162b2fad11b42f8de9277e5ef3ec8fded8bac3a6ae770acd74d02e99955.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            405,
+            737,
+            546,
+            799
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The realization is",
+        "bbox": [
+            85,
+            820,
+            216,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A.",
+        "bbox": [
+            89,
+            845,
+            109,
+            857
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/1a6c6264e263965e22f4426fd5c194024b678135db604253496b93c596136337.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            238,
+            862,
+            401,
+            914
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B.",
+        "bbox": [
+            495,
+            845,
+            514,
+            857
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca7cf45a94846c452dd179dd2b3f7d8659ce766258874ff11916372c439e0e98.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            643,
+            862,
+            806,
+            914
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/e9824796843ee39fd98168b29983fd8c49d71d69ff2a3646b8debce7dc5c75e4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            484,
+            932,
+            522
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f20791aed0f0d556620a9987c666bdba9b6bb13eaff78cbf7b6951c88f23aed.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            692,
+            932,
+            729
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C.",
+        "bbox": [
+            89,
+            65,
+            107,
+            77
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/91b15a619ec83774fdbb4e37a627c7a2434f98c0c3a9b76b26c2bca60a0dc05e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            238,
+            81,
+            400,
+            133
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1987 digital-logic k-map",
+        "bbox": [
+            87,
+            153,
+            233,
+            163
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            169,
+            188,
+            184
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D.",
+        "bbox": [
+            495,
+            65,
+            514,
+            77
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/891afdc15dfd8d3c38ee6983a5d20aaafb775c40ed84352efbe4860dde93ec79.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            643,
+            84,
+            806,
+            134
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.21.2 K Map: GATE CSE 1988 | Question: 3a-b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            193,
+            448,
+            207
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/ac6abd34157585309ffa636ab714eec5d51fb7527a3df23afea9081c144de0b2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            94,
+            222,
+            418,
+            296
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a955f6b0148f303d9b4afcaaf14f3650b96ffd34f7f4c7af21ba46689a132c7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            195,
+            932,
+            233
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The Karnaugh map of a function of $(A,B,C)$ is shown on the left hand side of the above figure.",
+        "bbox": [
+            84,
+            327,
+            786,
+            343
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The reduced form of the same map is shown on the right hand side, in which the variable $C$ is entered in the map itself. Discuss,",
+        "bbox": [
+            84,
+            347,
+            927,
+            375
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. The methodology by which the reduced map has been derived and",
+            "b. the rules (or steps) by which the boolean function can be derived from the entries in the reduced map."
+        ],
+        "bbox": [
+            87,
+            385,
+            852,
+            415
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1988 descriptive digital-logic k-map",
+        "bbox": [
+            87,
+            440,
+            292,
+            450
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            456,
+            188,
+            470
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.21.3 K Map: GATE CSE 1992 | Question: 01-i",
+        "text_level": 1,
+        "bbox": [
+            78,
+            480,
+            442,
+            494
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The Boolean function in sum of products form where K-map is given below (figure) is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            504,
+            773,
+            519
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/def29cd0d163737fa7358d095b85a972bb784d6632df24af2ea0eee978998a7f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            436,
+            529,
+            515,
+            584
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/e492b88db451642fc015690dd7093e164177724a02542fc5b25dbf58d1d1d3b5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            483,
+            932,
+            521
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1992 digital-logic k-map normal fill-in-the-blanks",
+        "bbox": [
+            87,
+            623,
+            357,
+            633
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            638,
+            188,
+            653
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.21.4 K Map: GATE CSE 1995 | Question: 15-b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            663,
+            448,
+            676
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "What is the equivalent minimal Boolean expression (in sum of products form) for the Karnaugh map given below?",
+        "bbox": [
+            84,
+            686,
+            875,
+            714
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/3623131b2e50bbde5a7e30a00e3751cd26e779c424cfbe9a29a0cc1a4f587d9b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            666,
+            932,
+            703
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/478a1a8c460d46bcceae550283a5b96bd0533f2b5fbfb3f27404d0ffb00a71c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            440,
+            741,
+            559,
+            821
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1995 digital-logic boolean-algebra k-map normal descriptive",
+        "bbox": [
+            87,
+            855,
+            416,
+            865
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            871,
+            188,
+            885
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "What is the equivalent Boolean expression in product-of-sums form for the Karnaugh map given in Fig",
+        "bbox": [
+            85,
+            87,
+            828,
+            104
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/3c0f562c453b1f0504299c099a4112c91bb97c813f5ddc8558e527536178a859.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            442,
+            129,
+            559,
+            207
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $B\\overline{D} +\\overline{B} D$",
+        "bbox": [
+            89,
+            233,
+            194,
+            249
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $(B + \\overline{C} + D)(\\overline{B} + C + \\overline{D})$",
+        "bbox": [
+            495,
+            232,
+            719,
+            251
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $(B + D)(\\overline{B} +\\overline{D})$",
+        "bbox": [
+            90,
+            255,
+            242,
+            273
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $(B + \\overline{D})(\\overline{B} + D)$",
+        "bbox": [
+            497,
+            255,
+            648,
+            273
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1996 digital-logic k-map easy",
+        "bbox": [
+            89,
+            281,
+            267,
+            290
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            296,
+            186,
+            311
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.21.6 K Map: GATE CSE 1998 | Question: 2.7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            320,
+            436,
+            334
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The function represented by the Karnaugh map given below is",
+        "bbox": [
+            85,
+            344,
+            542,
+            359
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/717faeb979007abc58fd2751673301e8dbc475b6a48945b7ab6d41cb69182fe0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            421,
+            364,
+            527,
+            410
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. A. B",
+        "bbox": [
+            89,
+            439,
+            151,
+            453
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $AB + BC + CA$",
+        "bbox": [
+            285,
+            439,
+            435,
+            453
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "c. $\\overline{B\\oplus C}$",
+        "bbox": [
+            480,
+            438,
+            554,
+            454
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. A. BC",
+        "bbox": [
+            675,
+            439,
+            749,
+            453
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1998 digital-logic k-map normal",
+        "bbox": [
+            89,
+            464,
+            275,
+            473
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            480,
+            186,
+            494
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.21.7 K Map: GATE CSE 1999 | Question: 1.8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            504,
+            436,
+            517
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following functions implements the Karnaugh map shown below?",
+        "bbox": [
+            85,
+            527,
+            655,
+            543
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/07d29ea8d42d4d8fa11e31012e286d2dfacd7422bade35209cd0b004921e7dba.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            415,
+            549,
+            534,
+            631
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $\\bar{A}B + CD$",
+        "bbox": [
+            89,
+            655,
+            194,
+            669
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $D(C + A)$",
+        "bbox": [
+            497,
+            655,
+            598,
+            669
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $AD + \\bar{A}B$",
+        "bbox": [
+            90,
+            672,
+            193,
+            685
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $(C + D)(\\bar{C} + D) + (A + B)$",
+        "bbox": [
+            497,
+            671,
+            731,
+            688
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1999 digital-logic k-map easy",
+        "bbox": [
+            89,
+            692,
+            265,
+            701
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            707,
+            186,
+            722
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.21.8 K Map: GATE CSE 2000 | Question: 2.11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            731,
+            443,
+            745
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which functions does NOT implement the Karnaugh map given below?",
+        "bbox": [
+            85,
+            755,
+            606,
+            770
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/f859514dc58f6b359aaa9f7364bfa872f9ee11160d76dcbccf9125ac3d16404e.jpg",
+        "content": "| xy \\ wz | 00 | 01 | 11 | 10 |\n| :--- | :--- | :--- | :--- | :--- |\n| 00 | 0 | X | 0 | 0 |\n| 01 | 0 | X | 1 | 1 |\n| 11 | 1 | 1 | 1 | 1 |\n| 10 | 0 | X | 0 | 0 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "heatmap",
+        "bbox": [
+            438,
+            796,
+            561,
+            881
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $(w + x)y$",
+        "bbox": [
+            89,
+            907,
+            184,
+            923
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $xy + yw$",
+        "bbox": [
+            497,
+            908,
+            584,
+            922
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/cbac1fbbf1b63b303670b8bb3947375cf20c916f98eb98a70ff922652e1e777b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            323,
+            931,
+            361
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/ce1574a918f0dd905e4a6f9fbac1d8e8c0f5858a5e014d7b06650b9eecb136b8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            505,
+            931,
+            543
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/85e422b6c62ab169c54876029a964a90232ebaf39bb30b89378a89aa0d13f7f6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            733,
+            931,
+            771
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "4.21.5 K Map: GATE CSE 1996 | Question: 2.24",
+        "bbox": [
+            78,
+            65,
+            445,
+            79
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $(w + x)(\\bar{w} + y)(\\bar{x} + y)$",
+        "bbox": [
+            89,
+            64,
+            285,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 digital-logic k-map normal",
+        "bbox": [
+            89,
+            85,
+            292,
+            93
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            495,
+            65,
+            647,
+            77
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            100,
+            186,
+            114
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.21.9 K Map: GATE CSE 2001 | Question: 1.11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            124,
+            445,
+            138
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Given the following karnaugh map, which one of the following represents the minimal Sum-Of-Products of the map?",
+        "bbox": [
+            84,
+            147,
+            878,
+            176
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/5769c2ef81ad47c1bb7d2dbb06330bc0d79266b3871733f7157d54d34f176cbd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            932,
+            165
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/0b85657c03b26e790a91d5c2811b4dc0be580965345efd9b975470e8ad992de9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>yz\\wx</td><td>00</td><td>01</td><td>11</td><td>10</td></tr><tr><td>00</td><td>0</td><td>X</td><td>0</td><td>X</td></tr><tr><td>01</td><td>X</td><td>1</td><td>X</td><td>1</td></tr><tr><td>11</td><td>0</td><td>X</td><td>1</td><td>0</td></tr><tr><td>10</td><td>0</td><td>1</td><td>X</td><td>0</td></tr></table>",
+        "bbox": [
+            431,
+            186,
+            564,
+            277
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $XY + Y'Z$",
+        "bbox": [
+            89,
+            307,
+            201,
+            321
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $WX^{\\prime}Y^{\\prime} + XY + XZ$",
+        "bbox": [
+            285,
+            307,
+            472,
+            321
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $W^{\\prime}X + Y^{\\prime}Z + XY$",
+        "bbox": [
+            480,
+            307,
+            652,
+            321
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $XZ + Y$",
+        "bbox": [
+            673,
+            308,
+            764,
+            321
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 k-map digital-logic normal",
+        "bbox": [
+            87,
+            333,
+            292,
+            342
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            349,
+            188,
+            363
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.21.10 K Map: GATE CSE 2002 | Question: 1.12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            372,
+            457,
+            385
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Minimum sum of product expression for $f(w, x, y, z)$ shown in Karnaugh-map below",
+        "bbox": [
+            85,
+            397,
+            705,
+            413
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/bdb7977dab5527a383641842d3c962a04b610c54e24c9bff9bd65e3233bb297d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            375,
+            932,
+            413
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/06a9a58bde6d6023ae52ab9a2493d26cd7efc69639afcc5999c37a85d7ec1fb5.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>yz\\wx</td><td>00</td><td>01</td><td>11</td><td>10</td></tr><tr><td>00</td><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>01</td><td>X</td><td>0</td><td>0</td><td>1</td></tr><tr><td>11</td><td>X</td><td>0</td><td>0</td><td>1</td></tr><tr><td>10</td><td>0</td><td>1</td><td>1</td><td>X</td></tr></table>",
+        "bbox": [
+            433,
+            439,
+            563,
+            527
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $xz + y'z$",
+        "bbox": [
+            89,
+            557,
+            179,
+            574
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $xz' + zx'$",
+        "bbox": [
+            285,
+            557,
+            379,
+            572
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $x^{\\prime}y + zx^{\\prime}$",
+        "bbox": [
+            480,
+            557,
+            573,
+            574
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            558,
+            823,
+            571
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 digital-logic k-map normal",
+        "bbox": [
+            87,
+            583,
+            292,
+            592
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            599,
+            186,
+            612
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.21.11 K Map: GATE CSE 2003 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            622,
+            442,
+            636
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The literal count of a Boolean expression is the sum of the number of times each literal appears in the expression. For example, the literal count of $(xy + xz')$ is 4. What are the minimum possible literal counts of the product-of-sum and sum-of-product representations respectively of the function given by the following Karnaugh map? Here, X denotes \"don't care\"",
+        "bbox": [
+            84,
+            646,
+            927,
+            705
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/aa4cced3cc737082c379ffc7736d4af26b127d4437c717b3cd3fd4ee854ccbb2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>xy\\zw</td><td>00</td><td>01</td><td>11</td><td>10</td></tr><tr><td>00</td><td>X</td><td>1</td><td>0</td><td>1</td></tr><tr><td>01</td><td>0</td><td>1</td><td>X</td><td>0</td></tr><tr><td>11</td><td>1</td><td>X</td><td>X</td><td>0</td></tr><tr><td>10</td><td>X</td><td>0</td><td>0</td><td>X</td></tr></table>",
+        "bbox": [
+            433,
+            714,
+            563,
+            802
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. (11,9)",
+        "bbox": [
+            89,
+            833,
+            164,
+            849
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. (9,13)",
+        "bbox": [
+            285,
+            833,
+            357,
+            849
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. (9,10)",
+        "bbox": [
+            480,
+            833,
+            552,
+            849
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. (11,11)",
+        "bbox": [
+            673,
+            833,
+            759,
+            849
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 digital-logic k-map normal",
+        "bbox": [
+            89,
+            858,
+            292,
+            866
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            874,
+            188,
+            888
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/89ce93fb722f87b05534847f53f38fcda68c421e3ea25a8e5e4510c141d450d1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            625,
+            932,
+            662
+        ],
+        "page_idx": 11
+    }
+]

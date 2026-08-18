@@ -1,0 +1,4938 @@
+[
+    {
+        "type": "text",
+        "text": "1.12.2 Depth First Search: GATE DA 2025 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            519,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/06833753009e4559cb27b735a02110580ace73ab72d888b6e145f8974fe6f4ec.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a directed graph $G = (V, E)$ , where $V = \\{0, 1, 2, \\dots, 100\\}$ and $E = \\{(i, j) : 0 < j - i \\leq 2, \\text{ for all } i, j \\in V\\}$ . Suppose the adjacency list of each vertex is in decreasing order of vertex number, and depth-first search (DFS) is performed at vertex 0. The number of vertices that will be discovered after vertex 50 is \\_\\_\\_\\_ (Answer in integer)",
+        "bbox": [
+            84,
+            87,
+            929,
+            150
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 algorithms depth-first-search numerical-answers two-marks",
+        "bbox": [
+            87,
+            162,
+            436,
+            173
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            179,
+            186,
+            193
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.13",
+        "text_level": 1,
+        "bbox": [
+            68,
+            204,
+            105,
+            217
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Dijkstra Algorithm (5)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            203,
+            610,
+            219
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (12Q)",
+        "bbox": [
+            70,
+            228,
+            272,
+            242
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.13.1 Dijkstra Algorithm: GATE CSE 1996 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            257,
+            534,
+            271
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let G be the directed, weighted graph shown in below figure",
+        "bbox": [
+            85,
+            280,
+            529,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/3b2b0c9d0eaa51a1b0ec113af8ef62c5544223412ab99941d1d56b1a3bc5faac.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            260,
+            931,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/76a082c53aadb976d8161f6bd19db894c40e4ff0c01a831541cdcce00b1e685d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"A\"] -->|6| B[\"B\"]\n  B -->|12| C[\"C\"]\n  C -->|2| D[\"D\"]\n  D -->|12| E[\"E\"]\n  E -->|60| C\n  E -->|50| D\n  E -->|15| F[\"F\"]\n  F -->|10| E\n  F -->|70| A\n  A -->|90| C\n  C -->|22| B\n  B -->|41| A\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            95,
+            309,
+            354,
+            419
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "We are interested in the shortest paths from A.",
+        "bbox": [
+            85,
+            432,
+            431,
+            447
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. Output the sequence of vertices identified by the Dijkstra's algorithm for single source shortest path when the algorithm is started at node $A$",
+            "b. Write down sequence of vertices in the shortest path from $A$ to $E$",
+            "c. What is the cost of the shortest path from $A$ to $E$ ?"
+        ],
+        "bbox": [
+            87,
+            458,
+            927,
+            527
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1996 algorithms graph-algorithms normal dijkstras-algorithm descriptive",
+        "bbox": [
+            87,
+            553,
+            467,
+            562
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            568,
+            186,
+            583
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.13.2 Dijkstra Algorithm: GATE CSE 2004 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            592,
+            534,
+            606
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Suppose we run Dijkstra's single source shortest path algorithm on the following edge-weighted directed graph with vertex $P$ as the source.",
+        "bbox": [
+            84,
+            616,
+            878,
+            646
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9cf9715e393efa049326cd0ffd7089c24f6aec301198635a27a8b2a9112508e6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            595,
+            931,
+            633
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/85336ed696911f5708e93c39b76fdfb19a022f42ab7c4cd6fc60064da74b99d8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  P[\"P\"] -->|1| Q[\"Q\"]\n  P -->|6| S[\"S\"]\n  P -->|7| T[\"T\"]\n  Q -->|1| R[\"R\"]\n  Q -->|4| S\n  R -->|2| S\n  S -->|2| U[\"U\"]\n  S -->|3| T\n  S -->|2| U\n  T -->|2| U\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            430,
+            653,
+            586,
+            747
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In what order do the nodes get included into the set of vertices for which the shortest path distances are finalized?",
+        "bbox": [
+            84,
+            754,
+            915,
+            770
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $P, Q, R, S, T, U$",
+        "bbox": [
+            87,
+            782,
+            231,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $P, Q, R, U, S, T$",
+        "bbox": [
+            285,
+            783,
+            426,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "c. $P, Q, R, U, T, S$",
+        "bbox": [
+            480,
+            782,
+            621,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $P, Q, T, R, U, S$",
+        "bbox": [
+            675,
+            782,
+            816,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 algorithms graph-algorithms normal dijkstras-algorithm",
+        "bbox": [
+            87,
+            807,
+            423,
+            817
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            823,
+            186,
+            838
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.13.3 Dijkstra Algorithm: GATE CSE 2005 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            847,
+            534,
+            862
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $G(V, E)$ be an undirected graph with positive edge weights. Dijkstra's single source shortest path algorithm can be implemented using the binary heap data structure with time complexity:",
+        "bbox": [
+            84,
+            871,
+            878,
+            902
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/653ce8df445c2daff1e531f17a00d31fd1e95ce786f7bef4bc96dd89b174284a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            850,
+            931,
+            887
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $O(|V|^{2})$",
+        "bbox": [
+            89,
+            910,
+            178,
+            931
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $O(|E| + |V|\\log |V|)$",
+        "bbox": [
+            495,
+            909,
+            672,
+            928
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "c. $O(|V|\\log |V|)$",
+        "bbox": [
+            89,
+            66,
+            220,
+            83
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $O((|E| + |V|)\\log |V|)$",
+        "bbox": [
+            495,
+            66,
+            685,
+            83
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 algorithms graph-algorithms normal dijkstras-algorithm",
+        "bbox": [
+            87,
+            91,
+            423,
+            100
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            106,
+            188,
+            121
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.13.4 Dijkstra Algorithm: GATE CSE 2006 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            130,
+            534,
+            144
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/13fffab8690d11dd6e513aeaff62b33ddf87880e2bbe1d310654b2a48321f043.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            134,
+            931,
+            171
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To implement Dijkstra's shortest path algorithm on unweighted graphs so that it runs in linear time, the data structure to be used is:",
+        "bbox": [
+            84,
+            154,
+            875,
+            182
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. Queue",
+        "bbox": [
+            89,
+            198,
+            161,
+            210
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. Stack",
+        "bbox": [
+            285,
+            198,
+            349,
+            211
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. Heap",
+        "bbox": [
+            480,
+            198,
+            542,
+            212
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. B-Tree",
+        "bbox": [
+            673,
+            198,
+            747,
+            211
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 algorithms graph-algorithms easy dijkstras-algorithm",
+        "bbox": [
+            87,
+            220,
+            413,
+            231
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            237,
+            188,
+            251
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.13.5 Dijkstra Algorithm: GATE CSE 2008 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            261,
+            534,
+            275
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/3de8935de0f10b09abda298aaced458a7ea53525fc39bd9d218822579d2c3d1e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            263,
+            931,
+            301
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/ea8104f94d7c2a89ba6df7351af40c95d1d0eada8ad06e07d420d5e41865c286.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] -->|1| b[\"b\"]\n  b -->|-3| e[\"e\"]\n  b -->|2| c[\"c\"]\n  c -->|-5| h[\"h\"]\n  c -->|3| d[\"d\"]\n  d -->|2| g[\"g\"]\n  h -->|1| e\n  h -->|2| g\n  e -->|2| f[\"f\"]\n  f -->|3| g\n  g -->|1| e\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            295,
+            288,
+            668,
+            403
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Dijkstra's single source shortest path algorithm when run from vertex $a$ in the above graph, computes the correct shortest path distance to",
+        "bbox": [
+            84,
+            412,
+            927,
+            440
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. only vertex a",
+        "bbox": [
+            87,
+            450,
+            205,
+            464
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. only vertices $a, e, f, g, h$",
+        "bbox": [
+            495,
+            450,
+            685,
+            466
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. only vertices $a, b, c, d$",
+        "bbox": [
+            89,
+            467,
+            262,
+            483
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. all the vertices",
+        "bbox": [
+            497,
+            467,
+            618,
+            480
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 algorithms graph-algorithms normal dijkstras-algorithm",
+        "bbox": [
+            87,
+            492,
+            423,
+            502
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            508,
+            188,
+            522
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.14",
+        "text_level": 1,
+        "bbox": [
+            68,
+            533,
+            104,
+            545
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Directed Acyclic Graph (2)",
+        "text_level": 1,
+        "bbox": [
+            413,
+            532,
+            623,
+            547
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.14.1 Directed Acyclic Graph: GATE CSE 2021 | Set 2 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            558,
+            616,
+            573
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/fa1ec76ec9115f4a5862f238f984f3f464883e5d278e8b293016a4bc1f3cf3db.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            561,
+            931,
+            599
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In a directed acyclic graph with a source vertex s, the quality-score of a directed path is defined to be the product of the weights of the edges on the path. Further, for a vertex v other than s, the quality-score of v is defined to be the maximum among the quality-scores of all the paths from s to v. The quality-score of s is assumed to be 1.",
+        "bbox": [
+            82,
+            583,
+            929,
+            638
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/27f762e87e0d9fe4b3198ffceef2abaa9fffacb4d92188c544b3846e5919d6b7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  s[\"s\"] -->|1| c[\"c\"]\n  s -->|9| g[\"g\"]\n  c -->|1| d[\"d\"]\n  d -->|1| a[\"a\"]\n  d -->|9| e[\"e\"]\n  a -->|1| b[\"b\"]\n  g -->|1| t[\"t\"]\n  t -->|9| e\n  e -->|1| b\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            394,
+            649,
+            621,
+            744
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The sum of the quality-scores of all vertices on the graph shown above is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            756,
+            689,
+            771
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 algorithms graph-algorithms directed-acyclic-graph numerical-answers two-marks",
+        "bbox": [
+            87,
+            789,
+            561,
+            799
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            805,
+            188,
+            819
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.14.2 Directed Acyclic Graph: GATE CSE 2026 | Set 2 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            828,
+            616,
+            843
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/80504f63caa34d374f3817d2f1b20e17a30ceb76da1c90dfbc9db33ceb491a8e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            831,
+            931,
+            869
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a weighted directed acyclic graph with $m$ edges and $n$ vertices. Given $G$ and a source vertex $s$ in $G$ , which one of the following options gives the worst case time complexity of the fastest algorithm to find the lengths of shortest paths from $s$ to all vertices that are reachable from $s$ in $G$ ?",
+        "bbox": [
+            84,
+            853,
+            875,
+            897
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(m + n)$",
+        "bbox": [
+            87,
+            907,
+            189,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(m + n\\log(n))$",
+        "bbox": [
+            495,
+            907,
+            643,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.15",
+        "text_level": 1,
+        "bbox": [
+            68,
+            125,
+            105,
+            138
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Double Hashing (2)",
+        "text_level": 1,
+        "bbox": [
+            440,
+            125,
+            596,
+            141
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.15.1 Double Hashing: GATE CSE 2020 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            150,
+            509,
+            166
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/7db55d4e6b1df89e0bcc8accb0711b77b109bb176166ad18b09b35610c48b18c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            154,
+            932,
+            192
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a double hashing scheme in which the primary hash function is $h_{1}(k)=k\\bmod23$ , and the secondary hash function is $h_{2}(k)=1+(k\\bmod19)$ . Assume that the table size is 23. Then the address returned by probe 1 in the probe sequence (assume that the probe sequence begins at probe 0) for key k=90 is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            176,
+            878,
+            236
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers algorithms hashing one-mark double-hashing",
+        "bbox": [
+            87,
+            249,
+            470,
+            260
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            266,
+            188,
+            280
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.15.2 Double Hashing: GATE CSE 2025 | Set 1 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            289,
+            561,
+            304
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/48c4723bf212647022239c14bab6efc77c29a718ac7a4f3a1237693218010ce2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            292,
+            932,
+            330
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In a double hashing scheme, $h_{1}(k)=k\\bmod11$ and $h_{2}(k)=1+(k\\bmod7)$ are the auxiliary hash functions. The size m of the hash table is 11. The hash function for the i-th probe in the open address table is $[h_{1}(k)+ih_{2}(k)]\\bmod m$ . The following keys are inserted in the given order: 63, 50, 25, 79, 67, 24.",
+        "bbox": [
+            84,
+            313,
+            878,
+            361
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The slot at which key 24 gets stored is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            371,
+            626,
+            388
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1",
+        "bbox": [
+            87,
+            400,
+            164,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "algorithms",
+        "bbox": [
+            174,
+            401,
+            221,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "hashing",
+        "bbox": [
+            233,
+            401,
+            268,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "double-hashing",
+        "bbox": [
+            278,
+            401,
+            344,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "numerical-answers",
+        "bbox": [
+            356,
+            401,
+            435,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "easy",
+        "bbox": [
+            445,
+            401,
+            468,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "two-marks",
+        "bbox": [
+            478,
+            401,
+            524,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            416,
+            188,
+            431
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.16",
+        "text_level": 1,
+        "bbox": [
+            68,
+            441,
+            105,
+            454
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Dynamic Programming (10)",
+        "text_level": 1,
+        "bbox": [
+            408,
+            441,
+            628,
+            456
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (13Q)",
+        "bbox": [
+            70,
+            466,
+            270,
+            480
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.16.1 Dynamic Programming: GATE CSE 2008 | Question: 80",
+        "text_level": 1,
+        "bbox": [
+            78,
+            494,
+            563,
+            509
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/942c09630bf815fc065a5f91f81baa42bba42021b04bd9b5615e067d169b1b88.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            497,
+            932,
+            535
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The subset-sum problem is defined as follows. Given a set of $n$ positive integers, $S = \\{a_1, a_2, a_3, \\ldots, a_n\\}$ , and positive integer $W$ , is there a subset of $S$ whose elements sum to $W$ ? A dynamic program for solving this problem uses a 2-dimensional Boolean array, $X$ , with $n$ rows and $W$ columns. $X[i, j], 1 \\leq i \\leq n, 0 \\leq j \\leq W$ , is TRUE, if and only if there is a subset of $\\{a_1, a_2, \\ldots, a_i\\}$ elements sum to $j$ .",
+        "bbox": [
+            84,
+            519,
+            878,
+            593
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is valid for $2 \\leq i \\leq n$ , and $a_{i} \\leq j \\leq W$ ?",
+        "bbox": [
+            84,
+            595,
+            557,
+            612
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $X[i,j] = X[i - 1,j]\\lor X[i,j - a_i]$",
+            "B. $X[i,j] = X[i - 1,j]\\lor X[i - 1,j - a_i]$",
+            "C. $X[i,j] = X[i - 1,j]\\wedge X[i,j - a_i]$",
+            "D. $X[i,j] = X[i - 1,j]\\wedge X[i - 1,j - a_i]$"
+        ],
+        "bbox": [
+            87,
+            621,
+            416,
+            685
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008",
+        "bbox": [
+            87,
+            707,
+            147,
+            718
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "algorithms",
+        "bbox": [
+            157,
+            709,
+            205,
+            718
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "difficult",
+        "bbox": [
+            216,
+            709,
+            250,
+            718
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "dynamic-programming",
+        "bbox": [
+            263,
+            709,
+            357,
+            718
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            725,
+            188,
+            739
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.16.2 Dynamic Programming: GATE CSE 2008 | Question: 81",
+        "text_level": 1,
+        "bbox": [
+            78,
+            748,
+            561,
+            763
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ae8b90c3ab2ed7a200b4173d09bf682b440771fedb8387f6a8043e58d4ea8167.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            751,
+            932,
+            789
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The subset-sum problem is defined as follows. Given a set of $n$ positive integers, $S = \\{a_1, a_2, a_3, \\ldots, a_n\\}$ , and positive integer $W$ , is there a subset of $S$ whose elements sum to $W$ ? A dynamic program for solving this problem uses a 2-dimensional Boolean array, $X$ , with $n$ rows and $l$ columns. $X[i, j], 1 \\leq i \\leq n, 0 \\leq j \\leq W$ , is TRUE, if and only if there is a subset of $\\{a_1, a_2, \\ldots, a_i\\}$ elements sum to $j$ .",
+        "bbox": [
+            84,
+            771,
+            878,
+            846
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which entry of the array X, if TRUE, implies that there is a subset whose elements sum to W?",
+        "bbox": [
+            84,
+            849,
+            778,
+            865
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $X[1, W]$",
+        "bbox": [
+            87,
+            877,
+            176,
+            895
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $X[n,0]$",
+        "bbox": [
+            285,
+            877,
+            361,
+            895
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $X[n,W]$",
+        "bbox": [
+            478,
+            877,
+            566,
+            895
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $X[n - 1,n]$",
+        "bbox": [
+            673,
+            877,
+            783,
+            895
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "C. $\\Theta(nm)$",
+        "bbox": [
+            89,
+            65,
+            169,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "D. $\\Theta(n^{3})$",
+        "bbox": [
+            495,
+            65,
+            569,
+            81
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2026-set2",
+        "bbox": [
+            87,
+            85,
+            166,
+            95
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "algorithms",
+        "bbox": [
+            178,
+            86,
+            225,
+            95
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "shortest-path",
+        "bbox": [
+            236,
+            86,
+            294,
+            95
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "directed-acyclic-graph",
+        "bbox": [
+            305,
+            86,
+            398,
+            95
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "time-complexity",
+        "bbox": [
+            408,
+            86,
+            478,
+            95
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "two-marks",
+        "bbox": [
+            489,
+            86,
+            537,
+            95
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            100,
+            188,
+            115
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2008",
+        "bbox": [
+            87,
+            903,
+            147,
+            912
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "algorithms",
+        "bbox": [
+            157,
+            903,
+            203,
+            912
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "normal",
+        "bbox": [
+            216,
+            903,
+            247,
+            912
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "dynamic-programming",
+        "bbox": [
+            258,
+            903,
+            352,
+            912
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.16.3 Dynamic Programming: GATE CSE 2009 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            563,
+            104
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/b2816c19aa2b4551066b439e15b9befb03310e51d93ba67ce57dae084d9387d5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            931,
+            129
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A sub-sequence of a given sequence is just the given sequence with some elements (possibly none or all) left out. We are given two sequences $X[m]$ and $Y[n]$ of lengths $m$ and $n$ , respectively with indexes of $X$ and $Y$ starting from 0.",
+        "bbox": [
+            84,
+            112,
+            878,
+            157
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We wish to find the length of the longest common sub-sequence (LCS) of $X[m]$ and $Y[n]$ as $l(m, n)$ , where an incomplete recursive definition for the function $I(i, j)$ to compute the length of the LCS of $X[m]$ and $Y[n]$ is given below:",
+        "bbox": [
+            82,
+            161,
+            929,
+            206
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} = \\text {expr1, if i,j > 0 and X[i - 1] = Y[j - 1]} \\\\ = \\operatorname{expr2}, \\text {if} i, j > 0 \\text {and} X [ i - 1 ] \\neq Y [ j - 1 ] \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            216,
+            376,
+            260
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$I(i,j) = 0$ , if either i = 0 or j = 0",
+        "bbox": [
+            85,
+            216,
+            304,
+            231
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is correct?",
+        "bbox": [
+            85,
+            269,
+            418,
+            283
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. expr1 = l(i - 1, j) + 1",
+        "bbox": [
+            87,
+            294,
+            285,
+            309
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. expr1 = l(i, j - 1)",
+        "bbox": [
+            497,
+            294,
+            658,
+            309
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. expr2 = max(l(i-1,j), l(i,j-1))",
+        "bbox": [
+            89,
+            312,
+            384,
+            330
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. expr2 = max(l(i-1,j-1), l(i,j))",
+        "bbox": [
+            497,
+            313,
+            791,
+            330
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 algorithms normal dynamic-programming recursion",
+        "bbox": [
+            87,
+            337,
+            405,
+            347
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            353,
+            181,
+            366
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.16.4 Dynamic Programming: GATE CSE 2009 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            376,
+            563,
+            391
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1624fc52c3721aa5ac5f9581579aeb7153f843986cfb11d7ce9420855bd4f78.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            378,
+            931,
+            416
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A sub-sequence of a given sequence is just the given sequence with some elements (possibly none or all) left out. We are given two sequences $X[m]$ and $Y[n]$ of lengths $m$ and $n$ , respectively with indexes of $X$ and $Y$ starting from 0.",
+        "bbox": [
+            84,
+            400,
+            878,
+            445
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We wish to find the length of the longest common sub-sequence (LCS) of $X[m]$ and $Y[n]$ as $l(m, n)$ , where an incomplete recursive definition for the function $I(i, j)$ to compute the length of the LCS of $X[m]$ and $Y[n]$ is given below:",
+        "bbox": [
+            84,
+            448,
+            929,
+            492
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} = \\text {expr1, if i,j > 0 and X[i - 1] = Y[j - 1]} \\\\ = \\text {expr2, if } i, j > 0 \\text { and } X [ i - 1 ] \\neq Y [ j - 1 ] \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            504,
+            384,
+            548
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$I(i,j) = 0$ , if either i = 0 or j = 0",
+        "bbox": [
+            85,
+            504,
+            304,
+            519
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The value of $l(i,j)$ could be obtained by dynamic programming based on the correct recursive definition of $l(i,j)$ of the form given above, using an array $L[M,N]$ , where $M = m + 1$ and $N = n + 1$ , such that $L[i,j] = l(i,j)$ .",
+        "bbox": [
+            84,
+            557,
+            929,
+            590
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements would be TRUE regarding the dynamic programming solution for the recursive definition of $l(i,j)$ ?",
+        "bbox": [
+            84,
+            592,
+            929,
+            624
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. All elements of $L$ should be initialized to 0 for the values of $l(i,j)$ to be properly computed.",
+            "B. The values of $l(i,j)$ may be computed in a row major order or column major order of $L[M,N]$ .",
+            "C. The values of $l(i,j)$ cannot be computed in either row major order or column major order of $L[M,N]$ .",
+            "D. $L[p,q]$ needs to be computed before $L[r,s]$ if either $p < r$ or $q < s$ ."
+        ],
+        "bbox": [
+            85,
+            633,
+            857,
+            695
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 normal algorithms dynamic-programming recursion",
+        "bbox": [
+            87,
+            719,
+            405,
+            729
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            735,
+            181,
+            750
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.16.5 Dynamic Programming: GATE CSE 2010 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            78,
+            758,
+            563,
+            774
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9f1c559586e70aeca606688f26494892c1d93162ebd0aa6bff47bde941fe1ce8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            762,
+            931,
+            799
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The weight of a sequence $a_{0}, a_{1}, \\ldots, a_{n-1}$ of real numbers is defined as $a_{0} + a_{1}/2 + \\cdots + a_{n-1}/2^{n-1}$ . A subsequence of a sequence is obtained by deleting some elements from the sequence, keeping the order of the remaining elements the same. Let X denote the maximum possible weight of a subsequence of $a_{0}, a_{1}, \\ldots, a_{n-1}$ and Y the maximum possible weight of a subsequence of $a_{1}, a_{2}, \\ldots, a_{n-1}$ . Then X is equal to",
+        "bbox": [
+            84,
+            785,
+            927,
+            845
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $max(Y, a_0 + Y)$",
+        "bbox": [
+            89,
+            853,
+            236,
+            869
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $max(Y, a_{0} + 2Y)$",
+        "bbox": [
+            89,
+            869,
+            245,
+            884
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $max(Y, a_0 + Y/2)$",
+        "bbox": [
+            497,
+            853,
+            658,
+            869
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $a_{0} + Y/2$",
+        "bbox": [
+            497,
+            869,
+            591,
+            883
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 algorithms dynamic-programming normal",
+        "bbox": [
+            87,
+            888,
+            352,
+            897
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            903,
+            181,
+            916
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            188,
+            80
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.16.6 Dynamic Programming: GATE CSE 2011 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            563,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/b568706ea1dcd52fc1d28bb7db77f285bb013dbc0a9b28ea815fefcf100f3847.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "An algorithm to find the length of the longest monotonically increasing sequence of numbers in an array $A[0:n - 1]$ is given below.",
+        "bbox": [
+            84,
+            87,
+            875,
+            119
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $L_{i}$ , denote the length of the longest monotonically increasing sequence starting at index i in the array.",
+        "bbox": [
+            84,
+            122,
+            855,
+            138
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Initialize $L_{n - 1} = 1$",
+        "bbox": [
+            85,
+            141,
+            233,
+            157
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "For all $i$ such that $0 \\leq i \\leq n - 2$",
+        "bbox": [
+            85,
+            159,
+            334,
+            175
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nL _ {i} = \\left\\{ \\begin{array}{l l} 1 + L _ {i + 1} & \\quad \\text {if} \\mathrm{A} [ \\mathrm{i} ] <   \\mathrm{A} [ \\mathrm{i} + 1 ] \\\\ 1 & \\quad \\text {Otherwise} \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            179,
+            386,
+            214
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Finally, the length of the longest monotonically increasing sequence is $\\max\\left(L_{0}, L_{1}, \\ldots, L_{n-1}\\right)$ .",
+        "bbox": [
+            84,
+            217,
+            794,
+            233
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is TRUE?",
+        "bbox": [
+            85,
+            236,
+            408,
+            250
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The algorithm uses dynamic programming paradigm",
+            "B. The algorithm has a linear complexity and uses branch and bound paradigm",
+            "C. The algorithm has a non-linear polynomial complexity and uses branch and bound paradigm",
+            "D. The algorithm uses divide and conquer paradigm"
+        ],
+        "bbox": [
+            85,
+            262,
+            783,
+            318
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 algorithms easy dynamic-programming",
+        "bbox": [
+            87,
+            343,
+            344,
+            353
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            359,
+            189,
+            374
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.16.7 Dynamic Programming: GATE CSE 2014 | Set 2 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            383,
+            615,
+            397
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/ecd9c033a21c6b837951fd54b3a2420cef22bc1ddaf15787607a8a4cdabeb386.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            385,
+            932,
+            423
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider two strings $A = \"qpqrr\"$ and $B = \"pqprqrp\"$ . Let $x$ be the length of the longest common subsequence (not necessarily contiguous) between $A$ and $B$ and let $y$ be the number of such longest common subsequences between $A$ and $B$ . Then $x + 10y =$ \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            408,
+            878,
+            456
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 algorithms normal numerical-answers dynamic-programming",
+        "bbox": [
+            87,
+            473,
+            463,
+            483
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            489,
+            189,
+            504
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.16.8 Dynamic Programming: GATE CSE 2014 | Set 3 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            513,
+            615,
+            528
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/745e5f2a2e5081a16a7b58d3baae59b6cb1cfa4932e5611358760486362a7dcc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            515,
+            932,
+            554
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Suppose you want to move from 0 to 100 on the number line. In each step, you either move right by a unit distance or you take a shortcut. A shortcut is simply a pre-specified pair of integers $i$ , $j$ with $i < j$ . Given a shortcut $(i, j)$ , if you are at position $i$ on the number line, you may directly move to $j$ . Suppose $T(k)$ denotes the smallest number of steps needed to move from $k$ to 100. Suppose further that there is at most 1 shortcut involving any number, and in particular, from 9 there is a shortcut to 15. Let $y$ and $z$ be such that $T(9) = 1 + \\min(T(y), T(z))$ . Then the value of the product $yz$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            536,
+            929,
+            629
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 algorithms normal numerical-answers dynamic-programming",
+        "bbox": [
+            87,
+            644,
+            463,
+            655
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            661,
+            189,
+            676
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.16.9 Dynamic Programming: GATE CSE 2016 | Set 2 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            685,
+            616,
+            700
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/b07c82cc7a6597074b691117876207de0d3e8f73aa2c9adf18ddefb1e616a40b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            687,
+            932,
+            726
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The Floyd-Warshall algorithm for all-pair shortest paths computation is based on",
+        "bbox": [
+            85,
+            709,
+            672,
+            724
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Greedy paradigm.",
+            "B. Divide-and-conquer paradigm.",
+            "C. Dynamic Programming paradigm.",
+            "D. Neither Greedy nor Divide-and-Conquer nor Dynamic Programming paradigm."
+        ],
+        "bbox": [
+            87,
+            733,
+            682,
+            790
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 algorithms dynamic-programming easy",
+        "bbox": [
+            87,
+            815,
+            364,
+            826
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            832,
+            189,
+            846
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.16.10 Dynamic Programming: GATE CSE 2026 | Set 2 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            855,
+            625,
+            870
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/63757fc99910e929b111a5c334abfcaad4004256298e59521877a921d78a6c54.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            858,
+            932,
+            896
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider a table $T$ , where the elements $T[i][j], 0 \\leq i, j \\leq n$ , represent the cost of the optimal solutions of different subproblems of a problem that is being solved using a dynamic programming algorithm. The recursive formulation to compute the table entries is as follows:",
+        "bbox": [
+            84,
+            878,
+            878,
+            923
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT [ 0 ] [ k ] = T [ k ] [ 0 ] = 1 \\quad \\text {for} k = 0, 1, 2, \\dots , n\n$$",
+        "text_format": "latex",
+        "bbox": [
+            263,
+            65,
+            747,
+            83
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT [ i ] [ j ] = 2 T [ i - 1 ] [ j ] + 3 T [ i ] [ j - 1 ] \\quad \\text { for } 1 \\leq i, j \\leq n\n$$",
+        "text_format": "latex",
+        "bbox": [
+            267,
+            85,
+            707,
+            104
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two algorithms to compute entries of $T$ . Assume that for both the algorithms, for all $0 \\leq i, j \\leq n$ , $T[i][j]$ has been initialized to 1.",
+        "bbox": [
+            84,
+            125,
+            926,
+            155
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Algorithm \\$B\\_{1}\\$: For \\$i = 1, 2, \\ldots, n\\$",
+        "bbox": [
+            85,
+            155,
+            344,
+            169
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {For} j = 1, 2, \\dots , n\n$$",
+        "text_format": "latex",
+        "bbox": [
+            344,
+            181,
+            502,
+            198
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT [ i ] [ j ] = 2 T [ i - 1 ] [ j ] + 3 T [ i ] [ j - 1 ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            381,
+            200,
+            662,
+            219
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Algorithm $B_{2}$ : For $s = 2,3,\\dots ,2n$",
+        "bbox": [
+            84,
+            239,
+            357,
+            255
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {For} i = 1, 2, \\dots , n\n$$",
+        "text_format": "latex",
+        "bbox": [
+            302,
+            266,
+            458,
+            283
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {For} j = 1, 2, \\dots , n\n$$",
+        "text_format": "latex",
+        "bbox": [
+            347,
+            286,
+            502,
+            302
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {If} (i + j = = s)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            384,
+            306,
+            505,
+            323
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT [ i ] [ j ] = 2 T [ i - 1 ] [ j ] + 3 T [ i ] [ j - 1 ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            416,
+            325,
+            700,
+            344
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Algorithm $B_{k}, k \\in \\{1, 2\\}$ is said to be correct if and only if it calculates the correct values of $T[i][j]$ , for all $0 \\leq i, j \\leq n$ , (as per the recursive formulation) at the end of the execution of the algorithm $B_{k}$ .",
+        "bbox": [
+            84,
+            365,
+            924,
+            397
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is true?",
+        "bbox": [
+            85,
+            408,
+            425,
+            423
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both algorithms $B_{1}$ and $B_{2}$ are correct",
+            "B. Algorithm $B_{1}$ is correct, but algorithm $B_{2}$ is incorrect",
+            "C. Algorithm $B_{2}$ is correct, but algorithm $B_{1}$ is incorrect",
+            "D. Both algorithms $B_{1}$ and $B_{2}$ are incorrect"
+        ],
+        "bbox": [
+            87,
+            434,
+            499,
+            492
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 algorithms dynamic-programming two-marks",
+        "bbox": [
+            87,
+            517,
+            388,
+            527
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            534,
+            186,
+            548
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.17",
+        "text_level": 1,
+        "bbox": [
+            68,
+            558,
+            104,
+            571
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Graph Algorithms (11)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            558,
+            608,
+            573
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (14Q)",
+        "bbox": [
+            70,
+            583,
+            270,
+            597
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.17.1 Graph Algorithms: GATE CSE 1994 | Question: 1.22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            611,
+            537,
+            625
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is false?",
+        "bbox": [
+            84,
+            635,
+            400,
+            650
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Optimal binary search tree construction can be performed efficiently using dynamic programming",
+            "B. Breadth-first search cannot be used to find connected components of a graph",
+            "C. Given the prefix and postfix walks over a binary tree, the binary tree cannot be uniquely constructed.",
+            "D. Depth-first search can be used to find connected components of a graph"
+        ],
+        "bbox": [
+            85,
+            660,
+            840,
+            731
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1994 algorithms normal graph-algorithms",
+        "bbox": [
+            87,
+            756,
+            315,
+            766
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            771,
+            186,
+            786
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.17.2 Graph Algorithms: GATE CSE 2003 | Question: 70",
+        "text_level": 1,
+        "bbox": [
+            78,
+            795,
+            522,
+            809
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $G = (V, E)$ be a directed graph with $n$ vertices. A path from $v_i$ to $v_j$ in $G$ is a sequence of vertices $(v_i, v_{i+1}, \\ldots, v_j)$ such that $(v_k, v_{k+1}) \\in E$ for all $k$ in $i$ through $j-1$ . A simple path is a path in which no vertex appears more than once.",
+        "bbox": [
+            84,
+            820,
+            878,
+            865
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let A be an $n \\times n$ array initialized as follows:",
+        "bbox": [
+            85,
+            871,
+            423,
+            885
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/0803c4559a1df593781eb0c2e30a9e8fa3b0612f8c0a98f323de7021fc6626f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            614,
+            932,
+            652
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/60a1b11db0e4fd727c8f9ac0fa7fc2f1924b630977771005b6d922f67c4af758.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            798,
+            932,
+            836
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA [ j, k ] = \\left\\{ \\begin{array}{l l} 1, & \\text {if} (j, k) \\in E \\\\ 0, & \\text {otherwise} \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            393,
+            65,
+            618,
+            100
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following algorithm:",
+        "bbox": [
+            85,
+            110,
+            329,
+            125
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\nfor i=1 to n\n    for j=1 to n\n        for k=1 to n\n            A[j,k] = max(A[j,k], A[j,i] + A[i,k]);\n</div>",
+        "bbox": [
+            89,
+            134,
+            319,
+            179
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is necessarily true for all j and k after termination of the above algorithm?",
+        "bbox": [
+            84,
+            188,
+            870,
+            205
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $A[j,k]\\leq n$",
+            "B. If $A[j, j] \\geq n - 1$ then $G$ has a Hamiltonian cycle",
+            "C. If there exists a path from $j$ to $k$ , $A[j, k]$ contains the longest path length from $j$ to $k$",
+            "D. If there exists a path from $j$ to $k$ , every simple path from $j$ to $k$ contains at most $A[j, k]$ edges"
+        ],
+        "bbox": [
+            87,
+            214,
+            793,
+            279
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 algorithms graph-algorithms normal",
+        "bbox": [
+            87,
+            302,
+            332,
+            313
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            319,
+            189,
+            334
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.17.3 Graph Algorithms: GATE CSE 2005 | Question: 82a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            343,
+            532,
+            358
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let $s$ and $t$ be two vertices in a undirected graph $G = (V, E)$ having distinct positive edge weights. Let $[X, Y]$ be a partition of $V$ such that $s \\in X$ and $t \\in Y$ . Consider the edge $e$ having the minimum weight amongst all those edges that have one vertex in $X$ and one vertex in $Y$ .",
+        "bbox": [
+            84,
+            366,
+            878,
+            413
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The edge e must definitely belong to:",
+        "bbox": [
+            85,
+            416,
+            359,
+            432
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. the minimum weighted spanning tree of $G$",
+        "bbox": [
+            87,
+            440,
+            400,
+            454
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. the weighted shortest path from $s$ to $t$",
+        "bbox": [
+            495,
+            440,
+            774,
+            454
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. each path from $s$ to $t$",
+        "bbox": [
+            89,
+            459,
+            260,
+            472
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. the weighted longest path from $s$ to $t$",
+        "bbox": [
+            495,
+            459,
+            771,
+            473
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 algorithms graph-algorithms normal",
+        "bbox": [
+            87,
+            482,
+            332,
+            492
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            498,
+            189,
+            513
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.17.4 Graph Algorithms: GATE CSE 2005 | Question: 82b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            522,
+            532,
+            536
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let $s$ and $t$ be two vertices in a undirected graph $G = (V, E)$ having distinct positive edge weights. Let $[X, Y]$ be a partition of $V$ such that $s \\in X$ and $t \\in Y$ . Consider the edge $e$ having the minimum weight amongst all those edges that have one vertex in $X$ and one vertex in $Y$ .",
+        "bbox": [
+            84,
+            546,
+            878,
+            592
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let the weight of an edge e denote the congestion on that edge. The congestion on a path is defined to be the maximum of the congestions on the edges of the path. We wish to find the path from s to t having minimum congestion. Which of the following paths is always such a path of minimum congestion?",
+        "bbox": [
+            84,
+            595,
+            929,
+            638
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. a path from s to t in the minimum weighted spanning treeB. a weighted shortest path from s to t",
+        "bbox": [
+            87,
+            647,
+            764,
+            662
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. an Euler walk from $s$ to $t$",
+        "bbox": [
+            89,
+            663,
+            284,
+            678
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. a Hamiltonian path from $s$ to $t$",
+        "bbox": [
+            495,
+            665,
+            724,
+            679
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 algorithms graph-algorithms normal",
+        "bbox": [
+            87,
+            688,
+            332,
+            698
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            704,
+            189,
+            719
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.17.5 Graph Algorithms: GATE CSE 2016 | Set 2 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            728,
+            574,
+            742
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In an adjacency list representation of an undirected simple graph $G = (V, E)$ , each edge $(u, v)$ has two adjacency list entries: $[v]$ in the adjacency list of $u$ , and $[u]$ in the adjacency list of $v$ . These are called twins",
+        "bbox": [
+            84,
+            752,
+            878,
+            783
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "of each other. A twin pointer is a pointer from an adjacency list entry to its twin. If $|E|=m$ and $|V|=n$ , and the memory size is not a constraint, what is the time complexity of the most efficient algorithm to set the twin pointer in each entry in each adjacency list?",
+        "bbox": [
+            84,
+            783,
+            929,
+            826
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n^{2})$",
+        "bbox": [
+            89,
+            834,
+            166,
+            850
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta (n + m)$",
+        "bbox": [
+            495,
+            834,
+            598,
+            850
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(m^{2})$",
+        "bbox": [
+            90,
+            850,
+            168,
+            866
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n^{4})$",
+        "bbox": [
+            495,
+            850,
+            569,
+            866
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 algorithms graph-algorithms normal",
+        "bbox": [
+            87,
+            870,
+            352,
+            880
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            885,
+            189,
+            901
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/712dd5fc045f7b6f6fd5dce1366425747548e3687a01fa654a5288152243c1d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            346,
+            932,
+            384
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/8c52bd618c802abb33fdf2c4981b961ea41b382c26635a8444d5dfdf495fa72e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            524,
+            932,
+            562
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/bcaa89e48ca1edc7128b47110921ec1d6bfbf6b41c98caf1e238d1bed3701460.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            731,
+            932,
+            768
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/bcaa89e48ca1edc7128b47110921ec1d6bfbf6b41c98caf1e238d1bed3701460.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            731,
+            932,
+            768
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.17.6 Graph Algorithms: GATE CSE 2017 | Set 1 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            576,
+            80
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/f02d11e6c5e011b6624174d5663d18a696a05d3d105761b9fa3ef0bdc8e0060e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $G = (V, E)$ be any connected, undirected, edge-weighted graph. The weights of the edges in $E$ are positive and distinct. Consider the following statements:",
+        "bbox": [
+            84,
+            89,
+            875,
+            119
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Minimum Spanning Tree of $G$ is always unique.",
+            "II. Shortest path between any two vertices of $G$ is always unique."
+        ],
+        "bbox": [
+            90,
+            129,
+            568,
+            159
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements is/are necessarily true?",
+        "bbox": [
+            85,
+            169,
+            489,
+            185
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            87,
+            199,
+            152,
+            214
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. II only",
+        "bbox": [
+            285,
+            199,
+            351,
+            214
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. both I and II",
+        "bbox": [
+            478,
+            199,
+            586,
+            213
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. neither I nor II",
+        "bbox": [
+            673,
+            199,
+            794,
+            212
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 algorithms graph-algorithms normal",
+        "bbox": [
+            87,
+            223,
+            352,
+            233
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            239,
+            188,
+            252
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.17.7 Graph Algorithms: GATE CSE 2021 | Set 2 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            263,
+            574,
+            277
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following directed graph:",
+        "bbox": [
+            85,
+            287,
+            366,
+            301
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/064397eaddac207692e81cfba67d863beaf97e8b256036e66ecb034d2bc787ca.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "This diagram represents a state transition or state transition network with multiple states and transitions, where arrows indicate the direction of movement between them.",
+        "sub_type": "flowchart",
+        "bbox": [
+            388,
+            306,
+            584,
+            439
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/33945438b89f6418f54c1bbb2a41f9e5e225710048cd3a9187b876f9c996ffd6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            264,
+            932,
+            302
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is/are correct about the graph?",
+        "bbox": [
+            85,
+            447,
+            478,
+            461
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The graph does not have a topological order",
+            "B. A depth-first traversal starting at vertex $S$ classifies three directed edges as back edges",
+            "C. The graph does not have a strongly connected component",
+            "D. For each pair of vertices u and v, there is a directed path from u to v"
+        ],
+        "bbox": [
+            85,
+            472,
+            749,
+            529
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 multiple-selects algorithms graph-algorithms two-marks",
+        "bbox": [
+            87,
+            555,
+            445,
+            565
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            571,
+            188,
+            586
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.17.8 Graph Algorithms: GATE CSE 2026 | Set 1 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            595,
+            574,
+            609
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/0e9e10b61c1626e1273ebb961bb1659b0d81a0f5a713a6914448a7ec1d97ca1e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            597,
+            932,
+            635
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $G(V, E)$ be an undirected, edge-weighted graph with integer weights. The weight of a path is the sum of the weights of the edges in that path. The length of a path is the number of edges in that path.",
+        "bbox": [
+            84,
+            619,
+            878,
+            649
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $s \\in V$ be a vertex in $G$ . For every $u \\in V$ and for every $k \\geq 0$ , let $d_k(u)$ denote the weight of a shortest path (in terms of weight) from $s$ to $u$ of length at most $k$ . If there is no path from $s$ to $u$ of length at most $k$ , then $d_k(u) = \\infty$ .",
+        "bbox": [
+            84,
+            661,
+            929,
+            707
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the statements:",
+        "bbox": [
+            85,
+            720,
+            273,
+            733
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "S1: For every $k \\geq 0$ and $u \\in V$ , $d_{k+1}(u) \\leq d_k(u)$ .",
+        "bbox": [
+            84,
+            747,
+            465,
+            764
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "S2: For every $(u, v) \\in E$ , if $(u, v)$ is part of a shortest path (in terms of weight) from $s$ to $v$ , then for every $k \\geq 0$ , $d_k(u) \\leq d_k(v)$ .",
+        "bbox": [
+            84,
+            777,
+            924,
+            809
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is correct?",
+        "bbox": [
+            84,
+            820,
+            418,
+            834
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Only S1 is true",
+            "C. Both S1 and S2 are true"
+        ],
+        "bbox": [
+            87,
+            845,
+            278,
+            872
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Only S2 is true",
+            "D. Neither S1 nor S2 is true"
+        ],
+        "bbox": [
+            495,
+            845,
+            689,
+            872
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 algorithms two-marks graph-algorithms",
+        "bbox": [
+            87,
+            878,
+            366,
+            887
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            894,
+            188,
+            908
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In the following table, the left column contains the names of standard graph algorithms and the right column contains the time complexities of the algorithms. Match each algorithm with its time complexity.",
+        "bbox": [
+            84,
+            87,
+            878,
+            118
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/8a2ecae15769ec434c5e109cdd9566dc061672b120a9e181da5f4b9bad0fb63c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1. Bellman-Ford algorithm</td><td>A:  $O(m \\log n)$ </td></tr><tr><td>2. Kruskal’s algorithm</td><td>B:  $O(n^{3})$ </td></tr><tr><td>3. Floyd-Warshall algorithm</td><td>C:  $O(nm)$ </td></tr><tr><td>4. Topological sorting</td><td>D:  $O(n + m)$ </td></tr></table>",
+        "bbox": [
+            297,
+            129,
+            719,
+            211
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $1 \\rightarrow \\mathrm{C}, 2 \\rightarrow \\mathrm{A}, 3 \\rightarrow \\mathrm{B}, 4 \\rightarrow \\mathrm{D}$",
+        "bbox": [
+            87,
+            220,
+            331,
+            235
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $1 \\rightarrow \\mathrm{B}, 2 \\rightarrow \\mathrm{D}, 3 \\rightarrow \\mathrm{C}, 4 \\rightarrow \\mathrm{A}$",
+        "bbox": [
+            495,
+            220,
+            737,
+            235
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $1 \\rightarrow \\mathrm{C}, 2 \\rightarrow \\mathrm{D}, 3 \\rightarrow \\mathrm{A}, 4 \\rightarrow \\mathrm{B}$",
+        "bbox": [
+            89,
+            235,
+            331,
+            249
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. $1 \\rightarrow \\mathrm{B}, 2 \\rightarrow \\mathrm{A}, 3 \\rightarrow \\mathrm{C}, 4 \\rightarrow \\mathrm{D}$",
+        "bbox": [
+            497,
+            235,
+            737,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 algorithms graph-algorithms match-the-following easy",
+        "bbox": [
+            87,
+            254,
+            413,
+            264
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            270,
+            181,
+            283
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.17.10 Graph Algorithms: GATE IT 2005 | Question: 84a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            294,
+            522,
+            308
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A sink in a directed graph is a vertex i such that there is an edge from every vertex $j \\neq i$ to i and there is no edge from i to any other vertex. A directed graph G with n vertices is represented by its adjacency matrix A,",
+        "bbox": [
+            84,
+            317,
+            878,
+            347
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where $A[i][j]=1$ if there is an edge directed from vertex i to j and 0 otherwise. The following algorithm determines whether there is a sink in the graph G.",
+        "bbox": [
+            84,
+            347,
+            927,
+            378
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\ni = 0;\ndo {\n    j = i + 1;\n    while ((j < n) && E1) j++;\n    if (j < n) E2;\n} while (j < n);\nflag = 1;\nfor (j = 0; j < n; j++)\n    if ((j! = i) && E3) flag = 0;\nif (flag) printf(\"Sink exists\");\nelse printf (\"Sink does not exist\");\n```",
+        "bbox": [
+            87,
+            387,
+            278,
+            505
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Choose the correct expressions for $E_{1}$ and $E_{2}$",
+        "bbox": [
+            85,
+            515,
+            428,
+            530
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $E_{1}:A[i][j]$ and $E_{2}:i = j;$",
+        "bbox": [
+            89,
+            539,
+            315,
+            555
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $E_{1}:$ !A[i][j] and $E_{2}:i = j + 1$",
+        "bbox": [
+            497,
+            539,
+            751,
+            555
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $E_{1}$ : $!\\bar{A}[i][j]$ and $E_{2}$ : i = j;",
+        "bbox": [
+            90,
+            555,
+            314,
+            570
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. $E_{1}:A[i][j]$ and $E_{2}:i = j + 1;$",
+        "bbox": [
+            497,
+            555,
+            741,
+            570
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 algorithms graph-algorithms normal",
+        "bbox": [
+            89,
+            574,
+            324,
+            583
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            589,
+            181,
+            604
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.17.11 Graph Algorithms: GATE IT 2005 | Question: 84b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            612,
+            522,
+            628
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A sink in a directed graph is a vertex $i$ such that there is an edge from every vertex $j \\neq i$ to $i$ and there is no edge from $i$ to any other vertex. A directed graph $G$ with $n$ vertices is represented by its adjacency matrix $A$ ,",
+        "bbox": [
+            84,
+            637,
+            878,
+            667
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where $A[i][j]=1$ if there is an edge directed from vertex i to j and 0 otherwise. The following algorithm determines whether there is a sink in the graph G.",
+        "bbox": [
+            84,
+            667,
+            927,
+            698
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ni = 0;\ndo {\n    j = i + 1;\n    while ((j < n) && E1) j++;\n    if (j < n) E2;\n} while (j < n);\nflag = 1;\nfor (j = 0; j < n; j++)\n    if ((j! = i) && E3) flag = 0;\nif (flag) printf(\"Sink exists\") ;\nelse printf (\"Sink does not exist\");\n```",
+        "bbox": [
+            87,
+            707,
+            278,
+            826
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Choose the correct expression for $E_{3}$",
+        "bbox": [
+            85,
+            834,
+            361,
+            851
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $(A[i][j] \\&\\& !A[j][i])$ C. $(!A[i][j] || A[j][i])$",
+        "bbox": [
+            89,
+            858,
+            263,
+            890
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. (!A[i][j] && A[j][i])\nD. (A[i][j] || !A[j][i])",
+        "bbox": [
+            497,
+            858,
+            668,
+            890
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 algorithms graph-algorithms normal",
+        "bbox": [
+            89,
+            893,
+            324,
+            903
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            910,
+            181,
+            923
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/548abd30995e8d0a16b8c363504627ecdfbe0ce787c34b4d3d30efacf366465a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            296,
+            931,
+            333
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/d39ad74fa7d330aef59d70b59ae868371e7d8a3ef7f9bd078007e27db1e8fe28.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            616,
+            931,
+            653
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/d39ad74fa7d330aef59d70b59ae868371e7d8a3ef7f9bd078007e27db1e8fe28.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            616,
+            931,
+            653
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. (!A[i][j] && A[j][i])\nD. (A[i][j] || !A[j][i])",
+        "bbox": [
+            497,
+            858,
+            668,
+            890
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "1.17.9 Graph Algorithms: GATE IT 2005 | Question: 15",
+        "bbox": [
+            78,
+            65,
+            502,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual content that is not present in the image. Therefore, no text should be output for OCR.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.18.1 Graph Search: GATE CSE 1989 | Question: 4-vii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            119,
+            505,
+            134
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/78394f5f90fccdd7b05360edfe671ed4836c1057a589d21abaa5ec046d19b870.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            123,
+            932,
+            161
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/f300f005299aa3b1f403f9f50414546f578a83f82373a0dd5e08288f7b40dda5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  1[\"1\"] -->|T| 2[\"2\"]\n  n2[\"2\"] -->|T| 5[\"5\"]\n  n2 -->|T| 4[\"4\"]\n  n5[\"5\"] -->|T| 3[\"3\"]\n  n5 -->|T| n4[\"4\"]\n  n4 -->|T| 6[\"6\"]\n  n4 -->|T| 7[\"7\"]\n  n3[\"3\"] -->|T| 8[\"8\"]\n  n7[\"7\"] -->|T| n3\n  n8[\"8\"] -->|T| n3\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            366,
+            147,
+            608,
+            336
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "In the graph shown above, the depth-first spanning tree edges are marked with a 'T'. Identify the forward, backward, and cross edges.",
+        "bbox": [
+            84,
+            352,
+            927,
+            381
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive algorithms graph-algorithms depth-first-search graph-search",
+        "bbox": [
+            87,
+            399,
+            487,
+            409
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            415,
+            188,
+            429
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.18.2 Graph Search: GATE CSE 2000 | Question: 1.13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            439,
+            505,
+            453
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The most appropriate matching for the following pairs",
+        "bbox": [
+            85,
+            463,
+            478,
+            478
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/3d9327509cdc92cf7df2d1ecf469b6393cbf993b01d93919e43c38af5489ed59.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>X: depth first search</td><td>1: heap</td></tr><tr><td>Y: breadth first search</td><td>2: queue</td></tr><tr><td>Z: sorting</td><td>3: stack</td></tr></table>",
+        "bbox": [
+            361,
+            490,
+            657,
+            551
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/fc5f0aa417cc4b7024573a9b9ad6732c80b4305cc95c3a28d36137a56171e8a3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            442,
+            932,
+            480
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "is:",
+        "bbox": [
+            85,
+            560,
+            107,
+            572
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. X - 1, Y - 2, Z - 3",
+            "C. X - 3, Y - 2, Z - 1"
+        ],
+        "bbox": [
+            89,
+            583,
+            250,
+            612
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. X - 3, Y - 1, Z - 2",
+            "D. X - 2, Y - 3, Z - 1"
+        ],
+        "bbox": [
+            495,
+            583,
+            655,
+            612
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 algorithms easy graph-algorithms graph-search match-the-following",
+        "bbox": [
+            87,
+            617,
+            487,
+            625
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            631,
+            188,
+            646
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.18.3 Graph Search: GATE CSE 2000 | Question: 2.19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            656,
+            504,
+            669
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/28d3b6d33a6036df1935374d24678d517d744aff8b8fec97c1852d577c127521.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            659,
+            932,
+            695
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be an undirected graph. Consider a depth-first traversal of $G$ , and let $T$ be the resulting depth-first search tree. Let $u$ be a vertex in $G$ and let $v$ be the first new (unvisited) vertex visited after visiting $u$ in the traversal. Which of the following statement is always true?",
+        "bbox": [
+            84,
+            680,
+            878,
+            725
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\{u, v\\}$ must be an edge in $G$ , and $u$ is a descendant of $v$ in $T$",
+            "B. $\\{u, v\\}$ must be an edge in $G$ , and $v$ is a descendant of $u$ in $T$",
+            "C. If $\\{u, v\\}$ is not an edge in $G$ then $u$ is a leaf in $T$",
+            "D. If $\\{u, v\\}$ is not an edge in $G$ then $u$ and $v$ must have the same parent in $T$"
+        ],
+        "bbox": [
+            87,
+            735,
+            658,
+            796
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 algorithms graph-algorithms normal graph-search",
+        "bbox": [
+            87,
+            821,
+            400,
+            832
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            838,
+            188,
+            852
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.18.4 Graph Search: GATE CSE 2001 | Question: 2.14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            862,
+            504,
+            876
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/a5cddf2cf1320d7680f415628a0c73cf89b3f39908285b372094af207dfbd728.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            864,
+            932,
+            902
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider an undirected, unweighted graph G. Let a breadth-first traversal of G be done starting from a node r. Let $d(r,u)$ and $d(r,v)$ be the lengths of the shortest paths from r to u and v respectively in G. If u is visited before v during the breadth-first traversal, which of the following statements is correct?",
+        "bbox": [
+            84,
+            885,
+            878,
+            929
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "1.18",
+        "bbox": [
+            68,
+            67,
+            105,
+            80
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "Graph Search (23)",
+        "bbox": [
+            445,
+            67,
+            593,
+            81
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (7Q)",
+        "bbox": [
+            70,
+            92,
+            361,
+            106
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $d(r,u) <   d(r,v)$",
+            "C. $d(r,u)\\leq d(r,v)$"
+        ],
+        "bbox": [
+            89,
+            64,
+            233,
+            93
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 algorithms graph-algorithms normal graph-search",
+        "bbox": [
+            89,
+            98,
+            400,
+            108
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $d(r,u) > d(r,v)$",
+            "D. None of the above"
+        ],
+        "bbox": [
+            495,
+            65,
+            645,
+            91
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            114,
+            186,
+            128
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.18.5 Graph Search: GATE CSE 2003 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            138,
+            489,
+            152
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following graph:",
+        "bbox": [
+            85,
+            162,
+            304,
+            176
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/3b83306d52516294e00872fbb7fb8f61afe7cb5d0b21ea1648b4666b6e969c3d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] --> e[\"e\"]\n  e[\"e\"] --> b[\"b\"]\n  b[\"b\"] --> h[\"h\"]\n  h[\"h\"] --> f[\"f\"]\n  f[\"f\"] --> g[\"g\"]\n  g[\"g\"] --> h\n  h --> f\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            389,
+            186,
+            576,
+            294
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/26d42dc1abd43056cfd97a66f0f3c9602f4f1993e33d4415543bfacdc7eb2dcc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            141,
+            932,
+            179
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Among the following sequences:",
+        "bbox": [
+            85,
+            305,
+            327,
+            320
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. abeghf",
+            "II. abfehg",
+            "III. abfhge",
+            "IV. afghbe"
+        ],
+        "bbox": [
+            85,
+            330,
+            166,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which are the depth-first traversals of the above graph?",
+        "bbox": [
+            85,
+            397,
+            495,
+            412
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. I, II and IV only",
+        "bbox": [
+            89,
+            426,
+            216,
+            440
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. I and IV only",
+        "bbox": [
+            285,
+            426,
+            396,
+            440
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. II, III and IV only",
+        "bbox": [
+            480,
+            426,
+            616,
+            441
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. I, III and IV only",
+        "bbox": [
+            673,
+            426,
+            806,
+            441
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 algorithms graph-algorithms normal graph-search",
+        "bbox": [
+            87,
+            450,
+            400,
+            460
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            466,
+            186,
+            480
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.18.6 Graph Search: GATE CSE 2006 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            490,
+            490,
+            504
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $T$ be a depth first search tree in an undirected graph $G$ . Vertices $u$ and $\\nu$ are leaves of this tree $T$ . The degrees of both $u$ and $\\nu$ in $G$ are at least 2. which one of the following statements is true?",
+        "bbox": [
+            84,
+            513,
+            878,
+            543
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/619e4148b99b4cf38c375a74c0bf3d4a7ad9b3dfb683aa4f6206b97acfc3a432.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            492,
+            932,
+            530
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There must exist a vertex w adjacent to both u and $\\nu$ in G",
+            "B. There must exist a vertex w whose removal disconnects u and $\\nu$ in G",
+            "C. There must exist a cycle in G containing u and $\\nu$",
+            "D. There must exist a cycle in G containing u and all its neighbours in G"
+        ],
+        "bbox": [
+            87,
+            555,
+            618,
+            615
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 algorithms graph-algorithms normal graph-search",
+        "bbox": [
+            87,
+            638,
+            400,
+            650
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            656,
+            186,
+            669
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.18.7 Graph Search: GATE CSE 2008 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            679,
+            490,
+            694
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of visiting the nodes of the following graph is:",
+        "bbox": [
+            84,
+            703,
+            878,
+            732
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/6400a56533c8839674fa90bac8b3038014605155c854c2a0e5bfea06090441f6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            682,
+            932,
+            720
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/be7fa5bfdcd5dfbb477558796a6207b80a5d28a2af648c2b230bb3796d3a590b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  M[\"M\"] --> R[\"R\"]\n  M[\"M\"] --> Q[\"Q\"]\n  N[\"N\"] --> Q[\"Q\"]\n  N[\"N\"] --> O[\"O\"]\n  P[\"P\"] --> Q[\"Q\"]\n  P[\"P\"] --> O[\"O\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            738,
+            324,
+            814
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. MNOPQR",
+        "bbox": [
+            89,
+            832,
+            200,
+            847
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. NQMPOR",
+        "bbox": [
+            285,
+            832,
+            394,
+            847
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. QMNPRO",
+        "bbox": [
+            480,
+            832,
+            589,
+            847
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. QMNPOR",
+        "bbox": [
+            673,
+            832,
+            783,
+            847
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 normal algorithms graph-algorithms graph-search",
+        "bbox": [
+            87,
+            857,
+            400,
+            866
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            872,
+            186,
+            888
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.18.8 Graph Search: GATE CSE 2014 | Set 1 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            542,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/dcc0c2b31e2aa0639dd4541576dda58b81b9366f4dc587a0b0619b296b26e94b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let G be a graph with n vertices and m edges. What is the tightest upper bound on the running time of Depth First Search on G, when G is represented as an adjacency matrix?",
+        "bbox": [
+            84,
+            89,
+            878,
+            119
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n)$",
+        "bbox": [
+            89,
+            131,
+            154,
+            148
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n+m)$",
+        "bbox": [
+            285,
+            131,
+            386,
+            148
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n^{2})$",
+        "bbox": [
+            480,
+            131,
+            551,
+            148
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(m^{2})$",
+        "bbox": [
+            673,
+            131,
+            751,
+            148
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 algorithms graph-algorithms normal graph-search",
+        "bbox": [
+            87,
+            157,
+            420,
+            167
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            173,
+            188,
+            187
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.18.9 Graph Search: GATE CSE 2014 | Set 2 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            197,
+            544,
+            211
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the tree arcs of a BFS traversal from a source node W in an unweighted, connected, undirected graph. The tree T formed by the tree arcs is a data structure for computing",
+        "bbox": [
+            84,
+            220,
+            878,
+            251
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/6d0e48414e19ddf519988f301eaafda2cfd01d0a98891cce02300c83559dd58b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            200,
+            931,
+            237
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. the shortest path between every pair of vertices.",
+            "B. the shortest path from W to every vertex in the graph.",
+            "C. the shortest paths from $W$ to only those nodes that are leaves of $T$ .",
+            "D. the longest path in the graph."
+        ],
+        "bbox": [
+            87,
+            261,
+            605,
+            318
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 algorithms graph-algorithms normal graph-search",
+        "bbox": [
+            87,
+            343,
+            420,
+            353
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            359,
+            188,
+            372
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.18.10 Graph Search: GATE CSE 2014 | Set 3 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            383,
+            552,
+            397
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Suppose depth first search is executed on the graph below starting at some unknown vertex. Assume that a recursive call to visit a vertex is made only after first checking that the vertex has not been visited earlier. Then the maximum possible recursion depth (including the initial call) is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            407,
+            875,
+            448
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/1fb518b83c552ed654f621adff71b556b92bd1ccb9d62413c8c841c14f22f238.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            385,
+            931,
+            423
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/70fccc6a7b15375f7ad2f42a40b79c71f772c6152021520dee6866b2c3a3aca7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Pure geometric grid pattern with circles and lines, no text or symbols present",
+        "sub_type": "natural_image",
+        "bbox": [
+            347,
+            458,
+            665,
+            532
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 algorithms graph-algorithms numerical-answers normal graph-search",
+        "bbox": [
+            87,
+            557,
+            510,
+            568
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            574,
+            188,
+            587
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.18.11 Graph Search: GATE CSE 2015 | Set 1 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            597,
+            552,
+            611
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $G = (V, E)$ be a simple undirected graph, and $s$ be a particular vertex in it called the source. For $x \\in V$ , let $d(x)$ denote the shortest distance in $G$ from $s$ to $x$ . A breadth first search (BFS) is performed starting at $s$ . Let $T$ be the resultant BFS tree. If $(u, v)$ is an edge of $G$ that is not in $T$ , then which one of the following CANNOT be the value of $d(u) - d(v)$ ?",
+        "bbox": [
+            84,
+            621,
+            929,
+            684
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. -1",
+        "bbox": [
+            89,
+            695,
+            139,
+            709
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 0",
+        "bbox": [
+            285,
+            695,
+            319,
+            709
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 1",
+        "bbox": [
+            480,
+            695,
+            515,
+            709
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 2",
+        "bbox": [
+            673,
+            695,
+            710,
+            709
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 algorithms graph-algorithms normal graph-search",
+        "bbox": [
+            87,
+            720,
+            420,
+            730
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            737,
+            188,
+            751
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.18.12 Graph Search: GATE CSE 2016 | Set 2 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            760,
+            552,
+            774
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Breadth First Search (BFS) is started on a binary tree beginning from the root vertex. There is a vertex $t$ at a distance four from the root. If $t$ is the $n^{\\text{th}}$ vertex in this BFS traversal, then the maximum possible value of $n$ is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            783,
+            878,
+            828
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a4999ed233e8c94619067282b7936e94b43d2bb1b5d96d45c46514b35ef0e90b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            763,
+            931,
+            800
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 algorithms graph-algorithms normal numerical-answers graph-search",
+        "bbox": [
+            87,
+            843,
+            510,
+            853
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            859,
+            188,
+            872
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.18.13 Graph Search: GATE CSE 2017 | Set 2 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            883,
+            552,
+            897
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The Breadth First Search (BFS) algorithm has been implemented using the queue data structure. Which one",
+        "bbox": [
+            84,
+            906,
+            875,
+            921
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/76132389a5006656a187dffb7c139cd72e544b71af77521ecc5b3a8607c86ae7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            885,
+            931,
+            923
+        ],
+        "page_idx": 11
+    }
+]

@@ -1,0 +1,4541 @@
+[
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            106,
+            188,
+            119
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.25.7 Resource Allocation: GATE CSE 1997 | Question: 6.7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            130,
+            544,
+            143
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/3b73dc53f7cf7e14214f837d913bc739145600c03d6e2caa6e6fc92a30c60045.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            133,
+            931,
+            169
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An operating system contains 3 user processes each requiring 2 units of resource $R$ . The minimum number of units of $R$ such that no deadlocks will ever arise is",
+        "bbox": [
+            84,
+            154,
+            878,
+            182
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            197,
+            126,
+            210
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 5",
+        "bbox": [
+            285,
+            197,
+            321,
+            210
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 4",
+        "bbox": [
+            480,
+            197,
+            515,
+            210
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            197,
+            710,
+            210
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1997 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            220,
+            352,
+            231
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            237,
+            188,
+            251
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.25.8 Resource Allocation: GATE CSE 1997 | Question: 75",
+        "text_level": 1,
+        "bbox": [
+            78,
+            261,
+            542,
+            275
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/ad316dbee75b5591952a17a2f27ebec58a7f1d6570638b79cf829b52e725143a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            264,
+            931,
+            301
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An operating system handles requests to resources as follows.",
+        "bbox": [
+            84,
+            285,
+            544,
+            299
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A process (which asks for some resources, uses them for some time and then exits the system) is assigned a unique timestamp are when it starts. The timestamps are monotonically increasing with time. Let us denote the timestamp of a process $P$ by $TS(P)$ .",
+        "bbox": [
+            84,
+            302,
+            927,
+            347
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "When a process P requests for a resource the OS does the following:",
+        "bbox": [
+            84,
+            350,
+            600,
+            366
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. If no other process is currently holding the resource, the $OS$ awards the resource to $P$ .",
+            "ii. If some process $Q$ with $TS(Q) < TS(P)$ is holding the resource, the $OS$ makes $P$ wait for the resources.",
+            "iii. If some process $Q$ with $TS(Q) > TS(P)$ is holding the resource, the $OS$ restarts $Q$ and awards the resources to $P$ . (Restarting means taking back the resources held by a process, killing it and starting it again with the same timestamp)"
+        ],
+        "bbox": [
+            90,
+            377,
+            929,
+            460
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "When a process releases a resource, the process with the smallest timestamp (if any) amongst those waiting for the resource is awarded the resource.",
+        "bbox": [
+            84,
+            470,
+            927,
+            498
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Can a deadlock over arise? If yes, show how. If not prove it.",
+            "B. Can a process P ever starve? If yes, show how. If not prove it."
+        ],
+        "bbox": [
+            87,
+            510,
+            566,
+            543
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1997 operating-system resource-allocation normal descriptive",
+        "bbox": [
+            87,
+            568,
+            410,
+            578
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            585,
+            188,
+            598
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.25.9 Resource Allocation: GATE CSE 1998 | Question: 1.32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            608,
+            556,
+            622
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/677ce3414ad94a3a03e6f3c9df46861c03300d32104dc43d722bc88e05a5d34b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            611,
+            931,
+            648
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A computer has six tape drives, with n processes competing for them. Each process may need two drives. What is the maximum value of n for the system to be deadlock free?",
+        "bbox": [
+            84,
+            631,
+            875,
+            660
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 6",
+        "bbox": [
+            89,
+            674,
+            126,
+            687
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 5",
+        "bbox": [
+            285,
+            675,
+            319,
+            687
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 4",
+        "bbox": [
+            480,
+            674,
+            515,
+            687
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 3",
+        "bbox": [
+            673,
+            674,
+            710,
+            687
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1998 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            699,
+            352,
+            707
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            714,
+            188,
+            728
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.25.10 Resource Allocation: GATE CSE 2000 | Question: 2.23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            738,
+            564,
+            752
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/6144f4424eeb72f8648b0fe47736236f357f55ae378306c2452b63c66d4a0fe1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            741,
+            931,
+            777
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is not a valid deadlock prevention scheme?",
+        "bbox": [
+            85,
+            762,
+            568,
+            776
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Release all resources before requesting a new resource.",
+            "B. Number the resources uniquely and never request a lower numbered resource than the last one requested.",
+            "C. Never request a resource after releasing any resource.",
+            "D. Request and all required resources be allocated before execution."
+        ],
+        "bbox": [
+            85,
+            788,
+            890,
+            843
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            869,
+            366,
+            878
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            885,
+            188,
+            899
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "gate1996 operating-system resource-allocation normal descriptive",
+        "bbox": [
+            87,
+            91,
+            410,
+            100
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Two concurrent processes $P1$ and $P2$ want to use resources $R1$ and $R2$ in a mutually exclusive manner. Initially, $R1$ and $R2$ are free. The programs executed by the two processes are given below.",
+        "bbox": [
+            84,
+            89,
+            875,
+            119
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/eeebe431c1c025b502ccec1274661b6eff56eefd660a4bbdd257503af99581c8.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">Program for P1:</td><td colspan=\"2\">Program for P2:</td></tr><tr><td>S1:</td><td>While (R1 is busy) do no-op;</td><td>Q1:</td><td>While (R1 is busy) do no-op;</td></tr><tr><td>S2:</td><td>Set R1 ← busy;</td><td>Q2:</td><td>Set R1 ← busy;</td></tr><tr><td>S3:</td><td>While (R2 is busy) do no-op;</td><td>Q3:</td><td>While (R2 is busy) do no-op;</td></tr><tr><td>S4:</td><td>Set R2 ← busy;</td><td>Q4:</td><td>Set R2 ← busy;</td></tr><tr><td>S5:</td><td>Use R1 and R2;</td><td>Q5:</td><td>Use R1 and R2;</td></tr><tr><td>S6:</td><td>Set R1 ← free;</td><td>Q6:</td><td>Set R2 ← free;</td></tr><tr><td>S7:</td><td>Set R2 ← free;</td><td>Q7:</td><td>Set R1 ← free;</td></tr></table>",
+        "bbox": [
+            200,
+            130,
+            816,
+            289
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Is mutual exclusion guaranteed for $R1$ and $R2$ ? If not show a possible interleaving of the statements of $P1$ and $P2$ such mutual exclusion is violated (i.e., both $P1$ and $P2$ use $R1$ and $R2$ at the same time).",
+            "B. Can deadlock occur in the above program? If yes, show a possible interleaving of the statements of $P1$ and $P2$ leading to deadlock.",
+            "C. Exchange the statements Q1 and Q3 and statements Q2 and Q4. Is mutual exclusion guaranteed now? Can deadlock occur?"
+        ],
+        "bbox": [
+            85,
+            298,
+            929,
+            384
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 operating-system resource-allocation normal descriptive",
+        "bbox": [
+            87,
+            410,
+            426,
+            420
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            426,
+            186,
+            440
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.25.12 Resource Allocation: GATE CSE 2005 | Question: 71",
+        "text_level": 1,
+        "bbox": [
+            78,
+            450,
+            549,
+            463
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/a8fed3c9d731b95cd0de829460ff9b69052afc4e6123bab3f2c377365b832de7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            452,
+            931,
+            490
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Suppose n processes, $P_{1}, \\ldots, P_{n}$ share m identical resource units, which can be reserved and released one at a time. The maximum resource requirement of process $P_{i}$ is $s_{i}$ , where $s_{i} > 0$ . Which one of the following is a sufficient condition for ensuring that deadlock does not occur?",
+        "bbox": [
+            84,
+            473,
+            878,
+            517
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall i, s_i, < m$",
+            "B. $\\forall i, s_i < n$",
+            "C. $\\sum_{i=1}^{n} s_i < (m+n)$",
+            "D. $\\sum_{i=1}^{n} s_i < (m \\times n)$"
+        ],
+        "bbox": [
+            87,
+            527,
+            253,
+            649
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            674,
+            368,
+            682
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            690,
+            186,
+            704
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.25.13 Resource Allocation: GATE CSE 2006 | Question: 66",
+        "text_level": 1,
+        "bbox": [
+            78,
+            714,
+            552,
+            726
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/f5476443da7def6a1b4648abecef86f015ef8e86f097aad6e589d9f837f49c88.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            716,
+            931,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following snapshot of a system running $n$ processes. Process $i$ is holding $x_{i}$ instances of a resource $R$ , $1 \\leq i \\leq n$ . Currently, all instances of $R$ are occupied. Further, for all $i$ , process $i$ has placed a request for an additional $y_{i}$ instances while holding the $x_{i}$ instances it already has. There are exactly two processes $p$ and $q$ and such that $y_{p} = y_{q} = 0$ . Which one of the following can serve as a necessary condition to guarantee that the system is not approaching a deadlock?",
+        "bbox": [
+            82,
+            737,
+            929,
+            809
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\min (x_p,x_q) <   \\max_{k\\neq p,q}y_k$",
+            "C. $\\max (x_p,x_q) > 1$"
+        ],
+        "bbox": [
+            87,
+            817,
+            305,
+            849
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $x_{p} + x_{q}\\geq \\min_{k\\neq p,q}y_{k}$",
+            "D. $\\min(x_{p},x_{q})>1$"
+        ],
+        "bbox": [
+            495,
+            817,
+            678,
+            849
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            853,
+            368,
+            862
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            868,
+            186,
+            882
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "5.25.11 Resource Allocation: GATE CSE 2001 | Question: 19",
+        "bbox": [
+            78,
+            65,
+            552,
+            79
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A single processor system has three resource types X, Y and Z, which are shared by three processes.",
+        "bbox": [
+            82,
+            89,
+            875,
+            104
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "There are 5 units of each resource type. Consider the following scenario, where the column alloc denotes the number of units of each resource type allocated to each process, and the column request denotes the number of units of each resource type requested by a process in order to complete execution. Which of these processes will finish LAST?",
+        "bbox": [
+            84,
+            105,
+            927,
+            159
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/cf283e84e9d5eb4f14de52119af675e85808cbd3f28baffad29823047422cd00.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td colspan=\"3\">alloc</td><td colspan=\"3\">request</td></tr><tr><td></td><td>X</td><td>Y</td><td>Z</td><td>X</td><td>Y</td><td>Z</td></tr><tr><td>P0</td><td>1</td><td>2</td><td>1</td><td>1</td><td>0</td><td>3</td></tr><tr><td>P1</td><td>2</td><td>0</td><td>1</td><td>0</td><td>1</td><td>2</td></tr><tr><td>P2</td><td>2</td><td>2</td><td>1</td><td>1</td><td>2</td><td>0</td></tr></table>",
+        "bbox": [
+            384,
+            171,
+            631,
+            271
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. P0",
+            "C. P2"
+        ],
+        "bbox": [
+            89,
+            279,
+            139,
+            306
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. P1",
+            "D. None of the above, since the system is in a deadlock"
+        ],
+        "bbox": [
+            495,
+            279,
+            757,
+            319
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            325,
+            368,
+            334
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            340,
+            181,
+            355
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.25.15 Resource Allocation: GATE CSE 2008 | Question: 65",
+        "text_level": 1,
+        "bbox": [
+            78,
+            365,
+            552,
+            378
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is NOT true of deadlock prevention and deadlock avoidance schemes?",
+        "bbox": [
+            84,
+            388,
+            769,
+            403
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. In deadlock prevention, the request for resources is always granted if the resulting state is safe",
+            "B. In deadlock avoidance, the request for resources is always granted if the resulting state is safe",
+            "C. Deadlock avoidance is less restrictive than deadlock prevention",
+            "D. Deadlock avoidance requires knowledge of resource requirements apriori.."
+        ],
+        "bbox": [
+            85,
+            414,
+            803,
+            486
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 operating-system easy resource-allocation",
+        "bbox": [
+            87,
+            511,
+            357,
+            521
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            527,
+            181,
+            541
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.25.16 Resource Allocation: GATE CSE 2009 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            551,
+            552,
+            565
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/540d16b5008b45b38c0b7c55698a2f4a8a4ad0faa5ad634b729dc95d5f6fd349.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            368,
+            931,
+            404
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a system with 4 types of resources R1 (3 units), R2 (2 units), R3 (3 units), R4 (2 units). A non-preemptive resource allocation policy is used. At any given instance, a request is not entertained if it cannot be completely satisfied. Three processes P1, P2, P3 request the resources as follows if executed independently.",
+        "bbox": [
+            84,
+            574,
+            917,
+            619
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/ea0b58387b878dbb493af346bae1ed2fd2d66ae20ec8b398e373c127332a16be.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process P1:</td><td>Process P2:</td><td>Process P3:</td></tr><tr><td> $t = 0$ :requests 2 units of  $R2$  $t = 1$ :requests 1 unit of  $R3$  $t = 3$ :requests 2 units of  $R1$  $t = 5$ :releases 1 unit of  $R2$  and 1 unit of  $R1$  $t = 7$ :releases 1 unit of  $R3$  $t = 8$ :requests 2 units of  $R4$  $t = 10$ : Finishes</td><td> $t = 0$ :requests 2 units of  $R3$  $t = 2$ :requests 1 unit of  $R4$  $t = 4$ :requests 1 unit of  $R1$  $t = 6$ :releases 1 unit of  $R3$  $t = 8$ : Finishes</td><td> $t = 0$ :requests 1 unit of  $R4$  $t = 2$ :requests 2 units of  $R1$  $t = 5$ :releases 2 units of  $R1$  $t = 7$ :requests 1 unit of  $R2$  $t = 8$ :requests 1 unit of  $R3$  $t = 9$ : Finishes</td></tr></table>",
+        "bbox": [
+            127,
+            630,
+            889,
+            806
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is TRUE if all three processes run concurrently starting at time t = 0?",
+        "bbox": [
+            84,
+            828,
+            878,
+            845
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. All processes will finish without any deadlock",
+        "bbox": [
+            87,
+            853,
+            416,
+            868
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. Only P1 and P2 will be in deadlock",
+        "bbox": [
+            495,
+            853,
+            764,
+            868
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. Only $P1$ and $P3$ will be in deadlock",
+        "bbox": [
+            89,
+            871,
+            359,
+            885
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. All three processes will be in deadlock",
+        "bbox": [
+            495,
+            871,
+            778,
+            885
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            895,
+            368,
+            904
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            910,
+            181,
+            925
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "5.25.14 Resource Allocation: GATE CSE 2007 | Question: 57",
+        "bbox": [
+            78,
+            65,
+            552,
+            79
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual content that is not present in the image. However, there is no textual content to extract or convert according to the given instructions.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A system has $n$ resources $R_0, \\ldots, R_{n-1}$ , and $k$ processes $P_0, \\ldots, P_{k-1}$ . The implementation of the resource request logic of each process $P_i$ is as follows:",
+        "bbox": [
+            84,
+            89,
+            875,
+            119
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "algorithm",
+        "code_caption": [],
+        "code_body": "<div class=\"mineru-algorithm\" style=\"white-space: pre-wrap; font-family:monospace;\">\nif(i%2 == 0){\n    if(i &lt; n) request R_i;\n    if(i + 2 &lt; n) request R_{i+2}; }\nelse{\n    if(i &lt; n) request R_{n-i};\n    if(i + 2 &lt; n) request R_{n-i-2}; }\n</div>",
+        "bbox": [
+            85,
+            123,
+            354,
+            217
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In which of the following situations is a deadlock possible?",
+        "bbox": [
+            85,
+            219,
+            514,
+            233
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. n = 40, k = 26",
+        "bbox": [
+            87,
+            245,
+            226,
+            262
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $n = 21, k = 12$",
+        "bbox": [
+            285,
+            247,
+            423,
+            262
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $n = 20, k = 10$",
+        "bbox": [
+            478,
+            247,
+            618,
+            262
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $n = 41, k = 19$",
+        "bbox": [
+            673,
+            247,
+            811,
+            262
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            271,
+            368,
+            281
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            288,
+            181,
+            302
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.25.18 Resource Allocation: GATE CSE 2013 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            77,
+            311,
+            552,
+            325
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Three concurrent processes $X, Y$ , and $Z$ execute three different code segments that access and update certain shared variables. Process $X$ executes the $P$ operation (i.e., wait) on semaphores $a, b$ , and $c$ ;",
+        "bbox": [
+            84,
+            334,
+            878,
+            365
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "process Y executes the P operation on semaphores b, c, and d; process Z executes the P operation on semaphores c, d, and a before entering the respective code segments. After completing the execution of its code segment, each process invokes the V operation (i.e., signal) on its three semaphores. All semaphores are binary semaphores initialized to one. Which one of the following represents a deadlock-free order of invoking the P operations by the processes?",
+        "bbox": [
+            84,
+            365,
+            929,
+            437
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $X: P(a)P(b)P(c)Y: P(b)P(c)P(d)Z: P(c)P(d)P(a)$",
+            "B. $X:P(b)P(a)P(c)Y:P(b)P(c)P(d)Z:P(a)P(c)P(d)$",
+            "C. $X: P(b)P(a)P(c)Y: P(c)P(b)P(d)Z: P(a)P(c)P(d)$",
+            "D. $X: P(a)P(b)P(c)Y: P(c)P(b)P(d)Z: P(c)P(d)P(a)$"
+        ],
+        "bbox": [
+            85,
+            447,
+            556,
+            511
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            534,
+            368,
+            543
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            551,
+            188,
+            565
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.25.19 Resource Allocation: GATE CSE 2014 | Set 1 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            77,
+            574,
+            601,
+            587
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "An operating system uses the Banker's algorithm for deadlock avoidance when managing the allocation of three resource types $X, Y$ , and $Z$ to three processes $P0, P1$ , and $P2$ . The table given below presents the",
+        "bbox": [
+            82,
+            600,
+            878,
+            630
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "current system state. Here, the Allocation matrix shows the current number of resources of each type allocated to each process and the Max matrix shows the maximum number of resources of each type required by each process during its execution.",
+        "bbox": [
+            82,
+            631,
+            929,
+            676
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/8ab42bb38de28ca0b99dba769a23f59c09c2d882ccbdb8f86c1b23d67ff1d000.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"4\">Allocation</td><td colspan=\"3\">Max</td></tr><tr><td></td><td>X</td><td>Y</td><td>Z</td><td>X</td><td>Y</td><td>Z</td></tr><tr><td>P0</td><td>0</td><td>0</td><td>1</td><td>8</td><td>4</td><td>3</td></tr><tr><td>P1</td><td>3</td><td>2</td><td>0</td><td>6</td><td>2</td><td>0</td></tr><tr><td>P2</td><td>2</td><td>1</td><td>1</td><td>3</td><td>3</td><td>3</td></tr></table>",
+        "bbox": [
+            349,
+            687,
+            665,
+            782
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "There are 3 units of type X, 2 units of type Y and 2 units of type Z still available. The system is currently in a safe state. Consider the following independent requests for additional resources in the current state:",
+        "bbox": [
+            84,
+            804,
+            927,
+            834
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "REQ1: P0 requests 0 units of X, 0 units of Y and 2 units of Z",
+        "bbox": [
+            85,
+            836,
+            549,
+            853
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "REQ2: P1 requests 2 units of X, 0 units of Y and 0 units of Z",
+        "bbox": [
+            85,
+            856,
+            547,
+            872
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE?",
+        "bbox": [
+            85,
+            875,
+            356,
+            890
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Only REQ1 can be permitted.",
+            "C. Both REQ1 and REQ2 can be"
+        ],
+        "bbox": [
+            87,
+            899,
+            352,
+            926
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Only REQ2 can be permitted.",
+            "D. Neither REQ1 nor REQ2 can be"
+        ],
+        "bbox": [
+            495,
+            899,
+            759,
+            926
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/e7f091ac77925ee620fd3c92a14663db400ce78bad31f315ac031585795f0af7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            314,
+            931,
+            351
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/91b98fb3de7fac0d5b771b273744cc13ccdb18cfccfeef77ccbe2c33b5e2376b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            577,
+            931,
+            614
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "5.25.17 Resource Allocation: GATE CSE 2010 | Question: 46",
+        "bbox": [
+            78,
+            66,
+            552,
+            80
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no textual content can be extracted or converted.",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.25.20 Resource Allocation: GATE CSE 2014 | Set 3 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            122,
+            601,
+            137
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A system contains three programs and each requires three tape units for its operation. The minimum number of tape units which the system must have such that deadlocks never arise is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            146,
+            878,
+            175
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/2b294e7eed8d640299f83cd83a1019762fd08b687693b9edcad8cd98ce966d86.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            932,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 operating-system resource-allocation numerical-answers easy",
+        "bbox": [
+            87,
+            188,
+            468,
+            199
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            205,
+            188,
+            219
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.25.21 Resource Allocation: GATE CSE 2015 | Set 2 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            228,
+            605,
+            243
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A system has 6 identical resources and N processes competing for them. Each process can request at most 2 resources. Which one of the following values of N could lead to a deadlock?",
+        "bbox": [
+            84,
+            252,
+            878,
+            282
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/35a6b39d4915f8ed307a669e05f55dbd48fbabe6f58ee32bf8148e5d1a094018.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            231,
+            932,
+            269
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            89,
+            296,
+            126,
+            309
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            296,
+            321,
+            309
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            296,
+            515,
+            309
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 4",
+        "bbox": [
+            673,
+            296,
+            710,
+            309
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 operating-system resource-allocation easy",
+        "bbox": [
+            87,
+            321,
+            376,
+            331
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            337,
+            188,
+            351
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.25.22 Resource Allocation: GATE CSE 2015 | Set 3 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            359,
+            605,
+            374
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following policies for preventing deadlock in a system with mutually exclusive resources.",
+        "bbox": [
+            85,
+            384,
+            825,
+            399
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/35b39feae7605fbce560666da0ac9d5a090c75b297223498dd583c682dd648be.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            363,
+            932,
+            400
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Process should acquire all their resources at the beginning of execution. If any resource is not available, all resources acquired so far are released.",
+            "II. The resources are numbered uniquely, and processes are allowed to request for resources only in increasing resource numbers",
+            "III. The resources are numbered uniquely, and processes are allowed to request for resources only in decreasing resource numbers",
+            "IV. The resources are numbered uniquely. A processes is allowed to request for resources only for a resource with resource number larger than its currently held resources"
+        ],
+        "bbox": [
+            84,
+            409,
+            927,
+            521
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the above policies can be used for preventing deadlock?",
+        "bbox": [
+            85,
+            530,
+            569,
+            546
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Any one of (I) and (III) but not (II) or (IV)",
+        "bbox": [
+            87,
+            555,
+            352,
+            581
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. Any one of (I), (III) and (IV) but not (II)",
+        "bbox": [
+            495,
+            555,
+            759,
+            581
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. Any one of (II) and (III) but not (I) or (IV)",
+        "bbox": [
+            89,
+            583,
+            352,
+            608
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. Any one of (I), (II), (III) and (IV)",
+        "bbox": [
+            495,
+            583,
+            729,
+            597
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            614,
+            388,
+            623
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            630,
+            188,
+            644
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.25.23 Resource Allocation: GATE CSE 2017 | Set 2 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            78,
+            653,
+            605,
+            667
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A system shares 9 tape drives. The current allocation and maximum requirement of tape drives for that processes are shown below:",
+        "bbox": [
+            84,
+            676,
+            878,
+            706
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/8257fb5805ef8421c18383a63b71e0811fc68b11cac02aaca7fd977893f82923.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            656,
+            932,
+            694
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/b8098b3edbc2a6db8b04b08159ad15724760c4ac681d9f542d7ad306c4e3d6dc.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Current Allocation</td><td>Maximum Requirement</td></tr><tr><td>P1</td><td>3</td><td>7</td></tr><tr><td>P2</td><td>1</td><td>6</td></tr><tr><td>P3</td><td>3</td><td>5</td></tr></table>",
+        "bbox": [
+            233,
+            718,
+            783,
+            798
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following best describes current state of the system?",
+        "bbox": [
+            85,
+            807,
+            568,
+            821
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Safe, Deadlocked",
+        "bbox": [
+            87,
+            832,
+            236,
+            844
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. Safe, Not Deadlocked",
+        "bbox": [
+            495,
+            832,
+            670,
+            844
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. Not Safe, Deadlocked",
+        "bbox": [
+            89,
+            845,
+            263,
+            857
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. Not Safe, Not Deadlocked",
+        "bbox": [
+            495,
+            845,
+            697,
+            857
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            864,
+            388,
+            872
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            878,
+            188,
+            893
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "permitted.",
+        "bbox": [
+            112,
+            65,
+            183,
+            77
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "permitted.",
+        "bbox": [
+            517,
+            65,
+            589,
+            77
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2014-set1 operating-system resource-allocation normal",
+        "bbox": [
+            89,
+            83,
+            389,
+            93
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            99,
+            188,
+            112
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following snapshot of a system running $n$ concurrent processes. Process $i$ is holding $X_{i}$ instances of a resource $R$ , $1 \\leq i \\leq n$ . Assume that all instances of $R$ are currently in use. Further, for all $i$ , process $i$ can place a request for at most $Y_{i}$ additional instances of $R$ while holding the $X_{i}$ instances it already has. Of the $n$ processes, there are exactly two processes $p$ and $q$ such that $Y_{p} = Y_{q} = 0$ . Which one of the following conditions guarantees that no other process apart from $p$ and $q$ can complete execution?",
+        "bbox": [
+            82,
+            89,
+            929,
+            162
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $X_{p} + X_{q} < \\operatorname{Min}\\{Y_{k} \\mid 1 \\leq k \\leq n, k \\neq p, k \\neq q\\}$",
+            "B. $X_{p} + X_{q} < \\operatorname{Max}\\{Y_{k} \\mid 1 \\leq k \\leq n, k \\neq p, k \\neq q\\}$",
+            "C. $\\operatorname{Min}(X_p, X_q) \\geq \\operatorname{Min}\\{Y_k \\mid 1 \\leq k \\leq n, k \\neq p, k \\neq q\\}$",
+            "D. $\\operatorname{Min}(X_p, X_q) \\leq \\operatorname{Max}\\{Y_k \\mid 1 \\leq k \\leq n, k \\neq p, k \\neq q\\}$"
+        ],
+        "bbox": [
+            87,
+            172,
+            527,
+            238
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 operating-system two-marks resource-allocation",
+        "bbox": [
+            87,
+            261,
+            381,
+            271
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            277,
+            188,
+            292
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.25.25 Resource Allocation: GATE CSE 2022 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            78,
+            301,
+            552,
+            315
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE with respect to deadlocks?",
+        "bbox": [
+            84,
+            324,
+            636,
+            340
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/7053fec8eaa2ca4ac39d9790d25076e892512518c992d9b831718ff409b5a7f8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            304,
+            931,
+            340
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Circular wait is a necessary condition for the formation of deadlock.",
+            "B. In a system where each resource has more than one instance, a cycle in its wait-for graph indicates the presence of a deadlock.",
+            "C. If the current allocation of resources to processes leads the system to unsafe state, then deadlock will necessarily occur.",
+            "D. In the resource-allocation graph of a system, if every edge is an assignment edge, then the system is not in deadlock state."
+        ],
+        "bbox": [
+            85,
+            350,
+            927,
+            447
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 operating-system resource-allocation multiple-selects one-mark",
+        "bbox": [
+            87,
+            473,
+            457,
+            483
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            490,
+            188,
+            504
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.25.26 Resource Allocation: GATE IT 2005 | Question: 62",
+        "text_level": 1,
+        "bbox": [
+            78,
+            513,
+            532,
+            528
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/3bb17ec9cae514e7c6d06a5bbf51587b9e1edae9c6baf1449dfffb14ff4029ce.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            516,
+            931,
+            554
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Two shared resources $R_{1}$ and $R_{2}$ are used by processes $P_{1}$ and $P_{2}$ . Each process has a certain priority for accessing each resource. Let $T_{ij}$ denote the priority of $P_{i}$ for accessing $R_{j}$ . A process $P_{i}$ can snatch a resource $R_{k}$ from process $P_{j}$ if $T_{ik}$ is greater than $T_{jk}$ .",
+        "bbox": [
+            84,
+            536,
+            878,
+            583
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Given the following :",
+        "bbox": [
+            85,
+            583,
+            238,
+            596
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $T_{11} > T_{21}$",
+            "II. $T_{12} > T_{22}$",
+            "III. $T_{11} < T_{21}$",
+            "IV. $T_{12} <   T_{22}$"
+        ],
+        "bbox": [
+            85,
+            605,
+            194,
+            665
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following conditions ensures that $P_{1}$ and $P_{2}$ can never deadlock?",
+        "bbox": [
+            84,
+            674,
+            660,
+            690
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. (I) and (IV)",
+        "bbox": [
+            87,
+            704,
+            189,
+            719
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. (II) and (III)",
+        "bbox": [
+            285,
+            704,
+            384,
+            719
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. (I) and (II)",
+        "bbox": [
+            478,
+            704,
+            571,
+            719
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            704,
+            823,
+            717
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            728,
+            359,
+            738
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            744,
+            188,
+            758
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.25.27 Resource Allocation: GATE IT 2008 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            768,
+            532,
+            782
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/10ddaf30d1854af88118e5a8221251ea798f8dce17ddd279f5c312a351730efb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            771,
+            931,
+            808
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "An operating system implements a policy that requires a process to release all resources before making a request for another resource. Select the TRUE statement from the following:",
+        "bbox": [
+            84,
+            790,
+            878,
+            821
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both starvation and deadlock can occur",
+            "B. Starvation can occur but deadlock cannot occur",
+            "C. Starvation cannot occur but deadlock can occur",
+            "D. Neither starvation nor deadlock can occur"
+        ],
+        "bbox": [
+            85,
+            831,
+            460,
+            885
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "5.25.24 Resource Allocation: GATE CSE 2019 | Question: 39",
+        "bbox": [
+            78,
+            65,
+            552,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed according to the OCR instructions. Therefore, no textual content can be extracted or converted.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "gateit-2008 operating-system resource-allocation normal",
+        "bbox": [
+            87,
+            912,
+            359,
+            922
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.26.1 Resource Allocation Graph: GATE CSE 2025 | Set 2 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            77,
+            116,
+            648,
+            131
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$P = \\{P_{1}, P_{2}, P_{3}, P_{4}\\}$ consists of all active processes in an operating system.",
+        "bbox": [
+            85,
+            140,
+            663,
+            157
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$R = \\{R_{1}, R_{2}, R_{3}, R_{4}\\}$ consists of single instances of distinct types of resources in the system.",
+        "bbox": [
+            85,
+            160,
+            788,
+            176
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The resource allocation graph has the following assignment and claim edges.",
+        "bbox": [
+            85,
+            180,
+            650,
+            194
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Assignment edges: $R_{1} \\to P_{1}, R_{2} \\to P_{2}, R_{3} \\to P_{3}, R_{4} \\to P_{4}$ (the assignment edge $R_{1} \\to P_{1}$ means resource $R_{1}$ is assigned to process $P_{1}$ , and so on for others)",
+        "bbox": [
+            84,
+            197,
+            924,
+            226
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Claim edges: $P_{1} \\rightarrow R_{2}, P_{2} \\rightarrow R_{3}, P_{3} \\rightarrow R_{1}, P_{2} \\rightarrow R_{4}, P_{4} \\rightarrow R_{2}$ (the claim edge $P_{1} \\rightarrow R_{2}$ means process $P_{1}$ is waiting for resource $R_{2}$ , and so on for others)",
+        "bbox": [
+            84,
+            230,
+            924,
+            261
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statement(s) is/are CORRECT?",
+        "bbox": [
+            85,
+            263,
+            485,
+            277
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Aborting $P_{1}$ makes the system deadlock free.",
+            "B. Aborting $P_{3}$ makes the system deadlock free.",
+            "C. Aborting $P_{2}$ makes the system deadlock free.",
+            "D. Aborting $P_{1}$ and $P_{4}$ makes the system deadlock free."
+        ],
+        "bbox": [
+            87,
+            289,
+            502,
+            347
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 operating-system resource-allocation-graph multiple-selects two-marks",
+        "bbox": [
+            87,
+            372,
+            505,
+            383
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            389,
+            189,
+            403
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.27",
+        "text_level": 1,
+        "bbox": [
+            68,
+            414,
+            105,
+            427
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Round Robin Scheduling (1)",
+        "text_level": 1,
+        "bbox": [
+            405,
+            413,
+            633,
+            428
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.27.1 Round Robin Scheduling: GATE CSE 2022 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            77,
+            439,
+            581,
+            454
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider four processes P, Q, R, and S scheduled on a CPU as per round robin algorithm with a time quantum of 4 units. The processes arrive in the order P, Q, R, S, all at time t = 0. There is exactly one context switch from S to Q, exactly one context switch from R to Q, and exactly two context switches from Q to R. There is no context switch from S to P. Switching to a ready process after the termination of another process is also considered a context switch. Which one of the following is NOT possible as CPU burst time (in time units) of these processes?",
+        "bbox": [
+            82,
+            463,
+            931,
+            552
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\mathrm{P} = 4, \\mathrm{Q} = 10, \\mathrm{R} = 6, \\mathrm{S} = 2$",
+            "C. P = 4, Q = 12, R = 5, S = 4"
+        ],
+        "bbox": [
+            87,
+            560,
+            327,
+            589
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $P = 2, Q = 9, R = 5, S = 1$",
+            "D. $\\mathrm{P} = 3, \\mathrm{Q} = 7, \\mathrm{R} = 7, \\mathrm{S} = 3$"
+        ],
+        "bbox": [
+            495,
+            560,
+            722,
+            589
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 operating-system process-scheduling round-robin-scheduling two-marks",
+        "bbox": [
+            87,
+            593,
+            490,
+            604
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            610,
+            189,
+            624
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.28",
+        "text_level": 1,
+        "bbox": [
+            68,
+            635,
+            105,
+            648
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Semaphore (11)",
+        "text_level": 1,
+        "bbox": [
+            453,
+            635,
+            584,
+            650
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (3Q)",
+        "bbox": [
+            70,
+            660,
+            363,
+            673
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.28.1 Semaphore: GATE CSE 1990 | Question: 1-vii",
+        "text_level": 1,
+        "bbox": [
+            77,
+            688,
+            487,
+            703
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Semaphore operations are atomic because they are implemented within the OS \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            712,
+            757,
+            726
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1990 operating-system semaphore process-synchronization fill-in-the-blanks",
+        "bbox": [
+            87,
+            739,
+            468,
+            751
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            757,
+            189,
+            771
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.28.2 Semaphore: GATE CSE 1992 | Question: 02,x, ISRO2015-35",
+        "text_level": 1,
+        "bbox": [
+            77,
+            780,
+            596,
+            794
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "At a particular time of computation, the value of a counting semaphore is 7. Then $20P$ operations and $15V$ operations were completed on this semaphore. The resulting value of the semaphore is:",
+        "bbox": [
+            84,
+            804,
+            878,
+            834
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 42",
+        "bbox": [
+            89,
+            847,
+            134,
+            861
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            847,
+            321,
+            861
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 7",
+        "bbox": [
+            478,
+            847,
+            515,
+            861
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 12",
+        "bbox": [
+            673,
+            847,
+            719,
+            861
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1992 operating-system semaphore easy isro2015 process-synchronization",
+        "bbox": [
+            87,
+            871,
+            470,
+            881
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            887,
+            189,
+            902
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/7e4bcc1e5f6fdddd34cfcfd9f3385ac5921d0f511c7fc6033452a95c66ec7ade.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            119,
+            932,
+            157
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/dbfbdd0c9f39a4f0336f45ff19416f974f3d1853936d94cea56c073a02ad3fce.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            442,
+            932,
+            480
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/1a3cbcad8d2f7760e74cd7704b40ac033dcc07218353066ded1f88e8ab3db75f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            691,
+            932,
+            729
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/a865dd4441486344f77d619347f2843b7ede6b16036652e98f06169a3bc7299f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            783,
+            932,
+            821
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "5.26",
+        "bbox": [
+            68,
+            91,
+            105,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Resource Allocation Graph (1)",
+        "bbox": [
+            396,
+            90,
+            640,
+            105
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.28.3 Semaphore: GATE CSE 1998 | Question: 1.31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            485,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/5f041f6e1bdbe90580337955f0af7eb27f24e2d8561c89d71a1064c278d147b3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A counting semaphore was initialized to 10. Then $6P$ (wait) operations and $4V$ (signal) operations were completed on this semaphore. The resulting value of the semaphore is",
+        "bbox": [
+            84,
+            87,
+            875,
+            118
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            89,
+            131,
+            126,
+            144
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 8",
+        "bbox": [
+            285,
+            131,
+            319,
+            144
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 10",
+        "bbox": [
+            480,
+            131,
+            524,
+            144
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 12",
+        "bbox": [
+            673,
+            131,
+            719,
+            144
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1998 operating-system process-synchronization semaphore easy",
+        "bbox": [
+            87,
+            155,
+            420,
+            165
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            172,
+            186,
+            186
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.28.4 Semaphore: GATE CSE 2008 | Question: 63",
+        "text_level": 1,
+        "bbox": [
+            78,
+            195,
+            472,
+            209
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The P and V operations on counting semaphores, where s is a counting semaphore, are defined as follows:",
+        "bbox": [
+            85,
+            219,
+            875,
+            235
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/842c21ee6191d51d7b41accba7c913d6375f2974aca55197c040ab9332f5b0ca.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            198,
+            932,
+            235
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (s): \\begin{array}{l} s = s - 1; \\\\ \\text {If} s <   0 \\text {then wait;} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            89,
+            239,
+            278,
+            268
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV (s): \\begin{array}{l} s = s + 1; \\\\ \\text {If} s \\leq 0 \\text {then wake up process waiting on} s; \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            273,
+            463,
+            302
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Assume that $P_{b}$ and $V_{b}$ the wait and signal operations on binary semaphores are provided. Two binary semaphores $x_{b}$ and $y_{b}$ are used to implement the semaphore operations $P(s)$ and $V(s)$ as follows:",
+        "bbox": [
+            84,
+            307,
+            927,
+            339
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (s): \\begin{array}{l} P _ {b} (x _ {b}); \\\\ s = s - 1; \\\\ \\text {if} (s <   0) \\\\ \\left\\{ \\begin{array}{c} V _ {b} (x _ {b}); \\\\ P _ {b} (y _ {b}); \\end{array} \\right. \\\\ \\left. \\begin{array}{l} \\} \\\\ \\text {else} V _ {b} (x _ {b}); \\end{array} \\right. \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            89,
+            343,
+            305,
+            465
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nV (s): \\quad \\begin{array}{l} P _ {b} (x _ {b}); \\\\ s = s + 1; \\\\ \\text {if} (s \\leq 0) V _ {b} (y _ {b}); \\\\ V _ {b} (x _ {b}); \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            89,
+            473,
+            339,
+            534
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The initial values of $x_{b}$ and $y_{b}$ are respectively",
+        "bbox": [
+            85,
+            534,
+            423,
+            548
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 0 and 0",
+        "bbox": [
+            89,
+            561,
+            169,
+            574
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 0 and 1",
+        "bbox": [
+            285,
+            562,
+            363,
+            574
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 1 and 0",
+        "bbox": [
+            480,
+            562,
+            557,
+            574
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 1 and 1",
+        "bbox": [
+            673,
+            562,
+            752,
+            574
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 operating-system normal semaphore",
+        "bbox": [
+            87,
+            586,
+            334,
+            596
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            602,
+            186,
+            616
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.28.5 Semaphore: GATE CSE 2016 | Set 2 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            625,
+            524,
+            640
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/24c17d6be409ec825c4498068ad4665fe1fb1c1179bd0ad99098f0da95aa9dfe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            628,
+            932,
+            665
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a non-negative counting semaphore $S$ . The operation $P(S)$ decrements $S$ , and $V(S)$ increments $S$ . During an execution, 20 $P(S)$ operations and 12 $V(S)$ operations are issued in some order. The largest initial value of $S$ for which at least one $P(S)$ operation will remain blocked is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            650,
+            875,
+            697
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 operating-system semaphore normal numerical-answers",
+        "bbox": [
+            87,
+            709,
+            445,
+            720
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            726,
+            186,
+            739
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.28.6 Semaphore: GATE CSE 2020 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            78,
+            749,
+            472,
+            763
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Each of a set of $n$ processes executes the following code using two semaphores $a$ and $b$ initialized to 1 and 0, respectively. Assume that count is a shared variable initialized to 0 and not used in CODE SECTION P.",
+        "bbox": [
+            84,
+            773,
+            873,
+            802
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/036ef129b09aca948bf75104dd8e6bbb1d5b55c93eeb94d23b16ef7dcf5f61e2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            752,
+            932,
+            789
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "CODE SECTION P",
+        "text_level": 1,
+        "bbox": [
+            95,
+            809,
+            294,
+            825
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "wait(a); count=count+1;",
+        "bbox": [
+            112,
+            837,
+            250,
+            847
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "if (count==n) signal (b);",
+        "bbox": [
+            114,
+            847,
+            248,
+            859
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "signal (a); wait (b); signal (b);",
+        "bbox": [
+            114,
+            859,
+            285,
+            870
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "CODE SECTION Q",
+        "text_level": 1,
+        "bbox": [
+            95,
+            883,
+            295,
+            899
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "What does the code achieve?",
+        "bbox": [
+            85,
+            904,
+            305,
+            916
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It ensures that no process executes CODE SECTION Q before every process has finished CODE SECTION P.",
+            "B. It ensures that almost two processes are in CODE SECTION Q at any time.",
+            "C. It ensures that all processes execute CODE SECTION P mutually exclusively.",
+            "D. It ensures that at most n - 1 processes are in CODE SECTION P at any time."
+        ],
+        "bbox": [
+            85,
+            64,
+            919,
+            121
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 operating-system semaphore two-marks",
+        "bbox": [
+            87,
+            147,
+            349,
+            157
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            163,
+            181,
+            176
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.28.7 Semaphore: GATE CSE 2021 | Set 1 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            187,
+            524,
+            201
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following pseudocode, where S is a semaphore initialized to 5 in line #2 and counter is a shared variable initialized to 0 in line #1. Assume that the increment operation in line #7 is not atomic.",
+        "bbox": [
+            84,
+            210,
+            878,
+            241
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/15d4920fdf5bffc77c9948cfc55c7980207d4419c55778cffd63f8db80ed5e5c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            188,
+            931,
+            226
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint counter = 0;\nSemaphore S = init(5);\nvoid parop(void)\n{\n    wait(S);\n    wait(S);\n    counter++;\n    signal(S);\n    signal(S);\n}\n```",
+        "bbox": [
+            89,
+            249,
+            263,
+            358
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If five threads execute the function parop concurrently, which of the following program behavior(s) is/are possible?",
+        "bbox": [
+            85,
+            366,
+            917,
+            382
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The value of counter is 5 after all the threads successfully complete the execution of parop",
+            "B. The value of counter is 1 after all the threads successfully complete the execution of parop",
+            "C. The value of counter is 0 after all the threads successfully complete the execution of parop",
+            "D. There is a deadlock involving all the threads"
+        ],
+        "bbox": [
+            85,
+            391,
+            776,
+            450
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 multiple-selects operating-system process-synchronization semaphore two-marks",
+        "bbox": [
+            87,
+            475,
+            561,
+            485
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            491,
+            181,
+            505
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.28.8 Semaphore: GATE CSE 2022 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            515,
+            463,
+            529
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following threads, $T_{1}$ , $T_{2}$ , and $T_{3}$ executing on a single processor, synchronized using three binary semaphore variables, $S_{1}$ , $S_{2}$ , and $S_{3}$ , operated upon using standard wait() and signal(). The threads can be context switched in any order and at any time.",
+        "bbox": [
+            84,
+            538,
+            878,
+            583
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/b81c422e1ddb7fff5b55e150208364369c5ca59a3691cd63e7293de12446afc7.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td> $T_1$ </td><td> $T_2$ </td><td> $T_3$ </td></tr><tr><td>while(true){wait( $S_3$ );print(“C”);signal( $S_2$ );}</td><td>while(true){wait( $S_1$ );print(“B”);signal( $S_3$ );}</td><td>while(true){wait( $S_2$ );print(“A”);signal( $S_1$ );}</td></tr></table>",
+        "bbox": [
+            322,
+            593,
+            692,
+            698
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f5363eab00a378010e5b553d9c6a76973ee4350bf00eae852fece0b120fe828.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            517,
+            931,
+            555
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which initialization of the semaphores would print the sequence BCABCABCA...?",
+        "bbox": [
+            85,
+            706,
+            717,
+            722
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\mathrm{S}_1 = 1; \\mathrm{S}_2 = 1; \\mathrm{S}_3 = 1$",
+            "C. $S_{1}=1;S_{2}=0;S_{3}=0$"
+        ],
+        "bbox": [
+            87,
+            730,
+            278,
+            761
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $S_{1} = 1; S_{2} = 1; S_{3} = 0$",
+            "D. $S_{1}=0;S_{2}=1;S_{3}=1$"
+        ],
+        "bbox": [
+            495,
+            731,
+            684,
+            761
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 operating-system process-synchronization semaphore one-mark",
+        "bbox": [
+            87,
+            764,
+            457,
+            774
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            780,
+            181,
+            794
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.28.9 Semaphore: GATE CSE 2023 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            804,
+            473,
+            818
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the two functions incr and decr shown below.",
+        "bbox": [
+            85,
+            828,
+            489,
+            842
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/f9c6cb837936a47e503aa814bb525051ff54d58c61aea435c56b5bf1e9c289d7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            807,
+            931,
+            844
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nincr(){        decr(){\n        wait(s);        wait(s);\n        X = X+1;        X = X-1;\n        signal(s);        signal(s);\n    }         }\n```",
+        "bbox": [
+            87,
+            852,
+            270,
+            908
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "There are 5 threads each invoking incr once, and 3 threads each invoking decr once, on the same shared variable X. The initial value of X is 10.",
+        "bbox": [
+            84,
+            64,
+            924,
+            95
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Suppose there are two implementations of the semaphore S, as follows:",
+        "bbox": [
+            85,
+            98,
+            608,
+            112
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "I-1: s is a binary semaphore initialized to 1.",
+        "bbox": [
+            85,
+            116,
+            411,
+            130
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "I-2: s is a counting semaphore initialized to 2.",
+        "bbox": [
+            85,
+            131,
+            428,
+            144
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let V1, V2 be the values of X at the end of execution of all the threads with implementations I-1, I-2, respectively.",
+        "bbox": [
+            84,
+            149,
+            927,
+            180
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following choices corresponds to the minimum possible values of V1, V2, respectively?",
+        "bbox": [
+            84,
+            191,
+            857,
+            207
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 15,7",
+        "bbox": [
+            87,
+            219,
+            151,
+            235
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 7,7",
+        "bbox": [
+            285,
+            220,
+            337,
+            235
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 12,7",
+        "bbox": [
+            478,
+            220,
+            541,
+            235
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 12,8",
+        "bbox": [
+            673,
+            220,
+            734,
+            235
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 operating-system semaphore two-marks",
+        "bbox": [
+            87,
+            245,
+            349,
+            255
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            261,
+            181,
+            275
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.28.10 Semaphore: GATE CSE 2026 | Set 2 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            283,
+            532,
+            299
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider three processes P1, P2, and P3 running identical code, as shown in the pseudocode below. A and B are two binary semaphores initialized to 1 and 0, respectively. X is a shared variable initialized to 0. Each line in the pseudocode is executed atomically.",
+        "bbox": [
+            84,
+            308,
+            878,
+            353
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/2c6f753ec97ba9ca6f1c1a8cf23895f45da959e8d128e64ee9a94b55a41079ed.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            287,
+            932,
+            325
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nPseudocode of P1, P2, and P3\n    Wait(A);\n    Print(*);\n    X = X+1;\n    If (X == 2)\n    {\n        Print($);\n        Signal(B);\n    }\n    Signal(A);\n    Wait(B);\n    Print(#);\n    Signal(B);\n```",
+        "bbox": [
+            112,
+            362,
+            292,
+            503
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Assume that any of the three processes can start to execute first and context switching can happen between these processes at any arbitrary time and in any arbitrary order.",
+        "bbox": [
+            84,
+            511,
+            927,
+            541
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following patterns is/are possible to be generated as an outcome of the execution of these three processes?",
+        "bbox": [
+            84,
+            552,
+            927,
+            581
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/60dd4a5fd596ec57968411197bb8874c1c9738df3e104879f511c1b21f4d7efa.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>A.</td><td>B.</td><td>C.</td><td>D.</td><td></td></tr><tr><td></td><td>**$*###</td><td>**$#*##</td><td>**$##*#</td><td>***$###</td></tr></table>",
+        "bbox": [
+            89,
+            600,
+            897,
+            643
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 operating-system semaphore multiple-selects two-marks",
+        "bbox": [
+            87,
+            652,
+            450,
+            662
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            669,
+            181,
+            682
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.28.11 Semaphore: GATE IT 2006 | Question: 57",
+        "text_level": 1,
+        "bbox": [
+            78,
+            692,
+            462,
+            707
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The wait and signal operations of a monitor are implemented using semaphores as follows. In the following,",
+        "bbox": [
+            85,
+            714,
+            868,
+            731
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/074fe6241ac367d2106f214da0678f8dd0b31d80ccde2eaaad11150df5ce5203.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            695,
+            932,
+            732
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $x$ is a condition variable,",
+            "- mutex is a semaphore initialized to 1,",
+            "- $x$ \\_sem is a semaphore initialized to 0,",
+            "- $x$ count is the number of processes waiting on semaphore $x$ sem, initially 0,",
+            "- next is a semaphore initialized to 0,",
+            "- next\\_count is the number of processes waiting on semaphore next, initially 0."
+        ],
+        "bbox": [
+            97,
+            742,
+            673,
+            827
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The body of each procedure that is visible outside the monitor is replaced with the following:",
+        "bbox": [
+            85,
+            838,
+            756,
+            853
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nP(mutex);\n...\nbody of procedure\n...\nif (next_count > 0)\n```",
+        "bbox": [
+            87,
+            876,
+            196,
+            932
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nV(next);\nelse\n    V(mutex);\n```",
+        "bbox": [
+            89,
+            64,
+            161,
+            98
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Each occurrence of x.wait is replaced with the following:",
+        "bbox": [
+            85,
+            119,
+            499,
+            135
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nx_count = x_count + 1;\nif (next_count > 0)\n    V(next);\nelse\n    V(mutex);\n-------------------------------------------------------------------------- E1;\nx_count = x_count - 1;\n```",
+        "bbox": [
+            87,
+            157,
+            366,
+            236
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Each occurrence of x.signal is replaced with the following:",
+        "bbox": [
+            85,
+            257,
+            514,
+            271
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nif (x_count > 0)\n{\n    next_count = next_count + 1;\n    ----------------E2;\n    P(next);\n    next_count = next_count - 1;\n}\n```",
+        "bbox": [
+            87,
+            294,
+            270,
+            372
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For correct implementation of the monitor, statements E1 and E2 are, respectively,",
+        "bbox": [
+            85,
+            394,
+            700,
+            410
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $P(x\\_sem), V(next)$ C. $P(next), V(x\\_sem)$",
+        "bbox": [
+            87,
+            418,
+            265,
+            448
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $V(next), P(x\\_sem)$ D. $P(x\\_sem), V(x\\_sem)$",
+        "bbox": [
+            495,
+            418,
+            687,
+            450
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 operating-system process-synchronization semaphore normal",
+        "bbox": [
+            87,
+            452,
+            440,
+            463
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            467,
+            189,
+            484
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.29",
+        "text_level": 1,
+        "bbox": [
+            68,
+            492,
+            105,
+            507
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Srtf (1)",
+        "text_level": 1,
+        "bbox": [
+            487,
+            492,
+            549,
+            508
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.29.1 Srtf: GATE CSE 2025 | Set 2 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            77,
+            519,
+            465,
+            534
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Processes P1, P2, P3, P4 arrive in that order at times 0, 1, 2, and 8 milliseconds respectively, and have execution times of 10, 13, 6, and 9 milliseconds respectively. Shortest Remaining Time First (SRTF) algorithm is used as the CPU scheduling policy. Ignore context switching times.",
+        "bbox": [
+            84,
+            543,
+            875,
+            587
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/84195ed80d0b924bdaef5bcd66c2b0fea4fa156c9995c177cb238a7f81052ce6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            522,
+            932,
+            560
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which ONE of the following correctly gives the average turnaround time of the four processes in milliseconds?",
+        "bbox": [
+            85,
+            599,
+            889,
+            614
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 22",
+        "bbox": [
+            89,
+            627,
+            134,
+            641
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 15",
+        "bbox": [
+            285,
+            628,
+            329,
+            641
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 37",
+        "bbox": [
+            480,
+            627,
+            524,
+            641
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 19",
+        "bbox": [
+            673,
+            628,
+            719,
+            641
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 operating-system srtf process-scheduling average-turnaround-time one-mark",
+        "bbox": [
+            87,
+            652,
+            539,
+            662
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            668,
+            188,
+            682
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.30",
+        "text_level": 1,
+        "bbox": [
+            68,
+            693,
+            105,
+            706
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "System Calls (1)",
+        "text_level": 1,
+        "bbox": [
+            450,
+            693,
+            586,
+            707
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.30.1 System Calls: GATE CSE 2021 | Set 1 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            718,
+            539,
+            733
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following standard C library functions will always invoke a system call when executed from a single-threaded process in a UNIX/Linux operating system?",
+        "bbox": [
+            84,
+            744,
+            875,
+            776
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/a22e99ee180ee1aeeb399479cab57cf03fc63e2dd630ecc1b7fc48a7c186bdb5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            720,
+            932,
+            758
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. exit",
+        "bbox": [
+            89,
+            789,
+            142,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. malloc",
+        "bbox": [
+            285,
+            789,
+            359,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. sleep",
+        "bbox": [
+            480,
+            789,
+            542,
+            804
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. strlen",
+        "bbox": [
+            673,
+            789,
+            742,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 multiple-selects operating-system system-calls one-mark",
+        "bbox": [
+            87,
+            813,
+            450,
+            823
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            828,
+            188,
+            843
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.31",
+        "text_level": 1,
+        "bbox": [
+            68,
+            853,
+            102,
+            866
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Threads (10)",
+        "text_level": 1,
+        "bbox": [
+            467,
+            853,
+            571,
+            868
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests:",
+        "bbox": [
+            70,
+            878,
+            196,
+            891
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Test 1 (15Q)",
+        "bbox": [
+            203,
+            878,
+            278,
+            891
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Test 2 (7Q)",
+        "bbox": [
+            292,
+            878,
+            361,
+            891
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.31.1 Threads: GATE CSE 2004 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            445,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements with respect to user-level threads and kernel-supported threads",
+        "bbox": [
+            85,
+            87,
+            800,
+            103
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. context switch is faster with kernel-supported threads",
+            "II. for user-level threads, a system call can block the entire process",
+            "III. Kernel supported threads can be scheduled independently",
+            "IV. User level threads are transparent to the kernel"
+        ],
+        "bbox": [
+            92,
+            114,
+            581,
+            182
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements are true?",
+        "bbox": [
+            85,
+            194,
+            386,
+            207
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (II), (III) and (IV) only",
+            "C. (I) and (III) only",
+            "gatecse-2004 operating-system threads normal"
+        ],
+        "bbox": [
+            87,
+            218,
+            321,
+            260
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. (II) and (III) only"
+        ],
+        "bbox": [
+            495,
+            219,
+            628,
+            245
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            267,
+            188,
+            281
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.31.2 Threads: GATE CSE 2007 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            290,
+            445,
+            304
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements about user level threads and kernel level threads. Which one of the following statements is FALSE?",
+        "bbox": [
+            84,
+            314,
+            875,
+            342
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Context switch time is longer for kernel level threads than for user level threads.",
+            "B. User level threads do not need any hardware support.",
+            "C. Related kernel level threads can be scheduled on different processors in a multi-processor system.",
+            "D. Blocking one kernel level thread blocks all related threads."
+        ],
+        "bbox": [
+            85,
+            353,
+            831,
+            422
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 operating-system threads normal",
+        "bbox": [
+            87,
+            448,
+            319,
+            458
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            464,
+            188,
+            479
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.31.3 Threads: GATE CSE 2011 | Question: 16, UGCNET-June2013-III: 65",
+        "text_level": 1,
+        "bbox": [
+            78,
+            488,
+            652,
+            502
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A thread is usually defined as a \"light weight process\" because an Operating System (OS) maintains smaller data structure for a thread than for a process. In relation to this, which of the following statement is TRUE?",
+        "bbox": [
+            84,
+            511,
+            878,
+            540
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. On per-thread basis, the OS maintains only CPU register state.",
+            "B. The OS does not maintain a separate stack for each thread.",
+            "C. On per-thread basis, the OS does not maintain virtual memory state.",
+            "D. On per-thread basis, the OS maintains only scheduling and accounting information."
+        ],
+        "bbox": [
+            85,
+            551,
+            731,
+            606
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 operating-system threads normal ugcnetcse-june2013-paper3",
+        "bbox": [
+            87,
+            633,
+            445,
+            643
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            649,
+            188,
+            663
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.31.4 Threads: GATE CSE 2014 | Set 1 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            673,
+            499,
+            686
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is FALSE?",
+        "bbox": [
+            85,
+            695,
+            366,
+            710
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. User level threads are not scheduled by the kernel.",
+            "B. When a user level thread is blocked, all other threads of its process are blocked.",
+            "C. Context switching between user level threads is faster than context switching between kernel level threads.",
+            "D. Kernel level threads cannot share the code segment."
+        ],
+        "bbox": [
+            85,
+            722,
+            889,
+            777
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 operating-system threads normal",
+        "bbox": [
+            87,
+            802,
+            339,
+            813
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            819,
+            188,
+            834
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.31.5 Threads: GATE CSE 2017 | Set 1 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            843,
+            499,
+            857
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Threads of a process share",
+        "bbox": [
+            85,
+            866,
+            290,
+            881
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. global variables but not heap",
+            "C. neither global variables nor heap"
+        ],
+        "bbox": [
+            87,
+            891,
+            334,
+            918
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. heap but not global variables",
+            "D. both heap and global variables"
+        ],
+        "bbox": [
+            495,
+            891,
+            727,
+            918
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/79909fad4f86fee9ef0edf3c2c995b6fa7de8c8a5f83bdc4c2bff9c148b132fd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/7173f5c531d1eccf83a1ba02a13064e20f03000a97fb9d739eb21ab6fbcfbac3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            293,
+            931,
+            330
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/74d60f1855b2d38084af1e970f62c4c80656a685d489f3bc6fc5d1249393a450.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            491,
+            931,
+            528
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/7559fc7ca0b9a2d2a237157a98468f1f9a95b70399ef5d7c737ce0e9b2c70bb9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            676,
+            931,
+            712
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/0b53ea48cb293fe70e709dcf53a2b80155f302ad1546b5baa68f9381050c3df7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            846,
+            931,
+            883
+        ],
+        "page_idx": 11
+    }
+]

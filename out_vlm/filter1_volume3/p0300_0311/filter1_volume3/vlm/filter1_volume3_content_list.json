@@ -1,0 +1,4289 @@
+[
+    {
+        "type": "text",
+        "text": "In a look-ahead carry generator, the carry generate function $G_{i}$ and the carry propagate function $P_{i}$ for inputs $A_{i}$ and $B_{i}$ are given by:",
+        "bbox": [
+            84,
+            89,
+            878,
+            119
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP _ {i} = A _ {i} \\oplus B _ {i} \\text { and } G _ {i} = A _ {i} B _ {i}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            386,
+            130,
+            628,
+            147
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The expressions for the sum bit $S_{i}$ and the carry bit $C_{i+1}$ of the look ahead carry adder are given by:",
+        "bbox": [
+            85,
+            157,
+            821,
+            174
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {i} = P _ {i} \\oplus C _ {i} \\text {and} C _ {i + 1} = G _ {i} + P _ {i} C _ {i}, \\text {where} C _ {0} \\text {is the input carry.}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            240,
+            182,
+            774,
+            201
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a two-level logic implementation of the look-ahead carry generator. Assume that all $P_{i}$ and $G_{i}$ are available for the carry generator circuit and that the AND and OR gates can have any number of inputs. The number of AND gates and OR gates needed to implement the look-ahead carry generator for a 4-bit adder with $S_{3}, S_{2}, S_{1}, S_{0}$ and $C_{4}$ as its outputs are respectively:",
+        "bbox": [
+            84,
+            210,
+            929,
+            269
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 6,3",
+        "bbox": [
+            87,
+            281,
+            142,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 10,4",
+        "bbox": [
+            285,
+            281,
+            347,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 6,4",
+        "bbox": [
+            480,
+            281,
+            531,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 10,5",
+        "bbox": [
+            673,
+            281,
+            734,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 digital-logic normal carry-generator adder",
+        "bbox": [
+            87,
+            305,
+            368,
+            315
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            321,
+            189,
+            336
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.8",
+        "text_level": 1,
+        "bbox": [
+            68,
+            346,
+            95,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Circuit Output (40)",
+        "text_level": 1,
+        "bbox": [
+            438,
+            346,
+            589,
+            361
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (8Q)",
+        "bbox": [
+            70,
+            371,
+            455,
+            385
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.8.1 Circuit Output: GATE CSE 1987 | Question: 1-IV",
+        "text_level": 1,
+        "bbox": [
+            77,
+            400,
+            497,
+            414
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The output F of the below multiplexer circuit can be represented by",
+        "bbox": [
+            85,
+            423,
+            581,
+            440
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/0d4ff8735b0db6bd1bb155ebf51e552b5dd5d7f496a739cac8b0b0259f9cf773.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            403,
+            932,
+            440
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/acfe69b15f20aec441d066907aad5d77ae5ac7b8739305a51e13dd329561baba.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"A\"] -->|\"B\"| MUX\n  B[\"B\"] -->|\"C\"| MUX\n  C[\"C\"] -->|\"C\"| MUX\n  C -->|\"C\"| MUX\n  MUX[\"MUX\"] -->|\"F\"| F\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            104,
+            469,
+            302,
+            580
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $AB + B\\bar{C} +\\bar{C} A + \\bar{B}\\bar{C}$",
+        "bbox": [
+            89,
+            612,
+            290,
+            627
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $A \\oplus B \\oplus C$",
+        "bbox": [
+            495,
+            612,
+            606,
+            625
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $A \\oplus B$",
+        "bbox": [
+            90,
+            628,
+            164,
+            641
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $\\bar{A}\\bar{B}C + \\bar{A}B\\bar{C} + A\\bar{B}\\bar{C}$",
+        "bbox": [
+            497,
+            628,
+            687,
+            643
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1987 digital-logic combinational-circuit multiplexer circuit-output",
+        "bbox": [
+            89,
+            649,
+            426,
+            659
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            665,
+            181,
+            679
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.8.2 Circuit Output: GATE CSE 1989 | Question: 4-ix",
+        "text_level": 1,
+        "bbox": [
+            77,
+            688,
+            495,
+            703
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Explain the behaviour of the following logic circuit with level input A and output B.",
+        "bbox": [
+            85,
+            713,
+            682,
+            729
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/3883d9386a1137192663fbf0bac6000156e9eefbf835921fdbed5d1c24f8363d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            691,
+            932,
+            729
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e3646e7ada75a3a61f56250f5954b3ccf86f007345f5211623e65b9f2dcef694.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"A\"] --> B[\"Logic Block\"]\n  B --> C[\"Logic Gate\"]\n  C --> D[\"Output Block\"]\n  D --> E[\"B\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            95,
+            735,
+            408,
+            818
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive digital-logic circuit-output",
+        "bbox": [
+            87,
+            840,
+            322,
+            851
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            857,
+            181,
+            871
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.8.3 Circuit Output: GATE CSE 1990 | Question: 3-i",
+        "text_level": 1,
+        "bbox": [
+            77,
+            881,
+            485,
+            895
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Choose the correct alternatives (More than one may be correct).",
+        "bbox": [
+            85,
+            904,
+            556,
+            920
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/7dc01d6384069a64a2739ab166d428f646f4901df81aa17f3ccc5b6014651c93.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            883,
+            932,
+            921
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "4.7.2 Carry Generator: GATE CSE 2007 | Question: 35",
+        "bbox": [
+            77,
+            65,
+            500,
+            79
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Two NAND gates having open collector outputs are tied together as shown in below figure.",
+        "bbox": [
+            85,
+            64,
+            746,
+            80
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/dbc1a66817f031f4777df18c3f296ca8214d85b0e6a14d8d36ff98833f98aa2b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "A\nB\nC\nD\nE\nY",
+        "sub_type": "text_image",
+        "bbox": [
+            401,
+            87,
+            613,
+            180
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The logic function Y, implemented by the circuit is,",
+        "bbox": [
+            85,
+            188,
+            458,
+            204
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $Y = ABC + DE$",
+        "bbox": [
+            89,
+            213,
+            243,
+            226
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $Y = \\overline{ABC + DE}$",
+        "bbox": [
+            497,
+            216,
+            650,
+            233
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $Y = ABC \\cdot DE$",
+        "bbox": [
+            90,
+            232,
+            230,
+            245
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $Y = \\overline{ABC.DE}$",
+        "bbox": [
+            497,
+            235,
+            636,
+            249
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1990 normal digital-logic circuit-output",
+        "bbox": [
+            87,
+            255,
+            307,
+            264
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            271,
+            181,
+            285
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.8.4 Circuit Output: GATE CSE 1991 | Question: 5-a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            295,
+            490,
+            309
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Analyse the circuit in Fig below and complete the following table",
+        "bbox": [
+            85,
+            318,
+            554,
+            333
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/e96d12543af403c3362167733dc7717c41937a80105977024cc8b9b817f4cd61.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>a</td><td>b</td><td> $\\mathbf{Q_n}$ </td></tr><tr><td>0</td><td>0</td><td></td></tr><tr><td>0</td><td>1</td><td></td></tr><tr><td>1</td><td>0</td><td></td></tr><tr><td>1</td><td>1</td><td></td></tr></table>",
+        "bbox": [
+            452,
+            344,
+            564,
+            444
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/f870f0971332ab63e036e9fe55b0730cb04422847c055a3fbc8a0b3b11a0c0e2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            296,
+            931,
+            334
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/98181795684ee11ce7a4a2b2ff5c9617c41461a20e52add63c9c0b044bfe41f5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] --> B1[\"B1\"]\n  b[\"b\"] --> B2[\"B2\"]\n  B1 --> C[\"C\"]\n  B2 --> C\n  C --> D[\"Q\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            428,
+            457,
+            588,
+            549
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1991 digital-logic normal circuit-output sequential-circuit descriptive",
+        "bbox": [
+            87,
+            574,
+            450,
+            584
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            590,
+            181,
+            604
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.8.5 Circuit Output: GATE CSE 1993 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            614,
+            484,
+            628
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A control algorithm is implemented by the NAND - gate circuitry given in figure below, where $A$ and $B$ are state variable implemented by $D$ flip-flops, and $P$ is control input. Develop the state transition table for this controller.",
+        "bbox": [
+            84,
+            638,
+            878,
+            681
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/746d5f2a1993d831a66017b171ed104b03c9b9f08a0f304f782a6fede82ca5cb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "B\nA\nP̅\nP\nA\nB̅\nClock\nD̅A\nA̅\nD̅B\nB̅\nB̅",
+        "sub_type": "text_image",
+        "bbox": [
+            94,
+            688,
+            394,
+            874
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/40b01fd0112b2bd7202b474c4406a6030598c3a24840ff355de82ac78020ed0d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            616,
+            931,
+            654
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1993 digital-logic sequential-circuit flip-flop circuit-output normal descriptive",
+        "bbox": [
+            87,
+            897,
+            499,
+            908
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            913,
+            181,
+            928
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.8.6 Circuit Output: GATE CSE 1993 | Question: 6-3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            490,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/bd50426a367714d0684c9bc99fe0144811b7628f83e1c87754212a1255a4008d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "For the initial state of 000, the function performed by the arrangement of the J-K flip-flops in figure is:",
+        "bbox": [
+            85,
+            89,
+            825,
+            106
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca07a99d7c768c6380d6d340d455c94df94c499af62e4cbc0652da55e30c9133.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Clock\"] --> B[\"J\"]\n  A --> C[\"K\"]\n  B --> D[\"Q\"]\n  C --> D\n  D --> E[\"J\"]\n  D --> F[\"K\"]\n  E --> G[\"Q\"]\n  F --> G\n  G --> H[\"J\"]\n  G --> I[\"K\"]\n  H --> J[\"Q\"]\n  I --> J\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            312,
+            112,
+            658,
+            186
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. Shift Register",
+        "bbox": [
+            89,
+            203,
+            208,
+            216
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. Mod- 3 Counter",
+        "bbox": [
+            497,
+            203,
+            633,
+            216
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. Mod- 6 Counter",
+        "bbox": [
+            90,
+            217,
+            226,
+            229
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. Mod-2 Counter",
+        "bbox": [
+            497,
+            217,
+            633,
+            229
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "E. None of the above",
+        "bbox": [
+            90,
+            231,
+            238,
+            242
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1993 digital-logic sequential-circuit flip-flop digital-counter circuit-output multiple-selects",
+        "bbox": [
+            89,
+            248,
+            549,
+            258
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            264,
+            188,
+            277
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.8.7 Circuit Output: GATE CSE 1993 | Question: 6.1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            288,
+            487,
+            302
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Identify the logic function performed by the circuit shown in figure.",
+        "bbox": [
+            85,
+            312,
+            564,
+            327
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/a41bf8c272e684fae0b378a5e5bc9f4d6d3b7278a736fc8c30ef3cb707b2d520.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            290,
+            931,
+            328
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/8be9239a99ecc0d3b3a97b3bc1b200331ec6db34469892a8a8769835a30de1dc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  x[\"x\"] -->|Input| AND1[\"Logic Gate 1\"]\n  y[\"y\"] -->|Input| AND2[\"Logic Gate 2\"]\n  AND1 -->|Adder| AND3[\"Adder Input\"]\n  AND2 -->|Adder| AND4[\"Adder Output\"]\n  AND3 -->|Adder| AND5[\"Adder Output\"]\n  AND4 -->|Adder| AND6[\"Adder Output\"]\n  AND5 -->|Adder| AND7[\"Adder Output\"]\n  AND6 -->|Adder| AND8[\"Adder Output\"]\n  AND7 -->|Adder| AND9[\"Adder Output\"]\n  AND8 -->|Adder| AND10[\"Adder Output\"]\n  AND9 -->|Adder| AND11[\"Adder Output\"]\n  AND10 -->|Adder| AND12[\"Adder Output\"]\n  AND11 -->|Adder| AND13[\"Adder Output\"]\n  AND12 -->|Adder| AND14[\"Adder Output\"]\n  AND13 -->|Adder| AND15[\"Adder Output\"]\n  AND14 -->|Adder| AND16[\"Adder Output\"]\n  AND15 -->|Adder| AND17[\"Adder Output\"]\n  AND16 -->|Adder| AND18[\"Adder Output\"]\n  AND17 -->|Adder| AND19[\"Adder Output\"]\n  AND18 -->|Adder| AND19\n  AND19 -->|Adder| AND20[\"Adder Output\"]\n  AND20 -->|Adder| AND21[\"Adder Output\"]\n  AND21 -->|Adder| AND22[\"Adder Output\"]\n  AND22 -->|Adder| AND23[\"Adder Output\"]\n  AND23 -->|Adder| AND24[\"Adder Output\"]\n  AND24 -->|Adder| AND25[\"Adder Output\"]\n  AND25 -->|Adder| AND26[\"Adder Output\"]\n  AND26 -->|Adder| AND27[\"Adder Output\"]\n  AND27 -->|Adder| AND28[\"Adder Output\"]\n  AND28 -->|Adder| AND29[\"Adder Output\"]\n  AND29 -->|Adder| AND30[\"Adder Output\"]\n  AND30 -->|Adder| AND31[\"Adder Output\"]\n  AND31 -->|Adder| AND32[\"Adder Output\"]\n  AND32 -->|Adder| AND33[\"Adder Output\"]\n  AND33 -->|Adder| AND34[\"Adder Output\"]\n  AND34 -->|Adder| AND35[\"Adder Output\"]\n  AND35 -->|Adder| AND36[\"Adder Output\"]\n  AND36 -->|Adder| AND37[\"Adder Output\"]\n  AND37 -->|Adder| AND38[\"Adder Output\"]\n  AND38 -->|Adder| AND39[\"Adder Output\"]\n  AND39 -->|Adder| AND40[\"Adder Output\"]\n  AND40 -->|Adder| AND41[\"Adder Output\"]\n  AND41 -->|Adder| AND42[\"Adder Output\"]\n  AND42 -->|Adder| AND43[\"Adder Output\"]\n  AND43 -->|Adder| AND44[\"Adder Output\"]\n  AND44 -->|Adder| AND45[\"Adder Output\"]\n  AND45 -->|Adder| AND46[\"Adder Output\"]\n  AND46 -->|Adder| AND47[\"Adder Output\"]\n  AND47 -->|Adder| AND48[\"Adder Output\"]\n  AND48 -->|Adder| AND49[\"Adder Output\"]\n  AND49 -->|Adder| AND50[\"Adder Output\"]\n  AND50 -->|Adder| AND51[\"Adder Output\"]\n  AND51 -->|Adder| AND52[\"Adder Output\"]\n  AND52 -->|Adder| AND53[\"Adder Output\"]\n  AND53 -->|Adder| AND54[\"Adder Output\"]\n  AND54 -->|Adder| AND55[\"Adder Output\"]\n  AND55 -->|Adder| AND56[\"Adder Output\"]\n  AND56 -->|Adder| AND57[\"Adder Output\"]\n  AND57 -->|Adder| AND58[\"Adder Output\"]\n  AND58 -->|Adder| AND59[\"Adder Output\"]\n  AND59 -->|Adder| AND60[\"Adder Output\"]\n  AND60 -->|Adder| AND61[\"Adder Output\"]\n  AND61 -->|Adder| AND62[\"Adder Output\"]\n  AND62 -->|Adder| AND63[\"Adder Output\"]\n  AND63 -->|Adder| AND64[\"Adder Output\"]\n  AND64 -->|Adder| AND65[\"Adder Output\"]\n  AND65 -->|Adder| AND66[\"Adder Output\"]\n  AND66 -->|Adder| AND67[\"Adder Output\"]\n  AND67 -->|Adder| AND68[\"Adder Output\"]\n  AND68 -->|Adder| AND69[\"Adder Output\"]\n  AND69 -->|Adder| AND70[\"Adder Output\"]\n  AND70 -->|Adder| AND71[\"Adder Output\"]\n  AND71 -->|Adder| AND72[\"Adder Output\"]\n  AND72 -->|Adder| AND73[\"Adder Output\"]\n  AND73 -->|Adder| AND74[\"Adder Output\"]\n  AND74 -->|Adder| AND75[\"Adder Output\"]\n  AND75 -->|Adder| AND76[\"Adder Output\"]\n  AND76 -->|Adder| AND77[\"Adder Output\"]\n  AND77 -->|Adder| AND78[\"Adder Output\"]\n  AND78 -->|Adder| AND79[\"Adder Output\"]\n  AND79 -->|Adder| AND80[\"Adder Output\"]\n  AND80 -->|Adder| AND81[\"Adder Output\"]\n  AND81 -->|Adder| AND82[\"Adder Output\"]\n  AND82 -->|Adder| AND83[\"Adder Output\"]\n  AND83 -->|Adder| AND84[\"Adder Output\"]\n  AND84 -->|Adder| AND85[\"Adder Output\"]\n  AND85 -->|Adder| AND86[\"Adder Output\"]\n  AND86 -->|Adder| AND87[\"Adder Output\"]\n  AND87 -->|Adder| AND88[\"Adder Output\"]\n  AND88 -->|Adder| AND89[\"Adder Output\"]\n  AND89 -->|Adder| AND90[\"Adder Output\"]\n  AND90 -->|Adder| AND91[\"Adder Output\"]\n  AND91 -->|Adder| AND92[\"Adder Output\"]\n  AND92 -->|Adder| AND93[\"Adder Output\"]\n  AND93 -->|Adder| AND94[\"Adder Output\"]\n  AND94 -->|Adder| AND95[\"Adder Output\"]\n  AND95 -->|Adder| AND96[\"Adder Output\"]\n  AND96 -->|Adder| AND97[\"Adder Output\"]\n  AND97 -->|Adder| AND98[\"Adder Output\"]\n  AND98 -->|Adder| AND99[\"Adder Output\"]\n  AND99 -->|Adder| AND100[\"Adder Output\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            368,
+            352,
+            690,
+            429
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. exclusive OR",
+        "bbox": [
+            89,
+            448,
+            206,
+            461
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. exclusive NOR",
+        "bbox": [
+            285,
+            448,
+            410,
+            461
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. NAND",
+        "bbox": [
+            480,
+            448,
+            547,
+            461
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. NOR",
+        "bbox": [
+            675,
+            448,
+            734,
+            461
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "E. None of the above",
+        "bbox": [
+            90,
+            471,
+            240,
+            484
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1993 digital-logic combinational-circuit circuit-output normal",
+        "bbox": [
+            87,
+            495,
+            406,
+            505
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            511,
+            188,
+            524
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.8.8 Circuit Output: GATE CSE 1993 | Question: 6.2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            535,
+            489,
+            549
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "If the state machine described in figure should have a stable state, the restriction on the inputs is given by",
+        "bbox": [
+            85,
+            558,
+            855,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/71a122700dacbe9021f60cdd95c1afe6b2537c5e7597d4607c0a0a451a1f5bcd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            538,
+            931,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/0097adc2f8be9c5e54146379ba470ded4ebbcc16e335c074dbbde6afba9554ec.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  S1[\"S1\"] -->|a = 0/out 2| S2[\"S2\"]\n  S2 -->|b = 0/out 1| S1\n  S1 -->|a = 1/out 1| S1\n  S2 -->|b = 1/out 2| S2\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            304,
+            586,
+            662,
+            646
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. a.b = 1",
+        "bbox": [
+            89,
+            666,
+            171,
+            679
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $a + b = 1$",
+        "bbox": [
+            497,
+            666,
+            591,
+            679
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $\\bar{a} + \\bar{b} = 0$",
+        "bbox": [
+            90,
+            680,
+            188,
+            694
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $\\overline{a.b} = 1$",
+        "bbox": [
+            497,
+            682,
+            579,
+            695
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "E. $\\overline{a+b}=1$",
+        "bbox": [
+            90,
+            699,
+            186,
+            714
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1993 digital-logic normal circuit-output sequential-circuit",
+        "bbox": [
+            89,
+            720,
+            391,
+            730
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            736,
+            188,
+            750
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.8.9 Circuit Output: GATE CSE 1994 | Question: 1.8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            760,
+            489,
+            774
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The logic expression for the output of the circuit shown in figure below is:",
+        "bbox": [
+            85,
+            783,
+            618,
+            799
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/aa0d926b1d03af8560d901a53329d51f21b8c03137c7af4aff26e8a46850d30c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "A\nB\nC\nD",
+        "sub_type": "text_image",
+        "bbox": [
+            329,
+            808,
+            642,
+            902
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/77dbaecbdfa431d649a800b25b44c142dcd1bd1fb09054998fac573da57a84ee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            762,
+            931,
+            800
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $\\overline{AC} + \\overline{BC} + CD$",
+        "bbox": [
+            89,
+            66,
+            243,
+            83
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $\\overline{A} C + \\overline{B} C + CD$",
+        "bbox": [
+            495,
+            66,
+            648,
+            83
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "c. $ABC + \\overline{C}\\overline{D}$",
+        "bbox": [
+            90,
+            87,
+            213,
+            104
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $\\overline{A}\\overline{B} +\\overline{B}\\overline{C} +CD$",
+        "bbox": [
+            497,
+            87,
+            655,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1994 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            115,
+            307,
+            125
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            131,
+            186,
+            144
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.8.10 Circuit Output: GATE CSE 1994 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            155,
+            492,
+            169
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Find the contents of the flip-flop $Q_{2}, Q_{1}$ and $Q_{0}$ in the circuit of figure, after giving four clock pulses to the clock terminal. Assume $Q_{2}Q_{1}Q_{0}=000$ initially.",
+        "bbox": [
+            84,
+            179,
+            875,
+            209
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/a23f1a5b53819fba63cf748d7239444d7fe1598a29f7d2d64ed221e844b0ec5c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            157,
+            932,
+            195
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/91e355e2fa41acaa296ef30473c3f6de7f6dd0109260d98f3a3ccc226e56e2a3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Clock[\"Clock\"] --> J[\"J\"]\n  Clock --> D[\"D\"]\n  Clock --> T[\"T\"]\n  J --> Q2[\"Q2\"]\n  D --> Q1[\"Q1\"]\n  T --> Q0[\"Q0\"]\n  Q2 --> J\n  Q1 --> T\n  Q0 --> T\n  J --> CK1[\"CK\"]\n  D --> CK1\n  T --> CK1\n  Q0 --> CK0[\"CK0\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            97,
+            216,
+            497,
+            369
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1994 digital-logic sequential-circuit digital-counter circuit-output normal descriptive",
+        "bbox": [
+            87,
+            394,
+            524,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            410,
+            186,
+            425
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.8.11 Circuit Output: GATE CSE 1996 | Question: 2.21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            434,
+            505,
+            448
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the circuit in below figure which has a four bit binary number $b_{3}b_{2}b_{1}b_{0}$ as input and a five bit binary number, $d_{4}d_{3}d_{2}d_{1}d_{0}$ as output.",
+        "bbox": [
+            84,
+            458,
+            878,
+            488
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/73912e01ced45bd6a39c11b4764933a0862b9d2c9d40ff9a78e97c3bee4a2e4f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            435,
+            932,
+            475
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/deab3e5b2a765a93968db414de9961d673a22ece1f4b82edf2cd09f1a49a1632.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "0 0 0 b3 b2 b1 b0\n4 - bit\nBinary\nAdder\ncout cin 0\nd4 d3 d2 d1 d0",
+        "sub_type": "text_image",
+        "bbox": [
+            413,
+            498,
+            603,
+            621
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. Binary to Hex conversion",
+        "bbox": [
+            89,
+            640,
+            285,
+            654
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. Binary to BCD conversion",
+        "bbox": [
+            495,
+            640,
+            695,
+            654
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. Binary to Gray code conversion",
+        "bbox": [
+            89,
+            657,
+            326,
+            671
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. Binary to radix - 12 conversion",
+        "bbox": [
+            495,
+            657,
+            746,
+            672
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1996 digital-logic circuit-output normal",
+        "bbox": [
+            89,
+            681,
+            307,
+            691
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            697,
+            186,
+            711
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.8.12 Circuit Output: GATE CSE 1996 | Question: 2.22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            720,
+            507,
+            735
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the circuit in figure. $f$ implements",
+        "bbox": [
+            85,
+            745,
+            401,
+            760
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/7a2216a5fe665223a3e04374939d651bd38a01da8aba3b28c717a15f86f581ff.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            723,
+            932,
+            762
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d11867980408360fba201095bf74b44b2a6c1ce5f6a59d2e78559efe6a7ce43.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "C→0\nC̅→1\nC̅→2\nC→3\n4 to 1\nMux\n→f\nS₁ S₀\nA B",
+        "sub_type": "text_image",
+        "bbox": [
+            403,
+            767,
+            563,
+            869
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $\\overline{A}\\overline{B} C + \\overline{A} B\\overline{C} + ABC$",
+        "bbox": [
+            89,
+            887,
+            282,
+            904
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $A + B + C$",
+        "bbox": [
+            495,
+            885,
+            606,
+            901
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $A \\oplus B \\oplus C$",
+        "bbox": [
+            90,
+            908,
+            201,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $AB + BC + CA$",
+        "bbox": [
+            495,
+            908,
+            647,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.8.13 Circuit Output: GATE CSE 1996 | Question: 24-a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            108,
+            509,
+            122
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the synchronous sequential circuit in the below figure",
+        "bbox": [
+            85,
+            131,
+            546,
+            146
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/82075952d0ac75ab151fd366324302d21d6911cda5ea0d670ebb2fbaf6851e16.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            110,
+            931,
+            148
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3cc5e4533f7d098c40595945f944ec853e5fb611f76ad514ad9370e9c39b6849.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Input[\"Input\"] --> D1[\"D1\\nQ1\\nQ̅\"]\n  D1 --> D2[\"D2\\nQ2\\nQ̅\"]\n  D2 --> D3[\"D3\\nQ3\\nQ̅\"]\n  D3 --> Clock[\"Clock\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            284,
+            155,
+            678,
+            258
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Draw a state diagram, which is implemented by the circuit. Use the following names for the states corresponding to the values of flip-flops as given below.",
+        "bbox": [
+            84,
+            273,
+            929,
+            302
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/d84980eadc4de94f7d3f4c16d2be87495f13d65ebadfbfcd6f234f4ca7d3d157.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Q1</td><td>Q2</td><td>Q3</td><td>State</td></tr><tr><td>0</td><td>0</td><td>0</td><td> $S_0$ </td></tr><tr><td>0</td><td>0</td><td>1</td><td> $S_1$ </td></tr><tr><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>1</td><td>1</td><td>1</td><td> $S_7$ </td></tr></table>",
+        "bbox": [
+            401,
+            313,
+            613,
+            451
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1996 digital-logic circuit-output normal descriptive",
+        "bbox": [
+            87,
+            475,
+            366,
+            485
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            491,
+            186,
+            505
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.8.14 Circuit Output: GATE CSE 1996 | Question: 24-b",
+        "text_level": 1,
+        "bbox": [
+            77,
+            515,
+            509,
+            529
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the synchronous sequential circuit in the below figure",
+        "bbox": [
+            85,
+            539,
+            546,
+            554
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/8e13e8a4a04ce8eaac13a250265e436ebb193fe126fcb61f3f1aff5b7b391785.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            517,
+            931,
+            555
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/b61fccf12df8606337f6b91f0ea78ceac978b212476ada9a502b34bea0cd5d47.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Input[\"Input\"] --> D1[\"D1\\nQ1\\nQ̅\"]\n  D1 --> D2[\"D2\\nQ2\\nQ̅\"]\n  D2 --> D3[\"D3\\nQ3\\nQ̅\"]\n  D3 --> Clock[\"Clock\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            284,
+            562,
+            678,
+            666
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Given that the initial state of the circuit is $S_{4}$ , identify the set of states, which are not reachable.",
+        "bbox": [
+            85,
+            680,
+            778,
+            695
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1996 normal digital-logic circuit-output descriptive",
+        "bbox": [
+            87,
+            714,
+            366,
+            724
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            730,
+            186,
+            744
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.8.15 Circuit Output: GATE CSE 1997 | Question: 5.5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            754,
+            497,
+            768
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider a logic circuit shown in figure below. The functions $f_{1}$ , $f_{2}$ and f (in canonical sum of products form in decimal notation) are :",
+        "bbox": [
+            84,
+            777,
+            878,
+            807
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {1} (w, x, y, z) = \\sum 8, 9, 1 0\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            809,
+            300,
+            828
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {2} (w, x, y, z) = \\sum 7, 8, 1 2, 1 3, 1 4, 1 5\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            830,
+            381,
+            847
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf (w, x, y, z) = \\sum 8, 9\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            849,
+            263,
+            868
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/54315d9d4b059e0973f3e71e5898ff35aad2bac98403d5820479fa07170ac3a5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            756,
+            931,
+            793
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "gate1996 digital-logic circuit-output easy multiplexer",
+        "bbox": [
+            87,
+            68,
+            357,
+            78
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            84,
+            186,
+            98
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3fb096e9cd1bdb21a915a9ab738bf18a6c64597220aa2eb62ffd5acf7f6e37f2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "f₁\nf₂\nf₃ = ?\nf",
+        "sub_type": "text_image",
+        "bbox": [
+            386,
+            74,
+            628,
+            129
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The function $f_{3}$ is",
+        "bbox": [
+            85,
+            144,
+            220,
+            162
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $\\sum 9,10$",
+        "bbox": [
+            89,
+            173,
+            171,
+            190
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\sum 9$",
+        "bbox": [
+            285,
+            173,
+            342,
+            191
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "c. $\\sum 1,8,9$",
+        "bbox": [
+            478,
+            173,
+            569,
+            191
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $\\sum8,10,15$",
+        "bbox": [
+            673,
+            173,
+            781,
+            191
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1997 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            203,
+            307,
+            213
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            219,
+            186,
+            233
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.8.16 Circuit Output: GATE CSE 1999 | Question: 2.8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            243,
+            499,
+            258
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the circuit shown below. In a certain steady state, the line $Y$ is at $1'$ . What are the possible values of $A, B$ and $C$ in this state?",
+        "bbox": [
+            82,
+            268,
+            878,
+            299
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6158564ef38a07a65edc2cf65a7f338de4421b284cdad965838551fe15825c2e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            245,
+            931,
+            283
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/18232b2bf45bfba91770fc9bd45444cf903fa6a55dd63342cfff1973d83ed428.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "A\nB\nC\nY",
+        "sub_type": "text_image",
+        "bbox": [
+            406,
+            306,
+            608,
+            372
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $A = 0, B = 0, C = 1$",
+        "bbox": [
+            87,
+            390,
+            265,
+            404
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $A = 0, B = 1, C = 1$",
+        "bbox": [
+            495,
+            390,
+            672,
+            404
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $A = 1, B = 0, C = 1$",
+        "bbox": [
+            90,
+            408,
+            267,
+            423
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $A = 1, B = 1, C = 1$",
+        "bbox": [
+            497,
+            408,
+            673,
+            423
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1999 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            433,
+            307,
+            442
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            448,
+            186,
+            463
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.8.17 Circuit Output: GATE CSE 2000 | Question: 2.12",
+        "text_level": 1,
+        "bbox": [
+            77,
+            472,
+            507,
+            486
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The following arrangement of master-slave flip flops",
+        "bbox": [
+            85,
+            496,
+            465,
+            511
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/81182e49148ff12a895ffb261e808148171407ecc595cfd359bab431dde5a7d2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            475,
+            931,
+            513
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/2dfa0866d9a6be6b56e5eb8d2090d148232d820e1b76e3097d79e3ca7a4e8e18.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "P\nJ K\n1\nClock\nQ\nD",
+        "sub_type": "text_image",
+        "bbox": [
+            363,
+            517,
+            610,
+            618
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "has the initial state of P, Q as 0, 1 (respectively). After three clock cycles the output state P, Q is (respectively),",
+        "bbox": [
+            84,
+            629,
+            904,
+            646
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 1,0",
+        "bbox": [
+            89,
+            657,
+            142,
+            673
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 1,1",
+        "bbox": [
+            285,
+            659,
+            336,
+            673
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "c. 0,0",
+        "bbox": [
+            480,
+            657,
+            531,
+            673
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 0,1",
+        "bbox": [
+            673,
+            657,
+            724,
+            673
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 digital-logic circuit-output normal flip-flop",
+        "bbox": [
+            87,
+            682,
+            369,
+            693
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            699,
+            186,
+            713
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.8.18 Circuit Output: GATE CSE 2001 | Question: 2.8",
+        "text_level": 1,
+        "bbox": [
+            77,
+            722,
+            499,
+            737
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following circuit with initial state $Q_{0}=Q_{1}=0$ . The D Flip-flops are positive edged triggered and have set up times 20 nanosecond and hold times 0.",
+        "bbox": [
+            84,
+            745,
+            878,
+            776
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/5eede5e67b4aa3810d33c0e8a8c24bd7c6d5166d7f9a28f497af3a3871b7b1e6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            725,
+            931,
+            763
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/a6284f625d62f4c9cb70292db57abf05340c2a8ab57f163bbfc47dff1d218f80.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  X[\"X\"] --> D0[\"D0, Q0\"]\n  C[\"C\"] --> Clk[\"Clk, Q0\"]\n  D0 --> C\n  Clk --> D1[\"D1, Q1\"]\n  D1 --> Y[\"Y\"]\n  Clk --> Y\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            97,
+            783,
+            458,
+            866
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following timing diagrams of $X$ and $C$ . The clock period of $C \\geq 40$ nanosecond. Which one is the correct plot of $Y$ ?",
+        "bbox": [
+            84,
+            876,
+            929,
+            906
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/bd1c3854523622bd21a2360e73b68242586ba207c8601a86a32c990fd1b5ea94.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "gatecse-2001 digital-logic circuit-output normal"
+        ],
+        "content": "",
+        "bbox": [
+            89,
+            64,
+            492,
+            304
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            343,
+            186,
+            358
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.8.19 Circuit Output: GATE CSE 2002 | Question: 2.2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            366,
+            499,
+            382
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following multiplexer where $I0, I1, I2, I3$ are four data input lines selected by two address line combinations $A1A0 = 00, 01, 10, 11$ respectively and $f$ is the output of the multiplexor. EN is the Enable input.",
+        "bbox": [
+            82,
+            390,
+            878,
+            434
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/5c001cca47a1e3137db648fd3576a3fbe7556ca0701230353d8ad285cbb694d5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            369,
+            932,
+            407
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/be20d7c75bcfce1c7f5bc226948100f4ed23fd5d2e6753cba935f7bb6b7c157c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "x\ny\nz\nI0 4 to 1\nMultiplexer\nI1\nI2\nI3\nA1\nA0\nEN\nOUTPUT\nf(x,y,z) =?",
+        "sub_type": "text_image",
+        "bbox": [
+            376,
+            440,
+            638,
+            545
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The function $f(x, y, z)$ implemented by the above circuit is",
+        "bbox": [
+            85,
+            553,
+            519,
+            570
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $xyz'$",
+        "bbox": [
+            87,
+            581,
+            149,
+            598
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $xy + z$",
+        "bbox": [
+            285,
+            583,
+            359,
+            598
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $x + y$",
+        "bbox": [
+            480,
+            583,
+            547,
+            598
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            583,
+            823,
+            596
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            606,
+            322,
+            617
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            622,
+            186,
+            637
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.8.20 Circuit Output: GATE CSE 2004 | Question: 61",
+        "text_level": 1,
+        "bbox": [
+            78,
+            646,
+            492,
+            661
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the partial implementation of a 2-bit counter using T flip-flops following the sequence 0 - 2 - 3 - 1 - 0, as shown below.",
+        "bbox": [
+            82,
+            669,
+            873,
+            700
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/fdaef8359e29bc7e34deb0c7c964d3837d79db6d6521cb2e09d2ede7b13a8765.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  CLK[\"CLK\"] --> T2[\"T2 Q2\"]\n  CLK --> MSB[\"MSB\"]\n  CLK --> LSB[\"LSB\"]\n  T2 --> XOR((\"+\"))\n  MSB --> XOR\n  XOR --> T1[\"T1 Q1\"]\n  T1 --> LSB\n  LSB --> XOR\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            94,
+            706,
+            354,
+            809
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "To complete the circuit, the input X should be",
+        "bbox": [
+            85,
+            818,
+            423,
+            834
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $Q_{2}^{c}$",
+        "bbox": [
+            89,
+            847,
+            137,
+            864
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $Q_{2} + Q_{1}$",
+        "bbox": [
+            285,
+            847,
+            373,
+            864
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $(Q_{1} + Q_{2})^{c}$",
+        "bbox": [
+            480,
+            846,
+            591,
+            864
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $Q_{1} \\oplus Q_{2}$",
+        "bbox": [
+            673,
+            847,
+            764,
+            864
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            871,
+            322,
+            881
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            887,
+            186,
+            902
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1d01daff7a12f91c00c94fc8e221f38e2a7cba8b075caaeb223b0b45cd3380b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            649,
+            932,
+            687
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following circuit.",
+        "bbox": [
+            85,
+            87,
+            304,
+            103
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/442f64c51c143184612f12bd2b83656649c9816bbc450d90cf767ef034f2cac9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  x[\"x\"] -->|Output| ANDGate[\"AND gate\"]\n  y[\"y\"] -->|Output| ANDGate\n  z[\"z\"] -->|Output| ANDGate\n  AND_gate[\"AND gate\"] -->|Output| f[\"f\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            378,
+            112,
+            589,
+            192
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE?",
+        "bbox": [
+            85,
+            201,
+            356,
+            217
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $f$ is independent of $x$",
+        "bbox": [
+            87,
+            226,
+            262,
+            241
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $f$ is independent of $y$",
+        "bbox": [
+            495,
+            226,
+            667,
+            242
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $f$ is independent of $z$",
+        "bbox": [
+            89,
+            245,
+            260,
+            258
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. None of $x, y, z$ is redundant",
+        "bbox": [
+            497,
+            245,
+            709,
+            260
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            268,
+            322,
+            277
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            283,
+            186,
+            299
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.8.22 Circuit Output: GATE CSE 2005 | Question: 62",
+        "text_level": 1,
+        "bbox": [
+            78,
+            308,
+            494,
+            323
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following circuit involving a positive edge triggered D FF.",
+        "bbox": [
+            85,
+            331,
+            596,
+            347
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/bc31cc443e074089675d1ae1c0359ed5bc23d5d146e3821f97fdd7fb4447af5a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "A\nX\nD\nCLK\nQ\nY\nQ'",
+        "sub_type": "text_image",
+        "bbox": [
+            94,
+            353,
+            433,
+            445
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/4b9aac70c109d1f59588a97c2e407dee962200cc272244f4f320f38fd0c4e0a0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            311,
+            931,
+            347
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following timing diagram. Let $A_{i}$ represents the logic level on the line A in the i-th clock period.",
+        "bbox": [
+            85,
+            454,
+            873,
+            470
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/9ae43b11d45aead7d11c8e68fc4fb532227f45043958f98d79c4fa777739bced.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "clk\n0 1 2 3 4 5\nX",
+        "sub_type": "text_image",
+        "bbox": [
+            95,
+            477,
+            442,
+            584
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $A'$ represent the complement of $A$ . The correct output sequence on $Y$ over the clock periods 1 through 5 is:",
+        "bbox": [
+            85,
+            598,
+            902,
+            615
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $A_0A_1A_1'A_3A_4$",
+        "bbox": [
+            89,
+            624,
+            216,
+            638
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $A_0A_1A_2'A_3A_4$",
+        "bbox": [
+            497,
+            624,
+            621,
+            638
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $A_{1}A_{2}A_{2}^{\\prime}A_{3}A_{4}$",
+        "bbox": [
+            90,
+            638,
+            216,
+            654
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $A_{1}A_{2}^{\\prime}A_{3}A_{4}A_{5}^{\\prime}$",
+        "bbox": [
+            497,
+            638,
+            621,
+            655
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 digital-logic circuit-output normal",
+        "bbox": [
+            89,
+            657,
+            322,
+            667
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            673,
+            186,
+            688
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.8.23 Circuit Output: GATE CSE 2005 | Question: 64",
+        "text_level": 1,
+        "bbox": [
+            78,
+            697,
+            494,
+            712
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following circuit:",
+        "bbox": [
+            85,
+            720,
+            304,
+            736
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/cdb8082b081b12d24c538cc752441eb8d04d580068d0305c45e2bfbf199f61a9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  D0[\"D0\"] --> Q0[\"Q0\"]\n  Q0 --> D1[\"D1\"]\n  D1 --> Q1[\"Q1\"]\n  Q1 --> Q1[\"Q1'\"]\n  Q0 --> Q0[\"Q0'\"]\n  Q0 --> D1\n  D1 --> Q1\n  Q1 --> clk[\"clk\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            94,
+            741,
+            495,
+            834
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/ea3f5d7d1c28a9641ef52e4f6b97008636996a0c5060ca4b18175d3701352fa4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            700,
+            931,
+            738
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The flip-flops are positive edge triggered D FFs. Each state is designated as a two-bit string $Q_{0}Q_{1}$ . Let the initial state be 00. The state transition sequence is",
+        "bbox": [
+            84,
+            844,
+            929,
+            875
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/eedaed18dfcea682fd9a756cb69ee2836e4a14d2eca592c542a23638c51333b9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            90,
+            889,
+            208,
+            910
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/61b517142d6dbae9de4de59c904a90ef09dc3621c54595e299264db0e750bbb0.jpg",
+        "image_caption": [
+            "B."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            285,
+            890,
+            376,
+            923
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/9170def4f5173003aafe21fd573589c72dcb4716defd2bd09c70ad739bea32ac.jpg",
+        "image_caption": [
+            "C."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            497,
+            888,
+            611,
+            914
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/ede2bdc43ade4d4bceb5d65d6a89659bc61de77e2bc5c2472ca407267b118b98.jpg",
+        "image_caption": [
+            "D."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            697,
+            888,
+            806,
+            914
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "4.8.21 Circuit Output: GATE CSE 2005 | Question: 15",
+        "bbox": [
+            78,
+            65,
+            492,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed using OCR. Therefore, no textual content can be extracted or converted.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.8.24 Circuit Output: GATE CSE 2006 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            112,
+            492,
+            125
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/7cb931c4e3e429e18831d96bdc47fc91e5f95059af92fb6abc756919e2c8a210.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            114,
+            931,
+            152
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/8f3acca4aa66f6ea258e00949db537491faa40edb3f070470cfb8aaca39a6a8a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "x 0\nMUX 1\nȳ\nz\nx\ny\n0\nMUX 1\nf",
+        "sub_type": "text_image",
+        "bbox": [
+            398,
+            138,
+            566,
+            261
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the circuit above. Which one of the following options correctly represents $f(x,y,z)$",
+        "bbox": [
+            85,
+            273,
+            764,
+            290
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $x\\bar{z} + xy + \\bar{y} z$",
+        "bbox": [
+            89,
+            298,
+            216,
+            313
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $x\\bar{z} + xy + \\overline{yz}$",
+        "bbox": [
+            497,
+            299,
+            621,
+            314
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $xz + xy + \\overline{yz}$",
+        "bbox": [
+            90,
+            314,
+            213,
+            328
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. $xz + x\\bar{y} +\\bar{y} z$",
+        "bbox": [
+            497,
+            314,
+            621,
+            328
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 digital-logic circuit-output normal",
+        "bbox": [
+            89,
+            333,
+            322,
+            343
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            349,
+            186,
+            363
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.8.25 Circuit Output: GATE CSE 2006 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            372,
+            492,
+            385
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the circuit in the diagram. The $\\oplus$ operator represents Ex-OR. The D flip-flops are initialized to zeroes (cleared).",
+        "bbox": [
+            84,
+            396,
+            878,
+            425
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/ecc4294dbb31fa5f60e398d9e926d4a74670c624ffc2dbd876e6e3d287ac112a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            375,
+            931,
+            413
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/2411c1cb4fcda1ad4ef8adaa75102000c91d6369528652c10e2784b4307c1646.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Q[\"Q\"] -->|clk| D[\"D\"]\n  D -->|clk| Q\n  Q -->|clk| D\n  D -->|clk| Q\n  Q -->|clk| D\n  D -->|clk| Q\n  Q -->|q0| Center((\"+\"))\n  D -->|q1| Center\n  Q -->|q2| Center\n  Center -->|data| D\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            90,
+            431,
+            438,
+            522
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The following data: 100110000 is supplied to the “data” terminal in nine clock cycles. After that the values of $q_{2}q_{1}q_{0}$ are:",
+        "bbox": [
+            84,
+            530,
+            927,
+            560
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 000",
+        "bbox": [
+            89,
+            572,
+            142,
+            586
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 001",
+        "bbox": [
+            285,
+            573,
+            337,
+            586
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 010",
+        "bbox": [
+            480,
+            572,
+            532,
+            586
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 101",
+        "bbox": [
+            675,
+            573,
+            727,
+            586
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 digital-logic circuit-output easy",
+        "bbox": [
+            87,
+            597,
+            312,
+            608
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            614,
+            186,
+            628
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.8.26 Circuit Output: GATE CSE 2006 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            637,
+            484,
+            650
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "You are given a free running clock with a duty cycle of 50% and a digital waveform f which changes only at the negative edge of the clock. Which one of the following circuits (using clocked D flip-flops) will delay the phase of f by $180^{\\circ}$ ?",
+        "bbox": [
+            82,
+            661,
+            878,
+            706
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/0eeb76168580736d46058e9263153f445f8daa51000d60e7fae8d6e01ec12aa0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            638,
+            931,
+            676
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A.",
+        "bbox": [
+            89,
+            757,
+            107,
+            770
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/f7c6a4b79d43dcfcb68550761805a801f5c048e9cc816a3f7c3d010c5c150a61.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "f\nCLK\nD Q\nQ\nD Q\nQ",
+        "sub_type": "text_image",
+        "bbox": [
+            119,
+            718,
+            347,
+            768
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B.",
+        "bbox": [
+            89,
+            809,
+            105,
+            821
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/a86785e06829c9213421484b83a7a0cc05d9af4f7830493907ef262f7e7de6a2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  f[\"f\"] --> D[\"D\"]\n  CLK[\"CLK\"] --> D\n  D --> Q[\"Q\"]\n  Q --> D\n  D --> Q\n  Q --> D\n  CLK --> Q\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            119,
+            773,
+            354,
+            820
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C.",
+        "bbox": [
+            89,
+            861,
+            105,
+            874
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/5aeb4ecc3854a5393d07eec03899c51878cd9189980dd87bf44d123a5f9eb95a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  f[\"f\"] --> D[\"D\"]\n  CLK[\"CLK\"] --> D\n  D --> Q[\"Q\"]\n  Q --> D\n  D --> Q\n  Q --> Q\n  CLK --> Q\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            119,
+            825,
+            352,
+            872
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2005 digital-logic circuit-output",
+        "bbox": [
+            89,
+            72,
+            280,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            102
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D.",
+        "bbox": [
+            87,
+            108,
+            107,
+            121
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ae31e9fa162bcafa88c0f3a7e2db407c28ef40a91fc8cd8142e7e8cb2b6a817.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "f\nCLK\nD Q\nQ\nD Q\nQ̅",
+        "sub_type": "text_image",
+        "bbox": [
+            119,
+            67,
+            352,
+            119
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 digital-logic normal circuit-output",
+        "bbox": [
+            87,
+            149,
+            322,
+            159
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            165,
+            181,
+            179
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.8.27 Circuit Output: GATE CSE 2007 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            78,
+            188,
+            492,
+            203
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The control signal functions of a 4-bit binary counter are given below (where $X$ is \"don't care\"):",
+        "bbox": [
+            85,
+            212,
+            779,
+            228
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/7a0899f5d4fc651f5ff1d9d3f913938ee0b1d964a1e738973809d26a28f2ae54.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Clear</td><td>Clock</td><td>Load</td><td>Count</td><td>Function</td></tr><tr><td>1</td><td>X</td><td>X</td><td>X</td><td>Clear to 0</td></tr><tr><td>0</td><td>X</td><td>0</td><td>0</td><td>No Change</td></tr><tr><td>0</td><td>↑</td><td>1</td><td>X</td><td>Load Input</td></tr><tr><td>0</td><td>↑</td><td>0</td><td>1</td><td>Count Next</td></tr></table>",
+        "bbox": [
+            324,
+            239,
+            690,
+            328
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/8a7aaf1e812c54ff395ec70f011b1f51b2b0b242653dcfa1503f2cdca420da9c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            191,
+            931,
+            229
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The counter is connected as follows:",
+        "bbox": [
+            85,
+            351,
+            356,
+            365
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/1e02efd0f79751b1e04ca20ef8149074bbf50feb15406700eb6c74266435c29b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A1[\"A1\"] -->|Output| B[\"4-bit counter\"]\n  A2[\"A2\"] -->|Output| B\n  A3[\"A3\"] -->|Output| B\n  A4[\"A4\"] -->|Output| B\n  B -->|Clear| C[\"Clear\"]\n  C --> B\n  B -->|Inputs| D[\"0 0 1 1\"]\n  B -->|Inputs| E[\"0 0 1 1\"]\n  B -->|Inputs| F[\"0 0 1 1\"]\n  B -->|Inputs| G[\"0 0 1 1\"]\n  G -->|Inputs| H[\"1 1\"]\n  H --> I[\"Count = 1\"]\n  H --> J[\"Load = 0\"]\n  H --> K[\"Clock\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            378,
+            372,
+            638,
+            486
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Assume that the counter and gate delays are negligible. If the counter starts at 0, then it cycles through the following sequence:",
+        "bbox": [
+            84,
+            510,
+            927,
+            540
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 0,3,4",
+        "bbox": [
+            87,
+            552,
+            159,
+            568
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 0,3,4,5",
+        "bbox": [
+            285,
+            553,
+            368,
+            568
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 0,1,2,3,4",
+        "bbox": [
+            480,
+            553,
+            579,
+            568
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 0,1,2,3,4,5",
+        "bbox": [
+            675,
+            553,
+            789,
+            568
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            577,
+            322,
+            587
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            593,
+            188,
+            606
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.8.28 Circuit Output: GATE CSE 2010 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            617,
+            492,
+            631
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "What is the boolean expression for the output f of the combinational logic circuit of NOR gates given below?",
+        "bbox": [
+            84,
+            641,
+            875,
+            657
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/2265d2fa1667b4cb3dd315f532e7ac274b3c01b0181de3fe15fb411585a9495e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            619,
+            931,
+            657
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/f911d8f45374012de1a8bd4b870c206f9e26bc5cbefe1ebbb7331430c8bd20fb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  P[\"P\"] --> Q1[\"Q\"]\n  Q1 -->|Output| R1[\"R\"]\n  R1 -->|Output| Q2[\"Q\"]\n  Q2 -->|Output| R2[\"R\"]\n  R2 -->|Output| Q3[\"Q\"]\n  Q3 -->|Output| R3[\"R\"]\n  R3 -->|Output| Output[\"f\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            379,
+            663,
+            584,
+            769
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\overline{Q + R}$",
+            "C. $\\overline{P+R}$"
+        ],
+        "bbox": [
+            90,
+            785,
+            166,
+            819
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 digital-logic circuit-output normal",
+        "bbox": [
+            89,
+            825,
+            322,
+            834
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\overline{P+Q}$",
+            "D. $\\overline{P+Q+R}$"
+        ],
+        "bbox": [
+            495,
+            785,
+            608,
+            821
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            840,
+            188,
+            856
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.8.29 Circuit Output: GATE CSE 2010 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            865,
+            492,
+            878
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "In the sequential circuit shown below, if the initial value of the output $Q_{1}Q_{0}$ is 00. What are the next four values of $Q_{1}Q_{0}$ ?",
+        "bbox": [
+            84,
+            888,
+            878,
+            919
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/28bf124cd262b94df5c2b36ffe44bbb71a012aeec8bad1ac53f767d393f770dd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            866,
+            931,
+            904
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1f5191b249538530294eb13d19c61e7262a42500e0765812c99ccba016ebbde.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Clock[\"Clock\"] --> TQ[\"T Q\"]\n  Clock --> Q0[\"Q0\"]\n  TQ --> TQ2[\"T Q\"]\n  TQ2 --> Q1[\"Q1\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            398,
+            68,
+            618,
+            149
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 11, 10, 01, 00",
+        "bbox": [
+            89,
+            184,
+            216,
+            197
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 10, 11, 01, 00",
+        "bbox": [
+            497,
+            184,
+            621,
+            197
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "c. 10, 00, 01, 11",
+        "bbox": [
+            90,
+            198,
+            215,
+            210
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 11, 10, 00, 01",
+        "bbox": [
+            497,
+            198,
+            620,
+            211
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 digital-logic circuit-output normal",
+        "bbox": [
+            89,
+            217,
+            322,
+            226
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            233,
+            181,
+            247
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.8.30 Circuit Output: GATE CSE 2010 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            256,
+            484,
+            270
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The Boolean expression of the output f of the multiplexer shown below is",
+        "bbox": [
+            85,
+            280,
+            623,
+            296
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/78792d0266e911b73088eadb6bc9b8d13c42316a9e2b0cd9cbc69b522cdff8cd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  R[\"R\"] --> 0[\"0\"]\n  R̄[\"R̄\"] --> 1[\"1\"]\n  R̄̄[\"R̄\"] --> 2[\"2\"]\n  R[\"R\"] --> 3[\"3\"]\n  S1[\"S₁\"] --> S0[\"S₀\"]\n  S0 --> f[\"f\"]\n  P[\"P\"] --> S1\n  Q[\"Q\"] --> S0\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            97,
+            304,
+            334,
+            432
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $\\overline{P \\oplus Q \\oplus R}$",
+        "bbox": [
+            90,
+            453,
+            201,
+            469
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $P \\oplus Q \\oplus R$",
+        "bbox": [
+            497,
+            450,
+            608,
+            466
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $P + \\dot{Q} + R$",
+        "bbox": [
+            90,
+            469,
+            201,
+            483
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $\\overline{P + Q + R}$",
+        "bbox": [
+            497,
+            470,
+            608,
+            488
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 digital-logic circuit-output easy multiplexer",
+        "bbox": [
+            89,
+            492,
+            373,
+            502
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            509,
+            181,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.8.31 Circuit Output: GATE CSE 2011 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            532,
+            492,
+            547
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following circuit involving three D-type flip-flops used in a certain type of counter configuration.",
+        "bbox": [
+            85,
+            555,
+            868,
+            572
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/b1af3485dd3365530c7479b5b6f6575b2c0bed3a16d0cfbb487879b9bf01e8a3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            258,
+            931,
+            296
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/235bc01bcf5afa651c3dc296331531c718899e43c5f26a534008a845d4967dd7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            535,
+            931,
+            572
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/aacda4f449a471e870da55c62e83d2aab366b3881feadbcd66f1f1840d091ffe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Clock((\"Clock\")) --> D1[\"D\"]\n  Clock((\"Clock\")) --> D2[\"D\"]\n  Clock((\"Clock\")) --> D3[\"D\"]\n  Clock((\"Clock\")) --> D4[\"D\"]\n  Clock((\"Clock\")) --> D5[\"D\"]\n  Clock((\"Clock\")) --> D6[\"D\"]\n  Clock((\"Clock\")) --> D7[\"D\"]\n  Clock((\"Clock\")) --> D8[\"D\"]\n  Clock((\"Clock\")) --> D9[\"D\"]\n  Clock((\"Clock\")) --> D10[\"D\"]\n  Clock((\"Clock\")) --> D11[\"D\"]\n  Clock((\"Clock\")) --> D12[\"D\"]\n  Clock((\"Clock\")) --> D13[\"D\"]\n  Clock((\"Clock\")) --> D14[\"D\"]\n  Clock((\"Clock\")) --> D15[\"D\"]\n  Clock((\"Clock\")) --> D16[\"D\"]\n  Clock((\"Clock\")) --> D17[\"D\"]\n  Clock((\"Clock\")) --> D18[\"D\"]\n  Clock((\"Clock\")) --> D19[\"D\"]\n  Clock((\"Clock\")) --> D20[\"D\"]\n  Clock((\"Clock\")) --> D21[\"D\"]\n  Clock((\"Clock\")) --> D22[\"D\"]\n  Clock((\"Clock\")) --> D23[\"D\"]\n  Clock((\"Clock\")) --> D24[\"D\"]\n  Clock((\"Clock\")) --> D25[\"D\"]\n  Clock((\"Clock\")) --> D26[\"D\"]\n  Clock((\"Clock\")) --> D27[\"D\"]\n  Clock((\"Clock\")) --> D28[\"D\"]\n  Clock((\"Clock\")) --> D29[\"D\"]\n  Clock((\"Clock\")) --> D30[\"D\"]\n  Clock((\"Clock\")) --> D31[\"D\"]\n  Clock((\"Clock\")) --> D32[\"D\"]\n  Clock((\"Clock\")) --> D33[\"D\"]\n  Clock((\"Clock\")) --> D34[\"D\"]\n  Clock((\"Clock\")) --> D35[\"D\"]\n  Clock((\"Clock\")) --> D36[\"D\"]\n  Clock((\"Clock\")) --> D37[\"D\"]\n  Clock((\"Clock\")) --> D38[\"D\"]\n  Clock((\"Clock\")) --> D39[\"D\"]\n  Clock((\"Clock\")) --> D40[\"D\"]\n  Clock((\"Clock\")) --> D41[\"D\"]\n  Clock((\"Clock\")) --> D42[\"D\"]\n  Clock((\"Clock\")) --> D43[\"D\"]\n  Clock((\"Clock\")) --> D44[\"D\"]\n  Clock((\"Clock\")) --> D45[\"D\"]\n  Clock((\"Clock\")) --> D46[\"D\"]\n  Clock((\"Clock\")) --> D47[\"D\"]\n  Clock((\"Clock\")) --> D48[\"D\"]\n  Clock((\"Clock\")) --> D49[\"D\"]\n  Clock((\"Clock\")) --> D50[\"D\"]\n  Clock((\"Clock\")) --> D51[\"D\"]\n  Clock((\"Clock\")) --> D52[\"D\"]\n  Clock((\"Clock\")) --> D53[\"D\"]\n  Clock((\"Clock\")) --> D54[\"D\"]\n  Clock((\"Clock\")) --> D55[\"D\"]\n  Clock((\"Clock\")) --> D56[\"D\"]\n  Clock((\"Clock\")) --> D57[\"D\"]\n  Clock((\"Clock\")) --> D58[\"D\"]\n  Clock((\"Clock\")) --> D59[\"D\"]\n  Clock((\"Clock\")) --> D60[\"D\"]\n  Clock((\"Clock\")) --> D61[\"D\"]\n  Clock((\"Clock\")) --> D62[\"D\"]\n  Clock((\"Clock\")) --> D63[\"D\"]\n  Clock((\"Clock\")) --> D64[\"D\"]\n  Clock((\"Clock\")) --> D65[\"D\"]\n  Clock((\"Clock\")) --> D66[\"D\"]\n  Clock((\"Clock\")) --> D67[\"D\"]\n  Clock((\"Clock\")) --> D68[\"D\"]\n  Clock((\"Clock\")) --> D69[\"D\"]\n  Clock((\"Clock\")) --> D70[\"D\"]\n  Clock((\"Clock\")) --> D71[\"D\"]\n  Clock((\"Clock\")) --> D72[\"D\"]\n  Clock((\"Clock\")) --> D73[\"D\"]\n  Clock((\"Clock\")) --> D74[\"D\"]\n  Clock((\"Clock\")) --> D75[\"D\"]\n  Clock((\"Clock\")) --> D76[\"D\"]\n  Clock((\"Clock\")) --> D77[\"D\"]\n  Clock((\"Clock\")) --> D78[\"D\"]\n  Clock((\"Clock\")) --> D79[\"D\"]\n  Clock((\"Clock\")) --> D80[\"D\"]\n  Clock((\"Clock\")) --> D81[\"D\"]\n  Clock((\"Clock\")) --> D82[\"D\"]\n  Clock((\"Clock\")) --> D83[\"D\"]\n  Clock((\"Clock\")) --> D84[\"D\"]\n  Clock((\"Clock\")) --> D85[\"D\"]\n  Clock((\"Clock\")) --> D86[\"D\"]\n  Clock((\"Clock\")) --> D87[\"D\"]\n  Clock((\"Clock\")) --> D88[\"D\"]\n  Clock((\"Clock\")) --> D89[\"D\"]\n  Clock((\"Clock\")) --> D90[\"D\"]\n  Clock((\"Clock\")) --> D91[\"D\"]\n  Clock((\"Clock\")) --> D92[\"D\"]\n  Clock((\"Clock\")) --> D93[\"D\"]\n  Clock((\"Clock\")) --> D94[\"D\"]\n  Clock((\"Clock\")) --> D95[\"D\"]\n  Clock((\"Clock\")) --> D96[\"D\"]\n  Clock((\"Clock\")) --> D97[\"D\"]\n  Clock((\"Clock\")) --> D98[\"D\"]\n  Clock((\"Clock\")) --> D99[\"D\"]\n  Clock((\"Clock\")) --> D100[\"D\"]\n  D100 --> P[\"P\"]\n  D100 --> Q[\"Q\"]\n  D100 --> R[\"R\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            401,
+            580,
+            566,
+            763
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "If at some instance prior to the occurrence of the clock edge, P, Q and R have a value 0, 1 and 0 respectively, what shall be the value of PQR after the clock edge?",
+        "bbox": [
+            84,
+            773,
+            927,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 000",
+        "bbox": [
+            89,
+            815,
+            142,
+            830
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 001",
+        "bbox": [
+            285,
+            817,
+            337,
+            830
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 010",
+        "bbox": [
+            480,
+            815,
+            532,
+            830
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 011",
+        "bbox": [
+            675,
+            817,
+            727,
+            830
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 digital-logic circuit-output flip-flop normal",
+        "bbox": [
+            89,
+            840,
+            369,
+            851
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            857,
+            181,
+            871
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.8.32 Circuit Output: GATE CSE 2011 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            881,
+            490,
+            895
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following circuit involving three D-type flip-flops used in a certain type of counter configuration.",
+        "bbox": [
+            85,
+            904,
+            868,
+            920
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/6e5c98d61bb0d43f00343864fd14b1000dbfe4ad4bd74087786f02dd65564eb0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            883,
+            931,
+            921
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/2a36d4aee66f2ca5b1cbcb58d9e5f3aa45233786ec2f0f1f160149e24175af58.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Clock\nD Q\nQ̅\nP\nClock\nD Q\nQ̅\nClock\nD Q\nQ̅\nR\nClock",
+        "sub_type": "text_image",
+        "bbox": [
+            418,
+            68,
+            598,
+            271
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "If all the flip-flops were reset to 0 at power on, what is the total number of distinct outputs (states) represented by PQR generated by the counter?",
+        "bbox": [
+            84,
+            280,
+            927,
+            309
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            323,
+            126,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            324,
+            321,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 5",
+        "bbox": [
+            480,
+            324,
+            515,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            324,
+            710,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            347,
+            322,
+            358
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            364,
+            188,
+            378
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.8.33 Circuit Output: GATE CSE 2014 | Set 3 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            387,
+            546,
+            402
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/fc763246d56ab994debdc3804415f0a7af5555eeb94b1590c9381e5d8bcd8816.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Input[\"Input\"] --> Block1[\"J, Q2\"]\n  Block1 --> Block2[\"J, Q1\"]\n  Block2 --> Block3[\"J, Q0\"]\n  Block3 --> Block4[\"J, Q0\"]\n  Block4 --> Block5[\"K, Q2\"]\n  Block5 --> Block6[\"K, Q1\"]\n  Block6 --> Block7[\"K, Q0\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            416,
+            552,
+            530
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/4e14e19e6575b013aadf5d396631a048f0db3159f686645deb79657948ee90c6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            390,
+            932,
+            428
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The above synchronous sequential circuit built using JK flip-flops is initialized with $Q_{2}Q_{1}Q_{0}=000$ . The state sequence for this circuit for the next 3 clock cycles is",
+        "bbox": [
+            84,
+            539,
+            929,
+            568
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 001,010,011",
+        "bbox": [
+            89,
+            577,
+            211,
+            591
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 111,110,101",
+        "bbox": [
+            495,
+            577,
+            618,
+            592
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "c. 100,110,111",
+        "bbox": [
+            90,
+            591,
+            213,
+            605
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 100,011,001",
+        "bbox": [
+            497,
+            591,
+            618,
+            606
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 digital-logic circuit-output normal",
+        "bbox": [
+            87,
+            610,
+            344,
+            619
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            625,
+            188,
+            640
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.8.34 Circuit Output: GATE CSE 2025 | Set 2 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            650,
+            542,
+            663
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following logic circuit diagram.",
+        "bbox": [
+            85,
+            673,
+            406,
+            688
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/c6bd201e115001042c03a08971766cd732ffb4a15d3eaffd2b966f3528b32051.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  X[\"X\"] --> Y[\"Y\"]\n  Y -->|Input| AND_Gate{\"AND Gate\"}\n  AND_Gate -->|Input| AND[\"AND\"]\n  AND_Gate -->|Output| F[\"F\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            297,
+            699,
+            665,
+            826
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/391e589a8bc1ec823def5ddddd3795840daea233cbc364565d8ad14f2ba2c1cc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            652,
+            932,
+            690
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which is/are the CORRECT option(s) for the output function F ?",
+        "bbox": [
+            84,
+            852,
+            556,
+            866
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\overline{XY}$",
+        "bbox": [
+            87,
+            877,
+            149,
+            894
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $\\overline{X} +\\overline{Y} +X\\overline{Y}$",
+        "bbox": [
+            495,
+            877,
+            628,
+            895
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\overline{XY} + \\overline{X} + X\\overline{Y}$",
+        "bbox": [
+            90,
+            896,
+            236,
+            912
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $X + \\overline{Y}$",
+        "bbox": [
+            497,
+            897,
+            574,
+            912
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 digital-logic circuit-output multiple-selects easy one-mark",
+        "bbox": [
+            87,
+            918,
+            463,
+            928
+        ],
+        "page_idx": 11
+    }
+]

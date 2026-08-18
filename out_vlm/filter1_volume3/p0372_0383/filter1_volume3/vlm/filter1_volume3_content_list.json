@@ -1,0 +1,4490 @@
+[
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly using wait() and signal() operations, leading to deadlock or starvation.",
+            "- Not ensuring atomicity of synchronization primitives.",
+            "- Confusing mutexes with counting semaphores."
+        ],
+        "bbox": [
+            97,
+            65,
+            697,
+            106
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            106,
+            396,
+            119
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace the execution flow of multiple processes accessing shared resources, observing the values of semaphores or mutexes.",
+            "- Identify potential race conditions and propose synchronization solutions.",
+            "○ Analyze classic synchronization problems (Producer-Consumer, Readers-Writers, Dining Philosophers)."
+        ],
+        "bbox": [
+            97,
+            119,
+            932,
+            176
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Resource Allocation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            188,
+            248,
+            204
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Resource allocation is the process by which the operating system assigns available resources (CPU, memory, I/O devices, files) to processes. This is a fundamental task of the OS, impacting system performance and stability.",
+        "bbox": [
+            58,
+            218,
+            890,
+            247
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            257,
+            211,
+            271
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Resources can be preemptable (e.g., CPU) or non-preemptable (e.g., printer).",
+            "- Proper resource allocation is critical to prevent deadlocks and ensure fairness.",
+            "- Involves policies for granting requests and reclaiming resources."
+        ],
+        "bbox": [
+            97,
+            271,
+            680,
+            313
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Resource Allocation Graph (RAG)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            325,
+            369,
+            343
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A Resource Allocation Graph is a directed graph used to depict the state of a system regarding resources and processes. It helps in visualizing resource allocation and detecting deadlocks.",
+        "bbox": [
+            58,
+            353,
+            860,
+            384
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            394,
+            211,
+            408
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Nodes: Processes (circles) and Resource types (rectangles).",
+            "- Edges:",
+            "- Request Edge: From process to resource type (e.g., $P_i \\to R_j$ ), indicating $P_i$ is requesting an instance of $R_j$ .",
+            "- Assignment Edge: From resource type to process (e.g., $R_{j} \\rightarrow P_{i}$ ), indicating an instance of $R_{j}$ has been allocated to $P_{i}$ ."
+        ],
+        "bbox": [
+            97,
+            409,
+            914,
+            492
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- If the RAG contains a cycle, and each resource type has only one instance, then a deadlock exists.",
+        "bbox": [
+            97,
+            494,
+            831,
+            508
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- If the RAG contains a cycle, and some resource types have multiple instances, a deadlock may exist (further analysis needed).",
+        "bbox": [
+            97,
+            509,
+            897,
+            538
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            538,
+            225,
+            549
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly drawing request vs. assignment edges.",
+            "- Assuming a cycle always implies deadlock, especially for multiple-instance resources.",
+            "- Not understanding the difference between RAG and Wait-For Graph."
+        ],
+        "bbox": [
+            97,
+            552,
+            734,
+            593
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            593,
+            396,
+            606
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Draw the RAG based on the given process and resource states.",
+            "- Identify cycles in the graph.",
+            "- If cycles exist, determine if they lead to deadlock based on resource instance counts."
+        ],
+        "bbox": [
+            97,
+            606,
+            729,
+            649
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Round Robin Scheduling",
+        "text_level": 1,
+        "bbox": [
+            60,
+            661,
+            290,
+            678
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Round Robin (RR) is a preemptive process scheduling algorithm designed for time-sharing systems. Each process is given a small unit of CPU time, called a time quantum (or time slice). When the quantum expires, the process is preempted and added to the end of the ready queue.",
+        "bbox": [
+            58,
+            690,
+            912,
+            733
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            744,
+            332,
+            757
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Turnaround Time (TAT): CompletionTime - ArrivalTime",
+            "2. Waiting Time (WT): TurnaroundTime - BurstTime",
+            "3. Number of Context Switches: Depends on the number of processes and the time quantum."
+        ],
+        "bbox": [
+            89,
+            758,
+            788,
+            801
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            802,
+            211,
+            815
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Fair scheduling, as every process gets a chance to run.",
+            "- Good for interactive systems, providing quick response times.",
+            "- Performance heavily depends on the time quantum:",
+            "- Small quantum: High context switch overhead, good response time.",
+            "- Large quantum: Approaches FCFS, lower overhead, potentially poor response time."
+        ],
+        "bbox": [
+            97,
+            815,
+            747,
+            884
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            885,
+            225,
+            897
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly handling the time quantum and preemption points.",
+            "- Mistakes in calculating TAT or WT, especially when processes arrive at different times."
+        ],
+        "bbox": [
+            97,
+            897,
+            742,
+            925
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Forgetting to account for context switch overhead if specified in the problem.",
+        "bbox": [
+            97,
+            64,
+            667,
+            79
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            79,
+            396,
+            93
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Draw a Gantt chart, carefully allocating CPU time in quantum chunks and moving processes to the end of the ready queue upon preemption.",
+            "- Keep track of remaining burst times for each process."
+        ],
+        "bbox": [
+            95,
+            93,
+            904,
+            134
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Semaphore",
+        "text_level": 1,
+        "bbox": [
+            60,
+            147,
+            169,
+            163
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A semaphore is a synchronization primitive, a protected integer variable that can only be accessed and modified by two atomic operations: wait() (also known as P or down) and signal() (also known as V or up).",
+        "bbox": [
+            58,
+            176,
+            929,
+            206
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            214,
+            332,
+            229
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1. wait(S) operation:",
+        "text_level": 1,
+        "bbox": [
+            90,
+            230,
+            253,
+            244
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nwait(S) {\n    while (S <= 0); // busy wait\n    S--;\n}\n(Alternatively, block the process if S ≤ 0).\n```",
+        "bbox": [
+            109,
+            254,
+            423,
+            337
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2. signal(S) operation:",
+        "text_level": 1,
+        "bbox": [
+            90,
+            337,
+            270,
+            351
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nsignal(S) {\n    S++;\n}\n```",
+        "bbox": [
+            110,
+            361,
+            191,
+            404
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(Alternatively, wake up a blocked process if any).",
+        "bbox": [
+            110,
+            414,
+            470,
+            429
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            429,
+            211,
+            442
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Counting Semaphore: Can range over an unrestricted domain. Used to control access to a resource with multiple instances.",
+            "- Binary Semaphore (Mutex): Can only be 0 or 1. Used for mutual exclusion (like a lock).",
+            "- Can be used for both mutual exclusion and process synchronization (ordering of events).",
+            "- Improper use can lead to deadlock or starvation."
+        ],
+        "bbox": [
+            97,
+            442,
+            884,
+            511
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            511,
+            225,
+            524
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Swapping the order of wait() and signal() operations, leading to incorrect synchronization.",
+            "- Using busy-waiting semaphores in a single-processor system (wastes CPU cycles).",
+            "- Not initializing semaphores correctly."
+        ],
+        "bbox": [
+            97,
+            524,
+            759,
+            567
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            567,
+            396,
+            581
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace the values of semaphores as processes execute wait() and signal() operations.",
+            "- Identify critical sections and shared resources to determine appropriate semaphore usage.",
+            "- Solve classic synchronization problems using semaphores."
+        ],
+        "bbox": [
+            97,
+            581,
+            769,
+            623
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "SRTF (Shortest Remaining Time First)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            635,
+            406,
+            652
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "SRTF is a preemptive version of the Shortest Job First (SJF) scheduling algorithm. The CPU is allocated to the process with the smallest remaining burst time. If a new process arrives with a shorter burst time than the currently running process's remaining time, the current process is preempted.",
+        "bbox": [
+            58,
+            663,
+            929,
+            707
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            718,
+            332,
+            731
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Turnaround Time (TAT): CompletionTime - ArrivalTime",
+            "2. Waiting Time (WT): TurnaroundTime - BurstTime"
+        ],
+        "bbox": [
+            89,
+            732,
+            584,
+            761
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            762,
+            211,
+            775
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Optimal for minimizing average waiting time.",
+            "- Requires knowing the remaining burst time of all processes, which is difficult in practice.",
+            "- High overhead due to frequent context switches, especially with many short jobs or frequent arrivals.",
+            "- Can suffer from starvation if a continuous stream of short jobs keeps arriving."
+        ],
+        "bbox": [
+            97,
+            775,
+            840,
+            830
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            831,
+            225,
+            843
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly determining when preemption occurs (at every arrival or when a shorter job becomes ready).",
+            "- Mistakes in calculating remaining burst times.",
+            "- Overlooking processes that arrive later but have very short burst times."
+        ],
+        "bbox": [
+            97,
+            844,
+            865,
+            885
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            885,
+            396,
+            899
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Create a Gantt chart, carefully tracking the remaining burst time of all ready processes at each time unit.",
+            "- At each time unit, check for new arrivals and select the process with the minimum remaining burst time."
+        ],
+        "bbox": [
+            97,
+            899,
+            868,
+            927
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "System Calls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            184,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "System calls provide an interface between a running program and the operating system. They allow user-level programs to request services from the OS kernel, such as file I/O, process creation, memory allocation, and device access.",
+        "bbox": [
+            58,
+            93,
+            897,
+            135
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            147,
+            211,
+            161
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Transition from user mode to kernel mode (privileged mode).",
+            "- Typically invoked through a software interrupt (trap).",
+            "- Provide a controlled and secure way for user programs to access protected resources.",
+            "- Examples: fork(), exec(), read(), write(), open(), close(), wait(), exit()."
+        ],
+        "bbox": [
+            97,
+            161,
+            739,
+            217
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            217,
+            225,
+            229
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing system calls with library calls (library calls are user-level functions that may or may not invoke system calls).",
+            "- Not understanding the mode switch involved."
+        ],
+        "bbox": [
+            95,
+            230,
+            926,
+            271
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Threads",
+        "text_level": 1,
+        "bbox": [
+            60,
+            285,
+            139,
+            300
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A thread (or lightweight process) is a basic unit of CPU utilization within a process. Multiple threads within the same process share the same code section, data section, and other OS resources (like open files, signals), but each has its own program counter, register set, and stack.",
+        "bbox": [
+            58,
+            314,
+            917,
+            356
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            368,
+            211,
+            381
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Faster Context Switching: Switching between threads in the same process is faster than switching between processes.",
+            "• Resource Sharing: Threads within a process share memory and resources, facilitating communication.",
+            "- Concurrency: Multiple threads can execute concurrently, improving application responsiveness and throughput on multi-core systems.",
+            "- User-level Threads: Managed by a user-level library, faster to create/manage, but if one thread blocks, the entire process blocks.",
+            "- Kernel-level Threads: Managed by the OS kernel, slower to create/manage, but if one thread blocks, others can still run.",
+            "- Many-to-One, One-to-One, Many-to-Many models: Different mappings between user and kernel threads."
+        ],
+        "bbox": [
+            95,
+            382,
+            926,
+            519
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            520,
+            225,
+            532
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing threads with processes (threads share memory, processes do not).",
+            "- Forgetting that synchronization is still required for shared data among threads.",
+            "- Misunderstanding the implications of user-level vs. kernel-level threads."
+        ],
+        "bbox": [
+            95,
+            533,
+            680,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Translation Lookaside Buffer (TLB)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            587,
+            381,
+            603
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The TLB is a small, fast hardware cache that stores recent virtual-to-physical address translations. It is used to speed up memory access in paged virtual memory systems by avoiding multiple memory accesses to the page table.",
+        "bbox": [
+            58,
+            617,
+            917,
+            646
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            657,
+            332,
+            669
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1. Effective Access Time (EAT) with TLB:",
+        "bbox": [
+            90,
+            669,
+            416,
+            684
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE A T = T L B \\_ H i t \\_ R a t i o \\times (T L B \\_ A c c e s s \\_ T i m e + M e m o r y \\_ A c c e s s \\_ T i m e) + (1 - T L B \\_ H i t \\_ R a t i o)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            109,
+            695,
+            952,
+            714
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Where Page\\_Table\\_Access\\_Time is the time to access the page table in main memory. If the page table is also in memory, this is another Memory\\_Access\\_Time.",
+        "bbox": [
+            107,
+            722,
+            919,
+            752
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            752,
+            211,
+            766
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Significantly reduces the average memory access time if the hit ratio is high.",
+            "- A TLB miss requires a page table walk (accessing the page table in main memory).",
+            "- TLB entries are flushed on context switches between processes (though some TLBs support ASIDs to avoid this)."
+        ],
+        "bbox": [
+            95,
+            766,
+            899,
+            821
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            821,
+            225,
+            834
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly calculating EAT, especially the components for a TLB miss (TLB access + memory access for page table + memory access for data).",
+            "- Forgetting to include TLB access time even on a hit."
+        ],
+        "bbox": [
+            95,
+            834,
+            915,
+            876
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            877,
+            396,
+            890
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Carefully plug values into the EAT formula, ensuring all access times are accounted for.",
+            "- Understand how a TLB miss impacts the total access time."
+        ],
+        "bbox": [
+            95,
+            890,
+            749,
+            918
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Virtual Memory",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            203,
+            81
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Virtual memory is a memory management technique that provides an application with an illusion of a contiguous, large address space, even if the physical memory is fragmented or smaller than the virtual address space. It separates logical memory from physical memory.",
+        "bbox": [
+            58,
+            93,
+            934,
+            137
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            147,
+            211,
+            161
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Allows programs to be larger than physical memory.",
+            "- Enables efficient sharing of memory among multiple processes.",
+            "- Provides memory protection.",
+            "- Commonly implemented using paging (demand paging) and swapping.",
+            "- Introduces the concept of page faults."
+        ],
+        "bbox": [
+            97,
+            161,
+            628,
+            230
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            231,
+            332,
+            243
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1. Effective Access Time (EAT): (See Demand Paging and TLB sections for detailed formulas).",
+        "bbox": [
+            89,
+            243,
+            796,
+            258
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            258,
+            226,
+            270
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing virtual memory with physical memory.",
+            "- Not understanding the role of the MMU (Memory Management Unit) in address translation.",
+            "- Misinterpreting the benefits and overheads of virtual memory."
+        ],
+        "bbox": [
+            97,
+            271,
+            769,
+            314
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference",
+        "text_level": 1,
+        "bbox": [
+            60,
+            326,
+            295,
+            340
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Banker's Algorithm:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            355,
+            247,
+            369
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Need Matrix: $Need[i][j] = Max[i][j] - Allocation[i][j]$",
+        "bbox": [
+            97,
+            369,
+            539,
+            385
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Demand Paging / Virtual Memory EAT (without TLB):",
+        "bbox": [
+            72,
+            385,
+            500,
+            399
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE A T = (1 - p) \\times \\text {MemoryAccessTime} + p \\times (\\text {PageFaultOverhead} + \\text {MemoryAccessTime})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            119,
+            409,
+            899,
+            428
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where p is page fault rate.",
+        "bbox": [
+            82,
+            437,
+            278,
+            451
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Disk Access Time:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            451,
+            235,
+            463
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {AccessTime} = \\text {SeekTime} + \\text {RotationalLatency} + \\text {TransferTime}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            231,
+            475,
+            788,
+            492
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {AverageRotationalLatency} = \\frac {1}{2} \\times \\text {RotationTime}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            300,
+            502,
+            719,
+            534
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {TransferTime} = \\frac {\\text {NumberOfSectors}}{\\text {SectorsPerTrack}} \\times \\text {RotationTime}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            273,
+            542,
+            744,
+            576
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Multilevel Paging EAT (without TLB):",
+        "text_level": 1,
+        "bbox": [
+            72,
+            583,
+            376,
+            598
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE A T = (N + 1) \\times M e m o r y A c c e s s T i m e\n$$",
+        "text_format": "latex",
+        "bbox": [
+            339,
+            608,
+            680,
+            625
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "for N-level paging, assuming page tables are in memory.",
+        "bbox": [
+            82,
+            635,
+            505,
+            650
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Page Replacement:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            650,
+            240,
+            663
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Hit Ratio: $\\frac{\\text{Number of Page Hits}}{\\text{Total Page References}}$",
+            "- Miss Ratio (Page Fault Rate): $\\frac{\\text{Number of Page Faults}}{\\text{Total Page References}}$",
+            "- HitRatio + MissRatio = 1"
+        ],
+        "bbox": [
+            97,
+            663,
+            478,
+            720
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Process Scheduling Metrics:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            722,
+            315,
+            736
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Turnaround Time (TAT): CompletionTime - ArrivalTime",
+            "- Waiting Time (WT): TurnaroundTime - BurstTime",
+            "- Response Time (RT): FirstResponseTime - ArrivalTime"
+        ],
+        "bbox": [
+            97,
+            736,
+            581,
+            780
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- TLB EAT:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            780,
+            164,
+            792
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE A T = T L B \\_ H i t \\_ R a t i o \\times (T L B \\_ A c c e s s \\_ T i m e + M e m o r y \\_ A c c e s s \\_ T i m e) + (1 - T L B \\_ H i t \\_ R a t i o) \\times\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            804,
+            954,
+            823
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            833,
+            285,
+            850
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Master Numerical Problems: A significant portion of OS questions in GATE are numerical, especially from Process Scheduling (FCFS, SJF, SRTF, RR), Memory Management (Paging, Page Replacement, TLB EAT), and Disk Scheduling. Practice drawing Gantt charts and calculating metrics meticulously.",
+            "2. Understand Preemption: Pay close attention to whether a scheduling algorithm is preemptive or non-preemptive."
+        ],
+        "bbox": [
+            63,
+            862,
+            934,
+            920
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "This is a common source of error in Gantt chart construction. For preemptive algorithms, always check for new arrivals at each time unit.",
+        "bbox": [
+            84,
+            64,
+            890,
+            90
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "3. Trace Algorithms Systematically: For complex algorithms like Banker's, Page Replacement, or Disk Scheduling, trace the steps methodically. Draw diagrams (RAG, memory maps, Gantt charts) to visualize the state changes.",
+            "4. Differentiate Similar Concepts: Be clear on the distinctions between processes and threads, mutexes and semaphores, internal and external fragmentation, logical and physical addresses, and different deadlock strategies (prevention, avoidance, detection).",
+            "5. Read Questions Carefully: Look for keywords like \"average,\" \"minimum,\" \"maximum,\" \"at least,\" \"at most,\" \"preemptive,\" \"non-preemptive,\" and specific units (ms, ns). A small detail can change the entire answer.",
+            "6. Focus on Trade-offs: Many OS concepts involve trade-offs (e.g., performance vs. fairness in scheduling, memory usage vs. access time in paging). Understand why certain design choices are made and their implications.",
+            "7. Review Formulas Regularly: Keep the key formulas for EAT, scheduling metrics, and disk access time handy and review them frequently. Understand the components of each formula.",
+            "8. Practice with GATE Previous Year Questions: This will help you understand the common question patterns, difficulty levels, and time management strategies specific to the GATE exam."
+        ],
+        "bbox": [
+            63,
+            92,
+            924,
+            271
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.1",
+        "text_level": 1,
+        "bbox": [
+            67,
+            285,
+            92,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Bankers Algorithm (2)",
+        "text_level": 1,
+        "bbox": [
+            425,
+            285,
+            603,
+            300
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (8Q)",
+        "bbox": [
+            70,
+            309,
+            267,
+            323
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.1.1 Bankers Algorithm: GATE CSE 2018 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            77,
+            339,
+            522,
+            353
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/7cd0164b2fa891363d4d07800812764bb8de4bb415dd4b55002233cd5d7257d5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            340,
+            932,
+            378
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In a system, there are three types of resources: $E, F$ and $G$ . Four processes $P_0, P_1, P_2$ and $P_3$ execute concurrently. At the outset, the processes have declared their maximum resource requirements using a",
+        "bbox": [
+            82,
+            362,
+            875,
+            391
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "matrix named Max as given below. For example, $Max[P_{2}, F]$ is the maximum number of instances of F that $P_{2}$ would require. The number of instances of the resources allocated to the various processes at any given state is given by a matrix named Allocation.",
+        "bbox": [
+            82,
+            391,
+            927,
+            434
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider a state of the system with the Allocation matrix as shown below, and in which 3 instances of E and 3 instances of F are only resources available.",
+        "bbox": [
+            82,
+            438,
+            929,
+            467
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/55cd9a3a13c91452397cb7979f4febda1db25ada0d74cf15a245f51ac53c25a6.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"4\">Allocation</td><td colspan=\"4\">Max</td></tr><tr><td></td><td>E</td><td>F</td><td>G</td><td></td><td>E</td><td>F</td><td>G</td></tr><tr><td> $P_0$ </td><td>1</td><td>0</td><td>1</td><td> $P_0$ </td><td>4</td><td>3</td><td>1</td></tr><tr><td> $P_1$ </td><td>1</td><td>1</td><td>2</td><td> $P_1$ </td><td>2</td><td>1</td><td>4</td></tr><tr><td> $P_2$ </td><td>1</td><td>0</td><td>3</td><td> $P_2$ </td><td>1</td><td>3</td><td>3</td></tr><tr><td> $P_3$ </td><td>2</td><td>0</td><td>0</td><td> $P_3$ </td><td>5</td><td>4</td><td>1</td></tr></table>",
+        "bbox": [
+            315,
+            479,
+            702,
+            598
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "From the perspective of deadlock avoidance, which one of the following is true?",
+        "bbox": [
+            85,
+            606,
+            667,
+            622
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The system is in safe state",
+            "B. The system is not in safe state, but would be safe if one more instance of $E$ were available",
+            "C. The system is not in safe state, but would be safe if one more instance of $F$ were available",
+            "D. The system is not in safe state, but would be safe if one more instance of G were available"
+        ],
+        "bbox": [
+            87,
+            631,
+            789,
+            693
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 operating-system deadlock-prevention-avoidance-detection bankers-algorithm normal two-marks",
+        "bbox": [
+            87,
+            717,
+            605,
+            726
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            733,
+            186,
+            748
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.1.2 Bankers Algorithm: GATE CSE 2026 | Set 1 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            77,
+            757,
+            574,
+            771
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "With respect to deadlocks in an operating system, which of the following statements is/are FALSE?",
+        "bbox": [
+            84,
+            780,
+            806,
+            796
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Banker's algorithm is used to prevent deadlocks",
+            "B. Deadlock formation can be prevented by ensuring that the hold and wait condition is not allowed",
+            "C. An assignment edge in a resource allocation graph is marked from a process to a resource",
+            "D. A safe state guarantees that all processes can finish without formation of a deadlock"
+        ],
+        "bbox": [
+            87,
+            806,
+            811,
+            863
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 operating-system deadlock-prevention-avoidance-detection bankers-algorithm multiple-selects one-mark",
+        "bbox": [
+            87,
+            887,
+            657,
+            897
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            904,
+            189,
+            919
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/d996a127d333ff5a4b8d7de2e455948764ee4366571c1608032b8d5c29c839a7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            760,
+            932,
+            798
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.2.1 Best Fit: GATE CSE 2026 | Set 2 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            91,
+            487,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/d90f1e3d8e8991dc5cc69e1657890297c6876ec032d2c79a60b1f603cbe153fd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            93,
+            932,
+            131
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider contiguous allocation of physical memory to processes using variable partitioning scheme. Suppose there are 8 holes in the memory of sizes 20KB, 4 KB, 25 KB, 18 KB, 7 KB, 9 KB, 15 KB, and 12 KB. Assume that no two holes are adjacent. Two processes P1 of size 16 KB and P2 of size 9 KB arrive in that order, and they are allocated memory using the best-fit technique. After allocating space to P1 and P2, the number of holes of size less than 8 KB is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            84,
+            115,
+            929,
+            188
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Note: $1\\mathrm{K} = 2^{10}$",
+        "bbox": [
+            85,
+            201,
+            208,
+            217
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 operating-system memory-management best-fit numerical-answers two-marks",
+        "bbox": [
+            87,
+            232,
+            547,
+            243
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            248,
+            186,
+            263
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.3",
+        "text_level": 1,
+        "bbox": [
+            68,
+            273,
+            95,
+            286
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Context Switch (4)",
+        "text_level": 1,
+        "bbox": [
+            438,
+            273,
+            589,
+            288
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (6Q)",
+        "bbox": [
+            70,
+            296,
+            265,
+            311
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.3.1 Context Switch: GATE CSE 1999 | Question: 2.12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            326,
+            505,
+            340
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/c82e0f52edc378326ea6821a200447bd669583a497ab347eac16085e54b3e76f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            328,
+            932,
+            366
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following actions is/are typically not performed by the operating system when switching context from process A to process B?",
+        "bbox": [
+            84,
+            350,
+            878,
+            380
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Saving current register values and restoring saved register values for process B.",
+            "B. Changing address translation tables.",
+            "C. Swapping out the memory image of process A to the disk.",
+            "D. Invalidating the translation look-aside buffer."
+        ],
+        "bbox": [
+            87,
+            391,
+            700,
+            448
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1999 operating-system context-switch normal",
+        "bbox": [
+            87,
+            475,
+            334,
+            484
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            491,
+            186,
+            505
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.3.2 Context Switch: GATE CSE 2000 | Question: 1.20, ISRO2008-47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            514,
+            616,
+            528
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/0f5f38abed00d749b337c24dd2ad24cab03d99b252facabcad949a4ef38cd5e9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            517,
+            932,
+            555
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following need not necessarily be saved on a context switch between processes?",
+        "bbox": [
+            85,
+            538,
+            774,
+            553
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. General purpose registers",
+            "C. Program counter",
+            "gatecse-2000 operating-system easy isro2008 context-switch"
+        ],
+        "bbox": [
+            87,
+            562,
+            389,
+            604
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Translation look-aside buffer",
+            "D. All of the above"
+        ],
+        "bbox": [
+            495,
+            562,
+            712,
+            589
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            610,
+            186,
+            625
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.3.3 Context Switch: GATE CSE 2011 | Question: 6, UGCNET-June2013-III: 62",
+        "text_level": 1,
+        "bbox": [
+            78,
+            634,
+            690,
+            648
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/fccfb559144328a3c29f13a1937cb100254400dc136a7408d7acddb920308134.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            637,
+            932,
+            675
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let the time taken to switch from user mode to kernel mode of execution be T1 while time taken to switch between two user processes be T2. Which of the following is correct?",
+        "bbox": [
+            84,
+            657,
+            878,
+            687
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $T1 > T2$",
+            "C. T1 < T2"
+        ],
+        "bbox": [
+            87,
+            695,
+            184,
+            723
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $T1 = T2$",
+            "D. Nothing can be said about the relation between T1 and T2"
+        ],
+        "bbox": [
+            495,
+            695,
+            759,
+            736
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 operating-system context-switch easy ugcnetcse-june2013-paper3",
+        "bbox": [
+            87,
+            742,
+            467,
+            752
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            758,
+            186,
+            771
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.3.4 Context Switch: GATE CSE 2024 | Set 2 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            781,
+            546,
+            795
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/0078ab7e2557c73ab5bfb9d5fe9d6f3774cbcf3489f3a9bc1994aaebca21211c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            785,
+            932,
+            821
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider a process P running on a CPU. Which one or more of the following events will always trigger a context switch by the OS that results in process P moving to a non-running state (e.g., ready, blocked)?",
+        "bbox": [
+            84,
+            807,
+            878,
+            838
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. P makes a blocking system call to read a block of data from the disk",
+            "B. P tries to access a page that is in the swap space, triggering a page fault",
+            "C. An interrupt is raised by the disk to deliver data requested by some other process",
+            "D. A timer interrupt is raised by the hardware"
+        ],
+        "bbox": [
+            85,
+            847,
+            705,
+            906
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/0078ab7e2557c73ab5bfb9d5fe9d6f3774cbcf3489f3a9bc1994aaebca21211c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            785,
+            932,
+            821
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "5.2",
+        "bbox": [
+            68,
+            66,
+            95,
+            78
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Best Fit (1)",
+        "bbox": [
+            468,
+            65,
+            561,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.4",
+        "text_level": 1,
+        "bbox": [
+            68,
+            112,
+            95,
+            124
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "DMA (1)",
+        "text_level": 1,
+        "bbox": [
+            480,
+            111,
+            549,
+            125
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.4.1 DMA: GATE CSE 2001 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            137,
+            403,
+            150
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/9ee63afa462d1b3b6a15100149ca0ca2b5048b60ed22ecdbee21b0e6a460b437.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            140,
+            932,
+            178
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a disk with the following specifications: 20 surfaces, 1000 tracks/surface, 16 sectors/track, data density 1 KB/sector, rotation speed 3000 rpm. The operating system initiates the transfer between the disk",
+        "bbox": [
+            84,
+            161,
+            878,
+            188
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "and the memory sector-wise. Once the head has been placed on the right track, the disk reads a sector in a single scan. It reads bits from the sector while the head is passing over the sector. The read bits are formed into bytes in a serial-in-parallel-out buffer and each byte is then transferred to memory. The disk writing is exactly a complementary process.",
+        "bbox": [
+            84,
+            190,
+            927,
+            245
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "For parts (C) and (D) below, assume memory read-write time = 0.1 microseconds/byte, interrupt driven transfer has an interrupt overhead = 0.4 microseconds, the DMA initialization, and termination overhead is negligible compared to the total sector transfer time. DMA requests are always granted.",
+        "bbox": [
+            84,
+            249,
+            927,
+            290
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. What is the total capacity of the desk?",
+            "B. What is the data transfer rate?",
+            "C. What is the percentage of time the CPU is required for this disk I/O for byte-wise interrupts driven transfer?",
+            "D. What is the maximum percentage of time the CPU is held up for this disk I/O for cycle-stealing DMA transfer?"
+        ],
+        "bbox": [
+            87,
+            301,
+            907,
+            358
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 operating-system disk normal descriptive dma",
+        "bbox": [
+            87,
+            383,
+            400,
+            393
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            400,
+            186,
+            413
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.5",
+        "text_level": 1,
+        "bbox": [
+            68,
+            423,
+            95,
+            437
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Deadlock Prevention Avoidance Detection (4)",
+        "text_level": 1,
+        "bbox": [
+            334,
+            423,
+            695,
+            439
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (9Q)",
+        "bbox": [
+            70,
+            448,
+            267,
+            461
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.5.1 Deadlock Prevention Avoidance Detection: GATE CSE 2018 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            477,
+            702,
+            491
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/931cef8a6071abadfc0c77a2466355db14f923eae2489d1bda2b673299b40fc8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            480,
+            932,
+            517
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a system with 3 processes that share 4 instances of the same resource type. Each process can request a maximum of K instances. Resources can be requested and releases only one at a time. The largest value of K that will always avoid deadlock is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            501,
+            878,
+            546
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 operating-system deadlock-prevention-avoidance-detection easy numerical-answers one-mark",
+        "bbox": [
+            87,
+            559,
+            591,
+            568
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            576,
+            186,
+            590
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.5.2 Deadlock Prevention Avoidance Detection: GATE CSE 2021 | Set 2 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            599,
+            756,
+            612
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/6cb8502ad046c77d542a5580cca425dd5a8821c96957d687c5e6c33ae8c61f80.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            602,
+            932,
+            638
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a computer system with multiple shared resource types, with one instance per resource type. Each instance can be owned by only one process at a time. Owning and freeing of resources are done by holding a global lock (L). The following scheme is used to own a resource instance:",
+        "bbox": [
+            84,
+            623,
+            878,
+            667
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfunction OWNRESOURCE(Resource R)\n    Acquire lock L // a global lock\n    if R is available then\n        Acquire R\n        Release lock L\n    else\n        if R is owned by another process P then\n            Terminate P, after releasing all resources owned by P\n        Acquire R\n        Restart P\n        Release lock L\n    end if\nend if\nend function\n```",
+        "bbox": [
+            112,
+            676,
+            445,
+            826
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following choice(s) about the above scheme is/are correct?",
+        "bbox": [
+            85,
+            846,
+            613,
+            861
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The scheme ensures that deadlocks will not occur",
+            "B. The scheme may lead to live-lock",
+            "C. The scheme may lead to starvation",
+            "D. The scheme violates the mutual exclusion property"
+        ],
+        "bbox": [
+            87,
+            872,
+            485,
+            929
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/6cb8502ad046c77d542a5580cca425dd5a8821c96957d687c5e6c33ae8c61f80.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            602,
+            932,
+            638
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2024-set2 operating-system multiple-selects context-switch one-mark",
+        "bbox": [
+            87,
+            71,
+            458,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            105,
+            188,
+            119
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.5.3 Deadlock Prevention Avoidance Detection: GATE CSE 2026 | Set 1 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            128,
+            757,
+            142
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/2d194b8c4e1a0ea03f0add58fd86d3dece7a11c4703185d0c9dc5f0a61a1fba1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            131,
+            931,
+            168
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a system consisting of $k$ instances of a resource $R$ , being shared by 5 processes. Assume that each process requires a maximum of two instances of resource $R$ and a process can request or release only one instance at a time. Further, a process can request the second instance of the resource only after accounting the first instance.",
+        "bbox": [
+            84,
+            152,
+            878,
+            209
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The minimum value of $k$ for the system to be deadlock-free is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            85,
+            222,
+            721,
+            238
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 operating-system deadlock-prevention-avoidance-detection numerical-answers one-mark",
+        "bbox": [
+            87,
+            251,
+            579,
+            261
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            267,
+            188,
+            281
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.5.4 Deadlock Prevention Avoidance Detection: GATE IT 2004 | Question: 63",
+        "text_level": 1,
+        "bbox": [
+            78,
+            290,
+            685,
+            305
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/7167fd79a2656b13d26b468e10fcdd1212050ca60e1df02ce9bc25b41f439e50.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            294,
+            931,
+            331
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In a certain operating system, deadlock prevention is attempted using the following scheme. Each process is assigned a unique timestamp, and is restarted with the same timestamp if killed. Let $P_h$ be the process holding a resource $R, P_r$ be a process requesting for the same resource $R$ , and $T(P_h)$ and $T(P_r)$ be their timestamps respectively. The decision to wait or preempt one of the processes is based on the following algorithm.",
+        "bbox": [
+            84,
+            315,
+            929,
+            375
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nif T(Pr) < T(Ph) then\n    kill Pr\nelse wait\n```",
+        "bbox": [
+            87,
+            382,
+            206,
+            416
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE?",
+        "bbox": [
+            85,
+            423,
+            356,
+            439
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The scheme is deadlock-free, but not starvation-free",
+            "B. The scheme is not deadlock-free, but starvation-free",
+            "C. The scheme is neither deadlock-free nor starvation-free",
+            "D. The scheme is both deadlock-free and starvation-free"
+        ],
+        "bbox": [
+            87,
+            450,
+            519,
+            505
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 operating-system normal deadlock-prevention-avoidance-detection",
+        "bbox": [
+            87,
+            532,
+            450,
+            542
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            548,
+            188,
+            562
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.6",
+        "text_level": 1,
+        "bbox": [
+            68,
+            573,
+            95,
+            586
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Demand Paging (3)",
+        "text_level": 1,
+        "bbox": [
+            436,
+            573,
+            591,
+            587
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.6.1 Demand Paging: GATE CSE 2022 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            599,
+            499,
+            612
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/3195451e07aabb5769dd8fe69cf6f218d795ed1bd873ebe4083e9c3e2bc67b33.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            602,
+            931,
+            638
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a demand paging system with four page frames (initially empty) and LRU page replacement policy. For the following page reference string",
+        "bbox": [
+            84,
+            622,
+            878,
+            653
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n7, 2, 7, 3, 2, 5, 3, 4, 6, 7, 7, 1, 5, 6, 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            369,
+            661,
+            643,
+            678
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "the page fault rate, defined as the ratio of number of page faults to the number of memory accesses (rounded off to one decimal place) is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            701,
+            924,
+            733
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers operating-system page-replacement demand-paging two-marks",
+        "bbox": [
+            87,
+            745,
+            544,
+            756
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            761,
+            188,
+            776
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.6.2 Demand Paging: GATE CSE 2025 | Set 1 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            785,
+            542,
+            800
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/8aca0ed9eb1ccd167b693695daa3517ccc118c1346dcf8841ce89da334f21ad3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            787,
+            931,
+            825
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a demand paging memory management system with 32-bit logical address, 20-bit physical address, and page size of 2048 bytes. Assuming that the memory is byte addressable, what is the maximum number of entries in the page table?",
+        "bbox": [
+            84,
+            809,
+            878,
+            853
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $2^{21}$",
+        "bbox": [
+            89,
+            864,
+            136,
+            878
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $2^{20}$",
+        "bbox": [
+            285,
+            865,
+            331,
+            878
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{22}$",
+        "bbox": [
+            478,
+            865,
+            526,
+            878
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $2^{24}$",
+        "bbox": [
+            673,
+            865,
+            721,
+            878
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 operating-system demand-paging paging easy one-mark",
+        "bbox": [
+            87,
+            890,
+            455,
+            900
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            906,
+            188,
+            921
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2021-set2 multiple-selects operating-system deadlock-prevention-avoidance-detection two-marks",
+        "bbox": [
+            87,
+            89,
+            573,
+            99
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.6.3 Demand Paging: GATE CSE 2025 | Set 2 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            552,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider a demand paging system with three frames, and the following page reference string: 1 2 3 4 5 4 1 6 4 5 1 3 2 . The contents of the frames are as follows initially and after each reference (from left to right):",
+        "bbox": [
+            84,
+            87,
+            875,
+            118
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/92bc7973d2237bcc281395dbb6fa4354bbb567072a34124a0387e9ebac71e674.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>initially</td><td colspan=\"13\">after</td></tr><tr><td>-</td><td> $1^{*}$ </td><td> $2^{*}$ </td><td> $3^{*}$ </td><td> $4^{*}$ </td><td> $5^{*}$ </td><td>4</td><td>1</td><td> $6^{*}$ </td><td>4</td><td>5</td><td> $1^{*}$ </td><td> $3^{*}$ </td><td> $2^{*}$ </td></tr><tr><td>-</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>2</td></tr><tr><td>-</td><td>-</td><td>2</td><td>2</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>1</td><td>1</td><td>1</td></tr><tr><td>-</td><td>-</td><td>-</td><td>3</td><td>3</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>3</td><td>3</td></tr></table>",
+        "bbox": [
+            226,
+            129,
+            789,
+            229
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The \\*-marked references cause page replacements.",
+        "bbox": [
+            85,
+            251,
+            468,
+            266
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one or more of the following could be the page replacement policy/policies in use?",
+        "bbox": [
+            84,
+            269,
+            736,
+            283
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Least Recently Used page replacement policy",
+            "B. Least Frequently Used page replacement policy",
+            "C. Most Frequently Used page replacement policy",
+            "D. Optimal page replacement policy"
+        ],
+        "bbox": [
+            87,
+            295,
+            463,
+            352
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 operating-system page-replacement demand-paging multiple-selects two-marks",
+        "bbox": [
+            87,
+            376,
+            552,
+            385
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            393,
+            188,
+            407
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.7",
+        "text_level": 1,
+        "bbox": [
+            68,
+            416,
+            95,
+            429
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Disk (30)",
+        "text_level": 1,
+        "bbox": [
+            477,
+            416,
+            552,
+            432
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (2Q)",
+        "bbox": [
+            70,
+            442,
+            453,
+            456
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.7.1 Disk: GATE CSE 1990 | Question: 7-c",
+        "text_level": 1,
+        "bbox": [
+            78,
+            470,
+            415,
+            484
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A certain moving arm disk-storage device has the following specifications:",
+        "bbox": [
+            85,
+            494,
+            626,
+            509
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Number of tracks per surface = 404",
+            "- Track storage capacity = 130030 bytes.",
+            "- Disk speed = 3600 rpm",
+            "• Average seek time = 30 m secs."
+        ],
+        "bbox": [
+            97,
+            519,
+            411,
+            577
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Estimate the average latency, the disk storage capacity, and the data transfer rate.",
+        "bbox": [
+            85,
+            587,
+            689,
+            603
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gate1990 operating-system disk descriptive",
+        "bbox": [
+            87,
+            622,
+            307,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            638,
+            188,
+            652
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.7.2 Disk: GATE CSE 1993 | Question: 6.7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            661,
+            413,
+            674
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A certain moving arm disk storage, with one head, has the following specifications:",
+        "bbox": [
+            85,
+            685,
+            689,
+            700
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Number of tracks/recording surface = 200",
+            "- Disk rotation speed = 2400 rpm",
+            "- Track storage capacity = 62,500 bits"
+        ],
+        "bbox": [
+            97,
+            710,
+            391,
+            752
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The average latency of this device is P ms and the data transfer rate is Q bits/sec. Write the values of P and Q.",
+        "bbox": [
+            85,
+            764,
+            900,
+            780
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gate1993 operating-system disk normal descriptive",
+        "bbox": [
+            87,
+            799,
+            349,
+            808
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            814,
+            188,
+            828
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.7.3 Disk: GATE CSE 1993 | Question: 7.8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            838,
+            413,
+            852
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The root directory of a disk should be placed",
+        "bbox": [
+            85,
+            862,
+            413,
+            876
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. at a fixed address in main memory",
+            "C. anywhere on the disk"
+        ],
+        "bbox": [
+            87,
+            885,
+            347,
+            912
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. at a fixed location on the disk",
+            "D. at a fixed location on the system disk"
+        ],
+        "bbox": [
+            495,
+            885,
+            757,
+            923
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/f66b7d192b5d2d3a9909f4eb336fd26d1c6fcbc92b0df397091180854b5717bd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            473,
+            932,
+            511
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/0df389e613ac61c317a674b596b77098cce0b85e7455c8c865e117dcb654e154.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            663,
+            932,
+            701
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/7387d9632abcbe3aca1e80390583cf0d09065ee353953df38d6cb8907e0b051b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            840,
+            932,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "E. anywhere on the system disk",
+        "bbox": [
+            89,
+            65,
+            312,
+            78
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1993 operating-system disk normal",
+        "bbox": [
+            89,
+            84,
+            290,
+            93
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            99,
+            181,
+            112
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.7.4 Disk: GATE CSE 1995 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            123,
+            410,
+            137
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "If the overhead for formatting a disk is 96 bytes for a 4000 byte sector,",
+        "bbox": [
+            85,
+            146,
+            600,
+            162
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/e687a56d781ca2249d6d23de08b59511e5f1bb7224bfd7ec164c4eba186dc28c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            931,
+            163
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. Compute the unformatted capacity of the disk for the following parameters:",
+        "bbox": [
+            87,
+            173,
+            657,
+            187
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Number of surfaces: 8",
+            "- Outer diameter of the disk: 12 cm",
+            "- Inner diameter of the disk: 4 cm",
+            "- Inner track space: 0.1 mm",
+            "- Number of sectors per track: 20"
+        ],
+        "bbox": [
+            122,
+            188,
+            373,
+            257
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. If the disk in (A) is rotating at 360 rpm, determine the effective data transfer rate which is defined as the number of bytes transferred per second between disk and memory.",
+        "bbox": [
+            87,
+            258,
+            927,
+            287
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1995 operating-system disk normal descriptive",
+        "bbox": [
+            87,
+            312,
+            349,
+            323
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            328,
+            181,
+            343
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.7.5 Disk: GATE CSE 1996 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            352,
+            410,
+            366
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A file system with a one-level directory structure is implemented on a disk with disk block size of $4K$ bytes. The disk is used as follows:",
+        "bbox": [
+            84,
+            376,
+            875,
+            404
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/122dbc54b22708bcd82b73769e8f35edd72ce4f3d8427f6401c2c1429bd10ff2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Disk-block 0</td><td>File Allocation Table, consisting of one 8-bit entry per data block, representing the data block address of the next data block in the file</td></tr><tr><td>Disk-block 1</td><td>Directory, with one 32 bit entry per file:</td></tr><tr><td>Disk-block 2</td><td>Data-block 1;</td></tr><tr><td>Disk-block 3</td><td>Data-block 2; etc.</td></tr></table>",
+        "bbox": [
+            235,
+            416,
+            781,
+            536
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/51c314e4f834df4a1ae012a67cade4785fca2b590a490a96caa57627b4edc8ea.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            355,
+            931,
+            391
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. What is the maximum possible number of files?",
+            "b. What is the maximum possible file size in blocks"
+        ],
+        "bbox": [
+            89,
+            545,
+            460,
+            573
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1996 operating-system disk normal file-system descriptive",
+        "bbox": [
+            87,
+            599,
+            408,
+            609
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            615,
+            181,
+            629
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.7.6 Disk: GATE CSE 1997 | Question: 74",
+        "text_level": 1,
+        "bbox": [
+            78,
+            638,
+            410,
+            653
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/f665d1591adf14cf5f43b4dee51501a7a878452c4d13d1abb751af142f5260bc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            642,
+            931,
+            679
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A program P reads and processes 1000 consecutive records from a sequential file F stored on device D without using any file system facilities. Given the following",
+        "bbox": [
+            84,
+            662,
+            878,
+            693
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Size of each record = 3200 bytes",
+            "- Access time of $D = 10$ msecs",
+            "- Data transfer rate of $D = 800 \\times 10^{3}$ bytes/second",
+            "- CPU time to process each record = 3 msecs"
+        ],
+        "bbox": [
+            97,
+            701,
+            489,
+            762
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "What is the elapsed time of $P$ if",
+        "bbox": [
+            85,
+            774,
+            319,
+            789
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. F contains unblocked records and P does not use buffering?",
+            "B. $F$ contains unblocked records and $P$ uses one buffer (i.e., it always reads ahead into the buffer)?",
+            "C. records of $F$ are organized using a blocking factor of 2 (i.e., each block on $D$ contains two records of $F$ ) and $P$ uses one buffer?"
+        ],
+        "bbox": [
+            85,
+            800,
+            929,
+            866
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1997 operating-system disk",
+        "bbox": [
+            87,
+            893,
+            247,
+            903
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            909,
+            181,
+            923
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.7.7 Disk: GATE CSE 1998 | Question: 2-9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            413,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Formatting for a floppy disk refers to",
+        "bbox": [
+            85,
+            90,
+            352,
+            105
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. arranging the data on the disk in contiguous fashion",
+            "B. writing the directory",
+            "C. erasing the system data",
+            "D. writing identification information on all tracks and sectors"
+        ],
+        "bbox": [
+            87,
+            115,
+            526,
+            184
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1998 operating-system disk normal",
+        "bbox": [
+            87,
+            211,
+            290,
+            220
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            226,
+            189,
+            241
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.7.8 Disk: GATE CSE 1998 | Question: 25-a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            250,
+            423,
+            264
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Free disk space can be used to keep track of using a free list or a bit map. Disk addresses require d bits. For a disk with B blocks, F of which are free, state the condition under which the free list uses less space than the bit map.",
+        "bbox": [
+            84,
+            274,
+            875,
+            318
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1998 operating-system disk descriptive",
+        "bbox": [
+            87,
+            332,
+            307,
+            342
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            347,
+            189,
+            362
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.7.9 Disk: GATE CSE 1998 | Question: 25b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            371,
+            418,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider a disk with $c$ cylinders, $t$ tracks per cylinder, $s$ sectors per track and a sector length $s_l$ . A logical file $d_l$ with fixed record length $r_l$ is stored continuously on this disk starting at location $(c_L, t_L, s_L)$ , where $c_L, t_L$ and $S_L$ are the cylinder, track and sector numbers, respectively. Derive the formula to calculate the disk address (i.e. cylinder, track and sector) of a logical record $n$ assuming that $r_l = s_l$ .",
+        "bbox": [
+            84,
+            395,
+            924,
+            454
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1998 operating-system disk descriptive",
+        "bbox": [
+            87,
+            467,
+            307,
+            478
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            484,
+            189,
+            498
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.7.10 Disk: GATE CSE 1999 | Question: 2-18, ISRO2008-46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            507,
+            542,
+            521
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Raid configurations of the disks are used to provide",
+        "bbox": [
+            85,
+            530,
+            463,
+            546
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Fault-tolerance",
+            "B. High speed",
+            "C. High data density",
+            "D. (A) & (B)"
+        ],
+        "bbox": [
+            87,
+            555,
+            600,
+            587
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1999 operating-system disk easy isro2008",
+        "bbox": [
+            87,
+            597,
+            329,
+            606
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            612,
+            189,
+            627
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.7.11 Disk: GATE CSE 2001 | Question: 1.22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            636,
+            431,
+            650
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following requires a device driver?",
+        "bbox": [
+            85,
+            659,
+            433,
+            674
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. Register",
+        "bbox": [
+            89,
+            688,
+            173,
+            703
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. Cache",
+        "bbox": [
+            285,
+            688,
+            354,
+            701
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. Main memory",
+        "bbox": [
+            480,
+            688,
+            596,
+            703
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. Disk",
+        "bbox": [
+            673,
+            688,
+            729,
+            701
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 operating-system disk easy",
+        "bbox": [
+            87,
+            713,
+            295,
+            723
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            728,
+            189,
+            743
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.7.12 Disk: GATE CSE 2003 | Question: 25, ISRO2009-12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            752,
+            527,
+            766
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Using a larger block size in a fixed block size file system leads to",
+        "bbox": [
+            85,
+            776,
+            559,
+            790
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. better disk throughput but poorer disk space utilization",
+            "B. better disk throughput and better disk space utilization",
+            "C. poorer disk throughput but better disk space utilization",
+            "D. poorer disk throughput and poorer disk space utilization"
+        ],
+        "bbox": [
+            87,
+            801,
+            519,
+            858
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 operating-system disk normal isro2009",
+        "bbox": [
+            87,
+            883,
+            354,
+            893
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            899,
+            189,
+            913
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/7babb312269b6353e7873c28b9ad8fa5b7eb1c2a235108274e82b7b76f309945.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            932,
+            106
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/ce06ea2e4db533d4a26d708468a07cf3cd59e03fa17aeda55ccda7edb3de3523.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            252,
+            932,
+            290
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/64037f26bb11ea8f48c12562d81947a964609db1d1acbbc1816d191c10dd99f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            374,
+            932,
+            410
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/899477e621aea2ab1ad9d6f89e36856d895435e59fc0d5b50632c10e4efb7010.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            510,
+            932,
+            547
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/daa2b4db8ed699a91df665b028708bcd26cff205511d221a08d0b75d0b58af36.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            638,
+            932,
+            676
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/69b5c27ebd93da7e7a328292d695b25f3c63db178ea9455f462da80dec4fa565.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            755,
+            932,
+            792
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.7.13 Disk: GATE CSE 2004 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            418,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/0346fb9cfae2edcc3031b47bfd7451916d4457b13045c7471d55c9bfb10fd8cb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A unix-style I-nodes has 10 direct pointers and one single, one double and one triple indirect pointers. Disk block size is 1 Kbyte, disk block address is 32 bits, and 48-bit integers are used. What is the maximum possible file size?",
+        "bbox": [
+            84,
+            89,
+            878,
+            131
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $2^{24}$ bytes",
+        "bbox": [
+            89,
+            144,
+            179,
+            160
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $2^{32}$ bytes",
+        "bbox": [
+            285,
+            144,
+            373,
+            160
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{34}$ bytes",
+        "bbox": [
+            480,
+            144,
+            568,
+            160
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $2^{48}$ bytes",
+        "bbox": [
+            673,
+            144,
+            763,
+            160
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 operating-system disk normal",
+        "bbox": [
+            87,
+            169,
+            307,
+            179
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            186,
+            188,
+            200
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.7.14 Disk: GATE CSE 2005 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            210,
+            416,
+            223
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What is the swap space in the disk used for?",
+        "bbox": [
+            85,
+            233,
+            415,
+            248
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. Saving temporary html pages",
+        "bbox": [
+            87,
+            258,
+            312,
+            271
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. Saving process data",
+        "bbox": [
+            495,
+            258,
+            658,
+            271
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. Storing the super-block",
+        "bbox": [
+            89,
+            275,
+            272,
+            289
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. Storing device drivers",
+        "bbox": [
+            497,
+            276,
+            667,
+            289
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 operating-system disk easy",
+        "bbox": [
+            87,
+            299,
+            295,
+            309
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            315,
+            188,
+            328
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/98a5d239462b2a0698295125cb1850f49319e2aef4ac0c56e1ce7bc90835c7ec.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            212,
+            931,
+            250
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.7.15 Disk: GATE CSE 2007 | Question: 11, ISRO2009-36, ISRO2016-21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            338,
+            635,
+            353
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider a disk pack with 16 surfaces, 128 tracks per surface and 256 sectors per track. 512 bytes of data are stored in a bit serial manner in a sector. The capacity of the disk pack and the number of bits required to specify a particular sector in the disk are respectively:",
+        "bbox": [
+            84,
+            362,
+            878,
+            404
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 256 Mbyte, 19 bits",
+        "bbox": [
+            89,
+            414,
+            242,
+            428
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 256 Mbyte, 28 bits",
+        "bbox": [
+            497,
+            414,
+            647,
+            428
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 512 Mbyte, 20 bits",
+        "bbox": [
+            90,
+            428,
+            242,
+            441
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 64 Gbyte, 28 bits",
+        "bbox": [
+            497,
+            428,
+            636,
+            441
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 operating-system disk normal isro2016",
+        "bbox": [
+            87,
+            447,
+            356,
+            456
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            463,
+            188,
+            477
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/f28d0ae98819594733812b23a9fe964ec39c45531ab1442799a48e024628e90e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            340,
+            931,
+            378
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.7.16 Disk: GATE CSE 2008 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            486,
+            418,
+            500
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "For a magnetic disk with concentric circular tracks, the seek latency is not linearly proportional to the seek distance due to",
+        "bbox": [
+            84,
+            510,
+            878,
+            538
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. non-uniform distribution of requests",
+            "B. arm starting and stopping inertia",
+            "C. higher capacity of tracks on the periphery of the platter",
+            "D. use of unfair arm scheduling policies"
+        ],
+        "bbox": [
+            87,
+            549,
+            510,
+            619
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 operating-system disk normal",
+        "bbox": [
+            87,
+            644,
+            307,
+            654
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            660,
+            188,
+            674
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/b7ce9611c7fadfe20dbc9ec4ec24121186a86b2adb719667d28a2f288288c186.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            489,
+            931,
+            526
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.7.17 Disk: GATE CSE 2009 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            684,
+            416,
+            698
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A hard disk has 63 sectors per track, 10 platters each with 2 recording surfaces and 1000 cylinders. The address of a sector is given as a triple $\\langle c, h, s \\rangle$ , where c is the cylinder number, h is the surface number and s is the sector number. Thus, the $0^{th}$ sector is addresses as $\\langle 0, 0, 0 \\rangle$ , the $1^{st}$ sector as $\\langle 0, 0, 1 \\rangle$ , and so on The address $\\langle 400, 16, 29 \\rangle$ corresponds to sector number:",
+        "bbox": [
+            84,
+            707,
+            878,
+            775
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 505035",
+        "bbox": [
+            87,
+            788,
+            169,
+            802
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 505036",
+        "bbox": [
+            285,
+            788,
+            364,
+            802
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 505037",
+        "bbox": [
+            480,
+            788,
+            559,
+            802
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 505038",
+        "bbox": [
+            673,
+            788,
+            752,
+            802
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 operating-system disk normal",
+        "bbox": [
+            87,
+            813,
+            307,
+            823
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            828,
+            188,
+            843
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.7.18 Disk: GATE CSE 2009 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            852,
+            418,
+            866
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A hard disk has 63 sectors per track, 10 platters each with 2 recording surfaces and 1000 cylinders. The address of a sector is given as a triple $\\langle c, h, s \\rangle$ , where c is the cylinder number, h is the surface number and s is the sector number. Thus, the $0^{th}$ sector is addresses as $\\langle 0, 0, 0 \\rangle$ , the $1^{st}$ sector as $\\langle 0, 0, 1 \\rangle$ , and so on",
+        "bbox": [
+            84,
+            876,
+            878,
+            925
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/fdd87c37705d3cb5513e1fcefaa62d628aa31b24e354b219af922614a4aa4482.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            687,
+            931,
+            724
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/648136c142d8bfb5639f06b34919c415ec9eb18c7a6e8bcd37ab0b4669b391f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            855,
+            931,
+            891
+        ],
+        "page_idx": 11
+    }
+]

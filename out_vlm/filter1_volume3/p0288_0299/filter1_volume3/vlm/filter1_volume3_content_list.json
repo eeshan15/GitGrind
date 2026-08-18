@@ -1,0 +1,6313 @@
+[
+    {
+        "type": "text",
+        "text": "4.1.6 Adder: GATE CSE 2004 | Question: 62",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            421,
+            103
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/a47ddadd31a205f2813b8076857bce6ad31faf7ba578c8ce5dcd043ca92209b0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            93,
+            931,
+            129
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A 4-bit carry look ahead adder, which adds two 4-bit numbers, is designed using AND, OR, NOT, NAND, NOR gates only. Assuming that all the inputs are available in both complemented and uncomplemented forms and the delay of each gate is one time unit, what is the overall propagation delay of the adder? Assume that the carry network has been implemented using two-level AND-OR logic.",
+        "bbox": [
+            84,
+            112,
+            927,
+            169
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 4 time units",
+        "bbox": [
+            87,
+            179,
+            194,
+            192
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 6 time units",
+        "bbox": [
+            495,
+            179,
+            600,
+            192
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 10 time units",
+        "bbox": [
+            90,
+            193,
+            201,
+            205
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 12 time units",
+        "bbox": [
+            497,
+            193,
+            608,
+            205
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 digital-logic normal adder",
+        "bbox": [
+            87,
+            211,
+            290,
+            220
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            226,
+            188,
+            241
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1.7 Adder: GATE CSE 2015 | Set 2 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            251,
+            473,
+            264
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/a55552d6bb32e1c25fcdff8d9649a6250898deb75fc01e34c4b895383c3c8ac2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            252,
+            931,
+            290
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A half adder is implemented with XOR and AND gates. A full adder is implemented with two half adders and one OR gate. The propagation delay of an XOR gate is twice that of an AND/OR gate. The propagation delay of an AND/OR gate is 1.2 microseconds. A 4-bit-ripple-carry binary adder is implemented by using four full adders. The total propagation time of this 4-bit binary adder in microseconds is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            274,
+            929,
+            332
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 digital-logic adder normal numerical-answers",
+        "bbox": [
+            87,
+            345,
+            401,
+            355
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            362,
+            188,
+            376
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1.8 Adder: GATE CSE 2016 | Set 1 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            78,
+            385,
+            473,
+            399
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/7abbde8e05a856c8c8086a16ddff087fbaa490ff329d1d22b0a8709873b5affb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            388,
+            931,
+            425
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a carry look ahead adder for adding two n-bit integers, built using gates of fan-in at most two. The time to perform addition using this adder is",
+        "bbox": [
+            84,
+            409,
+            878,
+            437
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(1)$",
+        "bbox": [
+            89,
+            447,
+            152,
+            461
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta (\\log (n))$",
+        "bbox": [
+            497,
+            447,
+            594,
+            463
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(\\sqrt{n})$",
+        "bbox": [
+            90,
+            461,
+            168,
+            478
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n)$",
+        "bbox": [
+            497,
+            461,
+            564,
+            477
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 digital-logic adder normal",
+        "bbox": [
+            89,
+            480,
+            310,
+            491
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            497,
+            188,
+            511
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.1.9 Adder: GATE CSE 2016 | Set 2 | Question: 07",
+        "text_level": 1,
+        "bbox": [
+            78,
+            521,
+            473,
+            534
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e4af1bdcc39650d990522d88b195b39584376ba5e2fc191244b6d50a6e1ad04e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            523,
+            931,
+            560
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider an eight-bit ripple-carry adder for computing the sum of $A$ and $B$ , where $A$ and $B$ are integers represented in 2's complement form. If the decimal value of $A$ is one, the decimal value of $B$ that leads to the longest latency for the sum to stabilize is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            545,
+            878,
+            590
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 digital-logic adder normal numerical-answers",
+        "bbox": [
+            87,
+            603,
+            400,
+            612
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            619,
+            188,
+            634
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.2",
+        "text_level": 1,
+        "bbox": [
+            68,
+            644,
+            95,
+            657
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Array Multiplier (2)",
+        "text_level": 1,
+        "bbox": [
+            438,
+            644,
+            589,
+            657
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.2.1 Array Multiplier: GATE CSE 1999 | Question: 1.21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            669,
+            507,
+            685
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/c230bab2c1ae65134878af0c405e7ea27f36c418f117d32d11d3d687212f896c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            674,
+            931,
+            710
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The maximum gate delay for any output to appear in an array multiplier for multiplying two n bit numbers is",
+        "bbox": [
+            85,
+            694,
+            862,
+            709
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $O(n^{2})$",
+        "bbox": [
+            89,
+            720,
+            161,
+            738
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $O(n)$",
+        "bbox": [
+            285,
+            722,
+            347,
+            738
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "c. $O(\\log n)$",
+        "bbox": [
+            480,
+            720,
+            566,
+            738
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $O(1)$",
+        "bbox": [
+            675,
+            722,
+            736,
+            738
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1999 digital-logic normal array-multiplier",
+        "bbox": [
+            87,
+            747,
+            314,
+            757
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            763,
+            188,
+            777
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.2.2 Array Multiplier: GATE CSE 2003 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            786,
+            492,
+            801
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/636a6a3c22163d5bfe46248f176ffa283dc5b250d4b6802e57fa534de91ca2ff.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            789,
+            931,
+            826
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider an array multiplier for multiplying two $n$ bit numbers. If each gate in the circuit has a unit delay, the total delay of the multiplier is",
+        "bbox": [
+            84,
+            809,
+            875,
+            839
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(1)$",
+        "bbox": [
+            89,
+            852,
+            152,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta (\\log n)$",
+        "bbox": [
+            285,
+            852,
+            371,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n)$",
+        "bbox": [
+            480,
+            852,
+            542,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n^{2})$",
+        "bbox": [
+            675,
+            852,
+            744,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 digital-logic normal array-multiplier",
+        "bbox": [
+            87,
+            877,
+            329,
+            887
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            893,
+            188,
+            907
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.3.1 Binary Codes: GATE CSE 2006 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            78,
+            91,
+            480,
+            106
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/a76e41296c8b350f85d4a11ec8ab5809853da659018dc4fc3b2a43a6bdd7b0d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            93,
+            931,
+            131
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider numbers represented in 4-bit Gray code. Let $h_{3}h_{2}h_{1}h_{0}$ be the Gray code representation of a number n and let $g_{3}g_{2}g_{1}g_{0}$ be the Gray code of $(n+1)(modulo16)$ value of the number. Which one of the following functions is correct?",
+        "bbox": [
+            84,
+            115,
+            878,
+            159
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $g_{0}(h_{3}h_{2}h_{1}h_{0}) = \\sum (1,2,3,6,10,13,14,15)$",
+            "B. $g_{1}(h_{3}h_{2}h_{1}h_{0}) = \\sum (4,9,10,11,12,13,14,15)$",
+            "C. $g_{2}(h_{3}h_{2}h_{1}h_{0}) = \\sum (2,4,5,6,7,12,13,15)$",
+            "D. $g_{3}(h_{3}h_{2}h_{1}h_{0}) = \\sum (0,1,6,7,10,11,12,13)$"
+        ],
+        "bbox": [
+            87,
+            169,
+            485,
+            233
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 digital-logic number-representation binary-codes normal",
+        "bbox": [
+            87,
+            257,
+            428,
+            267
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            273,
+            186,
+            288
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.4",
+        "text_level": 1,
+        "bbox": [
+            68,
+            296,
+            95,
+            311
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Boolean Algebra (34)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            296,
+            600,
+            312
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/47ce274d1dff001e7509718363dcab846658e40aaf1a247036016e9d814c6f6e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Practice Tests:\"] --> B[\"Test 1 (15Q)\"]\n  B --> C[\"Test 2 (15Q)\"]\n  C --> D[\"Test 3 (15Q)\"]\n  D --> E[\"Test 4 (1Q)\"]\n  E --> F[\"Weekly Quiz 1 (15Q)\"]\n  F --> G[\"Weekly Quiz 2 (10Q)\"]\n  H[\"Weekly Quiz 3 (15Q)\"] --> I[\"Weekly Quiz 4 (15Q)\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            70,
+            321,
+            823,
+            355
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.4.1 Boolean Algebra: GATE CSE 1987 | Question: 1-II",
+        "text_level": 1,
+        "bbox": [
+            78,
+            366,
+            510,
+            381
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The total number of Boolean functions which can be realised with four variables is:",
+        "bbox": [
+            85,
+            390,
+            687,
+            404
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ee827db61b10c6a87f9ee7a86ffb09717c33bcc611c3739ad93c752614e233c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            369,
+            931,
+            407
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 4",
+        "bbox": [
+            89,
+            418,
+            127,
+            432
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 17",
+        "bbox": [
+            285,
+            419,
+            329,
+            432
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 256",
+        "bbox": [
+            480,
+            419,
+            532,
+            432
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 65,536",
+        "bbox": [
+            673,
+            419,
+            752,
+            434
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1987 digital-logic boolean-algebra functions combinatory",
+        "bbox": [
+            87,
+            442,
+            391,
+            453
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            459,
+            186,
+            473
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.4.2 Boolean Algebra: GATE CSE 1987 | Question: 12-a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            483,
+            519,
+            497
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The Boolean expression $A \\oplus B \\oplus A$ is equivalent to",
+        "bbox": [
+            85,
+            507,
+            475,
+            522
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/b5ea4098c941ff65198373f35e05189b0167283d4f8ea192eeb0bc82406be4b2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            485,
+            931,
+            523
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $AB + \\overline{A}\\overline{B}$",
+        "bbox": [
+            89,
+            533,
+            201,
+            549
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $\\overline{A} B + A\\overline{B}$",
+        "bbox": [
+            497,
+            533,
+            608,
+            549
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. B",
+        "bbox": [
+            90,
+            549,
+            131,
+            562
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $\\overline{A}$",
+        "bbox": [
+            497,
+            549,
+            536,
+            566
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1987 digital-logic boolean-algebra easy",
+        "bbox": [
+            87,
+            573,
+            307,
+            583
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            589,
+            186,
+            603
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.4.3 Boolean Algebra: GATE CSE 1988 | Question: 2-iii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            612,
+            514,
+            627
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/3dc1894895626dcde4b63af6510ae6356e679b85e6c86dd3752606161c9919c7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            615,
+            931,
+            653
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let $*$ be defined as a Boolean operation given as $x * y = \\overline{x}$ $\\overline{y} + xy$ and let $C = A * B$ . If $C = 1$ then prove that $A = B$ .",
+        "bbox": [
+            84,
+            637,
+            875,
+            668
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1988 digital-logic descriptive boolean-algebra",
+        "bbox": [
+            87,
+            682,
+            332,
+            692
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            698,
+            186,
+            712
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.4.4 Boolean Algebra: GATE CSE 1989 | Question: 4-x",
+        "text_level": 1,
+        "bbox": [
+            78,
+            722,
+            510,
+            736
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/d7d4fefb25ef3cb71a812976c9a37d14cad8b25b4e71e774a6cf92747c40b4ff.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            724,
+            931,
+            762
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A switching function is said to be neutral if the number of input combinations for which its value is 1 is equal to the number of input combinations for which its value is 0. Compute the number of neutral switching functions of n variables (for a given n).",
+        "bbox": [
+            84,
+            745,
+            878,
+            789
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive digital-logic boolean-algebra",
+        "bbox": [
+            87,
+            802,
+            332,
+            813
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            819,
+            186,
+            833
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "4.4.5 Boolean Algebra: GATE CSE 1989 | Question: 5-a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            843,
+            510,
+            857
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Find values of Boolean variables A, B, C which satisfy the following equations:",
+        "bbox": [
+            85,
+            866,
+            665,
+            882
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/74348a2a9f6348f232b2a818171e1c9b50ee748da7bdd260f360ec3c0913bd09.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            845,
+            931,
+            883
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $A + B = 1$",
+            "- AC = BC"
+        ],
+        "bbox": [
+            97,
+            893,
+            179,
+            920
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "4.3",
+        "bbox": [
+            68,
+            66,
+            94,
+            78
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Binary Codes (1)",
+        "bbox": [
+            445,
+            65,
+            583,
+            80
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $A + C = 1$",
+            "- $AB = 0$"
+        ],
+        "bbox": [
+            99,
+            65,
+            184,
+            91
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive digital-logic boolean-algebra",
+        "bbox": [
+            87,
+            119,
+            334,
+            129
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            135,
+            188,
+            149
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.4.6 Boolean Algebra: GATE CSE 1992 | Question: 02-i",
+        "text_level": 1,
+        "bbox": [
+            78,
+            159,
+            515,
+            173
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The operation which is commutative but not associative is:",
+        "bbox": [
+            85,
+            182,
+            515,
+            197
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. AND",
+        "bbox": [
+            89,
+            211,
+            149,
+            224
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. OR",
+        "bbox": [
+            285,
+            212,
+            332,
+            224
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. EX-OR",
+        "bbox": [
+            480,
+            212,
+            552,
+            223
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. NAND",
+        "bbox": [
+            673,
+            212,
+            742,
+            223
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1992 easy digital-logic boolean-algebra multiple-selects",
+        "bbox": [
+            87,
+            235,
+            386,
+            245
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            251,
+            188,
+            266
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.4.7 Boolean Algebra: GATE CSE 1994 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            275,
+            495,
+            289
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/8181cac5b79a77f6587998b3ba2044e9821443e94416aabc5dea8b404505ecce.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            161,
+            931,
+            198
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/86032abf5edac127071a9c5e0c74539c11835a284f4dd06e58338e36551acbbb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            277,
+            931,
+            315
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. Let \\* be a Boolean operation defined as $A * B = AB + \\overline{A} \\overline{B}$ . If $C = A * B$ then evaluate and fill in the blanks:",
+        "bbox": [
+            85,
+            324,
+            929,
+            353
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. $A * A =$ \\_\\_\\_\\_",
+            "ii. $C * A =$ \\_\\_\\_\\_"
+        ],
+        "bbox": [
+            117,
+            353,
+            263,
+            383
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. Solve the following boolean equations for the values of A, B and C:",
+        "bbox": [
+            87,
+            383,
+            613,
+            399
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} A B + \\overline {{A}} C = 1 \\\\ A C + B = 0 \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            400,
+            231,
+            432
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1994 digital-logic normal boolean-algebra descriptive",
+        "bbox": [
+            87,
+            458,
+            374,
+            467
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            473,
+            188,
+            489
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.4.8 Boolean Algebra: GATE CSE 1995 | Question: 2.5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            498,
+            509,
+            511
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What values of A, B, C and D satisfy the following simultaneous Boolean equations?",
+        "bbox": [
+            84,
+            521,
+            714,
+            538
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\overline {{A}} + A B = 0, A B = A C, A B + A \\overline {{C}} + C D = \\overline {{C}} D\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            542,
+            485,
+            562
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $A = 1, B = 0, C = 0, D = 1$",
+        "bbox": [
+            87,
+            570,
+            319,
+            585
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $A = 1, B = 1, C = 0, D = 0$",
+        "bbox": [
+            497,
+            570,
+            726,
+            585
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $A = 1, B = 0, C = 1, D = 1$",
+        "bbox": [
+            89,
+            587,
+            319,
+            603
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $A = 1, B = 0, C = 0, D = 0$",
+        "bbox": [
+            497,
+            587,
+            724,
+            603
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1995 digital-logic boolean-algebra easy",
+        "bbox": [
+            87,
+            612,
+            307,
+            622
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            629,
+            188,
+            643
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/374a6e4b999c4894bdca39d4eaa25c18c04a2a447e9d9607a9d8e7b380b2714c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            501,
+            931,
+            538
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.4.9 Boolean Algebra: GATE CSE 1997 | Question: 2-1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            652,
+            509,
+            666
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Let \\* be defined as $x * y = \\bar{x} + y$ . Let $z = x * y$ . Value of $z * x$ is",
+        "bbox": [
+            85,
+            675,
+            576,
+            691
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $\\bar{x} + y$",
+        "bbox": [
+            87,
+            704,
+            159,
+            720
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. x",
+        "bbox": [
+            285,
+            705,
+            322,
+            718
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 0",
+        "bbox": [
+            480,
+            704,
+            515,
+            718
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 1",
+        "bbox": [
+            673,
+            704,
+            710,
+            718
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1997 digital-logic normal boolean-algebra",
+        "bbox": [
+            87,
+            729,
+            317,
+            739
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            745,
+            188,
+            758
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.4.10 Boolean Algebra: GATE CSE 1998 | Question: 1.13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            768,
+            527,
+            783
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What happens when a bit-string is XORed with itself n-times as shown:",
+        "bbox": [
+            85,
+            792,
+            606,
+            806
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n[ B \\oplus (B \\oplus (B \\oplus (B \\dots n \\text {times} ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            809,
+            336,
+            828
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. complements when n is even",
+        "bbox": [
+            87,
+            836,
+            314,
+            850
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. complements when $n$ is odd",
+        "bbox": [
+            497,
+            836,
+            712,
+            850
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. divides by $2^{n}$ always",
+        "bbox": [
+            89,
+            853,
+            255,
+            868
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. remains unchanged when $n$ is even",
+        "bbox": [
+            497,
+            853,
+            761,
+            868
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1998 digital-logic normal boolean-algebra",
+        "bbox": [
+            87,
+            877,
+            317,
+            887
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            893,
+            188,
+            907
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/97b254b4c1920d4996b4c3e7824274d6bf233f112d29743edf3d32bff24637b5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            655,
+            931,
+            692
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/be6dca2235b7bbd17077f7e83b71e4acb8504b66c98aa4fc6df11fed4375d63d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            771,
+            931,
+            808
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "4.4.11 Boolean Algebra: GATE CSE 1998 | Question: 2.8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            517,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following operations is commutative but not associative?",
+        "bbox": [
+            85,
+            87,
+            594,
+            103
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. AND",
+        "bbox": [
+            89,
+            117,
+            149,
+            130
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. OR",
+        "bbox": [
+            285,
+            118,
+            332,
+            130
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. NAND",
+        "bbox": [
+            480,
+            117,
+            547,
+            130
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. EXOR",
+        "bbox": [
+            673,
+            117,
+            744,
+            130
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1998 digital-logic easy boolean-algebra",
+        "bbox": [
+            89,
+            141,
+            307,
+            150
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            157,
+            188,
+            172
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.12 Boolean Algebra: GATE CSE 1999 | Question: 1.7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            181,
+            517,
+            195
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following expressions is not equivalent to $\\bar{x}$ ?",
+        "bbox": [
+            85,
+            204,
+            507,
+            219
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $x$ NAND $x$",
+        "bbox": [
+            87,
+            233,
+            200,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $x$ NOR $x$",
+        "bbox": [
+            285,
+            233,
+            381,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $x$ NAND 1",
+        "bbox": [
+            480,
+            233,
+            586,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $x$ NOR 1",
+        "bbox": [
+            673,
+            233,
+            768,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1999 digital-logic easy boolean-algebra",
+        "bbox": [
+            87,
+            258,
+            307,
+            268
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            274,
+            188,
+            288
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.13 Boolean Algebra: GATE CSE 2000 | Question: 2.10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            296,
+            527,
+            312
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The simultaneous equations on the Boolean variables x, y, z and w,",
+        "bbox": [
+            85,
+            321,
+            586,
+            336
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $x + y + z = 1$",
+            "- $xy = 0$",
+            "- $xz + w = 1$",
+            "- $xy + \\bar{z}\\bar{w} = 0$"
+        ],
+        "bbox": [
+            97,
+            346,
+            226,
+            403
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "have the following solution for $x, y, z$ and $w$ , respectively:",
+        "bbox": [
+            85,
+            414,
+            509,
+            429
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 0100",
+        "bbox": [
+            89,
+            437,
+            164,
+            450
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 1101",
+        "bbox": [
+            497,
+            437,
+            571,
+            450
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 1011",
+        "bbox": [
+            89,
+            451,
+            164,
+            464
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 1000",
+        "bbox": [
+            497,
+            451,
+            571,
+            464
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 digital-logic boolean-algebra easy",
+        "bbox": [
+            87,
+            471,
+            322,
+            480
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            486,
+            188,
+            501
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.14 Boolean Algebra: GATE CSE 2002 | Question: 2-3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            510,
+            517,
+            524
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $f(A,B)=A'+B$ . Simplified expression for function $f(f(x+y,y),z)$ is",
+        "bbox": [
+            85,
+            534,
+            660,
+            552
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $x^{\\prime} + z$",
+        "bbox": [
+            89,
+            564,
+            161,
+            578
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. xyz",
+        "bbox": [
+            285,
+            565,
+            339,
+            579
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $xy' + z$",
+        "bbox": [
+            480,
+            564,
+            559,
+            579
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            564,
+            823,
+            577
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 digital-logic boolean-algebra normal",
+        "bbox": [
+            89,
+            587,
+            332,
+            598
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            604,
+            188,
+            619
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.15 Boolean Algebra: GATE CSE 2004 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            628,
+            512,
+            642
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A Boolean function $x'y' + xy + x'y$ is equivalent to",
+        "bbox": [
+            85,
+            652,
+            468,
+            668
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $x' + y'$",
+        "bbox": [
+            89,
+            681,
+            166,
+            697
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $x + y$",
+        "bbox": [
+            285,
+            682,
+            352,
+            697
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $x + y'$",
+        "bbox": [
+            480,
+            681,
+            551,
+            697
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $x^{\\prime} + y$",
+        "bbox": [
+            673,
+            681,
+            746,
+            697
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 digital-logic easy boolean-algebra",
+        "bbox": [
+            89,
+            706,
+            322,
+            716
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            722,
+            188,
+            736
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.16 Boolean Algebra: GATE CSE 2007 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            745,
+            512,
+            760
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $f(w, x, y, z) = \\sum (0, 4, 5, 7, 8, 9, 13, 15)$ . Which of the following expressions are NOT equivalent to $f$ ?",
+        "bbox": [
+            84,
+            769,
+            873,
+            800
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "P: $x^{\\prime}y^{\\prime}z^{\\prime} + w^{\\prime}xy^{\\prime} + wy^{\\prime}z + xz$",
+            "Q: $w'y'z' +wx'y' + xz$",
+            "R: $w'y'z' +wx'y' + xyz + xy'z$",
+            "S: $x^{\\prime}y^{\\prime}z^{\\prime} +wx^{\\prime}y^{\\prime} + w^{\\prime}y$"
+        ],
+        "bbox": [
+            85,
+            802,
+            342,
+            878
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. P only",
+        "bbox": [
+            89,
+            893,
+            157,
+            907
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. Q and S",
+        "bbox": [
+            285,
+            893,
+            366,
+            906
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. R and S",
+        "bbox": [
+            480,
+            893,
+            559,
+            906
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. S only",
+        "bbox": [
+            673,
+            893,
+            742,
+            907
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/f5da1b7649e91ba8652481dda5b78f2767eeace9cd594d659d5e6493a23e787d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/c0cb9c6cbaf0bd90f5afc8b7fa6ea916e1668bad0975674e3d39a75c6b4ab3e8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            184,
+            931,
+            222
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9dd0dd05c14d473adf3e373d33ce91408eb062566b4c7618d07b8f20545ae0c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            300,
+            931,
+            338
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/5c598f085d4d5234b8fa09d6b5680a80f6d8de9175e38ce885c6a52457b38b6b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            513,
+            931,
+            549
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/6b46ffe38b9f439fc5681bb0c3a62c5295fc4897ad08a0bb175c136705a34641.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            631,
+            931,
+            668
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/0774f8c2a377b133c070f036937429c8d995f26c91f17eeebefeedda513bb859.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            749,
+            931,
+            786
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2007 digital-logic normal boolean-algebra",
+        "bbox": [
+            87,
+            916,
+            332,
+            927
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.4.17 Boolean Algebra: GATE CSE 2007 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            77,
+            89,
+            515,
+            104
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Define the connective \\* for the Boolean variables X and Y as:",
+        "bbox": [
+            85,
+            112,
+            547,
+            128
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX * Y = X Y + X ^ {\\prime} Y ^ {\\prime}.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            413,
+            138,
+            600,
+            156
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $Z = X * Y$ . Consider the following expressions $P, Q$ and $R$ .",
+        "bbox": [
+            84,
+            166,
+            568,
+            182
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP: X = Y * Z,\n$$",
+        "text_format": "latex",
+        "bbox": [
+            440,
+            192,
+            571,
+            207
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nQ: Y = X * Z,\n$$",
+        "text_format": "latex",
+        "bbox": [
+            442,
+            211,
+            573,
+            228
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nR: X * Y * Z = 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            431,
+            229,
+            581,
+            244
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is TRUE?",
+        "bbox": [
+            85,
+            264,
+            326,
+            280
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Only $P$ and $Q$ are valid.",
+        "bbox": [
+            87,
+            290,
+            278,
+            302
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. Only $Q$ and $R$ are valid.",
+        "bbox": [
+            495,
+            290,
+            682,
+            304
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. Only $P$ and $\\dot{R}$ are valid.",
+        "bbox": [
+            89,
+            304,
+            277,
+            318
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. All $P, Q, R$ are valid.",
+        "bbox": [
+            495,
+            304,
+            665,
+            319
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 digital-logic normal boolean-algebra",
+        "bbox": [
+            87,
+            323,
+            332,
+            333
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            339,
+            188,
+            353
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.18 Boolean Algebra: GATE CSE 2008 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            362,
+            514,
+            377
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "If $P, Q, R$ are Boolean variables, then",
+        "bbox": [
+            85,
+            385,
+            371,
+            401
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$(P + \\bar{Q})(P.\\bar{Q} +P.R)(\\bar{P}.\\bar{R} +\\bar{Q})$ simplifies to",
+        "bbox": [
+            87,
+            404,
+            450,
+            423
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $P.\\bar{Q}$",
+        "bbox": [
+            87,
+            433,
+            152,
+            452
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $P.\\bar{R}$",
+        "bbox": [
+            285,
+            435,
+            347,
+            450
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $P.\\bar{Q} + R$",
+        "bbox": [
+            478,
+            434,
+            579,
+            452
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $P, \\bar{R} + Q$",
+        "bbox": [
+            673,
+            434,
+            771,
+            452
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 easy digital-logic boolean-algebra",
+        "bbox": [
+            87,
+            464,
+            322,
+            475
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            480,
+            188,
+            495
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.19 Boolean Algebra: GATE CSE 2012 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            77,
+            504,
+            505,
+            519
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The truth table",
+        "bbox": [
+            85,
+            572,
+            196,
+            586
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/1ca794291aa7863f69a98d3bf0de7c7cd1a71557b0b9c05f872fb46faf73d2de.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>X</td><td>Y</td><td>(X,Y)</td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>0</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table>",
+        "bbox": [
+            201,
+            529,
+            349,
+            630
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "represents the Boolean function",
+        "bbox": [
+            352,
+            572,
+            589,
+            587
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. X",
+        "bbox": [
+            89,
+            641,
+            132,
+            655
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $X + Y$",
+        "bbox": [
+            285,
+            641,
+            361,
+            655
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $X \\oplus Y$",
+        "bbox": [
+            480,
+            641,
+            556,
+            656
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. Y",
+        "bbox": [
+            673,
+            641,
+            715,
+            655
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 digital-logic easy boolean-algebra",
+        "bbox": [
+            87,
+            666,
+            322,
+            676
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            682,
+            188,
+            695
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.20 Boolean Algebra: GATE CSE 2013 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            77,
+            705,
+            512,
+            720
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following expressions does NOT represent exclusive NOR of x and y?",
+        "bbox": [
+            84,
+            728,
+            727,
+            745
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $xy + x'y'$",
+        "bbox": [
+            89,
+            754,
+            189,
+            769
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $x \\oplus y'$",
+        "bbox": [
+            495,
+            754,
+            569,
+            768
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $x^{\\prime}\\oplus y$",
+        "bbox": [
+            90,
+            769,
+            161,
+            783
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $x' \\oplus y'$",
+        "bbox": [
+            495,
+            768,
+            574,
+            783
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 digital-logic easy boolean-algebra",
+        "bbox": [
+            87,
+            786,
+            322,
+            796
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            802,
+            188,
+            817
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.4.21 Boolean Algebra: GATE CSE 2014 | Set 3 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            77,
+            826,
+            566,
+            840
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $\\oplus$ denote the exclusive OR (XOR) operation. Let '1' and '0' denote the binary constants. Consider the following Boolean expression for $F$ over two variables $P$ and $Q$ :",
+        "bbox": [
+            84,
+            850,
+            878,
+            880
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/a92f46ea61dd520f7a3f1121e042cebaf4994c28dd026dde528000397be8cf4d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/441eb3c5d3247214e0bb218faaf734a6e6c50103f8e240e1c9015c77c3971fed.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            365,
+            932,
+            403
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/89b7976ee52fd4e53e97eb8015817c0ed862e6a287a0ce778d802eb2cde46aca.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            507,
+            932,
+            545
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/6864b83211b33cee44f4dce2f916125cd5b91f25f8d35b19c59b2bba64b1a07a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            707,
+            932,
+            745
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/7e17c6a2710878fed40d1fc8e3e8fbd0db3d8df72e0291ab7d5884b23d8570a4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            828,
+            932,
+            866
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF (P, Q) = ((1 \\oplus P) \\oplus (P \\oplus Q)) \\oplus ((P \\oplus Q) \\oplus (Q \\oplus 0))\n$$",
+        "text_format": "latex",
+        "bbox": [
+            282,
+            889,
+            732,
+            909
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The equivalent expression for $F$ is",
+        "bbox": [
+            85,
+            65,
+            341,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $P + Q$",
+        "bbox": [
+            89,
+            90,
+            166,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\overline{P+Q}$",
+        "bbox": [
+            495,
+            93,
+            571,
+            110
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $P \\oplus Q$",
+        "bbox": [
+            90,
+            108,
+            164,
+            123
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $\\overline{P \\oplus Q}$",
+        "bbox": [
+            497,
+            112,
+            571,
+            127
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 digital-logic normal boolean-algebra",
+        "bbox": [
+            89,
+            131,
+            352,
+            141
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            148,
+            188,
+            162
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.22 Boolean Algebra: GATE CSE 2015 | Set 2 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            77,
+            171,
+            568,
+            186
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The number of min-terms after minimizing the following Boolean expression is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            195,
+            727,
+            210
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n[ D ^ {\\prime} + A B ^ {\\prime} + A ^ {\\prime} C + A C ^ {\\prime} D + A ^ {\\prime} C ^ {\\prime} D ] ^ {\\prime}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            222,
+            394,
+            242
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 digital-logic boolean-algebra normal numerical-answers",
+        "bbox": [
+            87,
+            252,
+            442,
+            263
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            269,
+            188,
+            283
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.23 Boolean Algebra: GATE CSE 2016 | Set 1 | Question: 06",
+        "text_level": 1,
+        "bbox": [
+            77,
+            293,
+            566,
+            307
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the Boolean operator # with the following properties :",
+        "bbox": [
+            85,
+            317,
+            544,
+            332
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "$x\\#0 = x, x\\#1 = \\bar{x}, x\\#x = 0$ and $x\\#\\bar{x} = 1$ . Then $x\\#y$ is equivalent to",
+        "bbox": [
+            85,
+            334,
+            636,
+            352
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $x\\bar{y} + \\bar{x}y$",
+        "bbox": [
+            89,
+            362,
+            176,
+            377
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $x\\overline{y} +\\overline{x}\\overline{y}$",
+        "bbox": [
+            497,
+            362,
+            586,
+            377
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $\\overline{x}y + xy$",
+        "bbox": [
+            90,
+            377,
+            176,
+            391
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $xy + \\bar{x} \\bar{y}$",
+        "bbox": [
+            497,
+            377,
+            586,
+            391
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 digital-logic boolean-algebra easy",
+        "bbox": [
+            87,
+            395,
+            342,
+            404
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            412,
+            188,
+            426
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.24 Boolean Algebra: GATE CSE 2016 | Set 2 | Question: 08",
+        "text_level": 1,
+        "bbox": [
+            77,
+            435,
+            566,
+            450
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let, $x_{1} \\oplus x_{2} \\oplus x_{3} \\oplus x_{4} = 0$ where $x_{1}, x_{2}, x_{3}, x_{4}$ are Boolean variables, and $\\oplus$ is the XOR operator. Which one of the following must always be TRUE?",
+        "bbox": [
+            84,
+            458,
+            833,
+            492
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $x_{1}x_{2}x_{3}x_{4} = 0$",
+            "B. $x_{1}x_{3} + x_{2} = 0$",
+            "C. $\\bar{x}_1\\oplus \\bar{x}_3 = \\bar{x}_2\\oplus \\bar{x}_4$",
+            "D. $x_{1} + x_{2} + x_{3} + x_{4} = 0$"
+        ],
+        "bbox": [
+            87,
+            502,
+            297,
+            559
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 digital-logic boolean-algebra normal",
+        "bbox": [
+            87,
+            584,
+            352,
+            593
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            600,
+            188,
+            615
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.25 Boolean Algebra: GATE CSE 2017 | Set 2 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            77,
+            624,
+            566,
+            638
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "If $w, x, y, z$ are Boolean variables, then which one of the following is INCORRECT?",
+        "bbox": [
+            85,
+            647,
+            697,
+            663
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $wx + w(x + y) + x(x + y) = x + wy$",
+        "bbox": [
+            89,
+            672,
+            389,
+            688
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\overline{w\\bar{x}(y + \\bar{z})} +\\bar{w} x = \\bar{w} +x + \\bar{y} z$",
+        "bbox": [
+            497,
+            674,
+            752,
+            691
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $(w\\bar{x}(y + x\\bar{z}) + \\bar{w}\\bar{x})y = x\\bar{y}$",
+        "bbox": [
+            90,
+            690,
+            312,
+            706
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $(w + y)(wxy + wyz) = wxy + wyz$",
+        "bbox": [
+            497,
+            691,
+            781,
+            706
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 digital-logic boolean-algebra normal",
+        "bbox": [
+            89,
+            710,
+            352,
+            719
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            726,
+            188,
+            739
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.26 Boolean Algebra: GATE CSE 2018 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            77,
+            749,
+            505,
+            764
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $\\oplus$ and $\\odot$ denote the Exclusive OR and Exclusive NOR operations, respectively. Which one of the following is NOT CORRECT?",
+        "bbox": [
+            84,
+            773,
+            873,
+            802
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\overline{P\\oplus Q}=P\\odot Q$",
+            "B. $\\overline{P} \\oplus Q = P \\odot Q$",
+            "c. $\\overline{P} \\oplus \\overline{Q} = P \\oplus Q$",
+            "D. $P \\oplus \\overline{P} \\oplus Q = (P \\odot \\overline{P} \\odot \\overline{Q})$"
+        ],
+        "bbox": [
+            87,
+            815,
+            337,
+            891
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/fb87a43b63850fb5847a8f053028190a28710c50e99781ee4c378f8ffa9924c7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            174,
+            931,
+            212
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/1e0d98c6c4379fa7596be39798e04d21dd3c5f58998ea02e39b307723c40b468.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            296,
+            931,
+            333
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/9e4db3528cea57e9a91784ee08d2d253f1eddda6dd98a53ae5e15a2684ab6b86.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            438,
+            931,
+            475
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/40f1c97b068bd4d1c7160a1579682cbde5983e86908c5929c66717ee048d5356.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            627,
+            931,
+            663
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/f3f3b4ecf289feed66a30c49729dab721453550353fed25eb089bfb9b92acb75.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            752,
+            931,
+            789
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2018 digital-logic normal boolean-algebra one-mark",
+        "bbox": [
+            87,
+            915,
+            386,
+            925
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.4.27 Boolean Algebra: GATE CSE 2019 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            77,
+            89,
+            505,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is NOT a valid identity?",
+        "bbox": [
+            85,
+            112,
+            455,
+            128
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(x\\oplus y)\\oplus z = x\\oplus (y\\oplus z)$",
+            "C. $x \\oplus y = x + y$ , if $xy = 0$"
+        ],
+        "bbox": [
+            87,
+            137,
+            307,
+            167
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $(x + y) \\oplus z = x \\oplus (y + z)$",
+            "D. $x\\oplus y = (xy + x'y')'$"
+        ],
+        "bbox": [
+            495,
+            138,
+            710,
+            168
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 digital-logic boolean-algebra one-mark",
+        "bbox": [
+            87,
+            171,
+            342,
+            181
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            187,
+            189,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.28 Boolean Algebra: GATE CSE 2021 | Set 1 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            77,
+            211,
+            568,
+            226
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following Boolean expression.",
+        "bbox": [
+            85,
+            235,
+            405,
+            250
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF = (X + Y + Z) (\\overline {{X}} + Y) (\\overline {{Y}} + Z)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            255,
+            374,
+            275
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following Boolean expressions is/are equivalent to $\\overline{F}$ (complement of $F$ )?",
+        "bbox": [
+            84,
+            280,
+            719,
+            298
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(\\overline{X} +\\overline{Y} +\\overline{Z})(X + \\overline{Y})(Y + \\overline{Z})$",
+            "B. $X\\overline{Y} + \\overline{Z}$",
+            "C. $(X + \\overline{Z})(\\overline{Y} +\\overline{Z})$",
+            "D. $X\\overline{Y} + Y\\overline{Z} + \\overline{X}\\overline{Y}\\overline{Z}$"
+        ],
+        "bbox": [
+            87,
+            308,
+            359,
+            384
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 multiple-selects digital-logic boolean-algebra two-marks",
+        "bbox": [
+            87,
+            409,
+            447,
+            420
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            426,
+            189,
+            440
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.29 Boolean Algebra: GATE CSE 2024 | Set 2 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            77,
+            448,
+            566,
+            464
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "For a Boolean variable x, which of the following statements is/are FALSE?",
+        "bbox": [
+            85,
+            473,
+            630,
+            488
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. x.1 = x",
+        "bbox": [
+            87,
+            502,
+            174,
+            515
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $x + 1 = x$",
+        "bbox": [
+            285,
+            502,
+            384,
+            515
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $x \\cdot x = 0$",
+        "bbox": [
+            480,
+            502,
+            569,
+            515
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $x + \\bar{x} = 1$",
+        "bbox": [
+            673,
+            502,
+            773,
+            515
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 digital-logic boolean-algebra easy multiple-selects one-mark",
+        "bbox": [
+            87,
+            526,
+            475,
+            536
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            542,
+            189,
+            557
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.30 Boolean Algebra: GATE CSE 2025 | Set 1 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            566,
+            566,
+            580
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let X be a 3-variable Boolean function that produces output as '1' when at least two of the input variables are '1'. Which of the following statement(s) is/are CORRECT, where a, b, c, d, e are Boolean variables?",
+        "bbox": [
+            84,
+            591,
+            878,
+            624
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $X(a,b,X(c,d,e)) = X(X(a,b,c),d,e)$",
+            "B. $X(a,b,X(a,b,c)) = X(a,b,c)$",
+            "C. $X(a,b,X(a,c,d)) = (X(a,b,a)\\text{ AND } X(c,d,c))$",
+            "D. $X(a,b,c) = X(a,X(a,b,c),X(a,c,c))$"
+        ],
+        "bbox": [
+            87,
+            631,
+            494,
+            697
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 digital-logic boolean-algebra multiple-selects one-mark",
+        "bbox": [
+            87,
+            719,
+            440,
+            730
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            736,
+            189,
+            751
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.31 Boolean Algebra: GATE CSE 2025 | Set 2 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            77,
+            758,
+            566,
+            774
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following Boolean algebraic equation(s) is/are CORRECT?",
+        "bbox": [
+            84,
+            783,
+            613,
+            799
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\bar{A}BC + A\\bar{B}\\bar{C} + \\bar{A}\\bar{B}\\bar{C} + A\\bar{B}C + ABC = BC + \\bar{B}\\bar{C} + \\bar{A}\\bar{B}$",
+            "B. $AB + \\bar{A} C + BC = AB + \\bar{A} C$",
+            "C. $(A + C)(\\bar{A} + B) = AB + \\bar{A} C$",
+            "D. $(A + \\bar{B} +\\bar{D})(C + D)(\\bar{A} +C + D)(A + B + \\bar{D}) = \\bar{A} D + \\bar{C}\\bar{D}$"
+        ],
+        "bbox": [
+            87,
+            808,
+            621,
+            883
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/a835ab7dec5b73623d4fb060b9737f0f7b428f8d7cf4f35863549bea96283fee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/bfd5de5d0853bc28d0f7925aa1385cc1cab606d8c25017c270ecaeaa9fb8e038.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            214,
+            932,
+            252
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/5a14ea9bcd471cc045b950e6c0c2e460e1428251648a9a227feface4269c9fb2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            452,
+            932,
+            490
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/8cdc1ed35d706561fd283100ee76a422f1262420900e288edab6599e68861832.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            568,
+            932,
+            606
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/7deff5bdd580e07fda7f93b3624aeb9f4f380c17ef7a0c2d66dcdbea9bc112d5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            762,
+            932,
+            800
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "footer",
+        "text": "gatecse2025-set2 digital-logic boolean-algebra multiple-selects easy two-marks",
+        "bbox": [
+            87,
+            906,
+            477,
+            916
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "4.4.32 Boolean Algebra: GATE CSE 2026 | Set 2 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            557,
+            104
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is not a property of Boolean Algebra?",
+        "bbox": [
+            85,
+            112,
+            616,
+            128
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Note: + is OR operation, · is AND operation, and / is NOT operation",
+        "bbox": [
+            85,
+            131,
+            584,
+            146
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $a + b = b + a$",
+        "bbox": [
+            89,
+            155,
+            216,
+            169
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $a \\cdot a' = 1$",
+        "bbox": [
+            497,
+            156,
+            589,
+            169
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $a + a' = 1$",
+        "bbox": [
+            90,
+            171,
+            191,
+            182
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $a \\cdot b = b \\cdot a$",
+        "bbox": [
+            497,
+            169,
+            603,
+            182
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 digital-logic boolean-algebra easy one-mark",
+        "bbox": [
+            87,
+            190,
+            394,
+            199
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            205,
+            188,
+            220
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.4.33 Boolean Algebra: GATE IT 2004 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            229,
+            494,
+            243
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The function $A\\bar{B}C + \\bar{A}BC + AB\\bar{C} + \\bar{A}\\bar{B}C + A\\bar{B}\\bar{C}$ is equivalent to",
+        "bbox": [
+            85,
+            252,
+            608,
+            271
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $A\\bar{C} + AB + \\bar{A} C$",
+        "bbox": [
+            89,
+            280,
+            240,
+            295
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $A\\bar{B} + A\\bar{C} + \\bar{A}C$",
+        "bbox": [
+            497,
+            280,
+            645,
+            295
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $\\bar{A} B + A\\bar{C} + A\\bar{B}$",
+        "bbox": [
+            90,
+            296,
+            240,
+            309
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $\\bar{A} B + AC + A\\bar{B}$",
+        "bbox": [
+            497,
+            296,
+            645,
+            309
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 digital-logic boolean-algebra easy",
+        "bbox": [
+            89,
+            315,
+            315,
+            326
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            332,
+            188,
+            347
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.4.34 Boolean Algebra: GATE IT 2005 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            356,
+            485,
+            370
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the following expressions is equivalent to $(A\\oplus B)\\oplus C$",
+        "bbox": [
+            85,
+            380,
+            564,
+            397
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $(A + B + C)(\\bar{A} +\\bar{B} +\\bar{C})$",
+        "bbox": [
+            89,
+            404,
+            310,
+            423
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $(A + B + C)(\\bar{A} +\\bar{B} +C)$",
+        "bbox": [
+            497,
+            406,
+            715,
+            423
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "c. $ABC + \\bar{A}(B\\oplus C) + \\bar{B}(A\\oplus C)$",
+        "bbox": [
+            90,
+            423,
+            351,
+            439
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. None of these",
+        "bbox": [
+            497,
+            423,
+            616,
+            434
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 digital-logic normal boolean-algebra",
+        "bbox": [
+            89,
+            442,
+            326,
+            452
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            458,
+            188,
+            472
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.5",
+        "text_level": 1,
+        "bbox": [
+            68,
+            483,
+            95,
+            495
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Booths Algorithm (7)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            483,
+            600,
+            497
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (6Q)",
+        "bbox": [
+            70,
+            507,
+            265,
+            521
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.5.1 Booths Algorithm: GATE CSE 1990 | Question: 8b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            536,
+            512,
+            549
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "State the Booth's algorithm for multiplication of two numbers. Draw a block diagram for the implementation of the Booth's algorithm for determining the product of two 8-bit signed numbers.",
+        "bbox": [
+            84,
+            560,
+            878,
+            589
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1990 descriptive digital-logic booths-algorithm",
+        "bbox": [
+            87,
+            603,
+            337,
+            612
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            619,
+            188,
+            633
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.5.2 Booths Algorithm: GATE CSE 1996 | Question: 1.23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            642,
+            526,
+            656
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Booth's algorithm for integer multiplication gives worst performance when the multiplier pattern is",
+        "bbox": [
+            85,
+            666,
+            791,
+            682
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 101010...1010",
+        "bbox": [
+            89,
+            688,
+            233,
+            704
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 100000...0001",
+        "bbox": [
+            497,
+            690,
+            636,
+            704
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 111111...1111",
+        "bbox": [
+            90,
+            707,
+            235,
+            720
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 011111...1110",
+        "bbox": [
+            497,
+            707,
+            640,
+            720
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1996 digital-logic booths-algorithm normal",
+        "bbox": [
+            89,
+            731,
+            321,
+            741
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            748,
+            188,
+            762
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.5.3 Booths Algorithm: GATE CSE 1999 | Question: 1.20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            771,
+            526,
+            785
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Booth's coding in 8 bits for the decimal number -57 is:",
+        "bbox": [
+            85,
+            795,
+            490,
+            809
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $0 - 100 + 1000$",
+        "bbox": [
+            87,
+            823,
+            231,
+            838
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $0 - 100 + 100 - 1$",
+        "bbox": [
+            285,
+            824,
+            445,
+            838
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $0 - 1 + 100 - 10 + 1$",
+        "bbox": [
+            480,
+            824,
+            662,
+            838
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $00 - 10 + 100 - 1$",
+        "bbox": [
+            675,
+            824,
+            836,
+            838
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1999 digital-logic number-representation booths-algorithm normal",
+        "bbox": [
+            89,
+            847,
+            431,
+            858
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            864,
+            188,
+            878
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/43a1423be7af55a5767fa9f68e4ea493421d2a5b16e94b9e9b97c85db2a99a55.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            931,
+            130
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/65abd6cda0fc72fe9f5f8fed753c7c278927a83d98c5c731e70de42054866ece.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            232,
+            931,
+            269
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/69781ee82e76fab13853e7420c3916d9b6202a8ffb0ea37410f87b25ee9be3be.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            359,
+            931,
+            397
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/221ecc812de51661b4da547b1e9b33220cf420f7948b04913ab6805e2b73a8b6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            539,
+            931,
+            576
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/f95c67ec4c2f8dfc6c8c8123903a272473353a5d7952778ed0726a68cc5ce539.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            644,
+            931,
+            682
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/011775fc47aada65c8c5786b85fb8ef0c9357cca9d0f5194b7348b12023de625.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            774,
+            931,
+            812
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/011775fc47aada65c8c5786b85fb8ef0c9357cca9d0f5194b7348b12023de625.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            774,
+            931,
+            812
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The following two signed 2 's complement numbers (multiplicand M and multiplier Q) are being multiplied using Booth's algorithm:",
+        "bbox": [
+            84,
+            116,
+            927,
+            144
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "M: 1100110111101101 and Q: 1010010010101010",
+        "bbox": [
+            85,
+            157,
+            494,
+            172
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The total number of addition and subtraction operations to be performed is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            186,
+            892,
+            201
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 digital-logic booths-algorithm numerical-answers one-mark",
+        "bbox": [
+            87,
+            214,
+            455,
+            225
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            231,
+            188,
+            245
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.5.5 Booths Algorithm: GATE IT 2005 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            255,
+            485,
+            269
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Using Booth's Algorithm for multiplication, the multiplier -57 will be recoded as",
+        "bbox": [
+            85,
+            277,
+            663,
+            293
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 0-1 00 1 0 0-1",
+        "bbox": [
+            89,
+            302,
+            225,
+            315
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 0-1001000",
+        "bbox": [
+            90,
+            317,
+            220,
+            328
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 digital-logic booths-algorithm normal",
+        "bbox": [
+            89,
+            334,
+            331,
+            345
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 11000111",
+        "bbox": [
+            495,
+            302,
+            626,
+            315
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 0100-1001",
+        "bbox": [
+            497,
+            317,
+            628,
+            328
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            351,
+            188,
+            365
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.5.6 Booths Algorithm: GATE IT 2006 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            375,
+            494,
+            389
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4a68a6a795b155870fe733f38435a2d45d1e24f07e1bb54e0c0a4e71cd26a8f8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            258,
+            931,
+            295
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "When multiplicand Y is multiplied by multiplier $X = x_{n-1}x_{n-2} \\ldots x_{0}$ using bit-pair recoding in Booth's algorithm, partial products are generated according to the following table.",
+        "bbox": [
+            84,
+            399,
+            878,
+            429
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/fcc598d5488f8b88ae821abdb2d6a4b137b4e17d63619d9f093878739162ad53.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            378,
+            931,
+            415
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/eb83271e7681a7dc48690e4c26ee590a1b8dff4953f1c1e4da3adc24924b0eb4.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Row</td><td> $x_{i+1}$ </td><td> $x_i$ </td><td> $x_{i-1}$ </td><td>Partial Product</td></tr><tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>2</td><td>0</td><td>0</td><td>1</td><td>Y</td></tr><tr><td>3</td><td>0</td><td>1</td><td>0</td><td>Y</td></tr><tr><td>4</td><td>0</td><td>1</td><td>1</td><td>2Y</td></tr><tr><td>5</td><td>1</td><td>0</td><td>0</td><td>?</td></tr><tr><td>6</td><td>1</td><td>0</td><td>1</td><td>-Y</td></tr><tr><td>7</td><td>1</td><td>1</td><td>0</td><td>-Y</td></tr><tr><td>8</td><td>1</td><td>1</td><td>1</td><td>?</td></tr></table>",
+        "bbox": [
+            314,
+            439,
+            702,
+            617
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The partial products for rows 5 and 8 are",
+        "bbox": [
+            85,
+            625,
+            386,
+            641
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $2 Y$ and $Y$",
+        "bbox": [
+            87,
+            654,
+            188,
+            669
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $-2Y$ and $2Y$",
+        "bbox": [
+            285,
+            654,
+            403,
+            669
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $-2Y$ and 0",
+        "bbox": [
+            480,
+            654,
+            586,
+            669
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 0 and $Y$",
+        "bbox": [
+            673,
+            654,
+            757,
+            669
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 digital-logic booths-algorithm difficult",
+        "bbox": [
+            87,
+            679,
+            334,
+            688
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            695,
+            188,
+            709
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.5.7 Booths Algorithm: GATE IT 2008 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            719,
+            494,
+            733
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The two numbers given below are multiplied using the Booth's algorithm.",
+        "bbox": [
+            85,
+            743,
+            616,
+            758
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Multiplicand : 0101 1010 1110 1110",
+        "bbox": [
+            85,
+            760,
+            487,
+            775
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Multiplier: 0111 0111 1011 1101",
+        "bbox": [
+            85,
+            777,
+            487,
+            790
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "How many additions/Subtractions are required for the multiplication of the above two numbers?",
+        "bbox": [
+            85,
+            796,
+            779,
+            809
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 6",
+        "bbox": [
+            89,
+            824,
+            126,
+            838
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 8",
+        "bbox": [
+            285,
+            824,
+            319,
+            837
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 10",
+        "bbox": [
+            480,
+            824,
+            524,
+            838
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 12",
+        "bbox": [
+            673,
+            824,
+            719,
+            838
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 digital-logic booths-algorithm normal",
+        "bbox": [
+            87,
+            847,
+            331,
+            858
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            864,
+            188,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.6",
+        "bbox": [
+            68,
+            890,
+            95,
+            902
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Canonical Normal Form (10)",
+        "bbox": [
+            401,
+            889,
+            626,
+            904
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (11Q)",
+        "bbox": [
+            70,
+            914,
+            270,
+            928
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/fe4c6157db8cf46aa4f64e07ed70be34e1ebab05cb4b4bca9e78325b710a6eb6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            720,
+            931,
+            758
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "4.5.4 Booths Algorithm: GATE CSE 2025 | Set 2 | Question: 22",
+        "bbox": [
+            78,
+            65,
+            566,
+            79
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual content that is not present in the image. However, there is no textual content to extract or convert according to the given instructions.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Three switching functions $f_{1}$ , $f_{2}$ and $f_{3}$ are expressed below as sum of minterms.",
+        "bbox": [
+            85,
+            100,
+            692,
+            118
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $f_{1}(w,x,y,z) = \\sum 0,1,2,3,5,12$",
+            "- $f_{2}(w,x,y,z) = \\sum 0,1,2,10,13,14,15$",
+            "- $f_{3}(w,x,y,z) = \\sum 2,4,5,8$"
+        ],
+        "bbox": [
+            97,
+            127,
+            431,
+            175
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Express the function $f$ realised by the circuit shown in the below figure as the sum of minterms (in decimal notation).",
+        "bbox": [
+            84,
+            185,
+            929,
+            214
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/2df8f246396b2c4afbe2e65b01b98ce3fdc5e0105515750d6010914ba1a02646.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "f₁\nf₂\nAND\nf₃\nOR\nf",
+        "sub_type": "text_image",
+        "bbox": [
+            112,
+            225,
+            337,
+            309
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1988 descriptive digital-logic easy circuit-output canonical-normal-form digital-circuits",
+        "bbox": [
+            87,
+            336,
+            534,
+            347
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            353,
+            186,
+            366
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.6.2 Canonical Normal Form: GATE CSE 2002 | Question: 2-1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            376,
+            564,
+            391
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the following logic circuit whose inputs are functions $f_{1}$ , $f_{2}$ , $f_{3}$ and output is f",
+        "bbox": [
+            85,
+            400,
+            722,
+            416
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/d3196b60aa5e943d2e9dd4859ef0dbb8be502d39025c399021009624538add12.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "f₁(x, y, z)\nf₂(x, y, z)\nf₃(x, y, z) = ?\nf(x, y, z)",
+        "sub_type": "text_image",
+        "bbox": [
+            339,
+            426,
+            626,
+            479
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Given that",
+        "bbox": [
+            85,
+            490,
+            166,
+            504
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $f_{1}(x,y,z) = \\Sigma(0,1,3,5)$",
+            "- $f_{2}(x,y,z) = \\Sigma(6,7)$ , and",
+            "- $f(x,y,z) = \\Sigma(1,4,5)$ ."
+        ],
+        "bbox": [
+            97,
+            515,
+            312,
+            562
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "$f_{3}$ is",
+        "bbox": [
+            87,
+            572,
+            126,
+            589
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Sigma(1,4,5)$",
+        "bbox": [
+            89,
+            597,
+            183,
+            612
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Sigma(0,1,3,5)$",
+        "bbox": [
+            89,
+            612,
+            198,
+            628
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 digital-logic normal canonical-normal-form circuit-output",
+        "bbox": [
+            87,
+            631,
+            428,
+            641
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\Sigma(6,7)$",
+            "D. None of the above"
+        ],
+        "bbox": [
+            495,
+            597,
+            645,
+            625
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            647,
+            186,
+            662
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.6.3 Canonical Normal Form: GATE CSE 2008 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            77,
+            671,
+            551,
+            686
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Given $f_{1}, f_{3}$ and $f$ in canonical sum of products form (in decimal) for the circuit",
+        "bbox": [
+            85,
+            695,
+            665,
+            711
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/f9c54b08a1c18201f91be7afd9dee288ef0ffef80aad1342dc2010a8b3edeefc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            371,
+            720,
+            593,
+            758
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {1} = \\Sigma m (4, 5, 6, 7, 8)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            771,
+            260,
+            788
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {3} = \\Sigma m (1, 6, 1 5)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            790,
+            233,
+            808
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf = \\Sigma m (1, 6, 8, 1 5)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            811,
+            245,
+            828
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "then $f_{2}$ is",
+        "bbox": [
+            85,
+            831,
+            161,
+            846
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Sigma m(4,6)$",
+        "bbox": [
+            89,
+            855,
+            181,
+            871
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Sigma m(6,8)$",
+        "bbox": [
+            89,
+            874,
+            181,
+            890
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Sigma m(4,8)$",
+        "bbox": [
+            495,
+            855,
+            586,
+            871
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Sigma m(4,6,8)$",
+        "bbox": [
+            495,
+            872,
+            601,
+            890
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 digital-logic canonical-normal-form easy",
+        "bbox": [
+            87,
+            897,
+            347,
+            908
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/b2e84127ed887ca41aede1a7788995150f4d2d7fecba5b3d79267c2524a0e937.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            378,
+            931,
+            416
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/fb83d2758800e449533d1b76aea9466905218bdfa2705142a93bf615cd1db3c4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            674,
+            931,
+            711
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            914,
+            186,
+            929
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "4.6.1 Canonical Normal Form: GATE CSE 1988 | Question: 2-v",
+        "bbox": [
+            78,
+            77,
+            566,
+            92
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            80,
+            931,
+            118
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.6.4 Canonical Normal Form: GATE CSE 2010 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            552,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The minterm expansion of $f(P, Q, R) = PQ + Q\\bar{R} + P\\bar{R}$ is",
+        "bbox": [
+            85,
+            90,
+            547,
+            108
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $m_{2} + m_{4} + m_{6} + m_{7}$",
+        "bbox": [
+            89,
+            117,
+            272,
+            131
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $m_0 + m_1 + m_3 + m_5$",
+        "bbox": [
+            495,
+            117,
+            675,
+            131
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $m_{0} + m_{1} + m_{6} + m_{7}$",
+        "bbox": [
+            90,
+            131,
+            270,
+            144
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $m_{2} + m_{3} + m_{4} + m_{5}$",
+        "bbox": [
+            497,
+            131,
+            675,
+            144
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 digital-logic canonical-normal-form normal",
+        "bbox": [
+            89,
+            149,
+            357,
+            157
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            165,
+            181,
+            179
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/37a48575a9f9997bc9ecba9b458de5d68fb5be51d403eced904caebe047357e9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.5 Canonical Normal Form: GATE CSE 2015 | Set 3 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            188,
+            613,
+            203
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The total number of prime implicants of the function $f(w, x, y, z) = \\sum (0, 2, 4, 5, 6, 10)$ is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            212,
+            847,
+            229
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/e8cf9df402b2d182436561a6e2fa3162ffd2ecabca826739fd099745973e7bbe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            191,
+            931,
+            229
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 digital-logic canonical-normal-form normal numerical-answers",
+        "bbox": [
+            87,
+            241,
+            468,
+            252
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            258,
+            181,
+            271
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.6 Canonical Normal Form: GATE CSE 2015 | Set 3 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            282,
+            613,
+            296
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Given the function $F = P' + QR$ , where $F$ is a function in three Boolean variables $P, Q$ and $R$ and $P' = !P$ , consider the following statements.",
+        "bbox": [
+            84,
+            305,
+            873,
+            337
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/39325c46b9d4461e8582f3011b1604544a9431ab0f23b50ca7e456ff9e385d81.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            283,
+            931,
+            321
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(S 1) F = \\sum (4, 5, 6)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            340,
+            248,
+            358
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(S 2) F = \\sum (0, 1, 2, 3, 7)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            359,
+            284,
+            378
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(S 3) F = \\Pi (4, 5, 6)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            380,
+            240,
+            397
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(S 4) F = \\Pi (0, 1, 2, 3, 7)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            399,
+            278,
+            416
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is true?",
+        "bbox": [
+            87,
+            419,
+            309,
+            434
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (S1)-False, (S2)-True, (S3)-True, (S4)-False",
+            "B. (S1)-True, (S2)-False, (S3)-False, (S4)-True",
+            "C. (S1)-False, (S2)-False, (S3)-True, (S4)-True",
+            "D. (S1)-True, (S2)-True, (S3)-False, (S4)-False"
+        ],
+        "bbox": [
+            87,
+            444,
+            436,
+            501
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 digital-logic canonical-normal-form normal",
+        "bbox": [
+            87,
+            526,
+            379,
+            536
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            543,
+            181,
+            557
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.7 Canonical Normal Form: GATE CSE 2019 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            566,
+            559,
+            580
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider three 4-variable functions $f_{1}$ , $f_{2}$ , and $f_{3}$ , which are expressed in sum-of-minterms as",
+        "bbox": [
+            84,
+            590,
+            778,
+            606
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/1ec2e9f62556a19e959a6f95f6a5076b7775d5b59548b2993853eb7134e66675.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            568,
+            931,
+            606
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {1} = \\Sigma (0, 2, 5, 8, 1 4),\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            609,
+            260,
+            625
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {2} = \\Sigma (2, 3, 6, 8, 1 4, 1 5),\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            628,
+            289,
+            646
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf _ {3} = \\Sigma (2, 7, 1 1, 1 4)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            648,
+            245,
+            665
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For the following circuit with one AND gate and one XOR gate the output function f can be expressed as:",
+        "bbox": [
+            84,
+            668,
+            852,
+            684
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/162bb291de126464f96c20f206113ced2c3917880e426fdd61e2cd88088e6835.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "f₁\nf₂\nAND\nf₃\nXOR\nf",
+        "sub_type": "text_image",
+        "bbox": [
+            400,
+            691,
+            615,
+            758
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Sigma(7,8,11)$",
+        "bbox": [
+            89,
+            773,
+            191,
+            788
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Sigma(2,7,8,11,14)$",
+        "bbox": [
+            495,
+            773,
+            638,
+            787
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Sigma(2,14)$",
+        "bbox": [
+            90,
+            788,
+            176,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Sigma(0,2,3,5,6,7,8,11,14,15)$",
+        "bbox": [
+            497,
+            788,
+            727,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 digital-logic digital-circuits two-marks canonical-normal-form",
+        "bbox": [
+            87,
+            806,
+            445,
+            815
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            821,
+            181,
+            836
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.6.8 Canonical Normal Form: GATE CSE 2019 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            846,
+            559,
+            859
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "What is the minimum number of 2-input NOR gates required to implement a 4-variable function expressed in sum-of-minterms form as $f = \\Sigma(0, 2, 5, 7, 8, 10, 13, 15)$ ? Assume that all the inputs and their complements are available. Answer: \\_\\_\\_\\_",
+        "bbox": [
+            82,
+            870,
+            878,
+            915
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca602767c99a35f39285930fece38b6e07eea2d792d87aa48efa7b8d770a32b7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            849,
+            931,
+            887
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            87,
+            181,
+            100
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.6.9 Canonical Normal Form: GATE CSE 2020 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            559,
+            124
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the Boolean function $z(a, b, c)$ .",
+        "bbox": [
+            85,
+            134,
+            386,
+            152
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/9af17cf5fc72d47f6baf9475b040255bb570bf3d6ddaf0ed2f23a87db8651d85.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] -->|Input| b[\"b\"]\n  b -->|Output| c[\"c\"]\n  c -->|Input| d[\"d\"]\n  d -->|Output| Z[\"Z\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            94,
+            157,
+            463,
+            230
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following minterm lists represents the circuit given above?",
+        "bbox": [
+            89,
+            239,
+            642,
+            254
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $z = \\sum (0,1,3,7)$",
+            "C. $z = \\sum(2, 4, 5, 6, 7)$"
+        ],
+        "bbox": [
+            89,
+            262,
+            250,
+            294
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $z = \\sum (1,4,5,6,7)$"
+        ],
+        "bbox": [
+            495,
+            263,
+            657,
+            294
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 digital-logic canonical-normal-form two-marks",
+        "bbox": [
+            87,
+            298,
+            371,
+            307
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            313,
+            181,
+            327
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.6.10 Canonical Normal Form: GATE CSE 2024 | Set 2 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            77,
+            337,
+            621,
+            351
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider 4-variable functions f1, f2, f3, f4 expressed in sum-of-minterms form as given below.",
+        "bbox": [
+            85,
+            361,
+            794,
+            377
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf 1 = \\sum (0, 2, 3, 5, 7, 8, 1 1, 1 3)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            383,
+            387,
+            630,
+            407
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf 2 = \\sum (1, 3, 5, 7, 1 1, 1 3, 1 5)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            386,
+            408,
+            620,
+            426
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf 3 = \\sum (0, 1, 4, 1 1)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            386,
+            428,
+            544,
+            446
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf 4 = \\sum (0, 2, 6, 1 3)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            386,
+            448,
+            544,
+            467
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/f35e323d22226e291575f8af2b4833124933678be3b9a0117c49c8040199f0c2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  f1[\"f1\"] --> AND[\"AND\"]\n  f2[\"f2\"] --> AND\n  f3[\"f3\"] --> OR[\"OR\"]\n  f4[\"f4\"] --> OR\n  AND --> XOR[\"XOR\"]\n  OR --> XOR\n  XOR --> Y[\"Y\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            95,
+            483,
+            366,
+            568
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "With respect to the circuit given above, which of the following options is/are CORRECT?",
+        "bbox": [
+            85,
+            587,
+            729,
+            603
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\mathbf{Y} = \\sum (0,1,2,11,13)$",
+            "C. $Y = \\sum (0,1,2,3,4,5,6,7)$"
+        ],
+        "bbox": [
+            87,
+            611,
+            305,
+            642
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $Y = \\Pi (3,4,5,6,7,8,9,10,12,14,15)$",
+        "bbox": [
+            495,
+            612,
+            789,
+            627
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $Y = \\Pi (8,9,10,11,12,13,14,15)$",
+        "bbox": [
+            495,
+            627,
+            763,
+            642
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 digital-logic canonical-normal-form multiple-selects two-marks",
+        "bbox": [
+            87,
+            646,
+            472,
+            655
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            662,
+            188,
+            676
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.7",
+        "text_level": 1,
+        "bbox": [
+            68,
+            687,
+            95,
+            699
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Carry Generator (2)",
+        "text_level": 1,
+        "bbox": [
+            435,
+            686,
+            593,
+            701
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.7.1 Carry Generator: GATE CSE 2006 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            77,
+            713,
+            500,
+            726
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Given two three bit numbers $a_{2}a_{1}a_{0}$ and $b_{2}b_{1}b_{0}$ and c the carry in, the function that represents the carry generate function when these two numbers are added is:",
+        "bbox": [
+            84,
+            736,
+            878,
+            767
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $a_2b_2 + a_2a_1b_1 + a_2a_1a_0b_0 + a_2a_0b_1b_0 + a_1b_2b_1 + a_1a_0b_2b_0 + a_0b_2b_1b_0$",
+            "B. $a_2b_2 + a_2b_1b_0 + a_2a_1b_1b_0 + a_1a_0b_2b_1 + a_1a_0b_2 + a_1a_0b_2b_0 + a_2a_0b_1b_0$",
+            "C. $a_2 + b_2 + (a_2 \\oplus b_2)(a_1 + b_1 + (a_1 \\oplus b_1) + (a_0 + b_0))$",
+            "D. $a_2b_2 + \\overline{a_2} a_1b_1 + \\overline{a_2a_1} a_0b_0 + \\overline{a_2} a_0\\overline{b_1} b_0 + a_1\\overline{b_2} b_1 + \\overline{a_1} a_0\\overline{b_2} b_0 + a_0\\overline{b_2b_1} b_0$"
+        ],
+        "bbox": [
+            85,
+            777,
+            668,
+            843
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 digital-logic normal carry-generator adder",
+        "bbox": [
+            87,
+            866,
+            368,
+            876
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            883,
+            181,
+            897
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/b368a70a014a8625c54b5cfaf471d67d2d06a36d152cb1bde7dece9baf301a4e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            932,
+            150
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/52456397a17194cdf9d76a42f179b330ac881a4393d6e886b111e06a864c50a1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            340,
+            932,
+            377
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/c447386783b55087337b1ed4895a34798b1a4f301b677c210ac47704739f37e0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            714,
+            932,
+            752
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2019 numerical-answers digital-logic canonical-normal-form two-marks",
+        "bbox": [
+            87,
+            71,
+            462,
+            80
+        ],
+        "page_idx": 11
+    }
+]

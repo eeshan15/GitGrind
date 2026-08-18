@@ -1,0 +1,4290 @@
+[
+    {
+        "type": "text",
+        "text": "for algebraic structures like groups and rings.",
+        "bbox": [
+            60,
+            64,
+            391,
+            79
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            92,
+            260,
+            106
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A binary operation \\* on a set $S$ is a function \\* : $S \\times S \\to S$ . For any $a, b \\in S$ , $a * b$ is a unique element in $S$ . The core idea is to define an internal way to combine elements.",
+        "bbox": [
+            58,
+            121,
+            897,
+            152
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            165,
+            322,
+            180
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• Properties of a Binary Operation:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            194,
+            349,
+            207
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Closure: For all $a, b \\in S$ , $a * b \\in S$ . (This is inherent in the definition).",
+            "2. Associativity: For all $a, b, c \\in S$ , $(a * b) * c = a * (b * c)$ .",
+            "3. Commutativity: For all $a, b \\in S$ , $a * b = b * a$ .",
+            "4. Identity Element: An element $e \\in S$ such that for all $a \\in S$ , $a * e = e * a = a$ . If it exists, it is unique.",
+            "5. Inverse Element: For an element $a \\in S$ , an element $a^{-1} \\in S$ is its inverse if $a * a^{-1} = a^{-1} * a = e$ , where $e$ is the identity element. If an identity exists, inverses are unique for each element."
+        ],
+        "bbox": [
+            87,
+            209,
+            922,
+            298
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            312,
+            297,
+            327
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If an identity element exists, it is unique.",
+            "- If an identity element exists and the operation is associative, then inverses are unique."
+        ],
+        "bbox": [
+            72,
+            340,
+            714,
+            370
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            384,
+            324,
+            399
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Forgetting to check closure: the result of the operation must always be in the original set.",
+            "- Misidentifying the identity element or assuming it always exists.",
+            "- Assuming commutativity or associativity when not explicitly stated or proven."
+        ],
+        "bbox": [
+            72,
+            413,
+            731,
+            454
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            469,
+            297,
+            484
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- To check properties, test with arbitrary elements or counterexamples.",
+            "- For finite sets, construct a Cayley table (operation table) to check properties visually."
+        ],
+        "bbox": [
+            72,
+            500,
+            700,
+            527
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Group Theory",
+        "text_level": 1,
+        "bbox": [
+            60,
+            540,
+            191,
+            555
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Group theory studies algebraic structures called groups, which are sets equipped with a binary operation satisfying specific axioms. It's fundamental in cryptography, coding theory, and physics.",
+        "bbox": [
+            58,
+            568,
+            897,
+            598
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            611,
+            260,
+            625
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A group $(G, *)$ is a set G together with a binary operation $*$ that satisfies four axioms:",
+        "bbox": [
+            58,
+            641,
+            687,
+            657
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Closure: For all $a, b \\in G$ , $a * b \\in G$ .",
+            "2. Associativity: For all $a, b, c \\in G$ , $(a * b) * c = a * (b * c)$ .",
+            "3. Identity Element: There exists an element $e \\in G$ such that for all $a \\in G$ , $a * e = e * a = a$ .",
+            "4. Inverse Element: For each $a \\in G$ , there exists an element $a^{-1} \\in G$ such that $a * a^{-1} = a^{-1} * a = e$ ."
+        ],
+        "bbox": [
+            63,
+            666,
+            843,
+            729
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The core idea is to formalize symmetry and transformations.",
+        "bbox": [
+            60,
+            739,
+            500,
+            755
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            769,
+            322,
+            783
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Related Structures:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            798,
+            242,
+            811
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Semigroup: A set with an associative binary operation.",
+            "- Monoid: A semigroup with an identity element.",
+            "- Abelian Group (Commutative Group): A group where the operation is commutative ( $a * b = b * a$ )."
+        ],
+        "bbox": [
+            97,
+            812,
+            847,
+            853
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Subgroup: A non-empty subset $H$ of a group $G$ is a subgroup if $H$ is itself a group under the same operation.",
+            "- Subgroup Test: $H$ is a subgroup of $G$ if for all $a, b \\in H$ , $a * b^{-1} \\in H$ ."
+        ],
+        "bbox": [
+            72,
+            853,
+            887,
+            884
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Cyclic Group: A group $G$ is cyclic if there exists an element $g \\in G$ such that every element of $G$ can be written as a power of $g$ (i.e., $G = \\{g^n \\mid n \\in \\mathbb{Z}\\}$ ). $g$ is called a generator.",
+            "- Order of an element: The smallest positive integer $n$ such that $a^n = e$ . If no such $n$ exists, the element has infinite"
+        ],
+        "bbox": [
+            72,
+            885,
+            926,
+            929
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "order.",
+        "bbox": [
+            85,
+            65,
+            132,
+            76
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Lagrange's Theorem: If $G$ is a finite group and $H$ is a subgroup of $G$ , then the order of $H$ divides the order of $G$ (i.e., $|H|$ divides $|G|$ ).",
+        "bbox": [
+            72,
+            77,
+            910,
+            109
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            122,
+            297,
+            137
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The identity element is unique.",
+            "• Every element has a unique inverse.",
+            "- $(a^{-1})^{-1} = a$",
+            "- $(a*b)^{-1} = b^{-1} * a^{-1}$"
+        ],
+        "bbox": [
+            72,
+            150,
+            354,
+            214
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            226,
+            324,
+            242
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Forgetting to check all four group axioms, especially the existence of inverses for every element.",
+            "- Confusing the order of an element with the order of the group.",
+            "- Misapplying Lagrange's Theorem (it states a necessary condition for a subgroup, not a sufficient one)."
+        ],
+        "bbox": [
+            72,
+            258,
+            826,
+            301
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            315,
+            297,
+            330
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- To prove a set with an operation is a group, systematically verify all four axioms.",
+            "- To find subgroups, look for subsets that are closed under the operation and contain the identity and inverses.",
+            "- Use Lagrange's Theorem to quickly rule out potential subgroup orders."
+        ],
+        "bbox": [
+            72,
+            344,
+            877,
+            385
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Identity Function",
+        "text_level": 1,
+        "bbox": [
+            60,
+            399,
+            218,
+            415
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The identity function is a fundamental concept in functions and algebraic structures, acting as a neutral element for function composition.",
+        "bbox": [
+            58,
+            428,
+            895,
+            456
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            470,
+            258,
+            484
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "For any set $A$ , the identity function on $A$ , denoted $I_A$ or $id_A$ , is a function $I_A : A \\to A$ such that for every element $x \\in A$ , $I_A(x) = x$ . The core idea is a mapping that leaves elements unchanged.",
+        "bbox": [
+            58,
+            500,
+            897,
+            532
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            545,
+            322,
+            559
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If $f: A \\to B$ is any function, then $f \\circ I_A = f$ and $I_B \\circ f = f$ .",
+            "- If $f: A \\to B$ is a bijective function, then its inverse $f^{-1}: B \\to A$ satisfies $f^{-1} \\circ f = I_A$ and $f \\circ f^{-1} = I_B$ ."
+        ],
+        "bbox": [
+            72,
+            574,
+            887,
+            606
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            619,
+            297,
+            635
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The identity function is always bijective (one-to-one and onto).",
+            "- It serves as the identity element for the operation of function composition."
+        ],
+        "bbox": [
+            72,
+            650,
+            620,
+            678
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            692,
+            324,
+            707
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing the identity function with a constant function (e.g., $f(x) = c$ ).",
+            "- Forgetting that the identity function is specific to a set $A$ ."
+        ],
+        "bbox": [
+            72,
+            722,
+            608,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            767,
+            297,
+            781
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Use the properties of the identity function when simplifying compositions or proving inverse relationships.",
+        "bbox": [
+            72,
+            796,
+            847,
+            809
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Lattice",
+        "text_level": 1,
+        "bbox": [
+            60,
+            823,
+            127,
+            837
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Lattices are special types of partially ordered sets where every pair of elements has a unique \"least upper bound\" and \"greatest lower bound.\" They are crucial in areas like logic, set theory, and computer science for modeling hierarchical structures.",
+        "bbox": [
+            58,
+            852,
+            919,
+            894
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            908,
+            258,
+            922
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A poset $(L, \\preceq)$ is a lattice if for every pair of elements $a, b \\in L$ , both their least upper bound (LUB or join, denoted $a \\vee b$ ) and greatest lower bound (GLB or meet, denoted $a \\wedge b$ ) exist and are unique. The core idea is a structure where elements always have well-defined \"closest\" common superiors and inferiors.",
+        "bbox": [
+            58,
+            65,
+            931,
+            110
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            123,
+            324,
+            138
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Join (Supremum): $a \\vee b = \\sup \\{a, b\\}$ .",
+            "- Meet (Infimum): $a \\wedge b = \\inf \\{a, \\bar{b}\\}$ .",
+            "- Types of Lattices:"
+        ],
+        "bbox": [
+            72,
+            152,
+            379,
+            195
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Distributive Lattice: A lattice where the distributive laws hold:",
+        "bbox": [
+            97,
+            197,
+            568,
+            210
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $a \\wedge (b \\vee c) = (a \\wedge b) \\vee (a \\wedge c)$",
+            "- $a \\vee (b \\wedge c) = (a \\vee b) \\wedge (a \\vee c)$"
+        ],
+        "bbox": [
+            122,
+            211,
+            373,
+            241
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Complemented Lattice: A bounded lattice (has a greatest element 1 and a least element 0) where every element $a$ has a complement $a'$ such that $a \\wedge a' = 0$ and $a \\vee a' = 1$ .",
+        "bbox": [
+            97,
+            241,
+            877,
+            270
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Boolean Algebra: A distributive and complemented lattice.",
+        "bbox": [
+            97,
+            270,
+            544,
+            283
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            299,
+            297,
+            314
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Idempotent Laws: $a \\land a = a$ , $a \\lor a = a$",
+            "- Commutative Laws: $a \\wedge b = b \\wedge a, a \\vee b = b \\vee a$",
+            "- Associative Laws: $(a \\land b) \\land c = a \\land (b \\land c), (a \\lor b) \\lor c = a \\lor (b \\lor c)$",
+            "- Absorption Laws: $a \\land (a \\lor b) = a, a \\lor (a \\land b) = a$",
+            "- Duality Principle: If a statement is true for a lattice, its dual (exchanging $\\wedge$ with $\\vee$ , $\\preceq$ with $\\succeq$ , 0 with 1) is also true."
+        ],
+        "bbox": [
+            72,
+            328,
+            919,
+            402
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            416,
+            324,
+            431
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Not every poset is a lattice. A poset fails to be a lattice if any pair of elements lacks a unique LUB or GLB.",
+            "- Distinguishing between maximal/minimal elements and greatest/least elements in a poset (a lattice always has a greatest and least element if it's bounded)."
+        ],
+        "bbox": [
+            72,
+            445,
+            904,
+            486
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            502,
+            297,
+            517
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Draw Hasse diagrams to visually identify LUBs and GLBs for all pairs.",
+            "- To check for distributivity, look for sublattices isomorphic to $N_{5}$ (pentagon lattice) or $M_{3}$ (diamond lattice) in the Hasse diagram (they are non-distributive)."
+        ],
+        "bbox": [
+            72,
+            530,
+            895,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Mathematical Induction",
+        "text_level": 1,
+        "bbox": [
+            60,
+            586,
+            278,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Mathematical Induction is a powerful proof technique used to establish the truth of a statement for all natural numbers (or a subset thereof). It's essential for proving properties of algorithms, data structures, and number theory results.",
+        "bbox": [
+            58,
+            615,
+            917,
+            644
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            657,
+            260,
+            672
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The Principle of Mathematical Induction states that to prove a statement $P(n)$ is true for all integers $n \\geq n_0$ :",
+        "bbox": [
+            60,
+            688,
+            853,
+            705
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Base Case: Show that $P(n_0)$ is true.",
+            "2. Inductive Hypothesis: Assume that $P(k)$ is true for some arbitrary integer $k \\geq n_0$ .",
+            "3. Inductive Step: Show that $P(k + 1)$ is true, using the inductive hypothesis."
+        ],
+        "bbox": [
+            63,
+            714,
+            697,
+            760
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The core idea is like a chain reaction: if the first domino falls, and falling dominoes always knock over the next one, then all dominoes will fall.",
+        "bbox": [
+            58,
+            770,
+            932,
+            799
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            813,
+            322,
+            828
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Principle of Strong Induction:",
+        "bbox": [
+            73,
+            843,
+            321,
+            857
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Base Case: Show that $P(n_0)$ is true.",
+            "2. Inductive Hypothesis: Assume that $P(j)$ is true for all integers $j$ such that $n_0 \\leq j \\leq k$ , for some arbitrary integer $k \\geq n_0$ .",
+            "3. Inductive Step: Show that $P(k + 1)$ is true, using the inductive hypothesis."
+        ],
+        "bbox": [
+            87,
+            857,
+            890,
+            918
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            297,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Both standard and strong induction are equivalent in power; strong induction is often more convenient for proofs where $P(k + 1)$ depends on more than just $P(k)$ .",
+        "bbox": [
+            72,
+            93,
+            899,
+            125
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            137,
+            324,
+            153
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrect base case: The statement must hold for the starting value.",
+            "• Assuming what needs to be proven in the inductive step. The inductive hypothesis must be explicitly used.",
+            "- Not clearly stating the inductive hypothesis or the inductive step.",
+            "- Algebraic errors during the inductive step."
+        ],
+        "bbox": [
+            72,
+            167,
+            857,
+            222
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            237,
+            297,
+            252
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Clearly label each step: Base Case, Inductive Hypothesis, Inductive Step.",
+            "- In the inductive step, try to manipulate the expression for $P(k + 1)$ to isolate an instance of $P(k)$ that can be substituted using the hypothesis.",
+            "- For inequalities, sometimes it's easier to prove $P(k + 1) - P(k) \\geq 0$ or similar."
+        ],
+        "bbox": [
+            72,
+            266,
+            878,
+            325
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Number Theory",
+        "text_level": 1,
+        "bbox": [
+            60,
+            337,
+            205,
+            353
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Number theory is the study of integers and their properties, including divisibility, prime numbers, and modular arithmetic. It has direct applications in cryptography, error correction codes, and algorithm analysis.",
+        "bbox": [
+            58,
+            366,
+            932,
+            396
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            409,
+            258,
+            423
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Number theory explores the relationships and properties of integers. The core idea is to understand the structure and behavior of numbers under various operations.",
+        "bbox": [
+            58,
+            438,
+            914,
+            467
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            480,
+            322,
+            495
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Divisibility: $a|b$ means $a$ divides $b$ (i.e., $b = ka$ for some integer $k$ ).",
+            "- Division Algorithm: For integers $a$ (dividend) and $d$ (divisor) with $d > 0$ , there exist unique integers $q$ (quotient) and $r$ (remainder) such that $a = dq + r$ , where $0 \\leq r < d$ .",
+            "- Greatest Common Divisor (GCD): $\\gcd(a, b)$ is the largest integer that divides both $a$ and $b$ .",
+            "- Euclidean Algorithm: An efficient method to compute GCD. $\\gcd(a, b) = \\gcd(b, a \\pmod{b})$ .",
+            "- Bézout's Identity: For any integers $a, b$ , there exist integers $x, y$ such that $ax + by = \\gcd(a, b)$ .",
+            "- Least Common Multiple (LCM): $\\operatorname{lcm}(a, b)$ is the smallest positive integer divisible by both $a$ and $b$ .",
+            "- Relationship: $\\gcd(a, b) \\cdot \\operatorname{lcm}(a, b) = |ab|$ .",
+            "- Prime Numbers: A positive integer greater than 1 with exactly two positive divisors: 1 and itself.",
+            "- Fundamental Theorem of Arithmetic: Every integer greater than 1 can be uniquely represented as a product of prime numbers (up to the order of factors).",
+            "- Modular Arithmetic: $a \\equiv b \\pmod{m}$ means $m \\mid (a - b)$ . This is an equivalence relation.",
+            "- Properties:",
+            "- If $a \\equiv b \\pmod{m}$ and $c \\equiv d \\pmod{m}$ , then $a + c \\equiv b + d \\pmod{m}$ and $ac \\equiv bd \\pmod{m}$ .",
+            "- $(a \\pmod{m} + b \\pmod{m}) \\pmod{m} = (a + b) \\pmod{m}$",
+            "- $(a \\pmod{m} \\cdot b \\pmod{m}) \\pmod{m} = (a \\cdot b) \\pmod{m}$",
+            "- Fermat's Little Theorem: If $p$ is a prime number and $a$ is an integer not divisible by $p$ , then $a^{p-1} \\equiv 1 \\pmod{p}$ . Also, $a^p \\equiv a \\pmod{p}$ for any integer $a$ .",
+            "- Euler's Totient Function $\\phi(n)$ : Counts the number of positive integers up to $n$ that are relatively prime to $n$ .",
+            "○ If $n = p_1^{k_1} p_2^{k_2} \\ldots p_r^{k_r}$ is the prime factorization of $n$ , then $\\phi(n) = n \\left(1 - \\frac{1}{p_1}\\right) \\left(1 - \\frac{1}{p_2}\\right) \\ldots \\left(1 - \\frac{1}{p_r}\\right)$ .",
+            "- If $p$ is prime, $\\phi(p) = p - 1$ .",
+            "- Euler's Theorem: If $n$ is a positive integer and $a$ is an integer relatively prime to $n$ (i.e., $\\gcd(a, n) = 1$ ), then $a^{\\phi(n)} \\equiv 1 \\pmod{n}$ ."
+        ],
+        "bbox": [
+            72,
+            511,
+            917,
+            866
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            880,
+            297,
+            895
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Congruence modulo $m$ is an equivalence relation.",
+        "bbox": [
+            72,
+            909,
+            450,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- The set of integers modulo $n$ , $\\mathbb{Z}_n = \\{0, 1, \\dots, n - 1\\}$ , forms a ring under addition and multiplication modulo $n$ . If $n$ is prime, $\\mathbb{Z}_n$ is a field.",
+        "bbox": [
+            72,
+            65,
+            919,
+            95
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            109,
+            324,
+            124
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mistakes in applying modular arithmetic, especially with negative numbers or division. Remember division is not always well-defined in modular arithmetic (requires modular inverse).",
+            "- Confusing prime numbers with relatively prime numbers.",
+            "- Incorrectly calculating $\\phi(n)$ for composite numbers."
+        ],
+        "bbox": [
+            72,
+            138,
+            899,
+            195
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            210,
+            297,
+            225
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Use the Euclidean algorithm for GCD and extended Euclidean algorithm for modular inverses.",
+            "- Simplify large powers in modular arithmetic using Fermat's Little Theorem or Euler's Theorem.",
+            "- For divisibility problems, use properties of congruences."
+        ],
+        "bbox": [
+            72,
+            239,
+            769,
+            281
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Onto (Surjective Functions)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            294,
+            314,
+            311
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Onto functions, also known as surjective functions, ensure that every element in the codomain is \"hit\" by at least one element from the domain. This property is vital for understanding mappings that cover their entire target set.",
+        "bbox": [
+            58,
+            323,
+            907,
+            352
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            366,
+            260,
+            380
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A function $f: A \\to B$ is said to be onto (or surjective) if for every element $y \\in B$ (the codomain), there exists at least one element $x \\in A$ (the domain) such that $f(x) = y$ . The core idea is that the function's range completely fills its codomain.",
+        "bbox": [
+            58,
+            395,
+            917,
+            439
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            454,
+            322,
+            467
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- A function $f: A \\to B$ is surjective if and only if $\\text{range}(f) = B$ .",
+            "- If $A$ and $B$ are finite sets, and $f: A \\to B$ is surjective, then $|A| \\geq |B|$ .",
+            "- The number of surjective functions from a set of size $m$ to a set of size $n$ is given by $\\sum_{k=0}^{n}(-1)^{k}\\binom{n}{k}(n-k)^{m}$ ."
+        ],
+        "bbox": [
+            72,
+            483,
+            895,
+            533
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            545,
+            297,
+            560
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If $f$ and $g$ are surjective, then $g \\circ f$ is surjective.",
+            "- If $g \\circ f$ is surjective, then $g$ must be surjective (but $f$ need not be)."
+        ],
+        "bbox": [
+            72,
+            574,
+            569,
+            605
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            619,
+            324,
+            634
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing surjectivity with injectivity. An onto function doesn't require unique preimages.",
+            "- Failing to demonstrate a preimage for an arbitrary element in the codomain, instead just showing some elements have preimages."
+        ],
+        "bbox": [
+            72,
+            648,
+            905,
+            688
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            704,
+            297,
+            720
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- To prove a function $f: A \\to B$ is surjective, pick an arbitrary $y \\in B$ , then show how to construct an $x \\in A$ such that $f(x) = y$ . This often involves solving $y = f(x)$ for $x$ .",
+            "- For finite sets, compare the cardinalities of the domain and codomain. If $|A| < |B|$ , no surjective function from $A$ to $B$ can exist."
+        ],
+        "bbox": [
+            72,
+            733,
+            922,
+            792
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Partial Order",
+        "text_level": 1,
+        "bbox": [
+            60,
+            806,
+            181,
+            821
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Partial order relations define a sense of relative order among elements in a set, but not necessarily for every pair. They are crucial for modeling hierarchies, dependencies, and precedence in computer science (e.g., task scheduling, class inheritance).",
+        "bbox": [
+            58,
+            834,
+            924,
+            878
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            891,
+            260,
+            906
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A relation $R$ on a set $A$ is a partial order relation if it is reflexive, antisymmetric, and transitive. A set $A$ with a partial order relation $\\preceq$ is called a partially ordered set (poset), denoted $(A, \\preceq)$ . The core idea is to establish an ordering where some elements might be incomparable.",
+        "bbox": [
+            58,
+            65,
+            900,
+            110
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            124,
+            322,
+            138
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Properties of Partial Order:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            153,
+            302,
+            165
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Reflexive: For all $a \\in A$ , $a \\prec a$ .",
+            "2. Antisymmetric: For all $a, b \\in A$ , if $a \\preceq b$ and $b \\preceq a$ , then $a = b$ .",
+            "3. Transitive: For all $a, b, c \\in A$ , if $a \\preceq b$ and $b \\preceq c$ , then $a \\preceq c$ .",
+            "- Comparability: Two elements $a, b \\in A$ are comparable if $a \\preceq b$ or $b \\preceq a$ . Otherwise, they are incomparable.",
+            "- Total Order (Linear Order): A partial order where every pair of elements is comparable.",
+            "- Hasse Diagram: A graphical representation of a finite poset, where:",
+            "- Elements are represented by nodes.",
+            "- An edge goes upwards from $a$ to $b$ if $a \\preceq b$ and there is no $c$ such that $a \\preceq c \\preceq b$ (i.e., $b$ covers $a$ ).",
+            "- Reflexive loops and transitive edges are omitted."
+        ],
+        "bbox": [
+            87,
+            167,
+            882,
+            295
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "- Elements in a Poset:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            296,
+            250,
+            308
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Maximal Element: An element $a$ such that there is no $b \\in A$ with $a \\preceq b$ and $a \\neq b$ .",
+            "- Minimal Element: An element $a$ such that there is no $b \\in A$ with $b \\preceq a$ and $a \\neq b$ .",
+            "- Greatest Element (Maximum): An element $g$ such that for all $x \\in A$ , $x \\preceq g$ . (If it exists, it is unique).",
+            "- Least Element (Minimum): An element $l$ such that for all $x \\in A$ , $l \\preceq x$ . (If it exists, it is unique).",
+            "- Upper Bound: For a subset $S \\subseteq A$ , an element $u \\in A$ is an upper bound of $S$ if $s \\preceq u$ for all $s \\in S$ .",
+            "- Lower Bound: For a subset $S \\subseteq A$ , an element $l \\in A$ is a lower bound of $S$ if $l \\preceq s$ for all $s \\in S$ .",
+            "- Least Upper Bound (LUB / Supremum): The least element among all upper bounds of $S$ , denoted $\\sup(S)$ .",
+            "- Greatest Lower Bound (GLB / Infimum): The greatest element among all lower bounds of $S$ , denoted $\\inf(S)$ ."
+        ],
+        "bbox": [
+            95,
+            309,
+            919,
+            429
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            442,
+            297,
+            457
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- A greatest element is always a maximal element, but a maximal element is not necessarily the greatest. Similarly for least and minimal elements.",
+            "- A finite poset always has at least one maximal and one minimal element."
+        ],
+        "bbox": [
+            72,
+            471,
+            931,
+            513
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            528,
+            324,
+            543
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing maximal/minimal elements with greatest/least elements. A poset can have multiple maximal elements but at most one greatest element.",
+            "- Errors in drawing Hasse diagrams, especially omitting necessary edges or including redundant ones.",
+            "- Incorrectly identifying LUBs or GLBs for subsets."
+        ],
+        "bbox": [
+            72,
+            555,
+            931,
+            612
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            627,
+            297,
+            642
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- To verify a partial order, systematically check reflexivity, antisymmetry, and transitivity.",
+            "- Draw Hasse diagrams to visualize the order and identify special elements (maximal, minimal, greatest, least, LUB, GLB).",
+            "- For LUB/GLB, first find all upper/lower bounds, then identify the least/greatest among them."
+        ],
+        "bbox": [
+            72,
+            656,
+            915,
+            712
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Polynomials",
+        "text_level": 1,
+        "bbox": [
+            60,
+            725,
+            178,
+            739
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Polynomials are fundamental algebraic expressions used extensively in computer science for modeling, interpolation, error correction, and algorithm analysis (e.g., complexity). In discrete mathematics, they often appear in contexts like finite fields and generating functions.",
+        "bbox": [
+            58,
+            754,
+            914,
+            796
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            809,
+            258,
+            824
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A polynomial in a variable x is an expression of the form $P(x) = a_{n}x^{n} + a_{n-1}x^{n-1} + \\cdots + a_{1}x + a_{0}$ , where $a_{i}$ are coefficients (often real or complex numbers, but can be from finite fields in discrete math) and n is a non-negative integer called the degree of the polynomial (if $a_{n} \\neq 0$ ). The core idea is to represent relationships using sums of powers of a variable.",
+        "bbox": [
+            58,
+            840,
+            934,
+            899
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            913,
+            322,
+            928
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Degree: The highest power of $x$ with a non-zero coefficient.",
+            "- Root (or Zero): A value $c$ such that $P(c) = 0$ .",
+            "- Polynomial Division Algorithm: For polynomials $P(x)$ (dividend) and $D(x)$ (divisor) with $D(x) \\neq 0$ , there exist unique polynomials $Q(x)$ (quotient) and $R(x)$ (remainder) such that $P(x) = D(x)Q(x) + R(x)$ , where $\\deg(R(x)) < \\deg(D(x))$ or $R(x) = 0$ .",
+            "- Remainder Theorem: If a polynomial $P(x)$ is divided by $(x - c)$ , the remainder is $P(c)$ .",
+            "- Factor Theorem: $(x - c)$ is a factor of $P(x)$ if and only if $P(c) = 0$ (i.e., $c$ is a root of $P(x)$ ).",
+            "- Fundamental Theorem of Algebra: Every non-constant polynomial with complex coefficients has at least one complex root. Consequently, a polynomial of degree $n$ has exactly $n$ complex roots (counting multiplicity).",
+            "- Vieta's Formulas: Relate the coefficients of a polynomial to the sums and products of its roots. For a quadratic $ax^2 + bx + c = 0$ with roots $r_1, r_2: r_1 + r_2 = -b / a, r_1r_2 = c / a$ ."
+        ],
+        "bbox": [
+            72,
+            64,
+            910,
+            229
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            242,
+            297,
+            257
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- A polynomial of degree $n$ has at most $n$ distinct roots.",
+            "- Polynomials form a ring under addition and multiplication."
+        ],
+        "bbox": [
+            72,
+            271,
+            505,
+            300
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls & Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            314,
+            324,
+            328
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Algebraic errors in polynomial division or evaluating polynomials.",
+            "- Forgetting to count root multiplicities when applying the Fundamental Theorem of Algebra.",
+            "- Not considering the domain of coefficients (e.g., real vs. complex vs. finite field)."
+        ],
+        "bbox": [
+            72,
+            343,
+            742,
+            385
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            400,
+            297,
+            415
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Use synthetic division for quick division by $(x - c)$ .",
+            "- Apply the Remainder and Factor Theorems to find roots or factors efficiently.",
+            "- For problems involving roots, Vieta's formulas can often provide shortcuts."
+        ],
+        "bbox": [
+            72,
+            429,
+            643,
+            472
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference",
+        "text_level": 1,
+        "bbox": [
+            60,
+            485,
+            295,
+            500
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Set Theory:",
+        "bbox": [
+            72,
+            514,
+            181,
+            528
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ |P(A)| = 2^{|A|}$",
+            "$\\circ |A\\cup \\dot{B}| = |A| + |B| - |A\\cap B|$",
+            "- De Morgan's Laws: $\\overline{A \\cup B} = \\overline{A} \\cap \\overline{B}, \\overline{A \\cap B} = \\overline{A} \\cup \\overline{B}$"
+        ],
+        "bbox": [
+            97,
+            529,
+            521,
+            580
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Relations:",
+        "bbox": [
+            72,
+            581,
+            169,
+            593
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "○ Number of relations from A to B: $2^{|A||B|}$",
+            "- Equivalence Relation: Reflexive, Symmetric, Transitive.",
+            "- Partial Order: Reflexive, Antisymmetric, Transitive."
+        ],
+        "bbox": [
+            97,
+            595,
+            515,
+            638
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Functions (from $|A| = m$ to $|B| = n$ ):",
+        "bbox": [
+            72,
+            640,
+            381,
+            655
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Total functions: $n^{m}$",
+            "- Injective functions: $P(n, m) = \\frac{n!}{(n - m)!}$ (if $m \\leq n$ )",
+            "- Bijective functions: $n!$ (if $m = n$ )",
+            "- Surjective functions: $\\sum_{k=0}^{n}(-1)^{k}\\binom{n}{k}(n-k)^{m}$",
+            "- Identity function $I_A(x) = x$"
+        ],
+        "bbox": [
+            97,
+            655,
+            477,
+            738
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Group Theory:",
+        "bbox": [
+            72,
+            738,
+            203,
+            752
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Group Axioms: Closure, Associativity, Identity, Inverse.",
+            "- Lagrange's Theorem: $|H|$ divides $|G|$ for subgroup $H$ of group $G$ ."
+        ],
+        "bbox": [
+            97,
+            752,
+            600,
+            781
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Lattice:",
+        "bbox": [
+            72,
+            781,
+            149,
+            792
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Poset where every pair has unique LUB (join $\\vee$ ) and GLB (meet $\\wedge$ ).",
+            "- Distributive Lattice: $a \\wedge (b \\vee c) = (a \\wedge b) \\vee (a \\wedge c)$ , etc."
+        ],
+        "bbox": [
+            97,
+            794,
+            601,
+            824
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Mathematical Induction:",
+        "bbox": [
+            72,
+            824,
+            278,
+            834
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Base Case $P(n_0)$ , Inductive Hypothesis $P(k)$ , Inductive Step $P(k + 1)$ .",
+        "bbox": [
+            97,
+            837,
+            640,
+            853
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Number Theory:",
+        "bbox": [
+            72,
+            853,
+            216,
+            866
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Division Algorithm: $a = dq + r, 0 \\leq r < d$",
+            "$\\circ \\gcd (a,b)\\cdot \\operatorname {lcm}(a,b) = |ab|$",
+            "- Fermat's Little Theorem: $a^{p-1} \\equiv 1 \\pmod{p}$ (for prime $p, p \\nmid a$ )"
+        ],
+        "bbox": [
+            97,
+            866,
+            584,
+            914
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Euler's Totient Function: $\\phi(n) = n \\prod_{p \\mid n, p \\text{ prime}} \\left(1 - \\frac{1}{p}\\right)$",
+            "- Euler's Theorem: $a^{\\phi(n)} \\equiv 1 \\pmod{n}$ (for $\\gcd(a, n) = 1$ )"
+        ],
+        "bbox": [
+            97,
+            65,
+            542,
+            109
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Polynomials:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            109,
+            191,
+            121
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Remainder Theorem: $P(x) \\pmod{(x - c)} = P(c)$",
+            "- Factor Theorem: $(x - c)$ is a factor $\\iff P(c) = 0$"
+        ],
+        "bbox": [
+            97,
+            121,
+            500,
+            154
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            165,
+            285,
+            181
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Master Definitions and Properties: Many GATE questions directly test your understanding of definitions (e.g., what makes a relation symmetric?) and properties (e.g., De Morgan's laws). Memorize them thoroughly.",
+            "2. Practice with Hasse Diagrams: For partial orders and lattices, drawing Hasse diagrams is crucial. Practice identifying maximal/minimal elements, greatest/least elements, and LUB/GLB from diagrams.",
+            "3. Systematic Verification: When asked to check if a structure is a group, a relation is an equivalence relation, or a function is bijective, systematically go through each axiom/property. Don't skip steps or assume properties.",
+            "4. Number Theory Shortcuts: Familiarize yourself with the Euclidean algorithm for GCD, modular arithmetic properties, and theorems like Fermat's Little Theorem and Euler's Theorem. These are vital for efficiently solving problems involving large numbers or powers.",
+            "5. Inclusion-Exclusion Principle: This principle is frequently tested for counting problems in set theory and functions (especially surjective functions). Practice applying it for 2, 3, and general cases.",
+            "6. Mathematical Induction Structure: Always clearly state your base case, inductive hypothesis, and inductive step. Ensure your inductive step explicitly uses the inductive hypothesis to avoid circular reasoning.",
+            "7. Cardinality vs. Countability: Understand the difference between finite, countably infinite, and uncountable sets. Be familiar with standard examples (e.g., $\\mathbb{N},\\mathbb{Z},\\mathbb{Q}$ are countable; $\\mathbb{R},P(\\mathbb{N})$ are uncountable) and Cantor's diagonalization argument.",
+            "8. Watch for \"If and Only If\": Pay close attention to conditions that are \"if and only if\" (iff) as they imply equivalence and are often key to proving properties or identifying specific structures."
+        ],
+        "bbox": [
+            63,
+            194,
+            926,
+            445
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.1",
+        "bbox": [
+            67,
+            458,
+            94,
+            472
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Binary Operation (8)",
+        "text_level": 1,
+        "bbox": [
+            431,
+            458,
+            596,
+            473
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.1.1 Binary Operation: GATE CSE 1989 | Question: 1-v",
+        "text_level": 1,
+        "bbox": [
+            77,
+            484,
+            512,
+            500
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The number of possible commutative binary operations that can be defined on a set of $n$ elements (for a given $n$ ) is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            508,
+            878,
+            538
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/c91552eb2616c1e1edc95964f463f4734128c3b1eb16746527bc354938fd8f29.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            486,
+            932,
+            524
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive set-theory&algebra binary-operation",
+        "bbox": [
+            87,
+            549,
+            364,
+            561
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            566,
+            189,
+            581
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.1.2 Binary Operation: GATE CSE 1994 | Question: 2.2",
+        "text_level": 1,
+        "bbox": [
+            77,
+            590,
+            512,
+            605
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "On the set N of non-negative integers, the binary operation \\_\\_\\_\\_ is associative and non-commutative.",
+        "bbox": [
+            85,
+            615,
+            850,
+            631
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/ea4e8b0592706615df6e9e2ddb569d553748f4ec9090c6a9b41497076fc809d1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            593,
+            932,
+            631
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1994 set-theory&algebra normal group-theory binary-operation fill-in-the-blanks",
+        "bbox": [
+            87,
+            644,
+            499,
+            654
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            659,
+            189,
+            674
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.1.3 Binary Operation: GATE CSE 2003 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            77,
+            682,
+            507,
+            698
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the set $\\{a, b, c\\}$ with binary operators + and \\* defined as follows:",
+        "bbox": [
+            85,
+            707,
+            640,
+            725
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/60e3eb7e2bd7740542d2b94b22e3a9ea05f3d159493f328d7bc0f109c2ee3bff.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            686,
+            932,
+            724
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/eed593975433300fb791dc43df8b08fb3f217555cf9bf90558f5df9fe59e3565.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>+</td><td>a</td><td>b</td><td>c</td></tr><tr><td>a</td><td>b</td><td>a</td><td>c</td></tr><tr><td>b</td><td>a</td><td>b</td><td>c</td></tr><tr><td>c</td><td>a</td><td>c</td><td>b</td></tr></table>",
+        "bbox": [
+            361,
+            735,
+            490,
+            815
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/7cae0fe8ed9a341483a518e32cb8d6288fb34ef276f3b0365e729f278ffb95eb.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>*</td><td>a</td><td>b</td><td>c</td></tr><tr><td>a</td><td>a</td><td>b</td><td>c</td></tr><tr><td>b</td><td>b</td><td>c</td><td>a</td></tr><tr><td>c</td><td>c</td><td>c</td><td>b</td></tr></table>",
+        "bbox": [
+            531,
+            735,
+            655,
+            815
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For example, $a + c = c, c + a = a, c * b = c$ and $b * c = a$ .",
+        "bbox": [
+            84,
+            824,
+            537,
+            840
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Given the following set of equations:",
+        "bbox": [
+            85,
+            843,
+            354,
+            857
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $(a*x) + (a*y) = c$",
+            "- $(b*x) + (c*y) = c$"
+        ],
+        "bbox": [
+            97,
+            868,
+            277,
+            901
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The number of solution(s) (i.e., pair(s) $(x, y)$ that satisfy the equations) is",
+        "bbox": [
+            85,
+            910,
+            620,
+            927
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            89,
+            68,
+            126,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 1",
+        "bbox": [
+            285,
+            68,
+            319,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 2",
+        "bbox": [
+            480,
+            68,
+            515,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 3",
+        "bbox": [
+            673,
+            68,
+            710,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 set-theory&algebra normal binary-operation",
+        "bbox": [
+            87,
+            93,
+            364,
+            103
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            123
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.1.4 Binary Operation: GATE CSE 2006 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            507,
+            148
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A logical binary relation $\\odot$ , is defined as follows:",
+        "bbox": [
+            85,
+            156,
+            440,
+            171
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/af1bd85b2737fed4ab1421310e33bff961e1c74a6dc0acc8f95080a3717c0331.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>A</td><td>B</td><td>A ⊙ B</td></tr><tr><td>True</td><td>True</td><td>True</td></tr><tr><td>True</td><td>False</td><td>True</td></tr><tr><td>False</td><td>True</td><td>False</td></tr><tr><td>False</td><td>False</td><td>True</td></tr></table>",
+        "bbox": [
+            406,
+            182,
+            610,
+            282
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/638abe3a95c30e0b2ac2589c64724bf73a0057abbf46e6197d91d9e080fa48e2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            931,
+            173
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let $\\sim$ be the unary negation (NOT) operator, with higher precedence then $\\odot$ .",
+        "bbox": [
+            84,
+            290,
+            648,
+            306
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is equivalent to $A \\wedge B$ ?",
+        "bbox": [
+            85,
+            309,
+            462,
+            325
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $(\\sim A\\odot B)$ C. $\\sim (\\sim A\\odot \\sim B)$",
+        "bbox": [
+            87,
+            334,
+            231,
+            364
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $\\sim (A\\odot \\sim B)$ D. $\\sim (\\sim A\\odot B)$",
+        "bbox": [
+            495,
+            334,
+            620,
+            364
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 set-theory&algebra binary-operation propositional-logic mathematical-logic",
+        "bbox": [
+            87,
+            368,
+            505,
+            378
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            384,
+            186,
+            399
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.1.5 Binary Operation: GATE CSE 2013 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            77,
+            408,
+            495,
+            422
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A binary operation $\\oplus$ on a set of integers is defined as $x \\oplus y = x^2 + y^2$ . Which one of the following statements is TRUE about $\\oplus$ ?",
+        "bbox": [
+            84,
+            433,
+            875,
+            463
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Commutative but not associative",
+        "bbox": [
+            87,
+            473,
+            334,
+            485
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. Associative but not commutative",
+        "bbox": [
+            89,
+            486,
+            332,
+            500
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. Both commutative and associative",
+        "bbox": [
+            495,
+            473,
+            752,
+            485
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Neither commutative nor associative",
+        "bbox": [
+            495,
+            486,
+            759,
+            511
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 set-theory&algebra easy binary-operation",
+        "bbox": [
+            87,
+            517,
+            354,
+            527
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            534,
+            186,
+            548
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.1.6 Binary Operation: GATE CSE 2015 | Set 1 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            77,
+            557,
+            559,
+            572
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The binary operator ≠ is defined by the following truth table.",
+        "bbox": [
+            85,
+            581,
+            527,
+            597
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/ee681787b34332a8c1e8e9acb3f186e53011b7f932522f865b0474328d5ae136.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>p</td><td>q</td><td>p ≠ q</td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>0</td></tr></table>",
+        "bbox": [
+            440,
+            608,
+            574,
+            707
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/3fe11e29675881a53fe677e324ea202d919cd3dda78174d791dd7ee2aeab5f3b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            410,
+            931,
+            448
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/2f31e7a3e054ca247015499e6f910f204f6a3843c244a0f48941bc9414fbc2fd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            560,
+            931,
+            598
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is true about the binary operator ≠ ?",
+        "bbox": [
+            84,
+            717,
+            552,
+            732
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Both commutative and associative",
+        "bbox": [
+            87,
+            742,
+            344,
+            755
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. Not commutative but associative",
+        "bbox": [
+            89,
+            756,
+            332,
+            768
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. Commutative but not associative",
+        "bbox": [
+            495,
+            742,
+            739,
+            755
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Neither commutative nor associative",
+        "bbox": [
+            495,
+            756,
+            759,
+            780
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 set-theory&algebra easy binary-operation boolean-algebra",
+        "bbox": [
+            87,
+            786,
+            455,
+            796
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            802,
+            186,
+            817
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4.1.7 Binary Operation: GATE CSE 2015 | Set 3 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            77,
+            826,
+            552,
+            840
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let # be the binary operator defined as",
+        "bbox": [
+            85,
+            850,
+            379,
+            865
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "$X\\# Y = X' + Y'$ where $X$ and $Y$ are Boolean variables.",
+        "bbox": [
+            85,
+            868,
+            517,
+            884
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two statements.",
+        "bbox": [
+            85,
+            888,
+            369,
+            903
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- $(S_{1})(P\\# Q)\\# R = P\\# (Q\\# R)$",
+        "bbox": [
+            97,
+            913,
+            359,
+            932
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4b91ca0e2038137a955b4ead761d5ac3743dfc60ff6c7bf086e45c5a6079f630.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            828,
+            931,
+            866
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\cdot (S _ {2}) Q \\# R = (R \\# Q)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            99,
+            64,
+            284,
+            81
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which are the following is/are true for the Boolean variables P, Q and R?",
+        "bbox": [
+            85,
+            91,
+            625,
+            106
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. Only $S_{1}$ is true",
+        "bbox": [
+            89,
+            116,
+            216,
+            130
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. Only $S_{2}$ is true",
+        "bbox": [
+            497,
+            117,
+            620,
+            130
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. Both $S_{1}$ and $S_{2}$ are true",
+        "bbox": [
+            90,
+            131,
+            275,
+            144
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. Neither $S_{1}$ nor $S_{2}$ are true",
+        "bbox": [
+            497,
+            131,
+            697,
+            144
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 set-theory&algebra binary-operation normal",
+        "bbox": [
+            89,
+            149,
+            384,
+            159
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            165,
+            181,
+            179
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.1.8 Binary Operation: GATE IT 2006 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            188,
+            478,
+            203
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "For the set $N$ of natural numbers and a binary operation $f: N \\times N \\to N$ , an element $z \\in N$ is called an identity for $f$ , if $f(a, z) = a = f(z, a)$ , for all $a \\in N$ . Which of the following binary operations have an identity?",
+        "bbox": [
+            84,
+            212,
+            878,
+            257
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $f(x,y) = x + y - 3$",
+            "II. $f(x,y) = \\max (x,y)$",
+            "III. $f(x,y) = x^{y}$"
+        ],
+        "bbox": [
+            89,
+            267,
+            272,
+            315
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. I and II only",
+        "bbox": [
+            89,
+            328,
+            194,
+            343
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. II and III only",
+        "bbox": [
+            285,
+            328,
+            396,
+            343
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. I and III only",
+        "bbox": [
+            480,
+            328,
+            588,
+            343
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. None of these",
+        "bbox": [
+            673,
+            328,
+            794,
+            342
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 set-theory&algebra easy binary-operation",
+        "bbox": [
+            87,
+            353,
+            347,
+            363
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            369,
+            181,
+            383
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.2",
+        "text_level": 1,
+        "bbox": [
+            68,
+            394,
+            95,
+            406
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Countable Uncountable Set (2)",
+        "text_level": 1,
+        "bbox": [
+            391,
+            394,
+            636,
+            408
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.2.1 Countable Uncountable Set: GATE CSE 1994 | Question: 3.9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            419,
+            591,
+            434
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Every subset of a countable set is countable.",
+        "bbox": [
+            85,
+            444,
+            415,
+            458
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "State whether the above statement is true or false with reason.",
+        "bbox": [
+            85,
+            471,
+            544,
+            485
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1994 set-theory&algebra normal set-theory countable-uncountable-set true-false",
+        "bbox": [
+            87,
+            500,
+            500,
+            510
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            516,
+            181,
+            530
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.2.2 Countable Uncountable Set: GATE CSE 2018 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            539,
+            588,
+            554
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let N be the set of natural numbers. Consider the following sets,",
+        "bbox": [
+            85,
+            564,
+            561,
+            579
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $P$ : Set of Rational numbers (positive and negative)",
+            "- $Q$ : Set of functions from $\\{0,1\\}$ to $N$",
+            "- $R$ : Set of functions from $N$ to $\\{0,1\\}$",
+            "- $S$ : Set of finite subsets of $N$"
+        ],
+        "bbox": [
+            97,
+            590,
+            490,
+            649
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the above sets are countable?",
+        "bbox": [
+            85,
+            661,
+            379,
+            674
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $Q$ and $S$ only",
+        "bbox": [
+            89,
+            688,
+            206,
+            705
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. $P$ and $S$ only",
+        "bbox": [
+            285,
+            688,
+            401,
+            704
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. $P$ and $R$ only",
+        "bbox": [
+            480,
+            688,
+            598,
+            705
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. $P, Q$ and $S$ only",
+        "bbox": [
+            673,
+            688,
+            813,
+            705
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 set-theory&algebra countable-uncountable-set normal two-marks",
+        "bbox": [
+            87,
+            714,
+            463,
+            723
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            730,
+            181,
+            744
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.3",
+        "text_level": 1,
+        "bbox": [
+            68,
+            755,
+            95,
+            768
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Functions (30)",
+        "text_level": 1,
+        "bbox": [
+            455,
+            754,
+            573,
+            769
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.3.1 Functions: GATE CSE 1987 | Question: 9b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            780,
+            453,
+            794
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "How many one-to-one functions are there from a set $A$ with $n$ elements onto itself?",
+        "bbox": [
+            85,
+            805,
+            692,
+            820
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1987 set-theory&algebra functions descriptive",
+        "bbox": [
+            87,
+            834,
+            334,
+            844
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            850,
+            181,
+            864
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.3.2 Functions: GATE CSE 1988 | Question: 13ii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            874,
+            460,
+            888
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "If the set S has a finite number of elements, prove that if f maps S onto S, then f is one-to-one.",
+        "bbox": [
+            85,
+            897,
+            788,
+            914
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/0533978d59b186fb60c76437444b9e86ab65401f46a3d5a4b221b685b970f6b7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            191,
+            931,
+            229
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/29eb89e53cb2447c9129a1a6bf9173fc5b6be5d8453ded0ad9d0db52caab243b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            422,
+            932,
+            460
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/9a119fc65ee5e3aca187345664c87a93c796d29dfb1eb13ea03aa4665ef74824.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            542,
+            931,
+            580
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/a1e16aaca47ae544374f8c0a73c5c7f4eab23bc9899c2b4d229265012299d64e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            783,
+            931,
+            821
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/0bffa598f5ba043e091f74c5ab1da8b50b56dc8c5318afa40bcd2b30a4eec583.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            877,
+            931,
+            914
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4.3.3 Functions: GATE CSE 1989 | Question: 13c",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            462,
+            124
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Find the number of single valued functions from set $A$ to another set $B$ , given that the cardinalities of the sets $A$ and $B$ are $m$ and $n$ respectively.",
+        "bbox": [
+            84,
+            134,
+            875,
+            165
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/1b0530cc86e10aa7d957f9eec87d3aff422fa6571813c6a2d02fbbb9e75a5e19.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            931,
+            150
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive functions set-theory&algebra",
+        "bbox": [
+            87,
+            179,
+            337,
+            190
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            195,
+            186,
+            209
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.3.4 Functions: GATE CSE 1993 | Question: 8.6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            219,
+            458,
+            233
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ and $B$ be sets with cardinalities $m$ and $n$ respectively. The number of one-one mappings from $A$ to $B$ , when $m < n$ , is",
+        "bbox": [
+            85,
+            243,
+            873,
+            273
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/10d3f3bbac600397692ecac77cd174731664efb7f74121c29ee08ccd7802d260.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            222,
+            931,
+            258
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $m^{n}$",
+        "bbox": [
+            89,
+            287,
+            139,
+            301
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $^{n}P_{m}$",
+        "bbox": [
+            285,
+            287,
+            342,
+            302
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $^{m}C_{n}$",
+        "bbox": [
+            480,
+            286,
+            537,
+            302
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $^{n}C_{m}$",
+        "bbox": [
+            673,
+            286,
+            732,
+            302
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "E. $^{m}P_{n}$",
+        "bbox": [
+            90,
+            309,
+            146,
+            325
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1993 set-theory&algebra functions easy",
+        "bbox": [
+            87,
+            334,
+            310,
+            344
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            350,
+            186,
+            364
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.3.5 Functions: GATE CSE 1996 | Question: 1.3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            372,
+            458,
+            387
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose $X$ and $Y$ are sets and $|X|$ and $|Y|$ are their respective cardinality. It is given that there are exactly 97 functions from $X$ to $Y$ . From this one can conclude that",
+        "bbox": [
+            84,
+            397,
+            873,
+            427
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/d06881385ec89a9fa0e22ad7e0cfec4c543ddc9899e67a1342987eb400ad25bd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            377,
+            931,
+            414
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $|X| = 1, |Y| = 97$",
+        "bbox": [
+            89,
+            437,
+            248,
+            453
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $|X| = 97, |Y| = 97$",
+        "bbox": [
+            89,
+            453,
+            253,
+            467
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $|X| = 97, |Y| = 1$",
+        "bbox": [
+            495,
+            437,
+            650,
+            453
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            495,
+            453,
+            645,
+            464
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1996 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            472,
+            319,
+            480
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            488,
+            186,
+            502
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.3.6 Functions: GATE CSE 1996 | Question: 2.1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            511,
+            455,
+            524
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $R$ denote the set of real numbers. Let $f: R \\times R \\to R \\times R$ be a bijective function defined by $f(x, y) = (x + y, x - y)$ . The inverse function of $f$ is given by",
+        "bbox": [
+            84,
+            535,
+            873,
+            568
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/7a52e5d14b9b7664a4afb0bdf90c9833f016c5d60e813de0969ba62c5c521cc3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            515,
+            931,
+            552
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $f^{-1}(x,y) = \\left(\\frac{1}{x + y},\\frac{1}{x - y}\\right)$",
+        "bbox": [
+            89,
+            590,
+            285,
+            616
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $f^{-1}(x,y) = (x - y,x + y)$",
+        "bbox": [
+            495,
+            589,
+            712,
+            606
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $f^{-1}(x,y) = \\left(\\frac{x + y}{2},\\frac{x - y}{2}\\right)$",
+        "bbox": [
+            89,
+            625,
+            280,
+            646
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf ^ {- 1} (x, y) = [ 2 (x - y), 2 (x + y) ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            517,
+            625,
+            761,
+            643
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1996 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            662,
+            319,
+            671
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            678,
+            186,
+            692
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.3.7 Functions: GATE CSE 1997 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            701,
+            453,
+            714
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $F$ be the set of one-to-one functions from the set $\\{1,2,\\ldots,n\\}$ to the set $\\{1,2,\\ldots,m\\}$ where $m\\geq n\\geq 1$ .",
+        "bbox": [
+            84,
+            725,
+            873,
+            755
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/2045ea3d3174debfaf30b033bbe3664f370457b8d537b2a80576fef5d3480703.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            704,
+            931,
+            741
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. How many functions are members of $F$ ?",
+            "b. How many functions $f$ in $F$ satisfy the property $f(i) = 1$ for some $i, 1 \\leq i \\leq n$ ?",
+            "c. How many functions $f$ in $F$ satisfy the property $f(i) < f(j)$ for all $i, j$ $1 \\leq i \\leq j \\leq n$ ?"
+        ],
+        "bbox": [
+            89,
+            766,
+            754,
+            821
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1997 set-theory&algebra functions normal descriptive difficult",
+        "bbox": [
+            87,
+            846,
+            426,
+            855
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            862,
+            186,
+            876
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "gate1988 descriptive set-theory&algebra functions",
+        "bbox": [
+            87,
+            71,
+            337,
+            81
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.3.8 Functions: GATE CSE 1998 | Question: 1.8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            458,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The number of functions from an $m$ element set to an $n$ element set is",
+        "bbox": [
+            85,
+            87,
+            600,
+            103
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $m + n$",
+        "bbox": [
+            89,
+            117,
+            164,
+            131
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $m^n$",
+        "bbox": [
+            285,
+            117,
+            334,
+            131
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $n^{m}$",
+        "bbox": [
+            478,
+            117,
+            527,
+            131
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $m*n$",
+        "bbox": [
+            673,
+            118,
+            744,
+            130
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1998 set-theory&algebra combinatory functions easy",
+        "bbox": [
+            87,
+            141,
+            374,
+            150
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            157,
+            188,
+            172
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.3.9 Functions: GATE CSE 2001 | Question: 2.3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            181,
+            458,
+            195
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $f: A \\to B$ a function, and let $E$ and $F$ be subsets of $A$ . Consider the following statements about images.",
+        "bbox": [
+            84,
+            205,
+            878,
+            235
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S_{1}:f(E\\cup F) = f(E)\\cup f(F)$",
+            "- $S_{2}:f(E\\cap F) = f(E)\\cap f(F)$"
+        ],
+        "bbox": [
+            97,
+            245,
+            351,
+            277
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is true about S1 and S2?",
+        "bbox": [
+            85,
+            287,
+            435,
+            302
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. Only $S_{1}$ is correct",
+        "bbox": [
+            87,
+            312,
+            235,
+            326
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. Only $S_{2}$ is correct",
+        "bbox": [
+            495,
+            312,
+            640,
+            326
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. Both $S_{1}$ and $S_{2}$ are correct",
+        "bbox": [
+            89,
+            326,
+            297,
+            340
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. None of $S_{1}$ and $S_{2}$ is correct",
+        "bbox": [
+            495,
+            326,
+            714,
+            340
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 set-theory&algebra functions normal",
+        "bbox": [
+            87,
+            344,
+            334,
+            353
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            359,
+            188,
+            375
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.3.10 Functions: GATE CSE 2001 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            77,
+            384,
+            453,
+            397
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the function $h: N \\times N \\to N$ so that $h(a, b) = (2a + 1)2^b - 1$ , where $N = \\{0, 1, 2, 3, \\ldots\\}$ is the set of natural numbers.",
+        "bbox": [
+            84,
+            409,
+            878,
+            439
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "a. Prove that the function $h$ is an injection (one-one).",
+        "bbox": [
+            87,
+            451,
+            477,
+            465
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "b. Prove that it is also a Surjection (onto)",
+        "bbox": [
+            89,
+            465,
+            393,
+            480
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 functions set-theory&algebra normal descriptive",
+        "bbox": [
+            87,
+            505,
+            394,
+            515
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            521,
+            188,
+            536
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.3.11 Functions: GATE CSE 2003 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            77,
+            545,
+            460,
+            559
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $f: A \\to B$ be an injective (one-to-one) function. Define $g: 2^A \\to 2^B$ as: $g(C) = \\{f(x) \\mid x \\in C\\}$ , for all subsets $C$ of $A$ .",
+        "bbox": [
+            84,
+            570,
+            653,
+            602
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Define $h: 2^B \\to 2^A$ as: $h(D) = \\{x \\mid x \\in A, f(x) \\in D\\}$ , for all subsets $D$ of $B$ . Which of the following statements is always true?",
+        "bbox": [
+            84,
+            603,
+            927,
+            633
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $g(h(D))\\subseteq D$",
+        "bbox": [
+            87,
+            642,
+            216,
+            657
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $g(h(D))\\supseteq D$",
+        "bbox": [
+            495,
+            643,
+            621,
+            657
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $g(h(D)) \\cap D = \\phi$",
+        "bbox": [
+            89,
+            657,
+            245,
+            673
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $g(h(D))\\cap (B - D)\\neq \\phi$",
+        "bbox": [
+            495,
+            657,
+            700,
+            673
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 set-theory&algebra functions difficult",
+        "bbox": [
+            87,
+            676,
+            339,
+            687
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            693,
+            188,
+            707
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.3.12 Functions: GATE CSE 2003 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            77,
+            717,
+            460,
+            730
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $\\Sigma = \\{a, b, c, d, e\\}$ be an alphabet. We define an encoding scheme as follows:",
+        "bbox": [
+            84,
+            739,
+            690,
+            757
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\ng (a) = 3, g (b) = 5, g (c) = 7, g (d) = 9, g (e) = 1 1.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            758,
+            478,
+            777
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $p_{i}$ denote the i-th prime number $(p_{1}=2)$ .",
+        "bbox": [
+            85,
+            780,
+            423,
+            796
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "For a non-empty string $s = a_1 \\ldots a_n$ , where each $a_i \\in \\Sigma$ , define $f(s) = \\Pi_{i=1}^n P_i^{g(a_i)}$ .",
+        "bbox": [
+            84,
+            801,
+            715,
+            821
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "For a non-empty sequence $\\langle s_j, \\ldots, s_n \\rangle$ of stings from $\\Sigma^+$ , define $h(\\langle s_i \\ldots s_n \\rangle) = \\Pi_{i=1}^n P_i^{f(s_i)}$",
+        "bbox": [
+            84,
+            824,
+            781,
+            846
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following numbers is the encoding, h, of a non-empty sequence of strings?",
+        "bbox": [
+            84,
+            847,
+            726,
+            863
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $2^{7}3^{7}5^{7}$",
+        "bbox": [
+            87,
+            874,
+            163,
+            890
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $2^{8}3^{8}5^{8}$",
+        "bbox": [
+            285,
+            875,
+            357,
+            890
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{9}3^{9}5^{9}$",
+        "bbox": [
+            480,
+            875,
+            552,
+            890
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $2^{10}3^{10}5^{10}$",
+        "bbox": [
+            673,
+            875,
+            764,
+            890
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/def103ee9260b046abc9a206da116ed4b59b15ea39f6a49823dd98ff799fef8f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/704fe0a5bc9381b5e02daa612ebbc100133b209a7ef8705051f2a9bc5aea8462.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            184,
+            931,
+            220
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/954530611afd24f2e13b0eaf64db8b202971aa9551d7b21cc5de42077feea9e2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            387,
+            931,
+            425
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/73e27cbc4e418e69dec1b13aa890d9078e6bd68f879323fd27e28ca0cd3d3cad.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            548,
+            931,
+            586
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/03efbafdabbe83fc7046cac5ce96082c171d6baadd466d03fe4356e38c55b7c8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            719,
+            931,
+            757
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2003 set-theory&algebra functions difficult",
+        "bbox": [
+            87,
+            904,
+            339,
+            915
+        ],
+        "page_idx": 11
+    }
+]

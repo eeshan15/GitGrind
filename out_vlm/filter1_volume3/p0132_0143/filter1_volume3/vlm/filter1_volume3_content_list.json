@@ -1,0 +1,5517 @@
+[
+    {
+        "type": "text",
+        "text": "2.17.2 IP Packet: GATE CSE 2010 | Question: 15. PGEE 2018",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            552,
+            79
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/19c53193ba56d4dad8f0bd5546eff8648402d424a9325b1f55a1cd3830bf005f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "One of the header fields in an IP datagram is the Time-to-Live (TTL) field. Which of the following statements best explains the need for this field?",
+        "bbox": [
+            84,
+            87,
+            875,
+            117
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It can be used to prioritize packets.",
+            "C. It can be used to optimize throughput."
+        ],
+        "bbox": [
+            87,
+            127,
+            352,
+            167
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. It can be used to reduce delays.",
+        "bbox": [
+            495,
+            127,
+            734,
+            140
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. It can be used to prevent packet looping.",
+        "bbox": [
+            495,
+            141,
+            759,
+            167
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 computer-networks ip-packet easy",
+        "bbox": [
+            87,
+            172,
+            326,
+            182
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            188,
+            188,
+            201
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.17.3 IP Packet: GATE CSE 2014 | Set 3 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            77,
+            211,
+            509,
+            226
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/e2ab7c516012392a556a4b5fa8662e81d76d095f7110a1f334e598de744f2556.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            214,
+            931,
+            251
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Host A (on TCP/IP v4 network A) sends an IP datagram D to host B (also on TCP/IP v4 network B). Assume that no error occurred during the transmission of D. When D reaches B, which of the following IP header field(s) may be different from that of the original datagram D?",
+        "bbox": [
+            84,
+            235,
+            878,
+            279
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. TTL",
+            "ii. Checksum",
+            "iii. Fragment Offset"
+        ],
+        "bbox": [
+            92,
+            288,
+            235,
+            331
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. i only",
+        "bbox": [
+            89,
+            345,
+            152,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. i and ii only",
+        "bbox": [
+            285,
+            345,
+            391,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. ii and iii only",
+        "bbox": [
+            480,
+            345,
+            594,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. i, ii and iii",
+        "bbox": [
+            673,
+            345,
+            769,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 computer-networks ip-packet normal",
+        "bbox": [
+            87,
+            369,
+            357,
+            378
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            385,
+            188,
+            400
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.17.4 IP Packet: GATE CSE 2014 | Set 3 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            77,
+            409,
+            509,
+            423
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8718916dc5152e154d105883f86eefec4b8e4221204a2f60735b8386552ee836.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            412,
+            931,
+            448
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An IP router with a Maximum Transmission Unit (MTU) of 1500 bytes has received an IP packet of size 4404 bytes with an IP header of length 20 bytes. The values of the relevant fields in the header of the third IP fragment generated by the router for this packet are:",
+        "bbox": [
+            84,
+            432,
+            878,
+            479
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. MF bit: 0, Datagram Length:1444; Offset: 370",
+            "B. MF bit: 1, Datagram Length: 1424; Offset: 185",
+            "C. MF bit: 1, Datagram Length: 1500; Offset: 370",
+            "D. MF bit: 0, Datagram Length: 1424; Offset: 2960"
+        ],
+        "bbox": [
+            87,
+            488,
+            480,
+            547
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 computer-networks fragmentation ip-packet normal",
+        "bbox": [
+            87,
+            572,
+            430,
+            581
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            589,
+            188,
+            603
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.17.5 IP Packet: GATE CSE 2015 | Set 1 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            77,
+            612,
+            509,
+            625
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/3e56c1dbdadac820258594b9f57993182b5860c847ac7c24b230ff1dcb4cd0fb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            615,
+            931,
+            652
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the following fields of an IP header is NOT modified by a typical IP router?",
+        "bbox": [
+            84,
+            636,
+            695,
+            650
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. Check sum",
+        "bbox": [
+            87,
+            665,
+            191,
+            678
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. Source address",
+        "bbox": [
+            285,
+            665,
+            416,
+            678
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Time to Live (TTL)",
+        "bbox": [
+            480,
+            665,
+            628,
+            679
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. Length",
+        "bbox": [
+            673,
+            665,
+            747,
+            679
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 computer-networks ip-packet easy",
+        "bbox": [
+            87,
+            688,
+            347,
+            699
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            705,
+            188,
+            719
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.17.6 IP Packet: GATE CSE 2015 | Set 2 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            77,
+            728,
+            509,
+            742
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b1dcc0142f1f6451f10546d6e6149623e7e345e45628508c394b24b6f22fcefb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            731,
+            931,
+            768
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Host A sends a UDP datagram containing 8880 bytes of user data to host B over an Ethernet LAN.",
+        "bbox": [
+            84,
+            752,
+            875,
+            768
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Ethernet frames may carry data up to 1500 bytes (i.e. MTU = 1500 bytes). Size of UDP header is 8 bytes and size of IP header is 20 bytes. There is no option field in IP header. How many total number of IP fragments will be transmitted and what will be the contents of offset field in the last fragment?",
+        "bbox": [
+            84,
+            769,
+            927,
+            812
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 6 and 925",
+        "bbox": [
+            87,
+            825,
+            186,
+            839
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 6 and 7400",
+        "bbox": [
+            285,
+            825,
+            389,
+            839
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 7 and 1110",
+        "bbox": [
+            480,
+            825,
+            586,
+            839
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 7 and 8880",
+        "bbox": [
+            673,
+            825,
+            779,
+            839
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 computer-networks fragmentation ip-packet normal",
+        "bbox": [
+            87,
+            850,
+            430,
+            859
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            866,
+            188,
+            880
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.17.7 IP Packet: GATE CSE 2016 | Set 1 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            509,
+            79
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/526f2fd481346532418c078976f09be8850edf1acb107afd942c1cc15b5c4a17.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "An IP datagram of size 1000 bytes arrives at a router. The router has to forward this packet on a link whose MTU (maximum transmission unit) is 100 bytes. Assume that the size of the IP header is 20 bytes.",
+        "bbox": [
+            84,
+            89,
+            875,
+            119
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The number of fragments that the IP datagram will be divided into for transmission is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            130,
+            779,
+            146
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 computer-networks fragmentation ip-packet normal numerical-answers",
+        "bbox": [
+            87,
+            159,
+            519,
+            169
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            176,
+            188,
+            191
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.17.8 IP Packet: GATE CSE 2024 | Set 1 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            199,
+            507,
+            214
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which of the following fields is/are modified in the IP header of a packet going out of a network address translation (NAT) device from an internal network to an external network?",
+        "bbox": [
+            84,
+            223,
+            878,
+            255
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/0484aa813238a39e0a2a35571602503591516d9b22ec1c5625fe45319e8396bf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            201,
+            931,
+            239
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Source IP",
+            "C. Header Checksum"
+        ],
+        "bbox": [
+            89,
+            263,
+            240,
+            289
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 multiple-selects computer-networks ip-packet one-mark",
+        "bbox": [
+            87,
+            295,
+            447,
+            305
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Destination IP",
+            "D. Total Length"
+        ],
+        "bbox": [
+            495,
+            263,
+            620,
+            290
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            311,
+            188,
+            326
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.17.9 IP Packet: GATE CSE 2024 | Set 1 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            334,
+            509,
+            350
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/49f4350655a1c9f334d5d97678fdc469bee44d07dbeaa9843bbd8efb0cc40419.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            338,
+            931,
+            375
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider sending an IP datagram of size 1420 bytes (including 20 bytes of IP header) from a sender to a receiver over a path of two links with a router between them. The first link (sender to router) has an MTU (Maximum Transmission Unit) size of 542 bytes, while the second link (router to receiver) has an MTU size of 360 bytes. The number of fragments that would be delivered at the receiver is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            359,
+            929,
+            418
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 numerical-answers computer-networks ip-packet fragmentation two-marks",
+        "bbox": [
+            87,
+            431,
+            534,
+            441
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            447,
+            188,
+            461
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.17.10 IP Packet: GATE CSE 2024 | Set 2 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            470,
+            519,
+            485
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements about IPv4 fragmentation is/are TRUE?",
+        "bbox": [
+            85,
+            494,
+            631,
+            510
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/4b2877016be2f9b38cc821cbf6796e925d59477ed6b90ea2707bfb0e5c893bec.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            473,
+            931,
+            511
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The fragmentation of an IP datagram is performed only at the source of the datagram",
+            "B. The fragmentation of an IP datagram is performed at any IP router which finds that the size of the datagram to be transmitted exceeds the MTU",
+            "C. The reassembly of fragments is performed only at the destination of the datagram",
+            "D. The reassembly of fragments is performed at all intermediate routers along the path from the source to the destination"
+        ],
+        "bbox": [
+            85,
+            522,
+            929,
+            609
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 computer-networks multiple-selects ip-packet one-mark",
+        "bbox": [
+            87,
+            635,
+            445,
+            644
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            650,
+            188,
+            666
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.17.11 IP Packet: GATE CSE 2024 | Set 2 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            675,
+            519,
+            688
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/e4c83a54ab39b08adea8a0b1e3ac6304726f50b0a376db59affb446557ef0c20.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            678,
+            931,
+            714
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which of the following fields of an IP header is/are always modified by any router before it forwards the IP packet?",
+        "bbox": [
+            84,
+            700,
+            878,
+            730
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Source IP Address",
+            "C. Time to Live (TTL)"
+        ],
+        "bbox": [
+            87,
+            739,
+            253,
+            767
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 computer-networks multiple-selects ip-packet easy one-mark",
+        "bbox": [
+            87,
+            771,
+            480,
+            782
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Protocol",
+            "D. Header Checksum"
+        ],
+        "bbox": [
+            495,
+            739,
+            647,
+            766
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            788,
+            188,
+            802
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.17.12 IP Packet: GATE IT 2004 | Question: 86",
+        "text_level": 1,
+        "bbox": [
+            78,
+            812,
+            445,
+            826
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In the TCP/IP protocol suite, which one of the following is NOT part of the IP header?",
+        "bbox": [
+            85,
+            834,
+            705,
+            851
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2d245426b6fc83ab29be09d822457e096781f46ca78c4ac3c9b7243cec4f80cb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            815,
+            931,
+            852
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Fragment Offset",
+            "C. Destination IP address"
+        ],
+        "bbox": [
+            89,
+            861,
+            268,
+            885
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 computer-networks ip-packet easy",
+        "bbox": [
+            87,
+            891,
+            319,
+            902
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Source IP address",
+            "D. Destination port number"
+        ],
+        "bbox": [
+            495,
+            861,
+            682,
+            887
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            908,
+            188,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.18.1 icmp: GATE IT 2005 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            93,
+            403,
+            106
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/17e20dd21b59c74046aaaaffaecb95dd1238b63acfcebfc8c61fbea6244b051a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            96,
+            931,
+            133
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Traceroute reports a possible route that is taken by packets moving from some host A to some other host B. Which of the following options represents the technique used by traceroute to identify these hosts:",
+        "bbox": [
+            85,
+            118,
+            875,
+            148
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. By progressively querying routers about the next router on the path to B using ICMP packets, starting with the first router",
+            "B. By requiring each router to append the address to the ICMP packet as it is forwarded to B. The list of all routers en-route to B is returned by B in an ICMP reply packet",
+            "C. By ensuring that an ICMP reply packet is returned to A by each router en-route to B, in the ascending order of their hop distance from A",
+            "D. By locally computing the shortest path from $A$ to $B$"
+        ],
+        "bbox": [
+            85,
+            159,
+            929,
+            263
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 computer-networks icmp application-layer-protocols normal",
+        "bbox": [
+            87,
+            288,
+            435,
+            299
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            305,
+            188,
+            319
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.19",
+        "text_level": 1,
+        "bbox": [
+            67,
+            328,
+            105,
+            342
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "LAN Technologies (7)",
+        "text_level": 1,
+        "bbox": [
+            431,
+            328,
+            606,
+            344
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (11Q)",
+        "bbox": [
+            70,
+            353,
+            270,
+            366
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.19.1 LAN Technologies: GATE CSE 2003 | Question: 83",
+        "text_level": 1,
+        "bbox": [
+            77,
+            382,
+            527,
+            397
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/83dbce22d8d1dd5ea25b7ae829c9768d7ddc0901046a2076468abc302c833e36.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            385,
+            931,
+            422
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A 2 km long broadcast LAN has $10^{7}$ bps bandwidth and uses CSMA/CD. The signal travels along the wire at $2 \\times 10^{8}$ m/s. What is the minimum packet size that can be used on this network?",
+        "bbox": [
+            84,
+            408,
+            875,
+            441
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 50 bytes",
+        "bbox": [
+            87,
+            454,
+            179,
+            469
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 100 bytes",
+        "bbox": [
+            285,
+            454,
+            383,
+            469
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 200 bytes",
+        "bbox": [
+            478,
+            454,
+            576,
+            469
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            454,
+            823,
+            467
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 computer-networks lan-technologies normal",
+        "bbox": [
+            87,
+            479,
+            366,
+            489
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            495,
+            188,
+            509
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.19.2 LAN Technologies: GATE CSE 2007 | Question: 65",
+        "text_level": 1,
+        "bbox": [
+            77,
+            519,
+            527,
+            533
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/c42f3342984a07bbd0e1992507147c288923d539d855dce322ad6fe2b24732c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            521,
+            931,
+            559
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "There are $n$ stations in slotted LAN. Each station attempts to transmit with a probability $p$ in each time slot. What is the probability that ONLY one station transmits in a given time slot?",
+        "bbox": [
+            84,
+            543,
+            875,
+            571
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $np(1-p)^{n-1}$",
+        "bbox": [
+            87,
+            584,
+            211,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $(1 - p)^{n - 1}$",
+        "bbox": [
+            285,
+            584,
+            386,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $p(1-p)^{n-1}$",
+        "bbox": [
+            478,
+            584,
+            591,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $1 - (1 - p)^{n - 1}$",
+        "bbox": [
+            673,
+            584,
+            806,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 computer-networks lan-technologies probability normal",
+        "bbox": [
+            87,
+            612,
+            426,
+            623
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            630,
+            188,
+            644
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.19.3 LAN Technologies: GATE CSE 2014 | Set 2 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            77,
+            653,
+            581,
+            667
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/f8dc2d2ad650a70767f7b63124a6817c13227869a05c761ccf0eaadbb6245888.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            656,
+            931,
+            694
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In the diagram shown below, L1 is an Ethernet LAN and L2 is a Token-Ring LAN. An IP packet originates from sender S and traverses to R, as shown. The links within each ISP and across the two ISPs, are all point-to-point optical links. The initial value of the TTL field is 32. The maximum possible value of the TTL field when R receives the datagram is \\_\\_\\_\\_.",
+        "bbox": [
+            82,
+            676,
+            929,
+            737
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ad38a03f13ee0a5ad8d2fc40dd68d6983262f9a3d15bcb8fa398ecb5e2d2beb2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  subgraph ISP1\n    direction TB\n  S[\"S\"] --> L1[\"LAN L1\"]\n  L1 --> L2[\"L2\"]\n  L2 --> ISP1[\"ISP1\"]\n  ISP1 --> L3[\"L3\"]\n  L3 --> ISP2[\"ISP2\"]\n  ISP2 --> L4[\"L4\"]\n  L4 --> ISP2\n  end\n  subgraph ISP2\n    direction TB\n  ISP2 --> L5[\"LAN L2\"]\n  L5 --> R[\"R\"]\n  R --> L5\n  end\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            334,
+            744,
+            684,
+            825
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 computer-networks numerical-answers lan-technologies ethernet normal",
+        "bbox": [
+            87,
+            849,
+            527,
+            859
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            865,
+            188,
+            880
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "2.18",
+        "bbox": [
+            67,
+            67,
+            105,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "lcmp (1)",
+        "bbox": [
+            482,
+            67,
+            554,
+            81
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.19.4 LAN Technologies: GATE CSE 2019 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            527,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/701afc13c979555df83179cc1e5d6690d407e5ab2b0afd5a5a9405af83edf2cf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider that 15 machines need to be connected in a LAN using 8-port Ethernet switches. Assume that these switches do not have any separate uplink ports. The minimum number of switches needed is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            89,
+            878,
+            118
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers computer-networks lan-technologies two-marks",
+        "bbox": [
+            87,
+            131,
+            470,
+            141
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            148,
+            188,
+            162
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.19.5 LAN Technologies: GATE IT 2004 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            172,
+            507,
+            186
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/a080ae77b01ba9ac67baac359c4614a971a4e4d7ad5cb192855df7df92abae58.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            174,
+            931,
+            212
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A host is connected to a Department network which is part of a University network. The University network, in turn, is part of the Internet. The largest network in which the Ethernet address of the host is unique is",
+        "bbox": [
+            84,
+            195,
+            878,
+            224
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. the subnet to which the host belongs",
+        "bbox": [
+            87,
+            233,
+            352,
+            260
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. the University network",
+        "bbox": [
+            89,
+            261,
+            265,
+            273
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 computer-networks lan-technologies ethernet normal",
+        "bbox": [
+            87,
+            277,
+            410,
+            288
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. the Department network",
+        "bbox": [
+            495,
+            233,
+            684,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. the Internet",
+        "bbox": [
+            497,
+            260,
+            600,
+            271
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            294,
+            188,
+            308
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.19.6 LAN Technologies: GATE IT 2005 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            318,
+            509,
+            332
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/6d63e3a856f1923de3430fac9b405d8ac5bb449c876bd54b2465862aa81923aa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            321,
+            931,
+            358
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is FALSE regarding a bridge?",
+        "bbox": [
+            85,
+            340,
+            554,
+            357
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Bridge is a layer 2 device",
+            "C. Bridge is used to connect two or more LAN segments"
+        ],
+        "bbox": [
+            87,
+            366,
+            354,
+            406
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 computer-networks lan-technologies normal",
+        "bbox": [
+            87,
+            410,
+            359,
+            421
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Bridge reduces collision domain",
+            "D. Bridge reduces broadcast domain"
+        ],
+        "bbox": [
+            495,
+            366,
+            747,
+            393
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            427,
+            188,
+            441
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.19.7 LAN Technologies: GATE IT 2006 | Question: 66",
+        "text_level": 1,
+        "bbox": [
+            78,
+            451,
+            507,
+            465
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/743340a942008cb435b70f2548396198930f5eefc44df0e8e891780217770256.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            454,
+            931,
+            491
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A router has two full-duplex Ethernet interfaces each operating at 100 Mb/s. Ethernet frames are at least 84 bytes long (including the Preamble and the Inter-Packet-Gap). The maximum packet processing time at the router for wirespeed forwarding to be possible is (in microseconds)",
+        "bbox": [
+            84,
+            475,
+            878,
+            519
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 0.01",
+        "bbox": [
+            89,
+            532,
+            147,
+            546
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 3.36",
+        "bbox": [
+            285,
+            532,
+            342,
+            546
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 6.72",
+        "bbox": [
+            480,
+            532,
+            537,
+            546
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 8",
+        "bbox": [
+            675,
+            533,
+            709,
+            546
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 computer-networks lan-technologies ethernet normal",
+        "bbox": [
+            87,
+            557,
+            410,
+            566
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            573,
+            188,
+            587
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.20",
+        "text_level": 1,
+        "bbox": [
+            68,
+            597,
+            104,
+            610
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "MAC Protocol (4)",
+        "text_level": 1,
+        "bbox": [
+            448,
+            597,
+            588,
+            612
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (6Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            621,
+            267,
+            636
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.20.1 MAC Protocol: GATE CSE 2005 | Question: 74",
+        "text_level": 1,
+        "bbox": [
+            78,
+            650,
+            490,
+            665
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/92a82b9780e7f1d8fd7beef474b7cc2b9c3f93e1ecb22fc4f3156b32fdf2156f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            654,
+            931,
+            691
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Suppose the round trip propagation delay for a 10 Mbps Ethernet having 48-bit jamming signal is 46.4 $\\mu$ s. The minimum frame size is:",
+        "bbox": [
+            84,
+            674,
+            875,
+            703
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 94",
+        "bbox": [
+            89,
+            717,
+            134,
+            731
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 416",
+        "bbox": [
+            285,
+            717,
+            337,
+            731
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 464",
+        "bbox": [
+            480,
+            717,
+            532,
+            731
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 512",
+        "bbox": [
+            675,
+            717,
+            727,
+            731
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 computer-networks mac-protocol ethernet",
+        "bbox": [
+            87,
+            742,
+            359,
+            751
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            758,
+            188,
+            771
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.20.2 MAC Protocol: GATE CSE 2015 | Set 2 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            781,
+            536,
+            795
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/ecda944ee42498da5458ef92131e0f3c21fe6ced54519d06a7367d0806698379.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            785,
+            931,
+            821
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A link has transmission speed of $10^{6}$ bits/sec. It uses data packets of size 1000 bytes each. Assume that the acknowledgment has negligible transmission delay and that its propagation delay is the same as the data propagation delay. Also, assume that the processing delays at nodes are negligible. The efficiency of the stop-and-wait protocol in this setup is exactly $25\\%$ . The value of the one way propagation delay (in milliseconds) is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            807,
+            927,
+            880
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 computer-networks mac-protocol stop-and-wait normal numerical-answers",
+        "bbox": [
+            87,
+            894,
+            532,
+            904
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            910,
+            188,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.20.3 MAC Protocol: GATE IT 2004 | Question: 85",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            473,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/de984cee6ba14eacb7c59e8e36eb517f382ad6aaa2efbc0ba1210f64b7f96049.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider a simplified time slotted MAC protocol, where each host always has data to send and transmits with probability $p = 0.2$ in every slot. There is no backoff and one frame can be transmitted in one slot. If more than one host transmits in the same slot, then the transmissions are unsuccessful due to collision. What is the maximum number of hosts which this protocol can support if each host has to be provided a minimum throughput of 0.16 frames per time slot?",
+        "bbox": [
+            82,
+            90,
+            931,
+            161
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            89,
+            174,
+            126,
+            188
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            175,
+            321,
+            188
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            175,
+            515,
+            188
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 4",
+        "bbox": [
+            673,
+            175,
+            710,
+            188
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 computer-networks congestion-control mac-protocol normal",
+        "bbox": [
+            87,
+            199,
+            436,
+            209
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            214,
+            188,
+            229
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.20.4 MAC Protocol: GATE IT 2005 | Question: 75",
+        "text_level": 1,
+        "bbox": [
+            78,
+            238,
+            473,
+            252
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/d61dddac719c9ae5e1ef4e0f706e90c5f5c012fb37b87ab14994d45194107724.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            241,
+            931,
+            277
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In a TDM medium access control bus LAN, each station is assigned one time slot per cycle for transmission. Assume that the length of each time slot is the time to transmit 100 bits plus the end-to-end propagation delay. Assume a propagation speed of $2 \\times 10^{8} m/sec$ . The length of the LAN is $1 \\text{ km}$ with a bandwidth of 10 Mbps. The maximum number of stations that can be allowed in the LAN so that the throughput of each station can be $2/3 \\text{ Mbps}$ is",
+        "bbox": [
+            82,
+            262,
+            929,
+            339
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            365,
+            126,
+            378
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 5",
+        "bbox": [
+            285,
+            365,
+            321,
+            378
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 10",
+        "bbox": [
+            480,
+            365,
+            524,
+            378
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 20",
+        "bbox": [
+            673,
+            365,
+            719,
+            378
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 computer-networks mac-protocol normal",
+        "bbox": [
+            87,
+            389,
+            347,
+            399
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            406,
+            188,
+            420
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.21",
+        "text_level": 1,
+        "bbox": [
+            68,
+            429,
+            102,
+            442
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Network Flow (4)",
+        "text_level": 1,
+        "bbox": [
+            450,
+            429,
+            588,
+            445
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (5Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            454,
+            265,
+            469
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.21.1 Network Flow: GATE CSE 1992 | Question: 01,v",
+        "text_level": 1,
+        "bbox": [
+            78,
+            483,
+            502,
+            498
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/678a0f6e95364548c6f129b0849586430a4347cc741a734bf457159bd2de0a62.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            486,
+            931,
+            523
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A simple and reliable data transfer can be accomplished by using the 'handshake protocol'. It accomplishes reliable data transfer because for every data item sent by the transmitter \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            507,
+            875,
+            536
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1992 computer-networks network-flow easy fill-in-the-blanks",
+        "bbox": [
+            87,
+            549,
+            410,
+            560
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            566,
+            188,
+            580
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.21.2 Network Flow: GATE CSE 2017 | Set 2 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            589,
+            542,
+            603
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/2878857966937c740225da51ae3f3e53d3094f4314f6ed35f813aebba7c3b14f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            592,
+            931,
+            630
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider two hosts X and Y, connected by a single direct link of rate $10^{6}$ bits/sec. The distance between the two hosts is 10,000 km and the propagation speed along the link is $2 \\times 10^{8}$ m/sec. Host X sends a file of 50,000 bytes as one large message to host Y continuously. Let the transmission and propagation delays be p milliseconds and q milliseconds respectively. Then the value of p and q are",
+        "bbox": [
+            82,
+            615,
+            927,
+            678
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $p = 50$ and $q = 100$",
+        "bbox": [
+            87,
+            690,
+            258,
+            706
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $p = 50$ and $q = 400$",
+        "bbox": [
+            285,
+            691,
+            450,
+            706
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $p = 100$ and $q = 50$",
+        "bbox": [
+            480,
+            691,
+            648,
+            706
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $p = 400$ and $q = 50$",
+        "bbox": [
+            673,
+            691,
+            840,
+            706
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 computer-networks network-flow",
+        "bbox": [
+            87,
+            714,
+            331,
+            725
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            731,
+            188,
+            745
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.21.3 Network Flow: GATE IT 2004 | Question: 87",
+        "text_level": 1,
+        "bbox": [
+            78,
+            755,
+            470,
+            769
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/e41cf746fa177129a53ce9df1d469525db12d98c8b63b87f0a2db56661c2006f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            757,
+            931,
+            794
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A TCP message consisting of 2100 bytes is passed to IP for delivery across two networks. The first network can carry a maximum payload of 1200 bytes per frame and the second network can carry a maximum payload of 400 bytes per frame, excluding network overhead. Assume that IP overhead per packet is 20 bytes. What is the total IP overhead in the second network for this transmission?",
+        "bbox": [
+            82,
+            777,
+            929,
+            837
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 40 bytes",
+        "bbox": [
+            89,
+            850,
+            179,
+            865
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 80 bytes",
+        "bbox": [
+            285,
+            850,
+            373,
+            865
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 120 bytes",
+        "bbox": [
+            480,
+            850,
+            578,
+            865
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 160 bytes",
+        "bbox": [
+            673,
+            850,
+            773,
+            865
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 computer-networks network-flow normal",
+        "bbox": [
+            87,
+            875,
+            347,
+            884
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            891,
+            188,
+            904
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.21.4 Network Flow: GATE IT 2006 | Question: 67",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            470,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/bfda26614d87ba6a5f47f2d02dfa2a8e4b81443e89e345bc95618c9357053a36.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A link of capacity 100 Mbps is carrying traffic from a number of sources. Each source generates an on-off traffic stream; when the source is on, the rate of traffic is 10 Mbps, and when the source is off, the rate of traffic is zero. The duty cycle, which is the ratio of on-time to off-time, is 1:2. When there is no buffer at the minimum number of sources that can be multiplexed on the link so that link capacity is not wasted and no loss occurs is S1. Assuming that all sources are synchronized and that the link is provided with a large buffer maximum number of sources that can be multiplexed so that no data loss occurs is S2. The values of S1 are, respectively,",
+        "bbox": [
+            82,
+            89,
+            878,
+            190
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 10 and 30",
+        "bbox": [
+            87,
+            203,
+            189,
+            217
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 12 and 25",
+        "bbox": [
+            285,
+            203,
+            384,
+            217
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 5 and 33",
+        "bbox": [
+            478,
+            203,
+            569,
+            217
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 15 and 22",
+        "bbox": [
+            673,
+            203,
+            774,
+            217
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 computer-networks network-flow normal",
+        "bbox": [
+            87,
+            226,
+            347,
+            237
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            243,
+            189,
+            258
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.22",
+        "text_level": 1,
+        "bbox": [
+            68,
+            268,
+            105,
+            281
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Network Layer (6)",
+        "text_level": 1,
+        "bbox": [
+            447,
+            268,
+            591,
+            283
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.22.1 Network Layer: GATE CSE 2003 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            77,
+            294,
+            497,
+            309
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following functionality must be implemented by a transport protocol over and above the network protocol?",
+        "bbox": [
+            82,
+            320,
+            878,
+            349
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Recovery from packet losses",
+            "C. Packet delivery in the correct order"
+        ],
+        "bbox": [
+            87,
+            359,
+            349,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. Detection of duplicate packets",
+        "bbox": [
+            495,
+            359,
+            724,
+            372
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. End to end connectivity",
+        "bbox": [
+            495,
+            372,
+            678,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 computer-networks network-layer easy",
+        "bbox": [
+            87,
+            391,
+            346,
+            401
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            407,
+            189,
+            422
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.22.2 Network Layer: GATE CSE 2004 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            77,
+            429,
+            497,
+            445
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Choose the best matching between Group 1 and Group 2",
+        "bbox": [
+            85,
+            454,
+            522,
+            470
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/6a967fdf5bb39648f897221d1f7a0fa7f26f7ebb8a162c768b35fc533c6a4d31.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Group-1</td><td>Group-2</td></tr><tr><td>P. Data link layer</td><td>1. Ensures reliable transport of data over a physical point-to-point link</td></tr><tr><td>Q. Network layer</td><td>2. Encodes/decodes data for physical transmission</td></tr><tr><td>R. Transport layer</td><td>3. Allows end-to-end communication between two processes</td></tr><tr><td></td><td>4. Routes data from one network node to the next</td></tr></table>",
+        "bbox": [
+            166,
+            480,
+            850,
+            619
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. P-1, Q-4, R-3",
+        "bbox": [
+            87,
+            631,
+            216,
+            647
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. P-2, Q-4, R-1",
+        "bbox": [
+            285,
+            631,
+            411,
+            647
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. P-2, Q-3, R-1",
+        "bbox": [
+            478,
+            631,
+            606,
+            647
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. P-1, Q-3, R-2",
+        "bbox": [
+            673,
+            631,
+            803,
+            647
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 computer-networks network-layer normal",
+        "bbox": [
+            87,
+            656,
+            357,
+            666
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            672,
+            189,
+            687
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.22.3 Network Layer: GATE CSE 2013 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            695,
+            497,
+            710
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Assume that source S and destination D are connected through two intermediate routers labeled R. Determine how many times each packet has to visit the network layer and the data link layer during a transmission from S to D.",
+        "bbox": [
+            82,
+            720,
+            878,
+            762
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Network layer – 4 times and Data link layer – 4 times",
+            "B. Network layer - 4 times and Data link layer - 3 times",
+            "C. Network layer - 4 times and Data link layer - 6 times",
+            "D. Network layer - 2 times and Data link layer - 6 times"
+        ],
+        "bbox": [
+            87,
+            773,
+            497,
+            831
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 computer-networks network-layer normal",
+        "bbox": [
+            87,
+            856,
+            357,
+            866
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            872,
+            189,
+            888
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/9f1bd3b489c4b8b4436960e2eae0111d8869aae96c5e8d0a164819de0b843013.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            296,
+            931,
+            334
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e05313cd165d2dc90c21581c1bd010acb3a4f87c48d98eef9cc17444e3a51c5e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            433,
+            931,
+            471
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/9b70b79a3b03ac9461706586250acc7633dde07bf4a4ea1e8a08190adc142813.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            699,
+            931,
+            737
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.22.4 Network Layer: GATE CSE 2014 | Set 3 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            549,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In the following pairs of OSI protocol layer/sub-layer and its functionality, the INCORRECT pair is",
+        "bbox": [
+            85,
+            87,
+            789,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Network layer and Routing"
+        ],
+        "bbox": [
+            89,
+            112,
+            366,
+            165
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Data Link Layer and Bit synchronization",
+            "D. Medium Access Control sub-layer and Channel sharing"
+        ],
+        "bbox": [
+            495,
+            112,
+            757,
+            166
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 computer-networks network-layer easy",
+        "bbox": [
+            87,
+            171,
+            366,
+            181
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            187,
+            188,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.22.5 Network Layer: GATE CSE 2018 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            210,
+            497,
+            225
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Match the following:",
+        "bbox": [
+            85,
+            233,
+            236,
+            249
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/6621bfb93d4d41eb3fd25168aa98fbbbe05d81b8876ef22253cbc0821a6a6532.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Field</td><td>Length in bits</td></tr><tr><td>P. UDP Header’s Port Number</td><td>I. 48</td></tr><tr><td>Q. Ethernet MAC Address</td><td>II. 8</td></tr><tr><td>R. IPv6 Next Header</td><td>III. 32</td></tr><tr><td>S. TCP Header’s Sequence Number</td><td>IV. 16</td></tr></table>",
+        "bbox": [
+            273,
+            260,
+            742,
+            359
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. P-III, Q-IV, R-II, S-I",
+            "C. P-IV, Q-I, R-II, S-III"
+        ],
+        "bbox": [
+            89,
+            368,
+            272,
+            397
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 computer-networks network-layer match-the-following easy one-mark",
+        "bbox": [
+            87,
+            402,
+            495,
+            410
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            418,
+            188,
+            432
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.22.6 Network Layer: GATE CSE 2026 | Set 1 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            441,
+            549,
+            456
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "An ISP having an address block 202.16.0.0/15 assigns a block of 6000 IP addresses to a client, using the classless internet domain routing (CIDR) super-netting approach. Which of the following address blocks can be assigned by the ISP?",
+        "bbox": [
+            84,
+            465,
+            878,
+            509
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 202.16.0.0/19",
+            "C. 202.16.32.0/19"
+        ],
+        "bbox": [
+            89,
+            517,
+            230,
+            547
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. 202.17.64.0/19",
+            "D. 202.17.24.0/19"
+        ],
+        "bbox": [
+            495,
+            517,
+            635,
+            547
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 computer-networks two-marks network-layer multiple-selects",
+        "bbox": [
+            87,
+            553,
+            470,
+            562
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            568,
+            188,
+            583
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.23",
+        "text_level": 1,
+        "bbox": [
+            68,
+            593,
+            105,
+            606
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Network Protocols (11)",
+        "text_level": 1,
+        "bbox": [
+            426,
+            593,
+            611,
+            606
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (15Q)",
+        "bbox": [
+            70,
+            617,
+            270,
+            631
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.23.1 Network Protocols: GATE CSE 2005 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            646,
+            527,
+            661
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The address resolution protocol (ARP) is used for:",
+        "bbox": [
+            85,
+            669,
+            455,
+            685
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Finding the IP address from the DNS",
+            "B. Finding the IP address of the default gateway",
+            "C. Finding the IP address that corresponds to a MAC address",
+            "D. Finding the MAC address that corresponds to an IP address"
+        ],
+        "bbox": [
+            87,
+            695,
+            551,
+            751
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 computer-networks normal network-protocols",
+        "bbox": [
+            87,
+            777,
+            374,
+            787
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            793,
+            188,
+            807
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.23.2 Network Protocols: GATE CSE 2007 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            817,
+            527,
+            831
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following uses UDP as the transport protocol?",
+        "bbox": [
+            85,
+            840,
+            549,
+            856
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. HTTP",
+        "bbox": [
+            89,
+            870,
+            156,
+            883
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. Telnet",
+        "bbox": [
+            285,
+            870,
+            354,
+            883
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. DNS",
+        "bbox": [
+            480,
+            870,
+            537,
+            883
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. SMTP",
+        "bbox": [
+            673,
+            870,
+            742,
+            883
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 computer-networks network-protocols application-layer-protocols easy",
+        "bbox": [
+            87,
+            893,
+            487,
+            903
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            909,
+            188,
+            923
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/4203c4b48efa94696212e82173ff41932a8858ac3b259d7905a89cae46b16d25.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            932,
+            106
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/49cdafcb5c836915af0faf1a72d485551073f806b6c329f09f316e88951d4ce8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            213,
+            932,
+            251
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/008b2a8d3e453205f3ce406bd1e0bed5e72c89b7a1fe63348d74a7c42f784ed7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            444,
+            932,
+            482
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/54ea257544ea1ca6017b3077a6ff6f4bee8d7f67b6b6ea288b70ed2ca6a28e84.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            649,
+            932,
+            687
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/94f18001eaac75520cd9b72738266fa03b85b1873e472b1e26a4ba04c6d68f33.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            819,
+            932,
+            857
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Match the following:",
+        "bbox": [
+            85,
+            90,
+            236,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/3e6c2dcfaf92651dd5b0c093eccf967935b0667b331ba5459e1b0e16e742ef1c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(P)</td><td>SMTP</td><td>(1)</td><td>Application layer</td></tr><tr><td>(Q)</td><td>BGP</td><td>(2)</td><td>Transport layer</td></tr><tr><td>(R)</td><td>TCP</td><td>(3)</td><td>Data link layer</td></tr><tr><td>(S)</td><td>PPP</td><td>(4)</td><td>Network layer</td></tr><tr><td></td><td></td><td>(5)</td><td>Physical layer</td></tr></table>",
+        "bbox": [
+            341,
+            116,
+            675,
+            219
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. P - 2, Q - 1, R - 3, S - 5",
+        "bbox": [
+            89,
+            226,
+            285,
+            241
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. P - 1, Q - 4, R - 2, S - 3",
+        "bbox": [
+            497,
+            228,
+            690,
+            241
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. P - 1, Q - 4, R - 2, S - 5",
+        "bbox": [
+            90,
+            242,
+            284,
+            256
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. P - 2, Q - 4, R - 1, S - 3",
+        "bbox": [
+            497,
+            242,
+            690,
+            256
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 computer-networks network-layer network-protocols easy match-the-following",
+        "bbox": [
+            87,
+            261,
+            532,
+            271
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            277,
+            188,
+            290
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.23.4 Network Protocols: GATE CSE 2015 | Set 1 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            300,
+            581,
+            315
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In one of the pairs of protocols given below, both the protocols can use multiple TCP connections between the same client and the server. Which one is that?",
+        "bbox": [
+            84,
+            325,
+            878,
+            353
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/a550678d6ac995e51990ef983c7f189baebbda7a8fbb449518892a281cce5d8c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            302,
+            931,
+            340
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. HTTP, FTP",
+        "bbox": [
+            87,
+            366,
+            208,
+            382
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. HTTP, TELNET",
+        "bbox": [
+            285,
+            366,
+            438,
+            382
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. FTP, SMTP",
+        "bbox": [
+            480,
+            366,
+            598,
+            382
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. HTTP, SMTP",
+        "bbox": [
+            673,
+            366,
+            808,
+            382
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 computer-networks network-protocols normal",
+        "bbox": [
+            87,
+            391,
+            394,
+            402
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            408,
+            188,
+            422
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.23.5 Network Protocols: GATE CSE 2016 | Set 1 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            432,
+            581,
+            446
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following protocols is NOT used to resolve one form of address to another one?",
+        "bbox": [
+            85,
+            454,
+            794,
+            470
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/bab62e93f2ffb0cb23e690f496edb34a87dee579c51902af3810ac7ce46e9ea7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            434,
+            931,
+            472
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. DNS",
+        "bbox": [
+            89,
+            483,
+            151,
+            497
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. ARP",
+        "bbox": [
+            285,
+            484,
+            344,
+            497
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. DHCP",
+        "bbox": [
+            480,
+            484,
+            552,
+            497
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. RARP",
+        "bbox": [
+            673,
+            484,
+            746,
+            497
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 computer-networks network-protocols easy",
+        "bbox": [
+            89,
+            508,
+            384,
+            517
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            524,
+            188,
+            538
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.23.6 Network Protocols: GATE CSE 2019 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            548,
+            527,
+            562
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Suppose that in an IP-over-Ethernet network, a machine X wishes to find the MAC address of another machine Y in its subnet. Which one of the following techniques can be used for this?",
+        "bbox": [
+            84,
+            572,
+            875,
+            600
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/b959008aa7a49a1c695df1c97ea842886a808b2ed692f478190095ac4ba5899b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            551,
+            931,
+            587
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. X sends an ARP request packet to the local gateway's IP address which then finds the MAC address of Y and sends to X",
+            "B. X sends an ARP request packet to the local gateway's MAC address which then finds the MAC address of Y and sends to X",
+            "C. X sends an ARP request packet with broadcast MAC address in its local subnet",
+            "D. X sends an ARP request packet with broadcast IP address in its local subnet"
+        ],
+        "bbox": [
+            85,
+            610,
+            927,
+            694
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 computer-networks network-protocols two-marks",
+        "bbox": [
+            87,
+            720,
+            389,
+            730
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            736,
+            188,
+            750
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.23.7 Network Protocols: GATE CSE 2021 | Set 1 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            758,
+            581,
+            774
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the sliding window flow-control protocol operating between a sender and a receiver over a full-duplex error-free link. Assume the following:",
+        "bbox": [
+            84,
+            783,
+            875,
+            813
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/af5a6778e647ef10e72a1cc7059c1e999dd4e4d2ec6cd27c054f44aa532ac65d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            762,
+            931,
+            800
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The time taken for processing the data frame by the receiver is negligible.",
+            "- The time taken for processing the acknowledgement frame by the sender is negligible.",
+            "- The sender has infinite number of frames available for transmission.",
+            "- The size of the data frame is 2,000 bits and the size of the acknowledgement frame is 10 bits.",
+            "- The link data rate in each direction is 1 Mbps ( $= 10^{6}$ bits per second).",
+            "- One way propagation delay of the link is 100 milliseconds."
+        ],
+        "bbox": [
+            97,
+            823,
+            800,
+            910
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "2.23.3 Network Protocols: GATE CSE 2007 | Question: 70",
+        "bbox": [
+            78,
+            66,
+            529,
+            80
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual content that is not present in the image. However, there is no textual content to extract or convert according to the given instructions.",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The minimum value of the sender's window size in terms of the number of frames, (rounded to the nearest integer) needed to achieve a link utilization of 50% is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            64,
+            927,
+            95
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 computer-networks network-protocols sliding-window numerical-answers two-marks",
+        "bbox": [
+            87,
+            112,
+            574,
+            123
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            129,
+            186,
+            143
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.23.8 Network Protocols: GATE CSE 2021 | Set 1 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            77,
+            152,
+            571,
+            166
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two statements.",
+        "bbox": [
+            85,
+            176,
+            369,
+            191
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S_{1}$ : Destination MAC address of an ARP reply is a broadcast address.",
+            "- $S_{2}$ : Destination MAC address of an ARP request is a broadcast address."
+        ],
+        "bbox": [
+            97,
+            201,
+            660,
+            233
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following choices is correct?",
+        "bbox": [
+            85,
+            243,
+            421,
+            257
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Both $S_{1}$ and $S_{2}$ are true",
+        "bbox": [
+            87,
+            267,
+            280,
+            281
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $S_{1}$ is false and $S_{2}$ is true",
+        "bbox": [
+            89,
+            281,
+            282,
+            295
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 computer-networks network-protocols one-mark",
+        "bbox": [
+            87,
+            300,
+            403,
+            309
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $S_{1}$ is true and $S_{2}$ is false",
+        "bbox": [
+            495,
+            267,
+            687,
+            281
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Both $S_{1}$ and $S_{2}$ are false",
+        "bbox": [
+            495,
+            281,
+            689,
+            295
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            315,
+            186,
+            331
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.23.9 Network Protocols: GATE CSE 2024 | Set 1 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            77,
+            340,
+            571,
+            353
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A user starts browsing a webpage hosted at a remote server. The browser opens a single TCP connection to fetch the entire webpage from the server. The webpage consists of a top-level index page with multiple embedded image objects. Assume that all caches (e.g., DNS cache, browser cache) are all initially empt following packets leave the user's computer in some order.",
+        "bbox": [
+            84,
+            363,
+            875,
+            420
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/9646c76c3c7ba3e235db00f3fe59ae6cc49b7ae583f9246574aff070c30baca7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            155,
+            932,
+            193
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. HTTP GET request for the index page",
+            "ii. DNS request to resolve the web server's name to its IP address",
+            "iii. HTTP GET request for an image object",
+            "iv. TCP SYN to open a connection to the web server"
+        ],
+        "bbox": [
+            90,
+            429,
+            576,
+            485
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the CORRECT chronological order (earliest in time to latest) of the packets leaving the computer?",
+        "bbox": [
+            84,
+            497,
+            927,
+            524
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. (iv), (ii), (iii), (i)",
+        "bbox": [
+            89,
+            535,
+            238,
+            549
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. (ii), (iv), (i), (iii)",
+        "bbox": [
+            89,
+            549,
+            238,
+            565
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 computer-networks network-protocols one-mark",
+        "bbox": [
+            87,
+            570,
+            403,
+            578
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. (ii), (iv), (iii), (i)",
+            "D. (iv), (ii), (i), (iii)"
+        ],
+        "bbox": [
+            495,
+            535,
+            643,
+            565
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            585,
+            186,
+            600
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.23.10 Network Protocols: GATE IT 2007 | Question: 69",
+        "text_level": 1,
+        "bbox": [
+            77,
+            609,
+            517,
+            623
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following clauses:",
+        "bbox": [
+            85,
+            633,
+            317,
+            647
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. Not inherently suitable for client authentication.",
+            "ii. Not a state sensitive protocol.",
+            "iii. Must be operated with more than one server.",
+            "iv. Suitable for structured message organization.",
+            "v. May need two ports on the serve side for proper operation."
+        ],
+        "bbox": [
+            87,
+            657,
+            541,
+            728
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The option that has the maximum number of correct matches is",
+        "bbox": [
+            85,
+            738,
+            549,
+            752
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. IMAP-i; FTP-ii; HTTP-iii; DNS-iv; POP3-v",
+            "B. FTP-i; POP3-ii; SMTP-iii; HTTP-iv; IMAP-v",
+            "C. POP3-i; SMTP-ii; DNS-iii; IMAP-iv; HTTP-v",
+            "D. SMTP-i; HTTP-ii; IMAP-iii; DNS-iv; FTP-v"
+        ],
+        "bbox": [
+            87,
+            764,
+            450,
+            819
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 computer-networks network-protocols normal",
+        "bbox": [
+            87,
+            846,
+            366,
+            855
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            862,
+            186,
+            876
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/cbbd51241576e8eb44784883f4d30885ce1b3ec03810c55396c322a2b32f5387.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            342,
+            932,
+            380
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/ec1d00bdb1bb804a50f91930f90a9841cf24416f28c3c2a943a2edf60935c7e6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            612,
+            932,
+            649
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.23.11 Network Protocols: GATE IT 2008 | Question: 68",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            519,
+            79
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements are TRUE?",
+        "bbox": [
+            85,
+            87,
+            421,
+            103
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- S1: TCP handles both congestion and flow control",
+            "- S2: UDP handles congestion but not flow control",
+            "- S3: Fast retransmit deals with congestion but not flow control",
+            "- S4: Slow start mechanism deals with both congestion and flow control"
+        ],
+        "bbox": [
+            97,
+            114,
+            657,
+            169
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $S1, S2$ and $S3$ only",
+        "bbox": [
+            89,
+            181,
+            253,
+            195
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. S3 and S4 only",
+        "bbox": [
+            89,
+            195,
+            221,
+            209
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. $S1$ and $S3$ only",
+        "bbox": [
+            495,
+            181,
+            631,
+            195
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. $S1, S3$ and $S4$ only",
+        "bbox": [
+            495,
+            195,
+            658,
+            209
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 computer-networks network-protocols normal",
+        "bbox": [
+            87,
+            214,
+            366,
+            223
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            230,
+            189,
+            245
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.24",
+        "text_level": 1,
+        "bbox": [
+            67,
+            254,
+            105,
+            268
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Network Switching (4)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            254,
+            608,
+            269
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (6Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            279,
+            267,
+            293
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.24.1 Network Switching: GATE CSE 2005 | Question: 73",
+        "text_level": 1,
+        "bbox": [
+            77,
+            308,
+            529,
+            321
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "In a packet switching network, packets are routed from source to destination along a single path having two intermediate nodes. If the message size is 24 bytes and each packet contains a header of 3 bytes, then the optimum packet size is:",
+        "bbox": [
+            84,
+            331,
+            878,
+            375
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 4",
+        "bbox": [
+            89,
+            388,
+            126,
+            402
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 6",
+        "bbox": [
+            285,
+            388,
+            321,
+            402
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 7",
+        "bbox": [
+            480,
+            388,
+            515,
+            401
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 9",
+        "bbox": [
+            673,
+            388,
+            710,
+            401
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 computer-networks network-switching normal",
+        "bbox": [
+            87,
+            412,
+            374,
+            421
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            428,
+            189,
+            442
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.24.2 Network Switching: GATE CSE 2014 | Set 2 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            452,
+            584,
+            466
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the store and forward packet switched network given below. Assume that the bandwidth of each link is $10^{6}$ bytes / sec. A user on host A sends a file of size $10^{3}$ bytes to host B through routers R1 and R2",
+        "bbox": [
+            82,
+            476,
+            878,
+            507
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "in three different ways. In the first case a single packet containing the complete file is transmitted from $A$ to $B$ . In the second case, the file is split into 10 equal parts, and these packets are transmitted from $A$ to $B$ . In the third case, the file is split into 20 equal parts and these packets are sent from $A$ to $B$ . Each packet contains 100 bytes of header information along with the user data. Consider only transmission time and ignore processing, queuing and propagation delays. Also assume that there are no errors during transmission. Let $T1$ , $T2$ and $T3$ be the times taken to transmit the file in the first, second and third case respectively. Which one of the following is CORRECT?",
+        "bbox": [
+            84,
+            508,
+            929,
+            595
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/061c2cf58bbe3bba6792f989b9f22d8d49ce7ac8457c731e984def6dcb792058.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            376,
+            600,
+            640,
+            631
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $T1 <   T2 <   T3$",
+            "C. $T2 = T3, T3 < T1$"
+        ],
+        "bbox": [
+            89,
+            643,
+            253,
+            669
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $T1 > T2 > T3$",
+            "D. $T1 = T3, T3 > T2$"
+        ],
+        "bbox": [
+            495,
+            643,
+            660,
+            669
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 computer-networks network-switching normal",
+        "bbox": [
+            87,
+            676,
+            394,
+            686
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            692,
+            188,
+            706
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.24.3 Network Switching: GATE CSE 2015 | Set 3 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            77,
+            716,
+            583,
+            730
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Two hosts are connected via a packet switch with $10^{7}$ bits per second links. Each link has a propagation delay of 20 microseconds. The switch begins forwarding a packet 35 microseconds after it receives the same. If 10000 bits of data are to be transmitted between the two hosts using a packet size of 5000 bits, the time elapsed between the transmission of the first bit of data and the reception of the last bit of the data in microseconds is \\_\\_\\_\\_.",
+        "bbox": [
+            82,
+            741,
+            929,
+            814
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 computer-networks normal numerical-answers network-switching",
+        "bbox": [
+            87,
+            827,
+            484,
+            837
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            843,
+            189,
+            858
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.24.4 Network Switching: GATE IT 2004 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            77,
+            866,
+            510,
+            881
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is FALSE?",
+        "bbox": [
+            85,
+            891,
+            448,
+            904
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. Packet switching leads to better utilization of bandwidth resources than circuit switching",
+        "bbox": [
+            85,
+            916,
+            749,
+            932
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/a33a1940cc71b746aef45252549d38d3f93beac1d255b34a70bcd0168b8e56ba.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/002006d56a1de336fe6c943c2507ced56e6bcbbf878b693f413594cef7c4aa2e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            311,
+            932,
+            347
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/07cc58ef9e35f01ce783041cb4da4d0cafceef68adb56697d25b3cebaae45208.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            454,
+            932,
+            492
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/71c72580831faf966ea6f903472379bc2f3162d689bbcb45e28401d9c251e0fa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            718,
+            932,
+            755
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/3c4d1a2de85f087b76ff91ba9b3d10778d759157e48ed1ac6d3dfe5e8754c16d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            870,
+            932,
+            907
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Packet switching results in less variation in delay than circuit switching",
+            "C. Packet switching requires more per-packet processing than circuit switching",
+            "D. Packet switching can lead to reordering unlike in circuit switching"
+        ],
+        "bbox": [
+            87,
+            65,
+            665,
+            108
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 computer-networks network-switching normal",
+        "bbox": [
+            87,
+            133,
+            366,
+            142
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            149,
+            188,
+            163
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.25",
+        "text_level": 1,
+        "bbox": [
+            68,
+            174,
+            104,
+            186
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Osi Model (1)",
+        "text_level": 1,
+        "bbox": [
+            463,
+            173,
+            574,
+            188
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.25.1 Osi Model: GATE CSE 2025 | Set 1 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            200,
+            505,
+            214
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Identify the ONE CORRECT matching between the OSI layers and their corresponding functionalities as shown.",
+        "bbox": [
+            84,
+            223,
+            875,
+            251
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/7feea8c733710ef263073baff43507014e05ff25cd9881c1dce1971f368b0a13.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            203,
+            931,
+            239
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/2df253ab664573069dd3168b30d585ead979dcfddc8cb4e864a534a6dc3aef4f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>OSI Layers</td><td></td><td>Functionalities</td></tr><tr><td>(a)</td><td>Network Layer</td><td>(I)</td><td>Packet Routing</td></tr><tr><td>(b)</td><td>Transport Layer</td><td>(II)</td><td>Framing and error handling</td></tr><tr><td>(c)</td><td>Datalink layer</td><td>(III)</td><td>Host to host communication</td></tr></table>",
+        "bbox": [
+            245,
+            263,
+            771,
+            346
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (a)-(I), (b)-(II), (c)-(III)",
+            "C. (a)-(II), (b)-(I), (c)-(III)"
+        ],
+        "bbox": [
+            89,
+            353,
+            297,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. (a)-(I), (b)-(III), (c)-(II)",
+            "D. (a)-(III), (b)-(II), (c)-(I)"
+        ],
+        "bbox": [
+            495,
+            353,
+            702,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 computer-networks osi-model easy one-mark",
+        "bbox": [
+            87,
+            389,
+            400,
+            397
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            404,
+            188,
+            419
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.26",
+        "text_level": 1,
+        "bbox": [
+            68,
+            429,
+            104,
+            442
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Probability (1)",
+        "text_level": 1,
+        "bbox": [
+            460,
+            428,
+            576,
+            444
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.26.1 Probability: GATE CSE 2025 | Set 1 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            454,
+            519,
+            469
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/60c92f3c482895229b1c2a8ef82e1a9bca513edb1eef30e16c68a948fed9b55d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            458,
+            931,
+            495
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose a 5-bit message is transmitted from a source to a destination through a noisy channel. The probability that a bit of the message gets flipped during transmission is 0.01. Flipping of each bit is independent of one another. The probability that the message is delivered error-free to the destination is \\_\\_\\_\\_ (rounded off to three decimal places)",
+        "bbox": [
+            84,
+            479,
+            927,
+            536
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 computer-networks probability numerical-answers easy two-marks",
+        "bbox": [
+            87,
+            549,
+            499,
+            559
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            566,
+            188,
+            580
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.27",
+        "text_level": 1,
+        "bbox": [
+            68,
+            591,
+            104,
+            603
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Pure Aloha (1)",
+        "text_level": 1,
+        "bbox": [
+            460,
+            590,
+            576,
+            605
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.27.1 Pure Aloha: GATE CSE 2021 | Set 2 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            617,
+            522,
+            631
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e87f1d8341690c4b1d082d9e8f46303547e63e2777b60980d61803b2b9a1d8d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            619,
+            931,
+            657
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider a network using the pure ALOHA medium access control protocol, where each frame is of length 1,000 bits. The channel transmission rate is 1 Mbps ( $= 10^{6}$ bits per second). The aggregate number of transmissions across all the nodes (including new frame transmissions and retransmitted frames due to coll is modelled as a Poisson process with a rate of 1,000 frames per second. Throughput is defined as the a number of frames successfully transmitted per second. The throughput of the network (rounded to the r integer) is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            641,
+            878,
+            729
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 computer-networks mac-protocol pure-aloha numerical-answers two-marks",
+        "bbox": [
+            87,
+            742,
+            534,
+            752
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            758,
+            188,
+            773
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.28",
+        "text_level": 1,
+        "bbox": [
+            68,
+            783,
+            104,
+            796
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Routing (14)",
+        "text_level": 1,
+        "bbox": [
+            468,
+            783,
+            569,
+            798
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (4Q)",
+        "bbox": [
+            70,
+            808,
+            363,
+            823
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.28.1 Routing: GATE CSE 2005 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            836,
+            445,
+            850
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/90c94495658e86d9c461b4bd8eef79b6b43d4a019043548a0fccc887354002fc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            839,
+            931,
+            877
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In a network of LANs connected by bridges, packets are sent from one LAN to another through intermediate bridges. Since more than one path may exist between two LANs, packets may have to be routed through multiple bridges. Why is the spanning tree algorithm used for bridge-routing?",
+        "bbox": [
+            84,
+            859,
+            878,
+            904
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. For shortest path routing between LANs",
+        "bbox": [
+            87,
+            915,
+            384,
+            929
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. For avoiding loops in the routing paths",
+        "bbox": [
+            495,
+            915,
+            779,
+            929
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            106,
+            188,
+            119
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.28.2 Routing: GATE CSE 2014 | Set 1 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            129,
+            499,
+            144
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/6d41418ace12b99c942522347105906bef4e16428c95e9b4270599ca7e11bade.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            131,
+            931,
+            169
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following three statements about link state and distance vector routing protocols, for a large network with 500 network nodes and 4000 links.",
+        "bbox": [
+            84,
+            154,
+            875,
+            182
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "[S1]: The computational overhead in link state protocols is higher than in distance vector protocols.",
+            "[S2]: A distance vector protocol (with split horizon) avoids persistent routing loops, but not a link state protocol.",
+            "[S3]: After a topology change, a link state protocol will converge faster than a distance vector protocol."
+        ],
+        "bbox": [
+            85,
+            186,
+            887,
+            238
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is correct about S1, S2, and S3?",
+        "bbox": [
+            85,
+            241,
+            527,
+            257
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $S1, S2$ , and $S3$ are all true.",
+            "C. S1 and S2 are true, but S3 is false."
+        ],
+        "bbox": [
+            87,
+            266,
+            352,
+            306
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 computer-networks routing normal",
+        "bbox": [
+            87,
+            312,
+            349,
+            321
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $S1, S2$ , and $S3$ are all false.",
+            "D. $S1$ and $S3$ are true, but $S2$ is false."
+        ],
+        "bbox": [
+            495,
+            266,
+            757,
+            306
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            328,
+            188,
+            343
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.28.3 Routing: GATE CSE 2014 | Set 2 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            352,
+            497,
+            366
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is TRUE about the interior gateway routing protocols — Routing Information Protocol (RIP) and Open Shortest Path First (OSPF)",
+        "bbox": [
+            84,
+            375,
+            873,
+            406
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/f887a63d3131b9870548c7f7fbb037f814b7e6e32000824ca31499c9ff8f8875.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            353,
+            931,
+            391
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. RIP uses distance vector routing and OSPF uses link state routing",
+            "B. OSPF uses distance vector routing and RIP uses link state routing",
+            "C. Both RIP and OSPF use link state routing",
+            "D. Both RIP and OSPF use distance vector routing"
+        ],
+        "bbox": [
+            87,
+            416,
+            596,
+            473
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 computer-networks routing easy",
+        "bbox": [
+            87,
+            498,
+            339,
+            508
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            514,
+            188,
+            529
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.28.4 Routing: GATE CSE 2014 | Set 3 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            538,
+            497,
+            551
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "An IP router implementing Classless Inter-domain Routing (CIDR) receives a packet with address 131.23.151.76. The router's routing table has the following entries:",
+        "bbox": [
+            84,
+            561,
+            870,
+            591
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/55955f994ac91306491f20e64a4dd0c1bba94413c94d440836703e2f5c23937e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            540,
+            931,
+            578
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/85f53222536ffb43321ca69f7bcdb5033aa85c0aa04cd92441e6a0e04693ee1c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Prefix</td><td>Outer Interface Identifier</td></tr><tr><td>131.16.0.0/12</td><td>3</td></tr><tr><td>131.28.0.0/14</td><td>5</td></tr><tr><td>131.19.0.0/16</td><td>2</td></tr><tr><td>131.22.0.0/15</td><td>1</td></tr></table>",
+        "bbox": [
+            309,
+            602,
+            705,
+            704
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The identifier of the output interface on which this packet will be forwarded is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            726,
+            707,
+            741
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 computer-networks routing normal numerical-answers",
+        "bbox": [
+            87,
+            755,
+            438,
+            764
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            771,
+            188,
+            786
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.28.5 Routing: GATE CSE 2017 | Set 2 | Question: 09",
+        "text_level": 1,
+        "bbox": [
+            78,
+            795,
+            497,
+            809
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements about the routing protocols. Routing Information Protocol (RIP) and Open Shortest Path First (OSPF) in an IPv4 network.",
+        "bbox": [
+            84,
+            818,
+            878,
+            847
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca79a52227a5dd63fb30a7d24687088dde6d5df232c3d4b92207f783980f2440.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            796,
+            931,
+            834
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. RIP uses distance vector routing",
+            "II. RIP packets are sent using UDP",
+            "III. OSPF packets are sent using TCP",
+            "IV. OSPF operation is based on link-state routing"
+        ],
+        "bbox": [
+            85,
+            859,
+            447,
+            915
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "C. For fault tolerance",
+        "bbox": [
+            89,
+            67,
+            238,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "D. For minimizing collisions",
+        "bbox": [
+            495,
+            67,
+            685,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2005 computer-networks routing normal",
+        "bbox": [
+            87,
+            90,
+            329,
+            100
+        ],
+        "page_idx": 11
+    }
+]

@@ -1,0 +1,4359 @@
+[
+    {
+        "type": "text",
+        "text": "The forwarding table of a router is shown below.",
+        "bbox": [
+            85,
+            87,
+            438,
+            103
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/73992ba88e1b2ca71499736f16e1b00b95004d89a4ea2bbb22e85c2906baa598.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Subnet Number</td><td>Subnet Mask</td><td>Interface ID</td></tr><tr><td>200.150.0.0</td><td>255.255.0.0</td><td>1</td></tr><tr><td>200.150.64.0</td><td>255.255.224.0</td><td>2</td></tr><tr><td>200.150.68.0</td><td>255.255.255.0</td><td>3</td></tr><tr><td>200.150.68.64</td><td>255.255.255.224</td><td>4</td></tr><tr><td>Default</td><td></td><td>0</td></tr></table>",
+        "bbox": [
+            275,
+            115,
+            741,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A packet addressed to a destination address 200.150.68.118 arrives at the router. It will be forwarded to the interface with ID \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            256,
+            927,
+            288
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 computer-networks subnetting numerical-answers two-marks",
+        "bbox": [
+            87,
+            300,
+            447,
+            309
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            315,
+            186,
+            331
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.34.15 Subnetting: GATE CSE 2025 | Set 1 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            339,
+            531,
+            355
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/422b0b4e7e4fadd4e6b0a07f5553d5e5792552318504fbccb6deece06be8e47d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            342,
+            932,
+            380
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A packet with the destination IP address 145.36.109.70 arrives at a router whose routing table is shown. Which interface will the packet be forwarded to?",
+        "bbox": [
+            84,
+            363,
+            875,
+            393
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/16d15d0183dd319ca02759c686d28f08fc23156ee28ed06f9fa9069b57f87618.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Subnet Address</td><td>Subnet Mask ( in CIDR notation)</td><td>Interface</td></tr><tr><td>145.36.0.0</td><td>/16</td><td>E1</td></tr><tr><td>145.36.128.0</td><td>/17</td><td>E2</td></tr><tr><td>145.36.64.0</td><td>/18</td><td>E3</td></tr><tr><td>145.36.255.0</td><td>/24</td><td>E4</td></tr><tr><td>Default</td><td>-</td><td>E5</td></tr></table>",
+        "bbox": [
+            198,
+            404,
+            820,
+            527
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. E3",
+        "bbox": [
+            89,
+            539,
+            139,
+            553
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. E1",
+        "bbox": [
+            285,
+            539,
+            331,
+            553
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. E2",
+        "bbox": [
+            480,
+            539,
+            527,
+            553
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. E5",
+        "bbox": [
+            675,
+            539,
+            721,
+            553
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 computer-networks subnetting two-marks",
+        "bbox": [
+            89,
+            564,
+            374,
+            574
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            579,
+            188,
+            593
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.34.16 Subnetting: GATE IT 2004 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            603,
+            458,
+            618
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/a4a3f096b68540ac1b4d30f7f11a523f8ee56bc4f69458a9d1009f4001036237.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            606,
+            932,
+            644
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A subnet has been assigned a subnet mask of 255.255.255.192. What is the maximum number of hosts that can belong to this subnet?",
+        "bbox": [
+            84,
+            627,
+            878,
+            656
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 14",
+        "bbox": [
+            89,
+            669,
+            136,
+            682
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 30",
+        "bbox": [
+            285,
+            669,
+            329,
+            682
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 62",
+        "bbox": [
+            480,
+            669,
+            524,
+            682
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 126",
+        "bbox": [
+            675,
+            669,
+            727,
+            682
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 computer-networks subnetting normal",
+        "bbox": [
+            89,
+            694,
+            337,
+            704
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            710,
+            188,
+            725
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.34.17 Subnetting: GATE IT 2005 | Question: 76",
+        "text_level": 1,
+        "bbox": [
+            78,
+            733,
+            458,
+            749
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/2765f4511958285dc765846f0d9f9df93bebcb23bfe203534b54857e19576fc4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            736,
+            932,
+            774
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A company has a class C network address of 204.204.204.0. It wishes to have three subnets, one with 100 hosts and two with 50 hosts each. Which one of the following options represents a feasible set of subnet address/subnet mask pairs?",
+        "bbox": [
+            84,
+            757,
+            878,
+            802
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 204.204.204.128/255.255.255.192",
+        "bbox": [
+            87,
+            812,
+            391,
+            826
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "204.204.204.0/255.255.255.128",
+        "bbox": [
+            112,
+            828,
+            371,
+            842
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "204.204.204.64/255.255.255.128",
+        "bbox": [
+            112,
+            843,
+            379,
+            857
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 204.204.204.0/255.255.255.192",
+        "bbox": [
+            90,
+            859,
+            371,
+            872
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "204.204.204.192/255.255.255.128",
+        "bbox": [
+            112,
+            874,
+            389,
+            888
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "204.204.204.64/255.255.255.128",
+        "bbox": [
+            112,
+            889,
+            379,
+            903
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 204.204.204.128/255.255.255.128",
+        "bbox": [
+            89,
+            904,
+            389,
+            919
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "2.34.14 Subnetting: GATE CSE 2023 | Question: 55",
+        "bbox": [
+            78,
+            65,
+            478,
+            79
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual content that is not present in the image. Therefore, no text should be output for OCR.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "204.204.204.192/255.255.255.192",
+        "bbox": [
+            110,
+            64,
+            391,
+            79
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "204.204.204.224/255.255.255.192",
+        "bbox": [
+            112,
+            80,
+            389,
+            95
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 204.204.204.128/255.255.255.128",
+        "bbox": [
+            89,
+            96,
+            389,
+            110
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "204.204.204.64/255.255.255.192",
+        "bbox": [
+            112,
+            111,
+            381,
+            125
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "204.204.204.0/255.255.255.192",
+        "bbox": [
+            112,
+            125,
+            371,
+            142
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 computer-networks subnetting normal",
+        "bbox": [
+            87,
+            167,
+            337,
+            176
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            182,
+            186,
+            197
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.34.18 Subnetting: GATE IT 2006 | Question: 63, ISRO2015-57",
+        "text_level": 1,
+        "bbox": [
+            78,
+            206,
+            568,
+            220
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A router uses the following routing table:",
+        "bbox": [
+            85,
+            231,
+            383,
+            245
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/7b0046bc13973332f25356334a0903ece781c9fb52adc4041131b78940bb807c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Destination</td><td>Mask</td><td>Interface</td></tr><tr><td>144.16.0.0</td><td>255.255.0.0</td><td>eth0</td></tr><tr><td>144.16.64.0</td><td>255.255.224.0</td><td>eth1</td></tr><tr><td>144.16.68.0</td><td>255.255.255.0</td><td>eth2</td></tr><tr><td>144.16.68.64</td><td>255.255.255.224</td><td>eth3</td></tr></table>",
+        "bbox": [
+            312,
+            256,
+            705,
+            356
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/05776105fdc766b74b935c00df39ac4ff113e31699854f18c5cac4c8e3b1b327.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            209,
+            932,
+            247
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Packet bearing a destination address 144.16.68.117 arrives at the router. On which interface will it be forwarded?",
+        "bbox": [
+            89,
+            365,
+            924,
+            380
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. eth0",
+        "bbox": [
+            89,
+            394,
+            146,
+            408
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. eth1",
+        "bbox": [
+            285,
+            394,
+            339,
+            408
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. eth2",
+        "bbox": [
+            480,
+            394,
+            536,
+            408
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. eth3",
+        "bbox": [
+            673,
+            394,
+            729,
+            408
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 computer-networks subnetting normal isro2015",
+        "bbox": [
+            87,
+            418,
+            386,
+            428
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            434,
+            186,
+            448
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.34.19 Subnetting: GATE IT 2006 | Question: 70",
+        "text_level": 1,
+        "bbox": [
+            78,
+            458,
+            458,
+            472
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A subnetted Class B network has the following broadcast address: 144.16.95.255 Its subnet mask",
+        "bbox": [
+            84,
+            480,
+            690,
+            515
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. is necessarily 255.255.224.0",
+            "B. is necessarily 255.255.240.0",
+            "C. is necessarily 255.255.248.0",
+            "D. could be any one of 255.255.224.0, 255.255.240.0, 255.255.248.0"
+        ],
+        "bbox": [
+            87,
+            524,
+            613,
+            584
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 computer-networks subnetting normal",
+        "bbox": [
+            87,
+            610,
+            337,
+            619
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            625,
+            186,
+            640
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.34.20 Subnetting: GATE IT 2008 | Question: 84",
+        "text_level": 1,
+        "bbox": [
+            78,
+            649,
+            458,
+            663
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Host $X$ has IP address 192.168.1.97 and is connected through two routers $R1$ and $R2$ to another host $Y$ with IP address 192.168.1.80. Router $R1$ has IP addresses 192.168.1.135 and 192.168.1.110. $R2$ has IP addresses 192.168.1.67 and 192.168.1.155. The netmask used in the network is 255.255.255.224.",
+        "bbox": [
+            84,
+            673,
+            878,
+            716
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Given the information above, how many distinct subnets are guaranteed to already exist in the network?",
+        "bbox": [
+            85,
+            720,
+            843,
+            736
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            89,
+            749,
+            126,
+            762
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            750,
+            319,
+            762
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            749,
+            515,
+            762
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            749,
+            710,
+            762
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 computer-networks subnetting normal",
+        "bbox": [
+            87,
+            774,
+            337,
+            783
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            790,
+            186,
+            804
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.34.21 Subnetting: GATE IT 2008 | Question: 85",
+        "text_level": 1,
+        "bbox": [
+            78,
+            813,
+            458,
+            828
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Host $X$ has $IP$ address 192.168.1.97 and is connected through two routers $R1$ and $R2$ to another host $Y$ with $IP$ address 192.168.1.80. Router $R1$ has $IP$ addresses 192.168.1.135 and 192.168.1.110. $R2$ has $IP$ addresses 192.168.1.67 and 192.168.1.155. The netmask used in the network is 255.255.255.224.",
+        "bbox": [
+            84,
+            836,
+            890,
+            882
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which IP address should X configure its gateway as?",
+        "bbox": [
+            85,
+            885,
+            490,
+            901
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 192.168.1.67",
+        "bbox": [
+            89,
+            910,
+            213,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 192.168.1.110",
+        "bbox": [
+            495,
+            910,
+            628,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/6335760fd185d13588c0382e5a78ba1e78d407dcaf3e54f0329c3aa16429968f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            460,
+            932,
+            500
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/11b3033a2f854c85835457fe496a2ee77b0c54e74289163ce7b4149207268032.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            652,
+            932,
+            690
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/c2b1061e48fcfc60951a6d05bc835391789f5e2fcd0512f01d0c8ed4fc95a88b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            815,
+            932,
+            853
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.35",
+        "text_level": 1,
+        "bbox": [
+            67,
+            124,
+            105,
+            138
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "TCP (20)",
+        "text_level": 1,
+        "bbox": [
+            482,
+            124,
+            556,
+            138
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (4Q)",
+        "bbox": [
+            70,
+            149,
+            455,
+            163
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.35.1 TCP: GATE CSE 2009 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            178,
+            416,
+            192
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "While opening a TCP connection, the initial sequence number is to be derived using a time-of-day (ToD) clock that keeps running even when the host is down. The low order 32 bits of the counter of the ToD clock",
+        "bbox": [
+            82,
+            201,
+            875,
+            231
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "is to be used for the initial sequence numbers. The clock counter increments once per milliseconds. The maximum packet lifetime is given to be 64s.",
+        "bbox": [
+            84,
+            232,
+            927,
+            258
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the choices given below is closest to the minimum permissible rate at which sequence numbers used for packets of a connection can increase?",
+        "bbox": [
+            84,
+            263,
+            927,
+            290
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 0.015/s",
+        "bbox": [
+            89,
+            305,
+            169,
+            319
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 0.064/s",
+        "bbox": [
+            285,
+            305,
+            363,
+            319
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 0.135/s",
+        "bbox": [
+            480,
+            305,
+            559,
+            319
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 0.327/s",
+        "bbox": [
+            673,
+            305,
+            752,
+            319
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 computer-networks tcp difficult ambiguous",
+        "bbox": [
+            87,
+            328,
+            374,
+            340
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            345,
+            188,
+            359
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.35.2 TCP: GATE CSE 2012 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            369,
+            416,
+            383
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following transport layer protocols is used to support electronic mail?",
+        "bbox": [
+            84,
+            393,
+            684,
+            408
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. SMTP",
+        "bbox": [
+            89,
+            421,
+            166,
+            435
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. IP",
+        "bbox": [
+            285,
+            421,
+            327,
+            435
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. TCP",
+        "bbox": [
+            480,
+            421,
+            542,
+            435
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. UDP",
+        "bbox": [
+            673,
+            421,
+            737,
+            435
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 computer-networks tcp easy",
+        "bbox": [
+            87,
+            446,
+            302,
+            456
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            461,
+            188,
+            476
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.35.3 TCP: GATE CSE 2015 | Set 1 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            485,
+            468,
+            500
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Suppose two hosts use a TCP connection to transfer a large file. Which of the following statements is/are FALSE with respect to the TCP connection?",
+        "bbox": [
+            84,
+            509,
+            875,
+            536
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. If the sequence number of a segment is $m$ , then the sequence number of the subsequent segment is always $m + 1$ .",
+            "II. If the estimated round trip time at any given point of time is t sec, the value of the retransmission timeout is always set to greater than or equal to t sec.",
+            "III. The size of the advertised window never changes during the course of the TCP connection.",
+            "IV. The number of unacknowledged bytes at the sender is always less than or equal to the advertised window."
+        ],
+        "bbox": [
+            90,
+            548,
+            927,
+            633
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. III only",
+        "bbox": [
+            89,
+            648,
+            161,
+            662
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. I and III only",
+        "bbox": [
+            285,
+            648,
+            394,
+            662
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. I and IV only",
+        "bbox": [
+            480,
+            648,
+            589,
+            662
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. II and IV only",
+        "bbox": [
+            673,
+            648,
+            789,
+            662
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 computer-networks tcp normal",
+        "bbox": [
+            87,
+            672,
+            332,
+            681
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            687,
+            188,
+            701
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.35.4 TCP: GATE CSE 2015 | Set 2 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            78,
+            711,
+            468,
+            725
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Assume that the bandwidth for a TCP connection is 1048560 bits/sec. Let $\\alpha$ be the value of RTT in milliseconds (rounded off to the nearest integer) after which the TCP window scale option is needed. Let $\\beta$ be the maximum possible window size with window scale option. Then the values of $\\alpha$ and $\\beta$ are",
+        "bbox": [
+            84,
+            735,
+            878,
+            780
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 63 milliseconds, $65535 \\times 2^{14}$",
+            "C. 500 milliseconds, $65535 \\times 2^{14}$",
+            "gatecse-2015-set2 computer-networks difficult tcp"
+        ],
+        "bbox": [
+            87,
+            790,
+            336,
+            834
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. 63 milliseconds, $65535 \\times 2^{16}$",
+            "D. 500 milliseconds, $65535 \\times 2^{16}$"
+        ],
+        "bbox": [
+            495,
+            790,
+            724,
+            819
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            840,
+            188,
+            855
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.35.5 TCP: GATE CSE 2015 | Set 3 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            864,
+            468,
+            878
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements.",
+        "bbox": [
+            85,
+            888,
+            339,
+            903
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "I. TCP connections are full duplex",
+        "bbox": [
+            92,
+            913,
+            347,
+            929
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/c96b1e3147b524f3c59b954bc2c4d3f11f047e08e6964df8958634c936ef4c5d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            180,
+            931,
+            218
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/d6252289787c65da1a0d6dbeb531ceebf933d93ff858262e6f637505db82383e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            372,
+            931,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ec95122ef5fed335de3c932efedb07e93993ebe982c3c63fdbd44e94eeaebfe9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            488,
+            931,
+            526
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ff2e61efaad1d361901493dc9391c0568c3d23c35e0e79c5f696363271412024.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            714,
+            931,
+            751
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/26d42769196e3f3e24dc57ade4ae0cf884c213da889033e6be7c1b042294ff70.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            866,
+            931,
+            904
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "C. 192.168.1.135",
+        "bbox": [
+            89,
+            64,
+            223,
+            78
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "D. 192.168.1.155",
+        "bbox": [
+            495,
+            64,
+            630,
+            78
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "gateit-2008 computer-networks subnetting normal",
+        "bbox": [
+            87,
+            84,
+            337,
+            93
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            99,
+            188,
+            114
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "II. TCP has no option for selective acknowledgement\nIII. TCP connections are message streams",
+        "bbox": [
+            87,
+            64,
+            480,
+            93
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. Only I is correct",
+        "bbox": [
+            89,
+            104,
+            221,
+            117
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. Only I and III are correct",
+        "bbox": [
+            495,
+            104,
+            685,
+            117
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. Only II and III are correct",
+        "bbox": [
+            89,
+            118,
+            282,
+            130
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. All of I, II and III are correct",
+        "bbox": [
+            495,
+            118,
+            702,
+            130
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 computer-networks tcp easy",
+        "bbox": [
+            87,
+            136,
+            322,
+            146
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            152,
+            188,
+            166
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.35.6 TCP: GATE CSE 2016 | Set 2 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            77,
+            175,
+            468,
+            188
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Identify the correct sequence in which the following packets are transmitted on the network by a host when a browser requests a webpage from a remote server, assuming that the host has just been restarted.",
+        "bbox": [
+            84,
+            199,
+            878,
+            226
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/390c1753d1ae5a62c290a68c3df937b9e1f8dd2ae8e5a5f09d5a1a7b90ccb5e0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            178,
+            931,
+            214
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. HTTP GET request, DNS query, TCP SYN",
+            "C. DNS query, TCP SYN, HTTP GET request."
+        ],
+        "bbox": [
+            89,
+            237,
+            352,
+            290
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. DNS query, HTTP GET request, TCP SYN",
+        "bbox": [
+            495,
+            237,
+            757,
+            262
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. TCP SYN, DNS query, HTTP GET request.",
+        "bbox": [
+            495,
+            263,
+            756,
+            290
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 computer-networks normal tcp",
+        "bbox": [
+            87,
+            295,
+            332,
+            305
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            311,
+            188,
+            325
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.35.7 TCP: GATE CSE 2017 | Set 1 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            334,
+            468,
+            347
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider a TCP client and a TCP server running on two different machines. After completing data transfer, the TCP client calls close to terminate the connection and a FIN segment is sent to the TCP server. Server-side TCP responds by sending an ACK, which is received by the client-side TCP. As per the TCP connection state diagram (RFC 793), in which state does the client-side TCP connection wait for the FIN from the server-side TCP?",
+        "bbox": [
+            84,
+            358,
+            927,
+            429
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. LAST-ACK",
+        "bbox": [
+            87,
+            444,
+            191,
+            457
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. TIME-WAIT",
+        "bbox": [
+            285,
+            444,
+            389,
+            457
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. FIN-WAIT-1",
+        "bbox": [
+            480,
+            444,
+            586,
+            457
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. FIN-WAIT-2",
+        "bbox": [
+            673,
+            444,
+            783,
+            457
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 computer-networks tcp",
+        "bbox": [
+            87,
+            467,
+            290,
+            478
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            484,
+            188,
+            498
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.35.8 TCP: GATE CSE 2021 | Set 1 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            77,
+            507,
+            468,
+            522
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/f5fb7e4b82020451854bf40f76dd27facbd539d81433ae471eee2e63cf63570b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            338,
+            931,
+            374
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A TCP server application is programmed to listen on port number P on host S. A TCP client is connected to the TCP server over the network.",
+        "bbox": [
+            84,
+            530,
+            875,
+            561
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/e16cf5f74bdb7f61ef98db7167ead17862516648a2c2e93f4d9c308b90b0038e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            510,
+            931,
+            547
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider that while the TCP connection was active, the server machine S crashed and rebooted. Assume that the client does not use the TCP keepalive timer. Which of the following behaviors is/are possible?",
+        "bbox": [
+            84,
+            565,
+            927,
+            596
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. If the client was waiting to receive a packet, it may wait indefinitely",
+            "B. The TCP server application on S can listen on P after reboot",
+            "C. If the client sends a packet after the server reboot, it will receive a RST segment",
+            "D. If the client sends a packet after the server reboot, it will receive a FIN segment"
+        ],
+        "bbox": [
+            87,
+            606,
+            700,
+            666
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 multiple-selects computer-networks tcp two-marks",
+        "bbox": [
+            87,
+            690,
+            426,
+            701
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            706,
+            188,
+            720
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.35.9 TCP: GATE CSE 2021 | Set 1 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            77,
+            730,
+            468,
+            744
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider two hosts P and Q connected through a router R. The maximum transfer unit (MTU) value of the link between P and R is 1500 bytes, and between R and Q is 820 bytes.",
+        "bbox": [
+            84,
+            754,
+            875,
+            785
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/93a9ed95f86bf81ba559cf0acba17c5acf798cbf6bfd0c67486d82923d719662.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            733,
+            931,
+            770
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A TCP segment of size 1400 bytes was transferred from P to Q through R, with IP identification value as 0x1234. Assume that the IP header size is 20 bytes. Further, the packet is allowed to be fragmented, i.e., Don't Fragment (DF) flag in the IP header is not set by P.",
+        "bbox": [
+            84,
+            788,
+            924,
+            834
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are correct?",
+        "bbox": [
+            85,
+            837,
+            443,
+            852
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Two fragments are created at $R$ and the IP datagram size carrying the second fragment is 620 bytes.",
+            "B. If the second fragment is lost, R will resend the fragment with the IP identification value 0x1234.",
+            "C. If the second fragment is lost, P is required to resend the whole TCP segment.",
+            "D. TCP destination port can be determined by analysing only the second fragment."
+        ],
+        "bbox": [
+            85,
+            862,
+            853,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            99,
+            186,
+            112
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.35.10 TCP: GATE CSE 2021 | Set 2 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            77,
+            123,
+            470,
+            137
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f7d9d0e8601348bfbffd44514d92c64ec03961c3f1dbacccb777b940187303d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            932,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the three-way handshake mechanism followed during TCP connection establishment between hosts P and Q. Let X and Y be two random 32-bit starting sequence numbers chosen by P and Q respectively. Suppose P sends a TCP connection request message to Q with a TCP segment having SYN bit = 1, SEQ number = X, and ACK bit = 0. Suppose Q accepts the connection request. Which one of the following choices represents the information present in the TCP segment header that is sent by Q to P?",
+        "bbox": [
+            84,
+            147,
+            929,
+            222
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. SYN bit = 1, SEQ number = X + 1, ACK bit = 0, ACK number = Y, FIN bit = 0",
+            "B. SYN bit = 0, SEQ number = X + 1, ACK bit = 0, ACK number = Y, FIN bit = 1",
+            "C. SYN bit = 1, SEQ number = Y, ACK bit = 1, ACK number = X + 1, FIN bit = 0",
+            "D. SYN bit = 1, SEQ number = Y, ACK bit = 1, ACK number = X, FIN bit = 0"
+        ],
+        "bbox": [
+            85,
+            231,
+            751,
+            292
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 computer-networks tcp one-mark",
+        "bbox": [
+            87,
+            315,
+            342,
+            326
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            333,
+            186,
+            347
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.35.11 TCP: GATE CSE 2022 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            77,
+            357,
+            426,
+            371
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/e028f852037a55a6a9f4670a9b309f498ac9185c954a46ad6e7eea1fb33804d8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            359,
+            932,
+            397
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the data transfer using TCP over a 1 Gbps link. Assuming that the maximum segment lifetime (MSL) is set to 60 seconds, the minimum number of bits required for the sequence number field of the TCP header, to prevent the sequence number space from wrapping around during the MSL is",
+        "bbox": [
+            84,
+            381,
+            929,
+            427
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers computer-networks tcp two-marks",
+        "bbox": [
+            87,
+            453,
+            416,
+            463
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            469,
+            186,
+            484
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.35.12 TCP: GATE CSE 2023 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            77,
+            492,
+            426,
+            507
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/ce260bcb22a67d84d7a8f0de497b93a84d7cd2a65f4335dac370d26464668b61.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            496,
+            932,
+            534
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Suppose you are asked to design a new reliable byte-stream transport protocol like TCP. This protocol, named myTCP, runs over a 100 Mbps network with Round Trip Time of 150 milliseconds and the maximum segment lifetime of 2 minutes.",
+        "bbox": [
+            84,
+            517,
+            878,
+            562
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is/are valid lengths of the Sequence Number field in the myTCP header?",
+        "bbox": [
+            84,
+            566,
+            793,
+            581
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 30 bits",
+        "bbox": [
+            87,
+            595,
+            161,
+            608
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 32 bits",
+        "bbox": [
+            285,
+            595,
+            357,
+            608
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 34 bits",
+        "bbox": [
+            478,
+            595,
+            549,
+            608
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 36 bits",
+        "bbox": [
+            673,
+            595,
+            746,
+            608
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 computer-networks tcp multiple-selects two-marks",
+        "bbox": [
+            87,
+            619,
+            406,
+            629
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            635,
+            186,
+            650
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.35.13 TCP: GATE CSE 2024 | Set 1 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            77,
+            659,
+            478,
+            673
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/4748358a998c659dcbd924d1a45c40f93092d971afd4400f55cc79e59ce634b9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            661,
+            932,
+            699
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "TCP client P successfully establishes a connection to TCP server Q. Let $N_{P}$ denote the sequence number in the SYN sent from P to Q. Let $N_{Q}$ denote the acknowledgement number in the SYN ACK from Q to P. Which of the following statements is/are CORRECT?",
+        "bbox": [
+            84,
+            682,
+            878,
+            728
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The sequence number $N_{P}$ is chosen randomly by P",
+            "B. The sequence number $N_{P}$ is always 0 for a new connection",
+            "C. The acknowledgement number $N_{Q}$ is equal to $N_{P}$",
+            "D. The acknowledgement number $N_{Q}$ is equal to $N_{P} + 1$"
+        ],
+        "bbox": [
+            85,
+            738,
+            552,
+            798
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 multiple-selects computer-networks tcp one-mark",
+        "bbox": [
+            87,
+            821,
+            423,
+            832
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            838,
+            186,
+            853
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.35.14 TCP: GATE CSE 2025 | Set 1 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            77,
+            862,
+            478,
+            876
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/57efd55a4e1b4b908e0b11bc75ba9ce7b71dae26e5554f50657a9730c1af83db.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            864,
+            932,
+            902
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the 3-way handshaking protocol for TCP connection establishment. Let the three packets exchanged during the connection establishment be denoted as P1, P2, and P3, in order. Which of the following option(s) is/are TRUE with respect to TCP header flags that are set in the packets?",
+        "bbox": [
+            84,
+            885,
+            878,
+            929
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2021-set1 computer-networks tcp two-marks multiple-selects",
+        "bbox": [
+            87,
+            83,
+            426,
+            93
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. P3: SYN = 1, ACK = 1",
+            "C. P2: SYN = 0, ACK = 1"
+        ],
+        "bbox": [
+            89,
+            64,
+            297,
+            92
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. P2: SYN = 1, ACK = 1",
+            "D. P1: SYN = 1"
+        ],
+        "bbox": [
+            495,
+            64,
+            702,
+            91
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 computer-networks tcp multiple-selects one-mark",
+        "bbox": [
+            89,
+            98,
+            418,
+            106
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            112,
+            186,
+            128
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.35.15 TCP: GATE CSE 2026 | Set 1 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            137,
+            470,
+            150
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "With respect to a TCP connection between a client and a server, which one of the following statements is true?",
+        "bbox": [
+            82,
+            160,
+            878,
+            188
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/f05e0b4364e1420db8ace23e716e0ebc554a147ab63340b48d3563e26612454c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            140,
+            932,
+            178
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The client and server use a two-way handshake mechanism before the start of data transmission",
+            "B. The server cannot initiate closing of the connection before the client initiates closing of the connection",
+            "C. The TCP connection is half-duplex",
+            "D. The client and server can initiate closing of the connection at the same time"
+        ],
+        "bbox": [
+            87,
+            200,
+            850,
+            256
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 computer-networks tcp one-mark",
+        "bbox": [
+            87,
+            281,
+            342,
+            290
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            298,
+            186,
+            312
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.35.16 TCP: GATE IT 2004 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            321,
+            406,
+            334
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is FALSE?",
+        "bbox": [
+            85,
+            344,
+            448,
+            359
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/8570d4593c03ae5be428c982bdc0f2a4626fe988740c998e57540888962ec3bb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            325,
+            932,
+            362
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. TCP guarantees a minimum communication rate",
+            "B. TCP ensures in-order delivery",
+            "C. TCP reacts to congestion by reducing sender window size",
+            "D. TCP employs retransmission to compensate for packet loss"
+        ],
+        "bbox": [
+            87,
+            371,
+            547,
+            427
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 computer-networks tcp normal",
+        "bbox": [
+            87,
+            452,
+            305,
+            461
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            467,
+            186,
+            483
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.35.17 TCP: GATE IT 2004 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            492,
+            406,
+            505
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In TCP, a unique sequence number is assigned to each",
+        "bbox": [
+            85,
+            515,
+            495,
+            530
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/dadef9aeacb761babc999c8b3d9f1ec4cb0725618e6aa594ded9cf7205afdd08.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            495,
+            932,
+            533
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. byte",
+        "bbox": [
+            89,
+            545,
+            144,
+            559
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. word",
+        "bbox": [
+            285,
+            545,
+            344,
+            558
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. segment",
+        "bbox": [
+            480,
+            545,
+            564,
+            559
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. message",
+        "bbox": [
+            675,
+            545,
+            761,
+            559
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 computer-networks tcp easy",
+        "bbox": [
+            87,
+            568,
+            295,
+            579
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            585,
+            186,
+            599
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.35.18 TCP: GATE IT 2007 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            608,
+            406,
+            623
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements about the timeout value used in TCP.",
+        "bbox": [
+            85,
+            631,
+            608,
+            646
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e585132d0d7984932ffc3515bbd1d6ff7f75cf3be1ce366190dec48215cc5b7c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            612,
+            932,
+            649
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. The timeout value is set to the RTT (Round Trip Time) measured during TCP connection establishment for the entire duration of the connection.",
+            "ii. Appropriate RTT estimation algorithm is used to set the timeout value of a TCP connection.",
+            "iii. Timeout value is set to twice the propagation delay from the sender to the receiver."
+        ],
+        "bbox": [
+            90,
+            657,
+            926,
+            713
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following choices hold?",
+        "bbox": [
+            85,
+            724,
+            354,
+            739
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (i) is false, but (ii) and (iii) are true",
+            "C. (i) and (ii) are false, but (iii) is true"
+        ],
+        "bbox": [
+            87,
+            748,
+            352,
+            802
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. (i) and (iii) are false, but (ii) is true",
+            "D. $(i),(ii)$ and $(iii)$ are false"
+        ],
+        "bbox": [
+            495,
+            748,
+            759,
+            792
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 computer-networks tcp normal",
+        "bbox": [
+            87,
+            809,
+            305,
+            818
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            824,
+            186,
+            838
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.35.19 TCP: GATE IT 2007 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            847,
+            406,
+            862
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider a TCP connection in a state where there are no outstanding ACKs. The sender sends two segments back to back. The sequence numbers of the first and second segments are 230 and 290 respectively. The first segment was lost, but the second segment was received correctly by the receiver. Let",
+        "bbox": [
+            84,
+            872,
+            878,
+            916
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/5d3030a05dd38095c3eccb96fd2ed8180923b11411cfd9fdf827b41e29d84e8a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            851,
+            932,
+            888
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "X be",
+        "bbox": [
+            884,
+            900,
+            927,
+            916
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "the amount of data carried in the first segment (in bytes), and Y be the ACK number sent by the receiver. The values of X and Y (in that order) are",
+        "bbox": [
+            84,
+            65,
+            865,
+            95
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 60 and 290",
+        "bbox": [
+            87,
+            108,
+            194,
+            122
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 230 and 291",
+        "bbox": [
+            285,
+            109,
+            396,
+            122
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 60 and 231",
+        "bbox": [
+            478,
+            109,
+            583,
+            122
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 60 and 230",
+        "bbox": [
+            673,
+            109,
+            779,
+            122
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 computer-networks tcp normal",
+        "bbox": [
+            87,
+            133,
+            307,
+            142
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            149,
+            188,
+            163
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.35.20 TCP: GATE IT 2008 | Question: 69",
+        "text_level": 1,
+        "bbox": [
+            78,
+            173,
+            406,
+            187
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The three way handshake for TCP connection establishment is shown below.",
+        "bbox": [
+            85,
+            195,
+            657,
+            212
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/73e81fc4d8cf2762a1cd72d1b65e788f433e3f8943998a62f2fc3f1607337322.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Client[\"Client\"] -->|SYN| Server[\"Server\"]\n  Client -->|SYN+ACK| Server\n  Client -->|ACK| Server\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            374,
+            223,
+            591,
+            368
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/a475c4c2bcf65f3227eab93491a67fa856eb1b8dc6ea26a85a5044ed34ba2378.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            176,
+            931,
+            213
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements are TRUE?",
+        "bbox": [
+            84,
+            381,
+            421,
+            395
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "S1 : Loss of SYN + ACK from the server will not establish a connection",
+            "S2 : Loss of ACK from the client cannot establish the connection",
+            "S3 : The server moves LISTEN → SYN\\_RCVD → SYN\\_SENT → ESTABLISHED in the state machine on no packet loss",
+            "S4 : The server moves LISTEN → SYN\\_RCVD → ESTABLISHED in the state machine on no packet loss"
+        ],
+        "bbox": [
+            84,
+            399,
+            927,
+            486
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $S2$ and $S3$ only",
+        "bbox": [
+            87,
+            500,
+            223,
+            516
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. S1 and S4 only",
+        "bbox": [
+            285,
+            501,
+            418,
+            516
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. S1 and S3 only",
+        "bbox": [
+            478,
+            501,
+            613,
+            516
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. S2 and S4 only",
+        "bbox": [
+            673,
+            501,
+            806,
+            516
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 computer-networks tcp normal",
+        "bbox": [
+            87,
+            524,
+            307,
+            534
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            541,
+            188,
+            555
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.36",
+        "text_level": 1,
+        "bbox": [
+            68,
+            566,
+            105,
+            579
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Token Bucket (2)",
+        "text_level": 1,
+        "bbox": [
+            448,
+            566,
+            589,
+            581
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.36.1 Token Bucket: GATE CSE 2008 | Question: 58",
+        "text_level": 1,
+        "bbox": [
+            77,
+            592,
+            490,
+            606
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/3cd9d711a40f31e6d424b697573dbedd344347335c9e4d0a6be06ae892219de5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            595,
+            931,
+            631
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A computer on a 10Mbps network is regulated by a token bucket. The token bucket is filled at a rate of 2Mbps. It is initially filled to capacity with 16Megabits. What is the maximum duration for which the computer can transmit at the full 10Mbps?",
+        "bbox": [
+            84,
+            616,
+            878,
+            660
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 1.6 seconds",
+        "bbox": [
+            87,
+            673,
+            200,
+            687
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 2 seconds",
+        "bbox": [
+            285,
+            674,
+            379,
+            686
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 5 seconds",
+        "bbox": [
+            478,
+            674,
+            574,
+            686
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 8 seconds",
+        "bbox": [
+            673,
+            674,
+            769,
+            686
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 computer-networks token-bucket",
+        "bbox": [
+            87,
+            697,
+            310,
+            707
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            713,
+            188,
+            728
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.36.2 Token Bucket: GATE CSE 2016 | Set 1 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            77,
+            737,
+            542,
+            751
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/83aa6c5fa6ec6d79e5f05c9cfeb6802c288ac484872759007e3722fbab62e52b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            739,
+            931,
+            777
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "For a host machine that uses the token bucket algorithm for congestion control, the token bucket has a capacity of 1 megabyte and the maximum output rate is 20 megabytes per second. Tokens arrive at a rate to sustain output at a rate of 10 megabytes per second. The token bucket is currently full and the machine needs to send 12 megabytes of data. The minimum time required to transmit the data is \\_\\_\\_\\_ seconds.",
+        "bbox": [
+            84,
+            761,
+            927,
+            819
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 computer-networks token-bucket normal numerical-answers",
+        "bbox": [
+            87,
+            832,
+            463,
+            842
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            847,
+            188,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.37",
+        "text_level": 1,
+        "bbox": [
+            68,
+            872,
+            104,
+            885
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "UDP (4)",
+        "text_level": 1,
+        "bbox": [
+            485,
+            872,
+            551,
+            887
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.37.1 UDP: GATE CSE 2005 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            418,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Packets of the same session may be routed through different paths in:",
+        "bbox": [
+            85,
+            87,
+            600,
+            103
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. TCP, but not UDP",
+            "C. UDP, but not TCP",
+            "gatecse-2005 computer-networks tcp udp easy"
+        ],
+        "bbox": [
+            87,
+            112,
+            332,
+            155
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. TCP and UDP",
+        "bbox": [
+            495,
+            112,
+            618,
+            125
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. Neither TCP nor UDP",
+        "bbox": [
+            495,
+            127,
+            667,
+            138
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            161,
+            188,
+            175
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.37.2 UDP: GATE CSE 2013 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            184,
+            418,
+            198
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The transport layer protocols used for real time multimedia, file transfer, DNS and email, respectively are",
+        "bbox": [
+            85,
+            209,
+            847,
+            225
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. TCP, UDP, UDP and TCP",
+            "C. UDP, TCP, UDP and TCP"
+        ],
+        "bbox": [
+            87,
+            233,
+            332,
+            262
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. UDP, TCP, TCP and UDP",
+        "bbox": [
+            495,
+            233,
+            721,
+            248
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. TCP, UDP, TCP and UDP",
+        "bbox": [
+            495,
+            248,
+            721,
+            262
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 computer-networks tcp udp easy",
+        "bbox": [
+            87,
+            267,
+            332,
+            277
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            283,
+            188,
+            296
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.37.3 UDP: GATE CSE 2017 | Set 2 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            306,
+            470,
+            320
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider socket API on a Linux machine that supports connected UDP sockets. A connected UDP socket is a UDP socket on which connect function has already been called. Which of the following statements is/are CORRECT?",
+        "bbox": [
+            84,
+            330,
+            878,
+            372
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. A connected UDP socket can be used to communicate with multiple peers simultaneously.",
+            "II. A process can successfully call connect function again for an already connected UDP socket."
+        ],
+        "bbox": [
+            90,
+            383,
+            791,
+            412
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            87,
+            426,
+            154,
+            441
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. II only",
+        "bbox": [
+            285,
+            426,
+            356,
+            441
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. Both I and II",
+        "bbox": [
+            478,
+            426,
+            594,
+            440
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. Neither I nor II",
+        "bbox": [
+            673,
+            426,
+            803,
+            440
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 computer-networks udp",
+        "bbox": [
+            87,
+            450,
+            292,
+            460
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            467,
+            188,
+            480
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.37.4 UDP: GATE IT 2006 | Question: 69",
+        "text_level": 1,
+        "bbox": [
+            78,
+            490,
+            400,
+            504
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A program on machine X attempts to open a UDP connection to port 5376 on a machine Y, and a TCP connection to port 8632 on machine Z. However, there are no applications listening at the corresponding ports on Y and Z. An ICMP Port Unreachable error will be generated by",
+        "bbox": [
+            84,
+            513,
+            878,
+            560
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $Y$ but not $Z$",
+        "bbox": [
+            87,
+            572,
+            200,
+            587
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $Z$ but not $Y$",
+        "bbox": [
+            285,
+            572,
+            394,
+            587
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. Neither $Y$ nor $Z$",
+        "bbox": [
+            478,
+            572,
+            618,
+            587
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. Both $Y$ and $Z$",
+        "bbox": [
+            673,
+            572,
+            796,
+            587
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 computer-networks tcp udp normal",
+        "bbox": [
+            87,
+            597,
+            336,
+            606
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            614,
+            188,
+            628
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.38",
+        "text_level": 1,
+        "bbox": [
+            68,
+            638,
+            104,
+            650
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Wrap Around Time (2)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            638,
+            608,
+            653
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.38.1 Wrap Around Time: GATE CSE 2014 | Set 3 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            663,
+            583,
+            678
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Every host in an IPv4 network has a 1-second resolution real-time clock with battery backup. Each host needs to generate up to 1000 unique identifiers per second. Assume that each host has a globally unique IPv4 address. Design a 50-bit globally unique ID for this purpose. After what period (in seconds) will the identifiers generated by a host wrap around?",
+        "bbox": [
+            84,
+            688,
+            929,
+            745
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 computer-networks ip-addressing wrap-around-time numerical-answers normal",
+        "bbox": [
+            87,
+            760,
+            549,
+            770
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            776,
+            188,
+            790
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.38.2 Wrap Around Time: GATE CSE 2018 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            800,
+            529,
+            814
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a long-lived TCP session with an end-to-end bandwidth of 1 Gbps ( $= 10^{9}$ bits-per-second). The session starts with a sequence number of 1234. The minimum time (in seconds, rounded to the closet integer) before this sequence number can be used again is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            825,
+            878,
+            870
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 computer-networks tcp wrap-around-time normal numerical-answers one-mark",
+        "bbox": [
+            87,
+            883,
+            542,
+            893
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            900,
+            188,
+            913
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/3a80c1ed4d5c8d91949c2f6ebfacb16879243d42ddfb0c02a733ba74b1901a29.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/443c1a85e2a702a6f28bb631441d7964e1e211eb96a7f7b4d0d0ebdb0d36ec91.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            187,
+            931,
+            225
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/f104f2f0cfaeb3772ff22d686eeb6c4e3b6ca9b4e403e4e48fa009207785e104.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            309,
+            931,
+            346
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/76408c8d5fd1b40685d1a39854db757a308e6dfbd8a76f98424a30cb9a91fa23.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            492,
+            931,
+            530
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/b83555dc8fefdb96c1f07fc6eafc3ad2599bd9cc79e9f3c93ae6b0455e62ea39.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            667,
+            931,
+            704
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/3f89de4e8388a5e5fae47e09d63fca1f661a4adba87862f43874229f31be2b39.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            802,
+            931,
+            840
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/eb9af59a262e7d4f5c0b94ec55231acd16985d6b9f28986324f47a35c1116317.jpg",
+        "table_caption": [
+            "Answer Keys"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.1.1</td><td>A</td><td>2.1.2</td><td>C</td><td>2.1.3</td><td>C</td><td>2.1.4</td><td>C</td><td>2.1.5</td><td>B</td></tr><tr><td>2.1.6</td><td>6</td><td>2.1.7</td><td>4</td><td>2.1.8</td><td>A;C;D</td><td>2.1.9</td><td>C</td><td>2.1.10</td><td>B</td></tr><tr><td>2.1.11</td><td>C</td><td>2.1.12</td><td>D</td><td>2.1.13</td><td>C</td><td>2.2.1</td><td>B</td><td>2.3.1</td><td>B</td></tr><tr><td>2.3.2</td><td>D</td><td>2.4.1</td><td>B</td><td>2.4.2</td><td>A</td><td>2.4.3</td><td>A</td><td>2.5.1</td><td>B</td></tr><tr><td>2.5.2</td><td>C</td><td>2.5.3</td><td>C</td><td>2.5.4</td><td>D</td><td>2.5.5</td><td>A</td><td>2.6.1</td><td>D</td></tr><tr><td>2.6.2</td><td>200</td><td>2.6.3</td><td>50</td><td>2.6.4</td><td>C</td><td>2.6.5</td><td>A</td><td>2.6.6</td><td>B</td></tr><tr><td>2.7.1</td><td>A</td><td>2.8.1</td><td>A</td><td>2.8.2</td><td>7.07:7.09</td><td>2.8.3</td><td>B</td><td>2.8.4</td><td>B</td></tr><tr><td>2.9.1</td><td>D</td><td>2.9.2</td><td>C</td><td>2.9.3</td><td>1100</td><td>2.9.4</td><td>C</td><td>2.9.5</td><td>44</td></tr><tr><td>2.9.6</td><td>4</td><td>2.9.7</td><td>B</td><td>2.9.8</td><td>4:4</td><td>2.9.9</td><td>B</td><td>2.10.1</td><td>30:30</td></tr><tr><td>2.11.1</td><td>C</td><td>2.11.2</td><td>B</td><td>2.11.3</td><td>A</td><td>2.11.4</td><td>C</td><td>2.11.5</td><td>B;C</td></tr><tr><td>2.11.6</td><td>0.5</td><td>2.11.7</td><td>B</td><td>2.11.8</td><td>A</td><td>2.12.1</td><td>3:4</td><td>2.12.2</td><td>A</td></tr><tr><td>2.12.3</td><td>C</td><td>2.12.4</td><td>A</td><td>2.12.5</td><td>A</td><td>2.12.6</td><td>B</td><td>2.12.7</td><td>C</td></tr><tr><td>2.12.8</td><td>N/A</td><td>2.13.1</td><td>B</td><td>2.13.2</td><td>B</td><td>2.13.3</td><td>D</td><td>2.13.4</td><td>C</td></tr><tr><td>2.13.5</td><td>B</td><td>2.13.6</td><td>500</td><td>2.13.7</td><td>C</td><td>2.14.1</td><td>D</td><td>2.14.2</td><td>B</td></tr><tr><td>2.14.3</td><td>C</td><td>2.14.4</td><td>7:7</td><td>2.14.5</td><td>D</td><td>2.15.1</td><td>N/A</td><td>2.15.2</td><td>A</td></tr><tr><td>2.16.1</td><td>D</td><td>2.16.2</td><td>C</td><td>2.16.3</td><td>9</td><td>2.16.4</td><td>144</td><td>2.16.5</td><td>C;D</td></tr><tr><td>2.16.6</td><td>A</td><td>2.16.7</td><td>D</td><td>2.16.8</td><td>4094</td><td>2.17.1</td><td>C</td><td>2.17.2</td><td>D</td></tr><tr><td>2.17.3</td><td>D</td><td>2.17.4</td><td>A</td><td>2.17.5</td><td>B</td><td>2.17.6</td><td>C</td><td>2.17.7</td><td>13</td></tr><tr><td>2.17.8</td><td>A;C</td><td>2.17.9</td><td>6</td><td>2.17.10</td><td>B;C</td><td>2.17.11</td><td>C;D</td><td>2.17.12</td><td>D</td></tr><tr><td>2.18.1</td><td>A</td><td>2.19.1</td><td>D</td><td>2.19.2</td><td>A</td><td>2.19.3</td><td>26</td><td>2.19.4</td><td>3</td></tr><tr><td>2.19.5</td><td>D</td><td>2.19.6</td><td>D</td><td>2.19.7</td><td>B</td><td>2.20.1</td><td>D</td><td>2.20.2</td><td>12</td></tr><tr><td>2.20.3</td><td>B</td><td>2.20.4</td><td>C</td><td>2.21.1</td><td>N/A</td><td>2.21.2</td><td>D</td><td>2.21.3</td><td>C</td></tr><tr><td>2.21.4</td><td>A</td><td>2.22.1</td><td>D</td><td>2.22.2</td><td>A</td><td>2.22.3</td><td>C</td><td>2.22.4</td><td>B</td></tr><tr><td>2.22.5</td><td>C</td><td>2.22.6</td><td>A;B;C</td><td>2.23.1</td><td>D</td><td>2.23.2</td><td>C</td><td>2.23.3</td><td>B</td></tr><tr><td>2.23.4</td><td>A</td><td>2.23.5</td><td>C</td><td>2.23.6</td><td>C</td><td>2.23.7</td><td>50:52</td><td>2.23.8</td><td>C</td></tr><tr><td>2.23.9</td><td>C</td><td>2.23.10</td><td>D</td><td>2.23.11</td><td>B</td><td>2.24.1</td><td>D</td><td>2.24.2</td><td>D</td></tr><tr><td>2.24.3</td><td>1575</td><td>2.24.4</td><td>B</td><td>2.25.1</td><td>B</td><td>2.26.1</td><td>0.949:0.952</td><td>2.27.1</td><td>130:140</td></tr><tr><td>2.28.1</td><td>B</td><td>2.28.2</td><td>D</td><td>2.28.3</td><td>A</td><td>2.28.4</td><td>1</td><td>2.28.5</td><td>C</td></tr><tr><td>2.28.6</td><td>D</td><td>2.28.7</td><td>A;C</td><td>2.28.8</td><td>B</td><td>2.28.9</td><td>40</td><td>2.28.10</td><td>B</td></tr><tr><td>2.28.11</td><td>C</td><td>2.28.12</td><td>A</td><td>2.28.13</td><td>C</td><td>2.28.14</td><td>D</td><td>2.29.1</td><td>A</td></tr><tr><td>2.30.1</td><td>B</td><td>2.30.2</td><td>B</td><td>2.30.3</td><td>B</td><td>2.30.4</td><td>C</td><td>2.30.5</td><td>C</td></tr><tr><td>2.30.6</td><td>D</td><td>2.30.7</td><td>C</td><td>2.30.8</td><td>5</td><td>2.30.9</td><td>8</td><td>2.30.10</td><td>4</td></tr><tr><td>2.30.11</td><td>B</td><td>2.30.12</td><td>C</td><td>2.30.13</td><td>B</td><td>2.30.14</td><td>B</td><td>2.30.15</td><td>A</td></tr><tr><td>2.30.16</td><td>A</td><td>2.31.1</td><td>0.4404</td><td>2.32.1</td><td>D</td><td>2.32.2</td><td>C</td><td>2.32.3</td><td>C</td></tr><tr><td>2.32.4</td><td>B</td><td>2.33.1</td><td>320</td><td>2.33.2</td><td>2500</td><td>2.33.3</td><td>86.5:89.5</td><td>2.33.4</td><td>B</td></tr><tr><td>2.33.5</td><td>D</td><td>2.33.6</td><td>B</td><td>2.34.1</td><td>D</td><td>2.34.2</td><td>A</td><td>2.34.3</td><td>D</td></tr><tr><td>2.34.4</td><td>C</td><td>2.34.5</td><td>C</td><td>2.34.6</td><td>C</td><td>2.34.7</td><td>D</td><td>2.34.8</td><td>A</td></tr><tr><td>2.34.9</td><td>A</td><td>2.34.10</td><td>158</td><td>2.34.11</td><td>C</td><td>2.34.12</td><td>B</td><td>2.34.13</td><td>B;D</td></tr></table>",
+        "bbox": [
+            60,
+            99,
+            936,
+            915
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/4d33f0c9272c9a9409f27c1ff0cab9bd96e7a218830f698d8bcb3c8fa05acf56.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.34.14</td><td>3</td></tr><tr><td>2.34.19</td><td>D</td></tr><tr><td>2.35.3</td><td>B</td></tr><tr><td>2.35.8</td><td>A;B;C</td></tr><tr><td>2.35.13</td><td>A;D</td></tr><tr><td>2.35.18</td><td>B</td></tr><tr><td>2.37.1</td><td>B</td></tr><tr><td>2.38.2</td><td>34 : 35</td></tr></table>",
+        "bbox": [
+            60,
+            62,
+            206,
+            239
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/7189e80d4e526e0040c8cd01f87f56dd3ac5406fc4b5bc21cbfbd7077c150475.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.34.15</td><td>A</td></tr><tr><td>2.34.20</td><td>C</td></tr><tr><td>2.35.4</td><td>C</td></tr><tr><td>2.35.9</td><td>A;C</td></tr><tr><td>2.35.14</td><td>B;D</td></tr><tr><td>2.35.19</td><td>D</td></tr><tr><td>2.37.2</td><td>C</td></tr></table>",
+        "bbox": [
+            225,
+            62,
+            369,
+            219
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/f1589122941a99204c2364a099c32fef265dd342fc9ca5986a4bbff810097500.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.34.16</td><td>C</td></tr><tr><td>2.34.21</td><td>B</td></tr><tr><td>2.35.5</td><td>A</td></tr><tr><td>2.35.10</td><td>C</td></tr><tr><td>2.35.15</td><td>D</td></tr><tr><td>2.35.20</td><td>B</td></tr><tr><td>2.37.3</td><td>B</td></tr></table>",
+        "bbox": [
+            386,
+            62,
+            551,
+            219
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/3c24cdfc06d46ab810823d6569d40648f94d922e464af4475efa3d3b11612a5f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.34.17</td><td>D</td></tr><tr><td>2.35.1</td><td>A</td></tr><tr><td>2.35.6</td><td>C</td></tr><tr><td>2.35.11</td><td>33</td></tr><tr><td>2.35.16</td><td>A</td></tr><tr><td>2.36.1</td><td>B</td></tr><tr><td>2.37.4</td><td>D</td></tr></table>",
+        "bbox": [
+            569,
+            62,
+            752,
+            219
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/7bb12260d981f96121a40bfee7883cb3875cc2712b4ed6bc8f691c4641c71e67.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.34.18</td><td>C</td></tr><tr><td>2.35.2</td><td>C</td></tr><tr><td>2.35.7</td><td>D</td></tr><tr><td>2.35.12</td><td>B;C;D</td></tr><tr><td>2.35.17</td><td>A</td></tr><tr><td>2.36.2</td><td>1.10:1.19</td></tr><tr><td>2.38.1</td><td>256</td></tr></table>",
+        "bbox": [
+            771,
+            62,
+            936,
+            219
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "ER-model. Relational model: Relational algebra, Tuple calculus, SQL. Integrity constraints, Normal forms. File organization, Indexing (e.g., B and B+ trees). Transactions and concurrency control.",
+        "bbox": [
+            65,
+            98,
+            860,
+            127
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/a4c6ef025dc89eb98ff84d0ece1b102b0d9d2736d9802b93ba6d84f4691a2fab.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>2</td><td>2</td><td>1</td><td>1</td><td>4</td><td>4</td><td>1</td><td>3</td><td>2</td><td>1</td><td>1</td></tr><tr><td>2 Marks Count</td><td>2</td><td>2</td><td>3</td><td>4</td><td>2</td><td>2</td><td>2</td><td>2</td><td>3</td><td>3</td><td>2</td></tr><tr><td>Total Marks</td><td>6</td><td>6</td><td>8</td><td>9</td><td>8</td><td>8</td><td>5</td><td>7</td><td>8</td><td>7</td><td>5</td></tr></table>",
+        "bbox": [
+            70,
+            150,
+            952,
+            212
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the Databases chapter of your GATE Computer Science preparation. This crucial subject forms the backbone of modern data management and is indispensable for any computer science professional. In GATE, Databases typically carries a significant weightage, ranging from 6 to 10 marks, often featuring a mix of conceptual questions, problem-solving scenarios, and direct application of formulas. You can expect questions on topics like relational algebra/calculus, SQL queries, functional dependencies, normal forms, B-trees, and concurrency control protocols. A strong grasp of these fundamentals is vital not just for the exam but also for practical applications in software development and data engineering.",
+        "bbox": [
+            58,
+            222,
+            895,
+            319
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            332,
+            295,
+            349
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Armstrong Axioms",
+        "text_level": 1,
+        "bbox": [
+            60,
+            361,
+            236,
+            378
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Armstrong Axioms are a set of inference rules used to derive all functional dependencies (FDs) implied by a given set of FDs. They are sound (do not generate incorrect FDs) and complete (can generate all correct FDs).",
+        "bbox": [
+            58,
+            390,
+            934,
+            420
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            433,
+            226,
+            447
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Reflexivity: If $B \\subseteq A$ , then $A \\to B$ . (Trivial FD)",
+            "2. Augmentation: If $A \\to B$ , then $AC \\to BC$ (where $C$ is any set of attributes).",
+            "3. Transitivity: If $A \\to B$ and $B \\to C$ , then $A \\to C$ ."
+        ],
+        "bbox": [
+            63,
+            461,
+            662,
+            507
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Derived Rules:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            517,
+            181,
+            532
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "4. Union: If $A \\to B$ and $A \\to C$ , then $A \\to BC$ .",
+            "5. Decomposition: If $A \\to BC$ , then $A \\to B$ and $A \\to C$ .",
+            "6. Pseudotransitivity: If $A \\to B$ and $BC \\to D$ , then $AC \\to D$ ."
+        ],
+        "bbox": [
+            63,
+            543,
+            549,
+            587
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            603,
+            263,
+            617
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Used to find the closure of an attribute set $X^{+}$ .",
+            "- Fundamental for determining candidate keys and normal forms."
+        ],
+        "bbox": [
+            72,
+            633,
+            549,
+            662
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            676,
+            200,
+            690
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing derived rules with basic axioms.",
+            "- Incorrectly applying augmentation or transitivity."
+        ],
+        "bbox": [
+            72,
+            706,
+            435,
+            733
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            748,
+            297,
+            763
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- To find $X^{+}$ : Start with $X$ . Repeatedly add attributes to $X^{+}$ if they are determined by any subset of $X^{+}$ using the given FDs.",
+            "- To check if $A \\to B$ is implied by a set of FDs $F$ : Check if $B \\subseteq A^{+}$ ."
+        ],
+        "bbox": [
+            72,
+            777,
+            910,
+            824
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B Tree",
+        "text_level": 1,
+        "bbox": [
+            60,
+            836,
+            124,
+            850
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A B-tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. It is optimized for systems that read and write large blocks of data, such as disk storage.",
+        "bbox": [
+            58,
+            865,
+            929,
+            908
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            72,
+            70,
+            84,
+            83
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "Databases (302)",
+        "bbox": [
+            408,
+            70,
+            547,
+            85
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            868,
+            70,
+            924,
+            109
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            226,
+            78
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Order $m$ : Each node (except root) has at least $\\lceil m/2 \\rceil$ children and at most $m$ children.",
+            "- Number of keys: A node with $k$ children has $k - 1$ keys.",
+            "- Minimum keys (non-root): $\\lceil m / 2 \\rceil - 1$ .",
+            "• Maximum keys: m - 1.",
+            "- Maximum height $h$ : For $N$ keys and order $m$ , $h \\leq \\log_{[m/2]} \\left( \\frac{N+1}{2} \\right)$ .",
+            "- Minimum height $h$ : For $N$ keys and order $m$ , $h \\geq \\log_m(N + 1)$ ."
+        ],
+        "bbox": [
+            72,
+            93,
+            721,
+            188
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            201,
+            263,
+            217
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- All leaf nodes are at the same level.",
+            "- Keys within a node are sorted.",
+            "- Efficient for disk-based indexing due to high fan-out."
+        ],
+        "bbox": [
+            72,
+            231,
+            467,
+            273
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            288,
+            200,
+            301
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Miscalculating minimum/maximum number of keys or children per node.",
+            "- Incorrectly performing split/merge operations during insertion/deletion."
+        ],
+        "bbox": [
+            72,
+            317,
+            610,
+            345
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            359,
+            295,
+            374
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace insertion/deletion operations step-by-step, paying attention to splits (when a node overflows) and merges (when a node underflows).",
+            "- Calculate disk I/Os by counting the number of nodes visited (including root and leaf) for search, insertion, or deletion."
+        ],
+        "bbox": [
+            72,
+            388,
+            894,
+            442
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Candidate Key",
+        "text_level": 1,
+        "bbox": [
+            60,
+            457,
+            196,
+            473
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A Candidate Key is a minimal Super Key. It is a set of attributes that uniquely identifies each tuple in a relation, and no proper subset of these attributes can uniquely identify tuples.",
+        "bbox": [
+            58,
+            486,
+            919,
+            516
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            529,
+            226,
+            543
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- A set of attributes $K$ is a Candidate Key if:",
+            "1. $K \\rightarrow R$ (where R is all attributes in the relation) - Uniqueness property.",
+            "2. For no proper subset $K' \\subset K$ , $K' \\to R$ - Minimality property."
+        ],
+        "bbox": [
+            72,
+            559,
+            636,
+            604
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            618,
+            263,
+            631
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Every relation must have at least one candidate key.",
+            "- One candidate key is chosen as the Primary Key."
+        ],
+        "bbox": [
+            72,
+            647,
+            468,
+            675
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            690,
+            200,
+            703
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing with Super Key (Super Key doesn't require minimality).",
+            "- Forgetting to check the minimality condition."
+        ],
+        "bbox": [
+            72,
+            718,
+            564,
+            747
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            761,
+            295,
+            776
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Find the closure of various attribute sets. A set $K$ is a super key if $K^{+}$ contains all attributes of the relation.",
+            "- From the super keys, identify those that are minimal (i.e., no subset is also a super key) to find candidate keys."
+        ],
+        "bbox": [
+            72,
+            792,
+            890,
+            821
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Conflict Serializable",
+        "text_level": 1,
+        "bbox": [
+            60,
+            833,
+            245,
+            847
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A schedule is Conflict Serializable if it is conflict equivalent to some serial schedule. Two operations conflict if they are on the same data item, belong to different transactions, and at least one of them is a write operation (W-W, W-R, R-W conflicts).",
+        "bbox": [
+            58,
+            863,
+            919,
+            904
+        ],
+        "page_idx": 11
+    }
+]

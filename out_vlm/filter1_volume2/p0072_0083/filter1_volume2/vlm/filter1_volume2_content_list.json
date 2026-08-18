@@ -1,0 +1,4706 @@
+[
+    {
+        "type": "text",
+        "text": "1.31.6 Minimum Spanning Tree: GATE CSE 2000 | Question: 2.18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            586,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/09351bab94c34a898552fdc8813145214fdccd583095d7c0eb504dade644c988.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be an undirected connected graph with distinct edge weights. Let $e_{max}$ be the edge with maximum weight and $e_{min}$ the edge with minimum weight. Which of the following statements is false?",
+        "bbox": [
+            84,
+            89,
+            878,
+            119
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Every minimum spanning tree of $G$ must contain $e_{min}$",
+            "B. If $e_{max}$ is in a minimum spanning tree, then its removal must disconnect $G$",
+            "C. No minimum spanning tree contains $e_{max}$",
+            "D. G has a unique minimum spanning tree"
+        ],
+        "bbox": [
+            87,
+            129,
+            653,
+            188
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            213,
+            359,
+            223
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            230,
+            188,
+            244
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.31.7 Minimum Spanning Tree: GATE CSE 2001 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            252,
+            574,
+            268
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a weighted undirected graph with vertex set $V = \\{n1, n2, n3, n4, n5, n6\\}$ and edge set $E = \\{(n1, n2, 2), (n1, n3, 8), (n1, n6, 3), (n2, n4, 4), (n2, n5, 12), (n3, n4, 7), (n4, n5, 9), (n4, n6, 4)\\}$ .",
+        "bbox": [
+            84,
+            277,
+            873,
+            307
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca927bf3cc068c5783f015a2a3afa10ce4f1cc7e3c587511a49ba4da1018d623.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            256,
+            931,
+            293
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The third value in each tuple represents the weight of the edge specified in the tuple.",
+        "bbox": [
+            85,
+            309,
+            702,
+            324
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. List the edges of a minimum spanning tree of the graph.",
+            "B. How many distinct minimum spanning trees does this graph have?",
+            "C. Is the minimum among the edge weights of a minimum spanning tree unique over all possible minimum spanning trees of a graph?",
+            "D. Is the maximum among the edge weights of a minimum spanning tree unique over all possible minimum spanning tree of a graph?"
+        ],
+        "bbox": [
+            85,
+            334,
+            927,
+            419
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 algorithms minimum-spanning-tree normal descriptive",
+        "bbox": [
+            87,
+            444,
+            418,
+            454
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            460,
+            188,
+            473
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.31.8 Minimum Spanning Tree: GATE CSE 2003 | Question: 68",
+        "text_level": 1,
+        "bbox": [
+            78,
+            484,
+            574,
+            498
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "What is the weight of a minimum spanning tree of the following graph?",
+        "bbox": [
+            84,
+            507,
+            601,
+            523
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/00b8d05b804b49c4ac1fc677b41fd112a9970bee0beb1232232b0e50e8ae7a38.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            486,
+            931,
+            524
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/31b02a219983b8d30aa34b84c92c0ff8f9aa7fff93d9bccd07d6826f08c455ea.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] -->|6| b[\"b\"]\n  a -->|1| c[\"c\"]\n  a -->|2| d[\"d\"]\n  b -->|2| g[\"g\"]\n  c -->|3| d\n  d -->|15| h[\"h\"]\n  g -->|19| j[\"j\"]\n  h -->|4| i[\"i\"]\n  f -->|9| i\n  i -->|5| j\n  e[\"e\"] -->|8| d\n  e -->|11| f\n  e -->|2| i\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            324,
+            533,
+            640,
+            681
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 29",
+        "bbox": [
+            89,
+            703,
+            134,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 31",
+        "bbox": [
+            285,
+            703,
+            327,
+            716
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 38",
+        "bbox": [
+            480,
+            703,
+            522,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 41",
+        "bbox": [
+            673,
+            703,
+            717,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            726,
+            359,
+            737
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            743,
+            188,
+            757
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.31.9 Minimum Spanning Tree: GATE CSE 2005 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            767,
+            564,
+            781
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "An undirected graph $G$ has $n$ nodes. its adjacency matrix is given by an $n \\times n$ square matrix whose (i) diagonal elements are 0's and (ii) non-diagonal elements are 1's. Which one of the following is TRUE?",
+        "bbox": [
+            84,
+            790,
+            878,
+            820
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ecb42dfc51632442f08dded4a6370eb3958951e12c7487c214810a5863c80db.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            769,
+            931,
+            806
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Graph G has no minimum spanning tree (MST)",
+            "B. Graph $G$ has unique MST of cost $n - 1$",
+            "C. Graph $G$ has multiple distinct MSTs, each of cost $n - 1$",
+            "D. Graph G has multiple spanning trees of different costs"
+        ],
+        "bbox": [
+            85,
+            831,
+            519,
+            904
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.31.10 Minimum Spanning Tree: GATE CSE 2006 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            581,
+            125
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider a weighted complete graph $G$ on the vertex set $\\{v_1, v_2, \\ldots, v_n\\}$ such that the weight of the edge $(v_i, v_j)$ is $2|i - j|$ . The weight of a minimum spanning tree of $G$ is:",
+        "bbox": [
+            84,
+            134,
+            878,
+            167
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/46eccb2090c077dcf9b3717449e49ce47211d28175ef0b047498d4319c8bdc8e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            931,
+            150
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. n - 1",
+        "bbox": [
+            89,
+            179,
+            157,
+            193
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $2n - 2$",
+        "bbox": [
+            285,
+            179,
+            359,
+            193
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $\\binom{n}{2}$",
+        "bbox": [
+            478,
+            176,
+            544,
+            209
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $n^{2}$",
+        "bbox": [
+            673,
+            178,
+            717,
+            192
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            212,
+            359,
+            222
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            228,
+            186,
+            242
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.31.11 Minimum Spanning Tree: GATE CSE 2006 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            252,
+            583,
+            267
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following graph:",
+        "bbox": [
+            85,
+            276,
+            304,
+            290
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/bb7da40d241094719176b289f906d5a01dd665399e7dc27ff5b885940e9ea812.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] -->|1| b[\"b\"]\n  b -->|4| d[\"d\"]\n  d -->|1| f[\"f\"]\n  c[\"c\"] -->|3| a\n  c -->|2| d\n  d -->|3| e[\"e\"]\n  e -->|4| c\n  e -->|5| f\n  f -->|7| a\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            300,
+            307,
+            434
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/97163fa1855068b60fd26e6eef78bf578af1c42f2319ee6bce8a2df45c20e2c1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            255,
+            931,
+            292
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following cannot be the sequence of edges added, in that order, to a minimum spanning tree using Kruskal's algorithm?",
+        "bbox": [
+            84,
+            448,
+            929,
+            478
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $(a - b),(d - f),(b - f),(d - c),(d - e)$",
+        "bbox": [
+            87,
+            486,
+            411,
+            503
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $(a - b),(d - f),(d - c),(b - f),(d - e)$",
+        "bbox": [
+            495,
+            486,
+            816,
+            503
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $(d - f),(a - b),(d - c),(b - f),(d - e)$",
+        "bbox": [
+            90,
+            503,
+            410,
+            517
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $(d - f),(a - b),(b - f),(d - e),(d - c)$",
+        "bbox": [
+            497,
+            503,
+            816,
+            517
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 algorithms graph-algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            522,
+            443,
+            530
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            536,
+            186,
+            551
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.31.12 Minimum Spanning Tree: GATE CSE 2007 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            561,
+            583,
+            574
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let $w$ be the minimum weight among all edge weights in an undirected connected graph. Let $e$ be a specific edge of weight $w$ . Which of the following is FALSE?",
+        "bbox": [
+            84,
+            585,
+            878,
+            612
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2c25bd57ed08bce8f4b14b1b71c57a9f0d6badc078ac9b056c632ec827007879.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            564,
+            931,
+            600
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There is a minimum spanning tree containing e",
+            "C. Every minimum spanning tree has an edge of weight w",
+            "D. $e$ is present in every minimum spanning tree"
+        ],
+        "bbox": [
+            87,
+            625,
+            515,
+            707
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. If $e$ is not in a minimum spanning tree $T$ , then in the cycle formed by adding $e$ to $T$ , all edges have the same weight.",
+        "bbox": [
+            87,
+            642,
+            926,
+            671
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            733,
+            359,
+            743
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            750,
+            186,
+            763
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.31.13 Minimum Spanning Tree: GATE CSE 2009 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            773,
+            583,
+            788
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following graph:",
+        "bbox": [
+            85,
+            796,
+            302,
+            812
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/d3da73bc1f839b9523b719fa17e1fd520762b7fec0236dbafb8e35ef18e12bc7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            775,
+            931,
+            813
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2005 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            89,
+            71,
+            359,
+            80
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/41ec64ad0cfa39ee2ed0811d9585eefacbd3642ec152dfd84333499632f0abde.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] -->|5| b[\"b\"]\n  b -->|2| e[\"e\"]\n  b -->|6| d[\"d\"]\n  d -->|6| e\n  d -->|5| c[\"c\"]\n  c -->|3| a\n  c -->|6| f[\"f\"]\n  f -->|3| e\n  f -->|6| d\n  e -->|5| g[\"g\"]\n  e -->|4| f\n  e -->|6| d\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            67,
+            389,
+            187
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is NOT the sequence of edges added to the minimum spanning tree using Kruskal's algorithm?",
+        "bbox": [
+            84,
+            197,
+            927,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (b, e) (e, f) (a, c) (b, c) (f, g) (c, d)",
+            "B. (b, e) (e, f) (a, c) (f, g) (b, c) (c, d)",
+            "C. (b, e) (a, c) (e, f) (b, c) (f, g) (c, d)",
+            "D. (b, e) (e, f) (b, c) (a, c) (f, g) (c, d)"
+        ],
+        "bbox": [
+            87,
+            235,
+            386,
+            313
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            336,
+            359,
+            346
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            353,
+            181,
+            366
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.31.14 Minimum Spanning Tree: GATE CSE 2010 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            376,
+            583,
+            391
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a complete undirected graph with vertex set $\\{0,1,2,3,4\\}$ . Entry $W_{ij}$ in the matrix W below is the weight of the edge $\\{i,j\\}$",
+        "bbox": [
+            82,
+            400,
+            878,
+            433
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ad8c7cbcf36121517d53af406c37bd502f62229814ebbf060b7b51cac164e6d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            378,
+            931,
+            416
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nW = \\left( \\begin{array}{c c c c c} 0 & 1 & 8 & 1 & 4 \\\\ 1 & 0 & 1 2 & 4 & 9 \\\\ 8 & 1 2 & 0 & 7 & 3 \\\\ 1 & 4 & 7 & 0 & 2 \\\\ 4 & 9 & 3 & 2 & 0 \\end{array} \\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            388,
+            441,
+            623,
+            538
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What is the minimum possible weight of a spanning tree T in this graph such that vertex 0 is a leaf node in the tree T?",
+        "bbox": [
+            84,
+            545,
+            924,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 7",
+        "bbox": [
+            87,
+            587,
+            126,
+            602
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 8",
+        "bbox": [
+            285,
+            587,
+            319,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 9",
+        "bbox": [
+            480,
+            587,
+            515,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 10",
+        "bbox": [
+            673,
+            587,
+            719,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            612,
+            359,
+            623
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            629,
+            188,
+            643
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.31.15 Minimum Spanning Tree: GATE CSE 2010 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            652,
+            581,
+            667
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a complete undirected graph with vertex set $\\{0,1,2,3,4\\}$ . Entry $W_{ij}$ in the matrix W below is the weight of the edge $\\{i,j\\}$",
+        "bbox": [
+            82,
+            676,
+            878,
+            709
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/605faa85f3b59119d53aad3bd2557e89134ee185c46a845271c824074ab7db81.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            655,
+            931,
+            692
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nW = \\left( \\begin{array}{c c c c c} 0 & 1 & 8 & 1 & 4 \\\\ 1 & 0 & 1 2 & 4 & 9 \\\\ 8 & 1 2 & 0 & 7 & 3 \\\\ 1 & 4 & 7 & 0 & 2 \\\\ 4 & 9 & 3 & 2 & 0 \\end{array} \\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            388,
+            717,
+            621,
+            814
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What is the minimum possible weight of a path P from vertex 1 to vertex 2 in this graph such that P contains at most 3 edges?",
+        "bbox": [
+            82,
+            821,
+            929,
+            853
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 7",
+        "bbox": [
+            87,
+            864,
+            126,
+            878
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 8",
+        "bbox": [
+            285,
+            865,
+            319,
+            878
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 9",
+        "bbox": [
+            480,
+            865,
+            515,
+            878
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 10",
+        "bbox": [
+            673,
+            865,
+            719,
+            878
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 normal algorithms minimum-spanning-tree",
+        "bbox": [
+            87,
+            889,
+            359,
+            899
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            904,
+            188,
+            920
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.31.16 Minimum Spanning Tree: GATE CSE 2011 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            583,
+            80
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/3b1c6913412384b2f17a21110350ebc814d7f03ccf20f30f6e49220039551bb6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "An undirected graph $G(V, E)$ contains $n$ ( $n > 2$ ) nodes named $v_1, v_2, \\ldots, v_n$ . Two nodes $v_i, v_j$ are connected if and only if $0 < |i - j| \\leq 2$ . Each edge $(v_i, v_j)$ is assigned a weight $i + j$ . A sample graph with $n = 4$ is shown below.",
+        "bbox": [
+            84,
+            89,
+            878,
+            134
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a96db91ef7cf5d928b48123f82a78eaaea20a2c925a64458cd1a60ac6dae3f3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  V1[\"V1\"] -->|3| V2[\"V2\"]\n  V1 -->|4| V3[\"V3\"]\n  V2 -->|5| V3\n  V2 -->|6| V4[\"V4\"]\n  V3 -->|7| V4\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            143,
+            231,
+            218
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "What will be the cost of the minimum spanning tree (MST) of such a graph with n nodes?",
+        "bbox": [
+            85,
+            228,
+            734,
+            244
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{1}{12} (11n^2 - 5n)$",
+        "bbox": [
+            87,
+            255,
+            223,
+            274
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $n^2 - n + 1$",
+        "bbox": [
+            285,
+            256,
+            391,
+            271
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $6n - 11$",
+        "bbox": [
+            480,
+            256,
+            564,
+            270
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $2n+1$",
+        "bbox": [
+            673,
+            257,
+            749,
+            270
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 algorithms graph-algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            281,
+            443,
+            290
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            296,
+            186,
+            311
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.31.17 Minimum Spanning Tree: GATE CSE 2011 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            320,
+            583,
+            334
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "An undirected graph $G(V, E)$ contains $n$ ( $n > 2$ ) nodes named $v_1, v_2, \\ldots, v_n$ . Two nodes $v_i, v_j$ are connected if and only if $0 < |i - j| \\leq 2$ . Each edge $(v_i, v_j)$ is assigned a weight $i + j$ . A sample graph with $n = 4$ is shown below.",
+        "bbox": [
+            84,
+            344,
+            878,
+            389
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/555f52a93308f02e6ef1fd679d38263482d08f53c863b9fc1f8276859c2051ce.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            323,
+            931,
+            361
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/f2286aecb97e16fe6cedf4b554e431b8564c61763acd7b82c657e2f08b48f77b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            92,
+            397,
+            211,
+            461
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The length of the path from $v_{5}$ to $v_{6}$ in the MST of previous question with n = 10 is",
+        "bbox": [
+            85,
+            472,
+            695,
+            488
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 11",
+        "bbox": [
+            89,
+            501,
+            134,
+            514
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 25",
+        "bbox": [
+            285,
+            501,
+            329,
+            514
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 31",
+        "bbox": [
+            480,
+            501,
+            522,
+            514
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 41",
+        "bbox": [
+            673,
+            501,
+            717,
+            514
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 algorithms graph-algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            524,
+            443,
+            535
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            541,
+            186,
+            555
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.31.18 Minimum Spanning Tree: GATE CSE 2012 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            565,
+            583,
+            580
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a weighted graph with edge weights greater than one and $G'$ be the graph constructed by squaring the weights of edges in $G$ . Let $T$ and $T'$ be the minimum spanning trees of $G$ and $G'$ , respectively, with total weights $t$ and $t'$ . Which of the following statements is TRUE?",
+        "bbox": [
+            84,
+            589,
+            875,
+            636
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $T' = T$ with total weight $t' = t^{2}$",
+        "bbox": [
+            87,
+            646,
+            332,
+            660
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $T^{\\prime} = T$ with total weight $t^{\\prime} < t^{2}$",
+        "bbox": [
+            495,
+            646,
+            737,
+            660
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $T' \\neq T$ but total weight $t' = t^{2}$",
+        "bbox": [
+            89,
+            661,
+            326,
+            676
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            495,
+            661,
+            645,
+            673
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 algorithms minimum-spanning-tree normal marks-to-all",
+        "bbox": [
+            87,
+            681,
+            423,
+            691
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            697,
+            186,
+            711
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.31.19 Minimum Spanning Tree: GATE CSE 2014 | Set 2 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            720,
+            636,
+            735
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The number of distinct minimum spanning trees for the weighted graph below is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            744,
+            719,
+            760
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/f40f8ddd0158181f9de53e0eeb823acb92d853f0c8c1d3ca0978ef8a843fde51.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Node 1\"] -->|2| B[\"Node 2\"]\n  B -->|1| C[\"Node 3\"]\n  C -->|2| D[\"Node 4\"]\n  D -->|1| E[\"Node 5\"]\n  E -->|1| F[\"Node 6\"]\n  F -->|2| G[\"Node 7\"]\n  G -->|2| H[\"Node 8\"]\n  H -->|1| I[\"Node 9\"]\n  I -->|2| J[\"Node 10\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            768,
+            403,
+            866
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 algorithms minimum-spanning-tree numerical-answers normal",
+        "bbox": [
+            87,
+            891,
+            470,
+            901
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            907,
+            186,
+            921
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/e148aa2a6f2ae85927e08d979dc99c79dc199bbe9f023c95167f8f6836106a87.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            568,
+            931,
+            605
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/dcd6ecf01b49e7af8da4d95683bc8bbd08d6afb00c45d2f625c09fdbf89d87a2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            723,
+            931,
+            761
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.31.20 Minimum Spanning Tree: GATE CSE 2015 | Set 1 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            635,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3f4fa64700cd9fc6baa79d5ea5a499cf4d54df3721125f5febbca7fd954929d8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The graph shown below has 8 edges with distinct integer edge weights. The minimum spanning tree (MST) is of weight 36 and contains the edges: $\\{(A,C),(B,C),(B,E),(E,F),(D,F)\\}$ . The edge weights of only those edges which are in the MST are given in the figure shown below. The minimum possible sum of weights of all 8 edges of this graph is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            90,
+            927,
+            149
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/dec4a3d1550192635d752c0308af1f894ce9d5e0191828a9ca0407763926ac75.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"A\"] -->|9| C[\"C\"]\n  B[\"B\"] -->|15| E[\"E\"]\n  C -->|2| B\n  C -->|2| D[\"D\"]\n  E -->|4| F[\"F\"]\n  D -->|6| F\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            94,
+            156,
+            326,
+            263
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 algorithms minimum-spanning-tree normal numerical-answers",
+        "bbox": [
+            87,
+            287,
+            470,
+            296
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            302,
+            186,
+            317
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.31.21 Minimum Spanning Tree: GATE CSE 2015 | Set 3 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            78,
+            327,
+            635,
+            340
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e4dea017770dffa830e8304ad6db0c0daff01a614dbd48bc7bd7317f922de3b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            328,
+            931,
+            366
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a connected undirected graph of 100 vertices and 300 edges. The weight of a minimum spanning tree of $G$ is 500. When the weight of each edge of $G$ is increased by five, the weight of a minimum spanning tree becomes \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            350,
+            878,
+            395
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 algorithms minimum-spanning-tree easy numerical-answers",
+        "bbox": [
+            87,
+            408,
+            458,
+            418
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            425,
+            186,
+            439
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.31.22 Minimum Spanning Tree: GATE CSE 2016 | Set 1 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            448,
+            635,
+            463
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/ba0cf37bc3721029fdf8ba8486b6881205e4f629622deb0cb0ddc9a1eb194dbb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            451,
+            931,
+            489
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let G be a weighted connected undirected graph with distinct positive edge weights. If every edge weight is increased by the same value, then which of the following statements is/are TRUE?",
+        "bbox": [
+            84,
+            472,
+            878,
+            502
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $P$ : Minimum spanning tree of $G$ does not change.",
+            "- $Q$ : Shortest path between any pair of vertices does not change."
+        ],
+        "bbox": [
+            97,
+            511,
+            576,
+            543
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. P only",
+        "bbox": [
+            89,
+            557,
+            161,
+            571
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $Q$ only",
+        "bbox": [
+            285,
+            557,
+            356,
+            572
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. Neither $P$ nor $Q$",
+        "bbox": [
+            480,
+            557,
+            616,
+            572
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. Both $P$ and $Q$",
+        "bbox": [
+            673,
+            557,
+            796,
+            572
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            581,
+            379,
+            591
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            597,
+            186,
+            611
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.31.23 Minimum Spanning Tree: GATE CSE 2016 | Set 1 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            619,
+            635,
+            635
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/54b517addaf8b8b9d0ec26ed25de14bcb75bb4a7b5ec5cc5c02a674bceee238f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            624,
+            931,
+            661
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a complete undirected graph on 4 vertices, having 6 edges with weights being 1, 2, 3, 4, 5, and 6. The maximum possible weight that a minimum weight spanning tree of $G$ can have is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            644,
+            878,
+            676
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 algorithms minimum-spanning-tree normal numerical-answers",
+        "bbox": [
+            87,
+            688,
+            470,
+            699
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            705,
+            186,
+            719
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.31.24 Minimum Spanning Tree: GATE CSE 2016 | Set 1 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            78,
+            728,
+            635,
+            743
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/e02f35d78930d9d397424fe87bbb930b94a8389e7f878baac0ef4b0d791c501a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            731,
+            931,
+            769
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$G = (V, E)$ is an undirected simple graph in which each edge has a distinct weight, and $e$ is a particular edge of $G$ . Which of the following statements about the minimum spanning trees ( $MSTs$ ) of $G$ is/are TRUE?",
+        "bbox": [
+            84,
+            752,
+            878,
+            796
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. If $e$ is the lightest edge of some cycle in $G$ , then every MST of $G$ includes $e$ .",
+            "II. If $e$ is the heaviest edge of some cycle in $G$ , then every MST of $G$ excludes $e$ ."
+        ],
+        "bbox": [
+            90,
+            808,
+            678,
+            839
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. I only.",
+        "bbox": [
+            87,
+            853,
+            156,
+            868
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. II only.",
+        "bbox": [
+            285,
+            853,
+            354,
+            868
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. Both I and II.",
+        "bbox": [
+            480,
+            853,
+            591,
+            866
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. Neither I nor II.",
+        "bbox": [
+            673,
+            853,
+            800,
+            866
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            877,
+            379,
+            887
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            893,
+            186,
+            908
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following undirected graph G:",
+        "bbox": [
+            85,
+            89,
+            403,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f1253a5f04b0a774c137924f0d383a65f22d3b4a57ffda688016cd457fd25e4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"Node 1\"] -->|4| B[\"Node 2\"]\n  B -->|1| C[\"Node 3\"]\n  C -->|3| D[\"Node 4\"]\n  D -->|4| C\n  D -->|5| E[\"Node 5\"]\n  E -->|x| A\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            111,
+            262,
+            226
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Choose a value for $x$ that will maximize the number of minimum weight spanning trees (MWSTs) of $G$ . The number of MWSTs of $G$ for this value of $x$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            241,
+            929,
+            271
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 algorithms graph-algorithms minimum-spanning-tree numerical-answers two-marks",
+        "bbox": [
+            87,
+            289,
+            547,
+            299
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            305,
+            189,
+            320
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.31.26 Minimum Spanning Tree: GATE CSE 2020 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            328,
+            581,
+            344
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6ae554b1617859607482d1c7199ddd1c69e27456e16d172eb2b8227ef2bc560e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            332,
+            932,
+            369
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $G = (V, E)$ be a weighted undirected graph and let $T$ be a Minimum Spanning Tree (MST) of $G$ maintained using adjacency lists. Suppose a new weighed edge $(u, v) \\in V \\times V$ is added to $G$ . The worst case time complexity of determining if $T$ is still an MST of the resultant graph is",
+        "bbox": [
+            84,
+            353,
+            878,
+            399
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta (|E| + |V|)$ C. $\\Theta (E|\\log |V|)$",
+        "bbox": [
+            87,
+            407,
+            233,
+            439
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta (|E||V|)$ D. $\\Theta (|V|)$",
+        "bbox": [
+            495,
+            407,
+            615,
+            439
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 algorithms minimum-spanning-tree graph-algorithms two-marks",
+        "bbox": [
+            87,
+            442,
+            458,
+            451
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            457,
+            189,
+            472
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.31.27 Minimum Spanning Tree: GATE CSE 2020 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            480,
+            584,
+            496
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/09e947ae2f0937622246a052dc7d317fa953646330f70bb4a21d7d1e8cbcc3dc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            484,
+            932,
+            522
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider a graph $G = (V, E)$ , where $V = \\{v_1, v_2, \\ldots, v_{100}\\}$ , $E = \\{(v_i, v_j) \\mid 1 \\leq i < j \\leq 100\\}$ , and weight of the edge $(v_i, v_j)$ is $|i - j|$ . The weight of minimum spanning tree of $G$ is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            504,
+            878,
+            539
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers algorithms graph-algorithms two-marks minimum-spanning-tree",
+        "bbox": [
+            87,
+            549,
+            547,
+            560
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            566,
+            189,
+            581
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.31.28 Minimum Spanning Tree: GATE CSE 2021 | Set 1 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            590,
+            636,
+            605
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/cbf4be8b0b397f6d7b59986c10f674b1086da12c5fa9fd02af601cb0345bd41e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            593,
+            932,
+            631
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following undirected graph with edge weights as shown:",
+        "bbox": [
+            85,
+            614,
+            594,
+            629
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "chart",
+        "img_path": "images/16682d0fd682694654e6798318ea34d537d342fef3aacc15321e411e943837af.jpg",
+        "content": "| Row | Column 1 | Column 2 | Column 3 | Column 4 |\n| --- | --- | --- | --- | --- |\n| 1 | 0.9 | 0.1 | 0.1 | 0.9 |\n| 2 | 0.9 | 0.1 | 0.9 | 0.9 |\n| 3 | 0.1 | 0.1 | 0.1 | 0.9 |\n| 4 | 0.1 | 0.1 | 0.1 | 0.1 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "wireframe",
+        "bbox": [
+            376,
+            636,
+            594,
+            742
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The number of minimum-weight spanning trees of the graph is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            754,
+            650,
+            769
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 algorithms graph-algorithms minimum-spanning-tree numerical-answers one-mark",
+        "bbox": [
+            87,
+            786,
+            564,
+            796
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            802,
+            189,
+            817
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.31.29 Minimum Spanning Tree: GATE CSE 2021 | Set 2 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            826,
+            625,
+            840
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/20079377ee5aece0b759e047933ef821d1c52d0a110b16cb6fddeb62e858b55a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            828,
+            932,
+            866
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a connected undirected weighted graph. Consider the following two statements.",
+        "bbox": [
+            85,
+            850,
+            736,
+            866
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S_{1}$ : There exists a minimum weight edge in $G$ which is present in every minimum spanning tree of $G$ .",
+            "- $S_{2}$ : If every edge in $G$ has distinct weight, then $G$ has a unique minimum spanning tree."
+        ],
+        "bbox": [
+            97,
+            876,
+            845,
+            907
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "1.31.25 Minimum Spanning Tree: GATE CSE 2018 | Question: 47",
+        "bbox": [
+            78,
+            65,
+            583,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is correct?",
+        "bbox": [
+            85,
+            64,
+            421,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both $S_{1}$ and $S_{2}$ are true",
+            "C. $S_{1}$ is false and $S_{2}$ is true"
+        ],
+        "bbox": [
+            87,
+            89,
+            282,
+            117
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $S_{1}$ is true and $S_{2}$ is false",
+            "D. Both $S_{1}$ and $S_{2}$ are false"
+        ],
+        "bbox": [
+            495,
+            89,
+            689,
+            117
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 algorithms graph-algorithms minimum-spanning-tree one-mark",
+        "bbox": [
+            87,
+            122,
+            473,
+            131
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            138,
+            181,
+            152
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.31.30 Minimum Spanning Tree: GATE CSE 2022 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            161,
+            584,
+            176
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a simple undirected weighted graph G, all of whose edge weights are distinct. Which of the following statements about the minimum spanning trees of G is/are TRUE?",
+        "bbox": [
+            84,
+            185,
+            878,
+            216
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/ebb5292339609723b5e77d82b709408a5491dcbfca97c82a62edbb3dfa6ffe69.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            163,
+            932,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The edge with the second smallest weight is always part of any minimum spanning tree of G.",
+            "B. One or both of the edges with the third smallest and the fourth smallest weights are part of any minimum spanning tree of $G$ .",
+            "C. Suppose $S \\subseteq V$ be such that $S \\neq \\phi$ and $S \\neq V$ . Consider the edge with the minimum weight such that one of its vertices is in $S$ and the other in $V \\setminus S$ . Such an edge will always be part of any minimum spanning tree of $G$ .",
+            "D. G can have multiple minimum spanning trees."
+        ],
+        "bbox": [
+            85,
+            226,
+            929,
+            315
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 algorithms minimum-spanning-tree multiple-selects two-marks",
+        "bbox": [
+            87,
+            340,
+            453,
+            351
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            356,
+            181,
+            370
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.31.31 Minimum Spanning Tree: GATE CSE 2022 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            380,
+            584,
+            395
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let $G(V,E)$ be a directed graph, where $V = \\{1,2,3,4,5\\}$ is the set of vertices and $E$ is the set of directed edges, as defined by the following adjacency matrix $A$ .",
+        "bbox": [
+            84,
+            403,
+            878,
+            435
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/22355d8c791010512637e49b4553200b866ee696d577a4c98d8a2132425e589e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            382,
+            932,
+            421
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA [ i ] [ j ] = \\left\\{ \\begin{array}{l l} 1, & 1 \\leq j \\leq i \\leq 5 \\\\ 0, & \\text {otherwise} \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            383,
+            445,
+            628,
+            484
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$A[i][j]=1$ indicates a directed edge from node i to node j. A directed spanning tree of G, rooted at $r\\in V$ , is defined as a subgraph T of G such that the undirected version of T is a tree, and T contains a directed path from r to every other vertex in V. The number of such directed spanning trees rooted at vertex 5 is",
+        "bbox": [
+            84,
+            491,
+            929,
+            538
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers algorithms minimum-spanning-tree two-marks",
+        "bbox": [
+            87,
+            564,
+            463,
+            574
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            579,
+            188,
+            593
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.31.32 Minimum Spanning Tree: GATE CSE 2024 | Set 2 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            603,
+            636,
+            619
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The number of distinct minimum-weight spanning trees of the following graph is",
+        "bbox": [
+            85,
+            627,
+            665,
+            643
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/96d27d73bab333f82b235a889f38e14719e75a76a15241a81ee0959b0ad192a8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            606,
+            932,
+            644
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/8e0bf6063e3b902cd76c2286b0f67cde7ce517b4b9dad2535f17171483ec1af9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] -->|1| b[\"b\"]\n  a -->|1| f[\"f\"]\n  b -->|2| g[\"g\"]\n  b -->|3| c[\"c\"]\n  f -->|2| g\n  f -->|3| e[\"e\"]\n  g -->|2| c\n  g -->|2| d[\"d\"]\n  c -->|1| d\n  e -->|1| d\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            650,
+            403,
+            749
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 numerical-answers algorithms minimum-spanning-tree two-marks",
+        "bbox": [
+            87,
+            773,
+            484,
+            783
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            789,
+            181,
+            802
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.31.33 Minimum Spanning Tree: GATE CSE 2025 | Set 1 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            812,
+            636,
+            828
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The maximum value of x such that the edge between the nodes B and C is included in every minimum spanning tree of the given graph is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            84,
+            836,
+            878,
+            866
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/47e76397eaab18ba11031973b29ac0da3166ae1b62b1a6578c52b017837bf90d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            815,
+            932,
+            853
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/5082a311d1f06f74de936cdead53bc5485bde283fa6321a290d607374234c339.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"A\"] -->|7| B[\"B\"]\n  A -->|6| D[\"D\"]\n  B -->|1| D\n  B -->|3| D\n  C[\"C\"] -->|8| D\n  C -->|x| B\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            386,
+            68,
+            631,
+            209
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 algorithms minimum-spanning-tree numerical-answers easy two-marks",
+        "bbox": [
+            87,
+            233,
+            515,
+            244
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            249,
+            188,
+            264
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.31.34 Minimum Spanning Tree: GATE CSE 2026 | Set 1 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            273,
+            636,
+            288
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $G(V, E)$ be a simple, undirected, edge-weighted graph with unique edge weights. Which of the following statements about the minimum spanning trees (MST) of $G$ is/are true?",
+        "bbox": [
+            84,
+            296,
+            761,
+            328
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. In every cycle C of G, the edge with the largest weight in C is not in any MST",
+            "B. In every cycle $C$ of $G$ , the edge with the smallest weight in $C$ is in every MST",
+            "C. For every vertex $v \\in V$ , the edge with the largest weight incident on $v$ is not in any MST",
+            "D. For every vertex $v \\in V$ , the edge with the smallest weight incident on $v$ is in every MST"
+        ],
+        "bbox": [
+            87,
+            338,
+            754,
+            397
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 two-marks algorithms minimum-spanning-tree multiple-selects",
+        "bbox": [
+            87,
+            422,
+            472,
+            432
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            438,
+            188,
+            453
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.31.35 Minimum Spanning Tree: GATE IT 2005 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            461,
+            564,
+            477
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a weighted undirected graph and e be an edge with maximum weight in $G$ . Suppose there is a minimum weight spanning tree in $G$ containing the edge e. Which of the following statements is always TRUE?",
+        "bbox": [
+            84,
+            486,
+            878,
+            529
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There exists a cutset in G having all edges of maximum weight.",
+            "B. There exists a cycle in G having all edges of maximum weight.",
+            "C. Edge e cannot be contained in a cycle.",
+            "D. All edges in G have the same weight."
+        ],
+        "bbox": [
+            87,
+            541,
+            574,
+            600
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 algorithms minimum-spanning-tree normal",
+        "bbox": [
+            87,
+            625,
+            352,
+            635
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            641,
+            188,
+            656
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.32",
+        "text_level": 1,
+        "bbox": [
+            68,
+            666,
+            105,
+            679
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Number of Swap (1)",
+        "text_level": 1,
+        "bbox": [
+            438,
+            666,
+            600,
+            681
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.32.1 Number of Swap: GATE CSE 2025 | Set 1 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            692,
+            566,
+            706
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The pseudocode of a function fun () is given below:",
+        "bbox": [
+            85,
+            716,
+            470,
+            732
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/98b0577ad3aa9824ad6f67e44b229e9b68ed21825855100ad744ccf41e781ba1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            695,
+            932,
+            732
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfun(int A[0, ..., n-1]) {\nfor i=0 to n-2\nfor j=0 to n-i-2\nif (A[j]>A[j+1])\nthen swap A[j] and A[j+1]\n}\n```",
+        "bbox": [
+            112,
+            755,
+            258,
+            820
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let $A[0, \\ldots, 29]$ be an array storing 30 distinct integers in descending order. The number of swap operations that will be performed, if the function fun () is called with $A[0, \\ldots, 29]$ as argument, is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            84,
+            830,
+            927,
+            862
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 data-structures array number-of-swap numerical-answers one-mark",
+        "bbox": [
+            87,
+            878,
+            500,
+            889
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            895,
+            188,
+            910
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/c8cbd756c540afd415245ca2d6a1b163345834756081bb68e29974e4c5f0c1d0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            275,
+            932,
+            314
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/a39f70466a239e4d3b0eca66084c9e38a55732fdfac387fd4df88a3f1d3f883d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            465,
+            932,
+            503
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.33.1 Prims Algorithm: GATE IT 2004 | Question: 56",
+        "text_level": 1,
+        "bbox": [
+            78,
+            91,
+            492,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the undirected graph below:",
+        "bbox": [
+            85,
+            115,
+            364,
+            130
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/623628d1f1ff9e09cafc7eee6554741c5f9f1b8636e404839805051564a8f727.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            93,
+            931,
+            131
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "chart",
+        "img_path": "images/abeda2f938c8b43830f9708fda403b5d96b1162c9e5eb498c83bf27e04a57215.jpg",
+        "content": "| Node | Value |\n| --- | --- |\n| A | 10 |\n| B | 49 |\n| C | 10 |\n| D | 7 |\n| E | 2 |\n| F | 5 |\n| G | 26 |\n| C & D & E & F & G | 22 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "bubble",
+        "bbox": [
+            97,
+            140,
+            297,
+            255
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Using Prim's algorithm to construct a minimum spanning tree starting with node A, which one of the following sequences of edges represents a possible order in which the edges would be added to construct the minimum spanning tree?",
+        "bbox": [
+            84,
+            266,
+            929,
+            309
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (E, G), (C, F), (F, G), (A, D), (A, B), (A, C)",
+            "B. (A, D), (A, B), (A, C), (C, F), (G, E), (F, G)",
+            "C. (A, B), (A, D), (D, F), (F, G), (G, E), (F, C)",
+            "D. (A, D), (A, B), (D, F), (F, C), (F, G), (G, E)"
+        ],
+        "bbox": [
+            87,
+            318,
+            478,
+            382
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 algorithms graph-algorithms normal prims-algorithm",
+        "bbox": [
+            87,
+            406,
+            403,
+            416
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            422,
+            181,
+            435
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.33.2 Prims Algorithm: GATE IT 2008 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            446,
+            492,
+            460
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "For the undirected, weighted graph given below, which of the following sequences of edges represents a correct execution of Prim's algorithm to construct a Minimum Spanning Tree?",
+        "bbox": [
+            84,
+            469,
+            878,
+            498
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/8467f79e37d19ba53fb1de9ff9cb3e466706cef823b25a2a3c46c0e5363752ad.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            448,
+            931,
+            486
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/b4577e0869d332f3933dbf3152a9c431b67de5d0e7c28f7bcaecae7d96c2a7e1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] -->|5| d[\"d\"]\n  d -->|10| g[\"g\"]\n  b[\"b\"] -->|1| a\n  b -->|6| c[\"c\"]\n  c -->|6| a\n  c -->|7| e[\"e\"]\n  e -->|12| h[\"h\"]\n  f[\"f\"] -->|2| d\n  f -->|3| c\n  f -->|7| h\n  g -->|3| i[\"i\"]\n  h -->|8| i\n  h -->|8| g\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            364,
+            509,
+            653,
+            596
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (a, b), (d, f), (f, c), (g, i), (d, a), (g, h), (c, e), (f, h)",
+            "B. (c, e), (c, f), (f, d), (d, a), (a, b), (g, h), (h, f), (g, i)",
+            "C. (d, f), (f, c), (d, a), (a, b), (c, e), (f, h), (g, h), (g, i)",
+            "D. (h, g), (g, i), (h, f), (f, c), (f, d), (d, a), (a, b), (c, e)"
+        ],
+        "bbox": [
+            87,
+            615,
+            519,
+            679
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 algorithms graph-algorithms minimum-spanning-tree normal prims-algorithm",
+        "bbox": [
+            87,
+            703,
+            515,
+            713
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            719,
+            181,
+            733
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.34",
+        "text_level": 1,
+        "bbox": [
+            68,
+            744,
+            104,
+            756
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Quick Sort (15)",
+        "text_level": 1,
+        "bbox": [
+            457,
+            744,
+            581,
+            758
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (2Q)",
+        "bbox": [
+            70,
+            768,
+            361,
+            783
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.34.1 Quick Sort: GATE CSE 1987 | Question: 1-xviii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            796,
+            494,
+            811
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Let P be a quicksort program to sort numbers in ascending order. Let $t_{1}$ and $t_{2}$ be the time taken by the program for the inputs [1 2 3 4] and [5 4 3 2 1], respectively. Which of the following holds?",
+        "bbox": [
+            84,
+            821,
+            878,
+            853
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/b1eea2b59ef62c36337fbeceba829005f27ecb48e3a4cc5bbb5cc644f7839def.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            800,
+            931,
+            837
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $t_1 = t_2$",
+        "bbox": [
+            87,
+            862,
+            164,
+            875
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $t_{1} < t_{2}$",
+        "bbox": [
+            89,
+            875,
+            164,
+            889
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gate1987 algorithms sorting quick-sort",
+        "bbox": [
+            87,
+            894,
+            287,
+            904
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $t_1 > t_2$",
+            "D. $t_1 = t_2 + 5\\log 5$"
+        ],
+        "bbox": [
+            495,
+            862,
+            636,
+            889
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            910,
+            181,
+            923
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "1.33",
+        "bbox": [
+            68,
+            65,
+            104,
+            78
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Prims Algorithm (2)",
+        "bbox": [
+            438,
+            65,
+            598,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.34.2 Quick Sort: GATE CSE 1989 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            80,
+            66,
+            457,
+            80
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/c499f99e0cea94ac759a1d6b58b75399215cd3cc3babfcec556de9ce05a9dbd4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "An input files has 10 records with keys as given below:",
+        "bbox": [
+            85,
+            90,
+            487,
+            105
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "25 7 34 2 70 9 61 16 49 19",
+        "bbox": [
+            85,
+            108,
+            426,
+            123
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "This is to be sorted in non-decreasing order.",
+        "bbox": [
+            85,
+            127,
+            410,
+            142
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. Sort the input file using QUICKSORT by correctly positioning the first element of the file/subfile. Show the subfiles obtained at all intermediate steps. Use square brackets to demarcate subfiles.",
+            "ii. Sort the input file using 2-way- MERGESORT showing all major intermediate steps. Use square brackets to demarcate subfiles."
+        ],
+        "bbox": [
+            92,
+            152,
+            927,
+            207
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive algorithms sorting quick-sort",
+        "bbox": [
+            87,
+            235,
+            347,
+            245
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            251,
+            188,
+            264
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.34.3 Quick Sort: GATE CSE 1992 | Question: 03,iv",
+        "text_level": 1,
+        "bbox": [
+            78,
+            274,
+            485,
+            289
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Assume that the last element of the set is used as partition element in Quicksort. If $n$ distinct elements from the set $[1 \\ldots n]$ are to be sorted, give an input for which Quicksort takes maximum time.",
+        "bbox": [
+            84,
+            298,
+            878,
+            328
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/126e42a2239d92c9e9072d5c4908a2ffab04715c1e253413d53e1503f0977756.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            277,
+            931,
+            315
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1992 algorithms sorting easy quick-sort descriptive",
+        "bbox": [
+            87,
+            342,
+            379,
+            353
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            358,
+            188,
+            372
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.34.4 Quick Sort: GATE CSE 1996 | Question: 2.15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            382,
+            478,
+            396
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Quick-sort is run on two inputs shown below to sort in ascending order taking first element as pivot",
+        "bbox": [
+            85,
+            406,
+            803,
+            421
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/458f59272d4ffe5b06f6242a36f64e10526144961627b899fce73e49280ac1fd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            385,
+            931,
+            422
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. $1,2,3,\\ldots n$",
+            "ii. $n, n - 1, n - 2, \\dots, 2, 1$"
+        ],
+        "bbox": [
+            92,
+            429,
+            304,
+            460
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let $C_{1}$ and $C_{2}$ be the number of comparisons made for the inputs (i) and (ii) respectively. Then,",
+        "bbox": [
+            85,
+            470,
+            784,
+            486
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $C_{1} < C_{2}$",
+            "c. $C_{1}=C_{2}$"
+        ],
+        "bbox": [
+            89,
+            494,
+            179,
+            524
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $C_1 > C_2$",
+            "D. we cannot say anything for arbitrary n"
+        ],
+        "bbox": [
+            495,
+            494,
+            759,
+            536
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1996 algorithms sorting normal quick-sort",
+        "bbox": [
+            87,
+            541,
+            331,
+            551
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            557,
+            188,
+            571
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.34.5 Quick Sort: GATE CSE 2001 | Question: 1.14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            581,
+            478,
+            595
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Randomized quicksort is an extension of quicksort where the pivot is chosen randomly. What is the worst case complexity of sorting n numbers using Randomized quicksort?",
+        "bbox": [
+            84,
+            604,
+            878,
+            633
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/d04bdeeb69891cce8b60059849499e020662ba5138bb604da625dc1bfee3eb4c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            583,
+            931,
+            621
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $O(n)$",
+        "bbox": [
+            89,
+            644,
+            152,
+            662
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. $O(n\\log n)$",
+        "bbox": [
+            285,
+            644,
+            384,
+            663
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "c. $O(n^{2})$",
+        "bbox": [
+            480,
+            644,
+            549,
+            663
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. $O(n!)$",
+        "bbox": [
+            673,
+            644,
+            742,
+            663
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 algorithms sorting time-complexity easy quick-sort",
+        "bbox": [
+            87,
+            671,
+            416,
+            681
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            686,
+            188,
+            701
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.34.6 Quick Sort: GATE CSE 2006 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            711,
+            465,
+            724
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The median of $n$ elements can be found in $O(n)$ time. Which one of the following is correct about the complexity of quick sort, in which median is selected as pivot?",
+        "bbox": [
+            84,
+            735,
+            878,
+            764
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/c3c6d82c7d93d5feef49e4e238c323f4e7f9bc934c9308a796d67c86bd9fab74.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            713,
+            931,
+            750
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Theta(n)$",
+            "C. $\\Theta(n^{2})$"
+        ],
+        "bbox": [
+            89,
+            774,
+            159,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\Theta(n \\log n)$"
+        ],
+        "bbox": [
+            495,
+            774,
+            596,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 algorithms sorting easy quick-sort",
+        "bbox": [
+            87,
+            809,
+            336,
+            818
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            824,
+            188,
+            838
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.34.7 Quick Sort: GATE CSE 2008 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            847,
+            465,
+            862
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the Quicksort algorithm. Suppose there is a procedure for finding a pivot element which splits the list into two sub-lists each of which contains at least one-fifth of the elements. Let $T(n)$ be the number of comparisons required to sort n elements. Then",
+        "bbox": [
+            84,
+            872,
+            878,
+            916
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/0c2b592efea7660ba30d4ba178308bae6b8698e0e7a10227f22238156351d5a0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            850,
+            931,
+            888
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $T(n) \\leq 2T(n / 5) + n$",
+        "bbox": [
+            89,
+            64,
+            272,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $T(n) \\leq T(n / 5) + T(4n / 5) + n$",
+        "bbox": [
+            495,
+            64,
+            752,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $T(n) \\leq 2T(4n / 5) + n$",
+        "bbox": [
+            90,
+            83,
+            278,
+            99
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $T(n) \\leq 2T(n / 2) + n$",
+        "bbox": [
+            497,
+            83,
+            677,
+            99
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 algorithms sorting easy quick-sort",
+        "bbox": [
+            89,
+            106,
+            337,
+            117
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            123,
+            181,
+            137
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.34.8 Quick Sort: GATE CSE 2009 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            146,
+            465,
+            161
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/37bcaa425cbb930466278489e817b8327cdf9251b4280d52c67acbdd04cff0bd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            150,
+            931,
+            186
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In quick-sort, for sorting $n$ elements, the $(n/4)^{th}$ smallest element is selected as pivot using an $O(n)$ time algorithm. What is the worst case time complexity of the quick sort?",
+        "bbox": [
+            84,
+            173,
+            878,
+            204
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n)$",
+        "bbox": [
+            89,
+            213,
+            154,
+            229
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n \\log n)$",
+        "bbox": [
+            497,
+            213,
+            596,
+            229
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n^{2})$",
+        "bbox": [
+            90,
+            232,
+            161,
+            248
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n^{2}\\log n)$",
+        "bbox": [
+            497,
+            232,
+            603,
+            248
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 algorithms sorting normal quick-sort",
+        "bbox": [
+            87,
+            256,
+            347,
+            266
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            273,
+            181,
+            287
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.34.9 Quick Sort: GATE CSE 2014 | Set 1 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            296,
+            519,
+            309
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let P be quicksort program to sort numbers in ascending order using the first element as the pivot. Let $t_{1}$ and $t_{2}$ be the number of comparisons made by P for the inputs [1 2 3 4 5] and [4 1 5 3 2] respectively. Which one of the following holds?",
+        "bbox": [
+            84,
+            320,
+            875,
+            365
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $t_{1}=5$",
+        "bbox": [
+            89,
+            378,
+            161,
+            393
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $t_1 < t_2$",
+        "bbox": [
+            285,
+            378,
+            359,
+            393
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $t_{1} > t_{2}$",
+        "bbox": [
+            480,
+            378,
+            554,
+            393
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $t_{1}=t_{2}$",
+        "bbox": [
+            675,
+            378,
+            749,
+            393
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 algorithms sorting easy quick-sort",
+        "bbox": [
+            89,
+            403,
+            357,
+            413
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            418,
+            181,
+            432
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.34.10 Quick Sort: GATE CSE 2014 | Set 3 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            442,
+            529,
+            456
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/e100fd3cf0409295bdfd9f121fdc053706386ea6a8a105995569d02af5436fc7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            299,
+            931,
+            336
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "You have an array of $n$ elements. Suppose you implement quicksort by always choosing the central element of the array as the pivot. Then the tightest upper bound for the worst case performance is",
+        "bbox": [
+            84,
+            466,
+            878,
+            495
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $O(n^{2})$",
+        "bbox": [
+            89,
+            505,
+            161,
+            524
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $O(n\\log n)$",
+        "bbox": [
+            285,
+            507,
+            384,
+            524
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n \\log n)$",
+        "bbox": [
+            480,
+            507,
+            581,
+            524
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $O(n^{3})$",
+        "bbox": [
+            675,
+            507,
+            744,
+            524
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 algorithms sorting easy quick-sort",
+        "bbox": [
+            89,
+            533,
+            357,
+            543
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            548,
+            181,
+            562
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.34.11 Quick Sort: GATE CSE 2015 | Set 1 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            572,
+            519,
+            586
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/37214b741d8a637c22aa0cbd5bf41d05f13156971c70bb6140fc7cedf9f1f42b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            445,
+            931,
+            482
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the recurrence equation for the worst case time complexity of the quick sort algorithm for sorting $n (\\geq 2)$ numbers? In the recurrence equations given in the options below, c is a constant.",
+        "bbox": [
+            84,
+            596,
+            878,
+            638
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $T(n) = 2T(n / 2) + cn$",
+        "bbox": [
+            89,
+            649,
+            278,
+            663
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $T(n) = T(n - 1) + T(1) + cn$",
+        "bbox": [
+            497,
+            650,
+            746,
+            665
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $T(n) = 2T(n - 1) + cn$",
+        "bbox": [
+            90,
+            663,
+            292,
+            679
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $T(n) = T(n / 2) + cn$",
+        "bbox": [
+            497,
+            665,
+            675,
+            679
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 algorithms recurrence-relation sorting easy quick-sort",
+        "bbox": [
+            89,
+            684,
+            450,
+            693
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            699,
+            181,
+            713
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.34.12 Quick Sort: GATE CSE 2015 | Set 2 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            723,
+            529,
+            737
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/002306f5399ee3aaea2345613e6fa60153a666cce437430a346d310d05660c8a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            574,
+            931,
+            612
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose you are provided with the following function declaration in the C programming language.",
+        "bbox": [
+            84,
+            745,
+            796,
+            762
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "int partition(int a[], int n);",
+        "bbox": [
+            89,
+            770,
+            228,
+            783
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/85a32bb20915714aad7132b391ce62c0a32e149c6598b615557be24a86527c1a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            725,
+            931,
+            762
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The function treats the first element of $a[]$ as a pivot and rearranges the array so that all elements less than or equal to the pivot is in the left part of the array, and all elements greater than the pivot is in the right part. In addition, it moves the pivot so that the pivot is the last element of the left part. The return value is the number of elements in the left part.",
+        "bbox": [
+            84,
+            792,
+            929,
+            850
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The following partially given function in the C programming language is used to find the $k^{th}$ smallest element in an array $a[]$ of size $n$ using the partition function. We assume $k \\leq n$ .",
+        "bbox": [
+            84,
+            853,
+            929,
+            885
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "int kth\\_smallest (int a[], int n, int k)",
+        "bbox": [
+            89,
+            894,
+            284,
+            906
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "int left\\_end = partition (a, n);",
+        "bbox": [
+            102,
+            916,
+            263,
+            928
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nif (left_end+1==k) {\n        return a[left_end];\n    }\n    if (left_end+1 > k) {\n        return kth_smallest (________);\n    } else {\n        return kth_smallest (________);\n    }\n}\n```",
+        "bbox": [
+            87,
+            62,
+            321,
+            163
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The missing arguments lists are respectively",
+        "bbox": [
+            85,
+            169,
+            413,
+            186
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (a, left\\_end, k) and (a+left\\_end +1, n-left\\_end -1, k-left\\_end -1)",
+            "C. $(a+$ left\\_end+1, $n$ -left\\_end $-1, k$ -left\\_end-1) and $(a,$ $\\text{left\\_end}, k)$"
+        ],
+        "bbox": [
+            87,
+            194,
+            356,
+            279
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 algorithms normal sorting quick-sort",
+        "bbox": [
+            87,
+            283,
+            366,
+            293
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $(a, \\text{left\\_end}, k)$ and $(a, n - \\text{left\\_end} - 1, k - \\text{left\\_end} - 1)$",
+            "D. $(a, n-\\text{left\\_end}-1, k-\\text{left\\_end}-1)$ and $(a, \\text{left\\_end}, k)$"
+        ],
+        "bbox": [
+            495,
+            195,
+            759,
+            267
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            299,
+            181,
+            314
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.34.13 Quick Sort: GATE CSE 2019 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            323,
+            475,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/68f7d7d833a9c1faaf3ea1d5f7f0b240d6a749ce7978921b7d0d68f29cc0a67e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            326,
+            931,
+            363
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "An array of 25 distinct elements is to be sorted using quicksort. Assume that the pivot element is chosen uniformly at random. The probability that the pivot element gets placed in the worst possible location in the first round of partitioning (rounded off to 2 decimal places) is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            347,
+            878,
+            391
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers algorithms quick-sort probability one-mark",
+        "bbox": [
+            87,
+            404,
+            462,
+            414
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            420,
+            181,
+            434
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.34.14 Quick Sort: GATE DA 2026 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            444,
+            457,
+            458
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider that the quick sort algorithm is used to sort an array of n distinct randomly ordered elements. In every call, the pivot is chosen as the first element of the current subarray.",
+        "bbox": [
+            84,
+            467,
+            878,
+            496
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/b68be0faddbfc0d33c0bda99ba94cef69d8a255c628025ab4fab98284ec0f98b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            447,
+            931,
+            484
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $T(n)$ denote the expected time to sort the array. Assume that the time to partition is linear in the size of the current subarray.",
+        "bbox": [
+            84,
+            510,
+            927,
+            539
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following recurrence relations correctly represents $T(n)$ in this scenario?",
+        "bbox": [
+            84,
+            553,
+            714,
+            568
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $T(n) = T(1) + T(n - 1) + O(n)$",
+        "bbox": [
+            87,
+            577,
+            359,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $T(n) = T\\left(\\frac{n}{4}\\right) + T\\left(\\frac{3n}{4}\\right) + O(n)$",
+            "D. $T(n) = \\frac{1}{n}\\sum_{k = 0}^{n - 1}[T(k) + T(n - k - 1)] + O(n)$"
+        ],
+        "bbox": [
+            495,
+            578,
+            860,
+            614
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $T(n)=2T\\left(\\frac{n}{2}\\right)+O(n)$",
+        "bbox": [
+            89,
+            595,
+            287,
+            612
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 algorithms quick-sort recurrence-relation one-mark",
+        "bbox": [
+            87,
+            617,
+            401,
+            625
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            631,
+            188,
+            647
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.34.15 Quick Sort: GATE DS&AI 2024 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            657,
+            492,
+            669
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider sorting the following array of integers in ascending order using an inplace Quicksort algorithm that uses the last element as the pivot.",
+        "bbox": [
+            84,
+            680,
+            878,
+            709
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/edd3dd97ce7ae824168bafda14f25a1e6675be2f1120d4116ecc486cae0f1125.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>60</td><td>70</td><td>80</td><td>90</td><td>100</td></tr></table>",
+        "bbox": [
+            405,
+            720,
+            610,
+            742
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/9096ed25a09b350fe4696d7619c530f3df8fb5f64780b5e9bf8a05dd417f9182.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            659,
+            931,
+            697
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of swaps performed during this Quicksort is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            779,
+            653,
+            794
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 numerical-answers algorithms quick-sort one-mark",
+        "bbox": [
+            87,
+            807,
+            410,
+            817
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            823,
+            188,
+            838
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.35",
+        "text_level": 1,
+        "bbox": [
+            68,
+            847,
+            104,
+            862
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Recurrence Relation (36)",
+        "text_level": 1,
+        "bbox": [
+            418,
+            847,
+            618,
+            863
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (14Q)",
+        "bbox": [
+            70,
+            872,
+            369,
+            888
+        ],
+        "page_idx": 11
+    }
+]

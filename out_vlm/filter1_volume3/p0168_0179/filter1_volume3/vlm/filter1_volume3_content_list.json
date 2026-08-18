@@ -1,0 +1,3451 @@
+[
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            226,
+            78
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Precedence Graph (Serialization Graph):",
+        "bbox": [
+            72,
+            93,
+            406,
+            108
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Nodes represent transactions.",
+            "- An edge $T_{i} \\rightarrow T_{j}$ exists if $T_{i}$ performs an operation that conflicts with an operation of $T_{j}$ , and $T_{i}$ 's operation occurs before $T_{j}$ 's."
+        ],
+        "bbox": [
+            97,
+            109,
+            895,
+            149
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Theorem: A schedule is conflict serializable if and only if its precedence graph contains no cycles.",
+        "bbox": [
+            72,
+            150,
+            800,
+            163
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            179,
+            263,
+            193
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• Guarantees that the concurrent execution produces the same result as some sequential execution.",
+        "bbox": [
+            72,
+            207,
+            803,
+            220
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- A weaker condition than view serializability but easier to test.",
+        "bbox": [
+            72,
+            222,
+            529,
+            236
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            251,
+            200,
+            264
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying conflicting operations (e.g., R-R operations do not conflict).",
+            "- Missing cycles in the precedence graph, especially in complex schedules."
+        ],
+        "bbox": [
+            72,
+            279,
+            673,
+            308
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            321,
+            295,
+            336
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Construct the precedence graph by identifying all conflicting pairs of operations and drawing edges accordingly.",
+            "- Use a cycle detection algorithm (e.g., DFS) on the graph to check for serializability."
+        ],
+        "bbox": [
+            72,
+            351,
+            895,
+            378
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Database Design",
+        "text_level": 1,
+        "bbox": [
+            60,
+            393,
+            216,
+            408
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Database design is the process of creating a detailed data model for a database. It involves translating conceptual requirements into a logical schema, and then into a physical schema, ensuring data integrity, efficiency, and scalability.",
+        "bbox": [
+            60,
+            422,
+            924,
+            450
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            464,
+            226,
+            478
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- No direct formulas, but relies on principles of normalization and ER-to-Relational mapping rules.",
+        "bbox": [
+            72,
+            492,
+            781,
+            508
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            522,
+            263,
+            536
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Phases: Conceptual (ER Model), Logical (Relational Schema), Physical (Storage details).",
+            "- Goals: Minimize redundancy, maximize integrity, optimize performance."
+        ],
+        "bbox": [
+            72,
+            551,
+            736,
+            579
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            593,
+            200,
+            606
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Poor choice of primary/foreign keys.",
+            "- Not adequately normalizing the schema, leading to update anomalies.",
+            "• Over-normalization, leading to complex queries and performance issues."
+        ],
+        "bbox": [
+            72,
+            623,
+            616,
+            663
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            680,
+            295,
+            694
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Start with an ER diagram to capture requirements.",
+            "- Apply ER-to-Relational mapping rules systematically.",
+            "- Normalize relations to an appropriate normal form (e.g., BCNF or 3NF) using functional dependencies."
+        ],
+        "bbox": [
+            72,
+            707,
+            830,
+            750
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Database Normalization",
+        "text_level": 1,
+        "bbox": [
+            60,
+            764,
+            278,
+            777
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Database Normalization is a systematic process of restructuring a relational database schema to minimize data redundancy and improve data integrity. It involves decomposing relations into smaller, well-structured relations based on functional dependencies.",
+        "bbox": [
+            60,
+            792,
+            915,
+            834
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            849,
+            226,
+            863
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- 1NF (First Normal Form): All attributes must be atomic (no multi-valued or composite attributes).",
+            "- 2NF (Second Normal Form): In 1NF and no non-prime attribute is partially dependent on a candidate key.",
+            "- 3NF (Third Normal Form): In 2NF and no non-prime attribute is transitively dependent on a candidate key."
+        ],
+        "bbox": [
+            72,
+            877,
+            865,
+            920
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- BCNF (Boyce-Codd Normal Form): For every non-trivial functional dependency $A \\rightarrow B$ , $A$ must be a super key.",
+            "• 4NF (Fourth Normal Form): In BCNF and no non-trivial multi-valued dependencies exist.",
+            "- 5NF (Fifth Normal Form): In 4NF and no non-trivial join dependencies exist."
+        ],
+        "bbox": [
+            72,
+            65,
+            919,
+            108
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            123,
+            263,
+            137
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Hierarchy: $1NF \\subset 2NF \\subset 3NF \\subset BCNF \\subset 4NF \\subset 5NF$ .",
+            "- Desirable properties of decomposition: Lossless Join and Dependency Preservation. BCNF decomposition is always lossless but not always dependency preserving. 3NF decomposition is always lossless and dependency preserving."
+        ],
+        "bbox": [
+            72,
+            150,
+            932,
+            195
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            209,
+            200,
+            223
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying prime and non-prime attributes.",
+            "- Mistaking partial dependency for transitive dependency.",
+            "- Failing to check for both lossless join and dependency preservation after decomposition."
+        ],
+        "bbox": [
+            72,
+            238,
+            727,
+            280
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            294,
+            295,
+            309
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify all candidate keys and functional dependencies.",
+            "- Systematically check for violations of each normal form.",
+            "- If a violation exists, decompose the relation into smaller relations."
+        ],
+        "bbox": [
+            72,
+            323,
+            561,
+            365
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Database Schema",
+        "text_level": 1,
+        "bbox": [
+            60,
+            378,
+            226,
+            393
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A Database Schema is the logical structure or design of the entire database. It defines the tables, attributes, data types, relationships, and constraints that govern the data within the database. It is defined using Data Definition Language (DDL).",
+        "bbox": [
+            58,
+            407,
+            929,
+            450
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            464,
+            226,
+            478
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- No specific formulas, but it's the blueprint for the database.",
+        "bbox": [
+            72,
+            492,
+            515,
+            507
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            522,
+            263,
+            536
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Internal Schema: Physical storage structure.",
+            "- Conceptual Schema: Logical structure of the entire database.",
+            "- External Schema (View): User-specific views of the database.",
+            "- Schema defines the intension, while data (instance) defines the extension."
+        ],
+        "bbox": [
+            72,
+            551,
+            628,
+            606
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            621,
+            200,
+            635
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing schema (structure) with database instance (actual data).",
+            "• Overlooking important constraints during schema design."
+        ],
+        "bbox": [
+            72,
+            650,
+            576,
+            679
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            693,
+            295,
+            707
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Understand the mapping from ER diagrams to relational schemas.",
+            "- Be familiar with DDL commands like CREATE TABLE, ALTER TABLE, DROP TABLE."
+        ],
+        "bbox": [
+            72,
+            722,
+            712,
+            750
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Decomposition",
+        "text_level": 1,
+        "bbox": [
+            60,
+            764,
+            201,
+            779
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Decomposition is the process of breaking down a relation (table) into two or more smaller relations. It is primarily used in normalization to eliminate redundancy and anomalies, ensuring that the resulting relations are in a higher normal form.",
+        "bbox": [
+            58,
+            792,
+            919,
+            834
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            849,
+            226,
+            863
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Lossless Join Decomposition: A decomposition of $R$ into $R_1$ and $R_2$ is lossless if $R = R_1 \\bowtie R_2$ .",
+            "• Condition: $(R_{1} \\cap R_{2}) \\rightarrow R_{1}$ or $(R_{1} \\cap R_{2}) \\rightarrow R_{2}$ must hold based on the FDs of R."
+        ],
+        "bbox": [
+            72,
+            877,
+            816,
+            908
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Dependency Preservation: A decomposition preserves dependencies if the union of FDs on the decomposed",
+        "bbox": [
+            72,
+            908,
+            892,
+            922
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "relations is equivalent to the original set of FDs. Formally, if F is the original set of FDs and $F_{i}$ is the set of FDs on $R_{i}$ , then $(F_{1} \\cup F_{2} \\cup \\cdots \\cup F_{k})^{+} = F^{+}$ .",
+        "bbox": [
+            84,
+            65,
+            919,
+            98
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            110,
+            263,
+            124
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Desirable properties for decomposition are lossless join and dependency preservation.",
+            "- BCNF decomposition is always lossless but not always dependency preserving.",
+            "- 3NF decomposition is always lossless and dependency preserving."
+        ],
+        "bbox": [
+            72,
+            138,
+            715,
+            182
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            195,
+            200,
+            209
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly applying the lossless join test.",
+            "- Failing to check for dependency preservation, especially for BCNF."
+        ],
+        "bbox": [
+            72,
+            225,
+            574,
+            252
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            267,
+            295,
+            282
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For lossless join: Check if the common attributes form a super key for at least one of the decomposed relations.",
+            "- For dependency preservation: For each original FD $A \\rightarrow B$ , check if it can be derived from the FDs of the decomposed relations."
+        ],
+        "bbox": [
+            72,
+            296,
+            895,
+            339
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "ER Diagram",
+        "text_level": 1,
+        "bbox": [
+            60,
+            352,
+            173,
+            368
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "An Entity-Relationship (ER) Diagram is a high-level conceptual data model that represents the entities, attributes, and relationships within a system. It is used during the conceptual design phase of database development.",
+        "bbox": [
+            58,
+            381,
+            917,
+            410
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            423,
+            228,
+            438
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- No direct formulas, but specific rules for mapping to relational schema.",
+        "bbox": [
+            72,
+            453,
+            600,
+            467
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            482,
+            263,
+            496
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Entities: Represented by rectangles (e.g., Student, Course).",
+            "- Attributes: Represented by ovals (e.g., Name, ID). Key attributes are underlined.",
+            "- Relationships: Represented by diamonds (e.g., Enrolls, Teaches).",
+            "- Cardinality: (1:1, 1:N, M:N) specifies the number of instances of one entity that can be associated with another.",
+            "- Participation: (Total/Partial) specifies whether an entity instance must participate in a relationship.",
+            "- Weak Entity: An entity that cannot be uniquely identified by its own attributes and depends on a strong (owner) entity. Represented by double rectangles."
+        ],
+        "bbox": [
+            72,
+            511,
+            900,
+            609
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            623,
+            200,
+            636
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying cardinalities or participation constraints.",
+            "- Confusing strong and weak entities.",
+            "- Errors in mapping complex ER constructs (e.g., ternary relationships, generalization) to relational schema."
+        ],
+        "bbox": [
+            72,
+            652,
+            857,
+            694
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            707,
+            295,
+            723
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Carefully read the problem description to identify entities, attributes, and relationships.",
+            "- Pay close attention to cardinality and participation rules.",
+            "- Practice mapping ER diagrams to relational schemas using standard rules."
+        ],
+        "bbox": [
+            72,
+            737,
+            710,
+            779
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Functional Dependency",
+        "text_level": 1,
+        "bbox": [
+            60,
+            792,
+            278,
+            809
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A Functional Dependency (FD) $A \\rightarrow B$ means that the value of attribute set A uniquely determines the value of attribute set B. If two tuples have the same values for attributes in A, they must also have the same values for attributes in B.",
+        "bbox": [
+            58,
+            821,
+            878,
+            866
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            881,
+            226,
+            895
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Closure of an attribute set $X^{+}$ : The set of all attributes that are functionally determined by $X$ .",
+        "bbox": [
+            72,
+            910,
+            781,
+            928
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "○ Algorithm: Start with $X^{+} = X$ . Repeatedly add attributes $Y$ to $X^{+}$ if there is an FD $W \\to Y$ such that $W \\subset X^{+}$ .",
+        "bbox": [
+            95,
+            65,
+            865,
+            95
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Minimal Cover (or Minimal Basis): A set of FDs $F_{m}$ equivalent to $F$ such that:",
+        "bbox": [
+            73,
+            97,
+            670,
+            111
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Every FD in $F_{m}$ has a single attribute on the right-hand side.",
+            "2. No FD in $F_{m}$ can be removed without changing $F_{m}^{+}$ .",
+            "3. No attribute can be removed from the left-hand side of any FD in $F_{m}$ without changing $F_{m}^{+}$ ."
+        ],
+        "bbox": [
+            87,
+            112,
+            776,
+            159
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            173,
+            263,
+            188
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Fundamental for database normalization and identifying keys.",
+            "• Armstrong's Axioms are used to infer FDs."
+        ],
+        "bbox": [
+            72,
+            201,
+            534,
+            229
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            245,
+            200,
+            258
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly calculating attribute closure.",
+            "- Errors in finding a minimal cover."
+        ],
+        "bbox": [
+            72,
+            274,
+            371,
+            302
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            317,
+            295,
+            332
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Master the algorithm for finding $X^{+}$ .",
+            "- For minimal cover, systematically apply the three conditions: right-hand side single attribute, remove redundant FDs, remove redundant attributes from LHS."
+        ],
+        "bbox": [
+            72,
+            347,
+            931,
+            389
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Indexing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            403,
+            142,
+            419
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Indexing is a technique used to optimize the performance of database queries by allowing the database server to quickly locate and retrieve specific rows without scanning the entire table. It creates a data structure (like B-tree or hash table) that stores a small, ordered subset of the data.",
+        "bbox": [
+            58,
+            432,
+            929,
+            473
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            489,
+            226,
+            502
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Disk I/O for B-tree index: For a search, typically height of tree + 1 (for data block) disk accesses.",
+            "- Disk I/O for hash index: Typically 1-2 disk accesses for exact match, if no collision."
+        ],
+        "bbox": [
+            72,
+            517,
+            811,
+            546
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            561,
+            263,
+            576
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Primary Index: Index on the primary key, usually clustered.",
+            "- Secondary Index: Index on non-key attributes, usually unclustered.",
+            "- Clustered Index: Data rows are stored physically in the order of the index key. Only one per table.",
+            "- Unclustered Index: Index stores pointers to the data rows, which are not physically ordered by the index key."
+        ],
+        "bbox": [
+            72,
+            590,
+            885,
+            646
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            661,
+            200,
+            674
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Misunderstanding the difference between clustered and unclustered indexes.",
+            "- Incorrectly calculating disk I/Os for different index types and query patterns."
+        ],
+        "bbox": [
+            72,
+            690,
+            645,
+            718
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            732,
+            295,
+            747
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Analyze the query type (equality search, range search) and index type to determine disk I/O.",
+            "- Remember that clustered indexes can retrieve multiple data records with fewer I/Os for range queries."
+        ],
+        "bbox": [
+            72,
+            761,
+            826,
+            790
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Joins",
+        "text_level": 1,
+        "bbox": [
+            60,
+            802,
+            115,
+            817
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Joins combine rows from two or more tables based on a related column between them. They are fundamental operations in relational algebra and SQL for retrieving data from multiple relations.",
+        "bbox": [
+            58,
+            832,
+            858,
+            859
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            874,
+            226,
+            888
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Cartesian Product (Cross Join): $R \\times S$ . Combines every row of $R$ with every row of $S$ . If $R$ has $n$ tuples and $S$",
+        "bbox": [
+            72,
+            903,
+            910,
+            919
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "has $m$ tuples, $R \\times S$ has $n \\times m$ tuples.",
+        "bbox": [
+            84,
+            65,
+            381,
+            79
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Theta Join: $R \\bowtie_{\\theta} S = \\sigma_{\\theta}(R \\times S)$ . Combines tuples from $R$ and $S$ where the condition $\\theta$ is true.",
+            "- Equijoin: A theta join where $\\theta$ is an equality condition (e.g., $R$ . $A = S$ . $B$ ).",
+            "- Natural Join: $R \\bowtie S$ . An equijoin on all common attributes, with duplicate common columns removed from the result.",
+            "- Outer Joins (Left, Right, Full): Preserve tuples that do not have a match in the other relation, filling unmatched attributes with NULLs."
+        ],
+        "bbox": [
+            72,
+            80,
+            900,
+            165
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            180,
+            263,
+            195
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Result schema of a join is the union of attributes from participating relations (with common attributes appearing once in natural join).",
+            "- Join operations are associative and commutative (for inner joins)."
+        ],
+        "bbox": [
+            72,
+            209,
+            931,
+            252
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            266,
+            200,
+            279
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing different types of joins, especially natural join vs. equijoin.",
+            "- Misunderstanding how NULL values are handled in outer joins.",
+            "- Incorrectly calculating the number of tuples in the result."
+        ],
+        "bbox": [
+            72,
+            295,
+            584,
+            337
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            351,
+            295,
+            366
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For natural join, identify common attributes and their values.",
+            "- For outer joins, remember to include unmatched tuples from the specified side(s).",
+            "- Trace the operation step-by-step for small example relations."
+        ],
+        "bbox": [
+            72,
+            381,
+            678,
+            423
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Multivalued Dependency 4NF",
+        "text_level": 1,
+        "bbox": [
+            60,
+            435,
+            329,
+            452
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A Multivalued Dependency (MVD) $A \\rightarrow B$ exists in a relation R if, for a given value of A, there is a set of values for B, and this set is independent of the values of other attributes in R. 4NF (Fourth Normal Form) requires that for every non-trivial MVD $A \\rightarrow B$ in a relation, A must be a super key.",
+        "bbox": [
+            58,
+            465,
+            929,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            524,
+            226,
+            538
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trivial MVD: $A \\twoheadrightarrow B$ is trivial if $B \\subseteq A$ or $A \\cup B = R$ .",
+            "- MVD Inference Rules (some are similar to FDs):"
+        ],
+        "bbox": [
+            72,
+            553,
+            495,
+            581
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Reflexivity: If $B \\subseteq A$ , then $A \\twoheadrightarrow B$ .",
+            "- Augmentation: If $A \\twoheadrightarrow B$ , then $AC \\twoheadrightarrow BC$ .",
+            "- Transitivity: If $A \\twoheadrightarrow B$ and $B \\twoheadrightarrow C$ , then $A \\twoheadrightarrow (C - B)$ .",
+            "○ Complementation: If $A \\twoheadrightarrow B$ , then $A \\twoheadrightarrow (R - A - B)$ .",
+            "○ Union: If $A \\rightarrow B$ and $A \\rightarrow C$ , then $A \\rightarrow BC$ .",
+            "- Decomposition: If $A \\twoheadrightarrow B$ and $A \\twoheadrightarrow C$ , then $A \\twoheadrightarrow (B \\cap C)$ , $A \\twoheadrightarrow (B - C)$ , and $A \\twoheadrightarrow (C - B)$ .",
+            "- Replication (FD to MVD): If $A \\to B$ , then $A \\twoheadrightarrow B$ ."
+        ],
+        "bbox": [
+            95,
+            583,
+            833,
+            688
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            703,
+            263,
+            718
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- MVDs address redundancy arising from multi-valued facts that are independent of each other.",
+            "- 4NF eliminates these MVDs by decomposition."
+        ],
+        "bbox": [
+            72,
+            732,
+            768,
+            760
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            775,
+            200,
+            789
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing MVDs with FDs. MVDs imply FDs, but not vice versa.",
+            "- Incorrectly identifying trivial MVDs."
+        ],
+        "bbox": [
+            72,
+            804,
+            552,
+            832
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            846,
+            295,
+            861
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify MVDs by looking for independent multi-valued facts.",
+            "- Decompose relations based on non-trivial MVDs to achieve 4NF. For $R(A, B, C)$ with $A \\twoheadrightarrow B$ , decompose into $R_1(A, B)$ and $R_2(A, C)$ ."
+        ],
+        "bbox": [
+            72,
+            875,
+            904,
+            922
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Natural Join",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            174,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The Natural Join operation (⊗) combines two relations based on equality of their common attributes. It implicitly creates an equijoin condition for all attributes that share the same name in both relations and projects out the duplicate common attributes.",
+        "bbox": [
+            58,
+            93,
+            934,
+            137
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            150,
+            228,
+            163
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Given relations $R$ and $S$ , let $C = \\text{attributes}(R) \\cap \\text{attributes}(S)$ be the set of common attributes.",
+        "bbox": [
+            72,
+            179,
+            811,
+            197
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nR \\bowtie S = \\pi_ {\\text {attributes} (R) \\cup \\text {attributes} (S)} \\left(\\sigma_ {R. c _ {1} = S. c _ {1} \\wedge \\dots \\wedge R. c _ {k} = S. c _ {k}} (R \\times S)\\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            252,
+            205,
+            769,
+            226
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "where $c_{i}\\in C$",
+        "bbox": [
+            84,
+            233,
+            198,
+            250
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            264,
+            265,
+            279
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The resulting schema contains all attributes from both relations, with common attributes appearing only once.",
+            "- It is a special case of equijoin followed by projection."
+        ],
+        "bbox": [
+            72,
+            293,
+            878,
+            321
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            336,
+            201,
+            350
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Misunderstanding the implicit join condition (all common attributes).",
+            "- Incorrectly determining the schema or number of tuples in the result."
+        ],
+        "bbox": [
+            72,
+            364,
+            584,
+            393
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            407,
+            297,
+            422
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify all common attributes between the two relations.",
+            "- For each pair of tuples (one from each relation), check if their values for all common attributes are equal. If so, combine them into a single result tuple, keeping common attributes only once."
+        ],
+        "bbox": [
+            72,
+            435,
+            887,
+            479
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Normal Forms",
+        "text_level": 1,
+        "bbox": [
+            60,
+            491,
+            194,
+            505
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Normal Forms (1NF, 2NF, 3NF, BCNF, 4NF, 5NF) are a series of guidelines for designing relational database schemas to reduce data redundancy and improve data integrity. Each normal form builds upon the previous one, imposing stricter rules.",
+        "bbox": [
+            58,
+            520,
+            934,
+            562
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            577,
+            228,
+            591
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• 1NF: All attributes are atomic.",
+            "- 2NF: In 1NF and no non-prime attribute is partially dependent on any candidate key.",
+            "- 3NF: In 2NF and no non-prime attribute is transitively dependent on any candidate key.",
+            "- BCNF: For every non-trivial FD $A \\rightarrow B$ , $A$ is a super key.",
+            "• 4NF: In BCNF and no non-trivial MVDs exist.",
+            "- 5NF: In 4NF and no non-trivial join dependencies exist."
+        ],
+        "bbox": [
+            72,
+            606,
+            721,
+            691
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            705,
+            265,
+            720
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Higher normal forms generally reduce more redundancy but may require more joins for queries.",
+            "- BCNF is generally preferred, but 3NF is often a practical compromise as it guarantees lossless join and dependency preservation."
+        ],
+        "bbox": [
+            72,
+            733,
+            931,
+            776
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            790,
+            201,
+            805
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying candidate keys, which is crucial for all normal forms.",
+            "- Confusing partial, transitive, and multi-valued dependencies."
+        ],
+        "bbox": [
+            72,
+            820,
+            626,
+            847
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            862,
+            297,
+            878
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- First, find all candidate keys and the closure of all FDs.",
+            "- Then, systematically check the conditions for 1NF, 2NF, 3NF, and BCNF in order."
+        ],
+        "bbox": [
+            72,
+            891,
+            680,
+            920
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- If a relation is not in a desired normal form, decompose it into smaller relations that satisfy the conditions.",
+        "bbox": [
+            72,
+            64,
+            850,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Query",
+        "text_level": 1,
+        "bbox": [
+            60,
+            92,
+            121,
+            109
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A query is a request for data or information from a database. Queries are typically written using a query language like SQL, Relational Algebra, or Relational Calculus. They specify what data to retrieve, how to filter it, and how to present it.",
+        "bbox": [
+            58,
+            121,
+            919,
+            162
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            178,
+            226,
+            192
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- No specific formulas, but relies on the syntax and semantics of query languages.",
+        "bbox": [
+            72,
+            207,
+            673,
+            222
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            236,
+            263,
+            250
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Selectivity: The fraction of tuples that satisfy a selection condition.",
+            "- Projection: Selecting specific columns.",
+            "- Join: Combining data from multiple tables."
+        ],
+        "bbox": [
+            72,
+            264,
+            574,
+            307
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            321,
+            200,
+            334
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Syntax errors in SQL.",
+            "- Logical errors leading to incorrect results (e.g., wrong join conditions, incorrect aggregation).",
+            "- Inefficient queries that perform poorly."
+        ],
+        "bbox": [
+            72,
+            350,
+            756,
+            393
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            407,
+            295,
+            422
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Break down complex queries into smaller, manageable parts.",
+            "- Understand the order of operations in SQL (FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY).",
+            "- Practice translating natural language requirements into formal query language expressions."
+        ],
+        "bbox": [
+            72,
+            435,
+            870,
+            479
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Referential Integrity",
+        "text_level": 1,
+        "bbox": [
+            60,
+            491,
+            243,
+            507
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Referential Integrity is a database concept that ensures that relationships between tables remain consistent. It is enforced using foreign key constraints, which dictate that a foreign key in one table must either match a primary key in another table or be NULL.",
+        "bbox": [
+            58,
+            520,
+            919,
+            561
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            577,
+            226,
+            591
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- No specific formulas, but it's a constraint rule.",
+        "bbox": [
+            72,
+            606,
+            418,
+            619
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            635,
+            263,
+            649
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Prevents \"dangling references\" where a foreign key refers to a non-existent primary key.",
+            "- Actions on deletion/update of primary key: CASCADE, SET NULL, SET DEFAULT, RESTRICT (default)."
+        ],
+        "bbox": [
+            72,
+            663,
+            845,
+            692
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            706,
+            200,
+            720
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Violating referential integrity constraints during data modification.",
+            "- Misunderstanding the behavior of different ON DELETE/ON UPDATE actions."
+        ],
+        "bbox": [
+            72,
+            735,
+            653,
+            763
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            777,
+            295,
+            793
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identify primary and foreign keys correctly during schema design.",
+            "- Choose appropriate ON DELETE/ON UPDATE actions based on business rules.",
+            "- Trace data modification operations to check for constraint violations."
+        ],
+        "bbox": [
+            72,
+            807,
+            672,
+            849
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Relational Algebra",
+        "text_level": 1,
+        "bbox": [
+            60,
+            862,
+            233,
+            878
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Relational Algebra is a procedural query language that takes relations as input and produces relations as output. It consists of a set of fundamental operations (selection, projection, union, set difference, Cartesian product, rename) and",
+        "bbox": [
+            58,
+            891,
+            929,
+            920
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "derived operations (join, intersection, division).",
+        "bbox": [
+            60,
+            64,
+            403,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            93,
+            228,
+            106
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Select: $\\sigma_{P}(R)$ (selects tuples satisfying predicate $P$ ).",
+            "- Project: $\\pi_A(R)$ (selects attributes $A$ ).",
+            "- Union: $R \\cup S$ (combines tuples from $R$ and $S$ ; relations must be union-compatible).",
+            "- Set Difference: $R \\setminus S$ (tuples in $R$ but not in $S$ ; union-compatible).",
+            "- Cartesian Product: $R \\times S$ (combines every tuple of $R$ with every tuple of $S$ ).",
+            "- Rename: $\\rho_{S(A_1,\\dots,A_n)}(R)$ (renames relation $R$ to $S$ and its attributes).",
+            "- Intersection: $R \\cap S = R \\setminus (R \\setminus S)$ (derived).",
+            "- Join: $R \\bowtie_{P} S = \\sigma_{P}(R \\times S)$ (derived)."
+        ],
+        "bbox": [
+            72,
+            122,
+            700,
+            244
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            258,
+            263,
+            271
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Closure property: The result of any operation is also a relation.",
+            "- Forms the theoretical basis for SQL."
+        ],
+        "bbox": [
+            72,
+            287,
+            542,
+            314
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            330,
+            200,
+            343
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly applying operators, especially for complex queries.",
+            "- Forgetting union compatibility requirements for set operations.",
+            "- Operator precedence issues."
+        ],
+        "bbox": [
+            72,
+            359,
+            537,
+            400
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            415,
+            297,
+            429
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Break down complex queries into a sequence of simpler relational algebra operations.",
+            "- Practice converting SQL queries to relational algebra and vice versa."
+        ],
+        "bbox": [
+            72,
+            444,
+            710,
+            472
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Relational Calculus",
+        "text_level": 1,
+        "bbox": [
+            60,
+            485,
+            240,
+            500
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Relational Calculus is a non-procedural (declarative) query language that describes what data to retrieve without specifying how to retrieve it. It comes in two forms: Tuple Relational Calculus (TRC) and Domain Relational Calculus (DRC).",
+        "bbox": [
+            58,
+            514,
+            910,
+            557
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            571,
+            226,
+            585
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Tuple Relational Calculus (TRC): $\\{t \\mid P(t)\\}$ where $t$ is a tuple variable and $P(t)$ is a formula (predicate) involving $t$ .",
+            "• Example: $\\{t \\mid t \\in \\text{Student} \\land t. \\text{Age} > 20\\}$",
+            "- Domain Relational Calculus (DRC): $\\{\\langle x_1, x_2, \\dots, x_n \\rangle \\mid P(x_1, x_2, \\dots, x_n)\\}$ where $x_i$ are domain variables and $P$ is a formula.",
+            "• Example: $\\{\\langle N,A\\rangle\\mid\\exists I(\\langle I,N,A\\rangle\\in Student\\land A>20)\\}$"
+        ],
+        "bbox": [
+            72,
+            600,
+            926,
+            692
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            704,
+            263,
+            719
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Expressive power equivalent to Relational Algebra (Codd's Theorem).",
+            "- Uses quantifiers ( $\\exists$ - existential, $\\forall$ - universal)."
+        ],
+        "bbox": [
+            72,
+            733,
+            594,
+            762
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            777,
+            200,
+            790
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly using quantifiers, especially universal quantification.",
+            "- Formulating predicates that are not \"safe\" (may yield infinite results)."
+        ],
+        "bbox": [
+            72,
+            806,
+            584,
+            834
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            849,
+            297,
+            864
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Translate natural language queries into logical predicates using tuple or domain variables.",
+            "- Pay close attention to the scope of quantifiers.",
+            "- Ensure queries are safe by bounding all variables."
+        ],
+        "bbox": [
+            72,
+            877,
+            739,
+            919
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Relational Model",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            216,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The Relational Model is a data model based on the concept of relations (tables). Data is organized into two-dimensional tables, where each table represents an entity or a relationship, and rows (tuples) represent records, while columns (attributes) represent fields.",
+        "bbox": [
+            58,
+            93,
+            932,
+            137
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            150,
+            228,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- No specific formulas, but defines the structure.",
+        "bbox": [
+            72,
+            180,
+            426,
+            194
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            209,
+            265,
+            223
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Relation (Table): A set of tuples.",
+            "- Tuple (Row): A record in a relation.",
+            "- Attribute (Column): A named property of a relation.",
+            "- Domain: The set of permissible values for an attribute.",
+            "- Schema: The logical design of the database.",
+            "- Instance: The actual data stored in the database at a particular time.",
+            "- Integrity Constraints: Entity Integrity (Primary Key not NULL), Referential Integrity (Foreign Key rules)."
+        ],
+        "bbox": [
+            72,
+            238,
+            826,
+            334
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            349,
+            200,
+            363
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing the formal definitions of relation, tuple, and attribute.",
+            "- Not understanding the role of domains and integrity constraints."
+        ],
+        "bbox": [
+            72,
+            378,
+            547,
+            406
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            421,
+            297,
+            435
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Understand the basic terminology and how data is represented.",
+            "- Be able to identify components of a relational schema."
+        ],
+        "bbox": [
+            72,
+            450,
+            549,
+            478
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "SQL",
+        "text_level": 1,
+        "bbox": [
+            60,
+            491,
+            105,
+            505
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "SQL (Structured Query Language) is the standard language for managing and manipulating relational databases. It is used for defining database schemas (DDL), querying data (DML), controlling access (DCL), and managing transactions (TCL).",
+        "bbox": [
+            58,
+            520,
+            929,
+            562
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            577,
+            228,
+            591
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- No specific formulas, but adheres to a strict syntax.",
+        "bbox": [
+            72,
+            606,
+            460,
+            621
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            635,
+            265,
+            649
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- DDL (Data Definition Language): CREATE, ALTER, DROP (for schema objects).",
+            "- DML (Data Manipulation Language): SELECT, INSERT, UPDATE, DELETE (for data).",
+            "- DCL (Data Control Language): GRANT, REVOKE (for permissions).",
+            "- TCL (Transaction Control Language): COMMIT, ROLLBACK, SAVEPOINT."
+        ],
+        "bbox": [
+            72,
+            663,
+            727,
+            719
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            733,
+            200,
+            748
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Complex queries involving subqueries, aggregate functions, GROUP BY, and HAVING clauses.",
+            "- Understanding the order of execution of SQL clauses.",
+            "- Differences in SQL dialects (though GATE usually sticks to standard SQL)."
+        ],
+        "bbox": [
+            72,
+            763,
+            779,
+            805
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            819,
+            297,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Practice writing queries for various scenarios, including joins, subqueries, and aggregation.",
+            "- Understand the logical processing order of a SELECT statement: FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY."
+        ],
+        "bbox": [
+            72,
+            849,
+            915,
+            889
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Safe Query",
+        "text_level": 1,
+        "bbox": [
+            60,
+            904,
+            166,
+            920
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A query in Relational Calculus is considered \"safe\" if it produces a finite number of tuples as its result for any valid database instance. Unsafe queries can potentially produce an infinite result set, which is undesirable in practice.",
+        "bbox": [
+            58,
+            64,
+            890,
+            95
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            106,
+            228,
+            122
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- No direct formulas, but a conceptual property.",
+        "bbox": [
+            72,
+            136,
+            421,
+            152
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            165,
+            265,
+            181
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Every query expressible in Relational Algebra is safe.",
+            "- Safety typically requires that all variables are \"bounded\" – their values must come from the active domain of the database (values currently present in the tables)."
+        ],
+        "bbox": [
+            72,
+            194,
+            897,
+            237
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            251,
+            201,
+            264
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Queries with unbounded variables, especially those using universal quantifiers without proper restrictions.",
+            "- Example of unsafe query: $\\{t \\mid \\neg(t \\in R)\\}$ (all tuples not in $\\mathsf{R}$ , potentially infinite)."
+        ],
+        "bbox": [
+            72,
+            279,
+            853,
+            311
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            323,
+            297,
+            339
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Ensure that all variables in a relational calculus query are restricted to range over finite sets (e.g., relations in the database or active domain).",
+            "- For universal quantifiers, ensure they are used in a limited context (e.g., \"for all X in Y...\")."
+        ],
+        "bbox": [
+            72,
+            353,
+            904,
+            395
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Super Key",
+        "text_level": 1,
+        "bbox": [
+            60,
+            407,
+            159,
+            423
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A Super Key is any set of attributes in a relation that, taken together, uniquely identifies each tuple in that relation. It guarantees uniqueness but does not necessarily imply minimality.",
+        "bbox": [
+            58,
+            437,
+            904,
+            466
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            480,
+            228,
+            494
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- A set of attributes $K$ is a Super Key if $K \\to R$ (where $R$ is all attributes in the relation).",
+        "bbox": [
+            72,
+            509,
+            722,
+            524
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            539,
+            265,
+            554
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Every candidate key is a super key.",
+            "- A super key can contain redundant attributes (i.e., attributes not necessary for uniqueness)."
+        ],
+        "bbox": [
+            72,
+            568,
+            752,
+            596
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            610,
+            200,
+            624
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing with Candidate Key (Candidate Key is a minimal super key).",
+            "- Forgetting that adding more attributes to a super key still results in a super key."
+        ],
+        "bbox": [
+            72,
+            638,
+            662,
+            668
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            682,
+            297,
+            698
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- To find super keys, start with candidate keys and add any combination of remaining attributes.",
+            "- Alternatively, find the closure of attribute sets. Any set $X$ for which $X^{+}$ contains all attributes of the relation is a super key."
+        ],
+        "bbox": [
+            72,
+            711,
+            897,
+            756
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Timestamp Ordering",
+        "text_level": 1,
+        "bbox": [
+            60,
+            768,
+            250,
+            785
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Timestamp Ordering is a concurrency control protocol that ensures serializability by assigning a unique timestamp to each transaction. Transactions are executed in the order of their timestamps, and conflicts are resolved by rolling back transactions that violate this order.",
+        "bbox": [
+            58,
+            796,
+            924,
+            839
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            853,
+            228,
+            868
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Each transaction $T_{i}$ is assigned a unique timestamp $TS(T_{i})$ .",
+            "- Each data item $X$ has a $R\\_TS(X)$ (read timestamp) and a $W\\_TS(X)$ (write timestamp).",
+            "- Read Rule: If $TS(T_i) < W\\_TS(X)$ , $T_i$ must abort and restart with a new timestamp. Otherwise, read $X$ and set"
+        ],
+        "bbox": [
+            72,
+            883,
+            917,
+            929
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nR _ {-} T S (X) = \\max (R _ {-} T S (X), T S (T _ {i})).\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            64,
+            396,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Write Rule: If $TS(T_i) < R\\_TS(X)$ or $TS(T_i) < W\\_TS(X)$ , $T_i$ must abort and restart. Otherwise, write $X$ and set $W\\_TS(X) = TS(T_i)$ .",
+        "bbox": [
+            72,
+            80,
+            919,
+            112
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            125,
+            263,
+            140
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Guarantees conflict serializability.",
+            "- Can lead to cascading rollbacks and starvation.",
+            "- Basic timestamp ordering is prone to aborts."
+        ],
+        "bbox": [
+            72,
+            154,
+            433,
+            195
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            210,
+            200,
+            224
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly applying the read/write rules, especially the abort conditions.",
+            "- Tracing complex schedules with multiple transactions."
+        ],
+        "bbox": [
+            72,
+            239,
+            608,
+            267
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            282,
+            295,
+            298
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Assign timestamps to transactions.",
+            "- Maintain $R\\_TS(X)$ and $W\\_TS(X)$ for each data item.",
+            "- Step through the schedule, applying the read and write rules and determining if any transaction needs to abort."
+        ],
+        "bbox": [
+            72,
+            312,
+            890,
+            355
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Transaction and Concurrency",
+        "text_level": 1,
+        "bbox": [
+            60,
+            368,
+            334,
+            384
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A Transaction is a logical unit of work that accesses and possibly modifies the contents of a database. Concurrency Control is the management of simultaneous operations on a database to ensure data consistency and integrity, especially when multiple transactions execute concurrently.",
+        "bbox": [
+            58,
+            396,
+            904,
+            440
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            453,
+            226,
+            467
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- No direct formulas, but concepts like serializability and isolation levels are key.",
+        "bbox": [
+            72,
+            482,
+            657,
+            497
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            511,
+            263,
+            526
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "• ACID Properties of Transactions:",
+        "bbox": [
+            72,
+            540,
+            349,
+            554
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Atomicity: All or nothing.",
+            "- Consistency: Transaction takes database from one consistent state to another.",
+            "- Isolation: Concurrent transactions appear to execute serially.",
+            "- Durability: Changes are permanent once committed."
+        ],
+        "bbox": [
+            97,
+            555,
+            694,
+            609
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Concurrency Anomalies: Dirty Read, Lost Update, Unrepeatable Read, Phantom Read.",
+        "bbox": [
+            72,
+            609,
+            736,
+            623
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Isolation Levels: Read Uncommitted, Read Committed, Repeatable Read, Serializable.",
+        "bbox": [
+            72,
+            623,
+            729,
+            637
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            652,
+            200,
+            666
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identifying which anomaly occurs in a given schedule.",
+            "- Understanding how different concurrency control mechanisms (locking, timestamping) prevent anomalies."
+        ],
+        "bbox": [
+            72,
+            681,
+            853,
+            710
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            724,
+            295,
+            739
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Analyze schedules to identify potential anomalies.",
+            "- Understand how each ACID property is maintained or violated.",
+            "- Relate isolation levels to the anomalies they prevent."
+        ],
+        "bbox": [
+            72,
+            752,
+            542,
+            795
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Tuple Relational Calculus",
+        "text_level": 1,
+        "bbox": [
+            60,
+            807,
+            295,
+            824
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Tuple Relational Calculus (TRC) is a non-procedural query language where variables range over tuples. It allows users to specify the properties of the tuples they want in the result without detailing the exact steps to retrieve them.",
+        "bbox": [
+            58,
+            837,
+            926,
+            866
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            878,
+            226,
+            894
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- General form: $\\{t \\mid P(t)\\}$ where $t$ is a tuple variable and $P(t)$ is a formula (predicate) that $t$ must satisfy.",
+        "bbox": [
+            72,
+            908,
+            840,
+            926
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Predicates can involve:",
+        "bbox": [
+            73,
+            65,
+            260,
+            78
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Membership: $t \\in R$",
+            "- Attribute access: $t$ . $A$",
+            "- Comparison operators: $=, \\neq, <, >, \\leq, \\geq$",
+            "- Logical connectives: $\\land$ , $\\lor$ , $\\neg$",
+            "- Quantifiers: ∃ (exists), ∀ (for all)"
+        ],
+        "bbox": [
+            97,
+            79,
+            421,
+            152
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            166,
+            263,
+            181
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Expressive power equivalent to Relational Algebra.",
+            "- More declarative than Relational Algebra."
+        ],
+        "bbox": [
+            72,
+            195,
+            458,
+            223
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            237,
+            200,
+            250
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly formulating complex predicates, especially with multiple tuple variables and quantifiers.",
+            "- Ensuring the query is \"safe\" (produces a finite result)."
+        ],
+        "bbox": [
+            72,
+            266,
+            798,
+            295
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            309,
+            295,
+            324
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Break down the query into smaller logical conditions.",
+            "- Use a separate tuple variable for each relation involved in the query.",
+            "- Carefully use quantifiers, ensuring variables are appropriately bound."
+        ],
+        "bbox": [
+            72,
+            339,
+            589,
+            380
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Two Phase Locking Protocol",
+        "text_level": 1,
+        "bbox": [
+            60,
+            393,
+            324,
+            409
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The Two-Phase Locking (2PL) protocol is a concurrency control mechanism that ensures serializability by requiring transactions to acquire all necessary locks before releasing any. It divides a transaction's execution into two phases: a growing phase and a shrinking phase.",
+        "bbox": [
+            58,
+            422,
+            921,
+            465
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            479,
+            226,
+            492
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- No direct formulas, but a protocol with rules for lock acquisition and release.",
+        "bbox": [
+            72,
+            508,
+            638,
+            522
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Properties/Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            536,
+            263,
+            551
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Growing Phase: Transaction can acquire new locks but cannot release any.",
+            "- Shrinking Phase: Transaction can release existing locks but cannot acquire new ones.",
+            "• Guarantees conflict serializability.",
+            "- Can lead to deadlocks.",
+            "- Strict 2PL: All exclusive (write) locks are held until commit/rollback, preventing cascading rollbacks."
+        ],
+        "bbox": [
+            72,
+            566,
+            811,
+            635
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            650,
+            200,
+            663
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying the growing and shrinking phases.",
+            "- Detecting deadlocks in schedules using 2PL (e.g., using a wait-for graph).",
+            "- Understanding the difference between basic 2PL and strict 2PL."
+        ],
+        "bbox": [
+            72,
+            679,
+            623,
+            720
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            735,
+            295,
+            750
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace transaction execution, noting when locks are acquired and released.",
+            "- Construct a wait-for graph to detect deadlocks: an edge $T_{i} \\rightarrow T_{j}$ exists if $T_{i}$ is waiting for a lock held by $T_{j}$ . A cycle indicates a deadlock."
+        ],
+        "bbox": [
+            72,
+            764,
+            924,
+            806
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference",
+        "text_level": 1,
+        "bbox": [
+            60,
+            820,
+            294,
+            834
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Armstrong Axioms:",
+        "bbox": [
+            72,
+            850,
+            243,
+            863
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Reflexivity: If $B \\subseteq A$ , then $A \\to B$",
+            "○ Augmentation: If $A \\to B$ , then $AC \\to BC$",
+            "- Transitivity: If $A \\to B$ and $B \\to C$ , then $A \\to C$"
+        ],
+        "bbox": [
+            97,
+            864,
+            473,
+            906
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- B-Tree (Order $m$ ):",
+        "bbox": [
+            72,
+            908,
+            228,
+            921
+        ],
+        "page_idx": 11
+    }
+]

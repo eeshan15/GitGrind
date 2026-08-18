@@ -1,0 +1,6245 @@
+[
+    {
+        "type": "text",
+        "text": "3.4.11 Binary Heap: GATE CSE 2007 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            478,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/074be0cd9bf1513eb52abdaae53c150d63b5e26d54efd3fc453ad74477e6ee52.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the process of inserting an element into a Max Heap, where the Max Heap is represented by an array. Suppose we perform a binary search on the path from the new leaf to the root to find the position for the newly inserted element, the number of comparisons performed is:",
+        "bbox": [
+            84,
+            87,
+            878,
+            131
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta (\\log_2n)$",
+        "bbox": [
+            89,
+            141,
+            186,
+            157
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta (\\log_2\\log_2n)$",
+        "bbox": [
+            497,
+            141,
+            623,
+            157
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n)$",
+        "bbox": [
+            90,
+            159,
+            154,
+            175
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n\\log_2n)$",
+        "bbox": [
+            497,
+            159,
+            603,
+            176
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 data-structures binary-heap normal",
+        "bbox": [
+            89,
+            184,
+            329,
+            193
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            200,
+            188,
+            214
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.4.12 Binary Heap: GATE CSE 2009 | Question: 59",
+        "text_level": 1,
+        "bbox": [
+            78,
+            223,
+            478,
+            238
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a binary max-heap implemented using an array.\nWhich one of the following array represents a binary max-heap?",
+        "bbox": [
+            85,
+            247,
+            556,
+            276
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\{25,12,16,13,10,8,14\\}$",
+            "C. $\\{25,14,16,13,10,8,12\\}$"
+        ],
+        "bbox": [
+            87,
+            285,
+            292,
+            315
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 data-structures binary-heap easy",
+        "bbox": [
+            89,
+            319,
+            319,
+            328
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            334,
+            188,
+            349
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/f146ff598d5ae03b63608c5e07c643eb411ceb57d5815d39d209ba9c4a462fee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            226,
+            931,
+            264
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.4.13 Binary Heap: GATE CSE 2009 | Question: 60",
+        "text_level": 1,
+        "bbox": [
+            78,
+            359,
+            478,
+            372
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a binary max-heap implemented using an array.",
+        "bbox": [
+            85,
+            383,
+            507,
+            397
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "What is the content of the array after two delete operations on $\\{25, 14, 16, 13, 10, 8, 12\\}$",
+        "bbox": [
+            85,
+            397,
+            742,
+            414
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{14,13,12,10,8\\}$",
+        "bbox": [
+            89,
+            421,
+            242,
+            438
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $\\{14,12,13,8,10\\}$",
+        "bbox": [
+            497,
+            422,
+            647,
+            437
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $\\{14,13,8,12,10\\}$",
+        "bbox": [
+            90,
+            438,
+            242,
+            452
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $\\{14,13,12,8,10\\}$",
+        "bbox": [
+            497,
+            438,
+            647,
+            453
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 data-structures binary-heap normal",
+        "bbox": [
+            89,
+            457,
+            329,
+            466
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            472,
+            188,
+            486
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/4c71595fbbcb2ce569531c5cd6b039c5d67d5be5e18f056855b73bc2f5481783.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            362,
+            931,
+            399
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.4.14 Binary Heap: GATE CSE 2011 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            496,
+            478,
+            510
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A max-heap is a heap where the value of each parent is greater than or equal to the value of its children. Which of the following is a max-heap?",
+        "bbox": [
+            84,
+            519,
+            878,
+            548
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/25d30ae317dfb1e6ab0bec4a5099cb1fc5d1c374795fd61f62448fe270e579cf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  1[\"1\"] --> 2[\"2\"]\n  n1[\"1\"] --> 3[\"5\"]\n  n1 --> 4[\"4\"]\n  n2[\"2\"] --> 6[\"6\"]\n  n2 --> 7[\"8\"]\n  n3[\"3\"] --> 8[\"10\"]\n  n4[\"4\"] --> n8[\"8\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            149,
+            562,
+            292,
+            657
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/2a6e2270d9961439309ae6fdd073fb6b261b3ccdec3b3128d5150ff610afe4d5.jpg",
+        "image_caption": [
+            "A.",
+            "C."
+        ],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  10[\"10\"] --> 5[\"5\"]\n  n5[\"5\"] --> 4[\"④\"]\n  n5 --> 8[\"⑧\"]\n  n5 --> 6[\"6\"]\n  n6[\"6\"] --> 2[\"②\"]\n  n6 --> 1[\"①\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            127,
+            668,
+            287,
+            739
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 data-structures binary-heap easy",
+        "bbox": [
+            89,
+            752,
+            319,
+            761
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b4ad0eb2512d3e3afef9ffb86f085146e6c5d7725bf06d29adf9b0ff2b322784.jpg",
+        "image_caption": [
+            "B."
+        ],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  10[\"10\"] --> 8[\"8\"]\n  n8[\"8\"] --> 4[\"4\"]\n  n8 --> 5[\"5\"]\n  n8 --> 6[\"6\"]\n  n6[\"6\"] --> 1[\"1\"]\n  n6 --> 2[\"2\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            526,
+            562,
+            689,
+            637
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/448ad94740acdfcecc333ab4f8481cdc61ef93e55dd639747609d6a60a658221.jpg",
+        "image_caption": [
+            "D."
+        ],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  1[\"1\"] --> 2[\"2\"]\n  n2[\"2\"] --> 5[\"5\"]\n  n5[\"5\"] --> 8[\"8\"]\n  n8[\"8\"] --> 6[\"6\"]\n  n6[\"6\"] --> 10[\"10\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            524,
+            668,
+            685,
+            739
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            768,
+            188,
+            782
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.4.15 Binary Heap: GATE CSE 2014 | Set 2 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            790,
+            532,
+            805
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A priority queue is implemented as a Max-Heap. Initially, it has 5 elements. The level-order traversal of the heap is: 10, 8, 5, 3, 2. Two new elements 1 and 7 are inserted into the heap in that order. The level-order traversal of the heap after the insertion of the elements is:",
+        "bbox": [
+            84,
+            815,
+            875,
+            858
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 10,8,7,3,2,1,5",
+        "bbox": [
+            89,
+            866,
+            230,
+            881
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 10,8,7,2,3,1,5",
+        "bbox": [
+            497,
+            866,
+            635,
+            881
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 10,8,7,1,2,3,5",
+        "bbox": [
+            90,
+            881,
+            230,
+            895
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 10,8,7,5,3,2,1",
+        "bbox": [
+            497,
+            881,
+            635,
+            895
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 data-structures binary-heap normal",
+        "bbox": [
+            89,
+            900,
+            349,
+            909
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            916,
+            188,
+            929
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/39382d2873bf1dec163d2c80fe883522d10787c5d319723dfbc1b2c7ddb7ff8a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            498,
+            931,
+            536
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/07530f4a068374fd7c6c0a079d4dfeb98486baf9f5645c4f4674a563bebe8763.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            794,
+            931,
+            831
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.4.16 Binary Heap: GATE CSE 2015 | Set 1 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            532,
+            80
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider a max heap, represented by the array: 40, 30, 20, 10, 15, 16, 17, 8, 4.",
+        "bbox": [
+            85,
+            89,
+            673,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/6e7897dd923667e7be1a91d913113470a19c0521ea343f6522910a1a644d9b83.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Array index</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>Value</td><td>40</td><td>30</td><td>20</td><td>10</td><td>15</td><td>16</td><td>17</td><td>8</td><td>4</td></tr></table>",
+        "bbox": [
+            282,
+            116,
+            732,
+            157
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/e91cdeda6dc51472ec2f7906039329b0e5ad0393687e9517d770da36a4a8a538.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Now consider that a value 35 is inserted into this heap. After insertion, the new heap is",
+        "bbox": [
+            85,
+            167,
+            717,
+            182
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 40,30,20,10,15,16,17,8,4,35",
+            "C. 40,30,20,10,35,16,17,8,4,15"
+        ],
+        "bbox": [
+            89,
+            190,
+            339,
+            219
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. 40,35,20,10,30,16,17,8,4,15",
+            "D. 40,35,20,10,15,16,17,8,4,30"
+        ],
+        "bbox": [
+            497,
+            191,
+            744,
+            219
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 data-structures binary-heap easy",
+        "bbox": [
+            87,
+            224,
+            339,
+            233
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            239,
+            188,
+            254
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.4.17 Binary Heap: GATE CSE 2015 | Set 2 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            263,
+            532,
+            277
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/3f0ee7c564cffb0ec274f3caa1a5eb4dd3321d8c4568741ea4c134b00e329cf0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            266,
+            931,
+            302
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider a complete binary tree where the left and right subtrees of the root are max-heaps. The lower bound for the number of operations to convert the tree to a heap is",
+        "bbox": [
+            84,
+            287,
+            878,
+            315
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Omega (\\log n)$",
+            "C. $\\Omega(n \\log n)$"
+        ],
+        "bbox": [
+            89,
+            325,
+            189,
+            355
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\Omega(n)$",
+            "D. $\\Omega(n^{2})$"
+        ],
+        "bbox": [
+            497,
+            325,
+            564,
+            355
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 data-structures binary-heap normal",
+        "bbox": [
+            87,
+            359,
+            349,
+            369
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            375,
+            188,
+            389
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.4.18 Binary Heap: GATE CSE 2015 | Set 3 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            399,
+            532,
+            413
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2d699dcfb146e6746495bfe94f4e107293976dbf895a81cee8eceb968568aa66.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            402,
+            931,
+            439
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following array of elements.",
+        "bbox": [
+            85,
+            423,
+            386,
+            437
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "$\\langle 89,19,50,17,12,15,2,5,7,11,6,9,100\\rangle$",
+        "bbox": [
+            87,
+            441,
+            428,
+            458
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of interchanges needed to convert it into a max-heap is",
+        "bbox": [
+            85,
+            460,
+            653,
+            475
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 4",
+        "bbox": [
+            89,
+            489,
+            126,
+            502
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 5",
+        "bbox": [
+            285,
+            490,
+            319,
+            503
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 2",
+        "bbox": [
+            480,
+            489,
+            515,
+            502
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 3",
+        "bbox": [
+            673,
+            489,
+            710,
+            502
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 data-structures binary-heap easy",
+        "bbox": [
+            87,
+            514,
+            339,
+            523
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            530,
+            188,
+            543
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.4.19 Binary Heap: GATE CSE 2016 | Set 1 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            553,
+            532,
+            567
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/3e2aac2da11a68eac697aa39a74d6e7a872f175974aaf6530511841d5f5b3bf5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            555,
+            931,
+            593
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "An operator delete(i) for a binary heap data structure is to be designed to delete the item in the i-th node.",
+        "bbox": [
+            84,
+            578,
+            875,
+            593
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Assume that the heap is implemented in an array and i refers to the i-th index of the array. If the heap tree has depth d (number of edges on the path from the root to the farthest leaf), then what is the time complexity to re-fix the heap efficiently after the removal of the element?",
+        "bbox": [
+            84,
+            593,
+            927,
+            634
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $O(1)$",
+            "C. $O(2^{d})$ but not $O(d)$"
+        ],
+        "bbox": [
+            89,
+            644,
+            253,
+            676
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $O(d)$ but not $O(1)$",
+            "D. $O(d2^{d})$ but not $O(2^{d})$"
+        ],
+        "bbox": [
+            497,
+            644,
+            680,
+            676
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 data-structures binary-heap normal",
+        "bbox": [
+            87,
+            679,
+            349,
+            688
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            695,
+            188,
+            709
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.4.20 Binary Heap: GATE CSE 2016 | Set 2 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            78,
+            719,
+            532,
+            733
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/d5f8f52fe63298e441bd43ce336dcd83169f4062a22fdfba8b540e87aaa01ef7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            722,
+            931,
+            758
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A complete binary min-heap is made by including each integer in [1, 1023] exactly once. The depth of a node in the heap is the length of the path from the root of the heap to that node. Thus, the root is at depth 0. The maximum depth at which integer 9 can appear is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            744,
+            878,
+            788
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 data-structures binary-heap normal numerical-answers",
+        "bbox": [
+            87,
+            801,
+            440,
+            811
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            818,
+            188,
+            832
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.4.21 Binary Heap: GATE CSE 2018 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            840,
+            478,
+            855
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/72c80235d0118c26d5c5d11747d541a0fb7d709734a392506e5fe8e0db4813f5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            845,
+            931,
+            881
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The number of possible min-heaps containing each value from $\\{1,2,3,4,5,6,7\\}$ exactly once is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            865,
+            868,
+            882
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 binary-heap numerical-answers combinatory two-marks",
+        "bbox": [
+            87,
+            895,
+            423,
+            904
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            910,
+            188,
+            925
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.4.22 Binary Heap: GATE CSE 2019 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            478,
+            81
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/8b3c2e14b3c508d3bba210f7a731007c02e093bd4f9257ccf1faca8ec21b50c4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements:",
+        "bbox": [
+            85,
+            90,
+            341,
+            105
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. The smallest element in a max-heap is always at a leaf node",
+            "II. The second largest element in a max-heap is always a child of a root node",
+            "III. A max-heap can be constructed from a binary search tree in $\\Theta(n)$ time",
+            "IV. A binary search tree can be constructed from a max-heap in $\\Theta(n)$ time"
+        ],
+        "bbox": [
+            92,
+            115,
+            655,
+            175
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements are TRUE?",
+        "bbox": [
+            85,
+            184,
+            403,
+            199
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. I, II and III",
+        "bbox": [
+            89,
+            213,
+            184,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. I, II and IV",
+        "bbox": [
+            285,
+            213,
+            381,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. I, III and IV",
+        "bbox": [
+            478,
+            213,
+            579,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. II, III and IV",
+        "bbox": [
+            673,
+            213,
+            779,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019",
+        "bbox": [
+            87,
+            238,
+            147,
+            247
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "data-structures",
+        "bbox": [
+            157,
+            238,
+            225,
+            247
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "binary-heap",
+        "bbox": [
+            235,
+            238,
+            285,
+            247
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "two-marks",
+        "bbox": [
+            297,
+            238,
+            344,
+            247
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            254,
+            189,
+            268
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.4.23 Binary Heap: GATE CSE 2020 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            277,
+            478,
+            292
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/9582426c9829bfed08734ba6a160114ef1b2490f81afee2b4c03ed2e6c7680bc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            280,
+            931,
+            318
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the array representation of a binary min-heap containing 1023 elements. The minimum number of comparisons required to find the maximum in the heap is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            301,
+            878,
+            331
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020",
+        "bbox": [
+            87,
+            344,
+            147,
+            353
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "numerical-answers",
+        "bbox": [
+            157,
+            344,
+            236,
+            353
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "binary-heap",
+        "bbox": [
+            247,
+            344,
+            299,
+            353
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "two-marks",
+        "bbox": [
+            310,
+            344,
+            357,
+            353
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            359,
+            189,
+            375
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.4.24 Binary Heap: GATE CSE 2021 | Set 2 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            384,
+            522,
+            397
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/fb826bb1d83df79d06ff2db2dc62da88e8549279e72ec2d7e6dbfa198b8f103e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            387,
+            931,
+            425
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Let H be a binary min-heap consisting of n elements implemented as an array. What is the worst case time complexity of an optimal algorithm to find the maximum element in H?",
+        "bbox": [
+            84,
+            408,
+            875,
+            438
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(1)$",
+        "bbox": [
+            89,
+            448,
+            154,
+            461
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n)$",
+        "bbox": [
+            90,
+            461,
+            152,
+            477
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta (\\log n)$",
+        "bbox": [
+            495,
+            448,
+            584,
+            463
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n \\log n)$",
+        "bbox": [
+            495,
+            463,
+            596,
+            477
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2",
+        "bbox": [
+            87,
+            482,
+            166,
+            491
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "data-structures",
+        "bbox": [
+            178,
+            482,
+            243,
+            491
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "binary-heap",
+        "bbox": [
+            255,
+            482,
+            305,
+            491
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "time-complexity",
+        "bbox": [
+            317,
+            482,
+            386,
+            491
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "one-mark",
+        "bbox": [
+            398,
+            482,
+            440,
+            491
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            497,
+            189,
+            511
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.4.25 Binary Heap: GATE CSE 2023 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            521,
+            470,
+            536
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/3c520c6ef2ba2fe5925f6cd465d0cc968d3dddb41e62a44a7a8940ae770d196f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            524,
+            931,
+            561
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following sequences when stored in an array at locations $A[1], \\ldots, A[10]$ forms a max-heap?",
+        "bbox": [
+            84,
+            545,
+            878,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 23,17,10,6,13,14,1,5,7,12",
+        "bbox": [
+            87,
+            584,
+            324,
+            598
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 23,17,14,6,13,10,1,5,7,15",
+        "bbox": [
+            90,
+            598,
+            322,
+            612
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 23,17,14,7,13,10,1,5,6,12",
+        "bbox": [
+            495,
+            584,
+            729,
+            598
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 23,14,17,1,10,13,16,12,7,5",
+        "bbox": [
+            495,
+            598,
+            739,
+            612
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023",
+        "bbox": [
+            87,
+            617,
+            147,
+            625
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "data-structures",
+        "bbox": [
+            157,
+            617,
+            225,
+            625
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "binary-heap",
+        "bbox": [
+            235,
+            617,
+            285,
+            625
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "one-mark",
+        "bbox": [
+            297,
+            617,
+            339,
+            625
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            631,
+            189,
+            647
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.4.26 Binary Heap: GATE CSE 2024 | Set 1 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            78,
+            656,
+            532,
+            671
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/6161fd6447ea310e74756b1b4aa23e26b8951fb7829d5f3d4ac7923ac0846eec.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            659,
+            931,
+            697
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a binary min-heap containing 105 distinct elements. Let k be the index (in the underlying array) of the maximum element stored in the heap. The number of possible values of k is",
+        "bbox": [
+            84,
+            680,
+            878,
+            709
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 53",
+        "bbox": [
+            89,
+            723,
+            134,
+            736
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 52",
+        "bbox": [
+            285,
+            723,
+            329,
+            737
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 27",
+        "bbox": [
+            478,
+            723,
+            524,
+            737
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 1",
+        "bbox": [
+            673,
+            723,
+            710,
+            737
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1",
+        "bbox": [
+            87,
+            747,
+            166,
+            757
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "data-structures",
+        "bbox": [
+            178,
+            747,
+            243,
+            757
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "binary-heap",
+        "bbox": [
+            255,
+            747,
+            305,
+            757
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "two-marks",
+        "bbox": [
+            317,
+            747,
+            364,
+            757
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            764,
+            189,
+            777
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.4.27 Binary Heap: GATE CSE 2025 | Set 1 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            787,
+            532,
+            802
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/c15b54fbe5e7ae66364d42828885dced4e86b8108ab84cf9df3cd39111a1d1c1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            790,
+            931,
+            827
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The height of any rooted tree is defined as the maximum number of edges in the path from the root node to any leaf node.",
+        "bbox": [
+            84,
+            811,
+            878,
+            839
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Suppose a Min-Heap T stores 32 keys. The height of T is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            852,
+            764,
+            868
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1",
+        "bbox": [
+            87,
+            881,
+            164,
+            891
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "data-structures",
+        "bbox": [
+            174,
+            881,
+            240,
+            891
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "binary-heap",
+        "bbox": [
+            252,
+            881,
+            304,
+            891
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "numerical-answers",
+        "bbox": [
+            315,
+            881,
+            394,
+            891
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "easy",
+        "bbox": [
+            403,
+            881,
+            426,
+            891
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "one-mark",
+        "bbox": [
+            436,
+            881,
+            480,
+            891
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            897,
+            189,
+            912
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.4.28 Binary Heap: GATE IT 2004 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            460,
+            80
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/a9c8e306ec78c87e54bbd6a23faa975702a50abf614897914dc60285f4f93add.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "An array of integers of size $n$ can be converted into a heap by adjusting the heaps rooted at each internal node of the complete binary tree starting at the node $\\lfloor (n - 1)/2 \\rfloor$ , and doing this adjustment up to the root node (root node is at index 0) in the order $\\lfloor (n - 1)/2 \\rfloor$ , $\\lfloor (n - 3)/2 \\rfloor$ , ..., 0. The time required to construct a heap in this manner is",
+        "bbox": [
+            84,
+            87,
+            929,
+            148
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $O(\\log n)$",
+        "bbox": [
+            89,
+            160,
+            179,
+            176
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $O(n)$",
+        "bbox": [
+            285,
+            161,
+            347,
+            176
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $O(n\\log \\log n)$",
+        "bbox": [
+            480,
+            161,
+            603,
+            176
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $O(n\\log n)$",
+        "bbox": [
+            675,
+            161,
+            774,
+            176
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 data-structures binary-heap normal",
+        "bbox": [
+            89,
+            186,
+            322,
+            195
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            201,
+            188,
+            216
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.4.29 Binary Heap: GATE IT 2006 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            225,
+            460,
+            239
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following sequences of array elements forms a heap?",
+        "bbox": [
+            85,
+            249,
+            574,
+            264
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{23,17,14,6,13,10,1,12,7,5\\}$",
+        "bbox": [
+            87,
+            273,
+            339,
+            288
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $\\{23,17,14,7,13,10,1,5,6,12\\}$",
+        "bbox": [
+            90,
+            288,
+            339,
+            304
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 data-structures binary-heap easy",
+        "bbox": [
+            87,
+            308,
+            312,
+            317
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $\\{23,17,14,6,13,10,1,5,7,12\\}$",
+        "bbox": [
+            495,
+            273,
+            744,
+            288
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $\\{23,17,14,7,13,10,1,12,5,7\\}$",
+        "bbox": [
+            497,
+            288,
+            744,
+            304
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            323,
+            188,
+            337
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/496265a60a90fbce623217e891cf9c6fa1264adf6189cd240486bac8e288936d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            228,
+            931,
+            264
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.4.30 Binary Heap: GATE IT 2006 | Question: 72",
+        "text_level": 1,
+        "bbox": [
+            78,
+            347,
+            460,
+            362
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "An array X of n distinct integers is interpreted as a complete binary tree. The index of the first element of the array is 0. If only the root node does not satisfy the heap property, the algorithm to convert the complete binary tree into a heap has the best asymptotic time complexity of",
+        "bbox": [
+            84,
+            371,
+            878,
+            415
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $O(n)$",
+        "bbox": [
+            89,
+            427,
+            152,
+            444
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $O(\\log n)$",
+        "bbox": [
+            285,
+            428,
+            371,
+            444
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $O(n\\log n)$",
+        "bbox": [
+            480,
+            428,
+            579,
+            444
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $O(n\\log \\log n)$",
+        "bbox": [
+            675,
+            428,
+            800,
+            444
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 data-structures binary-heap easy",
+        "bbox": [
+            89,
+            452,
+            312,
+            461
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            467,
+            188,
+            483
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/922caba00e85baa570ce669a17f36358bfe6d24b014710a41ed7273b8c4bc442.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            350,
+            931,
+            387
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.5",
+        "text_level": 1,
+        "bbox": [
+            68,
+            492,
+            95,
+            505
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Binary Search Tree (36)",
+        "text_level": 1,
+        "bbox": [
+            418,
+            492,
+            608,
+            508
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (15Q) Test 4 (15Q)",
+        "bbox": [
+            70,
+            517,
+            549,
+            534
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.5.1 Binary Search Tree: GATE CSE 1996 | Question: 2.14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            546,
+            537,
+            561
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A binary search tree is generated by inserting in order the following integers:",
+        "bbox": [
+            85,
+            570,
+            645,
+            586
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n5 0, 1 5, 6 2, 5, 2 0, 5 8, 9 1, 3, 8, 3 7, 6 0, 2 4\n$$",
+        "text_format": "latex",
+        "bbox": [
+            352,
+            593,
+            660,
+            611
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The number of nodes in the left subtree and right subtree of the root respectively is",
+        "bbox": [
+            85,
+            621,
+            690,
+            636
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $(4,7)$",
+        "bbox": [
+            89,
+            648,
+            154,
+            666
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. (7,4)",
+        "bbox": [
+            285,
+            649,
+            349,
+            666
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. (8,3)",
+        "bbox": [
+            480,
+            649,
+            542,
+            665
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. (3,8)",
+        "bbox": [
+            675,
+            649,
+            737,
+            665
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1996 data-structures binary-search-tree easy",
+        "bbox": [
+            89,
+            674,
+            329,
+            684
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            690,
+            188,
+            704
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.5.2 Binary Search Tree: GATE CSE 1996 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            714,
+            514,
+            728
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/b4d8d32c5959723f2f5327294f9f42180582ebf4d171a947c7c1097d631aaba8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            549,
+            931,
+            587
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A binary search tree is used to locate the number 43. Which of the following probe sequences are possible and which are not? Explain.",
+        "bbox": [
+            84,
+            737,
+            878,
+            767
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "(a) 61 52 14 17 40 43",
+            "(b) 2 3 50 40 60 43",
+            "(c) 10 65 31 48 37 43",
+            "(d) 81 61 52 14 41 43",
+            "(e) 17 77 27 66 18 43"
+        ],
+        "bbox": [
+            90,
+            779,
+            354,
+            877
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1996 data-structures binary-search-tree normal descriptive",
+        "bbox": [
+            89,
+            889,
+            400,
+            899
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            904,
+            188,
+            919
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/da8c930d72ded7c021523aaec2bb08e29b49df3c0aa353b59982336bb6c3fdf0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            717,
+            931,
+            752
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.5.3 Binary Search Tree: GATE CSE 1997 | Question: 4.5",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            529,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3fe38d94d2d4ed5b57e00da03edd67c4e9c53c8bcee1453344238eb3875a0781.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A binary search tree contains the value 1, 2, 3, 4, 5, 6, 7, 8. The tree is traversed in pre-order and the values are printed out. Which of the following sequences is a valid output?",
+        "bbox": [
+            84,
+            87,
+            875,
+            118
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 53124786",
+        "bbox": [
+            87,
+            125,
+            218,
+            138
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 53126487",
+        "bbox": [
+            495,
+            125,
+            623,
+            140
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 53241678",
+        "bbox": [
+            90,
+            140,
+            218,
+            153
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 53124768",
+        "bbox": [
+            497,
+            140,
+            623,
+            153
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1997 data-structures binary-search-tree normal",
+        "bbox": [
+            87,
+            159,
+            339,
+            169
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            174,
+            188,
+            188
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.5.4 Binary Search Tree: GATE CSE 2001 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            199,
+            524,
+            213
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/45d1b29053aa5e09cb4dfbfaf8ffc2e77ac164d9c71b74872a46c9d4d3708fc9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            201,
+            932,
+            239
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Insert the following keys one by one into a binary search tree in the order specified.",
+        "bbox": [
+            85,
+            244,
+            717,
+            258
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n1 5, 3 2, 2 0, 9, 3, 2 5, 1 2, 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            423,
+            268,
+            616,
+            285
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Show the final binary search tree after the insertions.",
+        "bbox": [
+            109,
+            295,
+            497,
+            309
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Draw the binary search tree after deleting 15 from it.",
+            "C. Complete the statements $S1$ , $S2$ and $S3$ in the following function so that the function computes the depth of a binary tree rooted at $t$ ."
+        ],
+        "bbox": [
+            85,
+            309,
+            927,
+            352
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\ntypedef struct tnode{\n    int key;\n    struct tnode *left, *right;\n} *Tree;\n\nint depth (Tree t)\n{\n    int x, y;\n    if (t == NULL) return 0;\n    x = depth (t -> left);\nS1: ________;\nS2:     if (x > y) return ________;\nS3:    else return ________;\n}\n```",
+        "bbox": [
+            112,
+            361,
+            315,
+            547
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 data-structures binary-search-tree normal descriptive",
+        "bbox": [
+            87,
+            571,
+            415,
+            581
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            587,
+            188,
+            602
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.5.5 Binary Search Tree: GATE CSE 2003 | Question: 19, ISRO2009-24",
+        "text_level": 1,
+        "bbox": [
+            77,
+            611,
+            633,
+            625
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/6d80ae7dd309a0ba376cc397a7610221268232b5089837923280f0ea2ed7981c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            614,
+            932,
+            652
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Suppose the numbers 7, 5, 1, 8, 3, 6, 0, 9, 4, 2 are inserted in that order into an initially empty binary search tree. The binary search tree uses the usual ordering on natural numbers. What is the in-order traversal sequence of the resultant tree?",
+        "bbox": [
+            84,
+            634,
+            878,
+            676
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 7510324689",
+        "bbox": [
+            87,
+            685,
+            245,
+            700
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 0243165987",
+        "bbox": [
+            495,
+            685,
+            652,
+            700
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 0123456789",
+        "bbox": [
+            90,
+            703,
+            245,
+            718
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 9864230157",
+        "bbox": [
+            497,
+            703,
+            650,
+            718
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 binary-search-tree easy isro2009",
+        "bbox": [
+            87,
+            726,
+            317,
+            737
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            744,
+            188,
+            758
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.5.6 Binary Search Tree: GATE CSE 2003 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            77,
+            768,
+            515,
+            782
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $T(n)$ be the number of different binary search trees on n distinct elements.",
+        "bbox": [
+            84,
+            792,
+            662,
+            808
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Then $T(n) = \\sum_{k=1}^{n} T(k-1)T(x)$ , where x is",
+        "bbox": [
+            85,
+            811,
+            440,
+            828
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $n - k + 1$",
+        "bbox": [
+            87,
+            840,
+            188,
+            855
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. n-k",
+        "bbox": [
+            285,
+            840,
+            352,
+            855
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. n-k-1",
+        "bbox": [
+            478,
+            840,
+            576,
+            855
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $n - k - 2$",
+        "bbox": [
+            673,
+            840,
+            773,
+            855
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 normal binary-search-tree",
+        "bbox": [
+            87,
+            865,
+            278,
+            875
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            881,
+            188,
+            896
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1c5bc67cc8102434c37a63b8117f5e3cdc13da6069693e88ba4ed51ba54ed84.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            770,
+            932,
+            808
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.5.7 Binary Search Tree: GATE CSE 2003 | Question: 63, ISRO2009-25",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            633,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6ddde9de89dba10e0629e711f74c82d2419d433274efd54b830b96ebda42a80d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A data structure is required for storing a set of integers such that each of the following operations can be done in $O(\\log n)$ time, where n is the number of elements in the set.",
+        "bbox": [
+            84,
+            87,
+            878,
+            119
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Deletion of the smallest element",
+            "II. Insertion of an element if it is not already present in the set"
+        ],
+        "bbox": [
+            92,
+            129,
+            542,
+            162
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following data structures can be used for this purpose?",
+        "bbox": [
+            85,
+            172,
+            584,
+            188
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A heap can be used but not a balanced binary search tree",
+            "B. A balanced binary search tree can be used but not a heap",
+            "C. Both balanced binary search tree and heap can be used",
+            "D. Neither balanced search tree nor heap can be used"
+        ],
+        "bbox": [
+            87,
+            198,
+            537,
+            263
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 data-structures easy isro2009 binary-search-tree",
+        "bbox": [
+            87,
+            289,
+            394,
+            299
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            305,
+            188,
+            319
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.5.8 Binary Search Tree: GATE CSE 2004 | Question: 4, ISRO2009-26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            328,
+            623,
+            343
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/957fc81d162ca1c64ea394433e8dcf3625b1c905fc85e31624638b6132ee579e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            332,
+            931,
+            369
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The following numbers are inserted into an empty binary search tree in the given order: 10, 1, 3, 5, 15, 12, 16. What is the height of the binary search tree (the height is the maximum distance of a leaf node from the root)?",
+        "bbox": [
+            84,
+            352,
+            878,
+            395
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            408,
+            127,
+            422
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 3",
+        "bbox": [
+            285,
+            409,
+            321,
+            422
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 4",
+        "bbox": [
+            480,
+            409,
+            515,
+            422
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            675,
+            409,
+            710,
+            422
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 data-structures binary-search-tree easy isro2009",
+        "bbox": [
+            87,
+            433,
+            394,
+            442
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            448,
+            188,
+            463
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.5.9 Binary Search Tree: GATE CSE 2004 | Question: 85",
+        "text_level": 1,
+        "bbox": [
+            77,
+            472,
+            524,
+            486
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/bf689308f0785cb8677b7e3c4319edad17dabd7c7d3372137ee02ca733dfd7ee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            475,
+            931,
+            513
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A program takes as input a balanced binary search tree with n leaf nodes and computes the value of a function $g(x)$ for each node x. If the cost of computing $g(x)$ is:",
+        "bbox": [
+            84,
+            496,
+            878,
+            528
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\min \\left(\\underset {\\text {in left - subtree of $x$}} {\\text {number of leaf - nodes}}, \\underset {\\text {in right - subtree of $x$}} {\\text {number of leaf - nodes}}\\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            268,
+            538,
+            739,
+            576
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Then the worst-case time complexity of the program is?",
+        "bbox": [
+            85,
+            585,
+            494,
+            600
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Theta(n)$",
+            "C. $\\Theta(n^{2})$"
+        ],
+        "bbox": [
+            89,
+            609,
+            159,
+            638
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n \\log n)$",
+        "bbox": [
+            497,
+            609,
+            596,
+            624
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n^{2}\\log n)$",
+        "bbox": [
+            497,
+            624,
+            603,
+            640
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 binary-search-tree normal data-structures",
+        "bbox": [
+            89,
+            644,
+            354,
+            653
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            660,
+            188,
+            674
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.5.10 Binary Search Tree: GATE CSE 2005 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            77,
+            682,
+            532,
+            698
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/071f645277f45c6df48397f3931c678178096baee03ae69e648f626f724def22.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            686,
+            931,
+            724
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Postorder traversal of a given binary search tree, T produces the following sequence of keys 10, 9, 23, 22, 27, 25, 15, 50, 95, 60, 40, 29",
+        "bbox": [
+            85,
+            707,
+            761,
+            741
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following sequences of keys can be the result of an in-order traversal of the tree T?",
+        "bbox": [
+            85,
+            744,
+            821,
+            758
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 9, 10, 15, 22, 23, 25, 27, 29, 40, 50, 60, 95",
+            "B. 9, 10, 15, 22, 40, 50, 60, 95, 23, 25, 27, 29",
+            "C. 29, 15, 9, 10, 25, 22, 23, 27, 40, 60, 50, 95",
+            "D. 95, 50, 60, 40, 27, 23, 22, 25, 10, 9, 15, 29"
+        ],
+        "bbox": [
+            87,
+            768,
+            436,
+            840
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 data-structures binary-search-tree easy",
+        "bbox": [
+            87,
+            865,
+            346,
+            875
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            881,
+            188,
+            895
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.5.11 Binary Search Tree: GATE CSE 2005 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            532,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "How many distinct binary search trees can be created out of 4 distinct keys?",
+        "bbox": [
+            85,
+            89,
+            642,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 5",
+        "bbox": [
+            89,
+            118,
+            126,
+            130
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 14",
+        "bbox": [
+            285,
+            118,
+            329,
+            131
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 24",
+        "bbox": [
+            480,
+            118,
+            522,
+            131
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 42",
+        "bbox": [
+            673,
+            118,
+            717,
+            130
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 data-structures binary-search-tree counting normal",
+        "bbox": [
+            87,
+            142,
+            405,
+            150
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            157,
+            188,
+            172
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.5.12 Binary Search Tree: GATE CSE 2008 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            181,
+            532,
+            195
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "You are given the postorder traversal, $P$ , of a binary search tree on the $n$ elements $1, 2, \\ldots, n$ . You have to determine the unique binary search tree that has $P$ as its postorder traversal. What is the time complexity of the most efficient algorithm for doing this?",
+        "bbox": [
+            84,
+            205,
+            875,
+            250
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Theta (\\log n)$",
+            "B. $\\Theta(n)$",
+            "C. $\\Theta(n\\log n)$"
+        ],
+        "bbox": [
+            87,
+            260,
+            198,
+            307
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above, as the tree cannot be uniquely determined",
+        "bbox": [
+            87,
+            307,
+            564,
+            320
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 data-structures binary-search-tree normal",
+        "bbox": [
+            87,
+            346,
+            354,
+            355
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            362,
+            188,
+            376
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.5.13 Binary Search Tree: GATE CSE 2012 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            385,
+            522,
+            399
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The worst case running time to search for an element in a balanced binary search tree with $n2^n$ elements is",
+        "bbox": [
+            85,
+            410,
+            868,
+            425
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n \\log n)$",
+        "bbox": [
+            89,
+            435,
+            189,
+            450
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n2^n)$",
+        "bbox": [
+            497,
+            435,
+            576,
+            448
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n)$",
+        "bbox": [
+            90,
+            450,
+            152,
+            464
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta (\\log n)$",
+        "bbox": [
+            497,
+            450,
+            583,
+            464
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 data-structures normal binary-search-tree",
+        "bbox": [
+            87,
+            469,
+            354,
+            478
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            484,
+            188,
+            498
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.5.14 Binary Search Tree: GATE CSE 2013 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            508,
+            532,
+            522
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The preorder traversal sequence of a binary search tree is 30, 20, 10, 15, 25, 23, 39, 35, 42. Which one of the following is the postorder traversal sequence of the same tree?",
+        "bbox": [
+            84,
+            530,
+            878,
+            560
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 10,20,15,23,25,35,42,39,30",
+        "bbox": [
+            89,
+            568,
+            329,
+            583
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 15,10,25,23,20,42,35,39,30",
+        "bbox": [
+            497,
+            570,
+            736,
+            583
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 15,20,10,23,25,42,35,39,30",
+        "bbox": [
+            90,
+            583,
+            329,
+            597
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 15,10,23,25,20,35,42,39,30",
+        "bbox": [
+            497,
+            583,
+            736,
+            597
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 data-structures binary-search-tree normal",
+        "bbox": [
+            87,
+            602,
+            354,
+            611
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            618,
+            188,
+            631
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.5.15 Binary Search Tree: GATE CSE 2013 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            642,
+            522,
+            656
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the tightest upper bound that represents the time complexity of inserting an object into a binary search tree of n nodes?",
+        "bbox": [
+            84,
+            665,
+            875,
+            694
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $O(1)$",
+        "bbox": [
+            89,
+            707,
+            152,
+            723
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $O(\\log n)$",
+        "bbox": [
+            285,
+            707,
+            371,
+            723
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $O(n)$",
+        "bbox": [
+            480,
+            707,
+            542,
+            723
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $O(n\\log n)$",
+        "bbox": [
+            673,
+            707,
+            774,
+            723
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 data-structures easy binary-search-tree",
+        "bbox": [
+            87,
+            732,
+            344,
+            742
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            748,
+            188,
+            762
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.5.16 Binary Search Tree: GATE CSE 2014 | Set 3 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            771,
+            584,
+            786
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Suppose we have a balanced binary search tree $T$ holding $n$ numbers. We are given two numbers $L$ and $H$ and wish to sum up all the numbers in $T$ that lie between $L$ and $H$ . Suppose there are $m$ such numbers in",
+        "bbox": [
+            84,
+            796,
+            878,
+            826
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "T. If the tightest upper bound on the time to compute the sum is $O(n^{a} \\log^{b} n + m^{c} \\log^{d} n)$ , the value of $a + 10b + 100c + 1000d$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            827,
+            924,
+            859
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 data-structures binary-search-tree numerical-answers normal",
+        "bbox": [
+            87,
+            872,
+            465,
+            882
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            889,
+            188,
+            903
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/30942dba66f3660c44ca883ad590867d4d25c3e28282c60a01ed39fd02f4413a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/45b6cee9f910e37c06009c253be5ca4cdf308957229b7964959e739b8a33357e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            184,
+            931,
+            222
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/d683ce571c054bde451e71be875c3e2a2bf6ebdffd8a6602da777bb0233a6cca.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            388,
+            931,
+            426
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/058f2ecf49f358c37469fe0e94fdf9d77042ef24a333a9b7061103b08031c034.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            511,
+            931,
+            548
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/005ea76866d2a904677fe3ffbefd701c5f5803552c4a860851df1992edde9b85.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            644,
+            931,
+            682
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/141b1e40ea299a7758189658ec9c99123f76ea6d1118452f1958b2141317af25.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            774,
+            931,
+            812
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.5.17 Binary Search Tree: GATE CSE 2015 | Set 1 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            584,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is/are correct in order traversal sequence(s) of binary search tree(s)?",
+        "bbox": [
+            85,
+            87,
+            752,
+            104
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. 3,5,7,8,15,19,25",
+            "II. 5,8,9,12,10,15,25",
+            "III. 2,7,10,8,14,16,20",
+            "IV. 4,6,7,9,18,20,25"
+        ],
+        "bbox": [
+            92,
+            112,
+            277,
+            169
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. I and IV only",
+        "bbox": [
+            89,
+            185,
+            200,
+            199
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. II and III only",
+        "bbox": [
+            285,
+            185,
+            396,
+            199
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. II and IV only",
+        "bbox": [
+            480,
+            185,
+            593,
+            199
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. II only",
+        "bbox": [
+            673,
+            185,
+            739,
+            199
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 data-structures binary-search-tree easy",
+        "bbox": [
+            89,
+            209,
+            364,
+            219
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            225,
+            188,
+            239
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.5.18 Binary Search Tree: GATE CSE 2015 | Set 1 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            248,
+            584,
+            263
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "What are the worst-case complexities of insertion and deletion of a key in a binary search tree?",
+        "bbox": [
+            85,
+            271,
+            779,
+            288
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Theta (\\log n)$ for both insertion and deletion",
+            "B. $\\Theta(n)$ for both insertion and deletion",
+            "C. $\\Theta(n)$ for insertion and $\\Theta(\\log n)$ for deletion",
+            "D. $\\Theta (\\log n)$ for insertion and $\\Theta (n)$ for deletion"
+        ],
+        "bbox": [
+            87,
+            298,
+            435,
+            359
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 data-structures binary-search-tree easy",
+        "bbox": [
+            87,
+            385,
+            364,
+            395
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            401,
+            188,
+            415
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.5.19 Binary Search Tree: GATE CSE 2015 | Set 3 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            425,
+            584,
+            439
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "While inserting the elements 71, 65, 84, 69, 67, 83 in an empty binary search tree (BST) in the sequence shown, the element in the lowest level is",
+        "bbox": [
+            84,
+            447,
+            878,
+            476
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 65",
+        "bbox": [
+            89,
+            490,
+            134,
+            504
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 67",
+        "bbox": [
+            285,
+            491,
+            329,
+            504
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 69",
+        "bbox": [
+            480,
+            491,
+            522,
+            504
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 83",
+        "bbox": [
+            673,
+            491,
+            717,
+            504
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 data-structures binary-search-tree easy",
+        "bbox": [
+            87,
+            515,
+            364,
+            524
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            530,
+            188,
+            546
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.5.20 Binary Search Tree: GATE CSE 2016 | Set 2 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            78,
+            555,
+            584,
+            568
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The number of ways in which the numbers 1, 2, 3, 4, 5, 6, 7 can be inserted in an empty binary search tree, such that the resulting tree has height 6, is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            577,
+            878,
+            608
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Note: The height of a tree with a single node is 0.",
+        "bbox": [
+            85,
+            619,
+            447,
+            635
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 data-structures binary-search-tree normal numerical-answers",
+        "bbox": [
+            87,
+            650,
+            465,
+            660
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            665,
+            188,
+            680
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.5.21 Binary Search Tree: GATE CSE 2017 | Set 1 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            688,
+            576,
+            704
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Let T be a binary search tree with 15 nodes. The minimum and maximum possible heights of T are:",
+        "bbox": [
+            84,
+            713,
+            815,
+            729
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Note: The height of a tree with a single node is 0.",
+        "bbox": [
+            85,
+            733,
+            445,
+            749
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 4 and 15 respectively.",
+            "C. 4 and 14 respectively.",
+            "gatecse-2017-set1 data-structures binary-search-tree easy"
+        ],
+        "bbox": [
+            87,
+            758,
+            364,
+            800
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 3 and 14 respectively.",
+        "bbox": [
+            497,
+            758,
+            670,
+            771
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 3 and 15 respectively.",
+        "bbox": [
+            497,
+            771,
+            670,
+            786
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            806,
+            188,
+            821
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.5.22 Binary Search Tree: GATE CSE 2017 | Set 2 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            78,
+            830,
+            584,
+            844
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The pre-order traversal of a binary search tree is given by 12, 8, 6, 2, 7, 9, 10, 16, 15, 19, 17, 20. Then the post-order traversal of this tree is",
+        "bbox": [
+            84,
+            853,
+            878,
+            882
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 2,6,7,8,9,10,12,15,16,17,19,20",
+            "B. 2,7,6,10,9,8,15,17,20,19,16,12"
+        ],
+        "bbox": [
+            87,
+            891,
+            400,
+            922
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/4b1574fdbe71fc0d3b7b4e1d15f7c82b2cce6d872d20db40db6a7b93521cda7a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/1546cf387b55fa0d23e7bd8d5c09d7eb2501bc76637709c7cbaba61e87eb18b2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            252,
+            931,
+            289
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/12c08bcece3ca35ef3b47f6f97bd1553b020603b7611cce0de473f988e201b28.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            428,
+            931,
+            465
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/261e0504afb7b24ddcd816cdddb2d6821640e578102bc30fa84f661f6a472761.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            557,
+            931,
+            595
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/06b8bcfa8b134460bf78b2563c74f3b59e34d9adba9a4e65f1b7171524fadf6c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            692,
+            931,
+            729
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/b70c8eaebf79aa6b6720585ad91c54420e82de20945b7066b2b4fa64026d4fc6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            833,
+            931,
+            870
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "C. 7,2,6,8,9,10,20,17,19,15,16,12",
+            "D. 7,6,2,10,9,8,15,16,17,20,19,12"
+        ],
+        "bbox": [
+            87,
+            62,
+            400,
+            93
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 data-structures binary-search-tree",
+        "bbox": [
+            87,
+            119,
+            332,
+            128
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            135,
+            186,
+            149
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.5.23 Binary Search Tree: GATE CSE 2020 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            157,
+            529,
+            173
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In a balanced binary search tree with n elements, what is the worst case time complexity of reporting all elements in range $[a, b]$ ? Assume that the number of reported elements is k.",
+        "bbox": [
+            84,
+            182,
+            878,
+            213
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/ae9106b59fef1ab862c27f33a6b63d6e513564c2e6d28ae74d4c0c35dbef45ce.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            161,
+            931,
+            198
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Theta (\\log n)$",
+            "C. $\\Theta(k\\log n)$"
+        ],
+        "bbox": [
+            89,
+            222,
+            189,
+            251
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\Theta (\\log n + k)$",
+            "D. $\\Theta(n \\log k)$"
+        ],
+        "bbox": [
+            495,
+            220,
+            613,
+            251
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 data-structures binary-search-tree two-marks",
+        "bbox": [
+            87,
+            256,
+            369,
+            264
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            271,
+            186,
+            286
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.5.24 Binary Search Tree: GATE CSE 2020 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            295,
+            524,
+            309
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The preorder traversal of a binary search tree is 15, 10, 12, 11, 20, 18, 16, 19. Which one of the following is the postorder traversal of the tree?",
+        "bbox": [
+            84,
+            318,
+            875,
+            347
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/d01a86772e90173252b1605863ba6dac868c63e16b0eddfdeb19a3b3fd74dbcf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            298,
+            931,
+            334
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 10,11,12,15,16,18,19,20",
+        "bbox": [
+            87,
+            356,
+            312,
+            370
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "c. 20,19,18,16,15,12,11,10",
+        "bbox": [
+            89,
+            370,
+            310,
+            384
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 11,12,10,16,19,18,20,15",
+        "bbox": [
+            495,
+            356,
+            717,
+            370
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 19,16,18,20,11,12,10,15",
+        "bbox": [
+            495,
+            370,
+            717,
+            384
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 binary-search-tree one-mark",
+        "bbox": [
+            87,
+            389,
+            290,
+            399
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            404,
+            186,
+            419
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.5.25 Binary Search Tree: GATE CSE 2021 | Set 1 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            429,
+            584,
+            442
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/93771d306ab553b1068281f393f3f6f06f2c3f8e0a64d36dc68c54b6c81a34af.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            432,
+            931,
+            467
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A binary search tree $T$ contains $n$ distinct elements. What is the time complexity of picking an element in $T$ that is smaller than the maximum element in $T$ ?",
+        "bbox": [
+            84,
+            453,
+            878,
+            480
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n \\log n)$",
+        "bbox": [
+            89,
+            494,
+            191,
+            511
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n)$",
+        "bbox": [
+            285,
+            495,
+            349,
+            511
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta (\\log n)$",
+        "bbox": [
+            480,
+            495,
+            568,
+            511
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(1)$",
+        "bbox": [
+            673,
+            495,
+            737,
+            511
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 data-structures binary-search-tree time-complexity one-mark",
+        "bbox": [
+            87,
+            520,
+            467,
+            529
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            536,
+            186,
+            549
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.5.26 Binary Search Tree: GATE CSE 2022 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            560,
+            532,
+            574
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/e441f83066e83d52e06b5ad6bef65fdd39b9590c1791a3626197e03e64762cb6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            562,
+            931,
+            599
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Suppose a binary search tree with 1000 distinct elements is also a complete binary tree. The tree is stored using the array representation of binary heap trees. Assuming that the array indices start with 0, the $3^{rd}$ largest element of the tree is stored at index \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            583,
+            875,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers data-structures binary-search-tree one-mark",
+        "bbox": [
+            87,
+            644,
+            455,
+            653
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            660,
+            186,
+            674
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.5.27 Binary Search Tree: GATE CSE 2024 | Set 2 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            684,
+            584,
+            698
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/72421bb18864d4c7915569d4507a34844568d27aa269ad3600ea1effee8e64df.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            687,
+            931,
+            723
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "You are given a set $V$ of distinct integers. A binary search tree $T$ is created by inserting all elements of $V$ one by one, starting with an empty tree. The tree $T$ follows the convention that, at each node, all values stored in the left subtree of the node are smaller than the value stored at the node. You are not aware of the sequence in which these values were inserted into $T$ , and you do not have access to $T$ .",
+        "bbox": [
+            84,
+            707,
+            927,
+            764
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is TRUE?",
+        "bbox": [
+            85,
+            769,
+            440,
+            783
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Inorder traversal of T can be determined from V",
+            "B. Root node of T can be determined from V",
+            "C. Preorder traversal of T can be determined from V",
+            "D. Postorder traversal of T can be determined from V"
+        ],
+        "bbox": [
+            87,
+            793,
+            489,
+            851
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 binary-search-tree two-marks",
+        "bbox": [
+            87,
+            878,
+            312,
+            887
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            894,
+            186,
+            908
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.5.28 Binary Search Tree: GATE CSE 2025 | Set 1 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            584,
+            79
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/d5b38fe9ac7c4554890c80401395e37e9a0b1c8426bc741a40a3b48b6918b495.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statement(s) is/are TRUE for any binary search tree (BST) having n distinct integers?",
+        "bbox": [
+            85,
+            87,
+            872,
+            104
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The maximum length of a path from the root node to any other node is $(n - 1)$ .",
+            "B. An inorder traversal will always produce a sorted sequence of elements.",
+            "C. Finding an element takes $O(\\log_2 n)$ time in the worst case.",
+            "D. Every BST is also a Min-Heap."
+        ],
+        "bbox": [
+            87,
+            115,
+            690,
+            173
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 data-structures binary-search-tree multiple-selects one-mark",
+        "bbox": [
+            87,
+            198,
+            463,
+            207
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            214,
+            188,
+            229
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.5.29 Binary Search Tree: GATE CSE 2025 | Set 2 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            238,
+            584,
+            252
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/356bf40b73b47ca390cc92f4169a289f4416c6d24bcd708cc6e404388e9f800c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            241,
+            931,
+            277
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Suppose the values 10, -4, 15, 30, 20, 5, 60, 19 are inserted in that order into an initially empty binary search tree. Let $T$ be the resulting binary search tree. The number of edges in the path from the node containing 19 to the root node of $T$ is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            84,
+            261,
+            878,
+            306
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 data-structures binary-search-tree numerical-answers easy one-mark",
+        "bbox": [
+            87,
+            319,
+            505,
+            328
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            334,
+            188,
+            349
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.5.30 Binary Search Tree: GATE IT 2005 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            359,
+            514,
+            372
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/bdfb3e882936eb8e6b44bfd80a0b0f030e1c9157af2d7b4cf5c1cc857a414858.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            362,
+            931,
+            399
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The numbers $1, 2, \\ldots, n$ are inserted in a binary search tree in some order. In the resulting tree, the right subtree of the root contains $p$ nodes. The first number to be inserted in the tree must be",
+        "bbox": [
+            84,
+            383,
+            878,
+            410
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. p",
+        "bbox": [
+            89,
+            426,
+            127,
+            440
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. $p + 1$",
+        "bbox": [
+            285,
+            425,
+            351,
+            440
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. n - p",
+        "bbox": [
+            478,
+            426,
+            547,
+            440
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. $n - p + 1$",
+        "bbox": [
+            673,
+            425,
+            771,
+            440
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 data-structures normal binary-search-tree",
+        "bbox": [
+            87,
+            448,
+            349,
+            459
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            465,
+            188,
+            480
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.5.31 Binary Search Tree: GATE IT 2005 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            489,
+            514,
+            503
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/b9c4e51bd81205060760e790673825e001bd0307dfca05feabac5951172e7ebc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            492,
+            931,
+            529
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A binary search tree contains the numbers 1, 2, 3, 4, 5, 6, 7, 8. When the tree is traversed in pre-order and the values in each node printed out, the sequence of values obtained is 5, 3, 1, 2, 4, 6, 8, 7. If the tree is traversed in post-order, the sequence obtained would be",
+        "bbox": [
+            84,
+            511,
+            878,
+            555
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 8,7,6,5,4,3,2,1",
+            "C. 2,1,4,3,6,7,8,5"
+        ],
+        "bbox": [
+            89,
+            564,
+            235,
+            592
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 data-structures binary-search-tree normal",
+        "bbox": [
+            87,
+            597,
+            349,
+            606
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            612,
+            188,
+            627
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.5.32 Binary Search Tree: GATE IT 2006 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            637,
+            514,
+            650
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/9aa254e02c42faed606693540bf7780ed4679e3e75181a84f0fa32e828c08fa3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            638,
+            931,
+            676
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Suppose that we have numbers between 1 and 100 in a binary search tree and want to search for the number 55. Which of the following sequences CANNOT be the sequence of nodes examined?",
+        "bbox": [
+            84,
+            660,
+            878,
+            690
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\{10,75,64,43,60,57,55\\}$",
+            "C. $\\{9,85,47,68,43,57,55\\}$"
+        ],
+        "bbox": [
+            89,
+            698,
+            299,
+            729
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 data-structures binary-search-tree normal",
+        "bbox": [
+            87,
+            733,
+            349,
+            742
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            749,
+            188,
+            763
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.5.33 Binary Search Tree: GATE IT 2007 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            773,
+            514,
+            787
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/f8997ae6b4e0ff0dd002f6ab31bc1e788fb59e5082ea4ef8d917bb177a0f96cc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            775,
+            931,
+            812
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "When searching for the key value 60 in a binary search tree, nodes containing the key values 10, 20, 40, 50, 70, 80, 90 are traversed, not necessarily in the order given. How many different orders are possible in which these key values can occur on the search path from the root to the node containing the value 60?",
+        "bbox": [
+            84,
+            796,
+            924,
+            840
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 35",
+        "bbox": [
+            89,
+            853,
+            134,
+            866
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 64",
+        "bbox": [
+            285,
+            853,
+            329,
+            866
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 128",
+        "bbox": [
+            478,
+            853,
+            532,
+            866
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 5040",
+        "bbox": [
+            673,
+            853,
+            734,
+            866
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 data-structures binary-search-tree normal",
+        "bbox": [
+            87,
+            878,
+            349,
+            888
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            894,
+            188,
+            908
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.5.34 Binary Search Tree: GATE IT 2008 | Question: 71",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            512,
+            79
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/f62eafc94b0c6abf6ca7cb5609d0652c3bd9f5ae090f4ef4ffc2840e3adb0f86.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A Binary Search Tree (BST) stores values in the range 37 to 573. Consider the following sequence of keys.",
+        "bbox": [
+            85,
+            89,
+            865,
+            104
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. 81,537,102,439,285,376,305",
+            "II. 52,97,121,195,242,381,472",
+            "III. 142, 248, 520, 386, 345, 270, 307",
+            "IV. 550, 149, 507, 395, 463, 402, 270"
+        ],
+        "bbox": [
+            92,
+            112,
+            373,
+            171
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose the BST has been unsuccessfully searched for key 273. Which all of the above sequences list nodes in the order in which we could have encountered them in the search?",
+        "bbox": [
+            84,
+            181,
+            927,
+            209
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. II and III only",
+        "bbox": [
+            89,
+            224,
+            203,
+            239
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. I and III only",
+        "bbox": [
+            285,
+            225,
+            394,
+            239
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. III and IV only",
+        "bbox": [
+            480,
+            225,
+            598,
+            239
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. III only",
+        "bbox": [
+            675,
+            225,
+            744,
+            239
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 data-structures binary-search-tree normal",
+        "bbox": [
+            87,
+            248,
+            347,
+            258
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            264,
+            186,
+            277
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.5.35 Binary Search Tree: GATE IT 2008 | Question: 72",
+        "text_level": 1,
+        "bbox": [
+            78,
+            288,
+            514,
+            302
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A Binary Search Tree (BST) stores values in the range 37 to 573. Consider the following sequence of keys.",
+        "bbox": [
+            84,
+            311,
+            865,
+            327
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/563da2d92d92963061dd82aae58c35471bc30ce1a4a52aacb544d08f7012c851.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            290,
+            931,
+            328
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. 81,537,102,439,285,376,305",
+            "II. 52,97,121,195,242,381,472",
+            "III. 142, 248, 520, 386, 345, 270, 307",
+            "IV. 550, 149, 507, 395, 463, 402, 270"
+        ],
+        "bbox": [
+            92,
+            336,
+            371,
+            394
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is TRUE?",
+        "bbox": [
+            85,
+            404,
+            410,
+            419
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. I, II and IV are inorder sequences of three different BSTs",
+            "B. I is a preorder sequence of some BST with 439 as the root",
+            "C. II is an inorder sequence of some BST where 121 is the root and 52 is a leaf",
+            "D. IV is a postorder sequence of some BST with 149 as the root"
+        ],
+        "bbox": [
+            87,
+            429,
+            670,
+            486
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 data-structures binary-search-tree easy",
+        "bbox": [
+            87,
+            513,
+            337,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            529,
+            186,
+            543
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.5.36 Binary Search Tree: GATE IT 2008 | Question: 73",
+        "text_level": 1,
+        "bbox": [
+            78,
+            552,
+            514,
+            567
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "How many distinct BSTs can be constructed with 3 distinct keys?",
+        "bbox": [
+            85,
+            576,
+            561,
+            592
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/b53deea38002e04761acc90ed7037d4a34c3d3efc9f7fc5a042221315a9df05e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            555,
+            931,
+            592
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 4",
+        "bbox": [
+            89,
+            606,
+            126,
+            619
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 5",
+        "bbox": [
+            285,
+            606,
+            319,
+            619
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 6",
+        "bbox": [
+            480,
+            606,
+            515,
+            619
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 9",
+        "bbox": [
+            675,
+            606,
+            710,
+            619
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 data-structures binary-search-tree normal",
+        "bbox": [
+            87,
+            630,
+            349,
+            638
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            646,
+            186,
+            660
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.6",
+        "text_level": 1,
+        "bbox": [
+            68,
+            671,
+            95,
+            682
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Binary Tree (53)",
+        "text_level": 1,
+        "bbox": [
+            450,
+            671,
+            579,
+            685
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests:",
+        "bbox": [
+            70,
+            695,
+            194,
+            707
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Test 1 (15Q)",
+        "bbox": [
+            203,
+            695,
+            277,
+            707
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Test 2 (15Q)",
+        "bbox": [
+            292,
+            695,
+            366,
+            707
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Test 3 (15Q)",
+        "bbox": [
+            381,
+            695,
+            455,
+            707
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Test 4 (6Q)",
+        "bbox": [
+            470,
+            695,
+            539,
+            707
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.6.1 Binary Tree: GATE CSE 1987 | Question: 2c",
+        "text_level": 1,
+        "bbox": [
+            78,
+            724,
+            465,
+            738
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are TRUE or FALSE:",
+        "bbox": [
+            85,
+            747,
+            529,
+            762
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/96004d484b580422b8948f8053c50ac51834e49f77c27e3f61f0bd60c2098f1e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            726,
+            931,
+            764
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "It is possible to construct a binary tree uniquely whose pre-order and post-order traversals are given?",
+        "bbox": [
+            85,
+            775,
+            823,
+            790
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1987 binary-tree data-structures normal true-false",
+        "bbox": [
+            87,
+            804,
+            364,
+            813
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            820,
+            186,
+            834
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.6.2 Binary Tree: GATE CSE 1987 | Question: 2g",
+        "text_level": 1,
+        "bbox": [
+            78,
+            844,
+            465,
+            858
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are TRUE or FALSE:",
+        "bbox": [
+            85,
+            866,
+            529,
+            881
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ef5fbb51e3d7c3d834f315ea151c5981393a4563fae22471b19b4ed5ffead52.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            846,
+            931,
+            884
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "If the number of leaves in a tree is not a power of 2, then the tree is not a binary tree.",
+        "bbox": [
+            85,
+            895,
+            705,
+            910
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.6.3 Binary Tree: GATE CSE 1987 | Question: 7b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            465,
+            124
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Construct a binary tree whose preorder traversal is",
+        "bbox": [
+            85,
+            134,
+            458,
+            149
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- K L N M P R Q S T",
+        "bbox": [
+            97,
+            157,
+            297,
+            175
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "and inorder traversal is",
+        "bbox": [
+            85,
+            186,
+            258,
+            199
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- NLKPRMSQT",
+        "bbox": [
+            97,
+            209,
+            297,
+            226
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1987 data-structures binary-tree descriptive",
+        "bbox": [
+            87,
+            251,
+            327,
+            261
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            267,
+            186,
+            281
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.6.4 Binary Tree: GATE CSE 1988 | Question: 7i",
+        "text_level": 1,
+        "bbox": [
+            78,
+            290,
+            460,
+            305
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Define the height of a binary tree or subtree and also define a height-balanced (AVL) tree.",
+        "bbox": [
+            85,
+            315,
+            739,
+            330
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1988 normal descriptive data-structures binary-tree",
+        "bbox": [
+            87,
+            343,
+            369,
+            353
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            359,
+            186,
+            374
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.6.5 Binary Tree: GATE CSE 1988 | Question: 7iii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            383,
+            468,
+            397
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the tree given in the below figure, insert 13 and show the new balance factors that would arise if the tree is not rebalanced. Finally, carry out the required rebalancing of the tree and show the new tree with the balance factors on each mode.",
+        "bbox": [
+            84,
+            407,
+            878,
+            448
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/b248933ed4e6563af72aaaae3e37bae86e1fe63585635e68f132fadf1b86dbf7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            932,
+            150
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/90cbc82c0392ed43bd759fc6ccd26b84b9e97c9768cd5fb0a7e99a0a56515b29.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            294,
+            932,
+            332
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/5024e5769194455b0c04a7484a9c11e81be7746fd23f40056f96c6492b3b9c91.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            385,
+            932,
+            423
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/fc3efbabf3188cb7f65b30487da7c728eb51edaed3b88c78d547875c11c04d63.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  n17[\"17\"] --> n12[\"12\"]\n  n17 --> n20[\"20\"]\n  n12 --> n5[\"5\"]\n  n12 --> n15[\"15\"]\n  n20 --> n18[\"18\"]\n  n20 --> n24[\"24\"]\n  n5 --> n1[\"1\"]\n  n15 --> n14[\"14\"]\n  n15 --> n16[\"16\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            352,
+            457,
+            663,
+            609
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1988 normal descriptive data-structures binary-tree",
+        "bbox": [
+            87,
+            631,
+            369,
+            642
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            648,
+            186,
+            662
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.6.6 Binary Tree: GATE CSE 1989 | Question: 3-ixa",
+        "text_level": 1,
+        "bbox": [
+            78,
+            672,
+            484,
+            686
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements (s) is/are FALSE?",
+        "bbox": [
+            85,
+            695,
+            500,
+            710
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/da440e5ff3b617d49337eea6f723c281c12d3d8777094d93c2421062b4002b19.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            675,
+            932,
+            712
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Overlaying is used to run a program, which is longer than the address space of the computer.",
+            "B. Optimal binary search tree construction can be performed efficiently by using dynamic programming.",
+            "C. Depth first search cannot be used to find connected components of a graph.",
+            "D. Given the prefix and postfix walls over a binary tree, the binary tree can be uniquely constructed."
+        ],
+        "bbox": [
+            87,
+            720,
+            843,
+            777
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "normal gate1989 binary-tree multiple-selects",
+        "bbox": [
+            87,
+            802,
+            312,
+            812
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            818,
+            186,
+            833
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.6.7 Binary Tree: GATE CSE 1990 | Question: 3-iv",
+        "text_level": 1,
+        "bbox": [
+            78,
+            842,
+            473,
+            856
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The total external path length, EPL, of a binary tree with n external nodes is, $EPL = \\sum_{w} I_{w}$ , where $I_{w}$ is the path length of external node w),",
+        "bbox": [
+            84,
+            866,
+            878,
+            912
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a7b1369dfa6b9ad9f75036b3d05524311a46c6e8fef449a833d8be9977fcb46e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            845,
+            932,
+            883
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "gate1987 data-structures binary-tree true-false",
+        "bbox": [
+            87,
+            71,
+            321,
+            80
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 11
+    }
+]

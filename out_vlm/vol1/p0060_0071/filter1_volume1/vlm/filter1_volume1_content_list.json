@@ -1,0 +1,4206 @@
+[
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {p \\land q}{\\therefore p}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            505,
+            70,
+            568,
+            105
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Conjunction:",
+        "bbox": [
+            122,
+            116,
+            243,
+            131
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} p \\\\ \\hline q \\\\ \\hline \\therefore p \\wedge q \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            497,
+            149,
+            576,
+            201
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Resolution:",
+        "bbox": [
+            122,
+            211,
+            231,
+            225
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{c} p \\lor q \\\\ \\hline \\neg q \\lor r \\\\ \\hline \\therefore p \\lor r \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            497,
+            243,
+            576,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "This is particularly useful in automated theorem proving and for converting to CNF.",
+        "bbox": [
+            134,
+            307,
+            739,
+            321
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "■ Constructive Dilemma:",
+        "bbox": [
+            122,
+            321,
+            319,
+            334
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} (p \\to q) \\land (r \\to s) \\\\ \\frac {p \\lor r}{\\therefore q \\lor s} \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            450,
+            350,
+            621,
+            406
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Destructive Dilemma:",
+        "bbox": [
+            122,
+            418,
+            309,
+            432
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} (p \\rightarrow q) \\land (r \\rightarrow s) \\\\ \\frac {\\neg q \\lor \\neg s}{\\therefore \\neg p \\lor \\neg r} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            450,
+            447,
+            621,
+            504
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3. Rules of Inference (for First Order Logic):",
+        "bbox": [
+            89,
+            514,
+            438,
+            529
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Universal Instantiation (UI): If $\\forall xP(x)$ is true, then $P(c)$ is true for any arbitrary individual $c$ in the domain.",
+        "bbox": [
+            121,
+            529,
+            924,
+            546
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {\\forall x P (x)}{\\therefore P (c)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            494,
+            558,
+            578,
+            597
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Universal Generalization (UG): If $P(c)$ is true for an arbitrary individual $c$ in the domain, then $\\forall xP(x)$ is true.",
+        "bbox": [
+            122,
+            608,
+            904,
+            637
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {P (c) \\text {for an arbitrary} c}{\\therefore \\forall x P (x)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            431,
+            652,
+            640,
+            690
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Existential Instantiation (EI): If $\\exists xP(x)$ is true, then $P(c)$ is true for some specific individual $c$ in the domain. This $c$ must be a new constant not previously used in the proof.",
+        "bbox": [
+            122,
+            701,
+            878,
+            731
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {\\exists x P (x)}{\\therefore P (c) \\text {(for some new c)}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            425,
+            744,
+            645,
+            783
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Existential Generalization (EG): If $P(c)$ is true for some specific individual $c$ in the domain, then $\\exists x P(x)$ is true.",
+        "bbox": [
+            122,
+            794,
+            926,
+            823
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {P (c) \\text {for some specific} c}{\\therefore \\exists x P (x)}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            428,
+            838,
+            643,
+            876
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4. Proof Methods:",
+        "bbox": [
+            89,
+            887,
+            236,
+            900
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Direct Proof: Assume premises are true, and use inference rules and logical equivalences to derive the conclusion.",
+        "bbox": [
+            122,
+            901,
+            894,
+            928
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Indirect Proof (Proof by Contradiction): To prove $C$ from premises $P_1, \\ldots, P_n$ , assume $\\neg C$ is true along with $P_1, \\ldots, P_n$ , and derive a contradiction $(F)$ .",
+            "- Proof by Contraposition: To prove $p \\to q$ , prove its contrapositive $\\neg q \\to \\neg p$ ."
+        ],
+        "bbox": [
+            122,
+            65,
+            922,
+            109
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties and Identities: The validity of each inference rule is a key property. Understanding that these rules preserve truth is fundamental.",
+        "bbox": [
+            72,
+            109,
+            929,
+            135
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• Common Pitfalls or Tricky Points:",
+        "bbox": [
+            73,
+            136,
+            352,
+            149
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Fallacies: Invalid argument forms that resemble valid ones.",
+        "bbox": [
+            97,
+            150,
+            547,
+            163
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Fallacy of Affirming the Consequent: $((p \\to q) \\land q) \\to p$ (NOT a tautology). Example: \"If it rains, the ground is wet. The ground is wet. Therefore, it rained.\" (Could be wet from a sprinkler).",
+            "- Fallacy of Denying the Antecedent: $((p \\to q) \\land \\neg p) \\to \\neg q$ (NOT a tautology). Example: \"If it rains, the ground is wet. It did not rain. Therefore, the ground is not wet.\" (Could be wet from a sprinkler)."
+        ],
+        "bbox": [
+            121,
+            163,
+            905,
+            222
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Confusing Validity with Soundness: A valid argument can have false premises and a false conclusion. A sound argument is a valid argument with all true premises (and thus, a true conclusion). GATE questions usually focus on validity.",
+            "- Incorrect Application of Quantifier Rules: Especially with EI and UG, ensure the constant chosen for instantiation is new (for EI) or truly arbitrary (for UG).",
+            "Circular Reasoning: Assuming the conclusion (or something equivalent to it) as a premise."
+        ],
+        "bbox": [
+            97,
+            222,
+            890,
+            304
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            305,
+            499,
+            318
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Formal Proofs: List premises and then systematically apply inference rules and logical equivalences to derive the conclusion, citing the rule for each step.",
+            "- Truth Tables (for small arguments): Convert the argument into a single conditional statement $(P_{1} \\wedge \\ldots \\wedge P_{n}) \\to C$ and check if it's a tautology.",
+            "- Resolution Principle: Convert all premises and the negation of the conclusion into CNF clauses. Add the negation of the conclusion as a clause. If an empty clause (☐) can be derived through resolution, the original argument is valid.",
+            "Look for Fallacies: If an argument resembles a common fallacy, it's likely invalid."
+        ],
+        "bbox": [
+            97,
+            319,
+            914,
+            431
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference",
+        "text_level": 1,
+        "bbox": [
+            60,
+            444,
+            295,
+            458
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Propositional Logic Equivalences",
+        "text_level": 1,
+        "bbox": [
+            60,
+            475,
+            327,
+            490
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\neg (\\neg p)\\equiv p$ (Double Negation)",
+            "- $p \\lor q \\equiv q \\lor p$ (Commutative)",
+            "- $p \\land q \\equiv q \\land p$ (Commutative)",
+            "- $(p \\vee q) \\vee r \\equiv p \\vee (q \\vee r)$ (Associative)",
+            "- $(p \\land q) \\land r \\equiv p \\land (q \\land r)$ (Associative)",
+            "- $p \\land (q \\lor r) \\equiv (p \\land q) \\lor (p \\land r)$ (Distributive)",
+            "- $p \\lor (q \\land r) \\equiv (p \\lor q) \\land (p \\lor r)$ (Distributive)",
+            "- $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$ (De Morgan's)",
+            "- $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$ (De Morgan's)",
+            "- $p \\rightarrow q \\equiv \\neg p \\lor q$",
+            "- $p \\to q \\equiv \\neg q \\to \\neg p$ (Contrapositive)",
+            "- $\\neg(p \\to q) \\equiv p \\land \\neg q$",
+            "- $p \\leftrightarrow q \\equiv (p \\rightarrow q) \\land (q \\rightarrow p)$",
+            "- $p \\leftrightarrow q \\equiv (\\underline{p} \\land q) \\lor (\\neg p \\land \\neg q)$",
+            "- $p \\lor \\neg p \\equiv T$ (Inverse Law)",
+            "- $p \\land \\neg p \\equiv F$ (Inverse Law)",
+            "- $p \\vee T \\equiv T$ (Domination Law)",
+            "- $p \\land F \\equiv F$ (Domination Law)",
+            "- $p \\land T \\equiv p$ (Identity Law)",
+            "- $p \\lor F \\equiv p$ (Identity Law)",
+            "- $p \\vee p \\equiv p$ (Idempotent Law)",
+            "- $p \\land p \\equiv p$ (Idempotent Law)",
+            "- $p \\vee (p \\wedge q) \\equiv p$ (Absorption Law)",
+            "- $p \\land (p \\lor q) \\equiv p$ (Absorption Law)"
+        ],
+        "bbox": [
+            73,
+            504,
+            420,
+            855
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Quantifier Equivalences",
+        "text_level": 1,
+        "bbox": [
+            60,
+            868,
+            253,
+            882
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\neg \\forall xP(x) \\equiv \\exists x \\neg P(x)$",
+            "- $\\neg \\exists xP(x) \\equiv \\forall x \\neg P(x)$"
+        ],
+        "bbox": [
+            73,
+            897,
+            260,
+            929
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\forall x(P(x) \\land Q(x)) \\equiv \\forall xP(x) \\land \\forall xQ(x)$",
+            "- $\\exists x(P(x) \\vee Q(x)) \\equiv \\exists xP(x) \\vee \\exists xQ(x)$",
+            "- $\\forall x \\forall y P(x, y) \\equiv \\forall y \\forall x P(x, y)$",
+            "- $\\exists x \\exists y P(x, y) \\equiv \\exists y \\exists x P(x, y)$"
+        ],
+        "bbox": [
+            73,
+            64,
+            391,
+            128
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Rules of Inference (Propositional Logic)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            140,
+            376,
+            155
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Modus Ponens: $(p \\to q) \\land p \\implies q$",
+            "- Modus Tollens: $(p \\to q) \\land \\neg q \\implies \\neg p$",
+            "- Hypothetical Syllogism: $(p \\to q) \\land (q \\to r) \\implies p \\to r$",
+            "- Disjunctive Syllogism: $(p \\vee q) \\wedge \\neg p \\implies q$",
+            "- Addition: $p \\implies p \\lor q$",
+            "- Simplification: $p \\land q \\implies p$",
+            "- Conjunction: $p, q \\implies p \\land q$",
+            "- Resolution: $(p \\lor q) \\land (\\neg q \\lor r) \\implies p \\lor r$"
+        ],
+        "bbox": [
+            73,
+            169,
+            527,
+            289
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Rules of Inference (First Order Logic)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            301,
+            356,
+            315
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Universal Instantiation (UI): $\\forall x P(x) \\implies P(c)$",
+            "- Universal Generalization (UG): $P(c)$ for arbitrary $c \\implies \\forall x P(x)$",
+            "- Existential Instantiation (EI): $\\exists x P(x) \\implies P(c)$ (for new c)",
+            "- Existential Generalization (EG): $P(c)$ for specific $c \\implies \\exists x P(x)$"
+        ],
+        "bbox": [
+            73,
+            331,
+            596,
+            393
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            404,
+            285,
+            420
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Master Truth Tables: They are the foundation. Be able to quickly construct and interpret truth tables for any compound proposition, especially for 2-3 variables. This helps in verifying tautologies, contradictions, and equivalences.",
+            "2. Memorize Key Equivalences and Inference Rules: Speed and accuracy in GATE questions heavily rely on your ability to recall and apply De Morgan's laws, implication equivalences, and the common rules of inference (Modus Ponens, Modus Tollens, etc.) without hesitation.",
+            "3. Practice Natural Language Translation: A significant portion of GATE questions involves translating English sentences into logical expressions (and vice-versa). Pay close attention to keywords like \"all\", \"some\", \"no\", \"only if\", \"unless\", and the correct use of quantifiers and connectives.",
+            "4. Understand Quantifier Scope and Order: Incorrectly interpreting the scope of quantifiers or swapping the order of mixed quantifiers ( $\\forall x \\exists y$ vs. $\\exists y \\forall x$ ) is a very common mistake. Always visualize the domain and what each quantifier implies.",
+            "5. Distinguish Validity from Soundness: GATE questions usually ask about the validity of an argument (whether the conclusion logically follows from the premises), not its soundness (which also requires premises to be true in the real world). Focus on the logical structure.",
+            "6. Systematic Approach to Proofs: When asked to prove an argument's validity, don't guess. Start with the premises and systematically apply inference rules and logical equivalences, one step at a time, until you reach the conclusion. Clearly state the rule used for each step.",
+            "7. Identify Common Fallacies: Be aware of fallacies like \"Affirming the Consequent\" and \"Denying the Antecedent\". If an argument structure matches a known fallacy, you can quickly identify it as invalid.",
+            "8. Time Management: Some logical reasoning problems can be lengthy, especially those involving formal proofs or complex translations. If a question seems too time-consuming, make an educated guess or mark it for review if time permits, and move on to other questions."
+        ],
+        "bbox": [
+            63,
+            434,
+            931,
+            757
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.1",
+        "bbox": [
+            67,
+            770,
+            92,
+            783
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "First Order Logic (35)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            770,
+            601,
+            785
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.1.1 First Order Logic: GATE CSE 1989 | Question: 14a",
+        "text_level": 1,
+        "bbox": [
+            77,
+            796,
+            515,
+            811
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Symbolize the expression \"Every mother loves her children\" in predicate logic.",
+        "bbox": [
+            85,
+            820,
+            655,
+            836
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive first-order-logic mathematical-logic",
+        "bbox": [
+            87,
+            849,
+            361,
+            859
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            865,
+            188,
+            880
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/57486087f6883db8f5cbda736ac1bcb67b1d80860fff296dcac1c096428e0b9d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            799,
+            932,
+            837
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following first order formula:",
+        "bbox": [
+            85,
+            87,
+            391,
+            103
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\left( \\begin{array}{c} \\forall x \\exists y: R (x, y) \\\\ \\wedge \\\\ \\forall x \\forall y: (R (x, y) \\Longrightarrow \\neg R (y, x)) \\\\ \\wedge \\\\ \\forall x \\forall y \\forall z: (R (x, y) \\wedge R (y, z) \\Longrightarrow R (x, z)) \\\\ \\wedge \\\\ \\forall x: \\neg R (x, x) \\end{array} \\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            92,
+            116,
+            472,
+            339
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Does it have finite models?",
+        "bbox": [
+            85,
+            347,
+            290,
+            362
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Is it satisfiable? If so, give a countable model for it.",
+        "bbox": [
+            85,
+            376,
+            457,
+            391
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1991 mathematical-logic first-order-logic descriptive",
+        "bbox": [
+            87,
+            404,
+            361,
+            415
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            421,
+            181,
+            435
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.1.3 First Order Logic: GATE CSE 1992 | Question: 92,xv",
+        "text_level": 1,
+        "bbox": [
+            77,
+            444,
+            529,
+            459
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following predicate calculus statements is/are valid?",
+        "bbox": [
+            85,
+            467,
+            563,
+            483
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(\\forall (x))P(x)\\lor (\\forall (x))Q(x)\\implies (\\forall (x))(P(x)\\lor Q(x))$",
+            "B. $(\\exists (x))P(x)\\land (\\exists (x))Q(x)\\implies (\\exists (x))(P(x)\\land Q(x))$",
+            "C. $(\\forall (x))(P(x)\\lor Q(x))\\implies (\\forall (x))P(x)\\lor (\\forall (x))Q(x)$",
+            "D. $(\\exists (x))(P(x)\\lor Q(x))\\implies \\sim (\\forall (x))P(x)\\lor (\\exists (x))Q(x)$"
+        ],
+        "bbox": [
+            87,
+            492,
+            541,
+            558
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1992 mathematical-logic normal first-order-logic",
+        "bbox": [
+            87,
+            580,
+            344,
+            591
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            597,
+            181,
+            611
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.1.4 First Order Logic: GATE CSE 2003 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            77,
+            619,
+            507,
+            635
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is a valid first order formula? (Here $\\alpha$ and $\\beta$ are first order formulae with $x$ as their only free variable)",
+        "bbox": [
+            84,
+            644,
+            878,
+            674
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $((\\forall x)[\\alpha ]\\Rightarrow (\\forall x)[\\beta ])\\Rightarrow (\\forall x)[\\alpha \\Rightarrow \\beta ]$",
+            "B. $(\\forall x)[\\alpha] \\Rightarrow (\\exists x)[\\alpha \\land \\beta]$",
+            "C. $((\\forall x)[\\alpha \\lor \\beta] \\Rightarrow (\\exists x)[\\alpha]) \\Rightarrow (\\forall x)[\\alpha]$",
+            "D. $(\\forall x)[\\alpha \\Rightarrow \\beta ]\\Rightarrow ((\\forall x)[\\alpha ])\\Rightarrow (\\forall x)[\\beta ])$"
+        ],
+        "bbox": [
+            87,
+            682,
+            416,
+            748
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 mathematical-logic first-order-logic normal",
+        "bbox": [
+            87,
+            771,
+            361,
+            781
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            787,
+            181,
+            801
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.1.5 First Order Logic: GATE CSE 2003 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            77,
+            809,
+            507,
+            825
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following formula and its two interpretations $I_{1}$ and $I_{2}$ .",
+        "bbox": [
+            85,
+            834,
+            579,
+            850
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\alpha : (\\forall x) \\left[ P _ {x} \\Leftrightarrow (\\forall y) \\left[ Q _ {x y} \\Leftrightarrow \\neg Q _ {y y} \\right] \\right] \\Rightarrow (\\forall x) \\left[ \\neg P _ {x} \\right]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            862,
+            482,
+            881
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$I_{1}$ : Domain: the set of natural numbers",
+        "bbox": [
+            85,
+            891,
+            378,
+            906
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "3.1.2 First Order Logic: GATE CSE 1991 | Question: 15,b",
+        "bbox": [
+            77,
+            65,
+            522,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual content that is not present in the image. Therefore, no text should be output for OCR.",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            447,
+            932,
+            485
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            623,
+            931,
+            661
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            813,
+            931,
+            851
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$P_{x} = 'x$ is a prime number'",
+        "bbox": [
+            85,
+            65,
+            287,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$Q_{xy} = 'y$ divides $x'$",
+        "bbox": [
+            85,
+            93,
+            226,
+            110
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "$I_{2}$ : same as $I_{1}$ except that $P_{x} = 'x$ is a composite number'.",
+        "bbox": [
+            85,
+            121,
+            522,
+            137
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is true?",
+        "bbox": [
+            85,
+            149,
+            394,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $I_{1}$ satisfies $\\alpha, I_{2}$ does not",
+            "B. $I_{2}$ satisfies $\\alpha, I_{1}$ does not",
+            "C. Neither $I_{1}$ nor $I_{2}$ satisfies $\\alpha$",
+            "D. Both $I_{1}$ and $I_{2}$ satisfies $\\alpha$"
+        ],
+        "bbox": [
+            87,
+            174,
+            319,
+            233
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 mathematical-logic difficult first-order-logic",
+        "bbox": [
+            87,
+            258,
+            364,
+            268
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            275,
+            181,
+            289
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.6 First Order Logic: GATE CSE 2004 | Question: 23, ISRO2007-32",
+        "text_level": 1,
+        "bbox": [
+            77,
+            298,
+            618,
+            313
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Identify the correct translation into logical notation of the following assertion.",
+        "bbox": [
+            85,
+            321,
+            638,
+            337
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Some boys in the class are taller than all the girls",
+        "bbox": [
+            85,
+            350,
+            448,
+            364
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Note: taller(x, y) is true if x is taller than y.",
+        "bbox": [
+            85,
+            378,
+            406,
+            394
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(\\exists x)(\\mathrm{boy}(x)\\to (\\forall y)(\\mathrm{girl}(y)\\land \\mathrm{taller}(x,y)))$",
+            "B. $(\\exists x)(\\mathrm{boy}(x) \\land (\\forall y)(\\mathrm{girl}(y) \\land \\mathrm{taller}(x, y)))$",
+            "C. $(\\exists x)(\\mathrm{boy}(x)\\to (\\forall y)(\\mathrm{girl}(y)\\to \\mathrm{taller}(x,y)))$",
+            "D. $(\\exists x)(\\mathrm{boy}(x)\\land (\\forall y)(\\mathrm{girl}(y)\\to \\mathrm{taller}(x,y)))$"
+        ],
+        "bbox": [
+            87,
+            403,
+            460,
+            467
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 mathematical-logic easy isro2007 first-order-logic",
+        "bbox": [
+            87,
+            491,
+            400,
+            501
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            507,
+            188,
+            522
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.7 First Order Logic: GATE CSE 2005 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            77,
+            530,
+            505,
+            545
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is the first order predicate calculus statement equivalent to the following?",
+        "bbox": [
+            85,
+            554,
+            660,
+            570
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\"Every teacher is liked by some student\"",
+        "bbox": [
+            85,
+            581,
+            383,
+            597
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall (x)$ [teacher $(x)\\rightarrow \\exists (y)$ [student $(y)\\rightarrow$ likes $(y,x)$ ]]",
+            "B. $\\forall (x)$ [teacher $(x)\\to \\exists (y)$ [student $(y)\\land$ likes $(y,x)$ ]]",
+            "C. $\\exists (y)\\forall (x)$ [teacher $(x)\\to [\\text{student}(y)\\land \\text{likes}(y,x)]]$",
+            "D. $\\forall (x)$ [teacher $(x)\\land \\exists (y)$ [student $(y)\\to$ likes $(y,x)$ ]]"
+        ],
+        "bbox": [
+            87,
+            606,
+            526,
+            669
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 mathematical-logic easy first-order-logic",
+        "bbox": [
+            87,
+            694,
+            349,
+            705
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            711,
+            188,
+            725
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.8 First Order Logic: GATE CSE 2006 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            733,
+            507,
+            749
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which one of the first order predicate calculus statements given below correctly expresses the following English statement?",
+        "bbox": [
+            84,
+            757,
+            875,
+            786
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Tigers and lions attack if they are hungry or threatened.",
+        "text_level": 1,
+        "bbox": [
+            90,
+            799,
+            529,
+            815
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall x[(\\text{tiger}(x) \\land \\text{lion}(x)) \\to (\\text{hungry}(x) \\lor \\text{threatened}(x)) \\to \\text{attacks}(x)]$",
+            "B. $\\forall x[(\\mathrm{tiger}(x)\\lor \\mathrm{lion}(x))\\to (\\mathrm{hungry}(x)\\lor \\mathrm{threatened}(x))\\land \\mathrm{attacks}(x)]$",
+            "C. $\\forall x[(\\text{tiger}(x) \\lor \\text{lion}(x)) \\to \\text{attacks}(x) \\to (\\text{hungry}(x) \\lor \\text{threatened}(x))]$",
+            "D. $\\forall x[(\\text{tiger}(x) \\lor \\text{lion}(x)) \\to (\\text{hungry}(x) \\lor \\text{threatened}(x)) \\to \\text{attacks}(x)]$"
+        ],
+        "bbox": [
+            87,
+            824,
+            668,
+            888
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/1b75854c64131e30dede0413cd0048062e77bfcdc2198f706e6cf8957acd9e5d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            301,
+            931,
+            339
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/4be3521ac0cd3ddae76a5a191c4314441e0bcaccd4af901fff9e0be4b590460d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            533,
+            931,
+            571
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/15376b2f6e2e0164fff3a63b9730af26a64d2668ad7ec19a3f4560cd792a86af.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            737,
+            931,
+            774
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2006",
+        "bbox": [
+            87,
+            912,
+            147,
+            921
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "mathematical-logic",
+        "bbox": [
+            157,
+            912,
+            238,
+            921
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "normal",
+        "bbox": [
+            250,
+            912,
+            282,
+            921
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "first-order-logic",
+        "bbox": [
+            292,
+            912,
+            359,
+            921
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "tricky",
+        "bbox": [
+            371,
+            912,
+            398,
+            921
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.9 First Order Logic: GATE CSE 2007 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            77,
+            89,
+            509,
+            104
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e8300a74547a90de583ae20d32e9f296a723dccc72e63b14638f0ba6fb069f8f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $\\operatorname{Graph}(x)$ be a predicate which denotes that $x$ is a graph. Let $\\operatorname{Connected}(x)$ be a predicate which denotes that $x$ is connected. Which of the following first order logic sentences DOES NOT represent the statement:",
+        "bbox": [
+            84,
+            112,
+            878,
+            155
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\"Not every graph is connected\"",
+        "bbox": [
+            126,
+            159,
+            381,
+            176
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\neg \\forall x$ (Graph $(x)\\Rightarrow$ Connected $(x)$ )",
+            "C. $\\neg \\forall x$ $\\left(\\neg \\operatorname{Graph}(x) \\lor \\operatorname{Connected}(x)\\right)$"
+        ],
+        "bbox": [
+            87,
+            185,
+            403,
+            236
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\exists x\\left(\\operatorname{Graph}(x) \\land \\neg \\operatorname{Connected}(x)\\right)$",
+            "D. $\\forall x\\left(\\operatorname{Graph}(x) \\implies \\neg \\operatorname{Connected}(x)\\right)$"
+        ],
+        "bbox": [
+            495,
+            186,
+            808,
+            236
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 mathematical-logic easy first-order-logic",
+        "bbox": [
+            87,
+            239,
+            351,
+            248
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            254,
+            189,
+            269
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1.10 First Order Logic: GATE CSE 2008 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            77,
+            277,
+            515,
+            293
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/7920315d3b6126c8bce9850f68fde60e03c92bdbb5d34d12d06ed16d99ddcf85.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            281,
+            932,
+            319
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let fsa and pda be two predicates such that fsa(x) means x is a finite state automaton and pda(y) means that y is a pushdown automaton. Let equivalent be another predicate such that equivalent(a, b) means a and b are equivalent. Which of the following first order logic statements represent the following?",
+        "bbox": [
+            84,
+            302,
+            878,
+            347
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Each finite state automaton has an equivalent pushdown automaton",
+        "bbox": [
+            85,
+            359,
+            584,
+            375
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(\\forall x \\text{ fsa } (x)) \\implies (\\exists y \\text{ pda } (y) \\land \\text{equivalent } (x, y))$",
+            "B. $\\neg\\forall y\\left(\\exists x\\operatorname{fsa}(x)\\implies\\operatorname{pda}(y)\\land\\operatorname{equivalent}(x,y)\\right)$",
+            "C. $\\forall x\\exists y$ (fsa $(x)\\land \\mathrm{pda}(y)\\land$ equivalent $(x,y))$",
+            "D. $\\forall x\\exists y$ (fsa $(y)\\land \\mathrm{pda}(x)\\land$ equivalent $(x,y))$"
+        ],
+        "bbox": [
+            87,
+            385,
+            504,
+            448
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 easy mathematical-logic first-order-logic",
+        "bbox": [
+            87,
+            473,
+            351,
+            483
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            489,
+            189,
+            504
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1.11 First Order Logic: GATE CSE 2009 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            77,
+            511,
+            515,
+            527
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/cd21a38a371af36e5b5348d195e9aeedfb628b2a376434f5e4ae90abb7c49189.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            515,
+            932,
+            554
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the most appropriate logical formula to represent the statement?",
+        "bbox": [
+            84,
+            536,
+            768,
+            551
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\"Gold and silver ornaments are precious\".",
+        "bbox": [
+            85,
+            555,
+            391,
+            568
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The following notations are used:",
+        "bbox": [
+            85,
+            573,
+            332,
+            587
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $G(x): x$ is a gold ornament",
+            "- $S(x): x$ is a silver ornament",
+            "- $P(x): x$ is precious"
+        ],
+        "bbox": [
+            89,
+            598,
+            326,
+            644
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $\\forall x(P(x) \\implies (G(x) \\land S(x)))$",
+        "bbox": [
+            89,
+            654,
+            342,
+            669
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $\\exists x((G(x) \\land S(x))) \\implies P(x))$",
+        "bbox": [
+            89,
+            669,
+            339,
+            686
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 mathematical-logic easy first-order-logic",
+        "bbox": [
+            89,
+            688,
+            349,
+            699
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\forall x((G(x) \\land S(x)) \\implies P(x))$",
+            "D. $\\forall x((G(x) \\vee S(x)) \\implies P(x))$"
+        ],
+        "bbox": [
+            495,
+            654,
+            747,
+            686
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            705,
+            189,
+            720
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1.12 First Order Logic: GATE CSE 2009 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            728,
+            515,
+            743
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/68fbdaeee4148fb4ba50f98a91d46890587ab08563c2bed71a979383f26a90de.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            731,
+            932,
+            769
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following well-formed formulae:",
+        "bbox": [
+            85,
+            752,
+            413,
+            767
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $\\neg \\forall x(P(x))$",
+            "II. $\\neg \\exists x(P(x))$",
+            "III. $\\neg \\exists x(\\neg P(x))$",
+            "IV. $\\exists x(\\neg P(x))$"
+        ],
+        "bbox": [
+            85,
+            777,
+            215,
+            840
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the above are equivalent?",
+        "bbox": [
+            85,
+            864,
+            347,
+            878
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. I and III",
+        "bbox": [
+            89,
+            891,
+            176,
+            906
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. I and IV",
+        "bbox": [
+            285,
+            891,
+            371,
+            906
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. II and III",
+        "bbox": [
+            480,
+            891,
+            571,
+            906
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. II and IV",
+        "bbox": [
+            673,
+            891,
+            766,
+            906
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2009 mathematical-logic normal first-order-logic",
+        "bbox": [
+            87,
+            916,
+            359,
+            927
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1.13 First Order Logic: GATE CSE 2010 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            515,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/a86f9d6c15795542e4a0ccc320e5f73b52f29e6150219ed27d21d27779b4705e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            93,
+            931,
+            129
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Suppose the predicate $F(x,y,t)$ is used to represent the statement that person $x$ can fool person $y$ at time $t$ .",
+        "bbox": [
+            84,
+            114,
+            873,
+            142
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the statements below expresses best the meaning of the formula,",
+        "bbox": [
+            85,
+            146,
+            663,
+            161
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\forall x \\exists y \\exists t (\\neg F (x, y, t))\n$$",
+        "text_format": "latex",
+        "bbox": [
+            132,
+            163,
+            295,
+            182
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Everyone can fool some person at some time",
+            "B. No one can fool everyone all the time",
+            "C. Everyone cannot fool some person all the time",
+            "D. No one can fool some person at some time"
+        ],
+        "bbox": [
+            87,
+            192,
+            453,
+            247
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 mathematical-logic easy first-order-logic",
+        "bbox": [
+            87,
+            273,
+            349,
+            283
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            289,
+            188,
+            304
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.1.14 First Order Logic: GATE CSE 2011 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            313,
+            515,
+            327
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is CORRECT given three positive integers $x, y$ and $z$ , and a predicate",
+        "bbox": [
+            84,
+            336,
+            848,
+            352
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP (x) = \\neg (x = 1) \\land \\forall y (\\exists z (x = y * z) \\Rightarrow (y = x) \\lor (y = 1))\n$$",
+        "text_format": "latex",
+        "bbox": [
+            265,
+            362,
+            749,
+            381
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $P(x)$ being true means that $x$ is a prime number",
+            "B. $P(x)$ being true means that $x$ is a number other than 1",
+            "C. $P(x)$ is always true irrespective of the value of $x$",
+            "D. $P(x)$ being true means that $x$ has exactly two factors other than 1 and $x$"
+        ],
+        "bbox": [
+            87,
+            389,
+            642,
+            451
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 mathematical-logic normal first-order-logic",
+        "bbox": [
+            87,
+            476,
+            359,
+            486
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            492,
+            188,
+            507
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/eb83f492e2f6b1e8ca903dd43dcf6caec436954ccf7887eab67013b838d87a78.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            315,
+            931,
+            353
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.1.15 First Order Logic: GATE CSE 2012 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            515,
+            515,
+            530
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "What is the correct translation of the following statement into mathematical logic?",
+        "bbox": [
+            84,
+            539,
+            678,
+            555
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\"Some real numbers are rational\"",
+        "bbox": [
+            85,
+            567,
+            332,
+            581
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\exists x(\\mathrm{real}(x)\\lor \\mathrm{rational}(x))$",
+            "C. $\\exists x(\\mathrm{real}(x)\\land \\mathrm{rational}(x))$",
+            "gatecse-2012 mathematical-logic easy first-order-logic"
+        ],
+        "bbox": [
+            87,
+            590,
+            349,
+            635
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            641,
+            188,
+            656
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/c9e605fc139df94beef76db75c946436a0f6342fc18222a3bf303630658d2e5a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            517,
+            931,
+            555
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.1.16 First Order Logic: GATE CSE 2013 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            665,
+            515,
+            679
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "What is the logical translation of the following statement?",
+        "bbox": [
+            84,
+            688,
+            502,
+            704
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\"None of my friends are perfect.\"",
+        "bbox": [
+            85,
+            716,
+            327,
+            731
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\exists x(F(x) \\land \\neg P(x))$",
+            "C. $\\exists x(\\neg F(x) \\land \\neg P(x))$"
+        ],
+        "bbox": [
+            87,
+            739,
+            268,
+            771
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 mathematical-logic easy first-order-logic",
+        "bbox": [
+            89,
+            774,
+            349,
+            783
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            790,
+            188,
+            805
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/0ba6ae76a95c08dd0aeed6b6dea0b0fa15d40f8dc1843ca6a74781ad668d2308.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            667,
+            931,
+            705
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.1.17 First Order Logic: GATE CSE 2013 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            814,
+            515,
+            828
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is NOT logically equivalent to $\\neg \\exists x(\\forall y(\\alpha) \\land \\forall z(\\beta))$ ?",
+        "bbox": [
+            84,
+            838,
+            673,
+            855
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall x(\\exists z(\\neg \\beta)\\rightarrow \\forall y(\\alpha))$",
+            "C. $\\forall x(\\forall y(\\alpha)\\to \\exists z(\\neg \\beta))$"
+        ],
+        "bbox": [
+            87,
+            863,
+            273,
+            894
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "mathematical-logic normal marks-to-all gatecse-2013 first-order-logic",
+        "bbox": [
+            87,
+            897,
+            423,
+            907
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            914,
+            188,
+            928
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/376fcad4a8ce99d4b27bc3dcc9a1a72a81222958613998f829f7aba8f76f0af1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            817,
+            931,
+            855
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.1.18 First Order Logic: GATE CSE 2014 | Set 1 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            559,
+            81
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the statement",
+        "bbox": [
+            85,
+            90,
+            260,
+            103
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/14964ffe87d034873a3440bde1ad0f99346c94dbbf6e53a7016dadd64178d566.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\"Not all that glitters is gold\"",
+        "bbox": [
+            90,
+            117,
+            290,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Predicate glitters $(x)$ is true if $x$ glitters and predicate gold $(x)$ is true if $x$ is gold. Which one of the following logical formulae represents the above statement?",
+        "bbox": [
+            84,
+            146,
+            927,
+            175
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall x:\\mathrm{glitters}(x)\\Rightarrow \\neg \\mathrm{gold}(x)$",
+            "B. $\\forall x:\\mathrm{gold}(x)\\Rightarrow \\mathrm{glitters}(x)$",
+            "C. $\\exists x:\\mathrm{gold}(x)\\land \\neg \\mathrm{glitters}(x)$",
+            "D. $\\exists x:\\mathrm{glitters}(x)\\land \\neg \\mathrm{gold}(x)$"
+        ],
+        "bbox": [
+            87,
+            185,
+            336,
+            249
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 mathematical-logic first-order-logic",
+        "bbox": [
+            87,
+            273,
+            337,
+            283
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            289,
+            181,
+            302
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.19 First Order Logic: GATE CSE 2014 | Set 3 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            78,
+            312,
+            569,
+            327
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The CORRECT formula for the sentence, \"not all Rainy days are Cold\" is",
+        "bbox": [
+            85,
+            336,
+            618,
+            351
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall d(\\text{Rainy}(d) \\land \\text{-Cold}(d))$",
+            "C. $\\exists d(\\sim\\text{Rainy}(d)\\rightarrow\\text{Cold}(d))$",
+            "gatecse-2014-set3 mathematical-logic easy first-order-logic"
+        ],
+        "bbox": [
+            87,
+            359,
+            369,
+            404
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\forall d(\\sim \\mathrm{Rainy}(d)\\rightarrow \\mathrm{Cold}(d))$",
+            "D. $\\exists d(\\mathrm{Rainy}(d) \\land \\sim\\mathrm{Cold}(d))$"
+        ],
+        "bbox": [
+            495,
+            359,
+            717,
+            391
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            410,
+            181,
+            425
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.20 First Order Logic: GATE CSE 2015 | Set 2 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            434,
+            569,
+            448
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following well-formed formulae is a tautology?",
+        "bbox": [
+            85,
+            458,
+            554,
+            473
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall x\\exists yR(x,y)\\leftrightarrow \\exists y\\forall xR(x,y)$",
+            "B. $(\\forall x[\\exists yR(x,y)\\to S(x,y)])\\to \\forall x\\exists yS(x,y)$",
+            "C. $[\\forall x\\exists y (P(x,y)\\rightarrow R(x,y))] \\leftrightarrow [\\forall x\\exists y (\\neg P(x,y)\\lor R(x,y))]]$",
+            "D. $\\forall x\\forall yP(x,y)\\to \\forall x\\forall yP(y,x)$"
+        ],
+        "bbox": [
+            87,
+            496,
+            594,
+            560
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 mathematical-logic normal first-order-logic",
+        "bbox": [
+            87,
+            584,
+            381,
+            593
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            600,
+            181,
+            614
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.21 First Order Logic: GATE CSE 2016 | Set 2 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            624,
+            568,
+            638
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following well-formed formulae in predicate calculus is NOT valid?",
+        "bbox": [
+            84,
+            647,
+            697,
+            663
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(\\forall_{x}p(x)\\implies \\forall_{x}q(x))\\implies (\\exists_{x}\\neg p(x)\\lor \\forall_{x}q(x))$",
+            "B. $(\\exists xp(x) \\vee \\exists xq(x)) \\implies \\exists x(p(x) \\vee q(x))$",
+            "C. $\\exists x(p(x) \\land q(x)) \\implies (\\exists xp(x) \\land \\exists xq(x))$",
+            "D. $\\forall x(p(x) \\vee q(x)) \\implies (\\forall xp(x) \\vee \\forall xq(x))$"
+        ],
+        "bbox": [
+            87,
+            672,
+            497,
+            736
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 mathematical-logic first-order-logic normal",
+        "bbox": [
+            87,
+            760,
+            381,
+            770
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            776,
+            181,
+            790
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.1.22 First Order Logic: GATE CSE 2017 | Set 1 | Question: 02",
+        "text_level": 1,
+        "bbox": [
+            78,
+            800,
+            568,
+            814
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the first-order logic sentence $F : \\forall x(\\exists y R(x, y))$ . Assuming non-empty logical domains, which of the sentences below are implied by F?",
+        "bbox": [
+            84,
+            824,
+            878,
+            856
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $\\exists y(\\exists xR(x,y))$",
+            "II. $\\exists y(\\forall xR(x,y))$",
+            "III. $\\forall y(\\exists xR(x,y))$",
+            "IV. $\\neg \\exists x(\\forall y\\neg R(x,y))$"
+        ],
+        "bbox": [
+            82,
+            865,
+            253,
+            929
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/4a8a56a353a4d81286580deb2bfcbeda1489c7488cf6638d0d74a23612b86876.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            802,
+            931,
+            840
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/7b9fd05fe726662a1dc69b53844e21e2c3869502b755fde50cda9837931c2b6b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            315,
+            931,
+            353
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/baa65bd67bff41b689b461a36dca318634013f2300edaffb6763fba66c51bcef.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            437,
+            931,
+            473
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/1976707426f5f444d7f274317aec240e1799ca29fd503000851287b4a4714ade.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            627,
+            931,
+            663
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. IV only",
+        "bbox": [
+            89,
+            68,
+            163,
+            84
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. I and IV only",
+        "bbox": [
+            285,
+            68,
+            394,
+            83
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. II only",
+        "bbox": [
+            480,
+            68,
+            546,
+            84
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. II and III only",
+        "bbox": [
+            673,
+            68,
+            786,
+            84
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 mathematical-logic first-order-logic",
+        "bbox": [
+            87,
+            93,
+            337,
+            103
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            181,
+            123
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.1.23 First Order Logic: GATE CSE 2018 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            515,
+            147
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the first-order logic sentence",
+        "bbox": [
+            85,
+            156,
+            368,
+            171
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\varphi \\equiv \\exists s \\exists t \\exists u \\forall v \\forall w \\forall x \\forall y \\psi (s, t, u, v, w, x, y)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            315,
+            181,
+            700,
+            200
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where $\\psi(s, t, u, v, w, x, y,)$ is a quantifier-free first-order logic formula using only predicate symbols, and possibly equality, but no function symbols. Suppose $\\varphi$ has a model with a universe containing 7 elements.",
+        "bbox": [
+            84,
+            209,
+            927,
+            239
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is necessarily true?",
+        "bbox": [
+            85,
+            242,
+            512,
+            257
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There exists at least one model of $\\varphi$ with universe of size less than or equal to 3",
+            "B. There exists no model of $\\varphi$ with universe of size less than or equal to 3",
+            "C. There exists no model of $\\varphi$ with universe size of greater than 7",
+            "D. Every model of $\\varphi$ has a universe of size equal to 7"
+        ],
+        "bbox": [
+            85,
+            267,
+            695,
+            326
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 mathematical-logic normal first-order-logic two-marks",
+        "bbox": [
+            87,
+            351,
+            418,
+            361
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            368,
+            181,
+            382
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.1.24 First Order Logic: GATE CSE 2019 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            77,
+            391,
+            515,
+            404
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the first order predicate formula $\\varphi$ :",
+        "bbox": [
+            85,
+            415,
+            410,
+            429
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\forall x [ (\\forall z z | x \\Rightarrow ((z = x) \\lor (z = 1))) \\rightarrow \\exists w (w > x) \\land (\\forall z z | w \\Rightarrow ((w = z) \\lor (z = 1))) ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            84,
+            432,
+            754,
+            451
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Here $a \\mid b$ denotes that $a$ divides $b'$ , where $a$ and $b$ are integers. Consider the following sets:",
+        "bbox": [
+            85,
+            453,
+            783,
+            469
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S_{1}:\\{1,2,3,\\ldots ,100\\}$",
+            "- $S_{2}$ : Set of all positive integers",
+            "- $S_{3}$ : Set of all integers"
+        ],
+        "bbox": [
+            97,
+            479,
+            337,
+            524
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the above sets satisfy $\\varphi$ ?",
+        "bbox": [
+            85,
+            534,
+            342,
+            551
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $S_{1}$ and $S_{2}$",
+        "bbox": [
+            89,
+            562,
+            186,
+            579
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $S_{1}$ and $S_{3}$",
+        "bbox": [
+            285,
+            562,
+            379,
+            579
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $S_{2}$ and $S_{3}$",
+        "bbox": [
+            480,
+            562,
+            574,
+            579
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. $S_{1}, S_{2}$ and $S_{3}$",
+        "bbox": [
+            673,
+            562,
+            794,
+            579
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 discrete-mathematics mathematical-logic first-order-logic two-marks normal",
+        "bbox": [
+            87,
+            587,
+            519,
+            597
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            604,
+            181,
+            618
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.1.25 First Order Logic: GATE CSE 2020 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            77,
+            627,
+            515,
+            642
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following predicate formulae is NOT logically valid?",
+        "bbox": [
+            84,
+            650,
+            588,
+            666
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Note that W is a predicate formula without any free occurrence of x.",
+        "bbox": [
+            85,
+            669,
+            584,
+            685
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall x(p(x) \\vee W) \\equiv \\forall x p(x) \\vee W$",
+            "B. $\\exists x(p(x) \\wedge W) \\equiv \\exists x p(x) \\wedge W$",
+            "C. $\\forall x(p(x)\\to W)\\equiv \\forall x p(x)\\to W$",
+            "D. $\\exists x(p(x)\\to W)\\equiv \\forall x p(x)\\to W$"
+        ],
+        "bbox": [
+            87,
+            695,
+            371,
+            758
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 first-order-logic mathematical-logic two-marks",
+        "bbox": [
+            87,
+            782,
+            374,
+            792
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            799,
+            181,
+            813
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.1.26 First Order Logic: GATE CSE 2023 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            77,
+            821,
+            515,
+            836
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Geetha has a conjecture about integers, which is of the form",
+        "bbox": [
+            85,
+            845,
+            527,
+            859
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\forall x (P (x) \\Longrightarrow \\exists y Q (x, y)),\n$$",
+        "text_format": "latex",
+        "bbox": [
+            403,
+            870,
+            608,
+            890
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/9e4e5624d4409aa7d9c65bc612c549356f2b63e877d753ee53ba25d48317026c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            931,
+            172
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/d76556b6a325214e5dc91db91164de8c3fb2ee689d8c89269f394cc0f99ca10a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            394,
+            931,
+            431
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/9facd4069365f2e52693062bd70aaad22acca73f83c3395ac3d49541f69163d8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            630,
+            931,
+            668
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/110466b91c9393d5cc1b23944af2db1cbd542878749d7ac1b105d95dae80d8ac.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            825,
+            931,
+            862
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "where P is a statement about integers, and Q is a statement about pairs of integers. Which of the following (one or",
+        "bbox": [
+            84,
+            912,
+            927,
+            928
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "more) option(s) would imply Geetha's conjecture?",
+        "bbox": [
+            85,
+            66,
+            450,
+            80
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\exists x(P(x) \\land \\forall yQ(x, y))$",
+            "B. $\\forall x \\forall y Q(x, y)$",
+            "C. $\\exists y \\forall x (P(x) \\Longrightarrow Q(x, y))$",
+            "D. $\\exists x(P(x) \\land \\exists yQ(x, y))$"
+        ],
+        "bbox": [
+            87,
+            91,
+            309,
+            155
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 mathematical-logic first-order-logic multiple-selects one-mark difficult",
+        "bbox": [
+            87,
+            178,
+            495,
+            188
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            194,
+            186,
+            209
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.1.27 First Order Logic: GATE CSE 2025 | Set 1 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            218,
+            569,
+            233
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following predicate logic formulae/formula is/are CORRECT representation(s) of the statement: \"Everyone has exactly one mother\"?",
+        "bbox": [
+            84,
+            241,
+            875,
+            270
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/b94ad395372195177ea1a8de8e02874911425409c33ae6ce45d2407dc5960a01.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            220,
+            931,
+            258
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The meanings of the predicates used are:",
+        "bbox": [
+            85,
+            283,
+            393,
+            298
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- mother $(y, x): y$ is the mother of $x$",
+            "- noteq $(x,y):x$ and $y$ are not equal"
+        ],
+        "bbox": [
+            97,
+            309,
+            376,
+            340
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall x\\exists y\\exists z(\\mathrm{mother}(y,x)\\land \\neg \\mathrm{mother}(z,x))$",
+            "B. $\\forall x\\exists y[\\mathrm{mother}(y,x)\\land \\forall z(\\mathrm{noteq}(z,y)\\rightarrow \\neg \\mathrm{mother}(z,x))]$",
+            "C. $\\forall x \\forall y[\\text{mother}(y, x) \\to \\exists z(\\text{mother}(z, x) \\land \\neg \\text{note } q(z, y))]$",
+            "D. $\\forall x\\exists y[\\mathrm{mother}(y,x)\\land\\neg\\exists z(\\mathrm{note}q(z,y)\\land\\mathrm{mother}(z,x))]$"
+        ],
+        "bbox": [
+            87,
+            351,
+            557,
+            414
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 mathematical-logic first-order-logic multiple-selects two-marks",
+        "bbox": [
+            87,
+            437,
+            472,
+            447
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            454,
+            186,
+            467
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.1.28 First Order Logic: GATE CSE 2025 | Set 2 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            477,
+            559,
+            491
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let $P(x)$ be an arbitrary predicate over the domain of natural numbers. Which ONE of the following statements is TRUE?",
+        "bbox": [
+            84,
+            502,
+            875,
+            530
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/63a590898e1f485b6eeaab3deb2e81d11bb54f6589c916c3a0569557841f0ea9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            480,
+            931,
+            517
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\left(P(0) \\wedge (\\forall x[P(x) \\Rightarrow P(x+1)])\\right) \\Rightarrow \\forall xP(x)$",
+            "B. $\\left(P(0) \\wedge (\\forall x[P(x) \\Rightarrow P(x-1)])\\right) \\Rightarrow \\forall xP(x)$",
+            "C. $\\left(P(1000) \\wedge (\\forall x[P(x) \\Rightarrow P(x-1)]\\right) \\Rightarrow \\forall xP(x)$",
+            "D. $\\left(P(1000) \\wedge (\\forall x[P(x) \\Rightarrow P(x+1)])\\right) \\Rightarrow \\forall xP(x)$"
+        ],
+        "bbox": [
+            87,
+            542,
+            507,
+            614
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 mathematical-logic first-order-logic one-mark",
+        "bbox": [
+            87,
+            638,
+            388,
+            648
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            654,
+            186,
+            668
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.1.29 First Order Logic: GATE CSE 2026 | Set 2 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            676,
+            557,
+            692
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "For two different persons $x$ and $y$ , the predicate $M(x, y)$ denotes that $x$ knows $y$ . Consider the following statement.",
+        "bbox": [
+            84,
+            701,
+            875,
+            730
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/4a586e500f304ccef658b1e06d6593d428a0990902b36f36635687e951eae852.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            680,
+            931,
+            717
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "There is a person who does not know anyone else, but that person is known by everyone else.",
+        "bbox": [
+            85,
+            744,
+            774,
+            758
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following expressions represents the above statement?",
+        "bbox": [
+            84,
+            771,
+            618,
+            786
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(\\exists y)(\\forall x)((x \\neq y) \\to (M(x, y) \\land \\neg M(y, x)))$",
+            "B. $(\\forall y)(\\exists x)((x \\neq y) \\to (M(x, y) \\land \\neg M(y, x)))$",
+            "C. $(\\exists y)(\\exists x)((x \\neq y) \\to (M(x,y) \\land \\neg M(y,x)))$",
+            "D. $(\\forall y)(\\forall x)((x \\neq y) \\to (M(x,y) \\land \\neg M(y,x)))$"
+        ],
+        "bbox": [
+            87,
+            796,
+            460,
+            859
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 mathematical-logic first-order-logic one-mark",
+        "bbox": [
+            87,
+            884,
+            391,
+            894
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            900,
+            186,
+            914
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.1.30 First Order Logic: GATE IT 2004 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            487,
+            79
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/0e5dd0ce9dcc513984574b6534cea9deaf8ff53d3d0102bd9ce76194464622e7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $a(x,y), b(x,y,)$ and $c(x,y)$ be three statements with variables x and y chosen from some universe. Consider the following statement:",
+        "bbox": [
+            84,
+            89,
+            875,
+            118
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(\\exists x) (\\forall y) [ (a (x, y) \\land b (x, y)) \\land \\neg c (x, y) ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            124,
+            130,
+            431,
+            150
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is its equivalent?",
+        "bbox": [
+            85,
+            160,
+            410,
+            175
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $(\\forall x)(\\exists y)[(a(x,y) \\lor b(x,y)) \\to c(x,y)]$",
+            "B. $(\\exists x)(\\forall y)[(a(x,y)\\lor b(x,y))\\land \\neg c(x,y)]$",
+            "C. $\\neg (\\forall x)(\\exists y)[(a(x,y)\\land b(x,y))\\to c(x,y)]$",
+            "D. $\\neg (\\forall x)(\\exists y)[(a(x,y)\\lor b(x,y))\\to c(x,y)]$"
+        ],
+        "bbox": [
+            87,
+            185,
+            426,
+            250
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 mathematical-logic normal discrete-mathematics first-order-logic",
+        "bbox": [
+            87,
+            273,
+            455,
+            283
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            289,
+            181,
+            302
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.1.31 First Order Logic: GATE IT 2005 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            78,
+            312,
+            497,
+            327
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $P(x)$ and $Q(x)$ be arbitrary predicates. Which of the following statements is always TRUE?",
+        "bbox": [
+            85,
+            336,
+            781,
+            353
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $((\\forall x(P(x) \\vee Q(x)))) \\implies ((\\forall xP(x)) \\vee (\\forall xQ(x)))$",
+            "B. $(\\forall x(P(x) \\Longrightarrow Q(x))) \\Longrightarrow ((\\forall xP(x)) \\Longrightarrow (\\forall xQ(x)))$",
+            "C. $(\\forall x(P(x)) \\Rightarrow \\forall x(Q(x))) \\Rightarrow (\\forall x(P(x) \\Rightarrow Q(x)))$",
+            "D. $(\\forall x(P(x)) \\Leftrightarrow (\\forall x(Q(x)))) \\implies (\\forall x(P(x) \\Leftrightarrow Q(x)))$"
+        ],
+        "bbox": [
+            87,
+            362,
+            584,
+            426
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 mathematical-logic first-order-logic normal",
+        "bbox": [
+            87,
+            450,
+            354,
+            460
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            467,
+            181,
+            480
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/a6f8edaa91559b86a4b0b9160439fc1948c0c059b2ad6663151ffe78e250dffe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            315,
+            931,
+            353
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.1.32 First Order Logic: GATE IT 2006 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            490,
+            495,
+            504
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following first order logic formula in which $R$ is a binary relation symbol.",
+        "bbox": [
+            85,
+            513,
+            702,
+            529
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\forall x \\forall y (R (x, y) \\implies R (y, x))\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            541,
+            312,
+            560
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The formula is",
+        "bbox": [
+            85,
+            571,
+            194,
+            584
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. satisfiable and valid",
+            "C. unsatisfiable but its negation is valid"
+        ],
+        "bbox": [
+            87,
+            595,
+            352,
+            633
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. satisfiable and so is its negation",
+            "D. satisfiable but its negation is unsatisfiable"
+        ],
+        "bbox": [
+            495,
+            595,
+            759,
+            633
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 mathematical-logic normal first-order-logic",
+        "bbox": [
+            87,
+            638,
+            354,
+            650
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            656,
+            181,
+            669
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.1.33 First Order Logic: GATE IT 2007 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            679,
+            495,
+            694
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which one of these first-order logic formulae is valid?",
+        "bbox": [
+            85,
+            703,
+            477,
+            718
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\forall x(P(x) \\Rightarrow Q(x)) \\Rightarrow (\\forall xP(x) \\Rightarrow \\forall xQ(x))$",
+            "B. $\\exists x(P(x) \\vee Q(x)) \\implies (\\exists xP(x) \\implies \\exists xQ(x))$",
+            "C. $\\exists x(P(x) \\land Q(x)) \\iff (\\exists xP(x) \\land \\exists xQ(x))$",
+            "D. $\\forall x\\exists yP(x,y)\\implies \\exists y\\forall xP(x,y)$"
+        ],
+        "bbox": [
+            87,
+            728,
+            536,
+            792
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 mathematical-logic normal first-order-logic",
+        "bbox": [
+            87,
+            815,
+            354,
+            825
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            832,
+            181,
+            846
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/8074eedd0f0c7e7d0d02d37500b3292a58d0951c8cdb36c380ae70f267b0c04e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            492,
+            931,
+            530
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.1.34 First Order Logic: GATE IT 2008 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            855,
+            495,
+            870
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following first order formulae is logically valid? Here $\\alpha(x)$ is a first order formula with $x$ as a free variable, and $\\beta$ is a first order formula with no free variable.",
+        "bbox": [
+            84,
+            880,
+            878,
+            909
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/fcc10b771c95a632e7a7ff2b53afc5811fb53c3e0d659da6c2d1a531535eb418.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            682,
+            931,
+            720
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/71fcbd3131a2956e4349f9ccb50d6732650bf5609aff6a1eac4d71a6ebdda583.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            858,
+            931,
+            896
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $[\\beta \\rightarrow (\\exists x, \\alpha(x))] \\rightarrow [\\forall x, \\beta \\rightarrow \\alpha(x)]$",
+            "B. $[\\exists x, \\beta \\rightarrow \\alpha(x)] \\rightarrow [\\beta \\rightarrow (\\forall x, \\alpha(x))]]$",
+            "C. $[\\left(\\exists x, \\alpha(x)\\right) \\rightarrow \\beta] \\rightarrow [\\forall x, \\alpha(x) \\rightarrow \\beta]$",
+            "D. $[\\left(\\forall x, \\alpha(x)\\right) \\rightarrow \\beta] \\rightarrow [\\forall x, \\alpha(x) \\rightarrow \\beta]$"
+        ],
+        "bbox": [
+            87,
+            64,
+            394,
+            128
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 first-order-logic normal",
+        "bbox": [
+            89,
+            150,
+            262,
+            161
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            168,
+            186,
+            182
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.1.35 First Order Logic: GATE IT 2008 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            191,
+            497,
+            205
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is the negation of $[\\forall x, \\alpha \\to (\\exists y, \\beta \\to (\\forall u, \\exists v, y))]$",
+        "bbox": [
+            85,
+            214,
+            631,
+            233
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $[\\exists x, \\alpha \\rightarrow (\\forall y, \\beta \\rightarrow (\\exists u, \\forall v, y))] \\quad$",
+            "B. $[\\exists x, \\alpha \\to (\\forall y, \\beta \\to (\\exists u, \\forall v, \\neg y))] \\quad$",
+            "C. $[\\forall x, \\neg \\alpha \\rightarrow (\\exists y, \\neg \\beta \\rightarrow (\\forall u, \\exists v, \\neg y))]$",
+            "D. \\([\\exists x, \\alpha \\land (\\forall y, \\beta \\land (\\exists u, \\forall v, \\neg y))] \\]"
+        ],
+        "bbox": [
+            87,
+            241,
+            400,
+            305
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 mathematical-logic normal first-order-logic",
+        "bbox": [
+            87,
+            328,
+            352,
+            339
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            345,
+            186,
+            359
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/ad705d71586e70ae8f4fa808fc4bca2be671fda85caa51c25c2a9f4eda174591.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            194,
+            931,
+            232
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.2",
+        "text_level": 1,
+        "bbox": [
+            67,
+            369,
+            95,
+            383
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Logical Reasoning (3)",
+        "text_level": 1,
+        "bbox": [
+            425,
+            369,
+            603,
+            385
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.2.1 Logical Reasoning: GATE CSE 2012 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            77,
+            395,
+            509,
+            410
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following logical inferences.",
+        "bbox": [
+            85,
+            419,
+            386,
+            434
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$I_{1}$ : If it rains then the cricket match will not be played.",
+        "bbox": [
+            85,
+            447,
+            477,
+            461
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The cricket match was played.",
+        "bbox": [
+            87,
+            463,
+            309,
+            476
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Inference: There was no rain.",
+        "bbox": [
+            87,
+            477,
+            307,
+            488
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$I_{2}$ : If it rains then the cricket match will not be played.",
+        "bbox": [
+            85,
+            503,
+            477,
+            517
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "It did not rain.",
+        "bbox": [
+            87,
+            519,
+            189,
+            530
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Inference: The cricket match was played.",
+        "bbox": [
+            87,
+            532,
+            386,
+            546
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is TRUE?",
+        "bbox": [
+            85,
+            549,
+            324,
+            564
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both $I_{1}$ and $I_{2}$ are correct inferences",
+            "B. $I_{1}$ is correct but $I_{2}$ is not a correct inference",
+            "C. $I_{1}$ is not correct but $I_{2}$ is a correct inference",
+            "D. Both $I_{1}$ and $I_{2}$ are not correct inferences"
+        ],
+        "bbox": [
+            87,
+            574,
+            433,
+            631
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 mathematical-logic easy logical-reasoning",
+        "bbox": [
+            87,
+            657,
+            354,
+            668
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            674,
+            186,
+            688
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/dd9affd45237c1854285728f45061a713a28e48184a6922749675f6ebc44be2f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            397,
+            931,
+            435
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.2.2 Logical Reasoning: GATE CSE 2015 | Set 2 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            77,
+            697,
+            564,
+            712
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two statements.",
+        "bbox": [
+            85,
+            722,
+            369,
+            736
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S_{1}$ : If a candidate is known to be corrupt, then he will not be elected",
+            "- $S_{2}$ : If a candidate is kind, he will be elected"
+        ],
+        "bbox": [
+            97,
+            747,
+            606,
+            777
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements follows from $S_{1}$ and $S_{2}$ as per sound inference rules of logic?",
+        "bbox": [
+            85,
+            788,
+            813,
+            804
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. If a person is known to be corrupt, he is kind",
+            "B. If a person is not known to be corrupt, he is not kind",
+            "C. If a person is kind, he is not known to be corrupt",
+            "D. If a person is not kind, he is not known to be corrupt"
+        ],
+        "bbox": [
+            87,
+            814,
+            492,
+            870
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 mathematical-logic normal logical-reasoning",
+        "bbox": [
+            87,
+            896,
+            384,
+            906
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            913,
+            186,
+            926
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/96f33534946898020c85722d0ccc335b6c68de97b891f4ac3f721dcb690da795.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            700,
+            931,
+            738
+        ],
+        "page_idx": 11
+    }
+]

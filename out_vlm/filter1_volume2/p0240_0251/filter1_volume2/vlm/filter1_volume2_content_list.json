@@ -1,0 +1,4701 @@
+[
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```lisp\nif (stack-empty(S1)) then {\n        print(\"Q is empty\");\n        return;\n    }\n    else while (!(stack-empty(S1))){\n        x=pop(S1);\n        push(S2,x);\n    }\n    x=pop(S2);\n}\n```",
+        "bbox": [
+            89,
+            64,
+            299,
+            175
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $n$ insert and $m(\\leq n)$ delete operations be performed in an arbitrary order on an empty queue $Q$ . Let $x$ and $y$ be the number of push and pop operations performed respectively in the process. Which one of the following is true for all $m$ and $n$ ?",
+        "bbox": [
+            84,
+            184,
+            929,
+            229
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $n + m \\leq x < 2n$ and $2m \\leq y \\leq n + m$",
+            "B. $n + m \\leq x < 2n$ and $2m \\leq y \\leq 2n$",
+            "C. $2m \\leq x < 2n$ and $2m \\leq y \\leq n + m$",
+            "D. $2m \\leq x < 2n$ and $2m \\leq y \\leq 2n$"
+        ],
+        "bbox": [
+            87,
+            239,
+            423,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 data-structures queue stack normal",
+        "bbox": [
+            87,
+            321,
+            342,
+            331
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            338,
+            181,
+            352
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.12.6 Queue: GATE CSE 2012 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            362,
+            433,
+            375
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Suppose a circular queue of capacity $(n-1)$ elements is implemented with an array of n elements. Assume that the insertion and deletion operations are carried out using REAR and FRONT as array index variables, respectively. Initially, REAR = FRONT = 0. The conditions to detect queue full and queue empty are:",
+        "bbox": [
+            84,
+            385,
+            915,
+            432
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. full : (REAR + 1) mod n == FRONT\nempty : REAR == FRONT",
+            "B. full : (REAR + 1) mod n == FRONT\nempty : (FRONT + 1) mod n == REAR",
+            "C. full : REAR == FRONT\n    empty : (REAR + 1) mod n == FRONT",
+            "D. full : (FRONT + 1) mod n == REAR\nempty : REAR == FRONT"
+        ],
+        "bbox": [
+            87,
+            440,
+            428,
+            553
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 data-structures queue normal",
+        "bbox": [
+            87,
+            577,
+            307,
+            586
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            592,
+            188,
+            606
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.12.7 Queue: GATE CSE 2013 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            78,
+            616,
+            433,
+            630
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following operation along with Enqueue and Dequeue operations on queues, where $k$ is a global parameter.",
+        "bbox": [
+            84,
+            640,
+            878,
+            669
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nMultiDequeue(Q){\n    m = k\n    while (Q is not empty) and (m > 0) {\n        Dequeue(Q)\n        m = m - 1\n    }\n}\n```",
+        "bbox": [
+            87,
+            678,
+            309,
+            755
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "What is the worst case time complexity of a sequence of n queue operations on an initially empty queue?",
+        "bbox": [
+            84,
+            764,
+            794,
+            792
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n)$",
+        "bbox": [
+            89,
+            804,
+            154,
+            821
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n + k)$",
+        "bbox": [
+            285,
+            805,
+            379,
+            821
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(nk)$",
+        "bbox": [
+            480,
+            805,
+            552,
+            821
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n^{2})$",
+        "bbox": [
+            675,
+            805,
+            744,
+            821
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 data-structures algorithms normal queue",
+        "bbox": [
+            87,
+            830,
+            364,
+            840
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            846,
+            188,
+            859
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.12.8 Queue: GATE CSE 2016 | Set 1 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            870,
+            487,
+            884
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A queue is implemented using an array such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (n refers to the number of items in the",
+        "bbox": [
+            84,
+            893,
+            878,
+            922
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/213b2705dbeab9690e2df863053666dab47c58b42c58eba36e4daaf28b41a0d1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            365,
+            932,
+            402
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/d2e80a97dfd0be652a4cdf49e86e5ac0b3dd836e6a0829962ea5782d03335d99.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            619,
+            932,
+            656
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/84b9690b75ee23a0fc9810a617e05bd1aa9a42c0fb3d1d10292b16460cb55546.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            872,
+            932,
+            910
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "queue) ?",
+        "bbox": [
+            85,
+            64,
+            157,
+            78
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both operations can be performed in $O(1)$ time.",
+            "B. At most one operation can be performed in $O(1)$ time but the worst case time for the operation will be $\\Omega(n)$ .",
+            "C. The worst case time complexity for both operations will be $\\Omega(n)$ .",
+            "D. Worst case time complexity for both operations will be $\\Omega(\\log n)$"
+        ],
+        "bbox": [
+            87,
+            90,
+            895,
+            152
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 data-structures queue normal",
+        "bbox": [
+            87,
+            176,
+            327,
+            186
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            192,
+            181,
+            207
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.12.9 Queue: GATE CSE 2016 | Set 1 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            214,
+            485,
+            230
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let Q denote a queue containing sixteen numbers and S be an empty stack. $Head(Q)$ returns the element at the head of the queue Q without removing it from Q. Similarly $Top(S)$ returns the element at the top of S without removing it from S. Consider the algorithm given below.",
+        "bbox": [
+            84,
+            239,
+            878,
+            286
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/d7161dbb578dbe10c3a986e18e32cc997922c2fda188798b615145e7c9888c03.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            218,
+            931,
+            256
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```matlab\nwhile Q is not Empty do\n  if S is Empty OR Top(S) ≤ Head (Q) then\n    x:= Dequeue (Q);\n    Push (S, x);\n  else\n    x:= Pop(S);\n    Enqueue (Q, x);\n  end\nend\n```",
+        "bbox": [
+            89,
+            294,
+            329,
+            391
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The maximum possible number of iterations of the while loop in the algorithm is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            401,
+            739,
+            416
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 data-structures queue difficult numerical-answers",
+        "bbox": [
+            87,
+            435,
+            420,
+            444
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            451,
+            181,
+            465
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.12.10 Queue: GATE CSE 2017 | Set 2 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            77,
+            473,
+            495,
+            488
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A circular queue has been implemented using a singly linked list where each node consists of a value and a single pointer pointing to the next node. We maintain exactly two external pointers FRONT and REAR pointing to the front node and the rear node of the queue, respectively. Which of the following statements is/are CORRECT for such a circular queue, so that insertion and deletion operations can be performed in $O(1)$ time?",
+        "bbox": [
+            84,
+            498,
+            926,
+            555
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Next pointer of front node points to the rear node.",
+            "II. Next pointer of rear node points to the front node."
+        ],
+        "bbox": [
+            90,
+            566,
+            473,
+            593
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (I) only.",
+            "C. Both (I) and (II).",
+            "gatecse-2017-set2 data-structures queue"
+        ],
+        "bbox": [
+            87,
+            606,
+            285,
+            646
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            653,
+            181,
+            667
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.12.11 Queue: GATE CSE 2018 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            77,
+            676,
+            433,
+            691
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A queue is implemented using a non-circular singly linked list. The queue has a head pointer and a tail pointer, as shown in the figure. Let $n$ denote the number of nodes in the queue. Let 'enqueue' be implemented by inserting a new node at the head, and 'dequeue' be implemented by deletion of a node from the tail.",
+        "bbox": [
+            84,
+            700,
+            929,
+            756
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/dce2870106226a0183989c217734eed183d6f02784e83bd65fae88610245473d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Head\"] --> B[\"Tail\"]\n  B --> C[\"...\"]\n  C --> D[\"Tail\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            97,
+            767,
+            458,
+            823
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the time complexity of the most time-efficient implementation of 'enqueue' and 'dequeue, respectively, for this data structure?",
+        "bbox": [
+            84,
+            837,
+            927,
+            866
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Theta(1), \\Theta(1)$",
+            "C. $\\Theta(n), \\Theta(1)$"
+        ],
+        "bbox": [
+            87,
+            875,
+            198,
+            904
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 algorithms data-structures queue normal linked-list one-mark",
+        "bbox": [
+            87,
+            909,
+            472,
+            919
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/5bb8cfca546dda054a3fb204852a4bce7788b4196a098e287a6f28ad8e36d622.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            476,
+            931,
+            515
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/139efc66703f0e70e4f7895bb340de7292806183ad48f471749f2472af7a6160.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            679,
+            931,
+            717
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/139efc66703f0e70e4f7895bb340de7292806183ad48f471749f2472af7a6160.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            679,
+            931,
+            717
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.12.12 Queue: GATE CSE 2022 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            77,
+            89,
+            445,
+            103
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/847d9248a56144503a7e091efbd321dfc4689ae547458486c497086315dacd39.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the queues $Q_{1}$ containing four elements and $Q_{2}$ containing none (shown as the Initial State in the figure). The only operations allowed on these two queues are Enqueue (Q, element) and Dequeue (Q).",
+        "bbox": [
+            84,
+            112,
+            878,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of Enqueue operations on $Q_{1}$ required to place the elements of $Q_{1}$ in $Q_{2}$ in reverse order (shown as the Final State in the figure) without using any additional storage is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            144,
+            927,
+            174
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/ffe73933f42723f4f9d6ad11c231c35cbc133aa92df2b38d1f084480a08505db.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            384,
+            191,
+            648,
+            280
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers data-structures queue two-marks",
+        "bbox": [
+            87,
+            333,
+            410,
+            343
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            349,
+            188,
+            363
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.12.13 Queue: GATE CSE 2026 | Set 2 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            77,
+            372,
+            497,
+            387
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/3647b82006486c46aacec2f1dd8dce0c69931b39e4bfeb5df36d7172bf94190c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            376,
+            932,
+            414
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a stack $S$ and a queue $Q$ . Both of them are initially empty and have the capacity to store ten elements each. The elements 1, 2, 3, 4, and 5 arrive one by one, in that order. When an element arrives, it is assigned either to $S$ (pushed on $S$ ) or to $Q$ (enqueued to $Q$ ). Once all the five elements are stored, the output is generated in two steps. First, stack $S$ is emptied by popping all elements. Then queue $Q$ is emptied by dequeueing all elements. The output obtained by following this process is 43125.",
+        "bbox": [
+            84,
+            397,
+            929,
+            471
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Given the output, the objective is to predict whether an element was assigned to S or Q.",
+        "bbox": [
+            85,
+            488,
+            727,
+            504
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following options is/are possible valid assignment(s) of the elements?",
+        "bbox": [
+            85,
+            515,
+            689,
+            530
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Note: In the options, the notation $xS$ denotes that element $x$ was assigned to $S$ and $yQ$ denotes that element $y$ was assigned to $Q$ .",
+        "bbox": [
+            84,
+            543,
+            929,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $1S, 2Q, 3S, 4S, 5Q$",
+        "bbox": [
+            87,
+            581,
+            252,
+            597
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $1Q, 2Q, 3S, 4S, 5Q$",
+        "bbox": [
+            495,
+            583,
+            658,
+            598
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $1Q, 2Q, 3Q, 4S, 5S$",
+        "bbox": [
+            90,
+            598,
+            253,
+            612
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $1S, 2S, 3S, 4Q, 5Q$",
+        "bbox": [
+            497,
+            598,
+            657,
+            612
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 data-structures stack queue multiple-selects two-marks",
+        "bbox": [
+            87,
+            616,
+            457,
+            625
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            87,
+            631,
+            188,
+            646
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.12.14 Queue: GATE DS&AI 2024 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            77,
+            656,
+            460,
+            669
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/fc1a8b5e0a6ed8eae3f59b93166a60f760853a638da5919158bba634aa5f7a88.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            657,
+            932,
+            695
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The fundamental operations in a double-ended queue D are:",
+        "bbox": [
+            85,
+            680,
+            532,
+            695
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "insertFirst (e) - Insert a new element e at the beginning of D.",
+        "bbox": [
+            85,
+            699,
+            529,
+            714
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "insertLast (e) - Insert a new element e at the end of D.",
+        "bbox": [
+            85,
+            718,
+            482,
+            732
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "removeFirst () - Remove and return the first element of D.",
+        "bbox": [
+            85,
+            736,
+            510,
+            751
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "removeLast () - Remove and return the last element of D.",
+        "bbox": [
+            85,
+            756,
+            507,
+            770
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In an empty double-ended queue, the following operations are performed:",
+        "bbox": [
+            85,
+            783,
+            623,
+            799
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "insertFirst (10)",
+        "bbox": [
+            85,
+            802,
+            196,
+            815
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "insertLast (32)",
+        "bbox": [
+            85,
+            817,
+            194,
+            830
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "a ← removeFirst ()",
+        "bbox": [
+            85,
+            831,
+            230,
+            844
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "insertLast (28)",
+        "bbox": [
+            85,
+            845,
+            194,
+            858
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "insertLast (17)",
+        "bbox": [
+            85,
+            858,
+            194,
+            872
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "a ← removeFirst ()",
+        "bbox": [
+            85,
+            872,
+            230,
+            885
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "a ← removeLast ()",
+        "bbox": [
+            85,
+            887,
+            230,
+            900
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The value of a is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            913,
+            295,
+            927
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.12.15 Queue: GATE IT 2007 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            137,
+            423,
+            150
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/528b4529b0a22fd5da1df11ad94937cdd698c56d4143f8f6be94871b246a5521.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            140,
+            931,
+            178
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Suppose you are given an implementation of a queue of integers. The operations that can be performed on the queue are:",
+        "bbox": [
+            84,
+            161,
+            875,
+            190
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. isEmpty (Q) — returns true if the queue is empty, false otherwise.",
+            "ii. delete (Q) — deletes the element at the front of the queue and returns its value.",
+            "iii. insert (Q, i) — inserts the integer i at the rear of the queue."
+        ],
+        "bbox": [
+            90,
+            201,
+            699,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [
+            "Consider the following function:"
+        ],
+        "code_body": "```javascript\nvoid f (queue Q) {\nint i ;\nif (!isEmpty(Q)) {\n    i = delete(Q);\n    f(Q);\n    insert(Q, i);\n}\n}\n```",
+        "bbox": [
+            87,
+            281,
+            194,
+            368
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "What operation is performed by the above function f ?",
+        "bbox": [
+            85,
+            378,
+            485,
+            393
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Leaves the queue Q unchanged",
+            "B. Reverses the order of the elements in the queue $Q$",
+            "C. Deletes the element at the front of the queue $Q$ and inserts it at the rear keeping the other elements in the same order",
+            "D. Empties the queue Q"
+        ],
+        "bbox": [
+            87,
+            404,
+            927,
+            475
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 data-structures queue normal",
+        "bbox": [
+            87,
+            501,
+            300,
+            510
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            517,
+            186,
+            530
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.13",
+        "text_level": 1,
+        "bbox": [
+            68,
+            542,
+            104,
+            554
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Stack (19)",
+        "text_level": 1,
+        "bbox": [
+            475,
+            542,
+            561,
+            555
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (10Q)",
+        "bbox": [
+            70,
+            566,
+            369,
+            581
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.13.1 Stack: GATE CSE 1989 | Question: 4-ii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            595,
+            431,
+            609
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Compute the postfix equivalent of the following infix arithmetic expression",
+        "bbox": [
+            85,
+            618,
+            621,
+            633
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\na + b * c + d * e \\uparrow f\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            646,
+            250,
+            662
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where $\\uparrow$ represents exponentiation. Assume normal operator precedences.",
+        "bbox": [
+            84,
+            675,
+            633,
+            690
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1989 descriptive data-structures stack",
+        "bbox": [
+            87,
+            705,
+            304,
+            714
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            720,
+            186,
+            735
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/d3c61de5eb4119ca9cd71ec9b525a6963a0739b2ca04f5b1a9c0d019fc67bf06.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            597,
+            931,
+            635
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.13.2 Stack: GATE CSE 1991 | Question: 03,vii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            744,
+            448,
+            758
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The following sequence of operations is performed on a stack:",
+        "bbox": [
+            85,
+            768,
+            542,
+            782
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "PUSH(10), PUSH(20), POP, PUSH(10), PUSH(20), POP, POP, POP, PUSH(20), POP",
+        "bbox": [
+            85,
+            785,
+            855,
+            802
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The sequence of values popped out is",
+        "bbox": [
+            85,
+            806,
+            368,
+            821
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 20,10,20,10,20",
+        "bbox": [
+            87,
+            830,
+            233,
+            843
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 10,20,20,10,20",
+        "bbox": [
+            89,
+            844,
+            233,
+            857
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 20,20,10,10,20",
+        "bbox": [
+            495,
+            830,
+            638,
+            843
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 20,20,10,20,10",
+        "bbox": [
+            497,
+            844,
+            638,
+            857
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1991 data-structures stack easy",
+        "bbox": [
+            87,
+            863,
+            275,
+            872
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            878,
+            186,
+            891
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e2f38a43615049a4aefea1af080f7f631aef334d13ee871471e669cbdcdd2cd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            747,
+            931,
+            783
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "gate-ds-ai-2024 numerical-answers data-structures queue one-mark",
+        "bbox": [
+            87,
+            98,
+            413,
+            106
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            114,
+            186,
+            128
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.13.3 Stack: GATE CSE 1994 | Question: 1.14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            440,
+            78
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/e05caec188672981d792c136b358152b47b471c0b21804e04b5ae7f91a7bf352.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following permutations can be obtained in the output (in the same order) using a stack assuming that the input is the sequence 1, 2, 3, 4, 5 in that order?",
+        "bbox": [
+            84,
+            87,
+            878,
+            118
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 3, 4, 5, 1, 2",
+        "bbox": [
+            87,
+            125,
+            196,
+            140
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 3, 4, 5, 2, 1",
+        "bbox": [
+            495,
+            125,
+            600,
+            140
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 1, 5, 2, 3, 4",
+        "bbox": [
+            90,
+            141,
+            196,
+            154
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 5, 4, 3, 1, 2",
+        "bbox": [
+            497,
+            141,
+            601,
+            154
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1994 data-structures stack normal",
+        "bbox": [
+            87,
+            159,
+            287,
+            168
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            175,
+            188,
+            188
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.13.4 Stack: GATE CSE 1995 | Question: 2.21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            199,
+            438,
+            212
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The postfix expression for the infix expression $A + B * (C + D) / F + D * E$ is:",
+        "bbox": [
+            85,
+            222,
+            678,
+            239
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $AB + CD + *F / D + E*$",
+        "bbox": [
+            87,
+            247,
+            310,
+            264
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $ABCD + *F / DE * + +$",
+        "bbox": [
+            497,
+            247,
+            702,
+            264
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $A*B + CD / F*DE++$",
+        "bbox": [
+            90,
+            267,
+            312,
+            282
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $A + *BCD / F * DE + +$",
+        "bbox": [
+            497,
+            267,
+            710,
+            282
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1995 data-structures stack easy",
+        "bbox": [
+            87,
+            290,
+            275,
+            300
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            307,
+            188,
+            321
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.13.5 Stack: GATE CSE 2000 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            330,
+            426,
+            344
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/8ad30a09bed2a56c113d4861c321ffef2b270860f8163fdae553048d1e37fe5a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            201,
+            931,
+            239
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Suppose a stack implementation supports, in addition to PUSH and POP, an operation REVERSE, which reverses the order of the elements on the stack.",
+        "bbox": [
+            84,
+            353,
+            875,
+            382
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. To implement a queue using the above stack implementation, show how to implement ENQUEUE using a single operation and DEQUEUE using a sequence of 3 operations.",
+            "B. The following post fix expression, containing single digit operands and arithmetic operators + and \\*, is evaluated using a stack."
+        ],
+        "bbox": [
+            87,
+            393,
+            929,
+            448
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n5 2 * 3 4 + 5 2 * * +\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            450,
+            268,
+            463
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Show the contents of the stack",
+        "bbox": [
+            112,
+            464,
+            339,
+            477
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. After evaluating 5 2 \\* 3 4+",
+            "ii. After evaluating 52\\*34+52"
+        ],
+        "bbox": [
+            117,
+            478,
+            368,
+            505
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "iii. At the end of evaluation",
+        "bbox": [
+            115,
+            507,
+            312,
+            519
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 data-structures stack normal descriptive",
+        "bbox": [
+            87,
+            546,
+            361,
+            555
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            562,
+            188,
+            576
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.13.6 Stack: GATE CSE 2003 | Question: 64",
+        "text_level": 1,
+        "bbox": [
+            78,
+            586,
+            426,
+            599
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/99b583e02daf94b852f50fc962c6a52a7edb3302e4d304ebfade25bf778afc6e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            333,
+            931,
+            371
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $\\mathbf{S}$ be a stack of size $n \\geq 1$ . Starting with the empty stack, suppose we push the first $n$ natural numbers in sequence, and then perform $n$ pop operations. Assume that Push and Pop operations take $X$ seconds each, and $Y$ seconds elapse between the end of one such stack operation and the start of the next operation. For $m \\geq 1$ , define the stack-life of $m$ as the time elapsed from the end of $Push(m)$ to the start of the pop operation that removes $m$ from $\\mathbf{S}$ . The average stack-life of an element of this stack is",
+        "bbox": [
+            84,
+            611,
+            929,
+            688
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $n(X + Y)$",
+        "bbox": [
+            87,
+            701,
+            189,
+            719
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $3Y + 2X$",
+        "bbox": [
+            285,
+            703,
+            379,
+            717
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $n(X + Y) - X$",
+        "bbox": [
+            480,
+            701,
+            616,
+            719
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $Y + 2X$",
+        "bbox": [
+            675,
+            703,
+            759,
+            716
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 data-structures stack normal",
+        "bbox": [
+            87,
+            726,
+            302,
+            737
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            743,
+            188,
+            757
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.13.7 Stack: GATE CSE 2004 | Question: 3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            767,
+            418,
+            781
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/2843573e92d4208d32b5a255a07bb6c6867e559f09e1e2e53f622cc866d1f867.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            587,
+            931,
+            625
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A single array $A[1 \\ldots \\text{MAXSIZE}]$ is used to implement two stacks. The two stacks grow from opposite ends of the array. Variables $top1$ and $top2$ ( $top1 < top2$ ) point to the location of the topmost element in each of the stacks. If the space is to be used efficiently, the condition for “ $stack$ $full$ ” is",
+        "bbox": [
+            84,
+            790,
+            878,
+            837
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (top1 = MAXSIZE/2) and (top2 = MAXSIZE/2 + 8.) top1 + top2 = MAXSIZE",
+            "C. (top1 = MAXSIZE/2) or (top2 = MAXSIZE) D. top1 = top2 - 1"
+        ],
+        "bbox": [
+            87,
+            845,
+            715,
+            881
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 data-structures stack easy",
+        "bbox": [
+            87,
+            889,
+            292,
+            899
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            904,
+            188,
+            919
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/ebffcb7e5cf7854cc28a0be5a6689a6f77a4fc72da2d80b77f6f9195dbf35353.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            769,
+            931,
+            807
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.13.8 Stack: GATE CSE 2004 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            418,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The best data structure to check whether an arithmetic expression has balanced parentheses is a",
+        "bbox": [
+            85,
+            87,
+            798,
+            104
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/b7664c976889f2ec7f0842ecf0d83c93e88644b2c1cb698570cb4d96c13c5771.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. queue",
+        "bbox": [
+            89,
+            118,
+            159,
+            131
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. stack",
+        "bbox": [
+            285,
+            118,
+            347,
+            131
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. tree",
+        "bbox": [
+            480,
+            118,
+            532,
+            130
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. list",
+        "bbox": [
+            673,
+            118,
+            719,
+            130
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 data-structures easy stack",
+        "bbox": [
+            87,
+            141,
+            292,
+            150
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            157,
+            188,
+            172
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.13.9 Stack: GATE CSE 2014 | Set 2 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            181,
+            478,
+            195
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Suppose a stack implementation supports an instruction REVERSE, which reverses the order of elements on the stack, in addition to the PUSH and POP instructions. Which one of the following statements is TRUE (with respect to this modified stack)?",
+        "bbox": [
+            84,
+            205,
+            875,
+            252
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca322a96b8de1502cd16ed890055e4e376e975b4eaff12db02c15eec822f8e50.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            184,
+            931,
+            222
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A queue cannot be implemented using this stack.",
+            "B. A queue can be implemented where ENQUEUE takes a single instruction and DEQUEUE takes a sequence of two instructions.",
+            "C. A queue can be implemented where ENQUEUE takes a sequence of three instructions and DEQUEUE takes a single instruction.",
+            "D. A queue can be implemented where both ENQUEUE and DEQUEUE take a single instruction each."
+        ],
+        "bbox": [
+            87,
+            262,
+            929,
+            349
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 data-structures stack easy",
+        "bbox": [
+            87,
+            374,
+            312,
+            384
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            390,
+            188,
+            404
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.13.10 Stack: GATE CSE 2015 | Set 2 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            414,
+            489,
+            427
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the C program below",
+        "bbox": [
+            85,
+            437,
+            314,
+            452
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/520199b6ff548e033f6cacf9bde9aad1411a82b9ba30f9bf6e66c26af14a1a87.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            416,
+            931,
+            454
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\nint *A, stkTop;\nint stkFunc (int opcode, int val)\n{\n    static int size=0, stkTop=0;\n    switch (opcode) {\n        case -1: size = val; break;\n        case 0: if (stkTop < size ) A[stkTop++]=val; break;\n        default: if (stkTop) return A[--stkTop];\n    }\n    return -1;\n}\nint main()\n{\n    int B[20]; A=B; stkTop = -1;\n    stkFunc (-1, 10);\n    stkFunc (0, 5);\n    stkFunc (0, 10);\n    printf (\"%d\\n\", stkFunc(1, 0)+ stkFunc(1, 0));\n}\n```",
+        "bbox": [
+            87,
+            461,
+            403,
+            676
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The value printed by the above program is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            686,
+            478,
+            701
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 data-structures stack easy numerical-answers",
+        "bbox": [
+            87,
+            719,
+            401,
+            729
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            735,
+            188,
+            749
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.13.11 Stack: GATE CSE 2015 | Set 3 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            758,
+            489,
+            771
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The result evaluating the postfix expression 10 5 + 60 6/ \\* 8- is",
+        "bbox": [
+            85,
+            782,
+            569,
+            799
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/b4f72811525e93ba5c276f644cf04c3974be87f7b6c9e5183484d816cd7f91b7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            761,
+            931,
+            799
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 284",
+        "bbox": [
+            89,
+            812,
+            142,
+            825
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 213",
+        "bbox": [
+            285,
+            812,
+            339,
+            826
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 142",
+        "bbox": [
+            480,
+            812,
+            532,
+            826
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 71",
+        "bbox": [
+            673,
+            812,
+            717,
+            826
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 data-structures stack easy",
+        "bbox": [
+            87,
+            836,
+            312,
+            846
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            852,
+            188,
+            866
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.13.12 Stack: GATE CSE 2021 | Set 1 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            876,
+            487,
+            890
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sequence of operations on an empty stack.",
+        "bbox": [
+            85,
+            900,
+            568,
+            915
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/ff0bdfbe550f96f0441fe6b03b0cd647e892f3b77df2e75c4aa5c26d18369d31.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            878,
+            931,
+            916
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {push} (5 4); \\text {push} (5 2); \\text {pop} (); \\text {push} (5 5); \\text {push} (6 2); \\mathrm{s} = \\text {pop} ();\n$$",
+        "text_format": "latex",
+        "bbox": [
+            278,
+            64,
+            734,
+            83
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sequence of operations on an empty queue.",
+        "bbox": [
+            85,
+            92,
+            576,
+            106
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {enqueue} (2 1); \\text {enqueue} (2 4); \\text {dequeue} (); \\text {enqueue} (2 8); \\text {enqueue} (3 2); q = \\text {dequeue} ();\n$$",
+        "text_format": "latex",
+        "bbox": [
+            186,
+            116,
+            828,
+            135
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The value of $s+q$ is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            144,
+            342,
+            159
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 data-structures stack easy numerical-answers one-mark",
+        "bbox": [
+            87,
+            172,
+            455,
+            182
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            188,
+            188,
+            203
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.13.13 Stack: GATE CSE 2023 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            212,
+            436,
+            226
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a sequence $a$ of elements $a_0 = 1, a_1 = 5, a_2 = 7, a_3 = 8, a_4 = 9$ , and $a_5 = 2$ . The following operations are performed on a stack $S$ and a queue $Q$ , both of which are initially empty.",
+        "bbox": [
+            84,
+            235,
+            875,
+            266
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/6b0f6dfa0bae2b162a516a29e0e28484597e6b3206fabb7ef418cbcd5263bd19.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            214,
+            932,
+            252
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. push the elements of a from $a_{0}$ to $a_{5}$ in that order into S.",
+            "II. enqueue the elements of a from $a_{0}$ to $a_{5}$ in that order into Q.",
+            "III. pop an element from $S$ .",
+            "IV. dequeue an element from $Q$ .",
+            "V. pop an element from S.",
+            "VI. dequeue an element from $Q$ .",
+            "VII. dequeue an element from Q and push the same element into S.",
+            "VIII. Repeat operation VII three times.",
+            "IX. pop an element from $S$ .",
+            "X. pop an element from S."
+        ],
+        "bbox": [
+            92,
+            276,
+            579,
+            422
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The top element of S after executing the above operations is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            433,
+            665,
+            448
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 data-structures stack numerical-answers two-marks easy",
+        "bbox": [
+            87,
+            467,
+            440,
+            476
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            483,
+            188,
+            497
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.13.14 Stack: GATE CSE 2024 | Set 2 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            505,
+            489,
+            520
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let S1 and S2 be two stacks. S1 has capacity of 4 elements. S2 has capacity of 2 elements. S1 already has 4 elements: 100, 200, 300, and 400, whereas S2 is empty, as shown below.",
+        "bbox": [
+            84,
+            530,
+            873,
+            561
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/e896de4ee182e78fffb9b90c2c303a0ac83a6e645d08ab1717509b551359c512.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            509,
+            932,
+            547
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/39a0e19349a83e3c1fd81dd42992d121c416ba7b10061ce95b5b0d4e41652f4f.jpg",
+        "table_caption": [
+            "Stack S1"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>400(Top)</td></tr><tr><td>300</td></tr><tr><td>200</td></tr><tr><td>100</td></tr></table>",
+        "bbox": [
+            389,
+            572,
+            487,
+            652
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/64bc97efafa768e36f89664aa5d5a31bc0d8a7cc78a914cb32a9f15baa6c76e5.jpg",
+        "image_caption": [
+            "Stack S2"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            547,
+            591,
+            626,
+            631
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Only the following three operations are available:",
+        "bbox": [
+            85,
+            675,
+            445,
+            690
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- PushToS2: Pop the top element from S1 and push it on S2.",
+            "- PushToS1: Pop the top element from S2 and push it on S1.",
+            "- GenerateOutput: Pop the top element from S1 and output it to the user."
+        ],
+        "bbox": [
+            97,
+            701,
+            631,
+            743
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Note that the pop operation is not allowed on an empty stack and the push operation is not allowed on a full stack.",
+        "bbox": [
+            84,
+            767,
+            915,
+            782
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following output sequences can be generated by using the above operations?",
+        "bbox": [
+            84,
+            795,
+            747,
+            809
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 100,200,400,300",
+        "bbox": [
+            89,
+            819,
+            243,
+            833
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "c. 400,200,100,300",
+        "bbox": [
+            89,
+            833,
+            243,
+            846
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 200,300,400,100",
+        "bbox": [
+            495,
+            819,
+            648,
+            833
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 300,200,400,100",
+        "bbox": [
+            497,
+            833,
+            648,
+            847
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 data-structures stack multiple-selects two-marks",
+        "bbox": [
+            87,
+            852,
+            416,
+            861
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            866,
+            188,
+            882
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.13.15 Stack: GATE CSE 2025 | Set 2 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            489,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/9c1a2fe25715dec589003c17c16140f83c06572c9051de24d8462ff05468267a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a stack data structure into which we can PUSH and POP records. Assume that each record pushed in the stack has a positive integer key and that all keys are distinct.",
+        "bbox": [
+            84,
+            89,
+            878,
+            117
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We wish to augment the stack data structure with an $O(1)$ time MIN operation that returns a pointer to the record with smallest key present in the stack",
+        "bbox": [
+            82,
+            131,
+            929,
+            160
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. without deleting the corresponding record, and",
+            "2. without increasing the complexities of the standard stack operations."
+        ],
+        "bbox": [
+            89,
+            171,
+            610,
+            199
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one or more of the following approach(es) can achieve it?",
+        "bbox": [
+            85,
+            224,
+            559,
+            238
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Keep with every record in the stack, a pointer to the record with the smallest key below it.",
+            "B. Keep a pointer to the record with the smallest key in the stack.",
+            "C. Keep an auxiliary array in which the key values of the records in the stack are maintained in sorted order.",
+            "D. Keep a Min-Heap in which the key values of the records in the stack are maintained."
+        ],
+        "bbox": [
+            85,
+            249,
+            875,
+            305
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 data-structures stack multiple-selects two-marks",
+        "bbox": [
+            87,
+            331,
+            413,
+            340
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            347,
+            188,
+            361
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.13.16 Stack: GATE DA 2025 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            371,
+            426,
+            384
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following pseudocode.",
+        "bbox": [
+            85,
+            395,
+            349,
+            409
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/11ae8a2b50405ff5b46451676ee79f5a02a66206266d262fcfb64f3363b27df2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            372,
+            931,
+            410
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```python\nCreate empty stack S\nSet x=0, flag=0, sum=0\nPush x onto S\nwhile (S is not empty){\n    if (flag equals 0){\n        Set x = x+1\n        Push x onto S}\n    if (x equals 8):\n        Set flag=1\n    if (flag equals 1){\n        x = Pop(S)\n        if (x is odd):\n            Pop (S)\n        Set sum = sum + x}\n    }\nOutput sum\n```",
+        "bbox": [
+            87,
+            418,
+            927,
+            593
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The value of sum output by a program executing the above pseudocode is \\_\\_\\_\\_ (Answer in integer)",
+        "bbox": [
+            85,
+            600,
+            868,
+            615
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateda-2025 data-structures stack output numerical-answers two-marks",
+        "bbox": [
+            87,
+            633,
+            445,
+            643
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            649,
+            188,
+            663
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.13.17 Stack: GATE IT 2004 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            673,
+            418,
+            686
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A program attempts to generate as many permutations as possible of the string, 'abcd' by pushing the characters $a, b, c, d$ in the same order onto a stack, but it may pop off the top character at any time. Which one of the following strings CANNOT be generated using this program?",
+        "bbox": [
+            84,
+            697,
+            878,
+            739
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. abcd",
+        "bbox": [
+            89,
+            752,
+            152,
+            767
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. dcba",
+        "bbox": [
+            285,
+            752,
+            346,
+            767
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. cbad",
+        "bbox": [
+            480,
+            752,
+            541,
+            767
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. cabd",
+        "bbox": [
+            673,
+            752,
+            736,
+            767
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 data-structures normal stack",
+        "bbox": [
+            87,
+            777,
+            295,
+            787
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            793,
+            188,
+            808
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.13.18 Stack: GATE IT 2005 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            818,
+            418,
+            831
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A function $f$ defined on stacks of integers satisfies the following properties. $f(\\emptyset)=0$ and $f(push(S,i))=max(f(S),0)+i$ for all stacks $S$ and integers $i$ .",
+        "bbox": [
+            84,
+            842,
+            873,
+            874
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "If a stack $S$ contains the integers 2, -3, 2, -1, 2 in order from bottom to top, what is $f(S)$ ?",
+        "bbox": [
+            85,
+            877,
+            752,
+            893
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 6",
+        "bbox": [
+            89,
+            906,
+            126,
+            919
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            906,
+            321,
+            920
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            906,
+            515,
+            919
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 2",
+        "bbox": [
+            673,
+            906,
+            710,
+            919
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/c14513b9f26b560ac31ff62dfe26ffdc8c938f1cf874caacfd35176532db85c3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            676,
+            931,
+            712
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/9ca8bd0ea8dff9d601e6b080835f749c707f7707ec6fb552042db8309960cc31.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            820,
+            931,
+            857
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.13.19 Stack: GATE IT 2007 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            416,
+            124
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program:",
+        "bbox": [
+            85,
+            134,
+            339,
+            149
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/3c9365e08c920391bb3c4cabce5933020d6de1e33f0edfc9a3024f8703c5a67b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            931,
+            150
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\n    #define EOF -1\n    void push (int); /* push the argument on the stack */\n    int pop (void); /* pop the top of the stack */\n    void flagError ();\n    int main ()\n    {     int c, m, n, r;\n        while ((c = getchar ()) != EOF)\n        { if (isdigit (c) )\n            push (c);\n        else if ((c == '+') || (c == '*'))\n        {       m = pop ();\n            n = pop ();\n            r = (c == '+') ? n + m : n*m;\n            push (r);\n        }\n        else if (c != ' ')\n            flagError ();\n    }\n    printf(\"% c\", pop ());\n}\n```",
+        "bbox": [
+            90,
+            157,
+            418,
+            384
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "What is the output of the program for the following input?",
+        "bbox": [
+            85,
+            406,
+            502,
+            421
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n52 * 332 + *+\n```",
+        "bbox": [
+            85,
+            421,
+            230,
+            435
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 15",
+        "bbox": [
+            89,
+            448,
+            134,
+            463
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 25",
+        "bbox": [
+            285,
+            450,
+            329,
+            463
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 30",
+        "bbox": [
+            480,
+            448,
+            524,
+            463
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 150",
+        "bbox": [
+            673,
+            448,
+            727,
+            463
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 stack normal",
+        "bbox": [
+            89,
+            473,
+            218,
+            483
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            490,
+            181,
+            504
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.14",
+        "text_level": 1,
+        "bbox": [
+            68,
+            515,
+            104,
+            527
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Time Complexity (1)",
+        "text_level": 1,
+        "bbox": [
+            438,
+            514,
+            600,
+            529
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.14.1 Time Complexity: GATE CSE 2025 | Set 2 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            541,
+            568,
+            555
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4fc8950b53b00ea89d19950157027bc3f94ff32ddecfd1c39abe725042614480.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            543,
+            931,
+            581
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A meld operation on two instances of a data structure combines them into one single instance of the same data structure. Consider the following data structures:",
+        "bbox": [
+            84,
+            564,
+            878,
+            593
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "P. Unsorted doubly linked list with pointers to the head node and tail node of the list.",
+            "Q. Min-heap implemented using an array.",
+            "R. Binary Search Tree."
+        ],
+        "bbox": [
+            85,
+            596,
+            699,
+            647
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which ONE of the following options gives the worst-case time complexities for meld operation on instances of size n of these data structures?",
+        "bbox": [
+            84,
+            650,
+            924,
+            679
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\mathrm{P}:\\Theta (1),\\mathrm{Q}:\\Theta (n),\\mathrm{R}:\\Theta (n)$",
+            "B. $\\mathrm{P}:\\Theta (1),\\mathrm{Q}:\\Theta (n\\log n),\\mathrm{R}:\\Theta (n)$",
+            "C. $\\mathrm{P}:\\Theta (n),\\mathrm{Q}:\\Theta (n\\log n),\\mathrm{R}:\\Theta \\left(n^{2}\\right)$",
+            "D. P: $\\Theta(1)$ , Q: $\\Theta(n)$ , R: $\\Theta(n \\log n)$"
+        ],
+        "bbox": [
+            87,
+            690,
+            391,
+            756
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 data-structures time-complexity two-marks",
+        "bbox": [
+            87,
+            780,
+            379,
+            789
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            796,
+            188,
+            809
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.15",
+        "text_level": 1,
+        "bbox": [
+            68,
+            821,
+            104,
+            833
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Tree (13)",
+        "text_level": 1,
+        "bbox": [
+            480,
+            821,
+            556,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (3Q)",
+        "bbox": [
+            70,
+            845,
+            363,
+            859
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.15.1 Tree: GATE CSE 1990 | Question: 13a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            874,
+            426,
+            887
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the height-balanced tree $T_{t}$ with values stored at only the leaf nodes, shown in Fig.4.",
+        "bbox": [
+            85,
+            897,
+            774,
+            913
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/0267a3d427e3c088f69ee81f2323027cdd35eff51057347759de9429fedaa9b6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            876,
+            931,
+            914
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "gateit-2005 data-structures stack normal",
+        "bbox": [
+            89,
+            71,
+            295,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            87,
+            181,
+            100
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/870bab1b26f0a281f0d6e4bdc18b6e60565945d5d9dcfbd410bc8feefe685eda.jpg",
+        "image_caption": [
+            "Fig.4"
+        ],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"A\"] -->|1| n1[\"1\"]\n  A[\"A\"] -->|2| n2[\"2\"]\n  B[\"B\"] -->|1| n2\n  B[\"B\"] -->|2| n3[\"3\"]\n  C[\"C\"] -->|3| n3\n  C[\"C\"] -->|4| n4[\"4\"]\n  D[\"D\"] -->|5| n5[\"5\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            95,
+            70,
+            272,
+            166
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "(i) Show how to merge to the tree, $T_{1}$ elements from tree $T_{2}$ shown in Fig.5 using node D of tree $T_{1}$ .",
+        "bbox": [
+            85,
+            200,
+            816,
+            217
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/3606231666e9265a016f91cfdaf5a73524599d020384e262a5673eec336ed311.jpg",
+        "image_caption": [
+            "Fig.5"
+        ],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  F[\"F\"] --> E[\"E\"]\n  E --> 6[\"⑥\"]\n  E --> 7[\"⑦\"]\n  E --> 8[\"⑧\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            95,
+            226,
+            223,
+            305
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "(ii) What is the time complexity of a merge operation of balanced trees $T_{1}$ and $T_{2}$ where $T_{1}$ and $T_{2}$ are of height $h_{1}$ and $h_{2}$ respectively, assuming that rotation schemes are given. Give reasons.",
+        "bbox": [
+            84,
+            347,
+            924,
+            378
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1990 data-structures tree descriptive",
+        "bbox": [
+            87,
+            395,
+            300,
+            404
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            410,
+            189,
+            426
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.15.2 Tree: GATE CSE 1992 | Question: 02,vii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            435,
+            440,
+            448
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A 2 - 3 tree is such that",
+        "bbox": [
+            85,
+            459,
+            268,
+            472
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. All internal nodes have either 2 or 3 children",
+            "b. All paths from root to the leaves have the same length"
+        ],
+        "bbox": [
+            90,
+            484,
+            477,
+            511
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The number of internal nodes of a 2 - 3 tree having 9 leaves could be",
+        "bbox": [
+            85,
+            520,
+            600,
+            535
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 4",
+            "B. 5",
+            "C. 6",
+            "D. 7"
+        ],
+        "bbox": [
+            87,
+            546,
+            127,
+            602
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1992 tree data-structures normal multiple-selects",
+        "bbox": [
+            87,
+            630,
+            361,
+            638
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            646,
+            188,
+            660
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.15.3 Tree: GATE CSE 1994 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            669,
+            408,
+            682
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A 3 — ary tree is a tree in which every internal node has exactly three children. Use induction to prove that the number of leaves in a 3 — ary tree with n internal nodes is $2(n+1)$ .",
+        "bbox": [
+            84,
+            693,
+            875,
+            724
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1994 data-structures tree proof descriptive",
+        "bbox": [
+            87,
+            737,
+            336,
+            747
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            752,
+            189,
+            767
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.15.4 Tree: GATE CSE 1998 | Question: 1.24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            777,
+            431,
+            790
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is false?",
+        "bbox": [
+            85,
+            800,
+            400,
+            815
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A tree with a n nodes has $(n-1)$ edges",
+            "B. A labeled rooted binary tree can be uniquely constructed given its postorder and preorder traversal results.",
+            "C. A complete binary tree with $n$ internal nodes has $(n + 1)$ leaves.",
+            "D. The maximum number of nodes in a binary tree of height $h$ is $2^{h + 1} - 1$"
+        ],
+        "bbox": [
+            85,
+            827,
+            890,
+            887
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/359b62d9b017ea890dfee93068d4cddf205efc1afa8f433166be95430d96cfac.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            438,
+            932,
+            475
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/344a3a5d9b96f3bf35e4ee3e8978bf8a2cfcfc88b11ca35f5665cec19d7f0008.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            672,
+            932,
+            709
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/12ed3f4db2cc30d397963598c092225711c979fd571892b423f231d8abdcf50d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            780,
+            932,
+            817
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "footer",
+        "text": "gate1998 data-structures tree multiple-selects normal",
+        "bbox": [
+            87,
+            913,
+            363,
+            923
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.15.5 Tree: GATE CSE 1998 | Question: 2.11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            431,
+            103
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/b316b90ebb145ccaad3e3dd85ae50a65996da597c88295f955ec5f55ad969a51.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            129
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A complete $n$ -ary tree is one in which every node has $0$ or $n$ sons. If $x$ is the number of internal nodes of a complete $n$ -ary tree, the number of leaves in it is given by",
+        "bbox": [
+            84,
+            112,
+            878,
+            143
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $x(n - 1) + 1$",
+        "bbox": [
+            87,
+            155,
+            213,
+            172
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $xn - 1$",
+        "bbox": [
+            285,
+            156,
+            363,
+            169
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $xn + 1$",
+        "bbox": [
+            478,
+            156,
+            557,
+            169
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $x(n + 1)$",
+        "bbox": [
+            673,
+            155,
+            764,
+            172
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1998 data-structures tree normal",
+        "bbox": [
+            87,
+            180,
+            282,
+            190
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            195,
+            188,
+            210
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.15.6 Tree: GATE CSE 2002 | Question: 2.9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            220,
+            421,
+            233
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The number of leaf nodes in a rooted tree of n nodes, with each node having 0 or 3 children is:",
+        "bbox": [
+            85,
+            243,
+            774,
+            258
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{n}{2}$",
+        "bbox": [
+            89,
+            271,
+            129,
+            290
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{(n-1)}{3}$",
+        "bbox": [
+            285,
+            270,
+            347,
+            290
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{(n-1)}{2}$",
+        "bbox": [
+            480,
+            269,
+            542,
+            290
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{(2n+1)}{3}$",
+        "bbox": [
+            673,
+            269,
+            742,
+            290
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 data-structures tree normal",
+        "bbox": [
+            87,
+            298,
+            299,
+            307
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            313,
+            188,
+            327
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.15.7 Tree: GATE CSE 2004 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            337,
+            408,
+            351
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Level order traversal of a rooted tree can be done by starting from the root and performing",
+        "bbox": [
+            85,
+            361,
+            742,
+            377
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. preorder traversal",
+        "bbox": [
+            89,
+            385,
+            236,
+            399
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. in-order traversal",
+        "bbox": [
+            497,
+            385,
+            636,
+            399
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. depth first search",
+        "bbox": [
+            89,
+            403,
+            233,
+            416
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. breadth first search",
+        "bbox": [
+            497,
+            403,
+            652,
+            416
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 data-structures tree easy",
+        "bbox": [
+            87,
+            426,
+            290,
+            435
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            442,
+            189,
+            457
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.15.8 Tree: GATE CSE 2005 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            78,
+            466,
+            418,
+            480
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In a complete $k$ -ary tree, every internal node has exactly $k$ children. The number of leaves in such a tree with $n$ internal node is:",
+        "bbox": [
+            84,
+            490,
+            875,
+            517
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. nk",
+        "bbox": [
+            89,
+            532,
+            137,
+            546
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $(n - 1)k + 1$",
+        "bbox": [
+            285,
+            532,
+            405,
+            548
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $n(k - 1) + 1$",
+        "bbox": [
+            480,
+            532,
+            600,
+            548
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $n(k-1)$",
+        "bbox": [
+            673,
+            532,
+            764,
+            548
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 data-structures tree normal",
+        "bbox": [
+            87,
+            557,
+            299,
+            566
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            573,
+            188,
+            587
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.15.9 Tree: GATE CSE 2007 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            596,
+            418,
+            610
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A complete $n - ary$ tree is a tree in which each node has $n$ children or no children. Let $I$ be the number of internal nodes and $L$ be the number of leaves in a complete $n - ary$ tree. If $L = 41$ and $I = 10$ , what is the value of $n$ ?",
+        "bbox": [
+            84,
+            619,
+            878,
+            663
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            676,
+            126,
+            691
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            678,
+            321,
+            691
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 5",
+        "bbox": [
+            480,
+            678,
+            515,
+            691
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            678,
+            710,
+            691
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 data-structures tree normal",
+        "bbox": [
+            87,
+            703,
+            299,
+            712
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            718,
+            188,
+            732
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.15.10 Tree: GATE CSE 2014 | Set 3 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            742,
+            480,
+            756
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following rooted tree with the vertex labeled P as the root:",
+        "bbox": [
+            85,
+            766,
+            608,
+            781
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/02fc0793bf324e73c24c8a23f7589657a8572b85b39658ba56af684560834f9b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  P[\"P\"] --> R[\"R\"]\n  Q[\"Q\"] --> R\n  R --> U[\"U\"]\n  R --> V[\"V\"]\n  R --> T[\"T\"]\n  R --> W[\"W\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            100,
+            793,
+            272,
+            906
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/355c9ab90c1d1c17cf5c500ec94e7795d0769892ccbdeb879aa9e1acb7c137f0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            222,
+            932,
+            260
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/e57b4c50e7f7007a87b419dfe9ab03f29c09c53a630e4677f73b6391d8501235.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            340,
+            932,
+            377
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/12c1fbe2d20a86f1797cf64c249655e12487ee800085cafcdca3922836e6e845.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            467,
+            932,
+            505
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/87c597cc1157361afea6c063333e4038effb94e77a981507ccd7c2ca4357dc7d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            599,
+            932,
+            636
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca39a077e7a911658c4e1b2780c29c26bf6fae590e7bcaab06555e246fababb8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            744,
+            932,
+            782
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca39a077e7a911658c4e1b2780c29c26bf6fae590e7bcaab06555e246fababb8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            744,
+            932,
+            782
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The order in which the nodes are visited during an in-order traversal of the tree is",
+        "bbox": [
+            85,
+            64,
+            678,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. SQPTRWUV",
+        "bbox": [
+            89,
+            92,
+            221,
+            108
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. SQPTUWRV",
+        "bbox": [
+            285,
+            93,
+            416,
+            108
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. SQPTWUVR",
+        "bbox": [
+            480,
+            93,
+            611,
+            108
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. SQPTRUWV",
+        "bbox": [
+            675,
+            93,
+            806,
+            108
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 data-structures tree easy",
+        "bbox": [
+            87,
+            118,
+            309,
+            127
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            133,
+            188,
+            148
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.15.11 Tree: GATE CSE 2014 | Set 3 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            77,
+            157,
+            478,
+            171
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the pseudocode given below. The function DoSomething() takes as argument a pointer to the root of an arbitrary tree represented by the leftMostChild - rightSibling representation. Each node of the tree is of type treeNode.",
+        "bbox": [
+            84,
+            182,
+            878,
+            226
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/5959a00f607049c66a7629155c25b49a71c835028a9c31ef782d2c51f3fd44d5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            160,
+            931,
+            197
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\ntypedef struct treeNode* treeptr;\n\nstruct treeNode\n{\n    treeptr leftMostChild, rightSibling;\n};\n\nint DoSomething (treeptr tree)\n{\n    int value=0;\n    if (tree != NULL) {\n        if (tree->leftMostChild == NULL)\n            value = 1;\n        else\n            value = DoSomething(tree->leftMostChild);\n        value = value + DoSomething(tree->rightSibling);\n    }\n    return(value);\n}\n```",
+        "bbox": [
+            87,
+            233,
+            400,
+            440
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "When the pointer to the root of a tree is passed as the argument to DoSomething, the value returned by the function corresponds to the",
+        "bbox": [
+            84,
+            448,
+            929,
+            478
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. number of internal nodes in the tree.",
+        "bbox": [
+            87,
+            488,
+            354,
+            513
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. height of the tree.",
+        "bbox": [
+            495,
+            488,
+            638,
+            502
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. number of nodes without a right sibling in the tree.",
+        "bbox": [
+            89,
+            514,
+            354,
+            540
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. number of leaf nodes in the tree",
+        "bbox": [
+            495,
+            514,
+            734,
+            527
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 data-structures tree normal",
+        "bbox": [
+            87,
+            546,
+            319,
+            555
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            562,
+            188,
+            576
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.15.12 Tree: GATE CSE 2017 | Set 1 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            77,
+            585,
+            480,
+            599
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $T$ be a tree with 10 vertices. The sum of the degrees of all the vertices in $T$ is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            608,
+            756,
+            625
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/43fbb7f2baaaf2fccf316f9d5d9af435108156da9acef85289272af0f11b7e46.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            587,
+            931,
+            625
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 data-structures tree easy numerical-answers",
+        "bbox": [
+            87,
+            638,
+            400,
+            648
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            654,
+            188,
+            669
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.15.13 Tree: GATE CSE 2021 | Set 1 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            77,
+            678,
+            478,
+            692
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "An articulation point in a connected graph is a vertex such that removing the vertex and its incident edges disconnects the graph into two or more connected components.",
+        "bbox": [
+            84,
+            701,
+            878,
+            731
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/652fd2994e24dc8c4ab607198948b49264ca6e963423e31279bf2e0668043688.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            680,
+            931,
+            718
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let T be a DFS tree obtained by doing DFS in a connected undirected graph G.",
+        "bbox": [
+            85,
+            733,
+            677,
+            750
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following options is/are correct?",
+        "bbox": [
+            85,
+            752,
+            416,
+            768
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Root of T can never be an articulation point in G.",
+            "B. Root of T is an articulation point in G if and only if it has 2 or more children.",
+            "C. A leaf of T can be an articulation point in G.",
+            "D. If $u$ is an articulation point in $G$ such that $x$ is an ancestor of $u$ in $T$ and $y$ is a descendant of $u$ in $T$ , then all paths from $x$ to $y$ in $G$ must pass through $u$ ."
+        ],
+        "bbox": [
+            87,
+            779,
+            929,
+            853
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 multiple-selects data-structures tree two-marks",
+        "bbox": [
+            87,
+            878,
+            413,
+            888
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            895,
+            188,
+            909
+        ],
+        "page_idx": 11
+    }
+]

@@ -1,0 +1,4897 @@
+[
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            89,
+            81,
+            152,
+            95
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. II only",
+        "bbox": [
+            285,
+            81,
+            351,
+            95
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. I and II only",
+        "bbox": [
+            478,
+            81,
+            584,
+            95
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. I, II and III only",
+        "bbox": [
+            673,
+            81,
+            800,
+            95
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 co-and-architecture machine-instruction normal",
+        "bbox": [
+            87,
+            105,
+            379,
+            115
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            121,
+            188,
+            135
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.21.14 Machine Instruction: GATE CSE 2015 | Set 2 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            144,
+            600,
+            159
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a processor with byte-addressable memory. Assume that all registers, including program counter (PC) and Program Status Word (PSW), are size of two bytes. A stack in the main memory is implemented",
+        "bbox": [
+            84,
+            168,
+            875,
+            195
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "from memory location $(0100)_{16}$ and it grows upward. The stack pointer (SP) points to the top element of the stack. The current value of SP is $(016E)_{16}$ . The CALL instruction is of two words, the first word is the op-code and the second word is the starting address of the subroutine (one word = 2 bytes). The CALL instruction is implemented as follows:",
+        "bbox": [
+            84,
+            197,
+            927,
+            254
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Store the current value of PC in the stack",
+            "- Store the value of PSW register in the stack",
+            "- Load the statring address of the subroutine in PC"
+        ],
+        "bbox": [
+            97,
+            266,
+            473,
+            307
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The content of PC just before the fetch of a CALL instruction is $(5FA0)_{16}$ . After execution of the CALL instruction, the value of the stack pointer is:",
+        "bbox": [
+            84,
+            319,
+            924,
+            349
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $(016A)_{16}$",
+        "bbox": [
+            87,
+            361,
+            184,
+            378
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $(016C)_{16}$",
+        "bbox": [
+            285,
+            361,
+            379,
+            378
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $(0170)_{16}$",
+        "bbox": [
+            478,
+            361,
+            568,
+            378
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $(0172)_{16}$",
+        "bbox": [
+            673,
+            361,
+            763,
+            378
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 co-and-architecture machine-instruction easy",
+        "bbox": [
+            87,
+            385,
+            389,
+            396
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            402,
+            188,
+            416
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.21.15 Machine Instruction: GATE CSE 2016 | Set 2 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            426,
+            600,
+            440
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A processor has 40 distinct instruction and 24 general purpose registers. A 32-bit instruction word has an opcode, two registers operands and an immediate operand. The number of bits available for the immediate operand field is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            450,
+            875,
+            492
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 machine-instruction co-and-architecture easy numerical-answers",
+        "bbox": [
+            87,
+            505,
+            478,
+            516
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            522,
+            188,
+            536
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.21.16 Machine Instruction: GATE CSE 2021 | Set 1 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            546,
+            600,
+            560
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following instruction sequence where registers R1, R2 and R3 are general purpose and MEMORY[X] denotes the content at the memory location X.",
+        "bbox": [
+            84,
+            570,
+            873,
+            600
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/ca0b44427884cd0a7637c3557e79efc4fe35e0776e13591396163f7715ec754d.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Instruction</td><td>Semantics</td><td>Instruction Size (bytes)</td></tr><tr><td>MOV R1, (5000)</td><td>R1 ← MEMORY[5000]</td><td>4</td></tr><tr><td>MOV R2, (R3)</td><td>R2← MEMORY[R3]</td><td>4</td></tr><tr><td>ADDR2, R1</td><td>R2 ← R1 + R2</td><td>2</td></tr><tr><td>MOV (R3), R2</td><td>MEMORY[R3]← R2</td><td>4</td></tr><tr><td>INC R3</td><td>R3 ← R3 + 1</td><td>2</td></tr><tr><td>DEC R1</td><td>R1 ← R1 - 1</td><td>2</td></tr><tr><td>BNZ 1004</td><td>Branch if not zero to the given absolute address</td><td>2</td></tr><tr><td>HALT</td><td>Stop</td><td>1</td></tr></table>",
+        "bbox": [
+            87,
+            618,
+            710,
+            815
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/55f8a303f68f16db2c91ee5c4e27ba53396142c5ad3246b8874596848a851c17.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            148,
+            931,
+            185
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/aa9ce0b3dea46e966da15bddcaa33cae2c3f20152cf47b5478a55c101583198d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            429,
+            931,
+            467
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/124e320fa1b80d2ad1ebc0b05ddc303ddc8a5890bdcfa7e96c2fbb67f4d65de0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            549,
+            931,
+            587
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Assume that the content of the memory location 5000 is 10, and the content of the register R3 is 3000. The content of each of the memory locations from 3000 to 3020 is 50. The instruction sequence starts from the memory location 1000. All the numbers are in decimal format. Assume that the memory is byte addressable.",
+        "bbox": [
+            84,
+            826,
+            929,
+            870
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "After the execution of the program, the content of memory location 3010 is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            883,
+            747,
+            899
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2021-set1 co-and-architecture machine-instruction numerical-answers two-marks",
+        "bbox": [
+            87,
+            912,
+            502,
+            921
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.21.17 Machine Instruction: GATE CSE 2023 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            547,
+            104
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/c531e2f833c9113d858230c4ff1b763a5fcea31e8c840636757926f63d6bf25c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            129
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the given C-code and its corresponding assembly code, with a few operands U1-U4 being unknown. Some useful information as well as the semantics of each unique assembly instruction is annotated as inline comments in the code. The memory is byte-addressable.",
+        "bbox": [
+            84,
+            112,
+            878,
+            157
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/c6ab0fc3cd9fec8e4cd7618fd4efa0891e766585a4f188e3b4713ece6c477c51.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "//C-code\nint a[10], b[10], i;\n// int is 32 bit\nfor(i=0; i<10; i++)\na[i] = b[i] * 8;\n;assembly code (; indicates comments)\n;r1-r5 are 32-bit integer registers\n;initialize r1=0, r2=10\n;initialize r3, r4 with base address of a, b\nL01: jeq r1, r2, end ;if(r1==r2) goto end\nL02: lw, r5, 0(r4) ;r5 <- Memory[r4+0]\nL03: shl, r5, r5, U1 ;r5 <- r5 << U1\nL04: sw, r5, 0(r3) ;Memory[r3+0] <- r5\nL05: add, r3, r3, U2 ;r3 <- r3+U2\nL06: add, r4, r4, U3\nL07: add, r1, r1, 1\nL08: jmp U4 ;goto U4\nL09: end",
+        "sub_type": "text_image",
+        "bbox": [
+            87,
+            161,
+            927,
+            338
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is a CORRECT replacement for operands in the position (U1, U2, U3, U4) in the above assembly code?",
+        "bbox": [
+            84,
+            353,
+            929,
+            384
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. (8,4,1,L02)",
+        "bbox": [
+            87,
+            395,
+            206,
+            412
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. (3,4,4,L01)",
+        "bbox": [
+            285,
+            395,
+            401,
+            412
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. (8,1,1,L02)",
+        "bbox": [
+            478,
+            395,
+            596,
+            412
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. (3,1,1,L01)",
+        "bbox": [
+            673,
+            395,
+            791,
+            412
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 co-and-architecture machine-instruction two-marks",
+        "bbox": [
+            87,
+            421,
+            394,
+            429
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            437,
+            181,
+            451
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.21.18 Machine Instruction: GATE CSE 2025 | Set 1 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            460,
+            601,
+            475
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/1193b440f3345c623b5b3dca00af7ed03e57e031a577a89d5a0a64bf540e2bbf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            463,
+            932,
+            501
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A processor has 64 general-purpose registers and 50 distinct instruction types. An instruction is encoded in 32-bits. What is the maximum number of bits that can be used to store the immediate operand for the given instruction?",
+        "bbox": [
+            84,
+            484,
+            878,
+            527
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "ADD R1, #25 // R 1=R 1+25",
+        "bbox": [
+            85,
+            539,
+            347,
+            557
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 16",
+        "bbox": [
+            87,
+            568,
+            136,
+            583
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 20",
+        "bbox": [
+            285,
+            570,
+            329,
+            583
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 22",
+        "bbox": [
+            478,
+            570,
+            524,
+            583
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 24",
+        "bbox": [
+            673,
+            570,
+            719,
+            583
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 co-and-architecture machine-instruction easy two-marks",
+        "bbox": [
+            87,
+            593,
+            445,
+            604
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            610,
+            181,
+            624
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.21.19 Machine Instruction: GATE IT 2004 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            633,
+            529,
+            647
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/b97fd2aaefeaa25531189f79b4bdc4588a00c9682954eebbd18ad42f20e0ba9c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            636,
+            932,
+            674
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "If we use internal data forwarding to speed up the performance of a CPU (R1, R2 and R3 are registers and M[100] is a memory reference), then the sequence of operations",
+        "bbox": [
+            84,
+            657,
+            878,
+            686
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{R1} \\rightarrow \\mathrm{M} [ 1 0 0 ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            690,
+            188,
+            704
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{M} [ 1 0 0 ] \\rightarrow \\mathrm{R} 2\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            705,
+            186,
+            718
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{M} [ 1 0 0 ] \\rightarrow \\mathrm{R} 3\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            718,
+            186,
+            732
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "can be replaced by",
+        "bbox": [
+            85,
+            736,
+            228,
+            750
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. R1 → R3",
+        "bbox": [
+            89,
+            760,
+            179,
+            773
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathsf {R 2} \\to \\mathsf {M} [ 1 0 0 ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            774,
+            205,
+            788
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. M[100] → R2",
+        "bbox": [
+            495,
+            760,
+            611,
+            773
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathsf {R 1} \\to \\mathsf {R 2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            519,
+            775,
+            584,
+            786
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{R1} \\rightarrow \\mathrm{R3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            519,
+            787,
+            584,
+            798
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. R1 → M[100]",
+        "bbox": [
+            89,
+            799,
+            205,
+            813
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathsf {R 2} \\to \\mathsf {R 3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            813,
+            179,
+            824
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. R1 → R2",
+        "bbox": [
+            495,
+            799,
+            584,
+            812
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathsf {R 1} \\to \\mathsf {R 3}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            519,
+            813,
+            584,
+            824
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathsf {R 1} \\to \\mathsf {M} [ 1 0 0 ]\n$$",
+        "text_format": "latex",
+        "bbox": [
+            519,
+            825,
+            611,
+            839
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 co-and-architecture machine-instruction easy",
+        "bbox": [
+            87,
+            844,
+            361,
+            853
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            859,
+            181,
+            874
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.21.20 Machine Instruction: GATE IT 2007 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            883,
+            527,
+            897
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Following table indicates the latencies of operations between the instruction producing the result and",
+        "bbox": [
+            84,
+            907,
+            878,
+            922
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/52ba5272724e9491229c84cf1b68511b1d1bcce3bee770c8db5fde88a53c7194.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            885,
+            932,
+            923
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "instruction using the result.",
+        "bbox": [
+            85,
+            64,
+            284,
+            78
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/fae3933df4c80ac56d7e4ec3ca1c36f086f1203e27086bf523dacddeb7d58b51.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Instruction producing the result</td><td>Instruction using the result</td><td>Latency</td></tr><tr><td>ALU Operation</td><td>ALU Operation</td><td>2</td></tr><tr><td>ALU Operation</td><td>Store</td><td>2</td></tr><tr><td>Load</td><td>ALU Operation</td><td>1</td></tr><tr><td>Load</td><td>Store</td><td>0</td></tr></table>",
+        "bbox": [
+            152,
+            90,
+            863,
+            188
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following code segment:",
+        "bbox": [
+            85,
+            199,
+            364,
+            213
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Load R1, Loc 1; Load R1 from memory location Loc1",
+        "bbox": [
+            92,
+            223,
+            391,
+            233
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Load R2, Loc 2; Load R2 from memory location Loc 2",
+        "bbox": [
+            92,
+            233,
+            396,
+            243
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Add R1, R2, R1; Add R1 and R2 and save result in R1",
+        "bbox": [
+            92,
+            244,
+            400,
+            254
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Dec R2; Decrement R2",
+        "bbox": [
+            92,
+            255,
+            255,
+            264
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Dec R1; Decrement R1",
+        "bbox": [
+            92,
+            266,
+            253,
+            276
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Mpy R1, R2, R3; Multiply R1 and R2 and save result in R3",
+        "bbox": [
+            92,
+            277,
+            421,
+            287
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Store R3, Loc 3; Store R3 in memory location Loc 3",
+        "bbox": [
+            92,
+            288,
+            386,
+            298
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What is the number of cycles needed to execute the above code segment assuming each instruction takes one cycle to execute?",
+        "bbox": [
+            84,
+            321,
+            924,
+            350
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 7",
+        "bbox": [
+            89,
+            363,
+            126,
+            377
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 10",
+        "bbox": [
+            285,
+            364,
+            329,
+            377
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 13",
+        "bbox": [
+            480,
+            364,
+            524,
+            377
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 14",
+        "bbox": [
+            673,
+            364,
+            719,
+            377
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 co-and-architecture machine-instruction normal",
+        "bbox": [
+            87,
+            388,
+            373,
+            397
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            404,
+            188,
+            418
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.21.21 Machine Instruction: GATE IT 2008 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            427,
+            527,
+            441
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Assume that EA = (X)+ is the effective address equal to the contents of location X, with X incremented by one word length after the effective address is calculated; EA = -(X) is the effective address equal to the contents of location X, with X decremented by one word length before the effective address is calculated; EA = (X)- is the effective address equal to the contents of location X, with X decremented by one word length after the effective address is calculated. The format of the instruction is (opcode, source, destination), which means (destination ← source op destination). Using X as a stack pointer, which of the following instructions can pop the top two elements from the stack, perform the addition operation and push the result back to the stack.",
+        "bbox": [
+            84,
+            451,
+            929,
+            549
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. ADD (X)-, (X)",
+        "bbox": [
+            89,
+            559,
+            210,
+            572
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. ADD (X), (X)-",
+        "bbox": [
+            495,
+            559,
+            616,
+            572
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. ADD $-(X)$ , $(X)+$",
+        "bbox": [
+            90,
+            573,
+            218,
+            586
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. ADD $-(X)$ , $(X)$",
+        "bbox": [
+            497,
+            573,
+            615,
+            586
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 co-and-architecture machine-instruction normal",
+        "bbox": [
+            89,
+            591,
+            371,
+            600
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            606,
+            188,
+            621
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.22",
+        "text_level": 1,
+        "bbox": [
+            68,
+            631,
+            105,
+            644
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Memory Interfacing (6)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            631,
+            610,
+            646
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (10Q)",
+        "bbox": [
+            70,
+            655,
+            270,
+            669
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.22.1 Memory Interfacing: GATE CSE 1990 | Question: 4-iv",
+        "text_level": 1,
+        "bbox": [
+            78,
+            684,
+            544,
+            699
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statements are TRUE or FALSE with reason:",
+        "bbox": [
+            85,
+            707,
+            618,
+            722
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Transferring data in blocks from the main memory to the cache memory enables an interleaved main memory unit to operate at its maximum speed.",
+        "bbox": [
+            84,
+            736,
+            927,
+            764
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1990 true-false co-and-architecture cache-memory memory-interfacing",
+        "bbox": [
+            87,
+            779,
+            447,
+            789
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            795,
+            188,
+            809
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.22.2 Memory Interfacing: GATE CSE 1991 | Question: 01,ii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            818,
+            547,
+            832
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In interleaved memory organization, consecutive words are stored in consecutive memory modules in \\_\\_\\_\\_ interleaving, whereas consecutive words are stored within the module in \\_\\_\\_\\_ interleaving.",
+        "bbox": [
+            84,
+            842,
+            878,
+            871
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e03c0ab343a434ed7d45a1a79ebd7640e4ac7c4aed3488b68c99804f501fb35.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            821,
+            931,
+            858
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1991 co-and-architecture normal memory-interfacing descriptive",
+        "bbox": [
+            87,
+            885,
+            421,
+            894
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            900,
+            188,
+            914
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.22.3 Memory Interfacing: GATE CSE 2006 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            532,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/de26f1d58cef6496b9da4bcf60ce2b80383e071523e650cb1bd4d993614590b3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A CPU has a cache with block size 64 bytes. The main memory has $k$ banks, each bank being $c$ bytes wide. Consecutive $c$ - byte chunks are mapped on consecutive banks with wrap-around. All the $k$ banks can be accessed in parallel, but two accesses to the same bank must be serialized. A cache block access may involve multiple iterations of parallel bank accesses depending on the amount of data obtained by accessing all the $k$ banks in parallel. Each iteration requires decoding the bank numbers to be accessed in parallel and this takes $\\frac{k}{2} ns$ . The latency of one bank access is 80 ns. If $c = 2$ and $k = 24$ , the latency of retrieving a cache block starting at address zero from main memory is:",
+        "bbox": [
+            84,
+            89,
+            931,
+            192
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 92 ns",
+        "bbox": [
+            87,
+            205,
+            154,
+            219
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 104 ns",
+        "bbox": [
+            285,
+            205,
+            357,
+            219
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 172 ns",
+        "bbox": [
+            478,
+            205,
+            552,
+            219
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 184 ns",
+        "bbox": [
+            673,
+            205,
+            747,
+            219
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 co-and-architecture cache-memory memory-interfacing normal",
+        "bbox": [
+            87,
+            229,
+            453,
+            239
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            245,
+            186,
+            260
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.22.4 Memory Interfacing: GATE CSE 2016 | Set 1 | Question: 09",
+        "text_level": 1,
+        "bbox": [
+            78,
+            269,
+            586,
+            283
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A processor can support a maximum memory of 4 GB, where the memory is word-addressable (a word consists of two bytes). The size of address bus of the processor is at least \\_\\_\\_\\_ bits.",
+        "bbox": [
+            84,
+            293,
+            878,
+            323
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/4e92ef6a1c06a7f9e6304c769b72105b4c27684fe15c821ed649bd9719f9adf9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            271,
+            931,
+            309
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 co-and-architecture easy numerical-answers memory-interfacing",
+        "bbox": [
+            87,
+            336,
+            478,
+            346
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            352,
+            186,
+            366
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.22.5 Memory Interfacing: GATE CSE 2018 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            376,
+            534,
+            391
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A 32-bit wide main memory unit with a capacity of 1 GB is built using 256M × 4-bit DRAM chips. The number of rows of memory cells in the DRAM chip is 2 $^{14}$ . The time taken to perform one refresh operation is 50 nanoseconds. The refresh period is 2 milliseconds. The percentage (rounded to the closest integer) time available for performing the memory read/write operations in the main memory unit is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            400,
+            878,
+            461
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/cf94ef396e3865397c7aec6242954551cd34e1d2fb8960a3c8b065eb6c58d818.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            378,
+            931,
+            416
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 co-and-architecture memory-interfacing normal numerical-answers one-mark",
+        "bbox": [
+            87,
+            475,
+            521,
+            485
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            491,
+            186,
+            505
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.22.6 Memory Interfacing: GATE CSE 2023 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            515,
+            534,
+            530
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A 4 kilobyte (KB) byte-addressable memory is realized using four 1 KB memory blocks. Two input address lines (IA4 and IA3) are connected to the chip select (CS) port of these memory blocks through a decoder as shown in the figure. The remaining ten input address lines from IA11-IA0 are connected to the address these blocks. The chip select (CS) is active high.",
+        "bbox": [
+            84,
+            539,
+            878,
+            600
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/5dc07e24e96226e7dacf80cc24ac8c593c233daa187d478e51350b32d39ba3fc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            517,
+            931,
+            555
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/e8d1b80cb0fe3379d4c86895d6246db6343270f81833151c56958daa216786c4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Input[\"Input\"] -->|MSB| USB[\"USB\"]\n  USB -->|10-bit| Adder1[\"Adder\"]\n  Adder1 -->|1KB memory| Memory1[\"1KB memory\"]\n  Memory1 -->|1KB memory| Memory2[\"1KB memory\"]\n  Memory2 -->|1KB memory| Memory3[\"1KB memory\"]\n  Memory3 -->|1KB memory| Memory4[\"1KB memory\"]\n  Memory4 -->|1KB memory| Adder4[\"Adder\"]\n  Adder4 -->|1KB memory| Decoder[\"Decoder\"]\n  Decoder -->|Q0| Input\n  Decoder -->|Q1| Input\n  Decoder -->|Q2| Input\n  Decoder -->|Q3| Input\n  Input -->|A1| Decoder\n  Input -->|A0| Decoder\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            334,
+            608,
+            680,
+            722
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The input memory addresses (IA11-IA0), in decimal, for the starting locations (Addr = 0) of each block (indicated as X1, X2, X3, X4 in the figure) are among the options given below. Which one of the following options is CORRECT?",
+        "bbox": [
+            84,
+            731,
+            929,
+            776
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $(0,1,2,3)$",
+        "bbox": [
+            87,
+            788,
+            186,
+            805
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. (0,1024,2048,3072)",
+        "bbox": [
+            285,
+            789,
+            458,
+            805
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. (0,8,16,24)",
+        "bbox": [
+            480,
+            789,
+            593,
+            805
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $(0,0,0,0)$",
+        "bbox": [
+            673,
+            789,
+            769,
+            805
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 co-and-architecture memory-interfacing two-marks",
+        "bbox": [
+            87,
+            814,
+            393,
+            823
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            830,
+            186,
+            844
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.23",
+        "text_level": 1,
+        "bbox": [
+            68,
+            853,
+            104,
+            866
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Microprogramming (12)",
+        "text_level": 1,
+        "bbox": [
+            423,
+            853,
+            613,
+            869
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (15Q)",
+        "bbox": [
+            70,
+            878,
+            272,
+            893
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.23.1 Microprogramming: GATE CSE 1987 | Question: 4a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            532,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/ba1ab7c9881010bd142a12e9f4af3352d40de01a323ae5bff8394b63dd682e5f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Find out the width of the control memory of a horizontal microprogrammed control unit, given the following specifications:",
+        "bbox": [
+            84,
+            87,
+            875,
+            117
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• 16 control lines for the processor consisting of ALU and 7 registers.",
+            "- Conditional branching facility by checking 4 status bits.",
+            "- Provision to hold 128 words in the control memory."
+        ],
+        "bbox": [
+            97,
+            128,
+            601,
+            172
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1987 co-and-architecture microprogramming descriptive",
+        "bbox": [
+            87,
+            197,
+            376,
+            207
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            213,
+            189,
+            226
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.23.2 Microprogramming: GATE CSE 1996 | Question: 2.25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            237,
+            546,
+            251
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/b0a00925ba740a9f4e22296b2909a3d80470574fbfec12d13a4cb1bf9ba205d2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            239,
+            931,
+            277
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A micro program control unit is required to generate a total of 25 control signals. Assume that during any micro instruction, at most two control signals are active. Minimum number of bits required in the control word to generate the required control signals will be:",
+        "bbox": [
+            84,
+            261,
+            875,
+            304
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            317,
+            127,
+            331
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 2.5",
+        "bbox": [
+            285,
+            317,
+            334,
+            331
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 10",
+        "bbox": [
+            480,
+            317,
+            524,
+            331
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 12",
+        "bbox": [
+            673,
+            317,
+            719,
+            331
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1996 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            340,
+            359,
+            352
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            358,
+            189,
+            372
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.23.3 Microprogramming: GATE CSE 1997 | Question: 5.3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            381,
+            537,
+            396
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/b39dd30e9270faa810170af64b4f608e977677edf5770b3ae407e00e04fd3279.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            384,
+            931,
+            422
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A micro instruction is to be designed to specify:",
+        "bbox": [
+            85,
+            404,
+            433,
+            420
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. none or one of the three micro operations of one kind and",
+            "b. none or upto six micro operations of another kind"
+        ],
+        "bbox": [
+            89,
+            429,
+            532,
+            459
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of bits in the micro-instruction is:",
+        "bbox": [
+            85,
+            469,
+            489,
+            483
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 9",
+        "bbox": [
+            89,
+            497,
+            126,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 5",
+        "bbox": [
+            285,
+            498,
+            319,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 8",
+        "bbox": [
+            480,
+            498,
+            515,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            500,
+            823,
+            511
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1997 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            523,
+            359,
+            532
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            538,
+            189,
+            553
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.23.4 Microprogramming: GATE CSE 1999 | Question: 2.19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            562,
+            546,
+            577
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/4c5e99cfd536d5c84f5e9e1314b1d4a9977647df806c5e20b879b971a2b2a32e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            565,
+            931,
+            603
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Arrange the following configuration for CPU in decreasing order of operating speeds: Hard wired control, Vertical microprogramming, Horizontal microprogramming.",
+        "bbox": [
+            84,
+            586,
+            702,
+            619
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Hard wired control, Vertical microprogramming, Horizontal microprogramming.",
+            "B. Hard wired control, Horizontal microprogramming, Vertical microprogramming.",
+            "C. Horizontal microprogramming, Vertical microprogramming, Hard wired control.",
+            "D. Vertical microprogramming, Horizontal microprogramming, Hard wired control."
+        ],
+        "bbox": [
+            87,
+            629,
+            682,
+            699
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1999 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            725,
+            359,
+            733
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            739,
+            189,
+            755
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.23.5 Microprogramming: GATE CSE 2002 | Question: 2.7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            764,
+            537,
+            779
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/449069377f86b140cf28332fb699fa6cd3ad9ef81263981e29691723a8ffa4bf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            767,
+            931,
+            805
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Horizontal microprogramming:",
+        "bbox": [
+            85,
+            788,
+            310,
+            802
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. does not require use of signal decoders",
+            "B. results in larger sized microinstructions than vertical microprogramming",
+            "C. uses one bit for each control signal",
+            "D. all of the above"
+        ],
+        "bbox": [
+            87,
+            813,
+            636,
+            868
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 co-and-architecture microprogramming",
+        "bbox": [
+            87,
+            895,
+            332,
+            904
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            910,
+            189,
+            926
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The microinstructions stored in the control memory of a processor have a width of 26 bits. Each microinstruction is divided into three fields: a micro-operation field of 13 bits, a next address field $(X)$ , and a MUX select field $(Y)$ . There are 8 status bits in the input of the MUX.",
+        "bbox": [
+            84,
+            90,
+            878,
+            136
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/60ea8f75438bee4f9a4ffeec3700949046dbd96e048f01bc931e53c97b94844b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  Input[\"Input Signal\"] -->|Load| Register[\"Control Address Register\"]\n  Register -->|Increment| Register\n  Register -->|Control Memory| Memory[\"Control Memory\"]\n  Memory -->|Y| MUX[\"MUX\"]\n  MUX -->|8| StatusBits[\"Status bits\"]\n  MUX -->|X| Memory\n  Memory -->|13| MicroOperations[\"Micro Operations\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            92,
+            143,
+            400,
+            300
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "How many bits are there in the $X$ and $Y$ fields, and what is the size of the control memory in number of words?",
+        "bbox": [
+            85,
+            308,
+            895,
+            324
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 10,3,1024",
+        "bbox": [
+            87,
+            336,
+            194,
+            353
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 8,5,256",
+        "bbox": [
+            285,
+            337,
+            369,
+            353
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 5,8,2048",
+        "bbox": [
+            480,
+            337,
+            571,
+            353
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 10,3,512",
+        "bbox": [
+            675,
+            337,
+            769,
+            353
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            362,
+            376,
+            372
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            378,
+            188,
+            393
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.23.7 Microprogramming: GATE CSE 2013 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            402,
+            532,
+            416
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sequence of micro-operations.",
+        "bbox": [
+            85,
+            425,
+            477,
+            440
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/8f8dd594b983754ed4ce4195429f2d3eb831d13210bac2bd0d749df4cf9ecb3f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            404,
+            931,
+            442
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nMBR ← PC\nMAR ← X PC ← Y\nMemory ← MBR\n```",
+        "bbox": [
+            87,
+            448,
+            201,
+            483
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is a possible operation performed by this sequence?",
+        "bbox": [
+            85,
+            491,
+            665,
+            507
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Instruction fetch",
+            "C. Conditional branch"
+        ],
+        "bbox": [
+            87,
+            516,
+            243,
+            542
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Operand fetch",
+            "D. Initiation of interrupt service"
+        ],
+        "bbox": [
+            495,
+            516,
+            707,
+            543
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            548,
+            376,
+            558
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            564,
+            188,
+            579
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.23.8 Microprogramming: GATE IT 2004 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            587,
+            514,
+            602
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A CPU has only three instructions I1, I2 and I3, which use the following signals in time steps T1 - T5:",
+        "bbox": [
+            85,
+            611,
+            850,
+            627
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I1 : T1 : Ain, Bout, Cin",
+            "T2 : PCoat, Bin",
+            "T3 : Zout, Ain",
+            "T4: Bin, Cout",
+            "T5 : End"
+        ],
+        "bbox": [
+            87,
+            631,
+            265,
+            701
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I2 : T1 : Cin, Bout, Din",
+            "T2 : Aout, Bin",
+            "T3: Zout, Ain",
+            "T4: Bin, Cout",
+            "T5 : End"
+        ],
+        "bbox": [
+            87,
+            707,
+            265,
+            777
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I3 : T1 : Din, Aout",
+            "T2 : Ain, Bout",
+            "T3: Zout, Ain",
+            "T4 : Dout, Ain",
+            "T5 : End"
+        ],
+        "bbox": [
+            87,
+            782,
+            231,
+            853
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following logic functions will generate the hardwired control for the signal Ain ?",
+        "bbox": [
+            85,
+            858,
+            752,
+            874
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $T1.I1 + T2.I3 + T4.I3 + T3$",
+            "C. $(T1 + T2).I1 + (T2 + T4).I3 + T3$"
+        ],
+        "bbox": [
+            87,
+            882,
+            389,
+            913
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $(T1 + T2 + T3).I3 + T1.I1$",
+            "D. $(T1 + T2).I2 + (T1 + T3).I1 + T3$"
+        ],
+        "bbox": [
+            495,
+            882,
+            796,
+            913
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/1d2282fc04ea515aa07725d1bde833617c828a688809947f5aed17013bc1cdef.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            591,
+            931,
+            628
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "1.23.6 Microprogramming: GATE CSE 2004 | Question: 67",
+        "bbox": [
+            78,
+            66,
+            532,
+            81
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "gateit-2004 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            916,
+            369,
+            927
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.23.9 Microprogramming: GATE IT 2005 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            515,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/f7859d5ef88a4578a5b55837bb25b62dbee09657c08d7662faff7a711eee94e0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            931,
+            129
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A hardwired CPU uses 10 control signals $S_{1}$ to $S_{10}$ , in various time steps $T_{1}$ to $T_{5}$ , to implement 4 instructions $I_{1}$ to $I_{4}$ as shown below:",
+        "bbox": [
+            84,
+            112,
+            878,
+            143
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/d684beb74959622090b5ada4261f3e9b6953c2ab3cdeea59c3aac9cf51a91d82.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td> $T_1$ </td><td> $T_2$ </td><td> $T_3$ </td><td> $T_4$ </td><td> $T_5$ </td></tr><tr><td> $I_1$ </td><td> $S_1, S_3, S_5$ </td><td> $S_2, S_4, S_6$ </td><td> $S_1, S_7$ </td><td> $S_{10}$ </td><td> $S_3, S_8$ </td></tr><tr><td> $I_2$ </td><td> $S_1, S_3, S_5$ </td><td> $S_8, S_9, S_{10}$ </td><td> $S_5, S_6 S_7$ </td><td> $S_6$ </td><td> $S_{10}$ </td></tr><tr><td> $I_3$ </td><td> $S_1, S_3, S_5$ </td><td> $S_7, S_8, S_{10}$ </td><td> $S_2, S_6, S_9$ </td><td> $S_{10}$ </td><td> $S_1, S_3$ </td></tr><tr><td> $I_4$ </td><td> $S_1, S_3, S_5$ </td><td> $S_2, S_6, S_7$ </td><td> $S_5, S_{10}$ </td><td> $S_6, S_9$ </td><td> $S_{10}$ </td></tr></table>",
+        "bbox": [
+            270,
+            154,
+            746,
+            254
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following pairs of expressions represent the circuit for generating control signals $S_{5}$ and $S_{10}$ respectively?",
+        "bbox": [
+            82,
+            263,
+            927,
+            292
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "$((I_j + I_k)T_n$ indicates that the control signal should be generated in time step $T_{n}$ if the instruction being executed is $I_{j}$ or $l_k$ )",
+        "bbox": [
+            84,
+            296,
+            927,
+            328
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $S_{5} = T_{1} + I_{2} \\cdot T_{3}$ and",
+            "B. $S_{5} = T_{1} + (I_{2} + I_{4})\\cdot T_{3}$ and"
+        ],
+        "bbox": [
+            87,
+            336,
+            394,
+            391
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {1 0} = (I _ {1} + I _ {3}) \\cdot T _ {4} + (I _ {2} + I _ {4}) \\cdot T _ {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            110,
+            355,
+            394,
+            372
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {1 0} = (I _ {1} + I _ {3}) \\cdot T _ {4} + (I _ {2} + I _ {4}) \\cdot T _ {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            110,
+            395,
+            394,
+            412
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $S_{5} = T_{1} + (I_{2} + I_{4})\\cdot T_{3}$ and",
+        "bbox": [
+            87,
+            415,
+            337,
+            431
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {1 0} = (I _ {2} + I _ {3} + I _ {4}) \\cdot T _ {2} + (I _ {1} + I _ {3}) \\cdot T _ {4} + (I _ {2} + I _ {4}) \\cdot T _ {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            110,
+            434,
+            557,
+            452
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $S_{5} = T_{1} + (I_{2} + I_{4})\\cdot T_{3}$ and",
+        "bbox": [
+            87,
+            454,
+            337,
+            470
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {1 0} = \\left(I _ {2} + I _ {3}\\right) \\cdot T _ {2} + I _ {4} \\cdot T _ {3} + \\left(I _ {1} + I _ {3}\\right) \\cdot T _ {4} + \\left(I _ {2} + I _ {4}\\right) \\cdot T _ {5}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            110,
+            473,
+            591,
+            491
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            515,
+            369,
+            524
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            530,
+            181,
+            546
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.23.10 Microprogramming: GATE IT 2005 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            555,
+            522,
+            570
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/1b3c90f39f049de53afbb0db7823a2e23dfa644c3d120a150ef64cf5f7abca40.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            557,
+            931,
+            595
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "An instruction set of a processor has 125 signals which can be divided into 5 groups of mutually exclusive signals as follows:",
+        "bbox": [
+            84,
+            579,
+            875,
+            606
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Group 1 : 20 signals, Group 2 : 70 signals, Group 3 : 2 signals, Group 4 : 10 signals, Group 5 : 23 signals.",
+        "bbox": [
+            84,
+            611,
+            863,
+            625
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "How many bits of the control words can be saved by using vertical microprogramming over horizontal microprogramming?",
+        "bbox": [
+            84,
+            630,
+            924,
+            657
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            89,
+            672,
+            126,
+            685
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 103",
+        "bbox": [
+            285,
+            672,
+            339,
+            686
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 22",
+        "bbox": [
+            480,
+            672,
+            524,
+            686
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 55",
+        "bbox": [
+            673,
+            672,
+            717,
+            686
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            695,
+            369,
+            706
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            712,
+            188,
+            726
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.23.11 Microprogramming: GATE IT 2006 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            736,
+            522,
+            751
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/0a0cf485c1e361a7aebfff0942964a45fcf2aeda1b45381f2970e625d885d554.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            739,
+            931,
+            776
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The data path shown in the figure computes the number of 1s in the 32-bit input word corresponding to an unsigned even integer stored in the shift register.",
+        "bbox": [
+            84,
+            761,
+            878,
+            789
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The unsigned counter, initially zero, is incremented if the most significant bit of the shift register is 1.",
+        "bbox": [
+            85,
+            789,
+            815,
+            804
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            65,
+            189,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/8e510beab3b1edc5da4378b27b05d364f904cf7d38c4f9051d22dfc47fee92fd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"reset_counter\"] --> B[\"k-bit Counter\"]\n  B --> C[\"Output\"]\n  C --> D[\"shift_left\"]\n  D -->|increment| B\n  D -->|shift_left| E[\"Shift Register\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            381,
+            68,
+            638,
+            193
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The microprogram for the control is shown in the table below with missing control words for microinstructions $I_{1}, I_{2}, \\ldots, I_{n}$ .",
+        "bbox": [
+            84,
+            219,
+            927,
+            249
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/f8f371b89136b296ff8f2c7d858cc76f1f2531a5cbf28754d8db151c36145023.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Microinstruction</td><td>Reset_Counter</td><td>Shift_left</td><td>Load_output</td></tr><tr><td>BEGIN</td><td>1</td><td>0</td><td>0</td></tr><tr><td>I1</td><td>?</td><td>?</td><td>?</td></tr><tr><td>:</td><td>:</td><td>:</td><td>:</td></tr><tr><td>In</td><td>?</td><td>?</td><td>?</td></tr><tr><td>END</td><td>0</td><td>0</td><td>1</td></tr></table>",
+        "bbox": [
+            206,
+            258,
+            811,
+            378
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The counter width (k), the number of missing microinstructions (n), and the control word for microinstructions $I_{1}, I_{2}, \\ldots, I_{n}$ are, respectively,",
+        "bbox": [
+            84,
+            389,
+            927,
+            420
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 32,5,010",
+        "bbox": [
+            87,
+            431,
+            184,
+            447
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 5,32,010",
+        "bbox": [
+            285,
+            432,
+            379,
+            447
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 5,31,011",
+        "bbox": [
+            478,
+            432,
+            574,
+            447
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 5,31,010",
+        "bbox": [
+            673,
+            432,
+            769,
+            447
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            457,
+            369,
+            466
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            472,
+            188,
+            486
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.23.12 Microprogramming: GATE IT 2008 | Question: 39",
+        "text_level": 1,
+        "bbox": [
+            78,
+            496,
+            522,
+            511
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a CPU where all the instructions require 7 clock cycles to complete execution. There are 140 instructions in the instruction set. It is found that 125 control signals are needed to be generated by the control unit. While designing the horizontal microprogrammed control unit, single address field format is used for branch control logic. What is the minimum size of the control word and control address register?",
+        "bbox": [
+            82,
+            520,
+            929,
+            578
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 125,7",
+        "bbox": [
+            87,
+            590,
+            159,
+            605
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 125,10",
+        "bbox": [
+            285,
+            591,
+            364,
+            605
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 135,9",
+        "bbox": [
+            480,
+            591,
+            549,
+            605
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 135,10",
+        "bbox": [
+            673,
+            591,
+            752,
+            605
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 co-and-architecture microprogramming normal",
+        "bbox": [
+            87,
+            615,
+            369,
+            624
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            631,
+            189,
+            644
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.24",
+        "text_level": 1,
+        "bbox": [
+            68,
+            656,
+            105,
+            669
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Pipelining (39)",
+        "text_level": 1,
+        "bbox": [
+            458,
+            656,
+            579,
+            671
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (15Q) Test 4 (15Q) Test 5 (10Q)",
+        "bbox": [
+            70,
+            680,
+            640,
+            695
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.24.1 Pipelining: GATE CSE 1999 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            709,
+            462,
+            724
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "An instruction pipeline consists of 4 stages - Fetch $(F)$ , Decode field $(D)$ , Execute $(E)$ and Result Write $(W)$ . The 5 instructions in a certain instruction sequence need these stages for the different number of clock cycles as shown by the table below",
+        "bbox": [
+            84,
+            733,
+            878,
+            779
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/de389eb8ba1e2a62577a472c64101c4820ea55a7f26ef6d8102fe1276c48eaeb.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Instruction</td><td>F</td><td>D</td><td>E</td><td>W</td></tr><tr><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td></tr><tr><td>2</td><td>1</td><td>2</td><td>2</td><td>1</td></tr><tr><td>3</td><td>2</td><td>1</td><td>3</td><td>2</td></tr><tr><td>4</td><td>1</td><td>3</td><td>2</td><td>1</td></tr><tr><td>5</td><td>1</td><td>2</td><td>1</td><td>2</td></tr></table>",
+        "bbox": [
+            368,
+            789,
+            648,
+            907
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/1f774e6093f74c59bc66e6b89d2cbd8caa35954d1a4e7ce3d80a1596f6b8ac70.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            498,
+            932,
+            536
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/990c4aaf702c060882ff9c73171f9bb6bafd7fd3ff3871c9f458be8484cff09a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            712,
+            932,
+            749
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Find the number of clock cycles needed to perform the 5 instructions.",
+        "bbox": [
+            85,
+            65,
+            591,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gate1999 co-and-architecture pipelining normal numerical-answers",
+        "bbox": [
+            87,
+            93,
+            413,
+            104
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            124
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.24.2 Pipelining: GATE CSE 2000 | Question: 1.8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            133,
+            465,
+            148
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/58983ff7e812d2d4ccb4f909209d7c2b48399a4370bd0f46762a6b86cc48b61f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            136,
+            931,
+            173
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Comparing the time T1 taken for a single instruction on a pipelined CPU with time T2 taken on a non-pipelined but identical CPU, we can say that",
+        "bbox": [
+            84,
+            157,
+            875,
+            186
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $T1 \\leq T2$",
+        "bbox": [
+            89,
+            195,
+            169,
+            207
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. T1 < T2",
+        "bbox": [
+            89,
+            209,
+            169,
+            220
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $T1 \\geq T2$",
+        "bbox": [
+            495,
+            195,
+            574,
+            207
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. T1 and T2 plus the time taken for one instruction fetch cycle",
+        "bbox": [
+            495,
+            209,
+            759,
+            235
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 pipelining co-and-architecture easy",
+        "bbox": [
+            87,
+            239,
+            327,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            256,
+            186,
+            271
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.24.3 Pipelining: GATE CSE 2000 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            280,
+            462,
+            294
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/cb3a454a62e54cee0436afccc0505874d2ce77677010009fedf305fd7e475974.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            282,
+            931,
+            320
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "An instruction pipeline has five stages where each stage take 2 nanoseconds and all instruction use all five stages. Branch instructions are not overlapped. i.e., the instruction after the branch is not fetched till the branch instruction is completed. Under ideal conditions,",
+        "bbox": [
+            84,
+            304,
+            878,
+            346
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Calculate the average instruction execution time assuming that 20% of all instructions executed are branch instruction. Ignore the fact that some branch instructions may be conditional.",
+            "B. If a branch instruction is a conditional branch instruction, the branch need not be taken. If the branch is not taken, the following instructions can be overlapped. When $80\\%$ of all branch instructions are conditional branch instructions, and $50\\%$ of the conditional branch instructions are such that the branch is taken, calculate the average instruction execution time."
+        ],
+        "bbox": [
+            87,
+            357,
+            927,
+            441
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 co-and-architecture pipelining normal descriptive",
+        "bbox": [
+            87,
+            466,
+            396,
+            476
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            482,
+            186,
+            496
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.24.4 Pipelining: GATE CSE 2001 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            505,
+            462,
+            520
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/ccd6146d96621527464f4c73a553966d1a2cda6beeae18d690cb83314a332eed.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            508,
+            931,
+            546
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider a 5-stage pipeline - IF (Instruction Fetch), ID (Instruction Decode and register read), EX (Execute), MEM (memory), and WB (Write Back). All (memory or register) reads take place in the second phase of a clock cycle and all writes occur in the first phase. Consider the execution of the following instruction sequence:",
+        "bbox": [
+            84,
+            530,
+            927,
+            586
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/1244bab89c364b29c5246ad76a33e665be58aabe9dc3bd07c49da8c2cc9a3999.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>I1:</td><td>sub r2, r3, r4</td><td>/*  $r2 \\leftarrow r3 - r4$  */</td></tr><tr><td>I2:</td><td>sub r4, r2, r3</td><td>/*  $r4 \\leftarrow r2 - r3$  */</td></tr><tr><td>I3:</td><td>sw r2, 100(r1)</td><td>/*  $M[r1 + 100] \\leftarrow r2$  */</td></tr><tr><td>I4:</td><td>sub r3, r4, r2</td><td>/*  $r3 \\leftarrow r4 - r2$  */</td></tr></table>",
+        "bbox": [
+            295,
+            598,
+            721,
+            680
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Show all data dependencies between the four instructions.",
+            "B. Identify the data hazards.",
+            "C. Can all hazards be avoided by forwarding in this case."
+        ],
+        "bbox": [
+            87,
+            690,
+            539,
+            732
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 co-and-architecture pipelining normal descriptive",
+        "bbox": [
+            87,
+            758,
+            396,
+            768
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            774,
+            186,
+            788
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.24.5 Pipelining: GATE CSE 2002 | Question: 2.6, ISRO2008-19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            796,
+            576,
+            812
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The performance of a pipelined processor suffers if:",
+        "bbox": [
+            85,
+            821,
+            465,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. the pipeline stages have different delays",
+            "B. consecutive instructions are dependent on each other",
+            "C. the pipeline stages share hardware resources",
+            "D. All of the above"
+        ],
+        "bbox": [
+            87,
+            846,
+            505,
+            902
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/665cf0bc0ca23c7a1d4c1f42aed179ae5645a87fa6833f83c0fc0111dce578e5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            800,
+            931,
+            837
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.24.6 Pipelining: GATE CSE 2003 | Question: 10, ISRO-DEC2017-41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            608,
+            125
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "For a pipelined CPU with a single ALU, consider the following situations",
+        "bbox": [
+            85,
+            134,
+            608,
+            149
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. The $j + 1^{st}$ instruction uses the result of the $j^{th}$ instruction as an operand",
+            "II. The execution of a conditional jump instruction",
+            "III. The $j^{th}$ and $j + 1^{st}$ instructions require the ALU at the same time."
+        ],
+        "bbox": [
+            92,
+            160,
+            653,
+            217
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the above can cause a hazard",
+        "bbox": [
+            85,
+            226,
+            379,
+            239
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. I and II only",
+        "bbox": [
+            87,
+            255,
+            194,
+            270
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. II and III only",
+        "bbox": [
+            285,
+            256,
+            396,
+            270
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. III only",
+        "bbox": [
+            480,
+            256,
+            549,
+            270
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. All the three",
+        "bbox": [
+            673,
+            256,
+            781,
+            269
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 co-and-architecture pipelining normal isrodec2017",
+        "bbox": [
+            87,
+            279,
+            401,
+            289
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            295,
+            186,
+            309
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.24.7 Pipelining: GATE CSE 2004 | Question: 69",
+        "text_level": 1,
+        "bbox": [
+            78,
+            319,
+            460,
+            334
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A 4-stage pipeline has the stage delays as 150, 120, 160 and 140 nanoseconds, respectively. Registers that are used between the stages have a delay of 5 nanoseconds each. Assuming constant clocking rate, the total time taken to process 1000 data items on this pipeline will be:",
+        "bbox": [
+            84,
+            342,
+            875,
+            387
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 120.4 microseconds",
+        "bbox": [
+            87,
+            396,
+            260,
+            410
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 160.5 microseconds",
+        "bbox": [
+            495,
+            396,
+            665,
+            410
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 165.5 microseconds",
+        "bbox": [
+            89,
+            414,
+            260,
+            428
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 590.0 microseconds",
+        "bbox": [
+            495,
+            414,
+            665,
+            428
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            438,
+            337,
+            447
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            454,
+            186,
+            467
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.24.8 Pipelining: GATE CSE 2006 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            478,
+            460,
+            492
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A CPU has a five-stage pipeline and runs at 1 GHz frequency. Instruction fetch happens in the first stage of the pipeline. A conditional branch instruction computes the target address and evaluates the condition in the third stage of the pipeline. The processor stops fetching new instructions following a conditional branch until the branch outcome is known. A program executes $10^{9}$ instructions out of which 20% are conditional branches. If each instruction takes one cycle to complete on average, the total execution time of the program is:",
+        "bbox": [
+            84,
+            502,
+            929,
+            576
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 1.0 second",
+        "bbox": [
+            87,
+            589,
+            194,
+            602
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 1.2 seconds",
+        "bbox": [
+            285,
+            589,
+            396,
+            602
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 1.4 seconds",
+        "bbox": [
+            480,
+            589,
+            589,
+            602
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 1.6 seconds",
+        "bbox": [
+            673,
+            589,
+            786,
+            602
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            612,
+            337,
+            623
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            630,
+            186,
+            643
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.24.9 Pipelining: GATE CSE 2007 | Question: 37, ISRO2009-37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            653,
+            569,
+            667
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider a pipelined processor with the following four stages:",
+        "bbox": [
+            85,
+            676,
+            536,
+            692
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- IF: Instruction Fetch",
+            "• ID: Instruction Decode and Operand Fetch",
+            "- EX: Execute",
+            "- WB: Write Back"
+        ],
+        "bbox": [
+            97,
+            701,
+            423,
+            757
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The IF, ID and WB stages take one clock cycle each to complete the operation. The number of clock cycles for the EX stage depends on the instruction. The ADD and SUB instructions need 1 clock cycle and the MUL instruction needs 3 clock cycles in the EX stage. Operand forwarding is used in the pipelined processor. What is the number of clock cycles taken to complete the following sequence of instructions?",
+        "bbox": [
+            84,
+            769,
+            929,
+            826
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "ADD R2, R1, R0 R2 ← R1 + R0",
+        "bbox": [
+            334,
+            837,
+            680,
+            853
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "MUL R4, R3, R2 R4 $\\leftarrow$ R3\\*R2",
+        "bbox": [
+            336,
+            856,
+            673,
+            872
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "SUB R6, R5, R4 R6 ← R5−R4",
+        "bbox": [
+            336,
+            875,
+            678,
+            891
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 7",
+        "bbox": [
+            89,
+            904,
+            126,
+            918
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 8",
+        "bbox": [
+            285,
+            904,
+            319,
+            918
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 10",
+        "bbox": [
+            480,
+            904,
+            524,
+            918
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 14",
+        "bbox": [
+            673,
+            904,
+            719,
+            918
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/a2985bb4df67631e5f3b32fb7049288aee8afaf4cb6ec57f3a0f4bb62cee5e37.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            932,
+            150
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/0bbb69843d1ecf004d8de72ddf50bdc0857dff832ccb312678d5a983b6635e9d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            321,
+            932,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/81865ef72c85d27d2aa8cfe4cbe03486b5e580b6af272e3ab79a27e99af51d5d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            480,
+            932,
+            517
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/cd71ea6d34a210e8413dfb90763b06605c38bab2df3f0d2a8f573a3b1cc958f0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            656,
+            932,
+            694
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2002 co-and-architecture pipelining easy isro2008",
+        "bbox": [
+            87,
+            71,
+            376,
+            80
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.24.10 Pipelining: GATE CSE 2008 | Question: 76",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            470,
+            124
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Delayed branching can help in the handling of control hazards",
+        "bbox": [
+            85,
+            134,
+            541,
+            149
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/1afeaa61ed501e84c097c4d83f77c2becedb986755b7ab456027ea0d4ba2e977.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            931,
+            150
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For all delayed conditional branch instructions, irrespective of whether the condition evaluates to true or false,",
+        "bbox": [
+            84,
+            152,
+            875,
+            180
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. The first instruction in the fall through path is executed",
+            "C. The first instruction in the taken path is executed",
+            "D. The branch takes longer to execute than any other instruction"
+        ],
+        "bbox": [
+            85,
+            191,
+            561,
+            261
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. The instruction following the conditional branch instruction in memory is executed",
+        "bbox": [
+            87,
+            191,
+            705,
+            205
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            286,
+            339,
+            296
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            302,
+            186,
+            317
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.24.11 Pipelining: GATE CSE 2008 | Question: 77",
+        "text_level": 1,
+        "bbox": [
+            78,
+            326,
+            470,
+            340
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/34f467cf4ec4e52dc7025e3a069a9ff4b2ee94b7d062cd5688a9eb5665a93ba1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            328,
+            931,
+            366
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Delayed branching can help in the handling of control hazards",
+        "bbox": [
+            85,
+            350,
+            541,
+            365
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The following code is to run on a pipelined processor with one branch delay slot:",
+        "bbox": [
+            85,
+            368,
+            672,
+            383
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I1: ADD $R2 \\leftarrow R7 + R8$",
+            "12: Sub R4 ← R5-R6",
+            "I3: ADD $R1 \\leftarrow R2 + R3$",
+            "I4: STORE Memory [R4] ← R1\nBRANCH to Label if R1 == 0"
+        ],
+        "bbox": [
+            85,
+            385,
+            339,
+            476
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the instructions I1, I2, I3 or I4 can legitimately occupy the delay slot without any program modification?",
+        "bbox": [
+            85,
+            480,
+            899,
+            496
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 11",
+        "bbox": [
+            89,
+            510,
+            127,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 12",
+        "bbox": [
+            285,
+            510,
+            324,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 13",
+        "bbox": [
+            480,
+            510,
+            517,
+            522
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 14",
+        "bbox": [
+            673,
+            510,
+            712,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            534,
+            339,
+            543
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            549,
+            186,
+            564
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.24.12 Pipelining: GATE CSE 2009 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            573,
+            470,
+            587
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/0760e5f1c4adc1c8222ad67073bcb6439a1e0f5f358cf7a89a4912d0f7636995.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            576,
+            931,
+            614
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider a 4 stage pipeline processor. The number of cycles needed by the four instructions $I1, I2, I3, I4$ in stages $S1, S2, S3, S4$ is shown below:",
+        "bbox": [
+            84,
+            597,
+            878,
+            627
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/de3e9df4f7e98fd19625f8d2ae099055f174623ad815d24e2d728ef7928db6ff.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>S1</td><td>S2</td><td>S3</td><td>S4</td></tr><tr><td>I1</td><td>2</td><td>1</td><td>1</td><td>1</td></tr><tr><td>I2</td><td>1</td><td>3</td><td>2</td><td>2</td></tr><tr><td>I3</td><td>2</td><td>1</td><td>1</td><td>3</td></tr><tr><td>I4</td><td>1</td><td>2</td><td>2</td><td>2</td></tr></table>",
+        "bbox": [
+            400,
+            638,
+            616,
+            738
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "What is the number of cycles needed to execute the following loop?",
+        "bbox": [
+            84,
+            764,
+            581,
+            780
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For (i=1 to 2) {I1; I2; I3; I4;}",
+        "bbox": [
+            85,
+            783,
+            287,
+            798
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 16",
+        "bbox": [
+            89,
+            811,
+            134,
+            825
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 23",
+        "bbox": [
+            285,
+            812,
+            329,
+            825
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 28",
+        "bbox": [
+            480,
+            812,
+            522,
+            825
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 30",
+        "bbox": [
+            673,
+            811,
+            717,
+            825
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            836,
+            339,
+            845
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            852,
+            186,
+            866
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.24.13 Pipelining: GATE CSE 2010 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            78,
+            875,
+            470,
+            890
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/d9df7c1bbabb0b283c91e3120dc84d55710288b147d3c3657602acf4093d6ee0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            878,
+            931,
+            916
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A 5—stage pipelined processor has Instruction Fetch (IF), Instruction Decode (ID), Operand Fetch (OF), Perform Operation (PO) and Write Operand (WO) stages. The IF, ID, OF and WO stages take 1 clock cycle",
+        "bbox": [
+            84,
+            899,
+            878,
+            929
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2007 co-and-architecture pipelining normal isro2009",
+        "bbox": [
+            87,
+            71,
+            386,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "each for any instruction. The PO stage takes 1 clock cycle for ADD and SUB instructions, 3 clock cycles for MUL instruction and 6 clock cycles for DIV instruction respectively. Operand forwarding is used in the pipeline. What is the number of clock cycles needed to execute the following sequence of instructions?",
+        "bbox": [
+            84,
+            64,
+            931,
+            109
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/b6bb11a8f0ea1ac2fa82becd48812c0729e9e8507ef9b143e00da0a7f01ba94b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Instruction</td><td>Meaning of instruction</td></tr><tr><td> $t_0$ : MUL  $R_2, R_0, R_1$ </td><td> $R_2 \\leftarrow R_0 * R_1$ </td></tr><tr><td> $t_1$ : DIV  $R_5, R_3, R_4$ </td><td> $R_5 \\leftarrow R_3 / R_4$ </td></tr><tr><td> $t_2$ : ADD  $R_2, R_5, R_2$ </td><td> $R_2 \\leftarrow R_5 + R_2$ </td></tr><tr><td> $t_3$ : SUB  $R_5, R_2, R_6$ </td><td> $R_5 \\leftarrow R_2 - R_6$ </td></tr></table>",
+        "bbox": [
+            297,
+            119,
+            719,
+            220
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 13",
+        "bbox": [
+            89,
+            232,
+            136,
+            245
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 15",
+        "bbox": [
+            285,
+            233,
+            329,
+            245
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 17",
+        "bbox": [
+            480,
+            233,
+            524,
+            245
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 19",
+        "bbox": [
+            673,
+            233,
+            719,
+            245
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            257,
+            339,
+            267
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            273,
+            186,
+            288
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.24.14 Pipelining: GATE CSE 2011 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            296,
+            470,
+            311
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider an instruction pipeline with four stages (S1, S2, S3 and S4) each with combinational circuit only. The pipeline registers are required between each stage and at the end of the last stage. Delays for the stages and for the pipeline registers are as given in the figure.",
+        "bbox": [
+            84,
+            320,
+            878,
+            365
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a401cdd23dafbe02dc6b8482f5c17d670a45728daf1fca25784addab4f6234e1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            299,
+            932,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/87cc2112b93935062aa5fbc014f89f11d2dda41a071aa2105d396a5b468ebd80.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"Stage S1 Delay 5ns\"] --> B[\"Pipeline Register (delay 1ns)\"]\n  B --> C[\"Stage S2 Delay 6ns\"]\n  C --> D[\"Pipeline Register (delay 1ns)\"]\n  D --> E[\"Stage S3 Delay 11ns\"]\n  E --> F[\"Pipeline Register (delay 1ns)\"]\n  F --> G[\"Stage S4 Delay 8ns\"]\n  G --> H[\"Pipeline Register (delay 1ns)\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            305,
+            370,
+            712,
+            471
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What is the approximate speed up of the pipeline in steady state under ideal conditions when compared to the corresponding non-pipeline implementation?",
+        "bbox": [
+            84,
+            479,
+            929,
+            508
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 4.0",
+        "bbox": [
+            89,
+            521,
+            139,
+            534
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 2.5",
+        "bbox": [
+            285,
+            521,
+            334,
+            535
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 1.1",
+        "bbox": [
+            480,
+            521,
+            529,
+            534
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 3.0",
+        "bbox": [
+            673,
+            521,
+            724,
+            534
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 co-and-architecture pipelining normal",
+        "bbox": [
+            87,
+            546,
+            339,
+            555
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            562,
+            186,
+            576
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.24.15 Pipelining: GATE CSE 2012 | Question: 20, ISRO2016-23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            585,
+            579,
+            600
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Register renaming is done in pipelined processors:",
+        "bbox": [
+            85,
+            609,
+            458,
+            624
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a9c7c315ef098f5631ac2cb57c597b91f47621f0c2ceb841e31d4e06c9ecff9d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            587,
+            932,
+            625
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. as an alternative to register allocation at compile time",
+            "B. for efficient access to function parameters and local variables",
+            "C. to handle certain kinds of hazards",
+            "D. as part of address translation"
+        ],
+        "bbox": [
+            87,
+            635,
+            559,
+            690
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 co-and-architecture pipelining easy isro2016",
+        "bbox": [
+            87,
+            716,
+            376,
+            726
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            732,
+            186,
+            747
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.24.16 Pipelining: GATE CSE 2013 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            755,
+            470,
+            770
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider an instruction pipeline with five stages without any branch prediction:",
+        "bbox": [
+            84,
+            779,
+            658,
+            794
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/44b5e61fb0f986259d2eccac5fa169b368f37e4c0f78488805a63fd338008cfe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            758,
+            932,
+            796
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Fetch Instruction (FI), Decode Instruction (DI), Fetch Operand (FO), Execute Instruction (EI) and Write Operand (WO). The stage delays for FI, DI, FO, EI and WO are 5 ns, 7 ns, 10 ns, 8 ns and 6 ns, respectively. There are intermediate storage buffers after each stage and the delay of each buffer is 1 ns. A program consisting of 12 instructions I1, I2, I3, ..., I12 is executed in this pipelined processor. Instruction I4 is the only branch instruction and its branch target is I9. If the branch is taken during the execution of this program, the time (in ns) needed to complete the program is",
+        "bbox": [
+            84,
+            796,
+            929,
+            884
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 132",
+        "bbox": [
+            89,
+            891,
+            149,
+            904
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 165",
+        "bbox": [
+            495,
+            891,
+            552,
+            904
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 176",
+        "bbox": [
+            89,
+            906,
+            149,
+            918
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 328",
+        "bbox": [
+            495,
+            906,
+            552,
+            918
+        ],
+        "page_idx": 11
+    }
+]

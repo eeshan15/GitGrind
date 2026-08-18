@@ -1,0 +1,5128 @@
+[
+    {
+        "type": "text",
+        "text": "of the following is a possible order of visiting the nodes in the graph below?",
+        "bbox": [
+            85,
+            64,
+            635,
+            79
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/46f57ce3b719e6aec03522dbf46c5702cc66521b07e3beaf8ed28f9d28512634.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            92,
+            85,
+            236,
+            144
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. MNOPQR",
+        "bbox": [
+            89,
+            163,
+            200,
+            179
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. NQMPOR",
+        "bbox": [
+            285,
+            163,
+            394,
+            179
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. QMNROP",
+        "bbox": [
+            480,
+            163,
+            588,
+            179
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. POQNMR",
+        "bbox": [
+            673,
+            163,
+            783,
+            179
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 algorithms graph-algorithms graph-search",
+        "bbox": [
+            87,
+            188,
+            376,
+            199
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            204,
+            188,
+            219
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.18.14 Graph Search: GATE CSE 2018 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            228,
+            500,
+            243
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let G be a simple undirected graph. Let $T_{D}$ be a depth first search tree of G. Let $T_{B}$ be a breadth first search tree of G. Consider the following statements.",
+        "bbox": [
+            84,
+            252,
+            878,
+            282
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/4d33c4ccb1ce6f9ead810c734e332dfd3c1ca7a8a43b5ae9a45d0d475667f7bd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            231,
+            931,
+            268
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "I. No edge of $G$ is a cross edge with respect to $T_{D}$ . (A cross edge in $G$ is between two nodes neither of which is an ancestor of the other in $T_{D}$ ).",
+        "bbox": [
+            90,
+            293,
+            929,
+            323
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "II. For every edge $(u,v)$ of G, if u is at depth i and v is at depth j in $T_{B}$ , then $|i-j|=1$ .",
+        "bbox": [
+            87,
+            323,
+            749,
+            339
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the statements above must necessarily be true?",
+        "bbox": [
+            85,
+            347,
+            509,
+            364
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            87,
+            378,
+            152,
+            391
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. II only",
+        "bbox": [
+            285,
+            378,
+            351,
+            391
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Both I and II",
+        "bbox": [
+            480,
+            378,
+            588,
+            391
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. Neither I nor II",
+        "bbox": [
+            673,
+            378,
+            796,
+            391
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 algorithms graph-algorithms graph-search normal two-marks",
+        "bbox": [
+            87,
+            401,
+            457,
+            410
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            416,
+            188,
+            432
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.18.15 Graph Search: GATE CSE 2023 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            441,
+            500,
+            454
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $U = \\{1, 2, 3\\}$ . Let $2^{U}$ denote the powerset of $U$ . Consider an undirected graph $G$ whose vertex set is $2^{U}$ . For any $A, B \\in 2^{U}$ , $(A, B)$ is an edge in $G$ if and only if (i) $A \\neq B$ , and (ii) either $A \\subsetneq B$ or $B \\subsetneq A$ .",
+        "bbox": [
+            84,
+            466,
+            875,
+            501
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "For any vertex $A$ in $G$ , the set of all possible orderings in which the vertices of $G$ can be visited in a Breadth First Search (BFS) starting from $A$ is denoted by $\\mathcal{B}(A)$ .",
+        "bbox": [
+            84,
+            501,
+            929,
+            532
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If $\\emptyset$ denotes the empty set, then the cardinality of $\\mathcal{B}(\\emptyset)$ is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            543,
+            640,
+            561
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 algorithms breadth-first-search numerical-answers two-marks graph-search",
+        "bbox": [
+            87,
+            574,
+            515,
+            584
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            590,
+            188,
+            605
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.18.16 Graph Search: GATE CSE 2024 | Set 1 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            614,
+            554,
+            629
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a directed graph and $T$ a depth first search (DFS) spanning tree in $G$ that is rooted at a vertex $v$ . Suppose $T$ is also a breadth first search (BFS) tree in $G$ , rooted at $v$ . Which of the following statements is/are TRUE for every such graph $G$ and tree $T$ ?",
+        "bbox": [
+            84,
+            638,
+            878,
+            686
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There are no back-edges in G with respect to the tree T",
+            "B. There are no cross-edges in G with respect to the tree T",
+            "C. There are no forward-edge in $G$ with respect to the tree $T$",
+            "D. The only edges in G are the edges in T"
+        ],
+        "bbox": [
+            87,
+            695,
+            536,
+            756
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 algorithms multiple-selects graph-search two-marks",
+        "bbox": [
+            87,
+            781,
+            430,
+            790
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            796,
+            188,
+            812
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.18.17 Graph Search: GATE CSE 2024 | Set 1 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            821,
+            552,
+            834
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The number of edges present in the forest generated by the DFS traversal of an undirected graph G with 100 vertices is 40. The number of connected components in G is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            844,
+            873,
+            876
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 numerical-answers graph-search graph-algorithms two-marks",
+        "bbox": [
+            87,
+            889,
+            467,
+            899
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            904,
+            188,
+            919
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/ede05c14ae7f00438c2fdc98b88229d72305f34c8bd0760d7f4219f89f9df0b4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            444,
+            931,
+            480
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e12b05255cd0a97de6067e0c7241e3af216c9c123c66b312b48097224e0079f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            617,
+            931,
+            654
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8a6b74b055e19fb5983af08ca7fb56f4b686422d32898cb1cdb90da9bb26c4af.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            824,
+            931,
+            861
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.18.18 Graph Search: GATE CSE 2025 | Set 2 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            552,
+            79
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/00a849564bb313afaedda3a5b99a48d8157a3c292c3a5d8f68b11a44e1ce39dc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following algorithm someAlgo that takes an undirected graph G as input. someAlgo (G)",
+        "bbox": [
+            85,
+            89,
+            717,
+            119
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Let $v$ be any vertex in $G$ . Run BFS on $G$ starting at $v$ . Let $u$ be a vertex in $G$ at maximum distance from $v$ as given by the BFS.",
+            "2. Run BFS on $G$ again with $u$ as the starting vertex. Let $z$ be the vertex at maximum distance from $u$ as given by the BFS.",
+            "3. Output the distance between u and z in G."
+        ],
+        "bbox": [
+            87,
+            129,
+            927,
+            201
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The output of someAlgo (T) for the tree shown in the given figure is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            212,
+            845,
+            228
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2dfacc23ab2773b009b65adba732c72de8741ce3ad35451f75ec1b179a9700da.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Abstract geometric line drawing with interconnected nodes (no text or symbols)",
+        "sub_type": "natural_image",
+        "bbox": [
+            132,
+            233,
+            371,
+            314
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 algorithms breadth-first-search graph-search numerical-answers two-marks",
+        "bbox": [
+            87,
+            336,
+            532,
+            346
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            352,
+            181,
+            366
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.18.19 Graph Search: GATE DS&AI 2024 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            376,
+            509,
+            390
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider performing depth-first search (DFS) on an undirected and unweighted graph $G$ starting at vertex $s$ . For any vertex $u$ in $G$ , $d[u]$ is the length of the shortest path from $s$ to $u$ . Let $(u, v)$ be an edge in $G$ such that $d[u] < d[v]$ . If the edge $(u, v)$ is explored first in the direction from $u$ to $v$ during the above DFS, then $(u, v)$ becomes a \\_\\_\\_\\_ edge.",
+        "bbox": [
+            84,
+            400,
+            927,
+            460
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. tree",
+        "bbox": [
+            89,
+            473,
+            142,
+            486
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. cross",
+        "bbox": [
+            285,
+            473,
+            347,
+            486
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. back",
+        "bbox": [
+            480,
+            473,
+            537,
+            486
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. gray",
+        "bbox": [
+            675,
+            473,
+            729,
+            488
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 graph-search depth-first-search algorithms one-mark",
+        "bbox": [
+            87,
+            497,
+            421,
+            507
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            514,
+            181,
+            528
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.18.20 Graph Search: GATE IT 2005 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            536,
+            480,
+            551
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In a depth-first traversal of a graph $G$ with $n$ vertices, $k$ edges are marked as tree edges. The number of connected components in $G$ is",
+        "bbox": [
+            84,
+            561,
+            878,
+            591
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. k",
+        "bbox": [
+            89,
+            605,
+            126,
+            618
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $k + 1$",
+        "bbox": [
+            285,
+            605,
+            349,
+            618
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $n - k - 1$",
+        "bbox": [
+            480,
+            605,
+            576,
+            618
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. n-k",
+        "bbox": [
+            675,
+            605,
+            742,
+            618
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 algorithms graph-algorithms normal graph-search",
+        "bbox": [
+            87,
+            629,
+            391,
+            638
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            644,
+            181,
+            660
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.18.21 Graph Search: GATE IT 2006 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            669,
+            480,
+            682
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the depth-first-search of an undirected graph with 3 vertices P, Q, and R. Let discovery time $d(u)$ represent the time instant when the vertex u is first visited, and finish time $f(u)$ represent the time instant when the vertex u is last visited. Given that",
+        "bbox": [
+            84,
+            693,
+            878,
+            739
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/d84ae4fc8ce54a6c0dec77f470e09390d8e0504b62cd3a67746250172774f000.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td> $d(P) = 5$  units</td><td> $f(P) = 12$  units</td></tr><tr><td> $d(Q) = 6$  units</td><td> $f(Q) = 10$  units</td></tr><tr><td> $d(R) = 14$  unit</td><td> $f(R) = 18$  units</td></tr></table>",
+        "bbox": [
+            344,
+            752,
+            672,
+            814
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is TRUE about the graph?",
+        "bbox": [
+            84,
+            837,
+            561,
+            852
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. There is only one connected component",
+            "B. There are two connected components, and $P$ and $R$ are connected",
+            "C. There are two connected components, and $Q$ and $R$ are connected",
+            "D. There are two connected components, and $P$ and $Q$ are connected"
+        ],
+        "bbox": [
+            85,
+            862,
+            606,
+            921
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/16e9180756eac79aed75c46d4a9506eac43b767a73bd6f71487af6c1c10857c3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            378,
+            931,
+            416
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/178bb0c507619618f52f2f412dc5b3e073645726781196086719ea967af997b3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            540,
+            931,
+            577
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/66a7eb65579beaf073e23b69bc0d4abc87cbea1c2a0154864910418f8a0b47f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            672,
+            931,
+            709
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            97,
+            186,
+            112
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.18.22 Graph Search: GATE IT 2007 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            119,
+            480,
+            135
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/51611799e7bc4b74538ea01a76eafc49b8663af109c94473227e028d5a1f592a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            124,
+            931,
+            161
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A depth-first search is performed on a directed acyclic graph. Let $d[u]$ denote the time at which vertex $u$ is visited for the first time and $f[u]$ the time at which the DFS call to the vertex $u$ terminates. Which of the following statements is always TRUE for all edges $(u, v)$ in the graph?",
+        "bbox": [
+            84,
+            144,
+            878,
+            192
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $d[u] < d[v]$ C. $f[u] < f[v]$",
+        "bbox": [
+            89,
+            200,
+            196,
+            232
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $d[u] < f[v]$ D. $f[u] > f[v]$",
+        "bbox": [
+            495,
+            200,
+            601,
+            232
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 algorithms graph-algorithms normal graph-search depth-first-search",
+        "bbox": [
+            89,
+            233,
+            480,
+            245
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            251,
+            186,
+            264
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.18.23 Graph Search: GATE IT 2008 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            274,
+            480,
+            288
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following sequence of nodes for the undirected graph given below:",
+        "bbox": [
+            85,
+            298,
+            668,
+            313
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/88df70e1a32e2ae83d412d73e0afb91ee4364914c2294a90db6f90106352aee3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            277,
+            931,
+            315
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. abefdgc",
+            "2. abefcgd",
+            "3. adgebcf",
+            "4. a d b c g e f"
+        ],
+        "bbox": [
+            90,
+            323,
+            211,
+            384
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A Depth First Search (DFS) is started at node a. The nodes are listed in the order they are first visited. Which of the above is/are possible output(s)?",
+        "bbox": [
+            84,
+            393,
+            927,
+            423
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/2c4949fc8cc006425408dc1fac9f8b03501e124fe3b2ee39bf92fdcd8a1c9395.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  a[\"a\"] --> b[\"b\"]\n  b --> c[\"c\"]\n  b --> d[\"d\"]\n  d --> e[\"e\"]\n  e --> f[\"f\"]\n  f --> g[\"g\"]\n  g --> e\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            416,
+            429,
+            600,
+            559
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 1 and 3 only",
+        "bbox": [
+            89,
+            577,
+            201,
+            593
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 2 and 3 only",
+        "bbox": [
+            285,
+            577,
+            394,
+            593
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 2,3 and 4 only",
+        "bbox": [
+            480,
+            577,
+            605,
+            593
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 1,2 and 3 only",
+        "bbox": [
+            673,
+            577,
+            801,
+            593
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 algorithms graph-algorithms normal graph-search depth-first-search",
+        "bbox": [
+            87,
+            602,
+            480,
+            612
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            618,
+            189,
+            633
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.19",
+        "text_level": 1,
+        "bbox": [
+            68,
+            643,
+            105,
+            656
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Greedy Algorithms (5)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            642,
+            608,
+            657
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (7Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            667,
+            267,
+            682
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.19.1 Greedy Algorithms: GATE CSE 1999 | Question: 2.20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            695,
+            544,
+            710
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/c83890520de6892dac284a4a484caff80e0baae389d5a017324b628721fff673.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            699,
+            931,
+            736
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of record movements required to merge five files A (with 10 records), B (with 20 records), C (with 15 records), D (with 5 records) and E (with 25 records) is:",
+        "bbox": [
+            84,
+            719,
+            878,
+            750
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 165",
+        "bbox": [
+            89,
+            762,
+            144,
+            777
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 90",
+        "bbox": [
+            285,
+            762,
+            329,
+            777
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 75",
+        "bbox": [
+            480,
+            762,
+            524,
+            777
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 65",
+        "bbox": [
+            673,
+            762,
+            719,
+            777
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1999 algorithms normal greedy-algorithms",
+        "bbox": [
+            87,
+            787,
+            321,
+            798
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            802,
+            186,
+            817
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.19.2 Greedy Algorithms: GATE CSE 2003 | Question: 69",
+        "text_level": 1,
+        "bbox": [
+            78,
+            827,
+            531,
+            842
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/b03c52c5b432e7b2be1d2712fdbb2ebe8ad45245ba8683b7e68e99ea4e36eec6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            830,
+            931,
+            866
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The following are the starting and ending times of activities $A, B, C, D, E, F, G$ and $H$ respectively in chronological order: \" $a_s b_s c_s a_e d_s c_e e_s f_s b_e d_e g_s e_e f_e h_s g_e h_e$ \". Here, $x_s$ denotes the starting time and $x_e$ denotes the ending time of activity $X$ . We need to schedule the activities in a set of rooms available to us. An activity can be scheduled in a room only if the room is reserved for the activity for its entire duration. What is the minimum number of rooms required?",
+        "bbox": [
+            84,
+            850,
+            929,
+            923
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "gateit-2006 algorithms graph-algorithms normal graph-search depth-first-search",
+        "bbox": [
+            87,
+            81,
+            480,
+            91
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            68,
+            126,
+            81
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            68,
+            319,
+            81
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 5",
+        "bbox": [
+            480,
+            68,
+            515,
+            81
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            68,
+            710,
+            81
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 algorithms normal greedy-algorithms",
+        "bbox": [
+            87,
+            93,
+            337,
+            103
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            123
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.19.3 Greedy Algorithms: GATE CSE 2005 | Question: 84a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            133,
+            539,
+            148
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We are given 9 tasks $T_{1}, T_{2}, \\ldots, T_{9}$ . The execution of each task requires one unit of time. We can execute one task at a time. Each task $T_{i}$ has a profit $P_{i}$ and a deadline $d_{i}$ . Profit $P_{i}$ is earned if the task is completed before the end of the $d_{i}^{th}$ unit of time.",
+        "bbox": [
+            82,
+            156,
+            878,
+            205
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/ad416733f76a03d4fa70daf64640fd11d8e43cb492ecd18a9a7146c67a5c6a1f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            932,
+            173
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/e8a36dc22ffb60cecaa3c7beb821cf3c6e773584afbcabd979ee20a9a65e4e40.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Task</td><td> $T_1$ </td><td> $T_2$ </td><td> $T_3$ </td><td> $T_4$ </td><td> $T_5$ </td><td> $T_6$ </td><td> $T_7$ </td><td> $T_8$ </td><td> $T_9$ </td></tr><tr><td>Profit</td><td>15</td><td>20</td><td>30</td><td>18</td><td>18</td><td>10</td><td>23</td><td>16</td><td>25</td></tr><tr><td>Deadline</td><td>7</td><td>2</td><td>5</td><td>3</td><td>4</td><td>5</td><td>2</td><td>7</td><td>3</td></tr></table>",
+        "bbox": [
+            275,
+            214,
+            741,
+            275
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Are all tasks completed in the schedule that gives maximum profit?",
+        "bbox": [
+            84,
+            283,
+            576,
+            299
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. All tasks are completed",
+        "bbox": [
+            87,
+            308,
+            273,
+            321
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $T_{1}$ and $T_{6}$ are left out",
+        "bbox": [
+            495,
+            308,
+            667,
+            323
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $T_{1}$ and $T_{8}$ are left out",
+        "bbox": [
+            89,
+            326,
+            262,
+            340
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $T_{4}$ and $T_{6}$ are left out",
+        "bbox": [
+            495,
+            326,
+            667,
+            340
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 algorithms greedy-algorithms process-scheduling normal",
+        "bbox": [
+            87,
+            350,
+            428,
+            359
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            366,
+            186,
+            380
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.19.4 Greedy Algorithms: GATE CSE 2005 | Question: 84b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            390,
+            539,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We are given 9 tasks $T_{1}, T_{2}, \\ldots, T_{9}$ . The execution of each task requires one unit of time. We can execute one task at a time. Each task $T_{i}$ has a profit $P_{i}$ and a deadline $d_{i}$ . Profit $P_{i}$ is earned if the task is completed before the end of the $d_{i}^{th}$ unit of time.",
+        "bbox": [
+            82,
+            413,
+            878,
+            461
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/958e5f5eb1d21ddbbc78709c66640002984b6ff394c6fa6e30442d59f520d204.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            391,
+            932,
+            429
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/dd0cbf30d15e94386a6baf6b97b315c16888d173c40ae587f5d754792c3229a8.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Task</td><td> $T_1$ </td><td> $T_2$ </td><td> $T_3$ </td><td> $T_4$ </td><td> $T_5$ </td><td> $T_6$ </td><td> $T_7$ </td><td> $T_8$ </td><td> $T_9$ </td></tr><tr><td>Profit</td><td>15</td><td>20</td><td>30</td><td>18</td><td>18</td><td>10</td><td>23</td><td>16</td><td>25</td></tr><tr><td>Deadline</td><td>7</td><td>2</td><td>5</td><td>3</td><td>4</td><td>5</td><td>2</td><td>7</td><td>3</td></tr></table>",
+        "bbox": [
+            275,
+            471,
+            741,
+            532
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "What is the maximum profit earned?",
+        "bbox": [
+            84,
+            541,
+            354,
+            555
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 147",
+        "bbox": [
+            87,
+            568,
+            142,
+            583
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 165",
+        "bbox": [
+            285,
+            568,
+            339,
+            583
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 167",
+        "bbox": [
+            480,
+            568,
+            532,
+            583
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 175",
+        "bbox": [
+            673,
+            568,
+            727,
+            583
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 algorithms greedy-algorithms process-scheduling normal",
+        "bbox": [
+            87,
+            593,
+            428,
+            604
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            610,
+            186,
+            624
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.19.5 Greedy Algorithms: GATE CSE 2018 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            633,
+            531,
+            648
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the weights and values of items listed below. Note that there is only one unit of each item.",
+        "bbox": [
+            84,
+            657,
+            808,
+            672
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/823cd37b8084fe81d8f518dcbc04eeb43584ffcfdec48612966c30cb786d1c5f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Item number</td><td>Weight (in Kgs)</td><td>Value (in rupees)</td></tr><tr><td>1</td><td>10</td><td>60</td></tr><tr><td>2</td><td>7</td><td>28</td></tr><tr><td>3</td><td>4</td><td>20</td></tr><tr><td>4</td><td>2</td><td>24</td></tr></table>",
+        "bbox": [
+            253,
+            684,
+            764,
+            783
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/2f769e8bca71732fec5cc5d3628000e0e08b61f46fbf93b062c0ca02db0cbe30.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            636,
+            932,
+            674
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The task is to pick a subset of these items such that their total weight is no more than 11 Kgs and their total value is maximized. Moreover, no item may be split. The total value of items picked by an optimal algorithm is denoted by $V_{opt}$ . A greedy algorithm sorts the items by their value-to-weight ratios in descending order and packs them greedily, starting from the first item in the ordered list. The total value of items picked by the greedy algorithm is denoted by $V_{greedy}$ .",
+        "bbox": [
+            84,
+            807,
+            929,
+            881
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The value of $V_{opt} - V_{greedy}$ is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            890,
+            349,
+            908
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2018 algorithms greedy-algorithms numerical-answers two-marks",
+        "bbox": [
+            87,
+            920,
+            442,
+            931
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.20",
+        "text_level": 1,
+        "bbox": [
+            68,
+            96,
+            105,
+            108
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Hashing (6)",
+        "text_level": 1,
+        "bbox": [
+            470,
+            95,
+            568,
+            111
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (3Q)",
+        "bbox": [
+            70,
+            119,
+            363,
+            134
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.20.1 Hashing: GATE CSE 1989 | Question: 1-vii, ISRO2015-14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            149,
+            571,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A hash table with ten buckets with one slot per bucket is shown in the following figure. The symbols S1 to S7 initially entered using a hashing function with linear probing. The maximum number of comparisons needed in searching an item that is not present is",
+        "bbox": [
+            84,
+            173,
+            878,
+            217
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/212433c89e92c4a27f6f767fdbafdc0c75b7ccc8827db9f613cb5ff3c0ee0b17.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            152,
+            932,
+            190
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/6f8b4f8693f4245719109f307501531d28ecde23114f00b9d70e284aa09333cd.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>0</td><td>S7</td></tr><tr><td>1</td><td>S1</td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td>S4</td></tr><tr><td>4</td><td>S2</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>S5</td></tr><tr><td>7</td><td></td></tr><tr><td>8</td><td>S6</td></tr><tr><td>9</td><td>S3</td></tr></table>",
+        "bbox": [
+            489,
+            220,
+            531,
+            353
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 4",
+        "bbox": [
+            89,
+            371,
+            127,
+            384
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 5",
+        "bbox": [
+            285,
+            371,
+            321,
+            384
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 6",
+        "bbox": [
+            480,
+            371,
+            515,
+            384
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 3",
+        "bbox": [
+            673,
+            371,
+            710,
+            384
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "hashing isro2015 gate1989 algorithms normal",
+        "bbox": [
+            87,
+            395,
+            327,
+            404
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            410,
+            186,
+            426
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.20.2 Hashing: GATE CSE 1990 | Question: 13b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            435,
+            457,
+            450
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider a hash table with chaining scheme for overflow handling:",
+        "bbox": [
+            85,
+            459,
+            571,
+            473
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/a76a6268f2d9dacc9696aeaecbe10e6ea7af6faef66a4e6f00dda13130c4b21b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            437,
+            932,
+            476
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. What is the worst-case timing complexity of inserting $n$ elements into such a table?",
+            "ii. For what type of instance does this hashing scheme take the worst-case time for insertion?"
+        ],
+        "bbox": [
+            92,
+            484,
+            776,
+            513
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1990 hashing algorithms descriptive",
+        "bbox": [
+            87,
+            538,
+            295,
+            548
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            554,
+            186,
+            568
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.20.3 Hashing: GATE CSE 2021 | Set 1 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            578,
+            500,
+            592
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider a dynamic hashing approach for 4-bit integer keys:",
+        "bbox": [
+            85,
+            602,
+            539,
+            618
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/96a02b75d4dd7a465ca6fbb0e953bd647c77f7c51b3fcebc2869330e125fba90.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            581,
+            932,
+            619
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. There is a main hash table of size 4.",
+            "2. The 2 least significant bits of a key is used to index into the main hash table.",
+            "3. Initially, the main hash table entries are empty.",
+            "4. Thereafter, when more keys are hashed into it, to resolve collisions, the set of all keys corresponding to a main hash table entry is organized as a binary tree that grows on demand.",
+            "5. First, the $3^{\\text{rd}}$ least significant bit is used to divide the keys into left and right subtrees.",
+            "6. To resolve more collisions, each node of the binary tree is further sub-divided into left and right subtrees based on the $4^{th}$ least significant bit.",
+            "7. A split is done only if it is needed, i.e., only when there is a collision."
+        ],
+        "bbox": [
+            89,
+            628,
+            927,
+            760
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following state of the hash table.",
+        "bbox": [
+            85,
+            771,
+            423,
+            786
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/b9bb133194af20071e9f890ca17e3bb3b55362f892f299ad03851ca4d1888bfe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "This flowchart illustrates a hierarchical process or dependency structure with four stages (00, 01, 10, 11), where an initial state is empty and subsequent states are split into two branches with associated values.",
+        "sub_type": "flowchart",
+        "bbox": [
+            352,
+            793,
+            663,
+            863
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following sequences of key insertions can cause the above state of the hash table (assume the keys are in decimal notation)?",
+        "bbox": [
+            84,
+            870,
+            924,
+            899
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 5,9,4,13,10,7",
+        "bbox": [
+            87,
+            908,
+            223,
+            923
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 9,5,10,6,7,1",
+        "bbox": [
+            495,
+            908,
+            618,
+            923
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            71,
+            186,
+            86
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 10,9,6,7,5,13",
+        "bbox": [
+            89,
+            64,
+            223,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 9,5,13,6,10,14",
+        "bbox": [
+            495,
+            64,
+            638,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 multiple-selects algorithms hashing two-marks",
+        "bbox": [
+            87,
+            84,
+            406,
+            93
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            99,
+            186,
+            114
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.20.4 Hashing: GATE CSE 2023 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            123,
+            448,
+            137
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e7bdd2f7004265969853d9f8289cf99ff1e32e181103470e6102bea045e5fcc3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            931,
+            163
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "An algorithm has to store several keys generated by an adversary in a hash table. The adversary is malicious who tries to maximize the number of collisions. Let k be the number of keys, m be the number of slots in the hash table, and k > m.",
+        "bbox": [
+            84,
+            147,
+            878,
+            190
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is the best hashing strategy to counteract the adversary?",
+        "bbox": [
+            85,
+            194,
+            699,
+            209
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Division method, i.e., use the hash function $h(k) = k \\mod m$ .",
+            "B. Multiplication method, i.e., use the hash function $h(k) = \\lfloor m(kA - \\lfloor kA \\rfloor) \\rfloor$ , where $A$ is a carefully chosen constant.",
+            "C. Universal hashing method.",
+            "D. If k is a prime number, use Division method. Otherwise, use Multiplication method."
+        ],
+        "bbox": [
+            85,
+            220,
+            927,
+            292
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 algorithms hashing one-mark",
+        "bbox": [
+            87,
+            318,
+            304,
+            327
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            334,
+            186,
+            347
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.20.5 Hashing: GATE CSE 2026 | Set 2 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            357,
+            500,
+            372
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/0497bafe605832e5201c7d818a4f2cf7e660162600835c1c475052c02830ca42.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            359,
+            931,
+            397
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The keys 5, 28, 19, 15, 26, 33, 12, 17, 10 are inserted into a hash table using the hash function $h(k) = k \\mod 9$ . The collisions are resolved by chaining. After all the keys are inserted, the length of the longest chain is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            84,
+            380,
+            875,
+            426
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 algorithms hashing numerical-answers one-mark",
+        "bbox": [
+            87,
+            439,
+            413,
+            448
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            454,
+            186,
+            469
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.20.6 Hashing: GATE IT 2005 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            78,
+            479,
+            428,
+            492
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/8cd1065fd7eb9dfdd659a74eaca03f425e8557f92731c31b42886647f8b5badc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            482,
+            931,
+            517
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A hash table contains 10 buckets and uses linear probing to resolve collisions. The key values are integers and the hash function used is key%10. If the values 43, 165, 62, 123, 142 are inserted in the table, in what location would the key value 142 be inserted?",
+        "bbox": [
+            84,
+            503,
+            878,
+            547
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            561,
+            126,
+            574
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 3",
+        "bbox": [
+            285,
+            561,
+            319,
+            574
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 4",
+        "bbox": [
+            480,
+            561,
+            515,
+            574
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            675,
+            561,
+            710,
+            574
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 algorithms hashing easy",
+        "bbox": [
+            87,
+            585,
+            277,
+            595
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            600,
+            186,
+            615
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.21",
+        "text_level": 1,
+        "bbox": [
+            68,
+            625,
+            102,
+            638
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Heap Sort (2)",
+        "text_level": 1,
+        "bbox": [
+            463,
+            625,
+            573,
+            641
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.21.1 Heap Sort: GATE CSE 2013 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            78,
+            652,
+            460,
+            666
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/ceb544c0961acc38fd55ed96cb278e18c7dc28138f8dd41db4a41ef8779c54f4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            655,
+            931,
+            692
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The number of elements that can be sorted in $\\Theta(\\log n)$ time using heap sort is",
+        "bbox": [
+            85,
+            676,
+            660,
+            693
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(1)$",
+        "bbox": [
+            89,
+            701,
+            152,
+            717
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(\\sqrt{\\log n})$",
+        "bbox": [
+            497,
+            703,
+            598,
+            719
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta\\left(\\frac{\\log n}{\\log \\log n}\\right)$",
+        "bbox": [
+            90,
+            719,
+            191,
+            739
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta (\\log n)$",
+        "bbox": [
+            497,
+            719,
+            583,
+            733
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 algorithms sorting normal heap-sort",
+        "bbox": [
+            87,
+            743,
+            344,
+            752
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            758,
+            186,
+            773
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.21.2 Heap Sort: GATE CSE 2024 | Set 1 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            782,
+            512,
+            796
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/53492000fa59288ead4c1dd0b67d045f353d661761e458a0eeecc90b8f0b83d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            785,
+            931,
+            821
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "An array [82, 101, 90, 11, 111, 75, 33, 131, 44, 93] is heapified. Which one of the following options represents the first three elements in the heapified array?",
+        "bbox": [
+            84,
+            806,
+            878,
+            837
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 82,90,101",
+        "bbox": [
+            89,
+            849,
+            191,
+            865
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 82,11,93",
+        "bbox": [
+            285,
+            850,
+            379,
+            865
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 131,11,93",
+        "bbox": [
+            480,
+            850,
+            583,
+            865
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 131,111,90",
+        "bbox": [
+            675,
+            850,
+            788,
+            865
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 algorithms heap-sort sorting two-marks",
+        "bbox": [
+            87,
+            875,
+            379,
+            884
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            890,
+            186,
+            904
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.22",
+        "text_level": 1,
+        "bbox": [
+            68,
+            916,
+            104,
+            928
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Huffman Code (6)",
+        "text_level": 1,
+        "bbox": [
+            448,
+            915,
+            589,
+            929
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.22.1 Huffman Code: GATE CSE 1989 | Question: 13a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            103,
+            505,
+            118
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A language uses an alphabet of six letters, $\\{a, b, c, d, e, f\\}$ . The relative frequency of use of each letter of the alphabet in the language is as given below:",
+        "bbox": [
+            84,
+            127,
+            878,
+            157
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/d4890687eb7d18d2a2d59d572ec25181a8f096edf1b91d1f25147da63eb89b91.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>LETTER</td><td>RELATIVE FREQUENCY OF USE</td></tr><tr><td>a</td><td>0.19</td></tr><tr><td>b</td><td>0.05</td></tr><tr><td>c</td><td>0.17</td></tr><tr><td>d</td><td>0.08</td></tr><tr><td>e</td><td>0.40</td></tr><tr><td>f</td><td>0.11</td></tr></table>",
+        "bbox": [
+            282,
+            168,
+            734,
+            306
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/01cabac23dbe2a31fb328073c3756bf32e67b9471e79e85338ee72efe9fd2fca.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            106,
+            931,
+            143
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Design a prefix binary code for the language which would minimize the average length of the encoded words of the language.",
+        "bbox": [
+            84,
+            315,
+            927,
+            344
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "descriptive gate1989 algorithms huffman-code",
+        "bbox": [
+            87,
+            357,
+            319,
+            368
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            374,
+            188,
+            388
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.22.2 Huffman Code: GATE CSE 2007 | Question: 76",
+        "text_level": 1,
+        "bbox": [
+            78,
+            397,
+            495,
+            412
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Suppose the letters $a, b, c, d, e, f$ have probabilities $\\frac{1}{2}, \\frac{1}{4}, \\frac{1}{8}, \\frac{1}{16}, \\frac{1}{32}, \\frac{1}{32}$ , respectively. Which of the following is the Huffman code for the letter $a, b, c, d, e, f$ ?",
+        "bbox": [
+            84,
+            420,
+            729,
+            460
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 0, 10, 110, 1110, 11110, 11111",
+        "bbox": [
+            87,
+            467,
+            344,
+            482
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "c. 11, 10, 01, 001, 0001, 0000",
+        "bbox": [
+            89,
+            485,
+            314,
+            500
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 11, 10, 011, 010, 001, 000",
+        "bbox": [
+            495,
+            467,
+            712,
+            482
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 110, 100, 010, 000, 001, 111",
+        "bbox": [
+            497,
+            485,
+            727,
+            500
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 algorithms greedy-algorithms normal huffman-code",
+        "bbox": [
+            87,
+            509,
+            410,
+            520
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            524,
+            188,
+            540
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/34f7a0a6e9ee3be2215c29b5613fa920a9f27aede43a2c165f8fed8991ad5b58.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            400,
+            931,
+            438
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.22.3 Huffman Code: GATE CSE 2007 | Question: 77",
+        "text_level": 1,
+        "bbox": [
+            78,
+            549,
+            495,
+            562
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Suppose the letters $a, b, c, d, e, f$ have probabilities $\\frac{1}{2}, \\frac{1}{4}, \\frac{1}{8}, \\frac{1}{16}, \\frac{1}{32}, \\frac{1}{32}$ , respectively. What is the average length of the Huffman code for the letters $a, b, c, d, e, f$ ?",
+        "bbox": [
+            84,
+            573,
+            756,
+            623
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            635,
+            126,
+            649
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 2.1875",
+        "bbox": [
+            285,
+            635,
+            361,
+            649
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 2.25",
+        "bbox": [
+            480,
+            635,
+            537,
+            649
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. 1.9375",
+        "bbox": [
+            673,
+            635,
+            751,
+            649
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 algorithms greedy-algorithms normal huffman-code",
+        "bbox": [
+            87,
+            660,
+            408,
+            669
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            676,
+            188,
+            690
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1.22.4 Huffman Code: GATE CSE 2017 | Set 2 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            700,
+            547,
+            714
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A message is made up entirely of characters from the set $X = \\{P, Q, R, S, T\\}$ . The table of probabilities for each of the characters is shown below:",
+        "bbox": [
+            84,
+            724,
+            878,
+            752
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/f589ddc565044073c202dcaa6b9adecacea76b3f4fe90afbdd69e6f5d1680b7f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Character</td><td>Probability</td></tr><tr><td>P</td><td>0.22</td></tr><tr><td>Q</td><td>0.34</td></tr><tr><td>R</td><td>0.17</td></tr><tr><td>S</td><td>0.19</td></tr><tr><td>T</td><td>0.08</td></tr><tr><td>Total</td><td>1.00</td></tr></table>",
+        "bbox": [
+            381,
+            764,
+            633,
+            903
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/9f7bb090a129b72ae9d10082a62d23a5d3dccded0d9110f39d83db5f9039e064.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            552,
+            931,
+            589
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/6874197d8376d2382595aeb1648f1207d6e57bb3ace2d7f906d1fcd73e7fa820.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            703,
+            931,
+            739
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "If a message of 100 characters over X is encoded using Huffman coding, then the expected length of the encoded",
+        "bbox": [
+            84,
+            912,
+            929,
+            929
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (2Q)",
+        "bbox": [
+            70,
+            74,
+            364,
+            89
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "message in bits is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            64,
+            284,
+            78
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 huffman-code numerical-answers algorithms",
+        "bbox": [
+            87,
+            92,
+            386,
+            102
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            108,
+            186,
+            123
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.22.5 Huffman Code: GATE CSE 2021 | Set 2 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            549,
+            146
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/018d591604e1fed2924d210b31416492b6b362459cd3ed8b27efed6b4acc67f6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            931,
+            172
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the string abbccddeee. Each letter in the string must be assigned a binary code satisfying the following properties:",
+        "bbox": [
+            84,
+            156,
+            878,
+            185
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. For any two letters, the code assigned to one letter must not be a prefix of the code assigned to the other letter.",
+            "2. For any two letters of the same frequency, the letter which occurs earlier in the dictionary order is assigned a code whose length is at most the length of the code assigned to the other letter."
+        ],
+        "bbox": [
+            87,
+            195,
+            927,
+            238
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Among the set of all binary code assignments which satisfy the above two properties, what is the minimum length of the encoded string?",
+        "bbox": [
+            84,
+            248,
+            929,
+            277
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 21",
+        "bbox": [
+            87,
+            290,
+            134,
+            304
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. 23",
+        "bbox": [
+            285,
+            290,
+            329,
+            304
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. 25",
+        "bbox": [
+            480,
+            290,
+            524,
+            304
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 30",
+        "bbox": [
+            673,
+            290,
+            719,
+            304
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set2 algorithms huffman-code two-marks",
+        "bbox": [
+            87,
+            315,
+            354,
+            325
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            331,
+            186,
+            345
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.22.6 Huffman Code: GATE IT 2006 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            355,
+            475,
+            369
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/4eb4efb23cf70f45bc7bf68e73bc7db9e5ac2a0a1cb8d8f329c6a3baada355e9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            358,
+            931,
+            395
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The characters $a$ to $h$ have the set of frequencies based on the first 8 Fibonacci numbers as follows",
+        "bbox": [
+            84,
+            378,
+            811,
+            393
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\na: 1, b: 1, c: 2, d: 3, e: 5, f: 8, g: 1 3, h: 2 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            397,
+            453,
+            413
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A Huffman code is used to represent the characters. What is the sequence of characters corresponding to the following code?",
+        "bbox": [
+            84,
+            416,
+            927,
+            445
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "110111100111010",
+        "bbox": [
+            87,
+            448,
+            243,
+            461
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. fdheg",
+        "bbox": [
+            87,
+            477,
+            164,
+            494
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. ecgdf",
+        "bbox": [
+            285,
+            477,
+            357,
+            492
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. dchfg",
+        "bbox": [
+            480,
+            477,
+            552,
+            492
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. fehdg",
+        "bbox": [
+            673,
+            477,
+            749,
+            492
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 algorithms greedy-algorithms normal huffman-code",
+        "bbox": [
+            87,
+            502,
+            401,
+            511
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            517,
+            186,
+            532
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.23",
+        "text_level": 1,
+        "bbox": [
+            68,
+            543,
+            104,
+            555
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Identify Function (38)",
+        "text_level": 1,
+        "bbox": [
+            431,
+            542,
+            605,
+            557
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests:",
+        "bbox": [
+            70,
+            567,
+            196,
+            580
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Test 1 (15Q)",
+        "bbox": [
+            203,
+            568,
+            277,
+            580
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Test 2 (15Q)",
+        "bbox": [
+            292,
+            568,
+            366,
+            580
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Test 3 (9Q)",
+        "bbox": [
+            381,
+            568,
+            450,
+            580
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.23.1 Identify Function: GATE CSE 1989 | Question: 8a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            596,
+            515,
+            610
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "What is the output produced by the following program, when the input is \"HTGATE\"",
+        "bbox": [
+            85,
+            619,
+            694,
+            635
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/5d9240b580df5206c4f6cb828c130eb502e74a46068380235bdfd4a4a8cb4629.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            599,
+            931,
+            635
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Function what (s:string): string;",
+        "bbox": [
+            112,
+            643,
+            290,
+            655
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "var n:integer;",
+        "bbox": [
+            112,
+            655,
+            191,
+            665
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "begin",
+        "bbox": [
+            112,
+            666,
+            147,
+            676
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "n = s.length",
+        "bbox": [
+            132,
+            676,
+            201,
+            687
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "if n <= 1",
+        "bbox": [
+            132,
+            687,
+            179,
+            697
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "then what := s",
+        "bbox": [
+            132,
+            698,
+            213,
+            707
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "else what :=contact (what (substring (s, 2, n)), s.C [1])",
+        "bbox": [
+            132,
+            707,
+            436,
+            720
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "end;",
+        "bbox": [
+            114,
+            720,
+            141,
+            729
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Note",
+        "text_level": 1,
+        "bbox": [
+            85,
+            739,
+            126,
+            752
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "i. type string=record",
+        "bbox": [
+            94,
+            764,
+            248,
+            779
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "length:integer;",
+        "bbox": [
+            213,
+            780,
+            319,
+            793
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C:array[1..100] of char",
+        "bbox": [
+            213,
+            793,
+            379,
+            807
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "end",
+        "bbox": [
+            213,
+            808,
+            243,
+            819
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "ii. Substring (s, i, j): this yields the string made up of the $i^{\\text{th}}$ through $j^{\\text{th}}$ characters in s; for appropriately defined in $i$ and $j$ .",
+            "iii. Contact $(s_1, s_2)$ : this function yields a string of length $s_1$ length $+ s_2$ - length obtained by concatenating $s_1$ with $s_2$ such that $s_1$ precedes $s_2$ ."
+        ],
+        "bbox": [
+            89,
+            821,
+            927,
+            880
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "gate1989",
+        "bbox": [
+            87,
+            906,
+            131,
+            915
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "descriptive",
+        "bbox": [
+            142,
+            906,
+            189,
+            915
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "algorithms",
+        "bbox": [
+            201,
+            906,
+            248,
+            915
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "identify-function",
+        "bbox": [
+            260,
+            906,
+            331,
+            915
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.23.2 Identify Function: GATE CSE 1990 | Question: 11b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            526,
+            104
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The following program computes values of a mathematical function $f(x)$ . Determine the form of $f(x)$ .",
+        "bbox": [
+            85,
+            112,
+            826,
+            131
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/6e510c2743653f79041e24da1217a2f94824ed8bef803864b7dc4737f65e7b11.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nmain ()\n{\n    int m, n; float x, y, t;\n    scanf (\"%f%d\", &x, &n);\n    t = 1; y = 0; m = 1;\n    do\n    {\n        t *= (-x/m);\n        y += t;\n    } while (m++ < n);\n    printf (\"The value of y is %f\", y);\n}\n```",
+        "bbox": [
+            87,
+            138,
+            285,
+            269
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngate1990 descriptive algorithms identify-function\n```",
+        "bbox": [
+            87,
+            292,
+            331,
+            302
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            308,
+            188,
+            321
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.23.3 Identify Function: GATE CSE 1991 | Question: 03-viii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            331,
+            542,
+            346
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following Pascal function:",
+        "bbox": [
+            85,
+            355,
+            371,
+            370
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/9aa044f4bb42cbec8ebe1af856ea7cecf550832e69896848fd59546e057fcdbb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            334,
+            932,
+            372
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Function X(M:integer):integer;",
+        "bbox": [
+            87,
+            378,
+            260,
+            391
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Var i:integer;",
+        "bbox": [
+            89,
+            391,
+            164,
+            402
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nBegin\n  i := 0;\n  while i*i < M\n  do i:= i+1\n  X := i\nend\n```",
+        "bbox": [
+            89,
+            402,
+            176,
+            465
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The function call $X(N)$ , if $N$ is positive, will return",
+        "bbox": [
+            85,
+            475,
+            457,
+            492
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $\\lfloor \\sqrt{N}\\rfloor$ C. $\\lceil \\sqrt{N}\\rceil$",
+        "bbox": [
+            89,
+            501,
+            159,
+            534
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $\\lfloor \\sqrt{N}\\rfloor +1$ D. $\\lceil \\sqrt{N}\\rceil +1$",
+        "bbox": [
+            495,
+            501,
+            598,
+            534
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "E. None of the above",
+        "bbox": [
+            90,
+            534,
+            238,
+            545
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngate1991 algorithms easy identify-function multiple-selects\n```",
+        "bbox": [
+            89,
+            551,
+            383,
+            561
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            567,
+            188,
+            581
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.23.4 Identify Function: GATE CSE 1993 | Question: 7.4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            591,
+            519,
+            605
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "What does the following code do?",
+        "bbox": [
+            85,
+            614,
+            337,
+            630
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/b83e1d837e3fbad11fbb6e71f807ea12b7a174e7b0b388d74f97964955a201f0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            593,
+            932,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```vhdl\nvar a, b: integer;\nbegin\n    a:=a+b;\n    b:=a-b;\n    a:=a-b;\nend;\n```",
+        "bbox": [
+            87,
+            638,
+            184,
+            704
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. exchanges $a$ and $b$",
+            "C. doubles $b$ and stores in $a$",
+            "E. none of the above"
+        ],
+        "bbox": [
+            89,
+            714,
+            289,
+            755
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngate1993 algorithms identify-function easy\n```",
+        "bbox": [
+            87,
+            773,
+            304,
+            783
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            789,
+            188,
+            804
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.23.5 Identify Function: GATE CSE 1994 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            813,
+            505,
+            828
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "What function of x, n is computed by this program?",
+        "bbox": [
+            85,
+            837,
+            463,
+            853
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/8ba88e227fa040590eb2859887144b73c502afac17db3e3f48723de889777b00.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            815,
+            932,
+            853
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nFunction what(x, n:integer): integer:\nVar\n  value : integer\nbegin\n  value := 1\n  if n > 0 then\n```",
+        "bbox": [
+            89,
+            861,
+            292,
+            926
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```vhdl\nbegin\n    if n mod 2 =1 then\n        value := value * x;\n    value := value * what(x*x, n div 2);\nend;\nwhat := value;\nend;\n```",
+        "bbox": [
+            89,
+            64,
+            312,
+            138
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngate1994 algorithms identify-function normal descriptive\n```",
+        "bbox": [
+            87,
+            163,
+            374,
+            174
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            180,
+            181,
+            194
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.23.6 Identify Function: GATE CSE 1995 | Question: 1.4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            203,
+            519,
+            218
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "In the following Pascal program segment, what is the value of X after the execution of the program segment?",
+        "bbox": [
+            85,
+            226,
+            878,
+            242
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/b4d3ac2897a1c2ae964faa388593a1f643781cac4d4cadb70e3a745d42d3a5b8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            206,
+            931,
+            244
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```autohotkey\nX := -10; Y := 20;\nIf X > Y then if X < 0 then X := abs(X) else X := 2*X;\n```",
+        "bbox": [
+            87,
+            252,
+            381,
+            274
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 10",
+        "bbox": [
+            89,
+            289,
+            134,
+            302
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. -20",
+        "bbox": [
+            285,
+            289,
+            342,
+            302
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. -10",
+        "bbox": [
+            480,
+            289,
+            537,
+            302
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. None",
+        "bbox": [
+            673,
+            290,
+            736,
+            302
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngate1995 algorithms identify-function easy\n```",
+        "bbox": [
+            87,
+            313,
+            305,
+            323
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            330,
+            181,
+            343
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.23.7 Identify Function: GATE CSE 1995 | Question: 2.3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            353,
+            519,
+            366
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Assume that $X$ and $Y$ are non-zero positive integers. What does the following Pascal program segment do?",
+        "bbox": [
+            85,
+            377,
+            875,
+            393
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/4277e00011fbb5a8c039775d5a1d3e3d18665f5a78996c3e3cf162dbf9d74c48.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            355,
+            931,
+            393
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nwhile X <> Y do\n  if X > Y then\n    X := X - Y\n  else\n    Y := Y - X;\n  write(X);\n```",
+        "bbox": [
+            87,
+            402,
+            181,
+            467
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. Computes the LCM of two numbers",
+        "bbox": [
+            89,
+            478,
+            354,
+            492
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. Divides the larger number by the smaller number",
+        "bbox": [
+            495,
+            478,
+            848,
+            492
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. Computes the GCD of two numbers",
+        "bbox": [
+            89,
+            496,
+            354,
+            509
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            495,
+            496,
+            645,
+            509
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngate1995 algorithms identify-function normal\n```",
+        "bbox": [
+            87,
+            517,
+            315,
+            528
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            535,
+            181,
+            548
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.23.8 Identify Function: GATE CSE 1995 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            558,
+            505,
+            572
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/90c680501230121e93b631238b680ae6080b9d8a4db85958a754ebf310e9cddd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            561,
+            931,
+            598
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. Consider the following Pascal function where $A$ and $B$ are non-zero positive integers. What is the value of $\\operatorname{GET}(3,2)$ ?",
+        "bbox": [
+            85,
+            605,
+            922,
+            635
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfunction GET(A,B:integer): integer;\nbegin\n  if B=0 then\n    GET:= 1\n  else if A < B then\n    GET:= 0\n  else\n    GET:= GET(A-1, B) + GET(A-1, B-1)\nend;\n```",
+        "bbox": [
+            112,
+            644,
+            352,
+            741
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. The Pascal procedure given for computing the transpose of an $N \\times N$ , $(N > 1)$ matrix $A$ of integers has an error. Find the error and correct it. Assume that the following declaration are made in the main program",
+        "bbox": [
+            85,
+            752,
+            927,
+            781
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```matlab\nconst\n  MAXSIZE=20;\ntype\n  INTARR=array [1..MAXSIZE,1..MAXSIZE] of integer;\nProcedure TRANSPOSE (var A: INTARR; N : integer);\nvar\n  I, J, TMP: integer;\nbegin\n  for I:=1 to N - 1 do\n  for J:=1 to N do\n  begin\n    TMP:= A[I, J];\n    A[I, J]:= A[J, I];\n```",
+        "bbox": [
+            112,
+            790,
+            431,
+            931
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1995 algorithms identify-function normal descriptive",
+        "bbox": [
+            87,
+            124,
+            374,
+            134
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            140,
+            181,
+            154
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.23.9 Identify Function: GATE CSE 1998 | Question: 2.12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            163,
+            529,
+            178
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "What value would the following function return for the input x = 95?",
+        "bbox": [
+            85,
+            187,
+            584,
+            203
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/42c1b38f2fe8a00183dc177a66e31ee23dbe932c9737edd62e90b0f00f0b3b6b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            166,
+            931,
+            204
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```vhdl\nFunction fun (x:integer):integer;\nBegin\n  If x > 100 then fun = x - 10\n  Else fun = fun(fun (x+11))\nEnd;\n```",
+        "bbox": [
+            89,
+            212,
+            268,
+            266
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 89",
+        "bbox": [
+            89,
+            281,
+            134,
+            295
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 90",
+        "bbox": [
+            285,
+            281,
+            329,
+            295
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 91",
+        "bbox": [
+            480,
+            281,
+            522,
+            295
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 92",
+        "bbox": [
+            673,
+            281,
+            719,
+            295
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1998 algorithms recursion identify-function normal",
+        "bbox": [
+            87,
+            305,
+            368,
+            315
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            321,
+            188,
+            336
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.23.10 Identify Function: GATE CSE 1999 | Question: 2.24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            345,
+            539,
+            359
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following $C$ function definition",
+        "bbox": [
+            85,
+            369,
+            403,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/85ad133ede677ea5a8f09dcdc17ffa0ade82d18ba70446bc8d6f6528dbe79ac2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            347,
+            931,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint Trial (int a, int b, int c)\n{\n    if ((a>=b) && (c<b)) return b;\n    else if (a>=b) return Trial(a, c, b);\n    else return Trial(b, a, c);\n}\n```",
+        "bbox": [
+            87,
+            394,
+            295,
+            460
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The functional Trial:",
+        "bbox": [
+            85,
+            467,
+            235,
+            482
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Finds the maximum of $a, b$ , and $c$",
+            "C. Finds the middle number of $a, b, c$"
+        ],
+        "bbox": [
+            87,
+            492,
+            349,
+            526
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Finds the minimum of $a, b$ , and $c$",
+            "D. None of the above"
+        ],
+        "bbox": [
+            495,
+            492,
+            744,
+            524
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1999 algorithms identify-function normal",
+        "bbox": [
+            87,
+            535,
+            315,
+            545
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            551,
+            188,
+            565
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.23.11 Identify Function: GATE CSE 2000 | Question: 2.15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            574,
+            539,
+            589
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose you are given an array $s[1....n]$ and a procedure reverse $(s,i,j)$ which reverses the order of elements in $s$ between positions $i$ and $j$ (both inclusive). What does the following sequence do, where $1 \\leqslant k \\leqslant n$ :",
+        "bbox": [
+            84,
+            599,
+            878,
+            642
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/c5b00caca100833f1de64a9cb7b063aa91f0a94727fe0cff2dae32d02b5b5a05.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            577,
+            931,
+            615
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nreverse (s, 1, k);\nreverse (s, k+1, n);\nreverse (s, 1, n);\n```",
+        "bbox": [
+            126,
+            652,
+            238,
+            685
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Rotates s left by k positions",
+            "C. Reverses all elements of $s$"
+        ],
+        "bbox": [
+            89,
+            695,
+            304,
+            723
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Leaves s unchanged",
+            "D. None of the above"
+        ],
+        "bbox": [
+            495,
+            695,
+            662,
+            722
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 algorithms normal identify-function",
+        "bbox": [
+            87,
+            728,
+            329,
+            738
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            744,
+            188,
+            758
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.23.12 Identify Function: GATE CSE 2003 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            768,
+            514,
+            782
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C function.",
+        "bbox": [
+            85,
+            792,
+            336,
+            807
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For large values of y, the return value of the function f best approximates",
+        "bbox": [
+            85,
+            811,
+            623,
+            827
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/5ab32f1279e4ee6b711e3bf47755b2ec2ec4c16df311d5a9aec203ae21bdcc16.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            770,
+            931,
+            808
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nfloat f,(float x, int y) {\n    float p, s; int i;\n    for (s=1,p=1,i=1; i<y; i++) {\n        p *= x/i;\n        s += p;\n    }\n    return s;\n}\n```",
+        "bbox": [
+            89,
+            834,
+            258,
+            922
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "A[J, I]:= TMP\nend\nend;",
+        "bbox": [
+            112,
+            62,
+            220,
+            97
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $x^{y}$",
+        "bbox": [
+            89,
+            68,
+            134,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $e^{x}$",
+        "bbox": [
+            285,
+            68,
+            327,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\ln (1 + x)$",
+        "bbox": [
+            478,
+            68,
+            576,
+            85
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $x^{x}$",
+        "bbox": [
+            673,
+            68,
+            719,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 algorithms identify-function normal",
+        "bbox": [
+            87,
+            93,
+            331,
+            103
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            181,
+            123
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.23.13 Identify Function: GATE CSE 2003 | Question: 88",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            524,
+            148
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/1aaaa38daed3835531e631a995cec50806c1f367ed5c8ce29f3c26365950062c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            931,
+            172
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In the following $C$ program fragment, $j, k, n$ and TwoLog\\_n are integer variables, and $A$ is an array of integers. The variable $n$ is initialized to an integer $\\geqslant 3$ , and TwoLog\\_n is initialized to the value of $2^{*}\\lceil \\log_{2}(n)\\rceil$",
+        "bbox": [
+            84,
+            157,
+            878,
+            203
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nfor (k = 3; k <= n; k++)\n    A[k] = 0;\nfor (k = 2; k <= TwoLog_n; k++)\n    for (j = k+1; j <= n; j++)\n        A[j] = A[j] || (j%k);\nfor (j = 3; j <= n; j++)\n    if (!A[j]) printf(\"%d\", j);\n```",
+        "bbox": [
+            87,
+            210,
+            270,
+            288
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The set of numbers printed by this program fragment is",
+        "bbox": [
+            85,
+            296,
+            490,
+            311
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{m \\mid m \\leq n, (\\exists i) [m = i!]\\}$",
+        "bbox": [
+            87,
+            319,
+            310,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $\\{m \\mid m \\leq n, (\\exists i) [m = i^2]\\}$",
+        "bbox": [
+            497,
+            319,
+            715,
+            337
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $\\{m \\mid m \\leq n, \\mathrm{m}$ is prime}",
+        "bbox": [
+            90,
+            339,
+            295,
+            356
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. {}",
+        "bbox": [
+            497,
+            339,
+            536,
+            353
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 algorithms identify-function normal",
+        "bbox": [
+            87,
+            363,
+            331,
+            372
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            380,
+            181,
+            394
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.23.14 Identify Function: GATE CSE 2004 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            403,
+            524,
+            418
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program",
+        "bbox": [
+            85,
+            427,
+            334,
+            442
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/bf78d0cd83e2f76cdb718fa33a7ca39f3b3b12c56b30a717ed035811ecc00b15.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            406,
+            931,
+            442
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nmain()\n{\n    int x, y, m, n;\n    scanf(\"%d %d\", &x, &y);\n    /* Assume x>0 and y>0*/\n    m = x; n = y;\n    while(m != n)\n    {\n        if (m > n)\n            m = m-n;\n        else\n            n = n-m;\n    }\n    printf(\"%d\", n);\n}\n```",
+        "bbox": [
+            87,
+            451,
+            247,
+            612
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The program computes",
+        "bbox": [
+            85,
+            622,
+            260,
+            636
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $x + y$ using repeated subtraction",
+        "bbox": [
+            87,
+            646,
+            339,
+            660
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $x \\mod y$ using repeated subtraction",
+        "bbox": [
+            497,
+            646,
+            778,
+            661
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. the greatest common divisor of $x$ and $y$",
+        "bbox": [
+            89,
+            663,
+            381,
+            679
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. the least common multiple of $x$ and $y$",
+        "bbox": [
+            497,
+            663,
+            774,
+            679
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 algorithms normal identify-function",
+        "bbox": [
+            87,
+            687,
+            331,
+            697
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            703,
+            181,
+            718
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.23.15 Identify Function: GATE CSE 2004 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            726,
+            524,
+            741
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What does the following algorithm approximate? (Assume m > 1, $\\epsilon > 0$ ).",
+        "bbox": [
+            85,
+            750,
+            626,
+            766
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/ce3ba0891f13185b8e0cf10b0dfd2b21f6ef86ab72b2e11683aff64af54a508b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            730,
+            931,
+            767
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nx = m;\ny = 1;\nWhile (x-y > ε)\n{\n    x = (x+y)/2;\n    y = m/x;\n}\nprint(x);\n```",
+        "bbox": [
+            112,
+            776,
+            200,
+            862
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $\\log m$",
+        "bbox": [
+            89,
+            876,
+            159,
+            891
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $m^{2}$",
+        "bbox": [
+            285,
+            875,
+            332,
+            889
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $m^{\\frac{1}{2}}$",
+        "bbox": [
+            480,
+            874,
+            531,
+            889
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $m^{\\frac{1}{3}}$",
+        "bbox": [
+            675,
+            874,
+            724,
+            889
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 algorithms identify-function normal",
+        "bbox": [
+            87,
+            901,
+            331,
+            910
+        ],
+        "page_idx": 11
+    }
+]

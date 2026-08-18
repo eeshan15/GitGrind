@@ -1,0 +1,3773 @@
+[
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nreturn (2 * f1(n-1) + 3 * f1(n-2));\n}\nint f2(int n)\n{\n    int i;\n    int X[N], Y[N], Z[N];\n    X[0] = Y[0] = Z[0] = 0;\n    X[1] = 1; Y[1] = 2; Z[1] = 3;\n    for(i = 2; i <= n; i++){\n        X[i] = Y[i-1] + Z[i-2];\n        Y[i] = 2 * X[i];\n        Z[i] = 3 * X[i];\n    }\n    return X[n];\n}\n```",
+        "bbox": [
+            87,
+            62,
+            299,
+            226
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The running time of $f1(n)$ and $f2(n)$ are",
+        "bbox": [
+            85,
+            235,
+            391,
+            252
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n)$ and $\\Theta(n)$",
+        "bbox": [
+            87,
+            260,
+            228,
+            276
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(2^n)$ and $\\Theta(n)$",
+        "bbox": [
+            495,
+            260,
+            638,
+            275
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n)$ and $\\Theta(2^n)$",
+        "bbox": [
+            90,
+            276,
+            231,
+            290
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(2^n)$ and $\\Theta(2^n)$",
+        "bbox": [
+            497,
+            275,
+            643,
+            290
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 algorithms time-complexity normal",
+        "bbox": [
+            89,
+            294,
+            329,
+            304
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            309,
+            188,
+            324
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.43.19 Time Complexity: GATE CSE 2008 | Question: 75",
+        "text_level": 1,
+        "bbox": [
+            78,
+            334,
+            524,
+            347
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C functions:",
+        "bbox": [
+            85,
+            358,
+            342,
+            372
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/fa3fc94b089e0c0a2b28e1389a86811b2d56190954d9efcad45fdedb168bc715.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            337,
+            931,
+            374
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint f1 (int n)\n{\n    if(n == 0 || n == 1)\n        return n;\n    else\n        return (2 * f1(n-1) + 3 * f1(n-2));\n}\nint f2(int n)\n{\n    int i;\n    int X[N], Y[N], Z[N];\n    X[0] = Y[0] = Z[0] = 0;\n    X[1] = 1; Y[1] = 2; Z[1] = 3;\n    for(i = 2; i <= n; i++){\n        X[i] = Y[i-1] + Z[i-2];\n        Y[i] = 2 * X[i];\n        Z[i] = 3 * X[i];\n    }\n    return X[n];\n}\n```",
+        "bbox": [
+            87,
+            381,
+            299,
+            597
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "$f1(8)$ and $f2(8)$ return the values",
+        "bbox": [
+            85,
+            606,
+            342,
+            623
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 1661 and 1640",
+        "bbox": [
+            87,
+            635,
+            221,
+            650
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 59 and 59",
+        "bbox": [
+            285,
+            636,
+            379,
+            649
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 1640 and 1640",
+        "bbox": [
+            480,
+            635,
+            610,
+            649
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 1640 and 1661",
+        "bbox": [
+            675,
+            635,
+            805,
+            649
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 normal algorithms time-complexity",
+        "bbox": [
+            87,
+            660,
+            329,
+            669
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            676,
+            188,
+            690
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.43.20 Time Complexity: GATE CSE 2010 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            700,
+            524,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Two alternative packages A and B are available for processing a database having $10^{k}$ records. Package A requires $0.0001n^{2}$ time units and package B requires $10n\\log_{10}n$ time units to process n records. What is the smallest value of k for which package B will be preferred over A?",
+        "bbox": [
+            84,
+            726,
+            878,
+            774
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 12",
+        "bbox": [
+            89,
+            787,
+            134,
+            800
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 10",
+        "bbox": [
+            285,
+            787,
+            329,
+            800
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 6",
+        "bbox": [
+            480,
+            787,
+            515,
+            800
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 5",
+        "bbox": [
+            675,
+            787,
+            709,
+            800
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 algorithms time-complexity easy",
+        "bbox": [
+            87,
+            812,
+            319,
+            821
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            828,
+            188,
+            842
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1.43.21 Time Complexity: GATE CSE 2014 | Set 1 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            851,
+            576,
+            866
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following pseudo code. What is the total number of multiplications to be performed?",
+        "bbox": [
+            85,
+            874,
+            793,
+            890
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D = 2",
+        "bbox": [
+            89,
+            899,
+            124,
+            909
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "for i = 1 to n do",
+        "bbox": [
+            90,
+            910,
+            176,
+            920
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/c001920349e36087ee8846a19adab04b56517f3b391331a3012dcd475aad35f3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            701,
+            931,
+            739
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/83c4f055917ce11437f310a84dbde7a620517bc08c457b27d467c017181ac472.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            853,
+            931,
+            891
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "for j = i to n do",
+        "bbox": [
+            102,
+            64,
+            188,
+            74
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "for k = j + 1 to n do",
+        "bbox": [
+            117,
+            76,
+            226,
+            85
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "$D = D^{*}3$",
+        "bbox": [
+            132,
+            86,
+            188,
+            96
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Half of the product of the 3 consecutive integers.",
+            "B. One-third of the product of the 3 consecutive integers.",
+            "C. One-sixth of the product of the 3 consecutive integers.",
+            "D. None of the above."
+        ],
+        "bbox": [
+            87,
+            109,
+            507,
+            165
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 algorithms time-complexity normal",
+        "bbox": [
+            87,
+            192,
+            349,
+            201
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            207,
+            188,
+            223
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.43.22 Time Complexity: GATE CSE 2015 | Set 1 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            78,
+            232,
+            576,
+            247
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "An algorithm performs $(\\log N)^{\\frac{1}{2}}$ find operations, N insert operations, $(\\log N)^{\\frac{1}{2}}$ delete operations, and $(\\log N)^{\\frac{1}{2}}$ decrease-key operations on a set of data items with keys drawn from a linearly ordered set. For a delete operation, a pointer is provided to the record that must be deleted. For the decrease-key operation, a pointer is provided to the record that has its key decreased. Which one of the following data structures is the most suited for the algorithm to use, if the goal is to achieve the best total asymptotic complexity considering all the operations?",
+        "bbox": [
+            84,
+            258,
+            929,
+            350
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. Unsorted array",
+        "bbox": [
+            87,
+            359,
+            216,
+            372
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. Sorted array",
+        "bbox": [
+            89,
+            374,
+            200,
+            387
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. Min - heap",
+        "bbox": [
+            495,
+            359,
+            593,
+            372
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. Sorted doubly linked list",
+        "bbox": [
+            495,
+            374,
+            682,
+            387
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 algorithms data-structures normal time-complexity",
+        "bbox": [
+            87,
+            391,
+            426,
+            402
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            407,
+            188,
+            422
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.43.23 Time Complexity: GATE CSE 2015 | Set 2 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            431,
+            576,
+            446
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "An unordered list contains $n$ distinct elements. The number of comparisons to find an element in this list that is neither maximum nor minimum is",
+        "bbox": [
+            84,
+            454,
+            878,
+            483
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n \\log n)$",
+        "bbox": [
+            87,
+            496,
+            191,
+            513
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n)$",
+        "bbox": [
+            285,
+            496,
+            349,
+            513
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta (\\log n)$",
+        "bbox": [
+            480,
+            496,
+            568,
+            514
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(1)$",
+        "bbox": [
+            673,
+            496,
+            737,
+            513
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 algorithms time-complexity easy",
+        "bbox": [
+            87,
+            522,
+            339,
+            532
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            536,
+            188,
+            552
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.43.24 Time Complexity: GATE CSE 2017 | Set 2 | Question: 03",
+        "text_level": 1,
+        "bbox": [
+            78,
+            561,
+            576,
+            576
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Match the algorithms with their time complexities:",
+        "bbox": [
+            85,
+            585,
+            448,
+            600
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/9546b01e41370cbedfbb69a3ad9992ed3663bff8df4fbb0ec170f22dcbae80a7.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Algorithms</td><td>Time Complexity</td></tr><tr><td>P. Tower of Hanoi with n disks</td><td>i.  $\\Theta(n^{2})$ </td></tr><tr><td>Q. Binary Search given n sorted numbers</td><td>ii.  $\\Theta(n \\log n)$ </td></tr><tr><td>R. Heap sort given n numbers at the worst case</td><td>iii.  $\\Theta(2^{n})$ </td></tr><tr><td>S. Addition of two  $n \\times n$  matrices</td><td>iv.  $\\Theta(\\log n)$ </td></tr></table>",
+        "bbox": [
+            206,
+            611,
+            811,
+            714
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $P \\to (iii)$ $Q \\to (iv)$ $r \\to (i)$ $S \\to (ii)$",
+            "B. $P\\to (iv)$ $Q\\to (iii)$ $r\\to (i)$ $S\\to (ii)$",
+            "C. $P\\to (iii)$ $Q\\to (iv)$ $r\\to (ii)$ $S\\to (i)$",
+            "D. $P\\to (iv)$ $Q\\to (iii)$ $r\\to (ii)$ $S\\to (i)$"
+        ],
+        "bbox": [
+            87,
+            723,
+            450,
+            786
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 algorithms time-complexity match-the-following easy",
+        "bbox": [
+            87,
+            809,
+            436,
+            820
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            826,
+            188,
+            840
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1.43.25 Time Complexity: GATE CSE 2017 | Set 2 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            78,
+            849,
+            576,
+            864
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C function",
+        "bbox": [
+            85,
+            872,
+            329,
+            888
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "int fun(int n) {",
+        "bbox": [
+            89,
+            897,
+            168,
+            909
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "int i, j;",
+        "bbox": [
+            104,
+            910,
+            139,
+            920
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "for(i=1; i<=n; i++) {",
+        "bbox": [
+            104,
+            920,
+            211,
+            931
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/6b2a2dcbeb006a5585826877c5f91731bafb1810afdd072077e38d736b297e6a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            852,
+            931,
+            890
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/a157c878ed8e789c6a794bf588e75c4c65f11dc99df8a68fa9b7e9a7efa17210.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            434,
+            931,
+            472
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/1bb45a0ef9677c79d0daec8ba03ca5b62ee6b6bba67cbd9e321594d7cef2cf05.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            564,
+            931,
+            602
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nfor (j=1; j<n; j+=i) {\n            printf(\"%d %d\", i, j);\n        }\n    }\n}\n```",
+        "bbox": [
+            89,
+            62,
+            243,
+            121
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Time complexity of fun in terms of $\\Theta$ notation is",
+        "bbox": [
+            85,
+            128,
+            445,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Theta(n\\sqrt{n})$",
+            "C. $\\Theta(n \\log n)$"
+        ],
+        "bbox": [
+            89,
+            153,
+            194,
+            184
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\Theta(n^{2})$",
+            "D. $\\Theta(n^{2}\\log n)$"
+        ],
+        "bbox": [
+            495,
+            153,
+            603,
+            185
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 algorithms time-complexity",
+        "bbox": [
+            87,
+            188,
+            305,
+            198
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            204,
+            188,
+            219
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.43.26 Time Complexity: GATE CSE 2019 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            226,
+            524,
+            242
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/6c5a47c8b433e806c921c04f997d3fcfbe2ffc11931db04a79612ae47a740c46.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            230,
+            932,
+            268
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "There are n unsorted arrays: $A_{1}, A_{2}, \\ldots, A_{n}$ . Assume that n is odd. Each of $A_{1}, A_{2}, \\ldots, A_{n}$ contains n distinct elements. There are no common elements between any two arrays. The worst-case time complexity of computing the median of the medians of $A_{1}, A_{2}, \\ldots, A_{n}$ is",
+        "bbox": [
+            84,
+            252,
+            878,
+            296
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $O(n)$",
+            "C. $O(n^{2})$"
+        ],
+        "bbox": [
+            89,
+            305,
+            159,
+            336
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $O(n\\log n)$",
+            "D. $\\Omega(n^{2}\\log n)$"
+        ],
+        "bbox": [
+            495,
+            305,
+            603,
+            336
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 algorithms time-complexity two-marks",
+        "bbox": [
+            87,
+            340,
+            344,
+            350
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            356,
+            188,
+            370
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.43.27 Time Complexity: GATE CSE 2024 | Set 1 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            378,
+            568,
+            394
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/7a6b30be29627c005f9902bb68e5dcfabfa306910c47545bd47dbd3df8898f57.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            382,
+            932,
+            420
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Given an integer array of size N, we want to check if the array is sorted (in either ascending or descending order). An algorithm solves this problem by making a single pass through the array and comparing each element of the array only with its adjacent elements. The worst-case time complexity of this algorithm is",
+        "bbox": [
+            84,
+            403,
+            878,
+            447
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. both $\\mathrm{O}(N)$ and $\\Omega (N)$",
+        "bbox": [
+            89,
+            456,
+            270,
+            471
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Omega(N)$ but not $\\mathrm{O}(N)$",
+        "bbox": [
+            89,
+            471,
+            258,
+            486
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $\\mathrm{O}(N)$ but not $\\Omega (N)$",
+        "bbox": [
+            495,
+            456,
+            665,
+            471
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. neither $\\mathrm{O}(N)$ nor $\\Omega (N)$",
+        "bbox": [
+            495,
+            471,
+            690,
+            486
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 algorithms time-complexity one-mark",
+        "bbox": [
+            87,
+            490,
+            359,
+            500
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            505,
+            188,
+            520
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.43.28 Time Complexity: GATE CSE 2026 | Set 1 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            78,
+            530,
+            568,
+            543
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/f11436edcf7064ac5018ee183add0270458501b2af9e5df3324e7f431519c89d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            532,
+            932,
+            570
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following recurrence relations:",
+        "bbox": [
+            85,
+            553,
+            406,
+            568
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "For all n > 1,",
+        "bbox": [
+            85,
+            571,
+            191,
+            585
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} T _ {1} (n) = 4 T _ {1} \\left(\\frac {n}{2}\\right) + T _ {2} (n) \\\\ T _ {2} (n) = 5 T _ {2} \\left(\\frac {n}{4}\\right) + \\Theta \\left(\\log_ {2} n\\right) \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            381,
+            597,
+            623,
+            640
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Assume that for all $n \\leq 1, T_1(n) = 1$ and $T_2(n) = 1$ .",
+        "bbox": [
+            84,
+            662,
+            485,
+            679
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options is correct?",
+        "bbox": [
+            85,
+            681,
+            420,
+            695
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $T_{1}(n) = \\Theta (n^{2})$",
+            "C. $T_{1}(n) = \\Theta \\left(n^{\\log_{4}5}\\right)$"
+        ],
+        "bbox": [
+            87,
+            705,
+            253,
+            739
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $T_{1}(n) = \\Theta (n^{2}\\log_{2}n)$",
+        "bbox": [
+            495,
+            705,
+            678,
+            720
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $T_{1}(n) = \\Theta \\left(n^{\\log_{4}5}\\log_{2}n\\right)$",
+        "bbox": [
+            495,
+            720,
+            702,
+            739
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 algorithms time-complexity one-mark",
+        "bbox": [
+            87,
+            742,
+            359,
+            751
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            758,
+            188,
+            771
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1.43.29 Time Complexity: GATE CSE 2026 | Set 2 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            781,
+            578,
+            796
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/a14359bf3b65f66c658995c9900b3e9480d6495f90ea82cf5255dbd4e6f783fa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            783,
+            932,
+            821
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider an array A of integers of size n. The indices of A run from 1 to n. An algorithm is to be designed to check whether A satisfies the condition given below.",
+        "bbox": [
+            84,
+            806,
+            878,
+            837
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$\\forall i, j \\in \\{1, \\dots, n - 1\\}$ such that $i > j$ , $(A[i + 1] - A[i]) > (A[j + 1] - A[j])$",
+        "bbox": [
+            84,
+            839,
+            680,
+            858
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following gives the worst case time complexity of the fastest algorithm that can be designed for the problem?",
+        "bbox": [
+            84,
+            859,
+            927,
+            888
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Theta(n)$",
+            "C. $\\Theta(n\\log(n))$"
+        ],
+        "bbox": [
+            89,
+            897,
+            201,
+            928
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\Theta (\\log (n))$",
+            "D. $\\Theta(n^{2})$"
+        ],
+        "bbox": [
+            495,
+            897,
+            594,
+            928
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            87,
+            181,
+            100
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.43.30 Time Complexity: GATE IT 2007 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            505,
+            125
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Exponentiation is a heavily used operation in public key cryptography. Which of the following options is the tightest upper bound on the number of multiplications required to compute $b^{n} \\mod m, 0 \\leq b, n \\leq m$ ?",
+        "bbox": [
+            84,
+            134,
+            875,
+            163
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/0eaee1153a58869f9f473763be00d577b21791815c343aec59dc53d4c9329175.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            932,
+            150
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/f83cd71a8ddccb2f7cbc6d08ab2ac51e7980fe5220958c10ef21c21bf4ff6ce9.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "gateit-2007 algorithms time-complexity normal"
+        ],
+        "content": "",
+        "bbox": [
+            89,
+            172,
+            181,
+            228
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9358b14013ec3168346293f383cf2dc192a3968d1b30de162850f004ff4b8f72.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            495,
+            172,
+            574,
+            201
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            247,
+            181,
+            262
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.43.31 Time Complexity: GATE IT 2007 | Question: 81",
+        "text_level": 1,
+        "bbox": [
+            78,
+            271,
+            502,
+            286
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $P_{1}, P_{2}, \\ldots, P_{n}$ be n points in the xy-plane such that no three of them are collinear. For every pair of points $P_{i}$ and $P_{j}$ , let $L_{ij}$ be the line passing through them. Let $L_{ab}$ be the line with the steepest gradient among all $n(n-1)/2$ lines.",
+        "bbox": [
+            84,
+            294,
+            878,
+            340
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/e8be65dfc20d5dedfbf4a29d216ec3db5a8429cce8d7423d239953c7ced549fa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            274,
+            932,
+            312
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The time complexity of the best algorithm for finding $P_{a}$ and $P_{b}$ is",
+        "bbox": [
+            85,
+            343,
+            564,
+            359
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/da8dded2e3e8565ab1e4502546f971716564457c3013171be1a8d119e6786ea4.jpg",
+        "image_caption": [],
+        "image_footnote": [
+            "gateit-2007 algorithms time-complexity normal"
+        ],
+        "content": "",
+        "bbox": [
+            87,
+            368,
+            201,
+            401
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/8e134a2a98ddc184e4be134f807d5c2c9e1339a6218c7bcf539b9ee68ae5064d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            495,
+            368,
+            600,
+            399
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            421,
+            181,
+            435
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.44",
+        "text_level": 1,
+        "bbox": [
+            68,
+            445,
+            105,
+            458
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Topological Sort (4)",
+        "text_level": 1,
+        "bbox": [
+            438,
+            445,
+            600,
+            460
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (7Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            469,
+            265,
+            484
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.44.1 Topological Sort: GATE CSE 2007 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            498,
+            502,
+            514
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the DAG with $V = \\{1,2,3,4,5,6\\}$ shown below.",
+        "bbox": [
+            85,
+            522,
+            527,
+            540
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/2cda137de515f32c9a9c415aa872a2c4771fce75306c581301047e8e836954c4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            501,
+            932,
+            539
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/be3c0b590025d2ce0920dfc0ee4d5b7641f4efcfe9fae7288f84361ee874bbc0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  1[\"Node 1\"] --> 2[\"Node 2\"]\n  n1[\"1\"] --> 3[\"Node 3\"]\n  n2[\"2\"] --> 5[\"Node 5\"]\n  n3[\"3\"] --> 4[\"Node 4\"]\n  n4[\"4\"] --> 6[\"Node 6\"]\n  n5[\"5\"] --> n6[\"6\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            416,
+            551,
+            556,
+            652
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is not a topological ordering?",
+        "bbox": [
+            85,
+            666,
+            465,
+            682
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 123456",
+        "bbox": [
+            87,
+            694,
+            191,
+            707
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 132456",
+        "bbox": [
+            285,
+            694,
+            386,
+            707
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 132465",
+        "bbox": [
+            480,
+            694,
+            581,
+            707
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 324165",
+        "bbox": [
+            673,
+            694,
+            776,
+            707
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 algorithms graph-algorithms topological-sort easy",
+        "bbox": [
+            87,
+            719,
+            401,
+            729
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            735,
+            181,
+            749
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1.44.2 Topological Sort: GATE CSE 2014 | Set 1 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            758,
+            566,
+            773
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the directed graph below given.",
+        "bbox": [
+            85,
+            782,
+            388,
+            796
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/be0296ca85fc0717f25249bafed34c89c2a304c52602bc5faab8ca3aed4a4a83.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            761,
+            932,
+            799
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/6ae456226531866d28a1971f50c21a100c0f3c75802f6aa1d0b95e65bd78fc41.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            92,
+            805,
+            189,
+            872
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE?",
+        "bbox": [
+            85,
+            882,
+            356,
+            897
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. The graph does not have any topological ordering.",
+        "bbox": [
+            85,
+            907,
+            480,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2026-set2 algorithms time-complexity two-marks",
+        "bbox": [
+            87,
+            71,
+            364,
+            81
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Both PQRS and SRQP are topological orderings.",
+            "C. Both PSRQ and SPRQ are topological orderings.",
+            "D. PSRQ is the only topological ordering."
+        ],
+        "bbox": [
+            87,
+            64,
+            470,
+            106
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 graph-algorithms easy topological-sort",
+        "bbox": [
+            87,
+            131,
+            364,
+            143
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            149,
+            188,
+            163
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.44.3 Topological Sort: GATE CSE 2016 | Set 1 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            172,
+            564,
+            187
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following directed graph:",
+        "bbox": [
+            85,
+            195,
+            366,
+            211
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/828a2f7ec02301da0f49dc5a5fd2dfe24163e19e60e00ea637b96cf35452925a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  a[\"a\"] --> b[\"b\"]\n  b --> c[\"c\"]\n  c --> f[\"f\"]\n  d[\"d\"] --> e[\"e\"]\n  e --> f\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            396,
+            217,
+            571,
+            296
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The number of different topological orderings of the vertices of the graph is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            307,
+            757,
+            321
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 algorithms graph-algorithms normal numerical-answers topological-sort",
+        "bbox": [
+            87,
+            340,
+            522,
+            351
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            356,
+            188,
+            371
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.44.4 Topological Sort: GATE DS&AI 2024 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            380,
+            527,
+            394
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the directed acyclic graph (DAG) below:",
+        "bbox": [
+            85,
+            403,
+            450,
+            418
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/3a0deb6ecdda15bd49ca80766ee83833808e3c8768e1b3678ce9f077772c2988.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  P[\"P\"] --> Q[\"Q\"]\n  R[\"R\"] --> Q\n  Q --> S[\"S\"]\n  Q --> V[\"V\"]\n  S --> U[\"U\"]\n  V --> T[\"T\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            389,
+            425,
+            576,
+            604
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is/are valid vertex orderings that can be obtained from a topological sort of the DAG?",
+        "bbox": [
+            85,
+            614,
+            868,
+            629
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. PQRSTUV",
+        "bbox": [
+            87,
+            638,
+            231,
+            650
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "c. PQRSVUT",
+        "bbox": [
+            90,
+            652,
+            230,
+            666
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate-ds-ai-2024 algorithms topological-sort directed-acyclic-graph multiple-selects two-marks",
+        "bbox": [
+            87,
+            671,
+            532,
+            681
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. P R Q V SUT",
+        "bbox": [
+            495,
+            638,
+            628,
+            652
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. PRQSVTU",
+        "bbox": [
+            497,
+            652,
+            636,
+            667
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            686,
+            188,
+            701
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.45",
+        "text_level": 1,
+        "bbox": [
+            68,
+            712,
+            105,
+            725
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Tree Traversal (1)",
+        "text_level": 1,
+        "bbox": [
+            447,
+            712,
+            591,
+            726
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.45.1 Tree Traversal: GATE DA 2026 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            738,
+            485,
+            752
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "You are given the following Pre-order and In-order traversals of a Binary Tree T with nodes E, F, G, P, Q, R, S.",
+        "bbox": [
+            85,
+            762,
+            873,
+            792
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Pre-order: P Q S E R F G",
+        "bbox": [
+            339,
+            802,
+            673,
+            818
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In-order: $S Q E P F R G$",
+        "bbox": [
+            339,
+            821,
+            673,
+            838
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/8770dcbab811b70eeee96853d0e741f52ac90b7d9d84750dbf4f3ca22fc15e82.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            175,
+            932,
+            213
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are true about the Binary Tree T?",
+        "bbox": [
+            84,
+            861,
+            601,
+            876
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Node P is the root of T",
+        "bbox": [
+            87,
+            885,
+            273,
+            900
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. The Post-order traversal of $T$ is:",
+        "bbox": [
+            495,
+            885,
+            739,
+            900
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. Node Q has only one child",
+        "bbox": [
+            87,
+            914,
+            295,
+            929
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. The left subtree of node $R$",
+        "bbox": [
+            495,
+            914,
+            759,
+            928
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/98e5b2695e6f45c20d42fbdf94a98ce45f38544e11e2c2b780f5afef47c5bae6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            382,
+            932,
+            420
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/effe579c56e8b2628810975f497fe002b13779eb809cf76e0a1d2557623294fd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            741,
+            932,
+            777
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "page_number",
+        "text": "S",
+        "bbox": [
+            927,
+            889,
+            944,
+            903
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1.46",
+        "text_level": 1,
+        "bbox": [
+            68,
+            125,
+            104,
+            138
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Uniform Hashing (1)",
+        "text_level": 1,
+        "bbox": [
+            436,
+            125,
+            601,
+            140
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1.46.1 Uniform Hashing: GATE CSE 2022 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            80,
+            150,
+            505,
+            165
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/24e871d04ec0249e488194b94a4d8b327692eda99b7e80e9f260b15ebc2fd7d8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            154,
+            932,
+            192
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Suppose we are given n keys, m hash table slots, and two simple uniform hash functions $h_{1}$ and $h_{2}$ . Further suppose our hashing scheme uses $h_{1}$ for the odd keys and $h_{2}$ for the even keys. What is the expected number of keys in a slot?",
+        "bbox": [
+            84,
+            175,
+            875,
+            219
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{m}{n}$",
+        "bbox": [
+            89,
+            232,
+            132,
+            250
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{n}{m}$",
+        "bbox": [
+            285,
+            233,
+            326,
+            250
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{2n}{m}$",
+        "bbox": [
+            480,
+            232,
+            522,
+            250
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{n}{2m}$",
+        "bbox": [
+            675,
+            233,
+            722,
+            250
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 algorithms hashing uniform-hashing one-mark",
+        "bbox": [
+            87,
+            257,
+            384,
+            267
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            273,
+            186,
+            288
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/9457a0db80846479a7a346886051d5ad45b44927dbe3f04a59a1ab18af9937e1.jpg",
+        "table_caption": [
+            "Answer Keys"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.1.1</td><td>N/A</td></tr><tr><td>1.1.6</td><td>29</td></tr><tr><td>1.2.3</td><td>C</td></tr><tr><td>1.2.8</td><td>C</td></tr><tr><td>1.3.4</td><td>D</td></tr><tr><td>1.3.9</td><td>D</td></tr><tr><td>1.3.14</td><td>B</td></tr><tr><td>1.3.19</td><td>A</td></tr><tr><td>1.4.2</td><td>C</td></tr><tr><td>1.6.4</td><td>A</td></tr><tr><td>1.9.1</td><td>C</td></tr><tr><td>1.12.1</td><td>B;D</td></tr><tr><td>1.13.4</td><td>A</td></tr><tr><td>1.15.2</td><td>10:10</td></tr><tr><td>1.16.5</td><td>B</td></tr><tr><td>1.16.10</td><td>A</td></tr><tr><td>1.17.5</td><td>B</td></tr><tr><td>1.17.10</td><td>C</td></tr><tr><td>1.18.4</td><td>C</td></tr><tr><td>1.18.9</td><td>B</td></tr><tr><td>1.18.14</td><td>A</td></tr><tr><td>1.18.19</td><td>A</td></tr><tr><td>1.19.1</td><td>A</td></tr><tr><td>1.20.1</td><td>B</td></tr><tr><td>1.20.6</td><td>D</td></tr><tr><td>1.22.3</td><td>D</td></tr><tr><td>1.23.2</td><td>N/A</td></tr></table>",
+        "bbox": [
+            63,
+            334,
+            231,
+            915
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/cb024e6cacfbfa3293e592d7c3f242d5fbd7ddc088d0489b3adf2320b5ee4680.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.1.2</td><td>N/A</td></tr><tr><td>1.1.7</td><td>A;C</td></tr><tr><td>1.2.4</td><td>A</td></tr><tr><td>1.2.9</td><td>C</td></tr><tr><td>1.3.5</td><td>B</td></tr><tr><td>1.3.10</td><td>A</td></tr><tr><td>1.3.15</td><td>D</td></tr><tr><td>1.3.20</td><td>A</td></tr><tr><td>1.5.1</td><td>B;C</td></tr><tr><td>1.7.1</td><td>D</td></tr><tr><td>1.9.2</td><td>D</td></tr><tr><td>1.12.2</td><td>75:75</td></tr><tr><td>1.13.5</td><td>D</td></tr><tr><td>1.16.1</td><td>B</td></tr><tr><td>1.16.6</td><td>A</td></tr><tr><td>1.17.1</td><td>B</td></tr><tr><td>1.17.6</td><td>A</td></tr><tr><td>1.17.11</td><td>D</td></tr><tr><td>1.18.5</td><td>D</td></tr><tr><td>1.18.10</td><td>19</td></tr><tr><td>1.18.15</td><td>5040</td></tr><tr><td>1.18.20</td><td>D</td></tr><tr><td>1.19.2</td><td>B</td></tr><tr><td>1.20.2</td><td>N/A</td></tr><tr><td>1.21.1</td><td>C</td></tr><tr><td>1.22.4</td><td>225</td></tr><tr><td>1.23.3</td><td>C</td></tr></table>",
+        "bbox": [
+            255,
+            336,
+            442,
+            915
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/2328f6c29d6a7b59f3ac14d094fa21479e4fd8b0b804af872b8a36f5456eb15c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.1.3</td><td>B</td></tr><tr><td>1.1.8</td><td>B</td></tr><tr><td>1.2.5</td><td>B</td></tr><tr><td>1.3.1</td><td>A;B</td></tr><tr><td>1.3.6</td><td>A</td></tr><tr><td>1.3.11</td><td>C</td></tr><tr><td>1.3.16</td><td>A</td></tr><tr><td>1.3.21</td><td>D</td></tr><tr><td>1.6.1</td><td>B</td></tr><tr><td>1.7.2</td><td>7 : 7</td></tr><tr><td>1.9.3</td><td>C</td></tr><tr><td>1.13.1</td><td>N/A</td></tr><tr><td>1.14.1</td><td>929 : 929</td></tr><tr><td>1.16.2</td><td>C</td></tr><tr><td>1.16.7</td><td>34</td></tr><tr><td>1.17.2</td><td>D</td></tr><tr><td>1.17.7</td><td>A;B</td></tr><tr><td>1.18.1</td><td>N/A</td></tr><tr><td>1.18.6</td><td>D</td></tr><tr><td>1.18.11</td><td>D</td></tr><tr><td>1.18.16</td><td>C</td></tr><tr><td>1.18.21</td><td>D</td></tr><tr><td>1.19.3</td><td>D</td></tr><tr><td>1.20.3</td><td>C</td></tr><tr><td>1.21.2</td><td>D</td></tr><tr><td>1.22.5</td><td>B</td></tr><tr><td>1.23.4</td><td>A</td></tr></table>",
+        "bbox": [
+            463,
+            336,
+            613,
+            915
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/cb568abb481f130eb524999a94ba05c74acd9dd2856c57f45ebe3ce38ade68d7.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.1.4</td><td>C</td></tr><tr><td>1.2.1</td><td>N/A</td></tr><tr><td>1.2.6</td><td>A</td></tr><tr><td>1.3.2</td><td>B</td></tr><tr><td>1.3.7</td><td>C</td></tr><tr><td>1.3.12</td><td>C</td></tr><tr><td>1.3.17</td><td>A;C</td></tr><tr><td>1.3.22</td><td>A</td></tr><tr><td>1.6.2</td><td>C</td></tr><tr><td>1.7.3</td><td>A;C</td></tr><tr><td>1.10.1</td><td>N/A</td></tr><tr><td>1.13.2</td><td>B</td></tr><tr><td>1.14.2</td><td>A</td></tr><tr><td>1.16.3</td><td>C</td></tr><tr><td>1.16.8</td><td>150</td></tr><tr><td>1.17.3</td><td>A</td></tr><tr><td>1.17.8</td><td>A</td></tr><tr><td>1.18.2</td><td>C</td></tr><tr><td>1.18.7</td><td>C</td></tr><tr><td>1.18.12</td><td>31</td></tr><tr><td>1.18.17</td><td>60</td></tr><tr><td>1.18.22</td><td>D</td></tr><tr><td>1.19.4</td><td>A</td></tr><tr><td>1.20.4</td><td>C</td></tr><tr><td>1.22.1</td><td>2.33</td></tr><tr><td>1.22.6</td><td>A</td></tr><tr><td>1.23.5</td><td>N/A</td></tr></table>",
+        "bbox": [
+            635,
+            336,
+            779,
+            915
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/16a33a15d632f5a038f67b5d472731ca60c0a2a75068b7f5bb3792df386e9974.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.1.5</td><td>12</td></tr><tr><td>1.2.2</td><td>B</td></tr><tr><td>1.2.7</td><td>C</td></tr><tr><td>1.3.3</td><td>X</td></tr><tr><td>1.3.8</td><td>C</td></tr><tr><td>1.3.13</td><td>D</td></tr><tr><td>1.3.18</td><td>A;D</td></tr><tr><td>1.4.1</td><td>B</td></tr><tr><td>1.6.3</td><td>10:10</td></tr><tr><td>1.8.1</td><td>11 : 11</td></tr><tr><td>1.11.1</td><td>TBA</td></tr><tr><td>1.13.3</td><td>D</td></tr><tr><td>1.15.1</td><td>13</td></tr><tr><td>1.16.4</td><td>B</td></tr><tr><td>1.16.9</td><td>C</td></tr><tr><td>1.17.4</td><td>A</td></tr><tr><td>1.17.9</td><td>A</td></tr><tr><td>1.18.3</td><td>C</td></tr><tr><td>1.18.8</td><td>C</td></tr><tr><td>1.18.13</td><td>D</td></tr><tr><td>1.18.18</td><td>6:6</td></tr><tr><td>1.18.23</td><td>B</td></tr><tr><td>1.19.5</td><td>16</td></tr><tr><td>1.20.5</td><td>3:3</td></tr><tr><td>1.22.2</td><td>A</td></tr><tr><td>1.23.1</td><td>N/A</td></tr><tr><td>1.23.6</td><td>C</td></tr></table>",
+        "bbox": [
+            800,
+            336,
+            934,
+            915
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "contains the node $G$",
+        "bbox": [
+            517,
+            64,
+            660,
+            78
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "gateda-2026 algorithms tree-traversal multiple-selects one-mark",
+        "bbox": [
+            89,
+            84,
+            403,
+            93
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            100,
+            186,
+            114
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/57214393376d6db4e560054a187e7f7ce8dcddbf618ab643cf757600fc60047a.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.23.7</td><td>C</td></tr><tr><td>1.23.12</td><td>B</td></tr><tr><td>1.23.17</td><td>D</td></tr><tr><td>1.23.22</td><td>D</td></tr><tr><td>1.23.27</td><td>D</td></tr><tr><td>1.23.32</td><td>1023 : 1023</td></tr><tr><td>1.23.37</td><td>D</td></tr><tr><td>1.25.2</td><td>A;C</td></tr><tr><td>1.27.3</td><td>C</td></tr><tr><td>1.29.4</td><td>3:3</td></tr><tr><td>1.31.3</td><td>2</td></tr><tr><td>1.31.8</td><td>B</td></tr><tr><td>1.31.13</td><td>D</td></tr><tr><td>1.31.18</td><td>X</td></tr><tr><td>1.31.23</td><td>7</td></tr><tr><td>1.31.28</td><td>3 : 3</td></tr><tr><td>1.31.33</td><td>5:5</td></tr><tr><td>1.33.2</td><td>C</td></tr><tr><td>1.34.5</td><td>C</td></tr><tr><td>1.34.10</td><td>A</td></tr><tr><td>1.34.15</td><td>0</td></tr><tr><td>1.35.5</td><td>N/A</td></tr><tr><td>1.35.10</td><td>N/A</td></tr><tr><td>1.35.15</td><td>B</td></tr><tr><td>1.35.20</td><td>X</td></tr><tr><td>1.35.25</td><td>B</td></tr><tr><td>1.35.30</td><td>C</td></tr><tr><td>1.35.35</td><td>C</td></tr><tr><td>1.36.4</td><td>60 : 60</td></tr><tr><td>1.37.4</td><td>C</td></tr><tr><td>1.38.1</td><td>A</td></tr><tr><td>1.39.4</td><td>A</td></tr><tr><td>1.40.1</td><td>N/A</td></tr><tr><td>1.40.6</td><td>N/A</td></tr><tr><td>1.40.11</td><td>A</td></tr><tr><td>1.40.16</td><td>C</td></tr><tr><td>1.40.21</td><td>C</td></tr><tr><td>1.42.3</td><td>B</td></tr><tr><td>1.43.5</td><td>A</td></tr><tr><td>1.43.10</td><td>C</td></tr></table>",
+        "bbox": [
+            60,
+            62,
+            236,
+            925
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/6ed4fa49ac629911618a81b74445ff150098606feba7bca41c8ab1d5ba2d27c4.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.23.8</td><td>N/A</td></tr><tr><td>1.23.13</td><td>D</td></tr><tr><td>1.23.18</td><td>D</td></tr><tr><td>1.23.23</td><td>B</td></tr><tr><td>1.23.28</td><td>51</td></tr><tr><td>1.23.33</td><td>15 : 15</td></tr><tr><td>1.23.38</td><td>C</td></tr><tr><td>1.26.1</td><td>C</td></tr><tr><td>1.28.1</td><td>147.1 : 148.1</td></tr><tr><td>1.30.1</td><td>C</td></tr><tr><td>1.31.4</td><td>N/A</td></tr><tr><td>1.31.9</td><td>C</td></tr><tr><td>1.31.14</td><td>D</td></tr><tr><td>1.31.19</td><td>6</td></tr><tr><td>1.31.24</td><td>B</td></tr><tr><td>1.31.29</td><td>C</td></tr><tr><td>1.31.34</td><td>A;D</td></tr><tr><td>1.34.1</td><td>C</td></tr><tr><td>1.34.6</td><td>B</td></tr><tr><td>1.34.11</td><td>B</td></tr><tr><td>1.35.1</td><td>N/A</td></tr><tr><td>1.35.6</td><td>N/A</td></tr><tr><td>1.35.11</td><td>B</td></tr><tr><td>1.35.16</td><td>D</td></tr><tr><td>1.35.21</td><td>A</td></tr><tr><td>1.35.26</td><td>2.32 : 2.33</td></tr><tr><td>1.35.31</td><td>A</td></tr><tr><td>1.35.36</td><td>A</td></tr><tr><td>1.36.5</td><td>65536 : 65536</td></tr><tr><td>1.37.5</td><td>A</td></tr><tr><td>1.38.2</td><td>B</td></tr><tr><td>1.39.5</td><td>B</td></tr><tr><td>1.40.2</td><td>A</td></tr><tr><td>1.40.7</td><td>B</td></tr><tr><td>1.40.12</td><td>C</td></tr><tr><td>1.40.17</td><td>3</td></tr><tr><td>1.40.22</td><td>C</td></tr><tr><td>1.43.1</td><td>N/A</td></tr><tr><td>1.43.6</td><td>N/A</td></tr><tr><td>1.43.11</td><td>C</td></tr></table>",
+        "bbox": [
+            252,
+            62,
+            443,
+            925
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/71314af8a14d978ccc462eea73b76af32f829ec7c4120d5b25766108187042c9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.23.9</td><td>C</td></tr><tr><td>1.23.14</td><td>C</td></tr><tr><td>1.23.19</td><td>B</td></tr><tr><td>1.23.24</td><td>A</td></tr><tr><td>1.23.29</td><td>0</td></tr><tr><td>1.23.34</td><td>D</td></tr><tr><td>1.24.1</td><td>A</td></tr><tr><td>1.26.2</td><td>D</td></tr><tr><td>1.29.1</td><td>B</td></tr><tr><td>1.30.2</td><td>358</td></tr><tr><td>1.31.5</td><td>N/A</td></tr><tr><td>1.31.10</td><td>B</td></tr><tr><td>1.31.15</td><td>B</td></tr><tr><td>1.31.20</td><td>69</td></tr><tr><td>1.31.25</td><td>4</td></tr><tr><td>1.31.30</td><td>A;B;C</td></tr><tr><td>1.31.35</td><td>A</td></tr><tr><td>1.34.2</td><td>N/A</td></tr><tr><td>1.34.7</td><td>B</td></tr><tr><td>1.34.12</td><td>A</td></tr><tr><td>1.35.2</td><td>N/A</td></tr><tr><td>1.35.7</td><td>N/A</td></tr><tr><td>1.35.12</td><td>N/A</td></tr><tr><td>1.35.17</td><td>A</td></tr><tr><td>1.35.22</td><td>D</td></tr><tr><td>1.35.27</td><td>B</td></tr><tr><td>1.35.32</td><td>A</td></tr><tr><td>1.36.1</td><td>C</td></tr><tr><td>1.37.1</td><td>N/A</td></tr><tr><td>1.37.6</td><td>5</td></tr><tr><td>1.39.1</td><td>N/A</td></tr><tr><td>1.39.6</td><td>C</td></tr><tr><td>1.40.3</td><td>7</td></tr><tr><td>1.40.8</td><td>B</td></tr><tr><td>1.40.13</td><td>A</td></tr><tr><td>1.40.18</td><td>A</td></tr><tr><td>1.41.1</td><td>B</td></tr><tr><td>1.43.2</td><td>N/A</td></tr><tr><td>1.43.7</td><td>A</td></tr><tr><td>1.43.12</td><td>D</td></tr></table>",
+        "bbox": [
+            460,
+            62,
+            615,
+            925
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/eb6327c25ba232bc70b9f6588a9604c9290496c7aa5e2a41fc5b8e0d3fb4e2c2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.23.10</td><td>D</td></tr><tr><td>1.23.15</td><td>C</td></tr><tr><td>1.23.20</td><td>C</td></tr><tr><td>1.23.25</td><td>9</td></tr><tr><td>1.23.30</td><td>D</td></tr><tr><td>1.23.35</td><td>C</td></tr><tr><td>1.24.2</td><td>D</td></tr><tr><td>1.27.1</td><td>C</td></tr><tr><td>1.29.2</td><td>B</td></tr><tr><td>1.31.1</td><td>B;D;E</td></tr><tr><td>1.31.6</td><td>C</td></tr><tr><td>1.31.11</td><td>D</td></tr><tr><td>1.31.16</td><td>B</td></tr><tr><td>1.31.21</td><td>995</td></tr><tr><td>1.31.26</td><td>D</td></tr><tr><td>1.31.31</td><td>24</td></tr><tr><td>1.32.1</td><td>435:435</td></tr><tr><td>1.34.3</td><td>N/A</td></tr><tr><td>1.34.8</td><td>B</td></tr><tr><td>1.34.13</td><td>0.08</td></tr><tr><td>1.35.3</td><td>N/A</td></tr><tr><td>1.35.8</td><td>B</td></tr><tr><td>1.35.13</td><td>B</td></tr><tr><td>1.35.18</td><td>B</td></tr><tr><td>1.35.23</td><td>A</td></tr><tr><td>1.35.28</td><td>A</td></tr><tr><td>1.35.33</td><td>A;B</td></tr><tr><td>1.36.2</td><td>A</td></tr><tr><td>1.37.2</td><td>C</td></tr><tr><td>1.37.7</td><td>B;C;D</td></tr><tr><td>1.39.2</td><td>B</td></tr><tr><td>1.39.7</td><td>A;C;D</td></tr><tr><td>1.40.4</td><td>N/A</td></tr><tr><td>1.40.9</td><td>N/A</td></tr><tr><td>1.40.14</td><td>D</td></tr><tr><td>1.40.19</td><td>B;C;D</td></tr><tr><td>1.42.1</td><td>C</td></tr><tr><td>1.43.3</td><td>B;C;D;E</td></tr><tr><td>1.43.8</td><td>C</td></tr><tr><td>1.43.13</td><td>D</td></tr></table>",
+        "bbox": [
+            633,
+            62,
+            781,
+            925
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/aa514824dc2807d11d216f5fcd4d8ef3395c09226520f58ec22bd37dffaa3447.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.23.11</td><td>A</td></tr><tr><td>1.23.16</td><td>D</td></tr><tr><td>1.23.21</td><td>B</td></tr><tr><td>1.23.26</td><td>A</td></tr><tr><td>1.23.31</td><td>81</td></tr><tr><td>1.23.36</td><td>C</td></tr><tr><td>1.25.1</td><td>B</td></tr><tr><td>1.27.2</td><td>1500</td></tr><tr><td>1.29.3</td><td>B</td></tr><tr><td>1.31.2</td><td>N/A</td></tr><tr><td>1.31.7</td><td>N/A</td></tr><tr><td>1.31.12</td><td>D</td></tr><tr><td>1.31.17</td><td>C</td></tr><tr><td>1.31.22</td><td>A</td></tr><tr><td>1.31.27</td><td>99</td></tr><tr><td>1.31.32</td><td>9</td></tr><tr><td>1.33.1</td><td>D</td></tr><tr><td>1.34.4</td><td>C</td></tr><tr><td>1.34.9</td><td>C</td></tr><tr><td>1.34.14</td><td>D</td></tr><tr><td>1.35.4</td><td>N/A</td></tr><tr><td>1.35.9</td><td>A</td></tr><tr><td>1.35.14</td><td>C</td></tr><tr><td>1.35.19</td><td>D</td></tr><tr><td>1.35.24</td><td>A</td></tr><tr><td>1.35.29</td><td>C</td></tr><tr><td>1.35.34</td><td>B</td></tr><tr><td>1.36.3</td><td>10230</td></tr><tr><td>1.37.3</td><td>A</td></tr><tr><td>1.37.8</td><td>D</td></tr><tr><td>1.39.3</td><td>D</td></tr><tr><td>1.39.8</td><td>C</td></tr><tr><td>1.40.5</td><td>D</td></tr><tr><td>1.40.10</td><td>N/A</td></tr><tr><td>1.40.15</td><td>D</td></tr><tr><td>1.40.20</td><td>B</td></tr><tr><td>1.42.2</td><td>109</td></tr><tr><td>1.43.4</td><td>D</td></tr><tr><td>1.43.9</td><td>D</td></tr><tr><td>1.43.14</td><td>B</td></tr></table>",
+        "bbox": [
+            800,
+            62,
+            934,
+            925
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/1435cd6f485eb76b88b683e0c96444009234527fe8ad48980b23d1c14ffad3d7.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.43.15</td><td>B</td></tr><tr><td>1.43.20</td><td>C</td></tr><tr><td>1.43.25</td><td>C</td></tr><tr><td>1.43.30</td><td>A</td></tr><tr><td>1.44.4</td><td>B;D</td></tr></table>",
+        "bbox": [
+            60,
+            62,
+            236,
+            176
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/431951e70cd50079d7c96048656c7f112078065fb8547b10c812e7e4d4b614ab.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.43.16</td><td>B</td></tr><tr><td>1.43.21</td><td>C</td></tr><tr><td>1.43.26</td><td>C</td></tr><tr><td>1.43.31</td><td>B</td></tr><tr><td>1.45.1</td><td>A;B</td></tr></table>",
+        "bbox": [
+            255,
+            62,
+            443,
+            175
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/ad395b84612a96a7a813fd326e66b3a0a8780f84d611b8a768e832dadf77404c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.43.17</td><td>B</td></tr><tr><td>1.43.22</td><td>A</td></tr><tr><td>1.43.27</td><td>A</td></tr><tr><td>1.44.1</td><td>D</td></tr><tr><td>1.46.1</td><td>B</td></tr></table>",
+        "bbox": [
+            463,
+            62,
+            615,
+            175
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/d22a41392fd5c587a2a9a444cb70f382f0e67aa1eb518845a33f7f1bb3a38185.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.43.18</td><td>B</td></tr><tr><td>1.43.23</td><td>D</td></tr><tr><td>1.43.28</td><td>A</td></tr><tr><td>1.44.2</td><td>C</td></tr></table>",
+        "bbox": [
+            635,
+            62,
+            779,
+            154
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/19f91637e1ee551dfe2dbd9b76a6f13ab655f5965142da412872a175f83324a1.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1.43.19</td><td>C</td></tr><tr><td>1.43.24</td><td>C</td></tr><tr><td>1.43.29</td><td>A</td></tr><tr><td>1.44.3</td><td>6</td></tr></table>",
+        "bbox": [
+            800,
+            62,
+            934,
+            154
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Lexical analysis, Parsing, Syntax-directed translation, Runtime environments, Intermediate code generation.",
+        "bbox": [
+            65,
+            98,
+            850,
+            112
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/2ea8b2f4002e544b7bd86e6224bf07e203f532ca62286fb88f65535a9d5e7cba.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>1</td></tr><tr><td>2 Marks Count</td><td>2</td><td>2</td><td>2</td><td>2</td><td>4</td><td>3</td><td>3</td><td>1</td><td>3</td><td>2</td><td>1</td></tr><tr><td>Total Marks</td><td>6</td><td>6</td><td>6</td><td>6</td><td>10</td><td>8</td><td>7</td><td>4</td><td>7</td><td>6</td><td>4</td></tr></table>",
+        "bbox": [
+            70,
+            136,
+            952,
+            199
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Subject Overview",
+        "text_level": 1,
+        "bbox": [
+            60,
+            210,
+            225,
+            226
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Compiler Design is a fundamental area of Computer Science that deals with the theory and practice of building compilers – programs that translate source code written in a high-level programming language into an equivalent low-level machine-understandable form (like assembly or machine code). Understanding compiler design is crucial for a GATE CS aspirant as it provides deep insights into how programming languages work, how software interacts with hardware, and the underlying mechanisms of program execution. This subject often carries a weightage of 6-10 marks in the GATE CS exam, typically involving 2-3 questions of 2 marks and 1-2 questions of 1 mark. Questions range from theoretical concepts (phases of compilation, definitions) and conceptual understanding (optimization techniques, runtime environment) to numerical problems (parsing table construction, FIRST/FOLLOW sets, DAG generation, register allocation). A strong grasp of this subject is vital not just for the exam, but also for a holistic understanding of computer systems.",
+        "bbox": [
+            58,
+            239,
+            924,
+            378
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            391,
+            295,
+            408
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Abstract Syntax Tree (AST)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            422,
+            278,
+            437
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "An AST is a tree representation of the abstract syntactic structure of source code, where each node denotes a construct in the source code. It abstracts away the concrete syntax (like parentheses or semicolons) and focuses on the essential structure and meaning of the program. ASTs are crucial for semantic analysis, intermediate code generation, and various optimization techniques.",
+        "bbox": [
+            58,
+            451,
+            937,
+            508
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            517,
+            213,
+            530
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Nodes represent operators and keywords, while leaves represent operands and identifiers.",
+            "- More compact than a parse tree, omitting unnecessary details like non-terminals that only derive other non-terminals.",
+            "- Used as an intermediate representation for subsequent compiler phases."
+        ],
+        "bbox": [
+            97,
+            532,
+            890,
+            586
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Confusing AST with a parse tree. A parse tree shows every detail of the derivation; an AST shows only the essential structure.",
+        "bbox": [
+            72,
+            587,
+            887,
+            614
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Technique: Given a grammar and an expression, construct its parse tree first, then derive the AST by eliminating redundant nodes and structuring it based on operator precedence and associativity.",
+        "bbox": [
+            72,
+            615,
+            912,
+            643
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Ambiguous Grammar",
+        "text_level": 1,
+        "bbox": [
+            60,
+            657,
+            233,
+            672
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A grammar is said to be ambiguous if there exists at least one string that can be generated by the grammar in more than one leftmost derivation, or more than one rightmost derivation, or has more than one parse tree. Ambiguity is undesirable in programming language grammars because it leads to multiple interpretations of the same program statement.",
+        "bbox": [
+            58,
+            686,
+            904,
+            742
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            752,
+            211,
+            767
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Causes difficulty for parsers as they cannot uniquely determine the structure of an input string.",
+            "- Common sources include dangling-else problem and lack of operator precedence/associativity rules."
+        ],
+        "bbox": [
+            97,
+            767,
+            842,
+            794
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Not being able to identify ambiguity. A common test is to find a string with two distinct parse trees.",
+        "bbox": [
+            72,
+            795,
+            890,
+            821
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Technique: To resolve ambiguity, rewrite the grammar by introducing new non-terminals or by incorporating precedence and associativity rules directly into the grammar productions. For example, for arithmetic expressions, introduce non-terminals like Term and Factor.",
+        "bbox": [
+            72,
+            821,
+            929,
+            864
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Assembler",
+        "text_level": 1,
+        "bbox": [
+            60,
+            878,
+            149,
+            891
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "An assembler is a program that translates assembly language code into machine code. Assembly language uses",
+        "bbox": [
+            58,
+            907,
+            884,
+            923
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "2",
+        "bbox": [
+            70,
+            70,
+            85,
+            83
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Compiler Design (242)",
+        "bbox": [
+            379,
+            70,
+            569,
+            86
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            862,
+            70,
+            926,
+            115
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "mnemonics for operations and symbolic names for memory locations, making it more human-readable than raw machine code. Assemblers typically perform a one-to-one translation of assembly instructions to machine instructions.",
+        "bbox": [
+            58,
+            64,
+            919,
+            92
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            103,
+            213,
+            117
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Two-Pass Assembler:",
+        "text_level": 1,
+        "bbox": [
+            97,
+            118,
+            285,
+            130
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1. Pass 1: Scans the source code to build a symbol table (mapping symbolic labels to memory addresses) and determines the length of machine instructions.",
+        "bbox": [
+            112,
+            131,
+            924,
+            157
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2. Pass 2: Uses the symbol table to translate assembly instructions into machine code, filling in operand addresses.",
+        "bbox": [
+            112,
+            159,
+            877,
+            185
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Handles pseudo-operations (directives) like ORG, EQU, START, END, which guide the assembly process but don't translate into machine instructions.",
+        "bbox": [
+            97,
+            186,
+            905,
+            213
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Common Pitfalls: Confusing assembler with compiler or linker. Assembler works at a lower level, translating assembly to machine code.",
+            "- Standard Problem-Solving Technique: Trace the assembly process, building a symbol table and calculating location counter values for each instruction and data item."
+        ],
+        "bbox": [
+            72,
+            214,
+            887,
+            269
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Backpatching",
+        "text_level": 1,
+        "bbox": [
+            60,
+            283,
+            174,
+            299
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Backpatching is a technique used in one-pass code generation, particularly for control flow statements (like if-else, while loops) and boolean expressions. It involves generating jump instructions with initially unspecified target addresses, which are later filled in (patched) once the true target address becomes known.",
+        "bbox": [
+            58,
+            312,
+            934,
+            356
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            366,
+            211,
+            378
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Uses lists of incomplete jumps (e.g., truelist, falselist, nextlist).",
+            "- makelist(i): Creates a new list containing only i (an index into the list of quadruples).",
+            "- merge(p1, p2): Concatenates lists p1 and p2, returning the combined list.",
+            "- backpatch(p, i): Inserts i as the target label for each of the jumps in listp."
+        ],
+        "bbox": [
+            95,
+            380,
+            731,
+            440
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Technique: Trace the generation of three-address code for control flow statements, maintaining and updating truelist, falselist, and nextlist as new quadruples are generated.",
+        "bbox": [
+            72,
+            440,
+            907,
+            467
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Basic Blocks",
+        "text_level": 1,
+        "bbox": [
+            60,
+            482,
+            168,
+            496
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A basic block is a sequence of consecutive statements in which flow of control enters at the beginning and leaves at the end without halt or possibility of branching except at the end. Basic blocks are fundamental units for many code optimization techniques.",
+        "bbox": [
+            58,
+            511,
+            932,
+            555
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            565,
+            211,
+            578
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- No jumps into the middle of a basic block.",
+            "- No jumps out of the middle of a basic block.",
+            "- The first statement is called a leader."
+        ],
+        "bbox": [
+            97,
+            579,
+            431,
+            619
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Technique:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            619,
+            388,
+            634
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1. Identify leaders:",
+        "text_level": 1,
+        "bbox": [
+            90,
+            634,
+            235,
+            647
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "■ The first statement of the program is a leader.",
+            "- Any statement that is the target of a conditional or unconditional jump is a leader.",
+            "- Any statement immediately following a conditional or unconditional jump is a leader."
+        ],
+        "bbox": [
+            122,
+            648,
+            746,
+            688
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2. For each leader, its basic block consists of the leader and all subsequent statements up to, but not including, the next leader or the end of the program.",
+        "bbox": [
+            87,
+            688,
+            929,
+            717
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Code Optimization",
+        "text_level": 1,
+        "bbox": [
+            60,
+            732,
+            211,
+            745
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Code optimization is the phase of a compiler that attempts to improve the intermediate code or target code to make it run faster, use less memory, or consume less power, without changing the program's observable behavior. It can be machine-independent or machine-dependent.",
+        "bbox": [
+            58,
+            760,
+            914,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Key Types/Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            814,
+            273,
+            827
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Machine-Independent:",
+        "text_level": 1,
+        "bbox": [
+            97,
+            828,
+            289,
+            840
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Peephole Optimization: Examines a small sliding window of instructions and replaces suboptimal sequences with better ones (e.g., redundant loads/stores, strength reduction).",
+            "- Common Subexpression Elimination (CSE): Identifies and removes redundant computations of the same expression.",
+            "- Dead Code Elimination: Removes code that is never executed or whose results are never used.",
+            "- Constant Folding: Evaluates constant expressions at compile time (e.g., $2^{*}3 + 5$ becomes 11)."
+        ],
+        "bbox": [
+            121,
+            840,
+            921,
+            926
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Loop Optimizations: Loop invariant code motion, induction variable elimination, loop unrolling.",
+        "bbox": [
+            122,
+            65,
+            831,
+            79
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Strength Reduction: Replacing expensive operations with cheaper ones (e.g., $\\mathbf{x}^{*}$ 2 with $\\mathbf{x} + \\mathbf{x}$ or $\\mathbf{x} << 1$ ).",
+        "bbox": [
+            122,
+            80,
+            929,
+            95
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Machine-Dependent: Register allocation, instruction scheduling.",
+        "bbox": [
+            122,
+            95,
+            586,
+            108
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Property: Optimization must preserve the semantic equivalence of the program.",
+        "bbox": [
+            72,
+            109,
+            707,
+            122
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Misidentifying opportunities for optimization or applying an optimization that changes program behavior.",
+        "bbox": [
+            72,
+            122,
+            905,
+            149
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Compilation Phases",
+        "text_level": 1,
+        "bbox": [
+            60,
+            163,
+            221,
+            179
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The compilation process is typically divided into several phases, each performing a specific task in the translation of source code to target code. These phases operate sequentially, with the output of one phase serving as the input to the next.",
+        "bbox": [
+            58,
+            193,
+            929,
+            235
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Phases in Order:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            245,
+            221,
+            258
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Lexical Analysis (Scanning): Breaks source code into tokens.",
+            "2. Syntax Analysis (Parsing): Checks grammar rules and builds a parse tree/AST.",
+            "3. Semantic Analysis: Checks for type compatibility, undeclared variables, etc. (meaning of the program).",
+            "4. Intermediate Code Generation: Creates an abstract machine-independent representation (e.g., three-address code).",
+            "5. Code Optimization: Improves the intermediate or target code for efficiency.",
+            "6. Code Generation: Translates intermediate code into target machine code (e.g., assembly)."
+        ],
+        "bbox": [
+            87,
+            261,
+            922,
+            357
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "• Supporting Components:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            358,
+            287,
+            371
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Symbol Table Management: Stores information about identifiers, used across multiple phases.",
+        "bbox": [
+            97,
+            371,
+            808,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Error Handling: Detects and reports errors at each phase.",
+        "bbox": [
+            97,
+            385,
+            544,
+            399
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Confusing the order or specific responsibilities of each phase.",
+        "bbox": [
+            72,
+            399,
+            675,
+            413
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Compiler Tokenization (Lexical Analysis)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            427,
+            384,
+            442
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Compiler tokenization, or Lexical Analysis, is the first phase of a compiler where the input stream of characters is grouped into meaningful sequences called tokens. Each token represents a basic unit of the language, such as keywords, identifiers, operators, or literals.",
+        "bbox": [
+            58,
+            456,
+            880,
+            498
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Core Idea: Converts a stream of characters into a stream of tokens.",
+        "bbox": [
+            72,
+            509,
+            583,
+            523
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            524,
+            211,
+            536
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Tokens are defined by regular expressions.",
+            "- Lexical analyzers (scanners) are typically implemented using Finite Automata (NFA or DFA).",
+            "- Handles whitespace and comments, usually discarding them.",
+            "- Longest Match Rule: When multiple token patterns match a prefix of the input, the longest possible token is chosen.",
+            "- Precedence Rule: If multiple patterns match the same longest prefix, the pattern listed first (or with higher precedence) is chosen."
+        ],
+        "bbox": [
+            97,
+            536,
+            900,
+            633
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly applying longest match or precedence rules.",
+        "bbox": [
+            72,
+            634,
+            630,
+            647
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Technique: Given a string and a set of regular expressions for tokens, identify the sequence of tokens.",
+        "bbox": [
+            72,
+            647,
+            897,
+            675
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Directed Acyclic Graph (DAG)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            690,
+            297,
+            705
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A DAG is a directed graph data structure used as an intermediate representation for basic blocks in compilers. Nodes in a DAG represent operations, and edges represent the flow of values between operations. It effectively highlights common subexpressions and the order of operations within a basic block.",
+        "bbox": [
+            58,
+            719,
+            932,
+            761
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            771,
+            211,
+            786
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Each node has a unique value. If an expression is computed multiple times, it corresponds to a single node in the DAG.",
+            "- Leaf nodes are identifiers or constants. Interior nodes are operators.",
+            "- Used for common subexpression elimination, dead code elimination, and reordering of operations."
+        ],
+        "bbox": [
+            97,
+            786,
+            907,
+            840
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Technique:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            842,
+            388,
+            855
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1. For each statement x = y op z:",
+        "bbox": [
+            90,
+            856,
+            347,
+            868
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If y or z are not in the DAG, create nodes for them.",
+            "- If op is not in the DAG with children y and z, create a node for it.",
+            "- Add x as a label to the node representing y op z."
+        ],
+        "bbox": [
+            122,
+            869,
+            605,
+            910
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2. If x = y, make x a label for the node representing y.",
+        "bbox": [
+            89,
+            910,
+            494,
+            925
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Expression Evaluation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            243,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Expression evaluation is the process of computing the value of an arithmetic or logical expression according to operator precedence and associativity rules. Compilers often convert infix expressions to postfix or prefix notation for easier evaluation using a stack-based approach.",
+        "bbox": [
+            58,
+            93,
+            932,
+            137
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Key Notations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            147,
+            206,
+            160
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Infix: Operators between operands (e.g., $\\mathbf{a} + \\mathbf{b} * \\mathbf{c}$ ).",
+            "- Postfix (Reverse Polish Notation - RPN): Operators after operands (e.g., a b c \\* +).",
+            "- Prefix (Polish Notation): Operators before operands (e.g., + a \\* b c)."
+        ],
+        "bbox": [
+            97,
+            161,
+            742,
+            206
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            207,
+            211,
+            219
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Precedence: Determines which operator is evaluated first (e.g., multiplication before addition).",
+            "- Associativity: Determines evaluation order for operators of the same precedence (e.g., left-to-right for $+, -, *$ , /; right-to-left for ^)."
+        ],
+        "bbox": [
+            97,
+            220,
+            915,
+            264
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Technique:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            264,
+            388,
+            277
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Infix to Postfix/Prefix: Use a stack to manage operators based on precedence and associativity.",
+            "- Postfix Evaluation: Scan from left to right. Push operands onto a stack. When an operator is encountered, pop required operands, perform operation, push result back."
+        ],
+        "bbox": [
+            97,
+            277,
+            924,
+            320
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "First and Follow",
+        "text_level": 1,
+        "bbox": [
+            60,
+            334,
+            191,
+            347
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "FIRST and FOLLOW sets are crucial for constructing predictive (LL(1)) parsing tables and for resolving ambiguities in grammars. They help determine which production to apply or which token to expect next.",
+        "bbox": [
+            58,
+            363,
+            915,
+            393
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- FIRST(X): The set of terminal symbols that begin strings derived from X. If X can derive $\\epsilon$ (empty string), then $\\epsilon$ is in FIRST(X).",
+            "- FOLLOW(A): The set of terminal symbols that can immediately follow the non-terminal A in some sentential form. FOLLOW(A) never contains $\\epsilon$ ."
+        ],
+        "bbox": [
+            72,
+            403,
+            915,
+            463
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Rules:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            464,
+            299,
+            477
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. FIRST for a terminal a: FIRST(a) = {a}.",
+            "2. FIRST for $\\epsilon$ : FIRST( $\\epsilon$ ) = $\\{\\epsilon\\}$ .",
+            "3. FIRST for a non-terminal A: For each production A → X₁X₂ . . . Xₖ:",
+            "- Add FIRST(X₁) - {ε} to FIRST(A).",
+            "- If $\\epsilon \\in \\mathrm{FIRST}(\\mathrm{X}_i)$ for all $\\mathrm{i} = 1\\ldots \\mathrm{j - 1}$ , then add $\\mathrm{FIRST}(\\mathrm{X}_j) - \\{\\epsilon\\}$ to $\\mathrm{FIRST}(\\mathrm{A})$ .",
+            "- If $\\epsilon \\in \\mathrm{FIRST}(\\mathrm{X}_i)$ for all $\\mathrm{i} = 1\\ldots \\mathrm{k}$ , then add $\\epsilon$ to $\\mathrm{FIRST}(\\mathrm{A})$ ."
+        ],
+        "bbox": [
+            89,
+            477,
+            752,
+            568
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4. FOLLOW for a non-terminal A:",
+        "text_level": 1,
+        "bbox": [
+            89,
+            568,
+            354,
+            581
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Place \\$ (end-marker) in FOLLOW(S) where S is the start symbol.",
+            "- For each production $\\mathrm{A} \\rightarrow \\alpha \\mathrm{B}\\beta$ : Add FIRST(β) - {ε} to FOLLOW(B).",
+            "- For each production $\\mathrm{A} \\rightarrow \\alpha \\mathrm{B}$ or $\\mathrm{A} \\rightarrow \\alpha \\mathrm{B}\\beta$ where $\\epsilon \\in \\mathrm{FIRST}(\\beta)$ : Add FOLLOW(A) to FOLLOW(B)."
+        ],
+        "bbox": [
+            72,
+            583,
+            929,
+            629
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly handling $\\epsilon$ productions, or not iterating until sets stabilize.",
+        "bbox": [
+            72,
+            629,
+            722,
+            642
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Technique: Apply rules iteratively until no new terminals can be added to any set.",
+        "bbox": [
+            72,
+            642,
+            894,
+            656
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Grammar",
+        "text_level": 1,
+        "bbox": [
+            60,
+            671,
+            139,
+            684
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A grammar is a formal system that describes the syntax of a language. It consists of a set of terminal symbols (the basic symbols of the language), non-terminal symbols (syntactic variables), a start symbol, and a set of production rules that specify how non-terminals can be replaced by sequences of terminals and non-terminals.",
+        "bbox": [
+            58,
+            700,
+            932,
+            742
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Formal Definition: A Context-Free Grammar (CFG) is a 4-tuple $\\mathrm{G} = (\\mathrm{V}, \\mathrm{T}, \\mathrm{P}, \\mathrm{S})$ , where:",
+        "bbox": [
+            72,
+            752,
+            747,
+            768
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- V: Finite set of non-terminal symbols.",
+            "- T: Finite set of terminal symbols (V ∩ T = ∅).",
+            "$\\circ$ P: Finite set of production rules of the form $\\mathbf{A} \\to \\alpha$ , where $\\mathbf{A} \\in \\mathbf{V}$ and $\\alpha \\in (\\mathbf{V} \\cup \\mathbf{T})^*$ .",
+            "。 $\\text$"
+        ],
+        "bbox": [
+            97,
+            768,
+            742,
+            827
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.1",
+        "bbox": [
+            67,
+            840,
+            92,
+            853
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Abstract Syntax Tree (1)",
+        "text_level": 1,
+        "bbox": [
+            416,
+            840,
+            611,
+            856
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.1.1 Abstract Syntax Tree: GATE CSE 2015 | Set 2 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            866,
+            591,
+            881
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In the context of abstract-syntax-tree (AST) and control-flow-graph (CFG), which one of the following is TRUE?",
+        "bbox": [
+            82,
+            891,
+            875,
+            918
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/b4459a6fd79099834ad0b981e0f3dc28bc9334fed3572fe8958908bb377e4390.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            869,
+            931,
+            907
+        ],
+        "page_idx": 11
+    }
+]

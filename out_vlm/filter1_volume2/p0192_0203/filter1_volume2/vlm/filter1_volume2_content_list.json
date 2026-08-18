@@ -1,0 +1,4258 @@
+[
+    {
+        "type": "text",
+        "text": "precedence (e.g., ×, / > +, -) and associativity (most are left-associative, exponentiation is right-associative).",
+        "bbox": [
+            58,
+            65,
+            877,
+            81
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Linked List",
+        "text_level": 1,
+        "bbox": [
+            60,
+            93,
+            152,
+            108
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A linked list is a linear data structure where elements are not stored in contiguous memory locations. Instead, each element (node) contains data and a pointer (or link) to the next node in the sequence.",
+        "bbox": [
+            58,
+            124,
+            895,
+            153
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Types of Linked Lists:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            163,
+            263,
+            176
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Singly Linked List: Each node points to the next node. Traversal is unidirectional.",
+            "- Doubly Linked List: Each node has pointers to both the next and previous nodes. Traversal is bidirectional.",
+            "- Circular Linked List: The last node points back to the first node (or head). Can be singly or doubly circular."
+        ],
+        "bbox": [
+            97,
+            176,
+            899,
+            219
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Time Complexity:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            219,
+            226,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Insertion/Deletion at beginning: $O(1)$",
+            "- Insertion/Deletion at end: $O(n)$ for singly linked list (requires traversal), $O(1)$ if tail pointer is maintained. $O(1)$ for doubly linked list if tail pointer is maintained.",
+            "- Insertion/Deletion at specific position: $O(n)$ (requires traversal to find position)",
+            "- Search: $O(n)$"
+        ],
+        "bbox": [
+            97,
+            233,
+            912,
+            307
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Advantages: Dynamic size, efficient insertions/deletions at specific points (if pointer to previous node is available).",
+        "bbox": [
+            72,
+            307,
+            919,
+            321
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Disadvantages: More memory overhead (for pointers), no random access $(O(n)$ for access).",
+        "bbox": [
+            72,
+            321,
+            766,
+            336
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Null pointer exceptions when traversing or manipulating the list. Incorrectly updating pointers during insertion/deletion, leading to lost nodes or broken links. Handling edge cases like empty list or single-node list.",
+        "bbox": [
+            58,
+            347,
+            924,
+            376
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Draw diagrams to visualize pointer changes. Pay close attention to the order of pointer updates. Always check for null pointers.",
+        "bbox": [
+            58,
+            378,
+            927,
+            408
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Priority Queue",
+        "text_level": 1,
+        "bbox": [
+            60,
+            422,
+            179,
+            435
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A Priority Queue is an Abstract Data Type (ADT) that functions like a queue but with an additional concept of \"priority.\" Elements are retrieved based on their priority, not necessarily their insertion order. The element with the highest (or lowest) priority is always dequeued first.",
+        "bbox": [
+            58,
+            450,
+            921,
+            494
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Core Operations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            504,
+            225,
+            517
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Insert (enqueue): Adds an element with a given priority.",
+            "- Extract-Min/Max (dequeue): Removes and returns the element with the highest (or lowest) priority.",
+            "- Peek: Returns the highest (or lowest) priority element without removing it."
+        ],
+        "bbox": [
+            97,
+            517,
+            838,
+            559
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Implementations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            560,
+            226,
+            573
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Binary Heap: Most efficient implementation, providing $O(\\log n)$ for insert and extract-min/max.",
+            "- Unsorted Array/Linked List: $O(1)$ insert, $O(n)$ extract-min/max.",
+            "- Sorted Array/Linked List: $O(n)$ insert, $O(1)$ extract-min/max."
+        ],
+        "bbox": [
+            97,
+            573,
+            803,
+            619
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Confusing a priority queue with a regular queue. Not understanding that the underlying data structure (e.g., heap) determines the complexity.",
+        "bbox": [
+            58,
+            630,
+            868,
+            657
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: When a problem requires always processing the \"most important\" item next, a priority queue (implemented with a heap) is often the solution.",
+        "bbox": [
+            58,
+            662,
+            919,
+            691
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Queue",
+        "text_level": 1,
+        "bbox": [
+            60,
+            705,
+            117,
+            718
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A Queue is a linear Abstract Data Type (ADT) that follows the First-In, First-Out (FIFO) principle. Elements are added at one end (rear/tail) and removed from the other end (front/head).",
+        "bbox": [
+            58,
+            733,
+            932,
+            762
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Core Operations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            774,
+            225,
+            786
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Enqueue: Adds an element to the rear of the queue.",
+            "- Dequeue: Removes and returns the element from the front of the queue.",
+            "- Front/Peek: Returns the element at the front without removing it.",
+            "- IsEmpty, IsFull: Checks the state of the queue."
+        ],
+        "bbox": [
+            97,
+            787,
+            643,
+            842
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "- Implementations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            843,
+            226,
+            855
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Array-based: Can lead to \"queue full\" even if space is available (linear array). Circular array implementation solves this.",
+            "- Linked List-based: More dynamic, no fixed size issues."
+        ],
+        "bbox": [
+            97,
+            856,
+            900,
+            896
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Time Complexity (Array or Linked List): All core operations (enqueue, dequeue, front) are $O(1)$ .",
+        "bbox": [
+            72,
+            897,
+            806,
+            914
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Underflow (dequeuing from an empty queue) and Overflow (enqueuing into a full array-based queue). Incorrectly managing front and rear pointers in array implementations, especially circular queues.",
+        "bbox": [
+            58,
+            64,
+            880,
+            93
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Trace operations carefully. Understand how front and rear pointers move. For circular queues, remember the modulus operator for index calculations: $(index + 1)$ (mod S)ize.",
+        "bbox": [
+            58,
+            96,
+            922,
+            128
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Stack",
+        "text_level": 1,
+        "bbox": [
+            60,
+            140,
+            110,
+            154
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A Stack is a linear Abstract Data Type (ADT) that follows the Last-In, First-Out (LIFO) principle. Elements are added and removed only from one end, called the \"top.\"",
+        "bbox": [
+            58,
+            169,
+            907,
+            198
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Core Operations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            209,
+            225,
+            222
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Push: Adds an element to the top of the stack.",
+            "- Pop: Removes and returns the element from the top of the stack.",
+            "- Peek/Top: Returns the element at the top without removing it.",
+            "- IsEmpty, IsFull: Checks the state of the stack."
+        ],
+        "bbox": [
+            97,
+            223,
+            589,
+            277
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Implementations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            279,
+            226,
+            292
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Array-based: Uses a fixed-size array and a top pointer/index.",
+            "- Linked List-based: Each node points to the next, with the head of the list being the top of the stack."
+        ],
+        "bbox": [
+            97,
+            292,
+            840,
+            320
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Time Complexity (Array or Linked List): All core operations (push, pop, peek) are $O(1)$ .",
+        "bbox": [
+            72,
+            321,
+            744,
+            334
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Applications: Function call stack, expression evaluation (infix to postfix/prefix conversion), undo/redo functionality, backtracking algorithms.",
+        "bbox": [
+            72,
+            334,
+            922,
+            363
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Underflow (popping from an empty stack) and Overflow (pushing into a full array-based stack). Incorrectly managing the top pointer/index.",
+        "bbox": [
+            58,
+            372,
+            887,
+            402
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Trace stack operations. Recognize problems that naturally fit the LIFO principle (e.g., reversing a sequence, checking parenthesis balance).",
+        "bbox": [
+            58,
+            404,
+            917,
+            434
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Time Complexity",
+        "text_level": 1,
+        "bbox": [
+            60,
+            448,
+            198,
+            463
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Time complexity measures the amount of time an algorithm takes to run as a function of the input size $(n)$ . It's typically expressed using asymptotic notations to describe the growth rate for large $n$ .",
+        "bbox": [
+            58,
+            477,
+            919,
+            505
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Asymptotic Notations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            517,
+            265,
+            530
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Big-O Notation (O): Upper bound. $f(n) = O(g(n))$ if there exist positive constants $c$ and $n_0$ such that $0 \\leq f(n) \\leq c \\cdot g(n)$ for all $n \\geq n_0$ . Describes the worst-case time.",
+            "- Big-Omega Notation $(\\Omega)$ : Lower bound. $f(n) = \\Omega(g(n))$ if there exist positive constants $c$ and $n_0$ such that $0 \\leq c \\cdot g(n) \\leq f(n)$ for all $n \\geq n_0$ . Describes the best-case time.",
+            "- Big-Theta Notation $(\\Theta)$ : Tight bound. $f(n) = \\Theta(g(n))$ if there exist positive constants $c_{1}, c_{2}$ and $n_{0}$ such that $0 \\leq c_{1} \\cdot g(n) \\leq f(n) \\leq c_{2} \\cdot g(n)$ for all $n \\geq n_{0}$ . Describes average-case time or when best and worst cases are the same.",
+            "- Little-o Notation (o): Strict upper bound. $f(n) = o(g(n))$ if $\\lim_{n\\to \\infty}\\frac{f(n)}{g(n)} = 0$ .",
+            "- Little-omega Notation $(\\omega)$ : Strict lower bound. $f(n) = \\omega(g(n))$ if $\\lim_{n\\to \\infty}\\frac{f(n)}{g(n)} = \\infty$ ."
+        ],
+        "bbox": [
+            97,
+            530,
+            922,
+            685
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Growth Rates (from fastest to slowest):",
+        "bbox": [
+            72,
+            682,
+            473,
+            697
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nO (n!), O (2 ^ {n}), O (n ^ {3}), O (n ^ {2}), O (n \\log n), O (n), O (\\log n), O (1)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            268,
+            707,
+            752,
+            729
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Master Theorem for Recurrence Relations: For recurrences of the form $T(n) = aT(n / b) + f(n)$ , where $a \\geq 1, b > 1$ are constants, and $f(n)$ is an asymptotically positive function:",
+        "bbox": [
+            72,
+            737,
+            873,
+            767
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. If $f(n) = O(n^{\\log_b a - \\epsilon})$ for some constant $\\epsilon > 0$ , then $T(n) = \\Theta(n^{\\log_b a})$ .",
+            "2. If $f(n) = \\Theta(n^{\\log_b a})$ , then $T(n) = \\Theta(n^{\\log_b a} \\log n)$ .",
+            "3. If $f(n) = \\Omega(n^{\\log_b a + \\epsilon})$ for some constant $\\epsilon > 0$ , AND if $af(n / b) \\leq cf(n)$ for some constant $c < 1$ and all sufficiently large $n$ , then $T(n) = \\Theta(f(n))$ ."
+        ],
+        "bbox": [
+            87,
+            768,
+            892,
+            834
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Ignoring constant factors or lower-order terms (which are dropped in asymptotic analysis). Confusing best, worst, and average case complexities. Incorrectly applying Master Theorem conditions.",
+        "bbox": [
+            58,
+            844,
+            932,
+            872
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Analyze loops (number of iterations). For recursive functions, set up recurrence relations and solve them (often using Master Theorem or substitution method). Identify the dominant term in a sum of complexities.",
+        "bbox": [
+            58,
+            876,
+            915,
+            919
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Tree",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            100,
+            77
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A tree is a non-linear, hierarchical data structure consisting of nodes connected by edges. It is a connected acyclic graph, meaning there are no cycles and all nodes are reachable from the root.",
+        "bbox": [
+            58,
+            93,
+            892,
+            122
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Key Terminology:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            133,
+            228,
+            147
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Root: The topmost node of the tree.",
+            "- Parent: A node that has one or more child nodes.",
+            "- Child: A node directly connected to another node when moving away from the root.",
+            "- Sibling: Nodes that share the same parent.",
+            "- Leaf Node (External Node): A node with no children.",
+            "- Internal Node: A node with at least one child.",
+            "- Ancestors: All nodes on the path from the root to a node.",
+            "- Descendants: All nodes in the subtree rooted at a node.",
+            "- Depth: The length of the path from the root to a node (root is at depth 0).",
+            "- Height: The length of the longest path from a node to a leaf. The height of the tree is the height of its root.",
+            "- Degree of a Node: Number of children it has.",
+            "- Degree of a Tree: Maximum degree of any node in the tree."
+        ],
+        "bbox": [
+            97,
+            148,
+            882,
+            312
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            313,
+            176,
+            326
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- A tree with $n$ nodes has exactly $n - 1$ edges.",
+            "- There is a unique path between any two nodes in a tree."
+        ],
+        "bbox": [
+            97,
+            327,
+            522,
+            353
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Confusing tree terminology (e.g., depth vs. height, parent vs. child). Forgetting the n - 1 edges property.",
+        "bbox": [
+            58,
+            366,
+            894,
+            395
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Draw trees to visualize concepts. Understand recursive definitions for tree operations.",
+        "bbox": [
+            58,
+            397,
+            919,
+            413
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Tree Traversal",
+        "text_level": 1,
+        "bbox": [
+            60,
+            427,
+            178,
+            440
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Tree traversal refers to the process of visiting each node in a tree exactly once in a systematic way. There are two main categories: Depth-First Search (DFS) and Breadth-First Search (BFS).",
+        "bbox": [
+            58,
+            456,
+            929,
+            485
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Depth-First Search (DFS) Traversal: Uses a stack (implicitly via recursion) to explore as far as possible along each branch before backtracking.",
+        "bbox": [
+            72,
+            495,
+            892,
+            523
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Inorder Traversal (Left, Root, Right): Visits the left subtree, then the root, then the right subtree. For BSTs, this yields sorted elements.",
+            "- Preorder Traversal (Root, Left, Right): Visits the root, then the left subtree, then the right subtree. Useful for creating a copy of the tree.",
+            "- Postorder Traversal (Left, Right, Root): Visits the left subtree, then the right subtree, then the root. Useful for deleting a tree (deletes children before parent)."
+        ],
+        "bbox": [
+            97,
+            523,
+            932,
+            605
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Breadth-First Search (BFS) Traversal (Level Order Traversal): Visits nodes level by level, from left to right. Uses a queue.",
+        "bbox": [
+            72,
+            606,
+            927,
+            633
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Starts at the root, then visits all nodes at depth 1, then all nodes at depth 2, and so on.",
+        "bbox": [
+            95,
+            634,
+            739,
+            647
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Incorrectly applying the order of visits for DFS traversals. Difficulty in reconstructing a tree from given traversals (e.g., Inorder + Preorder can reconstruct a unique BST).",
+        "bbox": [
+            58,
+            659,
+            934,
+            687
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Practice tracing all four traversal types on various trees. Remember the specific order for each. For tree reconstruction, use one traversal (e.g., Preorder) to find the root, then use another (e.g., Inorder) to partition the remaining elements into left and right subtrees.",
+        "bbox": [
+            58,
+            691,
+            919,
+            733
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Uniform Hashing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            747,
+            198,
+            762
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Uniform Hashing is an idealized assumption used in the analysis of hashing algorithms. It states that each key is equally likely to hash to any slot in the hash table, independently of where other keys hash.",
+        "bbox": [
+            58,
+            776,
+            878,
+            805
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Property: If we have $n$ keys and $m$ slots, the probability that a key hashes to any particular slot is $1 / m$ .",
+        "bbox": [
+            72,
+            817,
+            873,
+            832
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Implications:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            832,
+            191,
+            844
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Minimizes collisions in theory.",
+            "- Leads to the best possible average-case performance for hash tables.",
+            "- Under simple uniform hashing, the expected length of a chain in chaining is $\\alpha = n / m$ .",
+            "Under uniform hashing, the expected number of probes for unsuccessful search in open addressing is $1/(1-\\alpha)$ ."
+        ],
+        "bbox": [
+            97,
+            845,
+            853,
+            918
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Assuming uniform hashing holds true in practice. Real-world hash functions are rarely perfectly uniform, leading to deviations from theoretical performance.",
+        "bbox": [
+            58,
+            64,
+            892,
+            93
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Understand that uniform hashing is a theoretical model for analyzing the average-case performance of hashing. Use its properties to calculate expected values related to collisions or probes.",
+        "bbox": [
+            58,
+            96,
+            929,
+            125
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/9e3c0a9a259ec1cfdde65e40e7000f37e34d41fc257c35bf94ed734a2d96909b.jpg",
+        "table_caption": [
+            "Quick Formula Reference"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Topic</td><td>Formula/Concept</td></tr><tr><td>AVL Tree</td><td>Balance Factor:  $Height(Right) - Height(Left) \\in \\{-1, 0, 1\\}$ Height:  $O(\\log n)$ </td></tr><tr><td>Array (1D)</td><td> $Address(A[i]) = BaseAddress + (i - L_0) \\times S$ </td></tr><tr><td>Array (2D - Row-Major)</td><td> $Address(A[i][j]) = BaseAddress + ((i - L_{row}) \\times C + (j - L_{col})) \\times S$ </td></tr><tr><td>Array (2D - Column-Major)</td><td> $Address(A[i][j]) = BaseAddress + ((j - L_{col}) \\times R + (i - L_{row})) \\times S$ Parent of  $i$ :  $\\lfloor (i - 1)/2 \\rfloor$ </td></tr><tr><td>Binary Heap (0-indexed)</td><td>Left child of  $i$ :  $2i + 1$ Right child of  $i$ :  $2i + 2$ Max nodes at level  $k$ :  $2^k$ </td></tr><tr><td>Binary Tree</td><td>Max nodes in height  $h$  tree:  $2^{h+1} - 1$ Min height for  $n$  nodes:  $\\lfloor \\log_2 n \\rfloor$  (complete tree)Full Binary Tree:  $L = I + 1$ </td></tr><tr><td>Hashing (Division)</td><td> $h(k) = k \\pmod{m}$ </td></tr><tr><td>Hashing (Multiplication)</td><td> $h(k) = \\lfloor m(kA \\pmod{1}) \\rfloor$ </td></tr><tr><td>Hashing (Linear Probing)</td><td> $h(k, i) = (h'(k) + i) \\pmod{m}$ </td></tr><tr><td>Hashing (Quadratic Probing)</td><td> $h(k, i) = (h'(k) + c_1 i + c_2 i^2) \\pmod{m}$ </td></tr><tr><td>Hashing (Double Hashing)</td><td> $h(k, i) = (h_1(k) + i \\cdot h_2(k)) \\pmod{m}$ </td></tr><tr><td>Hashing (Load Factor)</td><td> $\\alpha = n/m$ </td></tr><tr><td>Time Complexity (Big-O)</td><td> $f(n) = O(g(n))$  if  $f(n) \\leq c \\cdot g(n)$  for  $n \\geq n_0$ </td></tr><tr><td>Time Complexity (Big-Omega)</td><td> $f(n) = \\Omega(g(n))$  if  $c \\cdot g(n) \\leq f(n)$  for  $n \\geq n_0$ </td></tr><tr><td>Time Complexity (Big-Theta)</td><td> $c_1 \\cdot g(n) \\leq f(n) \\leq c_2 \\cdot g(n)$  for  $n \\geq n_0$ </td></tr><tr><td>Master Theorem (Case 1)</td><td>If  $f(n) = O(n^{\\log_b a - \\epsilon})$ , then  $T(n) = \\Theta(n^{\\log_b a})$ </td></tr><tr><td>Master Theorem (Case 2)</td><td>If  $f(n) = \\Theta(n^{\\log_b a})$ , then  $T(n) = \\Theta(n^{\\log_b a} \\log n)$ </td></tr><tr><td>Master Theorem (Case 3)</td><td>If  $f(n) = \\Omega(n^{\\log_b a + \\epsilon})$  and  $af(n/b) \\leq cf(n)$ , then  $T(n) = \\Theta(f(n))$ </td></tr><tr><td>Tree (General)</td><td> $n$  nodes,  $n - 1$  edges</td></tr></table>",
+        "bbox": [
+            58,
+            166,
+            868,
+            605
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            617,
+            285,
+            634
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Master Time & Space Complexity: This is arguably the most crucial aspect. Be able to analyze the complexity of operations on all data structures and for given code snippets. Understand best, worst, and average cases. Practice applying the Master Theorem rigorously.",
+            "- Understand ADT vs. Data Structure: Clearly differentiate between the abstract concept (ADT) and its concrete implementation (data structure). For example, a Stack is an ADT, while an array-based stack or linked-list based stack are data structures implementing the Stack ADT.",
+            "- Visualize Operations: For tree-based structures (AVL, BST, Heap) and linked lists, always draw diagrams and trace operations step-by-step. This helps catch errors in pointer manipulation, rotations, or heapify processes.",
+            "- Practice Tree Traversals: Be proficient in Inorder, Preorder, Postorder, and Level-order traversals. Understand their applications and how to reconstruct a tree from given traversals (e.g., Preorder + Inorder).",
+            "- Hashing Concepts are Key: Pay close attention to different hash functions, collision resolution techniques (chaining, linear probing, quadratic probing, double hashing), and their impact on performance (load factor, clustering). Be ready to trace insertions and searches.",
+            "- Know Standard Implementations: Understand how basic ADTs like Stack and Queue are implemented using arrays and linked lists, including edge cases like underflow/overflow and circular array logic.",
+            "- Identify Common Pitfalls: Be aware of typical mistakes like off-by-one errors in array indexing, null pointer exceptions in linked lists, incorrect balance factor calculations in AVL trees, or misinterpreting operator precedence in expression conversions.",
+            "- Practice Problem-Solving: Data structures questions are often application-oriented. Practice a wide variety of problems to recognize when to use a particular data structure and how to apply its operations to solve the problem"
+        ],
+        "bbox": [
+            72,
+            647,
+            922,
+            925
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.1",
+        "text_level": 1,
+        "bbox": [
+            67,
+            92,
+            94,
+            105
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "AVL Tree (6)",
+        "text_level": 1,
+        "bbox": [
+            462,
+            92,
+            566,
+            106
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (12Q)",
+        "bbox": [
+            70,
+            116,
+            272,
+            130
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.1 AVL Tree: GATE CSE 1988 | Question: 7ii",
+        "text_level": 1,
+        "bbox": [
+            77,
+            144,
+            448,
+            160
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/7509187c6438bd7058b48a4d789cc546752395e5e789d501735865fd64b4adc8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            148,
+            932,
+            186
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Mark the balance factor of each node on the tree given in the below figure and state whether it is height-balanced.",
+        "bbox": [
+            84,
+            169,
+            875,
+            195
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/450c578a0a295b3cb438381f644304dfeb41ab98b4f6a25284eacd37c5144131.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  A[\"17\"] --> B[\"12\"]\n  A --> C[\"20\"]\n  B --> D[\"5\"]\n  B --> E[\"15\"]\n  C --> F[\"18\"]\n  C --> G[\"24\"]\n  D --> H[\"1\"]\n  E --> I[\"14\"]\n  E --> J[\"16\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            408,
+            205,
+            610,
+            323
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1988 data-structures normal descriptive avl-tree",
+        "bbox": [
+            87,
+            345,
+            357,
+            355
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            361,
+            189,
+            376
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.2 AVL Tree: GATE CSE 1996 | Question: 1.14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            385,
+            460,
+            397
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/b7ee8db74f07c8abcc4bf2d277c589b2aedb016664b68e021f815b8aaba8c739.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            388,
+            932,
+            425
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In the balanced binary tree in the below figure, how many nodes will become unbalanced when a node is inserted as a child of the node \"g\"?",
+        "bbox": [
+            84,
+            408,
+            878,
+            437
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/f66fcaefe8da785075a8a18ec10a5255ea9df132cc388bf01026756ed7b3aee7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  a[\"a\"] --> b[\"b\"]\n  b --> c[\"c\"]\n  b --> d[\"d\"]\n  b --> e[\"e\"]\n  c --> g[\"g\"]\n  d --> f[\"f\"]\n  e --> f\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            408,
+            445,
+            610,
+            559
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            89,
+            578,
+            126,
+            591
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 3",
+        "bbox": [
+            285,
+            578,
+            321,
+            591
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 7",
+        "bbox": [
+            480,
+            578,
+            515,
+            591
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 8",
+        "bbox": [
+            673,
+            578,
+            710,
+            591
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1996 data-structures binary-tree avl-tree normal",
+        "bbox": [
+            87,
+            602,
+            357,
+            612
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            618,
+            189,
+            633
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.3 AVL Tree: GATE CSE 1998 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            77,
+            642,
+            445,
+            656
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/50bac9eb4be13fb112aafde0cdc341b37650bc38fdcf2d5ee327433ba7a2498a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            644,
+            932,
+            682
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Derive a recurrence relation for the size of the smallest AVL tree with height h.",
+            "B. What is the size of the smallest AVL tree with height 8?"
+        ],
+        "bbox": [
+            87,
+            688,
+            680,
+            717
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1998 data-structures avl-tree descriptive numerical-answers",
+        "bbox": [
+            87,
+            742,
+            403,
+            752
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            758,
+            189,
+            773
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.4 AVL Tree: GATE CSE 2009 | Question: 37, ISRO-DEC2017-55",
+        "text_level": 1,
+        "bbox": [
+            77,
+            782,
+            591,
+            796
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/7fe177b3c45862cb53b1242cd661d85e8d78f886a986a5890ff7d6ee9be698e0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            785,
+            932,
+            821
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is the maximum height of any AVL-tree with 7 nodes? Assume that the height of a tree with a single node is 0.",
+        "bbox": [
+            84,
+            806,
+            878,
+            834
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            849,
+            126,
+            862
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 3",
+        "bbox": [
+            285,
+            849,
+            321,
+            862
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 4",
+        "bbox": [
+            480,
+            849,
+            515,
+            862
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 5",
+        "bbox": [
+            673,
+            849,
+            710,
+            862
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 data-structures binary-search-tree normal isrodec2017 avl-tree",
+        "bbox": [
+            87,
+            874,
+            465,
+            883
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            889,
+            189,
+            904
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "efficiently.",
+        "bbox": [
+            85,
+            64,
+            163,
+            78
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.1.5 AVL Tree: GATE CSE 2020 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            438,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "What is the worst case time complexity of inserting $n^{2}$ elements into an AVL-tree with n elements initially?",
+        "bbox": [
+            84,
+            90,
+            858,
+            106
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/2f9d2402ee4c90c888fb2435923596c0abcfbbb332e75ad9f3f81c8b9abad75d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n^{4})$",
+        "bbox": [
+            89,
+            116,
+            161,
+            131
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n^{2})$",
+        "bbox": [
+            497,
+            116,
+            566,
+            131
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(n^{2}\\log n)$",
+        "bbox": [
+            90,
+            131,
+            198,
+            146
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(n^3)$",
+        "bbox": [
+            497,
+            131,
+            566,
+            146
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 binary-tree avl-tree one-mark",
+        "bbox": [
+            89,
+            150,
+            305,
+            161
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            167,
+            181,
+            181
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.1.6 AVL Tree: GATE IT 2008 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            190,
+            426,
+            204
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is TRUE?",
+        "bbox": [
+            85,
+            213,
+            324,
+            229
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/2aeca2b3681a2bc357a9a3b307e8bf5f97b3af8d9103bc9344a8ca430ba5e5a8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            193,
+            931,
+            231
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The cost of searching an AVL tree is $\\Theta (\\log n)$ but that of a binary search tree is $O(n)$",
+            "B. The cost of searching an AVL tree is $\\Theta (\\log n)$ but that of a complete binary tree is $\\Theta (n\\log n)$",
+            "C. The cost of searching a binary search tree is $O(\\log n)$ but that of an AVL tree is $\\Theta(n)$",
+            "D. The cost of searching an AVL tree is $\\Theta(n \\log n)$ but that of a binary search tree is $O(n)$"
+        ],
+        "bbox": [
+            85,
+            239,
+            796,
+            302
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 data-structures binary-search-tree easy avl-tree",
+        "bbox": [
+            87,
+            327,
+            384,
+            336
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            343,
+            181,
+            357
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.2",
+        "text_level": 1,
+        "bbox": [
+            68,
+            368,
+            95,
+            380
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Abstract Data Type (1)",
+        "text_level": 1,
+        "bbox": [
+            423,
+            366,
+            603,
+            383
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.2.1 Abstract Data Type: GATE CSE 2005 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            393,
+            515,
+            408
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "An Abstract Data Type (ADT) is:",
+        "bbox": [
+            85,
+            416,
+            324,
+            432
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/deac8a48c2aa78473e40e29bd09ad732a593d1c097a2e9b50697da9134c57023.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            396,
+            931,
+            434
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. same as an abstract class",
+            "B. a data type that cannot be instantiated",
+            "C. a data type for which only the operations defined on it can be used, but none else",
+            "D. all of the above"
+        ],
+        "bbox": [
+            87,
+            442,
+            705,
+            498
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 data-structures normal abstract-data-type",
+        "bbox": [
+            87,
+            524,
+            356,
+            534
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            541,
+            181,
+            555
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.3",
+        "text_level": 1,
+        "bbox": [
+            68,
+            565,
+            95,
+            578
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Array (13)",
+        "text_level": 1,
+        "bbox": [
+            473,
+            565,
+            554,
+            580
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (9Q)",
+        "bbox": [
+            70,
+            589,
+            265,
+            604
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.3.1 Array: GATE CSE 1993 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            618,
+            418,
+            633
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/149bb6219cae5a47b7feff61faf3ab25113447243edf7d43c1aeb408fa22f245.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            621,
+            931,
+            659
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The following Pascal program segments finds the largest number in a two-dimensional integer array $A[0 \\ldots n - 1, 0 \\ldots n - 1]$ using a single loop. Fill up the boxes to complete the program and write against",
+        "bbox": [
+            84,
+            642,
+            875,
+            673
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A, B, C and D in your answer book Assume that max is a variable to store the largest value and i, j are the indices to the array.",
+        "bbox": [
+            84,
+            673,
+            927,
+            705
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```ruby\nbegin\n  max:=|A|, i:=0, j:=0;\n  while |B| do\n  begin\n    if A[i, j]>max then max:=A[i, j];\n    if |C| then j:=j+1;\n    else begin\n      j:=0;\n      i:=|D|\n    end\n  end\nend\n```",
+        "bbox": [
+            87,
+            713,
+            289,
+            843
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1993 data-structures array normal descriptive",
+        "bbox": [
+            87,
+            866,
+            344,
+            877
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            883,
+            181,
+            897
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.3.2 Array: GATE CSE 1994 | Question: 1.11",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            428,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/1674158d576490f4e19a2118d10227fabac4d00939c3d448f2e5c61c3202f9a1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In a compact single dimensional array representation for lower triangular matrices (i.e all the elements above the diagonal are zero) of size $n \\times n$ , non-zero elements, (i.e elements of lower triangle) of each row are",
+        "bbox": [
+            84,
+            89,
+            878,
+            117
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "stored one after another, starting from the first row, the index of the $(i,j)^{th}$ element of the lower triangular matrix in this new representation is:",
+        "bbox": [
+            84,
+            119,
+            927,
+            148
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $i + j$",
+        "bbox": [
+            89,
+            161,
+            152,
+            176
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $i + j - 1$",
+        "bbox": [
+            285,
+            161,
+            376,
+            176
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $(j - 1) + \\frac{i(i - 1)}{2}$",
+        "bbox": [
+            478,
+            157,
+            616,
+            180
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $i + \\frac{j(j - 1)}{2}$",
+        "bbox": [
+            673,
+            157,
+            766,
+            180
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1994 data-structures array normal",
+        "bbox": [
+            87,
+            186,
+            287,
+            195
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            201,
+            186,
+            217
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.3.3 Array: GATE CSE 1994 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            77,
+            226,
+            416,
+            239
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "An array A contains n integers in non-decreasing order, $A[1] \\leq A[2] \\leq \\cdots \\leq A[n]$ . Describe, using Pascal like pseudo code, a linear time algorithm to find i, j, such that $A[i] + A[j] = a$ given integer M, if such i, j exist.",
+        "bbox": [
+            84,
+            250,
+            878,
+            295
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/514b3096496ff5c6fa6aa6be7d1d2b239ba10512c1bdfb294fae9acee73a4041.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            229,
+            932,
+            267
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1994 data-structures array normal descriptive",
+        "bbox": [
+            87,
+            309,
+            344,
+            319
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            325,
+            186,
+            340
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.3.4 Array: GATE CSE 1997 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            77,
+            349,
+            416,
+            363
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "An array $A$ contains $n \\geq 1$ positive integers in the locations $A[1], A[2], \\ldots A[n]$ . The following program fragment prints the length of a shortest sequence of consecutive elements of $A$ , $A[i], A[i + 1], \\ldots, A[j]$",
+        "bbox": [
+            84,
+            372,
+            878,
+            404
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "such that the sum of their values is $\\geq M$ , a given positive number. It prints ‘n+1’ if no such sequence exists. Complete the program by filling in the boxes. In each case use the simplest possible expression. Write only the line number and the contents of the box.",
+        "bbox": [
+            84,
+            404,
+            927,
+            445
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```pascal\nbegin\ni:=1:j:=1;\nsum := □\nmin:=n; finish:=false;\nwhile not finish do\n    if □ then\n        if j=n then finish:=true\n        else\n        begin\n            j:=j+1;\n            sum:= □\n        end\n    else\n    begin\n        if(j-i) < min then min:=j-i;\n        sum:=sum -A[i];\n        i:=i+1;\n    end\n    writeln (min +1);\nend.\n```",
+        "bbox": [
+            87,
+            454,
+            257,
+            669
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1997 data-structures array normal descriptive",
+        "bbox": [
+            87,
+            694,
+            344,
+            704
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            710,
+            186,
+            724
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.3.5 Array: GATE CSE 1998 | Question: 2.14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            733,
+            430,
+            748
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ be a two dimensional array declared as follows:",
+        "bbox": [
+            85,
+            758,
+            480,
+            773
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/ab41b309dca2c6aca11cb5b6e0603706845a70c27ddb2dc684df062cb6559785.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            736,
+            932,
+            774
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A: array [1 .... 10] [1 .... 15] of integer;",
+        "bbox": [
+            87,
+            782,
+            312,
+            795
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Assuming that each integer takes one memory location, the array is stored in row-major order and the first element of the array is stored at location 100, what is the address of the element $A[i][j]$ ?",
+        "bbox": [
+            84,
+            804,
+            927,
+            834
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $15i + j + 84$",
+        "bbox": [
+            87,
+            847,
+            208,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $15j + i + 84$",
+        "bbox": [
+            285,
+            847,
+            403,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. $10i + j + 89$",
+        "bbox": [
+            478,
+            847,
+            600,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $10j + i + 89$",
+        "bbox": [
+            673,
+            847,
+            793,
+            863
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1998 data-structures array easy",
+        "bbox": [
+            87,
+            876,
+            275,
+            885
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            891,
+            186,
+            907
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.3.6 Array: GATE CSE 2000 | Question: 1.2",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            421,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "An $n \\times n$ array v is defined as follows:",
+        "bbox": [
+            85,
+            89,
+            374,
+            103
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "$v[i,j] = i - j$ for all $i,j,i\\leq n,1\\leq j\\leq n$",
+        "bbox": [
+            85,
+            106,
+            413,
+            124
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The sum of the elements of the array v is",
+        "bbox": [
+            85,
+            127,
+            389,
+            141
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            89,
+            154,
+            126,
+            168
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. n - 1",
+        "bbox": [
+            285,
+            155,
+            351,
+            168
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $n^2 - 3n + 2$",
+        "bbox": [
+            478,
+            153,
+            594,
+            169
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $n^{2}\\frac{(n+1)}{2}$",
+        "bbox": [
+            673,
+            150,
+            754,
+            173
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 data-structures array easy",
+        "bbox": [
+            87,
+            180,
+            292,
+            190
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            195,
+            186,
+            210
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.3.7 Array: GATE CSE 2000 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            77,
+            219,
+            416,
+            233
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Suppose you are given arrays $p[1......N]$ and $q[1......N]$ both uninitialized, that is, each location may contain an arbitrary value), and a variable count, initialized to 0. Consider the following procedures set and is\\_set:",
+        "bbox": [
+            84,
+            243,
+            875,
+            288
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nset(i) {\n    count = count + 1;\n    q[count] = i;\n    p[i] = count;\n}\nis_set(i) {\n    if (p[i] ≤ 0 or p[i] > count)\n        return false;\n    if (q[p[i]] ≠ 1)\n        return false;\n    return true;\n}\n```",
+        "bbox": [
+            87,
+            296,
+            245,
+            428
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. Suppose we make the following sequence of calls:",
+        "bbox": [
+            87,
+            438,
+            482,
+            452
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "set(7); set(3); set(9);",
+        "bbox": [
+            112,
+            453,
+            282,
+            467
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "After these sequence of calls, what is the value of count, and what do $q[1], q[2], q[3], p[7], p[3]$ and $p[9]$ contain?",
+        "bbox": [
+            109,
+            467,
+            927,
+            495
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. Complete the following statement \"The first count elements of \\_\\_\\_\\_ contain values i such that set (\\_\\_\\_\\_) has been called\".",
+        "bbox": [
+            87,
+            496,
+            927,
+            524
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. Show that if $set(i)$ has not been called for some $i$ , then regardless of what $p[i]$ contains, $is\\_set(i)$ will return false.",
+        "bbox": [
+            85,
+            524,
+            927,
+            552
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 data-structures array easy descriptive",
+        "bbox": [
+            87,
+            579,
+            351,
+            589
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            596,
+            186,
+            610
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.3.8 Array: GATE CSE 2005 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            77,
+            619,
+            408,
+            633
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A program P reads in 500 integers in the range $[0,100]$ representing the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies?",
+        "bbox": [
+            82,
+            643,
+            878,
+            687
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. An array of 50 numbers",
+        "bbox": [
+            87,
+            695,
+            275,
+            711
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. An array of 100 numbers",
+        "bbox": [
+            495,
+            695,
+            690,
+            711
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. An array of 500 numbers",
+        "bbox": [
+            89,
+            714,
+            284,
+            728
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. A dynamically allocated array of 550 numbers",
+        "bbox": [
+            495,
+            714,
+            830,
+            729
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 data-structures array easy",
+        "bbox": [
+            87,
+            738,
+            292,
+            748
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            754,
+            186,
+            768
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.3.9 Array: GATE CSE 2013 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            77,
+            777,
+            416,
+            790
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The procedure given below is required to find and replace certain characters inside an input character string supplied in array A. The characters to be replaced are supplied in array oldc, while their respective replacement characters are supplied in array newc. Array A has a fixed length of five characters, while arrays oldc and newc contain three characters each. However, the procedure is flawed.",
+        "bbox": [
+            82,
+            801,
+            929,
+            859
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nvoid find_and_replace (char *A, char *oldc, char *newc) {\n    for (int i=0; i<5; i++)\n        for (int j=0; j<3; j++)\n            if (A[i] == oldc[j])\n                A[i] = newc[j];\n```",
+        "bbox": [
+            87,
+            869,
+            413,
+            926
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/83457d76a6662affee7ded5bd43f40411bce8a8219c7d0af18600310e287a8b5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            780,
+            931,
+            817
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e432044ecd133933b8d2f2826d836c5e69d6fb2c6555612a71ba7b22a392396.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            222,
+            931,
+            258
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/4d83a68d5093098b30361890c28b06188bae09e5cbdb30c4f06ceeba48803d8b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            622,
+            931,
+            659
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The procedure is tested with the following four test cases.",
+        "bbox": [
+            85,
+            85,
+            507,
+            99
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. oldc = \"abc\", newc = \"dab\"",
+            "2. oldc = \"cde\", newc = \"bcd\"",
+            "3. oldc = \"bca\", newc = \"cda\"",
+            "4. oldc = \"abc\", newc = \"bac\""
+        ],
+        "bbox": [
+            89,
+            109,
+            347,
+            168
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The tester now tests the program on all input strings of length five consisting of characters 'a', 'b', 'c', 'd' and 'e' with duplicates allowed. If the tester carries out this testing with the four test cases given above, how many test cases will be able to capture the flaw?",
+        "bbox": [
+            84,
+            179,
+            929,
+            222
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Only one",
+        "bbox": [
+            87,
+            236,
+            176,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. Only two",
+        "bbox": [
+            285,
+            236,
+            369,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. Only three",
+        "bbox": [
+            480,
+            236,
+            576,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. All four",
+        "bbox": [
+            673,
+            236,
+            749,
+            249
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 data-structures array normal",
+        "bbox": [
+            87,
+            258,
+            304,
+            269
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            276,
+            186,
+            290
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.3.10 Array: GATE CSE 2013 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            299,
+            425,
+            314
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The procedure given below is required to find and replace certain characters inside an input character string supplied in array A. The characters to be replaced are supplied in array oldc, while their respective replacement characters are supplied in array newc. Array A has a fixed length of five characters, while arrays oldc and newc contain three characters each. However, the procedure is flawed.",
+        "bbox": [
+            84,
+            323,
+            929,
+            382
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nvoid find_and_replace (char *A, char *oldc, char *newc) {\n    for (int i=0; i<5; i++)\n        for (int j=0; j<3; j++)\n            if (A[i] == oldc[j])\n                A[i] = newc[j];\n}\n```",
+        "bbox": [
+            87,
+            391,
+            413,
+            458
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/59ceef3e1b5ac4277101dc1a224976139a51ad65a330c4ed045b9a189e84aadf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            302,
+            932,
+            340
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The procedure is tested with the following four test cases.",
+        "bbox": [
+            85,
+            480,
+            507,
+            494
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. oldc = \"abc\", newc = \"dab\"",
+            "2. oldc = \"cde\", newc = \"bcd\"",
+            "3. oldc = \"bca\", newc = \"cda\"",
+            "4. oldc = \"abc\", newc = \"bac\""
+        ],
+        "bbox": [
+            90,
+            504,
+            347,
+            562
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If array $A$ is made to hold the string \"abcde\", which of the above four test cases will be successful in exposing the flaw in this procedure?",
+        "bbox": [
+            84,
+            574,
+            927,
+            603
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. None",
+        "bbox": [
+            87,
+            618,
+            152,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 2 only",
+        "bbox": [
+            285,
+            618,
+            352,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 3 and 4 only",
+        "bbox": [
+            480,
+            617,
+            589,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 4 only",
+        "bbox": [
+            673,
+            617,
+            741,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 data-structures array normal",
+        "bbox": [
+            87,
+            642,
+            302,
+            650
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            657,
+            186,
+            672
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.3.11 Array: GATE CSE 2014 | Set 3 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            77,
+            681,
+            478,
+            695
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the C function given below. Assume that the array listA contains $n(>0)$ elements, sorted in ascending order.",
+        "bbox": [
+            84,
+            706,
+            880,
+            735
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint ProcessArray(int *listA, int x, int n)\n{\n    int i, j, k;\n    i = 0;    j = n-1;\n    do {\n        k = (i+j)/2;\n        if (x <= listA[k]) j = k-1;\n        if (listA[k] <= x) i = k+1;\n    }\n    while (i <= j);\n    if (listA[k] == x) return(k);\n    else return -1;\n}\n```",
+        "bbox": [
+            87,
+            744,
+            302,
+            885
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/003d2e50e1e9b6d8971a959e9cec7ec9588687ebb3df5ce031df2d1d04e60fb9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            684,
+            932,
+            722
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements about the function ProcessArray is CORRECT?",
+        "bbox": [
+            84,
+            894,
+            736,
+            910
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It will run into an infinite loop when $x$ is not in listA.",
+            "B. It is an implementation of binary search.",
+            "C. It will always find the maximum element in listA.",
+            "D. It will return -1 even when x is present in listA."
+        ],
+        "bbox": [
+            87,
+            65,
+            489,
+            123
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 data-structures array easy",
+        "bbox": [
+            87,
+            149,
+            312,
+            159
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            165,
+            186,
+            180
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.3.12 Array: GATE CSE 2015 | Set 2 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            188,
+            477,
+            203
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A Young tableau is a $2D$ array of integers increasing from left to right and from top to bottom. Any unfilled entries are marked with $\\infty$ , and hence there cannot be any entry to the right of, or below a $\\infty$ . The following Young tableau consists of unique entries.",
+        "bbox": [
+            82,
+            213,
+            878,
+            256
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/14f65dba52628f3458bfad98c577afb0c09bf85a98833ad2e78db50be7fdcacd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            191,
+            931,
+            229
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/5b23868ed96c379dc6051a9ba9f948ecce2b567f982688ac4fe35378f7849685.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1</td><td>2</td><td>5</td><td>14</td></tr><tr><td>3</td><td>4</td><td>6</td><td>23</td></tr><tr><td>10</td><td>12</td><td>18</td><td>25</td></tr><tr><td>31</td><td>∞</td><td>∞</td><td>∞</td></tr></table>",
+        "bbox": [
+            430,
+            267,
+            586,
+            347
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "When an element is removed from a Young tableau, other elements should be moved into its place so that the resulting table is still a Young tableau (unfilled entries may be filled with a $\\infty$ ). The minimum number of entries (other than 1) to be shifted, to remove 1 from the given Young tableau is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            370,
+            929,
+            414
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 databases array normal numerical-answers",
+        "bbox": [
+            87,
+            427,
+            391,
+            437
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            442,
+            189,
+            458
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.3.13 Array: GATE CSE 2021 | Set 1 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            77,
+            467,
+            470,
+            480
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let P be an array containing n integers. Let t be the lowest upper bound on the number of comparisons of the array elements, required to find the minimum and maximum values in an arbitrary array of n elements. Which one of the following choices is correct?",
+        "bbox": [
+            84,
+            491,
+            878,
+            534
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/795440f2916bb60ee1aab6c1f37e094a9cfe434d114e9bd2ed6bcc0b2ff8d66b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            469,
+            932,
+            507
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $t > 2n - 2$",
+            "C. $t > n$ and $t \\leq 3\\left\\lceil \\frac{n}{2} \\right\\rceil$",
+            "gatecse-2021-set1 data-structures array one-mark"
+        ],
+        "bbox": [
+            87,
+            543,
+            332,
+            589
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $t > 3\\lceil \\frac{n}{2}\\rceil$ and $t\\leq 2n - 2$",
+            "D. $t > \\lceil \\log_2(n) \\rceil$ and $t \\leq n$"
+        ],
+        "bbox": [
+            495,
+            543,
+            705,
+            574
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            595,
+            186,
+            610
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.4",
+        "text_level": 1,
+        "bbox": [
+            68,
+            619,
+            95,
+            633
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Binary Heap (30)",
+        "text_level": 1,
+        "bbox": [
+            445,
+            619,
+            581,
+            634
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests:",
+        "bbox": [
+            70,
+            644,
+            196,
+            657
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Test 1 (15Q)",
+        "bbox": [
+            203,
+            644,
+            277,
+            657
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Test 2 (15Q)",
+        "bbox": [
+            292,
+            644,
+            366,
+            657
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Test 3 (15Q)",
+        "bbox": [
+            381,
+            644,
+            455,
+            657
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Test 4 (2Q)",
+        "bbox": [
+            470,
+            644,
+            539,
+            657
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.4.1 Binary Heap: GATE CSE 1990 | Question: 2-viii",
+        "text_level": 1,
+        "bbox": [
+            77,
+            673,
+            489,
+            687
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Match the pairs in the following questions:",
+        "bbox": [
+            85,
+            697,
+            396,
+            712
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/6e2a63802a3fbd37aa2afbb01ddb5a2aa4ec434055e40461141066cf0cd8b8f8.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(a)</td><td>A heap construction</td><td>(p)</td><td> $\\Omega(n \\log_{10} n)$ </td></tr><tr><td>(b)</td><td>Constructing Hashtable with linear probing</td><td>(q)</td><td> $O(n)$ </td></tr><tr><td>(c)</td><td>AVL tree construction</td><td>(r)</td><td> $O(n^{2})$ </td></tr><tr><td>(d)</td><td>Digital trie construction</td><td>(s)</td><td> $O(n \\log_{2} n)$ </td></tr></table>",
+        "bbox": [
+            208,
+            723,
+            808,
+            806
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/9ccf0b3a5287f9f87176956657b496e5a7e477db3d700b776a7757a1918e3e67.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            676,
+            931,
+            713
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1990 match-the-following data-structures binary-heap",
+        "bbox": [
+            87,
+            830,
+            368,
+            840
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            846,
+            186,
+            859
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.4.2 Binary Heap: GATE CSE 1996 | Question: 2.11",
+        "text_level": 1,
+        "bbox": [
+            77,
+            870,
+            482,
+            884
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of interchanges needed to convert the array into a max-heap is",
+        "bbox": [
+            85,
+            894,
+            710,
+            908
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/4d4f5f1ae3b720dfda18ba2dcf7c0d9addc6ee3f7e954d5d84f156f71a44051b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            872,
+            931,
+            910
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "89,19,40,17,12,10,2,5,7,11,6,9,70",
+        "bbox": [
+            85,
+            62,
+            403,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            89,
+            93,
+            126,
+            106
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 1",
+        "bbox": [
+            285,
+            93,
+            319,
+            106
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 2",
+        "bbox": [
+            480,
+            93,
+            515,
+            106
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 3",
+        "bbox": [
+            673,
+            93,
+            710,
+            106
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1996 data-structures binary-heap easy",
+        "bbox": [
+            87,
+            118,
+            304,
+            127
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            133,
+            188,
+            148
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.4.3 Binary Heap: GATE CSE 1999 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            157,
+            470,
+            172
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/2cd7e1f04631e7923a5699fe6d28a94b3924d62644698fa68dcfe2624b5f2ad5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            160,
+            931,
+            197
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. In binary tree, a full node is defined to be a node with 2 children. Use induction on the height of the binary tree to prove that the number of full nodes plus one is equal to the number of leaves.",
+            "B. Draw the min-heap that results from insertion of the following elements in order into an initially empty min-heap: 7, 6, 5, 4, 3, 2, 1. Show the result after the deletion of the root of this heap."
+        ],
+        "bbox": [
+            85,
+            203,
+            927,
+            264
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1999 data-structures binary-heap normal descriptive",
+        "bbox": [
+            87,
+            289,
+            371,
+            299
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            305,
+            188,
+            320
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.4.4 Binary Heap: GATE CSE 2001 | Question: 1.15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            328,
+            482,
+            343
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/e75260dd99c4437f407c0647ade9850b5254714303a56b6a54b248bf7bcce7c9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            332,
+            931,
+            369
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider any array representation of an $n$ element binary heap where the elements are stored from index 1 to index $n$ of the array. For the element stored at index $i$ of the array $(i \\leq n)$ , the index of the parent is",
+        "bbox": [
+            84,
+            353,
+            875,
+            384
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. i - 1",
+        "bbox": [
+            89,
+            396,
+            152,
+            410
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $\\left\\lfloor\\frac{i}{2}\\right\\rfloor$",
+        "bbox": [
+            285,
+            396,
+            337,
+            414
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\left\\lceil\\frac{i}{2}\\right\\rceil$",
+        "bbox": [
+            480,
+            395,
+            532,
+            414
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{(i+1)}{2}$",
+        "bbox": [
+            673,
+            393,
+            734,
+            415
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 data-structures binary-heap easy",
+        "bbox": [
+            87,
+            421,
+            319,
+            431
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            437,
+            188,
+            452
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.4.5 Binary Heap: GATE CSE 2003 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            461,
+            470,
+            475
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/7e06b67a25ed705f8fd82d17158b121ae968f25c9f3a11b6d0d7cbe51b6eb490.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            464,
+            931,
+            501
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In a min-heap with $n$ elements with the smallest element at the root, the $7^{th}$ smallest element can be found in time",
+        "bbox": [
+            84,
+            488,
+            875,
+            516
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $\\Theta(n \\log n)$",
+        "bbox": [
+            89,
+            526,
+            191,
+            542
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $\\Theta(n)$",
+        "bbox": [
+            497,
+            527,
+            559,
+            541
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\Theta(\\log n)$",
+        "bbox": [
+            90,
+            542,
+            178,
+            557
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $\\Theta(1)$",
+        "bbox": [
+            497,
+            542,
+            557,
+            557
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 data-structures binary-heap",
+        "bbox": [
+            89,
+            561,
+            285,
+            570
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            576,
+            188,
+            591
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.4.6 Binary Heap: GATE CSE 2004 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            78,
+            600,
+            470,
+            614
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/73c2dfff16b148e444f00ad917aeae4da0eed955232bc44a94146317adaa25c5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            603,
+            931,
+            640
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The elements 32, 15, 20, 30, 12, 25, 16, are inserted one by one in the given order into a maxHeap. The resultant maxHeap is",
+        "bbox": [
+            84,
+            623,
+            875,
+            653
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A.",
+        "bbox": [
+            89,
+            729,
+            107,
+            741
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/0bc40bd6917f3eee7644d58542271a295f6bbbf25936f9e20a0607be8228a487.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  32[\"32\"] --> 30[\"30\"]\n  n30[\"30\"] --> 15[\"15\"]\n  n30 --> 12[\"12\"]\n  n30 --> 25[\"25\"]\n  n25[\"25\"] --> 20[\"20\"]\n  n25 --> 16[\"16\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            124,
+            667,
+            278,
+            737
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B.",
+        "bbox": [
+            495,
+            739,
+            512,
+            750
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/b1cdab3ff2b31ebc2a9d97ce1d98b310864947f7d1ddcf18bd7cf9a97ce547aa.jpg",
+        "content": "| Node | Value |\n| --- | --- |\n| 1 | 12 |\n| 2 | 25 |\n| 3 | 32 |\n| 4 | 15 |\n| 5 | 20 |\n| 6 | 16 |\n| 7 | 30 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "funnel",
+        "bbox": [
+            526,
+            668,
+            699,
+            745
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/68e28f063e475aa0df3e555482abb01540dd73a12508e337e0176a0c680d2e38.jpg",
+        "content": "| Node | Value |\n| --- | --- |\n| 32 | 32 |\n| 30 | 30 |\n| 25 | 25 |\n| 15 | 15 |\n| 12 | 12 |\n| 16 | 16 |\n| 20 | 20 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "funnel",
+        "bbox": [
+            119,
+            757,
+            297,
+            834
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D.",
+        "bbox": [
+            495,
+            831,
+            512,
+            842
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "chart",
+        "img_path": "images/d49b8c92a742f143f83bc6700f165dfbcf671ba4b0b5eacb958ec7d209000737.jpg",
+        "content": "| Node | Value |\n| --- | --- |\n| 1 | 12 |\n| 2 | 25 |\n| 3 | 32 |\n| 4 | 15 |\n| 5 | 16 |\n| 6 | 20 |\n| 7 | 30 |",
+        "chart_caption": [],
+        "chart_footnote": [],
+        "sub_type": "funnel",
+        "bbox": [
+            526,
+            757,
+            705,
+            836
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C.",
+        "bbox": [
+            90,
+            831,
+            107,
+            840
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 data-structures binary-heap easy",
+        "bbox": [
+            89,
+            849,
+            319,
+            859
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            865,
+            188,
+            878
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.4.7 Binary Heap: GATE CSE 2005 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            470,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/04a9603a966e74b51d2578a5bce8d498e0891276948412a1ae374479e6c7adcd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A priority queue is implemented as a Max-Heap. Initially, it has 5 elements. The level-order traversal of the heap is: 10, 8, 5, 3, 2. Two new elements 1 and 7 are inserted into the heap in that order. The level-order traversal of the heap after the insertion of the elements is:",
+        "bbox": [
+            84,
+            89,
+            875,
+            131
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 10,8,7,5,3,2,1",
+        "bbox": [
+            89,
+            141,
+            228,
+            155
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 10,8,7,2,3,1,5",
+        "bbox": [
+            497,
+            141,
+            635,
+            155
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "c. 10,8,7,1,2,3,5",
+        "bbox": [
+            90,
+            155,
+            228,
+            169
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 10,8,7,3,2,1,5",
+        "bbox": [
+            497,
+            155,
+            635,
+            169
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 data-structures binary-heap normal",
+        "bbox": [
+            89,
+            174,
+            329,
+            182
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            190,
+            181,
+            204
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.4.8 Binary Heap: GATE CSE 2006 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            213,
+            470,
+            228
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In a binary max heap containing n numbers, the smallest element can be found in time",
+        "bbox": [
+            85,
+            237,
+            717,
+            252
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/4f5ccb4058f9339967e2bccb90535a778c51e616d4b03636514ad197689e386b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            216,
+            931,
+            252
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $O(n)$",
+        "bbox": [
+            90,
+            261,
+            157,
+            277
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $O(\\log n)$",
+        "bbox": [
+            497,
+            261,
+            586,
+            277
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $O(\\log \\log n)$",
+        "bbox": [
+            90,
+            277,
+            206,
+            292
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $O(1)$",
+        "bbox": [
+            497,
+            277,
+            561,
+            292
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 data-structures binary-heap easy",
+        "bbox": [
+            89,
+            295,
+            319,
+            305
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            311,
+            181,
+            325
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.4.9 Binary Heap: GATE CSE 2006 | Question: 76",
+        "text_level": 1,
+        "bbox": [
+            78,
+            334,
+            470,
+            349
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Statement for Linked Answer Questions 76 & 77:",
+        "bbox": [
+            85,
+            359,
+            445,
+            372
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/59122e2c6a1b19a801e8fa975fe75c521f4118bcb9fb36f0371abebda75c1771.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            338,
+            931,
+            374
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A 3-ary max heap is like a binary max heap, but instead of 2 children, nodes have 3 children. A 3-ary heap can be represented by an array as follows: The root is stored in the first location, $a[0]$ , nodes in the next level, from left to right, is stored from $a[1]$ to $a[3]$ . The nodes from the second level of the tree from left to right are stored from $a[4]$ location onward. An item $x$ can be inserted into a 3-ary heap containing $n$ items by placing $x$ in the location $a[n]$ and pushing it up the tree to satisfy the heap property.",
+        "bbox": [
+            84,
+            385,
+            929,
+            461
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is a valid sequence of elements in an array representing 3-ary max heap?",
+        "bbox": [
+            84,
+            473,
+            816,
+            489
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 1,3,5,6,8,9",
+        "bbox": [
+            89,
+            498,
+            205,
+            511
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 9,6,3,1,8,5",
+        "bbox": [
+            497,
+            498,
+            610,
+            511
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 9,3,6,8,5,1",
+        "bbox": [
+            90,
+            511,
+            203,
+            526
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 9,5,6,8,3,1",
+        "bbox": [
+            497,
+            511,
+            608,
+            526
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 data-structures binary-heap normal",
+        "bbox": [
+            87,
+            543,
+            329,
+            553
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            559,
+            181,
+            573
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.4.10 Binary Heap: GATE CSE 2006 | Question: 77",
+        "text_level": 1,
+        "bbox": [
+            77,
+            583,
+            478,
+            597
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Statement for Linked Answer Questions 76 & 77:",
+        "bbox": [
+            85,
+            606,
+            445,
+            621
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/34de7653d4955ab62613420954558d0475a1a54e23b78df8980dc50ac73b4fa8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            586,
+            931,
+            623
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A 3-ary max heap is like a binary max heap, but instead of 2 children, nodes have 3 children. A 3-ary heap can be represented by an array as follows: The root is stored in the first location, $a[0]$ , nodes in the next level, from left to right, is stored from $a[1]$ to $a[3]$ . The nodes from the second level of the tree from left to right are stored from $a[4]$ location onward. An item $x$ can be inserted into a 3-ary heap containing $n$ items by placing $x$ in the location $a[n]$ and pushing it up the tree to satisfy the heap property.",
+        "bbox": [
+            84,
+            634,
+            929,
+            709
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "76. Which one of the following is a valid sequence of elements in an array representing3—ary max heap?",
+        "bbox": [
+            85,
+            712,
+            853,
+            728
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 1,3,5,6,8,9",
+        "bbox": [
+            89,
+            736,
+            205,
+            751
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 9,6,3,1,8,5",
+        "bbox": [
+            497,
+            737,
+            610,
+            751
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 9,3,6,8,5,1",
+        "bbox": [
+            90,
+            751,
+            203,
+            764
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 9,5,6,8,3,1",
+        "bbox": [
+            497,
+            751,
+            610,
+            764
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "77. Suppose the elements 7, 2, 10 and 4 are inserted, in that order, into the valid 3-ary max heap found in the previous question, Q.76. Which one of the following is the sequence of items in the array representing the resultant heap?",
+        "bbox": [
+            84,
+            764,
+            929,
+            806
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 10,7,9,8,3,1,5,2,6,4",
+        "bbox": [
+            89,
+            815,
+            277,
+            828
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 10,9,8,7,6,5,4,3,2,1",
+        "bbox": [
+            497,
+            815,
+            680,
+            828
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 10,9,4,5,7,6,8,2,1,3",
+        "bbox": [
+            90,
+            828,
+            275,
+            843
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 10,8,6,9,7,2,3,4,1,5",
+        "bbox": [
+            497,
+            828,
+            680,
+            843
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 data-structures binary-heap normal",
+        "bbox": [
+            87,
+            847,
+            329,
+            857
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            864,
+            181,
+            878
+        ],
+        "page_idx": 11
+    }
+]

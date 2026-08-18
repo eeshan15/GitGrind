@@ -1,0 +1,3659 @@
+[
+    {
+        "type": "text",
+        "text": "Machine instructions and Addressing modes. ALU, data-path and control unit. Instruction pipelining. Pipeline hazards, Memory hierarchy: cache, main memory and secondary storage; I/O interface (Interrupt and DMA mode)",
+        "bbox": [
+            65,
+            98,
+            857,
+            140
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/08bd542038265a13b23c49f9c0ea4af145b17f4aad7fd3d2cd2556dbb4416393.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>3</td><td>1</td><td>2</td><td>1</td><td>2</td><td>2</td><td>2</td><td>3</td><td>1</td><td>2</td><td>1</td></tr><tr><td>2 Marks Count</td><td>4</td><td>5</td><td>3</td><td>4</td><td>3</td><td>3</td><td>4</td><td>2</td><td>2</td><td>2</td><td>2</td></tr><tr><td>Total Marks</td><td>11</td><td>11</td><td>8</td><td>9</td><td>8</td><td>8</td><td>10</td><td>7</td><td>5</td><td>6</td><td>5</td></tr></table>",
+        "bbox": [
+            70,
+            163,
+            952,
+            226
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"Computer Organization & Architecture\" chapter of your GATE Computer Science preparation. This crucial subject delves into the fundamental design and operational principles of a computer system, from the lowest-level hardware components to how instructions are executed and data is managed. Understanding COA is vital for any computer scientist as it provides the bedrock knowledge for designing efficient systems, writing optimized code, and comprehending the performance implications of software choices. In the GATE CS exam, COA typically carries a weightage of 8-12 marks, with questions ranging from conceptual understanding of architectural principles (like CISC vs. RISC, control unit types) to numerical problems involving cache memory, pipelining performance, virtual memory, and disk access times. Expect a mix of Multiple Choice Questions (MCQs), Multiple Select Questions (MSQs), and Numerical Answer Type (NAT) questions, often requiring precise calculations and a deep grasp of underlying mechanisms.",
+        "bbox": [
+            58,
+            235,
+            924,
+            374
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            387,
+            295,
+            404
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Addressing Modes",
+        "text_level": 1,
+        "bbox": [
+            60,
+            416,
+            235,
+            432
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Addressing modes define how the effective address of an operand is calculated. They specify where the operand is located, whether in a register, memory, or as part of the instruction itself, enabling flexible and efficient memory access.",
+        "bbox": [
+            58,
+            446,
+            927,
+            475
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            489,
+            315,
+            504
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Immediate: Operand is part of the instruction. $EA =$ Operand Value. No memory access for operand.",
+            "- Direct: $EA =$ Address (address field in instruction). One memory access to fetch operand.",
+            "- Indirect: $EA = M[\\text{Address}]$ (address field points to memory location containing EA). Two memory accesses (one for EA, one for operand).",
+            "- Register: Operand is in a specified register. $EA = R$ . No memory access.",
+            "- Register Indirect: $EA = [R]$ (register contains EA). One memory access to fetch operand.",
+            "- Relative (PC-relative): $EA = PC + \\text{Offset}$ (offset from Program Counter). Used for branch instructions.",
+            "- Indexed: $EA = \\text{Base\\_Address} + \\text{Index\\_Register}$ . Used for array access.",
+            "- Base-Register: $EA = \\text{Base\\_Register} + \\text{Offset}$ . Used for relocating programs."
+        ],
+        "bbox": [
+            72,
+            517,
+            931,
+            652
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            666,
+            273,
+            681
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trade-offs exist between instruction length, execution speed, and flexibility.",
+            "- Used to access data, implement control flow, and manage memory."
+        ],
+        "bbox": [
+            72,
+            695,
+            633,
+            724
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            737,
+            194,
+            751
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Confusing direct and indirect addressing, especially regarding the number of memory accesses.",
+        "bbox": [
+            72,
+            767,
+            781,
+            782
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            796,
+            366,
+            809
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Trace the instruction execution step-by-step to calculate the effective address for given register/memory contents.",
+        "bbox": [
+            72,
+            825,
+            910,
+            839
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Average Memory Access Time (AMAT)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            852,
+            411,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AMAT is the average time taken to access memory, considering the presence of a cache and its hit/miss rates. It quantifies the performance of the memory hierarchy.",
+        "bbox": [
+            58,
+            881,
+            880,
+            910
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "page_number",
+        "text": "1",
+        "bbox": [
+            72,
+            71,
+            82,
+            84
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "CO & Architecture (251)",
+        "bbox": [
+            373,
+            68,
+            578,
+            86
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-text content in the source image. However, there is no textual content to extract or convert according to the given instructions.",
+        "bbox": [
+            860,
+            70,
+            926,
+            115
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            315,
+            80
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- For a single-level cache:",
+        "bbox": [
+            72,
+            93,
+            268,
+            108
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA M A T = T _ {h i t} + M R \\times T _ {m i s s \\_ p e n a l t y}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            359,
+            118,
+            658,
+            137
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $T_{hit}$ is cache hit time, MR is miss rate, and $T_{miss\\_penalty}$ is the time to fetch data from the next level of memory (main memory).",
+        "bbox": [
+            82,
+            144,
+            889,
+            173
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- For a two-level cache (L1, L2):",
+        "bbox": [
+            72,
+            174,
+            312,
+            187
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA M A T = T _ {L 1 \\_ h i t} + M R _ {L 1} \\times \\left(T _ {L 2 \\_ h i t} + M R _ {L 2} \\times T _ {\\text {main\\_memory}}\\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            252,
+            198,
+            768,
+            217
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "where $T_{L1\\_hit}$ is L1 hit time, $MR_{L1}$ is L1 miss rate, $T_{L2\\_hit}$ is L2 hit time, $MR_{L2}$ is L2 miss rate (local miss rate for L2), and $T_{main\\_memory}$ is main memory access time.",
+        "bbox": [
+            82,
+            225,
+            929,
+            256
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            269,
+            275,
+            283
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Lower AMAT indicates better memory system performance.",
+            "- Affected by cache hit rate, miss penalty, and cache access times."
+        ],
+        "bbox": [
+            72,
+            298,
+            564,
+            326
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            340,
+            196,
+            355
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Forgetting to add the hit time to the miss penalty when calculating total miss time.",
+            "- Incorrectly applying local vs. global miss rates for multi-level caches."
+        ],
+        "bbox": [
+            72,
+            370,
+            678,
+            397
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            412,
+            368,
+            428
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Draw the memory hierarchy and clearly identify access times and miss rates for each level.",
+        "bbox": [
+            72,
+            441,
+            749,
+            456
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Bit Vector",
+        "text_level": 1,
+        "bbox": [
+            60,
+            467,
+            156,
+            484
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A bit vector (or bit array) is a data structure that efficiently stores a sequence of bits. Each bit typically represents a boolean flag or the presence/absence of an element in a set.",
+        "bbox": [
+            58,
+            498,
+            895,
+            526
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            541,
+            315,
+            555
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Storage: $N$ bits require $\\lceil N / 8 \\rceil$ bytes of storage.",
+            "- Bitwise operations: AND, OR, XOR, NOT, SHIFT for efficient manipulation."
+        ],
+        "bbox": [
+            72,
+            570,
+            633,
+            600
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            614,
+            275,
+            629
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Space-efficient for large sets of boolean flags.",
+            "- Fast bitwise operations for checking, setting, or clearing flags."
+        ],
+        "bbox": [
+            72,
+            643,
+            537,
+            672
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            685,
+            196,
+            699
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Misinterpreting bit positions or the effect of bitwise operations.",
+        "bbox": [
+            72,
+            714,
+            537,
+            729
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            744,
+            368,
+            758
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "\\- Use bit masks to isolate or modify specific bits.",
+        "bbox": [
+            72,
+            771,
+            430,
+            787
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "CISC RISC Architecture",
+        "text_level": 1,
+        "bbox": [
+            60,
+            800,
+            278,
+            814
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "CISC (Complex Instruction Set Computer) and RISC (Reduced Instruction Set Computer) are two contrasting philosophies for designing instruction sets. They represent different approaches to instruction complexity and hardware implementation.",
+        "bbox": [
+            58,
+            828,
+            927,
+            871
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            885,
+            315,
+            900
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "• CISC Characteristics:",
+        "bbox": [
+            72,
+            914,
+            258,
+            928
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Many complex instructions, often performing multiple operations (e.g., memory access and arithmetic).",
+            "- Variable instruction length.",
+            "- Microprogrammed control unit.",
+            "- Fewer general-purpose registers, more memory-to-memory operations.",
+            "- Complex addressing modes."
+        ],
+        "bbox": [
+            97,
+            64,
+            855,
+            133
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• RISC Characteristics:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            134,
+            258,
+            146
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Few, simple, fixed-length instructions, typically one operation per instruction.",
+        "bbox": [
+            97,
+            148,
+            667,
+            162
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Hardwired control unit.",
+        "bbox": [
+            97,
+            162,
+            278,
+            174
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Many general-purpose registers, load/store architecture (only LOAD/STORE access memory).",
+        "bbox": [
+            97,
+            175,
+            796,
+            190
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Simple addressing modes.",
+        "bbox": [
+            97,
+            190,
+            307,
+            203
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Optimized for pipelining.",
+        "bbox": [
+            97,
+            203,
+            290,
+            217
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            232,
+            273,
+            245
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- RISC generally achieves higher CPI (Cycles Per Instruction) but lower clock cycle time due to simpler instructions, leading to better performance in many cases.",
+            "- CISC aims for fewer instructions per program but higher CPI."
+        ],
+        "bbox": [
+            72,
+            260,
+            915,
+            302
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            317,
+            194,
+            330
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Assuming one architecture is universally superior; their suitability depends on the application and compiler technology.",
+        "bbox": [
+            72,
+            346,
+            858,
+            375
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            389,
+            366,
+            404
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Compare and contrast features to identify the type of architecture described in a scenario.",
+        "bbox": [
+            72,
+            418,
+            737,
+            432
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Cache Memory",
+        "text_level": 1,
+        "bbox": [
+            60,
+            445,
+            200,
+            461
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Cache memory is a small, fast memory component that stores copies of data from frequently used main memory locations. Its purpose is to reduce the average time to access data, exploiting the principle of locality.",
+        "bbox": [
+            58,
+            473,
+            878,
+            504
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            517,
+            315,
+            532
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Address Breakdown: For a memory address of $M$ bits, a cache with $B$ bytes per block, and $C$ cache lines (or sets):",
+        "bbox": [
+            72,
+            546,
+            894,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Block Offset bits: $\\log_2 B$",
+            "- Number of Blocks in Main Memory: $2^{M} / B$",
+            "- Number of Cache Lines: $C$"
+        ],
+        "bbox": [
+            97,
+            574,
+            443,
+            619
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Direct Mapping:",
+        "bbox": [
+            73,
+            621,
+            213,
+            635
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Index bits: $\\log_2 C$",
+            "- Tag bits: $M - (\\log_2 C + \\log_2 B)$",
+            "。Cache\\_Line\\_Index = (Main\\_Memory\\_Block\\_Number) (mod C)"
+        ],
+        "bbox": [
+            97,
+            635,
+            670,
+            681
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Set-Associative Mapping (S-way):",
+        "bbox": [
+            73,
+            681,
+            352,
+            694
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Number of Sets: $C / S$",
+            "- Index bits: $\\log_2(C / S)$",
+            "- Tag bits: $M - (\\log_2(C / S) + \\log_2 B)$",
+            "。Cache\\_Set\\_Index = (Main\\_Memory\\_Block\\_Number) (mod (C/S))"
+        ],
+        "bbox": [
+            97,
+            694,
+            690,
+            755
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Fully Associative Mapping:",
+        "bbox": [
+            73,
+            755,
+            300,
+            768
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- No Index bits.",
+            "- Tag bits: $M - \\log_2 B$",
+            "- Any block can go into any cache line."
+        ],
+        "bbox": [
+            97,
+            768,
+            384,
+            809
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Hit Rate (HR): $\\frac{\\text{Number of Cache Hits}}{\\text{Total Memory Accesses}}$",
+        "bbox": [
+            73,
+            809,
+            356,
+            831
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Miss Rate (MR): 1 - HR",
+        "bbox": [
+            73,
+            830,
+            292,
+            844
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            859,
+            273,
+            872
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Exploits temporal and spatial locality of reference.",
+            "- Mapping techniques (Direct, Set-Associative, Fully Associative) determine where a block can be placed.",
+            "- Write policies (Write-Through, Write-Back) determine when data is written to main memory."
+        ],
+        "bbox": [
+            72,
+            887,
+            840,
+            929
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Replacement policies (LRU, FIFO, LFU, Random) determine which block to evict on a miss.",
+        "bbox": [
+            72,
+            64,
+            754,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            93,
+            196,
+            106
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly calculating the number of bits for Tag, Index, and Offset.",
+            "- Confusing the total cache size with the number of cache lines."
+        ],
+        "bbox": [
+            72,
+            122,
+            579,
+            150
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            165,
+            366,
+            180
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Draw the cache structure and trace memory accesses to determine hits/misses and cache contents.",
+        "bbox": [
+            72,
+            194,
+            813,
+            207
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Conflict Misses",
+        "text_level": 1,
+        "bbox": [
+            60,
+            220,
+            205,
+            236
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Conflict misses occur in direct-mapped or set-associative caches when multiple memory blocks map to the same cache line or set, and these blocks are actively used, causing them to evict each other even if other cache lines are empty.",
+        "bbox": [
+            58,
+            251,
+            929,
+            280
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            293,
+            315,
+            308
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- These are a type of \"capacity miss\" specifically due to the mapping function.",
+            "- Increasing associativity reduces conflict misses."
+        ],
+        "bbox": [
+            72,
+            321,
+            640,
+            350
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            365,
+            275,
+            378
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Occur when the cache is not full but the required block is evicted due to mapping constraints.",
+            "- Distinguished from compulsory (first-time access) and capacity (cache too small) misses."
+        ],
+        "bbox": [
+            72,
+            394,
+            761,
+            422
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            437,
+            194,
+            450
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Mistaking a conflict miss for a capacity miss or a compulsory miss.",
+        "bbox": [
+            72,
+            466,
+            569,
+            480
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            494,
+            366,
+            509
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Analyze the memory access pattern and the cache mapping scheme to identify if multiple active blocks map to the same location.",
+        "bbox": [
+            72,
+            523,
+            917,
+            551
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Control Unit",
+        "text_level": 1,
+        "bbox": [
+            60,
+            564,
+            176,
+            579
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The control unit is the part of the CPU that directs the operation of the processor. It interprets instructions and generates control signals to coordinate the activities of other components, such as the ALU, registers, and memory.",
+        "bbox": [
+            58,
+            593,
+            900,
+            623
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            637,
+            315,
+            652
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Hardwired Control: Implemented using combinational logic gates.",
+            "- Faster execution.",
+            "- Complex to design and modify for large instruction sets.",
+            "- Used in RISC processors."
+        ],
+        "bbox": [
+            72,
+            666,
+            574,
+            720
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Microprogrammed Control: Implemented using a sequence of microinstructions stored in a control memory.",
+        "bbox": [
+            72,
+            720,
+            882,
+            735
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- More flexible and easier to design/modify for complex instruction sets.",
+            "- Slower execution due to memory access for microinstructions.",
+            "- Used in CISC processors."
+        ],
+        "bbox": [
+            97,
+            736,
+            620,
+            776
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            790,
+            273,
+            806
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Determines the sequence of micro-operations for each machine instruction.",
+            "- Generates timing and control signals for the entire system."
+        ],
+        "bbox": [
+            72,
+            820,
+            635,
+            849
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            863,
+            194,
+            877
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Not understanding the trade-offs between hardwired and microprogrammed control in terms of speed, flexibility, and design complexity.",
+        "bbox": [
+            72,
+            891,
+            929,
+            921
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            366,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Relate the control unit type to the characteristics of CISC/RISC architectures.",
+        "bbox": [
+            72,
+            93,
+            647,
+            108
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "DMA (Direct Memory Access)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            121,
+            329,
+            137
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "DMA is a hardware feature that allows I/O devices to transfer data directly to and from main memory without involving the CPU. This significantly reduces CPU overhead for data transfers, improving system performance.",
+        "bbox": [
+            58,
+            150,
+            917,
+            180
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            193,
+            315,
+            207
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• DMA controller manages the data transfer.",
+            "- Cycle Stealing: DMA controller takes control of the bus for one or more memory cycles to transfer data.",
+            "- Burst Mode: DMA controller takes control of the bus and transfers an entire block of data before releasing the bus."
+        ],
+        "bbox": [
+            72,
+            222,
+            922,
+            264
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            277,
+            275,
+            293
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Frees the CPU to perform other tasks during I/O operations.",
+            "- Requires a DMA controller chip."
+        ],
+        "bbox": [
+            72,
+            307,
+            524,
+            334
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            350,
+            194,
+            364
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Misunderstanding that DMA completely bypasses the CPU; the CPU initiates and configures the DMA transfer.",
+        "bbox": [
+            72,
+            378,
+            889,
+            393
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            408,
+            366,
+            423
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Analyze scenarios to determine when DMA is most beneficial compared to programmed I/O or interrupt-driven I/O.",
+        "bbox": [
+            72,
+            437,
+            917,
+            451
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "DRAM (Dynamic Random Access Memory)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            464,
+            448,
+            480
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "DRAM is the most common type of main memory used in computers. It stores each bit of data in a separate capacitor within an integrated circuit, requiring periodic refreshing to maintain the charge and thus the data.",
+        "bbox": [
+            58,
+            492,
+            917,
+            523
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            536,
+            315,
+            551
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Data stored as charge in capacitors.",
+            "- Requires refresh cycles to prevent data loss."
+        ],
+        "bbox": [
+            72,
+            565,
+            413,
+            593
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            608,
+            273,
+            623
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Volatile (data is lost when power is removed).",
+            "- Higher density and lower cost per bit compared to SRAM.",
+            "- Slower access times than SRAM due to refresh cycles and capacitor charging/discharging."
+        ],
+        "bbox": [
+            72,
+            637,
+            746,
+            679
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            694,
+            194,
+            707
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Confusing DRAM characteristics with SRAM (Static RAM), which uses latches and does not require refreshing.",
+        "bbox": [
+            72,
+            722,
+            890,
+            737
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            751,
+            366,
+            766
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Compare and contrast DRAM with SRAM based on cost, speed, density, and power consumption.",
+        "bbox": [
+            72,
+            780,
+            798,
+            795
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Data Dependency",
+        "text_level": 1,
+        "bbox": [
+            60,
+            808,
+            223,
+            824
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A data dependency exists between two instructions when the second instruction requires data produced by the first instruction, or when they both access the same memory location, potentially leading to incorrect results if executed out of order.",
+        "bbox": [
+            58,
+            837,
+            922,
+            878
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            894,
+            315,
+            908
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- RAW (Read After Write) / True Dependency: Instruction $J$ tries to read a source before instruction $I$ writes to it. $I \\rightarrow J$ . This is the most common and critical dependency.",
+            "- WAR (Write After Read) / Anti-dependency: Instruction $J$ tries to write to a destination before instruction $I$ reads from it. $I \\leftarrow J$ . Can be resolved by renaming.",
+            "- WAW (Write After Write) / Output Dependency: Instruction $J$ tries to write to a destination before instruction $I$ writes to it. $I \\Rightarrow J$ . Can be resolved by renaming."
+        ],
+        "bbox": [
+            72,
+            65,
+            919,
+            153
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            167,
+            273,
+            181
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- RAW dependencies are true data dependencies and must be preserved.",
+            "- WAR and WAW are name dependencies and can be eliminated by register renaming."
+        ],
+        "bbox": [
+            72,
+            195,
+            709,
+            225
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            238,
+            194,
+            251
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Incorrectly identifying the type of dependency or missing a dependency.",
+        "bbox": [
+            72,
+            267,
+            608,
+            282
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            296,
+            366,
+            311
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Analyze the read/write sets of instructions to identify dependencies.",
+        "bbox": [
+            72,
+            325,
+            576,
+            340
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Data Hazards",
+        "text_level": 1,
+        "bbox": [
+            60,
+            352,
+            184,
+            366
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Data hazards occur in pipelined processors when an instruction attempts to access data before a preceding instruction has made that data available. These hazards can lead to incorrect program execution if not handled.",
+        "bbox": [
+            60,
+            382,
+            922,
+            410
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            423,
+            315,
+            439
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Caused by RAW, WAR, and WAW dependencies.",
+            "- Solutions:"
+        ],
+        "bbox": [
+            72,
+            454,
+            452,
+            480
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Stalling (Bubbles/NOPs): Insert NOP instructions to delay the dependent instruction.",
+            "- Forwarding (Bypassing): Route the result of an instruction directly from an internal pipeline register to the input of a subsequent instruction's functional unit, bypassing the register file.",
+            "- Compiler Scheduling: Reorder instructions at compile time to avoid hazards."
+        ],
+        "bbox": [
+            97,
+            480,
+            929,
+            536
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            551,
+            273,
+            566
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Increase the CPI (Cycles Per Instruction) of a pipeline, reducing ideal speedup.",
+            "• Forwarding is the most common hardware solution to reduce stalls due to RAW hazards."
+        ],
+        "bbox": [
+            72,
+            580,
+            729,
+            608
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            624,
+            194,
+            637
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Calculating the number of stalls incorrectly, especially when forwarding is present.",
+            "- Not identifying all data dependencies in a given instruction sequence."
+        ],
+        "bbox": [
+            72,
+            652,
+            682,
+            681
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            695,
+            366,
+            709
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Draw pipeline diagrams to visualize instruction flow and identify where stalls or forwarding are needed.",
+        "bbox": [
+            72,
+            724,
+            830,
+            738
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Data Path",
+        "text_level": 1,
+        "bbox": [
+            60,
+            751,
+            152,
+            766
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The data path of a CPU consists of the functional units (like the ALU, registers, and multiplexers) and the buses that connect them, through which data flows during instruction execution. It performs the actual data processing operations.",
+        "bbox": [
+            60,
+            780,
+            924,
+            809
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            823,
+            315,
+            838
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Key components: Program Counter (PC), Instruction Register (IR), Memory Address Register (MAR), Memory Data Register (MDR), General Purpose Registers (GPRs), Arithmetic Logic Unit (ALU).",
+        "bbox": [
+            72,
+            852,
+            924,
+            880
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            895,
+            273,
+            910
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The data path is controlled by signals generated by the control unit.",
+            "- Its design impacts the clock cycle time and the number of cycles per instruction."
+        ],
+        "bbox": [
+            72,
+            65,
+            667,
+            93
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            106,
+            194,
+            119
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Not understanding how data moves between components for different instruction types.",
+        "bbox": [
+            72,
+            136,
+            722,
+            150
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            165,
+            366,
+            180
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Trace the flow of data for a specific instruction (e.g., LOAD, ADD) through the datapath components.",
+        "bbox": [
+            72,
+            194,
+            816,
+            209
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Direct Mapping",
+        "text_level": 1,
+        "bbox": [
+            60,
+            220,
+            203,
+            238
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Direct mapping is a cache organization technique where each block from main memory can only be placed into one specific line in the cache. This mapping is determined by a simple modular arithmetic function of the memory block address.",
+        "bbox": [
+            58,
+            251,
+            900,
+            292
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            307,
+            315,
+            321
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Cache Line Index:\n  Cache\\_Line\\_Index = (Main\\_Memory\\_Block\\_Number) (mod Number\\_of\\_Cache\\_Lines)",
+        "bbox": [
+            72,
+            337,
+            880,
+            366
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Address Breakdown: A memory address is divided into three fields: Tag, Index, and Block Offset.",
+        "bbox": [
+            72,
+            366,
+            803,
+            378
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Block Offset bits: $\\log_2$ (Block Size in bytes)",
+            "- Index bits: $\\log_2(\\text{Number of Cache Lines})$",
+            "- Tag bits: Total Address Bits – Index Bits – Block Offset Bits"
+        ],
+        "bbox": [
+            97,
+            380,
+            608,
+            425
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            439,
+            273,
+            454
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Simplest to implement and fastest for cache lookup.",
+            "- Suffers from high conflict misses if frequently accessed blocks map to the same cache line."
+        ],
+        "bbox": [
+            72,
+            467,
+            749,
+            496
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            511,
+            194,
+            524
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Incorrectly calculating the number of bits for the Tag, Index, or Block Offset fields.",
+        "bbox": [
+            72,
+            540,
+            678,
+            554
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            568,
+            366,
+            584
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Given memory and cache parameters, determine the address breakdown and trace memory accesses to identify hits/misses.",
+        "bbox": [
+            72,
+            598,
+            905,
+            625
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Dirty Bit",
+        "text_level": 1,
+        "bbox": [
+            60,
+            638,
+            139,
+            654
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A dirty bit (or modified bit) is a flag associated with a cache line or a virtual memory page table entry. It indicates whether the corresponding data block in the cache/page has been modified since it was loaded from the next lower level of memory (main memory/disk).",
+        "bbox": [
+            58,
+            668,
+            937,
+            710
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            725,
+            315,
+            739
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Set to '1' when data in the cache line or page is written to.",
+            "- Set to '0' when the data is clean (matches the lower level memory)."
+        ],
+        "bbox": [
+            72,
+            754,
+            574,
+            782
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            796,
+            273,
+            811
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Crucial for write-back cache policies: if the dirty bit is set, the block must be written back to main memory upon eviction.",
+            "- Used in virtual memory page replacement algorithms to avoid unnecessary writes to disk."
+        ],
+        "bbox": [
+            72,
+            825,
+            887,
+            866
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            882,
+            194,
+            896
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Misunderstanding its role in write-through caches (where it's not typically needed) versus write-back caches.",
+        "bbox": [
+            72,
+            910,
+            870,
+            925
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            366,
+            80
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Analyze cache write operations and page replacement scenarios to determine when the dirty bit is set or checked.",
+        "bbox": [
+            70,
+            93,
+            917,
+            109
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Disk",
+        "text_level": 1,
+        "bbox": [
+            60,
+            121,
+            107,
+            136
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A disk (hard disk drive) is a non-volatile secondary storage device that stores data magnetically on rotating platters. It is characterized by its large capacity and persistence, but significantly slower access times compared to RAM.",
+        "bbox": [
+            58,
+            150,
+            931,
+            180
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            193,
+            315,
+            207
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Disk Access Time:",
+        "bbox": [
+            72,
+            222,
+            235,
+            235
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Access\\_Time} = \\text {Seek\\_Time} + \\text {Rotational\\_Latency} + \\text {Transfer\\_Time}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            213,
+            245,
+            808,
+            264
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Seek Time: Time taken for the read/write head to move to the correct track. (Often given as average or calculated based on number of tracks).",
+            "- Rotational Latency: Time taken for the desired sector to rotate under the read/write head."
+        ],
+        "bbox": [
+            70,
+            273,
+            917,
+            315
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Average\\_Rotational\\_Latency} = \\frac {1}{2} \\times \\frac {6 0 \\text {seconds}}{\\text {RPM}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            302,
+            326,
+            717,
+            359
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "(where RPM is revolutions per minute).",
+        "bbox": [
+            84,
+            366,
+            374,
+            382
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Transfer Time: Time taken to transfer the actual data once the head is positioned.",
+        "bbox": [
+            72,
+            382,
+            689,
+            396
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Transfer\\_Time} = \\frac {\\text {Number of Sectors to Transfer}}{\\text {Sectors per Track}} \\times \\frac {6 0 \\text {seconds}}{\\text {RPM}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            236,
+            404,
+            783,
+            442
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {or Transfer\\_Time} = \\frac {\\text {Amount of Data}}{\\text {Transfer Rate}}.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            84,
+            448,
+            379,
+            472
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            483,
+            275,
+            498
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Non-volatile storage.",
+            "- Mechanical components make it orders of magnitude slower than electronic memory."
+        ],
+        "bbox": [
+            72,
+            511,
+            705,
+            541
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            555,
+            194,
+            568
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly calculating average rotational latency (using $1/2$ of a full rotation).",
+            "- Mixing units (e.g., milliseconds and seconds)."
+        ],
+        "bbox": [
+            72,
+            585,
+            647,
+            614
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            628,
+            366,
+            643
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Break down the access time calculation into its three components and calculate each separately.",
+        "bbox": [
+            72,
+            657,
+            789,
+            672
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Hazards",
+        "text_level": 1,
+        "bbox": [
+            60,
+            684,
+            139,
+            699
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Hazards are situations in pipelined processors that prevent the next instruction in the instruction stream from executing in its designated clock cycle. They reduce the ideal speedup of a pipeline.",
+        "bbox": [
+            58,
+            713,
+            924,
+            743
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            756,
+            315,
+            771
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Structural Hazards: Occur when two instructions require the same hardware resource at the same time (e.g., single memory port for both instruction fetch and data access).",
+            "- Data Hazards: Occur when an instruction depends on the result of a previous instruction that has not yet completed (RAW, WAR, WAW).",
+            "- Control Hazards (Branch Hazards): Occur when the pipeline makes a wrong guess about the next instruction to fetch (e.g., after a conditional branch)."
+        ],
+        "bbox": [
+            70,
+            785,
+            931,
+            869
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            883,
+            275,
+            897
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- All hazards increase the effective CPI (Cycles Per Instruction) of the pipeline.",
+        "bbox": [
+            72,
+            912,
+            647,
+            928
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Solutions include stalling, forwarding, and branch prediction.",
+        "bbox": [
+            72,
+            64,
+            527,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            93,
+            196,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Confusing the different types of hazards or misidentifying the cause of a stall.",
+        "bbox": [
+            72,
+            123,
+            648,
+            138
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            150,
+            369,
+            166
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Analyze the instruction sequence and pipeline stage usage to identify potential conflicts.",
+        "bbox": [
+            72,
+            180,
+            727,
+            195
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "IO Handling",
+        "text_level": 1,
+        "bbox": [
+            60,
+            207,
+            173,
+            224
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "I/O handling refers to the mechanisms by which a CPU communicates and exchanges data with peripheral input/output devices. Efficient I/O handling is crucial for system performance.",
+        "bbox": [
+            58,
+            237,
+            929,
+            266
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            280,
+            315,
+            294
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Programmed I/O (Polling): CPU continuously checks the status of an I/O device.",
+        "bbox": [
+            72,
+            309,
+            682,
+            323
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- High CPU overhead, simple to implement.",
+        "bbox": [
+            97,
+            323,
+            421,
+            336
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Interrupt-Driven I/O: I/O device signals the CPU via an interrupt when it needs attention.",
+        "bbox": [
+            72,
+            337,
+            734,
+            350
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Lower CPU overhead than polling, CPU can do other work.",
+        "bbox": [
+            97,
+            351,
+            544,
+            364
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Requires interrupt service routines (ISRs).",
+        "bbox": [
+            97,
+            365,
+            421,
+            378
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Direct Memory Access (DMA): I/O device transfers data directly to/from memory without CPU intervention.",
+        "bbox": [
+            72,
+            378,
+            870,
+            391
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Lowest CPU overhead for large data transfers.",
+        "bbox": [
+            97,
+            393,
+            453,
+            404
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Requires a DMA controller.",
+        "bbox": [
+            97,
+            406,
+            312,
+            419
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            434,
+            275,
+            448
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Each method has trade-offs in terms of CPU utilization, response time, and complexity.",
+        "bbox": [
+            72,
+            464,
+            719,
+            478
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Interrupts allow for asynchronous event handling.",
+        "bbox": [
+            72,
+            478,
+            447,
+            492
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            505,
+            194,
+            520
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Not understanding the CPU's involvement (or lack thereof) in data transfer for each method.",
+        "bbox": [
+            72,
+            535,
+            754,
+            549
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            564,
+            369,
+            579
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Evaluate scenarios to determine the most suitable I/O handling method based on data volume and CPU availability.",
+        "bbox": [
+            72,
+            593,
+            926,
+            608
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Instruction Execution",
+        "text_level": 1,
+        "bbox": [
+            60,
+            619,
+            258,
+            635
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Instruction execution is the process by which a CPU carries out a single machine instruction. In a pipelined processor, this process is broken down into several sequential stages, allowing multiple instructions to be processed concurrently.",
+        "bbox": [
+            58,
+            650,
+            924,
+            679
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            692,
+            315,
+            707
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "• Typical 5-stage pipeline:",
+        "bbox": [
+            73,
+            722,
+            280,
+            735
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. IF (Instruction Fetch): Fetch instruction from memory.",
+            "2. ID (Instruction Decode): Decode instruction, read registers.",
+            "3. EX (Execute): Perform ALU operation.",
+            "4. MEM (Memory Access): Access data memory (load/store).",
+            "5. WB (Write Back): Write result back to register file."
+        ],
+        "bbox": [
+            89,
+            736,
+            554,
+            805
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            819,
+            273,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Each stage ideally takes one clock cycle in a pipelined processor.",
+            "- The slowest stage determines the clock cycle time of the pipeline."
+        ],
+        "bbox": [
+            72,
+            847,
+            566,
+            876
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            891,
+            194,
+            904
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Misunderstanding the specific function of each pipeline stage.",
+        "bbox": [
+            72,
+            65,
+            534,
+            79
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            93,
+            366,
+            108
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Trace an instruction through each stage of the pipeline to understand its execution flow.",
+        "bbox": [
+            72,
+            123,
+            722,
+            137
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Instruction Format",
+        "text_level": 1,
+        "bbox": [
+            60,
+            150,
+            233,
+            165
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The instruction format defines the layout of bits within a machine instruction. It specifies how the opcode, operands, and addressing mode information are encoded, directly impacting the instruction set's flexibility and the CPU's decoding complexity.",
+        "bbox": [
+            58,
+            179,
+            932,
+            222
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            236,
+            315,
+            250
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- An instruction typically consists of an opcode (operation code) and one or more operand fields.",
+            "- Operand fields can specify registers, memory addresses, or immediate values.",
+            "- Fixed-length instruction format: All instructions have the same length. Simplifies fetching and decoding, good for pipelining (RISC).",
+            "- Variable-length instruction format: Instructions can have different lengths. Allows for more complex instructions and addressing modes, but complicates fetching and decoding (CISC)."
+        ],
+        "bbox": [
+            72,
+            264,
+            922,
+            347
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            362,
+            273,
+            377
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The number of bits for the opcode determines the maximum number of unique operations.",
+            "- The number of bits for operand fields determines the number of registers or the addressable memory range."
+        ],
+        "bbox": [
+            72,
+            391,
+            870,
+            420
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            434,
+            194,
+            448
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Incorrectly calculating the maximum number of opcodes or addressable memory given a fixed instruction length.",
+        "bbox": [
+            72,
+            463,
+            900,
+            478
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            492,
+            366,
+            507
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Given instruction length and operand requirements, calculate the remaining bits for the opcode or vice-versa.",
+        "bbox": [
+            72,
+            521,
+            875,
+            536
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Instruction Set Architecture (ISA)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            548,
+            364,
+            565
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The ISA is the abstract model of a computer that is visible to a programmer or compiler writer. It defines the set of instructions, registers, memory organization, data types, and the I/O model that the hardware supports.",
+        "bbox": [
+            58,
+            577,
+            887,
+            606
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            619,
+            315,
+            635
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Includes the instruction set, register set, memory addressing modes, and interrupt handling mechanisms.",
+            "- Forms the interface between software and hardware."
+        ],
+        "bbox": [
+            72,
+            650,
+            847,
+            676
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            692,
+            273,
+            707
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- ISA defines what the processor does, while microarchitecture defines how it does it.",
+            "- CISC and RISC are two major ISA design philosophies."
+        ],
+        "bbox": [
+            72,
+            724,
+            694,
+            752
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            766,
+            194,
+            780
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Confusing ISA (the specification) with microarchitecture (the implementation).",
+        "bbox": [
+            72,
+            795,
+            648,
+            809
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            824,
+            366,
+            839
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Understand that ISA is the contract that allows software to run on different hardware implementations of the same ISA.",
+        "bbox": [
+            72,
+            853,
+            912,
+            880
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Interrupts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            894,
+            152,
+            910
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "An interrupt is a signal to the CPU indicating an event that requires immediate attention, causing the CPU to temporarily suspend its current task and execute a special routine (Interrupt Service Routine or ISR) to handle the event.",
+        "bbox": [
+            58,
+            64,
+            934,
+            95
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            106,
+            315,
+            122
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Hardware Interrupts: Generated by I/O devices (e.g., keyboard press, disk completion). Asynchronous.",
+            "- Software Interrupts (Exceptions/Traps): Generated by program execution (e.g., division by zero, page fault, system call). Synchronous.",
+            "- Interrupt Vector Table: A table of addresses for ISRs, indexed by interrupt number."
+        ],
+        "bbox": [
+            72,
+            136,
+            887,
+            192
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            207,
+            275,
+            222
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Enable efficient I/O handling and error management without constant CPU polling.",
+            "- Involve saving CPU state, executing ISR, and restoring CPU state."
+        ],
+        "bbox": [
+            72,
+            235,
+            684,
+            264
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            277,
+            196,
+            292
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Misunderstanding the sequence of events during interrupt handling (saving context, jumping to ISR, restoring context).",
+        "bbox": [
+            72,
+            307,
+            878,
+            334
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            350,
+            366,
+            365
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Trace the flow of control when an interrupt occurs, considering context saving and ISR execution.",
+        "bbox": [
+            72,
+            378,
+            793,
+            393
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Machine Instruction",
+        "text_level": 1,
+        "bbox": [
+            60,
+            406,
+            243,
+            421
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A machine instruction is a command or operation that a CPU can directly understand and execute. It is represented in binary code and forms the lowest-level programming language, specific to a particular processor's Instruction Set Architecture.",
+        "bbox": [
+            58,
+            435,
+            917,
+            477
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            492,
+            315,
+            507
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Composed of an opcode and zero or more operands.",
+            "- Each instruction performs a basic operation (e.g., add, load, store, branch)."
+        ],
+        "bbox": [
+            72,
+            521,
+            633,
+            549
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            564,
+            275,
+            579
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Directly executable by the hardware.",
+            "- The fundamental unit of computation for the CPU."
+        ],
+        "bbox": [
+            72,
+            593,
+            450,
+            621
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            636,
+            194,
+            649
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Confusing machine instructions (binary) with assembly language instructions (mnemonic representation).",
+        "bbox": [
+            72,
+            663,
+            848,
+            679
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            693,
+            366,
+            707
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Understand how an assembly instruction translates into its binary machine code equivalent based on the instruction format.",
+        "bbox": [
+            72,
+            722,
+            926,
+            750
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Memory Interfacing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            764,
+            240,
+            780
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Memory interfacing is the process of connecting memory devices (RAM, ROM) to the CPU. It involves designing the necessary address decoding logic, connecting data and address buses, and generating control signals to ensure proper communication and data transfer.",
+        "bbox": [
+            58,
+            792,
+            932,
+            834
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            850,
+            315,
+            864
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Address Decoding: Logic gates (decoders, AND gates) used to select the correct memory chip based on the CPU's address lines.",
+            "- Chip Select (CS): A control signal that enables a specific memory chip."
+        ],
+        "bbox": [
+            72,
+            878,
+            885,
+            921
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Memory Map: The allocation of address ranges to different memory devices.",
+        "bbox": [
+            72,
+            64,
+            648,
+            80
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            93,
+            275,
+            108
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Ensures that each memory location has a unique address and that the correct device responds to a CPU request.",
+            "- Bus width (data and address) must match between CPU and memory."
+        ],
+        "bbox": [
+            70,
+            122,
+            910,
+            150
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            165,
+            196,
+            179
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Incorrectly designing address decoding logic, leading to address conflicts or unused address space.",
+        "bbox": [
+            72,
+            194,
+            811,
+            209
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            223,
+            366,
+            238
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Given CPU address lines and memory chip sizes, determine the address ranges and design the minimal decoding logic.",
+        "bbox": [
+            72,
+            252,
+            917,
+            280
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Microprogramming",
+        "text_level": 1,
+        "bbox": [
+            60,
+            293,
+            238,
+            309
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Microprogramming is a technique for implementing the control unit of a CPU by storing a sequence of microinstructions in a special control memory. Each machine instruction is executed by a microprogram, which is a sequence of microinstructions.",
+        "bbox": [
+            58,
+            321,
+            927,
+            364
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            378,
+            315,
+            394
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Microinstruction: A low-level instruction that controls the individual functional units of the CPU (e.g., enable ALU, load register).",
+            "- Control Store (CS): Memory where microprograms are stored."
+        ],
+        "bbox": [
+            72,
+            407,
+            914,
+            450
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Key Properties & Identities",
+        "text_level": 1,
+        "bbox": [
+            60,
+            464,
+            273,
+            479
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Offers flexibility: easier to design complex instruction sets and modify existing ones.",
+        "bbox": [
+            72,
+            492,
+            695,
+            507
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Slower than hardwired control due to the overhead of fetching and decoding microinstructions.",
+        "bbox": [
+            72,
+            508,
+            769,
+            521
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "• Commonly used in CISC processors.",
+        "bbox": [
+            72,
+            522,
+            359,
+            535
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls",
+        "text_level": 1,
+        "bbox": [
+            60,
+            549,
+            194,
+            564
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Confusing microinstructions (internal CPU control) with machine instructions (user-level instructions).",
+        "bbox": [
+            72,
+            578,
+            818,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques",
+        "text_level": 1,
+        "bbox": [
+            60,
+            606,
+            366,
+            623
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Understand how a machine instruction is broken down into a sequence of micro-operations controlled by microinstructions.",
+        "bbox": [
+            72,
+            636,
+            845,
+            663
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Pipelining",
+        "text_level": 1,
+        "bbox": [
+            60,
+            678,
+            156,
+            694
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Pipelining is a technique that allows multiple instructions to be in different stages of execution simultaneously, improving the throughput of a processor. It does not reduce the execution time of a single instruction but increases the rate at which instructions complete.",
+        "bbox": [
+            58,
+            707,
+            932,
+            750
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas & Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            764,
+            315,
+            779
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Number of stages: $K$",
+            "• Number of instructions: N",
+            "- Clock cycle time: $T_{cycle}$ (determined by the slowest stage).",
+            "- Execution time for N instructions (non-pipelined): $T_{non-pipeline} = N \\times K \\times T_{cycle}$",
+            "- Execution time for N instructions (ideal pipelined): $T_{pipeline} = (K + N - 1) \\times T_{cycle}$",
+            "- Ideal Speedup (S) for large N: $S = \\frac{N \\times K \\times T_{cycle}}{(K + N - 1) \\times T_{cycle}} \\approx K$",
+            "- Throughput (ideal): $\\frac{1}{T_{cycle}}$ instructions per cycle.",
+            "• CPI (Cycles Per Instruction):"
+        ],
+        "bbox": [
+            72,
+            793,
+            742,
+            925
+        ],
+        "page_idx": 11
+    }
+]

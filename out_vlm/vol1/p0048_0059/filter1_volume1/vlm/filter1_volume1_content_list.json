@@ -1,0 +1,4623 @@
+[
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{diam} (G) = \\max _ {u, v \\in V} \\{\\text {the length of shortest path between} u \\text {and} v \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            253,
+            64,
+            759,
+            90
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $M$ be the adjacency matrix of $G$ .",
+        "bbox": [
+            85,
+            99,
+            357,
+            116
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Define graph $G_{2}$ on the same set of vertices with adjacency matrix N, where",
+        "bbox": [
+            85,
+            119,
+            648,
+            135
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nN _ {i j} = \\left\\{ \\begin{array}{l l} 1 & \\text {if} M _ {i j} > 0 \\text {or} P _ {i j} > 0, \\text {where} P = M ^ {2} \\\\ 0 & \\text {otherwise} \\end{array} \\right.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            297,
+            144,
+            704,
+            184
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is true?",
+        "bbox": [
+            85,
+            192,
+            426,
+            207
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\mathrm{diam}(G_2) \\leq \\lceil \\mathrm{diam}(G)/2 \\rceil$",
+            "B. $\\lceil \\mathrm{diam}(G) / 2 \\rceil < \\mathrm{diam}(G_2) < \\mathrm{diam}(G)$",
+            "C. $\\mathrm{diam}(G_2) = \\mathrm{diam}(G)$",
+            "D. $\\mathrm{diam}(G) < \\mathrm{diam}(G_2) \\leq 2 \\mathrm{diam}(G)$"
+        ],
+        "bbox": [
+            87,
+            217,
+            418,
+            281
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 graph-theory graph-connectivity two-marks",
+        "bbox": [
+            87,
+            305,
+            381,
+            315
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            321,
+            188,
+            334
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.5.28 Graph Connectivity: GATE CSE 2022 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            344,
+            534,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/79c6b71b87bb08f609eccec131331d186a4625413b22668db968b7475c0b2a9a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            347,
+            931,
+            385
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a simple undirected graph of 10 vertices. If the graph is disconnected, then the maximum number of edges it can have is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            368,
+            878,
+            397
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers graph-theory graph-connectivity one-mark",
+        "bbox": [
+            87,
+            410,
+            447,
+            421
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            427,
+            188,
+            441
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.5.29 Graph Connectivity: GATE CSE 2022 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            451,
+            534,
+            465
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/f5bcbc3c764daf347b2384a53a820a46fef7de3f00afa505aafdb327b55b32ec.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            454,
+            931,
+            491
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a simple undirected unweighted graph with at least three vertices. If $A$ is the adjacency matrix of the graph, then the number of 3-cycles in the graph is given by the trace of",
+        "bbox": [
+            84,
+            476,
+            878,
+            505
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $A^{3}$",
+            "C. $A^3$ divided by 3"
+        ],
+        "bbox": [
+            87,
+            515,
+            361,
+            548
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. $A^3$ divided by 2",
+        "bbox": [
+            495,
+            515,
+            628,
+            532
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. $A^3$ divided by 6",
+        "bbox": [
+            495,
+            532,
+            626,
+            547
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 graph-theory graph-connectivity two-marks",
+        "bbox": [
+            87,
+            552,
+            361,
+            562
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            568,
+            188,
+            581
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.5.30 Graph Connectivity: GATE CSE 2022 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            592,
+            534,
+            606
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/8b0ae8a098a69115f4cd9be214d0ce7709c257c35ca772a34229cf853f080665.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            595,
+            931,
+            631
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the properties hold for the adjacency matrix $A$ of a simple undirected unweighted graph having $n$ vertices?",
+        "bbox": [
+            84,
+            617,
+            878,
+            644
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The diagonal entries of $A^{2}$ are the degrees of the vertices of the graph.",
+            "B. If the graph is connected, then none of the entries of $A^{n - 1} + I_n$ can be zero.",
+            "C. If the sum of all the elements of $A$ is at most $2(n - 1)$ , then the graph must be acyclic.",
+            "D. If there is at least a 1 in each of $A$ 's rows and columns, then the graph must be connected."
+        ],
+        "bbox": [
+            85,
+            657,
+            773,
+            720
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 graph-theory graph-connectivity multiple-selects two-marks",
+        "bbox": [
+            87,
+            745,
+            442,
+            756
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            761,
+            188,
+            776
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.5.31 Graph Connectivity: GATE CSE 2024 | Set 1 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            785,
+            586,
+            800
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/dd9da349ced4dbc42fbee025975cb384f28a21b8778755cc7c1390967ada7603.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            787,
+            931,
+            825
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The number of spanning trees in a complete graph of 4 vertices labelled A, B, C, and D is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            809,
+            838,
+            827
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 numerical-answers graph-theory graph-connectivity one-mark",
+        "bbox": [
+            87,
+            844,
+            467,
+            855
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            859,
+            188,
+            875
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.5.32 Graph Connectivity: GATE CSE 2024 | Set 2 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            884,
+            584,
+            897
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/f5367dbeee2a5c784fd7537d6506ff9550576654efb347acf16d3f7e8650ba54.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            887,
+            931,
+            923
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let G be an undirected connected graph in which every edge has a positive integer weight. Suppose that",
+        "bbox": [
+            84,
+            908,
+            878,
+            923
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "every spanning tree in G has even weight. Which of the following statements is/are TRUE for every such graph G?",
+        "bbox": [
+            84,
+            65,
+            878,
+            96
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. All edges in G have even weight",
+            "B. All edges in G have even weight OR all edges in G have odd weight",
+            "C. In each cycle C in G, all edges in C have even weight",
+            "D. In each cycle C in G, either all edges in C have even weight OR all edges in C have odd weight"
+        ],
+        "bbox": [
+            87,
+            106,
+            815,
+            166
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 graph-theory multiple-selects graph-connectivity two-marks",
+        "bbox": [
+            87,
+            191,
+            462,
+            201
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            207,
+            186,
+            222
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.5.33 Graph Connectivity: GATE CSE 2024 | Set 2 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            77,
+            231,
+            579,
+            245
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let A be the adjacency matrix of a simple undirected graph G. Suppose A is its own inverse. Which one of the following statements is always TRUE?",
+        "bbox": [
+            84,
+            255,
+            878,
+            288
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/d137dfe88b10263430577e7736dd669afae8ed6f2c2ff1039b3c2e80867f2152.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            233,
+            932,
+            271
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. G is a cycle",
+        "bbox": [
+            87,
+            296,
+            196,
+            311
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. G is a perfect matching",
+        "bbox": [
+            495,
+            296,
+            678,
+            311
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. G is a complete graph",
+        "bbox": [
+            89,
+            311,
+            265,
+            325
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. There is no such graph G",
+        "bbox": [
+            495,
+            311,
+            695,
+            325
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 graph-theory graph-connectivity one-mark",
+        "bbox": [
+            87,
+            328,
+            378,
+            339
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            345,
+            186,
+            359
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.5.34 Graph Connectivity: GATE IT 2004 | Question: 37",
+        "text_level": 1,
+        "bbox": [
+            77,
+            369,
+            515,
+            384
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "What is the number of vertices in an undirected connected graph with 27 edges, 6 vertices of degree 2, 3 vertices of degree 4 and remaining of degree 3?",
+        "bbox": [
+            84,
+            393,
+            878,
+            423
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/34eeebb26b8994ad9ea8724db25883fdd62218d490869e41c4d038370f05fadb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            372,
+            932,
+            409
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 10",
+        "bbox": [
+            89,
+            435,
+            134,
+            450
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 11",
+        "bbox": [
+            285,
+            435,
+            329,
+            450
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 18",
+        "bbox": [
+            480,
+            435,
+            524,
+            450
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 19",
+        "bbox": [
+            673,
+            435,
+            719,
+            450
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 graph-theory graph-connectivity normal",
+        "bbox": [
+            87,
+            460,
+            341,
+            471
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            476,
+            186,
+            491
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.5.35 Graph Connectivity: GATE IT 2004 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            77,
+            500,
+            505,
+            515
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "What is the maximum number of edges in an acyclic undirected graph with n vertices?",
+        "bbox": [
+            85,
+            523,
+            715,
+            539
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/55ff67f4457c19113addbaa7c89b1554421ad586b927e3f817c0ab1d7fa2d289.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            503,
+            932,
+            540
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. n - 1",
+        "bbox": [
+            89,
+            553,
+            157,
+            566
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. n",
+        "bbox": [
+            285,
+            553,
+            322,
+            566
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $n + 1$",
+        "bbox": [
+            480,
+            553,
+            546,
+            566
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 2n - 1",
+        "bbox": [
+            673,
+            553,
+            749,
+            566
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 graph-theory graph-connectivity normal",
+        "bbox": [
+            87,
+            577,
+            341,
+            587
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            592,
+            186,
+            606
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.5.36 Graph Connectivity: GATE IT 2005 | Question: 56",
+        "text_level": 1,
+        "bbox": [
+            77,
+            616,
+            515,
+            631
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let G be a directed graph whose vertex set is the set of numbers from 1 to 100. There is an edge from a vertex i to a vertex j iff either $j = i + 1$ or j = 3i. The minimum number of edges in a path in G from vertex 1 to vertex 100 is",
+        "bbox": [
+            84,
+            640,
+            878,
+            684
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/9ec553d0449f089d4e6fdc1d0c29d107ab6dfa776a72008953017f054ee285f4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            619,
+            932,
+            656
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 4",
+        "bbox": [
+            89,
+            698,
+            126,
+            712
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 7",
+        "bbox": [
+            285,
+            698,
+            322,
+            712
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 23",
+        "bbox": [
+            480,
+            698,
+            524,
+            712
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 99",
+        "bbox": [
+            673,
+            698,
+            719,
+            712
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 graph-theory graph-connectivity normal",
+        "bbox": [
+            87,
+            722,
+            341,
+            732
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            738,
+            186,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.5.37 Graph Connectivity: GATE IT 2006 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            77,
+            762,
+            514,
+            777
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "If all the edge weights of an undirected graph are positive, then any subset of edges that connects all the vertices and has minimum total weight is a",
+        "bbox": [
+            84,
+            786,
+            875,
+            815
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/d887203befd34aba04993aa8f484fdbe71f190011ab31c45922bec521f41d4ae.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            764,
+            932,
+            802
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. Hamiltonian cycle",
+        "bbox": [
+            89,
+            828,
+            235,
+            843
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. grid",
+        "bbox": [
+            285,
+            828,
+            336,
+            843
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. hypercube",
+        "bbox": [
+            480,
+            828,
+            576,
+            843
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. tree",
+        "bbox": [
+            673,
+            828,
+            726,
+            842
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 graph-theory graph-connectivity easy",
+        "bbox": [
+            87,
+            853,
+            331,
+            863
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            868,
+            186,
+            883
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.5.38 Graph Connectivity: GATE IT 2007 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            515,
+            79
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/1519c296f278e305988c7d30605fc033e718c85b5a2cce96dfe2df637e47d3c6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What is the largest integer m such that every simple connected graph with n vertices and n edges contains at least m different spanning trees?",
+        "bbox": [
+            84,
+            89,
+            878,
+            117
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            89,
+            131,
+            126,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            131,
+            321,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            131,
+            515,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. n",
+        "bbox": [
+            673,
+            131,
+            710,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 graph-theory graph-connectivity tricky",
+        "bbox": [
+            87,
+            155,
+            334,
+            165
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            171,
+            188,
+            186
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.5.39 Graph Connectivity: GATE IT 2008 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            195,
+            515,
+            209
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/28e27e1314406a8f7094fcff18daba5575a0ba4ff18600d6c9ce306524a75854.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            197,
+            931,
+            235
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "G is a simple undirected graph. Some vertices of G are of odd degree. Add a node v to G and make it adjacent to each odd degree vertex of G. The resultant graph is sure to be",
+        "bbox": [
+            84,
+            218,
+            878,
+            250
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. regular",
+        "bbox": [
+            89,
+            264,
+            164,
+            277
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. complete",
+        "bbox": [
+            285,
+            264,
+            371,
+            277
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. Hamiltonian",
+        "bbox": [
+            480,
+            264,
+            584,
+            276
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. Euler",
+        "bbox": [
+            673,
+            264,
+            736,
+            276
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 graph-theory graph-connectivity normal",
+        "bbox": [
+            87,
+            287,
+            342,
+            296
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            302,
+            188,
+            317
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.5.40 Graph Connectivity: GATE IT 2008 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            327,
+            505,
+            340
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/bc4bcead721ecd1672b3c4728523a3c34c03ae4ed38798023d96d0ede65911bd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            328,
+            931,
+            366
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What is the size of the smallest MIS (Maximal Independent Set) of a chain of nine nodes?",
+        "bbox": [
+            85,
+            351,
+            741,
+            366
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 5",
+        "bbox": [
+            89,
+            380,
+            126,
+            393
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            380,
+            321,
+            393
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            380,
+            515,
+            393
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 2",
+        "bbox": [
+            673,
+            380,
+            710,
+            393
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 normal graph-connectivity",
+        "bbox": [
+            87,
+            404,
+            273,
+            414
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            420,
+            188,
+            434
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.6",
+        "text_level": 1,
+        "bbox": [
+            68,
+            445,
+            95,
+            458
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Graph Isomorphism (4)",
+        "text_level": 1,
+        "bbox": [
+            421,
+            445,
+            606,
+            460
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.6.1 Graph Isomorphism: GATE CSE 2012 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            471,
+            529,
+            485
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following graphs is isomorphic to",
+        "bbox": [
+            85,
+            495,
+            423,
+            510
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/376f8eb5a69c07ef2d3926ea2df6d19188725bb0edbc6fbe79bd78bbda2f0501.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            473,
+            931,
+            511
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/28691641d0eb2b515412223cfe8cff8013072e7cd04af54a5ce146f8a87e89a8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            445,
+            538,
+            571,
+            602
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A.",
+        "bbox": [
+            90,
+            625,
+            107,
+            637
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/f02df1b283ea9cbe8ddd7a2100a0712c3098c8082306fe9cb37682393fc01c00.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            119,
+            647,
+            223,
+            699
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B.",
+        "bbox": [
+            285,
+            625,
+            302,
+            637
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/fe344d627413058fb5699aa3711eb79316054d1003e29a33e2d7d142fa987a22.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            314,
+            650,
+            418,
+            729
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C.",
+        "bbox": [
+            480,
+            625,
+            497,
+            637
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/bf797505142722b170345acbb101206fbec3e5ae6231eb3e35169c6ddcd137dd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            509,
+            647,
+            613,
+            700
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D.",
+        "bbox": [
+            673,
+            625,
+            690,
+            637
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/aeeadb7544c2c5c0d7b82f4eb019ce425f3613fa72b6d35db80b423564b9c138.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            704,
+            648,
+            806,
+            700
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 graph-theory graph-isomorphism normal",
+        "bbox": [
+            87,
+            745,
+            349,
+            755
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            761,
+            188,
+            775
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.6.2 Graph Isomorphism: GATE CSE 2014 | Set 2 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            783,
+            581,
+            799
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A cycle on $n$ vertices is isomorphic to its complement. The value of $n$ is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            808,
+            662,
+            823
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 graph-theory numerical-answers normal graph-isomorphism",
+        "bbox": [
+            87,
+            837,
+            460,
+            847
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            853,
+            188,
+            866
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.6.3 Graph Isomorphism: GATE CSE 2015 | Set 2 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            876,
+            583,
+            891
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/39fe75093b1b56667ef6a332b5c246c900c351f23eca4a347861ac6e66bdaa73.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            787,
+            931,
+            825
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A graph is self-complementary if it is isomorphic to its complement. For all self-complementary graphs on $n$ vertices, $n$ is",
+        "bbox": [
+            84,
+            900,
+            878,
+            928
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/a0d33cabb12f405aa5d621113cda1a5e1851156c0539430d4da5028b9e4b13c3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            878,
+            931,
+            916
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A multiple of 4",
+            "C. Odd"
+        ],
+        "bbox": [
+            89,
+            65,
+            211,
+            89
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Even",
+            "D. Congruent to 0 mod 4, or, 1 mod 4."
+        ],
+        "bbox": [
+            495,
+            65,
+            759,
+            104
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 graph-theory graph-isomorphism",
+        "bbox": [
+            87,
+            110,
+            327,
+            119
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            125,
+            181,
+            140
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.6.4 Graph Isomorphism: GATE CSE 2022 | Question: 40",
+        "text_level": 1,
+        "bbox": [
+            77,
+            149,
+            531,
+            163
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The following simple undirected graph is referred to as the Peterson graph.",
+        "bbox": [
+            85,
+            173,
+            633,
+            188
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/441ab20048af533781eab13feb4367ae0e97818f8cc5c59ae350a2eb975f7929.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "Geometric diagram of a pentagon with internal star-like connections (no text or labels)",
+        "sub_type": "natural_image",
+        "bbox": [
+            421,
+            195,
+            544,
+            277
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9bc1e13aa8ff6126e91b1382f7c08a7c6743f3a319dbb84f5d6170f6cbf6ffec.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            152,
+            932,
+            190
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are TRUE?",
+        "bbox": [
+            85,
+            287,
+            448,
+            302
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The chromatic number of the graph is 3.",
+            "B. The graph has a Hamiltonian path.",
+            "C. The following graph is isomorphic to the Peterson graph."
+        ],
+        "bbox": [
+            87,
+            313,
+            526,
+            356
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/55505b0b38d2e3ac63d63bad941c0d4a5d854289343bbfac812b9ecacc9c590a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            450,
+            370,
+            566,
+            452
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. The size of the largest independent set of the given graph is 3. (A subset of vertices of a graph form an independent set if no two vertices of the subset are adjacent.)",
+        "bbox": [
+            85,
+            467,
+            927,
+            496
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 graph-theory graph-isomorphism multiple-selects two-marks",
+        "bbox": [
+            87,
+            521,
+            445,
+            530
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            536,
+            189,
+            552
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.7 Graph Matching (2)",
+        "text_level": 1,
+        "bbox": [
+            68,
+            562,
+            591,
+            577
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.7.1 Graph Matching: GATE CSE 2003 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            77,
+            587,
+            499,
+            602
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "How many perfect matching are there in a complete graph of 6 vertices?",
+        "bbox": [
+            85,
+            612,
+            613,
+            628
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/a348f9dc0db7d8070013341ee973977f97a0cf6ccbe2b366a5643dcc914090a6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            591,
+            932,
+            629
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 15",
+        "bbox": [
+            89,
+            641,
+            134,
+            654
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 24",
+        "bbox": [
+            285,
+            641,
+            329,
+            655
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 30",
+        "bbox": [
+            480,
+            641,
+            524,
+            654
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 60",
+        "bbox": [
+            673,
+            641,
+            719,
+            654
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 graph-theory graph-matching normal",
+        "bbox": [
+            87,
+            665,
+            337,
+            675
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            681,
+            188,
+            695
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.7.2 Graph Matching: GATE CSE 2026 | Set 1 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            77,
+            705,
+            551,
+            719
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be an undirected graph, which is a path on 8 vertices. The number of matchings in $G$ is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            84,
+            728,
+            875,
+            758
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/50ee8bde6f8d46871a6667e49eecfbc72b27cde40253417f149db20120d69207.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            707,
+            932,
+            745
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 graph-theory graph-matching numerical-answers two-marks",
+        "bbox": [
+            87,
+            771,
+            460,
+            782
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            788,
+            188,
+            802
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.8 Graph Planarity (13)",
+        "text_level": 1,
+        "bbox": [
+            68,
+            813,
+            594,
+            828
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.8.1 Graph Planarity: GATE CSE 1987 | Question: 2e",
+        "text_level": 1,
+        "bbox": [
+            77,
+            839,
+            495,
+            853
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "State whether the following statement is TRUE or FALSE:",
+        "bbox": [
+            85,
+            863,
+            510,
+            877
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/87a9f6b9244b59c1f445ee7245ac97b5a119ef358431d570ef0598af5120e976.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            840,
+            932,
+            878
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "There is a linear-time algorithm for testing the planarity of finite graphs.",
+        "bbox": [
+            85,
+            891,
+            603,
+            904
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "gate1987 graph-theory graph-planarity true-false",
+        "bbox": [
+            87,
+            920,
+            329,
+            929
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.8.2 Graph Planarity: GATE CSE 1989 | Question: 3-vi",
+        "text_level": 1,
+        "bbox": [
+            78,
+            93,
+            505,
+            108
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following graphs is/are planar?",
+        "bbox": [
+            85,
+            117,
+            410,
+            133
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/4707ab210715a18a0b49185a4679dee5c50434af6b099031ca802cc7b8c3d761.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            89,
+            137,
+            421,
+            271
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1989 normal graph-theory graph-planarity descriptive",
+        "bbox": [
+            87,
+            288,
+            376,
+            299
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            305,
+            186,
+            319
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.8.3 Graph Planarity: GATE CSE 1990 | Question: 3-xi",
+        "text_level": 1,
+        "bbox": [
+            78,
+            328,
+            505,
+            343
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A graph is planar if and only if,",
+        "bbox": [
+            85,
+            352,
+            312,
+            366
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It does not contain a subgraph homeomorphic to $k_{5}$ and $k_{3,3}$ .",
+            "B. It does not contain a subgraph isomorphic to $k_{5}$ and $k_{3,3}$ .",
+            "C. It does not contain a subgraph isomorphic to $k_{5}$ or $k_{3,3}$",
+            "D. It does not contain a subgraph homeomorphic to $k_{5}$ or $k_{3,3}$ ."
+        ],
+        "bbox": [
+            87,
+            378,
+            557,
+            439
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1990 normal graph-theory graph-planarity multiple-selects",
+        "bbox": [
+            87,
+            463,
+            396,
+            473
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            479,
+            186,
+            492
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.8.4 Graph Planarity: GATE CSE 1992 | Question: 01,x",
+        "text_level": 1,
+        "bbox": [
+            78,
+            502,
+            510,
+            517
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Maximum number of edges in a planar graph with $n$ vertices is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            526,
+            594,
+            541
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1992 graph-theory graph-planarity easy fill-in-the-blanks",
+        "bbox": [
+            87,
+            555,
+            389,
+            565
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            571,
+            186,
+            586
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.8.5 Graph Planarity: GATE CSE 1992 | Question: 02,viii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            593,
+            524,
+            609
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A non-planar graph with minimum number of vertices has",
+        "bbox": [
+            85,
+            618,
+            505,
+            633
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. 9 edges, 6 vertices",
+            "C. 10 edges, 5 vertices",
+            "gate1992 graph-theory normal graph-planarity"
+        ],
+        "bbox": [
+            89,
+            642,
+            319,
+            685
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. 6 edges, 4 vertices",
+            "D. 9 edges, 5 vertices"
+        ],
+        "bbox": [
+            495,
+            642,
+            650,
+            669
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            691,
+            186,
+            705
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.8.6 Graph Planarity: GATE CSE 2005 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            714,
+            495,
+            729
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a simple connected planar graph with 13 vertices and 19 edges. Then, the number of faces in the planar embedding of the graph is:",
+        "bbox": [
+            84,
+            738,
+            875,
+            768
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 6",
+        "bbox": [
+            89,
+            781,
+            126,
+            794
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 8",
+        "bbox": [
+            285,
+            782,
+            319,
+            794
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 9",
+        "bbox": [
+            480,
+            781,
+            515,
+            794
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 13",
+        "bbox": [
+            673,
+            781,
+            719,
+            795
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 graph-theory graph-planarity",
+        "bbox": [
+            87,
+            806,
+            290,
+            815
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            821,
+            186,
+            836
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.8.7 Graph Planarity: GATE CSE 2005 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            845,
+            495,
+            859
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following graphs is NOT planar?",
+        "bbox": [
+            85,
+            869,
+            450,
+            884
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/c2e9ac2be7086563747167adf2e4e0728ac119b320dc5125835f4ed6633ecb11.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            97,
+            932,
+            134
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/ca9232c7dca86b8e49bc4c833b572a62f534d2e22bb5a049d8f52c839de92d7e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            331,
+            932,
+            369
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/fbf4cc3a373b61d49c43bb37f36e0a7b11e106ce2f41abef03e58e306a6c1eb5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            505,
+            932,
+            543
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/138a59543fb03a86030fa3485a1d68861765da1d80e7a364c54d8818dc3ec079.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            597,
+            932,
+            635
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/8d87089b8c0e44e69a0ad3d64af9c0c461f980e6a50674a50fdb91276f00aa9a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            717,
+            932,
+            755
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/d2daba2baa40cfed3b3e14ab8246037704be4da9b52f2c3a337351ab16185118.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            847,
+            932,
+            885
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            70,
+            186,
+            85
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/fcc58c940da1d2d62a9aaa25a03457d925c459a77574cdccedba8cb0ed06cf0d.jpg",
+        "image_caption": [
+            "G1"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            102,
+            74,
+            218,
+            149
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/8e04111d4371d9f7349ccbda1c0e46c738e3313784c45e8c454dc72a32e2b4db.jpg",
+        "image_caption": [
+            "G2"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            235,
+            68,
+            319,
+            144
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/314f95724e47aaf6f97c0e0f88d8108284461ea0b76a125a01efc3e68efecb91.jpg",
+        "image_caption": [
+            "G3"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            327,
+            68,
+            416,
+            133
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d73fb1437bca2d0e33453915669a7d37c3622aae48d1e60e0d2600c2825c5c8.jpg",
+        "image_caption": [
+            "G4"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            426,
+            68,
+            527,
+            131
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. G1",
+        "bbox": [
+            90,
+            197,
+            134,
+            209
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. G2",
+        "bbox": [
+            285,
+            197,
+            331,
+            209
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. G3",
+        "bbox": [
+            480,
+            197,
+            524,
+            209
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. G4",
+        "bbox": [
+            673,
+            197,
+            719,
+            209
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 graph-theory graph-planarity normal",
+        "bbox": [
+            89,
+            220,
+            334,
+            230
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            236,
+            186,
+            250
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.8.8 Graph Planarity: GATE CSE 2008 | Question: 23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            258,
+            495,
+            274
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is true for every planar graph on $n$ vertices?",
+        "bbox": [
+            85,
+            283,
+            655,
+            299
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The graph is connected",
+            "C. The graph has a vertex-cover of size at most $\\frac{3n}{4}$"
+        ],
+        "bbox": [
+            89,
+            308,
+            352,
+            353
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 graph-theory normal graph-planarity",
+        "bbox": [
+            89,
+            356,
+            334,
+            365
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. The graph is Eulerian",
+            "D. The graph has an independent set of size at least $\\frac{n}{3}$"
+        ],
+        "bbox": [
+            495,
+            308,
+            759,
+            351
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            372,
+            186,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.8.9 Graph Planarity: GATE CSE 2011 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            395,
+            495,
+            410
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "K4 and Q3 are graphs with the following structures.",
+        "bbox": [
+            85,
+            419,
+            460,
+            434
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/d7ac4d5f697bbb17ee0b34b2526f1cf9b2d9656d50497bc1ce71e876017debc0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            94,
+            441,
+            455,
+            589
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is TRUE in relation to these graphs?",
+        "bbox": [
+            85,
+            609,
+            633,
+            625
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. K4 is a planar while Q3 is not",
+        "bbox": [
+            89,
+            633,
+            312,
+            647
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. Q3 is planar while K4 is not",
+        "bbox": [
+            89,
+            647,
+            300,
+            660
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 graph-theory graph-planarity normal",
+        "bbox": [
+            89,
+            666,
+            334,
+            675
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. Both K4 and Q3 are planar",
+        "bbox": [
+            495,
+            633,
+            702,
+            647
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. Neither K4 nor Q3 is planar",
+        "bbox": [
+            495,
+            647,
+            704,
+            660
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            682,
+            186,
+            695
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.8.10 Graph Planarity: GATE CSE 2012 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            705,
+            505,
+            720
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a simple undirected planar graph on 10 vertices with 15 edges. If $G$ is a connected graph, then the number of bounded faces in any embedding of $G$ on the plane is equal to",
+        "bbox": [
+            84,
+            728,
+            878,
+            760
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 3",
+        "bbox": [
+            89,
+            773,
+            126,
+            786
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            773,
+            319,
+            786
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 5",
+        "bbox": [
+            480,
+            773,
+            515,
+            786
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            773,
+            710,
+            786
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 graph-theory graph-planarity normal",
+        "bbox": [
+            87,
+            798,
+            334,
+            808
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            813,
+            186,
+            828
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.8.11 Graph Planarity: GATE CSE 2014 | Set 3 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            837,
+            559,
+            852
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let $\\delta$ denote the minimum degree of a vertex in a graph. For all planar graphs on $n$ vertices with $\\delta \\geq 3$ , which one of the following is TRUE?",
+        "bbox": [
+            84,
+            861,
+            878,
+            891
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. In any planar embedding, the number of faces is at least $\\frac{n}{2} + 2$",
+        "bbox": [
+            85,
+            901,
+            576,
+            920
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e7e9862dc806a2b9e4ef54d0cc4d54b07009185998a20a2f2b52f9b0b31003bc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            262,
+            932,
+            301
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/68fbdeed2ee465bae29589afa52c8239b87c70fdaa73f07169fe60e318372bda.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            397,
+            932,
+            435
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/83408d4d84b024028abdc1c48cbb0964b1f614b2485ff957d13a640580f23443.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            707,
+            932,
+            745
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/706c7055d70df2d5bb96469ea51636868d778c6934ca98a35ea8409563f5fa76.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            840,
+            932,
+            878
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. In any planar embedding, the number of faces is less than $\\frac{n}{2} + 2$",
+            "C. There is a planar embedding in which the number of faces is less than $\\frac{n}{2} + 2$",
+            "D. There is a planar embedding in which the number of faces is at most $\\frac{n^2}{\\delta + 1}$"
+        ],
+        "bbox": [
+            87,
+            65,
+            673,
+            115
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 graph-theory graph-planarity normal",
+        "bbox": [
+            87,
+            138,
+            354,
+            148
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            154,
+            186,
+            168
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.8.12 Graph Planarity: GATE CSE 2015 | Set 1 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            77,
+            178,
+            559,
+            192
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let G be a connected planar graph with 10 vertices. If the number of edges on each face is three, then the number of edges in G is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            201,
+            875,
+            231
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/745e309fa1c0f8a39a1d60df6c85ba0ca9a6fcb98352b2071688423f9a1984e9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            180,
+            931,
+            218
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 graph-theory graph-connectivity normal graph-planarity numerical-answers",
+        "bbox": [
+            87,
+            244,
+            534,
+            255
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            260,
+            186,
+            274
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.8.13 Graph Planarity: GATE CSE 2021 | Set 1 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            77,
+            283,
+            559,
+            299
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "In an undirected connected planar graph $G$ , there are eight vertices and five faces. The number of edges in $G$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            308,
+            875,
+            338
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/4b01b8dbf2cca08c8921ba2bbca4d1554a3ea76f669fa2607692f4cb72ac2a7c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            287,
+            931,
+            324
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 graph-theory graph-planarity numerical-answers easy one-mark",
+        "bbox": [
+            87,
+            352,
+            487,
+            362
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            369,
+            186,
+            383
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.9",
+        "text_level": 1,
+        "bbox": [
+            68,
+            393,
+            95,
+            406
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Jaccard Coefficient (1)",
+        "text_level": 1,
+        "bbox": [
+            421,
+            393,
+            606,
+            408
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.9.1 Jaccard Coefficient: GATE CSE 2026 | Set 2 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            418,
+            579,
+            433
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider a complete graph $K_{n}$ with n vertices (n > 4). Note that multiple spanning trees can be constructed over $K_{n}$ . Each of these spanning trees is represented as a set of edges. The Jaccard coefficient between any two sets is defined as the ratio of the size of the intersection of the two sets to the union of the two sets.",
+        "bbox": [
+            84,
+            442,
+            878,
+            500
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/497b4a6c25b120432b2eeb1e47c2245973db03e08a7799ce2ae2362b3974a122.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            422,
+            931,
+            459
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options gives the lowest possible value for the Jaccard coefficient between any two spanning trees of $K_{n}$ ?",
+        "bbox": [
+            84,
+            504,
+            929,
+            535
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $\\frac{1}{n}$",
+        "bbox": [
+            89,
+            546,
+            129,
+            564
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $\\frac{1}{2n-3}$",
+        "bbox": [
+            285,
+            546,
+            342,
+            565
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 0",
+        "bbox": [
+            480,
+            547,
+            515,
+            561
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{1}{n-1}$",
+        "bbox": [
+            673,
+            546,
+            727,
+            565
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 graph-theory jaccard-coefficient two-marks",
+        "bbox": [
+            87,
+            572,
+            381,
+            581
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            587,
+            186,
+            602
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys",
+        "text_level": 1,
+        "bbox": [
+            60,
+            616,
+            220,
+            636
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/cba2528355c52035d80df7f6dccbaed83b2933f8b7e56201f486037bb6db8132.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.1.1</td><td>D</td></tr><tr><td>2.2.3</td><td>N/A</td></tr><tr><td>2.2.8</td><td>C</td></tr><tr><td>2.2.13</td><td>A</td></tr><tr><td>2.4.4</td><td>4</td></tr><tr><td>2.4.9</td><td>2</td></tr><tr><td>2.5.3</td><td>N/A</td></tr><tr><td>2.5.8</td><td>N/A</td></tr><tr><td>2.5.13</td><td>B</td></tr><tr><td>2.5.18</td><td>C</td></tr><tr><td>2.5.23</td><td>C</td></tr><tr><td>2.5.28</td><td>36</td></tr><tr><td>2.5.33</td><td>B</td></tr></table>",
+        "bbox": [
+            63,
+            650,
+            205,
+            931
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/91501a2d8c652d898810a1d5ad3ab1bbb9bb869c35a07b827a09214221d233e6.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.1.2</td><td>D</td></tr><tr><td>2.2.4</td><td>D</td></tr><tr><td>2.2.9</td><td>D</td></tr><tr><td>2.3.1</td><td>B;C</td></tr><tr><td>2.4.5</td><td>3</td></tr><tr><td>2.4.10</td><td>C</td></tr><tr><td>2.5.4</td><td>N/A</td></tr><tr><td>2.5.9</td><td>N/A</td></tr><tr><td>2.5.14</td><td>C</td></tr><tr><td>2.5.19</td><td>D</td></tr><tr><td>2.5.24</td><td>B</td></tr><tr><td>2.5.29</td><td>D</td></tr><tr><td>2.5.34</td><td>D</td></tr></table>",
+        "bbox": [
+            228,
+            650,
+            401,
+            931
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/07453a6bf543c380bcd8400dea034c5b0fceda161c44f4557951b6c831f88d82.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.1.3</td><td>X</td></tr><tr><td>2.2.5</td><td>C</td></tr><tr><td>2.2.10</td><td>C</td></tr><tr><td>2.4.1</td><td>D</td></tr><tr><td>2.4.6</td><td>7</td></tr><tr><td>2.4.11</td><td>B</td></tr><tr><td>2.5.5</td><td>N/A</td></tr><tr><td>2.5.10</td><td>B</td></tr><tr><td>2.5.15</td><td>B</td></tr><tr><td>2.5.20</td><td>A</td></tr><tr><td>2.5.25</td><td>C;D</td></tr><tr><td>2.5.30</td><td>A</td></tr><tr><td>2.5.35</td><td>A</td></tr></table>",
+        "bbox": [
+            421,
+            650,
+            564,
+            931
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/c55304d0ede7993c9cc7890addb66d46c499e1dc016459fc99f01cabfaa2117d.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.2.1</td><td>N/A</td></tr><tr><td>2.2.6</td><td>C</td></tr><tr><td>2.2.11</td><td>C</td></tr><tr><td>2.4.2</td><td>C</td></tr><tr><td>2.4.7</td><td>A;B</td></tr><tr><td>2.5.1</td><td>N/A</td></tr><tr><td>2.5.6</td><td>C;D</td></tr><tr><td>2.5.11</td><td>D</td></tr><tr><td>2.5.16</td><td>A</td></tr><tr><td>2.5.21</td><td>506</td></tr><tr><td>2.5.26</td><td>C</td></tr><tr><td>2.5.31</td><td>16</td></tr><tr><td>2.5.36</td><td>B</td></tr></table>",
+        "bbox": [
+            588,
+            650,
+            761,
+            931
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/f82cd241a60d5559373a7ccdac89be756babdd68fc204032da17d23953be6361.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.2.2</td><td>N/A</td></tr><tr><td>2.2.7</td><td>B</td></tr><tr><td>2.2.12</td><td>16</td></tr><tr><td>2.4.3</td><td>A</td></tr><tr><td>2.4.8</td><td>B;C</td></tr><tr><td>2.5.2</td><td>N/A</td></tr><tr><td>2.5.7</td><td>C</td></tr><tr><td>2.5.12</td><td>N/A</td></tr><tr><td>2.5.17</td><td>B</td></tr><tr><td>2.5.22</td><td>36</td></tr><tr><td>2.5.27</td><td>A</td></tr><tr><td>2.5.32</td><td>D</td></tr><tr><td>2.5.37</td><td>D</td></tr><tr><td>2.5.38</td><td>C</td></tr><tr><td>2.6.3</td><td>D</td></tr><tr><td>2.8.2</td><td>N/A</td></tr><tr><td>2.8.7</td><td>A</td></tr><tr><td>2.8.12</td><td>24</td></tr></table>",
+        "bbox": [
+            786,
+            650,
+            934,
+            931
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "bbox": [
+            60,
+            62,
+            206,
+            176
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/548f0cebde1545b220445b795e729610b668161a836637cd36c57fb0b9812ea4.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.5.39</td><td>D</td></tr><tr><td>2.6.4</td><td>A;B;C</td></tr><tr><td>2.8.3</td><td>D</td></tr><tr><td>2.8.8</td><td>C</td></tr><tr><td>2.8.13</td><td>11 : 11</td></tr></table>",
+        "bbox": [
+            225,
+            62,
+            401,
+            176
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/306fcf877c73996c8a4817414a300e6cd36a3704d5e11421761b3e58a45eb1fa.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.5.40</td><td>C</td></tr><tr><td>2.7.1</td><td>A</td></tr><tr><td>2.8.4</td><td>N/A</td></tr><tr><td>2.8.9</td><td>B</td></tr><tr><td>2.9.1</td><td>C</td></tr></table>",
+        "bbox": [
+            421,
+            62,
+            566,
+            176
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/9cc654917344d20f8b9bd0be90146cfdb03e0e859dc0636c88b731d7c1a638f8.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.6.1</td><td>B</td></tr><tr><td>2.7.2</td><td>34 : 34</td></tr><tr><td>2.8.5</td><td>C</td></tr><tr><td>2.8.10</td><td>D</td></tr></table>",
+        "bbox": [
+            586,
+            62,
+            764,
+            154
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/bf7246d236c6eefedb951b536022bc24b3dcb067fd7ab3b1a8335d8f5462bfe9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.6.2</td><td>5</td></tr><tr><td>2.8.1</td><td>TBA</td></tr><tr><td>2.8.6</td><td>B</td></tr><tr><td>2.8.11</td><td>A</td></tr></table>",
+        "bbox": [
+            784,
+            62,
+            936,
+            154
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Syllabus: Propositional and first order logic.",
+        "bbox": [
+            67,
+            98,
+            391,
+            112
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/7db3755584f63168e62c053a73ff845f0d540746d11b3557b49418cc57e16f5d.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td></tr><tr><td>2 Marks Count</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Total Marks</td><td>0</td><td>1</td><td>2</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td></tr></table>",
+        "bbox": [
+            70,
+            136,
+            952,
+            199
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"Discrete Mathematics: Mathematical Logic\" chapter of your GATE Computer Science exam preparation. This section is designed to provide a comprehensive, exam-focused overview of the fundamental concepts, formulas, and problem-solving techniques you'll need to master. Mathematical Logic is the bedrock of computer science, providing the formal tools to reason about computation, verify program correctness, design circuits, and understand artificial intelligence. For the GATE CS exam, this subject typically carries a weightage of 5-8 marks. Questions often involve determining the validity of arguments, checking logical equivalence, translating natural language statements into logical expressions, and identifying tautologies or contradictions. A strong grasp of these concepts is indispensable not just for direct questions but also for understanding the logical underpinnings of other topics like set theory, relations, and algorithms.",
+        "bbox": [
+            58,
+            207,
+            934,
+            334
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            346,
+            295,
+            363
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Propositional Logic",
+        "text_level": 1,
+        "bbox": [
+            60,
+            376,
+            220,
+            391
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Propositional Logic, also known as propositional calculus, is the study of propositions (declarative sentences that are either true or false, but not both) and their combinations using logical connectives. It forms the most basic level of logical reasoning, focusing on the truth values of simple statements and how they combine to determine the truth values of complex statements.",
+        "bbox": [
+            58,
+            406,
+            934,
+            461
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Definition and Core Idea: A proposition is a statement that is unequivocally true or false. Propositional logic uses symbols to represent propositions and logical connectives to form compound propositions, allowing us to analyze their truth values systematically.",
+            "- Important Formulas, Theorems, and Results:"
+        ],
+        "bbox": [
+            72,
+            472,
+            915,
+            528
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1. Logical Connectives:",
+        "bbox": [
+            90,
+            529,
+            280,
+            542
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Negation (NOT): $\\neg p$ (read as \"not p\")",
+            "- Conjunction (AND): $p \\land q$ (read as \"p and q\")",
+            "- Disjunction (OR): $p \\lor q$ (read as \"p or q\")",
+            "- Implication (IF...THEN): $p \\rightarrow q$ (read as \"if p then q\" or \"p implies q\")",
+            "- Biconditional (IF AND ONLY IF): $p \\leftrightarrow q$ (read as \"p if and only if q\")",
+            "- Exclusive OR (XOR): $p \\oplus q$ (read as \"p xor q\")",
+            "- NAND: $p \\uparrow q \\equiv \\neg(p \\land q)$",
+            "- NOR: $p \\downarrow q \\equiv \\neg (p \\lor q)$"
+        ],
+        "bbox": [
+            122,
+            543,
+            636,
+            656
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2. Truth Tables: Essential for defining connectives and evaluating compound propositions.",
+        "bbox": [
+            89,
+            656,
+            754,
+            669
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\neg p$ : T if p is F, F if p is T.",
+            "- $p \\land q$ : T if both p and q are T, else F.",
+            "- $p \\lor q$ : T if p is T or q is T (or both), else F.",
+            "- $p \\rightarrow q$ : F only if p is T and q is F, else T.",
+            "- $p \\leftrightarrow q$ : T if p and q have the same truth value, else F.",
+            "- $p \\oplus q$ : T if p and q have different truth values, else F."
+        ],
+        "bbox": [
+            122,
+            669,
+            532,
+            752
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3. Tautology, Contradiction, Contingency:",
+        "bbox": [
+            89,
+            752,
+            423,
+            766
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Tautology: A compound proposition that is always true, regardless of the truth values of its atomic propositions. Example: $p \\vee \\neg p$ .",
+            "- Contradiction (or Absurdity): A compound proposition that is always false. Example: $p \\land \\neg p$ .",
+            "- Contingency: A compound proposition that is neither a tautology nor a contradiction (i.e., its truth value depends on the truth values of its atomic propositions)."
+        ],
+        "bbox": [
+            122,
+            766,
+            890,
+            834
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "4. Logical Equivalence (≡): Two propositions $P$ and $Q$ are logically equivalent if $P \\leftrightarrow Q$ is a tautology. This means they always have the same truth value.",
+        "bbox": [
+            87,
+            834,
+            894,
+            863
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5. Laws of Logic (Logical Equivalences):",
+        "bbox": [
+            89,
+            863,
+            413,
+            877
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Identity Laws:",
+        "bbox": [
+            122,
+            878,
+            250,
+            891
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\land T \\equiv p$",
+            "- $p \\vee F \\equiv p$"
+        ],
+        "bbox": [
+            149,
+            891,
+            247,
+            921
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            72,
+            70,
+            84,
+            83
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Discrete Mathematics: Mathematical Logic (78)",
+        "bbox": [
+            275,
+            70,
+            673,
+            86
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the QR code is not textual. Therefore, no OCR text can be generated from this image.",
+        "bbox": [
+            862,
+            70,
+            924,
+            115
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Domination Laws:",
+        "bbox": [
+            124,
+            65,
+            282,
+            77
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\vee T \\equiv T$",
+            "- $p \\land F \\equiv F$"
+        ],
+        "bbox": [
+            149,
+            78,
+            250,
+            106
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Idempotent Laws:",
+        "bbox": [
+            124,
+            108,
+            280,
+            119
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\vee p \\equiv p$",
+            "- $p \\land p \\equiv p$"
+        ],
+        "bbox": [
+            149,
+            122,
+            243,
+            150
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Double Negation Law: $\\neg (\\neg p)\\equiv p$",
+        "bbox": [
+            124,
+            150,
+            401,
+            163
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "■ Commutative Laws:",
+        "bbox": [
+            124,
+            163,
+            295,
+            176
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\vee q \\equiv q \\vee p$",
+            "- $p \\land q \\equiv q \\land p$"
+        ],
+        "bbox": [
+            149,
+            178,
+            270,
+            206
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "■ Associative Laws:",
+        "bbox": [
+            124,
+            206,
+            282,
+            217
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $(p \\vee q) \\vee r \\equiv p \\vee (q \\vee r)$",
+            "- $(p \\land q) \\land r \\equiv p \\land (q \\land r)$"
+        ],
+        "bbox": [
+            149,
+            219,
+            354,
+            250
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Distributive Laws:",
+        "bbox": [
+            124,
+            250,
+            282,
+            261
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\land (q \\lor r) \\equiv (p \\land q) \\lor (p \\land r)$",
+            "- $p \\vee (q \\wedge r) \\equiv (p \\vee q) \\wedge (p \\vee r)$"
+        ],
+        "bbox": [
+            149,
+            263,
+            400,
+            294
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- De Morgan's Laws:",
+        "bbox": [
+            124,
+            294,
+            289,
+            306
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\neg(p \\land q) \\equiv \\neg p \\lor \\neg q$",
+            "- $\\neg(p \\lor q) \\equiv \\neg p \\land \\neg q$"
+        ],
+        "bbox": [
+            149,
+            308,
+            322,
+            338
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Absorption Laws:",
+        "bbox": [
+            124,
+            338,
+            278,
+            350
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\vee (p \\wedge q) \\equiv p$",
+            "- $p \\land (p \\lor q) \\equiv p$"
+        ],
+        "bbox": [
+            149,
+            352,
+            285,
+            382
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Inverse Laws (Complement Laws):",
+        "bbox": [
+            124,
+            382,
+            408,
+            395
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\lor \\neg p \\equiv T$",
+            "- $p \\land \\neg p \\equiv F$"
+        ],
+        "bbox": [
+            149,
+            396,
+            258,
+            423
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Implication Equivalences:",
+        "bbox": [
+            124,
+            423,
+            341,
+            435
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\to q \\equiv \\neg p \\lor q$",
+            "- $p \\rightarrow q \\equiv \\neg q \\rightarrow \\neg p$ (Contrapositive)",
+            "- $\\neg(p \\to q) \\equiv p \\land \\neg q$"
+        ],
+        "bbox": [
+            149,
+            438,
+            433,
+            480
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Biconditional Equivalences:",
+        "bbox": [
+            124,
+            480,
+            359,
+            492
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $p \\leftrightarrow q \\equiv (p \\rightarrow q) \\land (q \\rightarrow p)$",
+            "- $p \\leftrightarrow q \\equiv (\\neg p \\lor q) \\land (\\neg q \\lor p)$",
+            "- $p \\leftrightarrow q \\equiv \\neg p \\leftrightarrow \\neg q$",
+            "- $p \\leftrightarrow q \\equiv (p \\land q) \\lor (\\neg p \\land \\neg q)$"
+        ],
+        "bbox": [
+            149,
+            494,
+            391,
+            554
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "6. Conjunctive Normal Form (CNF) and Disjunctive Normal Form (DNF):",
+        "bbox": [
+            89,
+            554,
+            650,
+            567
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Literal: A propositional variable or its negation (e.g., $p, \\neg q$ ).",
+            "- Clause: A disjunction of literals (e.g., $p \\lor \\neg q \\lor r$ ).",
+            "- CNF: A conjunction of clauses (e.g., $(p \\lor \\neg q) \\land (r \\lor s)$ ).",
+            "- Minterm: A conjunction of literals where each variable appears exactly once (e.g., $p \\land \\neg q \\land r$ ).",
+            "- Maxterm: A disjunction of literals where each variable appears exactly once (e.g., $p \\vee \\neg q \\vee r$ ).",
+            "- DNF: A disjunction of minterms (e.g., $(p \\land \\neg q) \\lor (r \\land s)$ ).",
+            "- Any propositional formula can be converted into an equivalent CNF or DNF."
+        ],
+        "bbox": [
+            124,
+            567,
+            828,
+            665
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Key Properties and Identities: All the laws of logic listed above are crucial identities for simplification and proving equivalence. Understanding the truth conditions for each connective is fundamental.",
+            "• Common Pitfalls or Tricky Points:"
+        ],
+        "bbox": [
+            72,
+            666,
+            919,
+            707
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing implication $(p \\to q)$ with causation or \"if and only if\". Remember $p \\to q$ is false only when $p$ is true and $q$ is false.",
+            "- Incorrectly applying De Morgan's Laws, especially with more complex expressions.",
+            "- Misinterpreting the biconditional; it implies mutual implication.",
+            "- Errors in constructing truth tables, particularly for propositions with many variables.",
+            "- Assuming logical equivalence based on partial truth values."
+        ],
+        "bbox": [
+            95,
+            707,
+            905,
+            790
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            73,
+            790,
+            499,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Truth Tables: The most direct method for small propositions to check tautology, contradiction, or equivalence.",
+            "- Logical Equivalences: Use the laws of logic to simplify expressions or prove equivalence without truth tables. This is often faster for complex expressions.",
+            "- Substitution: Replace sub-expressions with their known equivalents.",
+            "Proof by Contradiction: To show $P$ is a tautology, assume $\\neg P$ is true and derive a contradiction. To show $P \\equiv Q$ , assume $\\neg (P \\leftrightarrow Q)$ is true and derive a contradiction.",
+            "- Conversion to CNF/DNF: Useful for standardization and for certain proof methods like resolution."
+        ],
+        "bbox": [
+            97,
+            805,
+            914,
+            903
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "First Order Logic (Predicate Logic)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            337,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "First Order Logic (FOL), also known as Predicate Logic, extends propositional logic by allowing us to express more complex statements about objects, their properties, and relationships. It introduces predicates, variables, and quantifiers, enabling reasoning about \"all\" or \"some\" elements within a domain.",
+        "bbox": [
+            58,
+            93,
+            899,
+            137
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Definition and Core Idea: FOL allows us to break down propositions into predicates (properties or relations) and arguments (variables or constants). It introduces quantifiers ( $\\forall$ for \"for all\" and $\\exists$ for \"there exists\") to make statements about collections of objects, providing a richer expressive power than propositional logic.",
+        "bbox": [
+            72,
+            146,
+            910,
+            190
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas, Theorems, and Results:",
+        "bbox": [
+            72,
+            190,
+            440,
+            203
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1. Components of FOL:",
+        "bbox": [
+            90,
+            203,
+            280,
+            216
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Predicates: Represent properties or relations (e.g., $P(x)$ for \"x is prime\", $L(x,y)$ for \"x loves y\").",
+            "- Variables: Placeholders for objects (e.g., $x, y, z$ ).",
+            "- Constants: Specific objects (e.g., \"Socrates\", \"5\").",
+            "- Functions: Map objects to other objects (e.g., $f(x)$ for \"father of $x$ \").",
+            "- Quantifiers:"
+        ],
+        "bbox": [
+            121,
+            217,
+            843,
+            287
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Universal Quantifier ( $\\forall$ ): \"For all\", \"for every\", \"for each\". $\\forall xP(x)$ means $P(x)$ is true for every $x$ in the domain.",
+            "- Existential Quantifier (∃): \"There exists\", \"for some\", \"for at least one\". ∃xP(x) means there is at least one x in the domain for which P(x) is true."
+        ],
+        "bbox": [
+            146,
+            289,
+            922,
+            347
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2. Scope of Quantifiers, Free and Bound Variables:",
+        "bbox": [
+            89,
+            347,
+            492,
+            361
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The scope of a quantifier is the part of the formula to which it applies.",
+            "- A variable is bound if it is within the scope of a quantifier using that variable.",
+            "- A variable is free if it is not bound by any quantifier.",
+            "- A formula with no free variables is called a sentence or closed formula and has a definite truth value."
+        ],
+        "bbox": [
+            121,
+            362,
+            880,
+            416
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3. Quantifier Equivalences (Negation Rules):",
+        "bbox": [
+            89,
+            416,
+            443,
+            429
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\neg \\forall xP(x) \\equiv \\exists x \\neg P(x)$ (It is not true that all $x$ have property $P$ if and only if there exists an $x$ that does not have property $P$ ).",
+            "- $\\neg \\exists xP(x) \\equiv \\forall x \\neg P(x)$ (It is not true that there exists an $x$ with property $P$ if and only if all $x$ do not have property $P$ )."
+        ],
+        "bbox": [
+            121,
+            431,
+            907,
+            489
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4. Distributive Properties of Quantifiers:",
+        "bbox": [
+            89,
+            489,
+            408,
+            501
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\forall x(P(x) \\land Q(x)) \\equiv \\forall xP(x) \\land \\forall xQ(x)$",
+            "- $\\exists x(P(x) \\vee Q(x)) \\equiv \\exists xP(x) \\vee \\exists xQ(x)$",
+            "- Important Non-Equivalences:"
+        ],
+        "bbox": [
+            122,
+            502,
+            442,
+            546
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\forall x(P(x) \\lor Q(x))$ is NOT equivalent to $\\forall xP(x) \\lor \\forall xQ(x)$ . (e.g., \"Every number is even or odd\" is true, but \"Every number is even or every number is odd\" is false).",
+            "- $\\exists x(P(x) \\land Q(x))$ is NOT equivalent to $\\exists xP(x) \\land \\exists xQ(x)$ . (e.g., \"There is a number that is both even and prime\" (2) is true, but \"There is an even number and there is a prime number\" is also true, but the existence of one doesn't imply the other is the same number)."
+        ],
+        "bbox": [
+            146,
+            547,
+            924,
+            618
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5. Interchange of Quantifiers:",
+        "bbox": [
+            89,
+            619,
+            326,
+            631
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\forall x \\forall y P(x, y) \\equiv \\forall y \\forall x P(x, y)$",
+            "- $\\exists x \\exists y P(x, y) \\equiv \\exists y \\exists x P(x, y)$"
+        ],
+        "bbox": [
+            122,
+            633,
+            364,
+            663
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Order Matters for Mixed Quantifiers:",
+        "bbox": [
+            122,
+            663,
+            421,
+            675
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\forall x \\exists y P(x, y)$ (For every $x$ , there exists a $y$ such that $P(x, y)$ ) is NOT equivalent to $\\exists y \\forall x P(x, y)$ (There exists a $y$ such that for every $x$ , $P(x, y)$ ).",
+            "- Example: Let $P(x, y)$ be \"x loves y\". $\\forall x \\exists y L(x, y)$ means \"Everyone loves someone\". $\\exists y \\forall x L(x, y)$ means \"There is someone whom everyone loves\". These are clearly different."
+        ],
+        "bbox": [
+            147,
+            676,
+            905,
+            733
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "6. Prenex Normal Form (PNF): A formula is in PNF if all quantifiers are at the beginning of the formula, followed by a quantifier-free formula (called the matrix). Any FOL formula can be converted to an equivalent PNF.",
+        "bbox": [
+            87,
+            733,
+            914,
+            761
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Key Properties and Identities: The quantifier negation rules are fundamental for manipulating and simplifying FOL expressions. Understanding the implications of quantifier order is critical.",
+            "• Common Pitfalls or Tricky Points:"
+        ],
+        "bbox": [
+            72,
+            762,
+            927,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Incorrect Translation: Translating natural language statements into FOL is a major source of errors. Pay close attention to words like \"all\", \"some\", \"no\", \"only if\", \"unless\".",
+        "bbox": [
+            95,
+            802,
+            922,
+            831
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- \"All A are B\": $\\forall x(A(x) \\to B(x))$ (NOT $\\forall x(A(x) \\land B(x)))$",
+            "- \"Some A are B\": $\\exists x(A(x) \\land B(x))$ (NOT $\\exists x(A(x) \\to B(x)))$",
+            "- \"No A are B\": $\\forall x(A(x) \\to \\neg B(x))$ or $\\neg \\exists x(A(x) \\land B(x))$"
+        ],
+        "bbox": [
+            122,
+            831,
+            591,
+            877
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Scope Errors: Misplacing parentheses or incorrectly determining the scope of a quantifier.",
+            "- Variable Binding: Confusing free and bound variables, or using the same variable name for different purposes in nested scopes."
+        ],
+        "bbox": [
+            97,
+            877,
+            919,
+            918
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Order of Mixed Quantifiers: Assuming $\\forall x \\exists y P(x, y)$ is the same as $\\exists y \\forall x P(x, y)$ .",
+        "bbox": [
+            97,
+            65,
+            724,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques or Shortcuts:",
+        "bbox": [
+            72,
+            81,
+            499,
+            93
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Step-by-step Translation: Break down complex natural language sentences into smaller parts, translate each, and then combine them. Identify predicates, variables, and connectives first.",
+            "- Applying Quantifier Equivalences: Use negation rules to simplify expressions or move negations inwards.",
+            "- Domain Awareness: Always consider the domain of discourse when evaluating truth values or translating.",
+            "- Counterexamples: To show a statement is false or not equivalent, try to find a specific example in a small domain that makes it false."
+        ],
+        "bbox": [
+            95,
+            93,
+            922,
+            176
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Logical Reasoning (Inference)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            191,
+            300,
+            207
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Logical Reasoning, or Inference, is the process of deriving conclusions from a set of premises using valid rules. It focuses on the structure of arguments to determine whether a conclusion necessarily follows from the premises, regardless of the actual truth of the premises.",
+        "bbox": [
+            58,
+            220,
+            885,
+            263
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Definition and Core Idea: An argument is a sequence of propositions, where the first propositions are premises and the final proposition is the conclusion. An argument is valid if, whenever all its premises are true, the conclusion must also be true. The goal is to determine if an argument's structure guarantees the truth of its conclusion given true premises.",
+            "- Important Formulas, Theorems, and Results:"
+        ],
+        "bbox": [
+            72,
+            273,
+            932,
+            342
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1. Argument Validity: An argument with premises $P_{1}, P_{2}, \\ldots, P_{n}$ and conclusion $C$ is valid if the proposition $(P_{1} \\land P_{2} \\land \\ldots \\land P_{n}) \\to C$ is a tautology.",
+        "bbox": [
+            89,
+            342,
+            895,
+            372
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2. Rules of Inference (for Propositional Logic): These are fundamental valid argument forms.",
+        "bbox": [
+            87,
+            372,
+            793,
+            387
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Modus Ponens (Law of Detachment):",
+        "bbox": [
+            122,
+            387,
+            430,
+            401
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} p \\rightarrow q \\\\ \\frac {p}{\\therefore q} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            500,
+            418,
+            569,
+            471
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Equivalent to $((p\\to q)\\land p)\\to q$ being a tautology.",
+        "bbox": [
+            134,
+            482,
+            519,
+            500
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Modus Tollens:",
+        "bbox": [
+            122,
+            498,
+            260,
+            511
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} p \\rightarrow q \\\\ \\frac {\\neg q}{\\therefore \\neg p} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            500,
+            529,
+            571,
+            581
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Equivalent to $((p \\to q) \\land \\neg q) \\to \\neg p$ being a tautology.",
+        "bbox": [
+            134,
+            593,
+            544,
+            610
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Hypothetical Syllogism:",
+        "bbox": [
+            122,
+            609,
+            327,
+            623
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} p \\rightarrow q \\\\ \\frac {q \\rightarrow r}{\\therefore p \\rightarrow r} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            492,
+            640,
+            581,
+            693
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Equivalent to $((p \\rightarrow q) \\land (q \\rightarrow r)) \\rightarrow (p \\rightarrow r)$ being a tautology.",
+        "bbox": [
+            134,
+            704,
+            623,
+            720
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Disjunctive Syllogism:",
+        "bbox": [
+            122,
+            720,
+            315,
+            733
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\boldsymbol {p} \\lor \\boldsymbol {q} \\\\ \\frac {\\neg p}{\\therefore q} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            505,
+            750,
+            568,
+            804
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Equivalent to $((p \\lor q) \\land \\neg p) \\to q$ being a tautology.",
+        "bbox": [
+            134,
+            815,
+            522,
+            832
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Addition:",
+        "bbox": [
+            122,
+            831,
+            213,
+            843
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\frac {p}{\\therefore p \\lor q}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            495,
+            863,
+            576,
+            896
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Simplification:",
+        "bbox": [
+            122,
+            906,
+            253,
+            921
+        ],
+        "page_idx": 11
+    }
+]

@@ -1,0 +1,5626 @@
+[
+    {
+        "type": "text",
+        "text": "Let $a, b, d$ and \\$ be indexed as follows:",
+        "bbox": [
+            85,
+            65,
+            376,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/6fdeb71226a20bcff1daca99891a87f282868aee0b5522766f4cdafa82370f2c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>a</td><td>b</td><td>d</td><td>$</td></tr><tr><td>3</td><td>2</td><td>1</td><td>0</td></tr></table>",
+        "bbox": [
+            448,
+            92,
+            566,
+            133
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Compute the FOLLOW set of the non-terminal B and write the index values for the symbols in the FOLLOW set in the descending order.(For example, if the FOLLOW set is (a, b, d, \\$), then the answer should be 3210)",
+        "bbox": [
+            84,
+            142,
+            924,
+            173
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers compiler-design parsing one-mark first-and-follow",
+        "bbox": [
+            87,
+            191,
+            490,
+            201
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            207,
+            181,
+            220
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.11.5 First and Follow: GATE CSE 2024 | Set 1 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            77,
+            230,
+            561,
+            245
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar $G$ , with $S$ as the start symbol. The grammar $G$ has three incomplete productions denoted by (1), (2), and (3).",
+        "bbox": [
+            82,
+            254,
+            878,
+            286
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/ec04c3fe16fabc33bb76dd4e2091a24b997b7ffcf907840fa9b613f3556a1ada.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            233,
+            932,
+            271
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow d a T \\mid \\tag {1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            430,
+            296,
+            573,
+            314
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT \\rightarrow a S | b T | \\tag {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            433,
+            315,
+            576,
+            333
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nR \\rightarrow (3) \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            433,
+            334,
+            529,
+            351
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The set of terminals is $\\{a, b, c, d, f\\}$ . The FIRST and FOLLOW sets of the different non-terminals are as follows.",
+        "bbox": [
+            84,
+            359,
+            909,
+            376
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {FIRST} (S) = \\{c, d, f \\}, \\text {FIRST} (T) = \\{a, b, \\epsilon \\}, \\text {FIRST} (R) = \\{c, \\epsilon \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            378,
+            620,
+            397
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\operatorname{FOLLOW} (S) = \\operatorname{FOLLOW} (T) = \\{c, f, \\}, \\operatorname{FOLLOW} (R) = \\{f \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            399,
+            618,
+            416
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options CORRECTLY fills in the incomplete productions?",
+        "bbox": [
+            84,
+            418,
+            700,
+            432
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (1) $S \\to Rf$ (2) $T \\to \\epsilon$ (3) $R \\to cTR$",
+            "B. (1) $S \\rightarrow f\\dot{R}$ (2) $T \\rightarrow \\epsilon$ (3) $R \\rightarrow cTR$",
+            "C. (1) $S \\to fR$ (2) $T \\to cT$ (3) $R \\to cR$",
+            "D. (1) $S \\to Rf(2)T \\to cT(3)R \\to cR$"
+        ],
+        "bbox": [
+            87,
+            442,
+            400,
+            503
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 compiler-design first-and-follow two-marks",
+        "bbox": [
+            87,
+            528,
+            381,
+            538
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            545,
+            181,
+            559
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.11.6 First and Follow: GATE CSE 2025 | Set 1 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            77,
+            568,
+            561,
+            583
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statement(s) is/are TRUE while computing First and Follow during top down parsing by a compiler?",
+        "bbox": [
+            82,
+            591,
+            875,
+            621
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/1473497a13e8df661eae8eef2f9b699e6e6f431113b7a1c14ae595cc269a7237.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            571,
+            932,
+            609
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. For a production $A \\to \\epsilon, \\epsilon$ will be added to $\\operatorname{First}(A)$ .",
+            "B. If there is any input right end marker, it will be added to First(S), where $S$ is the start symbol.",
+            "C. For a production $A \\to \\epsilon, \\epsilon$ will be added to Follow (A).",
+            "D. If there is any input right end marker, it will be added to $\\text{Follow}(S)$ , where S is the start symbol."
+        ],
+        "bbox": [
+            85,
+            631,
+            806,
+            693
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 compiler-design first-and-follow parsing multiple-selects two-marks",
+        "bbox": [
+            87,
+            718,
+            502,
+            729
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            735,
+            181,
+            749
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.12 Grammar (47)",
+        "text_level": 1,
+        "bbox": [
+            68,
+            758,
+            576,
+            774
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (6Q)",
+        "bbox": [
+            70,
+            783,
+            453,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.12.1 Grammar: GATE CSE 1988 | Question: 10ia",
+        "text_level": 1,
+        "bbox": [
+            77,
+            812,
+            470,
+            827
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar:",
+        "bbox": [
+            85,
+            837,
+            327,
+            851
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\rightarrow S$",
+            "- $S \\to SS \\mid a \\mid \\epsilon$"
+        ],
+        "bbox": [
+            97,
+            862,
+            233,
+            894
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Construct the collection of sets of LR (0) items for this grammar and draw its goto graph.",
+        "bbox": [
+            84,
+            903,
+            737,
+            921
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/4526198242758562590abbb690726956aa43548ff08cb369a214bf30105c6024.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            815,
+            932,
+            853
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.12.2 Grammar: GATE CSE 1988 | Question: 10ib",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            470,
+            124
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar:",
+        "bbox": [
+            85,
+            134,
+            327,
+            149
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/2bb6436afedd8bb870c430d4b878692f8b47a211ce7bb43189dbd63f4511538f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            932,
+            150
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\rightarrow S$",
+            "- $S \\to SS \\mid a \\mid \\epsilon$"
+        ],
+        "bbox": [
+            97,
+            159,
+            233,
+            192
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Indicate the shift-reduce and reduce-reduce conflict (if any) in the various states of the LR(0) parser.",
+        "bbox": [
+            85,
+            201,
+            820,
+            218
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1988 compiler-design descriptive grammar parsing",
+        "bbox": [
+            87,
+            235,
+            364,
+            245
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            252,
+            189,
+            266
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.12.3 Grammar: GATE CSE 1990 | Question: 16a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            275,
+            465,
+            289
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Show that grammar $G_{1}$ is ambiguous using parse trees:",
+        "bbox": [
+            85,
+            299,
+            497,
+            315
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/a94599f62596fa1cb5a9f884d074031d33e1b28826239297d352d41aae051695.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            277,
+            932,
+            315
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nG _ {1}: S \\to \\text { if   } S \\text {   then   } S \\text {   else   } S\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            326,
+            304,
+            344
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow \\text { if } S \\text { then } S\n$$",
+        "text_format": "latex",
+        "bbox": [
+            127,
+            355,
+            253,
+            371
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1990 descriptive compiler-design grammar",
+        "bbox": [
+            87,
+            385,
+            319,
+            395
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            402,
+            189,
+            416
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.12.4 Grammar: GATE CSE 1991 | Question: 10b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            425,
+            465,
+            439
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/70e87f8a53882b96ba2993bd5bade26833d436255aef994b92eef961cffdb0d4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            428,
+            932,
+            466
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar for arithmetic expressions using binary operators — and / which are not associative",
+        "bbox": [
+            84,
+            450,
+            878,
+            478
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $E \\rightarrow E - T \\mid T$",
+            "- $T \\rightarrow T / F \\mid \\dot{F}$",
+            "- $F \\rightarrow (E) \\mid id$"
+        ],
+        "bbox": [
+            97,
+            489,
+            242,
+            536
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(E is the start symbol)",
+        "bbox": [
+            85,
+            546,
+            253,
+            562
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Does the grammar allow expressions with redundant parentheses as in $(id/id)$ or in $id - (id/id)$ ? If so, convert the grammar into one which does not generate expressions with redundant parentheses. Do this with minimum number of changes to the given production rules and adding at most one more production rule.",
+        "bbox": [
+            84,
+            574,
+            927,
+            619
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1991 grammar compiler-design normal descriptive",
+        "bbox": [
+            87,
+            637,
+            363,
+            647
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            653,
+            186,
+            667
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.12.5 Grammar: GATE CSE 1991 | Question: 10c",
+        "text_level": 1,
+        "bbox": [
+            78,
+            676,
+            465,
+            691
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/da4b7bd7171863893824161e9290a2aec1ded7ebe5acfc1a8108f8e46ee1d7b5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            679,
+            932,
+            717
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar for arithmetic expressions using binary operators — and / which are not associative",
+        "bbox": [
+            84,
+            701,
+            878,
+            730
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $E \\rightarrow E - T \\mid T$",
+            "- $T \\rightarrow T / F \\mid \\dot{F}$",
+            "- $F \\rightarrow (E) \\mid id$"
+        ],
+        "bbox": [
+            97,
+            741,
+            242,
+            789
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(E is the start symbol)",
+        "bbox": [
+            85,
+            798,
+            253,
+            814
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Does the grammar allow expressions with redundant parentheses as in $(id/id)$ or in $id - (id/id)$ ? If so, convert the grammar into one which does not generate expressions with redundant parentheses. Do this with minimum number of changes to the given production rules and adding at most one more production rule.",
+        "bbox": [
+            84,
+            827,
+            927,
+            871
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Convert the grammar obtained above into one that is not left recursive.",
+        "bbox": [
+            85,
+            883,
+            601,
+            897
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "gate1988 compiler-design descriptive grammar parsing",
+        "bbox": [
+            87,
+            71,
+            364,
+            81
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "footer",
+        "text": "gate1991 grammar compiler-design normal descriptive",
+        "bbox": [
+            87,
+            916,
+            363,
+            927
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.12.6 Grammar: GATE CSE 1992 | Question: 02,xviii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            492,
+            104
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/51957719a5b039c1e5cfafcfbe598901f0e998be91669497ba72adbe0c21abb2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            931,
+            129
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "If $G$ is a context free grammar and $w$ is a string of length $l$ in $L(G)$ , how long is a derivation of $w$ in $G$ , if $G$ is in Chomsky normal form?",
+        "bbox": [
+            84,
+            112,
+            878,
+            143
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 2l",
+        "bbox": [
+            89,
+            157,
+            132,
+            169
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $2l+1$",
+        "bbox": [
+            285,
+            157,
+            354,
+            169
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 2l - 1",
+        "bbox": [
+            480,
+            157,
+            549,
+            169
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $l$",
+        "bbox": [
+            673,
+            157,
+            707,
+            169
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1992 compiler-design easy grammar",
+        "bbox": [
+            87,
+            181,
+            295,
+            191
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            197,
+            188,
+            212
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.12.7 Grammar: GATE CSE 1994 | Question: 1.18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            220,
+            470,
+            235
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following features cannot be captured by context-free grammars?",
+        "bbox": [
+            85,
+            244,
+            658,
+            260
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. Syntax of if-then-else statements",
+        "bbox": [
+            87,
+            269,
+            337,
+            283
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. Syntax of recursive procedures",
+        "bbox": [
+            497,
+            269,
+            729,
+            283
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. Whether a variable has been declared before its use",
+        "bbox": [
+            89,
+            287,
+            467,
+            300
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. Variable names of arbitrary length",
+        "bbox": [
+            497,
+            287,
+            749,
+            301
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1994 compiler-design grammar normal",
+        "bbox": [
+            87,
+            309,
+            304,
+            320
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            326,
+            188,
+            340
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/c536eef6236761e3d3b2f95a2b1a1d2274d555ae8e0407e7ca93737041d27488.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            223,
+            931,
+            261
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.12.8 Grammar: GATE CSE 1994 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            349,
+            457,
+            364
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A grammar $G$ is in Chomsky-Normal Form (CNF) if all its productions are of the form $A \\to BC$ or $A \\to a$ , where $A, B$ and $C$ , are non-terminals and $a$ is a terminal. Suppose $G$ is a CFG in CNF and $w$ is a string in $L(G)$ of length $n$ , then how long is a derivation of $w$ in $G$ ?",
+        "bbox": [
+            84,
+            372,
+            878,
+            420
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1994 compiler-design grammar normal descriptive",
+        "bbox": [
+            87,
+            432,
+            363,
+            442
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            448,
+            188,
+            463
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/88a03e87eee8cdca92a5df9d3504c129d833ca125f637a69fdd6bb9ddce483d2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            352,
+            931,
+            389
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.12.9 Grammar: GATE CSE 1994 | Question: 3.5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            472,
+            460,
+            486
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Match the following items",
+        "bbox": [
+            85,
+            496,
+            275,
+            511
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/eac495212d572d3c2d98dfc15c8c4925ed6e4952a47889dd355422170f9c501e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>(i)</td><td>Backus-Naur form</td><td>(a)</td><td>Regular expressions</td></tr><tr><td>(ii)</td><td>Lexical analysis</td><td>(b)</td><td>LALR(1) grammar</td></tr><tr><td>(iii)</td><td>YACC</td><td>(c)</td><td>LL(1) grammars</td></tr><tr><td>(iv)</td><td>Recursive descent parsing</td><td>(d)</td><td>General context-free grammars</td></tr></table>",
+        "bbox": [
+            201,
+            523,
+            815,
+            606
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1994 compiler-design grammar normal match-the-following",
+        "bbox": [
+            87,
+            629,
+            401,
+            638
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            644,
+            188,
+            660
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.12.10 Grammar: GATE CSE 1995 | Question: 1.10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            669,
+            478,
+            682
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider a grammar with the following productions",
+        "bbox": [
+            85,
+            693,
+            458,
+            707
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\to a\\alpha b \\mid b\\alpha c \\mid aB$",
+            "- $S \\to \\alpha S \\mid b$",
+            "- $S \\to \\alpha bb \\mid ab$",
+            "- $S\\alpha \\rightarrow bdb \\mid b$"
+        ],
+        "bbox": [
+            97,
+            718,
+            275,
+            780
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The above grammar is:",
+        "bbox": [
+            85,
+            790,
+            258,
+            805
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. Context free",
+        "bbox": [
+            89,
+            819,
+            200,
+            832
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. Regular",
+        "bbox": [
+            285,
+            820,
+            364,
+            833
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. Context sensitive",
+        "bbox": [
+            480,
+            819,
+            620,
+            832
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $LR(k)$",
+        "bbox": [
+            673,
+            818,
+            749,
+            834
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1995 compiler-design grammar normal",
+        "bbox": [
+            87,
+            843,
+            304,
+            853
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            859,
+            188,
+            872
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.12.11 Grammar: GATE CSE 1995 | Question: 9",
+        "text_level": 1,
+        "bbox": [
+            78,
+            883,
+            457,
+            897
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/0b6ca991eab454d91b76637b55212b53f509f4ea7f64dc60a6e984c1218e5a78.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            475,
+            931,
+            511
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/5b5d0487d7b013ca4fe75da272b3bd46c8361a841b1a7392556fc5ada1f64d29.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            672,
+            931,
+            709
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/58cc0bac34667b2978b5c81ca55f0b59c1252f33099c2d410e433c74c6375aee.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            885,
+            931,
+            923
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Translate the arithmetic expression $a^{*} - (b + c)$ into syntax tree.",
+            "B. A grammar is said to have cycles if it is the case that $A \\stackrel{+}{\\Rightarrow} A$ Show that no grammar that has cycles can be LL(1)."
+        ],
+        "bbox": [
+            87,
+            65,
+            589,
+            124
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1995 compiler-design grammar normal descriptive",
+        "bbox": [
+            87,
+            148,
+            363,
+            157
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            163,
+            181,
+            178
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.12.12 Grammar: GATE CSE 1996 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            187,
+            463,
+            201
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/73f9f76208445efd6878b18962876624b81925f0c2048d3399e3dae774f014c9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            190,
+            931,
+            228
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Let $G$ be a context-free grammar where $G = (\\{S, A, B, C\\}, \\{a, b, d\\}, P, S)$ with the productions in $P$ given below.",
+        "bbox": [
+            84,
+            211,
+            878,
+            242
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\rightarrow ABAC$",
+            "- $A \\rightarrow aA \\mid \\varepsilon$",
+            "- $B \\rightarrow bB \\mid \\varepsilon$",
+            "• C → d"
+        ],
+        "bbox": [
+            97,
+            251,
+            216,
+            312
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "$(\\varepsilon$ denotes the null string). Transform the grammar $G$ to an equivalent context-free grammar $G'$ that has no $\\varepsilon$ productions and no unit productions. (A unit production is of the form $x \\to y$ , and $x$ and $y$ are non terminals).",
+        "bbox": [
+            84,
+            324,
+            927,
+            355
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1996 compiler-design grammar normal descriptive",
+        "bbox": [
+            87,
+            372,
+            363,
+            382
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            388,
+            181,
+            402
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.12.13 Grammar: GATE CSE 1996 | Question: 2.10",
+        "text_level": 1,
+        "bbox": [
+            77,
+            412,
+            478,
+            426
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The grammar whose productions are",
+        "bbox": [
+            85,
+            435,
+            359,
+            450
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/357857c252a242ad179d0ab86953f35dc392aac93e2c910d7a72d9470392f9c2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            414,
+            931,
+            452
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\langle \\mathrm{stmt}\\rangle \\rightarrow$ if id then $\\langle \\mathrm{stmt}\\rangle$",
+            "- $\\langle \\mathrm{stmt}\\rangle \\to$ if id then $\\langle \\mathrm{stmt}\\rangle$ else $\\langle \\mathrm{stmt}\\rangle$",
+            "- $\\langle \\mathrm{stmt}\\rangle \\rightarrow \\mathrm{id} := \\mathrm{id}$"
+        ],
+        "bbox": [
+            97,
+            461,
+            418,
+            507
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "is ambiguous because",
+        "bbox": [
+            85,
+            519,
+            253,
+            532
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(a) the sentence",
+        "bbox": [
+            87,
+            536,
+            208,
+            549
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "if a then if b then c:=d",
+        "bbox": [
+            112,
+            560,
+            243,
+            571
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "has more than two parse trees",
+        "bbox": [
+            85,
+            581,
+            312,
+            596
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(b) the left most and right most derivations of the sentence",
+        "bbox": [
+            87,
+            600,
+            512,
+            614
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "if a then if b then c:=d",
+        "bbox": [
+            112,
+            623,
+            243,
+            635
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "give rise to different parse trees",
+        "bbox": [
+            85,
+            644,
+            319,
+            659
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(c) the sentence",
+        "bbox": [
+            87,
+            663,
+            208,
+            676
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "if a then if b then c:= d else c:= f",
+        "bbox": [
+            112,
+            686,
+            299,
+            699
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "has more than two parse trees",
+        "bbox": [
+            85,
+            707,
+            312,
+            722
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(d) the sentence",
+        "bbox": [
+            87,
+            726,
+            208,
+            739
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "if a then if b then c:= d else c:= f",
+        "bbox": [
+            112,
+            750,
+            299,
+            762
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "has two parse trees",
+        "bbox": [
+            85,
+            771,
+            233,
+            785
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1996 compiler-design grammar normal",
+        "bbox": [
+            87,
+            804,
+            304,
+            814
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            820,
+            181,
+            834
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.12.14 Grammar: GATE CSE 1997 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            77,
+            844,
+            463,
+            858
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the grammar",
+        "bbox": [
+            85,
+            868,
+            253,
+            882
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\rightarrow bSe$",
+            "- $S \\rightarrow PQR$"
+        ],
+        "bbox": [
+            97,
+            893,
+            203,
+            923
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/ae8a942428112b726777a1ad15389e46c389efe61c65d7adb328af6f0955b137.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            847,
+            931,
+            884
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $P \\rightarrow bPc$",
+            "- $P \\rightarrow \\varepsilon$",
+            "- $Q \\rightarrow cQd$",
+            "$\\cdot Q\\rightarrow \\varepsilon$",
+            "- $R \\rightarrow dRe$",
+            "- $R \\to \\varepsilon$"
+        ],
+        "bbox": [
+            99,
+            64,
+            194,
+            149
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "where $S, P, Q, R$ are non-terminal symbols with $S$ being the start symbol; $b, c, d, e$ are terminal symbols and $\\varepsilon'$ is the empty string. This grammar generates strings of the form $b^i, c^j, d^k, e^m$ for some $i, j, k, m \\geq 0$ .",
+        "bbox": [
+            84,
+            162,
+            929,
+            195
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. What is the condition on the values of i, j, k, m?",
+            "b. Find the smallest string that has two parse trees."
+        ],
+        "bbox": [
+            87,
+            204,
+            468,
+            239
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1997 compiler-design grammar normal theory-of-computation descriptive",
+        "bbox": [
+            87,
+            264,
+            470,
+            274
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            280,
+            188,
+            294
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.12.15 Grammar: GATE CSE 1998 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            302,
+            467,
+            318
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/db7b1245759de6958ad242e8783bef4e5149f6098b0b280826a8bcd780d4bba4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            306,
+            932,
+            344
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Let $G_{1} = (N, T, P, S_{1})$ be a CFG where, $N = \\{S_{1}, A, B\\}$ , $T = \\{a, b\\}$ and $P$ is given by",
+        "bbox": [
+            85,
+            349,
+            789,
+            366
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l l}S _ {1} \\rightarrow a S _ {1} b&S _ {1} \\rightarrow a B b\\\\S _ {1} \\rightarrow a A b&B \\rightarrow B b\\\\A \\rightarrow a A&B \\rightarrow b\\\\A \\rightarrow a\\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            418,
+            377,
+            618,
+            456
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is $L(G_{1})$ ?",
+        "bbox": [
+            109,
+            465,
+            235,
+            483
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Use the grammar in Part(a) to give a CFG for $L_{2} = \\{a^{i}b^{j}a^{k}b^{l} \\mid i,j,k,l \\geq 1, i = j \\text{ or } k = l\\}$ by adding not more than 5 production rules.",
+            "C. Is $L_{2}$ inherently ambiguous?"
+        ],
+        "bbox": [
+            85,
+            483,
+            929,
+            533
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1998 compiler-design grammar descriptive",
+        "bbox": [
+            87,
+            557,
+            319,
+            568
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            574,
+            188,
+            587
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.12.16 Grammar: GATE CSE 1998 | Question: 6b",
+        "text_level": 1,
+        "bbox": [
+            77,
+            597,
+            467,
+            611
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/67828c774f26f35886fc028b55bd268fb56d471042bd30344397eed33278720c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            600,
+            932,
+            638
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the grammar",
+        "bbox": [
+            85,
+            621,
+            253,
+            635
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $\\mathrm{S} \\rightarrow Aa \\mid b$",
+            "- $A \\to Ac \\mid Sd \\mid \\epsilon$"
+        ],
+        "bbox": [
+            97,
+            647,
+            240,
+            679
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Construct an equivalent grammar with no left recursion and with minimum number of production rules.",
+        "bbox": [
+            85,
+            688,
+            828,
+            704
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1998 compiler-design grammar descriptive",
+        "bbox": [
+            87,
+            720,
+            319,
+            731
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            737,
+            188,
+            752
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.12.17 Grammar: GATE CSE 1999 | Question: 2.15",
+        "text_level": 1,
+        "bbox": [
+            77,
+            761,
+            478,
+            775
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/a06a3d5425a3d85472fb9b86f168897b31ac316099152ce3dfcaa3d9f36b1414.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            763,
+            932,
+            802
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A grammar that is both left and right recursive for a non-terminal, is",
+        "bbox": [
+            85,
+            785,
+            576,
+            800
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Ambiguous",
+            "B. Unambiguous",
+            "C. Information is not sufficient to decide whether it is ambiguous or unambiguous",
+            "D. None of the above"
+        ],
+        "bbox": [
+            87,
+            809,
+            680,
+            878
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "footer",
+        "text": "gate1999 compiler-design grammar normal",
+        "bbox": [
+            87,
+            906,
+            304,
+            915
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.12.18 Grammar: GATE CSE 2001 | Question: 1.18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            478,
+            103
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is false?",
+        "bbox": [
+            85,
+            112,
+            400,
+            127
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. An unambiguous grammar has same leftmost and rightmost derivation",
+            "B. An LL(1) parser is a top-down parser",
+            "C. LALR is more powerful than SLR",
+            "D. An ambiguous grammar can never be LR(k) for any k"
+        ],
+        "bbox": [
+            87,
+            138,
+            626,
+            195
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 compiler-design grammar normal",
+        "bbox": [
+            87,
+            220,
+            319,
+            229
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            236,
+            188,
+            250
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.12.19 Grammar: GATE CSE 2001 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            260,
+            465,
+            273
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Remove left-recursion from the following grammar: $S \\rightarrow Sa \\mid Sb \\mid a \\mid b$",
+            "B. Consider the following grammar:"
+        ],
+        "bbox": [
+            87,
+            305,
+            638,
+            334
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow a S b S \\mid b S a S \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            142,
+            345,
+            317,
+            363
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Construct all possible parse trees for the string abab. Is the grammar ambiguous?",
+        "bbox": [
+            144,
+            365,
+            741,
+            381
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 compiler-design grammar descriptive",
+        "bbox": [
+            87,
+            399,
+            336,
+            408
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            415,
+            188,
+            429
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.12.20 Grammar: GATE CSE 2003 | Question: 56",
+        "text_level": 1,
+        "bbox": [
+            78,
+            438,
+            465,
+            452
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the grammar shown below",
+        "bbox": [
+            85,
+            461,
+            352,
+            477
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\to iEtSS' \\mid a$",
+            "- $S' \\to eS \\mid \\epsilon$",
+            "- $E \\rightarrow b$"
+        ],
+        "bbox": [
+            97,
+            486,
+            243,
+            532
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In the predictive parse table, $M$ , of this grammar, the entries $M[S', e]$ and $M[S', \\$]$ respectively are",
+        "bbox": [
+            85,
+            545,
+            826,
+            562
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\{S' \\to eS\\}$ and $\\{S' \\to \\epsilon\\}$",
+            "B. $\\{S' \\to eS\\}$ and $\\{\\}$",
+            "C. $\\{S^{\\prime}\\rightarrow \\epsilon \\}$ and $\\{S^{\\prime}\\rightarrow \\epsilon \\}$",
+            "D. $\\{S^{\\prime}\\rightarrow eS,S^{\\prime}\\rightarrow \\varepsilon \\}$ and $\\{S^{\\prime}\\rightarrow \\epsilon \\}$"
+        ],
+        "bbox": [
+            87,
+            571,
+            381,
+            637
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 compiler-design grammar normal parsing",
+        "bbox": [
+            87,
+            661,
+            364,
+            671
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            676,
+            188,
+            691
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.12.21 Grammar: GATE CSE 2003 | Question: 57",
+        "text_level": 1,
+        "bbox": [
+            78,
+            700,
+            465,
+            714
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the grammar shown below.",
+        "bbox": [
+            85,
+            724,
+            356,
+            738
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\to CC$",
+            "- $C \\rightarrow cC \\mid d$"
+        ],
+        "bbox": [
+            97,
+            749,
+            213,
+            781
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "This grammar is",
+        "bbox": [
+            85,
+            790,
+            208,
+            805
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. LL(1)",
+            "C. LALR(1) but not SLR(1)",
+            "gatecse-2003 compiler-design grammar parsing normal",
+            "B. SLR(1) but not LL(1)",
+            "D. LR(I) but not LALR(1)"
+        ],
+        "bbox": [
+            87,
+            815,
+            665,
+            857
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            864,
+            188,
+            878
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/8504cbabce52a7e2ebd980bf1c47585481be7ac01de4d866b8f0ca949017f043.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            931,
+            130
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/570a5b23e743b56567add942d7d5274727b0fe18762c50268d967bfe9eeb3b2d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            263,
+            931,
+            300
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/7ae6efd5a502f62dad6322d4445e19bbbe3ca209b2b8c7b43b66ec062c5e5332.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            441,
+            931,
+            479
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/a58d3c884bfba232ee629718e283b0253523f0d62989a425f3d9047546bf271e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            703,
+            931,
+            739
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.12.22 Grammar: GATE CSE 2003 | Question: 58",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            465,
+            79
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the translation scheme shown below.",
+        "bbox": [
+            85,
+            89,
+            428,
+            102
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\rightarrow T R$",
+            "- $R \\to +T\\{\\text{print}('+');\\}R \\mid \\varepsilon$",
+            "- $T \\to \\mathsf{num}$ {print(num.val); }"
+        ],
+        "bbox": [
+            97,
+            114,
+            337,
+            162
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Here num is a token that represents an integer and num.val represents the corresponding integer value. For an input string '9 + 5 + 2', this translation scheme will print",
+        "bbox": [
+            84,
+            171,
+            927,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. $9 + 5 + 2$",
+        "bbox": [
+            87,
+            213,
+            186,
+            228
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. $95 + 2+$",
+        "bbox": [
+            285,
+            213,
+            376,
+            228
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 952++",
+        "bbox": [
+            478,
+            213,
+            576,
+            228
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. $+ + 952$",
+        "bbox": [
+            673,
+            213,
+            773,
+            228
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 compiler-design grammar normal",
+        "bbox": [
+            87,
+            238,
+            319,
+            248
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            254,
+            189,
+            268
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.12.23 Grammar: GATE CSE 2004 | Question: 8",
+        "text_level": 1,
+        "bbox": [
+            77,
+            277,
+            457,
+            290
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following grammar rules violate the requirements of an operator grammar? P, Q, R are nonterminals, and r, s, t are terminals.",
+        "bbox": [
+            84,
+            301,
+            878,
+            331
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $P \\rightarrow QR$",
+            "II. $P\\to QsR$",
+            "III. $P \\rightarrow \\varepsilon$",
+            "IV. $P\\to QtRr$"
+        ],
+        "bbox": [
+            87,
+            340,
+            205,
+            413
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. (I) only",
+        "bbox": [
+            87,
+            427,
+            161,
+            442
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. (I) and (III) only",
+        "bbox": [
+            285,
+            427,
+            413,
+            442
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. (II) and (III) only",
+        "bbox": [
+            478,
+            427,
+            613,
+            442
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. (III) and (IV) only",
+        "bbox": [
+            673,
+            427,
+            813,
+            442
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 compiler-design grammar normal",
+        "bbox": [
+            87,
+            451,
+            319,
+            461
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            467,
+            189,
+            482
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.12.24 Grammar: GATE CSE 2004 | Question: 88",
+        "text_level": 1,
+        "bbox": [
+            77,
+            491,
+            465,
+            505
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar G:",
+        "bbox": [
+            85,
+            515,
+            344,
+            529
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow b S \\mid a A \\mid b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            533,
+            218,
+            549
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow b A \\mid a B\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            553,
+            200,
+            568
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow b B \\mid a S \\mid a\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            572,
+            221,
+            589
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Let $N_{a}(w)$ and $N_{b}(w)$ denote the number of a's and b's in a string $\\omega$ respectively.",
+        "bbox": [
+            85,
+            592,
+            682,
+            609
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The language $L(G)$ over $\\{a,b\\}^{+}$ generated by $G$ is",
+        "bbox": [
+            85,
+            612,
+            477,
+            631
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\{w \\mid N_a(w) > 3N_b(w)\\}$",
+            "B. $\\{w \\mid N_b(w) > 3N_a(w)\\}$",
+            "C. $\\{w \\mid N_a(w) = 3k, k \\in \\{0, 1, 2, \\dots\\}\\}$",
+            "D. $\\{w \\mid N_b(w) = 3k, k \\in \\{0, 1, 2, \\dots\\}\\}$"
+        ],
+        "bbox": [
+            87,
+            640,
+            400,
+            717
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 compiler-design grammar normal",
+        "bbox": [
+            87,
+            741,
+            319,
+            750
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            757,
+            188,
+            771
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.12.25 Grammar: GATE CSE 2005 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            781,
+            465,
+            794
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The grammar $A \\to AA \\mid (A) \\mid \\epsilon$ is not suitable for predictive-parsing because the grammar is:",
+        "bbox": [
+            85,
+            805,
+            779,
+            821
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. ambiguous",
+        "bbox": [
+            87,
+            834,
+            189,
+            849
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. left-recursive",
+        "bbox": [
+            285,
+            834,
+            396,
+            847
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. right-recursive",
+        "bbox": [
+            478,
+            834,
+            601,
+            849
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. an operator-grammar",
+        "bbox": [
+            673,
+            834,
+            843,
+            849
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 compiler-design parsing grammar easy",
+        "bbox": [
+            87,
+            864,
+            354,
+            872
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            878,
+            188,
+            893
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/50c415d275146de4a0a86c94d75b29d9c93d736fa62f96939b79adabfa62c993.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/c772083b636bca1957e01055387e3ef64f53f96b1bef473bc61dfa2d078efce2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            281,
+            931,
+            318
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/692d7f921d7f0ca96672b134586903e34ba4849d01a4c00634b460ec11bee737.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            494,
+            931,
+            532
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/f7ec87d3ae45f53809144e77d5db2ff41c0f7f6b5e74725c90fff94e96a076d8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            783,
+            931,
+            821
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the grammar:",
+        "bbox": [
+            85,
+            89,
+            258,
+            103
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE \\rightarrow E + n \\mid E \\times n \\mid n\n$$",
+        "text_format": "latex",
+        "bbox": [
+            411,
+            114,
+            603,
+            131
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For a sentence $n + n \\times n$ , the handles in the right-sentential form of the reduction are:",
+        "bbox": [
+            85,
+            141,
+            721,
+            155
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $n, E + n$ and $E + n \\times n$",
+        "bbox": [
+            87,
+            163,
+            290,
+            179
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $n, E + n$ and $E + E \\times n$",
+        "bbox": [
+            495,
+            163,
+            700,
+            179
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $n, n + n$ and $n + n \\times n$",
+        "bbox": [
+            89,
+            182,
+            284,
+            197
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $n, E + n$ and $E \\times n$",
+        "bbox": [
+            497,
+            182,
+            665,
+            197
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 compiler-design grammar normal",
+        "bbox": [
+            87,
+            206,
+            319,
+            216
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            222,
+            186,
+            237
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.12.27 Grammar: GATE CSE 2006 | Question: 32, ISRO2016-35",
+        "text_level": 1,
+        "bbox": [
+            77,
+            245,
+            574,
+            260
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements about the context free grammar",
+        "bbox": [
+            85,
+            270,
+            571,
+            283
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/bf328336ca31eef9d9b964c45161c06703145460bfec3d52b8cf0d97d8fd6989.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            248,
+            931,
+            286
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nG = \\{S \\rightarrow S S, S \\rightarrow a b, S \\rightarrow b a, S \\rightarrow \\epsilon \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            341,
+            308,
+            672,
+            327
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. $G$ is ambiguous",
+            "II. $G$ produces all strings with equal number of $a$ 's and $b$ 's",
+            "III. G can be accepted by a deterministic PDA."
+        ],
+        "bbox": [
+            85,
+            334,
+            515,
+            380
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which combination below expresses all the true statements about G?",
+        "bbox": [
+            85,
+            391,
+            594,
+            406
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            87,
+            421,
+            152,
+            435
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. I and III only",
+        "bbox": [
+            285,
+            421,
+            394,
+            435
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. II and III only",
+        "bbox": [
+            480,
+            421,
+            593,
+            435
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. I, II and III",
+        "bbox": [
+            673,
+            421,
+            768,
+            435
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 compiler-design grammar normal isro2016",
+        "bbox": [
+            87,
+            445,
+            369,
+            454
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            461,
+            186,
+            475
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.12.28 Grammar: GATE CSE 2006 | Question: 59",
+        "text_level": 1,
+        "bbox": [
+            77,
+            484,
+            465,
+            500
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following translation scheme.",
+        "bbox": [
+            85,
+            509,
+            398,
+            523
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\rightarrow ER$",
+            "- $R \\to *E\\{\\text{print}('*');\\} R \\mid \\varepsilon$",
+            "- $E \\to F + E\\{\\mathrm{print}(' + ');\\}\\mid F$",
+            "- $F \\to (S) \\mid id \\{\\text{print}(id. value);\\}$"
+        ],
+        "bbox": [
+            97,
+            533,
+            374,
+            597
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Here $id$ is a token that represents an integer and $id.value$ represents the corresponding integer value. For an input $2 * 3 + 4$ , this translation scheme prints",
+        "bbox": [
+            84,
+            605,
+            927,
+            635
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $2 \\times 3 + 4$",
+        "bbox": [
+            87,
+            648,
+            181,
+            662
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $2* + 34$",
+        "bbox": [
+            285,
+            648,
+            373,
+            662
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $23 \\times 4+$",
+        "bbox": [
+            480,
+            648,
+            566,
+            662
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. 234+\\*",
+        "bbox": [
+            673,
+            648,
+            766,
+            662
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 compiler-design grammar normal",
+        "bbox": [
+            87,
+            673,
+            319,
+            682
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            688,
+            186,
+            704
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "2.12.29 Grammar: GATE CSE 2006 | Question: 84",
+        "text_level": 1,
+        "bbox": [
+            77,
+            713,
+            465,
+            726
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following grammars generates the language $L = \\{a^i b^j \\mid i \\neq j\\}$ ?",
+        "bbox": [
+            84,
+            737,
+            697,
+            757
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $S \\rightarrow AC \\mid CB$",
+        "bbox": [
+            87,
+            767,
+            225,
+            783
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC \\rightarrow a C b \\mid a \\mid b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            789,
+            233,
+            806
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow a A \\mid \\varepsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            812,
+            201,
+            828
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow B b \\mid \\varepsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            834,
+            201,
+            850
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $S \\to aS \\mid Sb \\mid a \\mid b$",
+        "bbox": [
+            284,
+            767,
+            450,
+            783
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $S \\to aS \\mid Sb \\mid a \\mid b$",
+        "bbox": [
+            285,
+            767,
+            450,
+            783
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "c. $S \\to AC \\mid CB$",
+        "bbox": [
+            480,
+            767,
+            613,
+            783
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC \\rightarrow a C b \\mid \\varepsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            500,
+            789,
+            600,
+            806
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow a A \\mid \\varepsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            502,
+            812,
+            591,
+            828
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow B b \\mid \\varepsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            502,
+            834,
+            591,
+            850
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. $S \\to AC \\mid CB$",
+        "bbox": [
+            673,
+            767,
+            808,
+            783
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC \\to a C b \\mid \\varepsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            697,
+            789,
+            794,
+            806
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow a A \\mid a\n$$",
+        "text_format": "latex",
+        "bbox": [
+            697,
+            812,
+            786,
+            828
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow B b \\mid b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            697,
+            834,
+            784,
+            850
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 compiler-design grammar normal theory-of-computation",
+        "bbox": [
+            87,
+            882,
+            426,
+            891
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            897,
+            186,
+            912
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/f54d394129ba8e11706c48040d7c0e76e14bd5730cb1e464afa37ab769271457.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            486,
+            931,
+            524
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/9f15da6f1af6f5e64f3fcfdce6f94c03ffff841eec7729768e5ed659e7f8246b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            714,
+            931,
+            752
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "2.12.26 Grammar: GATE CSE 2005 | Question: 59",
+        "bbox": [
+            77,
+            65,
+            465,
+            79
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual content that is not present in the image. Therefore, no text should be output for OCR.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The grammar",
+        "bbox": [
+            85,
+            89,
+            189,
+            103
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S \\to AC \\mid CB$",
+            "- $C \\rightarrow aCb \\mid \\epsilon$",
+            "- $A \\rightarrow aA \\mid a$",
+            "- $B \\to Bb \\mid b$"
+        ],
+        "bbox": [
+            97,
+            114,
+            233,
+            176
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "generates the language $L = \\{a^i b^j \\mid i \\neq j\\}$ . In this grammar what is the length of the derivation (number of steps starting from $S$ ) to generate the string $a^l b^m$ with $l \\neq m$",
+        "bbox": [
+            84,
+            187,
+            927,
+            222
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $\\max(l,m)+2$",
+        "bbox": [
+            87,
+            233,
+            221,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $l + m + 2$",
+        "bbox": [
+            285,
+            233,
+            384,
+            249
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $l + m + 3$",
+        "bbox": [
+            478,
+            233,
+            579,
+            249
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. $\\max (l,m) + 3$",
+        "bbox": [
+            673,
+            233,
+            805,
+            250
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 compiler-design grammar normal",
+        "bbox": [
+            87,
+            258,
+            319,
+            269
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            275,
+            186,
+            290
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.12.31 Grammar: GATE CSE 2007 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            77,
+            298,
+            465,
+            313
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the grammar with non-terminals $N = \\{S, C, S_1\\}$ , terminals $T = \\{a, b, i, t, e\\}$ , with $S$ as the start symbol, and the following set of rules:",
+        "bbox": [
+            84,
+            321,
+            878,
+            353
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow i C t S S _ {1} \\mid a\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            355,
+            218,
+            372
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS _ {1} \\rightarrow e S \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            375,
+            186,
+            391
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nC \\rightarrow b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            394,
+            144,
+            409
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The grammar is NOT LL(1) because:",
+        "bbox": [
+            85,
+            414,
+            359,
+            429
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. it is left recursive",
+        "bbox": [
+            87,
+            438,
+            228,
+            452
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. it is right recursive",
+        "bbox": [
+            495,
+            438,
+            643,
+            452
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. it is ambiguous",
+        "bbox": [
+            89,
+            456,
+            216,
+            470
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. it is not context-free",
+        "bbox": [
+            495,
+            456,
+            653,
+            469
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 compiler-design grammar normal",
+        "bbox": [
+            87,
+            479,
+            319,
+            489
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            495,
+            186,
+            510
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.12.32 Grammar: GATE CSE 2007 | Question: 53",
+        "text_level": 1,
+        "bbox": [
+            77,
+            519,
+            465,
+            534
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two statements:",
+        "bbox": [
+            85,
+            543,
+            371,
+            557
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• P: Every regular grammar is LL(1)",
+            "• Q: Every regular set has a LR(1) grammar"
+        ],
+        "bbox": [
+            97,
+            568,
+            421,
+            597
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is TRUE?",
+        "bbox": [
+            85,
+            606,
+            324,
+            622
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. Both P and Q are true",
+        "bbox": [
+            87,
+            631,
+            263,
+            644
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. P is true and Q is false",
+        "bbox": [
+            495,
+            631,
+            673,
+            644
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. P is false and Q is true",
+        "bbox": [
+            89,
+            646,
+            268,
+            657
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. Both P and Q are false",
+        "bbox": [
+            495,
+            646,
+            675,
+            657
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 compiler-design grammar normal",
+        "bbox": [
+            87,
+            663,
+            319,
+            674
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            680,
+            186,
+            694
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.12.33 Grammar: GATE CSE 2007 | Question: 78",
+        "text_level": 1,
+        "bbox": [
+            77,
+            703,
+            465,
+            718
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the CFG with $\\{S, A, B\\}$ as the non-terminal alphabet, $\\{a, b\\}$ as the terminal alphabet, S as the start symbol and the following set of production rules:",
+        "bbox": [
+            84,
+            726,
+            878,
+            758
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow a B \\quad \\quad S \\rightarrow b A\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            760,
+            275,
+            776
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow b \\quad A \\rightarrow a\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            779,
+            265,
+            794
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow b S \\quad A \\rightarrow a S\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            798,
+            272,
+            814
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow a B B \\quad A \\rightarrow b A A\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            818,
+            285,
+            833
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the following strings is generated by the grammar?",
+        "bbox": [
+            85,
+            837,
+            526,
+            853
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. aaaabb",
+        "bbox": [
+            87,
+            865,
+            169,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. aabbbb",
+        "bbox": [
+            285,
+            865,
+            361,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. aabbab",
+        "bbox": [
+            478,
+            865,
+            557,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. abbbba",
+        "bbox": [
+            673,
+            865,
+            749,
+            878
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 compiler-design grammar normal",
+        "bbox": [
+            87,
+            890,
+            319,
+            900
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            906,
+            186,
+            921
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/1f61aaf3c1851599971166ce9d7fd101d31c14bfcaa63da81ad9de9ff8d9312d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            302,
+            931,
+            339
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/d36b8afe99c94ecbdb8c4e909240df0b1135329a7e1c415a670bfc1a13df5421.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            522,
+            931,
+            559
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/dc4c477fc3a8458f6bedcba7dc9c99f7efc939353a08935f6473738bd8e82e7e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            706,
+            931,
+            744
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "2.12.30 Grammar: GATE CSE 2006 | Question: 85",
+        "bbox": [
+            77,
+            65,
+            465,
+            79
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty. Therefore, no text output can be generated.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "2.12.34 Grammar: GATE CSE 2007 | Question: 79",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            465,
+            79
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/f3f2d7595efa35c97e3f739510822a51687a879415c7ccf70d8627424e64ebdb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the CFG with $\\{S, A, B\\}$ as the non-terminal alphabet, $\\{a, b\\}$ as the terminal alphabet, S as the start symbol and the following set of production rules:",
+        "bbox": [
+            84,
+            89,
+            878,
+            119
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow a B \\quad \\quad S \\rightarrow b A\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            121,
+            277,
+            137
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow b \\quad A \\rightarrow a\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            141,
+            265,
+            155
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow b S \\quad A \\rightarrow a S\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            160,
+            272,
+            175
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow a B B \\quad A \\rightarrow b A A\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            179,
+            282,
+            194
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "For the string aabbab, how many derivation trees are there?",
+        "bbox": [
+            85,
+            199,
+            526,
+            214
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            87,
+            226,
+            126,
+            241
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            228,
+            321,
+            241
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            228,
+            515,
+            241
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 4",
+        "bbox": [
+            673,
+            228,
+            710,
+            241
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 compiler-design grammar normal",
+        "bbox": [
+            87,
+            252,
+            319,
+            261
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            268,
+            188,
+            282
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.12.35 Grammar: GATE CSE 2008 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            77,
+            290,
+            465,
+            305
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements are true?",
+        "bbox": [
+            85,
+            315,
+            405,
+            330
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/9f8e097aaef5a8149c6ebef8d2a5a50a79658c146d67f8acbbe84daf419a3bfc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            294,
+            931,
+            332
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Every left-recursive grammar can be converted to a right-recursive grammar and vice-versa",
+            "II. All $\\epsilon$ -productions can be removed from any context-free grammar by suitable transformations",
+            "III. The language generated by a context-free grammar all of whose productions are of the form $X \\to w$ or $X \\to wY$ (where, $w$ is a string of terminals and $Y$ is a non-terminal), is always regular",
+            "IV. The derivation trees of strings generated by a context-free grammar in Chomsky Normal Form are always binary trees"
+        ],
+        "bbox": [
+            84,
+            340,
+            924,
+            426
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. I, II, III and IV",
+        "bbox": [
+            87,
+            435,
+            206,
+            448
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. II, III and IV only",
+        "bbox": [
+            495,
+            435,
+            631,
+            450
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. I, III and IV only",
+        "bbox": [
+            90,
+            450,
+            221,
+            464
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. I, II and IV only",
+        "bbox": [
+            497,
+            450,
+            623,
+            464
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 normal compiler-design grammar",
+        "bbox": [
+            87,
+            469,
+            319,
+            478
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            484,
+            188,
+            498
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.12.36 Grammar: GATE CSE 2010 | Question: 38",
+        "text_level": 1,
+        "bbox": [
+            77,
+            508,
+            465,
+            522
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The grammar $S \\to aSa \\mid bS \\mid c$ is",
+        "bbox": [
+            85,
+            532,
+            344,
+            549
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/0d23c987d97ce6ffa1a966f094ea23bf2028e3a1a6341d03774bff3639a490ae.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            511,
+            931,
+            548
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. LL(1) but not LR(1)",
+        "bbox": [
+            89,
+            557,
+            243,
+            571
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. LR(1) but not LL(1)",
+        "bbox": [
+            497,
+            557,
+            648,
+            571
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. Both LL(1) and LR(1)",
+        "bbox": [
+            90,
+            572,
+            258,
+            585
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. Neither LL(1) nor LR(1)",
+        "bbox": [
+            497,
+            572,
+            678,
+            586
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 compiler-design grammar normal",
+        "bbox": [
+            89,
+            590,
+            319,
+            599
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            606,
+            188,
+            619
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.12.37 Grammar: GATE CSE 2016 | Set 2 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            77,
+            629,
+            519,
+            643
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following grammars is free from left recursion?",
+        "bbox": [
+            85,
+            653,
+            554,
+            668
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/f40378734628bb8308bca5d50db2180e6ae9d57e59b22839e3f97c0bbb19d0e0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            631,
+            931,
+            669
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $S \\rightarrow AB$",
+        "bbox": [
+            89,
+            681,
+            184,
+            695
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. $S \\rightarrow Ab \\mid Bb \\mid c$",
+        "bbox": [
+            285,
+            681,
+            428,
+            697
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. $S\\to Aa\\mid B$",
+        "bbox": [
+            480,
+            681,
+            596,
+            697
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. $S \\to Aa \\mid Bb \\mid c$",
+        "bbox": [
+            673,
+            681,
+            820,
+            697
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow A a \\mid b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            703,
+            201,
+            719
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow B d \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            307,
+            703,
+            396,
+            719
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow B b \\mid S c \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            502,
+            703,
+            623,
+            719
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow B d \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            697,
+            703,
+            786,
+            719
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow c\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            726,
+            166,
+            739
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow e\n$$",
+        "text_format": "latex",
+        "bbox": [
+            307,
+            726,
+            359,
+            739
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow d\n$$",
+        "text_format": "latex",
+        "bbox": [
+            502,
+            726,
+            557,
+            739
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nB \\rightarrow A e \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            697,
+            726,
+            784,
+            741
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 compiler-design grammar easy",
+        "bbox": [
+            87,
+            750,
+            329,
+            760
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            767,
+            188,
+            781
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2.12.38 Grammar: GATE CSE 2016 | Set 2 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            77,
+            790,
+            517,
+            804
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A student wrote two context-free grammars G1 and G2 for generating a single C-like array declaration. The dimension of the array is at least one. For example,",
+        "bbox": [
+            84,
+            814,
+            875,
+            843
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/b7bd62fcfcb8219a742569ea5c781434356a78058d83e1169bc06f77d1a7701a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            793,
+            931,
+            830
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "int a[10] [3];",
+        "bbox": [
+            144,
+            852,
+            216,
+            864
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The grammars use D as the start symbol, and use six terminal symbols int ; id [ ] num.",
+        "bbox": [
+            85,
+            872,
+            721,
+            888
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/d8f43fcd6f0a771088efbd1e3d5c12f08fe7462427d67c6a9bc3d2841ef9dd37.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Grammar G1</td><td>Grammar G2</td></tr><tr><td>D → int L;</td><td>D → int L;</td></tr><tr><td>L → id [E</td><td>L → id E</td></tr><tr><td>E → num ]</td><td>E → E [num]</td></tr><tr><td>E → num ] [E</td><td>E → [num]</td></tr></table>",
+        "bbox": [
+            366,
+            66,
+            648,
+            168
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the grammars correctly generate the declaration mentioned above?",
+        "bbox": [
+            85,
+            176,
+            647,
+            191
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. Both G1 and G2",
+        "bbox": [
+            87,
+            205,
+            226,
+            218
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. Only G1",
+        "bbox": [
+            285,
+            205,
+            366,
+            219
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. Only G2",
+        "bbox": [
+            480,
+            205,
+            561,
+            219
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. Neither G1 nor G2",
+        "bbox": [
+            673,
+            205,
+            825,
+            218
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 compiler-design grammar normal",
+        "bbox": [
+            87,
+            229,
+            341,
+            239
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            245,
+            186,
+            258
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.12.39 Grammar: GATE CSE 2017 | Set 2 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            268,
+            519,
+            283
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following expression grammar G:",
+        "bbox": [
+            85,
+            292,
+            430,
+            308
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $E \\rightarrow E - T \\mid T$",
+            "- $T \\rightarrow T + F \\mid F$",
+            "- $F \\rightarrow (E) \\mid id$"
+        ],
+        "bbox": [
+            97,
+            318,
+            242,
+            366
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following grammars is not left recursive, but is equivalent to G?",
+        "bbox": [
+            85,
+            376,
+            642,
+            391
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $E \\rightarrow E - T \\mid T$",
+        "bbox": [
+            87,
+            404,
+            233,
+            420
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT \\rightarrow T + F \\mid F\n$$",
+        "text_format": "latex",
+        "bbox": [
+            110,
+            429,
+            233,
+            447
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF \\rightarrow (E) \\mid i d\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            457,
+            216,
+            473
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $E \\rightarrow TE'$",
+        "bbox": [
+            285,
+            404,
+            383,
+            419
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE ^ {\\prime} \\rightarrow - T E ^ {\\prime} \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            307,
+            429,
+            423,
+            447
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT \\rightarrow T + F \\mid F\n$$",
+        "text_format": "latex",
+        "bbox": [
+            305,
+            457,
+            426,
+            473
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF \\rightarrow (E) \\mid i d\n$$",
+        "text_format": "latex",
+        "bbox": [
+            307,
+            484,
+            410,
+            500
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $E \\rightarrow TX$",
+        "bbox": [
+            478,
+            404,
+            574,
+            419
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX \\rightarrow - T X \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            502,
+            429,
+            611,
+            447
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT \\rightarrow F Y\n$$",
+        "text_format": "latex",
+        "bbox": [
+            500,
+            458,
+            571,
+            472
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nY \\rightarrow + F Y \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            500,
+            484,
+            608,
+            500
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF \\rightarrow (E) \\mid i d\n$$",
+        "text_format": "latex",
+        "bbox": [
+            500,
+            511,
+            605,
+            528
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $E \\rightarrow TX \\mid (TX)$",
+        "bbox": [
+            673,
+            404,
+            823,
+            421
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nX \\rightarrow - T X \\mid + T X \\mid \\epsilon\n$$",
+        "text_format": "latex",
+        "bbox": [
+            695,
+            429,
+            860,
+            447
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT \\rightarrow i d\n$$",
+        "text_format": "latex",
+        "bbox": [
+            695,
+            458,
+            757,
+            472
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 grammar",
+        "bbox": [
+            87,
+            541,
+            218,
+            549
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            557,
+            186,
+            571
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.12.40 Grammar: GATE CSE 2019 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            580,
+            465,
+            593
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the augmented grammar given below:",
+        "bbox": [
+            85,
+            605,
+            436,
+            619
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $S' \\to S$",
+            "- $S \\to \\langle L \\rangle \\mid id$",
+            "- $L \\to \\dot{L}, \\dot{S} \\mid S$"
+        ],
+        "bbox": [
+            97,
+            630,
+            221,
+            676
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $I_0 = \\text{CLOSURE}(\\{[S' \\to \\cdot S]\\})$ . The number of items in the set $\\text{GOTO}(I_0, \\langle \\rangle)$ is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            687,
+            779,
+            705
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers compiler-design grammar two-marks",
+        "bbox": [
+            87,
+            722,
+            423,
+            731
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            738,
+            186,
+            752
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "2.12.41 Grammar: GATE CSE 2021 | Set 1 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            761,
+            515,
+            775
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following context-free grammar where the set of terminals is $\\{a, b, c, d, f\\}$ .",
+        "bbox": [
+            85,
+            785,
+            729,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} \\mathrm{S} \\quad \\rightarrow \\quad d a \\mathrm{T} \\mid \\mathrm{R} f \\\\ \\mathrm{T} \\rightarrow a \\mathrm{S} \\mid b a \\mathrm{T} \\mid \\epsilon \\\\ \\mathrm{R} \\rightarrow c a \\mathrm{TR} | \\epsilon \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            406,
+            812,
+            600,
+            870
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The following is a partially-filled LL(1) parsing table.",
+        "bbox": [
+            85,
+            878,
+            468,
+            896
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/d7996efc652d5fd5616f2038f22a215002d1ad128f7843b214b792fd04b243b9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            271,
+            932,
+            309
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/e27ba24280058dc1bb1bf7f8ab6a615ffd45cf1ee240950a6281e9f737941d49.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            583,
+            932,
+            621
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/b074df13c2de7c3342e478c3aaac206e13d4e32ed33d52ea2a3fff4ee2283e28.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            764,
+            932,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "images/4a82c37b2807444864a07193e7560ee0a3b4bfa25f57eb52de7642d873ea0b0e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td></td><td>a</td><td>b</td><td>c</td><td>d</td><td>f</td><td>$</td></tr><tr><td>S</td><td></td><td></td><td>1</td><td>S → daT</td><td>2</td><td></td></tr><tr><td>T</td><td>T → aS</td><td>T → baT</td><td>3</td><td></td><td>T → ε</td><td>4</td></tr><tr><td>R</td><td></td><td></td><td>R → caTR</td><td></td><td>R → ε</td><td></td></tr></table>",
+        "bbox": [
+            238,
+            67,
+            776,
+            149
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following choices represents the correct combination for the numbered cells in the parsing table (“blank” denotes that the corresponding cell is empty)?",
+        "bbox": [
+            84,
+            160,
+            929,
+            190
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\boxed{1}$ S → Rf",
+            "B. 1 blank",
+            "C. 1 S → Rf",
+            "D. 1 blank",
+            "2 S → Rf",
+            "$2\\mathrm{S}\\rightarrow\\mathrm{R}f$",
+            "2 blank",
+            "2 S → Rf",
+            "3 T → ε",
+            "3 T → ε",
+            "3 blank",
+            "3 blank",
+            "4 T → ε",
+            "4 T → ε",
+            "4 T → ε",
+            "4 blank"
+        ],
+        "bbox": [
+            87,
+            199,
+            569,
+            275
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 compiler-design grammar two-marks",
+        "bbox": [
+            87,
+            298,
+            354,
+            308
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            314,
+            188,
+            328
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.12.42 Grammar: GATE CSE 2024 | Set 1 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            77,
+            337,
+            519,
+            352
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/98cd46f05a01bc73f629c7c3554747a43e4aecb307e21a4c2b8224370cb763b3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            340,
+            932,
+            378
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $G = (V, \\Sigma, S, P)$ be a context-free grammar in Chomsky Normal Form with $\\Sigma = \\{a, b, c\\}$ and $V$ containing 10 variable symbols including the start symbol $S$ . The string $w = a^{30} b^{30} c^{30}$ is derivable from $S$ . The number of steps (application of rules) in the derivation $S \\to^* w$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            361,
+            878,
+            409
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 numerical-answers compiler-design grammar two-marks",
+        "bbox": [
+            87,
+            422,
+            445,
+            432
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            439,
+            188,
+            453
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.12.43 Grammar: GATE CSE 2024 | Set 2 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            77,
+            461,
+            519,
+            476
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/c4e1a3055c7fde20bd379e9016a07e6c7e8d06e4292f0a7df768f52946ad266f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            464,
+            932,
+            503
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider a context-free grammar G with the following 3 rules.",
+        "bbox": [
+            85,
+            486,
+            537,
+            502
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow a S, S \\rightarrow a S b S, S \\rightarrow c\n$$",
+        "text_format": "latex",
+        "bbox": [
+            394,
+            511,
+            621,
+            529
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let $w \\in L(G)$ . Let $n_a(w), n_b(w), n_c(w)$ denote the number of times $a, b, c$ occur in $w$ , respectively. Which of the following statements is/are TRUE?",
+        "bbox": [
+            84,
+            538,
+            927,
+            568
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $n_a(w) > n_b(w)$",
+        "bbox": [
+            87,
+            577,
+            226,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $n_c(w) = n_b(w) + 1$",
+        "bbox": [
+            90,
+            593,
+            255,
+            606
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $n_a(w) > n_c(w) - 2$",
+        "bbox": [
+            495,
+            577,
+            663,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $n_c(w) = n_b(w)*2$",
+        "bbox": [
+            497,
+            593,
+            658,
+            606
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 compiler-design multiple-selects grammar two-marks",
+        "bbox": [
+            87,
+            611,
+            433,
+            621
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            628,
+            188,
+            642
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "2.12.44 Grammar: GATE CSE 2025 | Set 2 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            77,
+            650,
+            515,
+            665
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider two grammars $G_{1}$ and $G_{2}$ with the production rules given below:",
+        "bbox": [
+            84,
+            674,
+            630,
+            691
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a489ae2bb8377eb2b56192c5b40d67d3d7e0b1db2b9990ec50f9c6568b1bd70.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            653,
+            932,
+            692
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$G_{1}:S\\to if E then S|if E then S else S|a$",
+        "bbox": [
+            85,
+            706,
+            455,
+            725
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE \\to b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            122,
+            726,
+            181,
+            741
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$G_{2}:S\\to if E then S\\mid M$",
+        "bbox": [
+            85,
+            745,
+            302,
+            763
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "$M\\to if E then M else S|c$",
+        "bbox": [
+            122,
+            766,
+            357,
+            783
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE \\rightarrow b\n$$",
+        "text_format": "latex",
+        "bbox": [
+            122,
+            785,
+            181,
+            799
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "where if, then, else, $a, b, c$ are the terminals.",
+        "bbox": [
+            84,
+            817,
+            433,
+            834
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the following option(s) is/are CORRECT?",
+        "bbox": [
+            85,
+            836,
+            457,
+            852
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $G_{1}$ is not $LL(1)$ and $G_{2}$ is $LL(1)$",
+        "bbox": [
+            87,
+            861,
+            349,
+            890
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $G_{1}$ and $G_{2}$ are not $LL(1)$",
+        "bbox": [
+            89,
+            890,
+            294,
+            904
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $G_{1}$ is $LL(1)$ and $G_{2}$ is not $LL(1)$",
+        "bbox": [
+            495,
+            861,
+            754,
+            890
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $G_{1}$ and $G_{2}$ are ambiguous.",
+        "bbox": [
+            497,
+            890,
+            705,
+            904
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 compiler-design grammar multiple-selects easy two-marks",
+        "bbox": [
+            87,
+            909,
+            465,
+            919
+        ],
+        "page_idx": 11
+    }
+]

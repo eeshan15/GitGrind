@@ -1,0 +1,3676 @@
+[
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "4. Distributive: $A \\cdot (B + C) = (A \\cdot B) + (A \\cdot C)$ , $A + (B \\cdot C) = (A + B) \\cdot (A + C)$ .",
+            "5. Identity: $A + 0 = A$ , $A \\cdot 1 = A$ .",
+            "6. Complement: $A + \\bar{A} = 1, A \\cdot \\bar{A} = 0$ ."
+        ],
+        "bbox": [
+            87,
+            64,
+            734,
+            112
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• Theorems and Identities:",
+        "bbox": [
+            73,
+            112,
+            285,
+            125
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Idempotence: $A + A = A$ , $A \\cdot A = A$ .",
+            "○ Absorption: $A + (A \\cdot B) = A$ , $A \\cdot (A + B) = A$ .",
+            "- Consensus: $(A \\cdot B) + (\\bar{A} \\cdot C) + (\\bar{B} \\cdot C) = (A \\cdot B) + (\\bar{A} \\cdot C)$ . (If $B \\cdot C$ is redundant).",
+            "- De Morgan's Laws: $\\overline{A + B} = \\bar{A} \\cdot \\bar{B}, \\overline{A \\cdot B} = \\bar{A} + \\bar{B}$ .",
+            "- Involution: $\\overline{\\bar{A}} = A$ .",
+            "- Null Elements: $A + 1 = 1, A \\cdot 0 = 0$ ."
+        ],
+        "bbox": [
+            97,
+            125,
+            754,
+            226
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Forgetting the dual of De Morgan's Law. Incorrectly applying consensus theorem.",
+        "bbox": [
+            72,
+            226,
+            818,
+            241
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Simplify Boolean expressions using theorems. Prove identities.",
+        "bbox": [
+            72,
+            241,
+            685,
+            256
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Booths Algorithm",
+        "text_level": 1,
+        "bbox": [
+            60,
+            268,
+            225,
+            283
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Booth's algorithm is a multiplication algorithm that multiplies two signed binary numbers in 2's complement representation. It is efficient for numbers with long sequences of 0s or 1s.",
+        "bbox": [
+            58,
+            296,
+            835,
+            326
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Core Idea: Instead of adding partial products for every '1' in the multiplier, it looks at pairs of bits in the multiplier.",
+        "bbox": [
+            72,
+            336,
+            905,
+            351
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "。00 → No operation (0 \\* multiplicand).",
+            "。01 → Add multiplicand.",
+            "。10 → Subtract multiplicand (add 2's complement).",
+            "- 11 → No operation (0 \\* multiplicand)."
+        ],
+        "bbox": [
+            97,
+            351,
+            482,
+            408
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Steps:",
+        "bbox": [
+            73,
+            408,
+            139,
+            421
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Initialize Product (P) to 0, Multiplicand (M), Multiplier (Q), and an extra bit $Q_{-1} = 0$ .",
+            "2. Repeat n times (where n is the number of bits in Q):"
+        ],
+        "bbox": [
+            89,
+            421,
+            719,
+            450
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Examine $Q_{0}Q_{-1}$ :",
+        "bbox": [
+            122,
+            451,
+            270,
+            465
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If 01: $P = P + M$ .",
+            "- If 10: $P = P - M$ (add 2's complement of M).",
+            "- If 00 or 11: No operation."
+        ],
+        "bbox": [
+            149,
+            465,
+            507,
+            507
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Arithmetic Right Shift (ASHR) the combined register $PQQ_{-1}$ .",
+        "bbox": [
+            122,
+            507,
+            589,
+            523
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3. The final product is in PQ.",
+        "bbox": [
+            89,
+            523,
+            310,
+            536
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Common Pitfalls: Incorrectly performing 2's complement subtraction. Errors in arithmetic right shift (especially for negative numbers). Forgetting the $Q_{-1}$ bit.",
+            "- Problem-solving: Trace the algorithm step-by-step for given signed numbers."
+        ],
+        "bbox": [
+            72,
+            536,
+            915,
+            579
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Canonical Normal Form",
+        "text_level": 1,
+        "bbox": [
+            60,
+            592,
+            278,
+            606
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Canonical normal forms are standard forms for Boolean expressions, ensuring uniqueness for a given function. They are useful for comparison and synthesis.",
+        "bbox": [
+            58,
+            621,
+            910,
+            650
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Canonical Sum of Products (SOP) / Minterm Canonical Form: A sum of minterms. Each minterm is a product term where all variables appear exactly once, either in true or complemented form.",
+        "bbox": [
+            72,
+            660,
+            905,
+            688
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- A minterm is 1 for exactly one combination of inputs.",
+            "- Example: For $F(A, B) = A + B$ , minterms are $\\bar{A}B, A\\bar{B}, AB$ . So $F(A, B) = \\bar{A}B + A\\bar{B} + AB$ .",
+            "- Notation: $\\sum m(i,j,k,\\ldots)$ , where $i,j,k$ are decimal equivalents of minterms."
+        ],
+        "bbox": [
+            97,
+            688,
+            833,
+            733
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Canonical Product of Sums (POS) / Maxterm Canonical Form: A product of maxterms. Each maxterm is a sum term where all variables appear exactly once, either in true or complemented form.",
+        "bbox": [
+            72,
+            733,
+            917,
+            761
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- A maxterm is 0 for exactly one combination of inputs.",
+            "- Example: For $F(A, B) = A \\cdot B$ , maxterms are $A + B, A + \\bar{B}, \\bar{A} + B$ . So"
+        ],
+        "bbox": [
+            97,
+            761,
+            665,
+            792
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\nF (A, B) = (A + B) \\cdot (A + \\bar {B}) \\cdot (\\bar {A} + B).\n$$",
+        "text_format": "latex",
+        "bbox": [
+            110,
+            793,
+            433,
+            809
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\- Notation: $\\prod M(i,j,k,\\ldots)$ , where $i, j, k$ are decimal equivalents of maxterms.",
+        "bbox": [
+            97,
+            809,
+            685,
+            824
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Relationship: If $F = \\sum m(i,j,k)$ , then $\\bar{F} = \\sum m(\\text{other indices})$ . Also, $F = \\prod M(\\text{other indices})$ .",
+            "- Common Pitfalls: Confusing minterms with maxterms, and their corresponding sum/product forms. Incorrectly converting between SOP and POS canonical forms.",
+            "- Problem-solving: Convert truth tables to canonical SOP/POS. Convert between canonical SOP and POS."
+        ],
+        "bbox": [
+            72,
+            824,
+            890,
+            881
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Carry Generator",
+        "text_level": 1,
+        "bbox": [
+            60,
+            894,
+            211,
+            910
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A carry generator is a combinational circuit used in adders, particularly in Carry Look-Ahead Adders, to quickly compute carry bits, thereby speeding up addition.",
+        "bbox": [
+            58,
+            64,
+            934,
+            95
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Core Idea: It uses generate (G) and propagate (P) signals to calculate carries in parallel, rather than waiting for them to ripple.",
+            "$\\circ G_{i}=A_{i}\\cdot B_{i}$ (carry is generated if both input bits are 1).",
+            "$\\circ P_{i} = A_{i}\\oplus B_{i}$ (carry is propagated if one input bit is 1).",
+            "$\\circ C_{i + 1} = G_{i} + (P_{i}\\cdot C_{i})$ (carry out is generated or propagated from carry in).",
+            "- Look-ahead Logic: For a 4-bit block, the carry out $C_4$ can be expressed directly in terms of $C_0$ and the $G_i, P_i$ terms, as shown in the Adder section.",
+            "- Problem-solving: Derive carry equations for multi-bit carry look-ahead blocks."
+        ],
+        "bbox": [
+            72,
+            104,
+            895,
+            220
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Circuit Output",
+        "text_level": 1,
+        "bbox": [
+            60,
+            232,
+            194,
+            250
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The circuit output refers to the final value(s) produced by a digital circuit based on its inputs and internal logic. It can be a single bit or a multi-bit word.",
+        "bbox": [
+            58,
+            262,
+            926,
+            290
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Combinational Circuits: Output depends only on the present inputs.",
+            "- Sequential Circuits: Output depends on present inputs and past inputs (stored state).",
+            "- Analysis: For a given circuit diagram, determine the Boolean expression for the output(s) in terms of the inputs.",
+            "- Problem-solving: Derive truth tables or Boolean expressions from circuit diagrams. Evaluate output for specific input combinations."
+        ],
+        "bbox": [
+            72,
+            301,
+            900,
+            371
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Combinational Circuit",
+        "text_level": 1,
+        "bbox": [
+            60,
+            383,
+            263,
+            399
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A combinational circuit is a type of digital circuit whose output depends solely on the current values of its inputs. It has no memory elements.",
+        "bbox": [
+            58,
+            413,
+            919,
+            442
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Characteristics:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            452,
+            215,
+            465
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- No feedback loops.",
+            "- Output changes instantaneously with input changes (after propagation delay).",
+            "- Examples: Adders, Subtractors, Decoders, Encoders, Multiplexers, Demultiplexers."
+        ],
+        "bbox": [
+            97,
+            467,
+            715,
+            507
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Design Steps:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            508,
+            200,
+            522
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Define the problem (inputs, outputs).",
+            "2. Derive the truth table.",
+            "3. Obtain simplified Boolean expressions (K-map, Quine-McCluskey).",
+            "4. Draw the logic diagram.",
+            "- Common Pitfalls: Confusing combinational with sequential circuits. Overlooking propagation delays in timing analysis.",
+            "- Problem-solving: Design circuits from specifications. Analyze existing circuits."
+        ],
+        "bbox": [
+            72,
+            522,
+            882,
+            619
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Conjunctive Normal Form",
+        "text_level": 1,
+        "bbox": [
+            60,
+            631,
+            297,
+            647
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Conjunctive Normal Form (CNF) is a standardized way of writing Boolean expressions as a conjunction (AND) of clauses, where each clause is a disjunction (OR) of literals.",
+        "bbox": [
+            58,
+            660,
+            880,
+            688
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Core Idea: A product of sums (POS) form where each sum term (clause) contains one or more literals. It is not necessarily canonical (i.e., not all variables need to be present in each clause).",
+            "- Example: $(A + \\bar{B}) \\cdot (\\bar{A} + C)$ .",
+            "- Relationship to Canonical POS: Canonical POS (maxterm form) is a specific type of CNF where each clause is a maxterm (contains all variables).",
+            "- Problem-solving: Convert Boolean expressions to CNF."
+        ],
+        "bbox": [
+            72,
+            700,
+            921,
+            786
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Decoder",
+        "text_level": 1,
+        "bbox": [
+            60,
+            799,
+            142,
+            813
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A decoder is a combinational circuit that converts n input lines into $2^{n}$ output lines. Only one output line is active (high or low) at any given time, corresponding to the binary value of the inputs.",
+        "bbox": [
+            58,
+            828,
+            915,
+            858
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "- Types:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            868,
+            142,
+            882
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Binary Decoder (n-to-2 $^{n}$ ): E.g., 2-to-4 decoder, 3-to-8 decoder.",
+            "BCD-to-7 Segment Decoder: Converts BCD input to control a 7-segment display.",
+            "- Enable Input: Most decoders have an enable input (E). If E is inactive, all outputs are inactive."
+        ],
+        "bbox": [
+            97,
+            883,
+            776,
+            925
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Applications: Memory address decoding, data demultiplexing, implementing Boolean functions.",
+            "- An n-to- $2^{n}$ decoder can implement any n-variable Boolean function by ORing the appropriate minterms.",
+            "- Common Pitfalls: Incorrectly interpreting active-high vs. active-low outputs.",
+            "- Problem-solving: Design decoders. Use decoders to implement Boolean functions."
+        ],
+        "bbox": [
+            72,
+            64,
+            865,
+            121
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Digital Circuits",
+        "text_level": 1,
+        "bbox": [
+            60,
+            134,
+            200,
+            150
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Digital circuits are electronic circuits that operate on discrete voltage levels, typically representing binary 0 and 1. They form the basis of all modern digital systems.",
+        "bbox": [
+            58,
+            163,
+            922,
+            192
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Categories:",
+        "bbox": [
+            73,
+            203,
+            181,
+            217
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Combinational Circuits: Output depends only on current inputs (e.g., gates, adders, decoders).",
+            "Sequential Circuits: Output depends on current inputs and past inputs (memory elements) (e.g., flip-flops, counters, registers)."
+        ],
+        "bbox": [
+            97,
+            217,
+            889,
+            258
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Logic Gates: AND, OR, NOT, NAND, NOR, XOR, XNOR are the basic building blocks.",
+        "bbox": [
+            72,
+            258,
+            722,
+            271
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "• Key Properties: Speed (propagation delay), Power Consumption, Fan-in/Fan-out, Noise Margin.",
+        "bbox": [
+            72,
+            271,
+            791,
+            286
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Analyze and design circuits using logic gates.",
+        "bbox": [
+            72,
+            286,
+            557,
+            300
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Digital Counter",
+        "text_level": 1,
+        "bbox": [
+            60,
+            313,
+            201,
+            328
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A digital counter is a sequential circuit that cycles through a predefined sequence of states upon receiving input clock pulses. It's essentially a register that increments or decrements its stored value.",
+        "bbox": [
+            58,
+            342,
+            914,
+            370
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Types:",
+        "bbox": [
+            73,
+            382,
+            142,
+            395
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "○ Asynchronous (Ripple) Counter: Flip-flops are cascaded, and the output of one FF clocks the next. Simple to design but suffers from propagation delay.",
+        "bbox": [
+            97,
+            395,
+            921,
+            423
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Synchronous Counter: All flip-flops are clocked simultaneously by a common clock pulse. More complex design but faster and more reliable.",
+        "bbox": [
+            97,
+            423,
+            882,
+            450
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Up/Down Counter: Can count in increasing or decreasing order.",
+        "bbox": [
+            97,
+            451,
+            584,
+            464
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Mod-N Counter: Counts from 0 to N-1 and then resets.",
+        "bbox": [
+            97,
+            465,
+            517,
+            478
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Design: Involves state diagrams, state tables, flip-flop excitation tables, and K-maps for logic minimization.",
+        "bbox": [
+            72,
+            478,
+            862,
+            492
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Formulas: For an n-bit counter, it can count up to $2^{n}$ states (0 to $2^{n} - 1$ ).",
+        "bbox": [
+            72,
+            492,
+            626,
+            507
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly determining the modulus of a counter. Errors in state table derivation or K-map minimization for synchronous counters.",
+        "bbox": [
+            72,
+            507,
+            878,
+            534
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Analyze existing counter circuits. Design synchronous counters for specific sequences.",
+        "bbox": [
+            72,
+            534,
+            857,
+            549
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Dual Function",
+        "text_level": 1,
+        "bbox": [
+            60,
+            561,
+            191,
+            576
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The dual of a Boolean expression is obtained by interchanging OR and AND operations, and 0s and 1s. Variables and their complements remain unchanged.",
+        "bbox": [
+            58,
+            590,
+            919,
+            619
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Procedure:",
+        "bbox": [
+            73,
+            630,
+            176,
+            642
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Replace all '+' with '.' (OR with AND).",
+            "2. Replace all '.' with '+' (AND with OR).",
+            "3. Replace all '0' with '1'.",
+            "4. Replace all '1' with '0'."
+        ],
+        "bbox": [
+            90,
+            643,
+            381,
+            698
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Example: Dual of $F = A \\cdot B + 0$ is $F^D = (A + B) \\cdot 1$ .",
+        "bbox": [
+            72,
+            700,
+            505,
+            716
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Principle of Duality: If a Boolean identity is true, its dual is also true.",
+        "bbox": [
+            72,
+            716,
+            589,
+            729
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Accidentally complementing variables when finding the dual.",
+        "bbox": [
+            72,
+            729,
+            665,
+            743
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Find the dual of a given Boolean expression.",
+        "bbox": [
+            72,
+            743,
+            551,
+            757
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Finite State Machines (FSM)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            770,
+            317,
+            786
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Finite State Machines (FSMs) are mathematical models of computation used to design sequential circuits. They consist of a finite number of states, transitions between states, and actions based on inputs.",
+        "bbox": [
+            58,
+            799,
+            929,
+            828
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Components: States, Inputs, Outputs, Transitions.",
+        "bbox": [
+            72,
+            839,
+            460,
+            853
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Types:",
+        "bbox": [
+            73,
+            853,
+            142,
+            866
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mealy Machine: Output depends on the present state AND the present input.",
+            "- Moore Machine: Output depends only on the present state."
+        ],
+        "bbox": [
+            97,
+            866,
+            675,
+            894
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Representation: State diagrams, state tables.",
+        "bbox": [
+            72,
+            895,
+            426,
+            908
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Design Steps:",
+        "bbox": [
+            73,
+            909,
+            200,
+            922
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. State Diagram.",
+            "2. State Table.",
+            "3. State Assignment (binary encoding).",
+            "4. Flip-flop excitation table.",
+            "5. K-maps for input equations and output equations.",
+            "6. Logic diagram."
+        ],
+        "bbox": [
+            90,
+            64,
+            473,
+            160
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Confusing Mealy and Moore outputs. Errors in state assignment or deriving excitation equations.",
+        "bbox": [
+            72,
+            147,
+            926,
+            161
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Design FSMs from specifications. Analyze given FSMs.",
+        "bbox": [
+            72,
+            161,
+            630,
+            175
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Fixed Point Representation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            188,
+            310,
+            205
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Fixed-point representation is a method of representing real numbers where the position of the binary point (radix point) is fixed. It's used for numbers with a limited range and high precision.",
+        "bbox": [
+            58,
+            218,
+            922,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Format: $I.F$ where $I$ is the integer part and $F$ is the fractional part.",
+        "bbox": [
+            72,
+            257,
+            576,
+            271
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- For an n-bit number with k bits for the fractional part, the range is $-2^{n-k-1}$ to $2^{n-k-1} - 2^{-k}$ (for signed 2's complement).",
+        "bbox": [
+            95,
+            271,
+            890,
+            302
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Value: $\\sum_{i = -(k)}^{n - k - 1} b_i 2^i$ .",
+        "bbox": [
+            97,
+            302,
+            270,
+            324
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Signed Fixed-Point: Typically uses 2's complement for negative numbers.",
+        "bbox": [
+            72,
+            323,
+            633,
+            337
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly determining the range or precision for a given bit allocation.",
+        "bbox": [
+            72,
+            337,
+            739,
+            350
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Convert decimal numbers to fixed-point binary and vice-versa. Perform arithmetic operations.",
+        "bbox": [
+            72,
+            351,
+            900,
+            365
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Flip Flop",
+        "text_level": 1,
+        "bbox": [
+            60,
+            377,
+            144,
+            394
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A flip-flop is a basic 1-bit memory element (sequential circuit) that can store a binary value (0 or 1). It has two stable states and is often edge-triggered.",
+        "bbox": [
+            58,
+            407,
+            904,
+            435
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Types and Characteristics:",
+        "bbox": [
+            72,
+            446,
+            300,
+            460
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- SR Flip-Flop: Set-Reset.",
+        "bbox": [
+            97,
+            461,
+            300,
+            473
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Characteristic Equation: $Q_{next} = S + \\bar{R}Q$ , $SR = 0$ (forbidden state if $\\mathrm{SR} = 1$ ).",
+            "- Excitation Table:"
+        ],
+        "bbox": [
+            122,
+            475,
+            710,
+            503
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/40cb3f455162d34ec3af9b7443f88c8f8581f99075efe0f24d98fb9fa3e0d745.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td> $Q_{n}$ </td><td> $Q_{n+1}$ </td><td> $\\mathbf{SR}$ </td></tr><tr><td>0</td><td>0</td><td>0 X</td></tr><tr><td>0</td><td>1</td><td>1 0</td></tr><tr><td>1</td><td>0</td><td>0 1</td></tr><tr><td>1</td><td>1</td><td>X0</td></tr></table>",
+        "bbox": [
+            139,
+            505,
+            240,
+            581
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- JK Flip-Flop: J-K. Overcomes SR's forbidden state (toggle if JK=11).",
+        "bbox": [
+            97,
+            583,
+            616,
+            598
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Characteristic Equation: $Q_{next} = J\\bar{Q} + \\bar{K}Q$ .",
+            "- Excitation Table:"
+        ],
+        "bbox": [
+            122,
+            598,
+            475,
+            625
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/f69e7b7462738522b739314cee7af0140ac84454e5e8f79aeb04482616204896.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td> $Q_{n}$ </td><td> $Q_{n+1}$ </td><td> $\\mathbf{J}$ </td><td> $\\mathbf{K}$ </td></tr><tr><td>0</td><td>0</td><td>0</td><td> $\\mathbf{X}$ </td></tr><tr><td>0</td><td>1</td><td>1</td><td> $\\mathbf{X}$ </td></tr><tr><td>1</td><td>0</td><td> $\\mathbf{X}$ </td><td>1</td></tr><tr><td>1</td><td>1</td><td> $\\mathbf{X}$ </td><td>0</td></tr></table>",
+        "bbox": [
+            139,
+            628,
+            240,
+            704
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- D Flip-Flop: Data. Stores the input D when clocked.",
+        "bbox": [
+            97,
+            707,
+            494,
+            720
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Characteristic Equation: $Q_{next} = D$ .",
+            "- Excitation Table:"
+        ],
+        "bbox": [
+            122,
+            720,
+            408,
+            748
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/b9c38a7a87b188e486aa883895ddc324382c280dfc77f0fffd0e736e61b24854.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td> $Q_n$ </td><td> $Q_{n+1}$ </td><td> $\\mathbf{D}$ </td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td></tr><tr><td>1</td><td>0</td><td>0</td></tr><tr><td>1</td><td>1</td><td>1</td></tr></table>",
+        "bbox": [
+            139,
+            750,
+            228,
+            826
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- T Flip-Flop: Toggle. Toggles its state if $T = 1$ , holds if $T = 0$ .",
+        "bbox": [
+            97,
+            828,
+            532,
+            843
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Characteristic Equation: $Q_{next} = T\\bar{Q} + \\bar{T}Q = T \\oplus Q$ .",
+        "bbox": [
+            122,
+            843,
+            551,
+            859
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Excitation Table:",
+        "bbox": [
+            124,
+            859,
+            262,
+            871
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/396d3edb99a340348806a9d942ad6a7c7a780d14c7d72583c72fba54ae8fef6c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td> $Q_{n}$ </td><td> $Q_{n+1}$ </td><td> $\\mathbf{T}$ </td></tr><tr><td>0</td><td>0</td><td>0</td></tr><tr><td>0</td><td>1</td><td>1</td></tr></table>",
+        "bbox": [
+            139,
+            872,
+            226,
+            922
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n1 0 1\n1 1 0\n```",
+        "bbox": [
+            139,
+            65,
+            226,
+            93
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Edge-Triggered vs. Level-Triggered: Flip-flops are edge-triggered (positive or negative), latches are level-triggered.",
+            "- Setup Time: Data must be stable before clock edge.",
+            "- Hold Time: Data must be stable after clock edge.",
+            "- Propagation Delay: Time for output to change after clock edge.",
+            "- Common Pitfalls: Confusing characteristic equations with excitation tables. Misinterpreting edge vs. level triggering.",
+            "- Problem-solving: Analyze flip-flop behavior. Use flip-flops to design sequential circuits."
+        ],
+        "bbox": [
+            72,
+            96,
+            870,
+            207
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Floating Point Representation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            220,
+            334,
+            236
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Floating-point representation is a method to represent real numbers over a wider dynamic range than fixed-point, at the cost of precision. It uses a sign, exponent, and mantissa (significand).",
+        "bbox": [
+            58,
+            249,
+            929,
+            277
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Format: $\\pm M \\times B^{E}$ , where M is mantissa, B is base, E is exponent.",
+            "- Normalization: Mantissa is typically normalized to have a leading '1' (implicit in IEEE standard).",
+            "- Bias: Exponent is stored in biased form to allow representation of both positive and negative exponents without a separate sign bit. Biased exponent = Actual exponent + Bias.",
+            "- Common Pitfalls: Errors in converting between decimal and floating-point, especially with bias and normalization.",
+            "- Problem-solving: Convert numbers to/from floating-point format. Understand the implications of range and precision."
+        ],
+        "bbox": [
+            72,
+            290,
+            915,
+            388
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Functional Completeness",
+        "text_level": 1,
+        "bbox": [
+            60,
+            401,
+            295,
+            418
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A set of logic gates is functionally complete if any Boolean function can be implemented using only gates from that set.",
+        "bbox": [
+            58,
+            431,
+            922,
+            446
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Minimum Functionally Complete Sets:",
+        "bbox": [
+            72,
+            456,
+            386,
+            470
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "○ {AND, OR, NOT}",
+            "○ {NAND} (NAND is universal)",
+            "- {NOR} (NOR is universal)",
+            "○ {AND, NOT}",
+            "○ {OR, NOT}"
+        ],
+        "bbox": [
+            97,
+            471,
+            319,
+            539
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Properties: To be functionally complete, a set of gates must be able to implement NOT, AND, and OR (or NAND/NOR). This requires the ability to implement:",
+        "bbox": [
+            72,
+            539,
+            858,
+            567
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Inversion (NOT)",
+            "- AND (or OR)",
+            "- The set must not be monotonic (cannot implement NOT).",
+            "- The set must not be self-dual (cannot implement NOT).",
+            "- The set must not be linear (cannot implement AND/OR).",
+            "- The set must not preserve 0 (cannot implement NOT).",
+            "- The set must not preserve 1 (cannot implement NOT)."
+        ],
+        "bbox": [
+            97,
+            567,
+            527,
+            663
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Incorrectly identifying functionally complete sets.",
+        "bbox": [
+            72,
+            663,
+            579,
+            678
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Determine if a given set of gates is functionally complete. Implement basic gates using a universal gate.",
+        "bbox": [
+            72,
+            678,
+            868,
+            705
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "IEEE Representation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            718,
+            250,
+            733
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The IEEE 754 standard defines formats for representing floating-point numbers in computers, ensuring consistency across different platforms.",
+        "bbox": [
+            58,
+            747,
+            899,
+            776
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Single Precision (32-bit):",
+        "bbox": [
+            72,
+            786,
+            282,
+            801
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- 1 bit for Sign (S)",
+            "- 8 bits for Exponent (E) - biased by 127",
+            "- 23 bits for Mantissa (M) - implicit leading '1'",
+            "- Value: $(-1)^{S} \\times (1.M)_{base2} \\times 2^{(E - 127)}$",
+            "- Range: Approx. ±1.17 × 10 $^{-38}$ to ±3.4 × 10 $^{38}$"
+        ],
+        "bbox": [
+            97,
+            801,
+            470,
+            876
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Double Precision (64-bit):",
+        "bbox": [
+            72,
+            877,
+            289,
+            890
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- 1 bit for Sign (S)",
+            "- 11 bits for Exponent (E) - biased by 1023"
+        ],
+        "bbox": [
+            97,
+            891,
+            413,
+            919
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- 52 bits for Mantissa (M) - implicit leading '1'",
+            "- Value: $(-1)^{S} \\times (1.M)_{base2} \\times 2^{(E - 1023)}$"
+        ],
+        "bbox": [
+            97,
+            64,
+            428,
+            98
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "- Special Values:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            97,
+            211,
+            110
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Zero: $E = 0, M = 0$",
+            "- Denormalized Numbers: $E = 0, M \\neq 0$ (for very small numbers, implicit leading '0')",
+            "- Infinity: $E = \\text{all 1s}, M = 0$",
+            "- NaN (Not a Number): $E = \\text{all 1s}, M \\neq 0$"
+        ],
+        "bbox": [
+            97,
+            110,
+            729,
+            168
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Forgetting the implicit leading '1' in the mantissa. Incorrectly applying the exponent bias.",
+        "bbox": [
+            72,
+            168,
+            865,
+            182
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Handling special values.",
+        "bbox": [
+            87,
+            182,
+            265,
+            195
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Convert decimal numbers to IEEE 754 format and vice-versa. Understand the representation of special values.",
+        "bbox": [
+            72,
+            195,
+            919,
+            224
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "K Map (Karnaugh Map)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            236,
+            270,
+            252
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A K-map is a graphical method for simplifying Boolean expressions. It provides a systematic way to find the minimal sum-of-products (SOP) or product-of-sums (POS) form.",
+        "bbox": [
+            58,
+            266,
+            904,
+            295
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Core Idea: Arranges minterms (or maxterms) in a grid such that adjacent cells differ by only one bit, allowing visual identification of adjacent terms for grouping.",
+        "bbox": [
+            72,
+            305,
+            924,
+            334
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "- Grouping Rules:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            334,
+            220,
+            347
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Groups must be powers of 2 (1, 2, 4, 8, ...).",
+            "- Groups must be rectangular or square.",
+            "- Groups can wrap around the edges.",
+            "- Groups should be as large as possible.",
+            "- Every '1' (for SOP) or '0' (for POS) must be covered at least once."
+        ],
+        "bbox": [
+            95,
+            347,
+            589,
+            416
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Prime Implicant (PI): A product term obtained by combining the maximum possible number of adjacent cells in a K-map.",
+            "- Essential Prime Implicant (EPI): A prime implicant that covers at least one minterm (or maxterm) that no other prime implicant covers. EPIs must be included in the minimal expression.",
+            "- Don't Cares (X): Input combinations that never occur or whose output doesn't matter. They can be grouped with 1s (for SOP) or 0s (for POS) to make larger groups.",
+            "- Common Pitfalls: Incorrect grouping (non-power of 2, non-rectangular). Not identifying all EPIs. Not finding the minimal set of PIs.",
+            "- Problem-solving: Simplify Boolean expressions using K-maps for up to 4-5 variables."
+        ],
+        "bbox": [
+            72,
+            416,
+            929,
+            541
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Little Endian Big Endian",
+        "text_level": 1,
+        "bbox": [
+            60,
+            553,
+            282,
+            568
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "These terms refer to the byte ordering conventions used to store multi-byte data (like integers or floating-point numbers) in computer memory.",
+        "bbox": [
+            58,
+            583,
+            932,
+            612
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Big-Endian: The most significant byte (MSB) of a multi-byte data unit is stored at the lowest memory address.",
+        "bbox": [
+            72,
+            621,
+            887,
+            636
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Example: For $(0x12345678)_{16}$ , at address 1000:",
+        "bbox": [
+            97,
+            637,
+            475,
+            652
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/5258b377db2c8e087123050ef417eb0301f02be01e4ecadcf577d7646cda45a4.jpg",
+        "table_caption": [
+            "Address Value"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1000</td><td>12</td></tr><tr><td>1001</td><td>34</td></tr><tr><td>1002</td><td>56</td></tr><tr><td>1003</td><td>78</td></tr></table>",
+        "bbox": [
+            115,
+            667,
+            206,
+            728
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Little-Endian: The least significant byte (LSB) of a multi-byte data unit is stored at the lowest memory address.",
+        "bbox": [
+            72,
+            729,
+            894,
+            744
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "• Example: For $(0x12345678)_{16}$ , at address 1000:",
+        "bbox": [
+            97,
+            744,
+            475,
+            760
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/d160da24dac2c331fac991d16715442d54b99f286a19cea656056e12a4a89266.jpg",
+        "table_caption": [
+            "Address Value"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>1000</td><td>78</td></tr><tr><td>1001</td><td>56</td></tr><tr><td>1002</td><td>34</td></tr><tr><td>1003</td><td>12</td></tr></table>",
+        "bbox": [
+            115,
+            775,
+            205,
+            834
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Common Pitfalls: Confusing the two, especially when dealing with memory dumps or network protocols.",
+            "- Problem-solving: Determine how a given multi-byte value would be stored in memory under both endianness conventions."
+        ],
+        "bbox": [
+            72,
+            838,
+            889,
+            878
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Memory Interfacing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            891,
+            240,
+            909
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Memory interfacing involves connecting memory chips to a processor or other digital system, ensuring proper address decoding, data transfer, and control signaling.",
+        "bbox": [
+            58,
+            65,
+            919,
+            95
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Address Decoding: Logic circuitry that selects the correct memory chip (or block within a chip) based on the address provided by the processor.",
+        "bbox": [
+            72,
+            104,
+            882,
+            131
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Full Decoding: Every unique address maps to a unique memory location.",
+            "- Partial Decoding: Multiple addresses map to the same memory location (simpler but less efficient)."
+        ],
+        "bbox": [
+            97,
+            131,
+            836,
+            159
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Chip Select (CS): An input pin on memory chips that, when active, enables the chip for read/write operations. Address decoders generate the CS signal.",
+            "- Output Enable (OE) / Read (RD): Enables data output from memory.",
+            "- Write Enable (WE) / Write (WR): Enables data input to memory.",
+            "- Memory Map: A diagram showing how memory addresses are allocated to different memory devices.",
+            "- Formulas: For a memory chip with N address lines and M data lines, its capacity is $2^{N} \\times M$ bits.",
+            "- Common Pitfalls: Incorrectly designing address decoding logic. Miscalculating memory capacity or address range.",
+            "- Problem-solving: Design address decoding circuits for given memory chips and address ranges. Calculate memory capacity."
+        ],
+        "bbox": [
+            72,
+            160,
+            924,
+            288
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Min No Gates",
+        "text_level": 1,
+        "bbox": [
+            60,
+            300,
+            186,
+            315
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Minimizing the number of gates refers to finding the simplest possible logic circuit to implement a given Boolean function, often after minimizing the Boolean expression.",
+        "bbox": [
+            58,
+            328,
+            873,
+            358
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Core Idea: Directly related to Boolean expression simplification (K-maps, Quine-McCluskey). Fewer terms and fewer literals generally mean fewer gates.",
+            "- Considerations:"
+        ],
+        "bbox": [
+            72,
+            369,
+            890,
+            409
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Gate Type: NAND/NOR implementations often require fewer gates than AND/OR/NOT for universal logic.",
+            "- Fan-in: Gates have a maximum number of inputs.",
+            "- Gate Cost: Sometimes gates have different costs (e.g., XOR is more complex than AND)."
+        ],
+        "bbox": [
+            97,
+            410,
+            880,
+            452
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: After K-map simplification, draw the circuit using the minimal SOP/POS. Then convert to universal gates (NAND/NOR) if specified, and count the gates.",
+        "bbox": [
+            72,
+            452,
+            867,
+            480
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Min Products of Sum Form (MPOS)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            492,
+            381,
+            509
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The minimal Product of Sums (POS) form is the simplest Boolean expression representing a function as a product of sum terms (maxterms or sum literals).",
+        "bbox": [
+            58,
+            522,
+            910,
+            551
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Derivation:",
+        "bbox": [
+            73,
+            562,
+            176,
+            574
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Identify the '0's in the truth table or K-map.",
+            "2. Group the '0's in the K-map (following K-map rules).",
+            "3. Each group corresponds to a sum term.",
+            "4. The product of these sum terms is the minimal POS expression."
+        ],
+        "bbox": [
+            87,
+            576,
+            579,
+            630
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Properties: Each sum term is an implicant of the complement of the function.",
+            "- Common Pitfalls: Incorrectly forming sum terms from K-map groups (e.g., $\\bar{A}$ for $A=1$ ).",
+            "- Problem-solving: Use K-maps to find the minimal POS expression."
+        ],
+        "bbox": [
+            72,
+            631,
+            717,
+            676
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Min Sum of Products Form (MSOP)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            688,
+            381,
+            705
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The minimal Sum of Products (SOP) form is the simplest Boolean expression representing a function as a sum of product terms (minterms or product literals).",
+        "bbox": [
+            58,
+            717,
+            887,
+            747
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Derivation:",
+        "bbox": [
+            73,
+            757,
+            176,
+            769
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Identify the '1's in the truth table or K-map.",
+            "2. Group the '1's in the K-map (following K-map rules).",
+            "3. Each group corresponds to a product term.",
+            "4. The sum of these product terms is the minimal SOP expression."
+        ],
+        "bbox": [
+            87,
+            771,
+            579,
+            826
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Properties: Each product term is an implicant of the function.",
+            "- Common Pitfalls: Not identifying all essential prime implicants. Not selecting the minimal set of prime implicants to cover all 1s.",
+            "- Problem-solving: Use K-maps to find the minimal SOP expression."
+        ],
+        "bbox": [
+            72,
+            827,
+            924,
+            882
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Multiplexer (MUX)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            894,
+            226,
+            910
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A multiplexer (MUX) is a combinational circuit that selects one of several input data lines and routes it to a single output line. The selection is controlled by a set of select lines.",
+        "bbox": [
+            58,
+            64,
+            931,
+            93
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Core Idea: An n-to-1 MUX has n data inputs, $\\log_2 n$ select lines, and 1 output.",
+            "- Functionality: If there are 's' select lines, it can select from $2^{s}$ data inputs.",
+            "- Applications: Data selection, parallel-to-serial conversion, implementing Boolean functions.",
+            "- An n-variable Boolean function can be implemented using a $(n - 1)$ -variable MUX and external logic on the data inputs.",
+            "- Formulas: For a 2-to-1 MUX with select S, inputs $I_0, I_1$ : $Output = \\bar{S}I_0 + SI_1$ .",
+            "- Common Pitfalls: Incorrectly mapping inputs to select lines when implementing functions.",
+            "- Problem-solving: Design MUX circuits. Use MUXes to implement Boolean functions."
+        ],
+        "bbox": [
+            72,
+            104,
+            895,
+            219
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Number Representation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            233,
+            280,
+            249
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Number representation refers to the various ways in which numerical values (integers, real numbers) are stored and manipulated in digital systems.",
+        "bbox": [
+            58,
+            262,
+            904,
+            290
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Unsigned Binary: All bits represent magnitude. Range for n bits: 0 to $2^{n} - 1$ .",
+        "bbox": [
+            72,
+            301,
+            655,
+            315
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Signed Magnitude: MSB is sign bit (0 for positive, 1 for negative), remaining bits are magnitude.",
+        "bbox": [
+            72,
+            315,
+            789,
+            331
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Range for n bits: $-(2^{n-1} - 1)$ to $+(2^{n-1} - 1)$ .",
+            "- Two representations for zero (+0, -0)."
+        ],
+        "bbox": [
+            95,
+            331,
+            465,
+            361
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- 1's Complement: Negative numbers are obtained by inverting all bits of the positive number.",
+        "bbox": [
+            72,
+            361,
+            763,
+            375
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Range for n bits: $-(2^{n-1} - 1)$ to $+(2^{n-1} - 1)$ .",
+            "- Two representations for zero (+0, -0).",
+            "- Addition: Add normally, then add end-around carry to the sum."
+        ],
+        "bbox": [
+            95,
+            375,
+            566,
+            419
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- 2's Complement: Negative numbers are obtained by inverting all bits and adding 1 to the result. Most common representation for signed integers.",
+        "bbox": [
+            72,
+            419,
+            895,
+            447
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Range for n bits: $-2^{n-1}$ to $+(2^{n-1} - 1)$ .",
+            "- Unique representation for zero.",
+            "- Addition/Subtraction: Perform binary addition directly. Overflow detection: if signs of inputs are same but sign of result is different."
+        ],
+        "bbox": [
+            95,
+            448,
+            921,
+            504
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Fixed-Point and Floating-Point: Covered in their respective sections.",
+            "- Common Pitfalls: Errors in converting between signed representations. Incorrectly detecting overflow.",
+            "- Problem-solving: Convert numbers between different representations. Perform arithmetic operations and detect overflow."
+        ],
+        "bbox": [
+            72,
+            505,
+            907,
+            559
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Number System",
+        "text_level": 1,
+        "bbox": [
+            60,
+            573,
+            208,
+            589
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A number system is a set of symbols and rules for representing numerical quantities. Digital systems primarily use binary, but conversions to/from decimal, octal, and hexadecimal are common.",
+        "bbox": [
+            58,
+            603,
+            889,
+            631
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Decimal (Base 10): Digits 0-9.",
+            "• Binary (Base 2): Digits 0, 1.",
+            "- Octal (Base 8): Digits 0-7. Each octal digit corresponds to 3 binary bits.",
+            "- Hexadecimal (Base 16): Digits 0-9, A-F. Each hex digit corresponds to 4 binary bits.",
+            "- Conversions:"
+        ],
+        "bbox": [
+            72,
+            642,
+            702,
+            709
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Decimal to Binary/Octal/Hex: Repeated division by base, collecting remainders.",
+            "- Binary/Octal/Hex to Decimal: Sum of (digit \\* base^position).",
+            "- Binary to Octal/Hex: Group bits (3 for octal, 4 for hex) and convert each group.",
+            "- Octal/Hex to Binary: Convert each digit to its 3/4-bit binary equivalent."
+        ],
+        "bbox": [
+            95,
+            711,
+            689,
+            767
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Common Pitfalls: Errors in base conversions, especially with fractional parts.",
+            "- Problem-solving: Perform conversions between any two number systems."
+        ],
+        "bbox": [
+            72,
+            767,
+            653,
+            795
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Prime Implicants",
+        "text_level": 1,
+        "bbox": [
+            60,
+            807,
+            216,
+            823
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In Boolean algebra simplification (e.g., using K-maps), a prime implicant (PI) is a product term that cannot be combined with any other term to eliminate a literal.",
+        "bbox": [
+            58,
+            836,
+            927,
+            865
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Core Idea: It represents a maximal group of adjacent 1s (or 0s for POS) in a K-map.",
+            "- Essential Prime Implicant (EPI): A prime implicant that covers at least one minterm (or maxterm) that no other prime implicant covers. All EPIs must be included in the minimal expression."
+        ],
+        "bbox": [
+            72,
+            875,
+            899,
+            918
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Redundant Prime Implicant: A prime implicant whose covered minterms are all covered by other prime implicants (including EPIs).",
+            "- Problem-solving: Identify all PIs and EPIs from a K-map. Use them to derive minimal SOP/POS expressions."
+        ],
+        "bbox": [
+            72,
+            64,
+            924,
+            106
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "ROM (Read-Only Memory)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            119,
+            300,
+            136
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "ROM is a non-volatile memory device whose contents are programmed during manufacturing or by the user and cannot be easily changed during operation. It's used to store fixed programs or lookup tables.",
+        "bbox": [
+            58,
+            149,
+            932,
+            178
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Types:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            188,
+            144,
+            201
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mask ROM: Programmed during manufacturing.",
+            "- PROM (Programmable ROM): User-programmable once.",
+            "- EPROM (Erasable PROM): Erasable by UV light, reprogrammable.",
+            "- EEPROM (Electrically Erasable PROM): Electrically erasable, reprogrammable.",
+            "- Flash Memory: A type of EEPROM, block-erasable."
+        ],
+        "bbox": [
+            97,
+            203,
+            704,
+            271
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Structure: Consists of an address decoder and an array of memory cells (fuses/transistors).",
+        "bbox": [
+            72,
+            271,
+            757,
+            285
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- An n-input, m-output ROM can implement m different n-variable Boolean functions.",
+        "bbox": [
+            97,
+            286,
+            715,
+            298
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Applications: Storing BIOS, lookup tables, implementing combinational logic functions.",
+        "bbox": [
+            72,
+            299,
+            724,
+            312
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Determine the size of ROM needed for a given function. Implement Boolean functions using ROM.",
+        "bbox": [
+            72,
+            313,
+            892,
+            339
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Reduction",
+        "text_level": 1,
+        "bbox": [
+            60,
+            353,
+            159,
+            368
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Reduction in digital logic refers to the process of simplifying Boolean expressions or minimizing the number of gates/components in a circuit while maintaining its functionality.",
+        "bbox": [
+            58,
+            382,
+            860,
+            410
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Methods:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            422,
+            164,
+            434
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Boolean Algebra: Applying theorems and postulates.",
+            "- Karnaugh Maps (K-maps): Graphical method for up to 5-6 variables.",
+            "- Quine-McCluskey Algorithm: Tabular method for more variables, suitable for computer implementation."
+        ],
+        "bbox": [
+            97,
+            435,
+            875,
+            477
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Goals: Reduce cost (fewer gates), reduce power consumption, increase speed (fewer gate delays).",
+        "bbox": [
+            72,
+            478,
+            811,
+            491
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls: Not finding the absolute minimal form. Errors in applying simplification rules.",
+        "bbox": [
+            72,
+            492,
+            779,
+            505
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Problem-solving: Apply various reduction techniques to simplify Boolean expressions.",
+        "bbox": [
+            72,
+            505,
+            721,
+            519
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Ripple Counter Operation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            532,
+            295,
+            549
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A ripple counter (asynchronous counter) is a sequential circuit where the output of one flip-flop serves as the clock input for the next flip-flop in the chain.",
+        "bbox": [
+            58,
+            561,
+            932,
+            590
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Operation:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            600,
+            173,
+            614
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The first flip-flop (LSB) is clocked by the external clock.",
+            "- Its output (Q) then clocks the next flip-flop, and so on.",
+            "- This creates a \"ripple\" effect as the clock signal propagates through the stages."
+        ],
+        "bbox": [
+            97,
+            615,
+            689,
+            656
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Characteristics:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            657,
+            215,
+            669
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Simple Design: Easy to construct.",
+            "- Propagation Delay: The total delay accumulates through each flip-flop, leading to a maximum operating frequency limitation. $T_{total} = n \\times T_{FF\\_delay}$ .",
+            "- Glitches: Due to varying propagation delays, intermediate states may appear briefly, causing glitches."
+        ],
+        "bbox": [
+            97,
+            669,
+            873,
+            726
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Modulus: An n-bit ripple counter counts $2^{n}$ states (Mod- $2^{n}$ ). To achieve Mod-N, external logic is needed to reset the counter at N.",
+            "- Common Pitfalls: Overlooking the cumulative propagation delay. Incorrectly determining the count sequence or modulus.",
+            "- Problem-solving: Analyze the timing and counting sequence of ripple counters. Calculate maximum operating frequency."
+        ],
+        "bbox": [
+            72,
+            726,
+            907,
+            809
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Shift Registers",
+        "text_level": 1,
+        "bbox": [
+            60,
+            821,
+            200,
+            838
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A shift register is a sequential circuit capable of storing binary data and shifting it left or right by one or more bit positions on each clock pulse.",
+        "bbox": [
+            58,
+            851,
+            867,
+            880
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Types:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            891,
+            144,
+            904
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- SISO (Serial-In, Serial-Out): Data enters and exits serially.",
+        "bbox": [
+            97,
+            904,
+            546,
+            919
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- SIPO (Serial-In, Parallel-Out): Data enters serially, but all bits are available simultaneously at parallel outputs.",
+            "- PISO (Parallel-In, Serial-Out): Data enters in parallel, then shifts out serially.",
+            "- PIPO (Parallel-In, Parallel-Out): Data enters and exits in parallel.",
+            "- Bidirectional Shift Register: Can shift data both left and right.",
+            "- Universal Shift Register: Can perform all the above operations (SISO, SIPO, PISO, PIPO, load, hold)."
+        ],
+        "bbox": [
+            97,
+            64,
+            915,
+            134
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Applications: Data conversion (serial-to-parallel, parallel-to-serial), data manipulation, sequence generation, arithmetic operations (multiplication/division by powers of 2).",
+        "bbox": [
+            72,
+            135,
+            878,
+            162
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Structure: Typically built using D flip-flops.",
+            "- Common Pitfalls: Incorrectly tracing data movement for different shift register types.",
+            "- Problem-solving: Analyze the operation of various shift registers. Design circuits using shift registers."
+        ],
+        "bbox": [
+            72,
+            162,
+            830,
+            204
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Static Hazard",
+        "text_level": 1,
+        "bbox": [
+            60,
+            216,
+            184,
+            231
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A static hazard is a momentary undesirable glitch (a brief 0 or 1 pulse) in the output of a combinational circuit when the input changes, even though the output should remain constant.",
+        "bbox": [
+            58,
+            245,
+            924,
+            274
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Types:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            285,
+            144,
+            298
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Static-1 Hazard: Output should remain 1 but momentarily goes to 0. Occurs when a K-map has two adjacent 1s that are covered by different prime implicants, and there's no overlapping prime implicant to cover the transition path.",
+            "Static-0 Hazard: Output should remain 0 but momentarily goes to 1. Occurs in POS implementations."
+        ],
+        "bbox": [
+            95,
+            299,
+            927,
+            353
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Cause: Unequal propagation delays through different paths in the circuit.",
+            "- Detection: In a K-map for SOP, a static-1 hazard exists between two adjacent 1s if they are not covered by a common prime implicant.",
+            "- Elimination: Add redundant prime implicants to cover all adjacent pairs of 1s (for static-1 hazards) or 0s (for static-0 hazards). This means adding an extra AND gate (for SOP) or OR gate (for POS).",
+            "- Common Pitfalls: Forgetting to check for hazards in minimal circuits. Incorrectly adding redundant terms.",
+            "- Problem-solving: Identify static hazards in a given circuit or K-map. Eliminate hazards by adding redundant terms."
+        ],
+        "bbox": [
+            72,
+            355,
+            931,
+            451
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Synchronous Asynchronous Circuits",
+        "text_level": 1,
+        "bbox": [
+            60,
+            464,
+            400,
+            480
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "This distinction refers to how sequential circuits handle timing and state changes.",
+        "bbox": [
+            60,
+            492,
+            650,
+            508
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Synchronous Circuits:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            519,
+            265,
+            532
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- All memory elements (flip-flops) are controlled by a single, common clock signal.",
+            "- State changes occur only at discrete clock edges.",
+            "- Easier to design and debug due to predictable timing.",
+            "- Less prone to race conditions and hazards.",
+            "- Examples: Synchronous counters, shift registers, FSMs."
+        ],
+        "bbox": [
+            97,
+            533,
+            695,
+            600
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "• Asynchronous Circuits:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            602,
+            275,
+            615
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Memory elements are not controlled by a common clock.",
+            "- State changes occur in response to changes in input signals, without a clock.",
+            "- Can be faster (no clock propagation delay) and consume less power.",
+            "- Much harder to design and verify due to potential for race conditions and hazards.",
+            "- Examples: Asynchronous (ripple) counters, latches, arbiters."
+        ],
+        "bbox": [
+            97,
+            616,
+            707,
+            684
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Common Pitfalls: Confusing the characteristics and trade-offs of each type. Incorrectly identifying a circuit as synchronous or asynchronous.",
+            "- Problem-solving: Understand the timing behavior of both types of circuits."
+        ],
+        "bbox": [
+            72,
+            685,
+            885,
+            726
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference",
+        "text_level": 1,
+        "bbox": [
+            60,
+            739,
+            294,
+            754
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Half Adder:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            769,
+            179,
+            781
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ S = A \\oplus B$",
+            "$\\circ C_{out}=A\\cdot B$"
+        ],
+        "bbox": [
+            97,
+            782,
+            218,
+            813
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Full Adder:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            813,
+            176,
+            825
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ S = A \\oplus B \\oplus C_{in}$",
+            "$\\circ C_{out} = (A \\cdot B) + (C_{in} \\cdot (A \\oplus B))$",
+            "$\\circ C_{out} = (A \\cdot B) + (B \\cdot C_{in}) + (C_{in} \\cdot A)$"
+        ],
+        "bbox": [
+            97,
+            826,
+            416,
+            872
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Carry Look-Ahead Adder (stage i):",
+        "text_level": 1,
+        "bbox": [
+            73,
+            872,
+            357,
+            885
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ P_{i} = A_{i}\\oplus B_{i}$",
+            "$\\circ G_{i}=A_{i}\\cdot B_{i}$"
+        ],
+        "bbox": [
+            97,
+            887,
+            221,
+            916
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ S_{i} = P_{i}\\oplus C_{i}$",
+            "$\\circ C_{i + 1} = G_{i} + (P_{i}\\cdot C_{i})$"
+        ],
+        "bbox": [
+            100,
+            65,
+            287,
+            96
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Binary to Gray Code: $G_{i} = B_{i} \\oplus B_{i+1}$ (with $B_{n} = 0$ for MSB, or $G_{MSB} = B_{MSB}$ , $G_{i} = B_{i} \\oplus B_{i+1}$ for $i < MSB$ ).",
+            "- Gray to Binary Code: $B_{i} = G_{i} \\oplus B_{i+1}$ (with $B_{MSB} = G_{MSB}$ ).",
+            "- De Morgan's Laws:"
+        ],
+        "bbox": [
+            73,
+            95,
+            870,
+            153
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ \\overline{A + B} = \\bar{A} \\cdot \\bar{B}$",
+            "$\\circ \\overline{A\\cdot B} = \\bar{A} +\\bar{B}$"
+        ],
+        "bbox": [
+            100,
+            155,
+            236,
+            190
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Absorption Law:",
+        "bbox": [
+            73,
+            192,
+            220,
+            204
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ A + (A \\cdot B) = A$",
+            "$\\circ A \\cdot (\\dot{A} + \\dot{B}) = A$"
+        ],
+        "bbox": [
+            100,
+            205,
+            250,
+            236
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Consensus Theorem: $(A \\cdot B) + (\\bar{A} \\cdot C) + (B \\cdot C) = (A \\cdot B) + (\\bar{A} \\cdot C)$",
+            "- SR Flip-Flop Characteristic Equation: $Q_{next} = S + \\bar{R}Q$ (with $SR = 0$ )",
+            "- JK Flip-Flop Characteristic Equation: $Q_{next} = J\\bar{Q} + \\bar{K}Q$",
+            "- D Flip-Flop Characteristic Equation: $Q_{next} = D$",
+            "- T Flip-Flop Characteristic Equation: $Q_{next} = T \\oplus Q$",
+            "- IEEE 754 Single Precision (32-bit): $(-1)^{S} \\times (1.M)_{base2} \\times 2^{(E - 127)}$",
+            "- IEEE 754 Double Precision (64-bit): $(-1)^{S} \\times (1.M)_{base2} \\times 2^{(E - 1023)}$",
+            "- Multiplexer (2-to-1): $Output = \\bar{S} I_0 + SI_1$",
+            "- Ripple Counter Delay (n-bit): $T_{total} = n \\times T_{FF\\_delay}$",
+            "- Memory Capacity (N address, M data): $2^{N} \\times M$ bits"
+        ],
+        "bbox": [
+            73,
+            236,
+            636,
+            396
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            409,
+            285,
+            425
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Master Boolean Algebra and K-Maps: These are fundamental. Practice simplification extensively for both SOP and POS forms. Be quick and accurate in identifying prime implicants and essential prime implicants.",
+            "2. Understand Number Representations Thoroughly: Pay close attention to signed magnitude, 1's complement, and especially 2's complement. Practice conversions, arithmetic operations (addition, subtraction), and overflow detection for different bit lengths. IEEE 754 floating-point is a recurring topic; know the format, bias, and special values.",
+            "3. Differentiate Combinational vs. Sequential Circuits: Clearly understand their definitions, characteristics, and design methodologies. Be able to identify memory elements (flip-flops, latches) that make a circuit sequential.",
+            "4. Memorize Flip-Flop Characteristic and Excitation Tables: For SR, JK, D, and T flip-flops, these tables are crucial for analyzing and designing sequential circuits (counters, shift registers, FSMs). Don't confuse them.",
+            "5. Practice FSM Design: Be comfortable with state diagrams, state tables, state assignment, and deriving next-state and output equations using K-maps. Pay attention to Mealy vs. Moore machine characteristics.",
+            "6. Beware of \"Minimum Number of Gates\" Questions: These often require not just Boolean simplification but also considering universal gate implementations (NAND-only or NOR-only logic) and gate fan-in/fan-out constraints.",
+            "7. Focus on Timing and Delays: Understand propagation delays in combinational circuits (e.g., adders) and sequential circuits (e.g., ripple counters). Be able to calculate critical path delays and maximum operating frequencies.",
+            "8. Don't Overlook Hazards: Static hazards are a common trap. Learn how to detect them using K-maps and eliminate them by adding redundant terms."
+        ],
+        "bbox": [
+            63,
+            438,
+            931,
+            701
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.1",
+        "bbox": [
+            67,
+            714,
+            92,
+            726
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Adder (9)",
+        "bbox": [
+            475,
+            714,
+            552,
+            729
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (12Q)",
+        "bbox": [
+            70,
+            739,
+            270,
+            752
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.1.1 Adder: GATE CSE 1988 | Question: 4ii",
+        "text_level": 1,
+        "bbox": [
+            78,
+            768,
+            421,
+            781
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Using binary full adders and other logic gates (if necessary), design an adder for adding 4-bit number (including sign) in $2's$ complement notation.",
+        "bbox": [
+            84,
+            790,
+            878,
+            823
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/b9ba4e8492c1a17aaa65ac755c7d747b360c59a1c636bb5398c97158cc9ced30.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            771,
+            931,
+            808
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gate1988 digital-logic descriptive adder",
+        "bbox": [
+            87,
+            836,
+            290,
+            846
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            87,
+            852,
+            181,
+            866
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "4.1.2 Adder: GATE CSE 1990 | Question: 1-i",
+        "text_level": 1,
+        "bbox": [
+            78,
+            876,
+            421,
+            889
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Fill in the blanks:",
+        "bbox": [
+            85,
+            899,
+            213,
+            913
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/8afe51315291ff8414f1cc28d058da12c738f69cb12fb42d78c347bf26e4951b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            878,
+            931,
+            916
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In the two bit full-adder/subtractor unit shown in below figure, when the switch is in position2 \\_\\_\\_\\_ using \\_\\_\\_\\_ arithmetic.",
+        "bbox": [
+            84,
+            64,
+            929,
+            93
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/048bf7fe7d22eb11ebdf6f001c8b606c85c77d23363b1fe2b7fd5f81e93e9d50.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  A[\"A1\"] --> B[\"A0\"]\n  B --> C[\"B1\"]\n  C --> D[\"B0\"]\n  D --> E[\"2's complement\"]\n  E --> F[\"Cin\"]\n  F --> G[\"1\"]\n  G --> H[\"2\"]\n  H --> I[\"Vcc\"]\n  I --> J[\"C0\"]\n  J --> K[\"S1\"]\n  K --> L[\"S0\"]\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            319,
+            97,
+            697,
+            249
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1990 digital-logic adder fill-in-the-blanks",
+        "bbox": [
+            87,
+            286,
+            312,
+            296
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            302,
+            188,
+            317
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.1.3 Adder: GATE CSE 1997 | Question: 2.5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            326,
+            426,
+            340
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "An N-bit carry lookahead adder, where $N$ is a multiple of 4, employs ICs 74181 (4 bit ALU) and 74182 (4 bit carry lookahead generator).",
+        "bbox": [
+            84,
+            350,
+            878,
+            380
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/218c55a0a399038aa121d3dd89e417c7143863058b88879f64a746df997e3f58.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            328,
+            932,
+            366
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The minimum addition time using the best architecture for this adder is",
+        "bbox": [
+            85,
+            383,
+            603,
+            397
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. proportional to N",
+        "bbox": [
+            87,
+            407,
+            235,
+            421
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. proportional to $\\log N$",
+        "bbox": [
+            495,
+            407,
+            665,
+            423
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. a constant",
+        "bbox": [
+            89,
+            426,
+            186,
+            438
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            495,
+            426,
+            645,
+            439
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1997 digital-logic normal adder",
+        "bbox": [
+            87,
+            448,
+            275,
+            459
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            465,
+            188,
+            480
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.1.4 Adder: GATE CSE 1999 | Question: 2.16",
+        "text_level": 1,
+        "bbox": [
+            78,
+            488,
+            436,
+            503
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The number of full and half-adders required to add 16-bit numbers is",
+        "bbox": [
+            85,
+            511,
+            586,
+            528
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 8 half-adders, 8 full-adders",
+        "bbox": [
+            87,
+            536,
+            300,
+            549
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 1 half-adder, 15 full-adders",
+        "bbox": [
+            495,
+            536,
+            705,
+            549
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 16 half-adders, 0 full-adders",
+        "bbox": [
+            89,
+            554,
+            307,
+            568
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 4 half-adders, 12 full-adders",
+        "bbox": [
+            495,
+            554,
+            712,
+            568
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gate1999 digital-logic normal adder",
+        "bbox": [
+            87,
+            578,
+            275,
+            587
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            593,
+            188,
+            608
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "4.1.5 Adder: GATE CSE 2003 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            618,
+            423,
+            631
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the ALU shown below.",
+        "bbox": [
+            85,
+            641,
+            324,
+            655
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a21a1ec95e0b702df7c479b40ed24bd0bf76d47aaf43be01c8b9a486fef51fbd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            491,
+            932,
+            529
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/a634ae7b8749f3d29365f7f832caa0843b676001310f6d40e51412ad1fba672a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            619,
+            932,
+            659
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/ab5d3cd358d4df4254334a294efe66167e2c6627afd0aef7c597c0973b10fe52.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  K[\"K\"] -->|K| B1[\"B1\"]\n  B1 -->|A1| Adder1[\"Full Adder\"]\n  Adder1 -->|C1| Adder2[\"Full Adder\"]\n  Adder2 -->|C0| Adder2\n  Adder2 -->|S0| Adder2\n  Adder2 -->|S1| Adder1\n  Adder1 -->|S1| Adder1\n  Adder2 -->|A0| Adder2\n  Adder2 -->|A0| Adder1\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            305,
+            669,
+            668,
+            815
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "If the operands are in $2's$ complement representation, which of the following operations can be performed by suitably setting the control lines $K$ and $C_0$ only (+ and - denote addition and subtraction respectively)?",
+        "bbox": [
+            84,
+            840,
+            929,
+            872
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $A + B$ , and $A - B$ , but not $A + 1$",
+        "bbox": [
+            87,
+            881,
+            344,
+            895
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $A + B$ , and $A + 1$ , but not $A - B$",
+        "bbox": [
+            495,
+            881,
+            752,
+            895
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $A + B$ , but not $A - B$ or $A + 1$",
+        "bbox": [
+            89,
+            896,
+            327,
+            909
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. $A + B$ , and $A - B$ , and $A + 1$",
+        "bbox": [
+            495,
+            896,
+            729,
+            909
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 digital-logic normal adder",
+        "bbox": [
+            87,
+            914,
+            290,
+            923
+        ],
+        "page_idx": 11
+    }
+]

@@ -1,0 +1,3394 @@
+[
+    {
+        "type": "text",
+        "text": "Consider the syntax directed translation scheme (SDTS) given in the following. Assume attribute evaluation with bottom-up parsing, i.e., attributes are evaluated immediately after a reduction.",
+        "bbox": [
+            84,
+            89,
+            875,
+            119
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $E \\to E_1 * T$ $\\{E.val = E_1.val * T.val\\}$",
+            "- $E \\to T$ $\\{E.val = T.val\\}$",
+            "- $T \\rightarrow F - T_1$ $\\{T.val = F.val - T_1.val\\}$",
+            "- $T \\rightarrow F$ $\\{T.val = F.val\\}$",
+            "- $F \\to 2$ $\\{F.val = 2\\}$",
+            "- $F \\to 4$ $\\{F.val = 4\\}$"
+        ],
+        "bbox": [
+            97,
+            128,
+            472,
+            223
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Using this SDTS, construct a parse tree for the expression $4 - 2 - 4 * 2$ and also compute its $E$ . val.",
+            "B. It is required to compute the total number of reductions performed to parse a given input. Using synthesized attributes only, modify the SDTS given, without changing the grammar, to find E.red, the number of reductions performed while reducing an input to E."
+        ],
+        "bbox": [
+            87,
+            232,
+            929,
+            290
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 compiler-design syntax-directed-translation normal descriptive",
+        "bbox": [
+            87,
+            315,
+            453,
+            326
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            332,
+            188,
+            346
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.27.6 Syntax Directed Translation: GATE CSE 2001 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            77,
+            355,
+            600,
+            370
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The syntax of the repeat-until statement is given by the following grammar",
+        "bbox": [
+            85,
+            380,
+            628,
+            395
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "$S \\rightarrow$ repeat $S_{1}$ until $E$",
+        "bbox": [
+            85,
+            406,
+            278,
+            423
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/d18dc1878592043a2a04140ac2e0d6eb2224b04978244d3fdf66ef585c5dbaf2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            358,
+            931,
+            396
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "where E stands for expressions, S and $S_{1}$ stand for statements. The non-terminals S and $S_{1}$ have an attribute code that represents generated code. The non-terminal E has two attributes. The attribute code represents generated code to evaluate the expression and store its value in a distinct variable, and the attribute varName contains the name of the variable in which the truth value is stored. The truth-value stored in the variable is 1 if E is true, 0 if E is false.",
+        "bbox": [
+            84,
+            435,
+            929,
+            505
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Give a syntax-directed definition to generate three-address code for the repeat-until statement. Assume that you can call a function newlabel() that returns a distinct label for a statement. Use the operator '\\\\' to concatenate two strings and the function gen(s) to generate a line containing the string s.",
+        "bbox": [
+            84,
+            519,
+            929,
+            562
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 compiler-design syntax-directed-translation normal descriptive",
+        "bbox": [
+            87,
+            574,
+            453,
+            585
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            591,
+            188,
+            606
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.27.7 Syntax Directed Translation: GATE CSE 2003 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            77,
+            615,
+            600,
+            630
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In a bottom-up evaluation of a syntax directed definition, inherited attributes can",
+        "bbox": [
+            85,
+            638,
+            667,
+            653
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/f64105a281cadfc98fa8b4ea1d7c3a99a51ea2c4c49f097ef3cdf852aab9a3d7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            617,
+            931,
+            655
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. always be evaluated",
+            "B. be evaluated only if the definition is L-attributed",
+            "C. be evaluated only if the definition has synthesized attributes",
+            "D. never be evaluated"
+        ],
+        "bbox": [
+            87,
+            663,
+            549,
+            719
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 compiler-design syntax-directed-translation normal",
+        "bbox": [
+            87,
+            745,
+            393,
+            756
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            762,
+            188,
+            776
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2.27.8 Syntax Directed Translation: GATE CSE 2003 | Question: 59",
+        "text_level": 1,
+        "bbox": [
+            77,
+            785,
+            600,
+            800
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the syntax directed definition shown below.",
+        "bbox": [
+            85,
+            809,
+            472,
+            824
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} S \\rightarrow \\mathbf {i d} := E \\quad \\{g e n (\\mathbf {i d}. p l a c e = E. p l a c e;) \\} \\\\ E \\rightarrow E _ {1} + E _ {2} \\quad \\{t = n e w t e m p (); \\\\ g e n (t = E _ {1}. p l a c e + E _ {2}. p l a c e;); \\\\ E. p l a c e = t; \\} \\\\ E \\rightarrow i d \\quad \\{E. p l a c e = \\mathbf {i d}. p l a c e; \\} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            284,
+            834,
+            726,
+            934
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/004560be27790465e2c5fb7d169d346a135fad20781781a80c66c0dd27923dac.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            788,
+            931,
+            826
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "2.27.5 Syntax Directed Translation: GATE CSE 2000 | Question: 19",
+        "bbox": [
+            77,
+            65,
+            600,
+            79
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-text content in the image. However, there is no textual content to extract or convert according to the given instructions.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Here, gen is a function that generates the output code, and newtemp is a function that returns the name of a new temporary variable on every call. Assume that $t_{i}^{\\prime}$ 's are the temporary variable names generated by newtemp. For the statement 'X := Y + Z', the 3-address code sequence generated by this definition is",
+        "bbox": [
+            84,
+            64,
+            931,
+            109
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $X = Y + Z$",
+        "bbox": [
+            87,
+            117,
+            203,
+            130
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $t_1 = Y + Z; X = t_1$",
+        "bbox": [
+            495,
+            118,
+            663,
+            131
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $t_1 = Y; t_2 = t_1 + Z; X = t_2$",
+        "bbox": [
+            89,
+            131,
+            315,
+            146
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $t_1 = Y; t_2 = Z; t_3 = t_1 + t_2; X = t_3$",
+        "bbox": [
+            495,
+            131,
+            779,
+            146
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 compiler-design syntax-directed-translation normal",
+        "bbox": [
+            87,
+            150,
+            393,
+            160
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            167,
+            181,
+            181
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.27.9 Syntax Directed Translation: GATE CSE 2004 | Question: 45",
+        "text_level": 1,
+        "bbox": [
+            78,
+            190,
+            600,
+            205
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the grammar with the following translation rules and E as the start symbol",
+        "bbox": [
+            85,
+            214,
+            695,
+            230
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} E \\rightarrow E _ {1} \\# T \\quad \\{E. v a l u e = E _ {1}. v a l u e * T. v a l u e \\} \\\\ | T \\quad \\{E. v a l u e = T. v a l u e \\} \\\\ T \\rightarrow T _ {1} \\&F \\quad \\{T. v a l u e = T _ {1}. v a l u e + F. v a l u e \\} \\\\ | F \\quad \\{T. v a l u e = F. v a l u e \\} \\\\ F \\rightarrow \\text {num} \\quad \\{F. v a l u e = n u m. v a l u e \\} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            282,
+            239,
+            727,
+            339
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Compute E.value for the root of the parse tree for the expression:2 # 3 & 5 # 6 & 4",
+        "bbox": [
+            85,
+            347,
+            685,
+            362
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 200",
+        "bbox": [
+            89,
+            376,
+            142,
+            389
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 180",
+        "bbox": [
+            285,
+            376,
+            339,
+            389
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 160",
+        "bbox": [
+            480,
+            376,
+            532,
+            389
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 40",
+        "bbox": [
+            673,
+            376,
+            717,
+            389
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 compiler-design grammar normal syntax-directed-translation",
+        "bbox": [
+            87,
+            400,
+            443,
+            409
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            416,
+            188,
+            429
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.27.10 Syntax Directed Translation: GATE CSE 2016 | Set 1 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            77,
+            440,
+            663,
+            454
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following Syntax Directed Translation Scheme (SDTS), with non-terminals $\\{S, A\\}$ and terminals $\\{a, b\\}$ .",
+        "bbox": [
+            84,
+            463,
+            878,
+            496
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/442afbb5f7b0dfcd774c8b98def0f59e0c69a5464a6d891a1428abda7240faf7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            442,
+            932,
+            480
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow a A \\quad \\{\\text {print} 1 \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            129,
+            498,
+            295,
+            516
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS \\rightarrow a \\quad \\{\\text {print} 2 \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            132,
+            517,
+            278,
+            535
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nA \\rightarrow S b \\quad \\{\\text {print} 3 \\}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            132,
+            538,
+            292,
+            555
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Using the above SDTS, the output printed by a bottom-up parser, for the input aab is:",
+        "bbox": [
+            85,
+            557,
+            719,
+            573
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 132",
+        "bbox": [
+            89,
+            581,
+            157,
+            595
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 223",
+        "bbox": [
+            495,
+            581,
+            561,
+            595
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 231",
+        "bbox": [
+            90,
+            596,
+            154,
+            608
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. syntax error",
+        "bbox": [
+            495,
+            596,
+            606,
+            610
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 compiler-design syntax-directed-translation normal",
+        "bbox": [
+            89,
+            614,
+            413,
+            624
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            631,
+            188,
+            644
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2.27.11 Syntax Directed Translation: GATE CSE 2019 | Question: 36",
+        "text_level": 1,
+        "bbox": [
+            77,
+            654,
+            608,
+            668
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar and the semantic actions to support the inherited type declaration attributes. Let $X_{1}, X_{2}, X_{3}, X_{4}, X_{5}$ , and $X_{6}$ be the placeholders for the non-terminals D, T, L or $L_{1}$ in the following table:",
+        "bbox": [
+            84,
+            678,
+            878,
+            720
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/6930eda97c39ff7b27fd416113376e6a444a1d558e652ce51ecf5cf2ba943ce2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Production rule</td><td>Semantic action</td></tr><tr><td> $D \\rightarrow TL$ </td><td> $X_1. type = X_2. type$ </td></tr><tr><td> $T \\rightarrow \\text{int}$ </td><td> $T. type = \\text{int}$ </td></tr><tr><td> $T \\rightarrow \\text{float}$ </td><td> $T. type = \\text{float}$ </td></tr><tr><td> $L \\rightarrow L_1, id$ </td><td> $X_3. type = X_4. type$  $\\text{addType}(id. entry, X_5. type)$ </td></tr><tr><td> $L \\rightarrow id$ </td><td> $\\text{addType}(id. entry, X_6. type)$ </td></tr></table>",
+        "bbox": [
+            302,
+            732,
+            715,
+            871
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following are appropriate choices for $X_{1}, X_{2}, X_{3}$ and $X_{4}$ ?",
+        "bbox": [
+            84,
+            880,
+            643,
+            897
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $X_{1} = L, X_{2} = T, X_{3} = L_{1}, X_{4} = L$",
+        "bbox": [
+            85,
+            904,
+            413,
+            922
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/0672f6980cf5225ebf0dd24d58ec8ee6f483353bc8f3157b5c631df186d05f8e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            193,
+            932,
+            231
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/3e733e744a8621f55b23ccb6cdacb9821bfdf1037206a5437641908c3afc48e3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            657,
+            932,
+            695
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $X_{1} = T, X_{2} = L, X_{3} = L_{1}, X_{4} = T$",
+            "C. $X_{1} = L, X_{2} = L, X_{3} = L_{1}, X_{4} = T$",
+            "D. $X_{1} = T, X_{2} = L, X_{3} = T, X_{4} = L_{1}$"
+        ],
+        "bbox": [
+            87,
+            62,
+            413,
+            109
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 compiler-design syntax-directed-translation two-marks",
+        "bbox": [
+            87,
+            133,
+            406,
+            143
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            150,
+            186,
+            163
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.27.12 Syntax Directed Translation: GATE CSE 2020 | Question: 33",
+        "text_level": 1,
+        "bbox": [
+            77,
+            173,
+            608,
+            188
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the productions $A \\rightarrow PQ$ and $A \\rightarrow XY$ . Each of the five non-terminals A, P, Q, X, and Y has two attributes: s is a synthesized attribute, and i is an inherited attribute. Consider the following rules.",
+        "bbox": [
+            84,
+            197,
+            878,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/00fafc7dcb64bee73227474b58c07e3b3886bbda43f7d1ba9a47c93df65b3b17.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            176,
+            932,
+            214
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Rule $1: P.i = A.i + 2$ , $Q.i = P.i + A.i$ , and $A.s = P.s + Q.s$",
+            "- Rule 2: $X.i = A.i + Y.s$ and $Y.i = X.s + A.i$"
+        ],
+        "bbox": [
+            97,
+            237,
+            633,
+            267
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE?",
+        "bbox": [
+            85,
+            277,
+            356,
+            293
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. Both Rule 1 and Rule 2 are $L$ -attributed.",
+        "bbox": [
+            87,
+            302,
+            352,
+            328
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. Only Rule 2 is $L$ -attributed.",
+        "bbox": [
+            87,
+            328,
+            299,
+            342
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. Only Rule 1 is $L$ -attributed.",
+        "bbox": [
+            495,
+            302,
+            705,
+            317
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. Neither Rule 1 nor Rule 2 is $L$ -attributed.",
+        "bbox": [
+            495,
+            328,
+            757,
+            355
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 compiler-design syntax-directed-translation two-marks",
+        "bbox": [
+            87,
+            361,
+            406,
+            371
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            376,
+            186,
+            391
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.27.13 Syntax Directed Translation: GATE CSE 2021 | Set 1 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            77,
+            400,
+            663,
+            415
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar (that admits a series of declarations, followed by expressions) and the associated syntax directed translation (SDT) actions, given as pseudo-code",
+        "bbox": [
+            84,
+            423,
+            875,
+            454
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/a0f61cdc76c7a411ed8a93e5341024d9e8558e7d5603c30a4fe1a0c61dfc2015.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            403,
+            932,
+            441
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nP \\rightarrow D ^ {*} E ^ {*}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            89,
+            459,
+            216,
+            473
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$D \\rightarrow \\text{int ID}\\{\\text{record that ID.lexeme is of type int}\\}$",
+        "bbox": [
+            89,
+            478,
+            509,
+            495
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$D \\rightarrow$ bool ID{record that ID.lexeme is of type bool}",
+        "bbox": [
+            89,
+            498,
+            532,
+            515
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$E \\rightarrow E_{1} + E_{2}$ {check that $E_{1}$ . type $= E_{2}$ . type $=$ int; set $E$ . type := int}",
+        "bbox": [
+            89,
+            517,
+            702,
+            535
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$E \\rightarrow !E_1\\{\\text{check that } E_1.\\text{ type} = \\text{bool}; \\text{ set } E.\\text{ type} := \\text{bool}\\}$",
+        "bbox": [
+            89,
+            538,
+            594,
+            555
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$E \\rightarrow \\text{ID}\\{\\text{set } E.\\text{type} := \\text{int}\\}$",
+        "bbox": [
+            89,
+            558,
+            349,
+            574
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "With respect to the above grammar, which one of the following choices is correct?",
+        "bbox": [
+            85,
+            576,
+            684,
+            591
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The actions can be used to correctly type-check any syntactically correct program",
+            "B. The actions can be used to type-check syntactically correct integer variable declarations and integer expressions",
+            "C. The actions can be used to type-check syntactically correct boolean variable declarations and boolean expressions.",
+            "D. The actions will lead to an infinite loop"
+        ],
+        "bbox": [
+            85,
+            602,
+            929,
+            686
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 compiler-design syntax-directed-translation two-marks",
+        "bbox": [
+            87,
+            711,
+            426,
+            720
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            726,
+            186,
+            741
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.27.14 Syntax Directed Translation: GATE CSE 2022 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            77,
+            751,
+            608,
+            764
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following grammar along with translation rules.",
+        "bbox": [
+            85,
+            775,
+            524,
+            789
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} S \\rightarrow S _ {1} \\# T \\quad \\left\\{S _ {\\cdot \\text {val}} = S _ {1 \\cdot \\text {val}} ^ {*} T _ {\\cdot \\text {val}} \\right\\} \\\\ S \\rightarrow T \\quad \\{S _ {\\cdot \\text {val}} = T _ {\\cdot \\text {val}} \\} \\\\ T \\rightarrow T _ {1} \\% R \\quad \\left\\{T _ {\\cdot \\text {val}} = T _ {1 \\cdot \\text {val}} \\div R _ {\\cdot \\text {val}} \\right\\} \\\\ T \\rightarrow R \\quad \\{T _ {\\cdot \\text {val}} = R _ {\\cdot \\text {val}} \\} \\\\ R \\rightarrow \\mathrm{id} \\quad \\left\\{R _ {\\cdot \\text {val}} = \\mathrm{id} _ {\\cdot \\text {val}} \\right\\} \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            342,
+            800,
+            665,
+            894
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/7b2515ae2c1b796c46e0a428312a15ebb10216558f3ef92d0fc2c328022b6cd6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            752,
+            932,
+            790
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Here # and % are operators and id is a token that represents an integer and id.val represents the corresponding integer value. The set of non-terminals is $\\{S, T, R, P\\}$ and a subscripted non-terminal indicates an instance of the non-terminal.",
+        "bbox": [
+            84,
+            65,
+            931,
+            109
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Using this translation scheme, the computed value of $S_{val}$ for root of the parse tree for the expression $20\\#10\\%5\\#8\\%2\\%2$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            123,
+            924,
+            155
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers compiler-design syntax-directed-translation two-marks",
+        "bbox": [
+            87,
+            167,
+            497,
+            176
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            182,
+            188,
+            197
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.27.15 Syntax Directed Translation: GATE CSE 2023 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            207,
+            608,
+            222
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/5e81acfd32a5ab1966f73584a57ac65061afed5e20f4acfd1d5e9f9978116927.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            210,
+            931,
+            247
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the syntax directed translation given by the following grammar and semantic rules. Here $N, I, F$ and $B$ are non-terminals. $N$ is the starting non-terminal, and $\\#$ , $\\mathbf{0}$ and $\\mathbf{1}$ are lexical tokens corresponding to input letters “ $\\#$ ”, “0” and “1”, respectively. $X.\\ val$ denotes the synthesized attribute (a numeric value) associated with a non-terminal $X$ . $I_1$ and $F_1$ denote occurrences of $I$ and $F$ on the right hand side of a production, respectively. For the tokens $\\mathbf{0}$ and $\\mathbf{1}$ , $\\mathbf{0}$ . $val = 0$ and $\\mathbf{1}$ . $val = 1$ .",
+        "bbox": [
+            82,
+            230,
+            931,
+            305
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\begin{array}{l} N \\rightarrow I \\# F \\quad N. v a l = I. v a l + F. v a l \\\\ I \\rightarrow I _ {1} B \\quad I. v a l = (2 I _ {1}. v a l) + B. v a l \\\\ I \\rightarrow B \\quad I. v a l = \\mathrm{B.val} \\\\ F \\rightarrow B F _ {1} \\quad F. v a l = \\frac {1}{2} (B. v a l + F _ {1}. v a l) \\\\ F \\rightarrow B \\quad \\mathrm{F.val} = \\frac {1}{2} B. v a l \\\\ B \\rightarrow \\mathbf {0} \\quad B. v a l = \\mathbf {0}. v a l \\\\ B \\rightarrow \\mathbf {1} \\quad B. v a l = \\mathbf {1}. v a l \\\\ \\end{array}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            332,
+            314,
+            673,
+            453
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The value computed by the translation scheme for the input string",
+        "bbox": [
+            85,
+            477,
+            568,
+            492
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n1 0 \\# 0 1 1\n$$",
+        "text_format": "latex",
+        "bbox": [
+            472,
+            501,
+            542,
+            517
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "is \\_\\_\\_\\_. (Rounded off to three decimal places)",
+        "bbox": [
+            84,
+            542,
+            500,
+            557
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 compiler-design syntax-directed-translation numerical-answers two-marks",
+        "bbox": [
+            87,
+            570,
+            497,
+            580
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            586,
+            188,
+            600
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.27.16 Syntax Directed Translation: GATE CSE 2024 | Set 1 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            77,
+            610,
+            663,
+            625
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following syntax-directed definition (SDD).",
+        "bbox": [
+            85,
+            634,
+            499,
+            650
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/5c7ed00cc33d2e2d0d563ae659c8c1db64637de8ef44d4bce08c9f8d92d7f2f2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>S → DHTU</td><td>{S. val = D. val + H. val + T. val + U. val;}</td></tr><tr><td>D →&quot; M&quot; D1</td><td>{D. val = 5 + D1. val;}</td></tr><tr><td>D → ε</td><td>{D. val = -5;}</td></tr><tr><td>H →&quot; L&quot; H1</td><td>{H. val = 5*10 + H1. val;}</td></tr><tr><td>H → ε</td><td>{H. val = -10;}</td></tr><tr><td>T → &quot;C&quot; T1</td><td>{T. val = 5*100 + T1. val;}</td></tr><tr><td>T → ε</td><td>{T. val = -5;}</td></tr><tr><td>U → &quot;K&quot;</td><td>{U. val = 5;}</td></tr></table>",
+        "bbox": [
+            248,
+            662,
+            766,
+            825
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/705ed11901a0ea840d01dc97333d4ed22341900f2ed098ca0227877fb1d4a9c1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            612,
+            931,
+            650
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Given \"MMLK\" as the input, which one of the following options is the CORRECT value computed by the SDD (in the attribute S. val)?",
+        "bbox": [
+            84,
+            833,
+            929,
+            866
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 45",
+        "bbox": [
+            89,
+            878,
+            134,
+            891
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 50",
+        "bbox": [
+            285,
+            878,
+            329,
+            891
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 55",
+        "bbox": [
+            480,
+            878,
+            524,
+            891
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 65",
+        "bbox": [
+            673,
+            878,
+            719,
+            891
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2024-set1 compiler-design syntax-directed-translation two-marks",
+        "bbox": [
+            87,
+            903,
+            428,
+            913
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2.27.17 Syntax Directed Translation: GATE CSE 2024 | Set 2 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            663,
+            104
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are FALSE?",
+        "bbox": [
+            85,
+            112,
+            445,
+            128
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/4c9f9bfefeaaa55f38911dd22e917f4a42a5678d71ba9ee4d3819f9a040bc417.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. An attribute grammar is a syntax-directed definition (SDD) in which the functions in the semantic rules have no side effects",
+            "B. The attributes in a L-attributed definition cannot always be evaluated in a depth-first order",
+            "C. Synthesized attributes can be evaluated by a bottom-up parser as the input is parsed",
+            "D. All L-attributed definitions based on LR(1) grammar can be evaluated using a bottom-up parsing strategy"
+        ],
+        "bbox": [
+            85,
+            138,
+            926,
+            213
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 compiler-design syntax-directed-translation multiple-selects one-mark",
+        "bbox": [
+            87,
+            238,
+            502,
+            247
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            254,
+            188,
+            268
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.27.18 Syntax Directed Translation: GATE CSE 2025 | Set 2 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            277,
+            663,
+            292
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Given the following syntax directed translation rules:",
+        "bbox": [
+            85,
+            301,
+            468,
+            315
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/760d292576fc56206f19b58ceef44b5020b5ff915dcc1129cff5c1ed26f6b560.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            280,
+            932,
+            318
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Rule 1: $R \\to AB\\{B.i = R.i - 1; A.i = B.i; R.i = A.i + 1; \\}$",
+            "- Rule 2: $P \\to CD\\{P.i = C.i + D.i; D.i = C.i + 2; \\}$",
+            "- Rule 3: $Q \\to EF\\{Q.i = E.i + F.i; \\}$"
+        ],
+        "bbox": [
+            97,
+            326,
+            610,
+            374
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which ONE is the CORRECT option among the following?",
+        "bbox": [
+            85,
+            383,
+            514,
+            397
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Rule 1 is $S$ -attributed and $L$ -attributed; Rule 2 is $S$ -attributed and not $L$ -attributed; Rule 3 is neither $S$ -attributed nor $L$ -attributed.",
+            "B. Rule 1 is neither $S$ -attributed not $L$ -attributed; Rule 2 is $S$ -attributed and $L$ -attributed; Rule 3 is $S$ -attributed and $L$ -attributed.",
+            "C. Rule 1 is neither $S$ -attributed nor $L$ -attributed; Rule 2 is not $S$ -attributed and is $L$ -attributed; Rule 3 is $S$ -attributed and $L$ -attributed.",
+            "D. Rule 1 is $S$ -attributed and not $L$ -attributed; Rule 2 is not $S$ -attributed and is $L$ -attributed; Rule 3 is $S$ -attributed and $L$ -attributed."
+        ],
+        "bbox": [
+            85,
+            409,
+            927,
+            526
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set2 compiler-design syntax-directed-translation one-mark",
+        "bbox": [
+            87,
+            553,
+            420,
+            562
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            568,
+            188,
+            584
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2.27.19 Syntax Directed Translation: GATE CSE 2026 | Set 1 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            593,
+            663,
+            606
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following two syntax-directed definitions SDD1 and SDD2 for type declarations.",
+        "bbox": [
+            85,
+            617,
+            768,
+            633
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/68addf7a33a1b1bb5d6e4ce0f28876944c1c68e839df2b6d5628273536ca279b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            595,
+            932,
+            633
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/5a94e8032f8847f28c4e15f56631409c3793cc9eb29acde99e53fe6c745023d0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">SDD1</td></tr><tr><td>Grammar (G1)</td><td>Semantic Rules</td></tr><tr><td> $D \\rightarrow TV$ </td><td> $D.type = T.type$  $V.type = T.type$ </td></tr><tr><td> $T \\rightarrow \\text{int}$ </td><td> $T.type = \\text{int}$ </td></tr><tr><td> $T \\rightarrow \\text{float}$ </td><td> $T.type = \\text{float}$ </td></tr><tr><td> $V \\rightarrow V_1 \\text{ id}$ </td><td> $V_1.type = V.type$ put(id.entry, V.type)</td></tr><tr><td> $V \\rightarrow \\text{id}$ </td><td>put(id.entry, V.type)</td></tr></table>",
+        "bbox": [
+            87,
+            650,
+            352,
+            805
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/2e7427fc4ff8ae3217dbdc1aadb5f36941fb5dfab46b78f0911bde288f040cf0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">SDD2</td></tr><tr><td>Grammar (G2)</td><td>Semantic Rules</td></tr><tr><td> $D \\rightarrow D_1 \\text{ id}$ </td><td> $D.type = D_1.type$ put(id.entry, D_1.type)</td></tr><tr><td> $D \\rightarrow T \\text{ id}$ </td><td> $D.type = T.type$ put(id.entry, T.type)</td></tr><tr><td>T → int</td><td>T.type = int</td></tr><tr><td>T → float</td><td>T.type = float</td></tr></table>",
+        "bbox": [
+            87,
+            815,
+            376,
+            929
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "bbox": [
+            87,
+            65,
+            376,
+            100
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D is the start symbol, and int, float and id are the three terminals. The non-terminal $V_{1}$ is the same as V and the non-terminal $D_{1}$ is the same as D. Here, the subscript is used to differentiate the grammar symbols on the two sides of a production. The function put updates the symbol table with the type information for an identifier.",
+        "bbox": [
+            84,
+            111,
+            929,
+            155
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Let P and Q be the languages specified by grammars G1 and G2, respectively.",
+        "bbox": [
+            84,
+            157,
+            670,
+            174
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements is/are true?",
+        "bbox": [
+            85,
+            174,
+            421,
+            187
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The languages P and Q are the same",
+            "B. SDD2 is S-attributed and contains only synthesized attributes",
+            "C. SDD1 is L-attributed and contains only inherited attributes",
+            "D. The specifications of SDD1 and SDD2 are such that the same entries get added to the symbol table"
+        ],
+        "bbox": [
+            87,
+            198,
+            848,
+            258
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 compiler-design syntax-directed-translation two-marks multiple-selects",
+        "bbox": [
+            87,
+            283,
+            507,
+            293
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            300,
+            181,
+            314
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.28",
+        "text_level": 1,
+        "bbox": [
+            68,
+            324,
+            105,
+            338
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Variable Scope (2)",
+        "text_level": 1,
+        "bbox": [
+            443,
+            324,
+            594,
+            339
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.28.1 Variable Scope: GATE CSE 1987 | Question: 1-xix",
+        "text_level": 1,
+        "bbox": [
+            78,
+            350,
+            519,
+            365
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Study the following program written in a block-structured language:",
+        "bbox": [
+            85,
+            374,
+            576,
+            389
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/bdd807d144940ebb5ea95c816f8a4cfb04f19d16e9019d92a979b2be1ea145fa.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            353,
+            931,
+            391
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nVar x, y:interger;\nprocedure P(n:interger);\nbegin\n  x:=(n+2)/(n-3);\nend;\n\nprocedure Q\nVar x, y:interger;\nbegin\n  x:=3;\n  y:=4;\n  P(y);\n  Write(x)                      __(1)\nend;\n\nbegin\n  x:=7;\n  y:=8;\n  Q;\nWrite(x);                      __(2)\nend.\n```",
+        "bbox": [
+            87,
+            397,
+            295,
+            625
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "What will be printed by the write statements marked (1) and (2) in the program if the variables are statically scoped?",
+        "bbox": [
+            84,
+            634,
+            929,
+            663
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 3,6",
+        "bbox": [
+            89,
+            676,
+            142,
+            692
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 6,7",
+        "bbox": [
+            285,
+            676,
+            337,
+            692
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 3,7",
+        "bbox": [
+            480,
+            676,
+            531,
+            692
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above.",
+        "bbox": [
+            673,
+            676,
+            828,
+            691
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gate1987 compiler-design variable-scope runtime-environment",
+        "bbox": [
+            87,
+            701,
+            384,
+            711
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            717,
+            181,
+            731
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2.28.2 Variable Scope: GATE CSE 1987 | Question: 1-xx",
+        "text_level": 1,
+        "bbox": [
+            78,
+            741,
+            515,
+            755
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "For the program given below what will be printed by the write statements marked (1) and (2) in the program if the variables are dynamically scoped?",
+        "bbox": [
+            84,
+            764,
+            878,
+            795
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/c7f80248198a647c2ef5975d13e0ea81df65ee241d1712b4547e0df8ac234765.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            744,
+            931,
+            780
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nVar x, y:interger;\nprocedure P(n:interger);\nbegin\n  x := (n+2)/(n-3);\nend;\n\nprocedure Q\nVar x, y:interger;\nbegin\n  x:=3;\n  y:=4;\n```",
+        "bbox": [
+            87,
+            804,
+            226,
+            923
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/21ece27cd35d231927f84c26d9859369f30abbcddc059a57e2eb4508e8e01b77.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>P(y);Write(x);</td><td>__(1)</td></tr><tr><td>end;</td><td></td></tr><tr><td>begin</td><td></td></tr><tr><td>x:=7;y:=8;</td><td></td></tr><tr><td>Q;Write(x);</td><td>__(2)</td></tr><tr><td>end.</td><td></td></tr></table>",
+        "bbox": [
+            87,
+            62,
+            310,
+            173
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. 3,6",
+        "bbox": [
+            89,
+            186,
+            142,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. 6,7",
+        "bbox": [
+            285,
+            186,
+            337,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. 3,7",
+        "bbox": [
+            478,
+            186,
+            532,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            188,
+            825,
+            201
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1987 compiler-design variable-scope runtime-environment",
+        "bbox": [
+            89,
+            212,
+            384,
+            222
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            226,
+            189,
+            242
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.29",
+        "text_level": 1,
+        "bbox": [
+            68,
+            252,
+            105,
+            266
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Viable Prefix (1)",
+        "text_level": 1,
+        "bbox": [
+            453,
+            252,
+            584,
+            267
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "2.29.1 Viable Prefix: GATE CSE 2015 | Set 1 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            277,
+            534,
+            292
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is TRUE at any valid state in shift-reduce parsing?",
+        "bbox": [
+            85,
+            302,
+            650,
+            317
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Viable prefixes appear only at the bottom of the stack and not inside",
+            "B. Viable prefixes appear only at the top of the stack and not inside",
+            "C. The stack contains only a set of viable prefixes",
+            "D. The stack never contains viable prefixes"
+        ],
+        "bbox": [
+            87,
+            328,
+            608,
+            384
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 compiler-design parsing normal viable-prefix lr-parser",
+        "bbox": [
+            87,
+            409,
+            447,
+            419
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            425,
+            189,
+            440
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/933639c1757d4002eaceac8913df604aff90e83ad75d012395a4d822d939958b.jpg",
+        "table_caption": [
+            "Answer Keys"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.1.1</td><td>C</td><td>2.2.1</td><td>B</td><td>2.2.2</td><td>B;C</td><td>2.3.1</td><td>N/A</td><td>2.3.2</td><td>TBA</td></tr><tr><td>2.3.3</td><td>N/A</td><td>2.3.4</td><td>A;B;C</td><td>2.3.5</td><td>True</td><td>2.3.6</td><td>N/A</td><td>2.3.7</td><td>True</td></tr><tr><td>2.3.8</td><td>False</td><td>2.3.9</td><td>B</td><td>2.4.1</td><td>C</td><td>2.5.1</td><td>6:6</td><td>2.5.2</td><td>A</td></tr><tr><td>2.6.1</td><td>A</td><td>2.6.2</td><td>D</td><td>2.6.3</td><td>A</td><td>2.6.4</td><td>D</td><td>2.6.5</td><td>7</td></tr><tr><td>2.6.6</td><td>D</td><td>2.6.7</td><td>B</td><td>2.6.8</td><td>D</td><td>2.7.1</td><td>C</td><td>2.7.2</td><td>N/A</td></tr><tr><td>2.7.3</td><td>A</td><td>2.7.4</td><td>B</td><td>2.7.5</td><td>C</td><td>2.7.6</td><td>B</td><td>2.7.7</td><td>C</td></tr><tr><td>2.7.8</td><td>B</td><td>2.7.9</td><td>D</td><td>2.7.10</td><td>C</td><td>2.7.11</td><td>B</td><td>2.7.12</td><td>B</td></tr><tr><td>2.7.13</td><td>C</td><td>2.8.1</td><td>13:13</td><td>2.9.1</td><td>A</td><td>2.9.2</td><td>6:6</td><td>2.10.1</td><td>A</td></tr><tr><td>2.10.2</td><td>6</td><td>2.11.1</td><td>A;B</td><td>2.11.2</td><td>A</td><td>2.11.3</td><td>C</td><td>2.11.4</td><td>31</td></tr><tr><td>2.11.5</td><td>A</td><td>2.11.6</td><td>A;D</td><td>2.12.1</td><td>N/A</td><td>2.12.2</td><td>N/A</td><td>2.12.3</td><td>N/A</td></tr><tr><td>2.12.4</td><td>N/A</td><td>2.12.5</td><td>N/A</td><td>2.12.6</td><td>C</td><td>2.12.7</td><td>C</td><td>2.12.8</td><td>N/A</td></tr><tr><td>2.12.9</td><td>N/A</td><td>2.12.10</td><td>X</td><td>2.12.11</td><td>N/A</td><td>2.12.12</td><td>N/A</td><td>2.12.13</td><td>D</td></tr><tr><td>2.12.14</td><td>N/A</td><td>2.12.15</td><td>N/A</td><td>2.12.16</td><td>N/A</td><td>2.12.17</td><td>C</td><td>2.12.18</td><td>A</td></tr><tr><td>2.12.19</td><td>N/A</td><td>2.12.20</td><td>D</td><td>2.12.21</td><td>A</td><td>2.12.22</td><td>B</td><td>2.12.23</td><td>B</td></tr><tr><td>2.12.24</td><td>C</td><td>2.12.25</td><td>A</td><td>2.12.26</td><td>D</td><td>2.12.27</td><td>B</td><td>2.12.28</td><td>D</td></tr><tr><td>2.12.29</td><td>D</td><td>2.12.30</td><td>A</td><td>2.12.31</td><td>C</td><td>2.12.32</td><td>C</td><td>2.12.33</td><td>C</td></tr><tr><td>2.12.34</td><td>B</td><td>2.12.35</td><td>C</td><td>2.12.36</td><td>C</td><td>2.12.37</td><td>B</td><td>2.12.38</td><td>A</td></tr><tr><td>2.12.39</td><td>C</td><td>2.12.40</td><td>5</td><td>2.12.41</td><td>A</td><td>2.12.42</td><td>179</td><td>2.12.43</td><td>B;C</td></tr><tr><td>2.12.44</td><td>C;D</td><td>2.12.45</td><td>A</td><td>2.12.46</td><td>C</td><td>2.12.47</td><td>D</td><td>2.13.1</td><td>N/A</td></tr><tr><td>2.13.2</td><td>N/A</td><td>2.13.3</td><td>N/A</td><td>2.13.4</td><td>C</td><td>2.13.5</td><td>A</td><td>2.13.6</td><td>C</td></tr></table>",
+        "bbox": [
+            63,
+            488,
+            934,
+            920
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/95e39bac579d69d9c124cef0f5c98ec94f13bb9ab9e502608c8104d21b738345.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            281,
+            932,
+            319
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/7a44f928d0d0e4d8df4d1076e64952734d805fcf17292a5dc2865383c57ea977.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.13.7</td><td>A</td></tr><tr><td>2.14.1</td><td>B;C;D</td></tr><tr><td>2.14.6</td><td>B</td></tr><tr><td>2.14.11</td><td>A</td></tr><tr><td>2.14.16</td><td>5</td></tr><tr><td>2.15.1</td><td>A</td></tr><tr><td>2.15.6</td><td>D</td></tr><tr><td>2.17.2</td><td>A</td></tr><tr><td>2.19.2</td><td>D</td></tr><tr><td>2.20.3</td><td>B</td></tr><tr><td>2.20.8</td><td>A</td></tr><tr><td>2.21.4</td><td>N/A</td></tr><tr><td>2.21.9</td><td>A</td></tr><tr><td>2.21.14</td><td>D</td></tr><tr><td>2.22.5</td><td>C</td></tr><tr><td>2.22.10</td><td>D</td></tr><tr><td>2.22.15</td><td>D</td></tr><tr><td>2.22.20</td><td>A;D</td></tr><tr><td>2.23.3</td><td>B</td></tr><tr><td>2.24.2</td><td>N/A</td></tr><tr><td>2.24.7</td><td>C</td></tr><tr><td>2.24.12</td><td>B</td></tr><tr><td>2.24.17</td><td>C</td></tr><tr><td>2.24.22</td><td>A</td></tr><tr><td>2.27.1</td><td>N/A</td></tr><tr><td>2.27.6</td><td>N/A</td></tr><tr><td>2.27.11</td><td>A</td></tr><tr><td>2.27.16</td><td>A</td></tr><tr><td>2.28.2</td><td>B</td></tr></table>",
+        "bbox": [
+            60,
+            62,
+            225,
+            694
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/b84ab7d37bfb6072ae32dd89858d9d9cdd21e23e0156f113f5663562e6a78395.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.13.8</td><td>B</td></tr><tr><td>2.14.2</td><td>C</td></tr><tr><td>2.14.7</td><td>D</td></tr><tr><td>2.14.12</td><td>D</td></tr><tr><td>2.14.17</td><td>D</td></tr><tr><td>2.15.2</td><td>C</td></tr><tr><td>2.16.1</td><td>B</td></tr><tr><td>2.17.3</td><td>D</td></tr><tr><td>2.19.3</td><td>A</td></tr><tr><td>2.20.4</td><td>N/A</td></tr><tr><td>2.20.9</td><td>6</td></tr><tr><td>2.21.5</td><td>A;D</td></tr><tr><td>2.21.10</td><td>N/A</td></tr><tr><td>2.22.1</td><td>A</td></tr><tr><td>2.22.6</td><td>N/A</td></tr><tr><td>2.22.11</td><td>C</td></tr><tr><td>2.22.16</td><td>B</td></tr><tr><td>2.22.21</td><td>A</td></tr><tr><td>2.23.4</td><td>D</td></tr><tr><td>2.24.3</td><td>N/A</td></tr><tr><td>2.24.8</td><td>D</td></tr><tr><td>2.24.13</td><td>C</td></tr><tr><td>2.24.18</td><td>D</td></tr><tr><td>2.25.1</td><td>8</td></tr><tr><td>2.27.2</td><td>A</td></tr><tr><td>2.27.7</td><td>B</td></tr><tr><td>2.27.12</td><td>B</td></tr><tr><td>2.27.17</td><td>B;D</td></tr><tr><td>2.29.1</td><td>C</td></tr></table>",
+        "bbox": [
+            240,
+            62,
+            406,
+            694
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/f02a63cbaa543e93ebe3a525f6779fbf1b76bca1596443fe122667777e7ec78a.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.13.9</td><td>D</td></tr><tr><td>2.14.3</td><td>B</td></tr><tr><td>2.14.8</td><td>B</td></tr><tr><td>2.14.13</td><td>7</td></tr><tr><td>2.14.18</td><td>9</td></tr><tr><td>2.15.3</td><td>B</td></tr><tr><td>2.16.2</td><td>C</td></tr><tr><td>2.18.1</td><td>A</td></tr><tr><td>2.19.4</td><td>D</td></tr><tr><td>2.20.5</td><td>B</td></tr><tr><td>2.21.1</td><td>10</td></tr><tr><td>2.21.6</td><td>N/A</td></tr><tr><td>2.21.11</td><td>X</td></tr><tr><td>2.22.2</td><td>N/A</td></tr><tr><td>2.22.7</td><td>B</td></tr><tr><td>2.22.12</td><td>B</td></tr><tr><td>2.22.17</td><td>C</td></tr><tr><td>2.22.22</td><td>A</td></tr><tr><td>2.23.5</td><td>B</td></tr><tr><td>2.24.4</td><td>N/A</td></tr><tr><td>2.24.9</td><td>B</td></tr><tr><td>2.24.14</td><td>C</td></tr><tr><td>2.24.19</td><td>A</td></tr><tr><td>2.25.2</td><td>10</td></tr><tr><td>2.27.3</td><td>N/A</td></tr><tr><td>2.27.8</td><td>B</td></tr><tr><td>2.27.13</td><td>B</td></tr><tr><td>2.27.18</td><td>C</td></tr></table>",
+        "bbox": [
+            423,
+            62,
+            574,
+            672
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/637744c84421fb209e97e243718b5ddf2086526fc4ada1fdbd328d6ad5f7a33b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.13.10</td><td>D</td></tr><tr><td>2.14.4</td><td>B</td></tr><tr><td>2.14.9</td><td>D</td></tr><tr><td>2.14.14</td><td>C</td></tr><tr><td>2.14.19</td><td>C</td></tr><tr><td>2.15.4</td><td>C</td></tr><tr><td>2.16.3</td><td>C</td></tr><tr><td>2.18.2</td><td>C</td></tr><tr><td>2.20.1</td><td>N/A</td></tr><tr><td>2.20.6</td><td>B</td></tr><tr><td>2.21.2</td><td>N/A</td></tr><tr><td>2.21.7</td><td>N/A</td></tr><tr><td>2.21.12</td><td>D</td></tr><tr><td>2.22.3</td><td>N/A</td></tr><tr><td>2.22.8</td><td>A</td></tr><tr><td>2.22.13</td><td>A</td></tr><tr><td>2.22.18</td><td>D</td></tr><tr><td>2.23.1</td><td>A</td></tr><tr><td>2.23.6</td><td>2</td></tr><tr><td>2.24.5</td><td>True</td></tr><tr><td>2.24.10</td><td>C</td></tr><tr><td>2.24.15</td><td>B</td></tr><tr><td>2.24.20</td><td>D</td></tr><tr><td>2.25.3</td><td>B</td></tr><tr><td>2.27.4</td><td>N/A</td></tr><tr><td>2.27.9</td><td>C</td></tr><tr><td>2.27.14</td><td>80</td></tr><tr><td>2.27.19</td><td>A;B;D</td></tr></table>",
+        "bbox": [
+            591,
+            62,
+            756,
+            672
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/63a024525b0949e284ef572832beb5e5ef82d1799134c3fc518b53c3cd89220a.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>2.13.11</td><td>A</td></tr><tr><td>2.14.5</td><td>D</td></tr><tr><td>2.14.10</td><td>C</td></tr><tr><td>2.14.15</td><td>8 : 8</td></tr><tr><td>2.14.20</td><td>D</td></tr><tr><td>2.15.5</td><td>A</td></tr><tr><td>2.17.1</td><td>C</td></tr><tr><td>2.19.1</td><td>N/A</td></tr><tr><td>2.20.2</td><td>A</td></tr><tr><td>2.20.7</td><td>9</td></tr><tr><td>2.21.3</td><td>A;D</td></tr><tr><td>2.21.8</td><td>N/A</td></tr><tr><td>2.21.13</td><td>D</td></tr><tr><td>2.22.4</td><td>N/A</td></tr><tr><td>2.22.9</td><td>N/A</td></tr><tr><td>2.22.14</td><td>A</td></tr><tr><td>2.22.19</td><td>1024</td></tr><tr><td>2.23.2</td><td>B</td></tr><tr><td>2.24.1</td><td>N/A</td></tr><tr><td>2.24.6</td><td>D</td></tr><tr><td>2.24.11</td><td>C</td></tr><tr><td>2.24.16</td><td>A</td></tr><tr><td>2.24.21</td><td>C</td></tr><tr><td>2.26.1</td><td>C</td></tr><tr><td>2.27.5</td><td>N/A</td></tr><tr><td>2.27.10</td><td>C</td></tr><tr><td>2.27.15</td><td>2.375</td></tr><tr><td>2.28.1</td><td>A</td></tr></table>",
+        "bbox": [
+            774,
+            62,
+            936,
+            672
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Webpage",
+        "text_level": 1,
+        "bbox": [
+            65,
+            99,
+            142,
+            112
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Stacks, Queues, Linked lists, Trees, Binary search trees, Binary heaps, Graphs.",
+        "bbox": [
+            65,
+            116,
+            648,
+            131
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/af740d0cd22e18a17258edef9f30ab2a832fdd702e13b9925db4eddc44c63e7b.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>0</td><td>1</td><td>3</td><td>2</td><td>0</td><td>0</td><td>2</td><td>2</td><td>4</td><td>2</td><td>0</td></tr><tr><td>2 Marks Count</td><td>1</td><td>1</td><td>1</td><td>2</td><td>1</td><td>2</td><td>3</td><td>1</td><td>1</td><td>0</td><td>0</td></tr><tr><td>Total Marks</td><td>2</td><td>3</td><td>5</td><td>6</td><td>2</td><td>4</td><td>8</td><td>4</td><td>6</td><td>2</td><td>2</td></tr></table>",
+        "bbox": [
+            70,
+            154,
+            952,
+            218
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the \"Programming and Data Structures: Data Structures\" chapter, a cornerstone of the GATE Computer Science syllabus. This subject is fundamental to understanding how data is organized, stored, and manipulated efficiently, which is crucial for designing optimal algorithms and software systems. For GATE CS, Data Structures typically carries a significant weightage, often contributing 8-12 marks, sometimes more, through a mix of Multiple Choice Questions (MCQs) and Numerical Answer Type (NAT) questions. Questions frequently test your understanding of core concepts, time and space complexity analysis of operations, properties of various data structures, and their applications in problem-solving. Expect problems involving tracing operations on specific data structures like AVL trees or heaps, analyzing the complexity of given code snippets, or determining the output of tree traversals.",
+        "bbox": [
+            58,
+            226,
+            926,
+            339
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            350,
+            295,
+            366
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "AVL Tree",
+        "text_level": 1,
+        "bbox": [
+            60,
+            381,
+            137,
+            395
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "An AVL tree is a self-balancing Binary Search Tree (BST) where the difference between the heights of the left and right subtrees for any node is at most 1. This strict balance ensures that the tree remains relatively balanced, preventing worst-case scenarios of skewed BSTs.",
+        "bbox": [
+            58,
+            410,
+            929,
+            453
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Balance Factor: For any node $N$ , $\\text{BalanceFactor}(N) = \\text{Height(RightSubtree}(N)) - \\text{Height(LeftSubtree}(N))$ . In an AVL tree, $\\text{BalanceFactor}(N) \\in \\{-1, 0, 1\\}$ .",
+            "- Rotations: When an insertion or deletion causes a node to become unbalanced (balance factor becomes $\\pm 2$ ), rotations are performed to restore balance. There are four types of rotations:"
+        ],
+        "bbox": [
+            72,
+            464,
+            889,
+            536
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. LL Rotation (Left-Left): Occurs when an insertion into the left subtree of the left child causes imbalance. A single right rotation is performed.",
+            "2. RR Rotation (Right-Right): Occurs when an insertion into the right subtree of the right child causes imbalance. A single left rotation is performed.",
+            "3. LR Rotation (Left-Right): Occurs when an insertion into the right subtree of the left child causes imbalance. A left rotation on the child, followed by a right rotation on the parent.",
+            "4. RL Rotation (Right-Left): Occurs when an insertion into the left subtree of the right child causes imbalance. A right rotation on the child, followed by a left rotation on the parent."
+        ],
+        "bbox": [
+            87,
+            536,
+            922,
+            647
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Height of an AVL Tree: For an AVL tree with $n$ nodes, its height $h$ is always $O(\\log n)$ . Specifically, $h < 1.44\\log_2(n + 2)$ .",
+            "- Time Complexity: Insertion, deletion, and search operations all take $O(\\log n)$ time in the worst case due to the balanced nature."
+        ],
+        "bbox": [
+            72,
+            648,
+            897,
+            705
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Incorrectly identifying the type of rotation needed, especially for LR and RL cases. Forgetting to update heights and balance factors after rotations. Tracing rotations correctly requires careful step-by-step analysis.",
+        "bbox": [
+            58,
+            717,
+            904,
+            747
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Practice tracing insertions/deletions and the subsequent rotations on small example AVL trees. Understand the pivot node and the child involved in the imbalance.",
+        "bbox": [
+            58,
+            749,
+            907,
+            779
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Abstract Data Type (ADT)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            792,
+            265,
+            807
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "An Abstract Data Type (ADT) is a mathematical model for data types, defining the data stored and the operations that can be performed on it, without specifying how these operations are implemented. It focuses on \"what\" an operation does rather than \"how\" it does it.",
+        "bbox": [
+            58,
+            821,
+            917,
+            864
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            72,
+            875,
+            211,
+            888
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Abstraction: Hides the internal implementation details from the user.",
+            "- Encapsulation: Bundles data and methods that operate on the data into a single unit."
+        ],
+        "bbox": [
+            95,
+            889,
+            737,
+            916
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\- Examples: Stack, Queue, List, Priority Queue, Map, Set are all ADTs. A data structure (e.g., array, linked list) is a",
+        "bbox": [
+            72,
+            916,
+            915,
+            931
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "3",
+        "bbox": [
+            70,
+            70,
+            85,
+            83
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Programming and DS: Data Structures (238)",
+        "bbox": [
+            287,
+            70,
+            662,
+            86
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-text content in the image. However, there is no textual content to extract or convert according to the given instructions.",
+        "bbox": [
+            862,
+            70,
+            926,
+            115
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "concrete implementation of an ADT.",
+        "bbox": [
+            85,
+            65,
+            351,
+            78
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Confusing an ADT with a data structure. An ADT is a logical concept, while a data structure is a physical implementation.",
+        "bbox": [
+            58,
+            90,
+            895,
+            118
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Identify the core operations and their logical behavior when asked to define or recognize an ADT.",
+        "bbox": [
+            58,
+            122,
+            865,
+            150
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Array",
+        "text_level": 1,
+        "bbox": [
+            60,
+            165,
+            109,
+            179
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "An array is a collection of elements of the same data type, stored in contiguous memory locations. Elements are accessed using an integer index.",
+        "bbox": [
+            58,
+            194,
+            875,
+            223
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Address Calculation (1D Array): For an array $A$ starting at BaseAddress, with elements of size $S$ , and lower bound $L_0$ :",
+        "bbox": [
+            72,
+            233,
+            899,
+            264
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (A [ i ]) = \\text {BaseAddress} + (i - L _ {0}) \\times S\n$$",
+        "text_format": "latex",
+        "bbox": [
+            319,
+            273,
+            704,
+            292
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "If $L_0 = 0$ , then $\\text{Address}(A[i]) = \\text{BaseAddress} + i \\times S$ .",
+        "bbox": [
+            84,
+            300,
+            529,
+            317
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Address Calculation (2D Array - Row-Major Order): For an array $A[R][C]$ (R rows, C columns), starting at BaseAddress, with element size $S$ , and lower bounds $L_{row}, L_{col}$ :",
+        "bbox": [
+            72,
+            317,
+            878,
+            347
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (A [ i ] [ j ]) = \\text {BaseAddress} + \\left((i - L _ {r o w}) \\times C + (j - L _ {c o l})\\right) \\times S\n$$",
+        "text_format": "latex",
+        "bbox": [
+            226,
+            356,
+            794,
+            376
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "If $L_{row} = 0, L_{col} = 0$ , then $\\text{Address}(A[i][j]) = \\text{BaseAddress} + (i \\times C + j) \\times S$ .",
+        "bbox": [
+            84,
+            384,
+            721,
+            401
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Address Calculation (2D Array - Column-Major Order): For an array $A[R][C]$ , starting at BaseAddress, with element size $S$ , and lower bounds $L_{row}, L_{col}$ :",
+        "bbox": [
+            72,
+            401,
+            907,
+            431
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {Address} (A [ i ] [ j ]) = \\text {BaseAddress} + ((j - L _ {c o l}) \\times R + (i - L _ {r o w})) \\times S\n$$",
+        "text_format": "latex",
+        "bbox": [
+            226,
+            440,
+            794,
+            459
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "If $L_{row} = 0, L_{col} = 0$ , then $\\text{Address}(A[i][j]) = \\text{BaseAddress} + (j \\times R + i) \\times S$ .",
+        "bbox": [
+            84,
+            467,
+            719,
+            484
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Time Complexity:",
+        "bbox": [
+            73,
+            484,
+            226,
+            497
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Accessing an element: $O(1)$",
+            "- Insertion/Deletion at end: $O(1)$ (if space available)",
+            "- Insertion/Deletion at beginning/middle: $O(n)$ (requires shifting elements)"
+        ],
+        "bbox": [
+            97,
+            497,
+            640,
+            543
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Off-by-one errors in index calculations, especially with non-zero lower bounds. Confusing row-major with column-major order.",
+        "bbox": [
+            58,
+            553,
+            927,
+            581
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Carefully apply the address calculation formulas. Understand the memory layout for multi-dimensional arrays.",
+        "bbox": [
+            58,
+            585,
+            907,
+            614
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Binary Heap",
+        "text_level": 1,
+        "bbox": [
+            60,
+            628,
+            161,
+            643
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A binary heap is a complete binary tree that satisfies the heap property: for a min-heap, every parent node's value is less than or equal to its children's values; for a max-heap, every parent node's value is greater than or equal to its children's values. Heaps are typically implemented using an array.",
+        "bbox": [
+            58,
+            657,
+            907,
+            700
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Array Representation (0-indexed):",
+        "bbox": [
+            73,
+            710,
+            354,
+            725
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Parent of node at index $i$ : $\\lfloor (i - 1) / 2 \\rfloor$",
+            "- Left child of node at index $i: 2i + 1$",
+            "- Right child of node at index $i: 2i + 2$"
+        ],
+        "bbox": [
+            97,
+            725,
+            389,
+            768
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Heap Properties:",
+        "bbox": [
+            73,
+            769,
+            221,
+            782
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Completeness: All levels are completely filled except possibly the last level, which is filled from left to right.",
+            "- Heap Property: (Min-heap or Max-heap)"
+        ],
+        "bbox": [
+            97,
+            782,
+            890,
+            809
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "\\- Time Complexity:",
+        "bbox": [
+            73,
+            809,
+            226,
+            824
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Insert: $O(\\log n)$ (heapify-up)",
+            "- Delete-min/max (extract-root): $O(\\log n)$ (heapify-down)",
+            "- Build Heap from an array of $n$ elements: $O(n)$",
+            "- Search: $O(n)$ (Heaps are not designed for efficient search of arbitrary elements)"
+        ],
+        "bbox": [
+            97,
+            824,
+            699,
+            885
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Violating the completeness property. Incorrectly applying heapify-up or heapify-down logic. Confusing min-heap and max-heap properties.",
+        "bbox": [
+            58,
+            895,
+            858,
+            923
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Trace heap operations (insert, delete) step-by-step. For building a heap, start from the last non-leaf node and perform heapify-down upwards.",
+        "bbox": [
+            58,
+            64,
+            926,
+            95
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Binary Search Tree (BST)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            106,
+            265,
+            122
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A Binary Search Tree (BST) is a binary tree where for every node, all values in its left subtree are less than the node's value, and all values in its right subtree are greater than the node's value. Duplicate values are typically not allowed or handled specifically (e.g., placed in the right subtree).",
+        "bbox": [
+            58,
+            136,
+            922,
+            180
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- BST Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            188,
+            215,
+            203
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Left subtree values < Root value",
+            "- Right subtree values > Root value",
+            "- Both left and right subtrees are also BSTs.",
+            "- Inorder traversal of a BST yields elements in sorted order."
+        ],
+        "bbox": [
+            97,
+            204,
+            534,
+            258
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "• Time Complexity (Average Case):",
+        "text_level": 1,
+        "bbox": [
+            73,
+            258,
+            351,
+            271
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Search, Insertion, Deletion: $O(\\log n)$",
+        "bbox": [
+            97,
+            273,
+            384,
+            288
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "• Time Complexity (Worst Case - Skewed Tree):",
+        "text_level": 1,
+        "bbox": [
+            73,
+            288,
+            448,
+            301
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "\\- Search, Insertion, Deletion: $O(n)$ (occurs when elements are inserted in sorted or reverse-sorted order, leading to a linked list-like structure)",
+        "bbox": [
+            95,
+            302,
+            922,
+            330
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Deletion Cases:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            331,
+            213,
+            343
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Node to be deleted is a leaf: Simply remove it.",
+            "2. Node has one child: Replace the node with its child.",
+            "3. Node has two children: Replace the node's value with its inorder predecessor (largest in left subtree) or inorder successor (smallest in right subtree), then delete the predecessor/successor node (which will have 0 or 1 child)."
+        ],
+        "bbox": [
+            87,
+            344,
+            922,
+            400
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Forgetting the worst-case $O(n)$ complexity for skewed trees. Incorrectly handling deletion of nodes with two children. Not understanding that inorder traversal is key to sorted output.",
+        "bbox": [
+            58,
+            412,
+            922,
+            441
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Practice constructing BSTs and performing deletions. Understand the recursive nature of BST operations.",
+        "bbox": [
+            58,
+            444,
+            926,
+            472
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Binary Tree",
+        "text_level": 1,
+        "bbox": [
+            60,
+            486,
+            156,
+            502
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A binary tree is a tree data structure in which each node has at most two children, referred to as the left child and the right child.",
+        "bbox": [
+            58,
+            515,
+            910,
+            545
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            555,
+            213,
+            568
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Full Binary Tree: Every node has either 0 or 2 children.",
+            "Complete Binary Tree: All levels are completely filled except possibly the last level, which is filled from left to right.",
+            "- Perfect Binary Tree: All internal nodes have two children, and all leaf nodes are at the same level. (A perfect binary tree is always full and complete).",
+            "- Skewed Binary Tree: All nodes have only one child (either left or right), resembling a linked list."
+        ],
+        "bbox": [
+            97,
+            568,
+            909,
+            652
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Formulas:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            653,
+            169,
+            665
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Maximum number of nodes at level k (root at level 0): $2^{k}$",
+            "• Maximum number of nodes in a binary tree of height h (max levels $h + 1$ ): $2^{h+1} - 1$",
+            "- Minimum height of a binary tree with $n$ nodes: $\\lceil \\log_2(n + 1) \\rceil - 1$ or $\\lfloor \\log_2 n \\rfloor$ (for complete binary tree)",
+            "- Number of leaf nodes $L$ and internal nodes $I$ in a full binary tree: $L = I + 1$"
+        ],
+        "bbox": [
+            97,
+            667,
+            865,
+            730
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Confusing the definitions of full, complete, and perfect binary trees. Miscalculating height or number of nodes.",
+        "bbox": [
+            58,
+            741,
+            926,
+            769
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Draw examples to visualize properties. Apply formulas carefully based on the definition of the tree type.",
+        "bbox": [
+            58,
+            773,
+            929,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Data Structures",
+        "text_level": 1,
+        "bbox": [
+            60,
+            815,
+            188,
+            830
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Data structures are specialized formats for organizing and storing data in a computer so that it can be accessed and modified efficiently. They provide a means to manage large amounts of data effectively for various applications.",
+        "bbox": [
+            58,
+            844,
+            907,
+            874
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Classification:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            884,
+            203,
+            897
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Primitive vs. Non-Primitive: Primitive (int, char, float), Non-Primitive (Arrays, Linked Lists, Trees, Graphs).",
+            "- Linear vs. Non-Linear: Linear (Arrays, Linked Lists, Stacks, Queues), Non-Linear (Trees, Graphs)."
+        ],
+        "bbox": [
+            95,
+            897,
+            892,
+            926
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Static vs. Dynamic: Static (fixed size at compile time, e.g., arrays), Dynamic (size can change at runtime, e.g., linked lists).",
+        "bbox": [
+            97,
+            64,
+            919,
+            92
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Importance: Choosing the right data structure is critical for optimal algorithm performance (time and space complexity).",
+        "bbox": [
+            72,
+            93,
+            865,
+            121
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Not understanding the trade-offs between different data structures (e.g., array vs. linked list for insertion/deletion).",
+        "bbox": [
+            58,
+            131,
+            889,
+            159
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Analyze problem requirements (e.g., frequent insertions, fast searches, memory constraints) to select the most appropriate data structure.",
+        "bbox": [
+            58,
+            163,
+            880,
+            192
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Hashing",
+        "text_level": 1,
+        "bbox": [
+            60,
+            206,
+            131,
+            220
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Hashing is a technique used to map keys to array indices (hash table slots) for efficient data storage and retrieval. A hash function $h(k)$ computes an index for a given key k.",
+        "bbox": [
+            58,
+            235,
+            905,
+            266
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Hash Functions:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            276,
+            218,
+            289
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Division Method: $h(k) = k \\pmod{m}$ , where $m$ is the size of the hash table (often a prime number not close to a power of 2).",
+            "- Multiplication Method: $h(k) = \\lfloor m(kA \\pmod{1}) \\rfloor$ , where $A$ is a constant $0 < A < 1$ (e.g., $A \\approx (\\sqrt{5} - 1)/2$ ).",
+            "- Mid-Square Method: Square the key, then extract some middle digits.",
+            "- Folding Method: Divide the key into parts, then combine them (e.g., add them)."
+        ],
+        "bbox": [
+            95,
+            290,
+            917,
+            378
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Collision Resolution Techniques: When two different keys map to the same index.",
+        "bbox": [
+            73,
+            378,
+            702,
+            391
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Chaining: Each hash table slot points to a linked list of all keys that hash to that slot.",
+        "bbox": [
+            97,
+            393,
+            729,
+            406
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Average case for search/insert/delete: $O(1 + \\alpha)$ , where $\\alpha$ is the load factor.",
+            "- Worst case: $O(n)$ if all keys hash to the same slot."
+        ],
+        "bbox": [
+            122,
+            407,
+            694,
+            435
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Open Addressing: All elements are stored directly in the hash table. When a collision occurs, probe for an alternative empty slot.",
+        "bbox": [
+            97,
+            437,
+            889,
+            464
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Linear Probing: $h(k, i) = (h'(k) + i) \\pmod{m}$ , where $i = 0, 1, 2, \\ldots$ . Suffers from primary clustering.",
+            "- Quadratic Probing: $h(k,i) = (h'(k) + c_1i + c_2i^2) \\pmod{m}$ . Reduces primary clustering but can suffer from secondary clustering.",
+            "- Double Hashing: $h(k, i) = (h_1(k) + i \\cdot h_2(k)) \\pmod{m}$ . Uses two hash functions to generate probe sequences, reducing clustering."
+        ],
+        "bbox": [
+            122,
+            465,
+            915,
+            539
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Load Factor $(\\alpha)$ : $\\alpha = n / m$ , where $n$ is the number of elements and $m$ is the table size.",
+        "bbox": [
+            72,
+            540,
+            732,
+            554
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For chaining: $\\alpha$ can be greater than 1.",
+            "- For open addressing: $\\alpha \\leq 1$ ."
+        ],
+        "bbox": [
+            97,
+            555,
+            391,
+            581
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Choosing a non-prime table size for division method. Incorrectly applying probing sequences. Understanding the difference between primary and secondary clustering.",
+        "bbox": [
+            58,
+            593,
+            878,
+            622
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Trace insertions and searches with given hash functions and collision resolution strategies. Calculate load factor and analyze performance implications.",
+        "bbox": [
+            58,
+            625,
+            878,
+            654
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Infix, Prefix, Postfix Notations",
+        "text_level": 1,
+        "bbox": [
+            60,
+            668,
+            297,
+            682
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "These are different ways to write arithmetic expressions, differing in the position of operators relative to their operands.",
+        "bbox": [
+            60,
+            695,
+            924,
+            712
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Infix Notation: Operator is between operands (e.g., $A + B$ ). This is the human-readable form.",
+        "bbox": [
+            72,
+            723,
+            776,
+            737
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Prefix Notation (Polish Notation): Operator precedes its operands (e.g., +AB).",
+        "bbox": [
+            72,
+            738,
+            682,
+            752
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Postfix Notation (Reverse Polish Notation): Operator follows its operands (e.g., $AB+$ ).",
+        "bbox": [
+            72,
+            752,
+            742,
+            767
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "\\- Properties: Prefix and Postfix notations do not require parentheses to define operator precedence or associativity, making them unambiguous for computer evaluation.",
+        "bbox": [
+            72,
+            767,
+            919,
+            794
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Conversion Rules:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            795,
+            235,
+            807
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Infix to Postfix/Prefix: Typically uses a stack. Operators are pushed onto the stack based on precedence and associativity. Operands are directly appended to the output.",
+            "- Evaluation of Postfix/Prefix: Also uses a stack. For postfix, operands are pushed; when an operator is encountered, pop two operands, perform the operation, and push the result. For prefix, scan from right to left."
+        ],
+        "bbox": [
+            97,
+            808,
+            917,
+            864
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls: Incorrectly handling operator precedence and associativity during conversions. Mistakes in stack operations (push/pop order).",
+        "bbox": [
+            58,
+            874,
+            904,
+            903
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Problem-Solving Techniques: Practice conversions using the stack-based algorithms. Remember operator",
+        "bbox": [
+            60,
+            906,
+            853,
+            922
+        ],
+        "page_idx": 11
+    }
+]

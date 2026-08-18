@@ -1,0 +1,4788 @@
+[
+    {
+        "type": "text",
+        "text": "A. 8,8",
+        "bbox": [
+            89,
+            68,
+            142,
+            83
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 120,8",
+        "bbox": [
+            285,
+            68,
+            354,
+            83
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 960,8",
+        "bbox": [
+            480,
+            68,
+            549,
+            84
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 960,120",
+        "bbox": [
+            673,
+            68,
+            761,
+            83
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 databases easy joins natural-join",
+        "bbox": [
+            87,
+            93,
+            329,
+            103
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            123
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.12.2 Joins: GATE CSE 2012 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            426,
+            147
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relations $A, B$ and $C$ :",
+        "bbox": [
+            85,
+            156,
+            421,
+            172
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/0070b6baae2496dd6cc60718dbc252acbe24525f72a2d2f48e78a76e19bdd6d9.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"3\">A</td></tr><tr><td>ID</td><td>Name</td><td>Age</td></tr><tr><td>12</td><td>Arun</td><td>60</td></tr><tr><td>15</td><td>Shreya</td><td>24</td></tr><tr><td>99</td><td>Rohit</td><td>11</td></tr></table>",
+        "bbox": [
+            208,
+            185,
+            806,
+            294
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/219077052c5be221991fbf27a5436627c3eb4915dc6cc7333b642cfcc31d346c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            931,
+            172
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "How many tuples does the result of the following relational algebra expression contain? Assume that the schema of $A \\cup B$ is the same as that of $A$ .",
+        "bbox": [
+            84,
+            302,
+            927,
+            332
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(A \\cup B) \\bowtie_ {A. I d > 4 0 \\lor C. I d <   1 5} C\n$$",
+        "text_format": "latex",
+        "bbox": [
+            393,
+            343,
+            623,
+            362
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 7",
+        "bbox": [
+            89,
+            374,
+            126,
+            387
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            374,
+            321,
+            387
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 5",
+        "bbox": [
+            480,
+            374,
+            515,
+            387
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 9",
+        "bbox": [
+            673,
+            374,
+            710,
+            387
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 databases joins normal",
+        "bbox": [
+            89,
+            397,
+            280,
+            408
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            414,
+            186,
+            429
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.12.3 Joins: GATE CSE 2014 | Set 2 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            77,
+            438,
+            478,
+            452
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider a join (relation algebra) between relations $r(R)$ and $s(S)$ using the nested loop method. There are 3 buffers each of size equal to disk block size, out of which one buffer is reserved for intermediate results. Assuming $\\text{size}(r(R)) < \\text{size}(s(S))$ , the join will have fewer number of disk block accesses if",
+        "bbox": [
+            84,
+            463,
+            878,
+            509
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9b5ee706acf94f5c5fc35ee3ef1ec2a320ada0491f0470ef4fafb5cfcfd6f9bb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            441,
+            931,
+            479
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. relation $r(R)$ is in the outer loop.",
+            "B. relation $s(S)$ is in the outer loop.",
+            "C. join selection factor between $r(R)$ and $s(S)$ is more than 0.5.",
+            "D. join selection factor between $r(R)$ and $s(S)$ is less than 0.5."
+        ],
+        "bbox": [
+            87,
+            519,
+            563,
+            580
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 databases normal joins",
+        "bbox": [
+            87,
+            605,
+            299,
+            615
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            621,
+            186,
+            635
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.12.4 Joins: GATE IT 2005 | Question: 82a",
+        "text_level": 1,
+        "bbox": [
+            77,
+            644,
+            416,
+            659
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A database table $T_{1}$ has 2000 records and occupies 80 disk blocks. Another table $T_{2}$ has 400 records and occupies 20 disk blocks. These two tables have to be joined as per a specified join condition that needs to be evaluated for every pair of records from these two tables. The memory buffer space available can hold one block of records for $T_{1}$ and one block of records for $T_{2}$ simultaneously at any point in time. No information available on either table.",
+        "bbox": [
+            84,
+            668,
+            878,
+            739
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/aefda53bd4faa3af948992f7435855fc773d2b7c2abd6752e579d11c20739644.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            647,
+            931,
+            685
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If Nested-loop join algorithm is employed to perform the join, with the most appropriate choice of table to be used in outer loop, the number of block accesses required for reading the data are",
+        "bbox": [
+            84,
+            743,
+            927,
+            771
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 800000",
+        "bbox": [
+            89,
+            785,
+            169,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 40080",
+        "bbox": [
+            285,
+            785,
+            354,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 32020",
+        "bbox": [
+            480,
+            785,
+            549,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 100",
+        "bbox": [
+            673,
+            785,
+            727,
+            799
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 databases normal joins",
+        "bbox": [
+            87,
+            809,
+            272,
+            820
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            826,
+            186,
+            840
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3.12.5 Joins: GATE IT 2005 | Question: 82b",
+        "text_level": 1,
+        "bbox": [
+            77,
+            850,
+            416,
+            864
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A database table $T_{1}$ has 2000 records and occupies 80 disk blocks. Another table $T_{2}$ has 400 records and occupies 20 disk blocks. These two tables have to be joined as per a specified join condition that needs to be evaluated for every pair of records from these two tables. The memory buffer space available can hold of",
+        "bbox": [
+            82,
+            872,
+            878,
+            918
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/f5f5001ebf920bbda96bffef50e493425e70343b9fd3429baf24863faedb390a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            852,
+            931,
+            890
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "one block of records for $T_{1}$ and one block of records for $T_{2}$ simultaneously at any point in time. No index is available on either table.",
+        "bbox": [
+            84,
+            65,
+            927,
+            93
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "If, instead of Nested-loop join, Block nested-loop join is used, again with the most appropriate choice of table in the outer loop, the reduction in number of block accesses required for reading the data will be",
+        "bbox": [
+            84,
+            97,
+            927,
+            125
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            89,
+            138,
+            126,
+            153
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 30400",
+        "bbox": [
+            285,
+            138,
+            354,
+            153
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 38400",
+        "bbox": [
+            480,
+            138,
+            549,
+            153
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 798400",
+        "bbox": [
+            673,
+            138,
+            752,
+            153
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 databases normal joins",
+        "bbox": [
+            87,
+            163,
+            272,
+            174
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            180,
+            181,
+            194
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.12.6 Joins: GATE IT 2006 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            77,
+            203,
+            406,
+            218
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the relations $r_1(\\mathrm{P}, \\mathrm{Q}, \\mathrm{R})$ and $r_2(\\mathrm{R}, \\mathrm{S}, \\mathrm{T})$ with primary keys $\\mathbf{P}$ and $\\mathbf{R}$ respectively. The relation $r_1$ contains 2000 tuples and $r_2$ contains 2500 tuples. The maximum size of the join $r_1 \\bowtie r_2$ is:",
+        "bbox": [
+            84,
+            226,
+            872,
+            258
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/9acdf0e8a7a8739b4cc1432f3225335ab174a8d3e67f1c369d7d4fdf211d5b57.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            206,
+            932,
+            244
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 2000",
+        "bbox": [
+            89,
+            271,
+            151,
+            283
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 2500",
+        "bbox": [
+            285,
+            271,
+            346,
+            285
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 4500",
+        "bbox": [
+            480,
+            271,
+            541,
+            285
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 5000",
+        "bbox": [
+            673,
+            271,
+            736,
+            285
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 databases joins natural-join normal",
+        "bbox": [
+            87,
+            295,
+            334,
+            305
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            312,
+            181,
+            326
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.12.7 Joins: GATE IT 2007 | Question: 68",
+        "text_level": 1,
+        "bbox": [
+            77,
+            334,
+            406,
+            349
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relation schemas :",
+        "bbox": [
+            85,
+            359,
+            389,
+            372
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/4937a87d2fdf92738396b44016659f85592c319bc6a317cbd7753560c5d1f6f9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            338,
+            932,
+            375
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- b-Schema = (b-name, b-city, assets)",
+            "- a-Schema = (a-num, b-name, bal)",
+            "- d-Schema = (c-name, a-number)"
+        ],
+        "bbox": [
+            97,
+            385,
+            379,
+            427
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Let branch, account and depositor be respectively instances of the above schemas. Assume that account and depositor relations are much bigger than the branch relation.",
+        "bbox": [
+            84,
+            438,
+            927,
+            466
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following query:",
+        "bbox": [
+            85,
+            470,
+            302,
+            484
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "$\\Pi_{\\mathrm{c - name}}$ ( $\\sigma_{\\mathrm{b - city}} =$ \"Agra\" $\\wedge$ bal $< 0$ (branch $\\bowtie$ (account $\\bowtie$ depositor)",
+        "bbox": [
+            85,
+            488,
+            557,
+            504
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following queries is the most efficient version of the above query ?",
+        "bbox": [
+            85,
+            508,
+            695,
+            523
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Pi_{\\mathrm{c - name}}$ ( $\\sigma_{\\mathrm{bal}} < 0$ ( $\\sigma_{\\mathrm{b - city}} =$ \"Agra\" branch $\\bowtie$ account) $\\bowtie$ depositor)",
+            "B. $\\Pi_{\\mathrm{c - name}}$ ( $\\sigma_{\\mathrm{b - city}} =$ \"Agra\" branch $\\bowtie$ ( $\\sigma_{\\mathrm{bal}} < 0$ account $\\bowtie$ depositor))",
+            "C. $\\Pi_{\\mathrm{c - name}}$ (( $\\sigma_{\\mathrm{b - city}} =$ \"Agra\" branch $\\bowtie$ $\\sigma_{\\mathrm{b - city}} =$ \"Agra\" $\\wedge$ bal $< 0$ account) $\\bowtie$ depositor)",
+            "D. $\\Pi_{\\mathrm{c - name}}$ ( $\\sigma_{\\mathrm{b - city} = \"Agra\"}$ branch $\\bowtie$ ( $\\sigma_{\\mathrm{b - city} = \"Agra\"} \\wedge \\text{bal} < 0$ account $\\bowtie$ depositor))"
+        ],
+        "bbox": [
+            87,
+            533,
+            690,
+            597
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 databases joins relational-algebra normal",
+        "bbox": [
+            87,
+            622,
+            357,
+            631
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            638,
+            181,
+            652
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.13",
+        "text_level": 1,
+        "bbox": [
+            67,
+            663,
+            104,
+            676
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Multivalued Dependency 4nf (1)",
+        "text_level": 1,
+        "bbox": [
+            393,
+            663,
+            645,
+            678
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.13.1 Multivalued Dependency 4nf: GATE IT 2007 | Question: 67",
+        "text_level": 1,
+        "bbox": [
+            77,
+            688,
+            584,
+            704
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Consider the following implications relating to functional and multivalued dependencies given below, which may or may not be correct.",
+        "bbox": [
+            84,
+            713,
+            875,
+            741
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/e82063f61879be91177dc6a310ace435f0a89b07ff775ff5317cb52d0d72bf88.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            691,
+            932,
+            729
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. if $A \\to \\to B$ and $A \\to \\to C$ then $A \\to BC$",
+            "ii. if $A\\to B$ and $A\\to C$ then $A\\to \\rightarrow BC$",
+            "iii. if $A\\to \\rightarrow BC$ and $A\\to B$ then $A\\to C$",
+            "iv. if $A\\to BC$ and $A\\to B$ then $A\\to \\to C$"
+        ],
+        "bbox": [
+            89,
+            751,
+            436,
+            809
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Exactly how many of the above implications are valid?",
+        "bbox": [
+            85,
+            821,
+            484,
+            837
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 0",
+        "bbox": [
+            89,
+            851,
+            126,
+            864
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 1",
+        "bbox": [
+            285,
+            851,
+            319,
+            864
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 2",
+        "bbox": [
+            480,
+            851,
+            515,
+            864
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 3",
+        "bbox": [
+            673,
+            851,
+            709,
+            864
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gateit-2007 databases database-normalization multivalued-dependency-4nf normal",
+        "bbox": [
+            87,
+            875,
+            478,
+            885
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            891,
+            181,
+            904
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.14",
+        "text_level": 1,
+        "bbox": [
+            68,
+            916,
+            104,
+            928
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Natural Join (3)",
+        "text_level": 1,
+        "bbox": [
+            455,
+            916,
+            581,
+            931
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "3.14.1 Natural Join: GATE CSE 2005 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            77,
+            76,
+            478,
+            91
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/67a7be1fe63e09ae475f5fbbce32e5ff4d6dedc4ab0a287999dce92a653f16d5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            80,
+            931,
+            117
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Let r be a relation instance with schema $R = (A, B, C, D)$ . We define $r_{1} = \\pi_{A,B,C}(R)$ and $r_{2} = \\pi_{A,D}(r)$ . Let $s = r_{1} * r_{2}$ where $*$ denotes natural join. Given that the decomposition of r into $r_{1}$ and $r_{2}$ is lossy, which one of the following is TRUE?",
+        "bbox": [
+            84,
+            100,
+            878,
+            144
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. $s \\subset r$",
+        "bbox": [
+            87,
+            157,
+            157,
+            172
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $r \\cup s = r$",
+        "bbox": [
+            284,
+            157,
+            379,
+            172
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. $r\\subset s$",
+        "bbox": [
+            478,
+            157,
+            546,
+            172
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $r * s = s$",
+        "bbox": [
+            673,
+            159,
+            764,
+            171
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 databases relational-algebra natural-join normal",
+        "bbox": [
+            87,
+            187,
+            393,
+            197
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            203,
+            188,
+            217
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.14.2 Natural Join: GATE CSE 2010 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            77,
+            226,
+            478,
+            239
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The following functional dependencies hold for relations $R(A, B, C)$ and $S(B, D, E)$ .",
+        "bbox": [
+            85,
+            250,
+            717,
+            268
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/b54bf98cb95bc9e4048dc72726a04c314a4fd6b7a8a8c52a5864360b77508a4b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            230,
+            931,
+            267
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $B \\to A$",
+            "• A → C"
+        ],
+        "bbox": [
+            97,
+            277,
+            176,
+            306
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The relation $R$ contains 200 tuples and the relation $S$ contains 100 tuples. What is the maximum number of tuples possible in the natural join $R \\bowtie S$ ?",
+        "bbox": [
+            84,
+            318,
+            927,
+            349
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 100",
+        "bbox": [
+            87,
+            362,
+            144,
+            376
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 200",
+        "bbox": [
+            285,
+            362,
+            337,
+            376
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 300",
+        "bbox": [
+            480,
+            362,
+            532,
+            376
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 2000",
+        "bbox": [
+            673,
+            362,
+            736,
+            376
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 databases normal natural-join",
+        "bbox": [
+            87,
+            385,
+            307,
+            396
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            402,
+            188,
+            416
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.14.3 Natural Join: GATE CSE 2015 | Set 2 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            77,
+            426,
+            531,
+            440
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/a587f870762493e7e78c51e5ed1bfa3921934017d31055c3c2f293afea0c19a6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            429,
+            931,
+            467
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider two relations $R_{1}(A,B)$ with the tuples $(1,5),(3,7)$ and $R_{2}(A,C) = (1,7),(4,9)$ .",
+        "bbox": [
+            84,
+            448,
+            769,
+            467
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Assume that $R(A, B, C)$ is the full natural outer join of $R_1$ and $R_2$ . Consider the following tuples of the form $(A, B, C)$ :",
+        "bbox": [
+            84,
+            470,
+            878,
+            501
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\na = (1, 5, n u l l), b = (1, n u l l, 7), c = (3, n u l l, 9), d = (4, 7, n u l l), e = (1, 5, 7),\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            504,
+            702,
+            522
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nf = (3, 7, n u l l), g = (4, n u l l, 9).\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            524,
+            344,
+            541
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is correct?",
+        "bbox": [
+            85,
+            543,
+            447,
+            558
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. R contains a, b, e, f, g but not c, d.",
+        "bbox": [
+            87,
+            567,
+            349,
+            583
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. $R$ contains all $a, b, c, d, e, f, g$ .",
+        "bbox": [
+            495,
+            567,
+            727,
+            583
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. R contains e, f, g but not a, b.",
+        "bbox": [
+            89,
+            583,
+            319,
+            597
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. $R$ contains $e$ but not $f, g$ .",
+        "bbox": [
+            495,
+            583,
+            692,
+            597
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set2 databases normal natural-join",
+        "bbox": [
+            87,
+            600,
+            327,
+            610
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            617,
+            188,
+            631
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.15",
+        "text_level": 1,
+        "bbox": [
+            67,
+            641,
+            105,
+            654
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Normal Forms (1)",
+        "text_level": 1,
+        "bbox": [
+            447,
+            641,
+            589,
+            656
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (11Q)",
+        "text_level": 1,
+        "bbox": [
+            70,
+            666,
+            270,
+            680
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.15.1 Normal Forms: GATE DA 2026 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            77,
+            694,
+            482,
+            709
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/28bbd563bb3c51666abce6eaf8f7ad2477e8f548cd8564fcca8a24045f228ca9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            697,
+            931,
+            735
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider an ER model with the entities E1 ( $A_{11}$ , $A_{12}$ , $A_{13}$ ) and E2 ( $A_{21}$ , $A_{22}$ , $A_{23}$ ), where, $A_{11}$ , $A_{12}$ , $A_{13}$ are the attributes of E1, and $A_{21}$ , $A_{22}$ , $A_{23}$ are the attributes of E2. Let $A_{22}$ be a multivalued attribute. $A_{11}$ and $A_{21}$ are the primary keys of E1 and E2, respectively.",
+        "bbox": [
+            84,
+            718,
+            875,
+            764
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Let R12 be a many-to-many relationship between E1 and E2. Participation of both E1 and E2 in R12 is total.",
+        "bbox": [
+            84,
+            776,
+            887,
+            792
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The minimum number of relations required to convert the ER model into relational model (assuming there is no other functional dependency) where each relation is in third normal form (3NF) is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            84,
+            805,
+            927,
+            834
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 databases er-diagram normal-forms numerical-answers two-marks",
+        "bbox": [
+            87,
+            853,
+            475,
+            863
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            869,
+            188,
+            883
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3.16",
+        "text_level": 1,
+        "bbox": [
+            68,
+            894,
+            104,
+            906
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Query (3)",
+        "text_level": 1,
+        "bbox": [
+            480,
+            893,
+            557,
+            908
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relational database schema:",
+        "bbox": [
+            85,
+            89,
+            460,
+            103
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- EMP (eno name, age)",
+            "- PROJ (pno name)",
+            "• INVOLVED (eno, pno)"
+        ],
+        "bbox": [
+            97,
+            114,
+            277,
+            157
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "EMP contains information about employees. PROJ about projects and involved about which employees involved in which projects. The underlined attributes are the primary keys for the respective relations.",
+        "bbox": [
+            84,
+            167,
+            924,
+            195
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "State in English (in not more than 15 words)",
+        "bbox": [
+            85,
+            199,
+            410,
+            214
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "What the following relational algebra expressions are designed to determine",
+        "bbox": [
+            85,
+            217,
+            642,
+            232
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. $\\Pi_{eno}(\\text{INVOLVED}) - \\Pi_{eno}((\\Pi_{eno}(\\text{INVOLVED}) \\times \\Pi_{pno}(\\text{PROJ})) - \\text{INVOLVED})$",
+            "ii. $\\Pi_{age}(\\mathrm{EMP}) - \\Pi_{age}(\\sigma_{E.age < Emp.age}((\\rho E(\\mathrm{EMP})\\times \\mathrm{EMP}))$"
+        ],
+        "bbox": [
+            92,
+            242,
+            769,
+            281
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(Note: $\\rho E(\\text{EMP})$ conceptually makes a copy of EMP and names it E ( $\\rho$ is called the rename operator))",
+        "bbox": [
+            85,
+            290,
+            853,
+            307
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gate1997 databases sql descriptive normal relational-algebra query",
+        "bbox": [
+            87,
+            331,
+            440,
+            340
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            347,
+            188,
+            362
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.16.2 Query: GATE DA 2026 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            371,
+            418,
+            385
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/5689441063a5a3fb46d9644324e33b9c88a7a1c8cd4d8cab7a5bb40c09abf0b9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            372,
+            932,
+            410
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider a table Employee(EmpID, TeamID), where the column EmpID (ID of an employee) is the primary key. The column TeamID denotes the team ID of the team of which the employee is a member. TeamID is a NOT NULL column.",
+        "bbox": [
+            84,
+            394,
+            873,
+            435
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We want to display the size of the team (denoted as TeamSize) in which each employee is a member by using SQL. As an example, the desired output for the given Employee table is also shown in tabular form.",
+        "bbox": [
+            84,
+            454,
+            922,
+            483
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which of the following is/are correct?",
+        "bbox": [
+            85,
+            496,
+            359,
+            510
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/0891be615a16bb0970135cbed694a9a9428b3835633224128e4b138413cf153b.jpg",
+        "table_caption": [
+            "Employee"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>EmpID</td><td>TeamID</td></tr><tr><td>1</td><td>8</td></tr><tr><td>2</td><td>8</td></tr><tr><td>3</td><td>8</td></tr><tr><td>4</td><td>7</td></tr><tr><td>5</td><td>7</td></tr><tr><td>6</td><td>9</td></tr></table>",
+        "bbox": [
+            423,
+            548,
+            594,
+            686
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/d41d6041b72939be4d3bab58b848a46bb683608edf8d06bf4c508ea2b0be3db7.jpg",
+        "table_caption": [
+            "Output"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>EmpID</td><td>TeamSize</td></tr><tr><td>1</td><td>3</td></tr><tr><td>2</td><td>3</td></tr><tr><td>3</td><td>3</td></tr><tr><td>4</td><td>2</td></tr><tr><td>5</td><td>2</td></tr><tr><td>6</td><td>1</td></tr></table>",
+        "bbox": [
+            416,
+            722,
+            598,
+            859
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A.",
+        "bbox": [
+            89,
+            871,
+            107,
+            883
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "SELECT E. EmpID, B. TeamSize",
+            "FROM Employee AS E, (SELECT TeamID, COUNT(TeamID) AS",
+            "TeamSize FROM Employee GROUP BY TeamID) AS B",
+            "WHERE E.TeamID = B.TeamID"
+        ],
+        "bbox": [
+            137,
+            872,
+            507,
+            916
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "3.16.1 Query: GATE CSE 1997 | Question: 76-b",
+        "bbox": [
+            78,
+            65,
+            445,
+            79
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual content that is not present in the image. However, there is no textual content to extract or convert according to the given instructions.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. SELECT A. EmpID, COUNT(B.TeamID) AS TeamSize\nFROM Employee AS A, Employee AS B\nWHERE A.TeamID = B.TeamID AND A. EmpID = B. EmpID\nGROUP BY A. EmpID",
+            "C. SELECT B. EmpID, B. TeamSize\nFROM (SELECT EmpID, COUNT(TeamID) AS TeamSize\nFROM Employee GROUP BY EmpID) AS B",
+            "D.\nSELECT A.EmplD, B.TeamSize\nFROM Employee AS A, (SELECT COUNT(TeamID) AS TeamSize FROM Employee GROUP BY TeamID) AS B\nWHERE A.TeamID = B.TeamID"
+        ],
+        "bbox": [
+            87,
+            66,
+            556,
+            216
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 databases sql query multiple-selects two-marks",
+        "bbox": [
+            87,
+            244,
+            400,
+            254
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            260,
+            186,
+            274
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.16.3 Query: GATE DA 2026 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            283,
+            420,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let Account be a relation as shown.",
+        "bbox": [
+            85,
+            307,
+            349,
+            321
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/62781aaaedf36cd69deb173ddf28437e61ecb5c00c1406377d2a705e71979658.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            286,
+            931,
+            323
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/12e3b87eb05fcd6083e42cbb2c2553b600f76d1ba367e146dc3ed3326c50f968.jpg",
+        "table_caption": [
+            "Account"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>AccNo</td><td>Balance</td></tr><tr><td>A1</td><td>5000</td></tr><tr><td>A2</td><td>5000</td></tr><tr><td>A3</td><td>10000</td></tr><tr><td>A4</td><td>15000</td></tr><tr><td>A5</td><td>18000</td></tr></table>",
+        "bbox": [
+            428,
+            359,
+            589,
+            477
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the given SQL query.",
+        "bbox": [
+            85,
+            486,
+            315,
+            502
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "SELECT AccNo FROM Account AS A",
+        "bbox": [
+            112,
+            511,
+            329,
+            521
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "WHERE (SELECT COUNT(\\*) FROM Account AS B",
+        "bbox": [
+            112,
+            522,
+            405,
+            532
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "WHERE A.Balance < B.Balance) >= (SELECT COUNT(\\*)",
+        "bbox": [
+            112,
+            533,
+            438,
+            543
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "FROM Account AS C WHERE A.Balance > C.Balance)",
+        "bbox": [
+            112,
+            543,
+            423,
+            554
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The number of rows returned by the SQL query is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            564,
+            638,
+            579
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateda-2026 databases sql query numerical-answers two-marks",
+        "bbox": [
+            87,
+            598,
+            410,
+            606
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            614,
+            186,
+            628
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.17",
+        "text_level": 1,
+        "bbox": [
+            68,
+            638,
+            105,
+            650
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Referential Integrity (6)",
+        "text_level": 1,
+        "bbox": [
+            426,
+            638,
+            611,
+            653
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Practice Test: Test 1 (7Q)",
+        "bbox": [
+            70,
+            662,
+            265,
+            676
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "3.17.1 Referential Integrity: GATE CSE 1997 | Question: 6.10, ISRO2016-54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            691,
+            660,
+            706
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Let $R(a, b, c)$ and $S(d, e, f)$ be two relations in which $d$ is the foreign key of $S$ that refers to the primary key of $R$ . Consider the following four operations $R$ and $S$",
+        "bbox": [
+            84,
+            714,
+            875,
+            745
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Insert into R",
+            "II. Insert into S",
+            "III. Delete from R",
+            "IV. Delete from S"
+        ],
+        "bbox": [
+            84,
+            756,
+            220,
+            827
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the following can cause violation of the referential integrity constraint above?",
+        "bbox": [
+            84,
+            839,
+            712,
+            853
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. Both I and IV",
+        "bbox": [
+            87,
+            868,
+            203,
+            881
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. Both II and III",
+        "bbox": [
+            285,
+            868,
+            401,
+            881
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. All of these",
+        "bbox": [
+            480,
+            868,
+            579,
+            881
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. None of these",
+        "bbox": [
+            673,
+            868,
+            794,
+            881
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gate1997 databases referential-integrity easy isro2016",
+        "bbox": [
+            87,
+            897,
+            364,
+            906
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            913,
+            186,
+            927
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/aa556d98b7e153fff379adbf52983743843891b900eb36e944426a49fd8a84a1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            694,
+            931,
+            731
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The following table has two attributes $A$ and $C$ where $A$ is the primary key and $C$ is the foreign key referencing $A$ with on-delete cascade.",
+        "bbox": [
+            84,
+            90,
+            875,
+            121
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/7494b56e1ed08bce663d7aecea9f6661a3eb332c8d2df1162b6eaa18f9d4f1b0.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>A</td><td>C</td></tr><tr><td>2</td><td>4</td></tr><tr><td>3</td><td>4</td></tr><tr><td>4</td><td>3</td></tr><tr><td>5</td><td>2</td></tr><tr><td>7</td><td>2</td></tr><tr><td>9</td><td>5</td></tr><tr><td>6</td><td>4</td></tr></table>",
+        "bbox": [
+            472,
+            131,
+            542,
+            289
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The set of all tuples that must be additionally deleted to preserve referential integrity when the tuple $(2, 4)$ is deleted is:",
+        "bbox": [
+            84,
+            300,
+            927,
+            328
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. (3,4) and (6,4)",
+        "bbox": [
+            87,
+            338,
+            225,
+            353
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. (5,2) and (7,2)",
+        "bbox": [
+            495,
+            338,
+            631,
+            353
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. $(5,2)$ , $(7,2)$ and $(9,5)$",
+        "bbox": [
+            90,
+            353,
+            272,
+            368
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. (3,4), (4,3) and (6,4)",
+        "bbox": [
+            497,
+            353,
+            675,
+            368
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 databases referential-integrity normal",
+        "bbox": [
+            87,
+            372,
+            341,
+            382
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            388,
+            188,
+            403
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.17.3 Referential Integrity: GATE CSE 2012 | Question: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            412,
+            537,
+            426
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Suppose $R_{1}(\\underline{A}, B)$ and $R_{2}(\\underline{C}, D)$ are two relation schemas. Let $r_{1}$ and $r_{2}$ be the corresponding relation instances. B is a foreign key that refers to C in $R_{2}$ . If data in $r_{1}$ and $r_{2}$ satisfy referential integrity constraints, which of the following is ALWAYS TRUE?",
+        "bbox": [
+            84,
+            435,
+            878,
+            480
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\prod_{B}(r_{1}) - \\prod_{C}(r_{2}) = \\varnothing$",
+            "B. $\\prod_{C}(r_{2})-\\prod_{B}(r_{1})=\\varnothing$",
+            "C. $\\prod_B(r_1) = \\prod_C(r_2)$",
+            "D. $\\prod_{B}(r_{1})-\\prod_{C}(r_{2})\\neq\\varnothing$"
+        ],
+        "bbox": [
+            87,
+            490,
+            302,
+            555
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 databases relational-algebra normal referential-integrity",
+        "bbox": [
+            87,
+            578,
+            426,
+            587
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            593,
+            188,
+            608
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.17.4 Referential Integrity: GATE CSE 2017 | Set 2 | Question: 19",
+        "text_level": 1,
+        "bbox": [
+            78,
+            618,
+            591,
+            631
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following tables T1 and T2.",
+        "bbox": [
+            85,
+            641,
+            393,
+            656
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/c24f461a4e54a0d728879ead14e3d7e39fa9276c6c9b159e51ff8675ef6355e5.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>P</td><td>Q</td></tr><tr><td>2</td><td>2</td></tr><tr><td>3</td><td>8</td></tr><tr><td>7</td><td>3</td></tr><tr><td>5</td><td>8</td></tr><tr><td>6</td><td>9</td></tr><tr><td>8</td><td>5</td></tr><tr><td>9</td><td>8</td></tr></table>",
+        "bbox": [
+            416,
+            668,
+            487,
+            836
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/47bcf5108b69e336cb12911608a9fa6133c73fe7c7c1134dfe5d6b42d92b2d06.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>R</td><td>S</td></tr><tr><td>2</td><td>2</td></tr><tr><td>8</td><td>3</td></tr><tr><td>3</td><td>2</td></tr><tr><td>9</td><td>7</td></tr><tr><td>5</td><td>7</td></tr><tr><td>7</td><td>2</td></tr></table>",
+        "bbox": [
+            527,
+            676,
+            600,
+            826
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/b2d86641323fb569d5544adadf2297d6b32781bfa811ed2d35441abdd96b04f4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            414,
+            932,
+            452
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/2a147796ae1121c266b1de587496535a67989e5362c43875324ed092e7f415dc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            619,
+            931,
+            657
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In table $T1$ P is the primary key and Q is the foreign key referencing R in table $T2$ with on-delete cascade and on-update cascade. In table $T2$ , R is the primary key and S is the foreign key referencing P in table $T1$ with on-delete set NULL and on-update cascade. In order to delete record $\\langle 3,8 \\rangle$ from the table $T1$ , the number of additional records that need to be deleted from table $T1$ is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            845,
+            929,
+            904
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "3.17.2 Referential Integrity: GATE CSE 2005 | Question: 76",
+        "bbox": [
+            78,
+            66,
+            539,
+            81
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and the OCR result is empty.",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3.17.5 Referential Integrity: GATE CSE 2021 | Set 2 | Question: 6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            581,
+            125
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements S1 and S2 about the relational data model:",
+        "bbox": [
+            85,
+            134,
+            657,
+            149
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/868186dfbf4b5755b2a1469f8fd6c06104df3c46c63235130a3c46d1b21d95c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            932,
+            150
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- S1: A relation scheme can have at most one foreign key.",
+            "- S2: A foreign key in a relation scheme $R$ cannot be used to refer to tuples of $R$ ."
+        ],
+        "bbox": [
+            97,
+            161,
+            690,
+            191
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following choices is correct?",
+        "bbox": [
+            85,
+            201,
+            423,
+            216
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Both $S1$ and $S2$ are true",
+            "C. $S1$ is false and $S2$ is true",
+            "gatecse-2021-set2 databases referential-integrity one-mark"
+        ],
+        "bbox": [
+            87,
+            226,
+            371,
+            268
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $S1$ is true and $S2$ is false",
+            "D. Both $S1$ and $S2$ are false"
+        ],
+        "bbox": [
+            495,
+            226,
+            695,
+            252
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            275,
+            186,
+            289
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.17.6 Referential Integrity: GATE DA 2026 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            78,
+            298,
+            527,
+            313
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/153001403445c96f30476ff38a4306075bbd55aa8c1ae57cfd8424cc539ea7a7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            301,
+            932,
+            339
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider two relations $r$ and $s$ defined on the relational schemas $R(A, B)$ and $S(E, C)$ , respectively. $A$ is the primary key of $R$ and $E$ is a foreign key of $S$ referencing $A$ in $R$ .",
+        "bbox": [
+            84,
+            321,
+            878,
+            353
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which of the following operations will NEVER violate the foreign key constraint?",
+        "bbox": [
+            85,
+            356,
+            692,
+            372
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Inserting records into relation r",
+            "C. Deleting records from relation r",
+            "gateda-2026 databases referential-integrity multiple-selects one-mark"
+        ],
+        "bbox": [
+            87,
+            382,
+            428,
+            423
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Deleting records from relation s",
+            "D. Inserting records into relation s"
+        ],
+        "bbox": [
+            495,
+            382,
+            734,
+            409
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            429,
+            186,
+            444
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.18",
+        "text_level": 1,
+        "bbox": [
+            68,
+            454,
+            105,
+            467
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Relational Algebra (33)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            454,
+            611,
+            469
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests:",
+        "bbox": [
+            70,
+            479,
+            194,
+            491
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Test 1 (15Q)",
+        "bbox": [
+            205,
+            480,
+            277,
+            491
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Test 2 (15Q)",
+        "bbox": [
+            292,
+            480,
+            366,
+            491
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Test 3 (15Q)",
+        "bbox": [
+            381,
+            480,
+            455,
+            491
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Test 4 (3Q)",
+        "bbox": [
+            472,
+            480,
+            539,
+            491
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.18.1 Relational Algebra: GATE CSE 1992 | Question: 13b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            508,
+            537,
+            522
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Suppose we have a database consisting of the following three relations:",
+        "bbox": [
+            85,
+            532,
+            611,
+            547
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/59e387351000dabb629b78428083f63ad150446d1e2d7eaa6197935244c58369.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            511,
+            932,
+            548
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/de76787df0410dea618ae82e011e05c04ff24b2dd7c5171d20ddaa1a88b91951.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>FREQUENTS</td><td>(CUSTOMER, HOTEL)</td></tr><tr><td>SERVES</td><td>(HOTEL, SNACKS)</td></tr><tr><td>LIKES</td><td>(CUSTOMER, SNACKS)</td></tr></table>",
+        "bbox": [
+            317,
+            557,
+            699,
+            619
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The first indicates the hotels each customer visits, the second tells which snacks each hotel serves and last indicates which snacks are liked by each customer. Express the following query in relational algebra:",
+        "bbox": [
+            84,
+            643,
+            929,
+            673
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Print the hotels the serve the snack that customer Rama likes.",
+        "bbox": [
+            85,
+            685,
+            539,
+            698
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gate1992 databases relational-algebra normal descriptive",
+        "bbox": [
+            87,
+            714,
+            374,
+            723
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            729,
+            186,
+            743
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.18.2 Relational Algebra: GATE CSE 1994 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            752,
+            527,
+            768
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relational schema:",
+        "bbox": [
+            85,
+            777,
+            389,
+            790
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/1dada58eab1bf9904130b8262d27c172417fb89976b5f4edb2bc2a5c0f62a487.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            756,
+            932,
+            793
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• COURSES (cno, cname)",
+            "• STUDENTS (rollno, sname, age, year)",
+            "- REGISTERED\\_FOR (cno, rollno)"
+        ],
+        "bbox": [
+            97,
+            802,
+            394,
+            845
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The underlined attributes indicate the primary keys for the relations. The ‘year’ attribute for the STUDENTS relation indicates the year in which the student is currently studying (First year, Second year etc.)",
+        "bbox": [
+            84,
+            855,
+            927,
+            884
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Write a relational algebra query to print the roll number of students who have registered for cno 322.",
+            "B. Write a SQL query to print the age and year of the youngest student in each year."
+        ],
+        "bbox": [
+            85,
+            894,
+            840,
+            928
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/153001403445c96f30476ff38a4306075bbd55aa8c1ae57cfd8424cc539ea7a7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            301,
+            932,
+            339
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2017-set2 databases numerical-answers referential-integrity normal",
+        "bbox": [
+            87,
+            71,
+            450,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "3.18.3 Relational Algebra: GATE CSE 1994 | Question: 3.8",
+        "text_level": 1,
+        "bbox": [
+            78,
+            128,
+            532,
+            142
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/836f57b18c2eafa966ef887913ea1667d9c4c02dcc419b176abfa53383bcbc14.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            131,
+            931,
+            168
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Give a relational algebra expression using only the minimum number of operators from $(\\cup, -)$ which is equivalent to $R \\cap S$ .",
+        "bbox": [
+            84,
+            153,
+            878,
+            182
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1994 databases relational-algebra normal descriptive",
+        "bbox": [
+            87,
+            197,
+            374,
+            206
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            213,
+            188,
+            226
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.18.4 Relational Algebra: GATE CSE 1995 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            236,
+            527,
+            250
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/ab2b147204eee1670062131587ee07ccbbd445ca6f3b5dc3015fe6c9fde6db19.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            239,
+            931,
+            276
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the relation scheme.",
+        "bbox": [
+            85,
+            261,
+            307,
+            274
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/810789e3c96726d7eee5daa555b456dd9d7780c746eaed1dc521085b399129c1.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>AUTHOR</td><td>(ANAME, INSTITUTION, ACITY, AGE)</td></tr><tr><td>PUBLISHER</td><td>(PNAME, PCITY)</td></tr><tr><td>BOOK</td><td>(TITLE, ANAME, PNAME)</td></tr></table>",
+        "bbox": [
+            242,
+            286,
+            776,
+            349
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Express the following queries using (one or more of) SELECT, PROJECT, JOIN and DIVIDE operations.",
+        "bbox": [
+            85,
+            358,
+            845,
+            372
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Get the names of all publishers.",
+            "B. Get values of all attributes of all authors who have published a book for the publisher with PNAME='TECHNICAL PUBLISHERS'.",
+            "C. Get the names of all authors who have published a book for any publisher located in Madras"
+        ],
+        "bbox": [
+            87,
+            384,
+            927,
+            448
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1995 databases relational-algebra normal descriptive",
+        "bbox": [
+            87,
+            473,
+            374,
+            484
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            490,
+            188,
+            505
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.18.5 Relational Algebra: GATE CSE 1996 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            514,
+            526,
+            528
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/3520a4afb1571d4366fe39e26c3b07dbb98db80cd2e53fe2761c10aea4e29802.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            516,
+            931,
+            554
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A library relational database system uses the following schema",
+        "bbox": [
+            85,
+            538,
+            546,
+            552
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- USERS (User#, User Name, Home Town)",
+            "• BOOKS (Book#, Book Title, Author Name)",
+            "• ISSUED (Book#, User#, Date)"
+        ],
+        "bbox": [
+            97,
+            562,
+            423,
+            605
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Explain in one English sentence, what each of the following relational algebra queries is designed to determine",
+        "bbox": [
+            85,
+            616,
+            890,
+            631
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. $\\sigma_{\\mathrm{User\\# = 6}}$ ( $\\pi_{\\mathrm{User\\# , Book Title}}$ ((USERS $\\bowtie$ ISSUED) $\\bowtie$ BOOKS))",
+            "b. $\\pi_{\\text{Author Name}}$ (BOOKS $\\bowtie$ $\\sigma_{\\text{Home Town=Delhi}}$ (USERS $\\bowtie$ ISSUED))"
+        ],
+        "bbox": [
+            89,
+            642,
+            630,
+            675
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gate1996 databases relational-algebra descriptive",
+        "bbox": [
+            87,
+            699,
+            332,
+            707
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            714,
+            188,
+            729
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "3.18.6 Relational Algebra: GATE CSE 1997 | Question: 76-a",
+        "text_level": 1,
+        "bbox": [
+            77,
+            738,
+            541,
+            752
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/51ddf16c59c9a4a598424a45aaefd3d9774bc18bf7ae459b0aabdc6536eb08f1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            741,
+            931,
+            779
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relational database schema:",
+        "bbox": [
+            85,
+            763,
+            460,
+            776
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- EMP (eno name, age)",
+            "- PROJ (pno name)",
+            "- INVOLVED (eno, pno)"
+        ],
+        "bbox": [
+            97,
+            788,
+            275,
+            830
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "EMP contains information about employees. PROJ about projects and involved about which employees involved in which projects. The underlined attributes are the primary keys for the respective relations.",
+        "bbox": [
+            84,
+            840,
+            924,
+            869
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "What is the relational algebra expression containing one or more of $\\{\\sigma,\\pi,\\times,\\rho,-\\}$ which is equivalent to SQL query.",
+        "bbox": [
+            84,
+            874,
+            927,
+            903
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "select eno from EMP|INVOLVED where EMP.eno=INVOLVED.eno and INVOLVED.pno=3",
+        "bbox": [
+            92,
+            910,
+            610,
+            923
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "gate1994 databases relational-algebra sql normal descriptive",
+        "bbox": [
+            87,
+            89,
+            401,
+            98
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            105,
+            188,
+            118
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            99,
+            186,
+            112
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.18.7 Relational Algebra: GATE CSE 1998 | Question: 1.33",
+        "text_level": 1,
+        "bbox": [
+            77,
+            122,
+            542,
+            137
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Given two union compatible relations $R_{1}(A,B)$ and $R_{2}(C,D)$ , what is the result of the operation $R_{1} \\bowtie_{A = C \\wedge B = D} R_{2}$ ?",
+        "bbox": [
+            85,
+            146,
+            875,
+            178
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a3a49c5b99321da10dafa5a73f1fe40e2017525ce2ef15b01a62e31e82cdb0c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            932,
+            163
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. $R_{1} \\cup R_{2}$",
+        "bbox": [
+            87,
+            188,
+            178,
+            206
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. $R_{1} \\times R_{2}$",
+        "bbox": [
+            285,
+            190,
+            373,
+            206
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. $R_{1}-R_{2}$",
+        "bbox": [
+            478,
+            190,
+            557,
+            206
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. $R_{1} \\cap R_{2}$",
+        "bbox": [
+            673,
+            190,
+            761,
+            206
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gate1998 normal relational-algebra",
+        "bbox": [
+            87,
+            219,
+            260,
+            229
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            235,
+            186,
+            249
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.18.8 Relational Algebra: GATE CSE 1998 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            77,
+            258,
+            527,
+            273
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relational database schemes:",
+        "bbox": [
+            85,
+            283,
+            470,
+            296
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/39a00984f3533ecb14ae8cc0678b81b3614e7570108fe5d4e97f519fd2be796e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            261,
+            932,
+            299
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• COURSES (Cno, Name)",
+            "- PRE\\_REQ(Cno, Pre\\_Cno)",
+            "• COMPLETED (Student\\_no, Cno)"
+        ],
+        "bbox": [
+            97,
+            308,
+            356,
+            351
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "COURSES gives the number and name of all the available courses.",
+        "bbox": [
+            85,
+            361,
+            581,
+            375
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "PRE\\_REQ gives the information about which courses are pre-requisites for a given course.",
+        "bbox": [
+            85,
+            378,
+            749,
+            394
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "COMPLETED indicates what courses have been completed by students",
+        "bbox": [
+            85,
+            397,
+            613,
+            412
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Express the following using relational algebra:",
+        "bbox": [
+            85,
+            415,
+            423,
+            429
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "List all the courses for which a student with Student\\_no 2310 has completed all the pre-requisites.",
+        "bbox": [
+            85,
+            434,
+            798,
+            448
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gate1998 databases relational-algebra normal descriptive",
+        "bbox": [
+            87,
+            467,
+            374,
+            477
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            483,
+            186,
+            497
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.18.9 Relational Algebra: GATE CSE 1999 | Question: 1.18, ISRO2016-53",
+        "text_level": 1,
+        "bbox": [
+            77,
+            507,
+            650,
+            521
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/8ccb12c56e53126dd8b662063ce3127c087774e72303c88ae5014dbeefea3ff4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            510,
+            932,
+            547
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the join of a relation R with a relation S. If R has m tuples and S has n tuples then the maximum and minimum sizes of the join respectively are",
+        "bbox": [
+            84,
+            530,
+            878,
+            560
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $m + n$ and 0",
+            "B. mn and 0",
+            "C. $m + n$ and $|m - n|$",
+            "D. mn and $m + n$"
+        ],
+        "bbox": [
+            89,
+            570,
+            253,
+            622
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gate1999 databases relational-algebra easy isro2016",
+        "bbox": [
+            87,
+            648,
+            354,
+            657
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            663,
+            186,
+            678
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.18.10 Relational Algebra: GATE CSE 2000 | Question: 1.23, ISRO2016-57",
+        "text_level": 1,
+        "bbox": [
+            77,
+            687,
+            660,
+            701
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/09564e2ac1d0f61819bbe1caa96faaa135537ac66e91f0b64f4e980325880dd3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            690,
+            932,
+            726
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Given the relations",
+        "bbox": [
+            85,
+            712,
+            226,
+            725
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- employee (name, salary, dept-no), and",
+            "- department (dept-no, dept-name, address),"
+        ],
+        "bbox": [
+            97,
+            737,
+            423,
+            764
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Which of the following queries cannot be expressed using the basic relational algebra operations $(\\sigma,\\pi,\\times,\\bowtie,\\cup,\\cap,-)$ ?",
+        "bbox": [
+            85,
+            776,
+            924,
+            808
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Department address of every employee",
+            "B. Employees whose name is the same as their department name",
+            "C. The sum of all employees' salaries",
+            "D. All employees of a given department"
+        ],
+        "bbox": [
+            87,
+            817,
+            574,
+            872
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            914,
+            186,
+            928
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "gate1997 databases sql relational-algebra descriptive",
+        "bbox": [
+            87,
+            83,
+            357,
+            93
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2000 databases relational-algebra easy isro2016",
+        "bbox": [
+            87,
+            897,
+            371,
+            908
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "3.18.11 Relational Algebra: GATE CSE 2001 | Question: 1.24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            66,
+            549,
+            81
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/e34fefd5b73a40a8e03153128998f9dde36271a34409ec4e7817ac76a645cd2e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            106
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Suppose the adjacency relation of vertices in a graph is represented in a table $\\operatorname{Adj}(X, Y)$ . Which of the following queries cannot be expressed by a relational algebra expression of constant length?",
+        "bbox": [
+            84,
+            90,
+            878,
+            119
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. List all vertices adjacent to a given vertex",
+            "B. List all vertices which have self loops",
+            "C. List all vertices which belong to cycles of less than three vertices",
+            "D. List all vertices reachable from a given vertex"
+        ],
+        "bbox": [
+            87,
+            130,
+            584,
+            186
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 databases relational-algebra normal",
+        "bbox": [
+            87,
+            212,
+            332,
+            222
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            228,
+            188,
+            243
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.18.12 Relational Algebra: GATE CSE 2001 | Question: 1.25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            252,
+            549,
+            266
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let $r$ and $s$ be two relations over the relation schemes $R$ and $S$ respectively, and let $A$ be an attribute in $R$ . The relational algebra expression $\\sigma_{A = a}(r \\bowtie s)$ is always equal to",
+        "bbox": [
+            85,
+            276,
+            875,
+            307
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/a6d28fd4c026264205d770e6682a8954bfc85fd3ac13fee1fb04b561bc3b481d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            254,
+            931,
+            292
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\sigma_{A=a}(r)$",
+            "C. $\\sigma_{A = a}(r) \\bowtie s$",
+            "gatecse-2001 databases relational-algebra"
+        ],
+        "bbox": [
+            87,
+            315,
+            290,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. r",
+            "D. None of the above"
+        ],
+        "bbox": [
+            495,
+            315,
+            645,
+            342
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            365,
+            188,
+            380
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.18.13 Relational Algebra: GATE CSE 2001 | Question: 21-a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            389,
+            549,
+            403
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider a relation examinee (regno, name, score), where regno is the primary key to score is a real number.",
+        "bbox": [
+            84,
+            413,
+            875,
+            440
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/c6cc1014e165e27be1e43b9e17b18edad4145d01c5a91763f3fc82e7d140b3c4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            391,
+            931,
+            429
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Write a relational algebra using $(\\Pi, \\sigma, \\rho, \\times)$ to find the list of names which appear more than once in examinee.",
+        "bbox": [
+            84,
+            454,
+            902,
+            471
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 databases normal descriptive relational-algebra",
+        "bbox": [
+            87,
+            484,
+            391,
+            494
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            500,
+            188,
+            515
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.18.14 Relational Algebra: GATE CSE 2002 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            524,
+            537,
+            538
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A university placement center maintains a relational database of companies that interview students on campus and make job offers to those successful in the interview. The schema of the database is given below:",
+        "bbox": [
+            84,
+            547,
+            878,
+            589
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/87144d535714fa87278c25de509f4ed73a9ee09dbe562ae79a8751ad413f7f89.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            526,
+            931,
+            564
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/2e02f5c638a5e0b2b10d4ba90eba67ebe78eccbed824a5cd6bcc3cd175d4c7b4.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>COMPANY(cname, clocation)</td><td>STUDENT(srollno, sname, sdegree)</td></tr><tr><td>INTERVIEW(cname, srollno, idate)</td><td>OFFER(cname, srollno, osalary)</td></tr></table>",
+        "bbox": [
+            188,
+            603,
+            816,
+            642
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The COMPANY relation gives the name and location of the company. The STUDENT relation gives the student's roll number, name and the degree program for which the student is registered in the university. The INTERVIEW relation gives the date on which a student is interviewed by a company. The OFFER relation gives the salary offered to a student who is successful in a company's interview. The key for each relation is indicated by the underlined attributes",
+        "bbox": [
+            84,
+            669,
+            927,
+            739
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "a. Write a relational algebra expressions (using only the operators $\\bowtie$ , $\\sigma$ , $\\pi$ , $\\cup$ , —) for the following queries.",
+        "bbox": [
+            87,
+            750,
+            882,
+            764
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. List the rollnumbers and names of students who attended at least one interview but did not receive any job offer.",
+            "ii. List the rollnumbers and names of students who went for interviews and received job offers from every company with which they interviewed."
+        ],
+        "bbox": [
+            115,
+            764,
+            927,
+            820
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "b. Write an SQL query to list, for each degree program in which more than five students were offered jobs, the name of the degree and the average offered salary of students in this degree program.",
+        "bbox": [
+            87,
+            821,
+            927,
+            850
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 databases normal descriptive relational-algebra sql",
+        "bbox": [
+            87,
+            875,
+            418,
+            885
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            891,
+            188,
+            904
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3.18.15 Relational Algebra: GATE CSE 2003 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            77,
+            65,
+            537,
+            79
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/6fcb0b1cbeb51f48ae741b64e73d53a2d3fc868841b7dad955dce43c4ef613ac.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following SQL query",
+        "bbox": [
+            85,
+            87,
+            334,
+            104
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Select distinct $a_{1}, a_{2}, \\ldots, a_{n}$",
+        "bbox": [
+            85,
+            106,
+            314,
+            123
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "from $r_1, r_2, \\ldots, r_m$",
+        "bbox": [
+            85,
+            125,
+            238,
+            141
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "where P",
+        "bbox": [
+            85,
+            144,
+            152,
+            157
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "For an arbitrary predicate P, this query is equivalent to which of the following relational algebra expressions?",
+        "bbox": [
+            85,
+            161,
+            875,
+            176
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\Pi_{a_{1},a_{2},\\ldots,a_{n}}\\sigma_{p}\\left(r_{1}\\times r_{2}\\times\\cdots\\times r_{m}\\right)$",
+            "B. $\\Pi_{a_1, a_2, \\ldots, a_n} \\sigma_p(r_1 \\bowtie r_2 \\bowtie \\cdots \\bowtie r_m)$",
+            "C. $\\Pi_{a_1, a_2, \\ldots, a_n} \\sigma_p(r_1 \\cup r_2 \\cup \\dots \\cup r_m)$",
+            "D. $\\Pi_{a_1, a_2, \\ldots, a_n} \\sigma_p(r_1 \\cap r_2 \\cap \\dots \\cap r_m)$"
+        ],
+        "bbox": [
+            87,
+            187,
+            394,
+            267
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 databases relational-algebra normal",
+        "bbox": [
+            87,
+            289,
+            332,
+            299
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            305,
+            188,
+            320
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.18.16 Relational Algebra: GATE CSE 2004 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            77,
+            328,
+            534,
+            343
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/fe8c71dbb453eef4b4e94019bff47606af93cb6b7cf32e0d42c9a580cdf23548.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            332,
+            931,
+            369
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the relation Student (name, sex, marks), where the primary key is shown underlined, pertaining to students in a class that has at least one boy and one girl. What does the following relational algebra expression produce? (Note: $\\rho$ is the rename operator).",
+        "bbox": [
+            84,
+            353,
+            878,
+            396
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\pi_{name}\\left\\{\\sigma_{sex=female}\\left(\\text{Student}\\right)\\right\\}-\\pi_{name}\\left(\\text{Student}\\bowtie_{(sex=female\\wedge x=male\\wedge marks\\leq m)}\\rho_{n,x,m}\\left(\\text{Student}\\right)\\right)$",
+        "bbox": [
+            85,
+            397,
+            842,
+            418
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. names of girl students with the highest marks",
+            "B. names of girl students with more marks than some boy student",
+            "C. names of girl students with marks not less than some boy student",
+            "D. names of girl students with more marks than all the boy students"
+        ],
+        "bbox": [
+            87,
+            426,
+            591,
+            483
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 databases relational-algebra normal",
+        "bbox": [
+            87,
+            508,
+            332,
+            517
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            524,
+            188,
+            538
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.18.17 Relational Algebra: GATE CSE 2007 | Question: 59",
+        "text_level": 1,
+        "bbox": [
+            77,
+            547,
+            537,
+            562
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/41b8b7bcf5a5c66f615d63177b741a96a90d3994ecbc640920122a513f126cc6.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            551,
+            931,
+            587
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Information about a collection of students is given by the relation studInfo(studId, name, sex). The relation enroll(studId, coursework) gives which student has enrolled for (or taken) what course(s). Assume that every course is taken by at least one male and at least one female student. What does the following relational algebra expression represent?",
+        "bbox": [
+            84,
+            572,
+            927,
+            631
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "$\\pi_{\\text{courseId}}\\left(\\left(\\pi_{\\text{studId}}\\left(\\sigma_{\\text{sex} = ' \\text{female'}}\\right.\\right.\\right.\\left.\\left.\\left(\\text{studInfo}\\right)\\right)\\times \\pi_{\\text{courseId}}\\left(\\text{enroll}\\right)\\right) - \\text{enroll}$",
+        "bbox": [
+            85,
+            634,
+            658,
+            652
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Courses in which all the female students are enrolled.",
+            "B. Courses in which a proper subset of female students are enrolled.",
+            "C. Courses in which only male students are enrolled.",
+            "D. None of the above"
+        ],
+        "bbox": [
+            87,
+            660,
+            591,
+            714
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 databases relational-algebra normal",
+        "bbox": [
+            87,
+            742,
+            332,
+            752
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            758,
+            188,
+            773
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "3.18.18 Relational Algebra: GATE CSE 2008 | Question: 68",
+        "text_level": 1,
+        "bbox": [
+            77,
+            782,
+            537,
+            796
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/d5fd6de69da369391384424bd11f9d9f8f91713a327f855ea0f733b50b703266.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            785,
+            931,
+            821
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let R and S be two relations with the following schema",
+        "bbox": [
+            85,
+            806,
+            487,
+            821
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nR (P, Q, R 1, R 2, R 3)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            824,
+            255,
+            842
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\nS (P, Q, S 1, S 2)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            87,
+            844,
+            218,
+            863
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "where $\\{P,Q\\}$ is the key for both schemas. Which of the following queries are equivalent?",
+        "bbox": [
+            84,
+            866,
+            746,
+            883
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $\\Pi_P(R \\bowtie S)$",
+            "II. $\\Pi_P(R) \\bowtie \\Pi_P(S)$"
+        ],
+        "bbox": [
+            90,
+            891,
+            257,
+            929
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "III. $\\Pi_{P}\\left(\\Pi_{P,Q}\\left(R\\right)\\cap\\Pi_{P,Q}\\left(S\\right)\\right)$",
+            "IV. $\\Pi_P(\\Pi_{P,Q}(R) - (\\Pi_{P,Q}(R) - \\Pi_{P,Q}(S)))$"
+        ],
+        "bbox": [
+            84,
+            64,
+            433,
+            103
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. Only I and II",
+        "bbox": [
+            89,
+            115,
+            198,
+            129
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. Only I and III",
+        "bbox": [
+            285,
+            115,
+            396,
+            130
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. Only I, II and III",
+        "bbox": [
+            478,
+            115,
+            608,
+            130
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. Only I, III and IV",
+        "bbox": [
+            673,
+            115,
+            808,
+            130
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 databases relational-algebra normal",
+        "bbox": [
+            87,
+            138,
+            332,
+            149
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            155,
+            186,
+            169
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.18.19 Relational Algebra: GATE CSE 2014 | Set 3 | Question: 21",
+        "text_level": 1,
+        "bbox": [
+            77,
+            179,
+            586,
+            193
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What is the optimized version of the relation algebra expression $\\pi_{A1}(\\pi_{A2}(\\sigma_{F1}(\\sigma_{F2}(r))))$ , where $A1, A2$ are sets of attributes in $r$ with $A1 \\subset A2$ and $F1, F2$ are Boolean expressions based on the attributes in $r$ ?",
+        "bbox": [
+            84,
+            203,
+            878,
+            233
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/0dc1783d840cbb86a8a9a3a09ce6f065f0eccc6c23423bb34f54e705aec37103.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            182,
+            931,
+            219
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\pi_{A1}(\\sigma_{(F1\\land F2)}(r))$",
+            "C. $\\pi_{A2}\\big(\\sigma_{(F1\\land F2)}(r)\\big)$"
+        ],
+        "bbox": [
+            89,
+            243,
+            235,
+            275
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 databases relational-algebra easy",
+        "bbox": [
+            87,
+            277,
+            342,
+            288
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $\\pi_{A1}(\\sigma_{(F1 \\lor F2)}(r))$",
+            "D. $\\pi_{A2}\\big(\\sigma_{(F1\\lor F2)}(r)\\big)$"
+        ],
+        "bbox": [
+            495,
+            243,
+            640,
+            275
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            294,
+            186,
+            308
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.18.20 Relational Algebra: GATE CSE 2014 | Set 3 | Question: 30",
+        "text_level": 1,
+        "bbox": [
+            77,
+            317,
+            589,
+            332
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the relational schema given below, where eld of the relation dependent is a foreign key referring to empld of the relation employee. Assume that every employee has at least one associated dependent in the dependent relation.",
+        "bbox": [
+            84,
+            340,
+            875,
+            383
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/ab0fae4ce74cfd5a439e295be27e73876a6cc2573e83d7332a44fe3ceebc41cd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            320,
+            931,
+            357
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- employee (empld, empName, empAge)",
+            "- dependent (depld, eld, depName, depAge)"
+        ],
+        "bbox": [
+            97,
+            394,
+            442,
+            423
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following relational algebra query:",
+        "bbox": [
+            85,
+            434,
+            433,
+            448
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\Pi_ {e m p I d} (e m p l o y e e) - \\Pi_ {e m p I d} (e m p l o y e e \\bowtie_ {(e m p I d = e I D) \\wedge (e m p A g e \\leq d e p A g e)} d e p e n d e n t)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            85,
+            452,
+            746,
+            471
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The above query evaluates to the set of emplds of employees whose age is greater than that of",
+        "bbox": [
+            85,
+            472,
+            784,
+            486
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. some dependent.",
+            "C. some of his/her dependents."
+        ],
+        "bbox": [
+            89,
+            497,
+            305,
+            524
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 databases relational-algebra normal",
+        "bbox": [
+            87,
+            529,
+            352,
+            538
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. all dependents.",
+            "D. all of his/her dependents."
+        ],
+        "bbox": [
+            495,
+            497,
+            690,
+            524
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            545,
+            186,
+            559
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.18.21 Relational Algebra: GATE CSE 2015 | Set 1 | Question: 7",
+        "text_level": 1,
+        "bbox": [
+            77,
+            568,
+            579,
+            583
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "SELECT operation in SQL is equivalent to",
+        "bbox": [
+            85,
+            592,
+            396,
+            606
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/9410dee4f9c3c57b244a626565ec55668a6a31f55a4f05e6101e28f7a63fbdad.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            571,
+            931,
+            609
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. The selection operation in relational algebra",
+            "B. The selection operation in relational algebra, except that SELECT in SQL retains duplicates",
+            "C. The projection operation in relational algebra",
+            "D. The projection operation in relational algebra, except that SELECT in SQL retains duplicates"
+        ],
+        "bbox": [
+            87,
+            617,
+            784,
+            674
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 databases sql relational-algebra easy",
+        "bbox": [
+            87,
+            699,
+            366,
+            709
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            714,
+            186,
+            729
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "3.18.22 Relational Algebra: GATE CSE 2017 | Set 1 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            77,
+            739,
+            589,
+            752
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider a database that has the relation schema CR(StudentName, CourseName). An instance of the schema CR is as given below.",
+        "bbox": [
+            84,
+            763,
+            875,
+            790
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/874d37e79ad35f95324d58dc1a3c8f5cb62927d7d68a8a844de56f922edaafba.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            742,
+            931,
+            779
+        ],
+        "page_idx": 11
+    }
+]

@@ -1,0 +1,4847 @@
+[
+    {
+        "type": "text",
+        "text": "5.22.3 Process: GATE CSE 2002 | Question: 2.21",
+        "text_level": 1,
+        "bbox": [
+            78,
+            90,
+            458,
+            103
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which combination of the following features will suffice to characterize an OS as a multi-programmed OS?",
+        "bbox": [
+            85,
+            112,
+            858,
+            128
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9ea71b6f9dfc214524aa1c7724da810c5c9da7a05860cbbfe6a7f76fb841b242.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            130
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. More than one program may be loaded into main memory at the same time for execution",
+            "b. If a program waits for certain events such as I/O, another program is immediately scheduled for execution",
+            "c. If the execution of a program terminates, another program is immediately scheduled for execution."
+        ],
+        "bbox": [
+            90,
+            138,
+            821,
+            176
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (a)",
+            "B. (a) and (b)",
+            "C. (a) and (c)",
+            "D. (a), (b) and (c)"
+        ],
+        "bbox": [
+            90,
+            188,
+            211,
+            239
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 operating-system normal process",
+        "bbox": [
+            87,
+            264,
+            319,
+            274
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            280,
+            189,
+            294
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.22.4 Process: GATE CSE 2023 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            304,
+            448,
+            318
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which one or more of the following need to be saved on a context switch from one thread (T1) of a process to another thread (T2) of the same process?",
+        "bbox": [
+            84,
+            328,
+            878,
+            359
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/6e28c179b604e4ade1b780544bd0696cc846c5360ff10fe658adb96badf8e869.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            307,
+            932,
+            344
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Page table base register",
+            "C. Program counter"
+        ],
+        "bbox": [
+            87,
+            369,
+            280,
+            395
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 operating-system process multiple-selects one-mark",
+        "bbox": [
+            87,
+            401,
+            410,
+            410
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Stack pointer",
+            "D. General purpose registers"
+        ],
+        "bbox": [
+            495,
+            369,
+            695,
+            396
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            416,
+            189,
+            429
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.22.5 Process: GATE IT 2006 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            440,
+            428,
+            454
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The process state transition diagram of an operating system is as given below. Which of the following must be FALSE about the above operating system?",
+        "bbox": [
+            84,
+            464,
+            658,
+            497
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/406104dea51204f44c0283c9aea70a8f3b9a983ebb00cb6f9abb67139090876a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            442,
+            932,
+            480
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/df511d2bd23f3fe5a9092ac8063eac6a951e7c93d6a30b8bf2be20640b5486a4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Start((\"Start\")) -->|Create a new process| Ready((\"Ready\"))\n  Ready -->|Schedule| Running((\"Running\"))\n  Running -->|Exit| Terminated((\"Terminated\"))\n  Running -->|Wait for I/O completion or resource released| Blocked((\"Blocked\"))\n  Blocked -->|I/O complete or resource released| Ready\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            295,
+            510,
+            722,
+            638
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. It is a multiprogrammed operating system",
+            "C. It uses non-preemptive scheduling"
+        ],
+        "bbox": [
+            89,
+            657,
+            352,
+            697
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 operating-system normal process",
+        "bbox": [
+            89,
+            701,
+            314,
+            711
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. It uses preemptive scheduling",
+            "D. It is a multi-user operating system"
+        ],
+        "bbox": [
+            495,
+            657,
+            747,
+            697
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            717,
+            189,
+            731
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.23",
+        "text_level": 1,
+        "bbox": [
+            68,
+            742,
+            105,
+            755
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Process Scheduling (49)",
+        "text_level": 1,
+        "bbox": [
+            420,
+            742,
+            618,
+            757
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Practice Tests: Test 1 (15Q) Test 2 (15Q) Test 3 (15Q) Test 4 (15Q) Test 5 (2Q)",
+        "bbox": [
+            70,
+            766,
+            633,
+            781
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.23.1 Process Scheduling: GATE CSE 1988 | Question: 2xa",
+        "text_level": 1,
+        "bbox": [
+            78,
+            795,
+            549,
+            809
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "State any undesirable characteristic of the following criteria for measuring performance of an operating system:",
+        "bbox": [
+            84,
+            819,
+            878,
+            847
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1d3dc587e8bd08ac31f4e03166a79602a6e69400ea7c868b1f8b06cd6ddd3a4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            798,
+            932,
+            834
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Turn around time",
+        "text_level": 1,
+        "bbox": [
+            85,
+            851,
+            226,
+            864
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1988 normal descriptive operating-system process-scheduling",
+        "bbox": [
+            87,
+            884,
+            410,
+            894
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            900,
+            189,
+            914
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            189,
+            80
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.23.2 Process Scheduling: GATE CSE 1988 | Question: 2xb",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            549,
+            79
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/0b0a53290d7bc708c7a398c1a0bb001d870459681de715e9063262c2dd08ec88.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "State any undesirable characteristic of the following criteria for measuring performance of an operating system:",
+        "bbox": [
+            84,
+            87,
+            875,
+            117
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Waiting time",
+        "text_level": 1,
+        "bbox": [
+            85,
+            121,
+            189,
+            135
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1988 normal descriptive operating-system process-scheduling",
+        "bbox": [
+            87,
+            154,
+            410,
+            163
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            169,
+            188,
+            184
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.23.3 Process Scheduling: GATE CSE 1990 | Question: 1-vi",
+        "text_level": 1,
+        "bbox": [
+            78,
+            193,
+            549,
+            207
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/bd3b5eb238b2b2341612b28dfe2885b39597f1f891374bfd432b747bf0274790.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            195,
+            931,
+            233
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The highest-response ratio next scheduling policy favours \\_\\_\\_\\_ jobs, but it also limits the waiting time of \\_\\_\\_\\_ jobs.",
+        "bbox": [
+            84,
+            217,
+            875,
+            247
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1990 operating-system process-scheduling fill-in-the-blanks",
+        "bbox": [
+            87,
+            260,
+            389,
+            270
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            276,
+            188,
+            290
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.23.4 Process Scheduling: GATE CSE 1993 | Question: 7.10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            299,
+            554,
+            314
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/8eddfbf738ad721b66a3e66d2c633c2d3e45ac663951daab14ab368e42efa529.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            302,
+            931,
+            340
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Assume that the following jobs are to be executed on a single processor system",
+        "bbox": [
+            85,
+            323,
+            673,
+            339
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/8da9c87972195758502f6b07eb122114bf7598fa38b84cf0050d24f7240624ed.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Job Id</td><td>CPU Burst Time</td></tr><tr><td>p</td><td>4</td></tr><tr><td>q</td><td>1</td></tr><tr><td>r</td><td>8</td></tr><tr><td>s</td><td>1</td></tr><tr><td>t</td><td>2</td></tr></table>",
+        "bbox": [
+            376,
+            349,
+            640,
+            467
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The jobs are assumed to have arrived at time $0^{+}$ and in the order $p, q, r, s, t$ . Calculate the departure time (completion time) for job $p$ if scheduling is round robin with time slice 1",
+        "bbox": [
+            84,
+            479,
+            929,
+            509
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 4",
+        "bbox": [
+            89,
+            522,
+            127,
+            536
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 10",
+        "bbox": [
+            285,
+            522,
+            329,
+            536
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 11",
+        "bbox": [
+            478,
+            522,
+            524,
+            536
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 12",
+        "bbox": [
+            673,
+            522,
+            719,
+            536
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "E. None of the above",
+        "bbox": [
+            89,
+            545,
+            240,
+            558
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1993 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            568,
+            351,
+            579
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            585,
+            188,
+            599
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.23.5 Process Scheduling: GATE CSE 1995 | Question: 1.15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            608,
+            554,
+            623
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/135ddbfe4c921573a542b4d168b498c0b538bba2b303549e4c216cb4bfbb0c5d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            611,
+            931,
+            649
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Which scheduling policy is most suitable for a time shared operating system?",
+        "bbox": [
+            85,
+            631,
+            648,
+            647
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. Shortest Job First",
+        "bbox": [
+            89,
+            657,
+            236,
+            669
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. Round Robin",
+        "bbox": [
+            495,
+            657,
+            610,
+            669
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. First Come First Serve",
+        "bbox": [
+            89,
+            669,
+            267,
+            682
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. Elevator",
+        "bbox": [
+            497,
+            669,
+            576,
+            682
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1995 operating-system process-scheduling easy",
+        "bbox": [
+            87,
+            688,
+            341,
+            699
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            705,
+            188,
+            719
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.23.6 Process Scheduling: GATE CSE 1995 | Question: 2.6",
+        "text_level": 1,
+        "bbox": [
+            78,
+            728,
+            544,
+            742
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/7538da946812b7dde4d7a57999228aada38de5e899109a3394f60406e2e401fe.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            731,
+            931,
+            768
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The sequence \\_\\_\\_\\_ is an optimal non-preemptive scheduling sequence for the following jobs which leaves the CPU idle for \\_\\_\\_\\_ unit(s) of time.",
+        "bbox": [
+            84,
+            752,
+            875,
+            781
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/648afc9523daacf4c69ecb9b29eaddc09d5c4905996857e8aa058c3cc2e94328.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Job</td><td>Arrival Time</td><td>Burst Time</td></tr><tr><td>1</td><td>0.0</td><td>9</td></tr><tr><td>2</td><td>0.6</td><td>5</td></tr><tr><td>3</td><td>1.0</td><td>1</td></tr></table>",
+        "bbox": [
+            363,
+            792,
+            653,
+            863
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. $\\{3,2,1\\},1$",
+        "bbox": [
+            89,
+            876,
+            191,
+            893
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. $\\{2,1,3\\},0$",
+        "bbox": [
+            285,
+            876,
+            386,
+            893
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. $\\{3,2,1\\},0$",
+        "bbox": [
+            480,
+            876,
+            581,
+            893
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. $\\{1,2,3\\},5$",
+        "bbox": [
+            673,
+            876,
+            774,
+            893
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gate1995 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            901,
+            351,
+            910
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.23.7 Process Scheduling: GATE CSE 1996 | Question: 2.20, ISRO2008-15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            665,
+            104
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/2e5a53f7da17c7e4dc864ca8a53350d6c930899ec354af8ae47e1a8e3a567524.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            129
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Four jobs to be executed on a single processor system arrive at time 0 in the order A, B, C, D. Their burst CPU time requirements are 4, 1, 8, 1 time units respectively. The completion time of A under round robin scheduling with time slice of one time unit is",
+        "bbox": [
+            84,
+            112,
+            878,
+            157
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 10",
+        "bbox": [
+            89,
+            171,
+            136,
+            185
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            172,
+            321,
+            185
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 8",
+        "bbox": [
+            480,
+            171,
+            515,
+            185
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 9",
+        "bbox": [
+            673,
+            172,
+            710,
+            185
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1996 operating-system process-scheduling normal isro2008",
+        "bbox": [
+            87,
+            195,
+            400,
+            205
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            212,
+            188,
+            226
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.23.8 Process Scheduling: GATE CSE 1998 | Question: 2.17, UGCNET-Dec2012-III: 43",
+        "text_level": 1,
+        "bbox": [
+            78,
+            235,
+            752,
+            250
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/17f7167e3a63e46508a2594f44d9a44ab7dd8bbefd346519add143b7d2f10a7d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            238,
+            932,
+            276
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider $n$ processes sharing the CPU in a round-robin fashion. Assuming that each process switch takes $s$ seconds, what must be the quantum size $q$ such that the overhead resulting from process switching is minimized but at the same time each process is guaranteed to get its turn at the CPU at least every $t$ seconds?",
+        "bbox": [
+            84,
+            258,
+            897,
+            302
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $q \\leq \\frac{t - ns}{n - 1}$",
+            "C. $q\\leq \\frac{t - ns}{n + 1}$"
+        ],
+        "bbox": [
+            89,
+            312,
+            179,
+            347
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $q \\geq \\frac{t - ns}{n - 1}$",
+            "D. $q \\geq \\frac{t - ns}{n + 1}$"
+        ],
+        "bbox": [
+            495,
+            312,
+            584,
+            347
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1998 operating-system process-scheduling normal ugcnetcse-dec2012-paper3",
+        "bbox": [
+            87,
+            351,
+            473,
+            359
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            366,
+            188,
+            381
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.23.9 Process Scheduling: GATE CSE 1998 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            390,
+            539,
+            404
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/284ab676581571004a08d0a6b2d7c4bdf4d48fd1552a8c253791080e5bcd79cb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            393,
+            932,
+            429
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. Four jobs are waiting to be run. Their expected run times are 6, 3, 5 and $x$ . In what order should they be run to minimize the average response time?",
+            "b. Write a concurrent program using par begin-par end to represent the precedence graph shown below."
+        ],
+        "bbox": [
+            87,
+            435,
+            927,
+            479
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/0105e330967aff66c8cbbd147f03739cf1cc9192917c56155ca2e85c9fc44083.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph TD\n  S1[\"S1\"] --> S2[\"S2\"]\n  S1 --> S3[\"S3\"]\n  S1 --> S4[\"S4\"]\n  S1 --> S5[\"S5\"]\n  S2 --> S4\n  S3 --> S5\n  S4 --> S5\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            447,
+            495,
+            571,
+            606
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1998 operating-system process-scheduling descriptive",
+        "bbox": [
+            87,
+            631,
+            366,
+            642
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            649,
+            188,
+            663
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.23.10 Process Scheduling: GATE CSE 1998 | Question: 7-b",
+        "text_level": 1,
+        "bbox": [
+            78,
+            672,
+            556,
+            686
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/4dade77ed9c8b7a4bb95a50ddec3dbc70543814fde584f8924260e4a4ea8c24c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            675,
+            932,
+            712
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "In a computer system where the ‘best-fit’ algorithm is used for allocating ‘jobs’ to ‘memory partitions’, the following situation was encountered:",
+        "bbox": [
+            84,
+            695,
+            875,
+            724
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/539399414384b3e4620bf25b87ae6824787629b06d23a7c2436bf1c59d39dd4b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Partitions size in KB</td><td>4K 8K 20K 2K</td></tr><tr><td>Job sizes in KB</td><td>2K 14K 3K 6K 6K 10K 20K 2K</td></tr><tr><td>Time for execution</td><td>4 10 2 1 4 1 8 6</td></tr></table>",
+        "bbox": [
+            250,
+            736,
+            766,
+            796
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "When will the 20K job complete?",
+        "bbox": [
+            85,
+            805,
+            337,
+            821
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gate1998 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            834,
+            351,
+            844
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            851,
+            188,
+            865
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.23.11 Process Scheduling: GATE CSE 2002 | Question: 1.22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            874,
+            564,
+            889
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Which of the following scheduling algorithms is non-preemptive?",
+        "bbox": [
+            85,
+            897,
+            557,
+            913
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/2dfb0601f78035594c806bfdcf0d3cd9fa2a42f2fcf23800b8c6de8cfdce750c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            877,
+            932,
+            915
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Round Robin",
+            "C. Multilevel Queue Scheduling"
+        ],
+        "bbox": [
+            89,
+            65,
+            307,
+            92
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. First-In First-Out",
+            "D. Multilevel Queue Scheduling with Feedback"
+        ],
+        "bbox": [
+            495,
+            65,
+            759,
+            103
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 operating-system process-scheduling easy",
+        "bbox": [
+            87,
+            110,
+            357,
+            119
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            125,
+            181,
+            140
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.23.12 Process Scheduling: GATE CSE 2003 | Question: 77",
+        "text_level": 1,
+        "bbox": [
+            78,
+            149,
+            549,
+            163
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A uni-processor computer system only has two processes, both of which alternate 10 ms CPU bursts with 90 ms I/O bursts. Both the processes were created at nearly the same time. The I/O of both processes can proceed in parallel. Which of the following scheduling strategies will result in the least CPU utilization (over period of time) for this system?",
+        "bbox": [
+            82,
+            172,
+            875,
+            232
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/a20ae31431aa0ec7cf6fec236850bac34094c8493f1b0bf45a14c63945be1ad7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            152,
+            931,
+            188
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. First come first served scheduling",
+            "B. Shortest remaining time first scheduling",
+            "C. Static priority scheduling with different priorities for the two processes",
+            "D. Round robin scheduling with a time quantum of 5 ms"
+        ],
+        "bbox": [
+            87,
+            243,
+            616,
+            299
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            325,
+            366,
+            334
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            340,
+            181,
+            355
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.23.13 Process Scheduling: GATE CSE 2004 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            365,
+            549,
+            378
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the following set of processes, with the arrival times and the CPU-burst times gives in milliseconds.",
+        "bbox": [
+            85,
+            388,
+            875,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/07862d497819ec5db435a34c71bc4128d5866663990677413ffa16455a380b2d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            366,
+            931,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/f8f66055e77834c027a3bbc8b252f05ea6503c3e94401a72bd1bb26ed0030ec3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Arrival Time</td><td>Burst Time</td></tr><tr><td>P1</td><td>0</td><td>5</td></tr><tr><td>P2</td><td>1</td><td>3</td></tr><tr><td>P3</td><td>2</td><td>3</td></tr><tr><td>P4</td><td>4</td><td>1</td></tr></table>",
+        "bbox": [
+            347,
+            415,
+            668,
+            504
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "What is the average turnaround time for these processes with the preemptive shortest remaining processing time first (SRPT) algorithm?",
+        "bbox": [
+            84,
+            513,
+            927,
+            542
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 5.50",
+        "bbox": [
+            89,
+            555,
+            147,
+            568
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 5.75",
+        "bbox": [
+            285,
+            555,
+            342,
+            568
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 6.00",
+        "bbox": [
+            480,
+            555,
+            537,
+            568
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 6.25",
+        "bbox": [
+            675,
+            555,
+            732,
+            568
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            579,
+            366,
+            589
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            596,
+            181,
+            610
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.23.14 Process Scheduling: GATE CSE 2006 | Question: 06, ISRO2009-14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            619,
+            658,
+            634
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider three CPU-intensive processes, which require 10, 20 and 30 time units and arrive at times 0, 2 and 6, respectively. How many context switches are needed if the operating system implements a shortest remaining time first scheduling algorithm? Do not count the context switches at time zero and at the end.",
+        "bbox": [
+            84,
+            643,
+            878,
+            686
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/0c2d562f90d44ef92505f8894617100e400ea9bc2984be49b411bfe9353e520e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            622,
+            931,
+            659
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 1",
+        "bbox": [
+            89,
+            700,
+            126,
+            713
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 2",
+        "bbox": [
+            285,
+            700,
+            321,
+            713
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 3",
+        "bbox": [
+            480,
+            700,
+            515,
+            713
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 4",
+        "bbox": [
+            675,
+            700,
+            710,
+            713
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 operating-system process-scheduling normal isro2009",
+        "bbox": [
+            87,
+            725,
+            416,
+            733
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            739,
+            188,
+            754
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.23.15 Process Scheduling: GATE CSE 2006 | Question: 64",
+        "text_level": 1,
+        "bbox": [
+            78,
+            764,
+            549,
+            777
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider three processes (process id 0, 1, 2 respectively) with compute time bursts 2, 4 and 8 time units. All processes arrive at time zero. Consider the longest remaining time first (LRTF) scheduling algorithm. In LRTF ties are broken by giving priority to the process with the lowest process id. The average turn around tim",
+        "bbox": [
+            84,
+            788,
+            878,
+            831
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/6416dbbd4383a00c07fdf2b10c7ff9010499314b000ff7401631c33170b538d5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            766,
+            931,
+            804
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. 13 units",
+        "bbox": [
+            89,
+            844,
+            169,
+            858
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. 14 units",
+        "bbox": [
+            285,
+            845,
+            364,
+            858
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. 15 units",
+        "bbox": [
+            480,
+            845,
+            559,
+            858
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. 16 units",
+        "bbox": [
+            675,
+            845,
+            754,
+            858
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            869,
+            366,
+            878
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            885,
+            188,
+            899
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.23.16 Process Scheduling: GATE CSE 2006 | Question: 65",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            549,
+            79
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/c5300b1f88050eedf96cb3cc46b30745e6f178d14f33af11bd4d7f5775f1e5f1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider three processes, all arriving at time zero, with total execution time of 10, 20 and 30 units, respectively. Each process spends the first 20% of execution time doing I/O, the next 70% of time doing",
+        "bbox": [
+            84,
+            89,
+            878,
+            119
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "computation, and the last 10% of time doing I/O again. The operating system uses a shortest remaining compute time first scheduling algorithm and schedules a new process either when the running process gets blocked on I/O or when the running process finishes its compute burst. Assume that all I/O operations can be overlapped as much as possible. For what percentage of time does the CPU remain idle?",
+        "bbox": [
+            84,
+            119,
+            927,
+            176
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 0%",
+        "bbox": [
+            89,
+            188,
+            142,
+            203
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 10.6%",
+        "bbox": [
+            285,
+            188,
+            359,
+            203
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 30.0%",
+        "bbox": [
+            480,
+            188,
+            552,
+            203
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 89.4%",
+        "bbox": [
+            673,
+            188,
+            747,
+            203
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            214,
+            366,
+            223
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            230,
+            186,
+            244
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.23.17 Process Scheduling: GATE CSE 2007 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            78,
+            254,
+            549,
+            268
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Group 1 contains some CPU scheduling algorithms and Group 2 contains some applications. Match entries in Group 1 to entries in Group 2.",
+        "bbox": [
+            84,
+            277,
+            875,
+            306
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/d60482f5723853e3cb410196787497f95c2ae8783bebf79a2680c50c64c00615.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">Group I</td><td colspan=\"2\">Group II</td></tr><tr><td>(P)</td><td>Gang Scheduling</td><td>(1)</td><td>Guaranteed Scheduling</td></tr><tr><td>(Q)</td><td>Rate Monotonic Scheduling</td><td>(2)</td><td>Real-time Scheduling</td></tr><tr><td>(R)</td><td>Fair Share Scheduling</td><td>(3)</td><td>Thread Scheduling</td></tr></table>",
+        "bbox": [
+            223,
+            317,
+            793,
+            399
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $P - 3; Q - 2; R - 1$",
+        "bbox": [
+            87,
+            410,
+            265,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $P - 1; Q - 2; R - 3$",
+        "bbox": [
+            285,
+            410,
+            460,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $P - 2;Q - 3;R - 1$",
+        "bbox": [
+            480,
+            410,
+            653,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $P - 1; Q - 3; R - 2$",
+        "bbox": [
+            673,
+            410,
+            850,
+            428
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            435,
+            366,
+            446
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            453,
+            186,
+            467
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.23.18 Process Scheduling: GATE CSE 2007 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            476,
+            549,
+            491
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "An operating system used Shortest Remaining System Time first (SRT) process scheduling algorithm. Consider the arrival times and execution times for the following processes:",
+        "bbox": [
+            84,
+            500,
+            878,
+            529
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/f6a0ed9747d95143574641024bd34a53ea46470b030e923696d25c2a0e52498e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Execution Time</td><td>Arrival Time</td></tr><tr><td>P1</td><td>20</td><td>0</td></tr><tr><td>P2</td><td>25</td><td>15</td></tr><tr><td>P3</td><td>10</td><td>30</td></tr><tr><td>P4</td><td>15</td><td>45</td></tr></table>",
+        "bbox": [
+            329,
+            540,
+            687,
+            629
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "What is the total waiting time for process P2 ?",
+        "bbox": [
+            85,
+            638,
+            426,
+            654
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 5",
+        "bbox": [
+            89,
+            667,
+            126,
+            681
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 15",
+        "bbox": [
+            285,
+            667,
+            329,
+            681
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 40",
+        "bbox": [
+            480,
+            667,
+            522,
+            681
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 55",
+        "bbox": [
+            673,
+            667,
+            719,
+            681
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            692,
+            366,
+            701
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            707,
+            186,
+            722
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.23.19 Process Scheduling: GATE CSE 2009 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            731,
+            549,
+            745
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In the following process state transition diagram for a uniprocessor system, assume that there are always some processes in the ready state:",
+        "bbox": [
+            84,
+            755,
+            875,
+            783
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/e2042cca94bc1e4e72167a8427267c807d09a13c47857e70c5ea9cba1d2a9bcf.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Start[\"Start\"] -->|A| Ready[\"Ready\"]\n  Ready -->|B| Running[\"Running\"]\n  Ready -->|C| Running\n  Running -->|D| Terminated[\"Terminated\"]\n  Running -->|F| Blocked[\"Blocked\"]\n  Blocked -->|E| Ready\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            287,
+            795,
+            729,
+            916
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/889ea3e91858838eea263d6cef6965620cfb51f3b7086813655cd508d53cea62.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            256,
+            931,
+            294
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/1fe065f8226fa2e314f523b618ac36dde17bb50aad18f0b8880653c8e7053142.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            478,
+            931,
+            517
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/d1c46411cfa43c16be1fb96529c601015eb7f2f565636b1f3b0577442f7d6394.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            733,
+            931,
+            771
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Now consider the following statements:",
+        "bbox": [
+            85,
+            65,
+            374,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. If a process makes a transition $D$ , it would result in another process making transition $A$ immediately.",
+            "II. A process $P_{2}$ in blocked state can make transition E while another process $P_{1}$ is in running state.",
+            "III. The OS uses preemptive scheduling.",
+            "IV. The OS uses non-preemptive scheduling."
+        ],
+        "bbox": [
+            85,
+            91,
+            847,
+            148
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements are TRUE?",
+        "bbox": [
+            85,
+            157,
+            403,
+            172
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. I and II",
+        "bbox": [
+            89,
+            187,
+            164,
+            201
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. I and III",
+        "bbox": [
+            285,
+            188,
+            361,
+            201
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. II and III",
+        "bbox": [
+            480,
+            188,
+            561,
+            201
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. II and IV",
+        "bbox": [
+            673,
+            188,
+            757,
+            200
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2009 operating-system process-scheduling normal",
+        "bbox": [
+            89,
+            212,
+            366,
+            222
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            226,
+            188,
+            241
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.23.20 Process Scheduling: GATE CSE 2010 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            251,
+            549,
+            266
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statements are true?",
+        "bbox": [
+            85,
+            275,
+            406,
+            289
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. Shortest remaining time first scheduling may cause starvation",
+            "II. Preemptive scheduling may cause starvation",
+            "III. Round robin is better than FCFS in terms of response time"
+        ],
+        "bbox": [
+            85,
+            300,
+            561,
+            342
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            115,
+            346,
+            178,
+            361
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. I and III only",
+        "bbox": [
+            305,
+            346,
+            411,
+            361
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. II and III only",
+        "bbox": [
+            492,
+            346,
+            605,
+            361
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. I, II and III",
+        "bbox": [
+            680,
+            346,
+            774,
+            359
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 operating-system process-scheduling easy",
+        "bbox": [
+            87,
+            370,
+            357,
+            380
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            385,
+            188,
+            400
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.23.21 Process Scheduling: GATE CSE 2011 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            410,
+            549,
+            423
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the following table of arrival time and burst time for three processes P0, P1 and P2.",
+        "bbox": [
+            85,
+            433,
+            774,
+            448
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/23e97009205ff5ececc0278b19afb0598dbf325d17eb832439d3dc3ec2af0d9b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Arrival Time</td><td>Burst Time</td></tr><tr><td>P0</td><td>0 ms</td><td>9</td></tr><tr><td>P1</td><td>1 ms</td><td>4</td></tr><tr><td>P2</td><td>2 ms</td><td>9</td></tr></table>",
+        "bbox": [
+            347,
+            461,
+            668,
+            532
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/aae15239582277e97212c5d19f19541e56617f3e7d6d022f0fb0d79dfcb6a95d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            254,
+            931,
+            290
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/01365941f19c1b81ba4c0ecc0be158ed34b49be1e1c09df663a3022fc33b7bc7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            413,
+            931,
+            450
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The pre-emptive shortest job first scheduling algorithm is used. Scheduling is carried out only at arrival or completion of processes. What is the average waiting time for the three processes?",
+        "bbox": [
+            84,
+            541,
+            929,
+            570
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 5.0 ms",
+        "bbox": [
+            89,
+            583,
+            164,
+            597
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 4.33 ms",
+        "bbox": [
+            285,
+            584,
+            366,
+            597
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 6.33 ms",
+        "bbox": [
+            480,
+            583,
+            561,
+            597
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 7.33 ms",
+        "bbox": [
+            673,
+            583,
+            756,
+            597
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2011 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            608,
+            366,
+            618
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            90,
+            624,
+            188,
+            638
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.23.22 Process Scheduling: GATE CSE 2012 | Question: 31",
+        "text_level": 1,
+        "bbox": [
+            78,
+            647,
+            547,
+            662
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the 3 processes, P1, P2 and P3 shown in the table.",
+        "bbox": [
+            85,
+            671,
+            542,
+            686
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "images/f018e63ceca607e566cfa293419b319dbb22b475722004b15ad7129063f4c914.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Arrival Time</td><td>Time Units Required</td></tr><tr><td>P1</td><td>0</td><td>5</td></tr><tr><td>P2</td><td>1</td><td>7</td></tr><tr><td>P3</td><td>3</td><td>4</td></tr></table>",
+        "bbox": [
+            307,
+            698,
+            707,
+            769
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/d7a5aee86cf0ca6558536a750eecd424f0737bd8fed3d7453b9700783bb97882.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            650,
+            931,
+            688
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The completion order of the 3 processes under the policies FCFS and RR2 (round robin scheduling with CPU quantum of 2 time units) are",
+        "bbox": [
+            84,
+            779,
+            927,
+            808
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. FCFS: P1, P2, P3 RR2: P1, P2, P3",
+            "B. FCFS: P1, P3, P2 RR2: P1, P3, P2",
+            "C. FCFS: P1, P2, P3 RR2: P1, P3, P2",
+            "D. FCFS: P1, P3, P2 RR2: P1, P2, P3"
+        ],
+        "bbox": [
+            87,
+            818,
+            400,
+            877
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2012 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            902,
+            366,
+            912
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.23.23 Process Scheduling: GATE CSE 2013 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            549,
+            104
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/d1305a70a68d8e21e463f65a44c29132f127b9995c38469f2b1e702ba2453adb.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            93,
+            931,
+            129
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A scheduling algorithm assigns priority proportional to the waiting time of a process. Every process starts with zero (the lowest priority). The scheduler re-evaluates the process priorities every T time units and decides the next process to schedule. Which one of the following is TRUE if the processes have no I/O operations and all arrive at time zero?",
+        "bbox": [
+            82,
+            114,
+            929,
+            169
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. This algorithm is equivalent to the first-come-first-serve algorithm.",
+            "B. This algorithm is equivalent to the round-robin algorithm.",
+            "C. This algorithm is equivalent to the shortest-job-first algorithm.",
+            "D. This algorithm is equivalent to the shortest-remaining-time-first algorithm."
+        ],
+        "bbox": [
+            87,
+            181,
+            643,
+            237
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            262,
+            366,
+            271
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            277,
+            188,
+            293
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.23.24 Process Scheduling: GATE CSE 2014 | Set 1 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            302,
+            603,
+            317
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/c9ecc79fa76bd13c2796b72f87dbda14248b54a6b2edfa14f63e1cead1bbc35f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            305,
+            931,
+            342
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following set of processes that need to be scheduled on a single CPU. All the times are given in milliseconds.",
+        "bbox": [
+            82,
+            326,
+            875,
+            353
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/3cf14c6e599798e2ba1b4b7632f60af34999ad902559aeb22d28b22b75ca9be2.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process Name</td><td>Arrival Time</td><td>Execution Time</td></tr><tr><td>A</td><td>0</td><td>6</td></tr><tr><td>B</td><td>3</td><td>2</td></tr><tr><td>C</td><td>5</td><td>4</td></tr><tr><td>D</td><td>7</td><td>6</td></tr><tr><td>E</td><td>10</td><td>3</td></tr></table>",
+        "bbox": [
+            302,
+            365,
+            712,
+            472
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Using the shortest remaining time first scheduling algorithm, the average process turnaround time (in msec) is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            483,
+            927,
+            511
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 operating-system process-scheduling numerical-answers normal",
+        "bbox": [
+            87,
+            529,
+            477,
+            540
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            546,
+            188,
+            561
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.23.25 Process Scheduling: GATE CSE 2014 | Set 2 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            568,
+            601,
+            584
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/1415afa4b6080ba2c61b09d707d70c61f47b082a10c2423e18690669f347c970.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            572,
+            931,
+            610
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Three processes $A$ , $B$ and $C$ each execute a loop of 100 iterations. In each iteration of the loop, a process performs a single computation that requires $t_c$ CPU milliseconds and then initiates a single I/O operation that lasts for $t_{io}$ milliseconds. It is assumed that the computer where the processes execute has sufficient number of I/O devices and the OS of the computer assigns different I/O devices to each process. Also, the scheme overhead of the OS is negligible. The processes have the following characteristics:",
+        "bbox": [
+            82,
+            593,
+            878,
+            665
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "images/0c7fecbf0ae745631a4da1ec8507f340d099ec8cfd1482371ea103a0ebb52539.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process id</td><td> $t_c$ </td><td> $t_{io}$ </td></tr><tr><td>A</td><td>100 ms</td><td>500 ms</td></tr><tr><td>B</td><td>350 ms</td><td>500 ms</td></tr><tr><td>C</td><td>200 ms</td><td>500 ms</td></tr></table>",
+        "bbox": [
+            373,
+            676,
+            643,
+            756
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The processes A, B, and C are started at times 0, 5 and 10 milliseconds respectively, in a pure time sharing system (round robin scheduling) that uses a time slice of 50 milliseconds. The time in milliseconds at which process C would complete its first I/O operation is \\_\\_\\_\\_.",
+        "bbox": [
+            82,
+            766,
+            929,
+            813
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set2 operating-system process-scheduling numerical-answers normal",
+        "bbox": [
+            87,
+            830,
+            477,
+            840
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            846,
+            188,
+            861
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.23.26 Process Scheduling: GATE CSE 2014 | Set 3 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            870,
+            603,
+            885
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/525a9584bbf3819f9f5e608b574efb51f203899d160e6d6091073646ecf961c9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            872,
+            931,
+            910
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "An operating system uses shortest remaining time first scheduling algorithm for pre-emptive scheduling of processes. Consider the following set of processes with their arrival times and CPU burst times (in",
+        "bbox": [
+            82,
+            896,
+            878,
+            925
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "milliseconds):",
+        "bbox": [
+            85,
+            64,
+            189,
+            78
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/5c8e361e264be517647b20d09a293c3f5aefe85738992f77e396f842af08d385.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Arrival Time</td><td>Burst Time</td></tr><tr><td>P1</td><td>0</td><td>12</td></tr><tr><td>P2</td><td>2</td><td>4</td></tr><tr><td>P3</td><td>3</td><td>6</td></tr><tr><td>P4</td><td>8</td><td>5</td></tr></table>",
+        "bbox": [
+            347,
+            90,
+            668,
+            179
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The average waiting time (in milliseconds) of the processes is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            188,
+            600,
+            203
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set3 operating-system process-scheduling numerical-answers normal",
+        "bbox": [
+            87,
+            220,
+            477,
+            231
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            237,
+            188,
+            251
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.23.27 Process Scheduling: GATE CSE 2015 | Set 1 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            261,
+            601,
+            275
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider a uniprocessor system executing three tasks $T_1, T_2$ and $T_3$ each of which is composed of an infinite sequence of jobs (or instances) which arrive periodically at intervals of 3, 7 and 20 milliseconds, respectively. The priority of each task is the inverse of its period, and the available tasks are scheduled in order of priority, which is the highest priority task scheduled first. Each instance of $T_1, T_2$ and $T_3$ requires an execution time of 1, 2 and 4 milliseconds, respectively. Given that all tasks initially arrive at the beginning of the $1^{\\text{st}}$ millisecond and task preemptions are allowed, the first instance of $T_3$ completes its execution at the end of \\_\\_\\_\\_ milliseconds.",
+        "bbox": [
+            84,
+            283,
+            929,
+            387
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set1 operating-system process-scheduling normal numerical-answers",
+        "bbox": [
+            87,
+            400,
+            477,
+            410
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            416,
+            189,
+            431
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.23.28 Process Scheduling: GATE CSE 2015 | Set 3 | Question: 1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            440,
+            591,
+            454
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The maximum number of processes that can be in Ready state for a computer system with n CPUs is :",
+        "bbox": [
+            85,
+            464,
+            838,
+            480
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. n",
+        "bbox": [
+            89,
+            492,
+            129,
+            505
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $n^2$",
+        "bbox": [
+            285,
+            492,
+            329,
+            507
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{n}$",
+        "bbox": [
+            478,
+            492,
+            522,
+            505
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. Independent of $n$",
+        "bbox": [
+            673,
+            492,
+            816,
+            508
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 operating-system process-scheduling easy",
+        "bbox": [
+            87,
+            517,
+            376,
+            528
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            534,
+            188,
+            548
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.23.29 Process Scheduling: GATE CSE 2015 | Set 3 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            78,
+            557,
+            601,
+            571
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For the processes listed in the following table, which of the following scheduling schemes will give the lowest average turnaround time?",
+        "bbox": [
+            84,
+            581,
+            875,
+            609
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/6299a056b9eeadbe4edf1e3655cfe9a25ba3bccb44d4f4faccaec49cab6e45c4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            442,
+            932,
+            480
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "images/3ccde4d539cc204a8af919ef88d6ad3156da806ccd206f14ec9732ae73dd3b66.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Arrival Time</td><td>Process Time</td></tr><tr><td>A</td><td>0</td><td>3</td></tr><tr><td>B</td><td>1</td><td>6</td></tr><tr><td>C</td><td>4</td><td>4</td></tr><tr><td>D</td><td>6</td><td>2</td></tr></table>",
+        "bbox": [
+            339,
+            621,
+            677,
+            710
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. First Come First Serve",
+            "C. Shortest Remaining Time"
+        ],
+        "bbox": [
+            89,
+            719,
+            290,
+            745
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Non-preemptive Shortest job first",
+            "D. Round Robin with Quantum value two"
+        ],
+        "bbox": [
+            495,
+            719,
+            757,
+            757
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            764,
+            386,
+            774
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            780,
+            188,
+            794
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.23.30 Process Scheduling: GATE CSE 2016 | Set 1 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            802,
+            601,
+            817
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Consider an arbitrary set of CPU-bound processes with unequal CPU burst lengths submitted at the same time to a computer system. Which one of the following process scheduling algorithms would minimize the average waiting time in the ready queue?",
+        "bbox": [
+            84,
+            827,
+            878,
+            870
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Shortest remaining time first",
+            "B. Round-robin with the time quantum less than the shortest CPU burst",
+            "C. Uniform random"
+        ],
+        "bbox": [
+            87,
+            881,
+            611,
+            921
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/f811d10ee0a570bebb9d8efc71fa80acdbc448b7cdca11306bd18506b573adae.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            806,
+            932,
+            844
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. Highest priority first with priority proportional to CPU burst length",
+        "bbox": [
+            87,
+            64,
+            583,
+            80
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            105,
+            386,
+            115
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            121,
+            188,
+            135
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.23.31 Process Scheduling: GATE CSE 2016 | Set 2 | Question: 47",
+        "text_level": 1,
+        "bbox": [
+            78,
+            144,
+            601,
+            159
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following processes, with the arrival time and the length of the CPU burst given in milliseconds. The scheduling algorithm used is preemptive shortest remaining-time first.",
+        "bbox": [
+            85,
+            168,
+            875,
+            197
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/1a6cf30899306144c0569b6f74b07eea25351c4c2b42d0b577962fe781bc1284.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            147,
+            931,
+            185
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/78293d9a2c817b71e108e1c0de0ce2a462520ef1d3e7ce0d901de097ca2979be.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Arrival Time</td><td>Burst Time</td></tr><tr><td> $P_1$ </td><td>0</td><td>10</td></tr><tr><td> $P_2$ </td><td>3</td><td>6</td></tr><tr><td> $P_3$ </td><td>7</td><td>1</td></tr><tr><td> $P_4$ </td><td>8</td><td>3</td></tr></table>",
+        "bbox": [
+            347,
+            209,
+            670,
+            296
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The average turn around time of these processes is \\_\\_\\_\\_ milliseconds.",
+        "bbox": [
+            85,
+            306,
+            667,
+            321
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set2 operating-system process-scheduling normal numerical-answers",
+        "bbox": [
+            87,
+            334,
+            477,
+            345
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            351,
+            188,
+            366
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.23.32 Process Scheduling: GATE CSE 2017 | Set 1 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            375,
+            601,
+            389
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following CPU processes with arrival times (in milliseconds) and length of CPU bursts (in milliseconds) as given below:",
+        "bbox": [
+            84,
+            399,
+            875,
+            427
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/5568adaccdd8a7533302148e32158e34993553fa03cfbe35040b00fba2ba38c3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            378,
+            931,
+            415
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/820eb6b6233fa93cca4885e7fab90b08ad0fade52afd4fe1a339863e46a1a366.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Arrival Time</td><td>Burst Time</td></tr><tr><td> $P_1$ </td><td>0</td><td>7</td></tr><tr><td> $P_2$ </td><td>3</td><td>3</td></tr><tr><td> $P_3$ </td><td>5</td><td>5</td></tr><tr><td> $P_4$ </td><td>6</td><td>2</td></tr></table>",
+        "bbox": [
+            347,
+            439,
+            670,
+            528
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "If the pre-emptive shortest remaining time first scheduling algorithm is used to schedule the processes, then the average waiting time across all processes is \\_\\_\\_\\_ milliseconds.",
+        "bbox": [
+            84,
+            536,
+            929,
+            566
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 operating-system process-scheduling numerical-answers",
+        "bbox": [
+            87,
+            579,
+            433,
+            589
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            596,
+            188,
+            610
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.23.33 Process Scheduling: GATE CSE 2017 | Set 2 | Question: 51",
+        "text_level": 1,
+        "bbox": [
+            78,
+            619,
+            601,
+            634
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the set of process with arrival time (in milliseconds), CPU burst time (in milliseconds) and priority (0 is the highest priority) shown below. None of the process have I/O burst time",
+        "bbox": [
+            84,
+            643,
+            878,
+            672
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/633508b2ca93615d3fede08fea45d3b88b422b36d256b14556297bc836e4e445.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            622,
+            931,
+            659
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/268b324e2ee568222d671d330f18876caccc0229f3cc682e0b18d526501cadb5.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Arrival Time</td><td>Burst Time</td><td>Priority</td></tr><tr><td> $P_1$ </td><td>0</td><td>11</td><td>2</td></tr><tr><td> $P_2$ </td><td>5</td><td>28</td><td>0</td></tr><tr><td> $P_3$ </td><td>12</td><td>2</td><td>3</td></tr><tr><td> $P_4$ </td><td>2</td><td>10</td><td>1</td></tr><tr><td> $P_5$ </td><td>9</td><td>16</td><td>4</td></tr></table>",
+        "bbox": [
+            304,
+            682,
+            712,
+            790
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The average waiting time (in milli seconds) of all the process using premtive priority scheduling algorithm is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            798,
+            924,
+            814
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 operating-system process-scheduling numerical-answers",
+        "bbox": [
+            87,
+            827,
+            433,
+            837
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            843,
+            188,
+            858
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.23.34 Process Scheduling: GATE CSE 2019 | Question: 41",
+        "text_level": 1,
+        "bbox": [
+            78,
+            866,
+            547,
+            881
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following four processes with arrival times (in milliseconds) and their length of CPU bursts (in milliseconds) as shown below:",
+        "bbox": [
+            84,
+            890,
+            878,
+            919
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/bd481a99bff626454fefa7b419d55939d137a5cc8637b1cb4de98e29005f2f07.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            869,
+            931,
+            907
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "images/7fa0f3944e250fb6b1b774eb14a808cdbdd5aa1340690de6133c7a61423e9b90.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>P1</td><td>P2</td><td>P3</td><td>P4</td></tr><tr><td>Arrival Time</td><td>0</td><td>1</td><td>3</td><td>4</td></tr><tr><td>CPU burst time</td><td>3</td><td>1</td><td>3</td><td>Z</td></tr></table>",
+        "bbox": [
+            344,
+            65,
+            672,
+            125
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "These processes are run on a single processor using preemptive Shortest Remaining Time First scheduling algorithm. If the average waiting time of the processes is 1 millisecond, then the value of Z is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            149,
+            929,
+            179
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 numerical-answers operating-system process-scheduling two-marks",
+        "bbox": [
+            87,
+            192,
+            470,
+            203
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            207,
+            186,
+            223
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.23.35 Process Scheduling: GATE CSE 2020 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            232,
+            549,
+            247
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the following statements about process state transitions for a system using preemptive scheduling.",
+        "bbox": [
+            85,
+            255,
+            873,
+            271
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/260b81c7e70845e29e26a22e7e54c9df5c8019f7f880ba339000c50ca71e6b14.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            233,
+            932,
+            271
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "I. A running process can move to ready state.",
+            "II. A ready process can move to running state.",
+            "III. A blocked process can move to running state.",
+            "IV. A blocked process can move to ready state."
+        ],
+        "bbox": [
+            84,
+            281,
+            445,
+            336
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements are TRUE?",
+        "bbox": [
+            85,
+            347,
+            403,
+            362
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. I, II, and III only",
+            "C. I, II, and IV only"
+        ],
+        "bbox": [
+            89,
+            372,
+            225,
+            399
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 operating-system process-scheduling one-mark easy",
+        "bbox": [
+            87,
+            404,
+            410,
+            414
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. II and III only",
+            "D. I, II, III and IV only"
+        ],
+        "bbox": [
+            495,
+            372,
+            647,
+            399
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            420,
+            186,
+            435
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.23.36 Process Scheduling: GATE CSE 2020 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            444,
+            549,
+            458
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/1abb3e070313a0f17094f4a8d1f6a873b084f1020419fadf03482c6f41a7cd2d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            446,
+            932,
+            484
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the following set of processes, assumed to have arrived at time 0. Consider the CPU scheduling algorithms Shortest Job First (SJF) and Round Robin (RR). For RR, assume that the processes are scheduled in the order $P_{1}, P_{2}, P_{3}, P_{4}$ .",
+        "bbox": [
+            84,
+            467,
+            878,
+            513
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "images/9b9585e8d66604b3a4a87bc764e3453953ce39fbd318ab90a094f1d438d26c7e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Processes</td><td> $P_{1}$ </td><td> $P_{2}$ </td><td> $P_{3}$ </td><td> $P_{4}$ </td></tr><tr><td>Burst time (in ms)</td><td>8</td><td>7</td><td>2</td><td>4</td></tr></table>",
+        "bbox": [
+            90,
+            524,
+            426,
+            567
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "If the time quantum for RR is 4 ms, then the absolute value of the difference between the average turnaround times (in ms) of SJF and RR (round off to 2 decimal places is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            578,
+            927,
+            609
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers operating-system process-scheduling two-marks",
+        "bbox": [
+            87,
+            621,
+            470,
+            631
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            638,
+            186,
+            653
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.23.37 Process Scheduling: GATE CSE 2021 | Set 1 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            661,
+            601,
+            676
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/22cc0c6fc7eaebce1e24d86332625f0dabac7b7c6176a8190b1f772e7939baf1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            663,
+            932,
+            701
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Three processes arrive at time zero with CPU bursts of 16, 20 and 10 milliseconds. If the scheduler has prior knowledge about the length of the CPU bursts, the minimum achievable average waiting time for these three processes in a non-preemptive scheduler (rounded to nearest integer) is \\_\\_\\_\\_ milliseconds.",
+        "bbox": [
+            84,
+            685,
+            878,
+            730
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2021-set1 operating-system process-scheduling numerical-answers one-mark",
+        "bbox": [
+            87,
+            743,
+            487,
+            752
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            758,
+            186,
+            774
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.23.38 Process Scheduling: GATE CSE 2021 | Set 2 | Question: 14",
+        "text_level": 1,
+        "bbox": [
+            78,
+            782,
+            601,
+            796
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/1e53ce20caf05665909cd1a5898447c805772039df31544fde8169704f88003f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            785,
+            932,
+            824
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Which of the following statement(s) is/are correct in the context of CPU scheduling?",
+        "bbox": [
+            84,
+            807,
+            702,
+            823
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Turnaround time includes waiting time",
+            "B. The goal is to only maximize CPU utilization and minimize throughput",
+            "C. Round-robin policy can be used even when the CPU time required by each of the processes is not known apriori",
+            "D. Implementing preemptive scheduling needs hardware support"
+        ],
+        "bbox": [
+            85,
+            833,
+            927,
+            904
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.23.39 Process Scheduling: GATE CSE 2023 | Question: 17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            110,
+            549,
+            125
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which one or more of the following CPU scheduling algorithms can potentially cause starvation?",
+        "bbox": [
+            85,
+            134,
+            794,
+            150
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/69ac98e28c8ed5872f3c9858cece057511fc915688aca828a9af7e8f6ead3e33.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            112,
+            931,
+            150
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. First-in First-Out",
+            "C. Priority Scheduling"
+        ],
+        "bbox": [
+            89,
+            160,
+            242,
+            187
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. Round Robin",
+        "bbox": [
+            495,
+            160,
+            610,
+            172
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. Shortest Job First",
+        "bbox": [
+            495,
+            173,
+            640,
+            185
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2023 operating-system process-scheduling multiple-selects one-mark",
+        "bbox": [
+            87,
+            192,
+            457,
+            201
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            207,
+            186,
+            222
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.23.40 Process Scheduling: GATE CSE 2024 | Set 1 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            231,
+            601,
+            245
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which of the following process state transitions is/are NOT possible?",
+        "bbox": [
+            85,
+            254,
+            589,
+            270
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/d3c7c918bb0a24e04620941af49778a23639d244eb843835706a65822bdc82e3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            233,
+            931,
+            271
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Running to Ready",
+            "C. Ready to Waiting"
+        ],
+        "bbox": [
+            89,
+            279,
+            236,
+            306
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. Waiting to Running",
+            "D. Running to Terminated"
+        ],
+        "bbox": [
+            495,
+            280,
+            675,
+            306
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set1 operating-system process-scheduling multiple-selects one-mark",
+        "bbox": [
+            87,
+            311,
+            477,
+            321
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            327,
+            186,
+            340
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.23.41 Process Scheduling: GATE CSE 2024 | Set 2 | Question: 27",
+        "text_level": 1,
+        "bbox": [
+            78,
+            351,
+            601,
+            365
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider a single processor system with four processes A, B, C, and D, represented as given below, where for each process the first value is its arrival time, and the second value is its CPU burst time.",
+        "bbox": [
+            84,
+            374,
+            875,
+            404
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/561a5f4037e9c1d3341212d9607904067a749e72d6a232e340e5ecfb43deaa2d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            353,
+            931,
+            391
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm{A} (0, 1 0), \\mathrm{B} (2, 6), \\mathrm{C} (4, 3), \\text {and} \\mathrm{D} (6, 7).\n$$",
+        "text_format": "latex",
+        "bbox": [
+            164,
+            408,
+            465,
+            426
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following options gives the average waiting times when preemptive Shortest Remaining Time First (SRTF) and Non-Preemptive Shortest Job First (NP-SJF) CPU scheduling algorithms are applied to the processes?",
+        "bbox": [
+            84,
+            437,
+            929,
+            480
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. SRTF = 6, NP - SJF = 7",
+            "B. SRTF = 6, NP - SJF = 7.5",
+            "C. SRTF = 7, NP - SJF = 7.5",
+            "D. SRTF = 7, NP - SJF = 8.5"
+        ],
+        "bbox": [
+            87,
+            491,
+            344,
+            549
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 operating-system process-scheduling two-marks",
+        "bbox": [
+            87,
+            576,
+            401,
+            585
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            591,
+            186,
+            605
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.23.42 Process Scheduling: GATE CSE 2025 | Set 1 | Question: 28",
+        "text_level": 1,
+        "bbox": [
+            78,
+            615,
+            601,
+            629
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A computer has two processors, $M_{1}$ and $M_{2}$ . Four processes $P_{1}, P_{2}, P_{3}, P_{4}$ with CPU bursts of 20, 16, 25, and 10 milliseconds, respectively, arrive at the same time and these are the only processes in the system. The scheduler uses non-preemptive priority scheduling, with priorities decided as follows:",
+        "bbox": [
+            84,
+            638,
+            875,
+            682
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/625ae271877a560409df3b8948bf15faf242b71088246218a3d0eb8de534bd1e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            618,
+            931,
+            655
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $M_1$ uses priority of execution for the processes as, $P_1 > P_3 > P_2 > P_4$ , i.e., $P_1$ and $P_4$ have highest and lowest priorities, respectively.",
+            "- $M_2$ uses priority of execution for the processes as, $P_2 > P_3 > P_4 > P_1$ , i.e., $P_2$ and $P_1$ have highest and lowest priorities, respectively."
+        ],
+        "bbox": [
+            97,
+            692,
+            927,
+            750
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A process $P_{i}$ is scheduled to a processor $M_{k}$ , if the processor is free and no other process $P_{j}$ is waiting with higher priority. At any given point of time, a process can be allocated to any one of the free processors without violating the execution priority rules. Ignore the context switch time. What will be the average waiting time of the processes in milliseconds?",
+        "bbox": [
+            84,
+            761,
+            929,
+            815
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 9.00",
+        "bbox": [
+            89,
+            831,
+            149,
+            845
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 8.75",
+        "bbox": [
+            285,
+            831,
+            342,
+            845
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 6.50",
+        "bbox": [
+            480,
+            831,
+            537,
+            845
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 7.50",
+        "bbox": [
+            673,
+            831,
+            732,
+            845
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 operating-system process-scheduling two-marks",
+        "bbox": [
+            87,
+            855,
+            400,
+            865
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            872,
+            186,
+            885
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2021-set2 multiple-selects operating-system process-scheduling one-mark",
+        "bbox": [
+            87,
+            71,
+            477,
+            80
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            87,
+            186,
+            100
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.23.43 Process Scheduling: GATE CSE 2026 | Set 1 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            603,
+            79
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/ed4d24fd9f27dff4d6ff617ea412e932faaf2de21a14c35a02365f019adb98cc.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider a CPU that has to execute two types of processes. The first type, Actuators (A), requires a CPU burst of 6 seconds. The second type, Controllers (C), requires a CPU burst of 8 seconds. A new process of type A arrives at time $t = 10, 20, 30, 40$ , and 50 (in seconds). Similarly, a new process of type C arrives at time $t = 11, 22, 33, 44$ , and 55 (in seconds). The CPU scheduling policy is First Come First Serve (FCFS). The first process of type A starts running at $t = 10$ seconds. The average waiting time (in seconds) for the 10 processes is \\_\\_\\_\\_. (rounded off to one decimal place)",
+        "bbox": [
+            84,
+            87,
+            927,
+            175
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 numerical-answers operating-system process-scheduling two-marks",
+        "bbox": [
+            87,
+            188,
+            490,
+            198
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            204,
+            188,
+            219
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.23.44 Process Scheduling: GATE CSE 2026 | Set 2 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            226,
+            601,
+            242
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following CPU scheduling algorithms cannot be preemptive?",
+        "bbox": [
+            85,
+            251,
+            658,
+            267
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. Shortest Remaining Time First (SRTF) Scheduling",
+        "bbox": [
+            87,
+            276,
+            354,
+            302
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. Round Robin Scheduling",
+        "bbox": [
+            89,
+            302,
+            282,
+            315
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 operating-system process-scheduling one-mark",
+        "bbox": [
+            87,
+            321,
+            396,
+            331
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. First Come First Serve (FCFS)\nScheduling",
+        "bbox": [
+            495,
+            276,
+            757,
+            302
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. Priority Scheduling",
+        "bbox": [
+            495,
+            302,
+            648,
+            315
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            337,
+            188,
+            351
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/19ef28a03922d755922614836a38372694eb56e918e12d4d5883c10451fab925.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            231,
+            931,
+            268
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.23.45 Process Scheduling: GATE IT 2005 | Question: 60",
+        "text_level": 1,
+        "bbox": [
+            78,
+            359,
+            529,
+            375
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "We wish to schedule three processes P1, P2 and P3 on a uniprocessor system. The priorities, CPU time requirements and arrival times of the processes are as shown below.",
+        "bbox": [
+            84,
+            384,
+            875,
+            414
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/d8b2e8c4510b9c4cf3bc116896a27e342328fe25e1b14646a7e6e095dbd9a119.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            364,
+            931,
+            401
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/166140ff382eee5df8e0dc19d13520bb6b69a31a47ae93ffa4d4bc1f86da5697.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Process</td><td>Priority</td><td>CPU time required</td><td>Arrival time (hh:mm:ss)</td></tr><tr><td>P1</td><td>10 (highest)</td><td>20 sec</td><td>00 : 00 : 05</td></tr><tr><td>P2</td><td>9</td><td>10 sec</td><td>00 : 00 : 03</td></tr><tr><td>P3</td><td>8 (lowest)</td><td>15 sec</td><td>00 : 00 : 00</td></tr></table>",
+        "bbox": [
+            273,
+            426,
+            742,
+            527
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "We have a choice of preemptive or non-preemptive scheduling. In preemptive scheduling, a late-arriving higher priority process can preempt a currently running process with lower priority. In non-preemptive scheduling, a late-arriving higher priority process must wait for the currently executing process to complete before it can be scheduled on the processor.",
+        "bbox": [
+            84,
+            536,
+            927,
+            591
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What are the turnaround times (time from arrival till completion) of P2 using preemptive and non-preemptive scheduling respectively?",
+        "bbox": [
+            84,
+            592,
+            927,
+            621
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 30 sec, 30 sec",
+        "bbox": [
+            89,
+            630,
+            216,
+            643
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 42 sec, 42 sec",
+        "bbox": [
+            89,
+            644,
+            213,
+            656
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 30 sec, 10 sec",
+        "bbox": [
+            495,
+            630,
+            621,
+            643
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 30 sec, 42 sec",
+        "bbox": [
+            495,
+            644,
+            620,
+            656
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            662,
+            359,
+            672
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            678,
+            188,
+            693
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.23.46 Process Scheduling: GATE IT 2006 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            701,
+            529,
+            716
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In the working-set strategy, which of the following is done by the operating system to prevent thrashing?",
+        "bbox": [
+            85,
+            725,
+            840,
+            741
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/988a9cb0aa92263f1ab66498b03b38db34f124cb732bf33825cee67d7e53ac97.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            705,
+            931,
+            742
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "I. It initiates another process if there are enough extra frames.",
+        "bbox": [
+            90,
+            751,
+            549,
+            764
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "II. It selects a process to suspend if the sum of the sizes of the working-sets exceeds the total number of available frames.",
+        "bbox": [
+            89,
+            764,
+            924,
+            792
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. I only",
+        "bbox": [
+            89,
+            809,
+            152,
+            823
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. II only",
+        "bbox": [
+            285,
+            809,
+            351,
+            823
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. Neither I nor II",
+        "bbox": [
+            480,
+            809,
+            601,
+            821
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. Both I and II",
+        "bbox": [
+            673,
+            809,
+            781,
+            821
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 operating-system process-scheduling normal",
+        "bbox": [
+            87,
+            833,
+            359,
+            842
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            847,
+            188,
+            863
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.23.47 Process Scheduling: GATE IT 2006 | Question: 54",
+        "text_level": 1,
+        "bbox": [
+            78,
+            872,
+            529,
+            885
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The arrival time, priority, and duration of the CPU and I/O bursts for each of three processes $P_{1}$ , $P_{2}$ and $P_{3}$ are given in the table below. Each process has a CPU burst followed by an I/O burst followed by another",
+        "bbox": [
+            85,
+            896,
+            875,
+            926
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/cdc2f898b9eabeaba66681898d4d8e839a0e75a1227a32c6b3cad2b50bf69c6f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            875,
+            931,
+            912
+        ],
+        "page_idx": 11
+    }
+]

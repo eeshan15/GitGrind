@@ -1,0 +1,3972 @@
+[
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nwhile (i < 10) {\n    j += 2;\n    i++;\n}\n}\nprintf(\"%d\", i);\n}\nint main() {\n    int i = 9, j = 10;\n    func(i, j);\n    return 0;\n}\n```",
+        "bbox": [
+            110,
+            64,
+            228,
+            195
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is \\_\\_\\_\\_. (answer in integer)",
+        "bbox": [
+            85,
+            203,
+            502,
+            219
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Note: Assume that the program compiles and runs successfully.",
+        "bbox": [
+            85,
+            231,
+            552,
+            247
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngatecse-2026-set1 programming-in-c output numerical-answers one-mark\n```",
+        "bbox": [
+            87,
+            264,
+            438,
+            274
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            280,
+            189,
+            294
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.8",
+        "text_level": 1,
+        "bbox": [
+            68,
+            305,
+            95,
+            318
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Parameter Passing (12)",
+        "text_level": 1,
+        "bbox": [
+            420,
+            305,
+            608,
+            320
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.8.1 Parameter Passing: GATE CSE 1992 | Question: 10b",
+        "text_level": 1,
+        "bbox": [
+            77,
+            331,
+            532,
+            345
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Show the activation records and the display structure just after the procedures called at lines marked x and y have started their execution. Be sure to indicate which of the two procedures named A you are referring to.",
+        "bbox": [
+            84,
+            353,
+            875,
+            397
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nProgram Test;\n  Procedure A;\n    Procedure B;\n      Procedure A;\n      begin\n      ......\n      end A;\n    begin\n      y: A;\n    end B;\n  begin\n    B;\n  end A;\n\nbegin\n  x: A;\nend Test\n```",
+        "bbox": [
+            89,
+            408,
+            210,
+            590
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngate1992 parameter-passing programming runtime-environment normal descriptive\n```",
+        "bbox": [
+            87,
+            614,
+            494,
+            625
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            631,
+            189,
+            644
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.8.2 Parameter Passing: GATE CSE 1994 | Question: 1.20",
+        "text_level": 1,
+        "bbox": [
+            77,
+            654,
+            534,
+            669
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In which of the following cases is it possible to obtain different results for call-by-reference and call-by-name parameter passing methods?",
+        "bbox": [
+            84,
+            678,
+            878,
+            707
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. Passing a constant value as a parameter",
+        "bbox": [
+            87,
+            716,
+            352,
+            742
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. Passing an array element as a parameter",
+        "bbox": [
+            89,
+            743,
+            352,
+            769
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ngate1994 programming parameter-passing easy\n```",
+        "bbox": [
+            87,
+            774,
+            324,
+            783
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. Passing the address of an array as a parameter",
+        "bbox": [
+            495,
+            716,
+            757,
+            743
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. Passing an array",
+        "bbox": [
+            495,
+            743,
+            635,
+            757
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            790,
+            189,
+            804
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5.8.3 Parameter Passing: GATE CSE 2001 | Question: 2.17 | UGCNET-AUG2016-III: 21",
+        "text_level": 1,
+        "bbox": [
+            77,
+            813,
+            742,
+            828
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "What is printed by the print statements in the program P1 assuming call by reference parameter passing?",
+        "bbox": [
+            84,
+            838,
+            857,
+            853
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nProgram P1()\n{\n    x = 10;\n    y = 3;\n    func1(y,x,x)\n    print x;\n```",
+        "bbox": [
+            89,
+            862,
+            169,
+            928
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b8c24e9a3f3b3eff5ac497cf21e00234e4452febc5d57d7a9486b7970ba982e9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            334,
+            932,
+            371
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/b3173176fbfd7df27343310f94b29ce5563452a54f1e7c573230ec9d202004c0.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            657,
+            932,
+            695
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/d6b46e7f68e5f5dcb4d75b1a422a3df371a95e4c0b5b5e65deb570f2023fa0d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            815,
+            932,
+            853
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```matlab\nprint y;\n}\n\nfunc1(x,y,z)\n{\n    y = y + 4;\n    z = x + y + z\n}\n```",
+        "bbox": [
+            87,
+            64,
+            176,
+            152
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 10,3",
+        "bbox": [
+            89,
+            165,
+            152,
+            180
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 31,3",
+        "bbox": [
+            285,
+            165,
+            347,
+            181
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 27, 7",
+        "bbox": [
+            478,
+            165,
+            542,
+            180
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            166,
+            823,
+            180
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 programming-in-c parameter-passing normal ugcnetcse-aug2016-paper3",
+        "bbox": [
+            87,
+            190,
+            490,
+            200
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            206,
+            181,
+            220
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.8.4 Parameter Passing: GATE CSE 2003 | Question: 73",
+        "text_level": 1,
+        "bbox": [
+            78,
+            230,
+            522,
+            244
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The following program fragment is written in a programming language that allows global variables and does not allow nested declarations of functions.",
+        "bbox": [
+            84,
+            252,
+            878,
+            281
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/e52f7cf01098809d38c3bff321b86535fb26b3546c3a8cef91ac2c22c6e3285d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            232,
+            931,
+            269
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nglobal int i=100, j=5;\nvoid P(x) {\n    int i=10;\n        print(x+10);\n        i=200;\n        j=20;\n        print (x);\n}\nmain() {P(i+j);}\n```",
+        "bbox": [
+            87,
+            290,
+            206,
+            389
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "If the programming language uses static scoping and call by need parameter passing mechanism, the values printed by the above program are:",
+        "bbox": [
+            84,
+            397,
+            927,
+            427
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 115,220",
+        "bbox": [
+            89,
+            439,
+            176,
+            454
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 25,220",
+        "bbox": [
+            285,
+            439,
+            361,
+            454
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 25,15",
+        "bbox": [
+            478,
+            439,
+            549,
+            454
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 115,105",
+        "bbox": [
+            673,
+            439,
+            761,
+            454
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 compiler-design normal runtime-environment parameter-passing",
+        "bbox": [
+            87,
+            464,
+            458,
+            473
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            480,
+            188,
+            494
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.8.5 Parameter Passing: GATE CSE 2008 | Question: 60",
+        "text_level": 1,
+        "bbox": [
+            78,
+            504,
+            522,
+            517
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "What is printed by the following C program?",
+        "bbox": [
+            85,
+            528,
+            410,
+            543
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/af327b6fb59176652bf13d9c854e3fdcd54179d774f7a48ce77bd9103c041225.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            507,
+            931,
+            543
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint f(int x, int *py, int **ppz)\n{\n    int y, z;\n    **ppz += 1; z = **ppz;  // corrected z = *ppz; to z = **ppz;\n    *py += 2; y = *py;\n    x += 3;\n    return x+y+z;\n}\n\nvoid main()\n{\n    int c, *b, **a;\n    c = 4; b = &c; a = &b;\n    printf(\"%d\", f(c, b, a));\n}\n```",
+        "bbox": [
+            87,
+            551,
+            433,
+            726
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A. 18",
+        "bbox": [
+            89,
+            739,
+            134,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "B. 19",
+        "bbox": [
+            285,
+            739,
+            329,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "C. 21",
+        "bbox": [
+            478,
+            739,
+            522,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "D. 22",
+        "bbox": [
+            673,
+            739,
+            719,
+            752
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 programming programming-in-c normal parameter-passing",
+        "bbox": [
+            87,
+            763,
+            435,
+            773
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            779,
+            188,
+            793
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "5.8.6 Parameter Passing: GATE CSE 2010 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            802,
+            519,
+            817
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "What does the following program print?",
+        "bbox": [
+            85,
+            827,
+            374,
+            842
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "images/22a8f1c0c9958f7c0791af42f5445a6acb134cfc8e712d04b069442378b70534.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            806,
+            931,
+            843
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include<stdio.h>\n\nvoid f(int *p, int *q) {\n    p=q;\n    *p=2;\n}\n```",
+        "bbox": [
+            87,
+            851,
+            206,
+            916
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\nint i=0, j=1;\n\nint main() {\n    f(&i, &j);\n    printf(\"%d %d\\n\", i,j);\n    return 0;\n}\n```",
+        "bbox": [
+            87,
+            64,
+            223,
+            141
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A. 22",
+        "bbox": [
+            89,
+            155,
+            139,
+            168
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "B. 21",
+        "bbox": [
+            285,
+            155,
+            332,
+            168
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "C. 01",
+        "bbox": [
+            480,
+            155,
+            527,
+            168
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "D. 02",
+        "bbox": [
+            673,
+            155,
+            722,
+            168
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2010 programming programming-in-c easy parameter-passing",
+        "bbox": [
+            87,
+            179,
+            426,
+            190
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            195,
+            186,
+            210
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.8.7 Parameter Passing: GATE CSE 2013 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            219,
+            522,
+            233
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/e8fcec40caf087c8b94644c0089979b59399c4afb632ab0cb0ad3cd0b4eadb0d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            220,
+            931,
+            258
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "What is the return value of $f(p,p)$ , if the value of p is initialized to 5 before the call? Note that the first parameter is passed by reference, whereas the second parameter is passed by value.",
+        "bbox": [
+            84,
+            243,
+            878,
+            273
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint f (int &x, int c) {\n    c = c - 1;\n    if (c==0) return 1;\n    x = x + 1;\n    return f(x,c) * x;\n}\n```",
+        "bbox": [
+            87,
+            295,
+            215,
+            362
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2013 compiler-design normal marks-to-all numerical-answers parameter-passing runtime-environment",
+        "bbox": [
+            87,
+            385,
+            611,
+            395
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            401,
+            186,
+            415
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.8.8 Parameter Passing: GATE CSE 2016 | Set 1 | Question: 15",
+        "text_level": 1,
+        "bbox": [
+            78,
+            425,
+            574,
+            439
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program.",
+        "bbox": [
+            85,
+            448,
+            337,
+            463
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/d3a03ed99f285a89321bfbed33107193f75ad02749d6f82674d38d1ab5d0c364.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            428,
+            931,
+            465
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\nvoid mystery (int *ptra, int *ptrb) {\n    int *temp;\n    temp = ptrb;\n    ptrb =ptra;\n    ptra = temp;\n}\nint main () {\n    int a = 2016, b=0, c= 4, d= 42;\n    mystery (&a, &b);\n    if (a < c)\n        mystery (&c, &a);\n    mystery (&a, &d);\n    printf(\"%d\\n\", a);\n}\n```",
+        "bbox": [
+            87,
+            472,
+            280,
+            635
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            643,
+            388,
+            657
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2016-set1 programming-in-c easy numerical-answers parameter-passing",
+        "bbox": [
+            87,
+            676,
+            465,
+            687
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            693,
+            186,
+            707
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.8.9 Parameter Passing: GATE CSE 2016 | Set 2 | Question: 12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            716,
+            574,
+            730
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The value printed by the following program is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            739,
+            489,
+            755
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "images/fa97f7b72c3bb88c667f7e1a5bb9cd5e5bf5b5f95afd0fcce8a77023dc12157a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            719,
+            931,
+            756
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nvoid f (int * p, int m) {\n    m = m + 5;\n    *p = *p + m;\n    return;\n}\nvoid main () {\n    int i=5, j=10;\n\n    f (&i, j);\n    printf (\"%d\", i+j);\n}\n```",
+        "bbox": [
+            107,
+            763,
+            233,
+            883
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "footer",
+        "text": "gatecse-2016-set2 programming-in-c normal numerical-answers parameter-passing",
+        "bbox": [
+            87,
+            907,
+            475,
+            916
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "5.8.10 Parameter Passing: GATE CSE 2018 | Question: 29",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            532,
+            104
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/d217b3994c99e4507a5ca65f620dffc3d7e079ccf3770d7582bacf4cee68778a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            932,
+            129
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include<stdio.h>\nvoid fun1(char* s1, char* s2){\n    char* temp;\n    temp = s1;\n    s1 = s2;\n    s2 = temp;\n}\nvoid fun2(char** s1, char** s2){\n    char* temp;\n    temp = *s1;\n    *s1 = *s2;\n    *s2 = temp;\n}\nint main(){\n    char *str1=\"Hi\", *str2 = \"Bye\";\n    fun1(str1, str2); printf(\"%s %s\", str1, str2);\n    fun2(&str1, &str2); printf(\"%s %s\", str1, str2);\n    return 0;\n}\n```",
+        "bbox": [
+            87,
+            123,
+            357,
+            328
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The output of the program above is:",
+        "bbox": [
+            85,
+            337,
+            352,
+            352
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. Hi Bye Bye Hi",
+        "bbox": [
+            89,
+            361,
+            223,
+            375
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. Bye Hi Hi Bye",
+        "bbox": [
+            90,
+            375,
+            223,
+            390
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2018 programming-in-c pointers parameter-passing normal programming two-marks",
+        "bbox": [
+            89,
+            394,
+            542,
+            404
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. Hi Bye Hi Bye",
+        "bbox": [
+            495,
+            361,
+            630,
+            375
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. Bye Hi Bye Hi",
+        "bbox": [
+            497,
+            375,
+            630,
+            390
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            410,
+            188,
+            425
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.8.11 Parameter Passing: GATE IT 2006 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            434,
+            512,
+            448
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Which one of the choices given below would be printed when the following program is executed?",
+        "bbox": [
+            85,
+            457,
+            791,
+            472
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/cc688f51e82803c85246cbab5bbfcca3a669340f1eb3181ad5f9002f6efb838e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            435,
+            932,
+            473
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\nvoid swap (int *x, int *y)\n{\n    static int *temp;\n    temp = x;\n    x = y;\n    y = temp;\n}\nvoid printab ()\n{\n    static int i, a = -3, b = -6;\n    i = 0;\n    while (i <= 4)\n    {\n        if ((i++)%2 == 1) continue;\n        a = a + i;\n        b = b + i;\n    }\n    swap (&a, &b);\n    printf(\"a = %d, b = %d\\n\", a, b);\n}\nmain()\n{\n    printab();\n    printab();\n}\n```",
+        "bbox": [
+            87,
+            480,
+            287,
+            762
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "A. $a = 0, b = 3$",
+        "bbox": [
+            89,
+            771,
+            203,
+            785
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\na = 0, b = 3\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            786,
+            203,
+            798
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "C. $a = 3, b = 6$",
+        "bbox": [
+            90,
+            799,
+            203,
+            812
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\na = 3, b = 6\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            813,
+            203,
+            826
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "gateit-2006 programming programming-in-c normal parameter-passing",
+        "bbox": [
+            89,
+            832,
+            428,
+            840
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "B. $a = 3, b = 0$",
+        "bbox": [
+            497,
+            771,
+            608,
+            785
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\na = 1 2, b = 9\n$$",
+        "text_format": "latex",
+        "bbox": [
+            519,
+            786,
+            618,
+            798
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "D. $a = 6, b = 3$",
+        "bbox": [
+            497,
+            799,
+            608,
+            811
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\na = 1 5, b = 1 2\n$$",
+        "text_format": "latex",
+        "bbox": [
+            519,
+            812,
+            628,
+            827
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            847,
+            188,
+            861
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "5.8.12 Parameter Passing: GATE IT 2008 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            871,
+            512,
+            885
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Consider the C program below. What does it print?",
+        "bbox": [
+            85,
+            894,
+            458,
+            909
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "image",
+        "img_path": "images/9ef1bb10c18f802e41e129299fe13a742df51dbfeb34c430a508fc8759f3cb1b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            872,
+            932,
+            910
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\# include <stdio.h>",
+        "bbox": [
+            89,
+            919,
+            198,
+            929
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\n# define swap1 (a, b) tmp = a; a = b; b = tmp\nvoid swap2 ( int a, int b)\n{\n    int tmp;\n    tmp = a; a = b; b = tmp;\n}\nvoid swap3 (int*a, int*b)\n{\n    int tmp;\n    tmp = *a; *a = *b; *b = tmp;\n}\nint main ()\n{\n    int num1 = 5, num2 = 4, tmp;\n    if (num1 < num2) {swap1 (num1, num2);}\n    if (num1 < num2) {swap2 (num1 + 1, num2);}\n    if (num1 >= num2) {swap3 (&num1, &num2);}\n    printf (\"%d, %d\", num1, num2);\n}\n```",
+        "bbox": [
+            87,
+            62,
+            381,
+            270
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. 5,5",
+        "bbox": [
+            89,
+            283,
+            142,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. 5,4",
+        "bbox": [
+            285,
+            283,
+            336,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. 4,5",
+        "bbox": [
+            480,
+            283,
+            529,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. 4,4",
+        "bbox": [
+            673,
+            283,
+            724,
+            298
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gateit-2008 programming programming-in-c easy parameter-passing",
+        "bbox": [
+            87,
+            308,
+            418,
+            318
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            323,
+            186,
+            338
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.9",
+        "text_level": 1,
+        "bbox": [
+            68,
+            349,
+            95,
+            362
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Pointers (15)",
+        "text_level": 1,
+        "bbox": [
+            460,
+            347,
+            568,
+            363
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.9.1 Pointers: GATE CSE 2000 | Question: 1.12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            374,
+            455,
+            388
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The most appropriate matching for the following pairs",
+        "bbox": [
+            85,
+            397,
+            478,
+            413
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "images/dc444850311396ee138b520c7ef09bac988add7512146c2e8e6976e703e5abf6.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>X: m = malloc(5); m = NULL;</td><td>1: using dangling pointers</td></tr><tr><td>Y: free(n); n -&gt; value = 5;</td><td>2: using uninitialized pointers</td></tr><tr><td>Z: char *p, *p = ‘a’;</td><td>3: lost memory</td></tr></table>",
+        "bbox": [
+            216,
+            425,
+            801,
+            486
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "is:",
+        "bbox": [
+            85,
+            497,
+            107,
+            509
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A. $X - 1$ Y-3 Z-2",
+        "bbox": [
+            89,
+            519,
+            268,
+            532
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "B. $X - 2$ Y-1 Z-3",
+        "bbox": [
+            495,
+            519,
+            673,
+            532
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "C. $X - 3$ Y-2 Z-1",
+        "bbox": [
+            90,
+            533,
+            268,
+            546
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "D. $X - 3$ $Y - 1$ $Z - 2$",
+        "bbox": [
+            497,
+            533,
+            673,
+            546
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 programming programming-in-c easy match-the-following pointers",
+        "bbox": [
+            87,
+            552,
+            482,
+            562
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            568,
+            181,
+            583
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.9.2 Pointers: GATE CSE 2001 | Question: 2.18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            592,
+            453,
+            606
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Consider the following three C functions:",
+        "bbox": [
+            85,
+            615,
+            386,
+            630
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "[P1]",
+        "bbox": [
+            89,
+            634,
+            126,
+            650
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint *g(void)\n{\n    int x = 10;\n    return (&x);\n}\n```",
+        "bbox": [
+            89,
+            659,
+            171,
+            714
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "[P2]",
+        "bbox": [
+            90,
+            723,
+            124,
+            739
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint *g(void)\n{\n    int *px;\n    *px = 10;\n    return px\n```",
+        "bbox": [
+            89,
+            748,
+            154,
+            805
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "[P3]",
+        "bbox": [
+            90,
+            823,
+            124,
+            840
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint *g(void)\n{\n    int *px;\n    px = (int*) malloc (sizeof(int));\n    *px = 10;\n    return px;\n}\n```",
+        "bbox": [
+            89,
+            847,
+            272,
+            925
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/2a494d62f83d890538c71609c496bb8feec27ca809dae6fc19abdbc23698d66a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            377,
+            931,
+            415
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1ad7a1fd5051b01ea77f067b0368912a547e5effb34eee1c2a9e21280fbf31b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            593,
+            931,
+            631
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "images/c1ad7a1fd5051b01ea77f067b0368912a547e5effb34eee1c2a9e21280fbf31b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            593,
+            931,
+            631
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Which of the above three functions are likely to cause problems with pointers?",
+        "bbox": [
+            85,
+            64,
+            657,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. Only P3",
+        "bbox": [
+            87,
+            93,
+            176,
+            108
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. Only $P1$ and $P3$",
+        "bbox": [
+            285,
+            93,
+            426,
+            106
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. Only $P1$ and $P2$",
+        "bbox": [
+            480,
+            93,
+            621,
+            106
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. $P1, P2$ and $P3$",
+        "bbox": [
+            673,
+            93,
+            811,
+            108
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 programming programming-in-c normal pointers",
+        "bbox": [
+            87,
+            118,
+            394,
+            128
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            133,
+            188,
+            148
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.9.3 Pointers: GATE CSE 2003 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            157,
+            431,
+            171
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Assume the following C variable declaration:",
+        "bbox": [
+            85,
+            181,
+            413,
+            195
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "int \\*A[10], B[10][10];",
+        "bbox": [
+            87,
+            204,
+            205,
+            217
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Of the following expressions:",
+        "bbox": [
+            85,
+            226,
+            300,
+            239
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $A[2]$",
+            "II. $A[2][3]$",
+            "III. $B[1]$",
+            "IV. $B[2][3]$"
+        ],
+        "bbox": [
+            92,
+            251,
+            169,
+            315
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "which will not give compile-time errors if used as left hand sides of assignment statements in a C program?",
+        "bbox": [
+            84,
+            323,
+            865,
+            339
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. I, II, and IV only",
+        "bbox": [
+            87,
+            352,
+            221,
+            366
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. II, III, and IV only",
+        "bbox": [
+            285,
+            352,
+            425,
+            366
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. II and IV only",
+        "bbox": [
+            480,
+            352,
+            594,
+            366
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. IV only",
+        "bbox": [
+            673,
+            352,
+            747,
+            366
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 programming programming-in-c easy pointers",
+        "bbox": [
+            87,
+            376,
+            384,
+            385
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            393,
+            188,
+            407
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.9.4 Pointers: GATE CSE 2003 | Question: 89",
+        "text_level": 1,
+        "bbox": [
+            78,
+            416,
+            440,
+            429
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Consider the C program shown below:",
+        "bbox": [
+            85,
+            440,
+            369,
+            454
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```lisp\n#include<stdio.h>\n#define print(x) printf(\"%d\", x)\n\nint x;\nvoid Q(int z)\n{\n    z+=x;\n    print(z);\n}\n\nvoid P(int *y)\n{\n    int x = *y + 2;\n    Q(x);\n    *y = x - 1;\n    print(x);\n}\nmain(void) {\n    x = 5;\n    P(&x);\n    print(x);\n}\n```",
+        "bbox": [
+            87,
+            463,
+            258,
+            701
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The output of this program is:",
+        "bbox": [
+            85,
+            709,
+            304,
+            725
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A. 1276",
+        "bbox": [
+            89,
+            737,
+            161,
+            751
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "B. 22 12 11",
+        "bbox": [
+            285,
+            737,
+            374,
+            751
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "C. 1466",
+        "bbox": [
+            480,
+            737,
+            549,
+            751
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. 766",
+        "bbox": [
+            673,
+            737,
+            737,
+            751
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 programming programming-in-c normal pointers",
+        "bbox": [
+            87,
+            762,
+            394,
+            771
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            777,
+            188,
+            792
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.9.5 Pointers: GATE CSE 2005 | Question: 1, ISRO2017-55",
+        "text_level": 1,
+        "bbox": [
+            77,
+            801,
+            539,
+            815
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "What does the following C-statement declare?",
+        "bbox": [
+            85,
+            825,
+            426,
+            840
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "int (\\*f) (int \\*);",
+        "bbox": [
+            85,
+            851,
+            188,
+            866
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A function that takes an integer pointer as argument and returns an integer",
+            "B. A function that takes an integer as argument and returns an integer pointer",
+            "C. A pointer to a function that takes an integer pointer as argument and returns an integer"
+        ],
+        "bbox": [
+            85,
+            876,
+            744,
+            928
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/e796bf47f2896f25ccef27313eafc464b9fe48e5c866d4b6ca20b2dcdc17924d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            159,
+            932,
+            197
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/6e835f2809d16dbdcca26868261deb3b0351c6d3880a99d08c78b2425e3efcd8.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            418,
+            932,
+            456
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "images/99c3f012ef829f818e6ff18065a655e6c6f3b9e42f9b93493ca8ad847ea616d3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            804,
+            932,
+            842
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "D. A function that takes an integer pointer as argument and returns a function pointer",
+        "bbox": [
+            85,
+            64,
+            712,
+            80
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 programming programming-in-c pointers easy isro2017",
+        "bbox": [
+            87,
+            105,
+            433,
+            115
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            121,
+            188,
+            135
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.9.6 Pointers: GATE CSE 2006 | Question: 57",
+        "text_level": 1,
+        "bbox": [
+            78,
+            144,
+            440,
+            159
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider this C code to swap two integers and these five statements: the code",
+        "bbox": [
+            85,
+            168,
+            660,
+            184
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/7319b24f0666d1952ea1ce051ec6be5cb8dfe3343c60f4741cc00bb4145a8e91.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            147,
+            932,
+            185
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```lisp\nvoid swap (int *px, int *py)\n{\n    *px = *px - *py;\n    *py = *px + *py;\n    *px = *py - *px;\n}\n```",
+        "bbox": [
+            112,
+            192,
+            265,
+            258
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "S1: will generate a compilation error",
+            "S2: may generate a segmentation fault at runtime depending on the arguments passed",
+            "S3: correctly implements the swap procedure for all input pointers referring to integers stored in memory locations accessible to the process",
+            "S4: implements the swap procedure correctly for some but not all valid input pointers",
+            "S5: may add or subtract integers and pointers"
+        ],
+        "bbox": [
+            84,
+            267,
+            927,
+            368
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A. S1",
+        "bbox": [
+            89,
+            383,
+            134,
+            395
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "B. S2 and S3",
+        "bbox": [
+            285,
+            383,
+            381,
+            395
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "C. S2 and S4",
+        "bbox": [
+            478,
+            382,
+            576,
+            395
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "D. S2 and S5",
+        "bbox": [
+            673,
+            382,
+            771,
+            395
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2006 programming programming-in-c normal pointers",
+        "bbox": [
+            87,
+            407,
+            394,
+            416
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            423,
+            188,
+            437
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.9.7 Pointers: GATE CSE 2014 | Set 1 | Question: 10",
+        "text_level": 1,
+        "bbox": [
+            78,
+            446,
+            492,
+            460
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following program in C language:",
+        "bbox": [
+            85,
+            470,
+            428,
+            485
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/a41927b9e4ecc8b0f9f05391c9a3956d714a43100883f20c2ab83fa69a59427d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            448,
+            932,
+            486
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\n\nmain()\n{\n    int i;\n    int*pi = &i;\n\n    scanf(\"%d\",pi);\n    printf(\"%d\\n\", i+5);\n}\n```",
+        "bbox": [
+            87,
+            494,
+            208,
+            603
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following statements is TRUE?",
+        "bbox": [
+            85,
+            611,
+            440,
+            625
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. Compilation fails.",
+            "B. Execution results in a run-time error.",
+            "C. On execution, the value printed is 5 more than the address of variable $i$ .",
+            "D. On execution, the value printed is 5 more than the integer value entered."
+        ],
+        "bbox": [
+            87,
+            637,
+            640,
+            694
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 programming programming-in-c easy pointers",
+        "bbox": [
+            87,
+            719,
+            403,
+            729
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            735,
+            188,
+            750
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5.9.8 Pointers: GATE CSE 2015 | Set 3 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            758,
+            492,
+            773
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program",
+        "bbox": [
+            85,
+            782,
+            334,
+            798
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "images/c357965999197776c7c7352d4a03cf70e962a22b903e66791b3ca886cffb0f3b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            762,
+            932,
+            799
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include<stdio.h>\nint main() {\n    static int a[] = {10, 20, 30, 40, 50};\n    static int *p[] = {a, a+3, a+4, a+1, a+2};\n    int **ptr = p;\n    ptr++;\n    printf(\"%d%d\", ptr-p, **ptr);\n}\n```",
+        "bbox": [
+            87,
+            807,
+            326,
+            904
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            913,
+            369,
+            929
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            97,
+            188,
+            112
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.9.9 Pointers: GATE CSE 2017 | Set 1 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            119,
+            492,
+            135
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/3961767e4bf9535c51555c72dc5183b3bccc1fd473c7d1662907f78b91caa558.jpg",
+        "image_caption": [
+            "Consider the following C code:"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            124,
+            931,
+            161
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include<stdio.h>\nint *assignval (int *x, int val) {\n    *x = val;\n    return x;\n}\n\nvoid main () {\n    int *x = malloc(sizeof(int));\n    if (NULL == x) return;\n    x = assignval (x,0);\n    if (x) {\n        x = (int *)malloc(sizeof(int));\n        if (NULL == x) return;\n        x = assignval (x,10);\n    }\n    printf(\"%d\\n\", *x);\n    free(x);\n}\n```",
+        "bbox": [
+            87,
+            168,
+            277,
+            364
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The code suffers from which one of the following problems:",
+        "bbox": [
+            85,
+            372,
+            519,
+            385
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. compiler error as the return of malloc is not typecast appropriately.",
+            "B. compiler error because the comparison should be made as x == NULL and not as shown.",
+            "C. compiles successfully but execution may result in dangling pointer.",
+            "D. compiles successfully but execution may result in memory leak."
+        ],
+        "bbox": [
+            87,
+            397,
+            786,
+            454
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set1 programming-in-c programming pointers",
+        "bbox": [
+            87,
+            480,
+            371,
+            490
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            496,
+            188,
+            510
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.9.10 Pointers: GATE CSE 2017 | Set 2 | Question: 55",
+        "text_level": 1,
+        "bbox": [
+            78,
+            519,
+            500,
+            534
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/8b7ba78d648f4c4e596e7d55340fb5eb535db41a7e66215281177730fd67663e.jpg",
+        "image_caption": [
+            "Consider the following C program."
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            522,
+            931,
+            559
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include<stdio.h>\n#include<string.h>\nint main() {\n    char* c=\"GATECSIT2017\";\n    char* p=c;\n    printf(\"%d\", (int)strlen(c+2[p]-6[p]-1));\n    return 0;\n}\n```",
+        "bbox": [
+            87,
+            567,
+            315,
+            654
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The output of the program is \\_\\_\\_\\_",
+        "bbox": [
+            85,
+            663,
+            366,
+            678
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2017-set2 programming-in-c numerical-answers array pointers",
+        "bbox": [
+            87,
+            695,
+            426,
+            706
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            712,
+            188,
+            726
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "5.9.11 Pointers: GATE CSE 2022 | Question: 11",
+        "text_level": 1,
+        "bbox": [
+            78,
+            735,
+            448,
+            750
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/b68c8e5f3bfa3220627b0d95a785b6b415bf869fda55621db1c95f4f1c7c703a.jpg",
+        "image_caption": [
+            "What is printed by the following ANSI C program?"
+        ],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            739,
+            931,
+            776
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include<stdio.h>\n\nint main(int argc, char *argv[])\n{\n    int x = 1, z[2] = {10, 11};\n    int *p = NULL;\n    p = &x;\n    *p = 10;\n```",
+        "bbox": [
+            112,
+            783,
+            285,
+            925
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "header",
+        "text": "gatecse-2015-set3 programming programming-in-c normal numerical-answers pointers",
+        "bbox": [
+            87,
+            81,
+            505,
+            91
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\np = &z[1];\n\n*(&z[0] + 1) += 3;\n\nprintf(\"%d, %d, %d\\n\", x, z[0], z[1]);\n\nreturn 0;\n\n}\n```",
+        "bbox": [
+            115,
+            74,
+            331,
+            172
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 1,10,11",
+        "bbox": [
+            89,
+            187,
+            176,
+            201
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 1,10,14",
+        "bbox": [
+            285,
+            187,
+            371,
+            201
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "c. 10,14,11",
+        "bbox": [
+            480,
+            187,
+            573,
+            201
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 10,10,14",
+        "bbox": [
+            673,
+            187,
+            769,
+            201
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 programming programming-in-c pointers output one-mark",
+        "bbox": [
+            89,
+            212,
+            445,
+            222
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            226,
+            188,
+            242
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.9.12 Pointers: GATE CSE 2024 | Set 2 | Question: 26",
+        "text_level": 1,
+        "bbox": [
+            78,
+            252,
+            500,
+            264
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "What is the output of the following C program?",
+        "bbox": [
+            85,
+            276,
+            428,
+            292
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/ba2f8547c29611905b6e6e60795f10a6e4bab554a1c1a0c8048f0644907f468b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            254,
+            931,
+            292
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\nint main() {\ndouble a[2]={20.0,25.0},* p,* q;\np=a ;\nq=p+1 ;\nprintf(\"%d,%d\", (int) (q-p),( int)(* q- * p));\nreturn 0;}\n```",
+        "bbox": [
+            112,
+            301,
+            344,
+            376
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 4,8",
+        "bbox": [
+            90,
+            391,
+            139,
+            406
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 1,5",
+        "bbox": [
+            285,
+            391,
+            336,
+            406
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 8,5",
+        "bbox": [
+            480,
+            391,
+            529,
+            406
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 1,8",
+        "bbox": [
+            675,
+            391,
+            724,
+            406
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2024-set2 programming programming-in-c pointers two-marks",
+        "bbox": [
+            89,
+            416,
+            428,
+            425
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            432,
+            188,
+            446
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.9.13 Pointers: GATE CSE 2025 | Set 1 | Question: 24",
+        "text_level": 1,
+        "bbox": [
+            78,
+            454,
+            500,
+            469
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/d81d9984ba470225e9ab07b117333e19e99fcceefe3ac9c6d6fd38b63c4ac224.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            458,
+            931,
+            495
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\nvoid foo(int *p, int x) {\n*p=x;\n}\nint main(){\nint *z;\nint a = 20, b = 25;\nz = &a;\nfoo(z,b);\nprintf(\"%d\",a);\nreturn 0;\n}\n```",
+        "bbox": [
+            112,
+            503,
+            240,
+            631
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The output of the given C program is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            642,
+            600,
+            657
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 programming-in-c pointers output numerical-answers easy one-mark",
+        "bbox": [
+            87,
+            676,
+            517,
+            686
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            692,
+            188,
+            706
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "5.9.14 Pointers: GATE CSE 2025 | Set 2 | Question: 52",
+        "text_level": 1,
+        "bbox": [
+            78,
+            714,
+            500,
+            729
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program:",
+        "bbox": [
+            85,
+            739,
+            337,
+            754
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/05a3816a95d9244eab31aa10be7e156f7f87689b9dfb6b88ed4536125547518f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            718,
+            931,
+            755
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include<stdio.h>\nint main(){\n    int a;\n    int arr[5] = {30,50,10};\n    int *ptr;\n    ptr = &arr[0] + 1;\n    a = *ptr;\n    (*ptr)++;\n    ptr++;\n    printf(\"%d\", a + (*ptr) + arr[1]);\n    return 0;\n}\n```",
+        "bbox": [
+            112,
+            763,
+            304,
+            893
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The output of the above program is \\_\\_\\_\\_. (Answer in integer)",
+        "bbox": [
+            85,
+            916,
+            579,
+            931
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            99,
+            181,
+            114
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.9.15 Pointers: GATE CSE 2026 | Set 2 | Question: 50",
+        "text_level": 1,
+        "bbox": [
+            78,
+            123,
+            500,
+            137
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Consider the following ANSI-C program.",
+        "bbox": [
+            85,
+            147,
+            381,
+            162
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/3854f2ac625b6f22912a4f9d99b64a98181f283325021bc0a678ec62da3cd88a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            125,
+            931,
+            163
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\n#include <stdio.h>\nint main(){\n    int *ptr, a, b, c;\n    a=5; b=11; c=20;\n    ptr=&a; *ptr=c; ptr=&c;\n    a=(*(&b); c=*ptr-a;\n    printf(\"%d\",c);\n    return(0);\n}\n```",
+        "bbox": [
+            112,
+            171,
+            258,
+            268
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The output of this program is \\_\\_\\_\\_ . (answer in integer)",
+        "bbox": [
+            85,
+            277,
+            490,
+            293
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Note: Assume that the program compiles and runs successfully.",
+        "bbox": [
+            85,
+            305,
+            552,
+            320
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set2 programming-in-c pointers output numerical-answers two-marks",
+        "bbox": [
+            87,
+            338,
+            492,
+            347
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            353,
+            181,
+            369
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.10",
+        "text_level": 1,
+        "bbox": [
+            68,
+            378,
+            105,
+            391
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Programming Constructs (1)",
+        "text_level": 1,
+        "bbox": [
+            403,
+            378,
+            633,
+            394
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.10.1 Programming Constructs: GATE CSE 1999 | Question: 2.5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            404,
+            584,
+            420
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Given the programming constructs",
+        "bbox": [
+            85,
+            429,
+            341,
+            444
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/132ea036516c8818e70449d364ed822ba466650f80fe9ba3f41882b7866a542d.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            408,
+            931,
+            445
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. assignment",
+            "ii. for loops where the loop parameter cannot be changed within the loop",
+            "iii. if-then-else",
+            "iv. forward go to",
+            "v. arbitrary go to",
+            "vi. non-recursive procedure call",
+            "vii. recursive procedure/function call",
+            "viii. repeat loop,"
+        ],
+        "bbox": [
+            92,
+            454,
+            623,
+            566
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "which constructs will you not include in a programming language such that it should be possible to program the terminates (i.e., halting) function in the same programming language",
+        "bbox": [
+            82,
+            576,
+            927,
+            605
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. (ii), (iii), (iv)",
+            "C. (vi), (vii), (viii)"
+        ],
+        "bbox": [
+            89,
+            614,
+            230,
+            644
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. (v), (vii), (viii)",
+            "D. (iii), (vii), (viii)"
+        ],
+        "bbox": [
+            495,
+            614,
+            633,
+            644
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1999 programming normal programming-constructs",
+        "bbox": [
+            89,
+            649,
+            357,
+            659
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            90,
+            663,
+            181,
+            679
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.11",
+        "text_level": 1,
+        "bbox": [
+            68,
+            688,
+            102,
+            701
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Programming In C (29)",
+        "text_level": 1,
+        "bbox": [
+            428,
+            688,
+            610,
+            704
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "5.11.1 Programming In C: GATE CSE 2000 | Question: 2.20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            714,
+            539,
+            729
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The value of j at the end of the execution of the following C program:",
+        "bbox": [
+            85,
+            738,
+            591,
+            754
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/c7b4dcde4c265d38d7e22e6d08863e685d59962c57607ace6596e7c58d40bcc3.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            718,
+            931,
+            755
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint incr (int i)\n{\n    static int count = 0;\n    count = count + i;\n    return (count);\n}\nmain () {\n    int i, j;\n    for (i = 0; i <= 4; i++)\n        j = incr (i);\n}\n```",
+        "bbox": [
+            87,
+            762,
+            221,
+            882
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "is:",
+        "bbox": [
+            85,
+            891,
+            107,
+            904
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "header",
+        "text": "gatecse2025-set2 programming-in-c pointers output numerical-answers two-marks",
+        "bbox": [
+            87,
+            84,
+            489,
+            93
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 10",
+        "bbox": [
+            89,
+            68,
+            134,
+            81
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 4",
+        "bbox": [
+            285,
+            68,
+            321,
+            81
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 6",
+        "bbox": [
+            480,
+            68,
+            515,
+            81
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 7",
+        "bbox": [
+            673,
+            68,
+            710,
+            81
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 programming programming-in-c easy",
+        "bbox": [
+            87,
+            93,
+            337,
+            104
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            123
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.11.2 Programming In C: GATE CSE 2002 | Question: 1.17",
+        "text_level": 1,
+        "bbox": [
+            78,
+            131,
+            539,
+            148
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In the C language:",
+        "text_level": 1,
+        "bbox": [
+            85,
+            157,
+            225,
+            171
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/0e08f3670d6064aeb430eb57570235aabe117b6bcf8d617c70159e865026a818.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            135,
+            931,
+            172
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. At most one activation record exists between the current activation record and the activation record for the main",
+            "B. The number of activation records between the current activation record and the activation records from the main depends on the actual function calling sequence.",
+            "C. The visibility of global variables depends on the actual function calling sequence",
+            "D. Recursion requires the activation record for the recursive function to be saved in a different stack before the recursive function can be called."
+        ],
+        "bbox": [
+            85,
+            182,
+            927,
+            264
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 programming programming-in-c easy descriptive",
+        "bbox": [
+            87,
+            290,
+            394,
+            301
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            307,
+            186,
+            321
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.11.3 Programming In C: GATE CSE 2002 | Question: 2.18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            331,
+            539,
+            345
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The C language is:",
+        "text_level": 1,
+        "bbox": [
+            85,
+            353,
+            228,
+            369
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/d10cf1002ea1d4e6ccd603b1aa375464bfcf0c8a1c72b03718545dbf0f47081e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            334,
+            931,
+            371
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. A context free language",
+            "C. A regular language"
+        ],
+        "bbox": [
+            89,
+            380,
+            275,
+            406
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. A context sensitive language",
+            "D. Parsable fully only by a Turing machine"
+        ],
+        "bbox": [
+            495,
+            380,
+            756,
+            416
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 programming programming-in-c normal",
+        "bbox": [
+            87,
+            423,
+            346,
+            434
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            440,
+            186,
+            454
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.11.4 Programming In C: GATE CSE 2005 | Question: 32",
+        "text_level": 1,
+        "bbox": [
+            78,
+            463,
+            524,
+            478
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C program:",
+        "text_level": 1,
+        "bbox": [
+            85,
+            488,
+            339,
+            502
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/160c3fc3a2f51e62ed85942af2f3479d332dcdff0943cca41d32c8b8a4432af1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            466,
+            931,
+            504
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```txt\ndouble foo (double); /* Line 1 */\nint main() {\n    double da, db;\n    //input da\n    db = foo(da);\n}\ndouble foo (double a) {\n    return a;\n}\n```",
+        "bbox": [
+            87,
+            511,
+            270,
+            610
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The above code compiled without any error or warning. If Line 1 is deleted, the above code will show:",
+        "bbox": [
+            85,
+            618,
+            823,
+            633
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. no compile warning or error",
+            "B. some compiler-warnings not leading to unintended results",
+            "C. some compiler-warnings due to type-mismatch eventually leading to unintended results",
+            "D. compiler errors"
+        ],
+        "bbox": [
+            87,
+            644,
+            747,
+            713
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2005 programming programming-in-c compiler-design easy",
+        "bbox": [
+            87,
+            739,
+            415,
+            749
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            754,
+            186,
+            769
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.11.5 Programming In C: GATE CSE 2008 | Question: 18",
+        "text_level": 1,
+        "bbox": [
+            78,
+            777,
+            526,
+            793
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Which combination of the integer variables $x, y$ , and $z$ makes the variable $a$ get the value 4 in the following expression?",
+        "bbox": [
+            84,
+            802,
+            875,
+            831
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "equation",
+        "text": "$$\na = (x > y)? ((x > z)? x: z): ((y > z)? y: z)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            327,
+            840,
+            685,
+            859
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $x = 3, y = 4, z = 2$",
+            "C. $x = 6, y = 3, z = 5$"
+        ],
+        "bbox": [
+            87,
+            868,
+            252,
+            896
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "B. $x = 6, y = 5, z = 3$",
+            "D. $x = 5, y = 4, z = 5$"
+        ],
+        "bbox": [
+            495,
+            868,
+            657,
+            897
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 programming programming-in-c easy",
+        "bbox": [
+            87,
+            901,
+            336,
+            912
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/2eda5ce6b70967edff056ebf0c870dba53806dfac8fcfc2c1e93d11e8596c9a1.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            781,
+            931,
+            819
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "5.11.6 Programming In C: GATE CSE 2008 | Question: 61",
+        "text_level": 1,
+        "bbox": [
+            78,
+            89,
+            524,
+            104
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/7d602f5161a51afb15dcfc1e0dba97b9a6271c61c77befe07af2a4c8309ba08b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            92,
+            931,
+            129
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Choose the correct option to fill ?1 and ?2 so that the program below prints an input string in reverse order. Assume that the input string is terminated by a new line character.",
+        "bbox": [
+            84,
+            112,
+            875,
+            143
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nvoid reverse(void)\n{\n    int c;\n    if(?1) reverse();\n    ?2\n}\nmain()\n{\n    printf(\"Enter text\");\n    printf(\"\\n\");\n    reverse();\n    printf(\"\\n\");\n}\n```",
+        "bbox": [
+            87,
+            150,
+            213,
+            293
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. ?1 is (getchar()!='\\n')",
+            "?2 is getchar(c);",
+            "B. ?1 is ((c = getchar())!=' \\n')",
+            "?2 is getchar(c);",
+            "C. ?1 is (c! =' \\n')",
+            "?2 is putchar(c);",
+            "D. ?1 is ((c = getchar())!=' \\n')",
+            "?2 is putchar(c);"
+        ],
+        "bbox": [
+            87,
+            302,
+            357,
+            456
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2008 programming normal programming-in-c",
+        "bbox": [
+            87,
+            480,
+            346,
+            490
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            496,
+            188,
+            511
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "5.11.7 Programming In C: GATE CSE 2012 | Question: 48",
+        "text_level": 1,
+        "bbox": [
+            78,
+            519,
+            526,
+            534
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider the following C code segment.",
+        "bbox": [
+            85,
+            543,
+            379,
+            558
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/53f13681cccebee6553c69f78d4dbe6e3bedf6c146853b3f5fc15787a4a10695.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            522,
+            931,
+            559
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "code",
+        "sub_type": "code",
+        "code_caption": [],
+        "code_body": "```c\nint a, b, c = 0;\nvoid prtFun(void);\nmain()\n{\n    static int a = 1;      /* Line 1 */\n    prtFun();\n    a += 1;\n    prtFun();\n    printf(\"\\n %d %d \", a, b);\n}\n\nvoid prtFun(void)\n{\n    static int a = 2;      /* Line 2 */\n    int b = 1;\n    a += ++b;\n    printf(\"\\n %d %d \", a, b);\n}\n```",
+        "bbox": [
+            87,
+            567,
+            273,
+            762
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "What output will be generated by the given code segment?",
+        "bbox": [
+            85,
+            770,
+            517,
+            785
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "table",
+        "img_path": "images/9dca2f301bec5c52910340ff60914f0da574b873861d21aebb95b3a5150dcaeb.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>3</td><td>1</td><td>4</td><td>2</td><td>4</td><td>2</td><td>3</td><td>1</td></tr><tr><td>4</td><td>1</td><td>B. 6</td><td>1</td><td>C. 6</td><td>2</td><td>D. 5</td><td>2</td></tr><tr><td>4</td><td>2</td><td>6</td><td>1</td><td>2</td><td>0</td><td>5</td><td>2</td></tr></table>",
+        "bbox": [
+            112,
+            809,
+            757,
+            859
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2012 programming programming-in-c normal",
+        "bbox": [
+            89,
+            864,
+            346,
+            874
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            878,
+            188,
+            894
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            66,
+            188,
+            80
+        ],
+        "page_idx": 11
+    }
+]

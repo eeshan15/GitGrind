@@ -1,0 +1,4323 @@
+[
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing Identical vs. Distinct: This is the most common error. Always identify if the items being distributed and the containers are distinguishable or not.",
+            "- Empty vs. Non-empty Bins: Pay close attention to whether bins are allowed to be empty or if they must contain at least one item. This changes the formula significantly.",
+            "• Overlapping Cases: Ensure that cases are mutually exclusive and exhaustive when breaking down a problem."
+        ],
+        "bbox": [
+            72,
+            64,
+            924,
+            135
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            148,
+            473,
+            163
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mapping to Stars and Bars: Many problems can be rephrased as distributing identical items into distinct bins. For example, finding the number of non-negative integer solutions to an equation.",
+            "- Inclusion-Exclusion Principle: For problems where \"at least one\" condition is difficult to apply directly, use inclusion-exclusion to subtract cases where bins are empty.",
+            "- Complementary Counting: Sometimes it's easier to count the total ways and subtract the \"unwanted\" ways."
+        ],
+        "bbox": [
+            72,
+            176,
+            921,
+            248
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Combinatory",
+        "text_level": 1,
+        "bbox": [
+            60,
+            260,
+            183,
+            277
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Combinatorics is the branch of discrete mathematics concerned with counting, arrangement, and selection of objects. It deals with permutations (arrangements where order matters) and combinations (selections where order does not matter), often involving constraints or repetitions.",
+        "bbox": [
+            58,
+            289,
+            931,
+            333
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            346,
+            415,
+            361
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. Permutations (Order Matters):",
+        "text_level": 1,
+        "bbox": [
+            63,
+            375,
+            324,
+            389
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Permutations of $n$ distinct items taken $k$ at a time: $P(n, k) = \\frac{n!}{(n - k)!}$ .",
+            "- Permutations of $n$ distinct items taken $n$ at a time: $P(n, n) = n!$ .",
+            "Permutations with Repetition (multiset permutations): For $n$ items where there are $n_1$ identical items of type 1, $n_2$ of type 2, ..., $n_k$ of type $k$ , and $n_1 + n_2 + \\cdots + n_k = n$ . Total ways: $\\frac{n!}{n_1!n_2!...n_k!}$ .",
+            "- Circular Permutations: For $n$ distinct items arranged in a circle, total ways: $(n - 1)!$ . If arrangements are symmetric (e.g., beads on a necklace), divide by 2: $\\frac{(n - 1)!}{2}$ ."
+        ],
+        "bbox": [
+            95,
+            389,
+            927,
+            496
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "2. Combinations (Order Does Not Matter):",
+        "text_level": 1,
+        "bbox": [
+            63,
+            495,
+            396,
+            509
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Combinations of n distinct items taken k at a time: $C(n,k)=\\binom{n}{k}=\\frac{n!}{k!(n-k)!}$ .",
+            "- Combinations with Repetition (multiset combinations): Selecting $k$ items from $n$ types with repetition allowed. Total ways: $C(n + k - 1, k)$ . This is equivalent to the \"identical balls into distinct bins\" problem."
+        ],
+        "bbox": [
+            95,
+            509,
+            873,
+            560
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "3. Binomial Theorem:",
+        "text_level": 1,
+        "bbox": [
+            63,
+            559,
+            240,
+            572
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(x + y) ^ {n} = \\sum_ {k = 0} ^ {n} \\binom {n} {k} x ^ {n - k} y ^ {k}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            396,
+            585,
+            623,
+            625
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4. Multinomial Theorem:",
+        "text_level": 1,
+        "bbox": [
+            63,
+            635,
+            260,
+            648
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(x _ {1} + x _ {2} + \\dots + x _ {m}) ^ {n} = \\sum_ {n _ {1} + \\dots + n _ {m} = n} \\frac {n !}{n _ {1} ! n _ {2} ! \\dots n _ {m} !} x _ {1} ^ {n _ {1}} x _ {2} ^ {n _ {2}} \\dots x _ {m} ^ {n _ {m}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            243,
+            660,
+            774,
+            700
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            712,
+            297,
+            728
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Symmetry Identity: $C(n, k) = C(n, n - k)$ .",
+            "- Pascal's Identity: $C(n, k) = C(n - 1, k) + C(n - 1, k - 1)$ .",
+            "- Sum of Binomial Coefficients: $\\sum_{k=0}^{n} C(n, k) = 2^n$ .",
+            "- Hockey-stick Identity: $\\sum_{i=r}^{n} C(i,r) = C(n+1,r+1)$ ."
+        ],
+        "bbox": [
+            72,
+            741,
+            552,
+            806
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            818,
+            329,
+            833
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Overcounting/Undercounting: Ensure each valid arrangement/selection is counted exactly once. This often happens when dealing with symmetry or identical items.",
+            "- \"At Least\" / \"At Most\" Conditions: These often require complementary counting or casework.",
+            "- Distinguishing Permutations vs. Combinations: If the order of selection or arrangement matters, it's a permutation. If not, it's a combination."
+        ],
+        "bbox": [
+            72,
+            847,
+            880,
+            916
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            64,
+            473,
+            80
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Principle of Multiplication: If a task can be broken into a sequence of $k$ independent steps, and step $i$ can be performed in $n_i$ ways, then the total number of ways is $n_1 \\times n_2 \\times \\cdots \\times n_k$ .",
+            "- Principle of Addition: If a task can be performed in one of $k$ mutually exclusive ways, and way $i$ can be performed in $n_i$ ways, then the total number of ways is $n_1 + n_2 + \\cdots + n_k$ .",
+            "- Complementary Counting: Count the total number of ways and subtract the number of \"unwanted\" ways. Useful for \"at least one\" type problems.",
+            "- Casework: Break down a complex problem into simpler, mutually exclusive cases and sum the results."
+        ],
+        "bbox": [
+            72,
+            93,
+            922,
+            192
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Counting",
+        "text_level": 1,
+        "bbox": [
+            60,
+            204,
+            149,
+            220
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Counting, in a broader sense, encompasses the fundamental principles used to determine the size of finite sets. It builds upon combinatory concepts and introduces powerful tools like the Principle of Inclusion-Exclusion to handle complex scenarios involving overlapping sets.",
+        "bbox": [
+            58,
+            233,
+            919,
+            277
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            290,
+            413,
+            306
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "1. Principle of Inclusion-Exclusion (PIE):",
+        "text_level": 1,
+        "bbox": [
+            65,
+            319,
+            386,
+            333
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For two sets: $|A \\cup B| = |A| + |B| - |A \\cap B|$ .",
+            "- For three sets: $|A \\cup B \\cup C| = |A| + |B| + |C| - (|A \\cap B| + |A \\cap C| + |B \\cap C|) + |A \\cap B \\cap C|$ .",
+            "- General form for n sets: $\\left| \\bigcup_{i=1}^n A_i \\right| = \\sum_{i} |A_i| - \\sum_{i}$"
+        ],
+        "bbox": [
+            97,
+            334,
+            853,
+            378
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "2. Derangements: A permutation of $n$ objects such that no object remains in its original position. The number of derangements of $n$ objects, denoted $D_{n}$ or $!n$ :",
+        "bbox": [
+            63,
+            378,
+            884,
+            407
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD _ {n} = n! \\sum_ {k = 0} ^ {n} \\frac {(- 1) ^ {k}}{k !} = n! \\left(\\frac {1}{0 !} - \\frac {1}{1 !} + \\frac {1}{2 !} - \\dots + \\frac {(- 1) ^ {n}}{n !}\\right)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            275,
+            418,
+            742,
+            459
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "For large $n, D_{n} \\approx \\frac{n!}{e}$ .",
+        "bbox": [
+            85,
+            467,
+            253,
+            489
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            501,
+            297,
+            516
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- PIE is essential for counting elements in the union of non-disjoint sets.",
+            "- Derangements are a specific application of PIE for permutations with no fixed points."
+        ],
+        "bbox": [
+            72,
+            530,
+            700,
+            559
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            573,
+            329,
+            587
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly Identifying Sets for PIE: Clearly define the properties that form the sets $A, B, C, \\ldots$ and their intersections.",
+            "- Misapplying PIE: Ensure you are alternating signs correctly and covering all necessary intersections.",
+            "- \"At Least One\" vs. \"Exactly One\": PIE typically helps with \"at least one\" conditions. For \"exactly one,\" you might need to combine PIE with complementary counting or other techniques."
+        ],
+        "bbox": [
+            72,
+            602,
+            868,
+            673
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            686,
+            473,
+            701
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Casework: Break down complex problems into simpler, mutually exclusive scenarios.",
+            "- Complementary Counting: Count the total possibilities and subtract the undesirable ones. Often used in conjunction with PIE.",
+            "- Direct Application of PIE: For problems involving properties that overlap, PIE is usually the most direct approach."
+        ],
+        "bbox": [
+            72,
+            716,
+            919,
+            771
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Generating Functions",
+        "text_level": 1,
+        "bbox": [
+            60,
+            785,
+            260,
+            801
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A generating function is a formal power series where the coefficients represent the terms of a sequence. It provides a powerful algebraic tool for solving recurrence relations, counting problems, and proving combinatorial identities by converting sequence operations into algebraic manipulations.",
+        "bbox": [
+            58,
+            813,
+            924,
+            857
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            870,
+            413,
+            885
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Definition: For a sequence $a_0, a_1, a_2, \\ldots$ , its ordinary generating function (OGF) is $G(x) = \\sum_{n=0}^{\\infty} a_n x^n$ .",
+            "2. Common Generating Functions:"
+        ],
+        "bbox": [
+            63,
+            899,
+            860,
+            929
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Constant sequence $1, 1, 1, \\ldots: G(x) = \\sum_{n=0}^{\\infty} x^n = \\frac{1}{1-x}$ .",
+            "- Arithmetic progression $1, a, a^2, \\ldots: G(x) = \\sum_{n=0}^{\\infty} (ax)^n = \\frac{1}{1 - ax}$ .",
+            "- Binomial coefficients $C(n, k)$ for fixed $n$ : $G(x) = \\sum_{k=0}^{n} C(n, k)x^k = (1 + x)^n$ .",
+            "• Combinations with repetition $C(n + k - 1, k)$ for fixed $n$ : $G(x) = \\sum_{k=0}^{\\infty} C(n + k - 1, k)x^k = \\frac{1}{(1 - x)^n}$ .",
+            "- Sequence $a_{n} = n$ : $G(x) = \\sum_{n=0}^{\\infty} nx^{n} = \\frac{x}{(1-x)^{2}}$ .",
+            "- Sequence $a_{n} = n^{2} \\colon G(x) = \\sum_{n=0}^{\\infty} n^{2} x^{n} = \\frac{x(1 + x)}{(1 - x)^{3}}$ ."
+        ],
+        "bbox": [
+            97,
+            65,
+            899,
+            187
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "3. Operations on Generating Functions:",
+        "text_level": 1,
+        "bbox": [
+            63,
+            186,
+            381,
+            199
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "○ Addition: If $A(x) = \\sum a_n x^n$ and $B(x) = \\sum b_n x^n$ , then $A(x) + B(x) = \\sum (a_n + b_n)x^n$ .",
+            "- Multiplication (Convolution): If $A(x) = \\sum a_n x^n$ and $B(x) = \\sum b_n x^n$ , then $A(x)B(x) = \\sum c_n x^n$ , where $c_n = \\sum_{k=0}^n a_k b_{n-k}$ . This is crucial for counting combinations of independent choices.",
+            "- Differentiation: $G'(x) = \\sum_{n=1}^{\\infty} na_n x^{n-1}$ . So, $xG'(x) = \\sum_{n=1}^{\\infty} na_n x^n$ .",
+            "- Integration: $\\int G(x)dx = \\sum_{n=0}^{\\infty} \\frac{a_n}{n+1} x^{n+1}$ .",
+            "- Shift: $x^{k}G(x) = \\sum_{n=0}^{\\infty} a_{n}x^{n+k}$ (shifts coefficients to the right). $\\frac{G(x) - a_0 - \\cdots - a_{k-1}x^{k-1}}{x^k} = \\sum_{n=k}^{\\infty} a_n x^{n-k}$ (shifts coefficients to the left)."
+        ],
+        "bbox": [
+            97,
+            199,
+            912,
+            315
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            330,
+            295,
+            345
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The coefficient of $x^n$ in a generating function $G(x)$ is $a_n$ , denoted $[x^n]G(x)$ .",
+            "- Generating functions are particularly useful for problems involving sums, combinations with repetition, and solving linear recurrence relations."
+        ],
+        "bbox": [
+            72,
+            359,
+            912,
+            402
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            416,
+            327,
+            432
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Forming the Correct GF: Carefully translate the problem's constraints (e.g., minimum/maximum number of items, distinct/identical items) into the terms of the generating function.",
+            "- Extracting Coefficients: This often requires partial fraction decomposition for rational functions or using generalized binomial theorem.",
+            "- Confusion with Exponential Generating Functions (EGFs): EGFs are used for permutations, while OGFs are for combinations. GATE typically focuses on OGFs."
+        ],
+        "bbox": [
+            72,
+            446,
+            924,
+            529
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            543,
+            473,
+            559
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "- Solving Recurrence Relations:",
+        "text_level": 1,
+        "bbox": [
+            72,
+            573,
+            327,
+            587
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Write the recurrence relation.",
+            "2. Multiply by $x^n$ and sum over all valid $n$ .",
+            "3. Manipulate the sums to relate them to the generating function $G(x)$ .",
+            "4. Solve for $G(x)$ as a rational function.",
+            "5. Use partial fraction decomposition and known series expansions to find the coefficient of $x^n$ ."
+        ],
+        "bbox": [
+            87,
+            587,
+            781,
+            659
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "\\- Counting Combinations: Represent each type of item or choice as a factor in the generating function. The coefficient of $x^n$ in the product of these factors gives the number of ways to choose $n$ items.",
+        "bbox": [
+            72,
+            660,
+            868,
+            688
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Modular Arithmetic",
+        "text_level": 1,
+        "bbox": [
+            60,
+            701,
+            238,
+            716
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Modular arithmetic is a system of arithmetic for integers, where numbers \"wrap around\" when they reach a certain value—the modulus. It's fundamental in cryptography, number theory, and hashing, and is used in GATE for problems involving remainders, large powers, and divisibility.",
+        "bbox": [
+            58,
+            730,
+            910,
+            773
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            787,
+            413,
+            802
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "1. Congruence Relation: $a \\equiv b \\pmod{m}$ if $m$ divides $(a - b)$ , or equivalently, $a$ and $b$ have the same remainder when divided by $m$ .",
+        "bbox": [
+            63,
+            815,
+            907,
+            845
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2. Basic Properties:",
+        "text_level": 1,
+        "bbox": [
+            63,
+            846,
+            225,
+            859
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If $a \\equiv b \\pmod{m}$ and $c \\equiv d \\pmod{m}$ , then:",
+            "$a + c \\equiv b + d \\pmod{m}$",
+            "$a - c \\equiv b - d \\pmod{m}$",
+            "$\\circ ac\\equiv bd\\pmod{m}$"
+        ],
+        "bbox": [
+            97,
+            859,
+            465,
+            921
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "$a^k \\equiv b^k \\pmod{m}$ for any positive integer $k$ .",
+        "bbox": [
+            97,
+            65,
+            447,
+            83
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3. Modular Inverse: An integer $a^{-1}$ is the modular multiplicative inverse of $a$ modulo $m$ if $aa^{-1} \\equiv 1 \\pmod{m}$ .",
+        "bbox": [
+            63,
+            83,
+            887,
+            99
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- An inverse exists if and only if $\\gcd(a, m) = 1$ .",
+            "- Can be found using the Extended Euclidean Algorithm."
+        ],
+        "bbox": [
+            95,
+            99,
+            512,
+            128
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4. Euler's Totient Function $\\phi(n)$ : Counts the number of positive integers up to $n$ that are relatively prime to $n$ .",
+        "bbox": [
+            63,
+            128,
+            877,
+            143
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "○ If $n = p_1^{k_1} p_2^{k_2} \\ldots p_r^{k_r}$ (prime factorization), then $\\phi(n) = n \\left(1 - \\frac{1}{p_1}\\right) \\left(1 - \\frac{1}{p_2}\\right) \\ldots \\left(1 - \\frac{1}{p_r}\\right)$ .",
+            "- If $p$ is prime, $\\phi(p) = p - 1$ .",
+            "- If $p$ is prime, $\\phi(p^k) = p^k - p^{k-1}$ ."
+        ],
+        "bbox": [
+            95,
+            143,
+            794,
+            201
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "5. Fermat's Little Theorem: If $p$ is a prime number, then for any integer $a$ not divisible by $p$ , $a^{p-1} \\equiv 1 \\pmod{p}$ . Also, $a^p \\equiv a \\pmod{p}$ for any integer $a$ .",
+            "6. Euler's Theorem: If $n$ and $a$ are coprime positive integers, then $a^{\\phi(n)} \\equiv 1 \\pmod{n}$ . (Fermat's Little Theorem is a special case of Euler's Theorem when $n$ is prime).",
+            "7. Chinese Remainder Theorem (CRT): (Conceptually important, full formula rarely needed for GATE) If integers $n_{1}, n_{2}, \\ldots, n_{k}$ are pairwise coprime, then for any given integers $a_{1}, a_{2}, \\ldots, a_{k}$ , there exists an integer x that solves the system of congruences:"
+        ],
+        "bbox": [
+            63,
+            201,
+            927,
+            305
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nx \\equiv a _ {1} \\pmod {n _ {1}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            428,
+            315,
+            589,
+            334
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nx \\equiv a _ {2} \\pmod {n _ {2}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            431,
+            342,
+            589,
+            359
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": ": : :",
+        "bbox": [
+            505,
+            375,
+            517,
+            391
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nx \\equiv a _ {k} \\pmod {n _ {k}}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            431,
+            404,
+            589,
+            422
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Moreover, all solutions x are congruent modulo $N = n_{1}n_{2} \\ldots n_{k}$ .",
+        "bbox": [
+            84,
+            431,
+            574,
+            446
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            460,
+            297,
+            475
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Modular arithmetic allows us to work with remainders, simplifying calculations involving very large numbers.",
+            "- The concept of modular inverse is critical for division in modular arithmetic (multiplication by inverse).",
+            "- Fermat's Little Theorem and Euler's Theorem are powerful for simplifying large exponents modulo a number."
+        ],
+        "bbox": [
+            72,
+            489,
+            873,
+            530
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            545,
+            329,
+            560
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Division: Division is not directly defined. Instead, multiply by the modular inverse. If the inverse doesn't exist (i.e., $\\gcd(a, m) \\neq 1$ ), division is not possible.",
+            "- Negative Results: If a calculation yields a negative number, add the modulus until it's positive. E.g., $-5 \\equiv 2 \\pmod{7}$ .",
+            "- Large Exponents: Always reduce the exponent modulo $\\phi(m)$ (if $\\gcd(a, m) = 1$ ) or modulo $m - 1$ (if $m$ is prime and $\\gcd(a, m) = 1$ ) to simplify calculations using Euler's or Fermat's theorem."
+        ],
+        "bbox": [
+            72,
+            574,
+            914,
+            665
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            678,
+            473,
+            693
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Repeated Squaring (Exponentiation by Squaring): Efficiently compute $a^b$ (mod $m$ ) by repeatedly squaring the base and reducing modulo $m$ .",
+        "bbox": [
+            72,
+            709,
+            922,
+            738
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Example: $a^b = a^{b/2} \\cdot a^{b/2}$ if $b$ is even, $a^b = a \\cdot a^{(b-1)/2} \\cdot a^{(b-1)/2}$ if $b$ is odd.",
+        "bbox": [
+            84,
+            738,
+            648,
+            756
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "• Finding Modular Inverse:",
+        "bbox": [
+            73,
+            758,
+            285,
+            773
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Extended Euclidean Algorithm: For $ax + my = \\gcd(a, m)$ . If $\\gcd(a, m) = 1$ , then $ax \\equiv 1 \\pmod{m}$ , so $x$ is the inverse.",
+            "- Fermat's Little Theorem: If $m$ is prime, $a^{m-2} \\equiv a^{-1} \\pmod{m}$ .",
+            "- Euler's Theorem: If $\\gcd(a, m) = 1$ , $a^{\\phi(m)-1} \\equiv a^{-1} \\pmod{m}$ ."
+        ],
+        "bbox": [
+            95,
+            773,
+            924,
+            837
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\- Properties of Congruence: Apply addition, subtraction, multiplication properties to simplify expressions before taking the final modulo.",
+        "bbox": [
+            72,
+            837,
+            894,
+            865
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Pigeonhole Principle",
+        "text_level": 1,
+        "bbox": [
+            60,
+            877,
+            253,
+            893
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: The Pigeonhole Principle (PHP) is a fundamental concept stating that if n items are put into",
+        "bbox": [
+            60,
+            906,
+            924,
+            922
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "m containers, with n > m, then at least one container must contain more than one item. It's a simple yet powerful tool for proving existence in combinatorial problems.",
+        "bbox": [
+            58,
+            64,
+            922,
+            95
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            106,
+            415,
+            122
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Basic Pigeonhole Principle: If $n$ pigeons are placed into $m$ pigeonholes, and $n > m$ , then at least one pigeonhole contains more than one pigeon.",
+            "2. Generalized Pigeonhole Principle: If $n$ pigeons are placed into $m$ pigeonholes, then at least one pigeonhole must contain at least $\\lceil n / m \\rceil$ pigeons."
+        ],
+        "bbox": [
+            63,
+            136,
+            929,
+            195
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            207,
+            297,
+            223
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- PHP is an existence principle; it tells you that something must happen, but not how to find it or how many times it happens.",
+            "- It's often used in proofs to show that a certain condition must hold true."
+        ],
+        "bbox": [
+            72,
+            237,
+            905,
+            279
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            293,
+            329,
+            309
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Identifying Pigeons and Pigeonholes: The most crucial step is correctly defining what constitutes a \"pigeon\" and a \"pigeonhole\" in the context of the problem. This often requires creative thinking.",
+            "- Applying Generalized PHP: Ensure you correctly calculate $\\lceil n / m \\rceil$ .",
+            "- \"At Least\" vs. \"Exactly\": PHP guarantees \"at least\" a certain number; it doesn't guarantee \"exactly.\""
+        ],
+        "bbox": [
+            72,
+            321,
+            932,
+            380
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            394,
+            473,
+            409
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Creative Definitions: The key is to define pigeons and pigeonholes in a way that makes the principle applicable.",
+        "bbox": [
+            72,
+            423,
+            905,
+            437
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Pigeons are often the items being distributed or selected.",
+        "bbox": [
+            97,
+            437,
+            529,
+            451
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Pigeonholes are often categories, properties, or possible outcomes.",
+        "bbox": [
+            97,
+            451,
+            605,
+            465
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Proof by Contradiction: Sometimes, assuming the opposite of what you want to prove (i.e., no pigeonhole has more than $k$ pigeons) can lead to a contradiction using PHP.",
+            "- Small Examples: Test with small numbers to understand the problem structure and how to define pigeons/pigeonholes."
+        ],
+        "bbox": [
+            72,
+            465,
+            899,
+            521
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Recurrence Relation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            534,
+            250,
+            549
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: A recurrence relation is an equation that defines a sequence where each term is given as a function of its preceding terms. They are fundamental in algorithm analysis (e.g., complexity of recursive algorithms), combinatorics (e.g., Fibonacci numbers), and discrete probability.",
+        "bbox": [
+            58,
+            562,
+            924,
+            606
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            619,
+            415,
+            634
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1. Linear Homogeneous Recurrence Relations with Constant Coefficients:",
+        "bbox": [
+            63,
+            648,
+            648,
+            663
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\na _ {n} = c _ {1} a _ {n - 1} + c _ {2} a _ {n - 2} + \\dots + c _ {k} a _ {n - k}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            357,
+            674,
+            663,
+            690
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "• Characteristic Equation: $r^{k} - c_{1}r^{k-1} - c_{2}r^{k-2} - \\cdots - c_{k} = 0$ .",
+            "- Distinct Roots: If $r_1, r_2, \\ldots, r_k$ are distinct roots, the general solution is $a_n = A_1 r_1^n + A_2 r_2^n + \\cdots + A_k r_k^n$ .",
+            "- Repeated Roots: If a root $r$ has multiplicity $m$ , its contribution to the general solution is"
+        ],
+        "bbox": [
+            95,
+            700,
+            910,
+            747
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n(A _ {1} + A _ {2} n + \\dots + A _ {m} n ^ {m - 1}) r ^ {n}.\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            747,
+            369,
+            763
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- The constants $A_{i}$ are determined by the initial conditions.",
+        "bbox": [
+            95,
+            763,
+            531,
+            777
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2. Linear Non-Homogeneous Recurrence Relations:",
+        "bbox": [
+            63,
+            777,
+            473,
+            790
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\na _ {n} = c _ {1} a _ {n - 1} + \\dots + c _ {k} a _ {n - k} + F (n)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            364,
+            802,
+            655,
+            820
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The general solution is $a_{n} = a_{n}^{(h)} + a_{n}^{(p)}$ , where $a_{n}^{(h)}$ is the homogeneous solution and $a_{n}^{(p)}$ is a particular solution.",
+            "- Finding $a_{n}^{(p)}$ : Guess a form for $a_{n}^{(p)}$ based on $F(n)$ ."
+        ],
+        "bbox": [
+            95,
+            830,
+            878,
+            883
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If $F(n)$ is a polynomial of degree $d$ , guess $P(n) = C_d n^d + \\cdots + C_0$ . If 1 is a root of the characteristic equation with multiplicity $s$ , multiply by $n^s$ .",
+            "- If $F(n)$ is an exponential $C \\cdot b^n$ , guess $A \\cdot b^n$ . If $b$ is a root of the characteristic equation with multiplicity $s$ ,"
+        ],
+        "bbox": [
+            119,
+            883,
+            910,
+            929
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "multiply by $n^s$ .",
+        "bbox": [
+            136,
+            65,
+            247,
+            79
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3. Master Theorem (for Divide and Conquer Recurrences): For recurrences of the form $T(n) = aT(n / b) + f(n)$ where $a \\geq 1$ , $b > 1$ , and $f(n)$ is asymptotically positive.",
+        "bbox": [
+            63,
+            79,
+            919,
+            110
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. If $f(n) = O(n^{\\log_b a - \\epsilon})$ for some $\\epsilon > 0$ , then $T(n) = \\Theta(n^{\\log_b a})$ .",
+            "2. If $f(n) = \\Theta(n^{\\log_b a})$ , then $T(n) = \\Theta(n^{\\log_b a} \\log n)$ .",
+            "3. If $f(n) = \\Omega(n^{\\log_b a + \\epsilon})$ for some $\\epsilon > 0$ , AND $af(n / b) \\leq cf(n)$ for some $c < 1$ and sufficiently large $n$ (regularity condition), then $T(n) = \\Theta(f(n))$ ."
+        ],
+        "bbox": [
+            87,
+            110,
+            865,
+            176
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            190,
+            297,
+            205
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The order of a recurrence relation is the difference between the largest and smallest indices.",
+            "- Linear recurrence relations with constant coefficients are solvable using the characteristic equation method.",
+            "- The Master Theorem provides a quick way to find asymptotic bounds for many divide-and-conquer algorithms."
+        ],
+        "bbox": [
+            72,
+            219,
+            887,
+            261
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            275,
+            329,
+            290
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Incorrect Characteristic Equation: Ensure all terms are on one side and coefficients are correct.",
+        "bbox": [
+            72,
+            305,
+            800,
+            318
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Handling Repeated Roots: Don't forget the $n, n^2, \\ldots$ factors for repeated roots.",
+        "bbox": [
+            72,
+            320,
+            678,
+            334
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Finding Particular Solutions: The guess for $a_{n}^{(p)}$ must be adjusted if it overlaps with the homogeneous solution.",
+        "bbox": [
+            72,
+            338,
+            905,
+            355
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Boundary Conditions: Always use initial conditions to find the constants $A_{i}$ in the general solution.",
+        "bbox": [
+            72,
+            356,
+            813,
+            369
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Master Theorem Conditions: Carefully check all three cases and the regularity condition for case 3.",
+        "bbox": [
+            72,
+            370,
+            820,
+            384
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            397,
+            473,
+            413
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Characteristic Equation Method: The standard approach for linear homogeneous recurrences.",
+            "- Substitution Method: For simpler recurrences, guess a solution and prove it by induction.",
+            "- Generating Functions: A powerful general method for solving linear recurrences (see Generating Functions section).",
+            "- Master Theorem: For divide-and-conquer algorithms, this is the fastest way to find the asymptotic complexity."
+        ],
+        "bbox": [
+            72,
+            427,
+            885,
+            497
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Summation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            510,
+            169,
+            524
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Definition and Core Idea: Summation involves finding the sum of a sequence of numbers, often expressed using sigma notation. It's crucial for analyzing algorithm complexity, calculating probabilities, and working with series in various mathematical contexts.",
+        "bbox": [
+            58,
+            539,
+            889,
+            581
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Important Formulas, Theorems, and Results:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            596,
+            415,
+            610
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1. Arithmetic Series: Sum of an arithmetic progression $a, a + d, a + 2d, \\ldots, a + (n - 1)d$ .",
+        "bbox": [
+            63,
+            624,
+            752,
+            642
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\sum_ {i = 0} ^ {n - 1} (a + i d) = \\frac {n}{2} (2 a + (n - 1) d)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            376,
+            653,
+            643,
+            694
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "If $a = 1, d = 1$ , sum of first $n$ integers: $\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}$ .",
+        "bbox": [
+            84,
+            705,
+            515,
+            726
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "2. Geometric Series: Sum of a geometric progression $a, ar, ar^2, \\ldots, ar^{n-1}$ .",
+        "bbox": [
+            63,
+            726,
+            638,
+            742
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\sum_ {i = 0} ^ {n - 1} a r ^ {i} = a \\frac {1 - r ^ {n}}{1 - r} \\quad (\\text {if} r \\neq 1)\n$$",
+        "text_format": "latex",
+        "bbox": [
+            384,
+            752,
+            633,
+            795
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Infinite Geometric Series: If $|r| < 1$ , then $\\sum_{i=0}^{\\infty} ar^i = \\frac{a}{1-r}$ .",
+        "bbox": [
+            84,
+            805,
+            537,
+            824
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3. Sum of Squares:",
+        "bbox": [
+            63,
+            823,
+            221,
+            837
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\sum_ {i = 1} ^ {n} i ^ {2} = \\frac {n (n + 1) (2 n + 1)}{6}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            396,
+            847,
+            621,
+            888
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4. Sum of Cubes:",
+        "bbox": [
+            63,
+            897,
+            206,
+            912
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\sum_ {i = 1} ^ {n} i ^ {3} = \\left(\\frac {n (n + 1)}{2}\\right) ^ {2}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            413,
+            65,
+            608,
+            106
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "5. Harmonic Series: $H_{n} = \\sum_{i=1}^{n} \\frac{1}{i}$ . $H_{n} \\approx \\ln n + \\gamma$ , where $\\gamma \\approx 0.577$ (Euler-Mascheroni constant).",
+        "bbox": [
+            63,
+            117,
+            815,
+            135
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "6. Telescoping Sums: A sum where intermediate terms cancel out.",
+        "bbox": [
+            63,
+            135,
+            564,
+            148
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\sum_ {i = 1} ^ {n} (a _ {i} - a _ {i + 1}) = (a _ {1} - a _ {2}) + (a _ {2} - a _ {3}) + \\dots + (a _ {n} - a _ {n + 1}) = a _ {1} - a _ {n + 1}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            218,
+            160,
+            801,
+            200
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Key Properties and Identities:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            213,
+            297,
+            228
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Linearity: $\\sum (c\\cdot a_i + d\\cdot b_i) = c\\sum a_i + d\\sum b_i$ .",
+            "- Changing the limits of summation requires careful adjustment of the terms."
+        ],
+        "bbox": [
+            72,
+            241,
+            630,
+            271
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Common Pitfalls or Tricky Points:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            286,
+            329,
+            301
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Off-by-One Errors: Incorrectly determining the number of terms in a series (e.g., summing from $i = 0$ to $n - 1$ vs. $i = 1$ to $n$ ).",
+        "bbox": [
+            72,
+            315,
+            922,
+            343
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Incorrectly Identifying Series Type: Make sure it's truly arithmetic, geometric, or another standard type before applying formulas.",
+        "bbox": [
+            72,
+            343,
+            900,
+            371
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Convergence of Infinite Series: For infinite geometric series, ensure $|r| < 1$ .",
+        "bbox": [
+            72,
+            371,
+            660,
+            388
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Standard Problem-Solving Techniques or Shortcuts:",
+        "text_level": 1,
+        "bbox": [
+            60,
+            401,
+            475,
+            416
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Direct Formula Application: For standard series (arithmetic, geometric, sums of powers), memorize and apply the formulas.",
+            "- Telescoping: Look for terms that can be expressed as differences, leading to cancellation.",
+            "- Splitting Sums: Break a complex sum into multiple simpler sums using linearity.",
+            "- Changing Index: Adjust the summation index to match standard formulas (e.g., starting from 0 or 1).",
+            "- Integral Approximation: For sums that don't have a closed form, integrals can provide good upper and lower bounds (e.g., for harmonic series)."
+        ],
+        "bbox": [
+            72,
+            429,
+            927,
+            527
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Quick Formula Reference",
+        "text_level": 1,
+        "bbox": [
+            60,
+            540,
+            295,
+            555
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Permutations:",
+        "bbox": [
+            73,
+            570,
+            201,
+            581
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ P(n,k) = \\frac{n!}{(n - k)!}$",
+            "$\\circ P(n,n) = n!$",
+            "Permutations with Repetition: $\\frac{n!}{n_1!n_2!\\dots n_k!}$",
+            "○ Circular Permutations: $(n - 1)!$"
+        ],
+        "bbox": [
+            97,
+            583,
+            408,
+            656
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Combinations:",
+        "bbox": [
+            73,
+            656,
+            206,
+            667
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ C(n,k) = \\binom{n}{k} = \\frac{n!}{k!(n - k)!}$",
+            "• Combinations with Repetition: $C(n + k - 1, k)$",
+            "- Symmetry: $C(n, k) = C(n, n - k)$",
+            "- Pascal's Identity: $C(n, k) = C(n - 1, k) + C(n - 1, k - 1)$",
+            "- Sum: $\\sum_{k=0}^{n} C(n, k) = 2^n$"
+        ],
+        "bbox": [
+            97,
+            668,
+            563,
+            752
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Balls In Bins:",
+        "bbox": [
+            73,
+            752,
+            194,
+            762
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Distinct Balls, Distinct Bins (any per bin): $k^n$",
+            "- Distinct Balls, Distinct Bins (at most one per bin): $P(k, n)$",
+            "- Identical Balls, Distinct Bins (any per bin): $C(n + k - 1, k - 1)$",
+            "- Identical Balls, Distinct Bins (at least one per bin): $C(n - 1, k - 1)$",
+            "- Distinct Balls, Identical Bins (at least one per bin): $S(n, k)$ (Stirling numbers of 2nd kind)"
+        ],
+        "bbox": [
+            97,
+            764,
+            754,
+            840
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Principle of Inclusion-Exclusion (PIE):",
+        "bbox": [
+            73,
+            840,
+            386,
+            853
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ |A\\cup B| = |A| + |B| - |A\\cap B|$",
+            "$\\circ |A\\cup B\\cup C| = |A| + |B| + |C| - (|A\\cap B| + |A\\cap C| + |B\\cap C|) + |A\\cap B\\cap C|$"
+        ],
+        "bbox": [
+            97,
+            853,
+            729,
+            885
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Derangements: $D_{n} = n! \\sum_{k=0}^{n} \\frac{(-1)^{k}}{k!} \\approx \\frac{n!}{e}$",
+        "bbox": [
+            73,
+            885,
+            418,
+            908
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Generating Functions:",
+        "bbox": [
+            73,
+            907,
+            265,
+            921
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "$\\circ \\frac{1}{1 - x} = \\sum_{n = 0}^{\\infty}x^{n}$",
+            "$\\circ \\frac{1}{1 - ax} = \\sum_{n = 0}^{\\infty}(ax)^{n}$",
+            "$\\circ (1 + x)^{n} = \\sum_{k = 0}^{n}C(n,k)x^{k}$",
+            "$\\circ \\frac{1}{(1 - x)^n} = \\sum_{k = 0}^{\\infty}C(n + k - 1,k)x^k$",
+            "$\\circ \\frac{x}{(1 - x)^2} = \\sum_{n=0}^{\\infty} nx^n$"
+        ],
+        "bbox": [
+            99,
+            65,
+            381,
+            162
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Modular Arithmetic:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            161,
+            245,
+            173
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Fermat's Little Theorem (p prime, $\\gcd(a, p) = 1$ ): $a^{p-1} \\equiv 1 \\pmod{p}$",
+            "- Euler's Theorem $(\\gcd(a, n) = 1): a^{\\phi(n)} \\equiv 1 \\pmod{n}$",
+            "- Euler's Totient Function: $\\phi(n) = n \\prod_{p \\mid n, p \\text{ prime}} (1 - \\frac{1}{p})$"
+        ],
+        "bbox": [
+            97,
+            175,
+            630,
+            230
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Pigeonhole Principle:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            228,
+            258,
+            241
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Basic: If $n$ pigeons in $m$ holes and $n > m$ , at least one hole has $>1$ pigeon.",
+        "bbox": [
+            97,
+            241,
+            662,
+            255
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "\\- Generalized: At least one hole has $\\lceil n / m \\rceil$ pigeons.",
+        "bbox": [
+            97,
+            256,
+            489,
+            270
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "• Recurrence Relations:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            270,
+            265,
+            282
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Homogeneous Linear: $a_{n}=c_{1}a_{n-1}+\\cdots+c_{k}a_{n-k}$ (solve characteristic equation",
+            "- Master Theorem: For $T(n) = aT(n / b) + f(n)$ . Compare $f(n)$ with $n^{\\log_b a}$ ."
+        ],
+        "bbox": [
+            97,
+            283,
+            719,
+            332
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "equation",
+        "text": "$$\nr ^ {k} - c _ {1} r ^ {k - 1} - \\dots - c _ {k} = 0).\n$$",
+        "text_format": "latex",
+        "bbox": [
+            112,
+            299,
+            336,
+            315
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Summation Formulas:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            332,
+            263,
+            344
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Arithmetic Series: $\\sum_{i=0}^{n-1}(a+id)=\\frac{n}{2}(2a+(n-1)d)$",
+            "- Sum of first $n$ integers: $\\sum_{i=1}^{n} i = \\frac{n(n+1)}{2}$",
+            "- Geometric Series: $\\sum_{i=0}^{n-1} ar^{i} = a \\frac{1-r^{\\overline{n}}}{1-r}$",
+            "• Infinite Geometric Series ( $|r| < 1$ ): $\\sum_{i=0}^{\\infty} ar^{i} = \\frac{a}{1-r}$",
+            "- Sum of Squares: $\\sum_{i=1}^{n} i^{2} = \\frac{n(n+1)(2n+1)}{6}$",
+            "- Sum of Cubes: $\\sum_{i=1}^{n} i^{3} = \\left(\\frac{n(n+1)}{2}\\right)^{2}$"
+        ],
+        "bbox": [
+            97,
+            346,
+            522,
+            472
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Important Tips for GATE",
+        "text_level": 1,
+        "bbox": [
+            60,
+            482,
+            285,
+            500
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Read Carefully: Pay extreme attention to keywords like \"distinct,\" \"identical,\" \"at least,\" \"at most,\" \"with replacement,\" \"without replacement,\" \"ordered,\" \"unordered,\" \"empty bins allowed,\" etc. These words dictate which formula or technique to use.",
+            "2. Visualize and Simplify: For combinatorics and PHP problems, try to draw small examples or simplify the problem to a smaller scale to understand the underlying structure. This helps in correctly identifying pigeons/pigeonholes or the counting method.",
+            "3. Master the Basics: Ensure you are fluent with fundamental permutations, combinations, and the stars and bars technique. Many complex problems are built upon these basic principles.",
+            "4. Practice with PYQs: Solve previous year GATE questions diligently. This helps you understand the common patterns, tricky phrasing, and expected depth of knowledge. Pay attention to how different concepts are combined in a single question.",
+            "5. Complementary Counting: For \"at least\" or \"not allowed\" type problems, consider using complementary counting (Total ways - Unwanted ways). This can often simplify the problem significantly compared to direct counting.",
+            "6. Time Management for Recurrence Relations: For recurrence relations, if it's a divide-and-conquer type, try the Master Theorem first. If it's a linear recurrence, be quick with characteristic equations and solving for constants using initial conditions.",
+            "7. Modular Arithmetic for Large Numbers: Always reduce intermediate results modulo $m$ in modular arithmetic. For large exponents, use Fermat's Little Theorem or Euler's Theorem to reduce the exponent modulo $\\phi(m)$ (or $p - 1$ if $m$ is prime).",
+            "8. Don't Be Afraid of Casework: If a problem seems too complex for a single formula, break it down into mutually exclusive cases. Calculate each case separately and sum the results. Ensure cases are exhaustive."
+        ],
+        "bbox": [
+            63,
+            511,
+            927,
+            804
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.1",
+        "bbox": [
+            67,
+            818,
+            94,
+            831
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Balls In Bins (6)",
+        "text_level": 1,
+        "bbox": [
+            448,
+            817,
+            579,
+            832
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.1.1 Balls In Bins: GATE CSE 1999 | Question: 1.3",
+        "text_level": 1,
+        "bbox": [
+            78,
+            843,
+            477,
+            858
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The number of binary strings of $n$ zeros and $k$ ones in which no two ones are adjacent is",
+        "bbox": [
+            85,
+            866,
+            732,
+            882
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "A. $n-1C_{k}$",
+        "bbox": [
+            87,
+            895,
+            159,
+            910
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "B. $^{n}C_{k}$",
+        "bbox": [
+            285,
+            895,
+            339,
+            910
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "C. $^{n}C_{k+1}$",
+        "bbox": [
+            478,
+            895,
+            547,
+            912
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            896,
+            823,
+            910
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "images/6630760cee5554a5eb01eb9dae1a57559011ef38b7332d6ec92c02333b67247b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            846,
+            932,
+            884
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "footer",
+        "text": "gate1999 combinatory normal counting balls-in-bins",
+        "bbox": [
+            87,
+            920,
+            352,
+            931
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "1.1.2 Balls In Bins: GATE CSE 2000 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            95,
+            463,
+            109
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A multiset is an unordered collection of elements where elements may repeat any number of times. The size of a multiset is the number of elements in it, counting repetitions.",
+        "bbox": [
+            84,
+            118,
+            875,
+            148
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/6d900c5a9f6c42635d6b12eb715673b122908290e648af33424e93841752c713.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            98,
+            931,
+            136
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. What is the number of multisets of size 4 that can be constructed from $n$ distinct elements so that at least one element occurs exactly twice?",
+            "b. How many multisets can be constructed from n distinct elements?"
+        ],
+        "bbox": [
+            87,
+            157,
+            927,
+            201
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2000 combinatory normal descriptive counting balls-in-bins",
+        "bbox": [
+            87,
+            226,
+            428,
+            236
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            243,
+            188,
+            257
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.1.3 Balls In Bins: GATE CSE 2002 | Question: 13",
+        "text_level": 1,
+        "bbox": [
+            78,
+            266,
+            473,
+            280
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4c80c6b5e119c003477cae82df41fc7b0336d40318937ee9ca55ead1c647eea4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            269,
+            931,
+            306
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "a. In how many ways can a given positive integer $n \\geq 2$ be expressed as the sum of 2 positive integers (which are not necessarily distinct). For example, for $n = 3$ , the number of ways is 2, i.e., $1 + 2, 2 + 1$ . Give only the answer without any explanation.",
+            "b. In how many ways can a given positive integer $n \\geq 3$ be expressed as the sum of 3 positive integers (which are not necessarily distinct). For example, for $n = 4$ , the number of ways is 3, i.e., $1 + 2 + 1, 2 + 1 + 1$ and $1 + 1 + 2$ . Give only the answer without explanation.",
+            "c. In how many ways can a given positive integer $n \\geq k$ be expressed as the sum of $k$ positive integers (which are not necessarily distinct). Give only the answer without explanation."
+        ],
+        "bbox": [
+            87,
+            312,
+            927,
+            426
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2002 combinatory normal descriptive balls-in-bins",
+        "bbox": [
+            87,
+            451,
+            376,
+            461
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            467,
+            188,
+            482
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.1.4 Balls In Bins: GATE CSE 2003 | Question: 34",
+        "text_level": 1,
+        "bbox": [
+            78,
+            491,
+            473,
+            505
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/38b9e3918a6997396fd301ff84a38be405b58195ecdbbbe0ff25bfccff76c984.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            494,
+            931,
+            530
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "m identical balls are to be placed in n distinct bags. You are given that $m \\geq kn$ , where k is a natural number $\\geq 1$ . In how many ways can the balls be placed in the bags if each bag must contain at least k balls?",
+        "bbox": [
+            84,
+            515,
+            878,
+            557
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/6a656a6245f257adadbd66e1f5d9500ebda8cc3496e0a9bc429903a219566e18.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            89,
+            568,
+            191,
+            633
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 combinatory balls-in-bins normal",
+        "bbox": [
+            87,
+            636,
+            319,
+            646
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/e60d07add89528c909fccfbf6aac44dc2037683622bde21d83976511f0969133.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "B. \\n\\n\\n\\nm - kn + n - 1\\n\\n\\nn - 1\\nD. \\n\\n\\n\\nm - kn + n + k - 2\\n\\n\\nn - k",
+        "sub_type": "text_image",
+        "bbox": [
+            495,
+            568,
+            702,
+            633
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            652,
+            188,
+            667
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.1.5 Balls In Bins: GATE CSE 2022 | Question: 22",
+        "text_level": 1,
+        "bbox": [
+            78,
+            676,
+            473,
+            690
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/4839daf9576a2f1f1530fdb793c1d7449c9695ecd6f9347794f4a2975e0a435b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            679,
+            931,
+            716
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The number of arrangements of six identical balls in three identical bins is \\_\\_\\_\\_.",
+        "bbox": [
+            85,
+            700,
+            754,
+            714
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2022 numerical-answers combinatory balls-in-bins one-mark",
+        "bbox": [
+            87,
+            728,
+            418,
+            738
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            745,
+            188,
+            758
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.1.6 Balls In Bins: GATE IT 2004 | Question: 35",
+        "text_level": 1,
+        "bbox": [
+            78,
+            768,
+            453,
+            782
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "images/d9c263316ff38ebc9c73f0471ba26427505b772e6f650df72191b008d9be74da.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            771,
+            931,
+            808
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In how many ways can we distribute 5 distinct balls, $B_{1}, B_{2}, \\ldots, B_{5}$ in 5 distinct cells, $C_{1}, C_{2}, \\ldots, C_{5}$ such that Ball $B_{i}$ is not in cell $C_{i}, \\forall i = 1, 2, \\ldots, 5$ and each cell contains exactly one ball?",
+        "bbox": [
+            84,
+            790,
+            875,
+            821
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "A. 44",
+        "bbox": [
+            89,
+            834,
+            134,
+            849
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "B. 96",
+        "bbox": [
+            285,
+            834,
+            329,
+            849
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "C. 120",
+        "bbox": [
+            478,
+            834,
+            532,
+            849
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "D. 3125",
+        "bbox": [
+            673,
+            834,
+            736,
+            849
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "gateit-2004 combinatory normal balls-in-bins",
+        "bbox": [
+            89,
+            859,
+            310,
+            869
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            876,
+            188,
+            890
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "header",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            72,
+            181,
+            86
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "page_number",
+        "text": "1.2",
+        "bbox": [
+            68,
+            901,
+            95,
+            913
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "footer",
+        "text": "Combinatory (18)",
+        "bbox": [
+            443,
+            900,
+            584,
+            915
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "1.2.1 Combinatory: GATE CSE 1990 | Question: 3-ix",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            485,
+            79
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The number of ways in which 5 $A's$ , 5 $B's$ and 5 $C's$ can be arranged in a row is:",
+        "bbox": [
+            85,
+            89,
+            689,
+            106
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $15!/(5!)^{3}$",
+        "bbox": [
+            87,
+            117,
+            184,
+            135
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 15!",
+        "bbox": [
+            285,
+            118,
+            334,
+            133
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. $\\left(\\frac{15}{5}\\right)$",
+        "bbox": [
+            480,
+            117,
+            537,
+            136
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. $15!(5!3!)$ .",
+        "bbox": [
+            673,
+            118,
+            769,
+            135
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1990 normal combinatory",
+        "bbox": [
+            87,
+            143,
+            240,
+            153
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            159,
+            188,
+            173
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.2.2 Combinatory: GATE CSE 1991 | Question: 16,a",
+        "text_level": 1,
+        "bbox": [
+            78,
+            182,
+            489,
+            197
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Find the number of binary strings $w$ of length $2n$ with an equal number of $1's$ and $0's$ and the property that every prefix of $w$ has at least as many $0's$ as $1's$ .",
+        "bbox": [
+            84,
+            207,
+            878,
+            239
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1991 combinatory normal descriptive catalan-number",
+        "bbox": [
+            87,
+            254,
+            376,
+            264
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            270,
+            188,
+            283
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.2.3 Combinatory: GATE CSE 1998 | Question: 1.23",
+        "text_level": 1,
+        "bbox": [
+            78,
+            294,
+            489,
+            308
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "How many sub strings of different lengths (non-zero) can be formed from a character string of length n?",
+        "bbox": [
+            85,
+            317,
+            840,
+            333
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. n",
+        "bbox": [
+            89,
+            346,
+            129,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. $n^2$",
+        "bbox": [
+            285,
+            345,
+            329,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{n}$",
+        "bbox": [
+            480,
+            345,
+            522,
+            359
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. $\\frac{n(n+1)}{2}$",
+        "bbox": [
+            673,
+            342,
+            744,
+            364
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1998 combinatory normal",
+        "bbox": [
+            89,
+            370,
+            240,
+            380
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            385,
+            188,
+            401
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.2.4 Combinatory: GATE CSE 1999 | Question: 2.2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            410,
+            480,
+            425
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Two girls have picked 10 roses, 15 sunflowers and 15 daffodils. What is the number of ways they can divide the flowers among themselves?",
+        "bbox": [
+            84,
+            434,
+            875,
+            463
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 1638",
+        "bbox": [
+            89,
+            476,
+            152,
+            490
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 2100",
+        "bbox": [
+            285,
+            476,
+            347,
+            490
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 2640",
+        "bbox": [
+            480,
+            476,
+            541,
+            490
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            477,
+            823,
+            490
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gate1999 combinatory normal",
+        "bbox": [
+            87,
+            501,
+            240,
+            511
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            517,
+            188,
+            532
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.2.5 Combinatory: GATE CSE 2001 | Question: 2.1",
+        "text_level": 1,
+        "bbox": [
+            78,
+            541,
+            478,
+            555
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "How many 4-digit even numbers have all 4 digits distinct?",
+        "bbox": [
+            85,
+            564,
+            509,
+            580
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 2240",
+        "bbox": [
+            89,
+            593,
+            151,
+            606
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 2296",
+        "bbox": [
+            285,
+            593,
+            347,
+            606
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 2620",
+        "bbox": [
+            480,
+            593,
+            541,
+            606
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 4536",
+        "bbox": [
+            673,
+            593,
+            736,
+            606
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 combinatory normal",
+        "bbox": [
+            89,
+            618,
+            255,
+            628
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            633,
+            188,
+            648
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.2.6 Combinatory: GATE CSE 2003 | Question: 4",
+        "text_level": 1,
+        "bbox": [
+            78,
+            657,
+            467,
+            672
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Let $A$ be a sequence of 8 distinct integers sorted in ascending order. How many distinct pairs of sequences, $B$ and $C$ are there such that",
+        "bbox": [
+            84,
+            682,
+            875,
+            711
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "i. each is sorted in ascending order,",
+            "ii. $B$ has 5 and $C$ has 3 elements, and",
+            "iii. the result of merging $B$ and $C$ gives $A$"
+        ],
+        "bbox": [
+            90,
+            722,
+            398,
+            768
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. 2",
+        "bbox": [
+            89,
+            782,
+            126,
+            795
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "B. 30",
+        "bbox": [
+            285,
+            782,
+            329,
+            795
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "C. 56",
+        "bbox": [
+            480,
+            782,
+            524,
+            795
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "D. 256",
+        "bbox": [
+            673,
+            782,
+            727,
+            795
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 combinatory normal",
+        "bbox": [
+            89,
+            806,
+            255,
+            815
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "bbox": [
+            89,
+            821,
+            188,
+            836
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1.2.7 Combinatory: GATE CSE 2003 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            846,
+            467,
+            859
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "n couples are invited to a party with the condition that every husband should be accompanied by his wife. However, a wife need not be accompanied by her husband. The number of different gatherings possible at the party is",
+        "bbox": [
+            84,
+            870,
+            878,
+            913
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/3f4370980a7b98556c726ebb9936dde18eeae44f6b7876a7888d4e624ae8b892.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            68,
+            932,
+            105
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/8e0c4bd49ad5d7edebbb626b4fedba1fe4733de37225ec5a99160257e46cde01.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            186,
+            932,
+            223
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/541e43f3c02e53a15f81f3f2a64cedd9d11e8d3e161a127651a24dc45c6202dd.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            296,
+            932,
+            333
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/7b87e32501fdf28bce428563fd08f30a46ec2f130af68257694d2256366db508.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            413,
+            932,
+            450
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/225755fd6bb83827a8c60e3f8e6978b4cdb690d244b024fa3663487515a01f7a.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            543,
+            932,
+            580
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/dec9979b675fad02d2e539c3148258cb6ab4fd6adff388e421489b3541c46b43.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            660,
+            932,
+            697
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "images/107d3a94ed8b7ff44d851ec0e4836d93c3d54332f5dbb8fea4833dd89e794865.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            849,
+            932,
+            885
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "A. $2^{n}C_{n} \\times 2^{n}$",
+        "bbox": [
+            89,
+            67,
+            189,
+            84
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $3^{n}$",
+        "bbox": [
+            285,
+            68,
+            327,
+            81
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $\\frac{(2n)!}{2^{n}}$",
+        "bbox": [
+            480,
+            65,
+            534,
+            87
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $^{2n}C_{n}$",
+        "bbox": [
+            673,
+            68,
+            734,
+            84
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 combinatory normal",
+        "bbox": [
+            87,
+            93,
+            257,
+            103
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            109,
+            186,
+            124
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.2.8 Combinatory: GATE CSE 2004 | Question: 75",
+        "text_level": 1,
+        "bbox": [
+            78,
+            133,
+            475,
+            148
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/4111d73a49e2f1d4e71aa9161f9f35be83957fc968eb230df2d4da38e6e693b7.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            136,
+            931,
+            172
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Mala has the colouring book in which each English letter is drawn two times. She wants to paint each of these 52 prints with one of k colours, such that the colour pairs used to colour any two letters are different.",
+        "bbox": [
+            84,
+            157,
+            878,
+            185
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Both prints of a letter can also be coloured with the same colour. What is the minimum value of $k$ that satisfies this requirement?",
+        "bbox": [
+            84,
+            186,
+            927,
+            214
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. 9",
+        "bbox": [
+            89,
+            226,
+            126,
+            241
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. 8",
+        "bbox": [
+            285,
+            226,
+            321,
+            241
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. 7",
+        "bbox": [
+            480,
+            226,
+            515,
+            241
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. 6",
+        "bbox": [
+            673,
+            226,
+            710,
+            241
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2004 combinatory",
+        "bbox": [
+            87,
+            252,
+            213,
+            262
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            268,
+            186,
+            282
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.2.9 Combinatory: GATE CSE 2007 | Question: 84",
+        "text_level": 1,
+        "bbox": [
+            78,
+            290,
+            475,
+            306
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/67052098bc2ed09518100f78008a6179d43ca7170d365590d33320170cd82e38.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            294,
+            931,
+            332
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose that a robot is placed on the Cartesian plane. At each step it is allowed to move either one unit up or one unit right, i.e., if it is at $(i,j)$ then it can move to either $(i + 1,j)$ or $(i,j + 1)$ .",
+        "bbox": [
+            84,
+            315,
+            875,
+            346
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "How many distinct paths are there for the robot to reach the point $(10,10)$ starting from the initial position $(0,0)$ ?",
+        "bbox": [
+            84,
+            349,
+            910,
+            366
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $^{20}C_{10}$",
+        "bbox": [
+            89,
+            377,
+            154,
+            394
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $2^{20}$",
+        "bbox": [
+            285,
+            377,
+            331,
+            391
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{10}$",
+        "bbox": [
+            480,
+            377,
+            527,
+            391
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. None of the above",
+        "bbox": [
+            673,
+            378,
+            823,
+            391
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 combinatory",
+        "bbox": [
+            87,
+            403,
+            213,
+            413
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            419,
+            186,
+            433
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.2.10 Combinatory: GATE CSE 2007 | Question: 85",
+        "text_level": 1,
+        "bbox": [
+            78,
+            442,
+            484,
+            457
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/e200191e513bf1dd9de0fef133e6c7952809ded0106acfc8a4c4792f13a7ac7e.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            445,
+            931,
+            483
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose that a robot is placed on the Cartesian plane. At each step it is allowed to move either one unit up or one unit right, i.e., if it is at $(i,j)$ then it can move to either $(i + 1,j)$ or $(i,j + 1)$ .",
+        "bbox": [
+            84,
+            466,
+            875,
+            498
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Suppose that the robot is not allowed to traverse the line segment from $(4,4)$ to $(5,4)$ . With this constraint, how many distinct paths are there for the robot to reach $(10,10)$ starting from $(0,0)$ ?",
+        "bbox": [
+            84,
+            510,
+            927,
+            542
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A. $2^{9}$",
+        "bbox": [
+            89,
+            549,
+            132,
+            564
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "c. $^{8}C_{4} \\times ^{11}C_{5}$",
+        "bbox": [
+            89,
+            565,
+            196,
+            581
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "B. $2^{19}$",
+        "bbox": [
+            495,
+            549,
+            542,
+            564
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "D. $^{20}$ C $_{10}$ - $^{8}$ C $_{4}$ × $^{11}$ C $_{5}$",
+        "bbox": [
+            495,
+            565,
+            662,
+            581
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2007 combinatory normal discrete-mathematics",
+        "bbox": [
+            87,
+            586,
+            357,
+            595
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            602,
+            186,
+            616
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.2.11 Combinatory: GATE CSE 2014 | Set 1 | Question: 49",
+        "text_level": 1,
+        "bbox": [
+            78,
+            625,
+            537,
+            638
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/74bad59f13f66b13b5b6125ffecd83253a06a78354ba4252e85fbb3de6d6289f.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            627,
+            931,
+            665
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A pennant is a sequence of numbers, each number being 1 or 2. An $n$ —pennant is a sequence of numbers with sum equal to $n$ . For example, $(1, 1, 2)$ is a 4—pennant. The set of all possible 1—pennants is (1), the set of all possible 2—pennants is (2), (1, 1) and the set of all 3—pennants is (2, 1), (1, 1, 1), (1, 2). Note that pennant (1, 2) is not the same as the pennant (2, 1). The number of 10—pennants is \\_\\_\\_\\_",
+        "bbox": [
+            84,
+            649,
+            878,
+            711
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2014-set1 combinatory numerical-answers normal",
+        "bbox": [
+            87,
+            724,
+            366,
+            733
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            739,
+            186,
+            754
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.2.12 Combinatory: GATE CSE 2015 | Set 3 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            763,
+            527,
+            777
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/71647265c0a7a7a16ba85c2527e7ec827960f0cd3d50bb3f8695019958288491.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            764,
+            931,
+            802
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The number of 4 digit numbers having their digits in non-decreasing order (from left to right) constructed by using the digits belonging to the set $\\{1, 2, 3\\}$ is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            787,
+            875,
+            819
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2015-set3 combinatory normal numerical-answers",
+        "bbox": [
+            87,
+            832,
+            366,
+            840
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            847,
+            186,
+            861
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "1.2.13 Combinatory: GATE CSE 2019 | Question: 5",
+        "text_level": 1,
+        "bbox": [
+            78,
+            871,
+            475,
+            885
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "image",
+        "img_path": "images/0cc42e28cea9ea76d5b9a1eefd63928dffc4b493d68048e603c0729baf4070ab.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            872,
+            931,
+            910
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Let $U = \\{1, 2, \\ldots, n\\}$ Let $A = \\{(x, X) \\mid x \\in X, X \\subseteq U\\}$ . Consider the following two statements on $|A|$ .",
+        "bbox": [
+            84,
+            894,
+            872,
+            913
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. $|A| = n2^{n-1}$",
+            "II. $|A|=\\Sigma_{k=1}^{n}k\\binom{n}{k}$"
+        ],
+        "bbox": [
+            92,
+            65,
+            263,
+            119
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Which of the above statements is/are TRUE?",
+        "bbox": [
+            85,
+            127,
+            418,
+            140
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. Only I",
+        "bbox": [
+            89,
+            156,
+            157,
+            169
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. Only II",
+        "bbox": [
+            285,
+            156,
+            354,
+            169
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. Both I and II",
+        "bbox": [
+            480,
+            156,
+            588,
+            169
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. Neither I nor II",
+        "bbox": [
+            673,
+            156,
+            796,
+            169
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2019 engineering-mathematics discrete-mathematics combinatory one-mark",
+        "bbox": [
+            87,
+            180,
+            485,
+            190
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            195,
+            186,
+            210
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.2.14 Combinatory: GATE CSE 2020 | Question: 42",
+        "text_level": 1,
+        "bbox": [
+            78,
+            219,
+            484,
+            233
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The number of permutations of the characters in LILAC so that no character appears in its original position, if the two L's are indistinguishable, is \\_\\_\\_\\_.",
+        "bbox": [
+            84,
+            243,
+            878,
+            271
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/72d39b3920d13c1d386e1f8a1f4e83d85d9d84088e3c9104bd3baa2ade8064a5.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            222,
+            932,
+            260
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2020 numerical-answers combinatory two-marks",
+        "bbox": [
+            87,
+            286,
+            359,
+            296
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            302,
+            186,
+            315
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.2.15 Combinatory: GATE CSE 2025 | Set 1 | Question: 20",
+        "text_level": 1,
+        "bbox": [
+            78,
+            325,
+            537,
+            340
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Let S be the set of all ternary strings defined over the alphabet $\\{a, b, c\\}$ . Consider all strings in S that contain at least one occurrence of two consecutive symbols, that is, \"aa\", \"bb\" or \"cc\". The number of such strings of length 5 that are possible is \\_\\_\\_\\_. (Answer in integer).",
+        "bbox": [
+            84,
+            349,
+            878,
+            395
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/8994e4157b1380db4f5c358d6b91df3eff323684c054a226ee0bbf76b56f748b.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            328,
+            932,
+            366
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse2025-set1 combinatory numerical-answers one-mark",
+        "bbox": [
+            87,
+            408,
+            374,
+            418
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            423,
+            186,
+            438
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.2.16 Combinatory: GATE CSE 2026 | Set 1 | Question: 2",
+        "text_level": 1,
+        "bbox": [
+            78,
+            447,
+            529,
+            461
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Consider $4 \\times 4$ matrices with their elements from $\\{0, 1\\}$ . The number of such matrices with even number of 1 s in every row and every column is",
+        "bbox": [
+            84,
+            471,
+            878,
+            502
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/38685c74263055d9f925199a485ab1589df209aa66bd3518b60ef1eb75f220ca.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            450,
+            932,
+            488
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. 512",
+        "bbox": [
+            89,
+            515,
+            144,
+            529
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. 1025",
+        "bbox": [
+            285,
+            515,
+            347,
+            529
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. 1023",
+        "bbox": [
+            480,
+            515,
+            542,
+            529
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 255",
+        "bbox": [
+            673,
+            515,
+            727,
+            529
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2026-set1 combinatory one-mark",
+        "bbox": [
+            87,
+            540,
+            287,
+            549
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            555,
+            186,
+            570
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.2.17 Combinatory: GATE IT 2005 | Question: 46",
+        "text_level": 1,
+        "bbox": [
+            78,
+            579,
+            465,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A line $L$ in a circuit is said to have a stuck - at - 0 fault if the line permanently has a logic value 0. Similarly a line $L$ in a circuit is said to have a stuck - at - 1 fault if the line permanently has a logic value",
+        "bbox": [
+            84,
+            603,
+            878,
+            633
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1. A circuit is said to have a multiple stuck — at fault if one or more lines have stuck at faults. The total number of distinct multiple stuck — at faults possible in a circuit with N lines is",
+        "bbox": [
+            85,
+            634,
+            927,
+            663
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "A. $3^{N}$",
+        "bbox": [
+            89,
+            675,
+            137,
+            690
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "B. $3^{N} - 1$",
+        "bbox": [
+            285,
+            675,
+            361,
+            690
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "C. $2^{N} - 1$",
+        "bbox": [
+            480,
+            675,
+            556,
+            690
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "D. 2",
+        "bbox": [
+            673,
+            676,
+            710,
+            690
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "gateit-2005 combinatory normal",
+        "bbox": [
+            87,
+            701,
+            248,
+            710
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            717,
+            186,
+            731
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1.2.18 Combinatory: GATE IT 2008 | Question: 25",
+        "text_level": 1,
+        "bbox": [
+            78,
+            741,
+            465,
+            755
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In how many ways can b blue balls and r red balls be distributed in n distinct boxes?",
+        "bbox": [
+            85,
+            764,
+            702,
+            780
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "A. $\\frac{(n + b - 1)!(n + r - 1)!}{(n - 1)!b!(n - 1)!r!}$",
+            "B. $\\frac{(n + (b + r) - 1)!}{(n - 1)! (n - 1)! (b + r)!}$",
+            "C. $\\frac{n!}{b!r!}$"
+        ],
+        "bbox": [
+            85,
+            792,
+            315,
+            921
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/5de2ba10c35963b53e45920fa97cdd0fdf1127a55e02e2f52648b783171b7191.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            581,
+            932,
+            619
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "images/3e94a836c4bb216272a24b3fa34d708656f76126c4775e82245723655a6a22b4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            743,
+            932,
+            781
+        ],
+        "page_idx": 11
+    }
+]

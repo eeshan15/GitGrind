@@ -1,0 +1,3500 @@
+[
+    {
+        "type": "text",
+        "text": "4.36.2 Synchronous Asynchronous Circuits: GATE CSE 1998 | Question: 16",
+        "text_level": 1,
+        "bbox": [
+            78,
+            65,
+            673,
+            79
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Design a synchronous counter to go through the following states:",
+        "bbox": [
+            85,
+            89,
+            563,
+            103
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "equation",
+        "text": "$$\n1, 4, 2, 3, 1, 4, 2, 3, 1, 4 \\dots\n$$",
+        "text_format": "latex",
+        "bbox": [
+            403,
+            112,
+            610,
+            129
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gate1998 digital-logic normal descriptive synchronous-asynchronous-circuits",
+        "bbox": [
+            87,
+            154,
+            450,
+            163
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            169,
+            188,
+            185
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.36.3 Synchronous Asynchronous Circuits: GATE CSE 2001 | Question: 2.12",
+        "text_level": 1,
+        "bbox": [
+            78,
+            194,
+            685,
+            207
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Consider the circuit given below with initial state $Q_0 = 1$ , $Q_1 = Q_2 = 0$ . The state of the circuit is given by the value $4Q_2 + 2Q_1 + Q_0$",
+        "bbox": [
+            84,
+            218,
+            875,
+            249
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/9d8158a257204fccaddee69586fe94f16de13d258b3c7667bc968fadabe0dbe9.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            197,
+            931,
+            233
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/70587c523318d64d551751e7c2240dfb58a263e8ef6a14dc56c7c5a4eafdadb2.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "```mermaid\ngraph LR\n  Clock[\"Clock\"] --> D0[\"D0 Q0\"]\n  D0 --> LSB[\"LSB\"]\n  LSB --> D1[\"D1 Q1\"]\n  D1 --> MSB[\"MSB\"]\n  MSB --> D2[\"D2 Q2\"]\n  D2 --> Output[\"Output\"]\n  Output --> LSB\n```",
+        "sub_type": "flowchart",
+        "bbox": [
+            326,
+            255,
+            694,
+            338
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Which one of the following is correct state sequence of the circuit?",
+        "bbox": [
+            85,
+            349,
+            571,
+            364
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 1,3,4,6,7,5,2",
+        "bbox": [
+            89,
+            372,
+            220,
+            387
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 1,2,5,3,7,6,4",
+        "bbox": [
+            497,
+            372,
+            626,
+            387
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 1,2,7,3,5,6,4",
+        "bbox": [
+            90,
+            387,
+            220,
+            401
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 1,6,5,7,2,3,4",
+        "bbox": [
+            497,
+            387,
+            626,
+            401
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2001 digital-logic normal synchronous-asynchronous-circuits",
+        "bbox": [
+            87,
+            406,
+            406,
+            416
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            422,
+            188,
+            435
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4.36.4 Synchronous Asynchronous Circuits: GATE CSE 2003 | Question: 44",
+        "text_level": 1,
+        "bbox": [
+            77,
+            446,
+            672,
+            460
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A 1-input, 2-output synchronous sequential circuit behaves as follows:",
+        "bbox": [
+            85,
+            469,
+            618,
+            484
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Let $z_{k}, n_{k}$ denote the number of $0^{\\prime}s$ and $1^{\\prime}s$ respectively in initial k bits of the input",
+        "bbox": [
+            85,
+            489,
+            690,
+            505
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "$(z_{k} + n_{k} = k)$ . The circuit outputs 00 until one of the following conditions holds.",
+        "bbox": [
+            85,
+            508,
+            672,
+            524
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $z_{k} - n_{k} = 2$ . In this case, the output at the k-th and all subsequent clock ticks is 10.",
+            "- $n_k - z_k = 2$ . In this case, the output at the $k$ -th and all subsequent clock ticks is 01."
+        ],
+        "bbox": [
+            97,
+            535,
+            726,
+            566
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "What is the minimum number of states required in the state transition graph of the above circuit?",
+        "bbox": [
+            85,
+            576,
+            788,
+            591
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A. 5",
+        "bbox": [
+            89,
+            605,
+            126,
+            618
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "B. 6",
+        "bbox": [
+            285,
+            605,
+            321,
+            618
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "C. 7",
+        "bbox": [
+            480,
+            605,
+            515,
+            618
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "D. 8",
+        "bbox": [
+            673,
+            605,
+            710,
+            618
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "gatecse-2003 digital-logic synchronous-asynchronous-circuits normal",
+        "bbox": [
+            87,
+            629,
+            406,
+            638
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer key",
+        "text_level": 1,
+        "bbox": [
+            89,
+            644,
+            188,
+            660
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Answer Keys",
+        "text_level": 1,
+        "bbox": [
+            60,
+            674,
+            220,
+            694
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/58548065b40d0cf78c00666f681a08e4cf10bf396f61e479d86c01d5639a2399.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.1.1</td><td>N/A</td></tr><tr><td>4.1.6</td><td>B</td></tr><tr><td>4.2.2</td><td>C</td></tr><tr><td>4.4.4</td><td>N/A</td></tr><tr><td>4.4.9</td><td>B</td></tr><tr><td>4.4.14</td><td>C</td></tr><tr><td>4.4.19</td><td>A</td></tr><tr><td>4.4.24</td><td>C</td></tr><tr><td>4.4.29</td><td>B;C</td></tr><tr><td>4.4.34</td><td>C</td></tr></table>",
+        "bbox": [
+            63,
+            707,
+            235,
+            925
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/f6bae888dc008e8d63fd5de3ce8d1b0541553cf8d0dbbfc818b08f111241b296.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.1.2</td><td>N/A</td></tr><tr><td>4.1.7</td><td>19.2</td></tr><tr><td>4.3.1</td><td>C</td></tr><tr><td>4.4.5</td><td>N/A</td></tr><tr><td>4.4.10</td><td>D</td></tr><tr><td>4.4.15</td><td>D</td></tr><tr><td>4.4.20</td><td>D</td></tr><tr><td>4.4.25</td><td>C</td></tr><tr><td>4.4.30</td><td>B;D</td></tr><tr><td>4.5.1</td><td>N/A</td></tr></table>",
+        "bbox": [
+            257,
+            707,
+            381,
+            925
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/89dd9dd2d5b0b573f329e1c96cf733dbe7273a13ed160e7c4a263542cdb29662.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.1.3</td><td>B</td></tr><tr><td>4.1.8</td><td>B</td></tr><tr><td>4.4.1</td><td>D</td></tr><tr><td>4.4.6</td><td>D</td></tr><tr><td>4.4.11</td><td>C</td></tr><tr><td>4.4.16</td><td>D</td></tr><tr><td>4.4.21</td><td>D</td></tr><tr><td>4.4.26</td><td>D</td></tr><tr><td>4.4.31</td><td>B;C;D</td></tr><tr><td>4.5.2</td><td>A</td></tr></table>",
+        "bbox": [
+            401,
+            707,
+            584,
+            925
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/f5a63da3d7931d6b744b4ed330608feb311ad06b94ae82d8a6b7c1417b40700b.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.1.4</td><td>B</td></tr><tr><td>4.1.9</td><td>-1</td></tr><tr><td>4.4.2</td><td>C</td></tr><tr><td>4.4.7</td><td>N/A</td></tr><tr><td>4.4.12</td><td>D</td></tr><tr><td>4.4.17</td><td>D</td></tr><tr><td>4.4.22</td><td>1</td></tr><tr><td>4.4.27</td><td>B</td></tr><tr><td>4.4.32</td><td>B</td></tr><tr><td>4.5.3</td><td>B</td></tr></table>",
+        "bbox": [
+            606,
+            707,
+            731,
+            925
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/19076da31278e79f2611db542fa4f277ed973e0378c7294924d700572a364d34.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.1.5</td><td>A</td></tr><tr><td>4.2.1</td><td>B</td></tr><tr><td>4.4.3</td><td>N/A</td></tr><tr><td>4.4.8</td><td>A</td></tr><tr><td>4.4.13</td><td>C</td></tr><tr><td>4.4.18</td><td>A</td></tr><tr><td>4.4.23</td><td>A</td></tr><tr><td>4.4.28</td><td>B;C;D</td></tr><tr><td>4.4.33</td><td>B</td></tr><tr><td>4.5.4</td><td>13:13</td></tr></table>",
+        "bbox": [
+            752,
+            707,
+            934,
+            925
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/d8e49ad5789162410e9a05f91e785b30635747831a8542592a7c2a49328a1ab4.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            878,
+            448,
+            931,
+            485
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. It does not contain any text, mathematical formulas, tables, or figures that can be processed according to the OCR instructions. Therefore, no textual content can be extracted or converted.",
+        "bbox": [
+            878,
+            68,
+            931,
+            105
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/dc71a770ce8c44b8a89a7ebe1034f41f000db8a90ea2f0bf26031be70ecc601c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.5.5</td><td>A</td></tr><tr><td>4.6.3</td><td>C</td></tr><tr><td>4.6.8</td><td>3</td></tr><tr><td>4.8.1</td><td>B</td></tr><tr><td>4.8.6</td><td>A;C</td></tr><tr><td>4.8.11</td><td>D</td></tr><tr><td>4.8.16</td><td>B</td></tr><tr><td>4.8.21</td><td>A</td></tr><tr><td>4.8.26</td><td>C</td></tr><tr><td>4.8.31</td><td>D</td></tr><tr><td>4.8.36</td><td>X</td></tr><tr><td>4.9.1</td><td>C</td></tr><tr><td>4.11.3</td><td>B</td></tr><tr><td>4.12.5</td><td>A</td></tr><tr><td>4.13.3</td><td>N/A</td></tr><tr><td>4.13.8</td><td>C</td></tr><tr><td>4.13.13</td><td>A</td></tr><tr><td>4.13.18</td><td>N/A</td></tr><tr><td>4.15.4</td><td>A</td></tr><tr><td>4.17.3</td><td>A</td></tr><tr><td>4.18.1</td><td>C</td></tr><tr><td>4.18.6</td><td>C</td></tr><tr><td>4.19.3</td><td>N/A</td></tr><tr><td>4.20.1</td><td>D</td></tr><tr><td>4.20.6</td><td>-7.75 : -7.75</td></tr><tr><td>4.20.11</td><td>A;B;C</td></tr><tr><td>4.21.2</td><td>N/A</td></tr><tr><td>4.21.7</td><td>B</td></tr><tr><td>4.21.12</td><td>A</td></tr><tr><td>4.21.17</td><td>C</td></tr><tr><td>4.23.4</td><td>B</td></tr><tr><td>4.24.4</td><td>B</td></tr><tr><td>4.26.1</td><td>N/A</td></tr><tr><td>4.26.6</td><td>B</td></tr><tr><td>4.26.11</td><td>6 : 6</td></tr><tr><td>4.26.16</td><td>A</td></tr><tr><td>4.27.5</td><td>C</td></tr><tr><td>4.27.10</td><td>C</td></tr><tr><td>4.28.1</td><td>N/A</td></tr><tr><td>4.28.6</td><td>N/A</td></tr></table>",
+        "bbox": [
+            60,
+            62,
+            236,
+            929
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/5f9c621ba2ce54dd6589b856ba6939a4773d1bfaaaa69710fcac019f9a14eeba.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.5.6</td><td>C</td></tr><tr><td>4.6.4</td><td>A</td></tr><tr><td>4.6.9</td><td>B</td></tr><tr><td>4.8.2</td><td>N/A</td></tr><tr><td>4.8.7</td><td>B</td></tr><tr><td>4.8.12</td><td>C</td></tr><tr><td>4.8.17</td><td>A</td></tr><tr><td>4.8.22</td><td>A</td></tr><tr><td>4.8.27</td><td>C</td></tr><tr><td>4.8.32</td><td>B</td></tr><tr><td>4.8.37</td><td>D</td></tr><tr><td>4.9.2</td><td>A;C</td></tr><tr><td>4.12.1</td><td>N/A</td></tr><tr><td>4.12.6</td><td>C</td></tr><tr><td>4.13.4</td><td>33.33</td></tr><tr><td>4.13.9</td><td>D</td></tr><tr><td>4.13.14</td><td>A</td></tr><tr><td>4.14.1</td><td>D</td></tr><tr><td>4.16.1</td><td>D</td></tr><tr><td>4.17.4</td><td>B</td></tr><tr><td>4.18.2</td><td>N/A</td></tr><tr><td>4.18.7</td><td>D</td></tr><tr><td>4.19.4</td><td>N/A</td></tr><tr><td>4.20.2</td><td>B</td></tr><tr><td>4.20.7</td><td>C</td></tr><tr><td>4.20.12</td><td>C</td></tr><tr><td>4.21.3</td><td>N/A</td></tr><tr><td>4.21.8</td><td>D</td></tr><tr><td>4.21.13</td><td>B</td></tr><tr><td>4.22.1</td><td>A;D</td></tr><tr><td>4.23.5</td><td>C</td></tr><tr><td>4.24.5</td><td>1</td></tr><tr><td>4.26.2</td><td>9</td></tr><tr><td>4.26.7</td><td>A</td></tr><tr><td>4.26.12</td><td>A;B</td></tr><tr><td>4.27.1</td><td>N/A</td></tr><tr><td>4.27.6</td><td>D</td></tr><tr><td>4.27.11</td><td>4</td></tr><tr><td>4.28.2</td><td>9</td></tr><tr><td>4.28.7</td><td>N/A</td></tr></table>",
+        "bbox": [
+            255,
+            62,
+            381,
+            929
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/d5a263612ebb65706fadb49a353732aade3afd1fe7c2ede67ba0f325a032b66c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.5.7</td><td>B</td></tr><tr><td>4.6.5</td><td>3</td></tr><tr><td>4.6.10</td><td>C;D</td></tr><tr><td>4.8.3</td><td>B</td></tr><tr><td>4.8.8</td><td>B</td></tr><tr><td>4.8.13</td><td>N/A</td></tr><tr><td>4.8.18</td><td>A</td></tr><tr><td>4.8.23</td><td>D</td></tr><tr><td>4.8.28</td><td>A</td></tr><tr><td>4.8.33</td><td>C</td></tr><tr><td>4.8.38</td><td>C</td></tr><tr><td>4.10.1</td><td>A</td></tr><tr><td>4.12.2</td><td>N/A</td></tr><tr><td>4.12.7</td><td>6:6</td></tr><tr><td>4.13.5</td><td>N/A</td></tr><tr><td>4.13.10</td><td>3</td></tr><tr><td>4.13.15</td><td>B</td></tr><tr><td>4.15.1</td><td>True</td></tr><tr><td>4.16.2</td><td>C</td></tr><tr><td>4.17.5</td><td>2</td></tr><tr><td>4.18.3</td><td>N/A</td></tr><tr><td>4.18.8</td><td>D</td></tr><tr><td>4.19.5</td><td>B;C</td></tr><tr><td>4.20.3</td><td>A</td></tr><tr><td>4.20.8</td><td>B</td></tr><tr><td>4.20.13</td><td>-60.25:-60.25</td></tr><tr><td>4.21.4</td><td>N/A</td></tr><tr><td>4.21.9</td><td>A</td></tr><tr><td>4.21.14</td><td>A;D</td></tr><tr><td>4.23.1</td><td>C</td></tr><tr><td>4.24.1</td><td>N/A</td></tr><tr><td>4.24.6</td><td>B</td></tr><tr><td>4.26.3</td><td>N/A</td></tr><tr><td>4.26.8</td><td>A</td></tr><tr><td>4.26.13</td><td>A</td></tr><tr><td>4.27.2</td><td>C</td></tr><tr><td>4.27.7</td><td>5</td></tr><tr><td>4.27.12</td><td>D</td></tr><tr><td>4.28.3</td><td>N/A</td></tr><tr><td>4.28.8</td><td>C</td></tr></table>",
+        "bbox": [
+            401,
+            62,
+            586,
+            929
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/c3c1db4b46355ce8e8acb592fe23f63c7bd702511cdb046b128278897e3cda9e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.6.1</td><td>N/A</td></tr><tr><td>4.6.6</td><td>A</td></tr><tr><td>4.7.1</td><td>A</td></tr><tr><td>4.8.4</td><td>N/A</td></tr><tr><td>4.8.9</td><td>B</td></tr><tr><td>4.8.14</td><td>N/A</td></tr><tr><td>4.8.19</td><td>A</td></tr><tr><td>4.8.24</td><td>A</td></tr><tr><td>4.8.29</td><td>A</td></tr><tr><td>4.8.34</td><td>A;B;C</td></tr><tr><td>4.8.39</td><td>A</td></tr><tr><td>4.11.1</td><td>C</td></tr><tr><td>4.12.3</td><td>D</td></tr><tr><td>4.13.1</td><td>C</td></tr><tr><td>4.13.6</td><td>N/A</td></tr><tr><td>4.13.11</td><td>3:4</td></tr><tr><td>4.13.16</td><td>D</td></tr><tr><td>4.15.2</td><td>B</td></tr><tr><td>4.17.1</td><td>N/A</td></tr><tr><td>4.17.6</td><td>7:8</td></tr><tr><td>4.18.4</td><td>N/A</td></tr><tr><td>4.19.1</td><td>N/A</td></tr><tr><td>4.19.6</td><td>B</td></tr><tr><td>4.20.4</td><td>C</td></tr><tr><td>4.20.9</td><td>C</td></tr><tr><td>4.20.14</td><td>C</td></tr><tr><td>4.21.5</td><td>C</td></tr><tr><td>4.21.10</td><td>B</td></tr><tr><td>4.21.15</td><td>D</td></tr><tr><td>4.23.2</td><td>C</td></tr><tr><td>4.24.2</td><td>N/A</td></tr><tr><td>4.25.1</td><td>N/A</td></tr><tr><td>4.26.4</td><td>A</td></tr><tr><td>4.26.9</td><td>B</td></tr><tr><td>4.26.14</td><td>B;D</td></tr><tr><td>4.27.3</td><td>C</td></tr><tr><td>4.27.8</td><td>A</td></tr><tr><td>4.27.13</td><td>A</td></tr><tr><td>4.28.4</td><td>N/A</td></tr><tr><td>4.28.9</td><td>D</td></tr></table>",
+        "bbox": [
+            606,
+            62,
+            732,
+            929
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "images/78065c7115c24bbfb4a5b53bf07f4041b8146d5cc17cc6509ec813fabdd7baf5.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.6.2</td><td>A</td></tr><tr><td>4.6.7</td><td>A</td></tr><tr><td>4.7.2</td><td>B</td></tr><tr><td>4.8.5</td><td>N/A</td></tr><tr><td>4.8.10</td><td>011</td></tr><tr><td>4.8.15</td><td>B</td></tr><tr><td>4.8.20</td><td>D</td></tr><tr><td>4.8.25</td><td>C</td></tr><tr><td>4.8.30</td><td>B</td></tr><tr><td>4.8.35</td><td>C</td></tr><tr><td>4.8.40</td><td>D</td></tr><tr><td>4.11.2</td><td>1034</td></tr><tr><td>4.12.4</td><td>D</td></tr><tr><td>4.13.2</td><td>N/A</td></tr><tr><td>4.13.7</td><td>A</td></tr><tr><td>4.13.12</td><td>B</td></tr><tr><td>4.13.17</td><td>D</td></tr><tr><td>4.15.3</td><td>B</td></tr><tr><td>4.17.2</td><td>C</td></tr><tr><td>4.17.7</td><td>D</td></tr><tr><td>4.18.5</td><td>N/A</td></tr><tr><td>4.19.2</td><td>B;C</td></tr><tr><td>4.19.7</td><td>A</td></tr><tr><td>4.20.5</td><td>B</td></tr><tr><td>4.20.10</td><td>B</td></tr><tr><td>4.21.1</td><td>D</td></tr><tr><td>4.21.6</td><td>C</td></tr><tr><td>4.21.11</td><td>C</td></tr><tr><td>4.21.16</td><td>A</td></tr><tr><td>4.23.3</td><td>B</td></tr><tr><td>4.24.3</td><td>B</td></tr><tr><td>4.25.2</td><td>A</td></tr><tr><td>4.26.5</td><td>B</td></tr><tr><td>4.26.10</td><td>3</td></tr><tr><td>4.26.15</td><td>B</td></tr><tr><td>4.27.4</td><td>A</td></tr><tr><td>4.27.9</td><td>B</td></tr><tr><td>4.27.14</td><td>N/A</td></tr><tr><td>4.28.5</td><td>N/A</td></tr><tr><td>4.28.10</td><td>C</td></tr><tr><td>4.28.11</td><td>D</td></tr><tr><td>4.28.16</td><td>C</td></tr><tr><td>4.28.21</td><td>N/A</td></tr><tr><td>4.28.26</td><td>A</td></tr><tr><td>4.28.31</td><td>A</td></tr><tr><td>4.28.36</td><td>-11</td></tr><tr><td>4.28.41</td><td>C</td></tr><tr><td>4.28.46</td><td>110</td></tr><tr><td>4.28.51</td><td>B;D</td></tr><tr><td>4.28.56</td><td>A</td></tr><tr><td>4.31.1</td><td>N/A</td></tr><tr><td>4.33.1</td><td>250:250</td></tr><tr><td>4.36.2</td><td>N/A</td></tr></table>",
+        "bbox": [
+            752,
+            62,
+            934,
+            929
+        ],
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "bbox": [
+            60,
+            62,
+            236,
+            346
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/f754500e528c29565c068857e8a39579e2a839d75f3da1f45a62e327c61f3a9e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.28.12</td><td>C</td></tr><tr><td>4.28.17</td><td>B</td></tr><tr><td>4.28.22</td><td>A</td></tr><tr><td>4.28.27</td><td>A</td></tr><tr><td>4.28.32</td><td>B</td></tr><tr><td>4.28.37</td><td>1</td></tr><tr><td>4.28.42</td><td>C</td></tr><tr><td>4.28.47</td><td>B</td></tr><tr><td>4.28.52</td><td>B</td></tr><tr><td>4.28.57</td><td>B</td></tr><tr><td>4.31.2</td><td>D</td></tr><tr><td>4.34.1</td><td>D</td></tr><tr><td>4.36.3</td><td>B</td></tr></table>",
+        "bbox": [
+            255,
+            62,
+            381,
+            346
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/37918102ccb50c0e596ddd5a15e6578b99c338ff40aaddd40e58c7d933b3e276.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.28.13</td><td>A;C</td></tr><tr><td>4.28.18</td><td>D</td></tr><tr><td>4.28.23</td><td>D</td></tr><tr><td>4.28.28</td><td>B</td></tr><tr><td>4.28.33</td><td>5</td></tr><tr><td>4.28.38</td><td>C</td></tr><tr><td>4.28.43</td><td>A</td></tr><tr><td>4.28.48</td><td>A;B;D</td></tr><tr><td>4.28.53</td><td>A</td></tr><tr><td>4.29.1</td><td>12</td></tr><tr><td>4.31.3</td><td>D</td></tr><tr><td>4.34.2</td><td>N/A</td></tr><tr><td>4.36.4</td><td>A</td></tr></table>",
+        "bbox": [
+            401,
+            62,
+            586,
+            346
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/950557c140f695668e18e54854f01aa72159f5ce0659d48303594fc2c247030f.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.28.14</td><td>C</td></tr><tr><td>4.28.19</td><td>D</td></tr><tr><td>4.28.24</td><td>A</td></tr><tr><td>4.28.29</td><td>D</td></tr><tr><td>4.28.34</td><td>3</td></tr><tr><td>4.28.39</td><td>D</td></tr><tr><td>4.28.44</td><td>3 : 3</td></tr><tr><td>4.28.49</td><td>B;D</td></tr><tr><td>4.28.54</td><td>A</td></tr><tr><td>4.30.1</td><td>C</td></tr><tr><td>4.31.4</td><td>B</td></tr><tr><td>4.35.1</td><td>D</td></tr></table>",
+        "bbox": [
+            606,
+            62,
+            732,
+            325
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "images/cf3a1ac4ecfd6719d228d6756a7fd16d60efa052933357e4ba7be509c179dc1e.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>4.28.15</td><td>B</td></tr><tr><td>4.28.20</td><td>B</td></tr><tr><td>4.28.25</td><td>A</td></tr><tr><td>4.28.30</td><td>B</td></tr><tr><td>4.28.35</td><td>5</td></tr><tr><td>4.28.40</td><td>0.502 : 0.504</td></tr><tr><td>4.28.45</td><td>B</td></tr><tr><td>4.28.50</td><td>B;C</td></tr><tr><td>4.28.55</td><td>C</td></tr><tr><td>4.30.2</td><td>A</td></tr><tr><td>4.32.1</td><td>A;C</td></tr><tr><td>4.36.1</td><td>B</td></tr></table>",
+        "bbox": [
+            752,
+            62,
+            934,
+            325
+        ],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "System calls, Processes, Threads, Inter-process communication, Concurrency and synchronization.",
+        "bbox": [
+            65,
+            98,
+            801,
+            112
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Deadlock. CPU scheduling. Memory management and Virtual memory. File systems. Disks is also under this",
+        "bbox": [
+            65,
+            112,
+            858,
+            127
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "table",
+        "img_path": "images/81f28b5258a99bb132278ae36c457a50d0264d13efa26e260c1d7b8abab25488.jpg",
+        "table_caption": [
+            "Mark Distribution in Previous GATE"
+        ],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>Year</td><td>2026 - 1</td><td>2026 - 2</td><td>2025 - 1</td><td>2025 - 2</td><td>2024 - 1</td><td>2024 - 2</td><td>2023</td><td>2022</td><td>2021 - 1</td><td>2021 - 2</td><td>Minimum</td></tr><tr><td>1 Mark Count</td><td>2</td><td>1</td><td>2</td><td>1</td><td>2</td><td>2</td><td>3</td><td>2</td><td>4</td><td>2</td><td>1</td></tr><tr><td>2 Marks Count</td><td>2</td><td>3</td><td>3</td><td>3</td><td>4</td><td>4</td><td>3</td><td>4</td><td>1</td><td>3</td><td>1</td></tr><tr><td>Total Marks</td><td>6</td><td>7</td><td>8</td><td>7</td><td>10</td><td>10</td><td>9</td><td>10</td><td>6</td><td>8</td><td>6</td></tr></table>",
+        "bbox": [
+            70,
+            150,
+            952,
+            212
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Welcome to the Operating System (OS) chapter of your GATE Computer Science preparation! This section is designed as a comprehensive, exam-focused reference to help you master the core concepts, formulas, and problem-solving techniques essential for excelling in the GATE exam. Operating Systems form the bedrock of computing, managing hardware and software resources to provide a stable and efficient environment for applications. For GATE CS, OS is a high-scoring subject, typically carrying a weightage of 8-12 marks. Questions range from conceptual understanding of OS principles, numerical problems on scheduling, memory management, and disk I/O, to analytical questions on deadlock and synchronization. A strong grasp of this subject is crucial not only for GATE but also for a fundamental understanding of computer science.",
+        "bbox": [
+            58,
+            222,
+            929,
+            333
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Topic-wise Key Concepts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            346,
+            295,
+            363
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Bankers Algorithm",
+        "text_level": 1,
+        "bbox": [
+            60,
+            375,
+            235,
+            391
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The Banker's Algorithm is a deadlock avoidance algorithm that checks for a safe state before granting a resource request. It ensures that the system can always find a sequence of processes that can complete their execution without leading to a deadlock.",
+        "bbox": [
+            58,
+            404,
+            922,
+            447
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            458,
+            332,
+            471
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "1. Need Matrix: For each process $P_{i}$ and resource type $R_{j}$ , $Need[i][j] = Max[i][j] - Allocation[i][j]$ . This represents the remaining resources $P_{i}$ may still request.",
+        "bbox": [
+            89,
+            471,
+            905,
+            502
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "2. Safety Algorithm:",
+        "text_level": 1,
+        "bbox": [
+            89,
+            502,
+            253,
+            515
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Initialize $Work = Available$ and $Finish[i] = false$ for all processes.",
+            "- Find an $i$ such that $Finish[i] == false$ and $Need[i] \\leq Work$ .",
+            "- If such an $i$ exists, then $Work = Work + Allocation[i]$ and $Finish[i] = true$ . Go to step 2.",
+            "- If no such $i$ exists, the system is in a safe state if $Finish[i] == true$ for all $i$ ."
+        ],
+        "bbox": [
+            122,
+            515,
+            836,
+            577
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3. Resource-Request Algorithm:",
+        "text_level": 1,
+        "bbox": [
+            89,
+            577,
+            347,
+            590
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If $Request_i \\leq Need_i$ , proceed to step 2. Otherwise, error.",
+            "- If $Request_i \\leq Available$ , proceed to step 3. Otherwise, $P_i$ must wait.",
+            "- Pretend to allocate resources: Available = Available - Request $_i$ , Allocation $_i$ = Allocation $_i$ + Request $_i$ , Need $_i$ = Need $_i$ - Request $_i$ .",
+            "- Run Safety Algorithm. If safe, grant request. If unsafe, revert allocation and $P_{i}$ waits."
+        ],
+        "bbox": [
+            122,
+            590,
+            749,
+            663
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            663,
+            211,
+            676
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Ensures deadlock avoidance by maintaining the system in a safe state.",
+            "- Requires prior knowledge of maximum resource needs for each process.",
+            "- Less conservative than deadlock prevention, allowing higher resource utilization."
+        ],
+        "bbox": [
+            97,
+            676,
+            717,
+            718
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            718,
+            226,
+            730
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing safe state with deadlock-free state (safe implies deadlock-free, but unsafe doesn't necessarily imply deadlock).",
+            "- Incorrectly calculating the Need matrix or updating Available/Allocation vectors.",
+            "- Not checking all conditions in the Safety Algorithm or Resource-Request Algorithm."
+        ],
+        "bbox": [
+            97,
+            732,
+            915,
+            787
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            787,
+            398,
+            801
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Systematically trace the Safety Algorithm step-by-step, updating Work and Finish arrays.",
+            "- For resource requests, first check against Need and then against Available, then temporarily allocate and run the Safety Algorithm."
+        ],
+        "bbox": [
+            97,
+            801,
+            924,
+            844
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Best Fit",
+        "text_level": 1,
+        "bbox": [
+            60,
+            857,
+            136,
+            872
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Best Fit is a dynamic memory allocation algorithm that allocates the smallest available memory hole (partition) that is large enough to satisfy a request. Its goal is to minimize the amount of internal fragmentation.",
+        "bbox": [
+            58,
+            885,
+            910,
+            915
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "page_number",
+        "text": "5",
+        "bbox": [
+            72,
+            70,
+            84,
+            83
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "Operating System (343)",
+        "bbox": [
+            374,
+            70,
+            576,
+            86
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "header",
+        "text": "The image provided is a QR code. As per the instructions, I am to process text and non-textual information, and since you do not use text for OCR, the QR code is a machine-readable pattern. Therefore, the correct OCR output is an empty string.",
+        "bbox": [
+            862,
+            70,
+            924,
+            115
+        ],
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            65,
+            211,
+            78
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Tends to produce the smallest leftover hole, which might be useful for future small requests.",
+            "- Suffers from external fragmentation, where total free memory is sufficient but not contiguous.",
+            "- Requires searching the entire list of free partitions to find the best fit, making it slower than First Fit."
+        ],
+        "bbox": [
+            97,
+            79,
+            831,
+            119
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            119,
+            225,
+            131
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing it with First Fit or Worst Fit.",
+            "- Incorrectly identifying the \"smallest\" suitable hole, especially when multiple holes have the same size."
+        ],
+        "bbox": [
+            97,
+            134,
+            848,
+            161
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "• Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            162,
+            396,
+            175
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Maintain a sorted list of free memory blocks (or iterate through all) and select the one with the smallest size greater than or equal to the request.",
+            "- Draw memory maps to visualize allocation and fragmentation."
+        ],
+        "bbox": [
+            95,
+            176,
+            889,
+            217
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Context Switch",
+        "text_level": 1,
+        "bbox": [
+            60,
+            230,
+            203,
+            245
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "A context switch is the mechanism by which the CPU saves the state of the currently executing process or thread and restores the state of another process or thread. This allows multiple processes/threads to share a single CPU.",
+        "bbox": [
+            58,
+            258,
+            917,
+            288
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            299,
+            211,
+            312
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Involves saving the Process Control Block (PCB) of the current process and loading the PCB of the next process.",
+            "- An overhead operation, as the CPU is not performing useful work during the switch.",
+            "- Latency is the time taken for a context switch.",
+            "- More frequent context switches (e.g., small time quantum in Round Robin) increase overhead."
+        ],
+        "bbox": [
+            95,
+            313,
+            934,
+            368
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            368,
+            225,
+            380
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Underestimating the overhead of context switching in performance calculations.",
+            "- Not understanding \\*what\\* exactly is saved (CPU registers, program counter, stack pointer, etc.)."
+        ],
+        "bbox": [
+            97,
+            382,
+            808,
+            409
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "DMA (Direct Memory Access)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            422,
+            329,
+            438
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "DMA is a feature of computer systems that allows certain hardware subsystems (like disk drive controllers or network cards) to access main system memory (RAM) independently of the central processing unit (CPU). This significantly improves I/O performance by offloading data transfer from the CPU.",
+        "bbox": [
+            58,
+            451,
+            914,
+            494
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            505,
+            211,
+            517
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Reduces CPU overhead for large data transfers, allowing the CPU to perform other tasks.",
+            "- DMA controller manages the transfer, initiating an interrupt only upon completion.",
+            "- \"Cycle stealing\" occurs when the DMA controller temporarily takes control of the system bus from the CPU to transfer data.",
+            "- Requires careful setup by the CPU (source, destination, size)."
+        ],
+        "bbox": [
+            97,
+            519,
+            904,
+            587
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            589,
+            225,
+            600
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Thinking DMA eliminates CPU involvement entirely (CPU still initiates and handles completion).",
+            "- Not understanding the concept of cycle stealing and its impact on CPU performance."
+        ],
+        "bbox": [
+            97,
+            600,
+            803,
+            629
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Deadlock Prevention Avoidance Detection",
+        "text_level": 1,
+        "bbox": [
+            60,
+            642,
+            445,
+            657
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "These are strategies to deal with deadlocks. Prevention aims to ensure that at least one of the four necessary conditions for deadlock never holds. Avoidance dynamically grants resources only if the system remains in a safe state. Detection allows deadlocks to occur and then finds and resolves them.",
+        "bbox": [
+            58,
+            672,
+            929,
+            713
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            725,
+            332,
+            738
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "1. Necessary Conditions for Deadlock (Coffman Conditions):",
+        "text_level": 1,
+        "bbox": [
+            90,
+            739,
+            569,
+            752
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- $C_1$ : Mutual Exclusion: At least one resource must be held in a non-sharable mode.",
+            "- $C_2$ : Hold and Wait: A process holding at least one resource is waiting to acquire additional resources held by other processes.",
+            "- $C_3$ : No Preemption: Resources cannot be preempted; they can only be released voluntarily by the process holding them.",
+            "- $C_4$ : Circular Wait: A set of processes $\\{P_0, P_1, \\ldots, P_n\\}$ exists such that $P_0$ is waiting for a resource held by $P_1$ , $P_1$ is waiting for a resource held by $P_2$ , ..., $P_{n-1}$ is waiting for a resource held by $P_n$ , and $P_n$ is waiting for a resource held by $P_0$ ."
+        ],
+        "bbox": [
+            121,
+            752,
+            921,
+            868
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "2. Deadlock Prevention: Break one or more of the four conditions.",
+        "text_level": 1,
+        "bbox": [
+            89,
+            868,
+            584,
+            881
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Break $C_1$ : Spooling (for printers), virtualizing resources.",
+            "- Break $C_2$ : Request all resources at once, or release all resources before requesting new ones.",
+            "- Break $C_3$ : Allow preemption of resources (e.g., CPU, memory)."
+        ],
+        "bbox": [
+            121,
+            883,
+            825,
+            926
+        ],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "\\- Break $C_4$ : Impose a total ordering of resource types; processes must request resources in increasing order.",
+        "bbox": [
+            119,
+            65,
+            919,
+            80
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "3. Deadlock Avoidance: Banker's Algorithm (for multiple instances of resources), Resource-Allocation Graph Algorithm (for single instances).",
+        "bbox": [
+            89,
+            80,
+            894,
+            106
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4. Deadlock Detection:",
+        "bbox": [
+            89,
+            108,
+            273,
+            119
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- If resources have single instances, use a Wait-For Graph. A cycle implies deadlock.",
+            "- If resources have multiple instances, use an algorithm similar to Banker's Safety Algorithm."
+        ],
+        "bbox": [
+            121,
+            121,
+            798,
+            149
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            73,
+            149,
+            211,
+            162
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Prevention is conservative, often leading to low resource utilization.",
+            "- Avoidance is more flexible but requires future knowledge of resource requests.",
+            "- Detection allows higher concurrency but incurs overhead for detection and recovery."
+        ],
+        "bbox": [
+            97,
+            163,
+            878,
+            204
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls:",
+        "bbox": [
+            73,
+            205,
+            226,
+            217
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing which condition each prevention strategy addresses.",
+            "- Incorrectly applying RAG for multiple instance resources (a cycle in RAG with multiple instances does not necessarily imply deadlock).",
+            "- Not understanding the trade-offs between the three strategies."
+        ],
+        "bbox": [
+            97,
+            218,
+            878,
+            273
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques:",
+        "bbox": [
+            73,
+            274,
+            396,
+            287
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- For prevention, identify which condition is being broken.",
+            "- For avoidance, apply Banker's Algorithm.",
+            "- For detection, draw the RAG or Wait-For Graph and look for cycles."
+        ],
+        "bbox": [
+            97,
+            288,
+            603,
+            328
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Demand Paging",
+        "text_level": 1,
+        "bbox": [
+            60,
+            340,
+            208,
+            358
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Demand Paging is a virtual memory technique where pages are loaded into main memory only when they are referenced (demanded) by the CPU. This allows for larger virtual address spaces than physical memory and reduces I/O overhead by not loading unused pages.",
+        "bbox": [
+            58,
+            371,
+            912,
+            414
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas/Theorems:",
+        "bbox": [
+            73,
+            423,
+            332,
+            437
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1. Effective Access Time (EAT):",
+        "bbox": [
+            90,
+            438,
+            342,
+            452
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE A T = (1 - p) \\times \\text {MemoryAccessTime} + p \\times (\\text {PageFaultOverhead} + \\text {MemoryAccessTime})\n$$",
+        "text_format": "latex",
+        "bbox": [
+            132,
+            461,
+            912,
+            480
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Where p is the page fault rate. PageFaultOverhead includes time for interrupt, saving process state, reading page from disk, updating page table, restoring process state.",
+        "bbox": [
+            107,
+            490,
+            924,
+            519
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Key Properties:",
+        "bbox": [
+            73,
+            519,
+            211,
+            532
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Leverages locality of reference to achieve good performance.",
+            "- Reduces physical memory requirements for processes.",
+            "- Introduces page faults, which are expensive operations.",
+            "- Can lead to thrashing if the page fault rate becomes too high."
+        ],
+        "bbox": [
+            97,
+            533,
+            559,
+            587
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Common Pitfalls:",
+        "bbox": [
+            73,
+            587,
+            225,
+            600
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly calculating EAT, especially the components of page fault overhead.",
+            "- Misunderstanding the concept of locality of reference.",
+            "- Confusing demand paging with simple paging."
+        ],
+        "bbox": [
+            97,
+            600,
+            684,
+            643
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Standard Problem-Solving Techniques:",
+        "bbox": [
+            73,
+            643,
+            396,
+            657
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Calculate EAT by plugging in given values for page fault rate, memory access time, and page fault overhead.",
+            "- Analyze scenarios for thrashing."
+        ],
+        "bbox": [
+            97,
+            657,
+            902,
+            685
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Disk",
+        "text_level": 1,
+        "bbox": [
+            60,
+            697,
+            105,
+            712
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "A disk (hard disk drive) is a non-volatile storage device that stores data on rotating platters. It is characterized by its physical structure and the time it takes to access data.",
+        "bbox": [
+            58,
+            726,
+            900,
+            755
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "\\- Important Formulas/Theorems:",
+        "bbox": [
+            73,
+            766,
+            332,
+            779
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "1. Disk Access Time:",
+        "bbox": [
+            90,
+            780,
+            260,
+            793
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {AccessTime} = \\text {SeekTime} + \\text {RotationalLatency} + \\text {TransferTime}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            245,
+            804,
+            801,
+            821
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Seek Time: Time taken for the disk arm to move the read/write heads to the correct track.",
+            "- Rotational Latency: Time taken for the desired sector to rotate under the read/write head (average is half a rotation).",
+            "- Transfer Time: Time taken to transfer the actual data."
+        ],
+        "bbox": [
+            121,
+            831,
+            924,
+            885
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\text {TransferTime} = \\frac {\\text {NumberOfSectors}}{\\text {SectorsPerTrack}} \\times \\text {RotationTime}\n$$",
+        "text_format": "latex",
+        "bbox": [
+            299,
+            897,
+            771,
+            932
+        ],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            65,
+            211,
+            78
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Data is stored in sectors, which are grouped into tracks, and tracks are stacked into cylinders.",
+            "- Seek time is typically the most significant component of disk access time.",
+            "- Mechanical components make disk access orders of magnitude slower than RAM access."
+        ],
+        "bbox": [
+            97,
+            79,
+            791,
+            119
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            119,
+            225,
+            131
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly calculating average rotational latency (usually half a rotation).",
+            "- Forgetting to include all three components of access time."
+        ],
+        "bbox": [
+            97,
+            134,
+            638,
+            161
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "• Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            162,
+            396,
+            175
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "\\- Break down the problem into calculating each component (seek, rotational, transfer) and then sum them up.",
+        "bbox": [
+            95,
+            176,
+            892,
+            190
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Disk Scheduling",
+        "text_level": 1,
+        "bbox": [
+            60,
+            201,
+            213,
+            219
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Disk scheduling algorithms aim to minimize the total head movement of the disk arm, thereby reducing the average disk access time and improving I/O throughput. They reorder pending disk I/O requests.",
+        "bbox": [
+            58,
+            232,
+            932,
+            261
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            271,
+            332,
+            283
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "1. Total Head Movement: Sum of absolute differences between consecutive track numbers accessed.",
+        "bbox": [
+            90,
+            285,
+            840,
+            298
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Algorithms:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            299,
+            181,
+            312
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- FCFS (First-Come, First-Served): Processes requests in the order they arrive. Simple but inefficient.",
+            "- SSTF (Shortest Seek Time First): Selects the request with the minimum seek time from the current head position. Can lead to starvation.",
+            "SCAN (Elevator Algorithm): The disk arm moves from one end of the disk to the other, servicing requests along the way. When it reaches an end, it reverses direction.",
+            "- C-SCAN (Circular SCAN): Similar to SCAN, but when the arm reaches one end, it immediately returns to the other end without servicing requests on the return trip. Provides more uniform wait times.",
+            "- LOOK: Similar to SCAN, but the arm only goes as far as the last request in each direction, then reverses.",
+            "- C-LOOK: Similar to C-SCAN, but the arm only goes as far as the last request in each direction, then returns to the first request in the other direction without going to the absolute end."
+        ],
+        "bbox": [
+            97,
+            313,
+            914,
+            450
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            451,
+            211,
+            463
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- SSTF is optimal for average seek time but can cause starvation.",
+            "- SCAN/C-SCAN/LOOK/C-LOOK provide better fairness and prevent starvation.",
+            "- C-SCAN/C-LOOK are preferred for heavy loads as they provide more uniform service."
+        ],
+        "bbox": [
+            97,
+            465,
+            737,
+            505
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            507,
+            225,
+            517
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly calculating head movement, especially for SCAN/C-SCAN/LOOK/C-LOOK where direction matters.",
+            "- Forgetting to include the initial head position in the calculation.",
+            "- Confusing SCAN with C-SCAN or LOOK with C-LOOK."
+        ],
+        "bbox": [
+            97,
+            520,
+            912,
+            560
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            562,
+            396,
+            574
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Draw a number line representing tracks and mark request positions. Trace the head movement for each algorithm.",
+            "- Carefully track the current head position and the direction of movement."
+        ],
+        "bbox": [
+            97,
+            574,
+            865,
+            616
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "File System",
+        "text_level": 1,
+        "bbox": [
+            60,
+            630,
+            171,
+            646
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "A file system is an OS component that controls how data is stored and retrieved. It organizes files into a hierarchical structure, manages file attributes, and provides mechanisms for accessing and protecting files.",
+        "bbox": [
+            58,
+            659,
+            904,
+            688
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            699,
+            211,
+            712
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- File Attributes: Name, type, location, size, protection, time/date, user ID.",
+            "- File Operations: Create, write, read, reposition, delete, truncate.",
+            "- Directory Structure: Single-level, two-level, tree-structured, acyclic-graph, general graph.",
+            "- Allocation Methods: Contiguous, Linked, Indexed.",
+            "- Free Space Management: Bit vector, linked list, grouping, counting."
+        ],
+        "bbox": [
+            97,
+            712,
+            768,
+            781
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            782,
+            225,
+            793
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing file allocation methods (e.g., linked vs. indexed).",
+            "- Not understanding the trade-offs of different directory structures (e.g., sharing, path length)."
+        ],
+        "bbox": [
+            97,
+            795,
+            776,
+            823
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Fork System Call",
+        "text_level": 1,
+        "bbox": [
+            60,
+            836,
+            218,
+            852
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The fork() system call creates a new process (child process) that is a duplicate of the calling process (parent process). Both processes then execute concurrently from the point of the fork() call.",
+        "bbox": [
+            58,
+            865,
+            919,
+            893
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            904,
+            211,
+            919
+        ],
+        "page_idx": 6
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- The child process receives a copy of the parent's address space, including code, data, and stack segments (often implemented using copy-on-write).",
+            "- The child process gets a unique Process ID (PID).",
+            "- fork() returns 0 to the child process, the child's PID to the parent process, and -1 on failure.",
+            "- Child process inherits open file descriptors, signals, etc."
+        ],
+        "bbox": [
+            97,
+            65,
+            890,
+            134
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            135,
+            226,
+            147
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly predicting the output of programs involving multiple fork() calls due to confusion about which process is executing which part of the code.",
+            "- Not understanding the return values of fork() in parent vs. child.",
+            "- Assuming parent and child share memory directly (they get copies, though copy-on-write optimizes this)."
+        ],
+        "bbox": [
+            97,
+            148,
+            924,
+            204
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            204,
+            396,
+            217
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace the execution path for both parent and child processes separately after each fork().",
+            "- Keep track of the number of processes created. For $N$ fork() calls in a sequence, $2^{N}$ processes are created. If fork() is in a loop, it's more complex."
+        ],
+        "bbox": [
+            97,
+            217,
+            915,
+            262
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "IO Handling",
+        "text_level": 1,
+        "bbox": [
+            60,
+            275,
+            171,
+            290
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "I/O handling refers to the mechanisms and techniques used by the operating system to manage data transfer between the CPU/memory and peripheral devices. Efficient I/O handling is crucial for system performance.",
+        "bbox": [
+            58,
+            304,
+            922,
+            333
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            344,
+            211,
+            357
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Polling: CPU repeatedly checks the status of an I/O device. Simple but inefficient, wastes CPU cycles.",
+            "- Interrupt-driven I/O: Device notifies the CPU via an interrupt when I/O is complete or ready. More efficient for sporadic I/O.",
+            "- DMA (Direct Memory Access): Device controller transfers data directly to/from memory without CPU intervention. Most efficient for large data transfers.",
+            "- Buffering: Using temporary memory areas to hold data during transfer, smoothing out speed differences.",
+            "- Spooling: Holding data for a device (e.g., printer) in a buffer until the device is ready."
+        ],
+        "bbox": [
+            97,
+            357,
+            912,
+            454
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            454,
+            225,
+            467
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing the efficiency and use cases of polling vs. interrupts vs. DMA.",
+            "- Not understanding the role of device controllers."
+        ],
+        "bbox": [
+            97,
+            467,
+            638,
+            495
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Input Output",
+        "text_level": 1,
+        "bbox": [
+            60,
+            509,
+            179,
+            524
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Input/Output (I/O) refers to the communication between an information processing system (like a computer) and the outside world, possibly a human or another information processing system. It involves the transfer of data to and from peripheral devices.",
+        "bbox": [
+            58,
+            538,
+            917,
+            581
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            592,
+            211,
+            605
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Can be synchronous (CPU waits for I/O completion) or asynchronous (CPU continues processing while I/O operates in background).",
+            "- Managed by device controllers and device drivers.",
+            "- Performance is often a bottleneck in overall system performance."
+        ],
+        "bbox": [
+            97,
+            605,
+            889,
+            660
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Inter Process Communication (IPC)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            673,
+            384,
+            690
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "IPC refers to mechanisms provided by the operating system that allow independent processes to communicate and synchronize their actions. This is essential for cooperative processes and distributed systems.",
+        "bbox": [
+            58,
+            703,
+            900,
+            732
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            743,
+            211,
+            756
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Shared Memory: Processes share a region of memory for direct data exchange. Fastest IPC, but requires explicit synchronization.",
+            "- Message Passing: Processes communicate by sending and receiving messages. Simpler to implement for small data transfers, easier to use in distributed systems.",
+            "- Pipes: Unidirectional (ordinary pipes) or bidirectional (named pipes/FIFOs) communication channels.",
+            "- Sockets: For network communication, allowing processes on different machines to communicate.",
+            "Semaphores/Mutexes/Monitors: Primarily for synchronization, but can indirectly facilitate communication by coordinating access to shared resources."
+        ],
+        "bbox": [
+            97,
+            756,
+            907,
+            866
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            866,
+            225,
+            878
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing shared memory with message passing (shared memory requires explicit synchronization, message passing often has built-in synchronization).",
+            "- Not understanding the difference between pipes and named pipes."
+        ],
+        "bbox": [
+            97,
+            881,
+            910,
+            922
+        ],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Interrupts",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            154,
+            81
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "An interrupt is a signal to the CPU from a hardware device or a software program that indicates an event has occurred and requires immediate attention. It causes the CPU to temporarily suspend its current task and execute a special routine called an interrupt handler.",
+        "bbox": [
+            58,
+            93,
+            922,
+            137
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            147,
+            211,
+            161
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Hardware Interrupts: Generated by I/O devices (e.g., disk completion, keyboard input).",
+            "- Software Interrupts (Traps/Exceptions): Generated by programs (e.g., system calls, division by zero, page fault).",
+            "- Interrupt Vector: A table containing the addresses of interrupt service routines (ISRs) for various interrupt types.",
+            "- Maskable Interrupts: Can be temporarily ignored by the CPU.",
+            "Non-maskable Interrupts (NMI): Critical events that cannot be ignored (e.g., memory parity error).",
+            "- Involves saving the CPU's context (registers, PC) before executing the ISR and restoring it afterward."
+        ],
+        "bbox": [
+            97,
+            161,
+            904,
+            271
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            271,
+            226,
+            283
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing hardware interrupts with software interrupts (traps).",
+            "- Not understanding the role of the interrupt vector.",
+            "- Forgetting the context saving/restoring overhead."
+        ],
+        "bbox": [
+            97,
+            286,
+            564,
+            327
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Least Recently Used (LRU)",
+        "text_level": 1,
+        "bbox": [
+            60,
+            340,
+            307,
+            356
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "LRU is a page replacement algorithm that replaces the page that has not been used for the longest period of time. It is based on the principle of temporal locality, assuming that pages recently used are likely to be used again soon.",
+        "bbox": [
+            58,
+            369,
+            922,
+            399
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            409,
+            211,
+            422
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Generally performs well, approximating the optimal algorithm.",
+            "- Does not suffer from Belady's anomaly (increasing page faults with more frames).",
+            "- Difficult to implement efficiently in hardware, as it requires tracking the exact usage time of each page.",
+            "- Approximations like Second Chance or Clock algorithm are often used in practice."
+        ],
+        "bbox": [
+            97,
+            423,
+            855,
+            478
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            478,
+            225,
+            490
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly identifying the \"least recently used\" page, especially in complex sequences.",
+            "- Confusing it with FIFO or LFU."
+        ],
+        "bbox": [
+            97,
+            491,
+            742,
+            517
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            520,
+            396,
+            533
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Maintain a \"time stamp\" or \"counter\" for each page, or conceptually keep a stack where the most recently used page is at the top. When a page is referenced, move it to the top. When a page fault occurs, remove the page at the bottom.",
+            "- Trace the page references and page frames step-by-step."
+        ],
+        "bbox": [
+            97,
+            533,
+            927,
+            589
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Linked Allocation",
+        "text_level": 1,
+        "bbox": [
+            60,
+            602,
+            223,
+            617
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Linked allocation is a file allocation method where each file is stored as a linked list of disk blocks. Each block contains a pointer to the next block in the file.",
+        "bbox": [
+            58,
+            631,
+            922,
+            659
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            669,
+            211,
+            684
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- No external fragmentation, as any free block can be used.",
+            "- Files can grow dynamically.",
+            "- Sequential access is efficient, but direct access (random access) is very slow due to pointer traversal.",
+            "- Pointer overhead: a portion of each disk block is used for the pointer, reducing data storage capacity.",
+            "- Reliability issue: a lost or damaged pointer can lead to the loss of the rest of the file."
+        ],
+        "bbox": [
+            97,
+            684,
+            848,
+            752
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            754,
+            225,
+            766
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing it with contiguous or indexed allocation.",
+            "- Overlooking the performance impact on random access or the pointer overhead."
+        ],
+        "bbox": [
+            97,
+            767,
+            695,
+            795
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Memory Management",
+        "text_level": 1,
+        "bbox": [
+            60,
+            808,
+            258,
+            824
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Memory management is the operating system's function of handling primary memory. It allocates memory to processes, protects processes from each other, and provides an abstraction of a large, uniform memory space.",
+        "bbox": [
+            58,
+            837,
+            931,
+            866
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            876,
+            211,
+            890
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Relocation: Mapping logical addresses to physical addresses.",
+            "- Protection: Preventing processes from accessing each other's memory."
+        ],
+        "bbox": [
+            97,
+            891,
+            640,
+            919
+        ],
+        "page_idx": 8
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Sharing: Allowing processes to share memory regions.",
+            "- Logical Organization: Segmentation, paging.",
+            "- Physical Organization: Contiguous allocation, non-contiguous allocation.",
+            "- Techniques: Paging, segmentation, virtual memory."
+        ],
+        "bbox": [
+            97,
+            65,
+            650,
+            119
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            119,
+            226,
+            133
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing internal vs. external fragmentation.",
+            "- Not understanding the difference between logical and physical addresses."
+        ],
+        "bbox": [
+            97,
+            134,
+            650,
+            162
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Multilevel Paging",
+        "text_level": 1,
+        "bbox": [
+            60,
+            174,
+            220,
+            191
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Multilevel paging (or hierarchical paging) is a technique used in virtual memory systems to reduce the size of the page table. Instead of a single, large page table, it uses a tree-like structure of page tables, where the outer page table points to inner page tables, which then point to physical frames.",
+        "bbox": [
+            58,
+            204,
+            931,
+            247
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            257,
+            334,
+            270
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "1. Effective Access Time (EAT) for N-level Paging:",
+        "bbox": [
+            90,
+            271,
+            487,
+            286
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE A T = (N + 1) \\times M e m o r y A c c e s s T i m e\n$$",
+        "text_format": "latex",
+        "bbox": [
+            351,
+            296,
+            695,
+            313
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "(Assuming no TLB and page tables are in memory).",
+        "bbox": [
+            109,
+            323,
+            490,
+            338
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "2. Number of Bits for Page Number: If a logical address is m bits and page size is $2^{k}$ bytes, then page offset is k bits, and page number is $(m - k)$ bits.",
+        "bbox": [
+            87,
+            339,
+            929,
+            370
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "3. Number of Entries in Page Table: 2 $^{page number bits}$ .",
+        "bbox": [
+            87,
+            370,
+            495,
+            387
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "4. Size of Page Table: $2^{page number bits}$ × size of page table entry.",
+        "bbox": [
+            87,
+            388,
+            594,
+            404
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            404,
+            211,
+            418
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Reduces the amount of physical memory required for page tables, especially for sparse address spaces.",
+            "- Increases memory access time because multiple memory accesses are needed to find a physical address (one for each level of page table).",
+            "- Can be combined with TLB to mitigate increased access time."
+        ],
+        "bbox": [
+            97,
+            418,
+            919,
+            472
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            473,
+            226,
+            486
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly calculating the number of bits for each level of the page table.",
+            "- Forgetting to account for all memory accesses when calculating EAT without TLB."
+        ],
+        "bbox": [
+            97,
+            486,
+            707,
+            514
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            515,
+            396,
+            528
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Break down the virtual address into segments corresponding to each level of the page table and the page offset.",
+            "Calculate the number of page table entries and the size of each page table level."
+        ],
+        "bbox": [
+            97,
+            528,
+            927,
+            555
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "OS Protection",
+        "text_level": 1,
+        "bbox": [
+            60,
+            568,
+            191,
+            584
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "OS protection mechanisms ensure that system resources (CPU, memory, files, I/O devices) are used only in ways authorized by the operating system. This prevents malicious or erroneous programs from harming the system or other programs.",
+        "bbox": [
+            58,
+            598,
+            919,
+            642
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            652,
+            211,
+            665
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Dual-Mode Operation: User mode (restricted privileges) and Kernel mode (full privileges). A mode bit indicates the current mode.",
+            "- Privileged Instructions: Instructions that can only be executed in kernel mode (e.g., I/O instructions, setting timer).",
+            "- System Calls: User programs request OS services, transitioning from user to kernel mode.",
+            "- Memory Protection: Base and limit registers, paging, segmentation.",
+            "- Access Control Lists (ACLs): For files and other resources, specifying who can access what and how.",
+            "Capabilities: Tokens that grant specific access rights to a resource."
+        ],
+        "bbox": [
+            97,
+            665,
+            924,
+            776
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            777,
+            225,
+            789
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing the purpose of dual-mode operation with memory protection.",
+            "- Not understanding how system calls facilitate a controlled transition to kernel mode."
+        ],
+        "bbox": [
+            97,
+            790,
+            719,
+            817
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Page Replacement",
+        "text_level": 1,
+        "bbox": [
+            60,
+            831,
+            235,
+            847
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Page replacement algorithms decide which page to remove from main memory when a page fault occurs and no free frames are available. The goal is to minimize the number of page faults.",
+        "bbox": [
+            58,
+            859,
+            912,
+            889
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            899,
+            332,
+            914
+        ],
+        "page_idx": 9
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Hit Ratio: $\\frac{Number of Page Hits}{Total Page References}$",
+            "2. Miss Ratio (Page Fault Rate): $\\frac{Number of Page Faults}{Total Page References}$",
+            "3. HitRatio + MissRatio = 1"
+        ],
+        "bbox": [
+            89,
+            64,
+            489,
+            122
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Algorithms:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            123,
+            181,
+            136
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- FIFO (First-In, First-Out): Replaces the page that has been in memory the longest. Simple but can suffer from Belady's anomaly.",
+            "- Optimal (OPT/MIN): Replaces the page that will not be used for the longest period of time in the future. Impossible to implement in practice, used as a benchmark.",
+            "- LRU (Least Recently Used): Replaces the page that has not been used for the longest time. Generally good performance, does not suffer from Belady's anomaly, but complex to implement.",
+            "- LFU (Least Frequently Used): Replaces the page with the smallest count of references.",
+            "- MFU (Most Frequently Used): Replaces the page with the largest count of references (less common).",
+            "- Second Chance (Clock): A FIFO variant that gives a page a \"second chance\" if its reference bit is set."
+        ],
+        "bbox": [
+            97,
+            137,
+            917,
+            261
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            262,
+            211,
+            274
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Belady's anomaly: For some algorithms (like FIFO), increasing the number of available page frames can increase the number of page faults.",
+            "- Optimal algorithm provides the theoretical minimum number of page faults."
+        ],
+        "bbox": [
+            97,
+            275,
+            868,
+            315
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            317,
+            223,
+            328
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly applying the rules for each algorithm, especially for LRU and Optimal.",
+            "- Forgetting to count the initial page loads as page faults.",
+            "- Misinterpreting Belady's anomaly."
+        ],
+        "bbox": [
+            97,
+            330,
+            697,
+            371
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            372,
+            396,
+            385
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Trace the page reference string through the page frames for each algorithm, step-by-step, marking hits and faults.",
+            "- Keep track of the state of each page (e.g., arrival time for FIFO, last used time for LRU, future use for Optimal)."
+        ],
+        "bbox": [
+            97,
+            385,
+            917,
+            427
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Precedence Graph",
+        "text_level": 1,
+        "bbox": [
+            60,
+            440,
+            233,
+            456
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A precedence graph (or process graph) is a directed acyclic graph (DAG) used to represent the execution order and dependencies among a set of tasks or processes. An edge from task A to task B means task A must complete before task B can start.",
+        "bbox": [
+            58,
+            469,
+            914,
+            511
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            522,
+            211,
+            536
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Nodes represent tasks/processes, edges represent dependencies.",
+            "- Helps in identifying potential parallelism and critical paths.",
+            "- Used in scheduling to ensure correct execution order.",
+            "- Must be acyclic to represent a valid execution sequence."
+        ],
+        "bbox": [
+            97,
+            536,
+            596,
+            592
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            592,
+            225,
+            604
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Drawing cycles, which implies an impossible dependency.",
+            "- Misinterpreting the meaning of an edge (A -> B means A must finish before B starts, not just that B follows A)."
+        ],
+        "bbox": [
+            97,
+            605,
+            904,
+            635
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Process",
+        "text_level": 1,
+        "bbox": [
+            60,
+            648,
+            139,
+            663
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A process is a program in execution. It is an active entity, unlike a program, which is a passive entity. Each process has its own address space, resources, and execution context.",
+        "bbox": [
+            58,
+            678,
+            929,
+            706
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            717,
+            211,
+            730
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Process States:",
+        "text_level": 1,
+        "bbox": [
+            97,
+            758,
+            238,
+            771
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Process Control Block (PCB): Contains all information about a process (state, PC, registers, memory limits, open files, etc.)."
+        ],
+        "bbox": [
+            97,
+            731,
+            905,
+            771
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "■ New: Process being created.",
+            "- Ready: Waiting to be assigned to a processor.",
+            "- Running: Instructions are being executed.",
+            "- Waiting (Blocked): Waiting for some event (e.g., I/O completion, signal).",
+            "- Terminated: Process has finished execution."
+        ],
+        "bbox": [
+            122,
+            771,
+            670,
+            840
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Each process has its own virtual address space, including code, data, and stack segments.",
+            "- Processes are typically heavy-weight compared to threads."
+        ],
+        "bbox": [
+            97,
+            840,
+            774,
+            869
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            870,
+            225,
+            882
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Confusing a process with a program or a thread.",
+            "- Incorrectly identifying transitions between process states."
+        ],
+        "bbox": [
+            97,
+            883,
+            529,
+            910
+        ],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Process Scheduling",
+        "text_level": 1,
+        "bbox": [
+            60,
+            65,
+            247,
+            81
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Process scheduling is the activity of the operating system that selects which process to run next from the ready queue and allocates the CPU to it. The goal is to optimize various performance metrics.",
+        "bbox": [
+            58,
+            93,
+            919,
+            122
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            134,
+            332,
+            147
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "1. Turnaround Time (TAT): CompletionTime - ArrivalTime",
+            "2. Waiting Time (WT): TurnaroundTime - BurstTime",
+            "3. Response Time (RT): FirstResponseTime - ArrivalTime",
+            "4. Throughput: Number of processes completed per unit time.",
+            "5. CPU Utilization: Percentage of time the CPU is busy."
+        ],
+        "bbox": [
+            90,
+            148,
+            586,
+            219
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Algorithms:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            220,
+            183,
+            233
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- FCFS (First-Come, First-Served): Non-preemptive. Simple, but can have high average waiting time (convoy effect).",
+            "- SJF (Shortest Job First): Non-preemptive. Optimal for minimum average waiting time. Requires knowing future burst times.",
+            "- SRTF (Shortest Remaining Time First): Preemptive version of SJF. Optimal for minimum average waiting time.",
+            "Priority Scheduling: Can be preemptive or non-preemptive. Processes with higher priority run first. Can lead to starvation (low-priority processes never run).",
+            "- Round Robin (RR): Preemptive. Each process gets a small unit of CPU time (time quantum). Fair, good for interactive systems."
+        ],
+        "bbox": [
+            97,
+            233,
+            929,
+            371
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            372,
+            211,
+            385
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Preemptive: CPU can be taken away from a running process.",
+            "- Non-preemptive: CPU is held until process completes or blocks.",
+            "- Starvation: A process may wait indefinitely.",
+            "- Aging: Gradually increasing the priority of processes that wait for a long time to prevent starvation."
+        ],
+        "bbox": [
+            97,
+            385,
+            825,
+            440
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            441,
+            225,
+            452
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Incorrectly drawing Gantt charts, especially for preemptive algorithms.",
+            "- Mistakes in calculating TAT, WT, or RT.",
+            "- Confusing preemptive vs. non-preemptive versions of algorithms.",
+            "- Not handling arrival times correctly."
+        ],
+        "bbox": [
+            97,
+            454,
+            621,
+            509
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Standard Problem-Solving Techniques:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            510,
+            396,
+            523
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Draw a Gantt chart for each algorithm, carefully marking arrival, start, and completion times.",
+            "- Systematically calculate TAT, WT, and RT for each process and then their averages.",
+            "- For preemptive algorithms, check for preemption at every arrival or completion event."
+        ],
+        "bbox": [
+            97,
+            523,
+            779,
+            565
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Process Synchronization",
+        "text_level": 1,
+        "bbox": [
+            60,
+            577,
+            290,
+            593
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Process synchronization refers to the coordination of multiple processes to ensure that they access shared resources or critical sections in a controlled manner, preventing race conditions and maintaining data consistency.",
+        "bbox": [
+            58,
+            606,
+            934,
+            635
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Important Formulas/Theorems:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            646,
+            332,
+            659
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "1. Critical Section Problem Requirements:",
+        "text_level": 1,
+        "bbox": [
+            90,
+            660,
+            423,
+            674
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Mutual Exclusion: Only one process can be in its critical section at any time.",
+            "- Progress: If no process is in its critical section and some processes want to enter, only those not in their remainder section can participate in the decision, and this decision cannot be postponed indefinitely.",
+            "- Bounded Waiting: There is a limit on the number of times other processes can enter their critical sections after a process has made a request to enter its critical section and before that request is granted."
+        ],
+        "bbox": [
+            122,
+            674,
+            910,
+            743
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Mechanisms:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            744,
+            194,
+            756
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "Semaphores: Integer variables accessed only through atomic wait() (P) and signal() (V) operations. Can be binary (mutex) or counting.",
+            "- Mutex Locks: A simpler binary semaphore, used for mutual exclusion.",
+            "- Monitors: High-level synchronization construct that encapsulates shared data and procedures that operate on the data, ensuring mutual exclusion and providing condition variables for waiting.",
+            "- Hardware Solutions: TestAndSet, Swap instructions."
+        ],
+        "bbox": [
+            97,
+            757,
+            914,
+            839
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Key Properties:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            840,
+            211,
+            853
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "list",
+        "sub_type": "text",
+        "list_items": [
+            "- Race Condition: When multiple processes access and modify shared data concurrently, and the final result depends on the order of execution.",
+            "- Deadlock: Can occur with improper use of synchronization primitives (e.g., two processes waiting for each other's resources)."
+        ],
+        "bbox": [
+            97,
+            853,
+            887,
+            908
+        ],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "- Common Pitfalls:",
+        "text_level": 1,
+        "bbox": [
+            73,
+            909,
+            225,
+            922
+        ],
+        "page_idx": 11
+    }
+]
