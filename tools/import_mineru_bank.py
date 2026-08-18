@@ -395,7 +395,12 @@ def build_image_index(vol_dir, source_file):
                 sub_type=node.get("sub_type") or "",
                 page_idx=(first_page + page) if isinstance(page, int) else None,
                 bbox=node.get("bbox") if isinstance(node.get("bbox"), list) else None,
-                caption=" ".join(node.get("image_caption") or [])[:200],
+                # v2 captions are typed spans ({"type","content"}), not plain
+            # strings, so flatten either shape before joining.
+            caption=" ".join(
+                (c.get("content") or "") if isinstance(c, dict) else str(c)
+                for c in (node.get("image_caption") or [])
+            ).strip()[:200],
                 source_file=source_file,
                 chunk=chunk_name,
             )
@@ -572,6 +577,10 @@ def html_table_to_text(html):
     return "\n".join(rows)
 
 
+# A $$...$$ block spread across its own lines, captured as one unit.
+DISPLAY_MATH = re.compile("[$][$][ \t]*\n(.+?)\n[ \t]*[$][$]", re.S)
+
+
 def parse_block_body(block, image_index):
     """Pull the stem, options, tags and figure references out of one block."""
     text_parts = []
@@ -634,6 +643,16 @@ def parse_block_body(block, image_index):
         return "\n\x00T%d\x00\n" % (len(tables) - 1)
 
     body = TABLE.sub(swap_table, body)
+    # Display maths sits on its own lines, delimiters alone:
+    #     $$ / f (x) = \\frac {x ^ {4}}{4} ... / $$
+    # NOISE treats a punctuation-only line as noise, so those delimiters were
+    # dropped and the formula reached wrap_bare_math naked. It then wrapped
+    # each token run separately, giving "\\frac$ {$x ^ {4}$}${4}" - a delimiter
+    # between a command and its argument, which KaTeX refuses to render.
+    # Collapsing the block onto one line keeps it delimited end to end.
+    body = DISPLAY_MATH.sub(
+        lambda m: " $$%s$$ " % " ".join(m.group(1).split()), body
+    )
 
     for line in body.split("\n"):
         # Figures first: an image reference can share a line with prose.
@@ -1112,6 +1131,30 @@ def build_question(block, parsed, answers, ctx):
     return q
 
 
+# LaTeX escapes that MinerU leaves in prose. Outside $...$ the renderer treats
+# them as literal text, so a fill-in-the-blank arrived on screen as
+# "charged Rs \\_\\_\\_\\_" instead of "charged Rs ____".
+PROSE_ESCAPES = [
+    (re.compile("(?:[\\\\]_){2,}"), "____"),
+    (re.compile("[\\\\](_)"), "_"),
+    (re.compile("[\\\\]([%&#])"), "\\1"),
+]
+
+
+def unescape_prose(text):
+    """Strip LaTeX escapes from the non-maths parts of a string."""
+    if not isinstance(text, str) or "\\" not in text:
+        return text
+    parts = re.split("([$][$].*?[$][$]|[$][^$]*[$])", text, flags=re.S)
+    for i, part in enumerate(parts):
+        if part.startswith("$"):
+            continue
+        for pat, rep in PROSE_ESCAPES:
+            part = pat.sub(rep, part)
+        parts[i] = part
+    return "".join(parts)
+
+
 def finalise(q):
     """Strip private fields and settle the shape that lands in the bank file."""
     pending = bool(q.pop("_pending", False))
@@ -1126,6 +1169,20 @@ def finalise(q):
     ):
         if field in q and q[field] not in (None, ""):
             out[field] = q[field]
+    # Do this once, here, rather than as a pass over the written bank: a
+    # cleanup applied to the files is undone by the next re-import.
+    for field in ("text", "explain"):
+        if field in out:
+            out[field] = unescape_prose(out[field])
+    if isinstance(out.get("options"), list):
+        out["options"] = [unescape_prose(o) for o in out["options"]]
+    # Do this once, here, rather than as a pass over the written bank: a
+    # cleanup applied to the files is undone by the next re-import.
+    for field in ("text", "explain"):
+        if field in out:
+            out[field] = unescape_prose(out[field])
+    if isinstance(out.get("options"), list):
+        out["options"] = [unescape_prose(o) for o in out["options"]]
     out.setdefault("type", "mcq")
     out.setdefault("marks", 2)
     out.setdefault("difficulty", "medium")

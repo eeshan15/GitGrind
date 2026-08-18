@@ -56,6 +56,20 @@ def split_math_mode(text):
     """
     out, buf, i, n = [], [], 0, len(text)
     while i < n:
+        # Display maths comes through as $$...$$. Scanning for single dollars
+        # first pairs the two opening dollars with each other, which leaves the
+        # formula itself sitting in an out-of-math segment where it then gets
+        # wrapped again - the "$f (x) = \\frac$ {$x^{4}$}" shape. Take the double
+        # delimiter as one unit before considering single ones.
+        if text.startswith("$$", i) and (i == 0 or text[i - 1] != "\\"):
+            j = text.find("$$", i + 2)
+            if j != -1:
+                if buf:
+                    out.append((False, "".join(buf)))
+                    buf = []
+                out.append((True, text[i:j + 2]))
+                i = j + 2
+                continue
         if text[i] == "$" and (i == 0 or text[i - 1] != "\\"):
             j = i + 1
             while j < n and not (text[j] == "$" and text[j - 1] != "\\"):

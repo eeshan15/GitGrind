@@ -103,12 +103,14 @@ def visible(text):
 BARE_OPERATORS = {
     "sum", "prod", "coprod", "int", "iint", "oint", "bigcup", "bigcap", "bigvee",
     "bigwedge", "bigoplus", "bigotimes", "biguplus", "sqcup", "nabla", "partial",
-    "otimes", "oplus", "ominus", "odot", "overline", "underline", "widehat",
+    "otimes", "oplus", "ominus", "odot", "widehat",
     "widetilde", "hat", "tilde", "bar", "vec", "dot", "ddot", "backslash",
     "langle", "rangle", "lceil", "rceil", "lfloor", "rfloor", "vert", "Vert",
-    "land", "lor", "neg", "forall", "exists", "emptyset", "infty", "cdot",
+    "land", "lor", "neg", "forall", "exists", "emptyset", "cdot",
     "cdots", "ldots", "dots", "prime", "circ", "ast", "star", "dagger",
 }
+DELIM_LEFT = re.compile(r"\\\\left(?![a-zA-Z])")
+DELIM_RIGHT = re.compile(r"\\\\right(?![a-zA-Z])")
 WORD = re.compile(r"[A-Za-z]{2,}")
 DIGIT = re.compile(r"\d")
 
@@ -187,7 +189,11 @@ def diagnose(opts):
     for o in opts:
         if o.count("{") != o.count("}"):
             return "unbalanced braces (renders as raw source)"
-        if o.count("\\left") != o.count("\\right") and "\\left" in o:
+        # \leftrightarrow and \leftarrow contain "\left" as a substring but are
+        # complete commands, so a plain count flags perfectly good options.
+        lefts = len(DELIM_LEFT.findall(o))
+        rights = len(DELIM_RIGHT.findall(o))
+        if lefts and lefts != rights:
             return "unbalanced \\left/\\right (renders as raw source)"
 
     vis = [visible(o) for o in opts]
