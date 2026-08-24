@@ -1667,73 +1667,19 @@ body.reduced-motion.booted .topbar,body.reduced-motion.booted .shell{transition:
 .prof-bio { margin: .45rem 0 0; }
 .prof-socials { display: flex; gap: .4rem; flex-wrap: wrap; margin-top: .6rem; }
 
-/* Prefixed pbar-* rather than bar-*: the old .bar-track further up this file is
-   an 8px pill with border-radius 999px and overflow:hidden, and a 150px-tall
-   element wearing that rule renders as an ellipse that clips its own fill. */
-.pbar-chart { position: relative; display: flex; align-items: flex-end;
-  gap: .5rem; height: 210px; padding: 1.2rem .2rem 0; }
-.pbar-col { flex: 1 1 0; display: flex; flex-direction: column; align-items: center;
+/* Bars are a flex row of columns rather than absolute positioning, so a week
+   with nothing logged still occupies its slot and the gap stays visible. */
+.bar-chart { display: flex; align-items: flex-end; gap: .45rem; height: 190px;
+  padding-top: 1.1rem; }
+.bar-col { flex: 1 1 0; display: flex; flex-direction: column; align-items: center;
   height: 100%; min-width: 0; }
-.pbar-track { flex: 1 1 auto; width: 100%; display: flex; align-items: flex-end;
-  justify-content: center; border-radius: 0; background: none; overflow: visible; }
-.pbar-fill { width: 78%; max-width: 64px; min-height: 2px; border-radius: 4px 4px 0 0;
-  background: linear-gradient(180deg, #4a5568, #333c4c);
-  transition: height .3s var(--ease, ease), filter .12s; }
-.pbar-fill.hit { background: linear-gradient(180deg, var(--accent, #e8b43e), #b8862a); }
-.pbar-col:hover .pbar-fill { filter: brightness(1.25); }
-.pbar-val { font-family: var(--mono); font-size: 11px; text-align: center;
-  color: var(--dim); height: 1.05rem; letter-spacing: -.02em; }
-.pbar-label { font-family: var(--mono); font-size: 11px; color: var(--faint, #6c7684);
-  margin-top: .35rem; white-space: nowrap; }
-.pbar-col.best .pbar-val { color: var(--fg); font-weight: 700; }
-
-/* The weekly target drawn across the plot, so a short bar reads as "under
-   target" instead of just "short". Bars are scaled against max(peak, target)
-   so this line is always on screen. */
-.pbar-goal { position: absolute; left: .2rem; right: .2rem; height: 0;
-  border-top: 1px dashed rgba(232,180,62,.45); pointer-events: none; }
-.pbar-goal span { position: absolute; right: 0; top: -1.05rem;
-  font: 10px var(--mono); color: rgba(232,180,62,.75); letter-spacing: .04em; }
-
-/* ---------------------------- avatar lightbox ---------------------------- */
-/* The picture grows out of the thumbnail you clicked and shrinks back into it,
-   so it stays obvious which avatar is open. */
-.avatar-zoom { position: fixed; inset: 0; z-index: 60; display: grid;
-  place-items: center; background: #010409ee; cursor: zoom-out; }
-.avatar-zoom img { width: min(62vmin, 400px); height: min(62vmin, 400px);
-  border-radius: 50%; object-fit: cover; border: 2px solid var(--line);
-  box-shadow: 0 24px 70px #000c; }
-.avatar-zoom .zoom-hint { position: absolute; bottom: 9%; color: var(--dim);
-  font-size: 12px; font-family: var(--mono); }
-.avatar-zoom img.in  { animation: avatar-pop .26s cubic-bezier(.16,.84,.44,1) both; }
-.avatar-zoom img.out { animation: avatar-pop .17s ease-in reverse both; }
-@keyframes avatar-pop {
-  from { transform: translate(var(--from-x,0), var(--from-y,0)) scale(var(--from-s,.2));
-         opacity: 0; }
-  to   { transform: translate(0,0) scale(1); opacity: 1; }
-}
-body.reduced-motion .avatar-zoom img.in,
-body.reduced-motion .avatar-zoom img.out { animation: none; }
-
-.avatar.has-photo, .prof-avatar.has-photo { cursor: zoom-in; }
-.avatar.has-photo .avatar-photo { position: absolute; inset: 0; width: 100%;
-  height: 100%; object-fit: cover; z-index: 2; }
-.avatar.has-photo .avatar-glyph { display: none; }
-
-/* ------------------------------- bookmark -------------------------------- */
-/* Sits in the question's chip row. Outline means "not saved", filled means
-   "in the revision queue" - the same two states the server stores. */
-.bookmark { margin-left: auto; background: none; border: 1px solid var(--line);
-  border-radius: 6px; padding: 3px 6px; line-height: 0; cursor: pointer;
-  color: var(--dim); transition: color var(--fast), border-color var(--fast),
-  background var(--fast); }
-.bookmark svg { width: 15px; height: 15px; display: block; }
-.bookmark:hover { color: var(--accent); border-color: var(--accent); }
-.bookmark.on { color: var(--accent); border-color: rgba(232,180,62,.5);
-  background: var(--accent-soft); }
-.bookmark.on svg { fill: currentColor; }
-.bookmark[disabled] { opacity: .5; cursor: default; }
-.row .bookmark { margin-left: 0; }
+.bar-track { flex: 1 1 auto; width: 100%; display: flex; align-items: flex-end; }
+.bar-fill { width: 100%; border-radius: 3px 3px 0 0;
+  background: var(--accent-soft, #2f6f5f); transition: height .25s ease; }
+.bar-fill.hit { background: var(--accent, #3fbf8f); }
+.bar-val { font-size: .68rem; color: var(--dim, #8b95a7); height: 1rem; }
+.bar-label { font-size: .68rem; color: var(--dim, #8b95a7); margin-top: .3rem;
+  white-space: nowrap; }
 
 .prof-split { display: flex; gap: 1.6rem; align-items: center; flex-wrap: wrap; }
 .donut { width: 160px; height: 160px; flex: 0 0 auto; }
@@ -1753,12 +1699,8 @@ body.reduced-motion .avatar-zoom img.out { animation: none; }
 .band-hard    { --band: #d1636b; }  .donut-seg.band-hard    { stroke: #d1636b; }
 .band-unknown { --band: #5d6675; }  .donut-seg.band-unknown { stroke: #5d6675; }
 
-.rev-head { display: flex; align-items: center; justify-content: space-between;
-  gap: .8rem; flex-wrap: wrap; margin-bottom: .7rem; }
-.rev-drop { opacity: 0; transition: opacity var(--fast); }
-.rev-list li:hover .rev-drop, .rev-drop:focus { opacity: 1; }
 .rev-list { list-style: none; margin: 0; padding: 0; }
-.rev-list li { display: grid; grid-template-columns: 1fr auto auto auto; gap: .8rem;
+.rev-list li { display: grid; grid-template-columns: 1fr auto auto; gap: .8rem;
   align-items: center; padding: .45rem 0;
   border-bottom: 1px solid var(--line, #2a3242); }
 .rev-list li:last-child { border-bottom: 0; }

@@ -19,28 +19,6 @@ GG.render = (function () {
       .slice(0, 2).map(w => w[0]).join('').toUpperCase() || 'GG';
     $('#avatarGlyph').textContent = initials;
 
-    /* The sidebar showed initials even when a picture was set, which made the
-       upload look like it had not worked. Show the photo, and let it open. */
-    const av = $('.avatar');
-    if (av) {
-      let photo = $('.avatar-photo', av);
-      if (p.avatar) {
-        if (!photo) {
-          photo = el('img', { class: 'avatar-photo', alt: '' });
-          av.appendChild(photo);
-        }
-        if (photo.getAttribute('src') !== p.avatar) photo.src = p.avatar;
-        av.classList.add('has-photo');
-        av.title = 'Click to enlarge';
-        av.onclick = () => GG.avatarZoom(p.avatar, av);
-      } else {
-        if (photo) photo.remove();
-        av.classList.remove('has-photo');
-        av.title = '';
-        av.onclick = null;
-      }
-    }
-
     $('#sSubjects').textContent = m.subjects_started + '/' + m.subjects_total;
     $('#sDays').textContent = m.active_days;
 

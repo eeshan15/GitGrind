@@ -1753,12 +1753,8 @@ body.reduced-motion .avatar-zoom img.out { animation: none; }
 .band-hard    { --band: #d1636b; }  .donut-seg.band-hard    { stroke: #d1636b; }
 .band-unknown { --band: #5d6675; }  .donut-seg.band-unknown { stroke: #5d6675; }
 
-.rev-head { display: flex; align-items: center; justify-content: space-between;
-  gap: .8rem; flex-wrap: wrap; margin-bottom: .7rem; }
-.rev-drop { opacity: 0; transition: opacity var(--fast); }
-.rev-list li:hover .rev-drop, .rev-drop:focus { opacity: 1; }
 .rev-list { list-style: none; margin: 0; padding: 0; }
-.rev-list li { display: grid; grid-template-columns: 1fr auto auto auto; gap: .8rem;
+.rev-list li { display: grid; grid-template-columns: 1fr auto auto; gap: .8rem;
   align-items: center; padding: .45rem 0;
   border-bottom: 1px solid var(--line, #2a3242); }
 .rev-list li:last-child { border-bottom: 0; }

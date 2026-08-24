@@ -269,62 +269,7 @@ window.GG = (function () {
     }
   }
 
-  /* --------------------------- avatar lightbox -------------------------- */
-  /* Deliberately not a .modal: there is no dialog chrome, no focus trap worth
-     the name and no scrim to share - it is a picture and a way out. It reads
-     the thumbnail's box so the image can grow out of exactly where you clicked,
-     which is what makes the gesture legible. */
-  let zoomWired = false;
-
-  function avatarZoom(src, from) {
-    if (!src) return;
-    const box = $('#avatarZoom');
-    const img = $('#avatarZoomImg');
-    if (!box || !img) return;
-
-    if (!zoomWired) {
-      box.addEventListener('click', avatarZoomClose);
-      zoomWired = true;
-    }
-
-    img.src = src;
-    const r = from && from.getBoundingClientRect ? from.getBoundingClientRect() : null;
-    const side = Math.min(Math.min(window.innerWidth, window.innerHeight) * 0.62, 400);
-    if (r && r.width) {
-      img.style.setProperty('--from-x', (r.left + r.width / 2 - window.innerWidth / 2).toFixed(1) + 'px');
-      img.style.setProperty('--from-y', (r.top + r.height / 2 - window.innerHeight / 2).toFixed(1) + 'px');
-      img.style.setProperty('--from-s', Math.max(0.05, r.width / side).toFixed(3));
-    } else {
-      img.style.setProperty('--from-x', '0px');
-      img.style.setProperty('--from-y', '0px');
-      img.style.setProperty('--from-s', '0.2');
-    }
-
-    box.hidden = false;
-    /* Restart the animation even when the same picture is opened twice. */
-    img.classList.remove('in', 'out');
-    void img.offsetWidth;
-    img.classList.add('in');
-    document.body.classList.add('modal-open');
-  }
-
-  function avatarZoomClose() {
-    const box = $('#avatarZoom');
-    if (!box || box.hidden) return;
-    const img = $('#avatarZoomImg');
-    img.classList.remove('in');
-    img.classList.add('out');
-    const done = () => {
-      box.hidden = true;
-      img.classList.remove('out');
-      if (!$$('.modal').some(x => !x.hidden)) document.body.classList.remove('modal-open');
-    };
-    if (document.body.classList.contains('reduced-motion')) done();
-    else setTimeout(done, 180);
-  }
-
   const closeAll = () => {
-    avatarZoomClose();
     $$('.modal').forEach(m => (m.hidden = true));
     $('#scrim').hidden = true;
     document.body.classList.remove('modal-open');
@@ -686,7 +631,6 @@ window.GG = (function () {
     S, $, $$, el, esc, hm, ago, nice, num, signed, colorOf, hueOf,
     api, toast, announce, showTip, hideTip, bindTip, countTo, growBars,
     modal, closeAll, show, parseHash, markNav, ROUTES,
-    avatarZoom, avatarZoomClose,
     loadPrefs, savePrefs, setReducedMotion, adoptServerPrefs, motionOff,
     draft, clearDraft, snapshot, restore,
     key, shortcutHelp, band, clamp, pct, empty, figures, mathText, codeBlocks, splashDone,

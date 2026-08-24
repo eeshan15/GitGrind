@@ -308,7 +308,6 @@ GG.bank = (function () {
               ].filter(Boolean).join(' - '),
             ]),
           ]),
-          GG.practice.bookmark(q),
           el('button', {
             class: 'btn btn-sm',
             onclick: () => GG.practice.startSet({ questionIds: [q.id], purpose: 'fresh' }),

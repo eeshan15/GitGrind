@@ -768,6 +768,84 @@ def gather(conn, with_analytics=True):
     return bundle
 
 
+def weekly_minutes(conn, weeks=12):
+    """Minutes logged per ISO week, oldest first.
+
+    Sessions carry the minutes, not attempts: time spent reading and working a
+    topic counts the same as time spent answering, and the bar chart is about
+    effort rather than throughput.
+    """
+    rows = conn.execute(
+        "SELECT day, SUM(minutes) AS mins FROM sessions"
+        " WHERE day IS NOT NULL AND day != '' GROUP BY day"
+    ).fetchall()
+    buckets = {}
+    for r in rows:
+        try:
+            d = date.fromisoformat(r["day"])
+        except (TypeError, ValueError):
+            continue
+        iso = d.isocalendar()
+        start = d - timedelta(days=d.weekday())
+        key = start.isoformat()
+        b = buckets.setdefault(
+            key, dict(week_start=key, label="W%02d" % iso[1], minutes=0)
+        )
+        b["minutes"] += int(r["mins"] or 0)
+    out = [buckets[k] for k in sorted(buckets)][-weeks:]
+    # Fill the gap weeks so a fortnight off reads as two empty bars rather than
+    # silently closing up and making the streak look unbroken.
+    if out:
+        first = date.fromisoformat(out[0]["week_start"])
+        last = date.fromisoformat(out[-1]["week_start"])
+        filled, cur = [], first
+        by_key = {b["week_start"]: b for b in out}
+        while cur <= last:
+            key = cur.isoformat()
+            filled.append(
+                by_key.get(key, dict(week_start=key,
+                                     label="W%02d" % cur.isocalendar()[1],
+                                     minutes=0))
+            )
+            cur += timedelta(days=7)
+        out = filled[-weeks:]
+    return out
+
+
+def difficulty_split(conn, bank):
+    """Attempts by question difficulty, with accuracy for each band.
+
+    Difficulty lives on the question, not the attempt, so this joins through the
+    bank. An attempt whose question has since left the bank is counted as
+    unknown rather than dropped - the practice happened either way.
+    """
+    order = ("easy", "medium", "hard")
+    tally = {k: dict(band=k, attempts=0, correct=0) for k in order}
+    tally["unknown"] = dict(band="unknown", attempts=0, correct=0)
+    for r in conn.execute(
+        "SELECT question_id, correct FROM attempts WHERE question_id IS NOT NULL"
+    ):
+        q = bank.get(r["question_id"])
+        band = (q or {}).get("difficulty") or "unknown"
+        if band not in tally:
+            band = "unknown"
+        tally[band]["attempts"] += 1
+        if r["correct"]:
+            tally[band]["correct"] += 1
+    out = []
+    total = sum(t["attempts"] for t in tally.values())
+    for k in order + ("unknown",):
+        t = tally[k]
+        if not t["attempts"] and k == "unknown":
+            continue
+        t["share"] = round(100.0 * t["attempts"] / total, 1) if total else 0.0
+        t["accuracy"] = (
+            round(100.0 * t["correct"] / t["attempts"]) if t["attempts"] else 0
+        )
+        out.append(t)
+    return out
+
+
 def heatmap(subjects, health_rows):
     """Subject x topic grid for the mastery panel, in syllabus order."""
     by_subject = {}

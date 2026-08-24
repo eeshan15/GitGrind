@@ -171,11 +171,6 @@ def build_state(conn, celebrate=True):
         plan_history=planner.plan_history(conn, 21),
         dpp_history=planner.dpp_history(conn, 15),
         saved_questions=quiz.saved_questions(conn, 20),
-        saved_ids=quiz.saved_ids(conn),
-        # The bookmark list, kept separate from revision_queue: that table is
-        # the spacing engine and also feeds the planner, the debt figure and
-        # readiness, so it cannot be narrowed to bookmarks.
-        revision_list=quiz.revision_list(conn),
         # --- content ------------------------------------------------------
         bank=bank,
         bank_health=bank,
@@ -563,14 +558,12 @@ class Handler(BaseHTTPRequestHandler):
             outcome["state"] = build_state(conn)
             return outcome, 200
         if path == "/api/questions/save":
-            # Bookmarking now moves the revision queue, so the client needs the
-            # whole state back or the profile page would keep showing the old
-            # list until the next full refresh.
-            outcome = quiz.save_question(
-                conn, body.get("question_id"), bool(body.get("saved", True))
+            return (
+                quiz.save_question(
+                    conn, body.get("question_id"), bool(body.get("saved", True))
+                ),
+                200,
             )
-            outcome["state"] = build_state(conn)
-            return outcome, 200
         if path == "/api/questions/mistake":
             return (
                 quiz.tag_mistake(

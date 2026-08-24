@@ -172,10 +172,6 @@ def build_state(conn, celebrate=True):
         dpp_history=planner.dpp_history(conn, 15),
         saved_questions=quiz.saved_questions(conn, 20),
         saved_ids=quiz.saved_ids(conn),
-        # The bookmark list, kept separate from revision_queue: that table is
-        # the spacing engine and also feeds the planner, the debt figure and
-        # readiness, so it cannot be narrowed to bookmarks.
-        revision_list=quiz.revision_list(conn),
         # --- content ------------------------------------------------------
         bank=bank,
         bank_health=bank,

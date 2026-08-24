@@ -6,60 +6,6 @@ GG.practice = (function () {
   const LETTER = i => String.fromCharCode(65 + i);
   let quiz = null;      /* { id, questions, responses, idx, startedAt } */
 
-  /* ============================= bookmark ============================== */
-  /* Outline when unsaved, filled when saved - one glyph, so the two states
-     cannot be confused with two different buttons. */
-  const BOOKMARK_SVG =
-    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" ' +
-    'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
-    '<path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>';
-
-  const isSaved = id => ((GG.S.state || {}).saved_ids || []).indexOf(id) !== -1;
-
-  function bookmark(q) {
-    const id = q.id || q.question_id;
-    const btn = el('button', { class: 'bookmark', type: 'button' });
-    btn.innerHTML = BOOKMARK_SVG;
-
-    const paint = on => {
-      btn.classList.toggle('on', on);
-      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-      btn.title = on
-        ? 'In your revision list - click to remove'
-        : 'Save to your revision list';
-    };
-    paint(isSaved(id));
-
-    btn.onclick = async ev => {
-      /* The whole question card is clickable in some views. */
-      ev.stopPropagation();
-      ev.preventDefault();
-      const want = !btn.classList.contains('on');
-      /* Paint first: the round trip rebuilds the entire state and the delay is
-         long enough to feel like the click was dropped. Reverted on failure. */
-      paint(want);
-      btn.disabled = true;
-      try {
-        const out = await GG.api('/questions/save',
-          { body: { question_id: id, saved: want } });
-        if (out && out.state) {
-          GG.S.state = out.state;
-          /* Only repaint views that actually show this list. A quiz in a modal
-             must not be torn down underneath the person answering it. */
-          if (GG.S.route === 'profile' || GG.S.route === 'practice') GG.app.paint();
-        }
-        GG.toast(want ? 'Saved for revision' : 'Removed from revision',
-          want ? 'It is in the revision queue on your profile.' : '');
-      } catch (e) {
-        paint(!want);
-        GG.toast('Could not save', e.message, 'bad');
-      } finally {
-        btn.disabled = false;
-      }
-    };
-    return btn;
-  }
-
   /* ========================= question rendering ======================== */
   function questionBlock(q, opts) {
     const o = Object.assign({ selected: null, locked: false, reveal: null, onPick: null }, opts);
@@ -71,9 +17,6 @@ GG.practice = (function () {
       el('span', { class: 'chip-kind', text: q.marks + ' mark' + (q.marks > 1 ? 's' : '') }),
       el('span', { class: 'chip-kind', text: q.difficulty }),
       q.topic ? el('span', { class: 'chip-kind', text: q.topic }) : null,
-      /* Last in the row and pushed right by margin-left:auto, so it reads as an
-         action on the question rather than another label about it. */
-      bookmark(q),
     ]));
     wrap.appendChild(el('div', { class: 'q-text' }, [mathText(q.text)]));
     /* Figures go below the stem, above the options: that is the reading order
@@ -561,7 +504,7 @@ GG.practice = (function () {
     $('#pqAvail').textContent = n + ' question' + (n === 1 ? '' : 's') + ' available for this selection';
   }
 
-  return { tab, renderQotd, startSet, open, questionBlock, verdict, bookmark };
+  return { tab, renderQotd, startSet, open, questionBlock, verdict };
 })();
 
 /* ==========================================================================

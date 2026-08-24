@@ -936,14 +936,6 @@ def retry_set(conn, question_ids, reason="reattempt of what you just got wrong")
 
 
 def save_question(conn, question_id, saved=True):
-    """Bookmark a question, and put it in (or take it out of) the revision queue.
-
-    Bookmarking and enrolling used to be two separate things, which meant the
-    star did nothing you could see later. There is only one thing a person means
-    when they press it - "show me this again" - so the two now move together.
-    Un-bookmarking deactivates the queue row rather than deleting it, so an
-    accidental double-click does not throw away an interval you have earned.
-    """
     q = content.question_bank().get(question_id)
     if not q:
         raise LookupError("Unknown question.")
@@ -956,105 +948,7 @@ def save_question(conn, question_id, saved=True):
             " updated_at = excluded.updated_at",
             (question_id, q["subject"], q.get("topic", ""), 1 if saved else 0, now),
         )
-        if saved:
-            row = conn.execute(
-                "SELECT id FROM revision_queue WHERE item_type = 'question'"
-                " AND item_key = ?",
-                (question_id,),
-            ).fetchone()
-            if row:
-                # Already scheduled - reactivate without resetting the interval.
-                conn.execute(
-                    "UPDATE revision_queue SET active = 1, updated_at = ?"
-                    " WHERE item_type = 'question' AND item_key = ?",
-                    (now, question_id),
-                )
-            else:
-                revision.enrol_question(conn, q)
-        else:
-            revision.drop(conn, "question", question_id)
     return dict(question_id=question_id, saved=bool(saved))
-
-
-def revision_list(conn, day=None):
-    """The user's revision list: bookmarked questions, and nothing else.
-
-    Deliberately built from question_stats.saved rather than from
-    revision_queue. The queue is the spacing engine - it also holds every topic
-    you have started and every question you have got wrong, because the planner,
-    the debt figure and the readiness score are all computed from it. Reading
-    the list off the queue is what made the profile page show 300-odd rows the
-    user never asked for.
-
-    The schedule is still shown where one exists, via a LEFT JOIN: a bookmark
-    that has been answered correctly twice has been retired from the queue, but
-    it is still bookmarked, so it still belongs on this list.
-    """
-    day = day or date.today().isoformat()
-    bank = content.question_bank()
-    out = []
-    for r in conn.execute(
-        "SELECT qs.question_id AS qid, qs.updated_at AS saved_at,"
-        "       rq.due_day, rq.reps, rq.lapses, rq.active, rq.interval_days"
-        "  FROM question_stats qs"
-        "  LEFT JOIN revision_queue rq"
-        "    ON rq.item_type = 'question' AND rq.item_key = qs.question_id"
-        " WHERE qs.saved = 1"
-        " ORDER BY COALESCE(rq.due_day, '9999-12-31') ASC, qs.updated_at DESC"
-    ):
-        q = bank.get(r["qid"])
-        if not q:
-            # Bookmarked, then the question left the bank on a re-import. Say so
-            # rather than dropping the row silently.
-            out.append(
-                dict(
-                    question_id=r["qid"],
-                    label=r["qid"],
-                    missing=True,
-                    subject_slug="",
-                    topic_slug="",
-                    difficulty="",
-                    marks=0,
-                    due_day=r["due_day"] or "",
-                    reps=r["reps"] or 0,
-                    lapses=r["lapses"] or 0,
-                    scheduled=bool(r["active"]),
-                    is_due=False,
-                )
-            )
-            continue
-        due = r["due_day"] or ""
-        out.append(
-            dict(
-                question_id=r["qid"],
-                label=(q.get("text") or r["qid"]).strip()[:110],
-                missing=False,
-                subject_slug=q.get("subject", ""),
-                topic_slug=q.get("topic", ""),
-                difficulty=q.get("difficulty", ""),
-                marks=q.get("marks", 0),
-                due_day=due,
-                reps=r["reps"] or 0,
-                lapses=r["lapses"] or 0,
-                scheduled=bool(r["active"]),
-                is_due=bool(due and r["active"] and due <= day),
-            )
-        )
-    return out
-
-
-def saved_ids(conn):
-    """Every bookmarked question id, so the UI can draw the star correctly.
-
-    A flat list rather than the full rows: the practice view only needs to know
-    which stars are filled, and the payload already carries this state once.
-    """
-    return [
-        r["question_id"]
-        for r in conn.execute(
-            "SELECT question_id FROM question_stats WHERE saved = 1"
-        )
-    ]
 
 
 def saved_questions(conn, limit=40):

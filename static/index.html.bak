@@ -505,8 +505,7 @@
       <div class="head mt"><h2>What you have practised</h2></div>
       <div class="card prof-split" id="profDifficulty"></div>
 
-      <div class="head mt"><h2>Revision list</h2></div>
-      <p class="dim small" style="margin:-4px 0 10px">Only questions you have bookmarked. The spacing queue that drives your daily plan lives on the Today page.</p>
+      <div class="head mt"><h2>Revision queue</h2></div>
       <div class="card" id="profRevision"></div>
     </section>
 
@@ -542,11 +541,6 @@
 
 <!-- ============================== MODALS ============================== -->
 <div class="scrim" id="scrim" hidden></div>
-
-<div class="avatar-zoom" id="avatarZoom" hidden>
-  <img id="avatarZoomImg" alt="Profile picture">
-  <span class="zoom-hint">click anywhere or press Esc to close</span>
-</div>
 
 <div class="modal" id="modalLog" hidden role="dialog" aria-modal="true" aria-labelledby="modalLogTitle">
   <div class="modal-head"><h3 id="modalLogTitle">Log a session</h3><button class="x" data-close aria-label="Close">&times;</button></div>

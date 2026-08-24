@@ -31,6 +31,7 @@ GG.app = (function () {
       GG.render.achievements(st);
       GG.plan.missions(st, '#missionStripFull');
     } else if (r === 'doubts') GG.doubts.tab(st);
+    else if (r === 'profile') GG.profile.tab(st);
     else if (r === 'activity') GG.render.activity(st);
     else if (r === 'detail') GG.render.detail(GG.S.detailId);
   }
@@ -207,7 +208,50 @@ GG.app = (function () {
     (GG.S.state.readiness.targets || []).forEach(t => sel.appendChild(
       el('option', { value: t.slug, text: t.name })));
     sel.value = p.primary_target || '';
+    const soc = p.socials || {};
+    $('#pGithub').value = soc.github || '';
+    $('#pLinkedin').value = soc.linkedin || '';
+    $('#pX').value = soc.x || '';
+    $('#pSite').value = soc.website || '';
+    /* Hold the picked image here rather than in the form: a file input cannot be
+       set programmatically, so re-opening the dialog would otherwise look like
+       the picture had been cleared. */
+    pendingAvatar = null;
+    $('#pAvatar').value = '';
+    $('#pAvatarNote').textContent = p.avatar
+      ? 'A picture is set. Choose a file to replace it, or clear it below.'
+      : 'Stored in your own database, resized to 256px. Nothing is uploaded anywhere.';
     GG.modal('#modalProfile', true);
+  }
+
+  let pendingAvatar = null;
+
+  /* Downscale in the browser so the database holds a thumbnail, not a 4MB phone
+     photo. Settings values are text, and a data URL is the one shape that needs
+     no upload endpoint, no static file serving and no cleanup on delete. */
+  function readAvatar(file) {
+    return new Promise((resolve, reject) => {
+      if (!file) return resolve(null);
+      if (!/^image\//.test(file.type)) return reject(new Error('That is not an image.'));
+      if (file.size > 8 * 1024 * 1024) return reject(new Error('Image is over 8MB.'));
+      const reader = new FileReader();
+      reader.onerror = () => reject(new Error('Could not read that file.'));
+      reader.onload = () => {
+        const img = new Image();
+        img.onerror = () => reject(new Error('Could not decode that image.'));
+        img.onload = () => {
+          const side = Math.min(img.width, img.height);
+          const cv = document.createElement('canvas');
+          cv.width = cv.height = 256;
+          const ctx = cv.getContext('2d');
+          ctx.drawImage(img, (img.width - side) / 2, (img.height - side) / 2,
+                        side, side, 0, 0, 256, 256);
+          resolve(cv.toDataURL('image/jpeg', 0.82));
+        };
+        img.src = reader.result;
+      };
+      reader.readAsDataURL(file);
+    });
   }
 
   async function saveProfile() {
@@ -218,6 +262,11 @@ GG.app = (function () {
           bio: $('#pBio').value, location: $('#pLoc').value,
           exam_name: $('#pExam').value, exam_date: $('#pExamDate').value,
           daily_target_mins: $('#pTarget').value, primary_target: $('#pPrimary').value,
+          social_github: $('#pGithub').value.trim(),
+          social_linkedin: $('#pLinkedin').value.trim(),
+          social_x: $('#pX').value.trim(),
+          social_website: $('#pSite').value.trim(),
+          ...(pendingAvatar === null ? {} : { avatar: pendingAvatar }),
         },
       });
       GG.modal('#modalProfile', false);
@@ -286,8 +335,30 @@ GG.app = (function () {
 
     $('#btnLog').onclick = () => openLog();
     $('#saveLog').onclick = saveLog;
-    $('#btnProfile').onclick = openProfile;
+    /* The sidebar button is now a link to #/profile; the modal is opened from
+       the profile page instead. Guard it so a missing element cannot abort init.*/
+    const btnProfile = $('#btnProfile');
+    if (btnProfile) btnProfile.onclick = openProfile;
     $('#saveProfile').onclick = saveProfile;
+    const avatarInput = $('#pAvatar');
+    if (avatarInput) avatarInput.onchange = async () => {
+      try {
+        pendingAvatar = await readAvatar(avatarInput.files[0]);
+        $('#pAvatarNote').textContent = pendingAvatar
+          ? 'Ready. Save to keep it.'
+          : 'Picture cleared on save.';
+      } catch (e) {
+        avatarInput.value = '';
+        pendingAvatar = null;
+        GG.toast('Could not use that image', e.message);
+      }
+    };
+    const clearAvatar = $('#pAvatarClear');
+    if (clearAvatar) clearAvatar.onclick = () => {
+      pendingAvatar = '';
+      if (avatarInput) avatarInput.value = '';
+      $('#pAvatarNote').textContent = 'Picture cleared on save.';
+    };
     $('#quizClose').onclick = () => {
       if (confirm('Close the quiz? Unsubmitted answers are lost.')) GG.modal('#modalQuiz', false);
     };
@@ -328,7 +399,7 @@ GG.app = (function () {
 
   document.addEventListener('DOMContentLoaded', init);
 
-  return { apply, reload, openLog, setTopic, deleteSession, paint };
+  return { apply, reload, openLog, setTopic, deleteSession, paint, openProfile };
 })();
 
 /* ==========================================================================
