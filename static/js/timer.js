@@ -33,6 +33,53 @@ GG.timer = (function () {
     return pad(Math.floor(s / 3600)) + ':' + pad(Math.floor(s / 60) % 60) + ':' + pad(s % 60);
   }
 
+  /* --------------------------------------------------- checkpointing --- */
+  /* What GG.live needs to bring this clock back. elapsed is resolved here
+     rather than at restore time on purpose: the gap between the last checkpoint
+     and the next launch is not study time, and computing it from startedAt on
+     the way back in would silently credit hours the machine spent switched off. */
+  function snapshot() {
+    if (!T.running && !T.accrued) return null;
+    const note = $('#tmNote');
+    return {
+      running: T.running,
+      accrued: T.accrued,
+      elapsed: elapsedMs(),
+      subjectId: T.subjectId,
+      topicIds: T.topicIds.slice(),
+      kind: T.kind,
+      note: note ? note.value.trim() : '',
+      at: Date.now(),
+    };
+  }
+
+  function restore(s, opts) {
+    if (!s) return;
+    opts = opts || {};
+    T.subjectId = s.subjectId || null;
+    T.topicIds = Array.isArray(s.topicIds) ? s.topicIds : [];
+    T.kind = s.kind || 'concept';
+    T.accrued = Math.max(0, s.elapsed || 0);
+    /* Always comes back paused. A clock that has been dead for six hours must
+       not quietly start counting again the moment the app opens. */
+    T.running = false;
+    T.startedAt = null;
+
+    /* open:false rehydrates the clock without taking the screen - the pill in
+       the topbar carries it instead. Used when a quiz is being restored in the
+       same breath, since only one dialog can have the foreground. The topic
+       ticks are rebuilt from T.topicIds by open() -> topics() whenever the
+       dialog is opened later, so nothing is lost by skipping it here. */
+    if (opts.open !== false) open();
+    if (s.note && $('#tmNote')) $('#tmNote').value = s.note;
+    paint();
+
+    if (!opts.quiet) {
+      toast('Session restored',
+        GG.hm(elapsedMin()) + ' was on the clock. Press Resume to carry on.');
+    }
+  }
+
   /* ------------------------------------------------------------- topbar --- */
   function paintPill() {
     const pill = $('#timerPill');
@@ -95,6 +142,7 @@ GG.timer = (function () {
     T.startedAt = Date.now();
     startTicking();
     paint();
+    GG.live.touch();
     announce('Timer started.');
   }
 
@@ -105,6 +153,7 @@ GG.timer = (function () {
     T.startedAt = null;
     stopTicking();
     paint();
+    GG.live.touch();
     announce('Timer paused at ' + clock(T.accrued));
   }
 
@@ -116,6 +165,8 @@ GG.timer = (function () {
     T.topicIds = [];
     stopTicking();
     paint();
+    /* snapshot() now returns null, so this clears the stored checkpoint. */
+    GG.live.touch();
   }
 
   function discard() {
@@ -198,6 +249,7 @@ GG.timer = (function () {
         const on = node.classList.contains('on');
         node.querySelector('.box').textContent = on ? '[x]' : '[ ]';
         T.topicIds = $$('#tmTopics .tp.on').map(n => parseInt(n.dataset.id, 10));
+        GG.live.touch();
       });
       host.appendChild(node);
     });
@@ -242,18 +294,18 @@ GG.timer = (function () {
     };
     Object.keys(map).forEach(id => { const n = $(id); if (n) n.onclick = map[id]; });
 
-    /* A running clock should survive an accidental tab close. */
-    window.addEventListener('beforeunload', e => {
-      if (T.running || T.accrued > 0) {
-        e.preventDefault();
-        e.returnValue = '';
-      }
-    });
+    /* The clock is checkpointed to the server, so there is no beforeunload
+       guard any more. It could not help in the cases that actually lose work -
+       a tray quit, a kill, an OS shutdown - and a modal dialog while the machine
+       is shutting down is worse than useless. */
+    GG.live.register('timer', snapshot);
+
     GG.key('s', 'Start or open the session timer', open, { hidden: false });
   }
 
   document.addEventListener('DOMContentLoaded', wire);
 
-  return { open, start, pause, stop, paint, get running() { return T.running; },
+  return { open, start, pause, stop, paint, restore, snapshot,
+           get running() { return T.running; },
            get minutes() { return elapsedMin(); } };
 })();

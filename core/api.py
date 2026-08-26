@@ -18,6 +18,7 @@ from . import (
     db,
     doubts,
     feedback,
+    live,
     planner,
     quiz,
     readiness,
@@ -191,6 +192,10 @@ def build_state(conn, celebrate=True):
         mistake_kinds=quiz.MISTAKE_KINDS,
         purposes=quiz.PURPOSE_LABELS,
         db=db.health(conn),
+        # Whatever was in flight when the app last stopped. The UI acts on this
+        # once per load; carrying it on every state refresh costs one indexed
+        # lookup and saves a second round trip on boot.
+        live=live.resume_offer(conn),
         today=today,
         today_minutes=bundle["per_day"].get(today, 0),
     )
@@ -331,6 +336,8 @@ class Handler(BaseHTTPRequestHandler):
                 ),
                 200,
             )
+        if path == "/api/live":
+            return live.resume_offer(conn), 200
         if path == "/api/readiness":
             bundle = stats.gather(conn)
             plan = planner.plan_for(conn, bundle)
@@ -472,6 +479,10 @@ class Handler(BaseHTTPRequestHandler):
                 ),
                 200,
             )
+        # Reopen an unfinished set. Unambiguous against /api/quiz/<id>/submit,
+        # which is POST only, so the segment count is enough to tell them apart.
+        if path.startswith("/api/quiz/") and len(path.split("/")) == 4:
+            return quiz.resume_quiz(conn, int(path.rsplit("/", 1)[-1])), 200
         if path == "/api/export":
             return self._export(conn), 200
         if path.startswith("/api/subjects/"):
@@ -486,6 +497,24 @@ class Handler(BaseHTTPRequestHandler):
             return self._set_topic_status(conn, body), 200
         if path == "/api/topics/confidence":
             return self._set_topic_confidence(conn, body), 200
+
+        # ---- live checkpoint --------------------------------------------
+        # Written by the UI on every change and at least every ten seconds while
+        # a clock is running, so it must stay cheap: one upsert, no state rebuild
+        # in the response. An empty payload is how the UI says "nothing is in
+        # flight any more" - clearing on submit or discard goes through here too.
+        if path == "/api/live":
+            kind = str(body.get("kind") or "")
+            payload = body.get("payload") or {}
+            if not isinstance(payload, dict):
+                raise ValueError("payload must be an object.")
+            if not kind or not payload:
+                live.clear(conn)
+                return dict(ok=True, cleared=True), 200
+            return dict(ok=True, **live.save(conn, kind, payload)), 200
+        if path == "/api/live/clear":
+            live.clear(conn)
+            return dict(ok=True, cleared=True), 200
 
         # ---- quizzes ----------------------------------------------------
         if path == "/api/quiz":

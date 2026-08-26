@@ -612,6 +612,14 @@ def build_quiz(
             ),
         )
         quiz_id = cur.lastrowid
+        # Without this row set an unfinished quiz cannot be reopened: the quizzes
+        # row survives a crash but says nothing about which questions were in it,
+        # and attempts are only written at submit time.
+        conn.executemany(
+            "INSERT OR IGNORE INTO quiz_questions (quiz_id, question_id, position)"
+            " VALUES (?,?,?)",
+            [(quiz_id, q["id"], i) for i, q in enumerate(chosen)],
+        )
         if dpp_set_id:
             conn.execute(
                 "UPDATE dpp_sets SET quiz_id = ?, started_at = ? WHERE id = ?",
@@ -787,6 +795,59 @@ def _record_attempt(conn, q, item, ok, awarded, quiz, day, now, prior_attempts):
     revision.record_attempt(conn, q, ok, seconds, conf, day)
     return dict(
         seconds=seconds, confidence=conf, mistake_kind=mistake, reattempt=bool(reattempt)
+    )
+
+
+def resume_quiz(conn, quiz_id):
+    """Re-serve an unfinished set: same questions, same order, still unrevealed.
+
+    Returns the same shape as ``build_quiz`` so the UI's open() needs no new
+    branch - a resumed set is just a set it has seen before.
+    """
+    row = conn.execute("SELECT * FROM quizzes WHERE id = ?", (quiz_id,)).fetchone()
+    if not row:
+        raise LookupError("That set no longer exists.")
+    if row["finished_at"]:
+        raise ValueError("That set has already been submitted.")
+
+    ids = [
+        r["question_id"]
+        for r in conn.execute(
+            "SELECT question_id FROM quiz_questions WHERE quiz_id = ? ORDER BY position",
+            (quiz_id,),
+        )
+    ]
+    bank = content.question_bank()
+    questions = [content.public_question(bank[qid]) for qid in ids if qid in bank]
+    if not questions or len(questions) != len(ids):
+        # Either the set predates the quiz_questions table, or the bank has
+        # changed under it. Saying so is better than serving a set that is
+        # quietly missing two questions and scoring it out of the wrong total.
+        raise ValueError("That set cannot be rebuilt from the current bank.")
+
+    subject_slug = None
+    if row["subject_id"]:
+        srow = conn.execute(
+            "SELECT slug FROM subjects WHERE id = ?", (row["subject_id"],)
+        ).fetchone()
+        subject_slug = srow["slug"] if srow else None
+
+    mode = row["mode"] or "practice"
+    return dict(
+        id=row["id"],
+        mode=mode,
+        mode_label=PURPOSE_LABELS.get(mode, mode.title()),
+        reason=row["reason"],
+        subject_id=row["subject_id"],
+        subject_slug=subject_slug,
+        topic_slugs=[s for s in (row["topic_slugs"] or "").split(",") if s],
+        total_marks=row["total_marks"],
+        dpp_set_id=row["dpp_set_id"],
+        paper_id=row["paper_id"],
+        plan_day=row["plan_day"],
+        questions=questions,
+        mistake_kinds=MISTAKE_KINDS,
+        resumed=True,
     )
 
 

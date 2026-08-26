@@ -581,6 +581,14 @@
     <button class="btn btn-primary" id="saveLog">Commit session</button>
   </div>
 </div>
+<div class="modal" id="modalResume" hidden role="dialog" aria-modal="true" aria-labelledby="modalResumeTitle">
+  <div class="modal-head">
+    <h3 id="modalResumeTitle">Pick up where you left off</h3>
+    <button class="x" data-close aria-label="Close">&times;</button>
+  </div>
+  <div class="modal-body" id="resumeBody"></div>
+  <div class="modal-foot" id="resumeFoot"></div>
+</div>
 <div class="modal" id="modalTimer" hidden role="dialog" aria-modal="true" aria-labelledby="modalTimerTitle">
   <div class="modal-head"><h3 id="modalTimerTitle">Timed session</h3><button class="x" data-close aria-label="Close">&times;</button></div>
   <div class="modal-body">
@@ -724,6 +732,7 @@
 
 <script src="/vendor/katex/katex.min.js"></script>
 <script src="/js/core.js"></script>
+<script src="/js/live.js"></script>
 <script src="/js/render.js"></script>
 <script src="/js/plan.js"></script>
 <script src="/js/profile.js"></script>

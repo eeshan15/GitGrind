@@ -97,7 +97,7 @@ DB_PATH = os.environ.get("GITGRIND_DB") or os.path.join(DATA_DIR, "gitgrind.db")
 # One writer at a time. SQLite handles the rest.
 LOCK = threading.RLock()
 
-SCHEMA_VERSION = 9
+SCHEMA_VERSION = 10
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS schema_meta (
@@ -526,6 +526,47 @@ M9 = [
     ("column", "attempts", "position_in_paper", "INTEGER"),
 ]
 
+# v10 - surviving a quit, a kill and a power cut.
+#
+#   live_state      one row holding whatever is in flight right now. One row on
+#                   purpose: there is only ever one person using one copy of the
+#                   app, and a single row means a resume can never be assembled
+#                   out of two half-written halves.
+#   run_log         one row per launch. stopped_at IS NULL means that run was
+#                   killed rather than closed, which is how the next launch knows
+#                   whether to say "closed unexpectedly".
+#   quiz_questions  which questions a quiz was built from. build_quiz always
+#                   wrote the quizzes row but never this, so an unfinished set
+#                   could not be reopened even though its row survived.
+M10 = [
+    """CREATE TABLE IF NOT EXISTS live_state (
+        id         INTEGER PRIMARY KEY CHECK (id = 1),
+        kind       TEXT NOT NULL DEFAULT '',
+        payload    TEXT NOT NULL DEFAULT '{}',
+        revision   INTEGER NOT NULL DEFAULT 0,
+        beat_at    TEXT,
+        updated_at TEXT NOT NULL
+    )""",
+    """CREATE TABLE IF NOT EXISTS run_log (
+        id         INTEGER PRIMARY KEY AUTOINCREMENT,
+        pid        INTEGER NOT NULL DEFAULT 0,
+        version    TEXT NOT NULL DEFAULT '',
+        started_at TEXT NOT NULL,
+        beat_at    TEXT,
+        stopped_at TEXT,
+        exit_kind  TEXT NOT NULL DEFAULT ''
+    )""",
+    "CREATE INDEX IF NOT EXISTS idx_run_log_started ON run_log(started_at)",
+    """CREATE TABLE IF NOT EXISTS quiz_questions (
+        quiz_id     INTEGER NOT NULL REFERENCES quizzes(id) ON DELETE CASCADE,
+        question_id TEXT NOT NULL,
+        position    INTEGER NOT NULL DEFAULT 0,
+        PRIMARY KEY (quiz_id, question_id)
+    )""",
+    "CREATE INDEX IF NOT EXISTS idx_qq_order ON quiz_questions(quiz_id, position)",
+]
+
+
 MIGRATIONS = [
     (3, M3),
     (4, M4),
@@ -534,6 +575,7 @@ MIGRATIONS = [
     (7, M7),
     (8, M8),
     (9, M9),
+    (10, M10),
 ]
 
 
@@ -546,6 +588,12 @@ def connect():
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON")
     conn.execute("PRAGMA journal_mode = WAL")
+    # WAL defaults to synchronous = NORMAL, which can lose the last few commits
+    # to a power cut. Since v10 this database is what a running session is
+    # recovered from, and that is precisely the case it now has to survive. FULL
+    # fsyncs on every commit; at a handful of writes a minute the cost is
+    # invisible, and a lost checkpoint is not.
+    conn.execute("PRAGMA synchronous = FULL")
     return conn
 
 

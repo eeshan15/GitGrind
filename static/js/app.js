@@ -4,6 +4,7 @@ GG.app = (function () {
   const { $, $$, el, hm } = GG;
 
   let badgeSnapshot = null;
+  let resumeChecked = false;
 
   /* ============================== render =============================== */
   function apply(state) {
@@ -13,6 +14,15 @@ GG.app = (function () {
     GG.render.sidebar(state);
     paint();
     GG.splashDone();
+
+    /* Once per load, and after the splash has gone: the prompt names the subject
+       that was being studied, so it needs the subject list, and a modal appearing
+       behind the splash reads as a glitch. Every later reload() carries a live
+       block too, which is why this is guarded rather than called from init(). */
+    if (!resumeChecked) {
+      resumeChecked = true;
+      setTimeout(() => GG.live.restore(state), 400);
+    }
   }
 
   function paint() {

@@ -1766,3 +1766,14 @@ body.reduced-motion .avatar-zoom img.out { animation: none; }
   color: #d1636b; font-weight: 500; font-size: .75rem; }
 .rev-main { display: flex; flex-direction: column; min-width: 0; }
 .rev-main b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* ==========================================================================
+   resume prompt (#modalResume) - what was in flight when the app last stopped
+   ========================================================================== */
+.resume-row{padding:11px 13px;margin:8px 0;border:1px solid var(--line);
+  border-radius:8px;background:var(--surface-2);color:var(--fg);
+  font-variant-numeric:tabular-nums}
+.resume-row:first-of-type{margin-top:0}
+/* Discard sits away from Resume: the two are not equivalent choices, and the
+   default flex-end packing would put them a thumb's width apart. */
+#modalResume .modal-foot{flex-wrap:wrap;justify-content:flex-start}
+#modalResume .modal-foot .btn-danger{margin-left:auto}

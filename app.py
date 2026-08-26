@@ -28,14 +28,16 @@ Options:
 """
 
 import argparse
+import atexit
 import os
+import signal
 import sys
 import threading
 import webbrowser
 import shutil
 import subprocess
 from http.server import ThreadingHTTPServer
-from core import tray, content, db
+from core import tray, content, db, live
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, getattr(sys, "_MEIPASS", BASE_DIR))
@@ -93,6 +95,79 @@ def flush_log():
             fh.write("\n".join(LOG_LINES) + "\n")
     except Exception:
         pass
+
+
+# ---------------------------------------------------------------------------
+# run bookkeeping
+#
+# None of these hooks are guaranteed. Windows does not deliver SIGTERM when the
+# machine shuts down, and atexit does not run when a process is killed - which is
+# exactly why the UI checkpoints its state periodically instead of relying on an
+# exit path. What these hooks buy is the *label*: a run row with no stopped_at
+# was killed, so the next launch can say "GitGrind closed unexpectedly" rather
+# than "you left a session running".
+# ---------------------------------------------------------------------------
+_BEAT_STOP = threading.Event()
+
+
+def _with_conn(fn, *args):
+    """Run fn(conn, *args) on a short-lived connection, swallowing failures.
+
+    Bookkeeping must never be the reason the app fails to start or fails to
+    close, so every path here is best-effort.
+    """
+    try:
+        conn = db.connect()
+        try:
+            return fn(conn, *args)
+        finally:
+            conn.close()
+    except Exception:
+        return None
+
+
+def mark_exit(kind="clean"):
+    """Record that this run ended on purpose. Safe to call more than once."""
+    _BEAT_STOP.set()
+    _with_conn(live.end_run, kind)
+
+
+def start_heartbeat(every=20):
+    """Touch run_log periodically so a crash can be dated, not just detected."""
+
+    def loop():
+        while not _BEAT_STOP.wait(every):
+            _with_conn(live.beat)
+
+    threading.Thread(target=loop, daemon=True, name="gitgrind-heartbeat").start()
+
+
+def install_exit_hooks():
+    atexit.register(mark_exit, "clean")
+
+    def bail(signum, _frame):
+        mark_exit("signal-%d" % signum)
+        flush_log()
+        raise SystemExit(0)
+
+    # SIGBREAK is the Windows console close/logoff signal; the others are absent
+    # on some platforms, and signal() raises if we are not on the main thread.
+    for name in ("SIGINT", "SIGTERM", "SIGBREAK"):
+        sig = getattr(signal, name, None)
+        if sig is None:
+            continue
+        try:
+            signal.signal(sig, bail)
+        except (ValueError, OSError):
+            pass
+
+
+def begin_run():
+    """Claim this launch in run_log and start the heartbeat."""
+    _with_conn(live.start_run, VERSION)
+    _with_conn(live.prune_runs)
+    start_heartbeat()
+    install_exit_hooks()
 
 
 # ---------------------------------------------------------------------------
@@ -571,6 +646,9 @@ def run_windowed_tray(url, server, open_browser):
             log("  could not show the window: %s" % exc)
 
     def quit_all():
+        # Before anything is torn down: on a clean quit the next launch should
+        # offer the session back without claiming the app crashed.
+        mark_exit("tray-quit")
         state["quitting"] = True
         try:
             server.shutdown()
@@ -707,6 +785,10 @@ def main(argv=None):
         log("")
         flush_log()
         return 0
+
+    # Only now: a second launch that hands over to the running copy is not a run
+    # of its own, and logging it would make every handover look like a crash.
+    begin_run()
     banner(url, report, packaged)
 
     try:
@@ -737,9 +819,11 @@ def main(argv=None):
         if open_browser:
             threading.Timer(0.6, lambda: open_app_window(url)).start()
         try:
-            tray.run(
-                url, lambda: open_app_window(url), log, on_quit=lambda: server.shutdown()
-            )
+            def quit_tray():
+                mark_exit("tray-quit")
+                server.shutdown()
+
+            tray.run(url, lambda: open_app_window(url), log, on_quit=quit_tray)
         except KeyboardInterrupt:
             pass
         finally:

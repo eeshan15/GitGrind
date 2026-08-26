@@ -230,6 +230,56 @@ GG.practice = (function () {
     h.appendChild(card);
   }
 
+  /* ========================== checkpointing =========================== */
+  /* Only the id and the answers. The questions themselves come back from
+     /api/quiz/<id>, which keeps the checkpoint small and means it can never go
+     stale against an edited bank - a stored question text could. */
+  function snapshot() {
+    if (!quiz || quiz.done) return null;
+    /* Bank the time on the question now on screen, so a crash does not throw
+       away however long has been spent staring at it. */
+    stamp();
+    return {
+      quiz_id: quiz.id,
+      title: quiz.title,
+      idx: quiz.idx,
+      responses: quiz.responses,
+      times: quiz.times,
+      conf: quiz.conf,
+      startedAt: quiz.startedAt,
+      at: Date.now(),
+    };
+  }
+
+  async function restore(saved) {
+    if (!saved || !saved.quiz_id) return false;
+    let built;
+    try {
+      built = await GG.api('/quiz/' + saved.quiz_id, { method: 'GET' });
+    } catch (e) {
+      /* Sets built before the quiz_questions table existed cannot be rebuilt.
+         Say so once and move on rather than failing silently. */
+      GG.toast('Could not reopen that set', e.message, 'bad');
+      return false;
+    }
+
+    open(built, saved.title || 'Practice set');
+
+    /* Length-check every array before trusting it: the bank could have changed
+       under a set built days ago, and a mismatched responses array would score
+       the wrong question. */
+    const n = quiz.questions.length;
+    const fit = (arr, fallback) =>
+      (Array.isArray(arr) && arr.length === n) ? arr.slice() : quiz.questions.map(() => fallback);
+    quiz.responses = fit(saved.responses, null);
+    quiz.times = fit(saved.times, 0);
+    quiz.conf = fit(saved.conf, null);
+    quiz.idx = Math.min(Math.max(0, saved.idx || 0), n - 1);
+    quiz.startedAt = saved.startedAt || Date.now();
+    draw();
+    return true;
+  }
+
   /* ============================ quiz runner ============================ */
   async function startSet(subjectId, topicIds, count, kind) {
     try {
@@ -263,9 +313,12 @@ GG.practice = (function () {
       total: built.total_marks,
       startedAt: Date.now(),
       title: title || 'Quiz',
+      /* Flips on submit so snapshot() stops offering a finished set back. */
+      done: false,
     };
     GG.modal('#modalQuiz', true);
     draw();
+    GG.live.touch();
   }
 
   /* Bank the time spent on the question now on screen. Called before every
@@ -281,6 +334,7 @@ GG.practice = (function () {
     stamp();
     quiz.idx = i;
     draw();
+    GG.live.touch();
   }
 
   function draw() {
@@ -311,7 +365,7 @@ GG.practice = (function () {
     const holder = el('div', { class: 'quiz-q' });
     holder.appendChild(questionBlock(q, {
       selected: quiz.responses[quiz.idx],
-      onPick: v => { stamp(); quiz.responses[quiz.idx] = v; draw(); },
+      onPick: v => { stamp(); quiz.responses[quiz.idx] = v; draw(); GG.live.touch(); },
     }));
 
     /* Confidence is asked for, not inferred. A wrong answer given confidently is
@@ -333,6 +387,7 @@ GG.practice = (function () {
             stamp();
             quiz.conf[quiz.idx] = on ? null : v;
             draw();
+            GG.live.touch();
           },
         }));
       });
@@ -371,6 +426,10 @@ GG.practice = (function () {
       const out = await GG.api('/quiz/' + quiz.id + '/submit', {
         body: { responses: payload, duration_s: Math.round((Date.now() - quiz.startedAt) / 1000) },
       });
+      /* Marked done before the checkpoint so the cleared row cannot race a
+         late flush that would put the finished set back. */
+      quiz.done = true;
+      GG.live.touch();
       GG.app.apply(out.state);
       results(out);
     } catch (e) {
@@ -561,7 +620,12 @@ GG.practice = (function () {
     $('#pqAvail').textContent = n + ' question' + (n === 1 ? '' : 's') + ' available for this selection';
   }
 
-  return { tab, renderQotd, startSet, open, questionBlock, verdict, bookmark };
+  /* Registered at module scope, not on DOMContentLoaded: live.js only calls
+     providers when it flushes, and a provider that returns null costs nothing. */
+  GG.live.register('quiz', snapshot);
+
+  return { tab, renderQotd, startSet, open, questionBlock, verdict, bookmark,
+           restore, snapshot };
 })();
 
 /* ==========================================================================
