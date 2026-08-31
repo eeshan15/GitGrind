@@ -166,6 +166,46 @@ def _norm_key(text):
     return re.sub(r"[^a-z0-9]+", "-", str(text or "").strip().lower()).strip("-")
 
 
+def overrides(reload=False):
+    """Block key -> correction, from content/subtopic_overrides.json.
+
+    Keyed "<volume>|<chapter>.<block>" so a correction outlives the
+    re-import that would renumber or rename individual questions. Entries
+    with apply false are ignored, so a freshly generated file is inert
+    until somebody has read it.
+    """
+    if reload or "overrides" not in _cache:
+        data = _read_json(
+            os.path.join(CONTENT_DIR, "subtopic_overrides.json"), {}
+        ) or {}
+        out = {}
+        for key, spec in (data.get("overrides") or {}).items():
+            if not isinstance(spec, dict) or not spec.get("apply"):
+                continue
+            entry = {}
+            if "subtopic" in spec:
+                entry["subtopic"] = _norm_key(spec.get("subtopic") or "")
+            topic = (spec.get("topic") or "").strip()
+            if "/" in topic:
+                subject, tslug = topic.split("/", 1)
+                entry["subject"] = subject
+                entry["topic"] = tslug
+            if entry:
+                out[key] = entry
+        _cache["overrides"] = out
+    return _cache["overrides"]
+
+
+def _block_key(origin):
+    """"<volume>|<chapter>.<block>" for a question's origin, or ""."""
+    if not isinstance(origin, dict):
+        return ""
+    parts = (origin.get("ref") or "").split(".")
+    if len(parts) < 3 or not parts[1].isdigit():
+        return ""
+    return "%s|%s.%d" % (origin.get("volume") or "", parts[0], int(parts[1]))
+
+
 def normalise_topic(conn, subject_slug, topic_slug, name=""):
     """Resolve whatever a source called a topic into our own vocabulary.
 
@@ -240,7 +280,24 @@ def _hydrate(q, subject_slug, bank, rel, source_meta):
     item["bank"] = bank
     item["file"] = rel
     item.setdefault("topic", "")
+    # The importer derived the syllabus topic from the source volume's
+    # section heading and then left the heading in origin, so the finest
+    # grain the app could offer was the topic - one bucket for everything
+    # under it. The heading is a real label on real questions, so promote
+    # it. A question that arrived without one keeps the empty string it
+    # has today; an explicit subtopic in the bank file always wins.
+    if not q.get("subtopic"):
+        origin = q.get("origin") or {}
+        if isinstance(origin, dict) and origin.get("section"):
+            item["subtopic"] = _norm_key(origin["section"])
     item.setdefault("subtopic", "")
+    # Last word on both fields. A blank subtopic here is deliberate and
+    # not a failure: where the heading is wrong but nobody knows the right
+    # one, empty costs granularity while wrong misroutes every search that
+    # would otherwise have found the question.
+    fix = overrides().get(_block_key(q.get("origin")))
+    if fix:
+        item.update(fix)
     item.setdefault("kind", "dpp")
     item.setdefault("difficulty", "medium")
     item.setdefault("type", "mcq")
@@ -1387,7 +1444,7 @@ def reject_review(conn, review_id, notes=""):
 
 def search(
     query="", subject="", topic="", qtype="", difficulty="", kind="", source="",
-    paper="", limit=40
+    paper="", subtopic="", limit=40
 ):
     """Bank search for the practice tab. Case-insensitive substring match."""
     q = (query or "").strip().lower()
@@ -1396,6 +1453,8 @@ def search(
         if subject and item["subject"] != subject:
             continue
         if topic and item.get("topic") != topic:
+            continue
+        if subtopic and item.get("subtopic") != subtopic:
             continue
         if qtype and item["type"] != qtype:
             continue
@@ -1412,6 +1471,10 @@ def search(
                 [
                     item.get("text", ""),
                     item.get("topic", ""),
+                    # Free-text search reaches the section heading too, so
+                    # "banker" finds the Banker's questions whose stems only
+                    # ever show an allocation table.
+                    item.get("subtopic", ""),
                     item.get("subject", ""),
                     " ".join(str(t) for t in item.get("tags", [])),
                 ]

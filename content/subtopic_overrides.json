@@ -1,0 +1,810 @@
+{
+  "_read_me": [
+    "Corrections for questions whose origin.section was captured wrong by the",
+    "MinerU import. Keyed '<volume>|<chapter>.<block>' so an entry survives a",
+    "re-import; question ids do not.",
+    "",
+    "Nothing here does anything until \"apply\" is true. core.content.overrides()",
+    "skips every entry with apply false, so a generated file is inert.",
+    "",
+    "  subtopic  \"\" clears the wrong label. Empty is the honest value when the",
+    "            right heading is unknown: it costs granularity, where a wrong",
+    "            one misroutes every search that should have found the question.",
+    "  topic     \"subject/topic\". Only set this where the wrong heading actually",
+    "            produced the topic - go_tag_map.json is what decides that, and",
+    "            the triage report records it per block. May move a question to",
+    "            another subject.",
+    "",
+    "Regenerate with tools/propose_overrides.py; apply flags and hand-edited",
+    "values are preserved. Restart the app after editing - content caches per",
+    "process."
+  ],
+  "overrides": {
+    "vol1|6.3": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "engineering-mathematics/eigen",
+      "_action": "check-topic",
+      "_current_section": "Determinant",
+      "_current_topic": "engineering-mathematics/matrices",
+      "_topic_from_bad_heading": true,
+      "_question_count": 33,
+      "_note": "topic came from the bad heading; block votes engineering-mathematics/eigen",
+      "_block_vote": "engineering-mathematics/eigen (9/10 scored)",
+      "_sample": [
+        "The eigen vector $(s)$ of the matrix $$\\left[ \\begin{array}{c c c} 0 & 0 & \\alpha \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\e",
+        "The product of the non-zero eigenvalues of the matrix is ____ $$\\left( \\begin{array}{c c c c c} 1 & 0 & 0 & 0 "
+      ]
+    },
+    "filter1_volume2|6.9": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Finite Automata",
+      "_current_topic": "theory-of-computation/finite-automata",
+      "_topic_from_bad_heading": true,
+      "_question_count": 29,
+      "_note": "only 17 of 29 questions scored",
+      "_block_vote": "theory-of-computation/pumping-lemma (7/17 scored)",
+      "_sample": [
+        "FORTRAN is a:",
+        "For $s \\in (0 + 1)^*$ let $d(s)$ denote the decimal value of $s$ (e.g. $d(101) = 5$ ). Let $$L = \\{s \\in (0 + "
+      ]
+    },
+    "filter1_volume2|1.18": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "algorithms/graph-traversal",
+      "_action": "check-topic",
+      "_current_section": "Graph Algorithms",
+      "_current_topic": "discrete-mathematics/graph-theory",
+      "_topic_from_bad_heading": true,
+      "_question_count": 23,
+      "_note": "topic came from the bad heading; block votes algorithms/graph-traversal",
+      "_block_vote": "algorithms/graph-traversal (10/15 scored)",
+      "_sample": [
+        "In the graph shown above, the depth-first spanning tree edges are marked with a 'T'. Identify the forward, bac",
+        "Suppose depth first search is executed on the graph below starting at some unknown vertex. Assume that a recur"
+      ]
+    },
+    "filter1_volume3|2.34": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "computer-networks/ip-addressing",
+      "_action": "check-topic",
+      "_current_section": "Stop and Wait",
+      "_current_topic": "computer-networks/sliding-window",
+      "_topic_from_bad_heading": true,
+      "_question_count": 19,
+      "_note": "topic came from the bad heading; block votes computer-networks/ip-addressing",
+      "_block_vote": "computer-networks/ip-addressing (11/14 scored)",
+      "_sample": [
+        "The subnet mask for a particular network is 255.255.31.0. Which of the following pairs of IP addresses could b",
+        "In the network 200.10.11.144/27, the fourth octet (in decimal) of the last IP address of the network which can"
+      ]
+    },
+    "filter1_volume2|2.27": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "compiler-design/sdt",
+      "_action": "check-topic",
+      "_current_section": "Static Single Assignment",
+      "_current_topic": "compiler-design/intermediate-code",
+      "_topic_from_bad_heading": true,
+      "_question_count": 18,
+      "_note": "topic came from the bad heading; block votes compiler-design/sdt",
+      "_block_vote": "compiler-design/sdt (11/15 scored)",
+      "_sample": [
+        "Write syntax directed definitions (semantic rules) for the following grammar to add the type of each identifie",
+        "Consider the following Syntax Directed Translation Scheme (SDTS), with non-terminals $\\{S, A\\}$ and terminals "
+      ]
+    },
+    "filter1_volume3|4.21": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "digital-logic/kmap",
+      "_action": "check-topic",
+      "_current_section": "IEEE Representation",
+      "_current_topic": "digital-logic/computer-arithmetic",
+      "_topic_from_bad_heading": true,
+      "_question_count": 15,
+      "_note": "topic came from the bad heading; block votes digital-logic/kmap",
+      "_block_vote": "digital-logic/kmap (8/11 scored)",
+      "_sample": [
+        "A Boolean function f is to be realized only by NOR gates. Its K-map is given below: The realization is",
+        "Minimum sum of product expression for $f(w, x, y, z)$ shown in Karnaugh-map below | yz\\wx | 00 | 01 | 11 | 10 "
+      ]
+    },
+    "filter1_volume3|4.27": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Min Sum of Products Form",
+      "_current_topic": "digital-logic/kmap",
+      "_topic_from_bad_heading": true,
+      "_question_count": 14,
+      "_note": "only 7 of 14 questions scored",
+      "_block_vote": "digital-logic/combinational (3/7 scored)",
+      "_sample": [
+        "Show with the help of a block diagram how the Boolean function: $$f = A B + B C + C A$$ can be realised using ",
+        "A Boolean digital circuit is composed using two 4-input multiplexers (M1 and M2) and one 2-input multiplexer ("
+      ]
+    },
+    "vol1|7.6": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "engineering-mathematics/probability",
+      "_action": "check-topic",
+      "_current_section": "Chi Square Distribution",
+      "_current_topic": "engineering-mathematics/distributions",
+      "_topic_from_bad_heading": true,
+      "_question_count": 14,
+      "_note": "topic came from the bad heading; block votes engineering-mathematics/probability",
+      "_block_vote": "engineering-mathematics/probability (12/12 scored)",
+      "_sample": [
+        "Let A and B be any two arbitrary events, then, which one of the following is TRUE?",
+        "$P$ and $Q$ are considering to apply for a job. The probability that $P$ applies for the job is $\\frac{1}{4}$,"
+      ]
+    },
+    "filter1_volume2|5.2": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Output",
+      "_current_topic": "data-structures/c-basics",
+      "_topic_from_bad_heading": true,
+      "_question_count": 13,
+      "_note": "only 1 of 13 questions scored",
+      "_sample": [
+        "Consider the following declaration of a two-dimensional array in C: char a[100][100]; Assuming that the main m",
+        "Consider the following C program which is supposed to compute the transpose of a given $4 \\times 4$ matrix M. "
+      ]
+    },
+    "vol1|5.4": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Differentiation",
+      "_current_topic": "engineering-mathematics/calculus-limits",
+      "_topic_from_bad_heading": true,
+      "_question_count": 11,
+      "_note": "only 3 of 11 questions scored",
+      "_sample": [
+        "The value of the double integral $\\int_{0}^{1}\\int_{0}^{\\frac{1}{x}}\\frac{x}{1+y^{2}}dxdy$ is ____.",
+        "The value of $\\int_0^{\\pi /4}x\\cos (x^2)dx$ correct to three decimal places (assuming that $\\pi = 3.14$ ) is _"
+      ]
+    },
+    "filter1_volume3|4.1": {
+      "apply": true,
+      "subtopic": "adder",
+      "topic": "",
+      "_action": "clear-subtopic",
+      "_current_section": "Two Phase Locking Protocol",
+      "_current_topic": "digital-logic/computer-arithmetic",
+      "_topic_from_bad_heading": false,
+      "_question_count": 9,
+      "_note": "heading unmapped, so the topic came from a fallback",
+      "_sample": [
+        "Using binary full adders and other logic gates (if necessary), design an adder for adding 4-bit number (includ",
+        "Fill in the blanks: In the two bit full-adder/subtractor unit shown in below figure, when the switch is in pos"
+      ]
+    },
+    "filter1_volume3|4.6": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Booths Algorithm",
+      "_current_topic": "digital-logic/computer-arithmetic",
+      "_topic_from_bad_heading": true,
+      "_question_count": 9,
+      "_note": "only 3 of 9 questions scored",
+      "_sample": [
+        "Consider 4-variable functions f1, f2, f3, f4 expressed in sum-of-minterms form as given below. $$f 1 = \\sum (0",
+        "Consider the following logic circuit whose inputs are functions $f_{1}$, $f_{2}$, $f_{3}$ and output is f Give"
+      ]
+    },
+    "filter1_volume2|5.7": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Loop Invariants",
+      "_current_topic": "algorithms/asymptotics",
+      "_topic_from_bad_heading": true,
+      "_question_count": 8,
+      "_note": "only 0 of 8 questions scored",
+      "_sample": [
+        "What is printed by the following ANSI C program? ASCII encoding for relevant characters is given below | A | B",
+        "The integer value printed by the ANSI-C program given below is ____"
+      ]
+    },
+    "vol1|4.1": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Propositional Logic",
+      "_current_topic": "discrete-mathematics/propositional-logic",
+      "_topic_from_bad_heading": true,
+      "_question_count": 8,
+      "_note": "only 0 of 8 questions scored",
+      "_sample": [
+        "The number of possible commutative binary operations that can be defined on a set of $n$ elements (for a given",
+        "On the set N of non-negative integers, the binary operation ____ is associative and non-commutative."
+      ]
+    },
+    "vol1|9.38": {
+      "apply": true,
+      "subtopic": "",
+      "topic": "",
+      "_action": "clear-subtopic",
+      "_current_section": "Numerical Computation",
+      "_current_topic": "general-aptitude/quantitative",
+      "_topic_from_bad_heading": false,
+      "_question_count": 8,
+      "_note": "heading unmapped, so the topic came from a fallback",
+      "_sample": [
+        "Round-trip tickets to a tourist destination are eligible for a discount of 10% on the total fare. In addition,",
+        "The Gross Domestic Product (GDP) in Rupees grew at 7% during 2012 – 2013. For international comparison, the GD"
+      ]
+    },
+    "vol1|11.1": {
+      "apply": true,
+      "subtopic": "antonyms",
+      "topic": "",
+      "_action": "clear-subtopic",
+      "_current_section": "Patterns In Two Dimensions",
+      "_current_topic": "general-aptitude/verbal",
+      "_topic_from_bad_heading": false,
+      "_question_count": 7,
+      "_note": "heading unmapped, so the topic came from a fallback",
+      "_block_vote": "general-aptitude/verbal (5/5 scored)",
+      "_sample": [
+        "Choose the word from the options given below that is most nearly opposite in the meaning to the given word Ama",
+        "Choose the word that is opposite in meaning to the word “coherent”."
+      ]
+    },
+    "vol1|9.55": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Tables",
+      "_current_topic": "general-aptitude/analytical",
+      "_topic_from_bad_heading": true,
+      "_question_count": 7,
+      "_note": "only 0 of 7 questions scored",
+      "_sample": [
+        "In a survey, 300 respondents were asked whether they own a vehicle or not. If yes, they were further asked to ",
+        "The table below has question-wise data on the performance of students in an examination. The marks for each qu"
+      ]
+    },
+    "vol1|1.4": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "discrete-mathematics/generating-functions",
+      "_action": "check-topic",
+      "_current_section": "Counting",
+      "_current_topic": "discrete-mathematics/counting",
+      "_topic_from_bad_heading": true,
+      "_question_count": 6,
+      "_note": "topic came from the bad heading; block votes discrete-mathematics/generating-functions",
+      "_block_vote": "discrete-mathematics/generating-functions (4/4 scored)",
+      "_sample": [
+        "What is the generating function $G(z)$ for the sequence of Fibonacci numbers?",
+        "Let $G(x) = \\frac{1}{(1 - x)^2} = \\sum_{i=0}^{\\infty} g(i)x^i$, where $|x| < 1$. What is $g(i)$?"
+      ]
+    },
+    "vol1|6.14": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "System of Equations",
+      "_current_topic": "engineering-mathematics/linear-systems",
+      "_topic_from_bad_heading": true,
+      "_question_count": 6,
+      "_note": "only 2 of 6 questions scored",
+      "_sample": [
+        "A unit vector perpendicular to both the vectors $a = 2i - 3j + k$ and $b = i + j - 2k$ is:",
+        "Consider the set of (column) vectors defined by $$X = \\left\\{x \\in R ^ {3} \\mid x _ {1} + x _ {2} + x _ {3} = "
+      ]
+    },
+    "filter1_volume3|2.14": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Ethernet",
+      "_current_topic": "computer-networks/mac",
+      "_topic_from_bad_heading": true,
+      "_question_count": 5,
+      "_note": "only 1 of 5 questions scored",
+      "_sample": [
+        "Consider three IP networks A, B and C. Host $H_{A}$ in network A sends messages each containing 180 bytes of a",
+        "Consider three IP networks $A, B$ and $C$. Host $H_A$ in network $A$ sends messages each containing 180 bytes "
+      ]
+    },
+    "filter1_volume2|3.7": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Binary Tree",
+      "_current_topic": "data-structures/trees",
+      "_topic_from_bad_heading": true,
+      "_question_count": 4,
+      "_note": "only 2 of 4 questions scored",
+      "_sample": [
+        "Let $G$ be the graph with 100 vertices numbered 1 to 100. Two vertices $i$ and $j$ are adjacent if $|i - j| = ",
+        "Let $G = (V, E)$ be a directed graph where V is the set of vertices and E the set of edges. Then which one of "
+      ]
+    },
+    "filter1_volume2|1.9": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Binary Search Tree",
+      "_current_topic": "data-structures/bst",
+      "_topic_from_bad_heading": true,
+      "_question_count": 3,
+      "_note": "only 3 of 3 questions scored",
+      "_sample": [
+        "Let $G(V, E)$ be an undirected and unweighted graph with 100 vertices. Let $d(u, v)$ denote the number of edge",
+        "Consider a directed graph $G = (V, E)$, where V is the finite set of vertices and E is the set of directed edg"
+      ]
+    },
+    "filter1_volume2|2.16": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Lexical Analysis",
+      "_current_topic": "compiler-design/lexical-analysis",
+      "_topic_from_bad_heading": true,
+      "_question_count": 3,
+      "_note": "only 1 of 3 questions scored",
+      "_sample": [
+        "A “link editor” is a program that:",
+        "Which of the following is NOT an advantage of using shared, dynamically linked libraries as opposed to using s"
+      ]
+    },
+    "filter1_volume3|4.11": {
+      "apply": true,
+      "subtopic": "decoder",
+      "topic": "",
+      "_action": "clear-subtopic",
+      "_current_section": "Conjunctive Normal Form",
+      "_current_topic": "digital-logic/combinational",
+      "_topic_from_bad_heading": false,
+      "_question_count": 3,
+      "_note": "heading unmapped, so the topic came from a fallback",
+      "_sample": [
+        "How many 3-to-8 line decoders with an enable input are needed to construct a 6-to-64 line decoder without usin",
+        "If there are $m$ input lines and $n$ output lines for a decoder that is used to uniquely address a byte addres"
+      ]
+    },
+    "vol1|7.1": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "System of Equations",
+      "_current_topic": "engineering-mathematics/linear-systems",
+      "_topic_from_bad_heading": true,
+      "_question_count": 3,
+      "_note": "only 3 of 3 questions scored",
+      "_sample": [
+        "Consider Guwahati, $(G)$ and Delhi $(D)$ whose temperatures can be classified as high $(H)$, medium $(M)$ and ",
+        "A sender (S) transmits a signal, which can be one of the two kinds: H and L with probabilities 0.1 and 0.9 res"
+      ]
+    },
+    "vol1|7.18": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Random Variable",
+      "_current_topic": "engineering-mathematics/distributions",
+      "_topic_from_bad_heading": true,
+      "_question_count": 3,
+      "_note": "only 1 of 3 questions scored",
+      "_sample": [
+        "For a given biased coin, the probability that the outcome of a toss is a head is 0.4. This coin is tossed 1,00",
+        "Let $x$ and $y$ be random variables, not necessarily independent, that take real values in the interval $[0, 1"
+      ]
+    },
+    "vol1|9.14": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Combinatory",
+      "_current_topic": "discrete-mathematics/counting",
+      "_topic_from_bad_heading": true,
+      "_question_count": 3,
+      "_note": "only 1 of 3 questions scored",
+      "_sample": [
+        "Person 1 and Person 2 invest in three mutual funds A, B, and C. The amounts they invest in each of these mutua",
+        "A person invest Rs.1000 at 10% annual compound interest for 2 years. At the end of two years, the whole amount"
+      ]
+    },
+    "filter1_volume2|1.33": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Number of Swap",
+      "_current_topic": "algorithms/searching-sorting",
+      "_topic_from_bad_heading": true,
+      "_question_count": 2,
+      "_note": "only 2 of 2 questions scored",
+      "_sample": [
+        "Consider the undirected graph below: Using Prim's algorithm to construct a minimum spanning tree starting with",
+        "For the undirected, weighted graph given below, which of the following sequences of edges represents a correct"
+      ]
+    },
+    "filter1_volume2|1.38": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Searching",
+      "_current_topic": "algorithms/searching-sorting",
+      "_topic_from_bad_heading": true,
+      "_question_count": 2,
+      "_note": "only 2 of 2 questions scored",
+      "_sample": [
+        "What is the number of swaps required to sort n elements using selection sort, in the worst case?",
+        "Which one of the following is the tightest upper bound that represents the number of swaps required to sort n "
+      ]
+    },
+    "filter1_volume2|2.17": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Lexical Analysis",
+      "_current_topic": "compiler-design/lexical-analysis",
+      "_topic_from_bad_heading": true,
+      "_question_count": 2,
+      "_note": "only 2 of 2 questions scored",
+      "_sample": [
+        "A variable x is said to be live at a statement $s_{i}$ in a program if the following three conditions hold sim",
+        "Consider the control flow graph shown. Which one of the following choices correctly lists the set of live vari"
+      ]
+    },
+    "filter1_volume2|2.18": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Lexical Analysis",
+      "_current_topic": "compiler-design/lexical-analysis",
+      "_topic_from_bad_heading": true,
+      "_question_count": 2,
+      "_note": "only 2 of 2 questions scored",
+      "_sample": [
+        "Consider the following context-free grammar where the start symbol is S and the set of terminals is $\\{a, b, c",
+        "Which of the following statements is/are true?"
+      ]
+    },
+    "filter1_volume2|5.17": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Structure",
+      "_current_topic": "data-structures/c-basics",
+      "_topic_from_bad_heading": true,
+      "_question_count": 2,
+      "_note": "only 1 of 2 questions scored",
+      "_sample": [
+        "What will be the output of the following C program segment?",
+        "Consider the following C program: The number of times printf statement is executed is ____. programming normal"
+      ]
+    },
+    "filter1_volume3|4.16": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Finite State Machines",
+      "_current_topic": "digital-logic/state-machines",
+      "_topic_from_bad_heading": true,
+      "_question_count": 2,
+      "_note": "only 0 of 2 questions scored",
+      "_sample": [
+        "The n-bit fixed-point representation of an unsigned real number X uses f bits for the fraction part. Let i = n",
+        "Consider the unsigned 8-bit fixed point binary number representation, below, $$b _ {7} b _ {6} b _ {5} b _ {4}"
+      ]
+    },
+    "vol1|7.2": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "System of Equations",
+      "_current_topic": "engineering-mathematics/linear-systems",
+      "_topic_from_bad_heading": true,
+      "_question_count": 2,
+      "_note": "only 1 of 2 questions scored",
+      "_sample": [
+        "Consider five random variables $U, V, W, X$, and $Y$ whose joint distribution satisfies: $$P (U, V, W, X, Y) =",
+        "Given the following Bayesian Network consisting of four Bernoulli random variables and the associated conditio"
+      ]
+    },
+    "filter1_volume2|1.8": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Binary Search Tree",
+      "_current_topic": "data-structures/bst",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 1 of 1 questions scored",
+      "_sample": [
+        "The height of a binary tree is the number of edges in the longest path from the root to a leaf in the tree. Th"
+      ]
+    },
+    "filter1_volume2|2.1": {
+      "apply": true,
+      "subtopic": "abstract-syntax-tree",
+      "topic": "",
+      "_action": "clear-subtopic",
+      "_current_section": "Uniform Hashing",
+      "_current_topic": "compiler-design/optimization",
+      "_topic_from_bad_heading": false,
+      "_question_count": 1,
+      "_note": "heading unmapped, so the topic came from a fallback",
+      "_sample": [
+        "In the context of abstract-syntax-tree (AST) and control-flow-graph (CFG), which one of the following is TRUE?"
+      ]
+    },
+    "filter1_volume2|2.26": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Static Single Assignment",
+      "_current_topic": "compiler-design/intermediate-code",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 1 of 1 questions scored",
+      "_sample": [
+        "Which ONE of the following statements is FALSE regarding the symbol table?"
+      ]
+    },
+    "filter1_volume2|3.16": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Tree",
+      "_current_topic": "data-structures/trees",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 1 of 1 questions scored",
+      "_sample": [
+        "The set T represents various traversals over binary tree. The set S represents the order of visiting nodes dur"
+      ]
+    },
+    "filter1_volume2|5.1": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Output",
+      "_current_topic": "data-structures/c-basics",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "Aliasing in the context of programming languages refers to"
+      ]
+    },
+    "filter1_volume2|5.18": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Structure",
+      "_current_topic": "data-structures/c-basics",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "Which of the following statements is FALSE?"
+      ]
+    },
+    "filter1_volume2|5.19": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Structure",
+      "_current_topic": "data-structures/c-basics",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "Consider the following C declaration: Assume that the objects of the type short, float and long occupy 2 bytes"
+      ]
+    },
+    "filter1_volume2|6.8": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Finite Automata",
+      "_current_topic": "theory-of-computation/finite-automata",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "Consider a finite state machine (FSM) with one input X and one output f, represented by the given state transi"
+      ]
+    },
+    "filter1_volume3|2.18": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "IP Packet",
+      "_current_topic": "computer-networks/ip-addressing",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "Traceroute reports a possible route that is taken by packets moving from some host A to some other host B. Whi"
+      ]
+    },
+    "filter1_volume3|3.7": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Database Normalization",
+      "_current_topic": "dbms/normalization",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "In the context of DBMS, consider the two sets T and S given below. | T | S | I: Logical schemaII: Physical sch"
+      ]
+    },
+    "filter1_volume3|3.8": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Database Normalization",
+      "_current_topic": "dbms/normalization",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 1 of 1 questions scored",
+      "_sample": [
+        "If a relational decomposition is not dependency-preserving, which one of the following relational operators wi"
+      ]
+    },
+    "filter1_volume3|4.3": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Array Multiplier",
+      "_current_topic": "digital-logic/computer-arithmetic",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 1 of 1 questions scored",
+      "_sample": [
+        "Consider numbers represented in 4-bit Gray code. Let $h_{3}h_{2}h_{1}h_{0}$ be the Gray code representation of"
+      ]
+    },
+    "filter1_volume3|5.12": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "IO Handling",
+      "_current_topic": "computer-organization/io-interface",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "Suppose in a multiprogramming environment, the following C program segment is executed. A process goes into I/"
+      ]
+    },
+    "filter1_volume3|5.15": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Interrupts",
+      "_current_topic": "computer-organization/io-interface",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 1 of 1 questions scored",
+      "_sample": [
+        "Consider the following two-dimensional array D in the C programming language, which is stored in row-major ord"
+      ]
+    },
+    "filter1_volume3|5.2": {
+      "apply": true,
+      "subtopic": "contiguous-allocation",
+      "topic": "",
+      "_action": "clear-subtopic",
+      "_current_section": "Bankers Algorithm",
+      "_current_topic": "operating-systems/memory-management",
+      "_topic_from_bad_heading": false,
+      "_question_count": 1,
+      "_note": "heading unmapped, so the topic came from a fallback",
+      "_sample": [
+        "Consider contiguous allocation of physical memory to processes using variable partitioning scheme. Suppose the"
+      ]
+    },
+    "filter1_volume3|5.26": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Resource Allocation",
+      "_current_topic": "operating-systems/deadlock",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 1 of 1 questions scored",
+      "_sample": [
+        "$P = \\{P_{1}, P_{2}, P_{3}, P_{4}\\}$ consists of all active processes in an operating system. $R = \\{R_{1}, R_"
+      ]
+    },
+    "vol1|2.3": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Degree of Graph",
+      "_current_topic": "discrete-mathematics/graph-theory",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "An undirected, unweighted, simple graph $G(V, E)$ is said to be 2-colorable if there exists a function $c: V \\"
+      ]
+    },
+    "vol1|7.17": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Random Variable",
+      "_current_topic": "engineering-mathematics/distributions",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 1 of 1 questions scored",
+      "_sample": [
+        "A quadratic polynomial $(x - \\alpha)(x - \\beta)$ over complex numbers is said to be square invariant if $(x - "
+      ]
+    },
+    "vol1|9.26": {
+      "apply": false,
+      "subtopic": "",
+      "topic": "",
+      "_action": "review",
+      "_current_section": "Geometry",
+      "_current_topic": "general-aptitude/spatial",
+      "_topic_from_bad_heading": true,
+      "_question_count": 1,
+      "_note": "only 0 of 1 questions scored",
+      "_sample": [
+        "The 15 parts of the given figure are to be painted such that no two adjacent parts with shared boundaries (exc"
+      ]
+    }
+  }
+}
