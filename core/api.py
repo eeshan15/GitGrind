@@ -439,6 +439,7 @@ class Handler(BaseHTTPRequestHandler):
                         query=one("q"),
                         subject=one("subject"),
                         topic=one("topic"),
+                        subtopic=one("subtopic"),
                         qtype=one("type"),
                         difficulty=one("difficulty"),
                         kind=one("kind"),

@@ -222,6 +222,7 @@ def select(
     count=5,
     subject_slug=None,
     topic_slugs=None,
+    subtopic_slugs=None,
     kinds=None,
     exclude=None,
     metrics=None,
@@ -273,6 +274,10 @@ def select(
             due_topics[(r["subject_slug"], r["topic_slug"])] = overdue
 
     topic_filter = set(topic_slugs or [])
+    # Narrower than topic_filter and independent of it: passing only
+    # subtopics selects across whatever topics carry them, which is what a
+    # user typing one concept name is asking for.
+    subtopic_filter = set(subtopic_slugs or [])
     rng = random.Random(seed or "sel-%s-%s" % (purpose, datetime.now().isoformat()))
     scored = []
 
@@ -287,6 +292,8 @@ def select(
         if subject_slug and q["subject"] != subject_slug:
             continue
         if topic_filter and q.get("topic") not in topic_filter:
+            continue
+        if subtopic_filter and q.get("subtopic") not in subtopic_filter:
             continue
         if kinds and q.get("kind") not in kinds:
             continue

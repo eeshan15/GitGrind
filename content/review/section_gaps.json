@@ -1,0 +1,4066 @@
+{
+  "note": "Edit correct_section on each finding, then run tools/section_fix.py. Leave it empty to skip that block. The topic tag is not touched by either script.",
+  "bank_total": 3862,
+  "findings": [
+    {
+      "volume": "vol1",
+      "block": "6.3",
+      "reason": "duplicate of the block above",
+      "current_section": "Determinant",
+      "current_subtopic": "determinant",
+      "alphabetical_window": {
+        "after": "Determinant",
+        "before": "Gaussian Elimination"
+      },
+      "question_count": 33,
+      "topics": [
+        "matrices"
+      ],
+      "subjects": [
+        "engineering-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-6-3-1",
+          "ref": "6.3.1",
+          "exam": "GATE CSE 1993 | Question: 01.1",
+          "text": "The eigen vector $(s)$ of the matrix $$\\left[ \\begin{array}{c c c} 0 & 0 & \\alpha \\\\ 0 & 0 & 0 \\\\ 0 & 0 & 0 \\e"
+        },
+        {
+          "id": "mineru-vol1-6-3-10",
+          "ref": "6.3.10",
+          "exam": "GATE CSE 2014 | Set 2 | Question: 47",
+          "text": "The product of the non-zero eigenvalues of the matrix is ____ $$\\left( \\begin{array}{c c c c c} 1 & 0 & 0 & 0 "
+        },
+        {
+          "id": "mineru-vol1-6-3-11",
+          "ref": "6.3.11",
+          "exam": "GATE CSE 2014 | Set 3 | Question: 4",
+          "text": "Which one of the following statements is TRUE about every $n \\times n$ matrix with only real eigenvalues?"
+        },
+        {
+          "id": "mineru-vol1-6-3-12",
+          "ref": "6.3.12",
+          "exam": "GATE CSE 2015 | Set 1 | Question: 36",
+          "text": "Consider the following $2 \\times 2$ matrix $A$ where two elements are unknown and are marked by $a$ and $b$. T"
+        },
+        {
+          "id": "mineru-vol1-6-3-13",
+          "ref": "6.3.13",
+          "exam": "GATE CSE 2015 | Set 2 | Question: 5",
+          "text": "The larger of the two eigenvalues of the matrix $\\begin{bmatrix}4 & 5 \\\\ 2 & 1\\end{bmatrix}$ is ____."
+        },
+        {
+          "id": "mineru-vol1-6-3-14",
+          "ref": "6.3.14",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 15",
+          "text": "In the given matrix $\\begin{bmatrix}1 & -1 & 2 \\\\ 0 & 1 & 0 \\\\ 1 & 2 & 1\\end{bmatrix}$, one of the eigenvalues"
+        },
+        {
+          "id": "mineru-vol1-6-3-15",
+          "ref": "6.3.15",
+          "exam": "GATE CSE 2016 | Set 1 | Question: 05",
+          "text": "Two eigenvalues of a $3 \\times 3$ real matrix $P$ are $(2 + \\sqrt{-1})$ and 3. The determinant of $P$ is ____"
+        },
+        {
+          "id": "mineru-vol1-6-3-16",
+          "ref": "6.3.16",
+          "exam": "GATE CSE 2016 | Set 2 | Question: 06",
+          "text": "Suppose that the eigenvalues of matrix $A$ are 1, 2, 4. The determinant of $(A^{-1})^T$ is ____."
+        },
+        {
+          "id": "mineru-vol1-6-3-17",
+          "ref": "6.3.17",
+          "exam": "GATE CSE 2017 | Set 1 | Question: 31",
+          "text": "Let $A$ be $n \\times n$ real valued square symmetric matrix of rank 2 with $\\sum_{i=1}^{n} \\sum_{j=1}^{n} A_{i"
+        },
+        {
+          "id": "mineru-vol1-6-3-18",
+          "ref": "6.3.18",
+          "exam": "GATE CSE 2017 | Set 2 | Question: 52",
+          "text": "If the characteristic polynomial of a $3 \\times 3$ matrix $M$ over $\\mathbb{R}$ (the set of real numbers) is $"
+        },
+        {
+          "id": "mineru-vol1-6-3-19",
+          "ref": "6.3.19",
+          "exam": "GATE CSE 2018 | Question: 17",
+          "text": "Consider a matrix $A = uv^{T}$ where $u = \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$, $v = \\begin{pmatrix} 1 \\\\ 1 \\"
+        },
+        {
+          "id": "mineru-vol1-6-3-2",
+          "ref": "6.3.2",
+          "exam": "GATE CSE 2002 | Question: 5a",
+          "text": "Obtain the eigen values of the matrix $$A = \\left[ \\begin{array}{c c c c} 1 & 2 & 3 4 & 4 9 \\\\ 0 & 2 & 4 3 & 9"
+        },
+        {
+          "id": "mineru-vol1-6-3-20",
+          "ref": "6.3.20",
+          "exam": "GATE CSE 2018 | Question: 26",
+          "text": "Consider a matrix P whose only eigenvectors are the multiples of $\\begin{bmatrix}1\\\\ 4\\end{bmatrix}$. Consider"
+        },
+        {
+          "id": "mineru-vol1-6-3-21",
+          "ref": "6.3.21",
+          "exam": "GATE CSE 2019 | Question: 44",
+          "text": "Consider the following matrix: $$R = \\left[ \\begin{array}{c c c c} 1 & 2 & 4 & 8 \\\\ 1 & 3 & 9 & 2 7 \\\\ 1 & 4 &"
+        },
+        {
+          "id": "mineru-vol1-6-3-22",
+          "ref": "6.3.22",
+          "exam": "GATE CSE 2021 | Set 1 | Question: 52",
+          "text": "Consider the following matrix. $$\\left( \\begin{array}{c c c c} 0 & 1 & 1 & 1 \\\\ 1 & 0 & 1 & 1 \\\\ 1 & 1 & 0 & 1"
+        },
+        {
+          "id": "mineru-vol1-6-3-23",
+          "ref": "6.3.23",
+          "exam": "GATE CSE 2022 | Question: 43",
+          "text": "Which of the following is/are the eigenvector(s) for the matrix given below? $$\\left( \\begin{array}{c c c c} -"
+        },
+        {
+          "id": "mineru-vol1-6-3-24",
+          "ref": "6.3.24",
+          "exam": "GATE CSE 2023 | Question: 20",
+          "text": "Let $A$ be the adjacency matrix of the graph with vertices $\\{1, 2, 3, 4, 5\\}$. Let $\\lambda_1, \\lambda_2, \\la"
+        },
+        {
+          "id": "mineru-vol1-6-3-25",
+          "ref": "6.3.25",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 2",
+          "text": "The product of all eigenvalues of the matrix $\\begin{bmatrix}1 & 2 & 3 \\\\ 4 & 5 & 6 \\\\ 7 & 8 & 9\\end{bmatrix}$"
+        },
+        {
+          "id": "mineru-vol1-6-3-26",
+          "ref": "6.3.26",
+          "exam": "GATE CSE 2025 | Set 1 | Question: 31",
+          "text": "Let $A$ be a $2 \\times 2$ matrix as given. $$A = \\left[ \\begin{array}{c c} 1 & 1 \\\\ 1 & - 1 \\end{array} \\right"
+        },
+        {
+          "id": "mineru-vol1-6-3-27",
+          "ref": "6.3.27",
+          "exam": "GATE DA 2025 | Question: 18",
+          "text": "Let $A = I_{n} + xx^{\\top}$, where $I_{n}$ is the $n \\times n$ identity matrix and $x \\in \\mathbb{R}^{n}, x^{\\"
+        },
+        {
+          "id": "mineru-vol1-6-3-28",
+          "ref": "6.3.28",
+          "exam": "GATE DA 2026 | Question: 36",
+          "text": "Let $\\gamma_{1},\\gamma_{2},\\gamma_{3}$ be the eigenvalues of the matrix $\\left[ \\begin{array}{ccc}1 & 0 & 0\\\\ "
+        },
+        {
+          "id": "mineru-vol1-6-3-29",
+          "ref": "6.3.29",
+          "exam": "GATE DA 2026 | Question: 55",
+          "text": "Let $A = \\left( I_n - \\frac{1}{n} \\mathbf{1} \\mathbf{1}^T \\right)$ be a matrix, where $\\mathbf{1} = (1, 1, 1, "
+        },
+        {
+          "id": "mineru-vol1-6-3-3",
+          "ref": "6.3.3",
+          "exam": "GATE CSE 2005 | Question: 49",
+          "text": "What are the eigenvalues of the following $2 \\times 2$ matrix? $$\\left( \\begin{array}{c c} 2 & - 1 \\\\ - 4 & 5 "
+        },
+        {
+          "id": "mineru-vol1-6-3-30",
+          "ref": "6.3.30",
+          "exam": "GATE DS&AI 2024 | Question: 3",
+          "text": "Consider the matrix $M = \\begin{bmatrix} 2 & -1 \\\\ 3 & 1 \\end{bmatrix}$. Which ONE of the following statements"
+        },
+        {
+          "id": "mineru-vol1-6-3-31",
+          "ref": "6.3.31",
+          "exam": "GATE Data Science and Artificial Intelligence 2024 | Sample Paper | Question: 17",
+          "text": "For matrix $H = \\begin{bmatrix} 9 & -2 \\\\ -2 & 6 \\end{bmatrix}$, one of the eigenvalues is 5. Then, the other "
+        },
+        {
+          "id": "mineru-vol1-6-3-32",
+          "ref": "6.3.32",
+          "exam": "GATE IT 2006 | Question: 26",
+          "text": "What are the eigenvalues of the matrix P given below $$P = \\left( \\begin{array}{c c c} a & 1 & 0 \\\\ 1 & a & 1 "
+        },
+        {
+          "id": "mineru-vol1-6-3-33",
+          "ref": "6.3.33",
+          "exam": "GATE IT 2007 | Question: 2",
+          "text": "Let $A$ be the matrix $\\begin{bmatrix} 3 & 1 \\\\ 1 & 2 \\end{bmatrix}$. What is the maximum value of $x^T Ax$ wh"
+        },
+        {
+          "id": "mineru-vol1-6-3-4",
+          "ref": "6.3.4",
+          "exam": "GATE CSE 2007 | Question: 25",
+          "text": "Let $A$ be a $4 \\times 4$ matrix with eigen values -5,-2,1,4. Which of the following is an eigen value of the "
+        },
+        {
+          "id": "mineru-vol1-6-3-5",
+          "ref": "6.3.5",
+          "exam": "GATE CSE 2008 | Question: 28",
+          "text": "How many of the following matrices have an eigenvalue 1? $$\\left[ \\begin{array}{c c} 1 & 0 \\\\ 0 & 0 \\end{array"
+        },
+        {
+          "id": "mineru-vol1-6-3-6",
+          "ref": "6.3.6",
+          "exam": "GATE CSE 2010 | Question: 29",
+          "text": "Consider the following matrix $$A = \\left[ \\begin{array}{c c} 2 & 3 \\\\ x & y \\end{array} \\right]$$ If the eige"
+        },
+        {
+          "id": "mineru-vol1-6-3-7",
+          "ref": "6.3.7",
+          "exam": "GATE CSE 2011 | Question: 40",
+          "text": "Consider the matrix as given below. $$\\left[ \\begin{array}{c c c} 1 & 2 & 3 \\\\ 0 & 4 & 7 \\\\ 0 & 0 & 3 \\end{arr"
+        },
+        {
+          "id": "mineru-vol1-6-3-8",
+          "ref": "6.3.8",
+          "exam": "GATE CSE 2012 | Question: 11",
+          "text": "Let $A$ be the $2 \\times 2$ matrix with elements $a_{11} = a_{12} = a_{21} = +1$ and $a_{22} = -1$. Then the e"
+        },
+        {
+          "id": "mineru-vol1-6-3-9",
+          "ref": "6.3.9",
+          "exam": "GATE CSE 2014 | Set 1 | Question: 5",
+          "text": "The value of the dot product of the eigenvectors corresponding to any pair of different eigenvalues of a $4 - "
+        }
+      ],
+      "heading_in_tag_map": "engineering-mathematics/matrices",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "engineering-mathematics/eigen",
+        "votes": 9,
+        "scored": 10,
+        "of_questions": 33,
+        "share": 0.9,
+        "agrees_with_current": false
+      },
+      "current_topic": "engineering-mathematics/matrices",
+      "recommended_action": "check-topic",
+      "recommendation_note": "topic came from the bad heading; block votes engineering-mathematics/eigen"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "6.9",
+      "reason": "duplicate of the block above",
+      "current_section": "Finite Automata",
+      "current_subtopic": "finite-automata",
+      "alphabetical_window": {
+        "after": "Finite Automata",
+        "before": "Medium"
+      },
+      "question_count": 29,
+      "topics": [
+        "finite-automata"
+      ],
+      "subjects": [
+        "theory-of-computation"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-6-9-1",
+          "ref": "6.9.1",
+          "exam": "GATE CSE 1987 | Question: 1-xiii",
+          "text": "FORTRAN is a:"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-10",
+          "ref": "6.9.10",
+          "exam": "GATE CSE 2006 | Question: 30",
+          "text": "For $s \\in (0 + 1)^*$ let $d(s)$ denote the decimal value of $s$ (e.g. $d(101) = 5$ ). Let $$L = \\{s \\in (0 + "
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-11",
+          "ref": "6.9.11",
+          "exam": "GATE CSE 2006 | Question: 33",
+          "text": "Let $L_{1}$ be a regular language, $L_{2}$ be a deterministic context-free language and $L_{3}$ a recursively "
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-12",
+          "ref": "6.9.12",
+          "exam": "GATE CSE 2007 | Question: 30",
+          "text": "The language $L = \\{0^i 21^i \\mid i \\geq 0\\}$ over the alphabet $\\{0, 1, 2\\}$ is:"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-13",
+          "ref": "6.9.13",
+          "exam": "GATE CSE 2008 | Question: 51",
+          "text": "Match the following: | E. | Checking that identifiers are declared before their use | P. $L = \\{a^{n}b^{m}c^{n"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-14",
+          "ref": "6.9.14",
+          "exam": "GATE CSE 2008 | Question: 9",
+          "text": "Which of the following is true for the language $$\\{a ^ {p} \\mid p \\text {is a prime} \\}\\?$$"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-15",
+          "ref": "6.9.15",
+          "exam": "GATE CSE 2009 | Question: 40",
+          "text": "Let $L = L_{1} \\cap L_{2}$, where $L_{1}$ and $L_{2}$ are languages as defined below: $$L _ {1} = \\{a ^ {m} b "
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-16",
+          "ref": "6.9.16",
+          "exam": "GATE CSE 2010 | Question: 40",
+          "text": "Consider the languages $$L 1 = \\{0 ^ {i} 1 ^ {j} \\mid i \\neq j \\},$$ $$L 2 = \\{0 ^ {i} 1 ^ {j} \\mid i = j \\},$"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-18",
+          "ref": "6.9.18",
+          "exam": "GATE CSE 2013 | Question: 32",
+          "text": "Consider the following languages. $$L _ {1} = \\{0 ^ {p} 1 ^ {q} 0 ^ {r} \\mid p, q, r \\geq 0 \\}$$ $$L _ {2} = \\"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-19",
+          "ref": "6.9.19",
+          "exam": "GATE CSE 2014 | Set 3 | Question: 36",
+          "text": "Consider the following languages over the alphabet $\\sum = \\{0,1,c\\}$ $$L _ {1} = \\{0 ^ {n} 1 ^ {n} \\mid n \\ge"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-2",
+          "ref": "6.9.2",
+          "exam": "GATE CSE 1988 | Question: 2ix",
+          "text": "What is the type of the language $L$, where $L = \\{a^n b^n \\mid 0 < n < 327$ -th prime number\\}"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-20",
+          "ref": "6.9.20",
+          "exam": "GATE CSE 2017 | Set 1 | Question: 37",
+          "text": "Consider the context-free grammars over the alphabet $\\{a, b, c\\}$ given below. $S$ and $T$ are non-terminals."
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-22",
+          "ref": "6.9.22",
+          "exam": "GATE CSE 2018 | Question: 35",
+          "text": "Consider the following languages: 1. $\\{a^m b^n c^p d^q \\mid m + p = n + q, \\text{where } m, n, p, q \\geq 0\\}$"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-23",
+          "ref": "6.9.23",
+          "exam": "GATE CSE 2020 | Question: 10",
+          "text": "Consider the language $L = \\{a^n \\mid n \\geq 0\\} \\cup \\{a^n b^n \\mid n \\geq 0\\}$ and the following statements."
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-24",
+          "ref": "6.9.24",
+          "exam": "GATE CSE 2020 | Question: 32",
+          "text": "Consider the following languages. $$\\begin{array}{l} L _ {1} = \\{w x y x \\mid w, x, y \\in (0 + 1) ^ {+} \\} \\\\ "
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-25",
+          "ref": "6.9.25",
+          "exam": "GATE CSE 2021 | Set 2 | Question: 12",
+          "text": "Let $L_{1}$ be a regular language and $L_{2}$ be a context-free language. Which of the following languages is/"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-26",
+          "ref": "6.9.26",
+          "exam": "GATE CSE 2022 | Question: 13",
+          "text": "Which of the following statements is/are TRUE?"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-27",
+          "ref": "6.9.27",
+          "exam": "GATE CSE 2022 | Question: 37",
+          "text": "Consider the following languages: $$L _ {1} = \\{a ^ {n} w a ^ {n} | w \\in \\{a, b \\} ^ {*} \\}$$ $$L _ {2} = \\{w"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-28",
+          "ref": "6.9.28",
+          "exam": "GATE CSE 2023 | Question: 14",
+          "text": "Which of the following statements is/are CORRECT?"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-29",
+          "ref": "6.9.29",
+          "exam": "GATE IT 2005 | Question: 4",
+          "text": "Let $L$ be a regular language and $M$ be a context-free language, both over the alphabet $\\Sigma$. Let $L^c$ a"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-3",
+          "ref": "6.9.3",
+          "exam": "GATE CSE 1991 | Question: 17,a",
+          "text": "Show that the Turing machines, which have a read only input tape and constant size work tape, recognize precis"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-30",
+          "ref": "6.9.30",
+          "exam": "GATE IT 2005 | Question: 6",
+          "text": "The language $\\{0^n 1^n 2^n \\mid 1 \\leq n \\leq 10^6\\}$ is"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-31",
+          "ref": "6.9.31",
+          "exam": "GATE IT 2008 | Question: 33",
+          "text": "Consider the following languages. - $L_{1} = \\{a^{i}b^{j}c^{k} \\mid i = j, k \\geq 1\\}$ - $L_{2} = \\{a^{i}b^{j}"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-4",
+          "ref": "6.9.4",
+          "exam": "GATE CSE 1994 | Question: 19",
+          "text": ""
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-5",
+          "ref": "6.9.5",
+          "exam": "GATE CSE 1999 | Question: 2.4",
+          "text": "If $L1$ is context free language and $L2$ is a regular language which of the following is/are false?"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-6",
+          "ref": "6.9.6",
+          "exam": "GATE CSE 2000 | Question: 1.5",
+          "text": "Let L denote the languages generated by the grammar $S \\rightarrow 0, S0 \\mid 00$. Which of the following is T"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-7",
+          "ref": "6.9.7",
+          "exam": "GATE CSE 2002 | Question: 1.7",
+          "text": "The language accepted by a Pushdown Automaton in which the stack is limited to 10 items is best described as"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-8",
+          "ref": "6.9.8",
+          "exam": "GATE CSE 2004 | Question: 87",
+          "text": "The language $\\{a^m b^n c^{m + n} \\mid m, n \\geq 1\\}$ is"
+        },
+        {
+          "id": "mineru-filter1-volume2-6-9-9",
+          "ref": "6.9.9",
+          "exam": "GATE CSE 2005 | Question: 55",
+          "text": "Consider the languages: $$L _ {1} = \\left\\{a ^ {n} b ^ {n} c ^ {m} \\mid n, m > 0 \\right\\} \\text {and} L _ {2} "
+        }
+      ],
+      "heading_in_tag_map": "theory-of-computation/finite-automata",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "theory-of-computation/pumping-lemma",
+        "votes": 7,
+        "scored": 17,
+        "of_questions": 29,
+        "share": 0.41,
+        "agrees_with_current": false
+      },
+      "current_topic": "theory-of-computation/finite-automata",
+      "recommended_action": "review",
+      "recommendation_note": "only 17 of 29 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "1.18",
+      "reason": "duplicate of the block above",
+      "current_section": "Graph Algorithms",
+      "current_subtopic": "graph-algorithms",
+      "alphabetical_window": {
+        "after": "Graph Algorithms",
+        "before": "Greedy Algorithms"
+      },
+      "question_count": 23,
+      "topics": [
+        "graph-theory"
+      ],
+      "subjects": [
+        "discrete-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-1-18-1",
+          "ref": "1.18.1",
+          "exam": "GATE CSE 1989 | Question: 4-vii",
+          "text": "In the graph shown above, the depth-first spanning tree edges are marked with a 'T'. Identify the forward, bac"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-10",
+          "ref": "1.18.10",
+          "exam": "GATE CSE 2014 | Set 3 | Question: 13",
+          "text": "Suppose depth first search is executed on the graph below starting at some unknown vertex. Assume that a recur"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-11",
+          "ref": "1.18.11",
+          "exam": "GATE CSE 2015 | Set 1 | Question: 45",
+          "text": "Let $G = (V, E)$ be a simple undirected graph, and $s$ be a particular vertex in it called the source. For $x "
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-12",
+          "ref": "1.18.12",
+          "exam": "GATE CSE 2016 | Set 2 | Question: 11",
+          "text": "Breadth First Search (BFS) is started on a binary tree beginning from the root vertex. There is a vertex $t$ a"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-13",
+          "ref": "1.18.13",
+          "exam": "GATE CSE 2017 | Set 2 | Question: 15",
+          "text": "The Breadth First Search (BFS) algorithm has been implemented using the queue data structure. Which one of the"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-14",
+          "ref": "1.18.14",
+          "exam": "GATE CSE 2018 | Question: 30",
+          "text": "Let G be a simple undirected graph. Let $T_{D}$ be a depth first search tree of G. Let $T_{B}$ be a breadth fi"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-15",
+          "ref": "1.18.15",
+          "exam": "GATE CSE 2023 | Question: 46",
+          "text": "Let $U = \\{1, 2, 3\\}$. Let $2^{U}$ denote the powerset of $U$. Consider an undirected graph $G$ whose vertex s"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-16",
+          "ref": "1.18.16",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 35",
+          "text": "Let $G$ be a directed graph and $T$ a depth first search (DFS) spanning tree in $G$ that is rooted at a vertex"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-17",
+          "ref": "1.18.17",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 50",
+          "text": "The number of edges present in the forest generated by the DFS traversal of an undirected graph G with 100 ver"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-18",
+          "ref": "1.18.18",
+          "exam": "GATE CSE 2025 | Set 2 | Question: 49",
+          "text": "Consider the following algorithm someAlgo that takes an undirected graph G as input. someAlgo (G) 1. Let $v$ b"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-19",
+          "ref": "1.18.19",
+          "exam": "GATE DS&AI 2024 | Question: 4",
+          "text": "Consider performing depth-first search (DFS) on an undirected and unweighted graph $G$ starting at vertex $s$."
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-2",
+          "ref": "1.18.2",
+          "exam": "GATE CSE 2000 | Question: 1.13",
+          "text": "The most appropriate matching for the following pairs | X: depth first search | 1: heap | Y: breadth first sea"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-20",
+          "ref": "1.18.20",
+          "exam": "GATE IT 2005 | Question: 14",
+          "text": "In a depth-first traversal of a graph $G$ with $n$ vertices, $k$ edges are marked as tree edges. The number of"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-21",
+          "ref": "1.18.21",
+          "exam": "GATE IT 2006 | Question: 47",
+          "text": "Consider the depth-first-search of an undirected graph with 3 vertices P, Q, and R. Let discovery time $d(u)$ "
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-22",
+          "ref": "1.18.22",
+          "exam": "GATE IT 2007 | Question: 24",
+          "text": "A depth-first search is performed on a directed acyclic graph. Let $d[u]$ denote the time at which vertex $u$ "
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-23",
+          "ref": "1.18.23",
+          "exam": "GATE IT 2008 | Question: 47",
+          "text": "Consider the following sequence of nodes for the undirected graph given below: 1. abefdgc 2. abefcgd 3. adgebc"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-3",
+          "ref": "1.18.3",
+          "exam": "GATE CSE 2000 | Question: 2.19",
+          "text": "Let $G$ be an undirected graph. Consider a depth-first traversal of $G$, and let $T$ be the resulting depth-fi"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-4",
+          "ref": "1.18.4",
+          "exam": "GATE CSE 2001 | Question: 2.14",
+          "text": "Consider an undirected, unweighted graph G. Let a breadth-first traversal of G be done starting from a node r."
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-5",
+          "ref": "1.18.5",
+          "exam": "GATE CSE 2003 | Question: 21",
+          "text": "Consider the following graph: Among the following sequences: I. abeghf II. abfehg III. abfhge IV. afghbe Which"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-6",
+          "ref": "1.18.6",
+          "exam": "GATE CSE 2006 | Question: 48",
+          "text": "Let $T$ be a depth first search tree in an undirected graph $G$. Vertices $u$ and $\\nu$ are leaves of this tre"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-7",
+          "ref": "1.18.7",
+          "exam": "GATE CSE 2008 | Question: 19",
+          "text": "The Breadth First Search algorithm has been implemented using the queue data structure. One possible order of "
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-8",
+          "ref": "1.18.8",
+          "exam": "GATE CSE 2014 | Set 1 | Question: 11",
+          "text": "Let G be a graph with n vertices and m edges. What is the tightest upper bound on the running time of Depth Fi"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-18-9",
+          "ref": "1.18.9",
+          "exam": "GATE CSE 2014 | Set 2 | Question: 14",
+          "text": "Consider the tree arcs of a BFS traversal from a source node W in an unweighted, connected, undirected graph. "
+        }
+      ],
+      "heading_in_tag_map": "discrete-mathematics/graph-theory",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "algorithms/graph-traversal",
+        "votes": 10,
+        "scored": 15,
+        "of_questions": 23,
+        "share": 0.67,
+        "agrees_with_current": false
+      },
+      "current_topic": "discrete-mathematics/graph-theory",
+      "recommended_action": "check-topic",
+      "recommendation_note": "topic came from the bad heading; block votes algorithms/graph-traversal"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "2.34",
+      "reason": "duplicate of the block above",
+      "current_section": "Stop and Wait",
+      "current_subtopic": "stop-and-wait",
+      "alphabetical_window": {
+        "after": "Stop and Wait",
+        "before": "TCP"
+      },
+      "question_count": 19,
+      "topics": [
+        "sliding-window"
+      ],
+      "subjects": [
+        "computer-networks"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-2-34-1",
+          "ref": "2.34.1",
+          "exam": "GATE CSE 2003 | Question: 82, ISRO2009-1",
+          "text": "The subnet mask for a particular network is 255.255.31.0. Which of the following pairs of IP addresses could b"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-10",
+          "ref": "2.34.10",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 38",
+          "text": "In the network 200.10.11.144/27, the fourth octet (in decimal) of the last IP address of the network which can"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-11",
+          "ref": "2.34.11",
+          "exam": "GATE CSE 2019 | Question: 28",
+          "text": "Consider three machines M, N, and P with IP addresses 100.10.5.2, 100.10.5.5, and 100.10.5.6 respectively. The"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-12",
+          "ref": "2.34.12",
+          "exam": "GATE CSE 2020 | Question: 38",
+          "text": "An organization requires a range of IP address to assign one to each of its 1500 computers. The organization h"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-13",
+          "ref": "2.34.13",
+          "exam": "GATE CSE 2022 | Question: 45",
+          "text": "Consider routing table of an organization's router shown below: | Subnet Number | Subnet Mask | Next Hop | 12."
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-15",
+          "ref": "2.34.15",
+          "exam": "GATE CSE 2025 | Set 1 | Question: 30",
+          "text": "A packet with the destination IP address 145.36.109.70 arrives at a router whose routing table is shown. Which"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-16",
+          "ref": "2.34.16",
+          "exam": "GATE IT 2004 | Question: 26",
+          "text": "A subnet has been assigned a subnet mask of 255.255.255.192. What is the maximum number of hosts that can belo"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-17",
+          "ref": "2.34.17",
+          "exam": "GATE IT 2005 | Question: 76",
+          "text": "A company has a class C network address of 204.204.204.0. It wishes to have three subnets, one with 100 hosts "
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-18",
+          "ref": "2.34.18",
+          "exam": "GATE IT 2006 | Question: 63, ISRO2015-57",
+          "text": "A router uses the following routing table: | Destination | Mask | Interface | 144.16.0.0 | 255.255.0.0 | eth0 "
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-19",
+          "ref": "2.34.19",
+          "exam": "GATE IT 2006 | Question: 70",
+          "text": "A subnetted Class B network has the following broadcast address: 144.16.95.255 Its subnet mask"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-20",
+          "ref": "2.34.20",
+          "exam": "GATE IT 2008 | Question: 84",
+          "text": "Host $X$ has IP address 192.168.1.97 and is connected through two routers $R1$ and $R2$ to another host $Y$ wi"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-21",
+          "ref": "2.34.21",
+          "exam": "GATE IT 2008 | Question: 85",
+          "text": "Host $X$ has $IP$ address 192.168.1.97 and is connected through two routers $R1$ and $R2$ to another host $Y$ "
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-3",
+          "ref": "2.34.3",
+          "exam": "GATE CSE 2005 | Question: 27",
+          "text": "An organization has a class $B$ network and wishes to form subnets for 64 departments. The subnet mask would b"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-4",
+          "ref": "2.34.4",
+          "exam": "GATE CSE 2006 | Question: 45",
+          "text": "Two computers C1 and C2 are configured as follows. C1 has IP address 203.197.2.53 and netmask 255.255.128.0. C"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-5",
+          "ref": "2.34.5",
+          "exam": "GATE CSE 2007 | Question: 67, ISRO2016-72",
+          "text": "The address of a class B host is to be split into subnets with a 6-bit subnet number. What is the maximum numb"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-6",
+          "ref": "2.34.6",
+          "exam": "GATE CSE 2008 | Question: 57",
+          "text": "If a class $B$ network on the Internet has a subnet mask of 255.255.248.0, what is the maximum number of hosts"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-7",
+          "ref": "2.34.7",
+          "exam": "GATE CSE 2010 | Question: 47",
+          "text": "Suppose computers A and B have IP addresses 10.105.1.113 and 10.105.1.91 respectively and they both use same n"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-8",
+          "ref": "2.34.8",
+          "exam": "GATE CSE 2012 | Question: 34, ISRO-DEC2017-32",
+          "text": "An Internet Service Provider (ISP) has the following chunk of CIDR-based IP addresses available with it: 245.2"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-34-9",
+          "ref": "2.34.9",
+          "exam": "GATE CSE 2015 | Set 2 | Question: 41",
+          "text": "Consider the following routing table at an IP router: | Network No | Net Mask | Next Hop | 128.96.170.0 | 255."
+        }
+      ],
+      "heading_in_tag_map": "computer-networks/sliding-window",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "computer-networks/ip-addressing",
+        "votes": 11,
+        "scored": 14,
+        "of_questions": 19,
+        "share": 0.79,
+        "agrees_with_current": false
+      },
+      "current_topic": "computer-networks/sliding-window",
+      "recommended_action": "check-topic",
+      "recommendation_note": "topic came from the bad heading; block votes computer-networks/ip-addressing"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "2.27",
+      "reason": "duplicate of the block above",
+      "current_section": "Static Single Assignment",
+      "current_subtopic": "static-single-assignment",
+      "alphabetical_window": {
+        "after": "Static Single Assignment",
+        "before": "Variable Scope"
+      },
+      "question_count": 18,
+      "topics": [
+        "intermediate-code"
+      ],
+      "subjects": [
+        "compiler-design"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-2-27-1",
+          "ref": "2.27.1",
+          "exam": "GATE CSE 1992 | Question: 11a",
+          "text": "Write syntax directed definitions (semantic rules) for the following grammar to add the type of each identifie"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-10",
+          "ref": "2.27.10",
+          "exam": "GATE CSE 2016 | Set 1 | Question: 46",
+          "text": "Consider the following Syntax Directed Translation Scheme (SDTS), with non-terminals $\\{S, A\\}$ and terminals "
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-11",
+          "ref": "2.27.11",
+          "exam": "GATE CSE 2019 | Question: 36",
+          "text": "Consider the following grammar and the semantic actions to support the inherited type declaration attributes. "
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-12",
+          "ref": "2.27.12",
+          "exam": "GATE CSE 2020 | Question: 33",
+          "text": "Consider the productions $A \\rightarrow PQ$ and $A \\rightarrow XY$. Each of the five non-terminals A, P, Q, X,"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-13",
+          "ref": "2.27.13",
+          "exam": "GATE CSE 2021 | Set 1 | Question: 26",
+          "text": "Consider the following grammar (that admits a series of declarations, followed by expressions) and the associa"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-14",
+          "ref": "2.27.14",
+          "exam": "GATE CSE 2022 | Question: 55",
+          "text": "Consider the following grammar along with translation rules. $$\\begin{array}{l} S \\rightarrow S _ {1} \\# T \\qu"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-15",
+          "ref": "2.27.15",
+          "exam": "GATE CSE 2023 | Question: 50",
+          "text": "Consider the syntax directed translation given by the following grammar and semantic rules. Here $N, I, F$ and"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-16",
+          "ref": "2.27.16",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 27",
+          "text": "Consider the following syntax-directed definition (SDD). | S → DHTU | {S. val = D. val + H. val + T. val + U. "
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-17",
+          "ref": "2.27.17",
+          "exam": "GATE CSE 2024 | Set 2 | Question: 19",
+          "text": "Which of the following statements is/are FALSE?"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-18",
+          "ref": "2.27.18",
+          "exam": "GATE CSE 2025 | Set 2 | Question: 12",
+          "text": "Given the following syntax directed translation rules: - Rule 1: $R \\to AB\\{B.i = R.i - 1; A.i = B.i; R.i = A."
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-19",
+          "ref": "2.27.19",
+          "exam": "GATE CSE 2026 | Set 1 | Question: 43",
+          "text": "Consider the following two syntax-directed definitions SDD1 and SDD2 for type declarations. | SDD1 | Grammar ("
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-2",
+          "ref": "2.27.2",
+          "exam": "GATE CSE 1995 | Question: 2.10",
+          "text": "A shift reduce parser carries out the actions specified within braces immediately after reducing with the corr"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-3",
+          "ref": "2.27.3",
+          "exam": "GATE CSE 1996 | Question: 20",
+          "text": "Consider the syntax-directed translation schema (SDTS) shown below: - $E \\rightarrow E + E$ {print \"+\"} - $E \\"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-4",
+          "ref": "2.27.4",
+          "exam": "GATE CSE 1998 | Question: 23",
+          "text": "Let the attribute 'val' give the value of a binary number generated by S in the following grammar: - $S \\to L "
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-6",
+          "ref": "2.27.6",
+          "exam": "GATE CSE 2001 | Question: 17",
+          "text": "The syntax of the repeat-until statement is given by the following grammar $S \\rightarrow$ repeat $S_{1}$ unti"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-7",
+          "ref": "2.27.7",
+          "exam": "GATE CSE 2003 | Question: 18",
+          "text": "In a bottom-up evaluation of a syntax directed definition, inherited attributes can"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-8",
+          "ref": "2.27.8",
+          "exam": "GATE CSE 2003 | Question: 59",
+          "text": "Consider the syntax directed definition shown below. $$\\begin{array}{l} S \\rightarrow \\mathbf {i d}:= E \\quad "
+        },
+        {
+          "id": "mineru-filter1-volume2-2-27-9",
+          "ref": "2.27.9",
+          "exam": "GATE CSE 2004 | Question: 45",
+          "text": "Consider the grammar with the following translation rules and E as the start symbol $$\\begin{array}{l} E \\righ"
+        }
+      ],
+      "heading_in_tag_map": "compiler-design/intermediate-code",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "compiler-design/sdt",
+        "votes": 11,
+        "scored": 15,
+        "of_questions": 18,
+        "share": 0.73,
+        "agrees_with_current": false
+      },
+      "current_topic": "compiler-design/intermediate-code",
+      "recommended_action": "check-topic",
+      "recommendation_note": "topic came from the bad heading; block votes compiler-design/sdt"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "4.13",
+      "reason": "duplicate of the block above",
+      "current_section": "Digital Circuits",
+      "current_subtopic": "digital-circuits",
+      "alphabetical_window": {
+        "after": "Digital Circuits",
+        "before": "Dual Function"
+      },
+      "question_count": 18,
+      "topics": [
+        "sequential"
+      ],
+      "subjects": [
+        "digital-logic"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-4-13-1",
+          "ref": "4.13.1",
+          "exam": "GATE CSE 1987 | Question: 1-III",
+          "text": "The above circuit produces the output sequence: Refer to the figure below."
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-10",
+          "ref": "4.13.10",
+          "exam": "GATE CSE 2015 | Set 2 | Question: 7",
+          "text": "The minimum number of JK flip-flops required to construct a synchronous counter with the count sequence $(0,0,"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-11",
+          "ref": "4.13.11",
+          "exam": "GATE CSE 2016 | Set 1 | Question: 8",
+          "text": "We want to design a synchronous counter that counts the sequence 0 - 1 - 0 - 2 - 0 - 3 and then repeats. The m"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-12",
+          "ref": "4.13.12",
+          "exam": "GATE CSE 2017 | Set 2 | Question: 42",
+          "text": "The next state table of a 2—bit saturating up-counter is given below. | $Q_{1}$ | $Q_{0}$ | $Q_{1}^{+}$ | $Q_{"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-13",
+          "ref": "4.13.13",
+          "exam": "GATE CSE 2021 | Set 1 | Question: 28",
+          "text": "Consider a 3-bit counter, designed using T flip-flops, as shown below: Assuming the initial state of the count"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-14",
+          "ref": "4.13.14",
+          "exam": "GATE CSE 2023 | Question: 33",
+          "text": "Consider a sequential digital circuit consisting of T flip-flops and D flip-flops as shown in the figure. CLKI"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-15",
+          "ref": "4.13.15",
+          "exam": "GATE CSE 2026 | Set 1 | Question: 27",
+          "text": "Consider a 2-bit saturating up/down counter that performs the saturating up count when the input P is 0, and t"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-16",
+          "ref": "4.13.16",
+          "exam": "GATE IT 2005 | Question: 11",
+          "text": "How many pulses are needed to change the contents of a 8-bit up counter from 10101100 to 00100111 (rightmost b"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-17",
+          "ref": "4.13.17",
+          "exam": "GATE IT 2008 | Question: 37",
+          "text": "Consider the following state diagram and its realization by a JK flip flop The combinational circuit generates"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-18",
+          "ref": "4.13.18",
+          "exam": "GATE1992-04-c",
+          "text": "Design a 3-bit counter using D-flip flops such that not more than one flip-flop changes state between any two "
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-2",
+          "ref": "4.13.2",
+          "exam": "GATE CSE 1987 | Question: 10c",
+          "text": "Give a minimal DFA that performs as a mod -3, 1's counter, i.e. outputs a 1 each time the number of 1's in the"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-3",
+          "ref": "4.13.3",
+          "exam": "GATE CSE 1990 | Question: 5-c",
+          "text": "For the synchronous counter shown in Fig.3, write the truth table of $Q_{0}, Q_{1}$, and $Q_{2}$ after each pu"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-4",
+          "ref": "4.13.4",
+          "exam": "GATE CSE 1991 | Question: 5-c",
+          "text": "Find the maximum clock frequency at which the counter in the figure below can be operated. Assume that the pro"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-5",
+          "ref": "4.13.5",
+          "exam": "GATE CSE 1994 | Question: 2-1",
+          "text": "The number of flip-flops required to construct a binary modulo $N$ counter is ____"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-6",
+          "ref": "4.13.6",
+          "exam": "GATE CSE 2002 | Question: 8",
+          "text": "Consider the following circuit. $A = a_{2}a_{1}a_{0}$ and $B = b_{2}b_{1}b_{0}$ are three bit binary numbers i"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-7",
+          "ref": "4.13.7",
+          "exam": "GATE CSE 2011 | Question: 15",
+          "text": "The minimum number of D flip-flops needed to design a mod-258 counter is"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-8",
+          "ref": "4.13.8",
+          "exam": "GATE CSE 2014 | Set 2 | Question: 7",
+          "text": "Let $k = 2^n$. A circuit is built by giving the output of an $n$ -bit binary counter as input to an $n$ -to- $"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-13-9",
+          "ref": "4.13.9",
+          "exam": "GATE CSE 2015 | Set 1 | Question: 20",
+          "text": "Consider a 4-bit Johnson counter with an initial value of 0000. The counting sequence of this counter is"
+        }
+      ],
+      "heading_in_tag_map": "digital-logic/sequential",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "digital-logic/sequential",
+        "votes": 7,
+        "scored": 10,
+        "of_questions": 18,
+        "share": 0.7,
+        "agrees_with_current": true
+      },
+      "current_topic": "digital-logic/sequential",
+      "recommended_action": "keep",
+      "recommendation_note": "heading mapped and the block votes for its own topic"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "4.21",
+      "reason": "duplicate of the block above",
+      "current_section": "IEEE Representation",
+      "current_subtopic": "ieee-representation",
+      "alphabetical_window": {
+        "after": "IEEE Representation",
+        "before": "Little Endian Big Endian"
+      },
+      "question_count": 15,
+      "topics": [
+        "computer-arithmetic"
+      ],
+      "subjects": [
+        "digital-logic"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-4-21-1",
+          "ref": "4.21.1",
+          "exam": "GATE CSE 1987 | Question: 16-a",
+          "text": "A Boolean function f is to be realized only by NOR gates. Its K-map is given below: The realization is"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-10",
+          "ref": "4.21.10",
+          "exam": "GATE CSE 2002 | Question: 1.12",
+          "text": "Minimum sum of product expression for $f(w, x, y, z)$ shown in Karnaugh-map below | yz\\wx | 00 | 01 | 11 | 10 "
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-11",
+          "ref": "4.21.11",
+          "exam": "GATE CSE 2003 | Question: 45",
+          "text": "The literal count of a Boolean expression is the sum of the number of times each literal appears in the expres"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-13",
+          "ref": "4.21.13",
+          "exam": "GATE CSE 2012 | Question: 30",
+          "text": "What is the minimal form of the Karnaugh map shown below? Assume that $X$ denotes a don't care term"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-14",
+          "ref": "4.21.14",
+          "exam": "GATE CSE 2025 | Set 2 | Question: 33",
+          "text": "Given the following Karnaugh Map for a Boolean function $F(w, x, y, z)$: Which one or more of the following Bo"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-15",
+          "ref": "4.21.15",
+          "exam": "GATE IT 2006 | Question: 35",
+          "text": "The boolean function for a combinational circuit with four inputs is represented by the following Karnaugh map"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-16",
+          "ref": "4.21.16",
+          "exam": "GATE IT 2007 | Question: 78",
+          "text": "Consider the following expression $$a \\bar {d} + \\bar {a} \\bar {c} + b \\bar {c} d$$ Which of the following Kar"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-17",
+          "ref": "4.21.17",
+          "exam": "GATE IT 2007 | Question: 79",
+          "text": "Consider the following expression $$a \\bar {d} + \\bar {a} \\bar {c} + b \\bar {c} d$$ Which of the following exp"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-2",
+          "ref": "4.21.2",
+          "exam": "GATE CSE 1988 | Question: 3a-b",
+          "text": "The Karnaugh map of a function of $(A,B,C)$ is shown on the left hand side of the above figure. The reduced fo"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-3",
+          "ref": "4.21.3",
+          "exam": "GATE CSE 1992 | Question: 01-i",
+          "text": "The Boolean function in sum of products form where K-map is given below (figure) is ____"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-4",
+          "ref": "4.21.4",
+          "exam": "GATE CSE 1995 | Question: 15-b",
+          "text": "What is the equivalent minimal Boolean expression (in sum of products form) for the Karnaugh map given below?"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-6",
+          "ref": "4.21.6",
+          "exam": "GATE CSE 1998 | Question: 2.7",
+          "text": "The function represented by the Karnaugh map given below is"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-7",
+          "ref": "4.21.7",
+          "exam": "GATE CSE 1999 | Question: 1.8",
+          "text": "Which of the following functions implements the Karnaugh map shown below?"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-8",
+          "ref": "4.21.8",
+          "exam": "GATE CSE 2000 | Question: 2.11",
+          "text": "Which functions does NOT implement the Karnaugh map given below?"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-21-9",
+          "ref": "4.21.9",
+          "exam": "GATE CSE 2001 | Question: 1.11",
+          "text": "Given the following karnaugh map, which one of the following represents the minimal Sum-Of-Products of the map"
+        }
+      ],
+      "heading_in_tag_map": "digital-logic/computer-arithmetic",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "digital-logic/kmap",
+        "votes": 8,
+        "scored": 11,
+        "of_questions": 15,
+        "share": 0.73,
+        "agrees_with_current": false
+      },
+      "current_topic": "digital-logic/computer-arithmetic",
+      "recommended_action": "check-topic",
+      "recommendation_note": "topic came from the bad heading; block votes digital-logic/kmap"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "4.27",
+      "reason": "duplicate of the block above",
+      "current_section": "Min Sum of Products Form",
+      "current_subtopic": "min-sum-of-products-form",
+      "alphabetical_window": {
+        "after": "Min Sum of Products Form",
+        "before": "Number Representation"
+      },
+      "question_count": 14,
+      "topics": [
+        "kmap"
+      ],
+      "subjects": [
+        "digital-logic"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-4-27-1",
+          "ref": "4.27.1",
+          "exam": "GATE CSE 1990 | Question: 5-b",
+          "text": "Show with the help of a block diagram how the Boolean function: $$f = A B + B C + C A$$ can be realised using "
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-10",
+          "ref": "4.27.10",
+          "exam": "GATE CSE 2023 | Question: 34",
+          "text": "A Boolean digital circuit is composed using two 4-input multiplexers (M1 and M2) and one 2-input multiplexer ("
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-11",
+          "ref": "4.27.11",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 54",
+          "text": "Consider a digital logic circuit consisting of three 2-to-1 multiplexers M1, M2, and M3 as shown below. X1 and"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-12",
+          "ref": "4.27.12",
+          "exam": "GATE IT 2005 | Question: 48",
+          "text": "The circuit shown below implements a 2-input NOR gate using two 2 - 4 MUX (control signal 1 selects the upper "
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-13",
+          "ref": "4.27.13",
+          "exam": "GATE IT 2007 | Question: 8",
+          "text": "The following circuit implements a two-input AND gate using two 2 - 1 multiplexers. What are the values of $X_"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-14",
+          "ref": "4.27.14",
+          "exam": "GATE1992-04-b",
+          "text": "A priority encoder accepts three input signals (A, B and C) and produces a two-bit output $(X_{1}, X_{0})$ cor"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-2",
+          "ref": "4.27.2",
+          "exam": "GATE CSE 1998 | Question: 1.14",
+          "text": "A multiplexer with a 4-bit data select input is a"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-3",
+          "ref": "4.27.3",
+          "exam": "GATE CSE 2001 | Question: 2.11",
+          "text": "Consider the circuit shown below. The output of a 2: 1 MUX is given by the function $(ac' + bc)$. Which of the"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-4",
+          "ref": "4.27.4",
+          "exam": "GATE CSE 2004 | Question: 60",
+          "text": "Consider a multiplexer with X and Y as data inputs and Z the as the control input. Z = 0 selects input X, and "
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-5",
+          "ref": "4.27.5",
+          "exam": "GATE CSE 2007 | Question: 34",
+          "text": "Suppose only one multiplexer and one inverter are allowed to be used to implement any Boolean function of n va"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-6",
+          "ref": "4.27.6",
+          "exam": "GATE CSE 2016 | Set 1 | Question: 30",
+          "text": "Consider the two cascade 2 to 1 multiplexers as shown in the figure. The minimal sum of products form of the o"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-7",
+          "ref": "4.27.7",
+          "exam": "GATE CSE 2020 | Question: 19",
+          "text": "A multiplexer is placed between a group of 32 registers and an accumulator to regulate data movement such that"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-8",
+          "ref": "4.27.8",
+          "exam": "GATE CSE 2021 | Set 2 | Question: 5",
+          "text": "Which one of the following circuits implements the Boolean function given below? $f(x,y,z) = m_0 + m_1 + m_3 +"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-27-9",
+          "ref": "4.27.9",
+          "exam": "GATE CSE 2023 | Question: 11",
+          "text": "The output of a 2-input multiplexer is connected back to one of its inputs as shown in the figure. Match the f"
+        }
+      ],
+      "heading_in_tag_map": "digital-logic/kmap",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "digital-logic/combinational",
+        "votes": 3,
+        "scored": 7,
+        "of_questions": 14,
+        "share": 0.43,
+        "agrees_with_current": false
+      },
+      "current_topic": "digital-logic/kmap",
+      "recommended_action": "review",
+      "recommendation_note": "only 7 of 14 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "7.6",
+      "reason": "duplicate of the block above",
+      "current_section": "Chi Square Distribution",
+      "current_subtopic": "chi-square-distribution",
+      "alphabetical_window": {
+        "after": "Chi Square Distribution",
+        "before": "Continuous Distribution"
+      },
+      "question_count": 14,
+      "topics": [
+        "distributions"
+      ],
+      "subjects": [
+        "engineering-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-7-6-1",
+          "ref": "7.6.1",
+          "exam": "GATE CSE 1994 | Question: 1.4, ISRO2017-2",
+          "text": "Let A and B be any two arbitrary events, then, which one of the following is TRUE?"
+        },
+        {
+          "id": "mineru-vol1-7-6-10",
+          "ref": "7.6.10",
+          "exam": "GATE CSE 2017 | Set 2 | Question: 26",
+          "text": "$P$ and $Q$ are considering to apply for a job. The probability that $P$ applies for the job is $\\frac{1}{4}$,"
+        },
+        {
+          "id": "mineru-vol1-7-6-11",
+          "ref": "7.6.11",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 53",
+          "text": "A bag contains 10 red balls and 15 blue balls. Two balls are drawn randomly without replacement. Given that th"
+        },
+        {
+          "id": "mineru-vol1-7-6-12",
+          "ref": "7.6.12",
+          "exam": "GATE CSE 2026 | Set 2 | Question: 53",
+          "text": "Suppose an unbiased coin is tossed 6 times. Each coin toss is independent of all previous coin tosses. Let $E_"
+        },
+        {
+          "id": "mineru-vol1-7-6-13",
+          "ref": "7.6.13",
+          "exam": "GATE DA 2026 | Question: 47",
+          "text": "A clinic specializes in testing for a disease D. The result of the test can be either positive or negative. A "
+        },
+        {
+          "id": "mineru-vol1-7-6-14",
+          "ref": "7.6.14",
+          "exam": "GATE IT 2006 | Question: 1",
+          "text": "In a certain town, the probability that it will rain in the afternoon is known to be 0.6. Moreover, meteorolog"
+        },
+        {
+          "id": "mineru-vol1-7-6-2",
+          "ref": "7.6.2",
+          "exam": "GATE CSE 1994 | Question: 2.6",
+          "text": "The probability of an event $B$ is $P_{1}$. The probability that events $A$ and $B$ occur together is $P_{2}$ "
+        },
+        {
+          "id": "mineru-vol1-7-6-3",
+          "ref": "7.6.3",
+          "exam": "GATE CSE 2003 | Question: 3",
+          "text": "Let $P(E)$ denote the probability of the event E. Given $P(A) = 1$, $P(B) = \\frac{1}{2}$, the values of $P(A \\"
+        },
+        {
+          "id": "mineru-vol1-7-6-4",
+          "ref": "7.6.4",
+          "exam": "GATE CSE 2005 | Question: 51",
+          "text": "Box P has 2 red balls and 3 blue balls and box Q has 3 red balls and 1 blue ball. A ball is selected as follow"
+        },
+        {
+          "id": "mineru-vol1-7-6-5",
+          "ref": "7.6.5",
+          "exam": "GATE CSE 2008 | Question: 27",
+          "text": "Aishwarya studies either computer science or mathematics everyday. If she studies computer science on a day, t"
+        },
+        {
+          "id": "mineru-vol1-7-6-6",
+          "ref": "7.6.6",
+          "exam": "GATE CSE 2009 | Question: 21",
+          "text": "An unbalanced dice (with 6 faces, numbered from 1 to 6) is thrown. The probability that the face value is odd "
+        },
+        {
+          "id": "mineru-vol1-7-6-7",
+          "ref": "7.6.7",
+          "exam": "GATE CSE 2011 | Question: 3",
+          "text": "If two fair coins are flipped and at least one of the outcomes is known to be a head, what is the probability "
+        },
+        {
+          "id": "mineru-vol1-7-6-8",
+          "ref": "7.6.8",
+          "exam": "GATE CSE 2012 | Question: 33",
+          "text": "Suppose a fair six-sided die is rolled once. If the value on the die is 1, 2, or 3, the die is rolled a second"
+        },
+        {
+          "id": "mineru-vol1-7-6-9",
+          "ref": "7.6.9",
+          "exam": "GATE CSE 2016 | Set 2 | Question: 05",
+          "text": "Suppose that a shop has an equal number of LED bulbs of two different types. The probability of an LED bulb la"
+        }
+      ],
+      "heading_in_tag_map": "engineering-mathematics/distributions",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "engineering-mathematics/probability",
+        "votes": 12,
+        "scored": 12,
+        "of_questions": 14,
+        "share": 1.0,
+        "agrees_with_current": false
+      },
+      "current_topic": "engineering-mathematics/distributions",
+      "recommended_action": "check-topic",
+      "recommendation_note": "topic came from the bad heading; block votes engineering-mathematics/probability"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "5.2",
+      "reason": "duplicate of the block above",
+      "current_section": "Output",
+      "current_subtopic": "output",
+      "alphabetical_window": {
+        "after": "Output",
+        "before": "Functions"
+      },
+      "question_count": 13,
+      "topics": [
+        "c-basics"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-5-2-1",
+          "ref": "5.2.1",
+          "exam": "GATE CSE 2002 | Question: 2.8",
+          "text": "Consider the following declaration of a two-dimensional array in C: char a[100][100]; Assuming that the main m"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-10",
+          "ref": "5.2.10",
+          "exam": "GATE IT 2004 | Question: 58",
+          "text": "Consider the following C program which is supposed to compute the transpose of a given $4 \\times 4$ matrix M. "
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-11",
+          "ref": "5.2.11",
+          "exam": "GATE IT 2008 | Question: 49",
+          "text": "What is the output printed by the following C code?"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-12",
+          "ref": "5.2.12",
+          "exam": "GATE IT 2008 | Question: 51",
+          "text": "Consider the C program given below. What does it print?"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-13",
+          "ref": "5.2.13",
+          "exam": "GATE IT 2008 | Question: 52",
+          "text": "C program is given below: What should be the contents of the array b at the end of the program?"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-2",
+          "ref": "5.2.2",
+          "exam": "GATE CSE 2011 | Question: 22",
+          "text": "What does the following fragment of C program print?"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-3",
+          "ref": "5.2.3",
+          "exam": "GATE CSE 2015 | Set 1 | Question: 35",
+          "text": "What is the output of the following C code? Assume that the address of $x$ is 2000 (in decimal) and an integer"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-4",
+          "ref": "5.2.4",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 30",
+          "text": "Consider the following two C code segments. $Y$ and $X$ are one and two dimensional arrays of size $n$ and $n "
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-5",
+          "ref": "5.2.5",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 7",
+          "text": "Consider the following C program segment. # include <stdio.h> What will be printed by the program?"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-6",
+          "ref": "5.2.6",
+          "exam": "GATE CSE 2019 | Question: 24",
+          "text": "Consider the following C program: The number that will be displayed on execution of the program is ____"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-7",
+          "ref": "5.2.7",
+          "exam": "GATE CSE 2020 | Question: 22",
+          "text": "Consider the following C program. The output of the program is ____."
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-8",
+          "ref": "5.2.8",
+          "exam": "GATE CSE 2021 | Set 2 | Question: 10",
+          "text": "Consider the following ANSI C program. What is the output of the above program?"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-2-9",
+          "ref": "5.2.9",
+          "exam": "GATE CSE 2022 | Question: 33",
+          "text": "What is printed by the following ANSI C program? 1 2 3"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/c-basics",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 13,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/c-basics",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 13 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "2.4",
+      "reason": "duplicate of the block above",
+      "current_section": "Degree of Graph",
+      "current_subtopic": "degree-of-graph",
+      "alphabetical_window": {
+        "after": "Degree of Graph",
+        "before": "Graph Connectivity"
+      },
+      "question_count": 11,
+      "topics": [
+        "graph-theory"
+      ],
+      "subjects": [
+        "discrete-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-2-4-1",
+          "ref": "2.4.1",
+          "exam": "GATE CSE 2002 | Question: 1.4",
+          "text": "The minimum number of colours required to colour the vertices of a cycle with $n$ nodes in such a way that no "
+        },
+        {
+          "id": "mineru-vol1-2-4-10",
+          "ref": "2.4.10",
+          "exam": "GATE IT 2006 | Question: 25",
+          "text": "Consider the undirected graph $G$ defined as follows. The vertices of $G$ are bit strings of length $n$. We ha"
+        },
+        {
+          "id": "mineru-vol1-2-4-11",
+          "ref": "2.4.11",
+          "exam": "GATE IT 2008 | Question: 3",
+          "text": "What is the chromatic number of the following graph?"
+        },
+        {
+          "id": "mineru-vol1-2-4-2",
+          "ref": "2.4.2",
+          "exam": "GATE CSE 2004 | Question: 77",
+          "text": "The minimum number of colours required to colour the following graph, such that no two adjacent vertices are a"
+        },
+        {
+          "id": "mineru-vol1-2-4-3",
+          "ref": "2.4.3",
+          "exam": "GATE CSE 2009 | Question: 2",
+          "text": "What is the chromatic number of an n vertex simple connected graph which does not contain any odd length cycle"
+        },
+        {
+          "id": "mineru-vol1-2-4-4",
+          "ref": "2.4.4",
+          "exam": "GATE CSE 2016 | Set 2 | Question: 03",
+          "text": "The minimum number of colours that is sufficient to vertex-colour any planar graph is ____."
+        },
+        {
+          "id": "mineru-vol1-2-4-5",
+          "ref": "2.4.5",
+          "exam": "GATE CSE 2018 | Question: 18",
+          "text": "The chromatic number of the following graph is ____"
+        },
+        {
+          "id": "mineru-vol1-2-4-6",
+          "ref": "2.4.6",
+          "exam": "GATE CSE 2020 | Question: 52",
+          "text": "Graph $G$ is obtained by adding vertex $s$ to $K_{3,4}$ and making $s$ adjacent to every vertex of $K_{3,4}$. "
+        },
+        {
+          "id": "mineru-vol1-2-4-7",
+          "ref": "2.4.7",
+          "exam": "GATE CSE 2023 | Question: 45",
+          "text": "Let $G$ be a simple, finite, undirected graph with vertex set $\\{v_1, \\ldots, v_n\\}$. Let $\\Delta(G)$ denote t"
+        },
+        {
+          "id": "mineru-vol1-2-4-8",
+          "ref": "2.4.8",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 41",
+          "text": "The chromatic number of a graph is the minimum number of colours used in a proper colouring of the graph. Let "
+        },
+        {
+          "id": "mineru-vol1-2-4-9",
+          "ref": "2.4.9",
+          "exam": "GATE CSE 2024 | Set 2 | Question: 50",
+          "text": "The chromatic number of a graph is the minimum number of colours used in a proper colouring of the graph. The "
+        }
+      ],
+      "heading_in_tag_map": "discrete-mathematics/graph-theory",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "discrete-mathematics/graph-theory",
+        "votes": 8,
+        "scored": 8,
+        "of_questions": 11,
+        "share": 1.0,
+        "agrees_with_current": true
+      },
+      "current_topic": "discrete-mathematics/graph-theory",
+      "recommended_action": "keep",
+      "recommendation_note": "heading mapped and the block votes for its own topic"
+    },
+    {
+      "volume": "vol1",
+      "block": "5.4",
+      "reason": "duplicate of the block above",
+      "current_section": "Differentiation",
+      "current_subtopic": "differentiation",
+      "alphabetical_window": {
+        "after": "Differentiation",
+        "before": "Limits"
+      },
+      "question_count": 11,
+      "topics": [
+        "calculus-limits"
+      ],
+      "subjects": [
+        "engineering-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-5-4-1",
+          "ref": "5.4.1",
+          "exam": "GATE CSE 1993 | Question: 02.6",
+          "text": "The value of the double integral $\\int_{0}^{1}\\int_{0}^{\\frac{1}{x}}\\frac{x}{1+y^{2}}dxdy$ is ____."
+        },
+        {
+          "id": "mineru-vol1-5-4-10",
+          "ref": "5.4.10",
+          "exam": "GATE CSE 2018 | Question: 16",
+          "text": "The value of $\\int_0^{\\pi /4}x\\cos (x^2)dx$ correct to three decimal places (assuming that $\\pi = 3.14$ ) is _"
+        },
+        {
+          "id": "mineru-vol1-5-4-11",
+          "ref": "5.4.11",
+          "exam": "GATE IT 2005 | Question: 35",
+          "text": "What is the value of $\\int_0^{2\\pi}(x - \\pi)^2 (\\sin x)dx$"
+        },
+        {
+          "id": "mineru-vol1-5-4-2",
+          "ref": "5.4.2",
+          "exam": "GATE CSE 1998 | Question: 8",
+          "text": "a. Find the points of local maxima and minima, if any, of the following function defined in $0 \\leq x \\leq 6$."
+        },
+        {
+          "id": "mineru-vol1-5-4-3",
+          "ref": "5.4.3",
+          "exam": "GATE CSE 2000 | Question: 2.3",
+          "text": "Let $S = \\sum_{i=3}^{100} i \\log_2 i$, and $T = \\int_2^{100} x \\log_2 x dx$. Which of the following statements"
+        },
+        {
+          "id": "mineru-vol1-5-4-4",
+          "ref": "5.4.4",
+          "exam": "GATE CSE 2009 | Question: 25",
+          "text": "$$\\int_ {0} ^ {\\pi / 4} (1 - \\tan x) / (1 + \\tan x) d x$$"
+        },
+        {
+          "id": "mineru-vol1-5-4-5",
+          "ref": "5.4.5",
+          "exam": "GATE CSE 2011 | Question: 31",
+          "text": "Given $i = \\sqrt{-1}$, what will be the evaluation of the definite integral $\\int_{0}^{\\pi/2} \\frac{\\cos x + i"
+        },
+        {
+          "id": "mineru-vol1-5-4-6",
+          "ref": "5.4.6",
+          "exam": "GATE CSE 2014 | Set 3 | Question: 47",
+          "text": "The value of the integral given below is $$\\int_ {0} ^ {\\pi} x ^ {2} \\cos x d x$$"
+        },
+        {
+          "id": "mineru-vol1-5-4-7",
+          "ref": "5.4.7",
+          "exam": "GATE CSE 2014 | Set 3 | Question: 6",
+          "text": "If $\\int_{0}^{2\\pi}|x\\sin x|dx = k\\pi$, then the value of $k$ is equal to ____."
+        },
+        {
+          "id": "mineru-vol1-5-4-8",
+          "ref": "5.4.8",
+          "exam": "GATE CSE 2015 | Set 1 | Question: 44",
+          "text": "Compute the value of: $$\\int_{\\frac{1}{\\pi}}^{\\frac{2}{\\pi}}\\frac{\\cos(1 / x)}{x^2} dx$$"
+        },
+        {
+          "id": "mineru-vol1-5-4-9",
+          "ref": "5.4.9",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 45",
+          "text": "If for non-zero $x$, $af(x) + bf(\\frac{1}{x}) = \\frac{1}{x} - 25$ where $a \\neq b$ then $\\int_{1}^{2} f(x) dx$"
+        }
+      ],
+      "heading_in_tag_map": "engineering-mathematics/calculus-limits",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 3,
+        "of_questions": 11,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "engineering-mathematics/calculus-limits",
+      "recommended_action": "review",
+      "recommendation_note": "only 3 of 11 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "4.1",
+      "reason": "breaks the chapter's alphabetical order",
+      "current_section": "Two Phase Locking Protocol",
+      "current_subtopic": "two-phase-locking-protocol",
+      "alphabetical_window": {
+        "after": "",
+        "before": "Array Multiplier"
+      },
+      "question_count": 9,
+      "topics": [
+        "computer-arithmetic"
+      ],
+      "subjects": [
+        "digital-logic"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-4-1-1",
+          "ref": "4.1.1",
+          "exam": "GATE CSE 1988 | Question: 4ii",
+          "text": "Using binary full adders and other logic gates (if necessary), design an adder for adding 4-bit number (includ"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-1-2",
+          "ref": "4.1.2",
+          "exam": "GATE CSE 1990 | Question: 1-i",
+          "text": "Fill in the blanks: In the two bit full-adder/subtractor unit shown in below figure, when the switch is in pos"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-1-3",
+          "ref": "4.1.3",
+          "exam": "GATE CSE 1997 | Question: 2.5",
+          "text": "An N-bit carry lookahead adder, where $N$ is a multiple of 4, employs ICs 74181 (4 bit ALU) and 74182 (4 bit c"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-1-4",
+          "ref": "4.1.4",
+          "exam": "GATE CSE 1999 | Question: 2.16",
+          "text": "The number of full and half-adders required to add 16-bit numbers is"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-1-5",
+          "ref": "4.1.5",
+          "exam": "GATE CSE 2003 | Question: 46",
+          "text": "Consider the ALU shown below. If the operands are in $2's$ complement representation, which of the following o"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-1-6",
+          "ref": "4.1.6",
+          "exam": "GATE CSE 2004 | Question: 62",
+          "text": "A 4-bit carry look ahead adder, which adds two 4-bit numbers, is designed using AND, OR, NOT, NAND, NOR gates "
+        },
+        {
+          "id": "mineru-filter1-volume3-4-1-7",
+          "ref": "4.1.7",
+          "exam": "GATE CSE 2015 | Set 2 | Question: 48",
+          "text": "A half adder is implemented with XOR and AND gates. A full adder is implemented with two half adders and one O"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-1-8",
+          "ref": "4.1.8",
+          "exam": "GATE CSE 2016 | Set 1 | Question: 33",
+          "text": "Consider a carry look ahead adder for adding two n-bit integers, built using gates of fan-in at most two. The "
+        },
+        {
+          "id": "mineru-filter1-volume3-4-1-9",
+          "ref": "4.1.9",
+          "exam": "GATE CSE 2016 | Set 2 | Question: 07",
+          "text": "Consider an eight-bit ripple-carry adder for computing the sum of $A$ and $B$, where $A$ and $B$ are integers "
+        }
+      ],
+      "heading_in_tag_map": null,
+      "topic_from_bad_heading": false,
+      "first_block_in_chapter": true,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 3,
+        "of_questions": 9,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "digital-logic/computer-arithmetic",
+      "recommended_action": "clear-subtopic",
+      "recommendation_note": "heading unmapped, so the topic came from a fallback"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "4.6",
+      "reason": "duplicate of the block above",
+      "current_section": "Booths Algorithm",
+      "current_subtopic": "booths-algorithm",
+      "alphabetical_window": {
+        "after": "Booths Algorithm",
+        "before": "Carry Generator"
+      },
+      "question_count": 9,
+      "topics": [
+        "computer-arithmetic"
+      ],
+      "subjects": [
+        "digital-logic"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-4-6-10",
+          "ref": "4.6.10",
+          "exam": "GATE CSE 2024 | Set 2 | Question: 40",
+          "text": "Consider 4-variable functions f1, f2, f3, f4 expressed in sum-of-minterms form as given below. $$f 1 = \\sum (0"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-6-2",
+          "ref": "4.6.2",
+          "exam": "GATE CSE 2002 | Question: 2-1",
+          "text": "Consider the following logic circuit whose inputs are functions $f_{1}$, $f_{2}$, $f_{3}$ and output is f Give"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-6-3",
+          "ref": "4.6.3",
+          "exam": "GATE CSE 2008 | Question: 8",
+          "text": "Given $f_{1}, f_{3}$ and $f$ in canonical sum of products form (in decimal) for the circuit $$f _ {1} = \\Sigma"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-6-4",
+          "ref": "4.6.4",
+          "exam": "GATE CSE 2010 | Question: 6",
+          "text": "The minterm expansion of $f(P, Q, R) = PQ + Q\\bar{R} + P\\bar{R}$ is"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-6-5",
+          "ref": "4.6.5",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 43",
+          "text": "The total number of prime implicants of the function $f(w, x, y, z) = \\sum (0, 2, 4, 5, 6, 10)$ is ____"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-6-6",
+          "ref": "4.6.6",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 44",
+          "text": "Given the function $F = P' + QR$, where $F$ is a function in three Boolean variables $P, Q$ and $R$ and $P' = "
+        },
+        {
+          "id": "mineru-filter1-volume3-4-6-7",
+          "ref": "4.6.7",
+          "exam": "GATE CSE 2019 | Question: 30",
+          "text": "Consider three 4-variable functions $f_{1}$, $f_{2}$, and $f_{3}$, which are expressed in sum-of-minterms as $"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-6-8",
+          "ref": "4.6.8",
+          "exam": "GATE CSE 2019 | Question: 50",
+          "text": "What is the minimum number of 2-input NOR gates required to implement a 4-variable function expressed in sum-o"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-6-9",
+          "ref": "4.6.9",
+          "exam": "GATE CSE 2020 | Question: 28",
+          "text": "Consider the Boolean function $z(a, b, c)$. Which one of the following minterm lists represents the circuit gi"
+        }
+      ],
+      "heading_in_tag_map": "digital-logic/computer-arithmetic",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 3,
+        "of_questions": 9,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "digital-logic/computer-arithmetic",
+      "recommended_action": "review",
+      "recommendation_note": "only 3 of 9 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "5.7",
+      "reason": "duplicate of the block above",
+      "current_section": "Loop Invariants",
+      "current_subtopic": "loop-invariants",
+      "alphabetical_window": {
+        "after": "Loop Invariants",
+        "before": "Parameter Passing"
+      },
+      "question_count": 8,
+      "topics": [
+        "asymptotics"
+      ],
+      "subjects": [
+        "algorithms"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-5-7-1",
+          "ref": "5.7.1",
+          "exam": "GATE CSE 2022 | Question: 34",
+          "text": "What is printed by the following ANSI C program? ASCII encoding for relevant characters is given below | A | B"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-7-2",
+          "ref": "5.7.2",
+          "exam": "GATE CSE 2023 | Question: 25",
+          "text": "The integer value printed by the ANSI-C program given below is ____"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-7-3",
+          "ref": "5.7.3",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 8",
+          "text": "Consider the following C program: Which one of the following statements is CORRECT?"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-7-4",
+          "ref": "5.7.4",
+          "exam": "GATE CSE 2024 | Set 1 | Question: 9",
+          "text": "Consider the following C program: Assume that the input to the program from the command line is 1234 followed "
+        },
+        {
+          "id": "mineru-filter1-volume2-5-7-5",
+          "ref": "5.7.5",
+          "exam": "GATE CSE 2025 | Set 1 | Question: 53",
+          "text": "Consider the following C program: The value printed by the given C program is ____. (Answer in integer)"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-7-6",
+          "ref": "5.7.6",
+          "exam": "GATE CSE 2025 | Set 2 | Question: 23",
+          "text": "The output of the given C code segment is ____. (Answer in integer)"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-7-7",
+          "ref": "5.7.7",
+          "exam": "GATE CSE 2025 | Set 2 | Question: 53",
+          "text": "Consider the following C program: The output of the given C program is ____. (Answer in integer)"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-7-8",
+          "ref": "5.7.8",
+          "exam": "GATE CSE 2026 | Set 1 | Question: 24",
+          "text": "Consider the following program in C: The output of the program is ____. (answer in integer) Note: Assume that "
+        }
+      ],
+      "heading_in_tag_map": "algorithms/asymptotics",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 8,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "algorithms/asymptotics",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 8 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "4.1",
+      "reason": "breaks the chapter's alphabetical order",
+      "current_section": "Propositional Logic",
+      "current_subtopic": "propositional-logic",
+      "alphabetical_window": {
+        "after": "",
+        "before": "Countable Uncountable Set"
+      },
+      "question_count": 8,
+      "topics": [
+        "propositional-logic"
+      ],
+      "subjects": [
+        "discrete-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-4-1-1",
+          "ref": "4.1.1",
+          "exam": "GATE CSE 1989 | Question: 1-v",
+          "text": "The number of possible commutative binary operations that can be defined on a set of $n$ elements (for a given"
+        },
+        {
+          "id": "mineru-vol1-4-1-2",
+          "ref": "4.1.2",
+          "exam": "GATE CSE 1994 | Question: 2.2",
+          "text": "On the set N of non-negative integers, the binary operation ____ is associative and non-commutative."
+        },
+        {
+          "id": "mineru-vol1-4-1-3",
+          "ref": "4.1.3",
+          "exam": "GATE CSE 2003 | Question: 38",
+          "text": "Consider the set $\\{a, b, c\\}$ with binary operators + and \\* defined as follows: | + | a | b | c | a | b | a "
+        },
+        {
+          "id": "mineru-vol1-4-1-4",
+          "ref": "4.1.4",
+          "exam": "GATE CSE 2006 | Question: 28",
+          "text": "A logical binary relation $\\odot$, is defined as follows: | A | B | A ⊙ B | True | True | True | True | False "
+        },
+        {
+          "id": "mineru-vol1-4-1-5",
+          "ref": "4.1.5",
+          "exam": "GATE CSE 2013 | Question: 1",
+          "text": "A binary operation $\\oplus$ on a set of integers is defined as $x \\oplus y = x^2 + y^2$. Which one of the foll"
+        },
+        {
+          "id": "mineru-vol1-4-1-6",
+          "ref": "4.1.6",
+          "exam": "GATE CSE 2015 | Set 1 | Question: 28",
+          "text": "The binary operator ≠ is defined by the following truth table. | p | q | p ≠ q | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 0"
+        },
+        {
+          "id": "mineru-vol1-4-1-7",
+          "ref": "4.1.7",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 2",
+          "text": "Let # be the binary operator defined as $X\\# Y = X' + Y'$ where $X$ and $Y$ are Boolean variables. Consider th"
+        },
+        {
+          "id": "mineru-vol1-4-1-8",
+          "ref": "4.1.8",
+          "exam": "GATE IT 2006 | Question: 2",
+          "text": "For the set $N$ of natural numbers and a binary operation $f: N \\times N \\to N$, an element $z \\in N$ is calle"
+        }
+      ],
+      "heading_in_tag_map": "discrete-mathematics/propositional-logic",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": true,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 8,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "discrete-mathematics/propositional-logic",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 8 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "9.38",
+      "reason": "duplicate of the block above",
+      "current_section": "Numerical Computation",
+      "current_subtopic": "numerical-computation",
+      "alphabetical_window": {
+        "after": "Numerical Computation",
+        "before": "Permutation and Combination"
+      },
+      "question_count": 8,
+      "topics": [
+        "quantitative"
+      ],
+      "subjects": [
+        "general-aptitude"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-9-38-1",
+          "ref": "9.38.1",
+          "exam": "GATE CSE 2014 | Set 1 | GA | Question: 8",
+          "text": "Round-trip tickets to a tourist destination are eligible for a discount of 10% on the total fare. In addition,"
+        },
+        {
+          "id": "mineru-vol1-9-38-2",
+          "ref": "9.38.2",
+          "exam": "GATE CSE 2014 | Set 3 | GA | Question: 8",
+          "text": "The Gross Domestic Product (GDP) in Rupees grew at 7% during 2012 – 2013. For international comparison, the GD"
+        },
+        {
+          "id": "mineru-vol1-9-38-3",
+          "ref": "9.38.3",
+          "exam": "GATE CSE 2024 | Set 1 | GA | Question: 4",
+          "text": "The number of coins of ₹1, ₹5, and ₹10 denominations that a person has are in the ratio 5: 3: 13. Of the total"
+        },
+        {
+          "id": "mineru-vol1-9-38-4",
+          "ref": "9.38.4",
+          "exam": "GATE2011 AG: GA-4",
+          "text": "There are two candidates $P$ and $Q$ in an election. During the campaign, $40\\%$ of the voters promised to vot"
+        },
+        {
+          "id": "mineru-vol1-9-38-5",
+          "ref": "9.38.5",
+          "exam": "GATE2012 AE: GA-7",
+          "text": "The total runs scored by four cricketers $P, Q, R$ and $S$ in years 2009 and 2010 are given in the following t"
+        },
+        {
+          "id": "mineru-vol1-9-38-6",
+          "ref": "9.38.6",
+          "exam": "GATE2012 CY: GA-8",
+          "text": "The data given in the following table summarizes the monthly budget of an average household. | Category | Amou"
+        },
+        {
+          "id": "mineru-vol1-9-38-7",
+          "ref": "9.38.7",
+          "exam": "GATE2013 EE: GA-2",
+          "text": "In the summer of 2012, in New Delhi, the mean temperature of Monday to Wednesday was $41^{\\circ}C$ and of Tues"
+        },
+        {
+          "id": "mineru-vol1-9-38-8",
+          "ref": "9.38.8",
+          "exam": "GATE2014 AE: GA-9",
+          "text": "One percent of the people of country X are taller than 6 ft. Two percent of the people of country Y are taller"
+        }
+      ],
+      "heading_in_tag_map": null,
+      "topic_from_bad_heading": false,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 8,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "general-aptitude/quantitative",
+      "recommended_action": "clear-subtopic",
+      "recommendation_note": "heading unmapped, so the topic came from a fallback"
+    },
+    {
+      "volume": "vol1",
+      "block": "11.1",
+      "reason": "breaks the chapter's alphabetical order",
+      "current_section": "Patterns In Two Dimensions",
+      "current_subtopic": "patterns-in-two-dimensions",
+      "alphabetical_window": {
+        "after": "",
+        "before": "Articles"
+      },
+      "question_count": 7,
+      "topics": [
+        "verbal"
+      ],
+      "subjects": [
+        "general-aptitude"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-11-1-1",
+          "ref": "11.1.1",
+          "exam": "GATE CSE 2011 | Question: 60",
+          "text": "Choose the word from the options given below that is most nearly opposite in the meaning to the given word Ama"
+        },
+        {
+          "id": "mineru-vol1-11-1-2",
+          "ref": "11.1.2",
+          "exam": "GATE CSE 2014 | Set 3 | GA | Question: 3",
+          "text": "Choose the word that is opposite in meaning to the word “coherent”."
+        },
+        {
+          "id": "mineru-vol1-11-1-3",
+          "ref": "11.1.3",
+          "exam": "GATE CSE 2026 | Set 1 | GA | Question: 1",
+          "text": "The antonym of the word protagonist is ____."
+        },
+        {
+          "id": "mineru-vol1-11-1-4",
+          "ref": "11.1.4",
+          "exam": "GATE DA 2026 | GA | Question: 1",
+          "text": "Verbosity: Brevity:: Insolence: ____ Choose the word that best fills the blank."
+        },
+        {
+          "id": "mineru-vol1-11-1-5",
+          "ref": "11.1.5",
+          "exam": "GATE2011 AG: GA-2",
+          "text": "Choose the word from the questions given below that is most nearly opposite in meaning to the given word: Freq"
+        },
+        {
+          "id": "mineru-vol1-11-1-6",
+          "ref": "11.1.6",
+          "exam": "GATE2011 GG: GA-2",
+          "text": "Choose the word from the options given below that is most nearly opposite in meaning to the given word: Polemi"
+        },
+        {
+          "id": "mineru-vol1-11-1-7",
+          "ref": "11.1.7",
+          "exam": "GATE2011 MN: GA-56",
+          "text": "Choose the word from the options given below that is most nearly opposite in meaning to the given word: Defere"
+        }
+      ],
+      "heading_in_tag_map": null,
+      "topic_from_bad_heading": false,
+      "first_block_in_chapter": true,
+      "block_vote": {
+        "modal": "general-aptitude/verbal",
+        "votes": 5,
+        "scored": 5,
+        "of_questions": 7,
+        "share": 1.0,
+        "agrees_with_current": true
+      },
+      "current_topic": "general-aptitude/verbal",
+      "recommended_action": "clear-subtopic",
+      "recommendation_note": "heading unmapped, so the topic came from a fallback"
+    },
+    {
+      "volume": "vol1",
+      "block": "9.55",
+      "reason": "duplicate of the block above",
+      "current_section": "Tables",
+      "current_subtopic": "tables",
+      "alphabetical_window": {
+        "after": "Tables",
+        "before": "Triangles"
+      },
+      "question_count": 7,
+      "topics": [
+        "analytical"
+      ],
+      "subjects": [
+        "general-aptitude"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-9-55-1",
+          "ref": "9.55.1",
+          "exam": "GATE CSE 2014 | Set 1 | GA | Question: 9",
+          "text": "In a survey, 300 respondents were asked whether they own a vehicle or not. If yes, they were further asked to "
+        },
+        {
+          "id": "mineru-vol1-9-55-2",
+          "ref": "9.55.2",
+          "exam": "GATE CSE 2014 | Set 3 | GA | Question: 5",
+          "text": "The table below has question-wise data on the performance of students in an examination. The marks for each qu"
+        },
+        {
+          "id": "mineru-vol1-9-55-3",
+          "ref": "9.55.3",
+          "exam": "GATE CSE 2015 | Set 1 | GA | Question: 6",
+          "text": "The number of students in a class who have answered correctly, wrongly, or not attempted each question in an e"
+        },
+        {
+          "id": "mineru-vol1-9-55-4",
+          "ref": "9.55.4",
+          "exam": "GATE CSE 2016 | Set 1 | GA | Question: 06",
+          "text": "A shaving set company sells 4 different types of razors- Elegance, Smooth, Soft and Executive. Elegance sells "
+        },
+        {
+          "id": "mineru-vol1-9-55-5",
+          "ref": "9.55.5",
+          "exam": "GATE2011 MN: GA-64",
+          "text": "Four archers P, Q, R, and S try to hit a bull's eye during a tournament consisting of seven rounds. As illustr"
+        },
+        {
+          "id": "mineru-vol1-9-55-6",
+          "ref": "9.55.6",
+          "exam": "GATE2013 AE: GA-7",
+          "text": "Following table gives data on tourist from different countries visiting India in the year 2011 | Country | Num"
+        },
+        {
+          "id": "mineru-vol1-9-55-7",
+          "ref": "9.55.7",
+          "exam": "GATE2013 CE: GA-8",
+          "text": "Following table provides figures(in rupees) on annual expenditure of a firm for two years -2010 and 2011. | Ca"
+        }
+      ],
+      "heading_in_tag_map": "general-aptitude/analytical",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 7,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "general-aptitude/analytical",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 7 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "1.4",
+      "reason": "duplicate of the block above",
+      "current_section": "Counting",
+      "current_subtopic": "counting",
+      "alphabetical_window": {
+        "after": "Counting",
+        "before": "Modular Arithmetic"
+      },
+      "question_count": 6,
+      "topics": [
+        "counting"
+      ],
+      "subjects": [
+        "discrete-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-1-4-1",
+          "ref": "1.4.1",
+          "exam": "GATE CSE 1987 | Question: 10b",
+          "text": "What is the generating function $G(z)$ for the sequence of Fibonacci numbers?"
+        },
+        {
+          "id": "mineru-vol1-1-4-2",
+          "ref": "1.4.2",
+          "exam": "GATE CSE 2005 | Question: 50",
+          "text": "Let $G(x) = \\frac{1}{(1 - x)^2} = \\sum_{i=0}^{\\infty} g(i)x^i$, where $|x| < 1$. What is $g(i)$?"
+        },
+        {
+          "id": "mineru-vol1-1-4-3",
+          "ref": "1.4.3",
+          "exam": "GATE CSE 2016 | Set 1 | Question: 26",
+          "text": "The coefficient of $x^{12}$ in $(x^{3} + x^{4} + x^{5} + x^{6} + \\ldots)^{3}$ is ____."
+        },
+        {
+          "id": "mineru-vol1-1-4-4",
+          "ref": "1.4.4",
+          "exam": "GATE CSE 2017 | Set 2 | Question: 47",
+          "text": "If the ordinary generating function of a sequence $\\{a_n\\}_{n=0}^{\\infty}$ is $\\frac{1+z}{(1-z)^3}$, then $a_3"
+        },
+        {
+          "id": "mineru-vol1-1-4-5",
+          "ref": "1.4.5",
+          "exam": "GATE CSE 2018 | Question: 1",
+          "text": "Which one of the following is a closed form expression for the generating function of the sequence $\\{a_{n}\\}$"
+        },
+        {
+          "id": "mineru-vol1-1-4-6",
+          "ref": "1.4.6",
+          "exam": "GATE CSE 2022 | Question: 26",
+          "text": "Which one of the following is the closed form for the generating function of the sequence $\\{a_n\\}_{n\\geq 0}$ "
+        }
+      ],
+      "heading_in_tag_map": "discrete-mathematics/counting",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "discrete-mathematics/generating-functions",
+        "votes": 4,
+        "scored": 4,
+        "of_questions": 6,
+        "share": 1.0,
+        "agrees_with_current": false
+      },
+      "current_topic": "discrete-mathematics/counting",
+      "recommended_action": "check-topic",
+      "recommendation_note": "topic came from the bad heading; block votes discrete-mathematics/generating-functions"
+    },
+    {
+      "volume": "vol1",
+      "block": "6.14",
+      "reason": "duplicate of the block above",
+      "current_section": "System of Equations",
+      "current_subtopic": "system-of-equations",
+      "alphabetical_window": {
+        "after": "System of Equations",
+        "before": ""
+      },
+      "question_count": 6,
+      "topics": [
+        "linear-systems"
+      ],
+      "subjects": [
+        "engineering-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-6-14-1",
+          "ref": "6.14.1",
+          "exam": "GATE CSE 1995 | Question: 2.13",
+          "text": "A unit vector perpendicular to both the vectors $a = 2i - 3j + k$ and $b = i + j - 2k$ is:"
+        },
+        {
+          "id": "mineru-vol1-6-14-2",
+          "ref": "6.14.2",
+          "exam": "GATE CSE 2007 | Question: 27",
+          "text": "Consider the set of (column) vectors defined by $$X = \\left\\{x \\in R ^ {3} \\mid x _ {1} + x _ {2} + x _ {3} = "
+        },
+        {
+          "id": "mineru-vol1-6-14-3",
+          "ref": "6.14.3",
+          "exam": "GATE CSE 2014 | Set 3 | Question: 5",
+          "text": "If $V_{1}$ and $V_{2}$ are 4-dimensional subspaces of a 6-dimensional vector space $V$, then the smallest poss"
+        },
+        {
+          "id": "mineru-vol1-6-14-4",
+          "ref": "6.14.4",
+          "exam": "GATE CSE 2017 | Set 1 | Question: 30",
+          "text": "Let $u$ and $v$ be two vectors in $\\mathbf{R}^2$ whose Euclidean norms satisfy $\\| u \\| = 2 \\| v \\|$. What is "
+        },
+        {
+          "id": "mineru-vol1-6-14-5",
+          "ref": "6.14.5",
+          "exam": "GATE DA 2025 | Question: 28",
+          "text": "Let $\\{x_1, x_2, \\ldots, x_n\\}$ be a set of linearly independent vectors in $\\mathbb{R}^n$. Let the $(i, j)$ -"
+        },
+        {
+          "id": "mineru-vol1-6-14-7",
+          "ref": "6.14.7",
+          "exam": "GATE DS&AI 2024 | Question: 39",
+          "text": "Let $\\mathbb{R}$ be the set of real numbers, $U$ be a subspace of $\\mathbb{R}^3$ and $\\mathbf{M} \\in \\mathbb{R"
+        }
+      ],
+      "heading_in_tag_map": "engineering-mathematics/linear-systems",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 2,
+        "of_questions": 6,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "engineering-mathematics/linear-systems",
+      "recommended_action": "review",
+      "recommendation_note": "only 2 of 6 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "2.14",
+      "reason": "duplicate of the block above",
+      "current_section": "Ethernet",
+      "current_subtopic": "ethernet",
+      "alphabetical_window": {
+        "after": "Ethernet",
+        "before": "Hamming Code"
+      },
+      "question_count": 5,
+      "topics": [
+        "mac"
+      ],
+      "subjects": [
+        "computer-networks"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-2-14-1",
+          "ref": "2.14.1",
+          "exam": "GATE CSE 2004 | Question: 56",
+          "text": "Consider three IP networks A, B and C. Host $H_{A}$ in network A sends messages each containing 180 bytes of a"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-14-2",
+          "ref": "2.14.2",
+          "exam": "GATE CSE 2004 | Question: 57",
+          "text": "Consider three IP networks $A, B$ and $C$. Host $H_A$ in network $A$ sends messages each containing 180 bytes "
+        },
+        {
+          "id": "mineru-filter1-volume3-2-14-3",
+          "ref": "2.14.3",
+          "exam": "GATE CSE 2013 | Question: 37",
+          "text": "In an IPv4 datagram, the M bit is 0, the value of HLEN is 10, the value of total length is 400 and the fragmen"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-14-4",
+          "ref": "2.14.4",
+          "exam": "GATE CSE 2025 | Set 1 | Question: 47",
+          "text": "Suppose a message of size 15000 bytes is transmitted from a source to a destination using IPv4 protocol via tw"
+        },
+        {
+          "id": "mineru-filter1-volume3-2-14-5",
+          "ref": "2.14.5",
+          "exam": "GATE CSE 2025 | Set 2 | Question: 13",
+          "text": "Consider a network that uses Ethernet and IPv4. Assume that IPv4 headers do not use any options field. Each Et"
+        }
+      ],
+      "heading_in_tag_map": "computer-networks/mac",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 5,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "computer-networks/mac",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 5 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "3.7",
+      "reason": "duplicate of the block above",
+      "current_section": "Binary Tree",
+      "current_subtopic": "binary-tree",
+      "alphabetical_window": {
+        "after": "Binary Tree",
+        "before": "Hashing"
+      },
+      "question_count": 4,
+      "topics": [
+        "trees"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-3-7-1",
+          "ref": "3.7.1",
+          "exam": "GATE CSE 1997 | Question: 6.2",
+          "text": "Let $G$ be the graph with 100 vertices numbered 1 to 100. Two vertices $i$ and $j$ are adjacent if $|i - j| = "
+        },
+        {
+          "id": "mineru-filter1-volume2-3-7-2",
+          "ref": "3.7.2",
+          "exam": "GATE CSE 2014 | Set 1 | Question: 3",
+          "text": "Let $G = (V, E)$ be a directed graph where V is the set of vertices and E the set of edges. Then which one of "
+        },
+        {
+          "id": "mineru-filter1-volume2-3-7-3",
+          "ref": "3.7.3",
+          "exam": "GATE CSE 2016 | Set 1 | Question: 38",
+          "text": "Consider the weighted undirected graph with 4 vertices, where the weight of edge $\\{i,j\\}$ is given by the ent"
+        },
+        {
+          "id": "mineru-filter1-volume2-3-7-4",
+          "ref": "3.7.4",
+          "exam": "GATE DS&AI 2024 | Question: 6",
+          "text": "Match the items in Column 1 with the items in Column 2 in the following table: | Column 1 | Column 2 | (p) | F"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/trees",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 2,
+        "of_questions": 4,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/trees",
+      "recommended_action": "review",
+      "recommendation_note": "only 2 of 4 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "1.9",
+      "reason": "duplicate of the block above",
+      "current_section": "Binary Search Tree",
+      "current_subtopic": "binary-search-tree",
+      "alphabetical_window": {
+        "after": "Binary Search Tree",
+        "before": "Bubble Sort"
+      },
+      "question_count": 3,
+      "topics": [
+        "bst"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-1-9-1",
+          "ref": "1.9.1",
+          "exam": "GATE CSE 2025 | Set 1 | Question: 33",
+          "text": "Let $G(V, E)$ be an undirected and unweighted graph with 100 vertices. Let $d(u, v)$ denote the number of edge"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-9-2",
+          "ref": "1.9.2",
+          "exam": "GATE DA 2026 | Question: 30",
+          "text": "Consider a directed graph $G = (V, E)$, where V is the finite set of vertices and E is the set of directed edg"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-9-3",
+          "ref": "1.9.3",
+          "exam": "GATE DS&AI 2024 | Question: 34",
+          "text": "Consider a state space where the start state is number 1. The successor function for the state numbered n retu"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/bst",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 3,
+        "of_questions": 3,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/bst",
+      "recommended_action": "review",
+      "recommendation_note": "only 3 of 3 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "2.16",
+      "reason": "duplicate of the block above",
+      "current_section": "Lexical Analysis",
+      "current_subtopic": "lexical-analysis",
+      "alphabetical_window": {
+        "after": "Lexical Analysis",
+        "before": "Lexical Analysis"
+      },
+      "question_count": 3,
+      "topics": [
+        "lexical-analysis"
+      ],
+      "subjects": [
+        "compiler-design"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-2-16-1",
+          "ref": "2.16.1",
+          "exam": "GATE CSE 1991 | Question: 03,ix",
+          "text": "A “link editor” is a program that:"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-16-2",
+          "ref": "2.16.2",
+          "exam": "GATE CSE 2003 | Question: 76",
+          "text": "Which of the following is NOT an advantage of using shared, dynamically linked libraries as opposed to using s"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-16-3",
+          "ref": "2.16.3",
+          "exam": "GATE CSE 2004 | Question: 9",
+          "text": "Consider a program $P$ that consists of two source modules $M_1$ and $M_2$ contained in two different files. I"
+        }
+      ],
+      "heading_in_tag_map": "compiler-design/lexical-analysis",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 3,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "compiler-design/lexical-analysis",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 3 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "4.11",
+      "reason": "duplicate of the block above",
+      "current_section": "Conjunctive Normal Form",
+      "current_subtopic": "conjunctive-normal-form",
+      "alphabetical_window": {
+        "after": "Conjunctive Normal Form",
+        "before": "Digital Circuits"
+      },
+      "question_count": 3,
+      "topics": [
+        "combinational"
+      ],
+      "subjects": [
+        "digital-logic"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-4-11-1",
+          "ref": "4.11.1",
+          "exam": "GATE CSE 2007 | Question: 8, ISRO2011-31",
+          "text": "How many 3-to-8 line decoders with an enable input are needed to construct a 6-to-64 line decoder without usin"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-11-2",
+          "ref": "4.11.2",
+          "exam": "GATE CSE 2020 | Question: 20",
+          "text": "If there are $m$ input lines and $n$ output lines for a decoder that is used to uniquely address a byte addres"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-11-3",
+          "ref": "4.11.3",
+          "exam": "GATE IT 2008 | Question: 9",
+          "text": "What Boolean function does the circuit below realize? Refer to the figure below."
+        }
+      ],
+      "heading_in_tag_map": null,
+      "topic_from_bad_heading": false,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 3,
+        "of_questions": 3,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "digital-logic/combinational",
+      "recommended_action": "clear-subtopic",
+      "recommendation_note": "heading unmapped, so the topic came from a fallback"
+    },
+    {
+      "volume": "vol1",
+      "block": "7.1",
+      "reason": "breaks the chapter's alphabetical order",
+      "current_section": "System of Equations",
+      "current_subtopic": "system-of-equations",
+      "alphabetical_window": {
+        "after": "",
+        "before": "System of Equations"
+      },
+      "question_count": 3,
+      "topics": [
+        "linear-systems"
+      ],
+      "subjects": [
+        "engineering-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-7-1-1",
+          "ref": "7.1.1",
+          "exam": "GATE CSE 2018 | Question: 44",
+          "text": "Consider Guwahati, $(G)$ and Delhi $(D)$ whose temperatures can be classified as high $(H)$, medium $(M)$ and "
+        },
+        {
+          "id": "mineru-vol1-7-1-2",
+          "ref": "7.1.2",
+          "exam": "GATE CSE 2021 | Set 1 | Question: 54",
+          "text": "A sender (S) transmits a signal, which can be one of the two kinds: H and L with probabilities 0.1 and 0.9 res"
+        },
+        {
+          "id": "mineru-vol1-7-1-3",
+          "ref": "7.1.3",
+          "exam": "GATE DA 2025 | Question: 21",
+          "text": "There are three boxes containing white balls and black balls. Box -1 contains 2 black and 1 white balls. Box- "
+        }
+      ],
+      "heading_in_tag_map": "engineering-mathematics/linear-systems",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": true,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 3,
+        "of_questions": 3,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "engineering-mathematics/linear-systems",
+      "recommended_action": "review",
+      "recommendation_note": "only 3 of 3 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "7.18",
+      "reason": "duplicate of the block above",
+      "current_section": "Random Variable",
+      "current_subtopic": "random-variable",
+      "alphabetical_window": {
+        "after": "Random Variable",
+        "before": "Uniform Distribution"
+      },
+      "question_count": 3,
+      "topics": [
+        "distributions"
+      ],
+      "subjects": [
+        "engineering-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-7-18-1",
+          "ref": "7.18.1",
+          "exam": "GATE CSE 2021 | Set 2 | Question: 22",
+          "text": "For a given biased coin, the probability that the outcome of a toss is a head is 0.4. This coin is tossed 1,00"
+        },
+        {
+          "id": "mineru-vol1-7-18-2",
+          "ref": "7.18.2",
+          "exam": "GATE CSE 2024 | Set 2 | Question: 34",
+          "text": "Let $x$ and $y$ be random variables, not necessarily independent, that take real values in the interval $[0, 1"
+        },
+        {
+          "id": "mineru-vol1-7-18-3",
+          "ref": "7.18.3",
+          "exam": "GATE DA 2026 | Question: 52",
+          "text": "For a given data set $\\{x_{1}, x_{2}, \\ldots, x_{n}\\}$, where $n = 100$, it is known that $$\\frac {1}{2 0 0 0}"
+        }
+      ],
+      "heading_in_tag_map": "engineering-mathematics/distributions",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 3,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "engineering-mathematics/distributions",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 3 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "9.14",
+      "reason": "duplicate of the block above",
+      "current_section": "Combinatory",
+      "current_subtopic": "combinatory",
+      "alphabetical_window": {
+        "after": "Combinatory",
+        "before": "Conditional Probability"
+      },
+      "question_count": 3,
+      "topics": [
+        "counting"
+      ],
+      "subjects": [
+        "discrete-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-9-14-1",
+          "ref": "9.14.1",
+          "exam": "GATE DS&AI 2024 | GA | Question: 8",
+          "text": "Person 1 and Person 2 invest in three mutual funds A, B, and C. The amounts they invest in each of these mutua"
+        },
+        {
+          "id": "mineru-vol1-9-14-2",
+          "ref": "9.14.2",
+          "exam": "GATE2010 MN: GA-5",
+          "text": "A person invest Rs.1000 at 10% annual compound interest for 2 years. At the end of two years, the whole amount"
+        },
+        {
+          "id": "mineru-vol1-9-14-3",
+          "ref": "9.14.3",
+          "exam": "GATE2014 AG: GA-5",
+          "text": "The population of a new city is 5 million and is growing at 20% annually. How many years would it take to doub"
+        }
+      ],
+      "heading_in_tag_map": "discrete-mathematics/counting",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 3,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "discrete-mathematics/counting",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 3 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "1.33",
+      "reason": "duplicate of the block above",
+      "current_section": "Number of Swap",
+      "current_subtopic": "number-of-swap",
+      "alphabetical_window": {
+        "after": "Number of Swap",
+        "before": "Quick Sort"
+      },
+      "question_count": 2,
+      "topics": [
+        "searching-sorting"
+      ],
+      "subjects": [
+        "algorithms"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-1-33-1",
+          "ref": "1.33.1",
+          "exam": "GATE IT 2004 | Question: 56",
+          "text": "Consider the undirected graph below: Using Prim's algorithm to construct a minimum spanning tree starting with"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-33-2",
+          "ref": "1.33.2",
+          "exam": "GATE IT 2008 | Question: 45",
+          "text": "For the undirected, weighted graph given below, which of the following sequences of edges represents a correct"
+        }
+      ],
+      "heading_in_tag_map": "algorithms/searching-sorting",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 2,
+        "of_questions": 2,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "algorithms/searching-sorting",
+      "recommended_action": "review",
+      "recommendation_note": "only 2 of 2 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "1.38",
+      "reason": "duplicate of the block above",
+      "current_section": "Searching",
+      "current_subtopic": "searching",
+      "alphabetical_window": {
+        "after": "Searching",
+        "before": "Shortest Path"
+      },
+      "question_count": 2,
+      "topics": [
+        "searching-sorting"
+      ],
+      "subjects": [
+        "algorithms"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-1-38-1",
+          "ref": "1.38.1",
+          "exam": "GATE CSE 2009 | Question: 11",
+          "text": "What is the number of swaps required to sort n elements using selection sort, in the worst case?"
+        },
+        {
+          "id": "mineru-filter1-volume2-1-38-2",
+          "ref": "1.38.2",
+          "exam": "GATE CSE 2013 | Question: 6",
+          "text": "Which one of the following is the tightest upper bound that represents the number of swaps required to sort n "
+        }
+      ],
+      "heading_in_tag_map": "algorithms/searching-sorting",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 2,
+        "of_questions": 2,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "algorithms/searching-sorting",
+      "recommended_action": "review",
+      "recommendation_note": "only 2 of 2 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "2.17",
+      "reason": "duplicate of the block above",
+      "current_section": "Lexical Analysis",
+      "current_subtopic": "lexical-analysis",
+      "alphabetical_window": {
+        "after": "Lexical Analysis",
+        "before": "Lexical Analysis"
+      },
+      "question_count": 2,
+      "topics": [
+        "lexical-analysis"
+      ],
+      "subjects": [
+        "compiler-design"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-2-17-1",
+          "ref": "2.17.1",
+          "exam": "GATE CSE 2015 | Set 1 | Question: 50",
+          "text": "A variable x is said to be live at a statement $s_{i}$ in a program if the following three conditions hold sim"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-17-3",
+          "ref": "2.17.3",
+          "exam": "GATE CSE 2023 | Question: 27",
+          "text": "Consider the control flow graph shown. Which one of the following choices correctly lists the set of live vari"
+        }
+      ],
+      "heading_in_tag_map": "compiler-design/lexical-analysis",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 2,
+        "of_questions": 2,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "compiler-design/lexical-analysis",
+      "recommended_action": "review",
+      "recommendation_note": "only 2 of 2 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "2.18",
+      "reason": "duplicate of the block above",
+      "current_section": "Lexical Analysis",
+      "current_subtopic": "lexical-analysis",
+      "alphabetical_window": {
+        "after": "Lexical Analysis",
+        "before": "Macros"
+      },
+      "question_count": 2,
+      "topics": [
+        "lexical-analysis"
+      ],
+      "subjects": [
+        "compiler-design"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-2-18-1",
+          "ref": "2.18.1",
+          "exam": "GATE CSE 2024 | Set 2 | Question: 30",
+          "text": "Consider the following context-free grammar where the start symbol is S and the set of terminals is $\\{a, b, c"
+        },
+        {
+          "id": "mineru-filter1-volume2-2-18-2",
+          "ref": "2.18.2",
+          "exam": "GATE CSE 2026 | Set 1 | Question: 18",
+          "text": "Which of the following statements is/are true?"
+        }
+      ],
+      "heading_in_tag_map": "compiler-design/lexical-analysis",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 2,
+        "of_questions": 2,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "compiler-design/lexical-analysis",
+      "recommended_action": "review",
+      "recommendation_note": "only 2 of 2 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "5.17",
+      "reason": "duplicate of the block above",
+      "current_section": "Structure",
+      "current_subtopic": "structure",
+      "alphabetical_window": {
+        "after": "Structure",
+        "before": "Structure"
+      },
+      "question_count": 2,
+      "topics": [
+        "c-basics"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-5-17-1",
+          "ref": "5.17.1",
+          "exam": "GATE CSE 2012 | Question: 3",
+          "text": "What will be the output of the following C program segment?"
+        },
+        {
+          "id": "mineru-filter1-volume2-5-17-2",
+          "ref": "5.17.2",
+          "exam": "GATE CSE 2015 | Set 3 | Question: 48",
+          "text": "Consider the following C program: The number of times printf statement is executed is ____. programming normal"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/c-basics",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 2,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/c-basics",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 2 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "4.16",
+      "reason": "duplicate of the block above",
+      "current_section": "Finite State Machines",
+      "current_subtopic": "finite-state-machines",
+      "alphabetical_window": {
+        "after": "Finite State Machines",
+        "before": "Flip Flop"
+      },
+      "question_count": 2,
+      "topics": [
+        "state-machines"
+      ],
+      "subjects": [
+        "digital-logic"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-4-16-1",
+          "ref": "4.16.1",
+          "exam": "GATE CSE 2017 | Set 1 | Question: 7",
+          "text": "The n-bit fixed-point representation of an unsigned real number X uses f bits for the fraction part. Let i = n"
+        },
+        {
+          "id": "mineru-filter1-volume3-4-16-2",
+          "ref": "4.16.2",
+          "exam": "GATE CSE 2018 | Question: 33",
+          "text": "Consider the unsigned 8-bit fixed point binary number representation, below, $$b _ {7} b _ {6} b _ {5} b _ {4}"
+        }
+      ],
+      "heading_in_tag_map": "digital-logic/state-machines",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 2,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "digital-logic/state-machines",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 2 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "7.2",
+      "reason": "duplicate of the block above",
+      "current_section": "System of Equations",
+      "current_subtopic": "system-of-equations",
+      "alphabetical_window": {
+        "after": "System of Equations",
+        "before": "Bernoulli Distribution"
+      },
+      "question_count": 2,
+      "topics": [
+        "linear-systems"
+      ],
+      "subjects": [
+        "engineering-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-7-2-1",
+          "ref": "7.2.1",
+          "exam": "GATE DS&AI 2024 | Question: 14",
+          "text": "Consider five random variables $U, V, W, X$, and $Y$ whose joint distribution satisfies: $$P (U, V, W, X, Y) ="
+        },
+        {
+          "id": "mineru-vol1-7-2-2",
+          "ref": "7.2.2",
+          "exam": "GATE DS&AI 2024 | Question: 54",
+          "text": "Given the following Bayesian Network consisting of four Bernoulli random variables and the associated conditio"
+        }
+      ],
+      "heading_in_tag_map": "engineering-mathematics/linear-systems",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 2,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "engineering-mathematics/linear-systems",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 2 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "1.8",
+      "reason": "duplicate of the block above",
+      "current_section": "Binary Search Tree",
+      "current_subtopic": "binary-search-tree",
+      "alphabetical_window": {
+        "after": "Binary Search Tree",
+        "before": "Binary Search Tree"
+      },
+      "question_count": 1,
+      "topics": [
+        "bst"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-1-8-1",
+          "ref": "1.8.1",
+          "exam": "GATE CSE 2026 | Set 1 | Question: 23",
+          "text": "The height of a binary tree is the number of edges in the longest path from the root to a leaf in the tree. Th"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/bst",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/bst",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "2.1",
+      "reason": "breaks the chapter's alphabetical order",
+      "current_section": "Uniform Hashing",
+      "current_subtopic": "uniform-hashing",
+      "alphabetical_window": {
+        "after": "",
+        "before": "Ambiguous Grammar"
+      },
+      "question_count": 1,
+      "topics": [
+        "optimization"
+      ],
+      "subjects": [
+        "compiler-design"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-2-1-1",
+          "ref": "2.1.1",
+          "exam": "GATE CSE 2015 | Set 2 | Question: 14",
+          "text": "In the context of abstract-syntax-tree (AST) and control-flow-graph (CFG), which one of the following is TRUE?"
+        }
+      ],
+      "heading_in_tag_map": null,
+      "topic_from_bad_heading": false,
+      "first_block_in_chapter": true,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "compiler-design/optimization",
+      "recommended_action": "clear-subtopic",
+      "recommendation_note": "heading unmapped, so the topic came from a fallback"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "2.26",
+      "reason": "duplicate of the block above",
+      "current_section": "Static Single Assignment",
+      "current_subtopic": "static-single-assignment",
+      "alphabetical_window": {
+        "after": "Static Single Assignment",
+        "before": "Static Single Assignment"
+      },
+      "question_count": 1,
+      "topics": [
+        "intermediate-code"
+      ],
+      "subjects": [
+        "compiler-design"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-2-26-1",
+          "ref": "2.26.1",
+          "exam": "GATE CSE 2025 | Set 1 | Question: 2",
+          "text": "Which ONE of the following statements is FALSE regarding the symbol table?"
+        }
+      ],
+      "heading_in_tag_map": "compiler-design/intermediate-code",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "compiler-design/intermediate-code",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "3.16",
+      "reason": "duplicate of the block above",
+      "current_section": "Tree",
+      "current_subtopic": "tree",
+      "alphabetical_window": {
+        "after": "Tree",
+        "before": "Uniform Hashing"
+      },
+      "question_count": 1,
+      "topics": [
+        "trees"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-3-16-1",
+          "ref": "3.16.1",
+          "exam": "GATE CSE 2026 | Set 2 | Question: 2",
+          "text": "The set T represents various traversals over binary tree. The set S represents the order of visiting nodes dur"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/trees",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/trees",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "5.1",
+      "reason": "breaks the chapter's alphabetical order",
+      "current_section": "Output",
+      "current_subtopic": "output",
+      "alphabetical_window": {
+        "after": "",
+        "before": "Output"
+      },
+      "question_count": 1,
+      "topics": [
+        "c-basics"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-5-1-1",
+          "ref": "5.1.1",
+          "exam": "GATE CSE 2000 | Question: 1.16",
+          "text": "Aliasing in the context of programming languages refers to"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/c-basics",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": true,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/c-basics",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "5.18",
+      "reason": "duplicate of the block above",
+      "current_section": "Structure",
+      "current_subtopic": "structure",
+      "alphabetical_window": {
+        "after": "Structure",
+        "before": "Structure"
+      },
+      "question_count": 1,
+      "topics": [
+        "c-basics"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-5-18-1",
+          "ref": "5.18.1",
+          "exam": "GATE CSE 2003 | Question: 24",
+          "text": "Which of the following statements is FALSE?"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/c-basics",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/c-basics",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "5.19",
+      "reason": "duplicate of the block above",
+      "current_section": "Structure",
+      "current_subtopic": "structure",
+      "alphabetical_window": {
+        "after": "Structure",
+        "before": "Variable Binding"
+      },
+      "question_count": 1,
+      "topics": [
+        "c-basics"
+      ],
+      "subjects": [
+        "data-structures"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-5-19-1",
+          "ref": "5.19.1",
+          "exam": "GATE CSE 2000 | Question: 1.17, ISRO2015-79",
+          "text": "Consider the following C declaration: Assume that the objects of the type short, float and long occupy 2 bytes"
+        }
+      ],
+      "heading_in_tag_map": "data-structures/c-basics",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "data-structures/c-basics",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume2",
+      "block": "6.8",
+      "reason": "duplicate of the block above",
+      "current_section": "Finite Automata",
+      "current_subtopic": "finite-automata",
+      "alphabetical_window": {
+        "after": "Finite Automata",
+        "before": "Finite Automata"
+      },
+      "question_count": 1,
+      "topics": [
+        "finite-automata"
+      ],
+      "subjects": [
+        "theory-of-computation"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume2-6-8-1",
+          "ref": "6.8.1",
+          "exam": "GATE CSE 2025 | Set 1 | Question: 49",
+          "text": "Consider a finite state machine (FSM) with one input X and one output f, represented by the given state transi"
+        }
+      ],
+      "heading_in_tag_map": "theory-of-computation/finite-automata",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "theory-of-computation/finite-automata",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "2.18",
+      "reason": "duplicate of the block above",
+      "current_section": "IP Packet",
+      "current_subtopic": "ip-packet",
+      "alphabetical_window": {
+        "after": "IP Packet",
+        "before": "LAN Technologies"
+      },
+      "question_count": 1,
+      "topics": [
+        "ip-addressing"
+      ],
+      "subjects": [
+        "computer-networks"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-2-18-1",
+          "ref": "2.18.1",
+          "exam": "GATE IT 2005 | Question: 26",
+          "text": "Traceroute reports a possible route that is taken by packets moving from some host A to some other host B. Whi"
+        }
+      ],
+      "heading_in_tag_map": "computer-networks/ip-addressing",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "computer-networks/ip-addressing",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "3.7",
+      "reason": "duplicate of the block above",
+      "current_section": "Database Normalization",
+      "current_subtopic": "database-normalization",
+      "alphabetical_window": {
+        "after": "Database Normalization",
+        "before": "Database Normalization"
+      },
+      "question_count": 1,
+      "topics": [
+        "normalization"
+      ],
+      "subjects": [
+        "dbms"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-3-7-1",
+          "ref": "3.7.1",
+          "exam": "GATE CSE 2026 | Set 2 | Question: 5",
+          "text": "In the context of DBMS, consider the two sets T and S given below. | T | S | I: Logical schemaII: Physical sch"
+        }
+      ],
+      "heading_in_tag_map": "dbms/normalization",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "dbms/normalization",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "3.8",
+      "reason": "duplicate of the block above",
+      "current_section": "Database Normalization",
+      "current_subtopic": "database-normalization",
+      "alphabetical_window": {
+        "after": "Database Normalization",
+        "before": "ER Diagram"
+      },
+      "question_count": 1,
+      "topics": [
+        "normalization"
+      ],
+      "subjects": [
+        "dbms"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-3-8-1",
+          "ref": "3.8.1",
+          "exam": "GATE DA 2025 | Question: 6",
+          "text": "If a relational decomposition is not dependency-preserving, which one of the following relational operators wi"
+        }
+      ],
+      "heading_in_tag_map": "dbms/normalization",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "dbms/normalization",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "4.3",
+      "reason": "duplicate of the block above",
+      "current_section": "Array Multiplier",
+      "current_subtopic": "array-multiplier",
+      "alphabetical_window": {
+        "after": "Array Multiplier",
+        "before": "Boolean Algebra"
+      },
+      "question_count": 1,
+      "topics": [
+        "computer-arithmetic"
+      ],
+      "subjects": [
+        "digital-logic"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-4-3-1",
+          "ref": "4.3.1",
+          "exam": "GATE CSE 2006 | Question: 40",
+          "text": "Consider numbers represented in 4-bit Gray code. Let $h_{3}h_{2}h_{1}h_{0}$ be the Gray code representation of"
+        }
+      ],
+      "heading_in_tag_map": "digital-logic/computer-arithmetic",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "digital-logic/computer-arithmetic",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "5.2",
+      "reason": "duplicate of the block above",
+      "current_section": "Bankers Algorithm",
+      "current_subtopic": "bankers-algorithm",
+      "alphabetical_window": {
+        "after": "Bankers Algorithm",
+        "before": "Context Switch"
+      },
+      "question_count": 1,
+      "topics": [
+        "memory-management"
+      ],
+      "subjects": [
+        "operating-systems"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-5-2-1",
+          "ref": "5.2.1",
+          "exam": "GATE CSE 2026 | Set 2 | Question: 45",
+          "text": "Consider contiguous allocation of physical memory to processes using variable partitioning scheme. Suppose the"
+        }
+      ],
+      "heading_in_tag_map": null,
+      "topic_from_bad_heading": false,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "operating-systems/memory-management",
+      "recommended_action": "clear-subtopic",
+      "recommendation_note": "heading unmapped, so the topic came from a fallback"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "5.12",
+      "reason": "duplicate of the block above",
+      "current_section": "IO Handling",
+      "current_subtopic": "io-handling",
+      "alphabetical_window": {
+        "after": "IO Handling",
+        "before": "Inter Process Communication"
+      },
+      "question_count": 1,
+      "topics": [
+        "io-interface"
+      ],
+      "subjects": [
+        "computer-organization"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-5-12-1",
+          "ref": "5.12.1",
+          "exam": "GATE CSE 2025 | Set 1 | Question: 19",
+          "text": "Suppose in a multiprogramming environment, the following C program segment is executed. A process goes into I/"
+        }
+      ],
+      "heading_in_tag_map": "computer-organization/io-interface",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "computer-organization/io-interface",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "5.15",
+      "reason": "duplicate of the block above",
+      "current_section": "Interrupts",
+      "current_subtopic": "interrupts",
+      "alphabetical_window": {
+        "after": "Interrupts",
+        "before": "Memory Management"
+      },
+      "question_count": 1,
+      "topics": [
+        "io-interface"
+      ],
+      "subjects": [
+        "computer-organization"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-5-15-1",
+          "ref": "5.15.1",
+          "exam": "GATE CSE 2023 | Question: 47",
+          "text": "Consider the following two-dimensional array D in the C programming language, which is stored in row-major ord"
+        }
+      ],
+      "heading_in_tag_map": "computer-organization/io-interface",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "computer-organization/io-interface",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 1 questions scored"
+    },
+    {
+      "volume": "filter1_volume3",
+      "block": "5.26",
+      "reason": "duplicate of the block above",
+      "current_section": "Resource Allocation",
+      "current_subtopic": "resource-allocation",
+      "alphabetical_window": {
+        "after": "Resource Allocation",
+        "before": "Round Robin Scheduling"
+      },
+      "question_count": 1,
+      "topics": [
+        "deadlock"
+      ],
+      "subjects": [
+        "operating-systems"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-filter1-volume3-5-26-1",
+          "ref": "5.26.1",
+          "exam": "GATE CSE 2025 | Set 2 | Question: 38",
+          "text": "$P = \\{P_{1}, P_{2}, P_{3}, P_{4}\\}$ consists of all active processes in an operating system. $R = \\{R_{1}, R_"
+        }
+      ],
+      "heading_in_tag_map": "operating-systems/deadlock",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "operating-systems/deadlock",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 1 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "2.3",
+      "reason": "duplicate of the block above",
+      "current_section": "Degree of Graph",
+      "current_subtopic": "degree-of-graph",
+      "alphabetical_window": {
+        "after": "Degree of Graph",
+        "before": "Degree of Graph"
+      },
+      "question_count": 1,
+      "topics": [
+        "graph-theory"
+      ],
+      "subjects": [
+        "discrete-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-2-3-1",
+          "ref": "2.3.1",
+          "exam": "GATE CSE 2026 | Set 1 | Question: 45",
+          "text": "An undirected, unweighted, simple graph $G(V, E)$ is said to be 2-colorable if there exists a function $c: V \\"
+        }
+      ],
+      "heading_in_tag_map": "discrete-mathematics/graph-theory",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "discrete-mathematics/graph-theory",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "7.17",
+      "reason": "duplicate of the block above",
+      "current_section": "Random Variable",
+      "current_subtopic": "random-variable",
+      "alphabetical_window": {
+        "after": "Random Variable",
+        "before": "Random Variable"
+      },
+      "question_count": 1,
+      "topics": [
+        "distributions"
+      ],
+      "subjects": [
+        "engineering-mathematics"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-7-17-1",
+          "ref": "7.17.1",
+          "exam": "GATE CSE 2025 | Set 2 | Question: 54",
+          "text": "A quadratic polynomial $(x - \\alpha)(x - \\beta)$ over complex numbers is said to be square invariant if $(x - "
+        }
+      ],
+      "heading_in_tag_map": "engineering-mathematics/distributions",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 1,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "engineering-mathematics/distributions",
+      "recommended_action": "review",
+      "recommendation_note": "only 1 of 1 questions scored"
+    },
+    {
+      "volume": "vol1",
+      "block": "9.1",
+      "reason": "breaks the chapter's alphabetical order",
+      "current_section": "No Classified Topic",
+      "current_subtopic": "no-classified-topic",
+      "alphabetical_window": {
+        "after": "",
+        "before": "Absolute Value"
+      },
+      "question_count": 1,
+      "topics": [
+        "quantitative"
+      ],
+      "subjects": [
+        "general-aptitude"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-9-1-1",
+          "ref": "9.1.1",
+          "exam": "4",
+          "text": "The values of Stock A and Stock B on a particular day are Rs. 50 and Rs. 80, respectively. An investor invests"
+        }
+      ],
+      "heading_in_tag_map": null,
+      "topic_from_bad_heading": false,
+      "first_block_in_chapter": true,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "general-aptitude/quantitative",
+      "recommended_action": "skip",
+      "recommendation_note": "source placeholder, not an extraction fault"
+    },
+    {
+      "volume": "vol1",
+      "block": "9.26",
+      "reason": "duplicate of the block above",
+      "current_section": "Geometry",
+      "current_subtopic": "geometry",
+      "alphabetical_window": {
+        "after": "Geometry",
+        "before": "Line Graph"
+      },
+      "question_count": 1,
+      "topics": [
+        "spatial"
+      ],
+      "subjects": [
+        "general-aptitude"
+      ],
+      "correct_section": "",
+      "questions": [
+        {
+          "id": "mineru-vol1-9-26-1",
+          "ref": "9.26.1",
+          "exam": "GATE DS&AI 2024 | GA | Question: 2",
+          "text": "The 15 parts of the given figure are to be painted such that no two adjacent parts with shared boundaries (exc"
+        }
+      ],
+      "heading_in_tag_map": "general-aptitude/spatial",
+      "topic_from_bad_heading": true,
+      "first_block_in_chapter": false,
+      "block_vote": {
+        "modal": "",
+        "votes": 0,
+        "scored": 0,
+        "of_questions": 1,
+        "share": 0.0,
+        "agrees_with_current": null
+      },
+      "current_topic": "general-aptitude/spatial",
+      "recommended_action": "review",
+      "recommendation_note": "only 0 of 1 questions scored"
+    }
+  ],
+  "triage": {
+    "min_votes": 4,
+    "min_share": 0.5,
+    "buckets": {
+      "check-topic": 7,
+      "clear-subtopic": 6,
+      "keep": 2,
+      "review": 40,
+      "skip": 1
+    },
+    "questions": {
+      "check-topic": 128,
+      "clear-subtopic": 29,
+      "keep": 29,
+      "review": 160,
+      "skip": 1
+    }
+  }
+}
