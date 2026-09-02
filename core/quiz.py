@@ -222,13 +222,17 @@ def select(
     count=5,
     subject_slug=None,
     topic_slugs=None,
-    subtopic_slugs=None,
     kinds=None,
     exclude=None,
     metrics=None,
     topic_health=None,
     cooldown_days=None,
     seed=None,
+    # Last on purpose. build_quiz calls this function positionally, so a
+    # parameter inserted anywhere earlier silently captures the argument
+    # meant for the one after it - which is exactly what happened when
+    # this sat between topic_slugs and kinds. Keyword-only in practice.
+    subtopic_slugs=None,
 ):
     """Return [(question, reason)] chosen for one purpose. Never raises on empty."""
     # Questions held by a mock paper stay out of practice, so sitting a mock is
