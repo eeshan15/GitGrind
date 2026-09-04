@@ -34,6 +34,11 @@ SOLVE_PROB = {"easy": 0.74, "medium": 0.50, "hard": 0.28}
 PEER_SAMPLE = 4000
 RECENT_WINDOW_DAYS = 7
 DEFAULT_COOLDOWN_DAYS = 9
+# How many questions a topic keeps outside the mock reservation. One,
+# because the point is only that the topic stays practisable at all -
+# raising it starts handing mock questions back in topics that were
+# never at risk.
+MOCK_TOPIC_FLOOR = 1
 
 DIFFICULTY_RANK = {"easy": 0, "medium": 1, "hard": 2}
 
@@ -200,10 +205,42 @@ def target_difficulty(conn, metrics=None, purpose="weak"):
 # ---------------------------------------------------------------------------
 # the selector
 # ---------------------------------------------------------------------------
+def _keep_topics_practisable(held):
+    """Release reserved questions where a topic would otherwise be emptied.
+
+    Only topics that would drop below MOCK_TOPIC_FLOOR are touched, and only by
+    as many questions as it takes to reach it. Everything else stays reserved,
+    so this narrows the reservation rather than weakening it.
+
+    Sorted by id so the same question is released every time; releasing a
+    different one per launch would quietly change what a topic offers.
+    """
+    bank = content.question_bank()
+    if not bank or not held:
+        return held
+    free = {}
+    reserved_by_topic = {}
+    for qid, q in bank.items():
+        key = (q.get("subject", ""), q.get("topic", ""))
+        if qid in held:
+            reserved_by_topic.setdefault(key, []).append(qid)
+        else:
+            free[key] = free.get(key, 0) + 1
+
+    out = set(held)
+    for key, ids in reserved_by_topic.items():
+        short = MOCK_TOPIC_FLOOR - free.get(key, 0)
+        if short <= 0:
+            continue
+        for qid in sorted(ids)[:short]:
+            out.discard(qid)
+    return out
+
+
 def reserved_for_mocks(conn):
     """Question ids belonging to a generated mock paper."""
     try:
-        return {
+        held = {
             r["question_id"]
             for r in conn.execute(
                 "SELECT pq.question_id FROM paper_questions pq"
@@ -211,6 +248,10 @@ def reserved_for_mocks(conn):
                 " WHERE p.exam = 'GitGrind Mock'"
             )
         }
+        # Bound rather than returned directly, so the floor actually runs. The
+        # first version of this appended the call after the return and was
+        # unreachable.
+        return _keep_topics_practisable(held)
     except sqlite3.Error:
         # A database that predates the papers tables must still serve practice.
         return set()
@@ -243,7 +284,6 @@ def select(
     if not bank:
         return []
 
-    exclude = set(exclude or [])
     settings = db.get_settings(conn)
     cooldown = (
         cooldown_days
@@ -477,6 +517,10 @@ def build_quiz(
     topic_health=None,
     question_ids=None,
     paper_id=None,
+    # At the end, and passed on by keyword only. See patch_argorder.py:
+    # select is called positionally below, so a parameter added in the
+    # middle of either signature captures the next one's argument.
+    subtopic_slugs=None,
 ):
     """Assemble a quiz. ``mode`` drives how the questions are chosen.
 
@@ -530,6 +574,7 @@ def build_quiz(
                 subject_slug,
                 topic_slugs,
                 kinds,
+                subtopic_slugs=subtopic_slugs,
                 metrics=metrics,
                 topic_health=topic_health,
             )
@@ -542,6 +587,7 @@ def build_quiz(
                 subject_slug,
                 topic_slugs,
                 kinds,
+                subtopic_slugs=subtopic_slugs,
                 metrics=metrics,
                 topic_health=topic_health,
             )
@@ -554,6 +600,7 @@ def build_quiz(
                     subject_slug,
                     topic_slugs,
                     kinds,
+                    subtopic_slugs=subtopic_slugs,
                     exclude=have,
                     metrics=metrics,
                     topic_health=topic_health,
@@ -567,6 +614,7 @@ def build_quiz(
                     subject_slug,
                     topic_slugs,
                     kinds,
+                    subtopic_slugs=subtopic_slugs,
                     exclude=have,
                     metrics=metrics,
                     topic_health=topic_health,
@@ -878,6 +926,7 @@ def submit_quiz(conn, quiz_id, responses, duration_s=0):
     got = 0.0
     correct_n = 0
     per_topic = {}
+    per_subtopic = {}
     with conn:
         for item in responses:
             qid = item.get("question_id")
@@ -893,6 +942,16 @@ def submit_quiz(conn, quiz_id, responses, duration_s=0):
                 q.get("topic", ""), dict(n=0, ok=0, subject=q["subject"])
             )
             t["n"] += 1
+            # Only questions that carry a subtopic. A row labelled "" is
+            # worse than no row, and roughly 164 of the bank has no source
+            # heading to derive one from.
+            if q.get("subtopic"):
+                st = per_subtopic.setdefault(
+                    q["subtopic"],
+                    dict(n=0, ok=0, subject=q["subject"], topic=q.get("topic", "")),
+                )
+                st["n"] += 1
+                st["ok"] += 1 if ok else 0
             t["ok"] += 1 if ok else 0
 
             results.append(
@@ -918,8 +977,36 @@ def submit_quiz(conn, quiz_id, responses, duration_s=0):
             )
 
     peer = peer_curve(quiz_id, [r["question"] for r in results], got)
+    # How much the bank holds for each label this quiz touched, so the
+    # panel can avoid offering a set it cannot fill. Only these few slugs
+    # are counted, so this is one pass and no cache.
+    _want_t = set(per_topic)
+    _want_s = set(per_subtopic)
+    _have_t = dict.fromkeys(_want_t, 0)
+    _have_s = dict.fromkeys(_want_s, 0)
+    for _q in bank.values():
+        _t = _q.get("topic", "")
+        if _t in _want_t:
+            _have_t[_t] += 1
+        _s = _q.get("subtopic", "")
+        if _s in _want_s:
+            _have_s[_s] += 1
+
+    subtopic_breakdown = [
+        dict(
+            available=_have_s.get(k, 0),
+            subtopic=k,
+            topic=v["topic"],
+            subject=v["subject"],
+            n=v["n"],
+            correct=v["ok"],
+            accuracy=round(v["ok"] / v["n"] * 100),
+        )
+        for k, v in sorted(per_subtopic.items(), key=lambda kv: -kv[1]["n"])
+    ]
     breakdown = [
         dict(
+            available=_have_t.get(k, 0),
             topic=k,
             subject=v["subject"],
             n=v["n"],
@@ -941,6 +1028,7 @@ def submit_quiz(conn, quiz_id, responses, duration_s=0):
         accuracy=round(correct_n / len(results) * 100) if results else 0,
         results=results,
         breakdown=breakdown,
+        subtopic_breakdown=subtopic_breakdown,
         wrong_ids=[r["question"]["id"] for r in wrong],
         retry_available=bool(wrong),
         mistake_kinds=MISTAKE_KINDS,

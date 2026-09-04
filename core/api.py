@@ -25,6 +25,7 @@ from . import (
     recommend,
     revision,
     stats,
+    topicmatch,
 )
 
 # The UI is read-only, so it is served straight out of the bundle when frozen.
@@ -530,6 +531,15 @@ class Handler(BaseHTTPRequestHandler):
                 ).fetchone()
                 if row:
                     subject_id = row["id"]
+            # Subtopics are labels on questions rather than rows in a
+            # table, so unlike topic there is no id to look up - the slug
+            # is the whole identity.
+            subtopic_slugs = [
+                s for s in (
+                    ([body["subtopic"]] if body.get("subtopic") else [])
+                    + list(body.get("subtopics") or [])
+                ) if s
+            ]
             topic_ids = list(body.get("topic_ids") or [])
             for slug in ([body["topic"]] if body.get("topic") else []) + list(
                 body.get("topics") or []
@@ -568,6 +578,7 @@ class Handler(BaseHTTPRequestHandler):
                 reason=body.get("reason") or "",
                 question_ids=question_ids,
                 paper_id=paper_id,
+                subtopic_slugs=subtopic_slugs,
                 metrics=bundle["metrics"],
                 topic_health=bundle["topic_health"],
             )
@@ -878,17 +889,70 @@ class Handler(BaseHTTPRequestHandler):
                     )
 
         out = dict(session_id=session_id)
-        if body.get("with_quiz") and topic_ids:
+        # The note says what was actually studied, in the words of the
+        # person who studied it, at the moment they still remember. That
+        # is a better description of the session than a topic chip, and
+        # until now it was only ever stored.
+        narrowed = topicmatch.plan(note) if note else None
+        note_args, quiz_from = {}, ""
+        # Whether the note decided the scope, which is the question the
+        # subject and topic decisions below actually turn on. Keying them
+        # on note_args missed the topic branch, because that one narrows
+        # through topic_ids instead.
+        by_note = False
+        if narrowed:
+            label = narrowed.get("label")
+            if label and label["kind"] == "subtopic":
+                # Deliberately without topic_ids: a subtopic can sit under
+                # more than one topic, and pinning it to the ticked one
+                # would drop the rest of its questions.
+                note_args = dict(subtopic_slugs=[label["slug"]])
+                quiz_from = label["slug"]
+                by_note = True
+            elif narrowed["advice"] == "mentions" and narrowed["mention_ids"]:
+                note_args = dict(question_ids=narrowed["mention_ids"])
+                quiz_from = "questions mentioning %r" % note[:40]
+                by_note = True
+            elif label and not topic_ids:
+                # A ticked chip beats a note: ticking is a choice, writing
+                # is a description. With nothing ticked the note is all
+                # there is. build_quiz takes topic ids rather than slugs,
+                # so this goes through the same lookup /api/quiz uses.
+                # Scoped to the subject the label came from. Topic slugs
+                # are unique within a subject, not across the bank, and
+                # targets[0] already says which subject this is.
+                where = (label.get("targets") or [{}])[0].get("subject") or ""
+                row = conn.execute(
+                    "SELECT t.id FROM topics t JOIN subjects s"
+                    " ON s.id = t.subject_id"
+                    " WHERE t.slug = ? AND (s.slug = ? OR ? = '')",
+                    (label["slug"], where, where),
+                ).fetchone()
+                if row:
+                    topic_ids = [row["id"]]
+                    quiz_from = label["slug"]
+                    by_note = True
+
+        if body.get("with_quiz") and (topic_ids or note_args):
             bundle = stats.gather(conn)
             built, err = quiz.build_quiz(
                 conn,
-                subject_id=int(subject_id),
-                topic_ids=topic_ids,
+                # Left out when the note decided the scope. A subtopic exists
+                # inside exactly one subject, so filtering by both can only
+                # ever subtract - and it did: a note of "banker algo" on a
+                # session logged against another subject built nothing and
+                # blamed the cooldown.
+                subject_id=None if by_note else int(subject_id),
+                topic_ids=[] if note_args else topic_ids,
                 count=body.get("quiz_count", 5),
                 session_id=session_id,
                 metrics=bundle["metrics"],
                 topic_health=bundle["topic_health"],
+                **note_args,
             )
+            # Reported so the UI can name what it narrowed to rather than
+            # claiming to know what was studied.
+            out["quiz_from"] = quiz_from
             out["quiz"] = built
             out["quiz_error"] = err
         out["state"] = build_state(conn)

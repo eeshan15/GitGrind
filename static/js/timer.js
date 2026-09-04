@@ -207,8 +207,23 @@ GG.timer = (function () {
       toast('Logged ' + hm(mins), 'Timed session saved.');
       if (out.state) GG.app.apply(out.state);
       else GG.app.reload();
+      /* quiz_from names what the note was resolved to. Saying it is the
+         only confirmation that writing the note changed anything, and
+         without it the title claims to know what was studied even when
+         the set came from a ticked chip instead. */
+      const from = out.quiz_from || '';
       if (out.quiz && out.quiz.questions && out.quiz.questions.length) {
-        setTimeout(() => GG.practice.open(out.quiz, 'Quiz on what you just studied'), 340);
+        const title = from
+          ? 'Quiz on ' + from.replace(/-/g, ' ')
+          : 'Quiz on what you just studied';
+        setTimeout(() => GG.practice.open(out.quiz, title), 340);
+      } else if (from) {
+        /* The note resolved and still produced nothing - everything
+           matching is inside its repeat cooldown, or held by a mock.
+           Saying so beats the set silently not appearing. A note that
+           resolved to nothing sets no quiz_from and stays quiet. */
+        toast('No set for ' + from.replace(/-/g, ' '),
+          out.quiz_error || 'Nothing available outside its repeat cooldown.');
       }
     } catch (e) {
       btn.disabled = false;

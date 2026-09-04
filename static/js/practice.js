@@ -75,6 +75,16 @@ GG.practice = (function () {
          action on the question rather than another label about it. */
       bookmark(q),
     ]));
+    /* The selector's own reason, which has been in the payload as "why"
+       since build_quiz started recording it and has never been shown. A
+       question that explains itself - "you got this wrong before and it
+       is due again" - reads as a decision rather than a coincidence.
+       No locked check: the result card renders through this same
+       function, and that is where the question gets asked. */
+    if (q.why) {
+      wrap.appendChild(el('p', { class: 'why', style: 'margin-bottom:12px' },
+        [el('b', {}, ['Why this one: ']), q.why]));
+    }
     wrap.appendChild(el('div', { class: 'q-text' }, [mathText(q.text)]));
     /* Figures go below the stem, above the options: that is the reading order
        of the printed paper, and a diagram-dependent question is unanswerable
@@ -458,6 +468,12 @@ GG.practice = (function () {
     ]));
 
     if (out.peer) body.appendChild(peerBox(out.peer));
+    // Prefer the subtopic view when it says more than the topic view -
+    // one row per topic is no breakdown at all.
+    const sub = out.subtopic_breakdown || [];
+    const top = out.breakdown || [];
+    const rows = sub.length > top.length ? sub : top;
+    if (rows.length > 1) body.appendChild(breakdownBox(rows));
 
     const list = el('div', { class: 'res-list' });
     out.results.forEach((r, i) => {
@@ -477,8 +493,115 @@ GG.practice = (function () {
 
     const foot = $('#quizFoot');
     foot.innerHTML = '';
+    nextActions(out).forEach(b => foot.appendChild(b));
+    // Done stays last: the offers sit before it rather than in place of
+    // it, so finishing is still the default and nothing is now two clicks
+    // away that used to be one.
     foot.appendChild(el('button', { class: 'btn btn-primary', text: 'Done',
       onclick: () => GG.modal('#modalQuiz', false) }));
+    growBars(body);
+  }
+
+  function breakdownBox(rows) {
+    // Weakest first. The order is the whole point: the top row is the thing
+    // to work on, so nothing has to be labelled as advice.
+    const sorted = rows.slice().sort((a, b) => a.accuracy - b.accuracy);
+    const box = el('div', { class: 'peer-box' });
+    // .track-head puts the label left and .track-count pushes the count right
+    // with margin-left:auto. .row-end would not: it is declared twice in
+    // style.css and the winning rule right-aligns both children.
+    box.appendChild(el('div', { class: 'track-head' }, [
+      el('b', { style: 'font-size:13px', text: 'How each topic went' }),
+      el('span', { class: 'track-count', text: sorted.length + ' topic(s)' }),
+    ]));
+    const host = el('div', { class: 'ready-bars', style: 'margin-top:12px' });
+    sorted.forEach(r => {
+      host.appendChild(el('div', { class: 'rb' }, [
+        el('span', { class: 'rb-name',
+                     text: (r.subtopic || r.topic || '').replace(/-/g, ' '),
+                     title: [r.subject, r.topic, r.subtopic]
+                       .filter(Boolean).join('/') }),
+        // dataset.w rather than a literal width: GG.growBars sets it after
+        // paint so the bar animates like every other bar in the app.
+        el('div', { class: 'bar tall' }, el('i', {
+          dataset: { w: Math.max(2, r.accuracy) },
+          style: 'background:' + (r.accuracy >= 60 ? 'var(--g4)'
+                  : r.accuracy >= 35 ? 'var(--warn)' : 'var(--bad)'),
+        })),
+        el('span', { class: 'rb-val' }, [
+          el('b', { text: r.correct + '/' + r.n }),
+          document.createTextNode(' \u00b7 ' + r.accuracy + '%'),
+        ]),
+      ]));
+    });
+    box.appendChild(host);
+    return box;
+  }
+
+  function nextActions(out) {
+    // Returns buttons, not a container. .modal-foot is already a flex row
+    // with justify-content:flex-end and gap:8px, so a wrapper only added a
+    // margin-top intended for page sections.
+    const out_btns = [];
+    const wrap = { appendChild: b => out_btns.push(b) };
+    const byAccuracy = rows => rows.slice().sort((a, b) => a.accuracy - b.accuracy)[0];
+    // A subtopic is the sharper offer, but only when the bank can fill
+    // it: bankers-algorithm has two questions in total, so "5 more"
+    // there would hand back one. Below that, the topic is the better
+    // answer even though it is broader.
+    const weakSub = byAccuracy((out.subtopic_breakdown || [])
+      .filter(r => (r.available || 0) >= 5));
+    const weakTopic = byAccuracy(out.breakdown || []);
+    const weakest = weakSub || weakTopic;
+
+    if (out.retry_available && (out.wrong_ids || []).length) {
+      const n = out.wrong_ids.length;
+      wrap.appendChild(el('button', {
+        class: 'btn', text: 'Retry the ' + n + ' you missed',
+        onclick: async ev => {
+          ev.target.disabled = true;
+          try {
+            const built = await GG.api('/quiz/retry', { body: { question_ids: out.wrong_ids } });
+            open(built, 'Retry');
+          } catch (e) {
+            ev.target.disabled = false;
+            GG.toast('Could not build the retry set', e.message, 'bad');
+          }
+        },
+      }));
+    }
+
+    if (weakest && (weakest.subtopic || weakest.topic)) {
+      const label = weakest.subtopic || weakest.topic;
+      wrap.appendChild(el('button', {
+        class: 'btn', text: 'Practise 5 more on ' + label.replace(/-/g, ' '),
+        onclick: async ev => {
+          ev.target.disabled = true;
+          try {
+            // The API resolves subject and topic slugs to ids itself, so this
+            // needs no new endpoint and no id lookup on this side.
+            const built = await GG.api('/quiz', {
+              body: {
+                subject: weakest.subject || null,
+                // Send one or the other, never both: a subtopic can sit
+                // under more than one topic, and pinning it to this set's
+                // topic would drop the rest.
+                topic: weakest.subtopic ? null : weakest.topic,
+                subtopic: weakest.subtopic || null,
+                count: 5,
+                reason: 'weakest ' + (weakest.subtopic ? 'subtopic' : 'topic')
+                        + ' in the set you just finished',
+              },
+            });
+            open(built, 'More on ' + label.replace(/-/g, ' '));
+          } catch (e) {
+            ev.target.disabled = false;
+            GG.toast('Could not build the set', e.message, 'bad');
+          }
+        },
+      }));
+    }
+    return out_btns;
   }
 
   function peerBox(p) {
